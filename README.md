@@ -373,13 +373,6 @@ Then in MO2: refresh, enable the mod and its `.esp`, set load order, and launch 
 
 ## CI build & release (GitHub Actions)
 
-> **⏸ Both workflows are temporarily disabled for the research phase.** There is nothing of Ehlnofey's
-> to build yet (Phases 1–3 are documentation), so the automatic triggers in `build.yml` (`push`) and
-> `pr-build.yml` (`pull_request`) are commented out and each workflow is left with `workflow_dispatch`
-> only — `build.yml` can still be run by hand from the Actions tab. Re-enabling in Phase 4 is a
-> two-line change per file; the instructions are in a banner comment at the top of each. Everything
-> described below is what runs once they are back on; `pwsh build/build.ps1` works locally regardless.
-
 `.github/workflows/build.yml` rebuilds every release archive on each push to `main` — as a **smoke
 test only, publishing nothing** — and cuts a named GitHub Release when you push a `v*` tag. It runs
 on a free `windows-latest` runner and is driven by **`build/build.ps1`** + **`build/manifest.json`**
