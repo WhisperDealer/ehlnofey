@@ -366,7 +366,6 @@ Research and design live here; this file stays the index. Create these as the ph
 ```
 arch-docs/
   skyrim-record-patterns.md      # EXISTS — read before authoring any mechanic
-  build-report.md                # EXISTS — CI-generated, do not hand-edit
   summary/                       # EXISTS — talk material for people who won't read design/.
                                  #   build-deck.py generates ehlnofey-tier-ladders.pptx (16 slides,
                                  #   assumes zero modding knowledge). Needs python-pptx, which is
