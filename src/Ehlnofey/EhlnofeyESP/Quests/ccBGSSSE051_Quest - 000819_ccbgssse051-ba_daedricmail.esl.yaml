@@ -1,0 +1,417 @@
+FormKey: 000819:ccbgssse051-ba_daedricmail.esl
+VersionControl: 1977630
+EditorID: ccBGSSSE051_Quest
+Version2: 1
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SSE_QF_ccBGSSSE051_Quest_03000819
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Bandit
+      Object: 000819:ccbgssse051-ba_daedricmail.esl
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BountyNote
+      Object: 000819:ccbgssse051-ba_daedricmail.esl
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Erwan
+      Object: 000819:ccbgssse051-ba_daedricmail.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ErwanBook
+      Object: 000819:ccbgssse051-ba_daedricmail.esl
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ErwanJournal
+      Object: 000819:ccbgssse051-ba_daedricmail.esl
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Gunther
+      Object: 000819:ccbgssse051-ba_daedricmail.esl
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Jarl
+      Object: 000819:ccbgssse051-ba_daedricmail.esl
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Letter
+      Object: 000819:ccbgssse051-ba_daedricmail.esl
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Madran
+      Object: 000819:ccbgssse051-ba_daedricmail.esl
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Ring
+      Object: 000819:ccbgssse051-ba_daedricmail.esl
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Steward
+      Object: 000819:ccbgssse051-ba_daedricmail.esl
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE051_ArmorBladesBoots
+      Object: 000800:ccbgssse051-ba_daedricmail.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE051_ArmorBladesCuirass
+      Object: 000801:ccbgssse051-ba_daedricmail.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE051_ArmorBladesGauntlets
+      Object: 000802:ccbgssse051-ba_daedricmail.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE051_LItemArmorAllBlades
+      Object: 000813:ccbgssse051-ba_daedricmail.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE051_MiscQuest
+      Object: 00081A:ccbgssse051-ba_daedricmail.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE051_MiscQuestAliasFillers
+      Object: 00083F:ccbgssse051-ba_daedricmail.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE051_Ring
+      Object: 000823:ccbgssse051-ba_daedricmail.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE051_SubCharBandit06Boss
+      Object: 000844:ccbgssse051-ba_daedricmail.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+  FileName: SSE_QF_ccBGSSSE051_Quest_03000819
+  Fragments:
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE051_Quest_03000819
+    FragmentName: Fragment_6
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE051_Quest_03000819
+    FragmentName: Fragment_7
+  - Stage: 24
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE051_Quest_03000819
+    FragmentName: Fragment_10
+  - Stage: 25
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE051_Quest_03000819
+    FragmentName: Fragment_11
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE051_Quest_03000819
+    FragmentName: Fragment_8
+  - Stage: 40
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE051_Quest_03000819
+    FragmentName: Fragment_9
+  - Stage: 80
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE051_Quest_03000819
+    FragmentName: Fragment_13
+  - Stage: 90
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE051_Quest_03000819
+    FragmentName: Fragment_12
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE051_Quest_03000819
+    FragmentName: Fragment_5
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 000819:ccbgssse051-ba_daedricmail.esl
+      Alias: 0
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000819:ccbgssse051-ba_daedricmail.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 24
+  - Property:
+      Name: ''
+      Object: 000819:ccbgssse051-ba_daedricmail.esl
+      Alias: 8
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000819:ccbgssse051-ba_daedricmail.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 30
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000819:ccbgssse051-ba_daedricmail.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 25
+Name:
+  TargetLanguage: English
+  Value: Missing Merchant
+Flags:
+- RunOnce
+Priority: 15
+QuestFormVersion: 0
+Stages:
+- Index: 10
+  Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I received a notice from the Jarl's steward regarding a missing person. I should read it and see if I can be of help.
+- Index: 20
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I received a notice from the Jarl's steward regarding a missing person. I should head over to Traitor's Post and see what I can learn.
+- Index: 24
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+- Index: 25
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I received a notice from the Jarl's steward regarding a missing person. At Traitor's Post I found the missing person was already killed by a bandit.
+- Index: 30
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I received a notice from the Jarl's steward regarding a missing person. At Traitor's Post I found the missing person was already killed by a bandit. On her body was a journal that implied she sold a set of Daedric armor to a Khajiit merchant. She mentioned that if she ever wanted it back, the merchant would trade it for a valuable Khajiit ring.
+- Index: 40
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I received a notice from the Jarl's steward regarding a missing person. At Traitor's Post I found the missing person was already killed by a bandit. On her body was a journal that implied she sold a set of Daedric armor to a Khajiit merchant. She mentioned that if she ever wanted it back, the merchant would trade it for a valuable Khajiit ring. I picked up the ring and can now trade it for the armor set.
+- Index: 50
+  Unknown: 69
+- Index: 80
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I received a notice from the Jarl's steward regarding a missing person. At Traitor's Post I found the missing person was already killed by a bandit. On her body was a journal that implied she sold a set of Daedric armor to a Khajiit merchant. She mentioned that if she ever wanted it back, the merchant would trade it for a valuable Khajiit ring. I picked up the ring and traded it for the armor set.
+- Index: 90
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I received a notice from the Jarl's steward regarding a missing person. At Traitor's Post I found the missing person was already killed by a bandit. On her body was a journal that implied she sold a set of Daedric armor to a Khajiit merchant. She mentioned that if she ever wanted it back, the merchant would trade it for a valuable Khajiit ring. Wanting to keep the ring, I purchased the set for gold instead.
+- Index: 100
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read the missing merchant note
+  Targets:
+  - AliasID: 4
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Investigate Traitor's Post
+  Targets:
+  - {}
+- Index: 24
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Search the bandit corpse
+  Targets:
+  - {}
+- Index: 25
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read Erwan's Journal
+  Targets:
+  - AliasID: 8
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Retrieve the Ring of Masser
+  Targets:
+  - AliasID: 5
+- Index: 40
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Trade the ring for the Daedric armor set
+  Targets:
+  - AliasID: 6
+- Index: 50
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: (Optional) Purchase the armor set with gold
+NextAliasID: 11
+Aliases:
+- Name: Erwan
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00083A:ccbgssse051-ba_daedricmail.esl
+  VoiceTypes: Null
+- ID: 8
+  Name: ErwanJournal
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 00081F:ccbgssse051-ba_daedricmail.esl
+    Create: In
+  VoiceTypes: Null
+- ID: 7
+  Name: Gunther
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000826:ccbgssse051-ba_daedricmail.esl
+  Factions:
+  - 01BCC0:Skyrim.esm
+  VoiceTypes: Null
+- ID: 10
+  Name: ErwanBook
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 000847:ccbgssse051-ba_daedricmail.esl
+    AliasID: 7
+    Create: In
+  VoiceTypes: Null
+- ID: 1
+  Name: Letter
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 00081B:ccbgssse051-ba_daedricmail.esl
+    Create: In
+  VoiceTypes: Null
+- ID: 2
+  Name: Jarl
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  - StoresText
+  - AllowReserved
+  - AllowDestroyed
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 050920:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 028173:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 3
+  Name: Steward
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  - StoresText
+  - AllowReserved
+  - AllowDestroyed
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 050922:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 028173:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 4
+  Name: BountyNote
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - StoresText
+  - AllowReserved
+  - AllowDestroyed
+  - UsesStoredText
+  - InitiallyDisabled
+  External:
+    Quest: 00083F:ccbgssse051-ba_daedricmail.esl
+    AliasID: 0
+  VoiceTypes: Null
+- ID: 5
+  Name: Ring
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 000823:ccbgssse051-ba_daedricmail.esl
+    AliasID: 7
+    Create: In
+  VoiceTypes: Null
+- ID: 6
+  Name: Madran
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 074345:Skyrim.esm
+  VoiceTypes: Null
+- ID: 9
+  Name: Bandit
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 073B1B:Skyrim.esm
+  PackageData:
+  - 0BFB6B:Skyrim.esm
+  VoiceTypes: Null

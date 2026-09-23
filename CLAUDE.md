@@ -267,7 +267,14 @@ legible if its rungs have *different names*, and the bandit boss ladder's do not
 Warlock, Thalmor, Vampire) and are an open decision.
 
 **Generators, and the order they must run in:** `author-constants.ps1` → `extract-requiem.ps1` →
-`author-bucket-d.ps1` → `author-names.ps1`, then deserialize → re-serialize → adopt Spriggit's output as the source.
+`author-bucket-d.ps1` → `author-names.ps1` → `author-cc-compat.ps1`, then deserialize → re-serialize →
+adopt Spriggit's output as the source. `author-cc-compat.ps1` reads `reference/mods/CreationClubYaml/`
+(Spriggit decompiles of the CC plugins in the Baseline modlist's `mods/Creation Club Files`).
+
+**Creation Club is a hard requirement since 2026-09-23** (user decision: AE is near-universal). The
+plugin takes the 15 Bandit Armor packs (`ccbgssse050`–`064-ba_*.esl`) as masters and overrides their
+injector quests — see the "runtime `AddForm`" gotcha below. **Verified in game 2026-09-23:** on a
+fresh chargen start, the Robber's Gorge and Swindler's Den chiefs are both level 28 (were 6).
 
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs.
@@ -540,6 +547,8 @@ Fixed now so Phase 4 does not have to argue about it:
 - **Plugin:** `Ehlnofey.esp`, **ESL-flagged**. Masters **decided in Phase 3**: `Skyrim.esm`,
   `Update.esm`, `Dawnguard.esm`, `Dragonborn.esm`. Hearthfire is excluded — it adds no worldspace,
   region, dungeon or encounter zone, so taking it as a master would buy nothing.
+  **Revised 2026-09-23:** plus the 15 Creation Club Bandit Armor `.esl` packs, so their runtime
+  leveled-list injections can be neutralised (`author-cc-compat.ps1`).
 - **EditorID prefix:** `EHL_`, then the domain, then the specific: `EHL_LVLI_DraugrBossHoard_T4`,
   `EHL_ECZN_BleakFalls`. Tier suffixes are `_T<n>` against the ladder in `design/tiers.md`.
 - **New records** start at `0x800` and are allocated in a **contiguous block per feature** (one block
@@ -752,6 +761,23 @@ Fill this as the project teaches you things.
   comma-wrap is needed so a 0- or 1-element result keeps `.Count`, but `foreach ($x in Get-Thing)`
   then iterates **once with `$x = @()`** instead of zero times — which reads as a phantom result, not
   an error. Assign to a variable first and check `.Count` before enumerating. `[verified]`
+
+- **Scripts can edit a leveled list at runtime, invisibly to every load-order scan.** A Papyrus
+  `LeveledActor.AddForm` / `LeveledItem.AddForm` never appears as an override in any plugin, and the
+  result is stored in the save for good. The 15 Creation Club Bandit Armor packs do exactly this from a
+  `RunOnce` start-up quest fired after chargen (`ccstartafterchargenscript`): they add their own
+  `SubCharBandit0NBoss` to `LCharBanditBoss` at gates 2–48 and their armor to ~15 `LItemArmor*` lists.
+  Symptom: bandit chiefs came out level 6 when the player walked in, but 28 via `coc` from the main menu
+  (no chargen, so no injection) and via `placeatme` (no `LevelModifier`). **Before concluding a list
+  is what the plugin says, grep `reference/` quest/script properties for its FormKey**, and read the
+  levels from the fragment `.pex` (the CC packs ship no `.psc`). `[verified]` in game, 2026-09-23.
+- **`VeryHard` + a single-entry flattened list = always the next entry up.** The bump rule ("if the
+  VeryHard pick equals the Hard pick, take the next-higher entry regardless of level",
+  `design/engine-behaviour.md` §4) is harmless while a pinned list has one entry, but the moment
+  anything adds more entries the bump walks up them regardless of gate. In a min-6 zone Hard (6) and
+  VeryHard (≈7) both picked steel's gate-6 entry, so the bump took **silver at gate 10** — above the
+  lookup level — and the chief wore silver, level 6. A flattened list is only as pinned as the thing
+  that stops others adding to it. `[verified]` in game (silver-armored level-6 chief), 2026-09-23.
 
 Candidates still to confirm:
 

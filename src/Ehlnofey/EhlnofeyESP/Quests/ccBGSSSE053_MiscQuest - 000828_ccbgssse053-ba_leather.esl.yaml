@@ -1,0 +1,94 @@
+FormKey: 000828:ccbgssse053-ba_leather.esl
+VersionControl: 1977685
+EditorID: ccBGSSSE053_MiscQuest
+Version2: 1
+VirtualMachineAdapter:
+  Scripts:
+  - Name: ccstartafterchargenscript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ101
+      Object: 03372B:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: MyQuestStageToSet
+      Data: 10
+  - Name: SSE_QF_ccBGSSSE053_MiscQuest_05000828
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note
+      Object: 000828:ccbgssse053-ba_leather.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE053_ArmorBladesBoots
+      Object: 000800:ccbgssse053-ba_leather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE053_ArmorBladesCuirass
+      Object: 000801:ccbgssse053-ba_leather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE053_ArmorBladesGauntlets
+      Object: 000802:ccbgssse053-ba_leather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE053_ArmorBladesHelmet
+      Object: 000803:ccbgssse053-ba_leather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE053_SubCharBandit02Boss
+      Object: 00083D:ccbgssse053-ba_leather.esl
+  FileName: SSE_QF_ccBGSSSE053_MiscQuest_05000828
+  Fragments:
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE053_MiscQuest_05000828
+    FragmentName: Fragment_1
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE053_MiscQuest_05000828
+    FragmentName: Fragment_0
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 000828:ccbgssse053-ba_leather.esl
+      Alias: 0
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000828:ccbgssse053-ba_leather.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 20
+Flags:
+- RunOnce
+Priority: 15
+QuestFormVersion: 0
+Type: Misc
+Stages:
+- Index: 10
+  Flags:
+  - StartUpStage
+  Unknown: 152
+  LogEntries:
+  - Flags: []
+- Index: 20
+  Unknown: 155
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Look for a note at Cliffside Retreat
+  Targets:
+  - {}
+NextAliasID: 1
+Aliases:
+- Name: Note
+  Flags:
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000824:ccbgssse053-ba_leather.esl
+  VoiceTypes: Null

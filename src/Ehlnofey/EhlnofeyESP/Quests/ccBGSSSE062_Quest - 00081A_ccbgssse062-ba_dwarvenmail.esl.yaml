@@ -1,0 +1,164 @@
+FormKey: 00081A:ccbgssse062-ba_dwarvenmail.esl
+VersionControl: 1977630
+EditorID: ccBGSSSE062_Quest
+Version2: 1
+VirtualMachineAdapter:
+  Scripts:
+  - Name: ccBGSSSE062_ArmorScript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: ArmorThreshold
+      Data: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQuest
+      Object: 00081A:ccbgssse062-ba_dwarvenmail.esl
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 100
+  - Name: SSE_QF_ccBGSSSE062_Quest_0200081A
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Orc
+      Object: 00081A:ccbgssse062-ba_dwarvenmail.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE062_ArmorBladesBoots
+      Object: 000800:ccbgssse062-ba_dwarvenmail.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE062_ArmorBladesCuirass
+      Object: 000801:ccbgssse062-ba_dwarvenmail.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE062_ArmorBladesGauntlets
+      Object: 000802:ccbgssse062-ba_dwarvenmail.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE062_ArmorBladesHelmet
+      Object: 000803:ccbgssse062-ba_dwarvenmail.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE062_SubCharBandit03Boss
+      Object: 00082F:ccbgssse062-ba_dwarvenmail.esl
+  FileName: SSE_QF_ccBGSSSE062_Quest_0200081A
+  Fragments:
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE062_Quest_0200081A
+    FragmentName: Fragment_0
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE062_Quest_0200081A
+    FragmentName: Fragment_7
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE062_Quest_0200081A
+    FragmentName: Fragment_2
+  - Stage: 60
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE062_Quest_0200081A
+    FragmentName: Fragment_3
+  - Stage: 70
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE062_Quest_0200081A
+    FragmentName: Fragment_4
+  - Stage: 80
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE062_Quest_0200081A
+    FragmentName: Fragment_5
+  - Stage: 90
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE062_Quest_0200081A
+    FragmentName: Fragment_6
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE062_Quest_0200081A
+    FragmentName: Fragment_1
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 00081A:ccbgssse062-ba_dwarvenmail.esl
+      Alias: 0
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 00081A:ccbgssse062-ba_dwarvenmail.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 20
+Name:
+  TargetLanguage: English
+  Value: Fan Favorite
+Flags:
+- RunOnce
+Priority: 15
+QuestFormVersion: 0
+Stages:
+- Index: 10
+  Flags:
+  - StartUpStage
+  Unknown: 155
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: At a camp to the south of Ivarstead, I found the body of an Arena fan. According to the note on his body, he was attempting to meet with an Orc he believed was a former combatant. I should head to the Ruins of Bthalft and see if I can find this Orc.
+- Index: 20
+  Unknown: 155
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: 'At a camp to the south of Ivarstead, I found the body of an Arena fan. According to the note on his body, he was attempting to meet with an Orc he believed was a former combatant. I encountered the Orc at the Ruins of Bthalft and defeated him. '
+- Index: 50
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+- Index: 60
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+- Index: 70
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+- Index: 80
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+- Index: 90
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+- Index: 100
+  Unknown: 40
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry:
+      TargetLanguage: English
+      Value: At a camp to the south of Ivarstead, I found the body of an Arena fan. According to the note on his body, he was attempting to meet with an Orc he believed was a former combatant. I defeated the Orc at the Ruins of Bthalft and claimed his armor.
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Find the Orc at the Ruins of Bthalft
+  Targets:
+  - {}
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Retrieve the armor
+  Targets:
+  - {}
+NextAliasID: 1
+Aliases:
+- Name: Orc
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000820:ccbgssse062-ba_dwarvenmail.esl
+  VoiceTypes: Null
