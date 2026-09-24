@@ -1,0 +1,90 @@
+FormKey: 00081C:ccbgssse002-exoticarrows.esl
+EditorID: ccBGSSSE002_StartUpQuest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: ccstartafterchargenscript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ101
+      Object: 03372B:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: MyQuestStageToSet
+  - Name: QF_ccBGSSSE002_StartUpQuest_0300081C
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE002_ArrowExpFlame01
+      Object: 000814:ccbgssse002-exoticarrows.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE002_ArrowExpShock01
+      Object: 000813:ccbgssse002-exoticarrows.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE002_ArrowFireProjectile
+      Object: 000D68:ccbgssse002-exoticarrows.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE002_BaseArrowMagic_Fire_00
+      Object: 000830:ccbgssse002-exoticarrows.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE002_LItem_MagicArrowsGivePlayerOnStart
+      Object: 00080F:ccbgssse002-exoticarrows.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE002_LItemArrowMagic_Bone_00
+      Object: 00082E:ccbgssse002-exoticarrows.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE002_LItemArrowMagic_Ice_00
+      Object: 00082F:ccbgssse002-exoticarrows.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE002_LItemArrowMagic_Lightning_00
+      Object: 00082F:ccbgssse002-exoticarrows.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE002_LItemArrowMagicAny_Vendor
+      Object: 000810:ccbgssse002-exoticarrows.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE002_SpellTomeBoundQuiver
+      Object: 000816:ccbgssse002-exoticarrows.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE002_SpellTomeTelekinesisArrows
+      Object: 00082B:ccbgssse002-exoticarrows.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArrowsAllBest
+      Object: 10FAF5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemSpellTomes50AllAlteration
+      Object: 0A298C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemSpellTomes50AllConjuration
+      Object: 0A298D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemSpellTomes50Alteration
+      Object: 0A2735:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemSpellTomes50Conjuration
+      Object: 0A2730:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapGasOnHit
+      Object: 082E17:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: trapGasWeapon
+      Object: 109E7B:Skyrim.esm
+  FileName: QF_ccBGSSSE002_StartUpQuest_0300081C
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_ccBGSSSE002_StartUpQuest_0300081C
+    FragmentName: Fragment_3
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_ccBGSSSE002_StartUpQuest_0300081C
+    FragmentName: Fragment_2
+Flags:
+- RunOnce
+Priority: 15
+Stages:
+- Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 10
+  Unknown: 162
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+NextAliasID: 0

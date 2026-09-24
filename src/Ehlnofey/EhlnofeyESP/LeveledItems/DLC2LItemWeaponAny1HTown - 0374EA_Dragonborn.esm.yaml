@@ -1,0 +1,29 @@
+FormKey: 0374EA:Dragonborn.esm
+VersionControl: 2847768
+EditorID: DLC2LItemWeaponAny1HTown
+FormVersion: 43
+Version2: 1
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+- CalculateForEachItemInCount
+Entries:
+- Data:
+    Level: 1
+    Reference: 0374E2:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0374E7:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0374E8:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000E37:ccasvsse001-almsivi.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000E38:ccasvsse001-almsivi.esm
+    Count: 1

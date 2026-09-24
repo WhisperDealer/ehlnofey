@@ -1,0 +1,526 @@
+FormKey: 000CA0:ccasvsse001-almsivi.esm
+VersionControl: 1977684
+EditorID: ccASVSSE001_QuestA
+Version2: 1
+VirtualMachineAdapter:
+  Scripts:
+  - Name: ccASVSSE001_QuestA_05000CA0
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Aphia
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Bird
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Buyer
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Door
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Elder
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 14
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Guard
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GuardB
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Key
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Key2
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Letters
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note2
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note2000
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TargetNote
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Trigger
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Velothi
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Vivec
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccASVSSE001_GuardBackupREF
+      Object: 000F48:ccasvsse001-almsivi.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccASVSSE001_PropagandaLetterB
+      Object: 000E05:ccasvsse001-almsivi.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccASVSSE001_Quest
+      Object: 000CC3:ccasvsse001-almsivi.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccASVSSE001_QuestB
+      Object: 000F19:ccasvsse001-almsivi.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccASVSSE001_QuestC
+      Object: 000F1A:ccasvsse001-almsivi.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccASVSSE001_QuestD
+      Object: 00117A:ccasvsse001-almsivi.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccASVSSE001_TernNote
+      Object: 000F1E:ccasvsse001-almsivi.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: myFactionArray
+      Objects:
+      - Name: ''
+        Object: 018279:Dragonborn.esm
+      - Name: ''
+        Object: 0195AD:Dragonborn.esm
+      - Name: ''
+        Object: 01841F:Dragonborn.esm
+      - Name: ''
+        Object: 086EEE:Skyrim.esm
+  - Name: ccASVSSE001_SeedDLC2Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccASVSSE001_ArmorOrdinatorBoots
+      Object: 000817:ccasvsse001-almsivi.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccASVSSE001_ArmorOrdinatorCuirass
+      Object: 000818:ccasvsse001-almsivi.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccASVSSE001_ArmorOrdinatorGloves
+      Object: 000819:ccasvsse001-almsivi.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccASVSSE001_ArmorOrdinatorHelmet
+      Object: 00081A:ccasvsse001-almsivi.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccASVSSE001_EbonyMace
+      Object: 000E37:ccasvsse001-almsivi.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccASVSSE001_EbonyScimitar
+      Object: 000E38:ccasvsse001-almsivi.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2BlacksmithArmorExtra100
+      Object: 037501:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2BlacksmithArmorExtra75
+      Object: 0374FF:Dragonborn.esm
+  FileName: ccASVSSE001_QuestA_05000CA0
+  Fragments:
+  - Stage: 2
+    Unknown2: 1
+    ScriptName: ccASVSSE001_QuestA_05000CA0
+    FragmentName: Fragment_13
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: ccASVSSE001_QuestA_05000CA0
+    FragmentName: Fragment_0
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: ccASVSSE001_QuestA_05000CA0
+    FragmentName: Fragment_1
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: ccASVSSE001_QuestA_05000CA0
+    FragmentName: Fragment_6
+  - Stage: 35
+    Unknown2: 1
+    ScriptName: ccASVSSE001_QuestA_05000CA0
+    FragmentName: Fragment_4
+  - Stage: 40
+    Unknown2: 1
+    ScriptName: ccASVSSE001_QuestA_05000CA0
+    FragmentName: Fragment_5
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: ccASVSSE001_QuestA_05000CA0
+    FragmentName: Fragment_7
+  - Stage: 60
+    Unknown2: 1
+    ScriptName: ccASVSSE001_QuestA_05000CA0
+    FragmentName: Fragment_8
+  - Stage: 70
+    Unknown2: 1
+    ScriptName: ccASVSSE001_QuestA_05000CA0
+    FragmentName: Fragment_9
+  - Stage: 80
+    Unknown2: 1
+    ScriptName: ccASVSSE001_QuestA_05000CA0
+    FragmentName: Fragment_10
+  - Stage: 1000
+    Unknown2: 1
+    ScriptName: ccASVSSE001_QuestA_05000CA0
+    FragmentName: Fragment_3
+  - Stage: 2000
+    Unknown2: 1
+    ScriptName: ccASVSSE001_QuestA_05000CA0
+    FragmentName: Fragment_11
+  - Stage: 3000
+    Unknown2: 1
+    ScriptName: ccASVSSE001_QuestA_05000CA0
+    FragmentName: Fragment_12
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 1
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000CC3:ccasvsse001-almsivi.esm
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 155
+    - Name: defaultsetstageonplayeracquire
+  - Property:
+      Name: ''
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 9
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000CA0:ccasvsse001-almsivi.esm
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 70
+  - Property:
+      Name: ''
+      Object: 000CA0:ccasvsse001-almsivi.esm
+      Alias: 11
+    Scripts:
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000CA0:ccasvsse001-almsivi.esm
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 80
+Name:
+  TargetLanguage: English
+  Value: Buyer Beware
+Flags:
+- RunOnce
+Priority: 15
+QuestFormVersion: 0
+Stages:
+- Index: 1
+  Unknown: 165
+- Index: 2
+  Unknown: 170
+  LogEntries:
+  - Flags: []
+- Index: 10
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I've discovered a temple near Raven Rock where worshipers of Almalexia gather. It seems the temple Matriarch is searching for the lost Masks of Vivec and Sotha Sil.
+- Index: 20
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+- Index: 30
+  LogEntries:
+  - Flags: []
+- Index: 35
+  LogEntries:
+  - Flags: []
+- Index: 40
+  Unknown: 253
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I've discovered a temple near Raven Rock where worshipers of Almalexia gather. It seems the temple Matriarch is searching for the lost Masks of Vivec and Sotha Sil. Rumor has it that the Mask of Vivec is being transported back to Morrowind, but an enterprising guard is looking to sell to another buyer. I should watch the Bulwark for any guards leaving their post near midnight.
+- Index: 50
+  Unknown: 44
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I've discovered a temple near Raven Rock where worshipers of Almalexia gather. It seems the temple Matriarch is searching for the lost Masks of Vivec and Sotha Sil. Rumor has it that the Mask of Vivec is being transported back to Morrowind, but an enterprising guard is looking to sell to another buyer. I followed a guard to a secret cellar where he intends to make the sale.
+- Index: 60
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I've discovered a temple near Raven Rock where worshipers of Almalexia gather. It seems the temple Matriarch is searching for the lost Masks of Vivec and Sotha Sil. Rumor has it that the Mask of Vivec is being transported back to Morrowind, but an enterprising guard is looking to sell to another buyer. I followed the guard to a secret cellar where he intends to make the sale.
+- Index: 70
+  Unknown: 57
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I've discovered a temple near Raven Rock where worshipers of Almalexia gather. It seems the temple Matriarch is searching for the lost Masks of Vivec and Sotha Sil. Rumor has it that the Mask of Vivec is being transported back to Morrowind, but an enterprising guard is looking to sell to another buyer. I followed the guard to a secret cellar where he planned to make the sale, and killed the buyer.
+- Index: 80
+  LogEntries:
+  - Flags: []
+- Index: 1000
+  Unknown: 253
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry:
+      TargetLanguage: English
+      Value: I've discovered a temple near Raven Rock where worshipers of Almalexia gather. It seems the temple Matriarch is searching for the lost Masks of Vivec and Sotha Sil. Rumor has it that the Mask of Vivec is being transported back to Morrowind, but an enterprising guard is looking to sell to another buyer. I followed the guard to a secret cellar where he planned to make the sale, killed the buyer, and picked up the Mask of Vivec.
+- Index: 2000
+  Unknown: 69
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 000CC3:ccasvsse001-almsivi.esm
+        Stage: 95
+  - Flags: []
+- Index: 3000
+  Unknown: 40
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+Objectives:
+- Index: 11
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read Masks of the Tribunal
+  Targets:
+  - AliasID: 1
+- Index: 21
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Shoot down the bird outside the Bulwark's south gate
+  Targets:
+  - AliasID: 5
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Retrieve the note
+  Targets:
+  - AliasID: 5
+- Index: 40
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read the Note on the Target
+- Index: 50
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Track the Redoran Guard's movements after midnight
+  Targets:
+  - AliasID: 8
+- Index: 60
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Look for clues in the cellar
+  Targets:
+  - AliasID: 9
+- Index: 70
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Kill the Buyer
+  Targets:
+  - AliasID: 9
+- Index: 80
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Retrieve the Mask of Vivec
+  Targets:
+  - AliasID: 11
+- Index: 2000
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Return to the temple
+  Targets:
+  - AliasID: 14
+NextAliasID: 19
+Aliases:
+- ID: 1
+  Name: Note
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDisabled
+  VoiceTypes: Null
+- ID: 2
+  Name: Aphia
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  External:
+    Quest: 000CC3:ccasvsse001-almsivi.esm
+    AliasID: 22
+  VoiceTypes: Null
+- ID: 4
+  Name: Velothi
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  External:
+    Quest: 000CC3:ccasvsse001-almsivi.esm
+    AliasID: 23
+  VoiceTypes: Null
+- ID: 3
+  Name: Letters
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDisabled
+  VoiceTypes: Null
+- ID: 5
+  Name: Bird
+  Flags:
+  - Optional
+  - AllowDisabled
+  ForcedReference: 000F1C:ccasvsse001-almsivi.esm
+  VoiceTypes: Null
+- ID: 6
+  Name: TargetNote
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDisabled
+  VoiceTypes: Null
+- ID: 7
+  Name: Door
+  Flags: []
+  ForcedReference: 01E344:Dragonborn.esm
+  VoiceTypes: Null
+- ID: 8
+  Name: Guard
+  Flags:
+  - AllowDead
+  - AllowDisabled
+  ForcedReference: 000F23:ccasvsse001-almsivi.esm
+  PackageData:
+  - 000F24:ccasvsse001-almsivi.esm
+  - 000F44:ccasvsse001-almsivi.esm
+  VoiceTypes: Null
+- ID: 17
+  Name: GuardB
+  Flags:
+  - AllowDead
+  - AllowDisabled
+  - InitiallyDisabled
+  CreateReferenceToObject:
+    Object: 04805E:ccasvsse001-almsivi.esm
+    AliasID: 8
+  PackageData:
+  - 000F24:ccasvsse001-almsivi.esm
+  - 000F44:ccasvsse001-almsivi.esm
+  VoiceTypes: Null
+- ID: 10
+  Name: Trigger
+  Flags:
+  - AllowDisabled
+  ForcedReference: 000F2B:ccasvsse001-almsivi.esm
+  VoiceTypes: Null
+- ID: 9
+  Name: Buyer
+  Flags:
+  - AllowDead
+  ForcedReference: 000F33:ccasvsse001-almsivi.esm
+  VoiceTypes: Null
+- ID: 11
+  Name: Vivec
+  Flags:
+  - AllowDisabled
+  CreateReferenceToObject:
+    Object: 000822:ccasvsse001-almsivi.esm
+    AliasID: 9
+    Create: In
+  VoiceTypes: Null
+- ID: 12
+  Name: Note2
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDisabled
+  VoiceTypes: Null
+- ID: 18
+  Name: Note2000
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDisabled
+  VoiceTypes: Null
+- ID: 15
+  Name: Key
+  Flags:
+  - AllowDisabled
+  CreateReferenceToObject:
+    Object: 000F29:ccasvsse001-almsivi.esm
+    AliasID: 9
+    Create: In
+  VoiceTypes: Null
+- ID: 16
+  Name: Key2
+  Flags:
+  - AllowDisabled
+  CreateReferenceToObject:
+    Object: 000F29:ccasvsse001-almsivi.esm
+    AliasID: 8
+    Create: In
+  VoiceTypes: Null
+- ID: 14
+  Name: Elder
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  External:
+    Quest: 000CC3:ccasvsse001-almsivi.esm
+    AliasID: 18
+  VoiceTypes: Null

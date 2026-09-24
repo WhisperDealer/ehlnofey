@@ -9,14 +9,6 @@ Flags:
 Entries:
 - Data:
     Level: 1
-    Reference: 039CFA:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03CF5E:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
     Reference: 03DE57:Skyrim.esm
     Count: 1
 - Data:
@@ -26,14 +18,6 @@ Entries:
 - Data:
     Level: 1
     Reference: 03DE57:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03DE57:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 039D03:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
@@ -58,6 +42,14 @@ Entries:
 - Data:
     Level: 1
     Reference: 03DE5C:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 03DE5C:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 039D0B:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
@@ -74,6 +66,14 @@ Entries:
 - Data:
     Level: 1
     Reference: 03DE61:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 03DE61:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 039D13:Skyrim.esm
     Count: 1
 - Data:
     Level: 1

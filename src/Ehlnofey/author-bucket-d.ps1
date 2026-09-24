@@ -24,13 +24,12 @@ $dst  = 'src/Ehlnofey/EhlnofeyESP/LeveledNpcs'
 $loadOrder = @('01Skyrim', '02Update', '03Dawnguard', '04HearthFires', '05Dragonborn')
 
 # 3.1 Bandit: Bandit 1 · Outlaw 5 · Thug 9 · Highwayman 14 · Plunderer 19 · Marauder 25
-#     roster "Runt x1 · Outlaw x4 · Thug x3 · Highwayman x1", band T1-T3, centre T2.
-#     Revised 2026-07-30: the level-1 rung was x3 (a third of every bandit drawn). It is now x1,
-#     so the weakest rung is as rare as the strongest and the band's mass sits on Outlaw/Thug -
-#     which is what a T2 archetype should feel like. The freed weight is redistributed in the
-#     old 3:2:1 proportion (-> 4:3:1), so the shape is unchanged and only the runt moved.
-#     That rung is also renamed "Bandit Runt" by author-names.ps1; see 3.1 in archetype-tiers.md.
-$banditLadder = @{ 1 = 1; 5 = 4; 9 = 3; 14 = 1 }
+#     roster "Outlaw x3 · Thug x4 · Highwayman x2", band T2-T3.
+#     Revised 2026-09-24: the level-1 rung is DROPPED, as Plunderer and Marauder already were. It
+#     shares the family name "Bandit" with nothing to tell it apart, and the attempt to rename it
+#     "Bandit Runt" never showed in game, so it was reverted (44 extra NPC_ overrides = conflicts
+#     for nothing). Chiefs are pinned separately below, at 28.
+$banditLadder = @{ 5 = 3; 9 = 4; 14 = 2 }
 # 3.1 Bandit boss: the gates map to SubCharBandit02..06Boss at levels 6/10/16/21/28.
 #     PINNED to a single rung, NOT the "16 x2 · 21 x2 · 28 x1" band archetype-tiers.md 3.1
 #     specifies. Twist 2's authoring rule decides it: every rung of this ladder displays the SAME
@@ -101,7 +100,7 @@ foreach ($d in @(
     @('037C2A:Skyrim.esm',    'LCharBanditOnlyOrcM'),
     @('008BF7:Dawnguard.esm', 'LCharBanditMeleeKhajiitM'),
     @('008BF8:Dawnguard.esm', 'LCharBanditMissileKhajiitM'),
-    # Gates 1/9/14/19/24 - no gate 5, so the ladder yields Bandit x3 · Thug x2 · Highwayman x1.
+    # Gates 1/9/14/19/24 - no gate 5, so the ladder yields Thug x4 · Highwayman x2.
     # Same T1-T3 band as its nine LCharBanditWizard* siblings above.
     @('0EE523:Skyrim.esm',    'LCharBanditWizardOmit01'))) {
     Add-Spec $d[0] $d[1] @{ Gates = $banditLadder }

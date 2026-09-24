@@ -2,6 +2,7 @@ FormKey: 03DF1A:Skyrim.esm
 EditorID: LItemBanditBossBoots
 Version2: 9
 Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
 - Data:
@@ -15,4 +16,8 @@ Entries:
 - Data:
     Level: 1
     Reference: 01395B:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01CD96:Dragonborn.esm
     Count: 1

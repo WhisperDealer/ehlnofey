@@ -1,0 +1,481 @@
+FormKey: 0008BF:ccbgssse001-fish.esm
+EditorID: ccBGSSSE001_DLCDetectionQuest
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 0008BF:ccbgssse001-fish.esm
+      Alias: 0
+    Scripts:
+    - Name: ccBGSSSE001_DLCDetectionScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BYOHHouse1HoldingChestRoom12
+        Object: 003B1F:HearthFires.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BYOHHouse1LocationInterior
+        Object: 003092:HearthFires.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BYOHHouse2HoldingChestRoom12
+        Object: 00BE29:HearthFires.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BYOHHouse2LocationInterior
+        Object: 00BE0A:HearthFires.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BYOHHouse3HoldingChestRoom12
+        Object: 010FCC:HearthFires.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BYOHHouse3LocationInterior
+        Object: 00BE1D:HearthFires.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BYOHHouseBuildingRoom12MasterList
+        Object: 003AF8:HearthFires.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BYOHHouseFishContainerList
+        Object: 0008EF:HearthFires.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BYOHHouseInteriorPart021WallShelvesx2_02
+        Object: 005A28:HearthFires.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BYOHHouseInteriorPart185VampireCoffin01
+        Object: 00F39F:HearthFires.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BYOHLItemKhajiitCaravans
+        Object: 000915:HearthFires.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_BYOHAllFishingSpecificUpgradeMiscItems
+        Object: 000E2C:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_BYOHHouse1UpgradeList
+        Object: 000E2F:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_BYOHHouse2UpgradeList
+        Object: 000E2E:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_BYOHHouse3UpgradeList
+        Object: 000E2D:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_BYOHMiscObjectList
+        Object: 000E30:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_ClothesCollegeBootsVagrant
+        Object: 000E4C:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_ClothesCollegeHoodVagrant
+        Object: 000E4B:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_ClothesCollegeRobesVagrant
+        Object: 000E4A:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_ClothesCollegeRobesVagrantConjuration01
+        Object: 04D04D:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_ClothesCollegeRobesVagrantConjuration02
+        Object: 04D04C:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_ClothesCollegeRobesVagrantConjuration03
+        Object: 04D049:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_ClothesCollegeRobesVagrantConjuration04
+        Object: 000E53:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_ClothesCollegeRobesVagrantConjuration05
+        Object: 04D04A:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_ClothesFishingBoots
+        Object: 0008E1:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_ClothesFishingClothes
+        Object: 0008E2:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_ClothesFishingHat
+        Object: 0008E4:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_DraugrDagger
+        Object: 000E44:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_DraugrDaggerHoned
+        Object: 08A1ED:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_DraugrMace
+        Object: 000E46:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_DraugrMaceHoned
+        Object: 08A1EE:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_DraugrWarhammer
+        Object: 000E47:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_DraugrWarhammerHoned
+        Object: 08A1EF:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_FishingMapsAll
+        Object: 1223C9:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_FishingRodImperialWeap
+        Object: 00084F:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_FoodBucketFishCooked
+        Object: 00087C:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_FoodCrabMeat
+        Object: 000EFE:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_FoodCuckooCatfishCooked
+        Object: 00087F:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_FoodTunaSalmonCooked
+        Object: 00088A:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_HelpFishingLong
+        Object: 04D034:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_HelpFishingLongXbox
+        Object: 04D035:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_LineAndLure
+        Object: 0008E5:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_LItemFoodFishBucketFish25
+        Object: 0008BE:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_LItemFoodFishCarp25
+        Object: 0008BD:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_MudcrabAmuletUnenchanted
+        Object: 1D8FF2:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_ShowedCatchPromptThisSession
+        Object: 038BD4:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_ShowedReelPromptThisSession
+        Object: 038BD3:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_SwimsInDeepWaters
+        Object: 0008F8:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_VersionCurrent
+        Object: 0EA5B9:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_VersionLastKnown
+        Object: 0EA5B8:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ccBGSSSE001_Viriya
+        Object: 0008F6:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DeathItemMudCrab01
+        Object: 1017B8:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DeathItemMudCrab02
+        Object: 1017B9:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DeathItemMudCrab03
+        Object: 1017BA:Skyrim.esm
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: FishAtHouse01Plaques
+        Objects:
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 0
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 8
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 7
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 6
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 5
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 4
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 3
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 2
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 1
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: FishAtHouse02Plaques
+        Objects:
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 9
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 17
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 16
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 15
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 14
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 13
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 12
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 11
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 10
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: FishAtHouse03Plaques
+        Objects:
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 18
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 26
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 25
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 24
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 23
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 22
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 21
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 20
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 19
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: FishAtProudspireManorPlaques
+        Objects:
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 27
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 29
+        - Name: ''
+          Object: 000F4E:ccbgssse001-fish.esm
+          Alias: 28
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: hatcheryFishFood
+        Objects:
+        - Name: ''
+          Object: 0008A4:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008A3:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008A2:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 00089C:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008A1:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000898:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000897:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000896:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008A0:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 00089E:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000891:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 00088B:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: hatcheryFishIngredient
+        Objects:
+        - Name: ''
+          Object: 0008EB:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008F0:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008EE:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008EF:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008F1:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008EC:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008ED:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008F3:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: HelpManualPC
+        Object: 000163:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: HelpManualXBox
+        Object: 000165:Skyrim.esm
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: House01FishPlaques
+        Objects:
+        - Name: ''
+          Object: 000F43:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000F35:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000F34:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000F57:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000F5D:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000F5A:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000F3C:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000F47:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000F3F:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: House02FishPlaques
+        Objects:
+        - Name: ''
+          Object: 05C617:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C618:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C619:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C63B:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C63C:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C63D:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C675:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C676:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C677:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: House03FishPlaques
+        Objects:
+        - Name: ''
+          Object: 05C629:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C62A:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C62B:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C64D:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C64E:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C64F:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C687:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C688:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 05C689:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LItemBook0All
+        Object: 03FFFB:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LItemBookClutter
+        Object: 0D9F89:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LItemClothesAll
+        Object: 106662:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LItemClothesWork
+        Object: 09AF16:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LItemFoodFishList
+        Object: 10CD5E:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LItemFoodInnCommon
+        Object: 098E5F:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LItemFoodInnCommon10
+        Object: 10E0E1:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LItemMiscVendorMiscItems75
+        Object: 09AF0A:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LootToolRandom05
+        Object: 10E0E2:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: PlayerRef
+        Object: 000014:Skyrim.esm
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: ProudspireManorFishPlaques
+        Objects:
+        - Name: ''
+          Object: 12C60A:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 12C60D:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 12C5FB:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: rawFish
+        Objects:
+        - Name: ''
+          Object: 000890:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008A4:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008A3:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008A2:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 00089C:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008A1:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000898:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000EFE:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000897:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000896:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 0008A0:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 00089B:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000F25:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 00089E:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 000891:ccbgssse001-fish.esm
+        - Name: ''
+          Object: 00088B:ccbgssse001-fish.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: RiftenFisheryLockList
+        Object: 016C32:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SolitudeProudspireManorLocation
+        Object: 020098:Skyrim.esm
+Flags:
+- StartGameEnabled
+- 0x10
+- RunOnce
+NextAliasID: 1
+Aliases:
+- Name: Player
+  Flags: []
+  ForcedReference: 000014:Skyrim.esm
+  VoiceTypes: Null

@@ -1,0 +1,261 @@
+FormKey: 0008B7:ccvsvsse003-necroarts.esl
+VersionControl: 1977941
+EditorID: ccVSVSSE003_MainQuest
+Version2: 1
+VirtualMachineAdapter:
+  Scripts:
+  - Name: ccstartafterchargenscript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ101
+      Object: 03372B:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: MyQuestStageToSet
+  - Name: ccVSVSSE003_NA_MainQuest
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CCLItemSpellTomes100Phinis
+      Object: 003149:Update.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro02BossBretonF
+      Object: 000935:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro02BossBretonM
+      Object: 000936:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro02BossHighElfF
+      Object: 000937:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro02BossHighElfM
+      Object: 000938:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro03BossBretonF
+      Object: 000931:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro03BossBretonM
+      Object: 000932:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro03BossHighElfF
+      Object: 000933:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro03BossHighElfM
+      Object: 000934:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro04BossBretonF
+      Object: 00092D:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro04BossBretonM
+      Object: 00092E:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro04BossHighElfF
+      Object: 00092F:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro04BossHighElfM
+      Object: 000930:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro05BossBretonF
+      Object: 000929:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro05BossBretonM
+      Object: 00092A:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro05BossHighElfF
+      Object: 00092B:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro05BossHighElfM
+      Object: 00092C:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro06BossBretonF
+      Object: 000923:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro06BossBretonM
+      Object: 000924:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro06BossHighElfF
+      Object: 000925:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro06BossHighElfM
+      Object: 000926:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro07BretonF
+      Object: 000927:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_EncWarlockNecro07HighElfM
+      Object: 000928:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_LITEM_SpellTomes00
+      Object: 000942:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_LITEM_SpellTomes100
+      Object: 000946:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_LITEM_SpellTomes25
+      Object: 000943:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_LITEM_SpellTomes50
+      Object: 000944:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccVSVSSE003_LITEM_SpellTomes75
+      Object: 000945:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LCharWarlock02BossNecro
+      Object: 0E104A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LCharWarlock03BossNecro
+      Object: 0E104B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LCharWarlock03Necro
+      Object: 0551E2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LCharWarlock04BossNecro
+      Object: 0E104C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LCharWarlock04Necro
+      Object: 0551E3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LCharWarlock05BossNecro
+      Object: 0E104D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LCharWarlock05Necro
+      Object: 0551E4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LCharWarlock06BossNecro
+      Object: 0E104E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LCharWarlock06Necro
+      Object: 0551E5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LCharWarlock07Necro
+      Object: 1091C9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: litemRobes
+      Object: 00093D:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: litemSpellTomes
+      Object: 000947:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LootWarlockSpellTomes00All15
+      Object: 04C165:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: phinisMerchantChest
+      Object: 098BA7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: playerPerks
+      Objects:
+      - Name: ''
+        Object: 0008D2:ccvsvsse003-necroarts.esl
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: robeLeveledLists
+      Objects:
+      - Name: ''
+        Object: 105253:Skyrim.esm
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: spellTomeLeveledLists
+      Objects:
+      - Name: ''
+        Object: 03515E:Skyrim.esm
+      - Name: ''
+        Object: 07103B:Skyrim.esm
+    - MutagenObjectType: ScriptIntListProperty
+      Name: spellTomeLevels
+      Data:
+      - 1
+      - 1
+      - 10
+      - 10
+      - 10
+      - 20
+      - 20
+      - 20
+      - 20
+      - 35
+      - 35
+      - 46
+      - 46
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: spellTomes
+      Objects:
+      - Name: ''
+        Object: 00088A:ccvsvsse003-necroarts.esl
+      - Name: ''
+        Object: 00088C:ccvsvsse003-necroarts.esl
+      - Name: ''
+        Object: 00088F:ccvsvsse003-necroarts.esl
+      - Name: ''
+        Object: 000894:ccvsvsse003-necroarts.esl
+      - Name: ''
+        Object: 000896:ccvsvsse003-necroarts.esl
+      - Name: ''
+        Object: 000889:ccvsvsse003-necroarts.esl
+      - Name: ''
+        Object: 00088D:ccvsvsse003-necroarts.esl
+      - Name: ''
+        Object: 000890:ccvsvsse003-necroarts.esl
+      - Name: ''
+        Object: 000893:ccvsvsse003-necroarts.esl
+      - Name: ''
+        Object: 00088E:ccvsvsse003-necroarts.esl
+      - Name: ''
+        Object: 000892:ccvsvsse003-necroarts.esl
+      - Name: ''
+        Object: 00088B:ccvsvsse003-necroarts.esl
+      - Name: ''
+        Object: 000891:ccvsvsse003-necroarts.esl
+  - Name: ccVSVSSE003_QF_MainQuest
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TorturedShade1
+      Object: 0008B7:ccvsvsse003-necroarts.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TorturedShade2
+      Object: 0008B7:ccvsvsse003-necroarts.esl
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TorturedShade3
+      Object: 0008B7:ccvsvsse003-necroarts.esl
+      Alias: 2
+  FileName: ccVSVSSE003_QF_MainQuest
+  Fragments:
+  - Unknown2: 1
+    ScriptName: ccVSVSSE003_QF_MainQuest
+    FragmentName: Fragment_2
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: ccVSVSSE003_QF_MainQuest
+    FragmentName: Fragment_0
+Name:
+  TargetLanguage: English
+  Value: Necromantic Arts
+Flags:
+- RunOnce
+QuestFormVersion: 0
+Stages:
+- Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 10
+  LogEntries:
+  - Flags: []
+- Index: 200
+  Flags:
+  - ShutDownStage
+  LogEntries:
+  - Flags: []
+NextAliasID: 3
+Aliases:
+- Name: TorturedShade1
+  Flags:
+  - Optional
+  VoiceTypes: Null
+- ID: 1
+  Name: TorturedShade2
+  Flags:
+  - Optional
+  VoiceTypes: Null
+- ID: 2
+  Name: TorturedShade3
+  Flags:
+  - Optional
+  VoiceTypes: Null

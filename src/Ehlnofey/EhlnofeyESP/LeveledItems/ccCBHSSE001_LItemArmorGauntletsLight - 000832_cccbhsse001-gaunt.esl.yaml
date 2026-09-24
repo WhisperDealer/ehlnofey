@@ -1,0 +1,54 @@
+FormKey: 000832:cccbhsse001-gaunt.esl
+EditorID: ccCBHSSE001_LItemArmorGauntletsLight
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+- CalculateForEachItemInCount
+Entries:
+- Data:
+    Level: 1
+    Reference: 00080A:cccbhsse001-gaunt.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00080A:cccbhsse001-gaunt.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00080A:cccbhsse001-gaunt.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00080A:cccbhsse001-gaunt.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000803:cccbhsse001-gaunt.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000803:cccbhsse001-gaunt.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000805:cccbhsse001-gaunt.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000805:cccbhsse001-gaunt.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000800:cccbhsse001-gaunt.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000809:cccbhsse001-gaunt.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000802:cccbhsse001-gaunt.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00081F:cccbhsse001-gaunt.esl
+    Count: 1

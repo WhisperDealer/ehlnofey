@@ -1,0 +1,30 @@
+FormKey: 000810:ccbgssse002-exoticarrows.esl
+EditorID: ccBGSSSE002_LItemArrowMagicAny_Vendor
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+- CalculateForEachItemInCount
+Entries:
+- Data:
+    Level: 1
+    Reference: 000830:ccbgssse002-exoticarrows.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000832:ccbgssse002-exoticarrows.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00082F:ccbgssse002-exoticarrows.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000831:ccbgssse002-exoticarrows.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000834:ccbgssse002-exoticarrows.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00082E:ccbgssse002-exoticarrows.esl
+    Count: 1

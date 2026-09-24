@@ -267,14 +267,37 @@ legible if its rungs have *different names*, and the bandit boss ladder's do not
 Warlock, Thalmor, Vampire) and are an open decision.
 
 **Generators, and the order they must run in:** `author-constants.ps1` → `extract-requiem.ps1` →
-`author-bucket-d.ps1` → `author-names.ps1` → `author-cc-compat.ps1`, then deserialize → re-serialize →
-adopt Spriggit's output as the source. `author-cc-compat.ps1` reads `reference/mods/CreationClubYaml/`
-(Spriggit decompiles of the CC plugins in the Baseline modlist's `mods/Creation Club Files`).
+`author-bucket-d.ps1` → `author-injectors.ps1`, then deserialize → re-serialize →
+adopt Spriggit's output as the source. `author-injectors.ps1` (was `author-cc-compat.ps1`) reads
+`reference/Base/` and `reference/mods/CreationClubYaml/` (Spriggit decompiles of the CC plugins in the
+Baseline modlist's `mods/Creation Club Files`).
 
 **Creation Club is a hard requirement since 2026-09-23** (user decision: AE is near-universal). The
 plugin takes the 15 Bandit Armor packs (`ccbgssse050`–`064-ba_*.esl`) as masters and overrides their
 injector quests — see the "runtime `AddForm`" gotcha below. **Verified in game 2026-09-23:** on a
 fresh chargen start, the Robber's Gorge and Swindler's Den chiefs are both level 28 (were 6).
+
+**Dragonborn's `DLC2Init` 016E02 is overridden the same way** (2026-09-24): its start-up fragment
+injected Nordic weapons (gate 23) and armor (gate 25) into every bandit and bandit-chief gear list, plus
+Hulking Draugr (gate 26) into `LCharDraugrMelee1HMale`. Chiefs wore iron at player level 1 and full
+Nordic at 40. The 24 list properties are removed; Nordic gear is put back **by place** as one level-1
+entry in each of the 11 `LItemBanditBoss*` lists (user decision), which also now all carry
+`CalculateFromAllLevelsLessThanOrEqualPlayer`. Built clean; **not yet verified in game.**
+
+**The injector audit is done** (2026-09-24): 28 quests across the base game, DLC and all 74 CC plugins
+hold leveled-list properties. **Six more re-levelled our lists** and are now handled the same way
+(user decision: keep the CC content, re-add it by place at level 1): `ccvsvsse003-necroarts`
+(necromancer bosses on a 1–46 ladder into the three voice-boss lists; the CC boss of each tier the pinned
+list already holds is added), `ccbgssse001-fish` (honed draugr weapons 12–24, conjurer robes 1–40),
+`ccbgssse014-spellpack01` (master robes 1–40), `ccbgssse002-exoticarrows` (magic arrows 10–30 into bandit
+and vampire arrows, a gated sublist into arrow loot), `ccasvsse001-almsivi` (Ordinator gear at 36 into 13
+Solstheim lists), `cccbhsse001-gaunt` (injects at 1, but its own sublists gate 1–48 — those two
+sublists are flattened, the quest is left alone). Only the offending properties are stripped, so each
+quest's harmless level-1 injections (spell tomes, books, food, clothes) still run. The rest — Dawnguard
+books, Hearthfire food and children's clothes, and ~15 CC packs — inject flat and were left alone.
+**The plugin now has 26 masters**: the five base masters (Hearthfire included — see Naming) plus 21 CC
+plugins. Overriding CC quests collapses their 9-language strings to English (the non-localized-`.esp`
+gotcha), so non-English players see English text in those quests.
 
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs.
@@ -548,7 +571,10 @@ Fixed now so Phase 4 does not have to argue about it:
   `Update.esm`, `Dawnguard.esm`, `Dragonborn.esm`. Hearthfire is excluded — it adds no worldspace,
   region, dungeon or encounter zone, so taking it as a master would buy nothing.
   **Revised 2026-09-23:** plus the 15 Creation Club Bandit Armor `.esl` packs, so their runtime
-  leveled-list injections can be neutralised (`author-cc-compat.ps1`).
+  leveled-list injections can be neutralised (`author-injectors.ps1`). **Revised 2026-09-24:** plus 6
+  more CC plugins (21 in all), and **`HearthFires.esm` is now a master** — not for Hearthfire content,
+  but because the overridden `ccbgssse001-fish` DLC-detection quest holds properties pointing at
+  Hearthfire records, and Spriggit cannot write a FormKey whose plugin is not a master.
 - **EditorID prefix:** `EHL_`, then the domain, then the specific: `EHL_LVLI_DraugrBossHoard_T4`,
   `EHL_ECZN_BleakFalls`. Tier suffixes are `_T<n>` against the ladder in `design/tiers.md`.
 - **New records** start at `0x800` and are allocated in a **contiguous block per feature** (one block
@@ -625,9 +651,10 @@ Fill this as the project teaches you things.
   "Bandit Outlaw") changed nothing in game — so it is not walked the way that implies. Ruled out:
   stale deploy (byte-identical), load order (`Ehlnofey.esp` loads last), and the record not being
   written (read back out of the built binary).
-  **The working practice:** name *all* records in the rung — templates and every leaf — as
-  `author-names.ps1` does for the 44 `EncBandit01*`. Records are cheap; a failed in-game test cycle
-  is not.
+  **Naming all 44 `EncBandit01*` records (templates and every leaf) failed in game too** — still
+  "Bandit". The rename was reverted on 2026-09-24 and `author-names.ps1` deleted; the level-1 rung is
+  now dropped from the roster instead. **Do not attempt another display-name change on a leveled
+  rung without first finding, in game, which record the nameplate actually reads.**
   ⚠️ **This undermines `design/archetype-tiers.md` §3.1.1's premise**, which asserts that all rungs of
   `LCharBanditBoss` display "Bandit Chief" because the name falls through to `LvlBanditBoss` 03DF17.
   That was never observed on a nameplate, only inferred from the same broken model. Pinning the chief
@@ -771,6 +798,13 @@ Fill this as the project teaches you things.
   (no chargen, so no injection) and via `placeatme` (no `LevelModifier`). **Before concluding a list
   is what the plugin says, grep `reference/` quest/script properties for its FormKey**, and read the
   levels from the fragment `.pex` (the CC packs ship no `.psc`). `[verified]` in game, 2026-09-23.
+  **Vanilla does it too:** `DLC2Init` (Dragonborn) injects into 23 bandit gear lists and a draugr list;
+  its fragment is `scripts\dlc2_qf_dlc2_mq04_02016e02.pex` in `Skyrim - Misc.bsa`. Scan for these with
+  an awk over `Quests/*.yaml` for `Script*Property` names matching `^(DLC[12])?L(Char|[Ii]tem)`.
+  Two traps when reading them: a property block sits at 4-space indent on a quest script but **6 on an
+  alias script** (the fish pack), so read the indent rather than assume it; and an injection at level 1
+  can still be a leak when **what it injects is itself a gated sublist** (the gauntlet pack) — check
+  the injected form's own gates.
 - **`VeryHard` + a single-entry flattened list = always the next entry up.** The bump rule ("if the
   VeryHard pick equals the Hard pick, take the next-higher entry regardless of level",
   `design/engine-behaviour.md` §4) is harmless while a pinned list has one entry, but the moment

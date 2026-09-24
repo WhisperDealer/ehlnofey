@@ -91,7 +91,7 @@ The main table. `Vanilla rungs` are name (level) from `lore-constraints.md` §1 
 
 | Archetype | List | Vanilla rungs | **Ehlnofey roster** | Band |
 |---|---|---|---|---|
-| **Bandit** | `LCharBanditMelee1H` 039CFC &c. | Bandit 1 · Outlaw 5 · Thug 9 · Highwayman 14 · Plunderer 19 · Marauder 25 | **Runt ×1** · **Outlaw ×4** · Thug ×3 · Highwayman ×1 | **T2** (T1–T3) |
+| **Bandit** | `LCharBanditMelee1H` 039CFC &c. | Bandit 1 · Outlaw 5 · Thug 9 · Highwayman 14 · Plunderer 19 · Marauder 25 | **Outlaw ×3** · **Thug ×4** · Highwayman ×2 | **T2** (T2–T3) |
 | Bandit boss | `LCharBanditBoss` 03DF16 | 6 · 10 · 16 · 21 · 28 | **28 only** (pinned — see 3.1.1) | **T5** |
 | **Orc melee** | `LCharOrcMelee` 01E780 | reuses bandit records | Outlaw ×1 · Thug ×3 · **Highwayman ×3** · Plunderer ×1 | **T3** (T2–T4) |
 | **Forsworn** | `LCharForswornMelee1H` 01E792 | Forsworn 1 · Forager 6 · Looter 14 · Pillager 24 · Ravager 34 · Warlord 46 | Forsworn ×2 · Forager ×3 · **Looter ×3** · Pillager ×1 | **T3** (T1–T4) |
@@ -159,47 +159,21 @@ nameless, and it is the rung the placed base's own name already describes.
 consistent move, but it re-tiers four archetypes; the alternative is to author distinct rung names,
 which invents lore vocabulary and makes `lore-constraints.md` the arbiter.
 
-**The level-1 rung is rare, and it is called Bandit Runt** (revised 2026-07-30, after play).
+**The level-1 rung is dropped** (revised 2026-09-24, after play; supersedes the 2026-07-30
+"rare, and called Bandit Runt" revision).
 
-It was `×3` — a third of every bandit drawn was the level-1 rung, which made a T2 archetype feel like
-a T1 one. It is now `×1`, as rare as Highwayman at the top. The freed weight went to Outlaw and Thug
-in the old 3:2:1 proportion (→ 4:3:1), so the roster's *shape* is unchanged and only the runt moved.
-The pool is still 9 entries, so the odds read cleanly: **1/9 · 4/9 · 3/9 · 1/9**, and the mean drawn
-level rises from 5.6 to 6.9 — much closer to T2's 8.
+The roster is now **Outlaw ×3 · Thug ×4 · Highwayman ×2** — gates 5/9/14, odds 3/9 · 4/9 · 2/9, mean
+drawn level 9.1. The level-1 rung goes the way Plunderer and Marauder already had: out of every mook
+list. Chiefs are unaffected (pinned at 28, §3.1.1).
 
-The rename is **the mod's first invented display name**, and it is deliberately the safest possible
-one: it extends an existing ladder downward rather than inventing new tiers, and the rung it names
-had no name of its own. Vanilla leaves all 44 `EncBandit01*` records with **no `FULL`**, so a level-1
-bandit reads "Bandit" — inherited from `EncBandit00Template` 039CF4, the shared root of the family.
-
-> **The first attempt failed in game, and the reason is still unknown** (2026-07-31). Every rung
-> above 1 carries its `FULL` on a per-weapon *template* record — `EncBandit02TemplateMelee` is
-> "Bandit Outlaw" — while that rung's per-race leaves carry none and do **not** set the `Traits`
-> template flag. So naming the three `EncBandit01Template*` records should have worked by exact
-> analogy. It did not: level-1 bandits still read "Bandit".
->
-> It was not a stale file or a conflict. The deployed plugin was byte-identical to the build, the
-> name was confirmed present by serializing the built binary back out, and `Ehlnofey.esp` loads
-> **last** in the test bed, so it wins every conflict. The model of how a nameless leaf resolves its
-> `FULL` is simply wrong, and this workspace cannot test the engine directly to find out how.
->
-> **The fix does not depend on knowing.** `author-names.ps1` now names **all 44 records in the
-> rung** — 3 templates plus 41 leaves (1H, 2H, Tank, Berserk, Magic, Missile, per race and sex) —
-> so whichever record the engine actually reads, it finds the same string. Redundant under the
-> inheritance model, correct under every model. This is the cheaper trade: records cost bytes, and
-> another failed in-game test cycle costs a session.
-
-`EncBandit00Template` 039CF4 is **left alone** and still reads "Bandit", so anything outside this
-rung that falls through to it is untouched. Two non-bandits do template off the rung's records:
-`encGhost01Magic` carries its own `FULL` ("Ghost") and is unaffected, and `dunLiarsRetreatWenchCorpse`
-has none, so it becomes "Bandit Runt" — a dead level-1 bandit in a bandit dungeon that reads
-"Bandit" today, which is correct, if drier. `DEMO_Bandit1HNordM` and `WarehouseNPCWebActorSit` are
-dev-only records that are never placed in the playable world.
-
-> **Consistency note.** §3.1.1 chose to *pin* the bandit chief rather than invent names for its
-> rungs, and four boss families are still open on that basis. Naming the runt does not reopen it:
-> "Runt" sits below an existing six-name ladder, where the boss case would need three new coinages
-> inserted *into* one. If that ever becomes acceptable, §3.1.1's second option unblocks.
+The 2026-07-30 revision kept the rung at ×1 and renamed it "Bandit Runt" — the mod's first invented
+display name. **It never showed in game**, first with `FULL` on the three `EncBandit01Template*`
+records, then on all 44 `EncBandit01*` records (`author-names.ps1`). Level-1 bandits still read
+"Bandit". The deploy was byte-identical, the name was read back from the built binary, and
+`Ehlnofey.esp` loads last, so the model of how a nameless leaf resolves its `FULL` is simply wrong
+(see the CLAUDE.md gotcha). A rung that cannot be named apart from the family fails the legibility
+test, so it was removed rather than renamed, and the 44 `NPC_` overrides were deleted with
+`author-names.ps1` — they changed nothing visible and would only have conflicted with other mods.
 
 **Vigilants are the precedent, not the bug.** `enemy-taxonomy.md` §2.1 flags them as the one vanilla
 humanoid faction that already satisfies bone 1. They need no edit and they are proof the shape works.

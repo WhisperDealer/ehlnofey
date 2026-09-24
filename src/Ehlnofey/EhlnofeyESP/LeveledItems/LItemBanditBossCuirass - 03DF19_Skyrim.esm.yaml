@@ -2,6 +2,7 @@ FormKey: 03DF19:Skyrim.esm
 EditorID: LItemBanditBossCuirass
 Version2: 7
 Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
 - Data:
@@ -19,4 +20,8 @@ Entries:
 - Data:
     Level: 1
     Reference: 01395C:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01CD97:Dragonborn.esm
     Count: 1

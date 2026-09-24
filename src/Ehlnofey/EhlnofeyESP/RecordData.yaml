@@ -17,7 +17,17 @@ ModHeader:
     FileSize: 0
   - Master: Dawnguard.esm
     FileSize: 0
+  - Master: HearthFires.esm
+    FileSize: 0
   - Master: Dragonborn.esm
+    FileSize: 0
+  - Master: ccasvsse001-almsivi.esm
+    FileSize: 0
+  - Master: ccbgssse001-fish.esm
+    FileSize: 0
+  - Master: ccbgssse002-exoticarrows.esl
+    FileSize: 0
+  - Master: ccbgssse014-spellpack01.esl
     FileSize: 0
   - Master: ccbgssse050-ba_daedric.esl
     FileSize: 0
@@ -48,5 +58,9 @@ ModHeader:
   - Master: ccbgssse051-ba_daedricmail.esl
     FileSize: 0
   - Master: ccbgssse057-ba_stalhrim.esl
+    FileSize: 0
+  - Master: ccvsvsse003-necroarts.esl
+    FileSize: 0
+  - Master: cccbhsse001-gaunt.esl
     FileSize: 0
   INTV: 1

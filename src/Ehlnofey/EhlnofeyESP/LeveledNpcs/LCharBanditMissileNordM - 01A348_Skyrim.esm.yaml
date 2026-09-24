@@ -9,14 +9,6 @@ Flags:
 Entries:
 - Data:
     Level: 1
-    Reference: 037C00:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 037C05:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
     Reference: 037C05:Skyrim.esm
     Count: 1
 - Data:
@@ -38,6 +30,14 @@ Entries:
 - Data:
     Level: 1
     Reference: 037C32:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 037C32:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 037C39:Skyrim.esm
     Count: 1
 - Data:
     Level: 1

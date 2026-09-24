@@ -3,6 +3,7 @@ EditorID: LItemBanditBossGauntlets50
 Version2: 9
 ChanceNone: 0.5
 Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
 - Data:
@@ -16,4 +17,8 @@ Entries:
 - Data:
     Level: 1
     Reference: 01395D:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01CD98:Dragonborn.esm
     Count: 1
