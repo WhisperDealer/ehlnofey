@@ -106,9 +106,12 @@ foreach ($d in @(
     Add-Spec $d[0] $d[1] @{ Gates = $banditLadder }
 }
 
-# ---- Orc stronghold (3.1): "reuses bandit records", but its own roster, one tier up.
-#      Outlaw x1 · Thug x3 · Highwayman x3 · Plunderer x1 = gates 5/9/14/19, T3 (T2-T4).
-Add-Spec '01E780:Skyrim.esm' 'LCharOrcMelee' @{ Gates = @{ 5 = 1; 9 = 3; 14 = 3; 19 = 1 } }
+# ---- Hostile Orc camps: Highwayman x3 · Plunderer x4 · Marauder x2 = gates 14/19/25 (user, 2026-09-24).
+#      The ordinary bandit roster's 3:4:2 shape, two ranks up. NOT the Orc strongholds (3.1 called it
+#      that; wrong): LCharOrcMelee is placed only outside Cracked Tusk Keep and Rift Watchtower. Its two
+#      other users, the Largashbur defenders (DA06LvlOrcMelee) and the Old Orc (WE24Orc), are retargeted
+#      to LCharBanditMeleeOrcM by author-orc-camps.ps1 so they keep the ordinary mix.
+Add-Spec '01E780:Skyrim.esm' 'LCharOrcMelee' @{ Gates = @{ 14 = 3; 19 = 4; 25 = 2 } }
 
 # ---- bandit bosses (3.1)
 foreach ($d in @(

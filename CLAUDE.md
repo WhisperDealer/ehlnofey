@@ -267,7 +267,7 @@ legible if its rungs have *different names*, and the bandit boss ladder's do not
 Warlock, Thalmor, Vampire) and are an open decision.
 
 **Generators, and the order they must run in:** `author-constants.ps1` → `extract-requiem.ps1` →
-`author-bucket-d.ps1` → `author-injectors.ps1`, then deserialize → re-serialize →
+`author-bucket-d.ps1` → `author-injectors.ps1` → `author-orc-camps.ps1`, then deserialize → re-serialize →
 adopt Spriggit's output as the source. `author-injectors.ps1` (was `author-cc-compat.ps1`) reads
 `reference/Base/` and `reference/mods/CreationClubYaml/` (Spriggit decompiles of the CC plugins in the
 Baseline modlist's `mods/Creation Club Files`).
@@ -303,7 +303,21 @@ gotcha), so non-English players see English text in those quests.
 levels 1 and 40): `author-injectors.ps1` removes plain iron armor and the enchanted iron weapons from 7
 `LItemBanditBoss*` lists. The armor lists also feed the no-shield chief outfit, three named outfits
 (Craglane's butcher, Fjola, Haldyn) and `DLC2LItemBanditArmorAll`, which lose the iron too. The Solstheim
-chief's own outfit (`DLC2BanditArmorBoss`: bonemold/chitin) never had any.
+chief's own outfit (`DLC2BanditArmorBoss`: bonemold/chitin) never had any. Glass and ebony are excluded from every
+bandit list as well (the enchanted glass mace was the only one). **Archers always carry a bow** (Requiem's
+`LItemBanditWeaponBow` pointed half its entries at the melee lists) and **bandit arrows are 90% iron /
+10% fire** — the CC bone arrow (26 damage, above Daedric) is dropped. Both lists are shared with Thalmor,
+Penitus Oculatus, embassy guards and Dremora archers, who get the same fix. All in `author-injectors.ps1`'s
+cuts/weights table.
+
+**Hostile Orc camps** (Cracked Tusk Keep, Bilegulch Mine, Rift Watchtower; 2026-09-24) are **not** the
+Orc strongholds — `archetype-tiers.md` §3.1 conflated them. `LCharOrcMelee` is now Highwayman ×3 ·
+Plunderer ×4 · Marauder ×2; `author-orc-camps.ps1` retargets its two non-camp users (Largashbur's
+`DA06LvlOrcMelee`, the Old Orc `WE24Orc`) to the ordinary Orc-bandit list, points Bilegulch's
+`LvlBanditMissileOrcM` at the Orc Hunter list, and raises `EncOrcHunterTemplate` from **level 1** (every
+Orc Hunter rank inherits it — vanilla's archers were all level 1) to 19. Three ordinary Orc bandits placed
+directly in those cells stay on the shared bandit list (no cell edits, user decision). Re-asked after play
+(2026-09-25) and declined again once the cost was clear: two of the three are in *exterior* cells.
 
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
@@ -814,6 +828,13 @@ Fill this as the project teaches you things.
   alias script** (the fish pack), so read the indent rather than assume it; and an injection at level 1
   can still be a leak when **what it injects is itself a gated sublist** (the gauntlet pack) — check
   the injected form's own gates.
+- **Overriding anything in an exterior cell means overriding the whole worldspace record.** In the
+  plugin format an exterior `CELL` sits inside its `WRLD` group, so moving even one placed ref outside
+  Bilegulch Mine drags in a full copy of **Tamriel** `00003C` — climate, water, map data, LOD settings,
+  `OffsetData` and a `LargeReferences` table (~337k YAML lines in `reference/Base/01Skyrim`), copied from
+  the winning master (Dragonborn; Update, Dawnguard and Hearthfire also override it). Loading last,
+  Ehlnofey would then win over every weather/water/map/LOD mod that edits Tamriel. Interior cells carry
+  no such cost. Prefer retargeting a base record that only that place uses. `[verified]` 2026-09-25.
 - **`VeryHard` + a single-entry flattened list = always the next entry up.** The bump rule ("if the
   VeryHard pick equals the Hard pick, take the next-higher entry regardless of level",
   `design/engine-behaviour.md` §4) is harmless while a pinned list has one entry, but the moment

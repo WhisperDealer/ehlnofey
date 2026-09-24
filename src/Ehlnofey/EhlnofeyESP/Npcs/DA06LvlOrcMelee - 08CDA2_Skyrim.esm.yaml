@@ -1,0 +1,215 @@
+FormKey: 08CDA2:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+VersionControl: 1978415
+EditorID: DA06LvlOrcMelee
+Version2: 2
+SkyrimMajorRecordFlags:
+- Compressed
+Configuration:
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - SpellList
+  - AIPackages
+  - ModelAnimation
+  - Inventory
+  - Script
+  - DefPackList
+Factions:
+- Faction: 024029:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 046025:Skyrim.esm
+  Fluff: 0x000000
+Template: 01B0E9:Skyrim.esm
+Race: 013747:Skyrim.esm
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Class: 017008:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Orc
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 5
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 55
+  Magicka: 37
+  Stamina: 49
+  GearedUpWeapons: 1
+HeadParts:
+- 04022A:Skyrim.esm
+- 05E810:Skyrim.esm
+- 0CDDAD:Skyrim.esm
+- 0E4E2B:Skyrim.esm
+- 107618:Skyrim.esm
+HairColor: 0F7565:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 100
+SoundLevel: Normal
+HeadTexture: 0D072C:Skyrim.esm
+TextureLighting: '#0059715C'
+FaceMorph:
+  NoseLongVsShort: -0.6
+  NoseUpVsDown: 0.7
+  JawUpVsDown: 0.34
+  JawNarrowVsWide: -0.7
+  CheeksUpVsDown: 1
+  CheeksForwardVsBack: -1
+  EyesUpVsDown: 1
+  EyesInVsOut: -0.74
+  BrowsUpVsDown: -0.52
+  BrowsInVsOut: -0.72
+  LipsUpVsDown: 0.76
+  LipsInVsOut: -0.54
+  ChinNarrowVsWide: 0.14
+  ChinUnderbiteVsOverbite: 1
+  EyesForwardVsBack: -0.18
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 27
+  Unknown: 4294967295
+  Eyes: 22
+  Mouth: 29
+TintLayers:
+- Index: 2
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 71
+- Index: 3
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 76
+- Index: 8
+  Color: '#004B3C21'
+  InterpolationValue: 0.66
+  Preset: 93
+- Index: 14
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 110
+- Index: 15
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 134
+- Index: 16
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 158
+- Index: 17
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 182
+- Index: 18
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 206
+- Index: 19
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 230
+- Index: 20
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 255
+- Index: 23
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 279
+- Index: 21
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 303
+- Index: 24
+  Color: '#00240000'
+  InterpolationValue: 1
+  Preset: 335
+- Index: 25
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 475
+- Index: 50
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 480
+MajorFlags:
+- 0x40000

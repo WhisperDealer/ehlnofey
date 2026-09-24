@@ -171,7 +171,7 @@ $ccReadd = @(
     @{ List = '09AF09:Skyrim.esm'; Items = @(,@("000810:$arrows", 15)) }                        # LItemMiscVendorArrows75 <- vendor sublist (6x, gates 1..20)
     @{ List = '068839:Skyrim.esm'; Items = @(,@("000810:$arrows", 15)) }                        # LItemArrowsAll
     @{ List = '02BC16:Dragonborn.esm'; Items = @(,@("000810:$arrows", 15)) }                    # DLC2LItemArrowsAll
-    @{ List = '039D2F:Skyrim.esm'; Items = @(@("000830:$arrows", 12), @("00082E:$arrows", 12)) }   # LItemBanditWeaponArrows: fire (10), bone (30)
+    @{ List = '039D2F:Skyrim.esm'; Items = @(,@("000830:$arrows", 12)) }                        # LItemBanditWeaponArrows: fire (10). Bone (30) dropped: 26 damage
     @{ List = '02DF9F:Skyrim.esm'; Items = @(@("00082F:$arrows", 12), @("00082E:$arrows", 12)) }   # LItemVampireWeaponArrows: ice (14), bone (30)
     # almsivi: Ordinator armor and ebony mace/scimitar, all at gate 36
     @{ List = '0374EE:Dragonborn.esm'; Items = @(,@("000817:$alm", 1)) }   # DLC2LItemArmorBootsHeavyTown
@@ -240,41 +240,82 @@ foreach ($r in ($nordicChief + $ccReadd)) {
     $added += $new.Count
 }
 
-# ---------------------------------------------------------------- steel floor for bandit chiefs
-# User decision 2026-09-24, after play: a chief is the camp's T5 fight, so no iron - steel is the floor.
-# Removes the plain iron armor and the enchanted iron weapons from the chief lists. The same armor lists
-# also feed BanditArmorHeavyBossNoShieldOutfit, three named outfits (dunCraglsaneButcher,
-# dunMistwatchFjolaArmor, MS10Haldyn) and DLC2LItemBanditArmorAll; they lose the iron too, on purpose.
-$noIron = [ordered]@{
+# ---------------------------------------------------------------- cuts and weights on bandit lists
+# User decisions 2026-09-24, after play:
+#  - A chief is the camp's T5 fight, so no iron - steel is the floor; and bandits never carry glass or
+#    ebony (dungeon-hoard material). Removes the plain iron armor, enchanted iron weapons and the enchanted
+#    glass mace from the chief lists. A recursive scan of every LItemBandit*/LootBandit*/DeathItemBandit*
+#    list found no other glass or ebony gear (the only ebony left is an ingot in the shared
+#    LItemLootIMineralsProcessed loot pool). The chief armor lists also feed
+#    BanditArmorHeavyBossNoShieldOutfit, three named outfits (dunCraglsaneButcher, dunMistwatchFjolaArmor,
+#    MS10Haldyn) and DLC2LItemBanditArmorAll; they lose the iron too, on purpose.
+#  - An archer always has a bow. Requiem's LItemBanditWeaponBow points half its entries at the 1H and 2H
+#    melee lists, so ~50% of archers spawned bowless with a full quiver. Those entries are cut; archers
+#    keep the dagger their own inventory already carries. The list is shared with Thalmor archers, the
+#    embassy guards, Penitus Oculatus and a few quest archers - all of them gain the fix.
+#  - Bandit arrows: iron, with a 10% chance of fire. The CC bone arrow (26 damage, above Daedric's 24) is
+#    not re-added at all (see $ccReadd). The list is also the Dremora and Thalmor archers' arrow list.
+$cuts = [ordered]@{
     '03DF19' = @('012E49:Skyrim.esm', '013948:Skyrim.esm')   # LItemBanditBossCuirass     - ArmorIronCuirass, ArmorIronBandedCuirass
     '03DF1A' = @('012E4B:Skyrim.esm')                        # LItemBanditBossBoots       - ArmorIronBoots
     '03DF18' = @('012E46:Skyrim.esm')                        # LItemBanditBossGauntlets50 - ArmorIronGauntlets
     '03DF1B' = @('012E4D:Skyrim.esm')                        # LItemBanditBossHelmet50    - ArmorIronHelmet
-    '03DF1F' = @('0DDD98:Skyrim.esm')                        # LItemBanditBossMace        - LItemEnchIronMaceBoss
+    '03DF1F' = @('0DDD98:Skyrim.esm', '0DDD97:Skyrim.esm')   # LItemBanditBossMace        - LItemEnchIronMaceBoss, LItemEnchGlassMaceBoss
     '03DF1D' = @('0DDD90:Skyrim.esm')                        # LItemBanditBossSword       - LItemEnchIronSwordBoss
     '03DF20' = @('0DDDA0:Skyrim.esm')                        # LItemBanditBossWarAxe      - LItemEnchIronWarAxeBoss
+    '039D2E' = @('037C1B:Skyrim.esm', '037C21:Skyrim.esm')   # LItemBanditWeaponBow       - LItemBanditWeapon1H, LItemBanditWeapon2H
+    '039D2F' = @('00082E:ccbgssse002-exoticarrows.esl')      # LItemBanditWeaponArrows    - CC bone arrow (belt and braces: never re-added)
 }
-$removed = 0
-foreach ($id in $noIron.Keys) {
-    $path  = Find-ListFile "${id}:Skyrim.esm"
-    $lines = @(Get-Content -LiteralPath $path -Encoding UTF8)
-    # Entries are '- Data:' blocks; a block ends at the next '- ' or top-level line.
-    $out = New-Object System.Collections.ArrayList
-    $block = $null; $cut = 0
-    foreach ($l in @($lines) + @('')) {
-        if ($block -ne $null) {
-            if ($l -match '^  ') { [void]$block.Add($l); continue }
-            $ref = ($block | Where-Object { $_ -match '^    Reference: ' } | Select-Object -First 1) -replace '^    Reference: ', ''
-            if ($noIron[$id] -contains $ref) { $cut++ } else { [void]$out.AddRange($block) }
-            $block = $null
+# Weight = the exact number of entries a reference should have (entries are the engine's only weight).
+$weights = [ordered]@{
+    '039D2F' = [ordered]@{ '037C0D:Skyrim.esm' = 9 }         # LItemBanditWeaponArrows: BaseArrowIron75 x9 : fire x1 = 90 / 10
+}
+
+function Get-Blocks([string[]]$lines) {
+    # Splits a leveled list into head / '- Data:' entry blocks / tail. A block ends at the next '- ' or top-level line.
+    $head = New-Object System.Collections.ArrayList; $tail = New-Object System.Collections.ArrayList
+    $blocks = New-Object System.Collections.ArrayList
+    $cur = $null; $seen = $false
+    foreach ($l in $lines) {
+        if ($cur -ne $null) {
+            if ($l -match '^  ') { [void]$cur.Add($l); continue }
+            [void]$blocks.Add($cur); $cur = $null
         }
-        if ($l -eq '- Data:') { $block = New-Object System.Collections.ArrayList; [void]$block.Add($l); continue }
-        [void]$out.Add($l)
+        if ($l -eq '- Data:') { $cur = New-Object System.Collections.ArrayList; [void]$cur.Add($l); $seen = $true; continue }
+        if ($seen) { [void]$tail.Add($l) } else { [void]$head.Add($l) }
     }
-    $out.RemoveAt($out.Count - 1)   # the '' sentinel
-    if ($cut -eq 0) { continue }    # idempotent: already removed
+    if ($cur -ne $null) { [void]$blocks.Add($cur) }
+    return @{ Head = $head; Blocks = $blocks; Tail = $tail }
+}
+function Get-Ref($block) { ($block | Where-Object { $_ -match '^    Reference: ' } | Select-Object -First 1) -replace '^    Reference: ', '' }
+
+$removed = 0
+foreach ($id in @($cuts.Keys) + @($weights.Keys | Where-Object { $cuts.Keys -notcontains $_ })) {
+    $path  = Find-ListFile "${id}:Skyrim.esm"
+    $p     = Get-Blocks @(Get-Content -LiteralPath $path -Encoding UTF8)
+    $kept  = New-Object System.Collections.ArrayList
+    $cut   = 0
+    foreach ($b in $p.Blocks) { if ($cuts.Contains($id) -and $cuts[$id] -contains (Get-Ref $b)) { $cut++ } else { [void]$kept.Add($b) } }
+    $changed = $cut -gt 0
+    if ($weights.Contains($id)) {
+        foreach ($ref in $weights[$id].Keys) {
+            $mine = @($kept | Where-Object { (Get-Ref $_) -eq $ref })
+            if ($mine.Count -eq 0) { throw "weight target $ref not in $path" }
+            $want = $weights[$id][$ref]
+            if ($mine.Count -ne $want) {
+                $proto = $mine[0]
+                foreach ($m in $mine) { [void]$kept.Remove($m) }
+                for ($i = 0; $i -lt $want; $i++) { [void]$kept.Insert(0, $proto) }
+                $changed = $true
+                "{0,-72} {1} x{2}" -f (Split-Path -Leaf $path), $ref, $want
+            }
+        }
+    }
+    if (-not $changed) { continue }   # idempotent
+    $out = New-Object System.Collections.ArrayList
+    [void]$out.AddRange($p.Head); foreach ($b in $kept) { [void]$out.AddRange($b) }; [void]$out.AddRange($p.Tail)
     [System.IO.File]::WriteAllLines($path, $out, $utf8NoBom)
-    "{0,-72} -{1} iron" -f (Split-Path -Leaf $path), $cut
+    if ($cut) { "{0,-72} -{1} entries" -f (Split-Path -Leaf $path), $cut }
     $removed += $cut
 }
 
@@ -313,4 +354,4 @@ foreach ($l in $hdr) {
 }
 [System.IO.File]::WriteAllLines($rd, $new, $utf8NoBom)
 
-"injectors: $($quests.Count) quests overridden ($total list properties removed), $added entries re-added at level 1, $removed iron entries removed from chief lists, $($flatten.Count) CC sublists flattened, $($ccMasters.Count) CC masters"
+"injectors: $($quests.Count) quests overridden ($total list properties removed), $added entries re-added at level 1, $removed entries cut from bandit lists, $($flatten.Count) CC sublists flattened, $($ccMasters.Count) CC masters"
