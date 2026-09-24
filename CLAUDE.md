@@ -299,8 +299,17 @@ books, Hearthfire food and children's clothes, and ~15 CC packs — inject flat 
 plugins. Overriding CC quests collapses their 9-language strings to English (the non-localized-`.esp`
 gotcha), so non-English players see English text in those quests.
 
+**Bandit chiefs have a steel floor** (2026-09-24, after play confirmed the chief mix is the same at
+levels 1 and 40): `author-injectors.ps1` removes plain iron armor and the enchanted iron weapons from 7
+`LItemBanditBoss*` lists. The armor lists also feed the no-shield chief outfit, three named outfits
+(Craglane's butcher, Fjola, Haldyn) and `DLC2LItemBanditArmorAll`, which lose the iron too. The Solstheim
+chief's own outfit (`DLC2BanditArmorBoss`: bonemold/chitin) never had any.
+
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
-player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs.
+player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
+translation loss on the 21 overridden injector quests. Preferred fix: stop overriding them and ship a
+small quest that calls `Revert()` on the affected lists after the injectors run - no text touched, and it
+also fixes existing saves.
 
 **Licensing:** verbatim-copied records make the plugin a derivative of Requiem. Private use is fine;
 publishing needs their permission.

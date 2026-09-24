@@ -240,6 +240,44 @@ foreach ($r in ($nordicChief + $ccReadd)) {
     $added += $new.Count
 }
 
+# ---------------------------------------------------------------- steel floor for bandit chiefs
+# User decision 2026-09-24, after play: a chief is the camp's T5 fight, so no iron - steel is the floor.
+# Removes the plain iron armor and the enchanted iron weapons from the chief lists. The same armor lists
+# also feed BanditArmorHeavyBossNoShieldOutfit, three named outfits (dunCraglsaneButcher,
+# dunMistwatchFjolaArmor, MS10Haldyn) and DLC2LItemBanditArmorAll; they lose the iron too, on purpose.
+$noIron = [ordered]@{
+    '03DF19' = @('012E49:Skyrim.esm', '013948:Skyrim.esm')   # LItemBanditBossCuirass     - ArmorIronCuirass, ArmorIronBandedCuirass
+    '03DF1A' = @('012E4B:Skyrim.esm')                        # LItemBanditBossBoots       - ArmorIronBoots
+    '03DF18' = @('012E46:Skyrim.esm')                        # LItemBanditBossGauntlets50 - ArmorIronGauntlets
+    '03DF1B' = @('012E4D:Skyrim.esm')                        # LItemBanditBossHelmet50    - ArmorIronHelmet
+    '03DF1F' = @('0DDD98:Skyrim.esm')                        # LItemBanditBossMace        - LItemEnchIronMaceBoss
+    '03DF1D' = @('0DDD90:Skyrim.esm')                        # LItemBanditBossSword       - LItemEnchIronSwordBoss
+    '03DF20' = @('0DDDA0:Skyrim.esm')                        # LItemBanditBossWarAxe      - LItemEnchIronWarAxeBoss
+}
+$removed = 0
+foreach ($id in $noIron.Keys) {
+    $path  = Find-ListFile "${id}:Skyrim.esm"
+    $lines = @(Get-Content -LiteralPath $path -Encoding UTF8)
+    # Entries are '- Data:' blocks; a block ends at the next '- ' or top-level line.
+    $out = New-Object System.Collections.ArrayList
+    $block = $null; $cut = 0
+    foreach ($l in @($lines) + @('')) {
+        if ($block -ne $null) {
+            if ($l -match '^  ') { [void]$block.Add($l); continue }
+            $ref = ($block | Where-Object { $_ -match '^    Reference: ' } | Select-Object -First 1) -replace '^    Reference: ', ''
+            if ($noIron[$id] -contains $ref) { $cut++ } else { [void]$out.AddRange($block) }
+            $block = $null
+        }
+        if ($l -eq '- Data:') { $block = New-Object System.Collections.ArrayList; [void]$block.Add($l); continue }
+        [void]$out.Add($l)
+    }
+    $out.RemoveAt($out.Count - 1)   # the '' sentinel
+    if ($cut -eq 0) { continue }    # idempotent: already removed
+    [System.IO.File]::WriteAllLines($path, $out, $utf8NoBom)
+    "{0,-72} -{1} iron" -f (Split-Path -Leaf $path), $cut
+    $removed += $cut
+}
+
 # ---------------------------------------------------------------- flatten gated CC sublists
 # Injected at level 1, but gated inside. Flatten the gate, keep the pool (duplicates are the weights).
 $flatten = @(
@@ -275,4 +313,4 @@ foreach ($l in $hdr) {
 }
 [System.IO.File]::WriteAllLines($rd, $new, $utf8NoBom)
 
-"injectors: $($quests.Count) quests overridden ($total list properties removed), $added entries re-added at level 1, $($flatten.Count) CC sublists flattened, $($ccMasters.Count) CC masters"
+"injectors: $($quests.Count) quests overridden ($total list properties removed), $added entries re-added at level 1, $removed iron entries removed from chief lists, $($flatten.Count) CC sublists flattened, $($ccMasters.Count) CC masters"
