@@ -267,7 +267,7 @@ legible if its rungs have *different names*, and the bandit boss ladder's do not
 Warlock, Thalmor, Vampire) and are an open decision.
 
 **Generators, and the order they must run in:** `author-constants.ps1` → `extract-requiem.ps1` →
-`author-bucket-d.ps1` → `author-injectors.ps1` → `author-orc-camps.ps1`, then deserialize → re-serialize →
+`author-bucket-d.ps1` → `author-injectors.ps1` → `author-retargets.ps1` (was `author-orc-camps.ps1`), then deserialize → re-serialize →
 adopt Spriggit's output as the source. `author-injectors.ps1` (was `author-cc-compat.ps1`) reads
 `reference/Base/` and `reference/mods/CreationClubYaml/` (Spriggit decompiles of the CC plugins in the
 Baseline modlist's `mods/Creation Club Files`).
@@ -312,7 +312,7 @@ cuts/weights table.
 
 **Hostile Orc camps** (Cracked Tusk Keep, Bilegulch Mine, Rift Watchtower; 2026-09-24) are **not** the
 Orc strongholds — `archetype-tiers.md` §3.1 conflated them. `LCharOrcMelee` is now Highwayman ×3 ·
-Plunderer ×4 · Marauder ×2; `author-orc-camps.ps1` retargets its two non-camp users (Largashbur's
+Plunderer ×4 · Marauder ×2; `author-retargets.ps1` retargets its two non-camp users (Largashbur's
 `DA06LvlOrcMelee`, the Old Orc `WE24Orc`) to the ordinary Orc-bandit list, points Bilegulch's
 `LvlBanditMissileOrcM` at the Orc Hunter list, and raises `EncOrcHunterTemplate` from **level 1** (every
 Orc Hunter rank inherits it — vanilla's archers were all level 1) to 19. Three ordinary Orc bandits placed
@@ -842,6 +842,20 @@ Fill this as the project teaches you things.
   VeryHard (≈7) both picked steel's gate-6 entry, so the bump took **silver at gate 10** — above the
   lookup level — and the chief wore silver, level 6. A flattened list is only as pinned as the thing
   that stops others adding to it. `[verified]` in game (silver-armored level-6 chief), 2026-09-23.
+- **`reference/mods/RequiemYaml` is Requiem 5.4.5, but the committed extract came from v6.0.2.** The
+  folder was rebuilt on 2026-09-23 from an older Requiem (its `RecordData.yaml` description says
+  `Version: 5.4.5`; `prior-art/requiem/README.md` researched v6.0.2). Nobody noticed because
+  `extract-requiem.ps1` had not been re-run since. Its master-leak check scanned `Quests/` and failed on
+  the CC injector quests; fixed 2026-09-25 (WD-41). Re-running the chain against the 5.4.5 decompile
+  rewrites **~380 records** (339 changed, 39 dropped, 1 added, after a round-trip). **The version does
+  not matter in itself** (user, 2026-09-25): Ehlnofey takes Requiem's *method*, not its exact records,
+  so 5.4.5 is an acceptable source. What does matter is that the first full re-run will carry that
+  ~380-record shift, so **review it as its own change**, not folded into a faction edit. Prove a
+  generator refactor by diffing the chain's *raw* output before and after (two runs from a clean
+  checkout), not against the committed tree. `[verified]` 2026-09-25.
+- **PowerShell variable names are case-insensitive.** `$S` (a scratch path) and a loop's `foreach ($s in …)`
+  are the *same variable*: the loop silently overwrote the path, and Spriggit wrote its output into a
+  folder named after the last loop item in the repo root. Use distinct names. `[verified]` 2026-09-25.
 
 Candidates still to confirm:
 

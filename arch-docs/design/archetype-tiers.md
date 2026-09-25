@@ -210,7 +210,7 @@ draws from.
 > **Revised 2026-09-24 (user, after play): the hostile Orc camps are a band of their own.**
 > `LCharOrcMelee` is now **Highwayman ×3 · Plunderer ×4 · Marauder ×2** — the ordinary roster's 3:4:2
 > shape two rungs up, mean level ≈ 19. So Marauder is back, in this list only. The Largashbur defenders
-> and the Old Orc no longer draw from it: `author-orc-camps.ps1` retargets `DA06LvlOrcMelee` and
+> and the Old Orc no longer draw from it: `author-retargets.ps1` retargets `DA06LvlOrcMelee` and
 > `WE24Orc` to `LCharBanditMeleeOrcM`, the ordinary Orc-bandit roster. The camps' archers come from
 > `LCharOrcMissile`, whose Orc Hunter ranks all inherit Stats from `EncOrcHunterTemplate` 0D9447 — fixed
 > at **level 1** in vanilla and Requiem `[verified]`; it is raised to **19**. Bilegulch Mine's lone

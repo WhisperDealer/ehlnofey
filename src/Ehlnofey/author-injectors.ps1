@@ -140,20 +140,23 @@ foreach ($q in $quests) {
 
 # ---------------------------------------------------------------- re-add by place, at level 1
 # One entry per item, whatever gate(s) the script used. Count is the script's count.
-$nordicChief = @(   # DLC2Init's pairs, into the bandit-chief lists only
-    @{ List = '03DF1E:Skyrim.esm'; Items = @(,@('01CDAD:Dragonborn.esm', 1)) }   # LItemBanditBossBattleaxe   <- DLC2NordicBattleaxe
-    @{ List = '03DF23:Skyrim.esm'; Items = @(,@('01CDAF:Dragonborn.esm', 1)) }   # LItemBanditBossGreatsword  <- DLC2NordicGreatsword
-    @{ List = '03DF21:Skyrim.esm'; Items = @(,@('01CDB3:Dragonborn.esm', 1)) }   # LItemBanditBossWarhammer   <- DLC2NordicWarhammer
-    @{ List = '03DF1F:Skyrim.esm'; Items = @(,@('01CDB0:Dragonborn.esm', 1)) }   # LItemBanditBossMace        <- DLC2NordicMace
-    @{ List = '03DF1D:Skyrim.esm'; Items = @(,@('01CDB1:Dragonborn.esm', 1)) }   # LItemBanditBossSword       <- DLC2NordicSword
-    @{ List = '03DF20:Skyrim.esm'; Items = @(,@('01CDB2:Dragonborn.esm', 1)) }   # LItemBanditBossWarAxe      <- DLC2NordicWarAxe
-    @{ List = '03DF1A:Skyrim.esm'; Items = @(,@('01CD96:Dragonborn.esm', 1)) }   # LItemBanditBossBoots       <- DLC2ArmorNordicHeavyBoots
-    @{ List = '03DF19:Skyrim.esm'; Items = @(,@('01CD97:Dragonborn.esm', 1)) }   # LItemBanditBossCuirass     <- DLC2ArmorNordicHeavyCuirass
-    @{ List = '03DF18:Skyrim.esm'; Items = @(,@('01CD98:Dragonborn.esm', 1)) }   # LItemBanditBossGauntlets50 <- DLC2ArmorNordicHeavyGauntlets
-    @{ List = '03DF1B:Skyrim.esm'; Items = @(,@('01CD99:Dragonborn.esm', 1)) }   # LItemBanditBossHelmet50    <- DLC2ArmorNordicHeavyHelmet
-    @{ List = '03DF22:Skyrim.esm'; Items = @(,@('026236:Dragonborn.esm', 1)) }   # LItemBanditBossShield      <- DLC2ArmorNordicShield
+# Row shape: @{ List = <list FormKey>; Items = @(@(<item FormKey>, <count>), ...); AllLevels = $true }
+# List may be on any master. AllLevels (optional) also sets CalculateFromAllLevelsLessThanOrEqualPlayer,
+# so every entry is a uniform roll over the whole pool. Grouped by faction; add a block per faction.
+$readdByPlace = @(
+    # ---- Bandits: DLC2Init's Nordic pairs, into the bandit-chief lists only (user decision 2026-09-24)
+    @{ List = '03DF1E:Skyrim.esm'; Items = @(,@('01CDAD:Dragonborn.esm', 1)); AllLevels = $true }   # LItemBanditBossBattleaxe   <- DLC2NordicBattleaxe
+    @{ List = '03DF23:Skyrim.esm'; Items = @(,@('01CDAF:Dragonborn.esm', 1)); AllLevels = $true }   # LItemBanditBossGreatsword  <- DLC2NordicGreatsword
+    @{ List = '03DF21:Skyrim.esm'; Items = @(,@('01CDB3:Dragonborn.esm', 1)); AllLevels = $true }   # LItemBanditBossWarhammer   <- DLC2NordicWarhammer
+    @{ List = '03DF1F:Skyrim.esm'; Items = @(,@('01CDB0:Dragonborn.esm', 1)); AllLevels = $true }   # LItemBanditBossMace        <- DLC2NordicMace
+    @{ List = '03DF1D:Skyrim.esm'; Items = @(,@('01CDB1:Dragonborn.esm', 1)); AllLevels = $true }   # LItemBanditBossSword       <- DLC2NordicSword
+    @{ List = '03DF20:Skyrim.esm'; Items = @(,@('01CDB2:Dragonborn.esm', 1)); AllLevels = $true }   # LItemBanditBossWarAxe      <- DLC2NordicWarAxe
+    @{ List = '03DF1A:Skyrim.esm'; Items = @(,@('01CD96:Dragonborn.esm', 1)); AllLevels = $true }   # LItemBanditBossBoots       <- DLC2ArmorNordicHeavyBoots
+    @{ List = '03DF19:Skyrim.esm'; Items = @(,@('01CD97:Dragonborn.esm', 1)); AllLevels = $true }   # LItemBanditBossCuirass     <- DLC2ArmorNordicHeavyCuirass
+    @{ List = '03DF18:Skyrim.esm'; Items = @(,@('01CD98:Dragonborn.esm', 1)); AllLevels = $true }   # LItemBanditBossGauntlets50 <- DLC2ArmorNordicHeavyGauntlets
+    @{ List = '03DF1B:Skyrim.esm'; Items = @(,@('01CD99:Dragonborn.esm', 1)); AllLevels = $true }   # LItemBanditBossHelmet50    <- DLC2ArmorNordicHeavyHelmet
+    @{ List = '03DF22:Skyrim.esm'; Items = @(,@('026236:Dragonborn.esm', 1)); AllLevels = $true }   # LItemBanditBossShield      <- DLC2ArmorNordicShield
 )
-foreach ($r in $nordicChief) { $r.AllLevels = $true }   # every piece a uniform roll over the whole pool
 
 $fish = 'ccbgssse001-fish.esm'; $arrows = 'ccbgssse002-exoticarrows.esl'; $spell = 'ccbgssse014-spellpack01.esl'
 $alm = 'ccasvsse001-almsivi.esm'; $necro = 'ccvsvsse003-necroarts.esl'
@@ -199,15 +202,18 @@ function Find-ListFile([string]$formKey) {
         $hit = @(Get-ChildItem -LiteralPath (Join-Path $esp $dir) -Filter "* - ${id}_$master.yaml" -ErrorAction SilentlyContinue)
         if ($hit.Count -eq 1) { return $hit[0].FullName }
     }
-    # Not overridden yet: start from the WINNING vanilla record (last in load order).
+    # Not overridden yet: start from the WINNING vanilla record (last in load order), or for a list
+    # defined by a Creation Club plugin, from that plugin's decompile.
     $src = $null
-    foreach ($m in $loadOrder) {
+    $roots = @($loadOrder | ForEach-Object { Join-Path $base $_ })
+    if ($ccMasters -contains $master) { $roots += Join-Path $cc ([System.IO.Path]::GetFileNameWithoutExtension($master)) }
+    foreach ($srcRoot in $roots) {
         foreach ($dir in 'LeveledItems', 'LeveledNpcs') {
-            $hit = @(Get-ChildItem -LiteralPath (Join-Path $base "$m\$dir") -Filter "* - ${id}_$master.yaml" -ErrorAction SilentlyContinue)
+            $hit = @(Get-ChildItem -LiteralPath (Join-Path $srcRoot $dir) -Filter "* - ${id}_$master.yaml" -ErrorAction SilentlyContinue)
             if ($hit.Count -eq 1) { $src = $hit[0]; $srcDir = $dir }
         }
     }
-    if ($src -eq $null) { throw "no leveled list $formKey in the plugin or reference/Base" }
+    if ($src -eq $null) { throw "no leveled list $formKey in the plugin, reference/Base or the CC decompiles" }
     $dst = Join-Path (Join-Path $esp $srcDir) $src.Name
     Copy-Item -LiteralPath $src.FullName -Destination $dst
     return $dst
@@ -215,7 +221,7 @@ function Find-ListFile([string]$formKey) {
 
 $allLevels = '- CalculateFromAllLevelsLessThanOrEqualPlayer'
 $added = 0
-foreach ($r in ($nordicChief + $ccReadd)) {
+foreach ($r in ($readdByPlace + $ccReadd)) {
     $path  = Find-ListFile $r.List
     $lines = @(Get-Content -LiteralPath $path -Encoding UTF8)
     $new   = @($r.Items | Where-Object { $lines -notcontains "    Reference: $($_[0])" })   # idempotent
@@ -240,8 +246,13 @@ foreach ($r in ($nordicChief + $ccReadd)) {
     $added += $new.Count
 }
 
-# ---------------------------------------------------------------- cuts and weights on bandit lists
-# User decisions 2026-09-24, after play:
+# ---------------------------------------------------------------- cuts and weights
+# Keyed by the list's full FormKey, on any master (a list not yet overridden is copied from its winning
+# record first - see Find-ListFile). Grouped by faction; add a block per faction.
+#   $cuts    '<list FormKey>' = @('<entry FormKey>', ...)            every entry with that Reference is removed
+#   $weights '<list FormKey>' = [ordered]@{ '<entry FormKey>' = N }  that Reference ends up with exactly N entries
+#
+# ---- Bandits. User decisions 2026-09-24, after play:
 #  - A chief is the camp's T5 fight, so no iron - steel is the floor; and bandits never carry glass or
 #    ebony (dungeon-hoard material). Removes the plain iron armor, enchanted iron weapons and the enchanted
 #    glass mace from the chief lists. A recursive scan of every LItemBandit*/LootBandit*/DeathItemBandit*
@@ -256,19 +267,19 @@ foreach ($r in ($nordicChief + $ccReadd)) {
 #  - Bandit arrows: iron, with a 10% chance of fire. The CC bone arrow (26 damage, above Daedric's 24) is
 #    not re-added at all (see $ccReadd). The list is also the Dremora and Thalmor archers' arrow list.
 $cuts = [ordered]@{
-    '03DF19' = @('012E49:Skyrim.esm', '013948:Skyrim.esm')   # LItemBanditBossCuirass     - ArmorIronCuirass, ArmorIronBandedCuirass
-    '03DF1A' = @('012E4B:Skyrim.esm')                        # LItemBanditBossBoots       - ArmorIronBoots
-    '03DF18' = @('012E46:Skyrim.esm')                        # LItemBanditBossGauntlets50 - ArmorIronGauntlets
-    '03DF1B' = @('012E4D:Skyrim.esm')                        # LItemBanditBossHelmet50    - ArmorIronHelmet
-    '03DF1F' = @('0DDD98:Skyrim.esm', '0DDD97:Skyrim.esm')   # LItemBanditBossMace        - LItemEnchIronMaceBoss, LItemEnchGlassMaceBoss
-    '03DF1D' = @('0DDD90:Skyrim.esm')                        # LItemBanditBossSword       - LItemEnchIronSwordBoss
-    '03DF20' = @('0DDDA0:Skyrim.esm')                        # LItemBanditBossWarAxe      - LItemEnchIronWarAxeBoss
-    '039D2E' = @('037C1B:Skyrim.esm', '037C21:Skyrim.esm')   # LItemBanditWeaponBow       - LItemBanditWeapon1H, LItemBanditWeapon2H
-    '039D2F' = @('00082E:ccbgssse002-exoticarrows.esl')      # LItemBanditWeaponArrows    - CC bone arrow (belt and braces: never re-added)
+    '03DF19:Skyrim.esm' = @('012E49:Skyrim.esm', '013948:Skyrim.esm')   # LItemBanditBossCuirass     - ArmorIronCuirass, ArmorIronBandedCuirass
+    '03DF1A:Skyrim.esm' = @('012E4B:Skyrim.esm')                        # LItemBanditBossBoots       - ArmorIronBoots
+    '03DF18:Skyrim.esm' = @('012E46:Skyrim.esm')                        # LItemBanditBossGauntlets50 - ArmorIronGauntlets
+    '03DF1B:Skyrim.esm' = @('012E4D:Skyrim.esm')                        # LItemBanditBossHelmet50    - ArmorIronHelmet
+    '03DF1F:Skyrim.esm' = @('0DDD98:Skyrim.esm', '0DDD97:Skyrim.esm')   # LItemBanditBossMace        - LItemEnchIronMaceBoss, LItemEnchGlassMaceBoss
+    '03DF1D:Skyrim.esm' = @('0DDD90:Skyrim.esm')                        # LItemBanditBossSword       - LItemEnchIronSwordBoss
+    '03DF20:Skyrim.esm' = @('0DDDA0:Skyrim.esm')                        # LItemBanditBossWarAxe      - LItemEnchIronWarAxeBoss
+    '039D2E:Skyrim.esm' = @('037C1B:Skyrim.esm', '037C21:Skyrim.esm')   # LItemBanditWeaponBow       - LItemBanditWeapon1H, LItemBanditWeapon2H
+    '039D2F:Skyrim.esm' = @('00082E:ccbgssse002-exoticarrows.esl')      # LItemBanditWeaponArrows    - CC bone arrow (belt and braces: never re-added)
 }
 # Weight = the exact number of entries a reference should have (entries are the engine's only weight).
 $weights = [ordered]@{
-    '039D2F' = [ordered]@{ '037C0D:Skyrim.esm' = 9 }         # LItemBanditWeaponArrows: BaseArrowIron75 x9 : fire x1 = 90 / 10
+    '039D2F:Skyrim.esm' = [ordered]@{ '037C0D:Skyrim.esm' = 9 }         # LItemBanditWeaponArrows: BaseArrowIron75 x9 : fire x1 = 90 / 10
 }
 
 function Get-Blocks([string[]]$lines) {
@@ -291,7 +302,8 @@ function Get-Ref($block) { ($block | Where-Object { $_ -match '^    Reference: '
 
 $removed = 0
 foreach ($id in @($cuts.Keys) + @($weights.Keys | Where-Object { $cuts.Keys -notcontains $_ })) {
-    $path  = Find-ListFile "${id}:Skyrim.esm"
+    if ($id -notmatch '^[0-9A-F]{6}:.+\.es[mlp]$') { throw "cut/weight key '$id' is not a full FormKey (<hex>:<master>)" }
+    $path  = Find-ListFile $id
     $p     = Get-Blocks @(Get-Content -LiteralPath $path -Encoding UTF8)
     $kept  = New-Object System.Collections.ArrayList
     $cut   = 0
@@ -354,4 +366,4 @@ foreach ($l in $hdr) {
 }
 [System.IO.File]::WriteAllLines($rd, $new, $utf8NoBom)
 
-"injectors: $($quests.Count) quests overridden ($total list properties removed), $added entries re-added at level 1, $removed entries cut from bandit lists, $($flatten.Count) CC sublists flattened, $($ccMasters.Count) CC masters"
+"injectors: $($quests.Count) quests overridden ($total list properties removed), $added entries re-added at level 1, $removed entries cut, $($flatten.Count) CC sublists flattened, $($ccMasters.Count) CC masters"

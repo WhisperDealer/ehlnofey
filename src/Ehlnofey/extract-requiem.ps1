@@ -276,10 +276,11 @@ foreach ($f in Get-ChildItem -LiteralPath (Join-Path $req 'Npcs') -Filter '*.yam
     $stats['E level graft']++
 }
 
-# ---- master-leak assertion: nothing under EhlnofeyESP may reference a fifth master
+# ---- master-leak assertion: nothing this extract writes may reference a fifth master
+# Only the folders the extract owns are scanned. Quests/ holds author-injectors.ps1's overrides of the
+# Creation Club injector quests, which reference their CC masters on purpose (CLAUDE.md, "Current phase").
 $leaks = @{}
-foreach ($f in Get-ChildItem -LiteralPath $dst -Recurse -Filter '*.yaml') {
-    if ($f.Name -eq 'RecordData.yaml') { continue }
+foreach ($f in @('LeveledNpcs', 'LeveledItems', 'Npcs') | ForEach-Object { Get-ChildItem -LiteralPath (Join-Path $dst $_) -Filter '*.yaml' }) {
     # assign before enumerating: foreach over a comma-wrapped empty array iterates once with $m = @()
     $fm = Get-ForeignMasters @(Get-Content -LiteralPath $f.FullName)
     if ($fm.Count -eq 0) { continue }

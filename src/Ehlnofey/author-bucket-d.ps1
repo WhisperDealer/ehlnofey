@@ -110,7 +110,7 @@ foreach ($d in @(
 #      The ordinary bandit roster's 3:4:2 shape, two ranks up. NOT the Orc strongholds (3.1 called it
 #      that; wrong): LCharOrcMelee is placed only outside Cracked Tusk Keep and Rift Watchtower. Its two
 #      other users, the Largashbur defenders (DA06LvlOrcMelee) and the Old Orc (WE24Orc), are retargeted
-#      to LCharBanditMeleeOrcM by author-orc-camps.ps1 so they keep the ordinary mix.
+#      to LCharBanditMeleeOrcM by author-retargets.ps1 so they keep the ordinary mix.
 Add-Spec '01E780:Skyrim.esm' 'LCharOrcMelee' @{ Gates = @{ 14 = 3; 19 = 4; 25 = 2 } }
 
 # ---- bandit bosses (3.1)
