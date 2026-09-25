@@ -209,6 +209,16 @@ etc. apply). So flattening a ladder list without the flag yields "always the top
 while setting it yields "any tier up to L" — vanilla's inconsistent usage (taxonomy §1) is a per-
 list decision Ehlnofey inherits and must set deliberately when it edits a list.
 
+**Worked consequence (WD-43, 2026-09-26), `[community]`, not tested here:** vanilla's boss weapon lists
+(`LItemForswornBossSword` and similar) carry no all-levels flag. So a vanilla Briarheart does not roll
+"anything up to its level"; it rolls only the top unlocked tier. At player 10 that is 100% enchanted steel,
+and at player 40 it is enchanted glass or ebony. The Forsworn ledger's vanilla bars use this rule.
+
+**Open, `[unverified]`:** those lists also carry the `SpecialLoot` flag. Whether that flag routes the roll
+through the `fSpecialLoot*` GMSTs of §3 (zone-level 0.4–1.0, player-level floor 0.6) is not documented
+anywhere read so far. The ledger bars ignore that shift. Once every entry in such a list is at level 1 (as
+in Ehlnofey), the question is moot for the plugin. It matters only for statements about vanilla.
+
 ## 7. What actually still needs an in-game test
 
 The five-question test session shrinks to **one short probe visit**, best run when the first

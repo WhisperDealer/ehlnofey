@@ -498,6 +498,9 @@ arch-docs/
     #   purpose — see "Current phase". Do not add files here without a reason.
     #   enderal.md was added later on request: a total conversion, not a 4th candidate method.
   design/
+    faction-playbook.md          # EXISTS — READ BEFORE ANY FACTION TICKET (WD-44…62): survey, rungs,
+                                 #   gear, "who uses this list", game-wide-list leaks, injector audit,
+                                 #   which generator holds what, tail-only regeneration, close-out.
     requiem-method.md            # EXISTS — READ FIRST. THE live architecture: the pivot away from
                                  #   encounter zones, the four Ehlnofey twists, and 6 = the current
                                  #   order of work. Supersedes implementation-strategy.md 1.
@@ -888,6 +891,40 @@ Fill this as the project teaches you things.
 - **PowerShell variable names are case-insensitive.** `$S` (a scratch path) and a loop's `foreach ($s in …)`
   are the *same variable*: the loop silently overwrote the path, and Spriggit wrote its output into a
   folder named after the last loop item in the repo root. Use distinct names. `[verified]` 2026-09-25.
+- **Grep a list's users before calling it shared or live — its name proves neither.** In WD-43,
+  `LItemWeaponDaggerBoss` was reported as shared with other factions' bosses, from the name alone. It is used
+  only by the Forsworn shaman Briarhearts, and the user's decision was made on the wrong premise until play
+  forced a recheck. The same grep found four `LItemForsworn*` weapon lists that **nothing references**.
+  Editing those would have been a no-op. The command is in `design/faction-playbook.md` §4. `[verified]`
+  2026-09-26.
+- **A faction list that points into a game-wide "All" list inherits our own CC re-adds.** `LItemArrowsAll`
+  carries the Exotic Arrows vendor sublist (re-added at level 1 by `author-injectors.ps1`). So the Forsworn's
+  15% bonus arrow roll `LootForswornArrows15`, which pointed there, handed archers CC fire and ice arrows.
+  When play shows an out-of-place item, walk the faction's loot and arrow lists to their leaves before
+  suspecting a runtime injector. Fix by repointing the faction's list, not by editing the shared one.
+  `[verified]` in game 2026-09-26.
+- **For a faction change, regenerate only the tail of the chain:** `author-bucket-d.ps1` →
+  `author-injectors.ps1` → `author-retargets.ps1`, then round-trip and adopt. Re-running `extract-requiem.ps1`
+  drags in the ~380-record Requiem 5.4.5 shift. The regenerated injector quests and orc `NPC_` show as diffs
+  until the round-trip collapses their strings; after adoption `git status` should show only the faction's
+  records. `[verified]` 2026-09-25/26.
+- **`author-injectors.ps1` applies re-adds before cuts and weights.** One pass can therefore add an item and
+  then weight it, repoint an entry (re-add the new target, cut the old), or add one item several times with
+  different `Count`s. `$weights` throws if its target is absent, so weight only what exists or what the
+  re-add just added. `[verified]` 2026-09-26.
+- **In the decompile, match the string `- Language: English`, not `Language: English`.** The latter hits
+  `TargetLanguage: English` on the line above first, and a name parse silently returns the wrong field.
+  `[verified]` 2026-09-25.
+
+## Faction ledgers
+
+A reader-facing page per finished faction, in one shared style. Each faction ticket ends with one
+(`design/faction-playbook.md` §9). Private artifacts; share from the page's own menu.
+
+| Faction | Ticket | Page |
+|---|---|---|
+| Bandits + hostile Orc camps | WD-2x (pre-Jira) | https://claude.ai/artifact/C3vSs31Kiejw2TDTxNwLSH |
+| Forsworn | WD-43 | https://claude.ai/artifact/Xff2Gm6AbjxaRoyoZXAvTv |
 
 Candidates still to confirm:
 
