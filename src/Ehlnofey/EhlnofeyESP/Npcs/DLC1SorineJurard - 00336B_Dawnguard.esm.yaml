@@ -63,10 +63,10 @@ AIData:
 Class: 0E3A66:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Sorine Jurard
 ShortName:
   TargetLanguage: English
-  Value: ''
+  Value: Sorine
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

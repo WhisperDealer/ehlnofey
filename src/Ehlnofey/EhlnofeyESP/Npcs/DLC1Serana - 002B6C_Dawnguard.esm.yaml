@@ -117,10 +117,10 @@ Packages:
 Class: 02E00F:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Serana
 ShortName:
   TargetLanguage: English
-  Value: ''
+  Value: Serana
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

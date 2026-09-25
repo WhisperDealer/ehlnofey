@@ -17,7 +17,7 @@ Configuration:
   StaminaOffset: 200
   Level:
     MutagenObjectType: NpcLevel
-    Level: 80
+    Level: 65
   CalcMinLevel: 35
   CalcMaxLevel: 150
   SpeedMultiplier: 100
@@ -106,10 +106,10 @@ Keywords:
 Class: 023F78:Dragonborn.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Miraak
 ShortName:
   TargetLanguage: English
-  Value: ''
+  Value: Miraak
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

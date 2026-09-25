@@ -59,7 +59,7 @@ AIData:
 Class: 01CE17:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Vampire Hunter
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

@@ -58,7 +58,7 @@ Keywords:
 Class: 04FA49:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Reaper
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

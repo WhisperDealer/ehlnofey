@@ -59,7 +59,7 @@ AIData:
 Class: 042DC1:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Gunmar
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

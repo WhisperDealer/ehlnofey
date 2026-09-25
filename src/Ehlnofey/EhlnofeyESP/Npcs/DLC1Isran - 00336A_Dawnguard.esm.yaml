@@ -89,7 +89,7 @@ Packages:
 Class: 0E7F45:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Isran
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

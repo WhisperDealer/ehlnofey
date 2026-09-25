@@ -75,10 +75,10 @@ Packages:
 Class: 013177:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Dexion Evicus
 ShortName:
   TargetLanguage: English
-  Value: ''
+  Value: Dexion
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

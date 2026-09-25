@@ -161,7 +161,7 @@ AIData:
 Class: 017008:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Durnehviir
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

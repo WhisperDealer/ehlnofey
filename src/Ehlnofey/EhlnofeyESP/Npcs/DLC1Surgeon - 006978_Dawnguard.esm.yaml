@@ -70,7 +70,7 @@ Packages:
 Class: 013256:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Galathil
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

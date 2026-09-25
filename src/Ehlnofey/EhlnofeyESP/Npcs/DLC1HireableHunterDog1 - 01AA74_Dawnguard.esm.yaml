@@ -55,7 +55,7 @@ AIData:
 Class: 0131E6:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Bran
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

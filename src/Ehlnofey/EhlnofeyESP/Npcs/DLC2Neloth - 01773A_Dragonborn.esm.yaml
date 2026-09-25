@@ -145,7 +145,7 @@ Keywords:
 Class: 017774:Dragonborn.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Neloth
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

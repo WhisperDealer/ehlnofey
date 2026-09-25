@@ -37,10 +37,10 @@ AIData:
 Class: 017008:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Knight-Paladin Gelebor
 ShortName:
   TargetLanguage: English
-  Value: ''
+  Value: Gelebor
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

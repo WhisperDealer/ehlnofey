@@ -1,6 +1,9 @@
 # Phase 4 step 5 - author Ehlnofey's 19 constant records.
 # Guardrail 3: copy the source record VERBATIM from reference/ and edit only the field that differs.
 # Sources are the WINNING record for each FormKey (CLAUDE.md: resolve by master, last-wins).
+# Run AFTER extract-requiem.ps1: the six capstones are PcLevelMult in vanilla, so bucket E grafts
+# Requiem's level onto the same records (Alduin 250, Miraak 120) and would overwrite ours. Until
+# 2026-09-25 this ran first, and the plugin shipped Requiem's capstone levels.
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 

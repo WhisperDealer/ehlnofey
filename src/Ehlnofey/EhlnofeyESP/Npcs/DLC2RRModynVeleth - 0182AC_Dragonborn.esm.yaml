@@ -66,10 +66,10 @@ Packages:
 Class: 01CE15:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Captain Veleth
 ShortName:
   TargetLanguage: English
-  Value: ''
+  Value: Veleth
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

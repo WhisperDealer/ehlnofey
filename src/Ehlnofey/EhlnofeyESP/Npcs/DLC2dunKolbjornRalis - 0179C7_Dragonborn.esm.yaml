@@ -109,10 +109,10 @@ Packages:
 Class: 0179C6:Dragonborn.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Ralis Sedarys
 ShortName:
   TargetLanguage: English
-  Value: ''
+  Value: Ralis
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

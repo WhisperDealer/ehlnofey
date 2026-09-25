@@ -266,7 +266,7 @@ legible if its rungs have *different names*, and the bandit boss ladder's do not
 `archetype-tiers.md` §3.1.1 for the naming test — **four boss families still fail it** (Forsworn,
 Warlock, Thalmor, Vampire) and are an open decision.
 
-**Generators, and the order they must run in:** `author-constants.ps1` → `extract-requiem.ps1` →
+**Generators, and the order they must run in:** `extract-requiem.ps1` → `author-constants.ps1` →
 `author-bucket-d.ps1` → `author-injectors.ps1` → `author-retargets.ps1` (was `author-orc-camps.ps1`), then deserialize → re-serialize →
 adopt Spriggit's output as the source. `author-injectors.ps1` (was `author-cc-compat.ps1`) reads
 `reference/Base/` and `reference/mods/CreationClubYaml/` (Spriggit decompiles of the CC plugins in the
@@ -318,6 +318,20 @@ Plunderer ×4 · Marauder ×2; `author-retargets.ps1` retargets its two non-camp
 Orc Hunter rank inherits it — vanilla's archers were all level 1) to 19. Three ordinary Orc bandits placed
 directly in those cells stay on the shared bandit list (no cell edits, user decision). Re-asked after play
 (2026-09-25) and declined again once the cost was clear: two of the three are in *exterior* cells.
+
+**Faction work is tracked in Jira** (project WD, epic WD-27): one story per faction, WD-43…WD-62, and
+dragon gear craft-only is WD-63. **Two cross-cutting design decisions were made on 2026-09-25 (WD-42)**,
+and are recorded in `archetype-tiers.md` §3.1.1 and §9:
+- **Rung levels are vanilla's.** Bucket E now grafts only `PcLevelMult` records (179). The 256
+  overrides that carried Requiem's rebalance of already-fixed levels were deleted. The plugin is
+  **2,607 records**.
+- **Illegible boss bands are pinned.** Each faction ticket picks the rung.
+- **Rule 3 (at most three tiers)** is decided per faction.
+
+The same pass fixed two shipped bugs:
+- **The capstones.** `author-constants.ps1` ran *before* the extract, so bucket E overwrote them:
+  Alduin shipped at 250, Harkon at 80 and Miraak at 120. The chain order is now extract → constants.
+- **36 NPCs with blank names.** See the DLC-names gotcha.
 
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
@@ -703,11 +717,16 @@ Fill this as the project teaches you things.
   Dragon Priests have "Priest" in their EditorID, and Vokun's is `Ianusu`. When enumerating a named
   group, match on the English `Name:` string; use EditorIDs only once you have the FormKeys.
   `[verified]`
-- **DLC plugins have no display names in the decompile.** `Dawnguard.esm` and `Dragonborn.esm`
-  records serialize as `Name:` / `TargetLanguage: English` with **no `Values:` block** — the strings
-  live in external `.STRINGS` files that Spriggit did not inline. `Skyrim.esm` names *do* come
-  through. So the "match on `Name:`" rule above works only for the base game; for DLC you must
-  identify records by EditorID and FormKey. `[verified]`
+- **~~DLC plugins have no display names in the decompile.~~ They do now, and the old decompile
+  shipped a bug.** The DLC decompiles `reference/Base/` held until 2026-09-23 serialized `Name:` with
+  **no `Values:` block**. Any DLC `NPC_` the extract copied from them came out as `Value: ''` after a
+  round-trip, and an override with an empty `FULL` **blanks the NPC's name in game**. The committed
+  plugin had 124 such records, including Serana, Isran, Neloth, Frea and Teldryn Sero. Fixed
+  2026-09-25 (WD-42): 88 went with the bucket-E cut, and 36 had their English `Name`/`ShortName` put
+  back from the current decompile, which **does** carry the strings. **After any round-trip, grep
+  `Npcs/` for `Value: ''` under `Name:`**, because a blank name is silent. For other *record types*
+  (and older copies of `reference/`), still identify DLC records by EditorID and FormKey rather than
+  trusting `Name:`. `[verified]`
 - **Resolve FormKeys by master, not by bare FormID.** A six-hex FormID is only unique *within* a
   plugin: `01A345:Dawnguard.esm` (Harkon's combat style) collides with an unrelated `Skyrim.esm`
   leveled-NPC record. A lookup that searches the base-game index first will silently return the wrong

@@ -103,10 +103,10 @@ Packages:
 Class: 030CCA:Dragonborn.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Frea
 ShortName:
   TargetLanguage: English
-  Value: ''
+  Value: Frea
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

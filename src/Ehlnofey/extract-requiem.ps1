@@ -134,6 +134,7 @@ $stats = [ordered]@{
     'D provisional LVLN'  = 0
     'E level graft'       = 0
     'skipped, ITM'        = 0
+    'skipped, vanilla fixed' = 0   # bucket E: vanilla already had a fixed level (WD-42)
     'skipped, sentinel'   = 0   # Requiem's Level: 999 placeholder
     'skipped, not ours'   = 0   # Requiem's own new records, HearthFires, CC, USSEP
     'skipped, no vanilla' = 0
@@ -259,7 +260,11 @@ foreach ($f in Get-ChildItem -LiteralPath (Join-Path $req 'Npcs') -Filter '*.yam
     $vlines = @(Get-Content -LiteralPath $vpath)
     $vi = Get-NpcLevel $vlines
     if ($vi.From -lt 0) { $stats['skipped, no vanilla']++; continue }
-    if ($vi.Type -eq 'NpcLevel' -and $vi.Value -eq $ri.Value) { $stats['skipped, ITM']++; continue }
+    # Graft only where vanilla SCALES (PcLevelMult): that is the deleveling. Where vanilla already has a
+    # fixed level, Requiem's number is its rebalance (Dremora 6..46 -> all 55, werewolves -> 50), tuned for
+    # the combat overhaul Ehlnofey does not take - keep vanilla, so archetype-tiers.md's rungs mean what
+    # they say. User decision 2026-09-25 (WD-42, decision 3).
+    if ($vi.Type -eq 'NpcLevel') { $stats['skipped, vanilla fixed']++; continue }
 
     $out = New-Object System.Collections.ArrayList
     for ($i = 0; $i -lt $vlines.Count; $i++) {

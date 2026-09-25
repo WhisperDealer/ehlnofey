@@ -72,7 +72,7 @@ AIData:
 Class: 023C0D:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Keeper
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

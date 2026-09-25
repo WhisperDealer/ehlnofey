@@ -81,7 +81,7 @@ Packages:
 Class: 01CE1C:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Zahkriisos
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

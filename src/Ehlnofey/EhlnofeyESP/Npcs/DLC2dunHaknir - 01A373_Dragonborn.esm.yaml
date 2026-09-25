@@ -149,7 +149,7 @@ Packages:
 Class: 037FEB:Dragonborn.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Haknir Death-Brand
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

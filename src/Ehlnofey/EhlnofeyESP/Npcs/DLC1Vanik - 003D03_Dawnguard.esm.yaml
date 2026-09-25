@@ -57,7 +57,7 @@ Packages:
 Class: 0E7F45:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Vanik
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

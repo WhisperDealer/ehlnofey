@@ -60,7 +60,7 @@ Packages:
 Class: 01CE15:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: General Falx Carius
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

@@ -67,10 +67,10 @@ Packages:
 Class: 01CE17:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Mirri Severin
 ShortName:
   TargetLanguage: English
-  Value: ''
+  Value: Mirri
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

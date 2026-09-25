@@ -12,7 +12,7 @@ Configuration:
   - Unique
   Level:
     MutagenObjectType: NpcLevel
-    Level: 120
+    Level: 65
   CalcMinLevel: 35
   CalcMaxLevel: 200
   SpeedMultiplier: 100
@@ -57,10 +57,10 @@ AIData:
 Class: 017008:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Miraak
 ShortName:
   TargetLanguage: English
-  Value: ''
+  Value: Miraak
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

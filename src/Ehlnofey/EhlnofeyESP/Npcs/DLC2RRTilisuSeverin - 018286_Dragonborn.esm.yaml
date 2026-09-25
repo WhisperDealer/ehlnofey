@@ -67,10 +67,10 @@ Packages:
 Class: 01CE17:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Tilisu Severin
 ShortName:
   TargetLanguage: English
-  Value: ''
+  Value: Tilisu
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

@@ -82,10 +82,10 @@ Keywords:
 Class: 0E3A5C:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Garan Marethi
 ShortName:
   TargetLanguage: English
-  Value: ''
+  Value: Garan
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

@@ -129,10 +129,10 @@ the only signal the player gets.** A ×2/×2/×1 band is therefore only legible 
 | Draugr | Overlord · Wight Lord · Scourge Lord · Death Overlord | **band OK** — 4 names, 4 rungs |
 | Falmer | Skulker · Gloomlurker · Nightprowler · Shadowmaster | **band OK** |
 | **Bandit** | *none* → `LvlBanditBoss` 03DF17 = "Bandit Chief" | **pinned to 28** |
-| **Forsworn** | *none* → falls through to the placed base | band is illegible — unfixed |
-| **Warlock** | *none* → falls through to the placed base | band is illegible — unfixed |
-| **Thalmor** | "Thalmor Wizard" at all seven rungs | band is illegible — unfixed |
-| **Vampire** | *none* → falls through to the placed base | band is illegible — unfixed |
+| **Forsworn** | *none* → falls through to the placed base | **pin** (WD-42) — rung chosen in WD-43 |
+| **Warlock** | *none* → falls through to the placed base | **pin** (WD-42) — rung chosen in WD-46 |
+| **Thalmor** | "Thalmor Wizard" at all seven rungs | **pin** (WD-42) — rung chosen in WD-48 |
+| **Vampire** | *none* → falls through to the placed base | **pin** (WD-42) — rung chosen in WD-47 |
 
 So the bandit boss is pinned to a single rung: a Bandit Chief is the same level in Swindler's Den, in
 Halted Stream and on Solstheim, forever. Gate 29 appears twice in the `*M` lists (1H and 2H) and
@@ -155,9 +155,12 @@ trivial after ~T3" warning applies to the mooks only, not to the capstone.
 Outlaw · Bandit Thug · Bandit Highwayman, four levels behind four names. Only `EncBandit01*` is
 nameless, and it is the rung the placed base's own name already describes.
 
-**The other four families are a decision not yet taken**, not an oversight. Pinning them is the
-consistent move, but it re-tiers four archetypes; the alternative is to author distinct rung names,
-which invents lore vocabulary and makes `lore-constraints.md` the arbiter.
+**The other four families are pinned too — decided 2026-09-25 (user, WD-42).** Naming the rungs
+was rejected: it is unproven (the "Bandit Runt" rename never showed in game, below) and it would invent
+lore vocabulary. Each faction ticket picks its family's rung, the way 28 was picked for the chief —
+the camp's capstone, not necessarily the band centre. Requiem already pins several of these lists at a
+rung of its own choosing (the Forsworn, warlock and draugr boss lists each hold one sublist); treat that
+as a candidate, not a verdict.
 
 **The level-1 rung is dropped** (revised 2026-09-24, after play; supersedes the 2026-07-30
 "rare, and called Bandit Runt" revision).
@@ -590,8 +593,19 @@ so in Phase 1 (*"the dominant cost is E, not the actors at all"*) and the pivot 
    roster spans *"at most three adjacent tiers"*. These span four: Forsworn rank-and-file (T1–T4) and
    boss (T3–T6), Warlock (T2–T5), Vampire (T2–T5), Falmer melee (T2–T5), Dremora (T2–T5), Dragon
    (T3–T6), Gargoyle (T3–T6), Draugr boss (T3–T6). Either the rule relaxes to four, or those nine
-   narrow the way draugr just did. **Not decided here** — it is one choice applied nine times, and it
-   should be made deliberately rather than folded into an unrelated edit.
+   narrow the way draugr just did. **Decided 2026-09-25 (user, WD-42): per faction.** There is no
+   blanket answer; each faction ticket decides which rungs its roster keeps and drops, and records
+   the verdict in its own row above.
+1b. **Whose level numbers do the rungs carry? — Decided 2026-09-25 (user, WD-42): vanilla's.** The
+   extract's bucket E had copied Requiem's `Configuration.Level` onto 257 `NPC_` records that already
+   had a *fixed* vanilla level — Requiem's rebalance, not deleveling (Dremora 6–46 → all 55, werewolves
+   1–28 → all 50, centurions 24–36 → 60, dragons 10–40 → 75–79), tuned for the combat overhaul Ehlnofey
+   does not take. Bucket E now grafts only where vanilla is `PcLevelMult` (179 records); the 256
+   rebalance overrides were deleted. **So every rung in this document's tables is at its vanilla level
+   — which is what the tables always assumed** (bandits already were: Requiem never touched their rung
+   records). The 179 remaining grafts are Requiem's numbers as placeholders until WD-57/61/62 hand-set
+   them.
+1c. **Boss bands whose rungs share one name — Decided 2026-09-25 (user, WD-42): pin.** See §3.1.1.
 2. **Bandits become trivial after ~T3, and they are ~40% of the placed world.** That is the honest
    cost of a fixed world and Requiem accepts it. The alternative — widening the bandit band — trades
    legibility for relevance. Do not decide this on paper; decide it after walking into three camps.

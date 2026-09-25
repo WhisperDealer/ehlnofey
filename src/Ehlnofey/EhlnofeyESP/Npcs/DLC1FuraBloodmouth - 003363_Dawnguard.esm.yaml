@@ -75,10 +75,10 @@ Keywords:
 Class: 042DC4:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Fura Bloodmouth
 ShortName:
   TargetLanguage: English
-  Value: ''
+  Value: Fura
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

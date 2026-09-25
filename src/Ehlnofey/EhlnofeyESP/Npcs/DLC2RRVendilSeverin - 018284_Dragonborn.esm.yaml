@@ -82,10 +82,10 @@ Packages:
 Class: 017008:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Vendil Severin
 ShortName:
   TargetLanguage: English
-  Value: ''
+  Value: Vendil
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

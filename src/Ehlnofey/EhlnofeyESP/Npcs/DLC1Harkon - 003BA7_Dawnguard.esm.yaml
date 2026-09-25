@@ -98,7 +98,7 @@ Configuration:
   MagickaOffset: 100
   Level:
     MutagenObjectType: NpcLevel
-    Level: 80
+    Level: 55
   CalcMinLevel: 10
   CalcMaxLevel: 60
   SpeedMultiplier: 100
@@ -153,10 +153,10 @@ Keywords:
 Class: 02E00F:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Lord Harkon
 ShortName:
   TargetLanguage: English
-  Value: ''
+  Value: Harkon
 PlayerSkills:
   SkillValues:
   - Key: OneHanded

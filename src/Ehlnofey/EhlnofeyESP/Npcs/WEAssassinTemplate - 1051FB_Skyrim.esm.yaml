@@ -53,7 +53,7 @@ AIData:
 Class: 01317E:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: ''
+  Value: Assassin
 PlayerSkills:
   SkillValues:
   - Key: OneHanded
