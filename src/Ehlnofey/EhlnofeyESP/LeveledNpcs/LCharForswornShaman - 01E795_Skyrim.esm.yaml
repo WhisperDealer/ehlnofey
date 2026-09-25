@@ -1,10 +1,44 @@
 FormKey: 01E795:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharForswornShaman
+FormVersion: 40
 Version2: 6
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
+- Data:
+    Level: 1
+    Reference: 0442B7:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442B8:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442B8:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442B8:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442B9:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442B9:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442B9:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442B9:Skyrim.esm
+    Count: 1
 - Data:
     Level: 1
     Reference: 0442BA:Skyrim.esm

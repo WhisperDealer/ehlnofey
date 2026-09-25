@@ -94,8 +94,8 @@ The main table. `Vanilla rungs` are name (level) from `lore-constraints.md` §1 
 | **Bandit** | `LCharBanditMelee1H` 039CFC &c. | Bandit 1 · Outlaw 5 · Thug 9 · Highwayman 14 · Plunderer 19 · Marauder 25 | **Outlaw ×3** · **Thug ×4** · Highwayman ×2 | **T2** (T2–T3) |
 | Bandit boss | `LCharBanditBoss` 03DF16 | 6 · 10 · 16 · 21 · 28 | **28 only** (pinned — see 3.1.1) | **T5** |
 | **Orc melee** (hostile Orc camps) | `LCharOrcMelee` 01E780 | reuses bandit records | Highwayman ×3 · **Plunderer ×4** · Marauder ×2 (revised 2026-09-24) | **T4** (T3–T5) |
-| **Forsworn** | `LCharForswornMelee1H` 01E792 | Forsworn 1 · Forager 6 · Looter 14 · Pillager 24 · Ravager 34 · Warlord 46 | Forsworn ×2 · Forager ×3 · **Looter ×3** · Pillager ×1 | **T3** (T1–T4) |
-| Forsworn boss | `LCharForswornBossMelee1H` 0442F2 | Briarheart 7 · 16 · 27 · 38 · 51 | 16 ×2 · **27 ×2** · 38 ×1 | **T5** (T3–T6) |
+| **Forsworn** | `LCharForswornMelee1H` 01E792 + 4 siblings | Forsworn 1 · Forager 6 · Looter 14 · Pillager 24 · Ravager 34 · Warlord 46 | Forager ×1 · Looter ×3 · **Pillager ×4** · Ravager ×1 — mean 19.8 (revised WD-43) | **T4** (T2–T5) |
+| Forsworn boss | `LCharForswornBossMelee1H` 0442F2 · `…BossShaman` 0442FD | Briarheart 7 · 16 · 27 · 38 · 51 | **38 only** (pinned — see 3.1.1, WD-43) | **T6** |
 | **Warlock** (all five) | `LCharWarlockFire` 01E7D1 &c. | Wizard 1 · Appr. Conjurer 6 · Conjurer Adept 12 · Conjurer 19 · Ascendant 27 · Master 36 · Arch 46 | Appr. Conjurer ×2 · **Conjurer Adept ×3** · Conjurer ×3 · Ascendant ×1 | **T3** (T2–T5) |
 | Warlock boss | `LCharWarlockBossFire` 0E1018 | 7 · 14 · 21 · 30 · 40 | 21 ×2 · **30 ×2** · 40 ×1 | **T5** (T4–T6) |
 | **Thalmor** | `LCharThalmorMelee1H` 02B129 | 4 · 12 · 20 · 28 · 36 | 12 ×2 · **20 ×3** · 28 ×2 | **T4** (T3–T5) |
@@ -109,6 +109,29 @@ The main table. `Vanilla rungs` are name (level) from `lore-constraints.md` §1 
 | **Witch** | `LCharWitchAny` 074F9D | 4 · 8 | 4 ×1 · **8 ×1** | **T2** (T1–T2) |
 | **Vigilant of Stendarr** | `LCharVigilantOfStendarr` 0BFB53 | 5 — single gate | *(unchanged — already flat)* | **T2** |
 | **Dawnguard** | `LCharDawnguardMelee1H` 014281 | 1 · 5 · 9 · 14 · 19 · 25 | 9 ×2 · **14 ×3** · 19 ×1 | **T3** (T2–T4) |
+
+**Forsworn (WD-43, user 2026-09-25).** Forsworn gear is weak, so the *levels* carry the threat. That is why
+the band sits a tier above the doc's first draft (mean ≈ 20). The roster spans four tiers, which WD-42 allows
+per faction. The plain level-1 "Forsworn" is dropped, as the level-1 bandit was. All five rank-and-file lists
+(`Melee1H`, `MeleeFemale`, `Missile`, `MissileFemale`, `Shaman`) share the roster. Requiem had pinned Missile to
+Pillager/Ravager and Shaman to Ravager only. Briarhearts are pinned to **38**, not Requiem's 51. The shaman list
+gets its Magic sublist back, because Requiem had pointed it at the melee one.
+- **Armor:** Forsworn armor at every level, unchanged. Every armor list was already Forsworn-only.
+- **Low rungs:** Forsworn weapons only (`LItemForswornWeapon1H`).
+- **Briarhearts and Ravagers:** `LItemForswornBossWeapon1H`, which is Forsworn ×10 · Elven ×4 · Dwarven ×4 ·
+  enchanted Elven ×1 · enchanted Dwarven ×1 · Glass ×1 (≈ 5% glass, no ebony). Ravagers reach it through two
+  `NPC_` retargets (`EncForsworn05TemplateMelee` 044287 and its Berserker leaf 0F961A).
+- **Leave-alone lists:**
+  - `LItemForswornMace`, `…BossMace`, `…Sword` and `…WarAxe` are **referenced by nothing** in base+DLC, and were
+    left alone.
+- **Revised after play (2026-09-26):**
+  - `LItemWeaponDaggerBoss` turned out to be Forsworn-only: it is used by the `EncForsworn0NBossMagic` records
+    and nothing else. So the Briarheart shaman dagger is reweighted in place: Steel 4 · Orcish 4 · Dwarven 5 ·
+    Elven 5 · ench Dwarven 2 · ench Elven 2 · Glass 1 · Ebony 1. That is glass and ebony at 1 in 24 each,
+    and enchanted at 1 in 12 each.
+  - Archer arrows are Forsworn or iron, 50/50. Requiem had made them all iron.
+  - The 15% bonus arrow roll (`LootForswornArrows15`) now rolls the Forsworn arrow list. Before, it rolled
+    `LItemArrowsAll`, which holds the CC Exotic Arrows sublist; those were the fire and ice arrows seen in play.
 
 #### 3.1.1 The naming test — a band is only allowed where the rungs have different names
 
@@ -129,7 +152,7 @@ the only signal the player gets.** A ×2/×2/×1 band is therefore only legible 
 | Draugr | Overlord · Wight Lord · Scourge Lord · Death Overlord | **band OK** — 4 names, 4 rungs |
 | Falmer | Skulker · Gloomlurker · Nightprowler · Shadowmaster | **band OK** |
 | **Bandit** | *none* → `LvlBanditBoss` 03DF17 = "Bandit Chief" | **pinned to 28** |
-| **Forsworn** | *none* → falls through to the placed base | **pin** (WD-42) — rung chosen in WD-43 |
+| **Forsworn** | "Forsworn Briarheart" at all five rungs | **pinned to 38** (WD-43) |
 | **Warlock** | *none* → falls through to the placed base | **pin** (WD-42) — rung chosen in WD-46 |
 | **Thalmor** | "Thalmor Wizard" at all seven rungs | **pin** (WD-42) — rung chosen in WD-48 |
 | **Vampire** | *none* → falls through to the placed base | **pin** (WD-42) — rung chosen in WD-47 |

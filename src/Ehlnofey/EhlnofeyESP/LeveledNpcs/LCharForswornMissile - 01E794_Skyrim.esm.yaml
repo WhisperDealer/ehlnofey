@@ -1,10 +1,96 @@
 FormKey: 01E794:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharForswornMissile
+FormVersion: 40
 Version2: 6
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
+- Data:
+    Level: 1
+    Reference: 0442C0:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442BF:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C0:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C1:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C1:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C1:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C2:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C2:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C2:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C2:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C2:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C2:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C3:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C3:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C3:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C3:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C4:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C4:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C4:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C4:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C4:Skyrim.esm
+    Count: 1
 - Data:
     Level: 1
     Reference: 0442C4:Skyrim.esm
@@ -20,6 +106,10 @@ Entries:
 - Data:
     Level: 1
     Reference: 0442C5:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C6:Skyrim.esm
     Count: 1
 - Data:
     Level: 1

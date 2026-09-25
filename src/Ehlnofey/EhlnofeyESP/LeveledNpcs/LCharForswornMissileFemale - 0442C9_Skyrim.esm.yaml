@@ -1,5 +1,7 @@
 FormKey: 0442C9:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharForswornMissileFemale
+FormVersion: 40
 Version2: 5
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -7,15 +9,31 @@ Flags:
 Entries:
 - Data:
     Level: 1
-    Reference: 0442BC:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
     Reference: 0442BF:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
     Reference: 0442C1:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C1:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C1:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C3:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C3:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0442C3:Skyrim.esm
     Count: 1
 - Data:
     Level: 1

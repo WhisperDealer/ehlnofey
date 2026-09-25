@@ -156,6 +156,25 @@ $readdByPlace = @(
     @{ List = '03DF18:Skyrim.esm'; Items = @(,@('01CD98:Dragonborn.esm', 1)); AllLevels = $true }   # LItemBanditBossGauntlets50 <- DLC2ArmorNordicHeavyGauntlets
     @{ List = '03DF1B:Skyrim.esm'; Items = @(,@('01CD99:Dragonborn.esm', 1)); AllLevels = $true }   # LItemBanditBossHelmet50    <- DLC2ArmorNordicHeavyHelmet
     @{ List = '03DF22:Skyrim.esm'; Items = @(,@('026236:Dragonborn.esm', 1)); AllLevels = $true }   # LItemBanditBossShield      <- DLC2ArmorNordicShield
+    # ---- Forsworn (WD-43, user 2026-09-25): Forsworn armor at every level, Forsworn weapons for the low
+    # rungs. Briarhearts and Ravagers (via author-retargets.ps1) draw from LItemForswornBossWeapon1H, whose
+    # two lists get elven, dwarven and a rare glass back - vanilla had them gated 12..36, Requiem stripped
+    # them. Enchanted elven/dwarven boss sublists too; no enchanted glass, no ebony. Weights in $weights.
+    @{ List = '044301:Skyrim.esm'; Items = @(@('0139A1:Skyrim.esm', 1), @('013999:Skyrim.esm', 1), @('0139A9:Skyrim.esm', 1),
+                                             @('0DDD8E:Skyrim.esm', 1), @('0DDD8C:Skyrim.esm', 1)) }   # LItemForswornBossSword  <- Elven/Dwarven/Glass, ench Elven/Dwarven
+    @{ List = '044302:Skyrim.esm'; Items = @(@('01399B:Skyrim.esm', 1), @('013993:Skyrim.esm', 1), @('0139A3:Skyrim.esm', 1),
+                                             @('0DDD9E:Skyrim.esm', 1), @('0DDD9C:Skyrim.esm', 1)) }   # LItemForswornBossWarAxe <- same, war axes
+    # Briarheart shaman dagger (user, after play 2026-09-26). LItemWeaponDaggerBoss is used ONLY by the
+    # EncForsworn0NBossMagic records, so it is edited in place. Enchanted elven/dwarven added; weights below.
+    @{ List = '08CA38:Skyrim.esm'; Items = @(@('0CAF01:Skyrim.esm', 1), @('0C9A33:Skyrim.esm', 1)) }   # LItemWeaponDaggerBoss <- LItemEnchElvenDagger, LItemEnchDwarvenDagger
+    # Archer arrows: Forsworn or iron, 50/50 (user, 2026-09-26). Requiem made LItemForswornArrows all iron
+    # (x22 / x15 / x12); a Forsworn arrow entry at each of the same counts evens it. Also used by the CC
+    # Crowstooth (ccbgssse059), a Forsworn, who gets the same.
+    @{ List = '10FABD:Skyrim.esm'; Items = @(@('0CEE9E:Skyrim.esm', 22), @('0CEE9E:Skyrim.esm', 15), @('0CEE9E:Skyrim.esm', 12)) }   # LItemForswornArrows <- ForswornArrow
+    # The 15% bonus arrow roll every Forsworn archer carries (LootForswornArrows15, Forsworn-only) pointed at
+    # LItemArrowsAll: steel-to-Nordic arrows plus the CC exotic-arrow sublist ($ccReadd) - the fire and ice
+    # arrows seen in play. It now rolls the Forsworn arrow list instead; LItemArrowsAll is cut in $cuts.
+    @{ List = '06A3CD:Skyrim.esm'; Items = @(,@('10FABD:Skyrim.esm', 1)) }   # LootForswornArrows15 <- LItemForswornArrows
 )
 
 $fish = 'ccbgssse001-fish.esm'; $arrows = 'ccbgssse002-exoticarrows.esl'; $spell = 'ccbgssse014-spellpack01.esl'
@@ -276,10 +295,21 @@ $cuts = [ordered]@{
     '03DF20:Skyrim.esm' = @('0DDDA0:Skyrim.esm')                        # LItemBanditBossWarAxe      - LItemEnchIronWarAxeBoss
     '039D2E:Skyrim.esm' = @('037C1B:Skyrim.esm', '037C21:Skyrim.esm')   # LItemBanditWeaponBow       - LItemBanditWeapon1H, LItemBanditWeapon2H
     '039D2F:Skyrim.esm' = @('00082E:ccbgssse002-exoticarrows.esl')      # LItemBanditWeaponArrows    - CC bone arrow (belt and braces: never re-added)
+    '06A3CD:Skyrim.esm' = @('068839:Skyrim.esm')                        # LootForswornArrows15       - LItemArrowsAll (CC fire/ice arrows, steel+)
 }
 # Weight = the exact number of entries a reference should have (entries are the engine's only weight).
 $weights = [ordered]@{
     '039D2F:Skyrim.esm' = [ordered]@{ '037C0D:Skyrim.esm' = 9 }         # LItemBanditWeaponArrows: BaseArrowIron75 x9 : fire x1 = 90 / 10
+    # Forsworn high tier: Forsworn 10 · Elven 4 · Dwarven 4 · ench Elven 1 · ench Dwarven 1 · Glass 1
+    # = 48% / 19% / 19% / 5% / 5% / 5% (21 entries).
+    '044301:Skyrim.esm' = [ordered]@{ '0CADE9:Skyrim.esm' = 10; '0139A1:Skyrim.esm' = 4; '013999:Skyrim.esm' = 4 }   # LItemForswornBossSword
+    '044302:Skyrim.esm' = [ordered]@{ '0CC829:Skyrim.esm' = 10; '01399B:Skyrim.esm' = 4; '013993:Skyrim.esm' = 4 }   # LItemForswornBossWarAxe
+    # Briarheart shaman dagger: Steel 4 · Orcish 4 · Dwarven 5 · Elven 5 · ench Dwarven 2 · ench Elven 2 ·
+    # Glass 1 · Ebony 1 (24). Glass and ebony cut from 1-in-6 each to 1-in-24; the freed share went to
+    # elven and dwarven (~29% each, 1-in-12 of the total enchanted). User, after play 2026-09-26.
+    '08CA38:Skyrim.esm' = [ordered]@{ '013986:Skyrim.esm' = 4; '01398E:Skyrim.esm' = 4; '013996:Skyrim.esm' = 5
+                                      '01399E:Skyrim.esm' = 5; '0C9A33:Skyrim.esm' = 2; '0CAF01:Skyrim.esm' = 2
+                                      '0139A6:Skyrim.esm' = 1; '0139AE:Skyrim.esm' = 1 }   # LItemWeaponDaggerBoss
 }
 
 function Get-Blocks([string[]]$lines) {

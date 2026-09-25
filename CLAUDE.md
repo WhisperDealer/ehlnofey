@@ -333,6 +333,19 @@ The same pass fixed two shipped bugs:
   Alduin shipped at 250, Harkon at 80 and Miraak at 120. The chain order is now extract → constants.
 - **36 NPCs with blank names.** See the DLC-names gotcha.
 
+**Forsworn are done (WD-43, 2026-09-26). Levels, spawn mix and gear were verified in game by the user.**
+- **Mooks:** Forager ×1 · Looter ×3 · Pillager ×4 · Ravager ×1, mean ≈ 20, across all five rank-and-file lists.
+- **Briarhearts:** pinned to 38, where Requiem shipped 51. Shaman Briarhearts cast again.
+- **Gear:** Forsworn armor always. Only Briarhearts and Ravagers draw elven, dwarven or rare glass weapons, from
+  `LItemForswornBossWeapon1H`.
+- **Shaman Briarheart dagger:** glass and ebony at 1 in 24 each.
+- **Arrows:** Forsworn or iron, 50/50.
+- **CC arrows:** the fire and ice arrows came from the 15% bonus roll (`LootForswornArrows15`), which pointed at
+  `LItemArrowsAll`. It now rolls the Forsworn arrow list.
+- **Plugin size:** 2,610 records (+2 `NPC_` retargets, +1 `LVLI`).
+
+See `archetype-tiers.md` §3.1.
+
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
 translation loss on the 21 overridden injector quests. Preferred fix: stop overriding them and ship a

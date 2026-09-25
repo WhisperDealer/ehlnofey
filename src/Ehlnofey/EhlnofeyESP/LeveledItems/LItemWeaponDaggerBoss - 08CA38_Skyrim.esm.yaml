@@ -8,19 +8,7 @@ Flags:
 Entries:
 - Data:
     Level: 1
-    Reference: 013986:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 01398E:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 013996:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 01399E:Skyrim.esm
+    Reference: 0139AE:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
@@ -28,5 +16,89 @@ Entries:
     Count: 1
 - Data:
     Level: 1
-    Reference: 0139AE:Skyrim.esm
+    Reference: 0CAF01:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0CAF01:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0C9A33:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0C9A33:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01399E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01399E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01399E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01399E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01399E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 013996:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 013996:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 013996:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 013996:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 013996:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01398E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01398E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01398E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01398E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 013986:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 013986:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 013986:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 013986:Skyrim.esm
     Count: 1

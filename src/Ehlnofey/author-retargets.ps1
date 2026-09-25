@@ -34,6 +34,13 @@ $edits = @(
     @{ Npc = '062128:Skyrim.esm'; From = 'Template: 01E780:Skyrim.esm'; To = 'Template: 01B0E9:Skyrim.esm' }   # WE24Orc: the Old Orc of "A Good Death"
     @{ Npc = '0EEFE4:Skyrim.esm'; From = 'Template: 01B0E9:Skyrim.esm'; To = 'Template: 01E781:Skyrim.esm' }   # LvlBanditMissileOrcM -> LCharOrcMissile
     @{ Npc = '0D9447:Skyrim.esm'; From = '    Level: 1';                To = '    Level: 19' }                  # EncOrcHunterTemplate
+
+    # ---- Forsworn Ravagers (level 34) carry the Briarheart weapon mix (WD-43, user 2026-09-25): Forsworn,
+    # elven, dwarven, rare glass. Lower rungs keep LItemForswornWeapon1H (Forsworn sword/axe only). Seven
+    # EncForsworn05Melee1H leaves inherit Inventory from the template; the Berserker leaf does not and holds
+    # its own copy. EncForsworn05TemplateBossMelee also templates on it but owns its inventory - no leak.
+    @{ Npc = '044287:Skyrim.esm'; From = '    Item: 043BD5:Skyrim.esm'; To = '    Item: 044303:Skyrim.esm' }   # EncForsworn05TemplateMelee
+    @{ Npc = '0F961A:Skyrim.esm'; From = '    Item: 043BD5:Skyrim.esm'; To = '    Item: 044303:Skyrim.esm' }   # EncForsworn05Melee1HBretonBerserk
 )
 
 foreach ($e in $edits) {

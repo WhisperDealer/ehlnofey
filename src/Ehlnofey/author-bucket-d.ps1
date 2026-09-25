@@ -113,6 +113,28 @@ foreach ($d in @(
 #      to LCharBanditMeleeOrcM by author-retargets.ps1 so they keep the ordinary mix.
 Add-Spec '01E780:Skyrim.esm' 'LCharOrcMelee' @{ Gates = @{ 14 = 3; 19 = 4; 25 = 2 } }
 
+# 3.1 Forsworn (WD-43, user 2026-09-25): Forsworn 1 · Forager 6 · Looter 14 · Pillager 24 · Ravager 34
+#     (Warlord 46 is in no rank-and-file list). Roster Forager x1 · Looter x3 · Pillager x4 · Ravager x1,
+#     mean level 19.8, T2-T5 - four tiers, allowed per faction (WD-42). Forsworn gear is weak, so the
+#     levels carry the threat. The plain level-1 "Forsworn" is dropped, as the level-1 bandit was.
+#     Gate weights multiply every entry at that gate, so each list's M/F mix survives. Requiem had pinned
+#     Missile to Pillager/Ravager and Shaman to Ravager; this puts them back on the common roster.
+$forswornLadder = @{ 6 = 1; 14 = 3; 24 = 4; 34 = 1 }
+foreach ($d in @(
+    @('01E792:Skyrim.esm', 'LCharForswornMelee1H'),
+    @('0442C8:Skyrim.esm', 'LCharForswornMeleeFemale'),
+    @('01E794:Skyrim.esm', 'LCharForswornMissile'),
+    @('0442C9:Skyrim.esm', 'LCharForswornMissileFemale'),
+    @('01E795:Skyrim.esm', 'LCharForswornShaman'))) {
+    Add-Spec $d[0] $d[1] @{ Gates = $forswornLadder }
+}
+# 3.1 Forsworn boss: every rung is "Forsworn Briarheart" (7/16/27/38/51), so the band is PINNED (WD-42).
+#     Gate 46 = SubCharForsworn05Boss* = level 38, T6 (user, WD-43): the camp's capstone above ~T4 mooks.
+#     Requiem pinned both lists to rung 06 (51) and pointed the shaman list at the MELEE sublist; the shaman
+#     list gets its magic sublist back.
+Add-Spec '0442F2:Skyrim.esm' 'LCharForswornBossMelee1H' @{ Gates = @{ 46 = 1 } }
+Add-Spec '0442FD:Skyrim.esm' 'LCharForswornBossShaman'  @{ Gates = @{ 46 = 1 } }
+
 # ---- bandit bosses (3.1)
 foreach ($d in @(
     @('03DF16:Skyrim.esm',    'LCharBanditBoss'),

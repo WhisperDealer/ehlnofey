@@ -1,0 +1,182 @@
+FormKey: 0F961A:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+VersionControl: 944407
+EditorID: EncForsworn05Melee1HBretonBerserk
+FormVersion: 40
+Version2: 5
+SkyrimMajorRecordFlags:
+- Compressed
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - LoopedScript
+  - LoopedAudio
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 34
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - AIPackages
+  - BaseData
+  - Script
+  - DefPackList
+  - AttackData
+  HealthOffset: 100
+Factions:
+- Faction: 043599:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 10F7F2:Skyrim.esm
+Voice: 013AD2:Skyrim.esm
+Template: 044287:Skyrim.esm
+Race: 013741:Skyrim.esm
+Perks:
+- Perk: 103A90:Skyrim.esm
+  Rank: 1
+  Fluff: 0xBB2916
+- Perk: 052D50:Skyrim.esm
+  Rank: 1
+  Fluff: 0xBB2916
+- Perk: 051B1B:Skyrim.esm
+  Rank: 1
+  Fluff: 0xBB2916
+- Perk: 0C1E90:Skyrim.esm
+  Rank: 1
+  Fluff: 0xBB2916
+- Perk: 0C1E92:Skyrim.esm
+  Rank: 1
+  Fluff: 0xBB2916
+- Perk: 0C3678:Skyrim.esm
+  Rank: 1
+  Fluff: 0xBB2916
+- Perk: 03AF81:Skyrim.esm
+  Rank: 1
+  Fluff: 0xBB2916
+- Perk: 105F22:Skyrim.esm
+  Rank: 1
+  Fluff: 0xBB2916
+- Perk: 053128:Skyrim.esm
+  Rank: 1
+  Fluff: 0xBB2916
+- Perk: 0581E7:Skyrim.esm
+  Rank: 1
+  Fluff: 0xBB2916
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0xBB2916
+- Perk: 0581F9:Skyrim.esm
+  Rank: 1
+  Fluff: 0xBB2916
+- Perk: 0581F4:Skyrim.esm
+  Rank: 1
+  Fluff: 0xBB2916
+- Perk: 106257:Skyrim.esm
+  Rank: 1
+  Fluff: 0xBB2916
+- Perk: 106258:Skyrim.esm
+  Rank: 1
+  Fluff: 0xBB2916
+Items:
+- Item:
+    Item: 044303:Skyrim.esm
+    Count: 2
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Keywords:
+- 013794:Skyrim.esm
+Class: 043BCB:Skyrim.esm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 87
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 15
+  - Key: Block
+    Value: 15
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 15
+  - Key: LightArmor
+    Value: 63
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 63
+  - Key: Alchemy
+    Value: 20
+  - Key: Speech
+    Value: 20
+  - Key: Alteration
+    Value: 44
+  - Key: Conjuration
+    Value: 25
+  - Key: Destruction
+    Value: 63
+  - Key: Illusion
+    Value: 20
+  - Key: Restoration
+    Value: 44
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 447
+  Magicka: 182
+  Stamina: 116
+CombatStyle: 0442CE:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+DefaultOutfit: 043BD9:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#00706156'
+MajorFlags:
+- 0x40000

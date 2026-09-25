@@ -1,10 +1,12 @@
 FormKey: 0442F2:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharForswornBossMelee1H
+FormVersion: 40
 Version2: 7
 Flags:
 - CalculateForEachItemInCount
 Entries:
 - Data:
     Level: 1
-    Reference: 0442FC:Skyrim.esm
+    Reference: 0442FA:Skyrim.esm
     Count: 1
