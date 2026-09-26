@@ -1,38 +1,12 @@
 FormKey: 0AC130:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharThalmorMelee1HFemale
+FormVersion: 40
 Version2: 4
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
-- Data:
-    Level: 1
-    Reference: 072883:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0F95F2:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 07297A:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0F95F4:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 07D961:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0F95F6:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 07D967:Skyrim.esm
-    Count: 1
 - Data:
     Level: 1
     Reference: 0F95F8:Skyrim.esm

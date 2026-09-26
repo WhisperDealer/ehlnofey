@@ -58,7 +58,7 @@ $ccMasters = @(
     'ccbgssse064-ba_elven.esl', 'ccbgssse063-ba_ebony.esl', 'ccbgssse062-ba_dwarvenmail.esl',
     'ccbgssse060-ba_dragonscale.esl', 'ccbgssse056-ba_silver.esl', 'ccbgssse055-ba_orcishscaled.esl',
     'ccbgssse053-ba_leather.esl', 'ccbgssse051-ba_daedricmail.esl', 'ccbgssse057-ba_stalhrim.esl',
-    'ccvsvsse003-necroarts.esl', 'cccbhsse001-gaunt.esl'
+    'ccvsvsse003-necroarts.esl', 'ccedhsse003-redguard.esl', 'cccbhsse001-gaunt.esl'
 )
 
 # ---------------------------------------------------------------- injector quests
@@ -187,6 +187,11 @@ $readdByPlace = @(
     # rank gets which sublist is for the Thalmor ticket.
     @{ List = '07D983:Skyrim.esm'; Items = @(,@('01399D:Skyrim.esm', 1)) }   # SublistThalmorBowAndArrowsElven <- ElvenBow
     @{ List = '07D984:Skyrim.esm'; Items = @(,@('0139A5:Skyrim.esm', 1)) }   # SublistThalmorBowAndArrowsGlass <- GlassBow
+    # ---- Thalmor Justiciars (WD-48, user 2026-09-26): Elven, with a rare chance of glass. Both Justiciar records
+    # (WE32/33/34, WERoad03) are pointed at the no-helmet outfit by author-retargets.ps1; its list is used by that
+    # outfit alone, and now rolls both looks: Elven with or without a helmet 9 : 9, glass with or without 1 : 1
+    # (10% glass). Weights in $weights. Every other Thalmor soldier's outfit stays plain Elven.
+    @{ List = '07D97A:Skyrim.esm'; Items = @(@('07D973:Skyrim.esm', 1), @('07D978:Skyrim.esm', 1), @('07D977:Skyrim.esm', 1)) }   # LItemThalmorArmorNoHelmetAll <- Elven w/ helmet, Glass w/o and w/ helmet
     # ---- Vampires (WD-47, user 2026-09-26). Every generic vampire, mook or boss, carries LItemVampireWeaponBase
     # (used by vampires only), which pointed at the BANDIT sword and war-axe lists: 70% iron. It now holds its
     # own steel / orcish / dwarven / elven sword and war axe, one each (25% per material, no iron, no glass).
@@ -257,6 +262,34 @@ function Find-ListFile([string]$formKey) {
 }
 
 $allLevels = '- CalculateFromAllLevelsLessThanOrEqualPlayer'
+
+# ---------------------------------------------------------------- new lists (Ehlnofey.esp FormIDs)
+# The plugin's own records, for gear that no vanilla list can carry without leaking to everyone who shares it.
+# ESL range 0x800-0xFFF; claim a contiguous block per feature and record it in CLAUDE.md (Naming & FormKey).
+# Row shape: @{ FormKey; EditorID; Items = @(@(<item FormKey>, <count>, <weight>), ...) }. Every entry is level 1.
+#   0x800-0x801  Thalmor (WD-48)
+$newLists = @(
+    # Justiciar one-handed weapon: Elven sword/war axe/mace, glass 1 in 10. Only the two WEThalmorElvenArmor* records use it.
+    @{ FormKey = '000800:Ehlnofey.esp'; EditorID = 'EHL_LVLI_ThalmorJusticiarWeapon1H'
+       Items = @(@('01E60E:Skyrim.esm', 1, 9), @('07D97C:Skyrim.esm', 1, 1)) }   # SublistThalmorWeaponElven1H x9, SublistThalmorWeaponGlass1H x1
+    # Boss wizard dagger: Elven, glass 1 in 10. Only EncThalmor06MagicBossM uses it (the level-50 boss).
+    @{ FormKey = '000801:Ehlnofey.esp'; EditorID = 'EHL_LVLI_ThalmorBossDagger'
+       Items = @(@('01399E:Skyrim.esm', 1, 9), @('0139A6:Skyrim.esm', 1, 1)) }   # ElvenDagger x9, GlassDagger x1
+)
+foreach ($n in $newLists) {
+    $id, $master = $n.FormKey -split ':'
+    $out = New-Object System.Collections.ArrayList
+    foreach ($l in @("FormKey: $($n.FormKey)", "EditorID: $($n.EditorID)", 'Flags:', $allLevels, 'Entries:')) { [void]$out.Add($l) }
+    foreach ($i in $n.Items) {
+        for ($w = 0; $w -lt $i[2]; $w++) {
+            foreach ($l in @('- Data:', '    Level: 1', "    Reference: $($i[0])", "    Count: $($i[1])")) { [void]$out.Add($l) }
+        }
+    }
+    $path = Join-Path (Join-Path $esp 'LeveledItems') "$($n.EditorID) - ${id}_$master.yaml"
+    [System.IO.File]::WriteAllLines($path, $out, $utf8NoBom)
+    "{0,-72} new, {1} entries" -f (Split-Path -Leaf $path), (($out | Where-Object { $_ -eq '- Data:' }) | Measure-Object).Count
+}
+
 $added = 0
 foreach ($r in ($readdByPlace + $ccReadd)) {
     $path  = Find-ListFile $r.List
@@ -355,6 +388,8 @@ $weights = [ordered]@{
     '08CA38:Skyrim.esm' = [ordered]@{ '013986:Skyrim.esm' = 4; '01398E:Skyrim.esm' = 4; '013996:Skyrim.esm' = 5
                                       '01399E:Skyrim.esm' = 5; '0C9A33:Skyrim.esm' = 2; '0CAF01:Skyrim.esm' = 2
                                       '0139A6:Skyrim.esm' = 1; '0139AE:Skyrim.esm' = 1 }   # LItemWeaponDaggerBoss
+    # Thalmor Justiciar armor (WD-48): Elven no helmet 9 · Elven helmet 9 · glass no helmet 1 · glass helmet 1.
+    '07D97A:Skyrim.esm' = [ordered]@{ '07D974:Skyrim.esm' = 9; '07D973:Skyrim.esm' = 9 }   # LItemThalmorArmorNoHelmetAll
 }
 
 function Get-Blocks([string[]]$lines) {

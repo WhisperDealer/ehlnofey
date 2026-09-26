@@ -1,0 +1,45 @@
+FormKey: 000800:Ehlnofey.esp
+EditorID: EHL_LVLI_ThalmorJusticiarWeapon1H
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+Entries:
+- Data:
+    Level: 1
+    Reference: 01E60E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01E60E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01E60E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01E60E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01E60E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01E60E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01E60E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01E60E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01E60E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 07D97C:Skyrim.esm
+    Count: 1

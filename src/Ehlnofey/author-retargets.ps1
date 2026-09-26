@@ -1,7 +1,8 @@
-# One-line NPC_ edits: retarget a record's Template (which list the spawn draws from) or fix one field.
+# Small NPC_ edits: retarget a record's Template (which list the spawn draws from) or fix a field.
 #
 # Each edit copies the WINNING vanilla record verbatim (last in load order, CLAUDE.md "last-wins") and
-# replaces exactly one line (guardrail 3). It replaces any earlier override of that record in the plugin,
+# changes only the lines it names (guardrail 3): From/To or Swap (whole-line swaps), Level (+ Own),
+# DropItem (one Items entry) and DropFlag (one TemplateFlag). One row per record - a second row would overwrite it. It replaces any earlier override of that record in the plugin,
 # including a bucket-E level graft from extract-requiem.ps1, so the edit's From line is matched against
 # vanilla. Any master works: Npc is a full FormKey.
 #
@@ -12,6 +13,7 @@ $ErrorActionPreference = 'Stop'
 
 $root = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
 $base = Join-Path $root 'reference\Base'
+$cc   = Join-Path $root 'reference\mods\CreationClubYaml'
 $dst  = Join-Path $root 'src\Ehlnofey\EhlnofeyESP\Npcs'
 $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
 $loadOrder = @('01Skyrim', '02Update', '03Dawnguard', '04HearthFires', '05Dragonborn')
@@ -164,6 +166,33 @@ $edits = @(
     @{ Npc = '042267:Skyrim.esm'; From = 'Template: 01E771:Skyrim.esm'; To = 'Template: 039D64:Skyrim.esm' }   # LvlVampireThrallConjurer: LCharBanditWizard -> SubCharBandit06Magic
     @{ Npc = '08E2F7:Skyrim.esm'; From = 'Template: 01E770:Skyrim.esm'; To = 'Template: 039D76:Skyrim.esm' }   # LvlVampireThrallMissileHold: LCharBanditMissile -> SubCharBandit06Missile
     @{ Npc = '02ED6D:Skyrim.esm'; From = 'Template: 01E79C:Skyrim.esm'; To = 'Template: 03DEC5:Skyrim.esm' }   # LvlVampireThrallMelee2HGuard: LvlBanditMeleeAny -> SubCharBandit06Melee2H
+
+    # ---- Thalmor (WD-48, user 2026-09-26). Levels are pinned in author-bucket-d.ps1 (soldiers 36, wizards 44, bosses 50).
+    # Archers: LvlThalmorMissile does not inherit Inventory, and its own carried an iron dagger, the BANDIT bow list
+    # (hunting/long/Imperial) and iron arrows. It is the archer at the Embassy (4 guards), Northwatch Keep (3) and the
+    # Ratway (MQ202), who all inherit its inventory. It now carries the Thalmor bow (Elven bow + Elven arrows) and dagger.
+    @{ Npc = '02B361:Skyrim.esm'; Swap = @(@('    Item: 01397E:Skyrim.esm', '    Item: 07D986:Skyrim.esm'),     # IronDagger -> LItemThalmorDagger
+                                           @('    Item: 039D2E:Skyrim.esm', '    Item: 07D985:Skyrim.esm'));    # LItemBanditWeaponBow -> LItemThalmorWeaponBow
+       DropItem = '039D2F:Skyrim.esm' }                                                                          # LItemBanditWeaponArrows (the bow sublist carries arrows)
+    # Justiciars (WE32/33/34, WERoad03 - "Thalmor Justiciar"): Elven with a rare glass weapon and armor. Both own their
+    # inventory. The helmeted one moves to the Justiciar-only no-helmet outfit, whose list now rolls both looks
+    # (author-injectors.ps1). The shield stays LItemThalmorShield (Elven, shared with every sword-and-board soldier).
+    @{ Npc = '10516F:Skyrim.esm'; Swap = @(@('    Item: 07D97D:Skyrim.esm', '    Item: 000800:Ehlnofey.esp'),   # LItemThalmorWeapon1H -> EHL_LVLI_ThalmorJusticiarWeapon1H
+                                           @('DefaultOutfit: 02B0FB:Skyrim.esm', 'DefaultOutfit: 07D97E:Skyrim.esm')) }   # WithHelmet -> ThalmorArmorNoHelmetOutfit
+    @{ Npc = '10516E:Skyrim.esm'; From = '    Item: 07D97D:Skyrim.esm'; To = '    Item: 000800:Ehlnofey.esp' }   # WEThalmorElvenArmorNoHelmet
+    # Boss wizard (the pinned level-50 rung): owns its inventory - identical to what it inherited (robes, dagger,
+    # wizard loot) - so its dagger can be its own: Elven, glass 1 in 10.
+    @{ Npc = '07D98B:Skyrim.esm'; From = '    Item: 07D986:Skyrim.esm'; To = '    Item: 000801:Ehlnofey.esp'; DropFlag = 'Inventory' }   # EncThalmor06MagicBossM
+    # Embassy reception guards (MQ201, Diplomatic Immunity) template straight onto a rung-03 leaf (level 20): moved to
+    # the same sex's rung-05 leaf so they match every other Thalmor soldier (36).
+    @{ Npc = '033F45:Skyrim.esm'; From = 'Template: 07D961:Skyrim.esm'; To = 'Template: 07D96C:Skyrim.esm' }   # MQ201PartyGuard:  EncThalmor03Melee1HF -> EncThalmor05Melee1HF
+    @{ Npc = '03AF2F:Skyrim.esm'; From = 'Template: 07D962:Skyrim.esm'; To = 'Template: 07D96F:Skyrim.esm' }   # MQ201PartyGuard2: EncThalmor03Melee1HM -> EncThalmor05Melee1HM
+    # The Creation Club Redguard pack's own Thalmor (user, 2026-09-26): three soldiers that own a fixed level 18
+    # (no Stats flag). Raised to 36 like every other Thalmor soldier. Health, gear and spells are left alone
+    # (AutoCalcStats, so health follows the level). The pack's other Thalmor already roll our pinned lists.
+    @{ Npc = '000E41:ccedhsse003-redguard.esl'; From = '    Level: 18'; To = '    Level: 36' }   # ccEDHSSE003_EncThalmor02MissileM
+    @{ Npc = '000E3F:ccedhsse003-redguard.esl'; From = '    Level: 18'; To = '    Level: 36' }   # ccEDHSSE003_EncThalmor03Melee1HF
+    @{ Npc = '000E40:ccedhsse003-redguard.esl'; From = '    Level: 18'; To = '    Level: 36' }   # ccEDHSSE003_EncThalmor03Melee1HM
 )
 
 foreach ($e in $edits) {
@@ -173,7 +202,13 @@ foreach ($e in $edits) {
         $hit = @(Get-ChildItem -LiteralPath (Join-Path $base "$m\Npcs") -Filter "* - ${id}_$master.yaml" -ErrorAction SilentlyContinue)
         if ($hit.Count -eq 1) { $src = $hit[0] }
     }
-    if ($src -eq $null) { throw "no vanilla NPC_ $($e.Npc) in reference/Base" }
+    if ($src -eq $null) {
+        # A record defined by a Creation Club plugin: copy it from that plugin's decompile (it must be a master).
+        $ccDir = Join-Path $cc ([System.IO.Path]::GetFileNameWithoutExtension($master))
+        $hit = @(Get-ChildItem -LiteralPath (Join-Path $ccDir 'Npcs') -Filter "* - ${id}_$master.yaml" -ErrorAction SilentlyContinue)
+        if ($hit.Count -eq 1) { $src = $hit[0] }
+    }
+    if ($src -eq $null) { throw "no NPC_ $($e.Npc) in reference/Base or the CC decompiles" }
     $lines = @(Get-Content -LiteralPath $src.FullName -Encoding UTF8)
     if ($e.Contains('Level')) {
         $i = [array]::IndexOf($lines, '    MutagenObjectType: PcLevelMult')
@@ -195,10 +230,38 @@ foreach ($e in $edits) {
         "{0,-50} {1} -> Level: {2}" -f $src.Name, $was, $e.Level
         continue
     }
-    $n = @($lines | Where-Object { $_ -eq $e.From }).Count
-    if ($n -ne 1) { throw "$($src.Name): expected exactly one '$($e.From)', found $n" }
-    $out = @($lines | ForEach-Object { if ($_ -eq $e.From) { $e.To } else { $_ } })
-    [System.IO.File]::WriteAllLines((Join-Path $dst $src.Name), $out, $utf8NoBom)
-    "{0,-50} {1} -> {2}" -f $src.Name, $e.From.Trim(), $e.To.Trim()
+    # Line swaps: From/To for one, Swap = @(@(from, to), ...) for several.
+    $swaps = @()
+    if ($e.Contains('From')) { $swaps += ,@($e.From, $e.To) }
+    if ($e.Contains('Swap')) { $swaps += $e.Swap }
+    $did = @()
+    foreach ($sw in $swaps) {
+        $n = @($lines | Where-Object { $_ -eq $sw[0] }).Count
+        if ($n -ne 1) { throw "$($src.Name): expected exactly one '$($sw[0])', found $n" }
+        $lines = @($lines | ForEach-Object { if ($_ -eq $sw[0]) { $sw[1] } else { $_ } })
+        $did += "$($sw[0].Trim()) -> $($sw[1].Trim())"
+    }
+    # DropItem = '<FormKey>': remove that '- Item:' block (the '- Item:' line plus its indented lines) from Items:.
+    if ($e.Contains('DropItem')) {
+        $at = [array]::IndexOf($lines, "    Item: $($e.DropItem)")
+        if ($at -lt 1 -or $lines[$at - 1] -ne '- Item:') { throw "$($src.Name): no Items entry $($e.DropItem)" }
+        $end = $at + 1
+        while ($end -lt $lines.Count -and $lines[$end] -match '^    ') { $end++ }
+        $lines = @($lines[0..($at - 2)] + $lines[$end..($lines.Count - 1)])
+        $did += "Item $($e.DropItem) dropped"
+    }
+    # DropFlag = '<TemplateFlag>': the record owns that data instead of inheriting it (its own copy must be right).
+    if ($e.Contains('DropFlag')) {
+        $tf = [array]::IndexOf($lines, '  TemplateFlags:')
+        $f = [array]::IndexOf($lines, "  - $($e.DropFlag)", $tf + 1)
+        if ($tf -lt 0 -or $f -lt 0 -or ($f -gt $tf + 1 -and @($lines[($tf + 1)..($f - 1)] | Where-Object { $_ -notmatch '^  - ' }).Count -gt 0)) {
+            throw "$($src.Name): no $($e.DropFlag) in TemplateFlags"
+        }
+        $lines = @($lines[0..($f - 1)] + $lines[($f + 1)..($lines.Count - 1)])
+        $did += "$($e.DropFlag) flag dropped"
+    }
+    if ($did.Count -eq 0) { throw "$($src.Name): edit does nothing" }
+    [System.IO.File]::WriteAllLines((Join-Path $dst $src.Name), $lines, $utf8NoBom)
+    "{0,-50} {1}" -f $src.Name, ($did -join '; ')
 }
 "retargets: $($edits.Count) NPC_ records"

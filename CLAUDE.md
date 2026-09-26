@@ -296,7 +296,7 @@ sublists are flattened, the quest is left alone). Only the offending properties 
 quest's harmless level-1 injections (spell tomes, books, food, clothes) still run. The rest — Dawnguard
 books, Hearthfire food and children's clothes, and ~15 CC packs — inject flat and were left alone.
 **The plugin now has 26 masters**: the five base masters (Hearthfire included — see Naming) plus 21 CC
-plugins. Overriding CC quests collapses their 9-language strings to English (the non-localized-`.esp`
+plugins (27 and 22 since WD-48 added the Redguard pack). Overriding CC quests collapses their 9-language strings to English (the non-localized-`.esp`
 gotcha), so non-English players see English text in those quests.
 
 **Bandit chiefs have a steel floor** (2026-09-24, after play confirmed the chief mix is the same at
@@ -383,6 +383,16 @@ See `archetype-tiers.md` §3.1.
   two-handed (user): they close in and soak damage for the vampire. Dropping
   `Stats` was not safe: thralls carry the placeholder class `EncClassDremoraMelee` and no `AutoCalcStats`.
 - **Plugin size:** 2,684 records (+1 `LVLI`, `LItemVampireWeaponBase`; +37 thrall `NPC_`).
+
+**Thalmor are done (WD-48, 2026-09-26). Levels and gear were verified in game by the user.**
+- **Levels, all pinned** (one name per band): soldiers and archers **36**, above every guard. Wizards **44**. Boss wizards **50**.
+- **Gear:** Elven for everyone. **Rare glass (1 in 10) goes only to the Justiciars** (weapon and armor) **and the boss wizard**
+  (dagger), through two new lists and the Justiciar-only no-helmet outfit.
+- **Archer fix:** `LvlThalmorMissile` (the Embassy, Northwatch and Ratway archers) owned the bandit bow and iron arrows.
+  It now carries the Thalmor Elven bow and dagger.
+- **CC Redguard pack:** its three Thalmor soldiers (`ccEDHSSE003_EncThalmor*`) owned a fixed level 18. They are now 36
+  like every other soldier (verified in game), which makes `ccedhsse003-redguard.esl` the **27th master** (22 CC plugins).
+- **Plugin size:** 2,694 records (+2 new `LVLI`, +9 `NPC_`). See `archetype-tiers.md` §3.1.
 
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
@@ -666,6 +676,9 @@ Fixed now so Phase 4 does not have to argue about it:
   more CC plugins (21 in all), and **`HearthFires.esm` is now a master** — not for Hearthfire content,
   but because the overridden `ccbgssse001-fish` DLC-detection quest holds properties pointing at
   Hearthfire records, and Spriggit cannot write a FormKey whose plugin is not a master.
+  **Revised 2026-09-26 (WD-48):** plus `ccedhsse003-redguard.esl` (22 CC, 27 in all), to raise its own Thalmor
+  soldiers from 18 to 36. `$ccMasters` in `author-injectors.ps1` follows `Skyrim.ccc` order;
+  `author-retargets.ps1` copies a CC-defined `NPC_` from `reference/mods/CreationClubYaml/`.
 - **EditorID prefix:** `EHL_`, then the domain, then the specific: `EHL_LVLI_DraugrBossHoard_T4`,
   `EHL_ECZN_BleakFalls`. Tier suffixes are `_T<n>` against the ladder in `design/tiers.md`.
 - **New records** start at `0x800` and are allocated in a **contiguous block per feature** (one block
@@ -681,9 +694,14 @@ Fixed now so Phase 4 does not have to argue about it:
   but the mod is no longer override-only, and `implementation-strategy.md` §2.5 still says it is.
 - Always `/formkey-check` before claiming a block.
 
-**FormID usage: none, and none planned.** All 2,877 shipped records are overrides. The ~7 wilderness
-`ECZN` and the per-tier gear lists belonged to the replaced architecture and are not being built.
-**Next free: `0x800`.**
+**FormID usage** (claimed blocks; everything else is an override):
+
+| Block | Feature | Records |
+|---|---|---|
+| `0x800`–`0x801` | Thalmor rare glass (WD-48) | `EHL_LVLI_ThalmorJusticiarWeapon1H`, `EHL_LVLI_ThalmorBossDagger` |
+
+New lists are written by `author-injectors.ps1` `$newLists`. **Next free: `0x802`.** The ~7 wilderness `ECZN` and the
+per-tier gear lists belonged to the replaced architecture and are not being built.
 
 ## Useful FormKey constants
 
@@ -976,6 +994,7 @@ A reader-facing page per finished faction, in one shared style. Each faction tic
 | Hold guards + civil-war soldiers | WD-44 / WD-45 | https://claude.ai/artifact/2g11MaAwsx2MJ5ybrXqoGd |
 | Warlocks, necromancers, conjurers | WD-46 | https://claude.ai/artifact/WhSB5WhDyXASBzhFXQYkTi |
 | Vampires + thralls | WD-47 | https://claude.ai/artifact/3eUAuGTto4q1dyxZWXPXmA |
+| Thalmor | WD-48 | https://claude.ai/artifact/35EZVm54hQ5fFC25A7Qa5t |
 
 Candidates still to confirm:
 

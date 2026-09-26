@@ -98,8 +98,9 @@ The main table. `Vanilla rungs` are name (level) from `lore-constraints.md` §1 
 | Forsworn boss | `LCharForswornBossMelee1H` 0442F2 · `…BossShaman` 0442FD | Briarheart 7 · 16 · 27 · 38 · 51 | **38 only** (pinned — see 3.1.1, WD-43) | **T6** |
 | **Warlock** (all five) | `LCharWarlockFire` 01E7D1 &c. (32 lists) | Novice 1 · Apprentice 6 · Adept 12 · Mage 19 · Wizard/Ascendant 27 · Pyromancer/Master 36 · Arch 46 | Mage ×2 · **Wizard ×3** · Master ×1 — mean 25.5 (WD-46) | **T4** (T4–T6) |
 | Warlock boss | `LCharWarlockBossFire` 0E1018 &c. (12 lists) | 7 · 14 · 21 · 30 · 40 · 50 | **50 only** (Arch; 40 for four voice lists — WD-46) | **T7** |
-| **Thalmor** | `LCharThalmorMelee1H` 02B129 | 4 · 12 · 20 · 28 · 36 | 12 ×2 · **20 ×3** · 28 ×2 | **T4** (T3–T5) |
-| Thalmor boss | `LCharThalmorMagicBoss` 07DCA9 | 14 · 23 · 32 · 40 · 50 | 23 ×2 · **32 ×2** · 40 ×1 | **T5** (T4–T6) |
+| **Thalmor soldier** | `LCharThalmorMelee1H` 02B129 + 4 siblings | 4 · 12 · 20 · 28 · 36 | **36 only** (pinned — WD-48) | **T5–T6** |
+| **Thalmor wizard** | `LCharThalmorMagic` 02B128 · `…MagicMale` 0ABEDD | 4 · 12 · 20 · 28 · 36 · 44 | **44 only** (pinned — WD-48) | **T6** |
+| Thalmor boss | `LCharThalmorMagicBoss` 07DCA9 | 14 · 23 · 32 · 40 · 50 | **50 only** (pinned — WD-48) | **T7** |
 | **Alik'r** | `LCharAlikrMelee1H` 06766F | 1 · 6 · 14 · 24 · 34 · 44 | Forager-tier 6 ×2 · **14 ×3** · 24 ×1 | **T3** (T2–T4) |
 | **Vampire** | `LCharVampire` 033973 + 4 voice lists | Fledgling 1 · Vampire 6 · Blooded 12 · Mistwalker 20 · Nightstalker 28 · Ancient 38 · Volkihar 48 · Nightlord 60 (DLC1) | Nightstalker ×1 · **Ancient ×3** · Volkihar ×2 — mean 39.7 (WD-47) | **T6** (T5–T7) |
 | Vampire boss | `LCharVampireBoss` 0339A9 + 3 race lists | Master Vampire 14 · 23 · 31 · 42 · Volkihar Master 53 · Nightmaster 65 (DLC1) | **65 only** (Nightmaster; pinned — WD-47) | **above T7** |
@@ -109,6 +110,36 @@ The main table. `Vanilla rungs` are name (level) from `lore-constraints.md` §1 
 | **Witch** | `LCharWitchAny` 074F9D | 4 · 8 | 4 ×1 · **8 ×1** | **T2** (T1–T2) |
 | **Vigilant of Stendarr** | `LCharVigilantOfStendarr` 0BFB53 | 5 — single gate | *(unchanged — already flat)* | **T2** |
 | **Dawnguard** | `LCharDawnguardMelee1H` 014281 | 1 · 5 · 9 · 14 · 19 · 25 | 9 ×2 · **14 ×3** · 19 ×1 | **T3** (T2–T4) |
+
+**Thalmor (WD-48, user 2026-09-26). Levels and gear verified in game by the user.** A specialist force sent into Skyrim, so better than
+the average soldier. Only the `EncThalmor00*` templates carry a name ("Thalmor Soldier", "Thalmor Wizard"), and every
+rung leaf takes `Traits`, so no band is legible and all three are pinned. Requiem had flattened the lists evenly
+(soldiers ≈ 20, bosses 14 ×3 of 7).
+- **Soldiers, melee and archers: 36** (rung 05), in `LCharThalmorMelee1H`, `…Melee1HFemale`, `…Missile` and the two
+  Dragonborn male lists. Above every hold guard and civil-war soldier (25/30/35). The plain, shield and dual-wield
+  leaves all stay. The embassy reception guards (`MQ201PartyGuard`, `…2`) templated straight onto a level-20 leaf; they
+  move to the same sex's rung-05 leaf.
+- **Wizards: 44** (rung 06: Chain Lightning, Incinerate, Thunderbolt, Ironflesh, storm atronach).
+- **Boss wizards: 50** (`EncThalmor06MagicBossM`, +300 HP). Still named "Thalmor Wizard". Placed only as the
+  Northwatch Interrogator and Agent Lorcalin, plus CC spawns.
+- **Gear: Elven.** Every soldier wears plain Elven armor and carries Elven weapons, dagger, bow and shield (Requiem's
+  pin; unchanged). Wizards wear Thalmor robes with an Elven dagger.
+- **Rare glass for the higher ranks only** (user): the **Justiciars** (`WEThalmorElvenArmor*`, "Thalmor Justiciar",
+  the WE32/33/34 and WERoad03 patrols) draw their weapon from `EHL_LVLI_ThalmorJusticiarWeapon1H` 000800 (Elven 9 : glass
+  1). Their armor comes from the Justiciar-only no-helmet outfit, which now rolls Elven with or without a helmet 9 : 9
+  and glass with or without 1 : 1. The helmeted Justiciar was moved onto that outfit. Their shield stays Elven (shared).
+  The **boss wizard** owns its inventory and carries `EHL_LVLI_ThalmorBossDagger` 000801 (Elven 9 : glass 1). These
+  are the plugin's first new FormIDs: every Thalmor list is shared with the soldiers, and the user chose clearly named
+  new lists over repurposing orphaned vanilla sublists. The Justiciar mage keeps the wizard's Elven dagger.
+- **Archers had bandit bows.** `LvlThalmorMissile` does not inherit `Inventory`; its own held an iron dagger, the bandit
+  bow list and iron arrows. That is the archer at the Embassy, Northwatch Keep and the Ratway. It now carries the
+  Thalmor bow (Elven bow + Elven arrows) and dagger. Only the Solstheim archers and the `Enc*` leaves had the Elven bow before.
+- **Loot and gold** were already flat. No quest injects into any Thalmor list (base, DLC, CC).
+- **Left alone:** named Thalmor (Elenwen 30, Ancano/Rulindil/Ondolemar/Linwe `PcLevelMult`) belong to the named-boss
+  ticket.
+- **The CC Redguard pack's own Thalmor** (`ccEDHSSE003_*`, three soldiers) owned a fixed level 18. They are raised to 36 (user),
+  which adds `ccedhsse003-redguard.esl` as a master. Their health, gear and spells are the pack's own. The other CC
+  Thalmor (Bandit Armor packs) already roll the pinned lists.
 
 **Vampires (WD-47, user 2026-09-26). Levels, mix and thralls verified in game by the user.** Vampires are immortal and carry a Daedric
 prince's gift, so they sit well above the average mage (warlock mooks mean 25.5): Nightstalker ×1 · Ancient ×3 ·
@@ -199,7 +230,7 @@ the only signal the player gets.** A ×2/×2/×1 band is therefore only legible 
 | **Bandit** | *none* → `LvlBanditBoss` 03DF17 = "Bandit Chief" | **pinned to 28** |
 | **Forsworn** | "Forsworn Briarheart" at all five rungs | **pinned to 38** (WD-43) |
 | **Warlock** | nameless leaves, no `Traits` (templates are named per rung) | **pinned to 50** (WD-46) |
-| **Thalmor** | "Thalmor Wizard" at all seven rungs | **pin** (WD-42) — rung chosen in WD-48 |
+| **Thalmor** | "Thalmor Wizard" at all seven rungs | **pinned to 50** (WD-48) |
 | **Vampire** | nameless leaves, no `Traits` (templates: "Master Vampire" ×4, then Volkihar Master, Nightmaster) | **pinned to 65** (WD-47) |
 
 So the bandit boss is pinned to a single rung: a Bandit Chief is the same level in Swindler's Den, in

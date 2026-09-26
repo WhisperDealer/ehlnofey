@@ -272,6 +272,26 @@ Add-Spec '01E775:Skyrim.esm'   'LCharVampireCompanion'      @{ Gates = @{ 5 = 1;
 Add-Spec '0640BE:Skyrim.esm'   'LCharVampireCompanionFrost' @{ Gates = @{ 5 = 1; 7 = 1; 13 = 1; 25 = 1 } }
 Add-Spec '0029A2:Dawnguard.esm' 'DLC1LCharChaurusHunter' @{ Gates = @{ 1 = 3; 32 = 1 } } # Fledgling x3 Hunter x1
 
+# 3.1 Thalmor (WD-48, user 2026-09-26): a specialist force sent into Skyrim, so better than the average soldier.
+#     Only the EncThalmor00* templates carry a name ("Thalmor Soldier" / "Thalmor Wizard"); every rung leaf is
+#     nameless and takes Traits, so each band shows one name at every level: PINNED, all three (WD-42).
+#     Gate = level on these lists. Requiem had flattened them evenly (soldier mean 20, boss 14 x3 of 7).
+#   - Soldiers, melee and archers: gate 36 = rung 05, level 36. Above every hold guard and civil-war soldier
+#     (25/30/35). Gate weight 1 keeps each list's plain/shield/dual and M/F leaves.
+#   - Wizards: gate 44 = rung 06, level 44 (Chain Lightning, Incinerate, Thunderbolt, Ironflesh, storm atronach).
+#   - Boss wizards: gate 52 = EncThalmor06MagicBossM, level 50 (+300 HP). Still named "Thalmor Wizard".
+foreach ($d in @(
+    @('02B129:Skyrim.esm',    'LCharThalmorMelee1H'),
+    @('0AC130:Skyrim.esm',    'LCharThalmorMelee1HFemale'),
+    @('02B12A:Skyrim.esm',    'LCharThalmorMissile'),
+    @('0354F5:Dragonborn.esm','DLC2LCharThalmorMelee1HMale'),
+    @('0354F6:Dragonborn.esm','DLC2LCharThalmorMissileMale'))) {
+    Add-Spec $d[0] $d[1] @{ Gates = @{ 36 = 1 } }
+}
+Add-Spec '02B128:Skyrim.esm' 'LCharThalmorMagic'     @{ Gates = @{ 44 = 1 } }
+Add-Spec '0ABEDD:Skyrim.esm' 'LCharThalmorMagicMale' @{ Gates = @{ 44 = 1 } }
+Add-Spec '07DCA9:Skyrim.esm' 'LCharThalmorMagicBoss' @{ Gates = @{ 52 = 1 } }
+
 # ---------------------------------------------------------------- run
 
 $utf8NoBom = New-Object System.Text.UTF8Encoding($false)

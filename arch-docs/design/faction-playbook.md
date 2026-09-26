@@ -80,6 +80,8 @@ Properties serialize as `Object: <hex>:<master>`. The Forsworn had none; bandits
 | Remove entries by reference | `author-injectors.ps1` `$cuts` |
 | Set an entry's weight (duplicate count) | `author-injectors.ps1` `$weights` |
 | One-line `NPC_` edit: template, `Items:` line, level | `author-retargets.ps1` `$edits` |
+| Several lines on one `NPC_`, drop an `Items` entry, drop a template flag | `author-retargets.ps1` `Swap` / `DropItem` / `DropFlag` (one row per record) |
+| A list only one rank uses, when every existing list is shared | `author-injectors.ps1` `$newLists` (new `Ehlnofey.esp` FormID; claim the block in CLAUDE.md) |
 
 Re-adds run **before** cuts and weights, so one pass can add an item and then weight it. It can also
 repoint an entry: re-add the new target and cut the old one. Re-adding the same item several times with

@@ -1,0 +1,45 @@
+FormKey: 000801:Ehlnofey.esp
+EditorID: EHL_LVLI_ThalmorBossDagger
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+Entries:
+- Data:
+    Level: 1
+    Reference: 01399E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01399E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01399E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01399E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01399E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01399E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01399E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01399E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01399E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139A6:Skyrim.esm
+    Count: 1
