@@ -1,18 +1,12 @@
 FormKey: 0E106D:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharWarlockBossNecroMaleCondescending
+FormVersion: 40
 Version2: 3
 Entries:
 - Data:
     Level: 1
-    Reference: 0E1042:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
     Reference: 0E1046:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 00092A:ccvsvsse003-necroarts.esl
     Count: 1
 - Data:
     Level: 1

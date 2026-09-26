@@ -1,5 +1,7 @@
 FormKey: 081EF3:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharWarlockNecroBossMaleElfHaughty
+FormVersion: 40
 Version2: 4
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -7,25 +9,5 @@ Flags:
 Entries:
 - Data:
     Level: 1
-    Reference: 0E1040:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0E1048:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0E1044:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 000930:ccvsvsse003-necroarts.esl
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 00092C:ccvsvsse003-necroarts.esl
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 000926:ccvsvsse003-necroarts.esl
+    Reference: 1091C2:Skyrim.esm
     Count: 1

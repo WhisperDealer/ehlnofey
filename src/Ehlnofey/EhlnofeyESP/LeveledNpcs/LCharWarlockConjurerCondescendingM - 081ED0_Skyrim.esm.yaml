@@ -1,5 +1,7 @@
 FormKey: 081ED0:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharWarlockConjurerCondescendingM
+FormVersion: 40
 Version2: 3
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -11,11 +13,35 @@ Entries:
     Count: 1
 - Data:
     Level: 1
-    Reference: 06D254:Skyrim.esm
+    Reference: 06D24C:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
     Reference: 06D251:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 06D251:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 06D254:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 06D254:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 06D254:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 06D25A:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 06D25A:Skyrim.esm
     Count: 1
 - Data:
     Level: 1

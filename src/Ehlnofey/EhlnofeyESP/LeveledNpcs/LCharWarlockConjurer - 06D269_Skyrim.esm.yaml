@@ -1,5 +1,7 @@
 FormKey: 06D269:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharWarlockConjurer
+FormVersion: 40
 Version2: 4
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -11,25 +13,21 @@ Entries:
     Count: 1
 - Data:
     Level: 1
+    Reference: 06D266:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
     Reference: 06D267:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
-    Reference: 1091C6:Skyrim.esm
+    Reference: 06D267:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 06D267:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
     Reference: 06D268:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 06D266:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 06D266:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 06D267:Skyrim.esm
     Count: 1

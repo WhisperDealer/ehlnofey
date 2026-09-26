@@ -1,5 +1,7 @@
 FormKey: 081EF2:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharWarlockNecroElfHaughtyF
+FormVersion: 40
 Version2: 3
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -11,9 +13,21 @@ Entries:
     Count: 1
 - Data:
     Level: 1
-    Reference: 0551DC:Skyrim.esm
+    Reference: 0551CC:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
     Reference: 0551D4:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0551D4:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0551D4:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0551DC:Skyrim.esm
     Count: 1

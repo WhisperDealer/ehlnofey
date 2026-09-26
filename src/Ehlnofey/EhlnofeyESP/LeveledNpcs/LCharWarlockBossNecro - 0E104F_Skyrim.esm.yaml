@@ -1,8 +1,14 @@
 FormKey: 0E104F:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharWarlockBossNecro
+FormVersion: 40
 Version2: 2
 Entries:
 - Data:
     Level: 1
-    Reference: 0E104E:Skyrim.esm
+    Reference: 1091C3:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 1091C2:Skyrim.esm
     Count: 1

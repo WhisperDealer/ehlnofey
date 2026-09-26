@@ -96,8 +96,8 @@ The main table. `Vanilla rungs` are name (level) from `lore-constraints.md` §1 
 | **Orc melee** (hostile Orc camps) | `LCharOrcMelee` 01E780 | reuses bandit records | Highwayman ×3 · **Plunderer ×4** · Marauder ×2 (revised 2026-09-24) | **T4** (T3–T5) |
 | **Forsworn** | `LCharForswornMelee1H` 01E792 + 4 siblings | Forsworn 1 · Forager 6 · Looter 14 · Pillager 24 · Ravager 34 · Warlord 46 | Forager ×1 · Looter ×3 · **Pillager ×4** · Ravager ×1 — mean 19.8 (revised WD-43) | **T4** (T2–T5) |
 | Forsworn boss | `LCharForswornBossMelee1H` 0442F2 · `…BossShaman` 0442FD | Briarheart 7 · 16 · 27 · 38 · 51 | **38 only** (pinned — see 3.1.1, WD-43) | **T6** |
-| **Warlock** (all five) | `LCharWarlockFire` 01E7D1 &c. | Wizard 1 · Appr. Conjurer 6 · Conjurer Adept 12 · Conjurer 19 · Ascendant 27 · Master 36 · Arch 46 | Appr. Conjurer ×2 · **Conjurer Adept ×3** · Conjurer ×3 · Ascendant ×1 | **T3** (T2–T5) |
-| Warlock boss | `LCharWarlockBossFire` 0E1018 | 7 · 14 · 21 · 30 · 40 | 21 ×2 · **30 ×2** · 40 ×1 | **T5** (T4–T6) |
+| **Warlock** (all five) | `LCharWarlockFire` 01E7D1 &c. (32 lists) | Novice 1 · Apprentice 6 · Adept 12 · Mage 19 · Wizard/Ascendant 27 · Pyromancer/Master 36 · Arch 46 | Mage ×2 · **Wizard ×3** · Master ×1 — mean 25.5 (WD-46) | **T4** (T4–T6) |
+| Warlock boss | `LCharWarlockBossFire` 0E1018 &c. (12 lists) | 7 · 14 · 21 · 30 · 40 · 50 | **50 only** (Arch; 40 for four voice lists — WD-46) | **T7** |
 | **Thalmor** | `LCharThalmorMelee1H` 02B129 | 4 · 12 · 20 · 28 · 36 | 12 ×2 · **20 ×3** · 28 ×2 | **T4** (T3–T5) |
 | Thalmor boss | `LCharThalmorMagicBoss` 07DCA9 | 14 · 23 · 32 · 40 · 50 | 23 ×2 · **32 ×2** · 40 ×1 | **T5** (T4–T6) |
 | **Alik'r** | `LCharAlikrMelee1H` 06766F | 1 · 6 · 14 · 24 · 34 · 44 | Forager-tier 6 ×2 · **14 ×3** · 24 ×1 | **T3** (T2–T4) |
@@ -109,6 +109,20 @@ The main table. `Vanilla rungs` are name (level) from `lore-constraints.md` §1 
 | **Witch** | `LCharWitchAny` 074F9D | 4 · 8 | 4 ×1 · **8 ×1** | **T2** (T1–T2) |
 | **Vigilant of Stendarr** | `LCharVigilantOfStendarr` 0BFB53 | 5 — single gate | *(unchanged — already flat)* | **T2** |
 | **Dawnguard** | `LCharDawnguardMelee1H` 014281 | 1 · 5 · 9 · 14 · 19 · 25 | 9 ×2 · **14 ×3** · 19 ×1 | **T3** (T2–T4) |
+
+**Warlocks (WD-46, user 2026-09-26). Levels verified in game by the user.** Mages turn up in many kinds of
+place, so the band is wide: Mage ×2 · Wizard/Ascendant ×3 · Pyromancer/Master ×1 (19/27/36), across all five
+schools, their `Omit01` variants and the 22 race/voice lists (32 in all). `LCharWarlockStormElfHaughtyF` gates
+its level-19 rung at 18 (vanilla typo). An earlier 19×1 · 27×3 · 36×3 · 46×1 draft was dropped the same day.
+- **Bosses are pinned to 50, the Arch rung** — a rung and a name no mook has. Vanilla's boss lists stop at 40;
+  the `LCharWarlock07Boss*` sublists exist but vanilla never used them (Requiem wired them in), and there is no
+  Necro one, so the Necro lists take its two level-50 leaves. Bucket D's `Pin` rule writes these.
+- **Voice lists keep their voice.** Four have no level-50 leaf in their race and sex and are pinned at **40**:
+  `…BossNecroMaleCondescending`, `…FireBossFemaleElfHaughty`, `…IceBossFemaleElfHaughty`,
+  `…StormBossFemaleElfHaughty`.
+- **CC necro-arts bosses** (21/30/40) stay only in `…BossNecroMaleCondescending`, as its level-40 Breton M.
+- **Malkoran** (`DA03Wizard`, Rimerock Burrow) templates on `LCharWarlockBossConjurer`, so he is level 50.
+- **Gear is left at vanilla/Requiem tier** (user: mages may carry lower-level gear).
 
 **Forsworn (WD-43, user 2026-09-25).** Forsworn gear is weak, so the *levels* carry the threat. That is why
 the band sits a tier above the doc's first draft (mean ≈ 20). The roster spans four tiers, which WD-42 allows
@@ -153,7 +167,7 @@ the only signal the player gets.** A ×2/×2/×1 band is therefore only legible 
 | Falmer | Skulker · Gloomlurker · Nightprowler · Shadowmaster | **band OK** |
 | **Bandit** | *none* → `LvlBanditBoss` 03DF17 = "Bandit Chief" | **pinned to 28** |
 | **Forsworn** | "Forsworn Briarheart" at all five rungs | **pinned to 38** (WD-43) |
-| **Warlock** | *none* → falls through to the placed base | **pin** (WD-42) — rung chosen in WD-46 |
+| **Warlock** | nameless leaves, no `Traits` (templates are named per rung) | **pinned to 50** (WD-46) |
 | **Thalmor** | "Thalmor Wizard" at all seven rungs | **pin** (WD-42) — rung chosen in WD-48 |
 | **Vampire** | *none* → falls through to the placed base | **pin** (WD-42) — rung chosen in WD-47 |
 

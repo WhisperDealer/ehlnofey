@@ -221,10 +221,10 @@ $ccReadd = @(
     @{ List = '0374E7:Dragonborn.esm'; Items = @(,@("000E38:$alm", 1)) }   # DLC2LItemWeaponSwordTown
     @{ List = '02BC12:Dragonborn.esm'; Items = @(,@("000E38:$alm", 1)) }   # DLC2LItemWeaponSword
     @{ List = '0374EA:Dragonborn.esm'; Items = @(@("000E37:$alm", 1), @("000E38:$alm", 1)) }   # DLC2LItemWeaponAny1HTown (new override)
-    # necroarts: the CC boss of each tier the pinned voice list already holds (vanilla 05/06, 04/05/06)
-    @{ List = '0E106D:Skyrim.esm'; Items = @(@("00092A:$necro", 1), @("000924:$necro", 1)) }                       # MaleCondescending: 05/06 BretonM
-    @{ List = '0E2217:Skyrim.esm'; Items = @(@("000929:$necro", 1), @("000923:$necro", 1)) }                       # FemaleCondescending: 05/06 BretonF
-    @{ List = '081EF3:Skyrim.esm'; Items = @(@("000930:$necro", 1), @("00092C:$necro", 1), @("000926:$necro", 1)) } # MaleElfHaughty: 04/05/06 HighElfM
+    # necroarts: the CC boss of the rung the pinned voice list holds. Its bosses stop at 06 (level 40), so only
+    # MaleCondescending, pinned at 40 for want of a level-50 Breton M, takes one; the lists pinned at 50 take
+    # none (WD-46, user 2026-09-26).
+    @{ List = '0E106D:Skyrim.esm'; Items = @(,@("000924:$necro", 1)) }   # MaleCondescending: 06 BretonM
 )
 
 function Find-ListFile([string]$formKey) {

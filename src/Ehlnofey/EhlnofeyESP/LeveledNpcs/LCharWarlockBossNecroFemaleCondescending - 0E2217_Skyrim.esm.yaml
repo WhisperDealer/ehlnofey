@@ -1,20 +1,10 @@
 FormKey: 0E2217:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharWarlockBossNecroFemaleCondescending
+FormVersion: 40
 Version2: 2
 Entries:
 - Data:
     Level: 1
-    Reference: 0E1041:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0E1045:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 000929:ccvsvsse003-necroarts.esl
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 000923:ccvsvsse003-necroarts.esl
+    Reference: 1091C3:Skyrim.esm
     Count: 1

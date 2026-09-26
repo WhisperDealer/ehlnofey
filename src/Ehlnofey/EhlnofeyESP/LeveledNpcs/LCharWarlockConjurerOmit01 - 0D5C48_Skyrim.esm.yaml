@@ -1,5 +1,7 @@
 FormKey: 0D5C48:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharWarlockConjurerOmit01
+FormVersion: 40
 Version2: 2
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -7,13 +9,25 @@ Flags:
 Entries:
 - Data:
     Level: 1
+    Reference: 06D266:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 06D266:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 06D267:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 06D267:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
     Reference: 06D267:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
     Reference: 06D268:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 1091C6:Skyrim.esm
     Count: 1

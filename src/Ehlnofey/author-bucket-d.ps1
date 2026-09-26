@@ -14,6 +14,8 @@
 #           rosters exactly for the eight flagged predator lists.
 #   Gates   explicit per-gate weights, for the curated ladders in 3.1 / 3.3 / 4.
 #   Refs    explicit per-reference weights, where a single gate holds several species (mudcrab).
+#   Pin     explicit references that vanilla's list does NOT hold (the warlock level-50 bosses). Each
+#           becomes one level-1 entry, shaped like the list's first vanilla entry.
 #
 # Tier reference levels (tiers.md): T1 4 · T2 8 · T3 14 · T4 21 · T5 30 · T6 40 · T7 50
 Set-StrictMode -Version Latest
@@ -135,6 +137,60 @@ foreach ($d in @(
 Add-Spec '0442F2:Skyrim.esm' 'LCharForswornBossMelee1H' @{ Gates = @{ 46 = 1 } }
 Add-Spec '0442FD:Skyrim.esm' 'LCharForswornBossShaman'  @{ Gates = @{ 46 = 1 } }
 
+# 3.1 Warlock, all five schools (WD-46, user 2026-09-26): Novice 1 · Apprentice 6 · Adept 12 · Mage 19 ·
+#     Wizard/Ascendant 27 · Pyromancer/Master 36 · Arch 46. Roster Mage x2 · Wizard x3 · Master x1,
+#     mean level 25.5, T4-T6: mages turn up in many kinds of place, so the band is wide (user, revised
+#     2026-09-26 from 19x1 · 27x3 · 36x3 · 46x1). The Arch mook is out, so the boss (50) is the only Arch.
+#     The Omit01 lists skip the Novice but share the gates, and the 22 race/voice lists (which have no
+#     level-46 leaf anyway) roll the same roster. StormElfHaughtyF gates its level-19 rung at 18 (vanilla typo).
+$warlockLadder = @{ 19 = 2; 27 = 3; 36 = 1 }
+$warlockVoice  = $warlockLadder
+foreach ($d in @(
+    @('01E7D1:Skyrim.esm', 'LCharWarlockFire'),        @('0CAB99:Skyrim.esm', 'LCharWarlockFireOmit01'),
+    @('01E7D2:Skyrim.esm', 'LCharWarlockIce'),         @('0CABA2:Skyrim.esm', 'LCharWarlockIceOmit01'),
+    @('01E7D3:Skyrim.esm', 'LCharWarlockStorm'),       @('0D5C47:Skyrim.esm', 'LCharWarlockStormOmit01'),
+    @('01E777:Skyrim.esm', 'LCharWarlockNecromancer'), @('0D5C49:Skyrim.esm', 'LCharWarlockNecroOmit01'),
+    @('06D269:Skyrim.esm', 'LCharWarlockConjurer'),    @('0D5C48:Skyrim.esm', 'LCharWarlockConjurerOmit01'))) {
+    Add-Spec $d[0] $d[1] @{ Gates = $warlockLadder }
+}
+foreach ($d in @(
+    @('081ECF:Skyrim.esm', 'LCharWarlockConjurerCondescendingF'), @('081ED0:Skyrim.esm', 'LCharWarlockConjurerCondescendingM'),
+    @('081ED1:Skyrim.esm', 'LCharWarlockConjurerDarkElfF'),       @('081ED2:Skyrim.esm', 'LCharWarlockConjurerDarkElfM'),
+    @('081ED4:Skyrim.esm', 'LCharWarlockConjurerElfHaughtyF'),    @('081ED5:Skyrim.esm', 'LCharWarlockConjurerElfHaughtyM'),
+    @('081ED8:Skyrim.esm', 'LCharWarlockFireCondescendingM'),     @('081ED9:Skyrim.esm', 'LCharWarlockFireDarkElfF'),
+    @('081EDA:Skyrim.esm', 'LCharWarlockFireDarkElfM'),           @('081EDB:Skyrim.esm', 'LCharWarlockFireElfHaughtyF'),
+    @('081EDC:Skyrim.esm', 'LCharWarlockFireElfHaughtyM'),        @('081EE9:Skyrim.esm', 'LCharWarlockIceCondescendingM'),
+    @('081EEA:Skyrim.esm', 'LCharWarlockIceElfHaughtyF'),         @('081EEB:Skyrim.esm', 'LCharWarlockIceElfHaughtyM'),
+    @('081EEC:Skyrim.esm', 'LCharWarlockIceNordF'),               @('081EED:Skyrim.esm', 'LCharWarlockIceNordM'),
+    @('081EF0:Skyrim.esm', 'LCharWarlockNecroDarkElfF'),          @('081EF1:Skyrim.esm', 'LCharWarlockNecroDarkElfM'),
+    @('081EF2:Skyrim.esm', 'LCharWarlockNecroElfHaughtyF'),       @('081EFB:Skyrim.esm', 'LCharWarlockStormCondescendingM'),
+    @('081EFC:Skyrim.esm', 'LCharWarlockStormDarkElfF'),          @('081EFD:Skyrim.esm', 'LCharWarlockStormDarkElfM'),
+    @('081EFF:Skyrim.esm', 'LCharWarlockStormElfHaughtyM'))) {
+    Add-Spec $d[0] $d[1] @{ Gates = $warlockVoice }
+}
+Add-Spec '081EFE:Skyrim.esm' 'LCharWarlockStormElfHaughtyF' @{ Gates = @{ 18 = 2; 27 = 3; 36 = 1 } }
+# 3.1 Warlock boss: the leaves are nameless and take no Traits, so the band is PINNED (WD-42). The rung is 50,
+#     the Arch boss (user, WD-46): a rung and a name no mook has. Vanilla's boss lists stop at
+#     rung 06 (40); the level-50 boss sublists LCharWarlock07Boss* exist but are unused (Requiem wired them
+#     in), and there is no Necro one, so the Necro lists take its two leaves directly.
+#     Voice lists keep their voice: where a level-50 leaf of that race and sex exists it is used; the four
+#     that have none are pinned at gate 46 = rung 06 = level 40 instead (user decision).
+Add-Spec '0E1018:Skyrim.esm' 'LCharWarlockBossFire'     @{ Pin = @('1091CC:Skyrim.esm') }   # LCharWarlock07BossFire
+Add-Spec '0E1032:Skyrim.esm' 'LCharWarlockBossIce'      @{ Pin = @('1091CD:Skyrim.esm') }   # LCharWarlock07BossIce
+Add-Spec '0E106A:Skyrim.esm' 'LCharWarlockBossStorm'    @{ Pin = @('1091CE:Skyrim.esm') }   # LCharWarlock07BossStorm
+Add-Spec '0E0FFD:Skyrim.esm' 'LCharWarlockBossConjurer' @{ Pin = @('1091CB:Skyrim.esm') }   # LCharWarlock07BossConjurer
+Add-Spec '0E104F:Skyrim.esm' 'LCharWarlockBossNecro'    @{ Pin = @('1091C3:Skyrim.esm', '1091C2:Skyrim.esm') }   # Necro07Boss BretonF, HighElfM
+Add-Spec '0E2217:Skyrim.esm' 'LCharWarlockBossNecroFemaleCondescending' @{ Pin = @('1091C3:Skyrim.esm') }   # Necro07BossBretonF
+Add-Spec '081EF3:Skyrim.esm' 'LCharWarlockNecroBossMaleElfHaughty'      @{ Pin = @('1091C2:Skyrim.esm') }   # Necro07BossHighElfM
+Add-Spec '0E106C:Skyrim.esm' 'LCharWarlockBossStormMaleElfHaughy'       @{ Pin = @('1091C4:Skyrim.esm') }   # Storm07BossHighElfM
+foreach ($d in @(
+    @('0E106D:Skyrim.esm', 'LCharWarlockBossNecroMaleCondescending'),   # Breton M: no level-50 leaf
+    @('081ED7:Skyrim.esm', 'LCharWarlockFireBossFemaleElfHaughty'),     # High Elf F: none
+    @('081EE8:Skyrim.esm', 'LCharWarlockIceBossFemaleElfHaughty'),
+    @('081EFA:Skyrim.esm', 'LCharWarlockStormBossFemaleElfHaughty'))) {
+    Add-Spec $d[0] $d[1] @{ Gates = @{ 46 = 1 } }
+}
+
 # ---- bandit bosses (3.1)
 foreach ($d in @(
     @('03DF16:Skyrim.esm',    'LCharBanditBoss'),
@@ -250,6 +306,15 @@ foreach ($key in $spec.Keys) {
         # flatten the gate; repeat the entry w times to weight the pool
         $flat = @($b | ForEach-Object { if ($_ -match '^    Level: \d+$') { '    Level: 1' } else { $_ } })
         for ($i = 0; $i -lt $w; $i++) { foreach ($l in $flat) { [void]$kept.Add($l) } }
+    }
+    if ($s.Rule.ContainsKey('Pin')) {
+        foreach ($r in $s.Rule.Pin) {
+            foreach ($l in $blocks[0]) {
+                if     ($l -match '^    Level: \d+$')    { [void]$kept.Add('    Level: 1') }
+                elseif ($l -match '^    Reference: \S+$') { [void]$kept.Add("    Reference: $r") }
+                else                                      { [void]$kept.Add($l) }
+            }
+        }
     }
     if ($kept.Count -eq 0) { throw "roster for $($s.Id) ($key) selected no entries - check the gates" }
 

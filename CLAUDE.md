@@ -361,6 +361,14 @@ See `archetype-tiers.md` §3.1.
   Elven and glass bows are back. Which rank gets which sublist is still for the Thalmor ticket.
 - **Plugin size:** 2,646 records (+36 `NPC_`).
 
+**Warlocks are done (WD-46, 2026-09-26). Levels were verified in game by the user.**
+- **Mooks:** Mage ×2 · Wizard/Ascendant ×3 · Pyromancer/Master ×1 (19/27/36), across 32 lists (five schools, their
+  `Omit01` variants, 22 race/voice lists).
+- **Bosses:** pinned to **50** (Arch). Four voice lists with no level-50 leaf in their race and sex sit at 40. Vanilla's
+  boss lists never reached 50, so `author-bucket-d.ps1` gained a `Pin` rule for references a vanilla list lacks.
+- **Gear:** left alone (user decision). Malkoran (`DA03Wizard`) is a level-50 Conjurer boss.
+- **Plugin size:** unchanged at 2,646 (all 46 lists were already overridden). See `archetype-tiers.md` §3.1.
+
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
 translation loss on the 21 overridden injector quests. Preferred fix: stop overriding them and ship a

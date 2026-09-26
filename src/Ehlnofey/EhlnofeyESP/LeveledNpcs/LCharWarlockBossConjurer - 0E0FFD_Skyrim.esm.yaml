@@ -1,15 +1,9 @@
 FormKey: 0E0FFD:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharWarlockBossConjurer
+FormVersion: 40
 Version2: 2
 Entries:
-- Data:
-    Level: 1
-    Reference: 0E0FFB:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0E0FFC:Skyrim.esm
-    Count: 1
 - Data:
     Level: 1
     Reference: 1091CB:Skyrim.esm

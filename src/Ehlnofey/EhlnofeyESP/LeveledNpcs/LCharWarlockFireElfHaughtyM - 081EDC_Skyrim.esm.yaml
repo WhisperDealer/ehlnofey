@@ -1,5 +1,7 @@
 FormKey: 081EDC:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharWarlockFireElfHaughtyM
+FormVersion: 40
 Version2: 3
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -8,6 +10,18 @@ Entries:
 - Data:
     Level: 1
     Reference: 045CA8:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 045CA8:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 045CC5:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 045CC5:Skyrim.esm
     Count: 1
 - Data:
     Level: 1

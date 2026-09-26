@@ -1,5 +1,7 @@
 FormKey: 0CAB99:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharWarlockFireOmit01
+FormVersion: 40
 Version2: 4
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -7,13 +9,25 @@ Flags:
 Entries:
 - Data:
     Level: 1
+    Reference: 045CF1:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 045CF1:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 045CF4:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 045CF4:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
     Reference: 045CF4:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
     Reference: 045CF7:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 1091C7:Skyrim.esm
     Count: 1

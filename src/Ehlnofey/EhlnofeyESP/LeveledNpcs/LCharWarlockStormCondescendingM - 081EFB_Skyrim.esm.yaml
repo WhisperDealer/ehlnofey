@@ -1,10 +1,20 @@
 FormKey: 081EFB:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharWarlockStormCondescendingM
+FormVersion: 40
 Version2: 3
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
+- Data:
+    Level: 1
+    Reference: 045CB4:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 045CB4:Skyrim.esm
+    Count: 1
 - Data:
     Level: 1
     Reference: 045CBA:Skyrim.esm
@@ -16,6 +26,22 @@ Entries:
 - Data:
     Level: 1
     Reference: 045CE2:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 045CE2:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 045CE2:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 045CE8:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 045CE8:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
