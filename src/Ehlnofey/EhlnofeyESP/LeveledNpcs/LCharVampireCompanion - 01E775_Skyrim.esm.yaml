@@ -1,13 +1,15 @@
 FormKey: 01E775:Skyrim.esm
+VersionControl: 5468178
 EditorID: LCharVampireCompanion
-Version2: 5
+FormVersion: 43
+Version2: 8
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
 - Data:
     Level: 1
-    Reference: 023AAA:Skyrim.esm
+    Reference: 008D76:Dawnguard.esm
     Count: 1
 - Data:
     Level: 1
@@ -15,23 +17,11 @@ Entries:
     Count: 1
 - Data:
     Level: 1
-    Reference: 023ABE:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 041FB4:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 008D76:Dawnguard.esm
+    Reference: 017702:Dawnguard.esm
     Count: 1
 - Data:
     Level: 1
     Reference: 00A2CC:Dawnguard.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 017702:Dawnguard.esm
     Count: 1
 Model:
   File: Actors\Skeever\Skeever_static2.nif

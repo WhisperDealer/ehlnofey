@@ -1,5 +1,7 @@
 FormKey: 00633A:Dawnguard.esm
+VersionControl: 5468178
 EditorID: LCharVampireBossDLC1MaleVampireDarkElf
+FormVersion: 43
 Version2: 2
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer

@@ -1,5 +1,7 @@
 FormKey: 00F508:Dawnguard.esm
+VersionControl: 5468178
 EditorID: DLC1LCharVampireFVampire
+FormVersion: 43
 Version2: 2
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -7,9 +9,25 @@ Flags:
 Entries:
 - Data:
     Level: 1
+    Reference: 00F504:Dawnguard.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00F505:Dawnguard.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00F505:Dawnguard.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00F505:Dawnguard.esm
+    Count: 1
+- Data:
+    Level: 1
     Reference: 00F506:Dawnguard.esm
     Count: 1
 - Data:
     Level: 1
-    Reference: 00F507:Dawnguard.esm
+    Reference: 00F506:Dawnguard.esm
     Count: 1

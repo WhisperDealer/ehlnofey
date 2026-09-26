@@ -236,7 +236,40 @@ Add-Spec '02183E:Skyrim.esm'   'LCharMudcrab'  @{ Refs = @{     # one gate holds
     '0E4011:Skyrim.esm' = 2      # EncMudcrabLarge
     '021875:Skyrim.esm' = 1      # EncMudcrabGiant  (L=3 - a size, not a tier)
 } }
-Add-Spec '0640BE:Skyrim.esm'   'LCharVampireCompanionFrost' @{ Cap = 21 }             # tracks Vampire, T4
+
+# 3.1 Vampire (WD-47, user 2026-09-26): immortal, carrying a Daedric prince's gift, so "well beyond the average
+#     mage" (warlock mooks 19/27/36, mean 25.5). Fledgling 1 · Vampire 6 · Blooded 12 · Mistwalker 20 ·
+#     Nightstalker 28 · Ancient 38 · Volkihar 48 · Nightlord 60 (DLC1). Roster Nightstalker x1 · Ancient x3 ·
+#     Volkihar x2, mean 39.7, T6. Nightlord stays out: it out-levels Harkon (55). Gate = level on these lists.
+#     Build against Dawnguard's winning record (it adds gate 60). Every rank-and-file leaf is female; the three
+#     female voice lists roll the same roster.
+$vampireLadder = @{ 28 = 1; 38 = 3; 48 = 2 }
+foreach ($d in @(
+    @('033973:Skyrim.esm',    'LCharVampire'),
+    @('00D0AC:Dawnguard.esm', 'DLC1LCharVampireFCondescending'),
+    @('00D09B:Dawnguard.esm', 'DLC1LCharVampireFSultry'),
+    @('00F508:Dawnguard.esm', 'DLC1LCharVampireFVampire'))) {
+    Add-Spec $d[0] $d[1] @{ Gates = $vampireLadder }
+}
+#     The one male rank-and-file list borrows the male BOSS leaves, whose gates are NOT their levels: gates
+#     38/48/58 = Master Vampire 31 / Master Vampire 42 / Volkihar Master Vampire 53, the male rungs nearest
+#     28/38/48, same weights (mean 44.2).
+Add-Spec '01223D:Dawnguard.esm' 'DLC1LCharVampireMaleNordM' @{ Gates = @{ 38 = 1; 48 = 3; 58 = 2 } }
+# 3.1 Vampire boss: "Master Vampire" at 14/23/31/42, then Volkihar Master 53 and Nightmaster 65 (DLC1), leaves
+#     nameless without Traits, so PINNED (WD-42). The rung is gate 60 = Nightmaster Vampire, level 65 (user,
+#     WD-47) - Requiem's pin for the race lists. This puts generic bosses above Harkon (55/60): flagged for the
+#     named-bosses ticket, not changed here.
+foreach ($d in @(
+    @('0339A9:Skyrim.esm',    'LCharVampireBoss'),
+    @('00633A:Dawnguard.esm', 'LCharVampireBossDLC1MaleVampireDarkElf'),
+    @('00F4FE:Dawnguard.esm', 'LCharVampireBossDLC1MaleVampireNordM'),
+    @('014C6A:Dawnguard.esm', 'DLC1LCharVampireBossImperialM'))) {
+    Add-Spec $d[0] $d[1] @{ Gates = @{ 60 = 1 } }
+}
+#     Companions follow the T6 vampire: death hound, giant frostbite spider and both gargoyles; the skeever and
+#     the small spiders are dropped (was Cap 21 on the frost list, tracking the old T4 vampire).
+Add-Spec '01E775:Skyrim.esm'   'LCharVampireCompanion'      @{ Gates = @{ 5 = 1; 7 = 1; 13 = 1; 25 = 1 } }
+Add-Spec '0640BE:Skyrim.esm'   'LCharVampireCompanionFrost' @{ Gates = @{ 5 = 1; 7 = 1; 13 = 1; 25 = 1 } }
 Add-Spec '0029A2:Dawnguard.esm' 'DLC1LCharChaurusHunter' @{ Gates = @{ 1 = 3; 32 = 1 } } # Fledgling x3 Hunter x1
 
 # ---------------------------------------------------------------- run

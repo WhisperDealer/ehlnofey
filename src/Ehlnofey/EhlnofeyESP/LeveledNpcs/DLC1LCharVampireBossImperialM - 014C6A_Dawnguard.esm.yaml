@@ -1,14 +1,12 @@
 FormKey: 014C6A:Dawnguard.esm
+VersionControl: 5468178
 EditorID: DLC1LCharVampireBossImperialM
+FormVersion: 43
 Version2: 2
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
-- Data:
-    Level: 1
-    Reference: 03383F:Skyrim.esm
-    Count: 1
 - Data:
     Level: 1
     Reference: 002834:Dawnguard.esm

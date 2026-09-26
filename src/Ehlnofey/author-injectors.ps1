@@ -187,6 +187,12 @@ $readdByPlace = @(
     # rank gets which sublist is for the Thalmor ticket.
     @{ List = '07D983:Skyrim.esm'; Items = @(,@('01399D:Skyrim.esm', 1)) }   # SublistThalmorBowAndArrowsElven <- ElvenBow
     @{ List = '07D984:Skyrim.esm'; Items = @(,@('0139A5:Skyrim.esm', 1)) }   # SublistThalmorBowAndArrowsGlass <- GlassBow
+    # ---- Vampires (WD-47, user 2026-09-26). Every generic vampire, mook or boss, carries LItemVampireWeaponBase
+    # (used by vampires only), which pointed at the BANDIT sword and war-axe lists: 70% iron. It now holds its
+    # own steel / orcish / dwarven / elven sword and war axe, one each (25% per material, no iron, no glass).
+    # The two bandit-list entries are cut in $cuts.
+    @{ List = '10962B:Skyrim.esm'; Items = @(@('013989:Skyrim.esm', 1), @('013991:Skyrim.esm', 1), @('013999:Skyrim.esm', 1), @('0139A1:Skyrim.esm', 1),
+                                             @('013983:Skyrim.esm', 1), @('01398B:Skyrim.esm', 1), @('013993:Skyrim.esm', 1), @('01399B:Skyrim.esm', 1)) }   # LItemVampireWeaponBase <- Steel/Orcish/Dwarven/Elven Sword + WarAxe
 )
 
 $fish = 'ccbgssse001-fish.esm'; $arrows = 'ccbgssse002-exoticarrows.esl'; $spell = 'ccbgssse014-spellpack01.esl'
@@ -206,7 +212,7 @@ $ccReadd = @(
     @{ List = '068839:Skyrim.esm'; Items = @(,@("000810:$arrows", 15)) }                        # LItemArrowsAll
     @{ List = '02BC16:Dragonborn.esm'; Items = @(,@("000810:$arrows", 15)) }                    # DLC2LItemArrowsAll
     @{ List = '039D2F:Skyrim.esm'; Items = @(,@("000830:$arrows", 12)) }                        # LItemBanditWeaponArrows: fire (10). Bone (30) dropped: 26 damage
-    @{ List = '02DF9F:Skyrim.esm'; Items = @(@("00082F:$arrows", 12), @("00082E:$arrows", 12)) }   # LItemVampireWeaponArrows: ice (14), bone (30)
+    @{ List = '02DF9F:Skyrim.esm'; Items = @(,@("00082F:$arrows", 12)) }                        # LItemVampireWeaponArrows: ice (14). Bone (30) dropped (WD-47)
     # almsivi: Ordinator armor and ebony mace/scimitar, all at gate 36
     @{ List = '0374EE:Dragonborn.esm'; Items = @(,@("000817:$alm", 1)) }   # DLC2LItemArmorBootsHeavyTown
     @{ List = '02BC19:Dragonborn.esm'; Items = @(,@("000817:$alm", 1)) }   # DLC2LItemArmorBootsHeavy
@@ -277,6 +283,22 @@ foreach ($r in ($readdByPlace + $ccReadd)) {
     $added += $new.Count
 }
 
+# ---------------------------------------------------------------- flatten gated CC sublists
+# Injected at level 1, but gated inside. Flatten the gate, keep the pool (duplicates are the weights).
+# Runs BEFORE cuts and weights: it rewrites these files from the CC decompile, so a cut made earlier would be
+# lost (the vendor sublist's bone arrow is cut below, WD-47).
+$flatten = @(
+    'cccbhsse001-gaunt\LeveledItems\ccCBHSSE001_LItemArmorGauntletsHeavy - 000831_cccbhsse001-gaunt.esl.yaml'         # 1..48
+    'cccbhsse001-gaunt\LeveledItems\ccCBHSSE001_LItemArmorGauntletsLight - 000832_cccbhsse001-gaunt.esl.yaml'         # 1..46
+    'ccbgssse002-exoticarrows\LeveledItems\ccBGSSSE002_LItemArrowMagicAny_Vendor - 000810_ccbgssse002-exoticarrows.esl.yaml'   # 1/12/20
+)
+foreach ($f in $flatten) {
+    $src = Join-Path $cc $f
+    $out = @(Get-Content -LiteralPath $src -Encoding UTF8 | ForEach-Object { if ($_ -match '^    Level: (\d+)$' -and $Matches[1] -ne '9999') { '    Level: 1' } else { $_ } })
+    [System.IO.File]::WriteAllLines((Join-Path (Join-Path $esp 'LeveledItems') (Split-Path -Leaf $src)), $out, $utf8NoBom)
+    "{0,-72} flattened" -f (Split-Path -Leaf $src)
+}
+
 # ---------------------------------------------------------------- cuts and weights
 # Keyed by the list's full FormKey, on any master (a list not yet overridden is copied from its winning
 # record first - see Find-ListFile). Grouped by faction; add a block per faction.
@@ -308,6 +330,17 @@ $cuts = [ordered]@{
     '039D2E:Skyrim.esm' = @('037C1B:Skyrim.esm', '037C21:Skyrim.esm')   # LItemBanditWeaponBow       - LItemBanditWeapon1H, LItemBanditWeapon2H
     '039D2F:Skyrim.esm' = @('00082E:ccbgssse002-exoticarrows.esl')      # LItemBanditWeaponArrows    - CC bone arrow (belt and braces: never re-added)
     '06A3CD:Skyrim.esm' = @('068839:Skyrim.esm')                        # LootForswornArrows15       - LItemArrowsAll (CC fire/ice arrows, steel+)
+    # ---- Vampires (WD-47, user 2026-09-26)
+    #  - Weapons: the bandit lists go; LItemVampireWeaponBase holds its own mix (see $readdByPlace).
+    #  - Armor: vampire armor and enchanted vampire robes only. Requiem added the Leather/Orcish/Elven/Glass sets
+    #    to LItemVampireAttire (so ~1 in 12 wore glass). The list feeds vampireOutfit, worn by every generic vampire.
+    #  - Arrows: no CC bone arrow (user 2026-09-25). LItemVampireWeaponArrows is referenced by nothing in base+DLC,
+    #    so that cut is belt and braces. The exotic-arrows vendor sublist, which sits in LItemArrowsAll,
+    #    DLC2LItemArrowsAll and the vendor arrows, DID hold one: cut there too (the flatten below runs first).
+    '10962B:Skyrim.esm' = @('037C19:Skyrim.esm', '037C1A:Skyrim.esm')   # LItemVampireWeaponBase     - LItemBanditSword, LItemBanditWarAxe
+    '10C6ED:Skyrim.esm' = @('10C6EE:Skyrim.esm', '01D248:Skyrim.esm', '10C6EF:Skyrim.esm', '10C6F0:Skyrim.esm')   # LItemVampireAttire - Leather/Orc/Elven/Glass sets
+    '02DF9F:Skyrim.esm' = @('00082E:ccbgssse002-exoticarrows.esl')      # LItemVampireWeaponArrows   - CC bone arrow
+    '000810:ccbgssse002-exoticarrows.esl' = @('00082E:ccbgssse002-exoticarrows.esl')   # ccBGSSSE002_LItemArrowMagicAny_Vendor - CC bone arrow
 }
 # Weight = the exact number of entries a reference should have (entries are the engine's only weight).
 $weights = [ordered]@{
@@ -371,20 +404,6 @@ foreach ($id in @($cuts.Keys) + @($weights.Keys | Where-Object { $cuts.Keys -not
     [System.IO.File]::WriteAllLines($path, $out, $utf8NoBom)
     if ($cut) { "{0,-72} -{1} entries" -f (Split-Path -Leaf $path), $cut }
     $removed += $cut
-}
-
-# ---------------------------------------------------------------- flatten gated CC sublists
-# Injected at level 1, but gated inside. Flatten the gate, keep the pool (duplicates are the weights).
-$flatten = @(
-    'cccbhsse001-gaunt\LeveledItems\ccCBHSSE001_LItemArmorGauntletsHeavy - 000831_cccbhsse001-gaunt.esl.yaml'         # 1..48
-    'cccbhsse001-gaunt\LeveledItems\ccCBHSSE001_LItemArmorGauntletsLight - 000832_cccbhsse001-gaunt.esl.yaml'         # 1..46
-    'ccbgssse002-exoticarrows\LeveledItems\ccBGSSSE002_LItemArrowMagicAny_Vendor - 000810_ccbgssse002-exoticarrows.esl.yaml'   # 1/12/20
-)
-foreach ($f in $flatten) {
-    $src = Join-Path $cc $f
-    $out = @(Get-Content -LiteralPath $src -Encoding UTF8 | ForEach-Object { if ($_ -match '^    Level: (\d+)$' -and $Matches[1] -ne '9999') { '    Level: 1' } else { $_ } })
-    [System.IO.File]::WriteAllLines((Join-Path (Join-Path $esp 'LeveledItems') (Split-Path -Leaf $src)), $out, $utf8NoBom)
-    "{0,-72} flattened" -f (Split-Path -Leaf $src)
 }
 
 # ---------------------------------------------------------------- masters

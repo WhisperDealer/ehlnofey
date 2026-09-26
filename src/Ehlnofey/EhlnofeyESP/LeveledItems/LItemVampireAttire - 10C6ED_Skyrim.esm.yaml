@@ -7,10 +7,6 @@ Flags:
 Entries:
 - Data:
     Level: 1
-    Reference: 01D248:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
     Reference: 106D0D:Skyrim.esm
     Count: 1
 - Data:
@@ -24,18 +20,6 @@ Entries:
 - Data:
     Level: 1
     Reference: 106D0D:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 10C6EE:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 10C6EF:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 10C6F0:Skyrim.esm
     Count: 1
 - Data:
     Level: 1

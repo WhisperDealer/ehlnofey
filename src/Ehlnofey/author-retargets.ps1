@@ -112,6 +112,58 @@ $edits = @(
     @{ Npc = '0770AF:Skyrim.esm'; Level = 25; Own = $true }   # EncSoldierSonsNordM04MaleNord
     @{ Npc = '0770B0:Skyrim.esm'; Level = 30; Own = $true }   # EncSoldierSonsNordM05MaleNord
     @{ Npc = '0770B1:Skyrim.esm'; Level = 35; Own = $true }   # EncSoldierSonsNordM06MaleNord
+
+    # ---- Vampire thralls: level 25 (WD-47, user 2026-09-26, after play: they came out level 5). A thrall owns no
+    # level: it templates (Stats, Traits) straight onto a BANDIT ladder, so it rolled our bandit mook rungs
+    # (5/9/14). Those lists are shared with every bandit camp, so the thrall itself is repointed at the ladder's
+    # gate-25 entry, the Marauder (level 25): the generic lists go to their SubCharBandit06* sublist, the voice
+    # lists to their EncBandit06* leaf. That is exactly what vanilla spawned for a player of level 25+. Class,
+    # health, skills, race and voice come with it. Owning the level instead (Stats dropped) is NOT safe here:
+    # thralls carry the placeholder class EncClassDremoraMelee and no AutoCalcStats.
+    # Every MELEE thrall is two-handed (user, after play): a vampire fights with spells or a blade and a spell, and
+    # its thrall is there to close in, deal damage and soak it. So the 1H, MeleeAny, Tank (sword and shield) and
+    # Melee2HGuard thralls all take SubCharBandit06Melee2H; the Redguard voice thralls take the Redguard 2H leaves
+    # (same voice). There is no Imperial 2H Marauder, so the Commoner-voice (Imperial) thralls take the Nord 2H
+    # leaf of the same sex. Missile and wizard thralls keep their role. Four records template onto other thralls and inherit
+    # (the Redwater Den dealer and archer, WERJ07Thrall). The Castle Volkihar feast thralls and servant are
+    # non-combat and left alone.
+    @{ Npc = '014070:Dawnguard.esm'; From = 'Template: 01A323:Skyrim.esm'; To = 'Template: 03DE6D:Skyrim.esm' }   # DLC1LvlRedwaterThrallMeleeCommonerAcMAggro1024: LCharBanditMeleeEvenTonedM -> EncBandit06Melee2HRedguardM
+    @{ Npc = '014071:Dawnguard.esm'; From = 'Template: 01A344:Skyrim.esm'; To = 'Template: 039D6F:Skyrim.esm' }   # DLC1LvlRedwaterThrallMissileEvenTonedFAggro1024: LCharBanditMissileEvenTonedF -> EncBandit06MissileWoodElfF
+    @{ Npc = '0183A4:Dawnguard.esm'; From = 'Template: 01A323:Skyrim.esm'; To = 'Template: 03DE6D:Skyrim.esm' }   # DLC1LvlVampireThrallMeleeCommonerAcM: LCharBanditMeleeEvenTonedM -> EncBandit06Melee2HRedguardM
+    @{ Npc = '02EB0B:Skyrim.esm'; From = 'Template: 039CFC:Skyrim.esm'; To = 'Template: 03DEC5:Skyrim.esm' }   # LvlVampireThrallMelee1H: LCharBanditMelee1H -> SubCharBandit06Melee2H
+    @{ Npc = '02EC1B:Skyrim.esm'; From = 'Template: 039CFC:Skyrim.esm'; To = 'Template: 03DEC5:Skyrim.esm' }   # LvlVampireThrallMelee1HGuard: LCharBanditMelee1H -> SubCharBandit06Melee2H
+    @{ Npc = '02ED6B:Skyrim.esm'; From = 'Template: 03DEC8:Skyrim.esm'; To = 'Template: 03DEC5:Skyrim.esm' }   # LvlVampireThrallMelee2H: LCharBanditMelee2H -> SubCharBandit06Melee2H
+    @{ Npc = '02ED6E:Skyrim.esm'; From = 'Template: 03DECD:Skyrim.esm'; To = 'Template: 03DEC5:Skyrim.esm' }   # LvlVampireThrallMeleeAny: LCharBanditMeleeAny -> SubCharBandit06Melee2H
+    @{ Npc = '02ED86:Skyrim.esm'; From = 'Template: 03DECD:Skyrim.esm'; To = 'Template: 03DEC5:Skyrim.esm' }   # LvlVampireThrallMeleeAnyGuard: LCharBanditMeleeAny -> SubCharBandit06Melee2H
+    @{ Npc = '02EE9D:Skyrim.esm'; From = 'Template: 03DECD:Skyrim.esm'; To = 'Template: 03DEC5:Skyrim.esm' }   # LvlVampireThrallMeleeAnySitLinkedRef: LCharBanditMeleeAny -> SubCharBandit06Melee2H
+    @{ Npc = '02EE9E:Skyrim.esm'; From = 'Template: 03DECA:Skyrim.esm'; To = 'Template: 03DEC7:Skyrim.esm' }   # LvlVampireThrallMeleeBerserker: LCharBanditMelee2HBerserk -> SubCharBandit06Melee2HBerserk
+    @{ Npc = '02EED0:Skyrim.esm'; From = 'Template: 01A31E:Skyrim.esm'; To = 'Template: 03DE69:Skyrim.esm' }   # LvlVampireThrallMeleeCommonerF: LCharBanditMeleeCommonerF -> EncBandit06Melee2HNordF (no Imperial 2H)
+    @{ Npc = '02EED1:Skyrim.esm'; From = 'Template: 01A319:Skyrim.esm'; To = 'Template: 03DE6A:Skyrim.esm' }   # LvlVampireThrallMeleeCommonerM: LCharBanditMeleeCommonerM -> EncBandit06Melee2HNordM (no Imperial 2H)
+    @{ Npc = '02EED2:Skyrim.esm'; From = 'Template: 01A322:Skyrim.esm'; To = 'Template: 03DE6C:Skyrim.esm' }   # LvlVampireThrallMeleeEvenTonedF: LCharBanditMeleeEvenTonedF -> EncBandit06Melee2HRedguardF
+    @{ Npc = '02EED3:Skyrim.esm'; From = 'Template: 01A323:Skyrim.esm'; To = 'Template: 03DE6D:Skyrim.esm' }   # LvlVampireThrallMeleeEvenTonedM: LCharBanditMeleeEvenTonedM -> EncBandit06Melee2HRedguardM
+    @{ Npc = '02EED5:Skyrim.esm'; From = 'Template: 01A321:Skyrim.esm'; To = 'Template: 03DE69:Skyrim.esm' }   # LvlVampireThrallMeleeNordF: LCharBanditMeleeNordF -> EncBandit06Melee2HNordF
+    @{ Npc = '02EED6:Skyrim.esm'; From = 'Template: 01A320:Skyrim.esm'; To = 'Template: 03DE6A:Skyrim.esm' }   # LvlVampireThrallMeleeNordM: LCharBanditMeleeNordM -> EncBandit06Melee2HNordM
+    @{ Npc = '02EED7:Skyrim.esm'; From = 'Template: 03DEC9:Skyrim.esm'; To = 'Template: 03DEC5:Skyrim.esm' }   # LvlVampireThrallMeleeTank: LCharBanditMelee1HTank -> SubCharBandit06Melee2H
+    @{ Npc = '02EED8:Skyrim.esm'; From = 'Template: 03DEC9:Skyrim.esm'; To = 'Template: 03DEC5:Skyrim.esm' }   # LvlVampireThrallMeleeTankGuard: LCharBanditMelee1HTank -> SubCharBandit06Melee2H
+    @{ Npc = '02EEDC:Skyrim.esm'; From = 'Template: 01E770:Skyrim.esm'; To = 'Template: 039D76:Skyrim.esm' }   # LvlVampireThrallMissile: LCharBanditMissile -> SubCharBandit06Missile
+    @{ Npc = '02EEDD:Skyrim.esm'; From = 'Template: 01A342:Skyrim.esm'; To = 'Template: 037C44:Skyrim.esm' }   # LvlVampireThrallMissileCommonerF: LCharBanditMissileCommonerF -> EncBandit06MissileImperialF
+    @{ Npc = '02EEDE:Skyrim.esm'; From = 'Template: 01A343:Skyrim.esm'; To = 'Template: 037C45:Skyrim.esm' }   # LvlVampireThrallMissileCommonerM: LCharBanditMissileCommonerM -> EncBandit06MissileImperialM
+    @{ Npc = '02EEDF:Skyrim.esm'; From = 'Template: 01A344:Skyrim.esm'; To = 'Template: 039D6F:Skyrim.esm' }   # LvlVampireThrallMissileEvenTonedF: LCharBanditMissileEvenTonedF -> EncBandit06MissileWoodElfF
+    @{ Npc = '02EEE0:Skyrim.esm'; From = 'Template: 01A345:Skyrim.esm'; To = 'Template: 039D70:Skyrim.esm' }   # LvlVampireThrallMissileEvenTonedM: LCharBanditMissileEvenTonedM -> EncBandit06MissileWoodElfM
+    @{ Npc = '02EEE1:Skyrim.esm'; From = 'Template: 01E770:Skyrim.esm'; To = 'Template: 039D76:Skyrim.esm' }   # LvlVampireThrallMissileGuard: LCharBanditMissile -> SubCharBandit06Missile
+    @{ Npc = '02EEE5:Skyrim.esm'; From = 'Template: 01A346:Skyrim.esm'; To = 'Template: 037C46:Skyrim.esm' }   # LvlVampireThrallMissileNordF: LCharBanditMissileNordF -> EncBandit06MissileNordF
+    @{ Npc = '02EEE6:Skyrim.esm'; From = 'Template: 01A348:Skyrim.esm'; To = 'Template: 037C47:Skyrim.esm' }   # LvlVampireThrallMissileNordM: LCharBanditMissileNordM -> EncBandit06MissileNordM
+    @{ Npc = '02EEE7:Skyrim.esm'; From = 'Template: 01E771:Skyrim.esm'; To = 'Template: 039D64:Skyrim.esm' }   # LvlVampireThrallWizard: LCharBanditWizard -> SubCharBandit06Magic
+    @{ Npc = '02EEE8:Skyrim.esm'; From = 'Template: 01B0F0:Skyrim.esm'; To = 'Template: 039D59:Skyrim.esm' }   # LvlVampireThrallWizardCommonerF: LCharBanditWizardCommonerF -> EncBandit06MagicBretonF
+    @{ Npc = '02EEE9:Skyrim.esm'; From = 'Template: 01B0F3:Skyrim.esm'; To = 'Template: 039D5A:Skyrim.esm' }   # LvlVampireThrallWizardCommonerM: LCharBanditWizardCommonerM -> EncBandit06MagicBretonM
+    @{ Npc = '02EEEA:Skyrim.esm'; From = 'Template: 01B0F4:Skyrim.esm'; To = 'Template: 039D5B:Skyrim.esm' }   # LvlVampireThrallWizardEvenTonedF: LCharBanditWizardEvenTonedF -> EncBandit06MagicDarkElfF
+    @{ Npc = '02EEEB:Skyrim.esm'; From = 'Template: 01B0F5:Skyrim.esm'; To = 'Template: 039D5C:Skyrim.esm' }   # LvlVampireThrallWizardEvenTonedM: LCharBanditWizardEvenTonedM -> EncBandit06MagicDarkElfM
+    @{ Npc = '02EEEC:Skyrim.esm'; From = 'Template: 01E771:Skyrim.esm'; To = 'Template: 039D64:Skyrim.esm' }   # LvlVampireThrallWizardGuard: LCharBanditWizard -> SubCharBandit06Magic
+    @{ Npc = '02EEED:Skyrim.esm'; From = 'Template: 01B0F7:Skyrim.esm'; To = 'Template: 039D5D:Skyrim.esm' }   # LvlVampireThrallWizardNordF: LCharBanditWizardNordF -> EncBandit06MagicNordF
+    @{ Npc = '02EEEE:Skyrim.esm'; From = 'Template: 01B0FB:Skyrim.esm'; To = 'Template: 039D5E:Skyrim.esm' }   # LvlVampireThrallWizardNordM: LCharBanditWizardNordM -> EncBandit06MagicNordM
+    @{ Npc = '042267:Skyrim.esm'; From = 'Template: 01E771:Skyrim.esm'; To = 'Template: 039D64:Skyrim.esm' }   # LvlVampireThrallConjurer: LCharBanditWizard -> SubCharBandit06Magic
+    @{ Npc = '08E2F7:Skyrim.esm'; From = 'Template: 01E770:Skyrim.esm'; To = 'Template: 039D76:Skyrim.esm' }   # LvlVampireThrallMissileHold: LCharBanditMissile -> SubCharBandit06Missile
+    @{ Npc = '02ED6D:Skyrim.esm'; From = 'Template: 01E79C:Skyrim.esm'; To = 'Template: 03DEC5:Skyrim.esm' }   # LvlVampireThrallMelee2HGuard: LvlBanditMeleeAny -> SubCharBandit06Melee2H
 )
 
 foreach ($e in $edits) {

@@ -1,5 +1,7 @@
 FormKey: 00D09B:Dawnguard.esm
+VersionControl: 5468178
 EditorID: DLC1LCharVampireFSultry
+FormVersion: 43
 Version2: 2
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -7,9 +9,25 @@ Flags:
 Entries:
 - Data:
     Level: 1
+    Reference: 00D0A0:Dawnguard.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00D0A1:Dawnguard.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00D0A1:Dawnguard.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00D0A1:Dawnguard.esm
+    Count: 1
+- Data:
+    Level: 1
     Reference: 00D0A2:Dawnguard.esm
     Count: 1
 - Data:
     Level: 1
-    Reference: 00D0A3:Dawnguard.esm
+    Reference: 00D0A2:Dawnguard.esm
     Count: 1

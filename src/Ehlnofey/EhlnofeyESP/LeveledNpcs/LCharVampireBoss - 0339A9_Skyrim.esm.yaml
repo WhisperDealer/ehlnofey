@@ -1,6 +1,8 @@
 FormKey: 0339A9:Skyrim.esm
+VersionControl: 5468178
 EditorID: LCharVampireBoss
-Version2: 4
+FormVersion: 43
+Version2: 6
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
@@ -8,16 +10,4 @@ Entries:
 - Data:
     Level: 1
     Reference: 002837:Dawnguard.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 02EAEA:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 02EAEA:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 02EAEA:Skyrim.esm
     Count: 1

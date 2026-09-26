@@ -1,29 +1,19 @@
 FormKey: 033973:Skyrim.esm
+VersionControl: 5468178
 EditorID: LCharVampire
-Version2: 3
+FormVersion: 43
+Version2: 5
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
 - Data:
     Level: 1
+    Reference: 03396B:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
     Reference: 03396C:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 033970:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03396B:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03396B:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03396B:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
@@ -39,77 +29,5 @@ Entries:
     Count: 1
 - Data:
     Level: 1
-    Reference: 03396B:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03396B:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03396B:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03396C:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03396B:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03396B:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03396B:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03396C:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 002836:Dawnguard.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 033968:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 033968:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 033968:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 033968:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 033968:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 033968:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 033968:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 033968:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 033968:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 033968:Skyrim.esm
+    Reference: 033970:Skyrim.esm
     Count: 1

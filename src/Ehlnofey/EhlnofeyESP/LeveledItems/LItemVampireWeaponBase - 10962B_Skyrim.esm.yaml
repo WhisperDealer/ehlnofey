@@ -1,0 +1,41 @@
+FormKey: 10962B:Skyrim.esm
+VersionControl: 944407
+EditorID: LItemVampireWeaponBase
+FormVersion: 40
+Version2: 3
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+- CalculateForEachItemInCount
+Entries:
+- Data:
+    Level: 1
+    Reference: 013989:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 013991:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 013999:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139A1:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 013983:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01398B:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 013993:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01399B:Skyrim.esm
+    Count: 1

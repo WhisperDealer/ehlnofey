@@ -369,6 +369,21 @@ See `archetype-tiers.md` §3.1.
 - **Gear:** left alone (user decision). Malkoran (`DA03Wizard`) is a level-50 Conjurer boss.
 - **Plugin size:** unchanged at 2,646 (all 46 lists were already overridden). See `archetype-tiers.md` §3.1.
 
+**Vampires are built (WD-47, 2026-09-26). This is not yet verified in game.**
+- **Mooks:** Nightstalker ×1 · Ancient ×3 · Volkihar ×2 (28/38/48, mean ≈ 40, T6), well above the warlocks (user:
+  immortal, Daedric-blessed). The four female lists roll the same roster. The male Nord list borrows boss leaves at 31/42/53.
+- **Bosses:** pinned to **65, the Nightmaster** (user), which is **above Harkon** (55/60). Serana's planned 40 now sits
+  inside the mook band. Both are flagged for their own tickets.
+- **Gear:** `LItemVampireWeaponBase` holds its own steel/orcish/dwarven/elven swords and war axes; it had pointed at the
+  bandit lists (70% iron). The armor is vampire armor and robes only; Requiem's glass/elven/orcish/leather sets were cut.
+- **Arrows:** the CC bone arrow is gone from the vampire arrows and from the exotic-arrows vendor sublist. That sublist
+  sits in `LItemArrowsAll`, so its flatten now runs before the cuts.
+- **Thralls: level 25** (user, after play: they were 5). A "Vampire's Thrall" owns no level; it templates onto a
+  bandit ladder. `author-retargets.ps1` points 37 thrall records at that ladder's gate-25 Marauder entry. Melee thralls are all
+  two-handed (user): they close in and soak damage for the vampire. Dropping
+  `Stats` was not safe: thralls carry the placeholder class `EncClassDremoraMelee` and no `AutoCalcStats`.
+- **Plugin size:** 2,684 records (+1 `LVLI`, `LItemVampireWeaponBase`; +37 thrall `NPC_`).
+
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
 translation loss on the 21 overridden injector quests. Preferred fix: stop overriding them and ship a

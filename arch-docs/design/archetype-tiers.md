@@ -101,14 +101,45 @@ The main table. `Vanilla rungs` are name (level) from `lore-constraints.md` §1 
 | **Thalmor** | `LCharThalmorMelee1H` 02B129 | 4 · 12 · 20 · 28 · 36 | 12 ×2 · **20 ×3** · 28 ×2 | **T4** (T3–T5) |
 | Thalmor boss | `LCharThalmorMagicBoss` 07DCA9 | 14 · 23 · 32 · 40 · 50 | 23 ×2 · **32 ×2** · 40 ×1 | **T5** (T4–T6) |
 | **Alik'r** | `LCharAlikrMelee1H` 06766F | 1 · 6 · 14 · 24 · 34 · 44 | Forager-tier 6 ×2 · **14 ×3** · 24 ×1 | **T3** (T2–T4) |
-| **Vampire** | `LCharVampire` 033973 | Fledgling 1 · Vampire 6 · Blooded 12 · Mistwalker 20 · Nightstalker 28 · Ancient 38 · Volkihar 48 (+60 DLC1) | Vampire ×2 · **Blooded ×3** · Mistwalker ×3 · Nightstalker ×1 | **T4** (T2–T5) |
-| Vampire boss | `LCharVampireBoss` 0339A9 | 14 · 23 · 31 · 42 · 53 | 23 ×2 · **31 ×2** · 42 ×1 | **T5** (T4–T6) |
+| **Vampire** | `LCharVampire` 033973 + 4 voice lists | Fledgling 1 · Vampire 6 · Blooded 12 · Mistwalker 20 · Nightstalker 28 · Ancient 38 · Volkihar 48 · Nightlord 60 (DLC1) | Nightstalker ×1 · **Ancient ×3** · Volkihar ×2 — mean 39.7 (WD-47) | **T6** (T5–T7) |
+| Vampire boss | `LCharVampireBoss` 0339A9 + 3 race lists | Master Vampire 14 · 23 · 31 · 42 · Volkihar Master 53 · Nightmaster 65 (DLC1) | **65 only** (Nightmaster; pinned — WD-47) | **above T7** |
 | **Werewolf** | `LCharWerewolf` 01E791 | 1 · 6 · 12 · 20 · 28 · 38 | 12 ×2 · **20 ×3** · 28 ×1 | **T4** (T3–T5) |
 | **Penitus Oculatus** | `LCharPenitusOculatus` 07D99F | 1 · 4 · 8 · 13 · 18 · 23 | 8 ×2 · **13 ×3** · 18 ×1 | **T3** (T2–T4) |
 | **Ghost** | `LCharGhostWizard` 104B62 | 1 · 5 · 9 · 14 · 19 · 25 | 5 ×2 · **9 ×3** · 14 ×1 | **T2** (T2–T3) |
 | **Witch** | `LCharWitchAny` 074F9D | 4 · 8 | 4 ×1 · **8 ×1** | **T2** (T1–T2) |
 | **Vigilant of Stendarr** | `LCharVigilantOfStendarr` 0BFB53 | 5 — single gate | *(unchanged — already flat)* | **T2** |
 | **Dawnguard** | `LCharDawnguardMelee1H` 014281 | 1 · 5 · 9 · 14 · 19 · 25 | 9 ×2 · **14 ×3** · 19 ×1 | **T3** (T2–T4) |
+
+**Vampires (WD-47, user 2026-09-26). Not yet verified in game.** Vampires are immortal and carry a Daedric
+prince's gift, so they sit well above the average mage (warlock mooks mean 25.5): Nightstalker ×1 · Ancient ×3 ·
+Volkihar ×2 (28/38/48, mean 39.7) in `LCharVampire` and the three Dawnguard female voice lists. Every rank-and-file
+leaf is female. The one male list, `DLC1LCharVampireMaleNordM`, borrows the male boss leaves at 31/42/53 with the same
+weights. The Nightlord (60) is out: it would out-level Harkon.
+- **Bosses are pinned to 65, the Nightmaster** (user), in `LCharVampireBoss` and the three race lists. That is
+  **above Harkon** (55, 60 as Vampire Lord, `author-constants.ps1`). Flagged for the named-bosses ticket.
+- **Serana** (§7, T6 = 40) was meant to sit above the generic vampire band. At 40 she now sits in the middle of it.
+  Flagged for the Followers ticket.
+- **Weapons:** every generic vampire carries `LItemVampireWeaponBase` (vampires only), which pointed at the bandit
+  sword and war-axe lists (70% iron). It now holds steel, orcish, dwarven and elven, one sword and one war axe
+  each: 25% per material, no iron, no glass.
+- **Armor:** vampire armor and enchanted vampire robes only. Requiem's Leather/Orcish/Elven/Glass sets were cut from
+  `LItemVampireAttire`; about 1 in 12 vampires had worn glass.
+- **Companions** (`LCharVampireCompanion`, `…Frost`): death hound, giant frostbite spider, small gargoyle and
+  gargoyle. The skeever and the small spiders are dropped.
+- **CC bone arrow** cut from `LItemVampireWeaponArrows`, and from the exotic-arrows vendor sublist, which sits in
+  `LItemArrowsAll`. **Eight `LItemVampire*` lists are referenced by nothing**, arrows and bow included: boots,
+  cuirass, gauntlets, robes, dagger, boss dagger, bow and arrows. The boss armor outfit and boss weapon list are
+  also unused. Every generic vampire, boss or not, wears `vampireOutfit`.
+- **Death hounds** (`LCharVampireWolf`, level 5) are unchanged.
+- **Vampire's Thralls are level 25** (user, after play, 2026-09-26). A thrall owns no level. It takes `Stats` and
+  `Traits` straight from a bandit ladder (`LCharBanditMelee1H`, the voice lists, missile, wizard), so it rolled the
+  bandit mook rungs 5/9/14. Those lists are shared with every bandit camp, so the 37 thrall records are repointed at
+  their ladder's gate-25 Marauder entry instead (`author-retargets.ps1`). That is what vanilla spawned at player
+  level 25+, and class, health, race and voice come with it. **Every melee thrall is two-handed** (user): a
+  vampire fights with spells or a blade and a spell, and its thrall closes in, deals damage and soaks it. That covers
+  the 1H, any-melee and sword-and-shield thralls. Commoner-voice (Imperial) thralls become Nord Marauders of the same
+  sex, because there is no Imperial two-handed Marauder.
+  The Castle Volkihar feast thralls are non-combat and left alone.
 
 **Warlocks (WD-46, user 2026-09-26). Levels verified in game by the user.** Mages turn up in many kinds of
 place, so the band is wide: Mage ×2 · Wizard/Ascendant ×3 · Pyromancer/Master ×1 (19/27/36), across all five
@@ -169,7 +200,7 @@ the only signal the player gets.** A ×2/×2/×1 band is therefore only legible 
 | **Forsworn** | "Forsworn Briarheart" at all five rungs | **pinned to 38** (WD-43) |
 | **Warlock** | nameless leaves, no `Traits` (templates are named per rung) | **pinned to 50** (WD-46) |
 | **Thalmor** | "Thalmor Wizard" at all seven rungs | **pin** (WD-42) — rung chosen in WD-48 |
-| **Vampire** | *none* → falls through to the placed base | **pin** (WD-42) — rung chosen in WD-47 |
+| **Vampire** | nameless leaves, no `Traits` (templates: "Master Vampire" ×4, then Volkihar Master, Nightmaster) | **pinned to 65** (WD-47) |
 
 So the bandit boss is pinned to a single rung: a Bandit Chief is the same level in Swindler's Den, in
 Halted Stream and on Solstheim, forever. Gate 29 appears twice in the `*M` lists (1H and 2H) and
