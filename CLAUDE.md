@@ -959,6 +959,7 @@ A reader-facing page per finished faction, in one shared style. Each faction tic
 | Bandits + hostile Orc camps | WD-2x (pre-Jira) | https://claude.ai/artifact/C3vSs31Kiejw2TDTxNwLSH |
 | Forsworn | WD-43 | https://claude.ai/artifact/Xff2Gm6AbjxaRoyoZXAvTv |
 | Hold guards + civil-war soldiers | WD-44 / WD-45 | https://claude.ai/artifact/2g11MaAwsx2MJ5ybrXqoGd |
+| Warlocks, necromancers, conjurers | WD-46 | https://claude.ai/artifact/WhSB5WhDyXASBzhFXQYkTi |
 
 Candidates still to confirm:
 
