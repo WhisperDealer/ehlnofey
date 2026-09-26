@@ -16,7 +16,7 @@ Configuration:
   - LoopedAudio
   Level:
     MutagenObjectType: NpcLevel
-    Level: 35
+    Level: 25
   CalcMinLevel: 1
   CalcMaxLevel: 50
   SpeedMultiplier: 100

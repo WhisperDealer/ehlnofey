@@ -16,7 +16,7 @@ Configuration:
   StaminaOffset: -25
   Level:
     MutagenObjectType: NpcLevel
-    Level: 35
+    Level: 30
   CalcMinLevel: 3
   SpeedMultiplier: 100
   DispositionBase: 35

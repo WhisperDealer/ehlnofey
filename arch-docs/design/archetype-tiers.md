@@ -503,15 +503,64 @@ never honoured zones anyway (`engine-behaviour.md` §1), so flattening changes n
 
 | Cluster | Vanilla | **Ehlnofey** |
 |---|---|---|
-| City guards | ×1 [20–50] | **21 (T4)** |
-| Imperial / Stormcloak soldiers | ×0.25 [1–50] | **14 (T3)** |
+| City guards | ×1 [20–50] | ~~21 (T4)~~ **25** (WD-45) |
+| Imperial / Stormcloak soldiers | ×0.25 [1–50] | ~~14 (T3)~~ **25** (WD-44) |
 | Hunters | ×0.5 [5–15] | **8 (T2)** |
 | Nightingales | ×1 [15–45] | **30 (T5)** |
 | `WE*` world encounters | various | **8 (T2)** default |
 | Zahkriisos | ×1 [25–60] | **60** — matches his fixed siblings |
 
-**Lever:** SkyPatcher `filterByPCLevelMult=true` + `setPcLevelMult=false=<N>` + `level=<N>`. Both
-halves or it fails (`implementation-strategy.md` §4).
+**Lever (superseded):** SkyPatcher was the plan; the shipped architecture has no rules, so the lever is an
+`NPC_` override of the record that **owns** the level — `author-retargets.ps1`, `Level = N` edits.
+
+**Guards and soldiers — WD-44/45 (2026-09-26, user decision).** Both fixed at **25**, which beats every bandit
+mook, sits just under a bandit chief (28), and is in the Forsworn Pillager (24) – Ravager (34) band. One level
+for every uniform. The level lives on a handful of templates, not on the visible NPCs:
+
+| Record | Vanilla | Before WD-44/45 | Now | Who takes Stats from it |
+|---|---|---|---|---|
+| `EncGuardImperialTemplate` 0F6F37 | ×1 [20–50] | untouched — **still scaling** | 25 | 167 NPCs: Imperial-held hold guards, via `LCharGuardImperial` |
+| `EncGuardSonsTemplate` 0F6F38 | ×1 [20–50] | untouched — **still scaling** | 25 | 180 NPCs: Stormcloak-held hold guards, via `LCharGuardSons` |
+| `EncSoldierImperialTemplate` 01FC5D | ×0.25 [1–50] | 35 (Requiem) | 25 | 146 NPCs: soldiers of **both** sides, forts, patrols, field COs, couriers |
+| `EncSoldierSonsTemplate` 027498 | ×0.25 [1–50] | 35 (inert) | 25 (inert) | nothing — it takes Stats from 01FC5D |
+| `EncSiege{Imperial,Sons}ArcherTemplate` 045BE0 / 045BE4 | ×1 [3–20] | 35 | 25 | siege archers |
+| `DLC2RRGuardTemplate` 0195AF:Dragonborn | ×1 [20–50] | untouched | 25 | Raven Rock Redoran guards |
+| `MQ104Soldier01–04` | ×0.5 [2–25] | untouched | 25 | the Whiterun guards at the Western Watchtower |
+
+The nine `EncGuardImperialM0x` leaves the extract grafted at 25 carry `Stats` in `TemplateFlags`, so their own
+level was always **inert** — the guards scaled 20–50 in the shipped plugin until WD-45. Read the flags.
+
+**Hold guards: 25 / 30 / 35** (user decision after play, 2026-09-26: 25 lost to bandits). The nine guard
+leaves per side (`EncGuardImperialM01–M09`, `EncGuardSons{F01–F03,M01–M06}`) have `Stats` dropped from their
+`TemplateFlags` and own their level: three at each rung, and every voice-type sublist holds all three. Their
+class, `HealthOffset` and skills match the template's, so only the level changes. **Soldiers get the same
+spread**: the nine leaves each of `LCharSoldierImperial` 01FC5B and `LCharSoldierSons` 01FC5C, which every
+patrol, garrison and battle soldier rolls from. The single fixed records are pinned at **30**, the spread's
+average (user, 2026-09-26): the siege soldier templates (041B30, 045BE5, which now own their Stats), the siege
+archers, the Redoran guards and the MQ104 guards. The table above shows the first pass at 25. (The leaves' cached skill values differ a little from the template's, because they
+are baked per race; `AutoCalcStats` recomputes them in game.)
+**Rank names were asked for and not built** (Trainee / Watchman / Hearth-Guard). A hold guard displays its hold
+record's own name ("Whiterun Guard") even though it carries `Traits`, and the leaves are named "Imperial
+Soldier", which never appears in game. So a rank name on a leaf would not display, and a guard's rank cannot be
+read. That is a bone-2 gap, and it stays open until in-game testing finds which record the nameplate reads
+(CLAUDE.md naming gotcha).
+
+**Gear — unchanged (user decision).** Armor is a hold/faction uniform (outfit). Imperials carry a fixed
+Imperial sword (steel tier) and Imperial bow. Stormcloaks — and Markarth/Dawnstar guards of either side, through
+`GuardGear` 100561 — roll `LItemSoldierSons{Mace,Sword,Waraxe,Warhammer,Greatsword,Battleaxe}`, which Requiem
+flattened to iron/steel 50/50; shields are hide ×4 / steel ×4. Both mixes are kept. Only Stormcloaks, guards,
+Helgen and Valmir use those lists, so a later change would need no fork. **Imperials were unarmed** (found in play, 2026-09-26): Requiem
+had moved their Imperial sword, bow and dagger into Requiem-only lists, and bucket B stripped them, so
+`CWSoldierImperialGear` 0A6E61 carried no weapon. Every Imperial soldier and Imperial-held guard fought with
+fists. `author-injectors.ps1` puts vanilla's set back: Imperial bow → `…NoTorch` 10FAFC, Imperial sword + steel
+dagger → `…NoTorchNoBow` 10FAFD. The Thalmor bow sublists (07D983 Elven, 07D984 glass) had the same strip and get their bow back too. No injector
+touches any of these lists; the `CW` quest 019E53 holds `CWSoldier{Imperial,Sons}Gear` as script properties —
+believed to hand gear out, not `AddForm` into it, **`[unverified]`** (script source not read).
+
+**Left scaling, deliberately out of scope:** the named leaders (`CWBattle*` Tullius/Ulfric/Rikke/Galmar,
+Captain Metilius — named-bosses story); the soldier mages `CWSiege{Sons,Imperial}Wizard`, which take Stats from
+the apprentice warlock templates 045C60/045C5F (fixed level 6, shared with the warlock ladder); the
+`dunCG*` quest soldiers (×1 [5–12]); the Sovngarde/`MQ301` soldier souls and the Kilkreath ghosts.
 
 ### 6.1 Followers — deleveled, by role, by hand
 

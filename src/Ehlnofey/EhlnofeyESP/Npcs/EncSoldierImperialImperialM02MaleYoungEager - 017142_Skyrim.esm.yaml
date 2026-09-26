@@ -1,21 +1,24 @@
-FormKey: 0AA901:Skyrim.esm
+FormKey: 017142:Skyrim.esm
 IsCompressed: True
 MajorRecordFlagsRaw: 262144
-VersionControl: 1978415
-EditorID: EncGuardImperialM07MaleGuard
-Version2: 14
+VersionControl: 944407
+EditorID: EncSoldierImperialImperialM02MaleYoungEager
+FormVersion: 40
+Version2: 2
 SkyrimMajorRecordFlags:
 - Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
 Configuration:
   Flags:
-  - Respawn
   - AutoCalcStats
   - LoopedScript
   - LoopedAudio
   Level:
     MutagenObjectType: NpcLevel
     Level: 30
-  CalcMinLevel: 20
+  CalcMinLevel: 1
   CalcMaxLevel: 50
   SpeedMultiplier: 100
   DispositionBase: 35
@@ -24,11 +27,11 @@ Configuration:
   - SpellList
   - AIData
   - AIPackages
+  - BaseData
   - Inventory
   - Script
   - DefPackList
   - AttackData
-  HealthOffset: 50
 Factions:
 - Faction: 01C9FC:Skyrim.esm
   Rank: -1
@@ -48,16 +51,13 @@ Factions:
 - Faction: 0AB7B9:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
-Voice: 0AA8D3:Skyrim.esm
-Template: 0F6F37:Skyrim.esm
-Race: 013746:Skyrim.esm
+Voice: 013AD1:Skyrim.esm
+Template: 01FC5D:Skyrim.esm
+Race: 013744:Skyrim.esm
 Perks:
 - Perk: 10B1D9:Skyrim.esm
   Rank: 1
-  Fluff: 0x000000
-- Perk: 10BF7D:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
+  Fluff: 0x866916
 Items:
 - Item:
     Item: 0A6E61:Skyrim.esm
@@ -71,25 +71,22 @@ AIData:
 Packages:
 - 0587E1:Skyrim.esm
 Class: 10B1D8:Skyrim.esm
-Name:
-  TargetLanguage: English
-  Value: Imperial Soldier
 PlayerSkills:
   SkillValues:
   - Key: OneHanded
-    Value: 50
-  - Key: TwoHanded
-    Value: 55
-  - Key: Archery
-    Value: 46
-  - Key: Block
-    Value: 51
-  - Key: Smithing
     Value: 20
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 15
+  - Key: Block
+    Value: 20
+  - Key: Smithing
+    Value: 15
   - Key: HeavyArmor
-    Value: 30
+    Value: 20
   - Key: LightArmor
-    Value: 35
+    Value: 15
   - Key: Pickpocket
     Value: 15
   - Key: Lockpicking
@@ -99,19 +96,19 @@ PlayerSkills:
   - Key: Alchemy
     Value: 15
   - Key: Speech
-    Value: 20
+    Value: 15
   - Key: Alteration
     Value: 15
   - Key: Conjuration
     Value: 15
   - Key: Destruction
-    Value: 15
+    Value: 20
   - Key: Illusion
     Value: 15
   - Key: Restoration
-    Value: 15
+    Value: 25
   - Key: Enchanting
-    Value: 15
+    Value: 20
   SkillOffsets:
   - Key: OneHanded
     Value: 0
@@ -149,87 +146,89 @@ PlayerSkills:
     Value: 0
   - Key: Enchanting
     Value: 0
-  Health: 252
+  Health: 50
   Magicka: 50
-  Stamina: 183
+  Stamina: 50
   GearedUpWeapons: 1
 HeadParts:
-- 05140A:Skyrim.esm
-- 017506:Skyrim.esm
+- 0F5009:Skyrim.esm
 - 08555F:Skyrim.esm
-- 024244:Skyrim.esm
-- 051508:Skyrim.esm
+- 024259:Skyrim.esm
+- 0C7170:Skyrim.esm
+HairColor: 0A0432:Skyrim.esm
 CombatStyle: 068848:Skyrim.esm
 NAM5: 255
 Height: 1
-Weight: 70
+Weight: 30
 SoundLevel: Normal
 DefaultOutfit: 0267EF:Skyrim.esm
 SleepingOutfit: 0F122A:Skyrim.esm
 DefaultPackageList: 017040:Skyrim.esm
 CrimeFaction: 028848:Skyrim.esm
-HeadTexture: 073259:Skyrim.esm
-TextureLighting: '#00B79C91'
+TextureLighting: '#00573D33'
 FaceMorph:
-  NoseLongVsShort: -0.1
-  NoseUpVsDown: -0.7
-  JawNarrowVsWide: -0.2
-  JawForwardVsBack: 0.4
-  CheeksUpVsDown: 0.1
-  CheeksForwardVsBack: 0.6
-  EyesUpVsDown: -0.2
-  EyesInVsOut: -0.3
-  BrowsUpVsDown: -1
-  BrowsInVsOut: 1
-  BrowsForwardVsBack: -0.1
-  LipsUpVsDown: -0.74
-  LipsInVsOut: -0.1
-  ChinNarrowVsWide: -0.6
-  ChinUpVsDown: -0.1
-  ChinUnderbiteVsOverbite: 0.3
-  EyesForwardVsBack: 0.3
+  NoseLongVsShort: 0.8
+  NoseUpVsDown: 0.14
+  JawUpVsDown: -1
+  JawNarrowVsWide: -1
+  JawForwardVsBack: -1
+  CheeksUpVsDown: 0.34
+  CheeksForwardVsBack: 0.15999997
+  EyesUpVsDown: -0.08
+  EyesInVsOut: -0.14
+  BrowsUpVsDown: -0.2
+  BrowsInVsOut: -0.34
+  BrowsForwardVsBack: 0.8
+  ChinNarrowVsWide: 0.4
+  ChinUpVsDown: -0.18
+  ChinUnderbiteVsOverbite: 0.100000024
+  EyesForwardVsBack: -1
   Unknown: 3.4028235E+38
 FaceParts:
-  Nose: 14
+  Nose: 2
   Unknown: 4294967295
-  Eyes: 14
-  Mouth: 3
+  Eyes: 5
+  Mouth: 1
 TintLayers:
 - Index: 1
-  Color: '#00B79C91'
+  Color: '#00573D33'
   InterpolationValue: 1
-  Preset: 76
-- Index: 7
-  Color: '#00A95452'
-  InterpolationValue: 0.38
-  Preset: 116
-- Index: 8
-  Color: '#00A95452'
-  InterpolationValue: 0.19
-  Preset: 120
-- Index: 9
-  Color: '#00A95452'
-  InterpolationValue: 0.38
-  Preset: 128
-- Index: 12
-  Color: '#00430401'
-  InterpolationValue: 0.42
-  Preset: 143
-- Index: 21
-  Color: '#00000000'
-  InterpolationValue: 0
-  Preset: 151
-- Index: 22
-  Color: '#00000000'
-  InterpolationValue: 0
-  Preset: 175
-- Index: 43
+  Preset: 68
+- Index: 2
   Color: '#00FFFFFF'
   InterpolationValue: 0
-  Preset: 366
-- Index: 25
+  Preset: 71
+- Index: 8
+  Color: '#000F0440'
+  InterpolationValue: 0.35
+  Preset: 109
+- Index: 14
   Color: '#00000000'
-  InterpolationValue: 0.42
-  Preset: 587
+  InterpolationValue: 0
+  Preset: 134
+- Index: 15
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 158
+- Index: 16
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 182
+- Index: 17
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 206
+- Index: 18
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 230
+- Index: 19
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 253
+- Index: 4
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 472
 MajorFlags:
 - 0x40000

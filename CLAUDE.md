@@ -346,6 +346,21 @@ The same pass fixed two shipped bugs:
 
 See `archetype-tiers.md` §3.1.
 
+**Guards and civil-war soldiers are built (WD-44/45, 2026-09-26). This is not yet verified in game.**
+- **Level: hold guards and soldiers roll 25, 30 or 35**, a third each (user, after play: 25 lost to bandits).
+  Each of the 36 guard and soldier leaves owns its level. Rank *names* are not possible yet: the nameplate shows
+  the hold record's name. The single fixed records sit at **30**, the spread's average: the siege soldier and siege
+  archer templates, Redoran guards and the MQ104 Whiterun guards. The guard and soldier templates hold 25, but
+  nothing reads their level any more. See `archetype-tiers.md` §6.
+- **Guards were still scaling 20–50 before this.** The extract's level-25 grafts sat on `EncGuardImperialM0x` leaves,
+  which take their Stats from `EncGuardImperialTemplate`, so the grafts had no effect.
+- **Gear:** Stormcloaks keep Requiem's iron/steel weapon mix and hide/steel shields (user decision). **Imperials
+  had no weapon at all.** Bucket B had stripped Requiem's Imperial weapon lists, so every Imperial soldier and guard
+  fought bare-handed in play. The Imperial sword, bow and steel dagger are re-added by `author-injectors.ps1`.
+  **The Thalmor bow sublists had the same bug** (`SublistThalmorBowAndArrows{Elven,Glass}`: arrows, no bow). The
+  Elven and glass bows are back. Which rank gets which sublist is still for the Thalmor ticket.
+- **Plugin size:** 2,646 records (+36 `NPC_`).
+
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
 translation loss on the 21 overridden injector quests. Preferred fix: stop overriding them and ship a
@@ -912,6 +927,16 @@ Fill this as the project teaches you things.
   then weight it, repoint an entry (re-add the new target, cut the old), or add one item several times with
   different `Count`s. `$weights` throws if its target is absent, so weight only what exists or what the
   re-add just added. `[verified]` 2026-09-26.
+- **Bucket B can strip a list down to no weapon.** It removes Requiem-only entries, and where Requiem had
+  *moved* a faction's vanilla weapons into its own lists, nothing is left. The NPC spawns unarmed and fights with
+  fists, and nothing warns you. Imperials and Thalmor archers were hit; both are fixed. To find more, compare each
+  stripped list's remaining entries against `reference/mods/RequiemYaml/LeveledItems/`. `[verified]` in game
+  2026-09-26.
+- **A bucket-E level graft can be inert.** The extract grafted Requiem's level onto whichever `NPC_` carried
+  the `PcLevelMult`. If that record takes `Stats` from a template, its own level is ignored. The nine
+  `EncGuardImperialM0x` guards were grafted at 25 and still scaled 20–50 in game through `EncGuardImperialTemplate`.
+  Before claiming an NPC is fixed, find the level **owner**: follow `Stats` templates through `LVLN` entries to a
+  record without the flag. `[verified]` from the records, 2026-09-26.
 - **In the decompile, match the string `- Language: English`, not `Language: English`.** The latter hits
   `TargetLanguage: English` on the line above first, and a name parse silently returns the wrong field.
   `[verified]` 2026-09-25.
@@ -925,6 +950,7 @@ A reader-facing page per finished faction, in one shared style. Each faction tic
 |---|---|---|
 | Bandits + hostile Orc camps | WD-2x (pre-Jira) | https://claude.ai/artifact/C3vSs31Kiejw2TDTxNwLSH |
 | Forsworn | WD-43 | https://claude.ai/artifact/Xff2Gm6AbjxaRoyoZXAvTv |
+| Hold guards + civil-war soldiers | WD-44 / WD-45 | https://claude.ai/artifact/2g11MaAwsx2MJ5ybrXqoGd |
 
 Candidates still to confirm:
 

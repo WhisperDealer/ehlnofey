@@ -20,7 +20,6 @@ Configuration:
   SpeedMultiplier: 100
   DispositionBase: 35
   TemplateFlags:
-  - Stats
   - Factions
   - SpellList
   - AIData

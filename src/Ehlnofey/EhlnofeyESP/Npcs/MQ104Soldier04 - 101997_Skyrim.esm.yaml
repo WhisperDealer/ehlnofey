@@ -1,55 +1,48 @@
-FormKey: 0AA901:Skyrim.esm
+FormKey: 101997:Skyrim.esm
 IsCompressed: True
 MajorRecordFlagsRaw: 262144
 VersionControl: 1978415
-EditorID: EncGuardImperialM07MaleGuard
-Version2: 14
+EditorID: MQ104Soldier04
+Version2: 8
 SkyrimMajorRecordFlags:
 - Compressed
 Configuration:
   Flags:
-  - Respawn
   - AutoCalcStats
-  - LoopedScript
-  - LoopedAudio
+  MagickaOffset: -50
   Level:
     MutagenObjectType: NpcLevel
     Level: 30
-  CalcMinLevel: 20
-  CalcMaxLevel: 50
+  CalcMinLevel: 2
+  CalcMaxLevel: 25
   SpeedMultiplier: 100
   DispositionBase: 35
   TemplateFlags:
-  - Factions
+  - Traits
   - SpellList
   - AIData
   - AIPackages
-  - Inventory
+  - ModelAnimation
   - Script
   - DefPackList
   - AttackData
-  HealthOffset: 50
 Factions:
-- Faction: 01C9FC:Skyrim.esm
-  Rank: -1
+- Faction: 0267EA:Skyrim.esm
   Fluff: 0x000000
-- Faction: 028848:Skyrim.esm
-  Rank: -1
+- Faction: 02BE39:Skyrim.esm
   Fluff: 0x000000
-- Faction: 02BF9A:Skyrim.esm
-  Rank: -1
+- Faction: 02BE3B:Skyrim.esm
   Fluff: 0x000000
-- Faction: 06B18C:Skyrim.esm
-  Rank: -1
+- Faction: 04E1E1:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 054AEC:Skyrim.esm
   Fluff: 0x000000
 - Faction: 086EEE:Skyrim.esm
-  Rank: -1
   Fluff: 0x000000
-- Faction: 0AB7B9:Skyrim.esm
-  Rank: 1
+- Faction: 0A4A40:Skyrim.esm
   Fluff: 0x000000
 Voice: 0AA8D3:Skyrim.esm
-Template: 0F6F37:Skyrim.esm
+Template: 0AA8D8:Skyrim.esm
 Race: 013746:Skyrim.esm
 Perks:
 - Perk: 10B1D9:Skyrim.esm
@@ -60,7 +53,7 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
-    Item: 0A6E61:Skyrim.esm
+    Item: 10AA4E:Skyrim.esm
     Count: 1
 AIData:
   Aggression: Aggressive
@@ -70,32 +63,32 @@ AIData:
   Assistance: HelpsFriendsAndAllies
 Packages:
 - 0587E1:Skyrim.esm
-Class: 10B1D8:Skyrim.esm
+Class: 0253F2:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: Imperial Soldier
+  Value: Whiterun Guard
 PlayerSkills:
   SkillValues:
   - Key: OneHanded
-    Value: 50
+    Value: 22
   - Key: TwoHanded
-    Value: 55
+    Value: 25
   - Key: Archery
-    Value: 46
+    Value: 16
   - Key: Block
-    Value: 51
+    Value: 21
   - Key: Smithing
     Value: 20
   - Key: HeavyArmor
-    Value: 30
+    Value: 16
   - Key: LightArmor
-    Value: 35
+    Value: 21
   - Key: Pickpocket
     Value: 15
   - Key: Lockpicking
     Value: 15
   - Key: Sneak
-    Value: 15
+    Value: 17
   - Key: Alchemy
     Value: 15
   - Key: Speech
@@ -149,87 +142,91 @@ PlayerSkills:
     Value: 0
   - Key: Enchanting
     Value: 0
-  Health: 252
-  Magicka: 50
-  Stamina: 183
+  Health: 61
+  Stamina: 54
   GearedUpWeapons: 1
 HeadParts:
-- 05140A:Skyrim.esm
-- 017506:Skyrim.esm
 - 08555F:Skyrim.esm
-- 024244:Skyrim.esm
-- 051508:Skyrim.esm
+- 051632:Skyrim.esm
+- 0C7123:Skyrim.esm
+- 0510B5:Skyrim.esm
+- 051405:Skyrim.esm
+HairColor: 0A042F:Skyrim.esm
 CombatStyle: 068848:Skyrim.esm
 NAM5: 255
 Height: 1
-Weight: 70
+Weight: 60.000004
 SoundLevel: Normal
-DefaultOutfit: 0267EF:Skyrim.esm
-SleepingOutfit: 0F122A:Skyrim.esm
+DefaultOutfit: 0D33C6:Skyrim.esm
 DefaultPackageList: 017040:Skyrim.esm
-CrimeFaction: 028848:Skyrim.esm
-HeadTexture: 073259:Skyrim.esm
-TextureLighting: '#00B79C91'
+CrimeFaction: 0267EA:Skyrim.esm
+HeadTexture: 0D071D:Skyrim.esm
+TextureLighting: '#00A7867A'
 FaceMorph:
   NoseLongVsShort: -0.1
-  NoseUpVsDown: -0.7
-  JawNarrowVsWide: -0.2
-  JawForwardVsBack: 0.4
-  CheeksUpVsDown: 0.1
-  CheeksForwardVsBack: 0.6
-  EyesUpVsDown: -0.2
-  EyesInVsOut: -0.3
-  BrowsUpVsDown: -1
-  BrowsInVsOut: 1
-  BrowsForwardVsBack: -0.1
-  LipsUpVsDown: -0.74
-  LipsInVsOut: -0.1
-  ChinNarrowVsWide: -0.6
-  ChinUpVsDown: -0.1
-  ChinUnderbiteVsOverbite: 0.3
+  NoseUpVsDown: -0.4
+  JawUpVsDown: -0.6
+  JawNarrowVsWide: -1
+  JawForwardVsBack: -0.4
+  CheeksUpVsDown: -0.4
+  CheeksForwardVsBack: -0.2
+  EyesUpVsDown: 0.2
+  EyesInVsOut: 0.7
+  BrowsUpVsDown: -0.5
+  BrowsInVsOut: 0.3
+  BrowsForwardVsBack: 0.2
+  LipsUpVsDown: -0.04
+  LipsInVsOut: -1
+  ChinNarrowVsWide: 0.54
+  ChinUpVsDown: 1
+  ChinUnderbiteVsOverbite: -0.3
   EyesForwardVsBack: 0.3
   Unknown: 3.4028235E+38
 FaceParts:
-  Nose: 14
+  Nose: 8
   Unknown: 4294967295
-  Eyes: 14
-  Mouth: 3
+  Eyes: 3
+  Mouth: 10
 TintLayers:
-- Index: 1
-  Color: '#00B79C91'
-  InterpolationValue: 1
-  Preset: 76
+- Index: 3
+  Color: '#00A95452'
+  InterpolationValue: 0.38
+  Preset: -1
+- Index: 5
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: -1
 - Index: 7
   Color: '#00A95452'
   InterpolationValue: 0.38
-  Preset: 116
+  Preset: -1
 - Index: 8
   Color: '#00A95452'
   InterpolationValue: 0.19
-  Preset: 120
+  Preset: -1
 - Index: 9
-  Color: '#00A95452'
-  InterpolationValue: 0.38
-  Preset: 128
-- Index: 12
   Color: '#00430401'
   InterpolationValue: 0.42
-  Preset: 143
+  Preset: -1
+- Index: 10
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: -1
+- Index: 11
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: -1
 - Index: 21
   Color: '#00000000'
   InterpolationValue: 0
-  Preset: 151
+  Preset: -1
 - Index: 22
   Color: '#00000000'
   InterpolationValue: 0
-  Preset: 175
-- Index: 43
-  Color: '#00FFFFFF'
-  InterpolationValue: 0
-  Preset: 366
+  Preset: -1
 - Index: 25
   Color: '#00000000'
-  InterpolationValue: 0.42
-  Preset: 587
+  InterpolationValue: 0
+  Preset: -1
 MajorFlags:
 - 0x40000

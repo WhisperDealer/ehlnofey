@@ -175,6 +175,18 @@ $readdByPlace = @(
     # LItemArrowsAll: steel-to-Nordic arrows plus the CC exotic-arrow sublist ($ccReadd) - the fire and ice
     # arrows seen in play. It now rolls the Forsworn arrow list instead; LItemArrowsAll is cut in $cuts.
     @{ List = '06A3CD:Skyrim.esm'; Items = @(,@('10FABD:Skyrim.esm', 1)) }   # LootForswornArrows15 <- LItemForswornArrows
+    # ---- Imperial soldiers and Imperial-held hold guards (WD-44/45, found in play 2026-09-26: they fought
+    # bare-handed). Requiem moved their weapons into its own lists (REQ_LI_Weapon_ImperialMissile AD3944,
+    # REQ_LI_Weapon_Imperial1H AD3945, REQ_Weapon_Imperial_Dagger 7F8C37); bucket B stripped those as
+    # Requiem-only and left the chain with no weapon at all. Vanilla's set goes back where Requiem put it,
+    # so the NoBow variant still gets a blade.
+    @{ List = '10FAFC:Skyrim.esm'; Items = @(,@('013841:Skyrim.esm', 1)) }                            # CWSoldierImperialGearNoTorch      <- ImperialBow
+    @{ List = '10FAFD:Skyrim.esm'; Items = @(@('0135B8:Skyrim.esm', 1), @('013986:Skyrim.esm', 1)) }  # CWSoldierImperialGearNoTorchNoBow <- Imperialsword, SteelDagger
+    # ---- Thalmor archers had arrows but no bow: same bucket-B strip. Requiem wrapped each bow in a one-item
+    # list (REQ_LI_Weapon_ThalmorBowElven AD3942, ...Glass AD3941). Vanilla's bow goes back; which Thalmor
+    # rank gets which sublist is for the Thalmor ticket.
+    @{ List = '07D983:Skyrim.esm'; Items = @(,@('01399D:Skyrim.esm', 1)) }   # SublistThalmorBowAndArrowsElven <- ElvenBow
+    @{ List = '07D984:Skyrim.esm'; Items = @(,@('0139A5:Skyrim.esm', 1)) }   # SublistThalmorBowAndArrowsGlass <- GlassBow
 )
 
 $fish = 'ccbgssse001-fish.esm'; $arrows = 'ccbgssse002-exoticarrows.esl'; $spell = 'ccbgssse014-spellpack01.esl'

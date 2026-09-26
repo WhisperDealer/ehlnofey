@@ -14,13 +14,12 @@ Configuration:
   - LoopedAudio
   Level:
     MutagenObjectType: NpcLevel
-    Level: 25
+    Level: 30
   CalcMinLevel: 20
   CalcMaxLevel: 50
   SpeedMultiplier: 100
   DispositionBase: 35
   TemplateFlags:
-  - Stats
   - Factions
   - SpellList
   - AIData
