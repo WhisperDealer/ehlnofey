@@ -369,7 +369,7 @@ See `archetype-tiers.md` §3.1.
 - **Gear:** left alone (user decision). Malkoran (`DA03Wizard`) is a level-50 Conjurer boss.
 - **Plugin size:** unchanged at 2,646 (all 46 lists were already overridden). See `archetype-tiers.md` §3.1.
 
-**Vampires are built (WD-47, 2026-09-26). This is not yet verified in game.**
+**Vampires are done (WD-47, 2026-09-26). Levels, mix and thralls were verified in game by the user.**
 - **Mooks:** Nightstalker ×1 · Ancient ×3 · Volkihar ×2 (28/38/48, mean ≈ 40, T6), well above the warlocks (user:
   immortal, Daedric-blessed). The four female lists roll the same roster. The male Nord list borrows boss leaves at 31/42/53.
 - **Bosses:** pinned to **65, the Nightmaster** (user), which is **above Harkon** (55/60). Serana's planned 40 now sits
@@ -975,6 +975,7 @@ A reader-facing page per finished faction, in one shared style. Each faction tic
 | Forsworn | WD-43 | https://claude.ai/artifact/Xff2Gm6AbjxaRoyoZXAvTv |
 | Hold guards + civil-war soldiers | WD-44 / WD-45 | https://claude.ai/artifact/2g11MaAwsx2MJ5ybrXqoGd |
 | Warlocks, necromancers, conjurers | WD-46 | https://claude.ai/artifact/WhSB5WhDyXASBzhFXQYkTi |
+| Vampires + thralls | WD-47 | https://claude.ai/artifact/3eUAuGTto4q1dyxZWXPXmA |
 
 Candidates still to confirm:
 

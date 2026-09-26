@@ -110,7 +110,7 @@ The main table. `Vanilla rungs` are name (level) from `lore-constraints.md` §1 
 | **Vigilant of Stendarr** | `LCharVigilantOfStendarr` 0BFB53 | 5 — single gate | *(unchanged — already flat)* | **T2** |
 | **Dawnguard** | `LCharDawnguardMelee1H` 014281 | 1 · 5 · 9 · 14 · 19 · 25 | 9 ×2 · **14 ×3** · 19 ×1 | **T3** (T2–T4) |
 
-**Vampires (WD-47, user 2026-09-26). Not yet verified in game.** Vampires are immortal and carry a Daedric
+**Vampires (WD-47, user 2026-09-26). Levels, mix and thralls verified in game by the user.** Vampires are immortal and carry a Daedric
 prince's gift, so they sit well above the average mage (warlock mooks mean 25.5): Nightstalker ×1 · Ancient ×3 ·
 Volkihar ×2 (28/38/48, mean 39.7) in `LCharVampire` and the three Dawnguard female voice lists. Every rank-and-file
 leaf is female. The one male list, `DLC1LCharVampireMaleNordM`, borrows the male boss leaves at 31/42/53 with the same
