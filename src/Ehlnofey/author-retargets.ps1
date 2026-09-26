@@ -205,6 +205,17 @@ $edits = @(
     # Giants: 38, on a par with the mammoths they herd (user, 2026-09-26; vanilla 32). EncGiant02/03, Grok (DA14),
     # the Largashbur giant (DA06) and the Karthspire giant take Stats from EncGiant01. Still passive (lore-constraints 4.1).
     @{ Npc = '023AAE:Skyrim.esm';     From = '    Level: 32'; To = '    Level: 38' }   # EncGiant01
+    # ---- Daedra (WD-52, user 2026-09-26).
+    # Arch conjurer bosses (50) bind Dremora: a conjurer summons a Dremora by persuasion or by beating it into
+    # submission, so only the rank that outclasses the level-46 Dremora Lord gets the spell. The boss leaves take
+    # SpellList from this template, and it took its own from the arch MOOK template; it now owns its list (identical)
+    # with Conjure Dremora Lord in place of the storm atronach. Master conjurers (36) keep storm atronachs.
+    @{ Npc = '1091AD:Skyrim.esm'; From = '- 100E78:Skyrim.esm'; To = '- 10DDEC:Skyrim.esm'; DropFlag = 'SpellList' }   # EncWarlock07TemplateBossConjurer
+    # Every Dremora carries enchanted Daedric (user; Requiem's pin on the melee and bow lists). The Dremora warlocks
+    # carried the bandit weapon list; the two reachable ranks take the Dremora list too.
+    @{ Npc = '016FF7:Skyrim.esm'; From = '    Item: 01E60A:Skyrim.esm'; To = '    Item: 017000:Skyrim.esm' }   # EncDremoraWarlock05: LItemBanditWeapon -> LItemEnchWeapon1HDremoraFire
+    @{ Npc = '016FFA:Skyrim.esm'; From = '    Item: 01E60A:Skyrim.esm'; To = '    Item: 017000:Skyrim.esm' }   # EncDremoraWarlock06
+
     # Wolves: 5 (user, after play 2026-09-26: at 2 they died faster than mudcrabs). Red wolves, bandit wolves and the
     # spriggan's wolf take Stats from EncWolf; the two hostile placed wolves that own their level go with it. Ice wolves
     # (6), summoned wolves, the Hunter's spirit guardian and the corpse are left alone.

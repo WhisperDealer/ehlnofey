@@ -404,6 +404,14 @@ See `archetype-tiers.md` §3.1.
 - **Hagraven companions** are trolls and giant spiders only.
 - **Plugin size:** 2,703 records (+9 `NPC_`; 16 `LVLN` re-authored). See `archetype-tiers.md` §4 and §5.
 
+**Daedra are done (WD-52, 2026-09-26). Verified in game by the user.**
+- **Dremora:** Markynaz ×1 · Valkynaz ×1 (36/46, mean 41, on par with vampires) in the melee, archer and warlock lists.
+- **Arch conjurer bosses (50)** summon a Dremora Lord (46) instead of a storm atronach. Master conjurers keep storm
+  atronachs.
+- **Gear:** every Dremora carries enchanted Daedric. The warlocks' bandit weapons were repointed.
+- **Atronachs:** Flame ×2 · Frost ×2 · Storm ×1. Summon levels are unchanged.
+- **Plugin size:** 2,706 records (+3 `NPC_`; 6 `LVLN` re-authored). See `archetype-tiers.md` §3.3.
+
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
 translation loss on the 21 overridden injector quests. Preferred fix: stop overriding them and ship a
@@ -1006,6 +1014,7 @@ A reader-facing page per finished faction, in one shared style. Each faction tic
 | Vampires + thralls | WD-47 | https://claude.ai/artifact/3eUAuGTto4q1dyxZWXPXmA |
 | Thalmor | WD-48 | https://claude.ai/artifact/35EZVm54hQ5fFC25A7Qa5t |
 | Wildlife & monsters | WD-54 | https://claude.ai/artifact/S7sQbvsHBKNVF21tsUAche |
+| Dremora & atronachs | WD-52 | https://claude.ai/artifact/FZrcU1aZLGgqj9aFQkfPiW |
 
 Candidates still to confirm:
 

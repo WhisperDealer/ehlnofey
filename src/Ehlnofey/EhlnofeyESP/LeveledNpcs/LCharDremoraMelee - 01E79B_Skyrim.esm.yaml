@@ -1,23 +1,9 @@
 FormKey: 01E79B:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharDremoraMelee
+FormVersion: 40
 Version2: 4
 Entries:
-- Data:
-    Level: 1
-    Reference: 023A95:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 016EF0:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 016F40:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 016F6A:Skyrim.esm
-    Count: 1
 - Data:
     Level: 1
     Reference: 016FF4:Skyrim.esm

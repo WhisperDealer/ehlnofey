@@ -1,5 +1,7 @@
 FormKey: 10709A:Skyrim.esm
+VersionControl: 944407
 EditorID: dunFellglowLCharAtronachOrFamiliar
+FormVersion: 40
 Version2: 2
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -12,6 +14,14 @@ Entries:
 - Data:
     Level: 1
     Reference: 023AA6:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023AA6:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023AA7:Skyrim.esm
     Count: 1
 - Data:
     Level: 1

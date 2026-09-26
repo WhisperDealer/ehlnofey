@@ -296,6 +296,22 @@ Add-Spec '0640C0:Skyrim.esm' 'LCharHagravenCompanion'                 @{ Gates =
 Add-Spec '0640C1:Skyrim.esm' 'LCharHagravenCompanionFrost'            @{ Gates = @{ 17 = 1; 22 = 1 } }
 Add-Spec '09D59F:Skyrim.esm' 'dunHagsEnd_LCharHagravenCompanionFrost' @{ Gates = @{ 11 = 1 } }
 
+# 3.3 Dremora (WD-52, user 2026-09-26): Daedra of Oblivion, "very high level, on par with vampires at the very
+#     least" (vampire mooks 28/38/48, mean 39.7). Markynaz x1 · Valkynaz x1 = levels 36 / 46, mean 41. Each rung has its
+#     own name, so the band reads in play. This replaces 3.3's Churl-to-Kynreeve T3 roster and its reservation of the
+#     top two ranks for conjuration. Gate = level on all three lists.
+foreach ($d in @(
+    @('01E79B:Skyrim.esm', 'LCharDremoraMelee'),
+    @('025D1A:Skyrim.esm', 'LCharDremoraMissile'),
+    @('025D1B:Skyrim.esm', 'LCharDremoraWarlock'))) {
+    Add-Spec $d[0] $d[1] @{ Gates = @{ 36 = 1; 46 = 1 } }
+}
+# 4 Atronachs: summon tiers, keep the spread (user): Flame x2 · Frost x2 · Storm x1 (5 / 16 / 30). Fellglow Keep's two
+#     lists get the same; its familiar (level 2) stays in the "OrFamiliar" list at weight 1.
+Add-Spec '01E77A:Skyrim.esm' 'LCharAtronach'                      @{ Gates = @{ 1 = 2; 20 = 2; 30 = 1 } }
+Add-Spec '10709B:Skyrim.esm' 'dunFellglowLCharAtronachAdjusted'   @{ Gates = @{ 1 = 2; 20 = 2; 30 = 1 } }
+Add-Spec '10709A:Skyrim.esm' 'dunFellglowLCharAtronachOrFamiliar' @{ Gates = @{ 1 = 1; 6 = 2; 20 = 2; 30 = 1 } }
+
 # 3.1 Thalmor (WD-48, user 2026-09-26): a specialist force sent into Skyrim, so better than the average soldier.
 #     Only the EncThalmor00* templates carry a name ("Thalmor Soldier" / "Thalmor Wizard"); every rung leaf is
 #     nameless and takes Traits, so each band shows one name at every level: PINNED, all three (WD-42).

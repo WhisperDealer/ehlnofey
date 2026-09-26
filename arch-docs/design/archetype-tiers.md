@@ -370,7 +370,7 @@ the boss band tops at 45. `[verified]` against `lore-constraints.md` §3.
 | **Dwarven sphere** | `LCharDwarvenSphere` 10EC8F | 16 · 24 · 30 | 16 ×1 · **24 ×3** · 30 ×1 | **T4** (T4–T5) |
 | **Dwarven centurion** | `LCharDwarvenCenturion` 10FCE5 | 24 · 30 · 36 | **30 ×2** · 36 ×1 | **T5** (T5–T6) |
 | Dwarven mixed | `LCharDwarvenAutomaton` 01E783 | 6 · 12 · 16 · 24 · 30 · 36 | spider 16 ×3 · **sphere 24 ×3** · centurion 30 ×1 | **T4** (T4–T5) |
-| **Dremora** | `LCharDremoraMelee` 01E79B | Churl 6 · Caitiff 12 · Kynval 19 · Kynreeve 27 · Markynaz 36 · Valkynaz 46 | Churl ×2 · **Caitiff ×3** · Kynval ×3 · Kynreeve ×1 | **T3** (T2–T5) |
+| **Dremora** | `LCharDremoraMelee` 01E79B · `…Missile` · `…Warlock` | Churl 6 · Caitiff 12 · Kynval 19 · Kynreeve 27 · Markynaz 36 · Valkynaz 46 | **Markynaz ×1 · Valkynaz ×1** — mean 41 (WD-52) | **T6** (T6–T7) |
 
 **The Falmer shaman defect is closed by construction.** Vanilla caps shamans at 25 while melee Falmer
 reach 38 `[verified]`; `lore-constraints.md` permits closing it. The rosters above put shamans at T4
@@ -380,7 +380,20 @@ should be, and it costs nothing but rung selection.
 **Automatons are the safest hard-fix in the game** (`lore-constraints.md` §3): machines in a sealed
 ruin, fictionally static, with a clean Spider < Sphere < Centurion order that vanilla already honours.
 
-**Markynaz (T6) and Valkynaz (T7) are reserved**, per rule 4 and the in-game book's *"the Valkynaz are
+**Dremora (WD-52, user 2026-09-26). Verified in game by the user.** Daedra from the planes of Oblivion. The user asked for
+them to be "very high level, on par with vampires at the very least". That supersedes the T3 roster and the reservation
+below. All three lists (melee, archer, warlock) roll Markynaz 36 and Valkynaz 46 evenly, mean 41. The rungs are named
+differently, so the band reads in play.
+- **Summoning:** a conjurer binds a Dremora by persuasion or by beating it into submission. So only the **arch
+  conjurer boss (50)**, which outclasses the level-46 Dremora Lord it summons, gets Conjure Dremora Lord.
+  `EncWarlock07TemplateBossConjurer` now owns its spell list, with the Dremora Lord in place of the storm atronach.
+  Master conjurers (36) keep storm atronachs. In vanilla no generic conjurer summoned a Dremora.
+- **Gear:** every Dremora carries enchanted Daedric (user; Requiem's pin, kept) and wears Daedric armor. The Dremora
+  warlocks' bandit weapon list was repointed to the Dremora list.
+- **Atronachs** (§4): Flame ×2 · Frost ×2 · Storm ×1 (5/16/30), in `LCharAtronach` and Fellglow Keep's two lists.
+  Summoned atronach levels are unchanged: flame 5/10, frost 16/24, storm 30/35.
+
+~~**Markynaz (T6) and Valkynaz (T7) are reserved**~~ *(superseded by WD-52)*, per rule 4 and the in-game book's *"the Valkynaz are
 rarely encountered on Tamriel"* `[verified]`. They appear only via conjuration and named placements —
 which also satisfies `lore-constraints.md` §4 item 5: a Master Conjurer (T6) summons a Markynaz (T6),
 in step.
