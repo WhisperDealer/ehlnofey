@@ -1,5 +1,7 @@
 FormKey: 025D37:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharFrostbiteSpiderSnow
+FormVersion: 40
 Version2: 5
 Entries:
 - Data:
@@ -8,29 +10,25 @@ Entries:
     Count: 1
 - Data:
     Level: 1
+    Reference: 023AAC:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023AAC:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 04203F:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 04203F:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
     Reference: 04203F:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
     Reference: 023AAD:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023AAC:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023AAC:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023AAC:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 04203F:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023AAC:Skyrim.esm
     Count: 1

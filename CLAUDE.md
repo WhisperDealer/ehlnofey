@@ -394,6 +394,16 @@ See `archetype-tiers.md` §3.1.
   like every other soldier (verified in game), which makes `ccedhsse003-redguard.esl` the **27th master** (22 CC plugins).
 - **Plugin size:** 2,694 records (+2 new `LVLI`, +9 `NPC_`). See `archetype-tiers.md` §3.1.
 
+**Wildlife and monsters are done (WD-54, 2026-09-26). Verified in game by the user; the wolf raise came from that play.**
+- **Species levels stay vanilla** (skeever 1 … mammoth 38), except **wolves: 5** (was 2; they died faster than mudcrabs), **giants: 38** (was 32, on a par with mammoths)
+  and **hagravens: 40** (was 20). That covers
+  `EncHagraven` and the four named hagravens that own their level.
+- **The biome gaps are fixed:** the snowy-forest list has no frost trolls, and the two Solstheim lists are frozen at T3
+  and T5.
+- **The §4 rosters are built** for spiders, bears, the ice-wraith/frost-troll list, spriggans and spriggan companions.
+- **Hagraven companions** are trolls and giant spiders only.
+- **Plugin size:** 2,703 records (+9 `NPC_`; 16 `LVLN` re-authored). See `archetype-tiers.md` §4 and §5.
+
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
 translation loss on the 21 overridden injector quests. Preferred fix: stop overriding them and ship a
@@ -995,6 +1005,7 @@ A reader-facing page per finished faction, in one shared style. Each faction tic
 | Warlocks, necromancers, conjurers | WD-46 | https://claude.ai/artifact/WhSB5WhDyXASBzhFXQYkTi |
 | Vampires + thralls | WD-47 | https://claude.ai/artifact/3eUAuGTto4q1dyxZWXPXmA |
 | Thalmor | WD-48 | https://claude.ai/artifact/35EZVm54hQ5fFC25A7Qa5t |
+| Wildlife & monsters | WD-54 | https://claude.ai/artifact/S7sQbvsHBKNVF21tsUAche |
 
 Candidates still to confirm:
 

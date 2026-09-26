@@ -1,9 +1,16 @@
 FormKey: 10EC84:Skyrim.esm
+VersionControl: 2846984
 EditorID: LCharSpriggan
+FormVersion: 43
+Version2: 3
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
+- Data:
+    Level: 1
+    Reference: 023AB9:Skyrim.esm
+    Count: 1
 - Data:
     Level: 1
     Reference: 023AB9:Skyrim.esm

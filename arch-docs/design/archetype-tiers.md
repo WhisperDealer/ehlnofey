@@ -518,6 +518,19 @@ belong on mountains, and the player must be able to see the mountain."* T5 is th
 frozen mix contains `TrollFrost` — it appears at gate 28 and nowhere below. **The mountain is the
 warning, and it is visible from anywhere in Skyrim.**
 
+> **Gaps built 2026-09-26 (WD-54, verified in game by the user).** The extract had left these as naive flattens:
+> - **`LCharAnimalForestSnowPredator`** held frost trolls ×3. It is now capped at T4 (21), so it has no frost troll.
+> - **The Solstheim forest list** held cave bears ×8. It is now capped at T3.
+> - **The Solstheim mountain list** held frost trolls ×6. It is now capped at T5, where it holds ×3.
+> - **The §4 substitution rosters are now built:** spiders 3 : 3 : 1, and 1 : 1 in the two no-giant lists. Bears
+>   3 : 2 : 1 and 3 : 1. Ice wraith 2 : 1 against frost troll. Spriggans 3 : 1, still without the Earth Mother.
+> - **Spriggan companions** are wolves ×2 and a sabre cat, with no bears; the frost version is ice wolves ×2 and a
+>   snowy sabre cat.
+>
+> **Frost trolls now appear only in the two mountain lists, with frost hagravens, and in their own
+> `LCharCustomIceWraithFrostTroll`.** `dunClearspringTarnLCharPredator` stays a flat 1 : 1 : 1 : 1 (sabre cat, bear,
+> troll, cave bear). `LCharGargoyle` belongs to WD-58.
+
 #### 4.1.3 Seven prey lists need no edit at all
 
 Already flat, every entry at gate 1 `[verified]`:
@@ -555,6 +568,18 @@ is uniformly set"* — stops applying to this population. It still applies to an
 are, never from making them aggressive. A level-32 giant standing peacefully in a T1 meadow *is* the
 design working.
 
+**Species levels stay vanilla (WD-54, user 2026-09-26)**, from skeever 1 to mammoth 38, with three exceptions. **Wolves are raised to 5** (user, after play: at 2 they died
+faster than mudcrabs). `EncWolf` owns the level for red, bandit and spriggan wolves; the White River Watch and trapped
+wolves own theirs and move with it. **Giants
+are raised to 38**, on a par with the mammoths they herd (`EncGiant01` owns the level for every generic giant, Grok and
+the Largashbur and Karthspire giants). The
+**hagraven is raised to 40**. At 20 it sat below the Forsworn Briarhearts (38) it commands. `EncHagraven` owns the
+level for every generic hagraven and for Moira, Drascua and the Glenmoril Witches. The four named hagravens that own
+their level (Melka; Ettiene, Fallaise and Isobel at the Altar of Thrond) are raised with it. A hagraven's companion
+keeps no vermin: trolls ×2 and a giant spider, or frost trolls ×2 and a giant snow spider. Hag's End's own list has
+no giant spider, so it rolls frost trolls only. Creature death items were already flat. No quest adds to a creature
+list at runtime; WEJS20 only spawns a hagraven.
+
 ---
 
 ## 5. Class C — already fixed, verify and leave
@@ -563,11 +588,13 @@ No edit. Listed so the audit script knows they are deliberate. `[verified]`
 
 | Archetype | Level | ≈ Tier |
 |---|---|---|
-| Skeleton · Deer · Elk · Wolf | 1–2 | T1 |
+| Skeleton · Deer · Elk | 1–2 | T1 |
+| **Wolf** | **5** (vanilla 2; WD-54, user) | **T1–T2** |
 | Death Hound | 5 | T2 |
 | Vigilant of Stendarr | 5 | T2 |
 | Ash Spawn | 20 | T4 |
-| Giant | 32 | T5 |
+| **Giant** | **38** (vanilla 32; WD-54, user: on a par with mammoths) | **T6** |
+| **Hagraven** | **40** (vanilla 20; WD-54, user) | **T6** |
 | Dragon Priest (all 8 Skyrim, + Vahlok) | 50 | **T7** |
 
 ---

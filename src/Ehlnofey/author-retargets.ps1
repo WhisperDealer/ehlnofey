@@ -193,6 +193,24 @@ $edits = @(
     @{ Npc = '000E41:ccedhsse003-redguard.esl'; From = '    Level: 18'; To = '    Level: 36' }   # ccEDHSSE003_EncThalmor02MissileM
     @{ Npc = '000E3F:ccedhsse003-redguard.esl'; From = '    Level: 18'; To = '    Level: 36' }   # ccEDHSSE003_EncThalmor03Melee1HF
     @{ Npc = '000E40:ccedhsse003-redguard.esl'; From = '    Level: 18'; To = '    Level: 36' }   # ccEDHSSE003_EncThalmor03Melee1HM
+
+    # ---- Hagravens: 40 (WD-54, user 2026-09-26). Vanilla 20 sat below the Forsworn Briarhearts (38) they command.
+    # Every generic hagraven, Moira, Drascua and the Glenmoril Witches take Stats from EncHagraven; the four named
+    # hagravens that own their level are raised with it (one name, one level). Every other species keeps vanilla's level.
+    @{ Npc = '023AB0:Skyrim.esm';     From = '    Level: 20'; To = '    Level: 40' }   # EncHagraven
+    @{ Npc = '039B3E:Skyrim.esm';     From = '    Level: 20'; To = '    Level: 40' }   # dunBlindcliffHagraven (Melka)
+    @{ Npc = '0369ED:Dragonborn.esm'; From = '    Level: 20'; To = '    Level: 40' }   # DLC2dunAltarOfThrondEttiene
+    @{ Npc = '0369EE:Dragonborn.esm'; From = '    Level: 20'; To = '    Level: 40' }   # DLC2dunAltarOfThrondFallaise
+    @{ Npc = '0369EC:Dragonborn.esm'; From = '    Level: 20'; To = '    Level: 40' }   # DLC2dunAltarOfThrondIsobel
+    # Giants: 38, on a par with the mammoths they herd (user, 2026-09-26; vanilla 32). EncGiant02/03, Grok (DA14),
+    # the Largashbur giant (DA06) and the Karthspire giant take Stats from EncGiant01. Still passive (lore-constraints 4.1).
+    @{ Npc = '023AAE:Skyrim.esm';     From = '    Level: 32'; To = '    Level: 38' }   # EncGiant01
+    # Wolves: 5 (user, after play 2026-09-26: at 2 they died faster than mudcrabs). Red wolves, bandit wolves and the
+    # spriggan's wolf take Stats from EncWolf; the two hostile placed wolves that own their level go with it. Ice wolves
+    # (6), summoned wolves, the Hunter's spirit guardian and the corpse are left alone.
+    @{ Npc = '023ABE:Skyrim.esm';     From = '    Level: 2';  To = '    Level: 5' }    # EncWolf
+    @{ Npc = '0E1672:Skyrim.esm';     From = '    Level: 2';  To = '    Level: 5' }    # dunWhiteRiverWatchWolf
+    @{ Npc = '0D1684:Skyrim.esm';     From = '    Level: 2';  To = '    Level: 5' }    # dunPOITrappedWolf
 )
 
 foreach ($e in $edits) {

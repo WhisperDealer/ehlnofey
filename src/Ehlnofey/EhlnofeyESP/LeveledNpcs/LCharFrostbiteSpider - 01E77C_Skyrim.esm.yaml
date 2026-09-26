@@ -1,5 +1,7 @@
 FormKey: 01E77C:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharFrostbiteSpider
+FormVersion: 40
 Version2: 5
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -11,33 +13,25 @@ Entries:
     Count: 1
 - Data:
     Level: 1
+    Reference: 023AAA:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023AAA:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 041FB4:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 041FB4:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
     Reference: 041FB4:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
     Reference: 023AAB:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023AAA:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023AAA:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023AAA:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023AAA:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023AAA:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 041FB4:Skyrim.esm
     Count: 1

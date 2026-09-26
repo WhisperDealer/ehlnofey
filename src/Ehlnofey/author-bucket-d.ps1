@@ -272,6 +272,30 @@ Add-Spec '01E775:Skyrim.esm'   'LCharVampireCompanion'      @{ Gates = @{ 5 = 1;
 Add-Spec '0640BE:Skyrim.esm'   'LCharVampireCompanionFrost' @{ Gates = @{ 5 = 1; 7 = 1; 13 = 1; 25 = 1 } }
 Add-Spec '0029A2:Dawnguard.esm' 'DLC1LCharChaurusHunter' @{ Gates = @{ 1 = 3; 32 = 1 } } # Fledgling x3 Hunter x1
 
+# ---- Wildlife and monsters (WD-54, user 2026-09-26). Creature levels live on the species record and stay vanilla
+#      (skeever 1 ... mammoth 38), except the hagraven (author-retargets.ps1). These lists only choose the species.
+#      The rest of the biome lists (4.1.2) were built 2026-07-30 above; these are the gaps the extract left.
+Add-Spec '042299:Skyrim.esm'     'LCharAnimalForestSnowPredator'       @{ Cap = 21 }   # T4: no frost troll (gate 24+), mountains only
+Add-Spec '01E1C5:Dragonborn.esm' 'DLC2LCharAnimalForestPredator'       @{ Cap = 14 }   # T3: Bear x5 Boar x4 Wolf x4 Troll x1 Skeever x1
+Add-Spec '01E1C6:Dragonborn.esm' 'DLC2LCharAnimalMountainSnowPredator' @{ Cap = 30 }   # T5: as the mainland mountain, boars in place of wolves
+# 4 species substitution: Spider x3 · Large x3 · Giant x1, and the same shape for the snow and no-giant variants.
+Add-Spec '01E77C:Skyrim.esm' 'LCharFrostbiteSpider'            @{ Gates = @{ 1 = 3; 6 = 3; 14 = 1 } }
+Add-Spec '025D37:Skyrim.esm' 'LCharFrostbiteSpiderSnow'        @{ Gates = @{ 1 = 3; 8 = 3; 17 = 1 } }
+Add-Spec '041FB6:Skyrim.esm' 'LCharFrostbiteSpiderNoGiant'     @{ Gates = @{ 1 = 1; 6 = 1 } }
+Add-Spec '042040:Skyrim.esm' 'LCharFrostbiteSpiderSnowNoGiant' @{ Gates = @{ 1 = 1; 6 = 1 } }
+Add-Spec '042266:Skyrim.esm' 'LCharBearAll'                    @{ Gates = @{ 1 = 3; 16 = 2; 20 = 1 } }   # Bear x3 · Cave x2 · Snow x1
+Add-Spec '01E796:Skyrim.esm' 'LCharBearPlainsForestHills'      @{ Gates = @{ 1 = 3; 16 = 1 } }           # Bear x3 · Cave x1
+Add-Spec '106386:Skyrim.esm' 'LCharCustomIceWraithFrostTroll'  @{ Gates = @{ 1 = 2; 22 = 1 } }           # Ice Wraith x2 · Frost Troll x1
+# Spriggans: Spriggan x3 · Matron x1. Built against Dawnguard's record, whose Earth Mother (gate 30) stays out (rule 4).
+Add-Spec '10EC84:Skyrim.esm' 'LCharSpriggan'                   @{ Gates = @{ 1 = 3; 18 = 1 } }
+Add-Spec '01E776:Skyrim.esm' 'LCharSprigganCompanion'          @{ Gates = @{ 1 = 2; 6 = 1 } }            # Wolf x2 · Sabre Cat x1 (no bears)
+Add-Spec '0640BD:Skyrim.esm' 'LCharSprigganCompanionFrost'     @{ Gates = @{ 1 = 2; 11 = 1 } }           # Ice Wolf x2 · Snowy Sabre Cat x1
+# Hagraven companions: a level-40 hagraven keeps no vermin (user). Troll x2 · Giant Spider x1, and the frost version
+# Frost Troll x2 · Giant Snow Spider x1. Hag's End's own list has no giant spider, so it is frost trolls only.
+Add-Spec '0640C0:Skyrim.esm' 'LCharHagravenCompanion'                 @{ Gates = @{ 14 = 1 } }
+Add-Spec '0640C1:Skyrim.esm' 'LCharHagravenCompanionFrost'            @{ Gates = @{ 17 = 1; 22 = 1 } }
+Add-Spec '09D59F:Skyrim.esm' 'dunHagsEnd_LCharHagravenCompanionFrost' @{ Gates = @{ 11 = 1 } }
+
 # 3.1 Thalmor (WD-48, user 2026-09-26): a specialist force sent into Skyrim, so better than the average soldier.
 #     Only the EncThalmor00* templates carry a name ("Thalmor Soldier" / "Thalmor Wizard"); every rung leaf is
 #     nameless and takes Traits, so each band shows one name at every level: PINNED, all three (WD-42).

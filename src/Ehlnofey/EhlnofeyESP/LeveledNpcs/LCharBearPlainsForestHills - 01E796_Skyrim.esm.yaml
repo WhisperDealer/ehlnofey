@@ -1,7 +1,17 @@
 FormKey: 01E796:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharBearPlainsForestHills
+FormVersion: 40
 Version2: 6
 Entries:
+- Data:
+    Level: 1
+    Reference: 023A8A:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023A8A:Skyrim.esm
+    Count: 1
 - Data:
     Level: 1
     Reference: 023A8A:Skyrim.esm
