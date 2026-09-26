@@ -169,6 +169,13 @@ foreach ($d in @(
     Add-Spec $d[0] $d[1] @{ Gates = $warlockVoice }
 }
 Add-Spec '081EFE:Skyrim.esm' 'LCharWarlockStormElfHaughtyF' @{ Gates = @{ 18 = 2; 27 = 3; 36 = 1 } }
+# 3.1 Witch (user, 2026-09-27): Witch (gate 1) and Hag (gate 16) take the warlock Mage and Wizard levels, 19 / 27
+#     (author-retargets.ps1), weighted 2 : 3 like the warlocks. Each rung has its own name, so the band reads in play.
+foreach ($d in @(
+    @('074F9D:Skyrim.esm', 'LCharWitchAny'),  @('074F9A:Skyrim.esm', 'LCharWitchFire'),
+    @('074F9B:Skyrim.esm', 'LCharWitchIce'),  @('074F9C:Skyrim.esm', 'LCharWitchStorm'))) {
+    Add-Spec $d[0] $d[1] @{ Gates = @{ 1 = 2; 16 = 3 } }
+}
 # 3.1 Warlock boss: the leaves are nameless and take no Traits, so the band is PINNED (WD-42). The rung is 50,
 #     the Arch boss (user, WD-46): a rung and a name no mook has. Vanilla's boss lists stop at
 #     rung 06 (40); the level-50 boss sublists LCharWarlock07Boss* exist but are unused (Requiem wired them

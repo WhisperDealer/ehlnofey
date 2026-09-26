@@ -412,6 +412,15 @@ See `archetype-tiers.md` §3.1.
 - **Atronachs:** Flame ×2 · Frost ×2 · Storm ×1. Summon levels are unchanged.
 - **Plugin size:** 2,706 records (+3 `NPC_`; 6 `LVLN` re-authored). See `archetype-tiers.md` §3.3.
 
+**Witches, Hags and the CC Bone Wolf pack are built (2026-09-27, after play). This is not yet verified in game.**
+- **Witch 19 · Hag 27**, the warlock Mage and Wizard rungs with their HP and magicka bonuses, weighted 2 : 3 in the four
+  `LCharWitch*` lists. Vanilla was fixed at 4 and 8, so they were flat but far below the warlocks. The six
+  `EncWitch0NTemplate*` own the level for every leaf. Spells unchanged.
+- **Bone Wolf pack (`ccbgssse036-petbwolf.esl`):** the hostile Bonewolf and the two Thrall Wolves are fixed at **12** (were
+  ×1 [5–30] and [5–60]). Its quest Necromancer is fixed at **36** (was ×1.2 [12–70]). The pet is untouched. The pack is
+  the **28th master** (23 CC plugins).
+- **Plugin size:** 2,716 records (+10 `NPC_`; 4 `LVLN` re-authored). See `archetype-tiers.md` §3.1 and §5.
+
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
 translation loss on the 21 overridden injector quests. Preferred fix: stop overriding them and ship a
@@ -695,7 +704,8 @@ Fixed now so Phase 4 does not have to argue about it:
   but because the overridden `ccbgssse001-fish` DLC-detection quest holds properties pointing at
   Hearthfire records, and Spriggit cannot write a FormKey whose plugin is not a master.
   **Revised 2026-09-26 (WD-48):** plus `ccedhsse003-redguard.esl` (22 CC, 27 in all), to raise its own Thalmor
-  soldiers from 18 to 36. `$ccMasters` in `author-injectors.ps1` follows `Skyrim.ccc` order;
+  soldiers from 18 to 36. **Revised 2026-09-27:** plus `ccbgssse036-petbwolf.esl` (23 CC, 28 in all), to fix its Bonewolf,
+  Thrall Wolves and Necromancer. `$ccMasters` in `author-injectors.ps1` follows `Skyrim.ccc` order;
   `author-retargets.ps1` copies a CC-defined `NPC_` from `reference/mods/CreationClubYaml/`.
 - **EditorID prefix:** `EHL_`, then the domain, then the specific: `EHL_LVLI_DraugrBossHoard_T4`,
   `EHL_ECZN_BleakFalls`. Tier suffixes are `_T<n>` against the ladder in `design/tiers.md`.
@@ -1010,10 +1020,10 @@ A reader-facing page per finished faction, in one shared style. Each faction tic
 | Bandits + hostile Orc camps | WD-2x (pre-Jira) | https://claude.ai/artifact/C3vSs31Kiejw2TDTxNwLSH |
 | Forsworn | WD-43 | https://claude.ai/artifact/Xff2Gm6AbjxaRoyoZXAvTv |
 | Hold guards + civil-war soldiers | WD-44 / WD-45 | https://claude.ai/artifact/2g11MaAwsx2MJ5ybrXqoGd |
-| Warlocks, necromancers, conjurers | WD-46 | https://claude.ai/artifact/WhSB5WhDyXASBzhFXQYkTi |
+| Warlocks, necromancers, conjurers + witches / hags | WD-46 | https://claude.ai/artifact/WhSB5WhDyXASBzhFXQYkTi |
 | Vampires + thralls | WD-47 | https://claude.ai/artifact/3eUAuGTto4q1dyxZWXPXmA |
 | Thalmor | WD-48 | https://claude.ai/artifact/35EZVm54hQ5fFC25A7Qa5t |
-| Wildlife & monsters | WD-54 | https://claude.ai/artifact/S7sQbvsHBKNVF21tsUAche |
+| Wildlife & monsters + CC bonewolf | WD-54 | https://claude.ai/artifact/S7sQbvsHBKNVF21tsUAche |
 | Dremora & atronachs | WD-52 | https://claude.ai/artifact/FZrcU1aZLGgqj9aFQkfPiW |
 
 Candidates still to confirm:

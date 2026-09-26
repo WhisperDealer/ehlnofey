@@ -52,7 +52,7 @@ $loadOrder = @('01Skyrim', '02Update', '03Dawnguard', '04HearthFires', '05Dragon
 # Every CC plugin this file names, in Skyrim.ccc load order.
 $ccMasters = @(
     'ccasvsse001-almsivi.esm', 'ccbgssse001-fish.esm', 'ccbgssse002-exoticarrows.esl',
-    'ccbgssse014-spellpack01.esl',
+    'ccbgssse014-spellpack01.esl', 'ccbgssse036-petbwolf.esl',
     'ccbgssse050-ba_daedric.esl', 'ccbgssse052-ba_iron.esl', 'ccbgssse054-ba_orcish.esl',
     'ccbgssse058-ba_steel.esl', 'ccbgssse059-ba_dragonplate.esl', 'ccbgssse061-ba_dwarven.esl',
     'ccbgssse064-ba_elven.esl', 'ccbgssse063-ba_ebony.esl', 'ccbgssse062-ba_dwarvenmail.esl',

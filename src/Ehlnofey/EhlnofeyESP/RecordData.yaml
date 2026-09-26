@@ -29,6 +29,8 @@ ModHeader:
     FileSize: 0
   - Master: ccbgssse014-spellpack01.esl
     FileSize: 0
+  - Master: ccbgssse036-petbwolf.esl
+    FileSize: 0
   - Master: ccbgssse050-ba_daedric.esl
     FileSize: 0
   - Master: ccbgssse052-ba_iron.esl

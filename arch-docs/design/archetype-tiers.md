@@ -107,7 +107,7 @@ The main table. `Vanilla rungs` are name (level) from `lore-constraints.md` §1 
 | **Werewolf** | `LCharWerewolf` 01E791 | 1 · 6 · 12 · 20 · 28 · 38 | 12 ×2 · **20 ×3** · 28 ×1 | **T4** (T3–T5) |
 | **Penitus Oculatus** | `LCharPenitusOculatus` 07D99F | 1 · 4 · 8 · 13 · 18 · 23 | 8 ×2 · **13 ×3** · 18 ×1 | **T3** (T2–T4) |
 | **Ghost** | `LCharGhostWizard` 104B62 | 1 · 5 · 9 · 14 · 19 · 25 | 5 ×2 · **9 ×3** · 14 ×1 | **T2** (T2–T3) |
-| **Witch** | `LCharWitchAny` 074F9D | 4 · 8 | 4 ×1 · **8 ×1** | **T2** (T1–T2) |
+| **Witch** | `LCharWitchAny` 074F9D + Fire/Ice/Storm | Witch 4 · Hag 8 → **19 · 27** | Witch ×2 · **Hag ×3** — mean 23.8 (2026-09-27) | **T4** (T4–T5) |
 | **Vigilant of Stendarr** | `LCharVigilantOfStendarr` 0BFB53 | 5 — single gate | *(unchanged — already flat)* | **T2** |
 | **Dawnguard** | `LCharDawnguardMelee1H` 014281 | 1 · 5 · 9 · 14 · 19 · 25 | 9 ×2 · **14 ×3** · 19 ×1 | **T3** (T2–T4) |
 
@@ -185,6 +185,14 @@ its level-19 rung at 18 (vanilla typo). An earlier 19×1 · 27×3 · 36×3 · 46
 - **CC necro-arts bosses** (21/30/40) stay only in `…BossNecroMaleCondescending`, as its level-40 Breton M.
 - **Malkoran** (`DA03Wizard`, Rimerock Burrow) templates on `LCharWarlockBossConjurer`, so he is level 50.
 - **Gear is left at vanilla/Requiem tier** (user: mages may carry lower-level gear).
+- **Witches and Hags follow the warlocks** (user, after play 2026-09-27). They are the only NPCs named "Witch" or
+  "Hag": the six `EncWitch01/02Template{Fire,Ice,Storm}` records, which own Stats and SpellList for every leaf of
+  `LCharWitch*` (Darklight Tower, the hagraven nests). Vanilla fixed them at 4 and 8. **Witch = the Mage rung (19,
+  +75 HP, +100 magicka), Hag = the Wizard rung (27, +100/+100)**, weighted 2 : 3 in all four lists (mean 23.8). Two
+  names, two levels, so the band reads. Their spells stay low (Flames + Firebolt, Frostbite + Ice Spike or Sparks + Lightning Bolt, a ward, Oakflesh/
+  Stoneflesh), as warlock gear was left alone.
+- **The CC Bone Wolf pack's Necromancer** (`ccBGSSSE036_Necromancer`, ×1.2 [12–70]) is fixed at **36**, the Master
+  rung: a named quest foe, below the lair bosses. His Thrall Wolves go to 12 with the Bonewolf (§5).
 
 **Forsworn (WD-43, user 2026-09-25).** Forsworn gear is weak, so the *levels* carry the threat. That is why
 the band sits a tier above the doc's first draft (mean ≈ 20). The roster spans four tiers, which WD-42 allows
@@ -564,7 +572,7 @@ Already flat, every entry at gate 1 `[verified]`:
 | `LCharSpriggan` | 10EC84 | **T2** | Spriggan ×3 · Matron ×1 | **Dawnguard overrides this record** and adds `DLC1EncSprigganEarthMother` (L=30) at gate 30 `[verified]` — reserve it, per rule 4 |
 | `LCharSprigganCompanion` | 01E776 | **T2** | Wolf ×2 · SabreCat ×1 | must track the spriggan that summons it |
 | `LCharSprigganCompanionFrost` | 0640BD | **T3** | WolfIce ×2 · SabreCatSnow ×1 | |
-| `LCharWitchAny` | 074F9D | **T2** | `LCharWitch01Any` ×3 · `LCharWitch02Any` ×1 | |
+| `LCharWitchAny` | 074F9D | ~~T2~~ **T4** | `LCharWitch01Any` ×2 · `LCharWitch02Any` ×3 | superseded 2026-09-27: warlock Mage/Wizard levels, §3.1 |
 
 #### 4.1.5 Flattening makes the flag question moot
 
@@ -608,6 +616,7 @@ No edit. Listed so the audit script knows they are deliberate. `[verified]`
 | Ash Spawn | 20 | T4 |
 | **Giant** | **38** (vanilla 32; WD-54, user: on a par with mammoths) | **T6** |
 | **Hagraven** | **40** (vanilla 20; WD-54, user) | **T6** |
+| **Bonewolf** (CC `ccbgssse036-petbwolf`) and its Thrall Wolves | **12** (were ×1 [5–30] / [5–60]; user 2026-09-27) | **T3** |
 | Dragon Priest (all 8 Skyrim, + Vahlok) | 50 | **T7** |
 
 ---

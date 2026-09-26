@@ -216,6 +216,30 @@ $edits = @(
     @{ Npc = '016FF7:Skyrim.esm'; From = '    Item: 01E60A:Skyrim.esm'; To = '    Item: 017000:Skyrim.esm' }   # EncDremoraWarlock05: LItemBanditWeapon -> LItemEnchWeapon1HDremoraFire
     @{ Npc = '016FFA:Skyrim.esm'; From = '    Item: 01E60A:Skyrim.esm'; To = '    Item: 017000:Skyrim.esm' }   # EncDremoraWarlock06
 
+    # ---- Witches and Hags (user, after play 2026-09-27): in line with the warlocks. The six EncWitch0N templates own
+    # Stats and SpellList for every leaf of LCharWitch* (Darklight Tower, the hagraven nests). Vanilla fixed them at 4
+    # (Witch) and 8 (Hag). Each takes a warlock rung's level and bonuses: Witch = Mage (19, +75 HP, +100 magicka), Hag =
+    # Wizard (27, +100/+100). Spells stay their own (novice), as warlock gear was left alone. A To that is an array
+    # inserts lines; Spriggit's field order is restored by the round-trip.
+    foreach ($w in @('074F74', '074F75', '074F76')) {   # EncWitch01Template Fire / Ice / Storm - "Witch"
+        @{ Npc = "${w}:Skyrim.esm"; Swap = @(@('    Level: 4', '    Level: 19'),
+                                             @('  StaminaOffset: -25', @('  MagickaOffset: 100', '  StaminaOffset: -25')),
+                                             @('  DispositionBase: 35', @('  DispositionBase: 35', '  HealthOffset: 75'))) }
+    }
+    foreach ($w in @('074F83', '074F84', '074F85')) {   # EncWitch02Template Fire / Ice / Storm - "Hag"
+        @{ Npc = "${w}:Skyrim.esm"; Swap = @(@('    Level: 8', '    Level: 27'),
+                                             @('  StaminaOffset: -25', @('  MagickaOffset: 100', '  StaminaOffset: -25')),
+                                             @('  DispositionBase: 35', @('  DispositionBase: 35', '  HealthOffset: 100'))) }
+    }
+    # ---- Creation Club Bone Wolf pack (user, after play 2026-09-27): its hostile Bonewolf scaled x1 [5-30], its
+    # quest Necromancer x1.2 [12-70] and his two Thrall Wolves x1 [5-60]. Bonewolves also spawn from the Update.esm undead
+    # list (ccBGS_LCharUndeadListMaster) with the Zombies pack. Bonewolf and thralls 12, above wild wolves (5) and below
+    # the necromancers they run with; the Necromancer 36, the Master Necromancer rung. The pet (fixed 2) is left alone.
+    @{ Npc = '000865:ccbgssse036-petbwolf.esl'; Level = 12 }   # ccBGSSSE036_LvlBonewolf
+    @{ Npc = '00080C:ccbgssse036-petbwolf.esl'; Level = 12 }   # ccBGSSSE036_EncNecromancerThrall01
+    @{ Npc = '00080D:ccbgssse036-petbwolf.esl'; Level = 12 }   # ccBGSSSE036_EncNecromancerThrall02
+    @{ Npc = '00080B:ccbgssse036-petbwolf.esl'; Level = 36 }   # ccBGSSSE036_Necromancer
+
     # Wolves: 5 (user, after play 2026-09-26: at 2 they died faster than mudcrabs). Red wolves, bandit wolves and the
     # spriggan's wolf take Stats from EncWolf; the two hostile placed wolves that own their level go with it. Ice wolves
     # (6), summoned wolves, the Hunter's spirit guardian and the corpse are left alone.
