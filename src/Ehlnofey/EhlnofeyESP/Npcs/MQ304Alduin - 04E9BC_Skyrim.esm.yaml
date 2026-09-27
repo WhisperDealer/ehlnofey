@@ -119,7 +119,7 @@ Configuration:
   - Invulnerable
   Level:
     MutagenObjectType: NpcLevel
-    Level: 250
+    Level: 110
   CalcMinLevel: 20
   CalcMaxLevel: 100
   SpeedMultiplier: 100

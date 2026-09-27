@@ -2,7 +2,7 @@
 #
 # Each edit copies the WINNING vanilla record verbatim (last in load order, CLAUDE.md "last-wins") and
 # changes only the lines it names (guardrail 3): From/To or Swap (whole-line swaps), Level (+ Own),
-# DropItem (one Items entry) and DropFlag (one TemplateFlag). One row per record - a second row would overwrite it. It replaces any earlier override of that record in the plugin,
+# DropItem (one Items entry), DropFlag (one TemplateFlag) and Insert (a new line after a unique one). One row per record - a second row would overwrite it. It replaces any earlier override of that record in the plugin,
 # including a bucket-E level graft from extract-requiem.ps1, so the edit's From line is matched against
 # vanilla. Any master works: Npc is a full FormKey.
 #
@@ -288,6 +288,39 @@ $edits = @(
     @{ Npc = '00CFBA:Dawnguard.esm'; DropFlag = 'Stats' }   # DLC1LD_EncDwarvenSphereSummon02
     # The Forgemaster (Aetherium Forge boss) was x1 [36-60]; the extract grafted Requiem's 120. Pinned to 60 (user).
     @{ Npc = '015C48:Dawnguard.esm'; Level = 60 }   # DLC1LD_Forgemaster03
+
+    # ---- Dragons (WD-53, user 2026-09-27): "endgame content, level 50 minimum; keep the types". Each type's template owns
+    # the level of every variant (fire/frost, NoScript, the Solstheim _MQ06 copies, Vulthuryol, Sahrotaar, Krosulhah,
+    # Naaslaarum, Voslaarum, Mirmulnir, the Skuldafn and MQ206/MQ306 dragons), which take Stats from it. All carry
+    # AutoCalcStats, so health follows the level on top of each type's HealthOffset. Order and names are vanilla's.
+    @{ Npc = '01CA03:Skyrim.esm';     From = '    Level: 10'; To = '    Level: 50' }   # EncDragon01Fire, "Dragon"
+    @{ Npc = '0F80FD:Skyrim.esm';     From = '    Level: 20'; To = '    Level: 55' }   # EncDragon02Fire, "Blood Dragon"
+    @{ Npc = '0351C3:Skyrim.esm';     From = '    Level: 30'; To = '    Level: 60' }   # EncDragon03Frost, "Frost Dragon"
+    @{ Npc = '0F811B:Skyrim.esm';     From = '    Level: 40'; To = '    Level: 65' }   # EncDragon04Fire, "Elder Dragon"
+    @{ Npc = '0F811A:Skyrim.esm';     From = '    Level: 40'; To = '    Level: 65' }   # EncDragon04Frost
+    @{ Npc = '0F811C:Skyrim.esm';     From = '    Level: 50'; To = '    Level: 70' }   # EncDragon05Fire, "Ancient Dragon"
+    @{ Npc = '0F811E:Skyrim.esm';     From = '    Level: 50'; To = '    Level: 70' }   # EncDragon05Frost
+    @{ Npc = '03612E:Dragonborn.esm'; From = '    Level: 58'; To = '    Level: 72' }   # DLC2EncDragon06Fire, "Serpentine Dragon"
+    @{ Npc = '036134:Dragonborn.esm'; From = '    Level: 58'; To = '    Level: 72' }   # DLC2EncDragon06FireNoScript
+    @{ Npc = '02C88A:Dragonborn.esm'; From = '    Level: 58'; To = '    Level: 72' }   # DLC2EncDragon06Frost
+    @{ Npc = '036133:Dragonborn.esm'; From = '    Level: 58'; To = '    Level: 72' }   # DLC2EncDragon06FrostNoScript
+    @{ Npc = '008431:Dawnguard.esm';  From = '    Level: 62'; To = '    Level: 75' }   # DLC1EncDragon06Fire, "Revered Dragon"
+    @{ Npc = '00C5F5:Dawnguard.esm';  From = '    Level: 75'; To = '    Level: 80' }   # DLC1EncDragon07Fire, "Legendary Dragon"
+    # Fixed-level dragons that own their stats WITHOUT AutoCalcStats (a flat 721 health), so a level alone would not make
+    # them any stronger: they get the flag and follow the Dragon rung.
+    @{ Npc = '09192C:Skyrim.esm';     From = '    Level: 20'; To = '    Level: 50'; Insert = @(,@('  Flags:', '  - AutoCalcStats')) }   # dunLabyrinthianUndeadDragon, "Skeletal Dragon"
+    @{ Npc = '02BF3B:Dragonborn.esm'; From = '    Level: 20'; To = '    Level: 50'; Insert = @(,@('  Flags:', '  - AutoCalcStats')) }   # DLC2DragonSkeleton
+    @{ Npc = '096E48:Skyrim.esm';     From = '    Level: 20'; To = '    Level: 50'; Insert = @(,@('  Flags:', '  - AutoCalcStats')) }   # dunSkuldafnDragonDraugr
+    @{ Npc = '0354CA:Skyrim.esm';     From = '    Level: 20'; To = '    Level: 50'; Insert = @(,@('  Flags:', '  - AutoCalcStats')) }   # BleakFallsDragon
+    # Paarthurnax 90 (user: Alduin's right hand, "very high"). He took Stats from the Dragon rung; his own copy already has
+    # AutoCalcStats and the dragon class. HealthOffset 300 -> 2000, an Ancient's.
+    @{ Npc = '03C57C:Skyrim.esm'; Swap = @(@('    Level: 10', '    Level: 90'), @('  HealthOffset: 300', '  HealthOffset: 2000'));
+       DropFlag = 'Stats' }   # Paarthurnax
+    # Odahviing 85 (user). He took Stats from lvlMQDragon (Elder/Ancient). His own copy has no AutoCalcStats, a level of 1
+    # and the placeholder class EncClassDremoraMelee (the thrall trap), so it gets the flag, the dragon class and an
+    # Ancient's HealthOffset. MQ303Odahviing (the trapped one in Dragonsreach) takes Stats from him.
+    @{ Npc = '045920:Skyrim.esm'; Swap = @(@('    Level: 1', '    Level: 85'), @('Class: 017008:Skyrim.esm', 'Class: 02F201:Skyrim.esm'));
+       Insert = @(@('  - Invulnerable', '  - AutoCalcStats'), @('  - AttackData', '  HealthOffset: 2000')); DropFlag = 'Stats' }   # Odahviing
 )
 
 foreach ($e in $edits) {
@@ -354,6 +387,18 @@ foreach ($e in $edits) {
         }
         $lines = @($lines[0..($f - 1)] + $lines[($f + 1)..($lines.Count - 1)])
         $did += "$($e.DropFlag) flag dropped"
+    }
+    # Insert = @(@(after, new), ...): add the line 'new' directly below the one line equal to 'after' (a flag the record
+    # lacks, a HealthOffset). Spriggit reorders fields on the round-trip, so the position only has to be valid YAML.
+    if ($e.Contains('Insert')) {
+        foreach ($in in $e.Insert) {
+            $n = @($lines | Where-Object { $_ -eq $in[0] }).Count
+            if ($n -ne 1) { throw "$($src.Name): expected exactly one '$($in[0])' to insert after, found $n" }
+            if ($lines -contains $in[1]) { throw "$($src.Name): already has '$($in[1])'" }
+            $at = [array]::IndexOf($lines, $in[0])
+            $lines = @($lines[0..$at] + @($in[1]) + $lines[($at + 1)..($lines.Count - 1)])
+            $did += "+ $($in[1].Trim())"
+        }
     }
     if ($did.Count -eq 0) { throw "$($src.Name): edit does nothing" }
     [System.IO.File]::WriteAllLines((Join-Path $dst $src.Name), $lines, $utf8NoBom)

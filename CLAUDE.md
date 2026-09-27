@@ -234,7 +234,7 @@ mod, not a new-content mod. Ehlnofey changes *where the numbers come from*, and 
 
 ## Current phase
 
-**Phase 4 is under way and `Ehlnofey.esp` exists: 2,735 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
+**Phase 4 is under way and `Ehlnofey.esp` exists: 2,754 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
 `design/requiem-method`). Read **`arch-docs/design/requiem-method.md` first** — it is the live
 architecture doc, and its §6 is the current order of work. Everything below it in this section is
 the Phase 3 record, kept because most of it still holds, but **the architecture it decided has been
@@ -451,6 +451,20 @@ See `archetype-tiers.md` §3.1.
 - **Forgemaster pinned at 60** (the extract had grafted Requiem's 120). The Aetherial Staff's summoned sphere keeps 24.
 - **Loot unchanged** (already flat). No injectors.
 - **Plugin size:** 2,735 records (+5 `NPC_`; 8 `LVLN` re-authored). See `archetype-tiers.md` §3.3.
+
+**Dragons are built (WD-53, 2026-09-27). This is not yet verified in game.**
+- **Levels: 50 minimum, types kept** (user). The rungs are Dragon 50 · Blood 55 · Frost 60 · Elder 65 · Ancient 70 ·
+  Serpentine 72 · Revered 75 · Legendary 80, each raised on the template that owns every variant's `Stats`.
+- **World pool:** Dragon ×2 · Blood ×3 · Frost ×2 · Elder ×2 · Ancient ×1 (mean 58.5). Solstheim adds Serpentine ×2. Revered and
+  Legendary are ice-lake only.
+- **Mirmulnir is pinned at 50.** Whether he can be killed at main-quest level is the open play-test.
+- **Named:** Alduin 100 (110 in Sovngarde), Paarthurnax 90, Odahviing 85 (given his own stats: `AutoCalcStats` and the dragon
+  class, off the Dremora placeholder) and Durnehviir 80. The extract had left Requiem's 250 on `MQ304Alduin` and 100 on Durnehviir.
+- **Skeletal and Skuldafn dragons** owned a flat 721 health, so they gain `AutoCalcStats`. `author-retargets.ps1` has a new
+  `Insert` op for that.
+- **Loot:** vanilla gold and gems are back on dragon corpses, and Requiem's bones and scales stay. The armor and weapon rolls stay
+  out: they point at the game-wide All lists.
+- **Plugin size:** 2,754 records (+19 `NPC_`). See `archetype-tiers.md` §3.4 and §7.
 
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
@@ -1059,6 +1073,7 @@ A reader-facing page per finished faction, in one shared style. Each faction tic
 | Draugr & dragon priests | WD-49 | https://claude.ai/artifact/Jkxn5D8LCUjtrZrwfrYKVE |
 | Falmer & chaurus | WD-50 | https://claude.ai/artifact/V2nSnDTicPohnWL8mFaUNV |
 | Dwemer automatons | WD-51 | https://claude.ai/artifact/QFHj364NWKsoEEi5z7nwT6 |
+| Dragons + named dragons | WD-53 | https://claude.ai/artifact/So9JXyEDcgMKekkH3R9XLz |
 
 Candidates still to confirm:
 

@@ -385,6 +385,18 @@ Add-Spec '01534E:Dawnguard.esm' 'DLC1LD_LCharDwarvenSpider' @{ Gates = @{ 35 = 1
 Add-Spec '01534D:Dawnguard.esm' 'DLC1LD_LCharDwarvenSphere' @{ Gates = @{ 35 = 1 } }   # DLC1LD_EncDwarvenSphere02
 Add-Spec '015C49:Dawnguard.esm' 'DLC1LD_LCharForgemaster'   @{ Gates = @{ 32 = 1 } }   # DLC1LD_Forgemaster03, 60
 
+# 3.4 Dragons (WD-53, user 2026-09-27): "endgame content, level 50 minimum; keep the types". author-retargets.ps1 raises
+#     each type's template: Dragon 50 · Blood 55 · Frost 60 · Elder 65 · Ancient 70 · Serpentine 72 · Revered 75 ·
+#     Legendary 80. Every vanilla gate holds a fire and a frost entry (the Frost Dragon rung holds the same record twice),
+#     so a gate weight is the type's weight: Dragon x2 · Blood x3 · Frost x2 · Elder x2 · Ancient x1, mean 58.5. Revered
+#     and Legendary (gates 59/78) leave the world pool; they stay on Dawnguard's ice lake list, which Requiem pinned to
+#     Legendary. LCharDragonAny also feeds Sahloknir and the three resurrected dragons (lvlDragon).
+Add-Spec '05EACF:Skyrim.esm'    'LCharDragonAny'     @{ Gates = @{ 1 = 2; 18 = 3; 27 = 2; 36 = 2; 45 = 1 } }
+# Solstheim: the same mix plus Serpentine x2 (gate 55), mean 60.75. Its higher ceiling is kept (lore-constraints.md 5.5).
+Add-Spec '036135:Dragonborn.esm' 'DLC2LCharDragonAny' @{ Gates = @{ 1 = 2; 18 = 3; 27 = 2; 36 = 2; 45 = 1; 55 = 2 } }
+# Mirmulnir (lvlMQ104Dragon) is PINNED to the Dragon rung, 50 (user): the floor holds even for the first dragon.
+Add-Spec '0F8A4D:Skyrim.esm'    'MQ104LCharDragon'   @{ Gates = @{ 1 = 1 } }   # EncDragon01FireNoScript
+
 # 3.1 Thalmor (WD-48, user 2026-09-26): a specialist force sent into Skyrim, so better than the average soldier.
 #     Only the EncThalmor00* templates carry a name ("Thalmor Soldier" / "Thalmor Wizard"); every rung leaf is
 #     nameless and takes Traits, so each band shows one name at every level: PINNED, all three (WD-42).

@@ -212,6 +212,17 @@ $readdByPlace = @(
     @{ List = '03AD7F:Skyrim.esm'; Items = @(@('04F78C:Skyrim.esm', 1), @('0424EB:Skyrim.esm', 1), @('0AA02C:Skyrim.esm', 1)) }  # DeathItemDraugr      <- DeathItemDraugrGold, LootPerkGoldenTouchChange, LootImperialLuck
     @{ List = '10FACC:Skyrim.esm'; Items = @(@('04F78C:Skyrim.esm', 1), @('0424EB:Skyrim.esm', 1), @('0AA02C:Skyrim.esm', 1)) }  # DeathItemDraugrMage  <- same
     @{ List = '03AD7E:Skyrim.esm'; Items = @(,@('088513:Skyrim.esm', 1)) }                                                       # DeathItemDragonPriest <- LootDraugrGoldBoss01
+    # ---- Dragons (WD-53, user 2026-09-27): vanilla's gold and gems back on dragon corpses. Requiem cut them and left
+    # bones and scales only; its bone and scale counts stay. Every list put back is already flat. Vanilla's 25% armor and
+    # weapon rolls (LootDragonArmor25 / Weapon25) stay out: they point at the game-wide All lists, iron to Daedric at random.
+    # Counts are vanilla's. The Revered and Legendary death items add a second dragon gold roll, as vanilla did; their 25%
+    # Daedric roll stays out for the same reason.
+    @{ List = '03ADA5:Skyrim.esm'; Items = @(@('0F77F2:Skyrim.esm', 1), @('037C2B:Skyrim.esm', 2), @('0424EB:Skyrim.esm', 5),
+                                             @('0AA02C:Skyrim.esm', 5), @('0F77F7:Skyrim.esm', 1), @('0FFF52:Skyrim.esm', 1)) }
+                                             # DeathItemDragon01 <- LootDragonGold, LootGoldChange, LootPerkGoldenTouchChange,
+                                             #                      LootImperialLuck, LootDragonGems25, TGLootProwlersProfit
+    @{ List = '010963:Dawnguard.esm'; Items = @(,@('0F77F2:Skyrim.esm', 1)) }   # DLC1DeathItemDragon06 <- LootDragonGold
+    @{ List = '010964:Dawnguard.esm'; Items = @(,@('0F77F2:Skyrim.esm', 1)) }   # DLC1DeathItemDragon07 <- LootDragonGold
 )
 
 $fish = 'ccbgssse001-fish.esm'; $arrows = 'ccbgssse002-exoticarrows.esl'; $spell = 'ccbgssse014-spellpack01.esl'

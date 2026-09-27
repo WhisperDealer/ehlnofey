@@ -476,8 +476,8 @@ in step.
 
 | Archetype | List | Vanilla rungs | **Ehlnofey roster** | Band |
 |---|---|---|---|---|
-| **Dragon** | `LCharDragonAny` 05EACF | Dragon 10 · Blood 20 · Frost 30 · Elder 40 · Ancient 50 | Dragon ×2 · **Blood ×3** · Frost ×2 · Elder ×1 | **T4** (T3–T6) |
-| Dragon (Solstheim) | `DLC2LCharDragonAny` 036135 | + 58 | as above · Elder ×2 · 58 ×1 | **T5** (T4–T6) |
+| **Dragon** | `LCharDragonAny` 05EACF | Dragon 10 · Blood 20 · Frost 30 · Elder 40 · Ancient 50 · (Revered 62 · Legendary 75) | ~~Dragon ×2 · Blood ×3 · Frost ×2 · Elder ×1~~ → **Dragon 50 ×2 · Blood 55 ×3 · Frost 60 ×2 · Elder 65 ×2 · Ancient 70 ×1** (WD-53, below) | **above T7** (mean 58.5) |
+| Dragon (Solstheim) | `DLC2LCharDragonAny` 036135 | + Serpentine 58 | as above · **Serpentine 72 ×2** | **above T7** (mean 60.75) |
 | **Riekling** | `DLC2LCharRieklingMelee` 01B653 | 6 · 11 · 16 · 23 | 6 ×2 · **11 ×3** · 16 ×2 | **T2** (T2–T4) |
 | **Ash Spawn** | `DLC2LCharAshSpawnAll` 0322BD | 20 — single gate | *(unchanged — already flat)* | **T4** |
 | **Cultist** | `DLC2LCharCultist` 030CDC | 12 · 19 · 27 · 36 · 46 | 19 ×2 · **27 ×3** · 36 ×1 | **T5** (T4–T6) |
@@ -487,6 +487,19 @@ in step.
 | **Chaurus Hunter** | `DLC1LCharChaurusHunter` 0029A2 | 16 · 32 | 16 ×2 · **32 ×1** | **T4** (T4–T5) |
 | **Armored Troll** | `DLC1LCharTrollArmored` 00D0BB | 14 · 22 | 14 ×2 · **22 ×1** | **T3** (T3–T4) |
 | **Solstheim bandit** | `DLC2LCharBanditMelee1H` 01E8A9 | parallel records, 1–25 | **mirror §3.1's mainland bandit exactly** | **T2** |
+
+> **Dragons, as built (WD-53, user 2026-09-27): endgame content, level 50 minimum, types kept.** The T4/T5 rosters above
+> were superseded. Every dragon type is raised on the one template that owns its level, keeping vanilla's order and names:
+> **Dragon 50 · Blood 55 · Frost 60 · Elder 65 · Ancient 70 · Serpentine 72 · Revered 75 · Legendary 80**. Every variant
+> follows, because it takes `Stats` from its type: fire/frost, NoScript, the Solstheim `_MQ06` copies, Mirmulnir, Sahloknir,
+> the resurrected dragons, Vulthuryol (Ancient, 70), Krosulhah (Frost/Elder/Ancient), Sahrotaar and Miraak's dragons
+> (Serpentine, 72), and Naaslaarum, Voslaarum and the ice-lake list (Legendary, 80). Revered and Legendary are out of the world
+> pool. The skeletal dragons and the Skuldafn dragon owned a flat 721 health, so they gain `AutoCalcStats` at 50.
+> **Mirmulnir is pinned to the Dragon rung, 50** (user: the floor holds even for the first dragon; not yet play-tested at
+> main-quest level). Named: **Alduin 100, Sovngarde 110, Paarthurnax 90, Odahviing 85, Durnehviir 80** (§7). The player's
+> summons (Durnehviir 20, the Spectral Dragon and the Fire Wyrm) are unchanged. **Loot:** Requiem's bones and scales stay;
+> vanilla's dragon gold, gold change and 25% gem roll are back, and the Revered and Legendary death items get their second
+> gold roll back. The 25% armor, weapon and Daedric rolls stay out: they point at game-wide All lists. No injectors.
 
 **Apocrypha stays flat and high** — `lore-constraints.md` §3 explicitly permits it: *"one realm,
 entered by one means, and Mora's servants have no reason to be graded by which book you opened."*
@@ -785,7 +798,11 @@ the T7-and-above set.
 
 | Record | FormKey | Vanilla | **Ehlnofey** |
 |---|---|---|---|
-| `AlduinBase` | 08E4F1 | ×1.2 [10–100] | **60** |
+| `AlduinBase` | 08E4F1 | ×1.2 [10–100] | ~~60~~ **100** (WD-53); MQ101/106/206 Alduin take `Stats` from it |
+| `MQ304Alduin` | 04E9BC | ×1.2 [20–100] | **110** (WD-53): the Sovngarde fight. The extract had left Requiem's 250 |
+| `DLC1Durnehviir` | 0030D8:Dawnguard | ×1 [10–70] | **80** (WD-53). The extract had left Requiem's 100; his summon stays 20 |
+| `Paarthurnax` | 03C57C | 10 (Dragon rung) | **90** (WD-53), owns his `Stats` |
+| `Odahviing` | 045920 | 20–50 (`lvlMQDragon`) | **85** (WD-53), owns his `Stats`, dragon class, `AutoCalcStats` |
 | `DLC1Harkon` | 003BA7:Dawnguard | ×1.2 [10–60] | **55** |
 | `DLC1HarkonCombat` | 01A93D:Dawnguard | ×1.4 [10–60] | **60** — both records or the transformation is a downgrade |
 | `DLC2Miraak` | 017F7D:Dragonborn | ×1 [35–**200**] | **65** |

@@ -125,7 +125,7 @@ Configuration:
   - Summonable
   Level:
     MutagenObjectType: NpcLevel
-    Level: 100
+    Level: 80
   CalcMinLevel: 10
   CalcMaxLevel: 70
   SpeedMultiplier: 100

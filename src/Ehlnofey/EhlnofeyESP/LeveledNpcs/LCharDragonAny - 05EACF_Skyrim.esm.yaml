@@ -1,17 +1,15 @@
 FormKey: 05EACF:Skyrim.esm
+VersionControl: 2846994
 EditorID: LCharDragonAny
-Version2: 9
+FormVersion: 43
+Version2: 15
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
 - Data:
     Level: 1
-    Reference: 0F8102:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0F8103:Skyrim.esm
+    Reference: 0F8115:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
@@ -23,7 +21,27 @@ Entries:
     Count: 1
 - Data:
     Level: 1
+    Reference: 0F8116:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
     Reference: 0F8117:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0F8117:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0F8117:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0F8118:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0F8118:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
@@ -35,31 +53,39 @@ Entries:
     Count: 1
 - Data:
     Level: 1
+    Reference: 0F8119:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0F8119:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0F8119:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0F8103:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0F8103:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0F8102:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0F8102:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
     Reference: 0F811D:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
     Reference: 0F811F:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0FEA9B:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 008432:Dawnguard.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 008432:Dawnguard.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 00C5FE:Dawnguard.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 00C5FF:Dawnguard.esm
     Count: 1
 Model:
   File: Actors\Dragon\DragonMARKER.nif

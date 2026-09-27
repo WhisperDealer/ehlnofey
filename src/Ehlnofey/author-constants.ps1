@@ -1,7 +1,7 @@
-# Phase 4 step 5 - author Ehlnofey's 19 constant records.
+# Phase 4 step 5 - author Ehlnofey's 21 constant records.
 # Guardrail 3: copy the source record VERBATIM from reference/ and edit only the field that differs.
 # Sources are the WINNING record for each FormKey (CLAUDE.md: resolve by master, last-wins).
-# Run AFTER extract-requiem.ps1: the six capstones are PcLevelMult in vanilla, so bucket E grafts
+# Run AFTER extract-requiem.ps1: the eight capstones are PcLevelMult in vanilla, so bucket E grafts
 # Requiem's level onto the same records (Alduin 250, Miraak 120) and would overwrite ours. Until
 # 2026-09-25 this ran first, and the plugin shipped Requiem's capstone levels.
 Set-StrictMode -Version Latest
@@ -31,7 +31,13 @@ foreach ($f in Get-ChildItem 'reference/Base/01Skyrim/Globals' -Filter 'LevelGat
 
 # ---- 3. the named capstones: PcLevelMult -> a fixed level (archetype-tiers.md 7)
 $named = @(
-  @{ f='reference/Base/01Skyrim/Npcs/AlduinBase - 08E4F1_Skyrim.esm.yaml';                 lvl=60 },
+  # Dragons (WD-53, user 2026-09-27): "Alduin should be 100+". AlduinBase owns the level of MQ101/106/206Alduin (Stats);
+  # the Sovngarde fight (MQ304Alduin, owns its level) is the last and hardest at 110. Both sit above every dragon type
+  # (Legendary 80). MQ206AncientAlduin (the Elder Scroll vision) was already fixed at 100. Before this the extract's
+  # bucket E had left Requiem's 250 on MQ304Alduin and 100 on Durnehviir.
+  @{ f='reference/Base/01Skyrim/Npcs/AlduinBase - 08E4F1_Skyrim.esm.yaml';                 lvl=100 },
+  @{ f='reference/Base/01Skyrim/Npcs/MQ304Alduin - 04E9BC_Skyrim.esm.yaml';                lvl=110 },
+  @{ f='reference/Base/03Dawnguard/Npcs/DLC1Durnehviir - 0030D8_Dawnguard.esm.yaml';       lvl=80 },
   @{ f='reference/Base/03Dawnguard/Npcs/DLC1Harkon - 003BA7_Dawnguard.esm.yaml';           lvl=55 },
   @{ f='reference/Base/03Dawnguard/Npcs/DLC1HarkonCombat - 01A93D_Dawnguard.esm.yaml';     lvl=60 },
   @{ f='reference/Base/05Dragonborn/Npcs/DLC2Miraak - 017F7D_Dragonborn.esm.yaml';         lvl=65 },
