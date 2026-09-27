@@ -1,0 +1,190 @@
+FormKey: 013B9E:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+VersionControl: 1978415
+EditorID: Elrindir
+Version2: 13
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 0E4B63:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 25
+  CalcMinLevel: 5
+  CalcMaxLevel: 25
+  SpeedMultiplier: 100
+Factions:
+- Faction: 0267EA:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 028172:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 051592:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 051596:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 09F259:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0CD069:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AD9:Skyrim.esm
+Race: 013749:Skyrim.esm
+AttackRace: 013749:Skyrim.esm
+Items:
+- Item:
+    Item: 01397F:Skyrim.esm
+    Count: 20
+- Item:
+    Item: 013983:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 03B562:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 1046D1:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Packages:
+- 02BE1F:Skyrim.esm
+Class: 013259:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Elrindir
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 15
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 33
+  - Key: Block
+    Value: 15
+  - Key: Smithing
+    Value: 21
+  - Key: HeavyArmor
+    Value: 15
+  - Key: LightArmor
+    Value: 20
+  - Key: Pickpocket
+    Value: 23
+  - Key: Lockpicking
+    Value: 20
+  - Key: Sneak
+    Value: 26
+  - Key: Alchemy
+    Value: 20
+  - Key: Speech
+    Value: 24
+  - Key: Alteration
+    Value: 15
+  - Key: Conjuration
+    Value: 15
+  - Key: Destruction
+    Value: 15
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 15
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 80
+  Magicka: 70
+  Stamina: 60
+  GearedUpWeapons: 2
+HeadParts:
+- 0C716F:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0EC3B0:Skyrim.esm
+- 01750B:Skyrim.esm
+HairColor: 0A0430:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 20
+SoundLevel: Normal
+DefaultOutfit: 07144A:Skyrim.esm
+CrimeFaction: 0267EA:Skyrim.esm
+TextureLighting: '#0095816F'
+FaceMorph:
+  NoseLongVsShort: 0.2
+  NoseUpVsDown: 0.5
+  JawUpVsDown: -0.5
+  JawNarrowVsWide: -1
+  CheeksUpVsDown: 1
+  CheeksForwardVsBack: 1
+  EyesUpVsDown: 1
+  EyesInVsOut: -1
+  BrowsUpVsDown: -1
+  BrowsInVsOut: -1
+  LipsUpVsDown: -0.2
+  LipsInVsOut: 0.4
+  ChinNarrowVsWide: -0.3
+  ChinUpVsDown: -0.5
+  EyesForwardVsBack: 0.5
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 15
+  Unknown: 4294967295
+  Eyes: 33
+  Mouth: 16
+TintLayers:
+- Index: 8
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 94
+MajorFlags:
+- 0x40000

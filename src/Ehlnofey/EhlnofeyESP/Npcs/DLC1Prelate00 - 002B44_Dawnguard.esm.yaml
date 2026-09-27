@@ -1,0 +1,184 @@
+FormKey: 002B44:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+VersionControl: 1978415
+EditorID: DLC1Prelate00
+Version2: 4
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dlc1fadingghostscript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1LD_GhostAbility
+      Object: 00CFAB:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GhostResistsAbility
+      Object: 0D2060:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Essential
+  - AutoCalcStats
+  - Unique
+  - IsGhost
+  - Invulnerable
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 25
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 0AA784:Skyrim.esm
+  Fluff: 0x000000
+Voice: 01667D:Dawnguard.esm
+Race: 00377D:Dawnguard.esm
+Items:
+- Item:
+    Item: 01681F:Dawnguard.esm
+    Count: 1
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Class: 017008:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Prelate Sidanyis
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 15
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 15
+  - Key: Block
+    Value: 15
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 15
+  - Key: LightArmor
+    Value: 15
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 15
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 20
+  - Key: Conjuration
+    Value: 20
+  - Key: Destruction
+    Value: 20
+  - Key: Illusion
+    Value: 25
+  - Key: Restoration
+    Value: 20
+  - Key: Enchanting
+    Value: 20
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 50
+  Magicka: 50
+  Stamina: 50
+  GearedUpWeapons: 1
+HeadParts:
+- 00378C:Dawnguard.esm
+HairColor: 00378E:Dawnguard.esm
+CombatStyle: 0E6C50:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 15
+SoundLevel: Normal
+DefaultOutfit: 01570F:Dawnguard.esm
+TextureLighting: '#007F7F7F'
+FaceMorph:
+  JawUpVsDown: 0.6
+  JawNarrowVsWide: 0.29999995
+  JawForwardVsBack: 0.22000003
+  CheeksUpVsDown: -0.48000002
+  CheeksForwardVsBack: 0.22000003
+  EyesInVsOut: -1
+  BrowsUpVsDown: 0.58000004
+  BrowsForwardVsBack: -1
+  ChinNarrowVsWide: 0.62
+  ChinUpVsDown: -0.7
+  ChinUnderbiteVsOverbite: 0.01999998
+  EyesForwardVsBack: 0.27999997
+FaceParts:
+  Nose: 18
+  Eyes: 31
+  Mouth: 16
+TintLayers:
+- Index: 1
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: -1
+- Index: 2
+  Color: '#00001C37'
+  InterpolationValue: 1
+  Preset: -1
+- Index: 3
+  Color: '#00001C37'
+  InterpolationValue: 0.35
+  Preset: -1
+- Index: 5
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 76
+- Index: 8
+  Color: '#00404853'
+  InterpolationValue: 1
+  Preset: 91
+- Index: 4
+  Color: '#00000000'
+  InterpolationValue: 0.58
+  Preset: 114
+MajorFlags:
+- 0x40000

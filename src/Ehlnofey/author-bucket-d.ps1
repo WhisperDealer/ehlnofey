@@ -432,8 +432,10 @@ Add-Spec '07DCA9:Skyrim.esm' 'LCharThalmorMagicBoss' @{ Gates = @{ 52 = 1 } }
 
 # 3.1 Werewolves (WD-55, user 2026-09-27): Werewolf 1 / Savage 6 / Brute 12 / Skinwalker 20 / Beastmaster 28 / Vargr 38, each
 #     rung its own name. Skinwalker x1 / Beastmaster x3 / Vargr x2, mean 30, on a par with the Falmer. Requiem rolled all six.
-#     Sinding's LCharWerewolfBoss is left for the named-boss ticket.
+#     Sinding's LCharWerewolfBoss is pinned below (WD-62).
 Add-Spec '01E791:Skyrim.esm' 'LCharWerewolf' @{ Gates = @{ 20 = 1; 28 = 3; 38 = 2 } }
+# WD-62 (user): the werewolf boss list (Sinding, LvlWerewolfBossAmbush) rolled every rung 7-42; pinned to its top, Vargr 42.
+Add-Spec '0A1981:Skyrim.esm' 'LCharWerewolfBoss' @{ Gates = @{ 48 = 1 } }
 # 3.1 Silver Hand (WD-55, user: werewolf hunters, "a bit more capable than your average bandit"). They have no list of their
 #     own; every LvlSilverhand* took Stats from a bandit list. These three NEW lists (From = the vanilla bandit list they copy)
 #     keep the bandit rungs two up from the mooks: Highwayman 14 x1 / Plunderer 19 x3 / Marauder 25 x1, mean 19.2.

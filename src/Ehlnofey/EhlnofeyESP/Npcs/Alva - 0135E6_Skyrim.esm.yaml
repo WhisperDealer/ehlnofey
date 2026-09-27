@@ -1,0 +1,201 @@
+FormKey: 0135E6:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+VersionControl: 1978415
+EditorID: Alva
+Version2: 9
+SkyrimMajorRecordFlags:
+- Compressed
+Configuration:
+  Flags:
+  - Female
+  - AutoCalcStats
+  - Unique
+  - LoopedScript
+  - LoopedAudio
+  MagickaOffset: 100
+  StaminaOffset: 50
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 15
+  CalcMinLevel: 5
+  CalcMaxLevel: 15
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 150
+Factions:
+- Faction: 02816D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02817D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0382C8:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 09E294:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03ADA0:Skyrim.esm
+Voice: 013AE0:Skyrim.esm
+Race: 013746:Skyrim.esm
+ActorEffect:
+- 033976:Skyrim.esm
+- 0CAB65:Skyrim.esm
+- 0EA077:Skyrim.esm
+- 0F5B59:Skyrim.esm
+- 0F5B5C:Skyrim.esm
+- 0F5B5D:Skyrim.esm
+Items:
+- Item:
+    Item: 013986:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 03DED1:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0638B7:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 068836:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 070E80:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Packages:
+- 041FC0:Skyrim.esm
+- 041FBF:Skyrim.esm
+- 0DBA3C:Skyrim.esm
+Keywords:
+- 013796:Skyrim.esm
+- 0A82BB:Skyrim.esm
+Class: 02E00F:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Alva
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 26
+  - Key: TwoHanded
+    Value: 25
+  - Key: Archery
+    Value: 15
+  - Key: Block
+    Value: 20
+  - Key: Smithing
+    Value: 20
+  - Key: HeavyArmor
+    Value: 15
+  - Key: LightArmor
+    Value: 26
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 23
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 20
+  - Key: Alteration
+    Value: 18
+  - Key: Conjuration
+    Value: 21
+  - Key: Destruction
+    Value: 18
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 15
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 236
+  Magicka: 166
+  Stamina: 108
+  GearedUpWeapons: 1
+HeadParts:
+- 040225:Skyrim.esm
+- 0E4DA5:Skyrim.esm
+- 0EAA76:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+HairColor: 0F7565:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 10
+SoundLevel: Normal
+DefaultOutfit: 0F966E:Skyrim.esm
+CrimeFaction: 02816D:Skyrim.esm
+TextureLighting: '#00DDDDDD'
+FaceMorph:
+  NoseLongVsShort: 0.2
+  NoseUpVsDown: 0.1
+  JawUpVsDown: -0.6
+  JawNarrowVsWide: -0.6
+  JawForwardVsBack: 0.5
+  CheeksUpVsDown: 0.6
+  CheeksForwardVsBack: 0.1
+  EyesUpVsDown: -1
+  BrowsUpVsDown: -0.2
+  LipsUpVsDown: 0.4
+  LipsInVsOut: 0.1
+  ChinNarrowVsWide: 0.1
+  ChinUnderbiteVsOverbite: 0.3
+  EyesForwardVsBack: -0.2
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 9
+  Unknown: 4294967295
+  Eyes: 16
+  Mouth: 12
+TintLayers:
+- Index: 26
+  Color: '#00364E21'
+  InterpolationValue: 0.75
+  Preset: 619
+- Index: 27
+  Color: '#00364E21'
+  InterpolationValue: 0.75
+  Preset: 629
+MajorFlags:
+- 0x40000

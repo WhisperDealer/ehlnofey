@@ -876,6 +876,60 @@ the T7-and-above set.
 Harkon at 55/60 clears his own court (Volkihar 48 / Volkihar Master 53), satisfying
 `lore-constraints.md` §3's purity requirement `[verified]`.
 
+### 7.0 Named bosses and the long tail — WD-62 (2026-09-27, user). Not yet verified in game.
+
+**The rule: a named boss sits at the top rung of its own type**, on Ehlnofey's scale. So a named draugr is a
+Deathlord, and a named bandit leader is a chief.
+
+**Questline finals** (user: one readable top tier):
+
+| Final | Level |
+|---|---|
+| Mercer, Astrid, Queen Potema and Potema's Remains | 50 |
+| Harkon | 55 / 60 |
+| **Ancano** | **60** (Requiem 80) |
+| **Vyrthur** | **60** (Requiem 75) |
+| Miraak | 65 |
+| Alduin | 100 |
+
+**Named bosses that rode a faction list.** These carried the placeholder class `EncClassDremoraMelee` and no
+`AutoCalcStats`. Each one now owns its level, taking the class and the health / magicka / stamina offsets of the
+rung it matches, with `Stats` dropped. This is the Morag Tong pattern. Traits, spells, AI and gear still come from
+the list.
+
+| Boss | Was | **Now** | Matched rung |
+|---|---|---|---|
+| Jyrik Gauldurson | draugr warlock 21 / 28 / 36 | **45** | Deathlord (vanilla 30 + the draugr +15), draugr magic class, +660 health |
+| Sigdis Gauldurson | draugr archer 21 / 28 / 36 | **45** | Deathlord, draugr missile class |
+| Kvenel the Tongue (`DunVolunruudBoss`) | draugr melee 21 / 28 / 36 | **45** | Deathlord, draugr melee class |
+| Red Eagle · Curalmil | Death Overlord boss pin | **45** | unchanged, already on the boss list |
+| Captain Hargar · the Lost Knife boss · the Cragslane Butcher | bandit mooks 5 / 9 / 14 | **28** | bandit chief, +150 health |
+| Ghunzul · the Traitor's Post boss | bandit chief | **28** | unchanged |
+| Sinding | werewolf-boss list, all rungs 7–42 | **42** | `LCharWerewolfBoss` pinned to the Vargr boss (bucket D) |
+| The Southfringe boss | necromancer mooks 19 / 27 / 36 | **50** | Arch Necromancer boss |
+| Vals Veran | 40 (voice list with no level-50 leaf) | **50** | Arch Necromancer boss |
+| Malkoran · Arondil · Sild · Kornalus · the Northwatch Interrogator | warlock / Thalmor boss pin | **50** | unchanged |
+| Movarth · the Bloodlet Throne boss | vampire boss pin | **65** | unchanged |
+
+**Villains and leaders that were still scaling:**
+- Lu'ah Al-Skaven and the Ritual Master: **50**, the warlock boss.
+- Rulindil and Estormo: **44**, the Thalmor wizard.
+- **The Volkihar court: 53**, the Volkihar Master Vampire. Orthjolf, Vingalmo, Malkus, Hestla, Rargal and Feran take
+  `Stats` from `DLC1EncVampireTemplate` and its magic and missile variants.
+- Stalf, Salonia Caelia, Modhna and Namasur: **53**. Valerica: **60**.
+- The civil war: Ulfric and Tullius **45**, Galmar and Rikke **40**, Metilius **36**, all above their soldiers
+  (25 / 30 / 35). The `dunCG` Imperial soldiers are **30**, the fixed-soldier pin.
+- Kodlak's wolf spirit: **42**, the Vargr boss. The Mistwatch "Bandit Leader": **28**.
+
+**Everyone else that still scaled: 111 records.** These are merchants, the Cidhna prisoners, the Sovngarde souls,
+Thirsk, quest extras, pets, Katria and Adelaisa. Each gets the level vanilla gives a **level-25 player**:
+25 × its multiplier, clamped to its own `CalcMinLevel` / `CalcMaxLevel`. Titus Mede and Kyr own a fixed 1, as in
+vanilla, and are left.
+
+**Coverage audit: zero** `PcLevelMult` actors remain across Skyrim, Update, Dawnguard, Hearthfire and Dragonborn,
+counting every record that owns its level (`scal.py`, 145 before). **Gear:** unchanged. The `LvlQuestReward*` lists,
+among the 177 unreached gated lists, are left to WD-40.
+
 ### 7.1 The `EncBandit04TemplateMelee` bug is already fixed by Dragonborn.esm
 
 **Found while authoring the record, 2026-07-29.** `[verified]` The L=0 bug is real in

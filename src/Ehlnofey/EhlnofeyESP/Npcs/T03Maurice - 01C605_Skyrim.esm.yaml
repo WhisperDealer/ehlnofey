@@ -1,0 +1,184 @@
+FormKey: 01C605:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+VersionControl: 1978415
+EditorID: T03Maurice
+Version2: 4
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 15
+  CalcMinLevel: 6
+  CalcMaxLevel: 15
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 0267EA:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 094393:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AD9:Skyrim.esm
+Race: 013741:Skyrim.esm
+AIData:
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Packages:
+- 109DD6:Skyrim.esm
+Class: 013182:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Maurice Jondrelle
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 22
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 22
+  - Key: Block
+    Value: 15
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 15
+  - Key: LightArmor
+    Value: 19
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 22
+  - Key: Alchemy
+    Value: 20
+  - Key: Speech
+    Value: 20
+  - Key: Alteration
+    Value: 27
+  - Key: Conjuration
+    Value: 25
+  - Key: Destruction
+    Value: 15
+  - Key: Illusion
+    Value: 20
+  - Key: Restoration
+    Value: 28
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 91
+  Magicka: 67
+  Stamina: 67
+  GearedUpWeapons: 1
+HeadParts:
+- 0C716E:Skyrim.esm
+- 024259:Skyrim.esm
+- 0C3CD2:Skyrim.esm
+- 051408:Skyrim.esm
+- 08555F:Skyrim.esm
+HairColor: 0A0435:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 25
+SoundLevel: Normal
+DefaultOutfit: 01DC10:Skyrim.esm
+CrimeFaction: 0267EA:Skyrim.esm
+HeadTexture: 05164A:Skyrim.esm
+TextureLighting: '#00706156'
+FaceMorph:
+  NoseUpVsDown: -1
+  JawUpVsDown: 0.4
+  JawNarrowVsWide: -1
+  JawForwardVsBack: 0.3
+  CheeksUpVsDown: 0.6
+  CheeksForwardVsBack: -0.2
+  EyesUpVsDown: -0.6
+  EyesInVsOut: -0.1
+  BrowsUpVsDown: -1
+  BrowsInVsOut: -0.5
+  BrowsForwardVsBack: -0.7
+  LipsUpVsDown: -0.4
+  LipsInVsOut: -0.7
+  ChinNarrowVsWide: 0.4
+  ChinUpVsDown: 0.7
+  ChinUnderbiteVsOverbite: 0.1
+  EyesForwardVsBack: -0.1
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 8
+  Unknown: 4294967295
+  Eyes: 12
+  Mouth: 4
+TintLayers:
+- Index: 4
+  Color: '#000F0440'
+  InterpolationValue: 0.39
+  Preset: 98
+- Index: 6
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 103
+- Index: 9
+  Color: '#00A95452'
+  InterpolationValue: 0.19
+  Preset: 120
+- Index: 5
+  Color: '#00000000'
+  InterpolationValue: 0.58
+  Preset: 631
+- Index: 39
+  Color: '#00000000'
+  InterpolationValue: 0.43
+  Preset: 635
+- Index: 58
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 640
+MajorFlags:
+- 0x40000

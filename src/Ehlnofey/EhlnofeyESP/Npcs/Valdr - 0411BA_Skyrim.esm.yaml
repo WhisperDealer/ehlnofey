@@ -1,0 +1,266 @@
+FormKey: 0411BA:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+VersionControl: 1978415
+EditorID: Valdr
+Version2: 1
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultSetStageOnDeath
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 0376EE:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 105
+  - Name: dunMossMotherValdrInjured
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dunMossMotherQST
+      Object: 0376EE:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: HealedStage
+      Data: 15
+    - MutagenObjectType: ScriptIntProperty
+      Name: WoundingStage
+      Data: 10
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  - LoopedScript
+  - LoopedAudio
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 25
+  CalcMinLevel: 8
+  CalcMaxLevel: 25
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 028170:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 028177:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0D42C8:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AD2:Skyrim.esm
+Race: 013746:Skyrim.esm
+AttackRace: 013748:Skyrim.esm
+CombatOverridePackageList: 0B3AA3:Skyrim.esm
+Items:
+- Item:
+    Item: 01397F:Skyrim.esm
+    Count: 20
+- Item:
+    Item: 013985:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 013989:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 0B3206:Skyrim.esm
+- 0D42CA:Skyrim.esm
+- 0B320C:Skyrim.esm
+- 0D42C9:Skyrim.esm
+- 0B320B:Skyrim.esm
+- 0B3207:Skyrim.esm
+- 0D42D1:Skyrim.esm
+- 0D42D2:Skyrim.esm
+- 0B8CB6:Skyrim.esm
+- 0B994D:Skyrim.esm
+- 02BA23:Skyrim.esm
+- 02BA24:Skyrim.esm
+Class: 015BE7:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Valdr
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 30
+  - Key: TwoHanded
+    Value: 25
+  - Key: Archery
+    Value: 31
+  - Key: Block
+    Value: 25
+  - Key: Smithing
+    Value: 20
+  - Key: HeavyArmor
+    Value: 20
+  - Key: LightArmor
+    Value: 30
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 25
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 20
+  - Key: Alteration
+    Value: 15
+  - Key: Conjuration
+    Value: 15
+  - Key: Destruction
+    Value: 15
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 15
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 127
+  Magicka: 50
+  Stamina: 78
+HeadParts:
+- 0E4E17:Skyrim.esm
+- 0514D5:Skyrim.esm
+- 0899B1:Skyrim.esm
+- 0E7AED:Skyrim.esm
+- 0C7170:Skyrim.esm
+HairColor: 0A0439:Skyrim.esm
+CombatStyle: 03BE1D:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 100
+SoundLevel: Normal
+DefaultOutfit: 037C52:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+HeadTexture: 073259:Skyrim.esm
+TextureLighting: '#005C3D36'
+FaceMorph:
+  NoseLongVsShort: -0.7
+  JawUpVsDown: -1
+  JawNarrowVsWide: -1
+  JawForwardVsBack: 0.1
+  CheeksUpVsDown: -0.64
+  CheeksForwardVsBack: 1
+  EyesUpVsDown: 0.4
+  EyesInVsOut: -0.3
+  BrowsUpVsDown: -0.2
+  BrowsInVsOut: 0.3
+  BrowsForwardVsBack: 0.1
+  LipsUpVsDown: 0.66
+  LipsInVsOut: 1
+  ChinNarrowVsWide: -0.86
+  ChinUpVsDown: -0.38
+  ChinUnderbiteVsOverbite: 0.14
+  EyesForwardVsBack: -0.1
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 14
+  Unknown: 4294967295
+  Eyes: 10
+  Mouth: 5
+TintLayers:
+- Index: 1
+  Color: '#005C3D36'
+  InterpolationValue: 1
+  Preset: 84
+- Index: 2
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 87
+- Index: 3
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 95
+- Index: 5
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 103
+- Index: 6
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 110
+- Index: 9
+  Color: '#00A95452'
+  InterpolationValue: 0.38
+  Preset: 128
+- Index: 11
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 138
+- Index: 21
+  Color: '#00240000'
+  InterpolationValue: 0
+  Preset: 159
+- Index: 22
+  Color: '#00240000'
+  InterpolationValue: 0
+  Preset: 183
+- Index: 37
+  Color: '#00240000'
+  InterpolationValue: 0
+  Preset: 207
+- Index: 38
+  Color: '#00240000'
+  InterpolationValue: 0
+  Preset: 231
+- Index: 39
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 247
+- Index: 40
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 270
+- Index: 25
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: 589
+MajorFlags:
+- 0x40000

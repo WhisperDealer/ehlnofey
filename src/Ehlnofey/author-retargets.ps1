@@ -464,6 +464,182 @@ $edits = @(
     @{ Npc = '01541D:Dawnguard.esm'; Level = 38 }   # DLC1Durak
     @{ Npc = '01541B:Dawnguard.esm'; Level = 38 }   # DLC1Ingjard
     @{ Npc = '00336D:Dawnguard.esm'; Level = 38 }   # DLC1FlorentiusBaenius
+
+    # ---- Named bosses and the long tail (WD-62, user 2026-09-27).
+    # Named bosses that rode a faction list sit at the TOP rung of their type, on Ehlnofey's scale. They carried the
+    # placeholder class EncClassDremoraMelee and no AutoCalcStats, so each takes the Morag Tong pattern: its own level, the
+    # reference rung's class and offsets, AutoCalcStats, and Stats dropped. Traits, spells, AI and gear still come from the list.
+    # Draugr: the Deathlord (vanilla 30, +15 = 45, level with the Death Overlord boss pin). Red Eagle and Curalmil already roll 45.
+    @{ Npc = '01BB28:Skyrim.esm'; Swap = @(@('    Level: 1', '    Level: 45'), @('Class: 017008:Skyrim.esm', 'Class: 023C0E:Skyrim.esm'));
+       Insert = @(@('  - IsGhost', '  - AutoCalcStats'), @('  - AutoCalcStats', '  HealthOffset: 660'), @('  HealthOffset: 660', '  MagickaOffset: 60'), @('  MagickaOffset: 60', '  StaminaOffset: 350')); DropFlag = 'Stats' }   # JyrikGauldurson: draugr magic, Deathlord offsets (a ghost: his Flags block already holds IsGhost)
+    @{ Npc = '0A6842:Skyrim.esm'; Swap = @(@('    Level: 1', '    Level: 45'), @('Class: 017008:Skyrim.esm', 'Class: 023C0D:Skyrim.esm'));
+       Insert = @(@('Configuration:', '  Flags:'), @('  Flags:', '  - AutoCalcStats'), @('  - AutoCalcStats', '  HealthOffset: 660'), @('  HealthOffset: 660', '  MagickaOffset: 10'), @('  MagickaOffset: 10', '  StaminaOffset: 350')); DropFlag = 'Stats' }   # dunGeirmundSigdis: draugr missile, EncDraugr05TemplateMissile
+    @{ Npc = '1019C6:Skyrim.esm'; Swap = @(@('    Level: 1', '    Level: 45'), @('Class: 017008:Skyrim.esm', 'Class: 023C0C:Skyrim.esm'));
+       Insert = @(@('Configuration:', '  Flags:'), @('  Flags:', '  - AutoCalcStats'), @('  - AutoCalcStats', '  HealthOffset: 660'), @('  HealthOffset: 660', '  MagickaOffset: 10'), @('  MagickaOffset: 10', '  StaminaOffset: 350')); DropFlag = 'Stats' }   # DunVolunruudBoss (Kvenel the Tongue): draugr melee, EncDraugr05Template
+    # Bandit leaders on a mook list (5/9/14): the bandit chief, EncBandit06Boss2H (28, +150 health).
+    @{ Npc = '01E38B:Skyrim.esm'; Swap = @(@('    Level: 1', '    Level: 28'), @('Class: 017008:Skyrim.esm', 'Class: 01CE17:Skyrim.esm'));
+       Insert = @(@('Configuration:', '  Flags:'), @('  Flags:', '  - AutoCalcStats'), @('  - AutoCalcStats', '  HealthOffset: 150'), @('  HealthOffset: 150', '  MagickaOffset: -25'), @('  MagickaOffset: -25', '  StaminaOffset: 100')); DropFlag = 'Stats' }   # dunBrokenOarHargar (Captain Hargar)
+    @{ Npc = '01C902:Skyrim.esm'; Swap = @(@('    Level: 1', '    Level: 28'), @('Class: 017008:Skyrim.esm', 'Class: 01CE17:Skyrim.esm'));
+       Insert = @(@('Configuration:', '  Flags:'), @('  Flags:', '  - AutoCalcStats'), @('  - AutoCalcStats', '  HealthOffset: 150'), @('  HealthOffset: 150', '  MagickaOffset: -25'), @('  MagickaOffset: -25', '  StaminaOffset: 100')); DropFlag = 'Stats' }   # DunLostKnifeBanditBoss
+    @{ Npc = '0D823E:Skyrim.esm'; Swap = @(@('    Level: 1', '    Level: 28'), @('Class: 017008:Skyrim.esm', 'Class: 01CE17:Skyrim.esm'));
+       Insert = @(@('  - Respawn', '  - AutoCalcStats'), @('  - AutoCalcStats', '  HealthOffset: 150'), @('  HealthOffset: 150', '  MagickaOffset: -25'), @('  MagickaOffset: -25', '  StaminaOffset: 100')); DropFlag = 'Stats' }   # dunCragslaneButcher (Update.esm's copy already has Flags: Respawn)
+    # Necromancer bosses: the Arch Necromancer boss, EncWarlock07TemplateBossNecro (50).
+    @{ Npc = '0A33EA:Skyrim.esm'; Swap = @(@('    Level: 1', '    Level: 50'), @('Class: 017008:Skyrim.esm', 'Class: 01CE14:Skyrim.esm'));
+       Insert = @(@('Configuration:', '  Flags:'), @('  Flags:', '  - AutoCalcStats'), @('  - AutoCalcStats', '  HealthOffset: 200'), @('  HealthOffset: 200', '  MagickaOffset: 200'), @('  MagickaOffset: 200', '  StaminaOffset: 0')); DropFlag = 'Stats' }   # dunSouthfringeBoss: was on the necromancer mook list (19/27/36)
+    @{ Npc = '019FE6:Skyrim.esm'; Swap = @(@('    Level: 1', '    Level: 50'), @('Class: 017008:Skyrim.esm', 'Class: 01CE14:Skyrim.esm'));
+       Insert = @(@('Configuration:', '  Flags:'), @('  Flags:', '  - AutoCalcStats'), @('  - AutoCalcStats', '  HealthOffset: 200'), @('  HealthOffset: 200', '  MagickaOffset: 200'), @('  MagickaOffset: 200', '  StaminaOffset: 0')); DropFlag = 'Stats' }   # ValsVeran: his voice list had no level-50 leaf (40)
+    # Questline finals realigned (user): Mercer, Astrid, Potema 50 · Harkon 55/60 · Ancano, Vyrthur 60 · Miraak 65 · Alduin 100.
+    @{ Npc = '01E7D7:Skyrim.esm';    Level = 60 }   # Ancano (Requiem graft 80)
+    @{ Npc = '003788:Dawnguard.esm'; Level = 60 }   # DLC1AlthadanVyrthur (Requiem graft 75)
+    # Villains and leaders still scaling, set against their type.
+    @{ Npc = '10349B:Skyrim.esm'; Level = 50 }   # Potema's Remains = Queen Potema (x1[7-50])
+    @{ Npc = '02333A:Skyrim.esm'; Level = 50 }   # Lu'ah Al-Skaven: the warlock boss pin (x1[8-50])
+    @{ Npc = '0284F2:Skyrim.esm'; Level = 50 }   # Ritual Master (Wolf Queen Awakened): the warlock boss pin (x1[10-20])
+    @{ Npc = '039F1F:Skyrim.esm'; Level = 44 }   # Rulindil: Thalmor wizard (x1[8-40])
+    @{ Npc = '034D97:Skyrim.esm'; Level = 44 }   # Estormo: Thalmor wizard (x1[10-50])
+    @{ Npc = '003373:Dawnguard.esm'; Level = 53 }   # Volkihar court (Orthjolf, Vingalmo, Malkus, Hestla, Rargal, Feran): Volkihar Master Vampire (x1[0-0])
+    @{ Npc = '003372:Dawnguard.esm'; Level = 53 }   # Volkihar court, magic (x1[0-0])
+    @{ Npc = '003374:Dawnguard.esm'; Level = 53 }   # Volkihar court, missile (x1[0-0])
+    @{ Npc = '003B8B:Dawnguard.esm'; Level = 60 }   # Valerica (x1[10-50])
+    @{ Npc = '003368:Dawnguard.esm'; Level = 53 }   # Stalf: Volkihar Master Vampire (x1[0-0])
+    @{ Npc = '003369:Dawnguard.esm'; Level = 53 }   # Salonia Caelia: Volkihar Master Vampire (x1[10-0])
+    @{ Npc = '011E5E:Dawnguard.esm'; Level = 53 }   # Modhna: Volkihar Master Vampire (x1[0-0])
+    @{ Npc = '011E5D:Dawnguard.esm'; Level = 53 }   # Namasur: Volkihar Master Vampire (x1[0-0])
+    @{ Npc = '0D0575:Skyrim.esm'; Level = 45 }   # Ulfric Stormcloak (x1.2[10-50])
+    @{ Npc = '0D0577:Skyrim.esm'; Level = 45 }   # General Tullius (x1.2[10-50])
+    @{ Npc = '0D0570:Skyrim.esm'; Level = 40 }   # Galmar Stone-Fist (x1[10-30])
+    @{ Npc = '0D0573:Skyrim.esm'; Level = 40 }   # Legate Rikke (x1[10-30])
+    @{ Npc = '01C9F7:Skyrim.esm'; Level = 36 }   # Captain Metilius (x0.8[10-30])
+    @{ Npc = '058303:Skyrim.esm'; Level = 42 }   # Kodlak's wolf spirit: the werewolf boss (Vargr) (x1[8-0])
+    @{ Npc = '090739:Skyrim.esm'; Level = 28 }   # Mistwatch "Bandit Leader": the bandit chief (x1.1[5-0])
+    # The dunCG Imperial soldiers (x1 [5-12]) are soldiers: the fixed-soldier pin.
+    @{ Npc = '0F3E77:Skyrim.esm'; Level = 30 }   # dunCGImperialMageC01
+    @{ Npc = '0F3E76:Skyrim.esm'; Level = 30 }   # dunCGImperialMageD01
+    @{ Npc = '0E491B:Skyrim.esm'; Level = 30 }   # dunCGImperialSoldierArcherA01
+    @{ Npc = '0E4920:Skyrim.esm'; Level = 30 }   # dunCGImperialSoldierArcherA02
+    @{ Npc = '0F94AE:Skyrim.esm'; Level = 30 }   # dunCGImperialSoldierArcherA03
+    @{ Npc = '105EE2:Skyrim.esm'; Level = 30 }   # dunCGImperialSoldierArcherA04
+    @{ Npc = '0E6D5C:Skyrim.esm'; Level = 30 }   # dunCGImperialSoldierArcherC01
+    @{ Npc = '0F3E6F:Skyrim.esm'; Level = 30 }   # dunCGImperialSoldierArcherC02
+    @{ Npc = '0E72BB:Skyrim.esm'; Level = 30 }   # dunCGImperialSoldierArcherD01
+    @{ Npc = '0F3E6D:Skyrim.esm'; Level = 30 }   # dunCGImperialSoldierArcherD02
+    @{ Npc = '0F3E6E:Skyrim.esm'; Level = 30 }   # dunCGImperialSoldierArcherD03
+    @{ Npc = '0F94A9:Skyrim.esm'; Level = 30 }   # dunCGImperialSoldierArcherD04
+    @{ Npc = '0E77F9:Skyrim.esm'; Level = 30 }   # dunCGImperialSoldierFodderC01
+    @{ Npc = '0E77FD:Skyrim.esm'; Level = 30 }   # dunCGImperialSoldierFodderD01
+    # Everyone else still scaling (non-combatants, quest extras, allies, pets): the level vanilla gives a level-25 player,
+    # 25 x the multiplier, clamped to the record's own CalcMin/CalcMax (user). Titus Mede and Kyr own a fixed 1 and are left.
+    @{ Npc = '01411D:Skyrim.esm'; Level = 23 }   # Adelaisa x0.9[6-25]
+    @{ Npc = '01402E:Skyrim.esm'; Level = 13 }   # Aicantar x0.5[5-50]
+    @{ Npc = '0135E6:Skyrim.esm'; Level = 15 }   # Alva x1[5-15]
+    @{ Npc = '01334A:Skyrim.esm'; Level = 20 }   # Aringoth x1[8-20]
+    @{ Npc = '0622E5:Skyrim.esm'; Level = 25 }   # Atar x1.25[10-25]
+    @{ Npc = '018DE0:HearthFires.esm'; Level = 10 }   # BYOHHouse1Bard x0.75[5-10]
+    @{ Npc = '019630:HearthFires.esm'; Level = 10 }   # BYOHHouse2Bard x0.75[5-10]
+    @{ Npc = '019631:HearthFires.esm'; Level = 10 }   # BYOHHouse3Bard x0.75[5-10]
+    @{ Npc = '01338A:Skyrim.esm'; Level = 25 }   # Borkul x1[10-50]
+    @{ Npc = '013389:Skyrim.esm'; Level = 25 }   # Braig x1[6-30]
+    @{ Npc = '01A6B7:Skyrim.esm'; Level = 25 }   # BrinaMerilis x1[10-25]
+    @{ Npc = '0CE085:Skyrim.esm'; Level = 19 }   # DA05Hunter09_03Missile_Viding x0.75[0-0]
+    @{ Npc = '089986:Skyrim.esm'; Level = 30 }   # DA13PeryiteMonk x1.2[10-40]
+    @{ Npc = '01CB2E:Skyrim.esm'; Level = 22 }   # DA14Cultist x1[12-22]
+    @{ Npc = '004D0C:Dawnguard.esm'; Level = 19 }   # DLC1LD_Katria x0.75[10-50]
+    @{ Npc = '004D7D:Dawnguard.esm'; Level = 25 }   # DLC1LD_KatriaCorpse x1[10-50]
+    @{ Npc = '002B44:Dawnguard.esm'; Level = 25 }   # DLC1Prelate00 x1[0-0]
+    @{ Npc = '00A8AC:Dawnguard.esm'; Level = 25 }   # DLC1Prelate01 x1[0-0]
+    @{ Npc = '00A8AD:Dawnguard.esm'; Level = 25 }   # DLC1Prelate02 x1[0-0]
+    @{ Npc = '00A8AE:Dawnguard.esm'; Level = 25 }   # DLC1Prelate03 x1[0-0]
+    @{ Npc = '00A8B0:Dawnguard.esm'; Level = 25 }   # DLC1Prelate04 x1[0-0]
+    @{ Npc = '01A5C6:Dawnguard.esm'; Level = 14 }   # DLC1VQ01GiantSpider x1.2[5-14]
+    @{ Npc = '008D7A:Dawnguard.esm'; Level = 25 }   # DLC1dunRedwaterDenAddict4 x1[0-0]
+    @{ Npc = '01A511:Dragonborn.esm'; Level = 25 }   # DLC2Bujold x1[10-60]
+    @{ Npc = '01A51A:Dragonborn.esm'; Level = 25 }   # DLC2Elmus x1[10-60]
+    @{ Npc = '02749A:Dragonborn.esm'; Level = 25 }   # DLC2ExpSpiderOilFriend x1[0-0]
+    @{ Npc = '027482:Dragonborn.esm'; Level = 30 }   # DLC2ExpSpiderPackmuleCUT x1.2[0-0]
+    @{ Npc = '01A51C:Dragonborn.esm'; Level = 25 }   # DLC2Halbarn x1[10-60]
+    @{ Npc = '01A515:Dragonborn.esm'; Level = 25 }   # DLC2Hilund x1[10-60]
+    @{ Npc = '01A518:Dragonborn.esm'; Level = 25 }   # DLC2Kuvar x1[10-60]
+    @{ Npc = '031862:Dragonborn.esm'; Level = 25 }   # DLC2MerchMerchant x1[0-0]
+    @{ Npc = '01CAA8:Dragonborn.esm'; Level = 25 }   # DLC2MerilarRendas x1[0-0]
+    @{ Npc = '02AD30:Dragonborn.esm'; Level = 25 }   # DLC2RREsmondTyne x1[25-50]
+    @{ Npc = '01828E:Dragonborn.esm'; Level = 25 }   # DLC2RRGloverMallory x1[20-40]
+    @{ Npc = '013268:Skyrim.esm'; Level = 25 }   # Deeja x1[10-30]
+    @{ Npc = '0D673A:Skyrim.esm'; Level = 6 }   # Donnel x1[1-6]
+    @{ Npc = '095F7E:Skyrim.esm'; Level = 13 }   # Drahff x0.5[6-25]
+    @{ Npc = '0D6711:Skyrim.esm'; Level = 25 }   # Dryston x1[5-25]
+    @{ Npc = '013393:Skyrim.esm'; Level = 13 }   # Duach x0.5[1-30]
+    @{ Npc = '0936D1:Skyrim.esm'; Level = 25 }   # E3demoGiant01 x1[10-0]
+    @{ Npc = '0936D3:Skyrim.esm'; Level = 25 }   # E3demoGiant02 x1[10-0]
+    @{ Npc = '013B9E:Skyrim.esm'; Level = 25 }   # Elrindir x1[5-25]
+    @{ Npc = '013B6C:Skyrim.esm'; Level = 13 }   # Enmon x0.5[6-15]
+    @{ Npc = '0350A7:Skyrim.esm'; Level = 20 }   # Erik x1[5-20]
+    @{ Npc = '01335A:Skyrim.esm'; Level = 7 }   # FromDeepestFathoms x1[4-7]
+    @{ Npc = '056553:Skyrim.esm'; Level = 7 }   # FromDeepestFathomsVision x1[4-7]
+    @{ Npc = '0D6703:Skyrim.esm'; Level = 25 }   # Garvey x1[10-30]
+    @{ Npc = '01E765:Skyrim.esm'; Level = 25 }   # Hamal x1[6-25]
+    @{ Npc = '095FD5:Skyrim.esm'; Level = 19 }   # Hewnon x0.75[8-30]
+    @{ Npc = '035533:Skyrim.esm'; Level = 15 }   # Hilde x0.9[5-15]
+    @{ Npc = '01A6B9:Skyrim.esm'; Level = 25 }   # HorikHalfhand x1[10-25]
+    @{ Npc = '0133A0:Skyrim.esm'; Level = 25 }   # Ildene x1[5-25]
+    @{ Npc = '013618:Skyrim.esm'; Level = 25 }   # Jod x1[10-25]
+    @{ Npc = '013291:Skyrim.esm'; Level = 19 }   # KharagGroShurkul x0.75[6-25]
+    @{ Npc = '094000:Skyrim.esm'; Level = 13 }   # Knjakr x0.5[5-15]
+    @{ Npc = '013368:Skyrim.esm'; Level = 25 }   # LouisLetrush x1[4-30]
+    @{ Npc = '0F737C:Skyrim.esm'; Level = 19 }   # MG07LabyrinthianThrall01 x0.75[0-0]
+    @{ Npc = '0F7385:Skyrim.esm'; Level = 19 }   # MG07LabyrinthianThrall02 x0.75[0-0]
+    @{ Npc = '099F2F:Skyrim.esm'; Level = 28 }   # MGRDremoraSummon x1.1[10-0]
+    @{ Npc = '05AE91:Skyrim.esm'; Level = 25 }   # MGRejoinWizard x1[0-0]
+    @{ Npc = '09B0AD:Skyrim.esm'; Level = 20 }   # MQ101CorpseSons01 x1.5[3-20]
+    @{ Npc = '0B1693:Skyrim.esm'; Level = 20 }   # MQ101CorpseSonsPrisoner01 x1.5[3-20]
+    @{ Npc = '0B79BC:Skyrim.esm'; Level = 20 }   # MQ101CorpseSonsPrisoner02 x1.5[3-20]
+    @{ Npc = '046EFC:Skyrim.esm'; Level = 20 }   # MQ301ImperialSoldier x1.5[3-20]
+    @{ Npc = '046EFD:Skyrim.esm'; Level = 20 }   # MQ301SonsSoldier x1.5[3-20]
+    @{ Npc = '091AF2:Skyrim.esm'; Level = 20 }   # MQ304LostSoulImperial x1.5[3-20]
+    @{ Npc = '0173C1:Skyrim.esm'; Level = 20 }   # MQ304LostSoulImperial2 x1.5[3-20]
+    @{ Npc = '090A47:Skyrim.esm'; Level = 20 }   # MQ304LostSoulSons x1.5[3-20]
+    @{ Npc = '0173C0:Skyrim.esm'; Level = 20 }   # MQ304LostSoulSons2 x1.5[3-20]
+    @{ Npc = '0173C2:Skyrim.esm'; Level = 20 }   # MQ304LostSoulSons3 x1.5[3-20]
+    @{ Npc = '0EA57A:Skyrim.esm'; Level = 10 }   # MQ304Svaknir x1[5-10]
+    @{ Npc = '016C87:Skyrim.esm'; Level = 19 }   # MS05_dunDeadMensRespite_Svaknir x0.75[0-0]
+    @{ Npc = '036194:Skyrim.esm'; Level = 13 }   # Malborn x0.5[5-15]
+    @{ Npc = '0D6719:Skyrim.esm'; Level = 6 }   # Morven x1[1-6]
+    @{ Npc = '0133AA:Skyrim.esm'; Level = 25 }   # Nepos x1[5-25]
+    @{ Npc = '014123:Skyrim.esm'; Level = 13 }   # Niranye x0.5[10-50]
+    @{ Npc = '0133AD:Skyrim.esm'; Level = 25 }   # Ogmund x1[10-25]
+    @{ Npc = '034CBA:Skyrim.esm'; Level = 25 }   # ParatusDecimius x1[10-30]
+    @{ Npc = '0132A3:Skyrim.esm'; Level = 25 }   # SabineNytte x1[10-50]
+    @{ Npc = '013267:Skyrim.esm'; Level = 35 }   # Safia x2[15-35]
+    @{ Npc = '0AF524:Skyrim.esm'; Level = 25 }   # SailorDorian x0.1[25-0]
+    @{ Npc = '0AF522:Skyrim.esm'; Level = 25 }   # SailorEris x1[10-25]
+    @{ Npc = '0AF523:Skyrim.esm'; Level = 25 }   # SailorXander x1[10-25]
+    @{ Npc = '094012:Skyrim.esm'; Level = 20 }   # Salvianus x0.8[8-25]
+    @{ Npc = '06C868:Skyrim.esm'; Level = 15 }   # Shavari x1[5-15]
+    @{ Npc = '029D96:Skyrim.esm'; Level = 20 }   # Sifnar x0.8[10-30]
+    @{ Npc = '01C605:Skyrim.esm'; Level = 15 }   # T03Maurice x0.8[6-15]
+    @{ Npc = '01C241:Skyrim.esm'; Level = 19 }   # ThoraldGrayMane x0.75[4-50]
+    @{ Npc = '0341FF:Skyrim.esm'; Level = 31 }   # Thorek_Ambush x1.25[10-0]
+    @{ Npc = '0D6718:Skyrim.esm'; Level = 6 }   # Tynan x1[1-6]
+    @{ Npc = '0133BC:Skyrim.esm'; Level = 25 }   # Uaile x1[5-25]
+    @{ Npc = '0133BD:Skyrim.esm'; Level = 25 }   # Uraccen x1[6-30]
+    @{ Npc = '0133BE:Skyrim.esm'; Level = 30 }   # UrzogaGraShugurz x1.2[20-50]
+    @{ Npc = '0E16CD:Skyrim.esm'; Level = 25 }   # Vaermina x1[0-0]
+    @{ Npc = '072B04:Skyrim.esm'; Level = 30 }   # Vald x1.2[8-42]
+    @{ Npc = '0411BA:Skyrim.esm'; Level = 25 }   # Valdr x1[8-25]
+    @{ Npc = '0341FE:Skyrim.esm'; Level = 31 }   # VerenDuleri_Ambush x1.25[10-0]
+    @{ Npc = '013381:Skyrim.esm'; Level = 25 }   # Vulwulf x1[10-30]
+    @{ Npc = '109487:Skyrim.esm'; Level = 25 }   # WEFollowerDog x1[10-25]
+    @{ Npc = '03B0E3:Skyrim.esm'; Level = 25 }   # dunAlftandUmana x1[10-30]
+    @{ Npc = '04F4DA:Skyrim.esm'; Level = 25 }   # dunDarklightDeadWitch x1[0-0]
+    @{ Npc = '04CEDF:Skyrim.esm'; Level = 19 }   # dunFolgunthurDaynas x0.75[0-25]
+    @{ Npc = '0CD640:Skyrim.esm'; Level = 25 }   # dunForelhostLvlGhostWizardMale x1[6-35]
+    @{ Npc = '06CD5B:Skyrim.esm'; Level = 30 }   # dunIronbindBeemJa x1.2[5-30]
+    @{ Npc = '06CD5A:Skyrim.esm'; Level = 25 }   # dunIronbindSalma x1[3-26]
+    @{ Npc = '09CB62:Skyrim.esm'; Level = 25 }   # dunKilkreathGhostImperialMelee x1[0-100]
+    @{ Npc = '0E77DA:Skyrim.esm'; Level = 25 }   # dunKilkreathGhostImperialMissile x1[0-100]
+    @{ Npc = '09CB63:Skyrim.esm'; Level = 25 }   # dunKilkreathGhostSonsMelee x1[0-100]
+    @{ Npc = '0E77DB:Skyrim.esm'; Level = 25 }   # dunKilkreathGhostSonsMissile x1[0-100]
+    @{ Npc = '0D95E9:Skyrim.esm'; Level = 25 }   # dunPOITundraMarshDog x1[10-25]
+    @{ Npc = '10A062:Skyrim.esm'; Level = 20 }   # dunRatwayGian x0.8[0-30]
 )
 
 foreach ($e in $edits) {

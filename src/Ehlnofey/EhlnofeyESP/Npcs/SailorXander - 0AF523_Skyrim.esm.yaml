@@ -1,0 +1,211 @@
+FormKey: 0AF523:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+VersionControl: 1978415
+EditorID: SailorXander
+Version2: 13
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 25
+  CalcMinLevel: 10
+  CalcMaxLevel: 25
+  SpeedMultiplier: 100
+Factions:
+- Faction: 029DB0:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0A355F:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AD9:Skyrim.esm
+Race: 013744:Skyrim.esm
+Items:
+- Item:
+    Item: 0165C5:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 037C2B:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 1046D3:Skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Mood: Disgusted
+  Assistance: HelpsAllies
+Packages:
+- 0AF52A:Skyrim.esm
+- 0AF52C:Skyrim.esm
+- 0E73CA:Skyrim.esm
+Class: 01317C:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Xander
+ShortName:
+  TargetLanguage: English
+  Value: Xander
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 33
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 15
+  - Key: Block
+    Value: 20
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 20
+  - Key: LightArmor
+    Value: 22
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 34
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 28
+  - Key: Conjuration
+    Value: 15
+  - Key: Destruction
+    Value: 40
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 25
+  - Key: Enchanting
+    Value: 20
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 125
+  Magicka: 80
+  Stamina: 80
+HeadParts:
+- 0C3CD0:Skyrim.esm
+- 0DFC01:Skyrim.esm
+- 0C716F:Skyrim.esm
+- 08555F:Skyrim.esm
+HairColor: 0A0435:Skyrim.esm
+CombatStyle: 068849:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 40
+SoundLevel: Normal
+DefaultOutfit: 09D5E0:Skyrim.esm
+SleepingOutfit: 01697D:Skyrim.esm
+CrimeFaction: 029DB0:Skyrim.esm
+HeadTexture: 0D0723:Skyrim.esm
+TextureLighting: '#005C4332'
+FaceMorph:
+  NoseLongVsShort: 0.38
+  NoseUpVsDown: 0.08
+  JawUpVsDown: 0.14
+  JawForwardVsBack: 0.02
+  CheeksUpVsDown: 0.2
+  CheeksForwardVsBack: 0.4
+  EyesUpVsDown: -0.36
+  EyesInVsOut: -1
+  BrowsInVsOut: -0.28
+  BrowsForwardVsBack: 1
+  LipsUpVsDown: -0.2
+  LipsInVsOut: 0.32
+  ChinNarrowVsWide: 0.5
+  ChinUpVsDown: 0.7
+  ChinUnderbiteVsOverbite: -0.2
+  EyesForwardVsBack: -0.6
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 11
+  Unknown: 4294967295
+  Eyes: 10
+  Mouth: 15
+TintLayers:
+- Index: 1
+  Color: '#005C4332'
+  InterpolationValue: 1
+  Preset: 67
+- Index: 2
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 71
+- Index: 9
+  Color: '#00500901'
+  InterpolationValue: 0.5
+  Preset: 116
+- Index: 10
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 121
+- Index: 14
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 134
+- Index: 15
+  Color: '#00274725'
+  InterpolationValue: 1
+  Preset: 173
+- Index: 16
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 182
+- Index: 17
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 206
+- Index: 24
+  Color: '#00000000'
+  InterpolationValue: 0.43
+  Preset: 476
+MajorFlags:
+- 0x40000

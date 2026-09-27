@@ -1,0 +1,146 @@
+FormKey: 094000:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+VersionControl: 1978415
+EditorID: Knjakr
+Version2: 7
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 13
+  CalcMinLevel: 5
+  CalcMaxLevel: 15
+  SpeedMultiplier: 100
+Factions:
+- Faction: 01745F:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 094001:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 094393:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013ADA:Skyrim.esm
+Race: 067CD8:Skyrim.esm
+Items:
+- Item:
+    Item: 013790:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Mood: Angry
+  Assistance: HelpsFriendsAndAllies
+  AggroRadiusBehavior: True
+  Warn: 1500
+  Attack: 250
+Packages:
+- 09401B:Skyrim.esm
+Class: 01CE16:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Knjakr
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 18
+  - Key: TwoHanded
+    Value: 23
+  - Key: Archery
+    Value: 21
+  - Key: Block
+    Value: 21
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 15
+  - Key: LightArmor
+    Value: 24
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 15
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 15
+  - Key: Conjuration
+    Value: 15
+  - Key: Destruction
+    Value: 15
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 15
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 96
+  Magicka: 50
+  Stamina: 64
+  GearedUpWeapons: 1
+HeadParts:
+- 023DCD:Skyrim.esm
+- 051507:Skyrim.esm
+CombatStyle: 03D2C8:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 30
+SoundLevel: Normal
+DefaultOutfit: 01BC5E:Skyrim.esm
+SleepingOutfit: 01697D:Skyrim.esm
+TextureLighting: '#00AEA09B'
+TintLayers:
+- Index: 1
+  Color: '#00AEA09B'
+  InterpolationValue: 1
+  Preset: -1
+MajorFlags:
+- 0x40000

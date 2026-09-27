@@ -1,0 +1,213 @@
+FormKey: 03B0E3:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+VersionControl: 1978415
+EditorID: dunAlftandUmana
+Version2: 7
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Female
+  - AutoCalcStats
+  - Unique
+  StaminaOffset: 100
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 25
+  CalcMinLevel: 10
+  CalcMaxLevel: 30
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 100
+Factions:
+- Faction: 0D19B3:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AE0:Skyrim.esm
+Race: 013748:Skyrim.esm
+AttackRace: 013748:Skyrim.esm
+Perks:
+- Perk: 10582A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F68:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F69:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03FFFA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D50:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 037C1A:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0FC5BF:Skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Packages:
+- 0A4E5F:Skyrim.esm
+- 0BBD87:Skyrim.esm
+- 09BCBD:Skyrim.esm
+Class: 013176:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Umana
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 44
+  - Key: TwoHanded
+    Value: 22
+  - Key: Archery
+    Value: 33
+  - Key: Block
+    Value: 33
+  - Key: Smithing
+    Value: 20
+  - Key: HeavyArmor
+    Value: 35
+  - Key: LightArmor
+    Value: 15
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 15
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 20
+  - Key: Conjuration
+    Value: 15
+  - Key: Destruction
+    Value: 20
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 15
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 255
+  Magicka: 50
+  Stamina: 180
+  GearedUpWeapons: 1
+HeadParts:
+- 040225:Skyrim.esm
+- 0510B2:Skyrim.esm
+- 0E4E42:Skyrim.esm
+- 0E4E40:Skyrim.esm
+- 0E4E4C:Skyrim.esm
+- 0E4D91:Skyrim.esm
+HairColor: 0A0435:Skyrim.esm
+CombatStyle: 105949:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 30
+SoundLevel: Normal
+DefaultOutfit: 0579A3:Skyrim.esm
+HeadTexture: 051649:Skyrim.esm
+TextureLighting: '#00473327'
+FaceMorph:
+  NoseLongVsShort: 0.34
+  NoseUpVsDown: 0.34
+  CheeksForwardVsBack: 0.8
+  EyesUpVsDown: -0.1
+  EyesInVsOut: -0.5
+  BrowsUpVsDown: 0.5
+  BrowsInVsOut: -0.6
+  BrowsForwardVsBack: 0.8
+  LipsUpVsDown: 0.2
+  LipsInVsOut: 0.7
+  ChinUpVsDown: 0.3
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 4
+  Unknown: 4294967295
+  Eyes: 3
+  Mouth: 11
+TintLayers:
+- Index: 39
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 596
+- Index: 48
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 695
+- Index: 56
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 841
+- Index: 57
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 865
+- Index: 58
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 889
+- Index: 59
+  Color: '#001C9D09'
+  InterpolationValue: 0.6
+  Preset: -1
+- Index: 60
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 937
+MajorFlags:
+- 0x40000

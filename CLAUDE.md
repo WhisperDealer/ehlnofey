@@ -234,7 +234,7 @@ mod, not a new-content mod. Ehlnofey changes *where the numbers come from*, and 
 
 ## Current phase
 
-**Phase 4 is under way and `Ehlnofey.esp` exists: 2,851 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
+**Phase 4 is under way and `Ehlnofey.esp` exists: 3,004 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
 `design/requiem-method`). Read **`arch-docs/design/requiem-method.md` first** — it is the live
 architecture doc, and its §6 is the current order of work. Everything below it in this section is
 the Phase 3 record, kept because most of it still holds, but **the architecture it decided has been
@@ -531,8 +531,25 @@ See `archetype-tiers.md` §3.1.
 - **Plugin size:** 2,851 records (+39 `NPC_`). See `archetype-tiers.md` §6.1.
 - **Open play test:** recruit Lydia and a hireling at player level 1, `player.setlevel 40`, and check their levels do not move.
 
+**Named bosses and the long tail are built (WD-62, 2026-09-27). This is not yet verified in game.**
+- **A named boss sits at the top rung of its own type** (user).
+  - Jyrik, Sigdis and Kvenel are **45**, the Deathlord after the +15 draugr raise, where Red Eagle and Curalmil already sit.
+  - Captain Hargar, the Lost Knife boss and the Cragslane Butcher are **28**, the chief.
+  - Sinding is **42**; the werewolf-boss list is pinned to the Vargr boss.
+  - The Southfringe boss and Vals Veran are **50**, the Arch Necromancer.
+- **How the named bosses own their level:** their own level, the matched rung's class and offsets, `AutoCalcStats`, and
+  `Stats` dropped (the Morag Tong pattern).
+- **Questline finals:** Ancano 60 (was 80) and Vyrthur 60 (was 75). Mercer, Astrid and Potema stay 50, Harkon 55/60, Miraak 65.
+- **Villains still scaling:**
+  - The Volkihar court template is 53, and Valerica 60.
+  - Lu'ah and the Ritual Master are 50; Rulindil and Estormo 44.
+  - Ulfric and Tullius are 45, Galmar and Rikke 40, Metilius 36.
+- **The other 111 still-scaling NPCs** get the level vanilla gives a level-25 player, clamped to their own min and max.
+- **Coverage audit:** no `PcLevelMult` actor is left in the base game or the DLC.
+- **Plugin size:** 3,004 records (+153 `NPC_`; 1 `LVLN` re-authored). See `archetype-tiers.md` §7.0.
+
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
-player levels), then the 114 unreached `PcLevelMult` NPCs (WD-62). **Deferred (user, 2026-09-24):** the
+player levels), then the `LvlQuestReward*` loot lists (WD-40). **Deferred (user, 2026-09-24):** the
 translation loss on the 21 overridden injector quests. Preferred fix: stop overriding them and ship a
 small quest that calls `Revert()` on the affected lists after the injectors run - no text touched, and it
 also fixes existing saves.
@@ -1148,6 +1165,7 @@ A reader-facing page per finished faction, in one shared style. Each faction tic
 | Dawnguard DLC families | WD-58 | https://claude.ai/artifact/9DTPyW1iNoyTCN4CMJJbFa#wd58 |
 | Dragonborn DLC families | WD-59 | https://claude.ai/artifact/9DTPyW1iNoyTCN4CMJJbFa#wd59 |
 | Followers | WD-61 | https://claude.ai/artifact/7kUzRSazGQdcZYztMC3a3d |
+| Named bosses, questline finals, the long tail | WD-62 | https://claude.ai/artifact/Bdv77DbCBrLru5zppmmc9K |
 
 Candidates still to confirm:
 

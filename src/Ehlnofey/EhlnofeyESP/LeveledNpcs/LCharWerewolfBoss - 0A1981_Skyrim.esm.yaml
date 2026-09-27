@@ -1,31 +1,9 @@
 FormKey: 0A1981:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharWerewolfBoss
+FormVersion: 40
 Version2: 3
 Entries:
-- Data:
-    Level: 1
-    Reference: 0A1972:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0A1972:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0A1972:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0A1973:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0A1974:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0A1975:Skyrim.esm
-    Count: 1
 - Data:
     Level: 1
     Reference: 0A1976:Skyrim.esm
