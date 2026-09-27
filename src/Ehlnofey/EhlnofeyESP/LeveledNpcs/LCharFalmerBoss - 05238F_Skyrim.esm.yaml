@@ -1,16 +1,14 @@
 FormKey: 05238F:Skyrim.esm
+VersionControl: 5468178
 EditorID: LCharFalmerBoss
-Version2: 6
+FormVersion: 43
+Version2: 8
 Entries:
 - Data:
     Level: 1
-    Reference: 063230:Skyrim.esm
+    Reference: 015CB3:Dawnguard.esm
     Count: 1
 - Data:
     Level: 1
-    Reference: 05238E:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 063230:Skyrim.esm
+    Reference: 015CB2:Dawnguard.esm
     Count: 1

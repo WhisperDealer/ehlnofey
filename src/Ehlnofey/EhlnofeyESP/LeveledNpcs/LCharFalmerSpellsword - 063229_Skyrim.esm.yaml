@@ -1,10 +1,32 @@
 FormKey: 063229:Skyrim.esm
+VersionControl: 5468178
 EditorID: LCharFalmerSpellsword
-Version2: 3
+FormVersion: 43
+Version2: 5
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
+- Data:
+    Level: 1
+    Reference: 063227:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 06322A:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 06322A:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 06322A:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 06322B:Skyrim.esm
+    Count: 1
 - Data:
     Level: 1
     Reference: 06322B:Skyrim.esm

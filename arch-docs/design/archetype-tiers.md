@@ -408,6 +408,24 @@ them at level 1 most of the time. `[verified]` from the records.
 | Dwarven mixed | `LCharDwarvenAutomaton` 01E783 | 6 · 12 · 16 · 24 · 30 · 36 | spider 16 ×3 · **sphere 24 ×3** · centurion 30 ×1 | **T4** (T4–T5) |
 | **Dremora** | `LCharDremoraMelee` 01E79B · `…Missile` · `…Warlock` | Churl 6 · Caitiff 12 · Kynval 19 · Kynreeve 27 · Markynaz 36 · Valkynaz 46 | **Markynaz ×1 · Valkynaz ×1** — mean 41 (WD-52) | **T6** (T6–T7) |
 
+> **Built (WD-50, 2026-09-27; user decisions). This replaces the three Falmer rows above.**
+> - **Rank and file:** the melee, archer, spellsword and shaman lists roll Gloomlurker ×1 · Nightprowler ×3 ·
+>   Shadowmaster ×2 (22/30/38, mean 31.3). That is a notch above the draugr: the hive is the deeper, harder
+>   dungeon. The melee list keeps its Dawnguard heavy-armor leaf at each rung.
+> - **Shamans:** they own their level, and it trailed the rung (14/19/25). The three kept rungs are raised to
+>   **22 / 30 / 38**, so the caster is as strong as the fighter beside it. That closes the shaman defect.
+> - **Boss:** pinned one rung above the mooks' top, to the Dawnguard **Warmonger boss, level 54** (melee and
+>   spellsword, 1 : 1). The boss leaves take their name from the rung template, so a lower boss would read the
+>   same as a mook. No mook is a Warmonger.
+> - **What Requiem had done:** it pinned every Falmer list, bosses included, to rung 05, so every Falmer was a
+>   Shadowmaster (38) and every boss was 44.
+> - **Chaurus:** `DLC1LCharChaurusNoHunter` now matches `LCharChaurus` at Chaurus ×3 · Reaper ×1 (12 / 20). The
+>   Chaurus Hunters and Frozen Falmer are left to the Dawnguard ticket.
+> - **Unchanged:** gear and loot are Falmer material only and were already flat. No quest injects into these
+>   lists.
+> - **Unknown:** what a shaman's nameplate shows. Dawnguard's shaman leaves carry no name and no `Traits` flag
+>   (CLAUDE.md naming gotcha).
+
 **The Falmer shaman defect is closed by construction.** Vanilla caps shamans at 25 while melee Falmer
 reach 38 `[verified]`; `lore-constraints.md` permits closing it. The rosters above put shamans at T4
 and melee at T3, so the caster is now the *stronger* of the pair — which is what a hive's spellcaster

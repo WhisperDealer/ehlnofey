@@ -1,11 +1,57 @@
 FormKey: 01E77D:Skyrim.esm
+VersionControl: 5468178
 EditorID: LCharFalmerMelee
-Version2: 6
+FormVersion: 43
+Version2: 9
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
 - Data:
     Level: 1
+    Reference: 023A9B:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00E8E8:Dawnguard.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023A9C:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023A9C:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023A9C:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00E8EE:Dawnguard.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00E8EE:Dawnguard.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00E8EE:Dawnguard.esm
+    Count: 1
+- Data:
+    Level: 1
     Reference: 023A9D:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023A9D:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00E8EF:Dawnguard.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00E8EF:Dawnguard.esm
     Count: 1

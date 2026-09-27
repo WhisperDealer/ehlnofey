@@ -234,7 +234,7 @@ mod, not a new-content mod. Ehlnofey changes *where the numbers come from*, and 
 
 ## Current phase
 
-**Phase 4 is under way and `Ehlnofey.esp` exists: 2,727 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
+**Phase 4 is under way and `Ehlnofey.esp` exists: 2,730 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
 `design/requiem-method`). Read **`arch-docs/design/requiem-method.md` first** — it is the live
 architecture doc, and its §6 is the current order of work. Everything below it in this section is
 the Phase 3 record, kept because most of it still holds, but **the architecture it decided has been
@@ -435,6 +435,15 @@ See `archetype-tiers.md` §3.1.
 - **Dragon priests** are all fixed at 50 already, so they needed no change. **Hulking Draugr stay out** (user).
 - **Castle Volkihar skeletons** take `Stats` from the draugr lists, so they now roll the same 21/28/36.
 - **Plugin size:** 2,727 records (+11 `NPC_`). See `archetype-tiers.md` §3.2.
+
+**Falmer are done (WD-50, 2026-09-27). Verified in game by the user.**
+- **Mooks:** Gloomlurker ×1 · Nightprowler ×3 · Shadowmaster ×2 (22/30/38, mean 31.3) across the melee, archer, spellsword and
+  shaman lists. Requiem had pinned every Falmer list to Shadowmaster 38 (bosses 44).
+- **Shamans** own their level. The three kept rungs are raised from 14/19/25 to their rung's 22/30/38 (shaman defect closed).
+- **Boss:** pinned to the Dawnguard Warmonger boss, level 54. Boss names are rung names, so it sits one rung above every mook.
+- **Chaurus:** the Dawnguard no-hunter list is aligned to Chaurus ×3 · Reaper ×1. Gear and loot were already flat, and no
+  quest injects into these lists.
+- **Plugin size:** 2,730 records (+3 `NPC_`; 6 `LVLN` re-authored). See `archetype-tiers.md` §3.3.
 
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
@@ -1041,6 +1050,7 @@ A reader-facing page per finished faction, in one shared style. Each faction tic
 | Wildlife & monsters + CC bonewolf | WD-54 | https://claude.ai/artifact/S7sQbvsHBKNVF21tsUAche |
 | Dremora & atronachs | WD-52 | https://claude.ai/artifact/FZrcU1aZLGgqj9aFQkfPiW |
 | Draugr & dragon priests | WD-49 | https://claude.ai/artifact/Jkxn5D8LCUjtrZrwfrYKVE |
+| Falmer & chaurus | WD-50 | https://claude.ai/artifact/V2nSnDTicPohnWL8mFaUNV |
 
 Candidates still to confirm:
 

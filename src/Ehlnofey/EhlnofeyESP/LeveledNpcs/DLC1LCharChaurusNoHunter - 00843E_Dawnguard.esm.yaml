@@ -1,7 +1,17 @@
 FormKey: 00843E:Dawnguard.esm
+VersionControl: 5468178
 EditorID: DLC1LCharChaurusNoHunter
+FormVersion: 43
 Version2: 3
 Entries:
+- Data:
+    Level: 1
+    Reference: 0A5600:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0A5600:Skyrim.esm
+    Count: 1
 - Data:
     Level: 1
     Reference: 0A5600:Skyrim.esm

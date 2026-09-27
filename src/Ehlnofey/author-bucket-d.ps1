@@ -350,6 +350,26 @@ foreach ($d in @(
 Add-Spec '042480:Skyrim.esm' 'LCharDraugrBoss'               @{ Gates = @{ 40 = 1; 50 = 1 } }
 Add-Spec '0DD9D8:Skyrim.esm' 'LCharDraugrBossNoDragonPriest' @{ Gates = @{ 21 = 1; 30 = 1 } }
 
+# 3.3 Falmer (WD-50, user 2026-09-27): Falmer 9 · Skulker 15 · Gloomlurker 22 · Nightprowler 30 · Shadowmaster 38 ·
+#     Warmonger 48 (DLC1), at gates 1/15/22/30/38/48. Roster Gloomlurker x1 · Nightprowler x3 · Shadowmaster x2, mean 31.3:
+#     a notch above the draugr (27.4) - the hive is the deeper, harder dungeon. Warmonger is kept for the boss. The melee
+#     list holds a regular and a DLC1 heavy-armor leaf at each gate; a gate weight keeps both. Build against Dawnguard's
+#     winning records. Requiem had pinned every Falmer list to rung 05 (Shadowmaster 38).
+#     Shamans roll the same rungs; their leaves own their level (5/8/14/19/25/35 in vanilla, the "shaman defect") and are
+#     raised to their rung's 22 / 30 / 38 in author-retargets.ps1.
+$falmerLadder = @{ 22 = 1; 30 = 3; 38 = 2 }
+foreach ($d in @(
+    @('01E77D:Skyrim.esm', 'LCharFalmerMelee'),     @('01E77E:Skyrim.esm', 'LCharFalmerMissile'),
+    @('063229:Skyrim.esm', 'LCharFalmerSpellsword'), @('01E77F:Skyrim.esm', 'LCharFalmerShaman'))) {
+    Add-Spec $d[0] $d[1] @{ Gates = $falmerLadder }
+}
+# 3.3 Falmer boss: PINNED one rung above the mooks' top (user, WD-50): gate 64 = DLC1EncFalmer06MeleeBoss and
+#     ...SpellswordBoss, "Falmer Warmonger", level 54. Boss leaves take their name from the rung template, so a lower boss
+#     would read the same as a mook ("Falmer Shadowmaster" 44 over Shadowmaster 38 mooks); no mook is a Warmonger.
+Add-Spec '05238F:Skyrim.esm' 'LCharFalmerBoss' @{ Gates = @{ 64 = 1 } }
+# 4 Chaurus: the Dawnguard no-hunter list takes LCharChaurus's mix, Chaurus x3 · Reaper x1 (user, WD-50).
+Add-Spec '00843E:Dawnguard.esm' 'DLC1LCharChaurusNoHunter' @{ Gates = @{ 1 = 3; 20 = 1 } }
+
 # 3.1 Thalmor (WD-48, user 2026-09-26): a specialist force sent into Skyrim, so better than the average soldier.
 #     Only the EncThalmor00* templates carry a name ("Thalmor Soldier" / "Thalmor Wizard"); every rung leaf is
 #     nameless and takes Traits, so each band shows one name at every level: PINNED, all three (WD-42).

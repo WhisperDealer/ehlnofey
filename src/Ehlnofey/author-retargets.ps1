@@ -268,6 +268,13 @@ $edits = @(
     # The generic boss is a Death Overlord at 45 (user): the plain one is raised from 34 to match the Ebony one, so the two
     # differ only in gear. Its EncDraugr05Boss1H/2H leaves take Stats from it.
     @{ Npc = '04247E:Skyrim.esm'; From = '    Level: 34'; To = '    Level: 45' }   # EncDraugr05TemplateBoss
+
+    # ---- Falmer shamans take their rung's level (WD-50, user 2026-09-27): the caster is as strong as the fighter beside
+    # it. The shaman leaves own their level (Dawnguard's winning records carry no Stats flag) and AutoCalcStats is set.
+    # DLC1_BF_FrozenFalmerShamanTemplate templates on 05 for spells and model only, not Stats.
+    @{ Npc = '025D2E:Skyrim.esm'; From = '    Level: 14'; To = '    Level: 22' }   # EncFalmer03Shaman (Gloomlurker rung)
+    @{ Npc = '025D30:Skyrim.esm'; From = '    Level: 19'; To = '    Level: 30' }   # EncFalmer04Shaman (Nightprowler rung)
+    @{ Npc = '025D32:Skyrim.esm'; From = '    Level: 25'; To = '    Level: 38' }   # EncFalmer05Shaman (Shadowmaster rung)
 )
 
 foreach ($e in $edits) {

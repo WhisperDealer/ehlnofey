@@ -1,7 +1,29 @@
 FormKey: 01E77E:Skyrim.esm
+VersionControl: 5468178
 EditorID: LCharFalmerMissile
-Version2: 6
+FormVersion: 43
+Version2: 8
 Entries:
+- Data:
+    Level: 1
+    Reference: 025D24:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 025D26:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 025D26:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 025D26:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 025D28:Skyrim.esm
+    Count: 1
 - Data:
     Level: 1
     Reference: 025D28:Skyrim.esm
