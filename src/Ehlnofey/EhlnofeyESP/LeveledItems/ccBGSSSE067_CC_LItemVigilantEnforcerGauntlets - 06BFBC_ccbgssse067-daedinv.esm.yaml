@@ -1,0 +1,18 @@
+FormKey: 06BFBC:ccbgssse067-daedinv.esm
+EditorID: ccBGSSSE067_CC_LItemVigilantEnforcerGauntlets
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+- CalculateForEachItemInCount
+Entries:
+- Data:
+    Level: 1
+    Reference: 000D62:ccmtysse002-ve.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000D7C:ccmtysse002-ve.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 10BFF3:Skyrim.esm
+    Count: 1

@@ -234,7 +234,7 @@ mod, not a new-content mod. Ehlnofey changes *where the numbers come from*, and 
 
 ## Current phase
 
-**Phase 4 is under way and `Ehlnofey.esp` exists: 3,004 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
+**Phase 4 is under way and `Ehlnofey.esp` exists: 3,013 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
 `design/requiem-method`). Read **`arch-docs/design/requiem-method.md` first** — it is the live
 architecture doc, and its §6 is the current order of work. Everything below it in this section is
 the Phase 3 record, kept because most of it still holds, but **the architecture it decided has been
@@ -509,7 +509,7 @@ See `archetype-tiers.md` §3.1.
     Bonemen.
 - **Generator changes.** `author-bucket-d.ps1` can now build a **new** `LVLN` from a vanilla one (`From =`). `author-retargets.ps1`
   now lets `Level =` share a row with the line ops.
-- **Plugin size:** 2,812 records (+58: 4 new lists, 54 overrides). The CC Daedric Invasion pack's Vigilant injector is **WD-64**.
+- **Plugin size:** 2,812 records (+58: 4 new lists, 54 overrides). The CC Daedric Invasion pack's Vigilant injector is **WD-64** (done, see below).
 
 **Followers are built (WD-61, 2026-09-27). This is not yet verified in game.**
 - **Fixed by role, set against the finished factions** (user). Requiem left them scaling. The ticket's planned tiers
@@ -547,6 +547,20 @@ See `archetype-tiers.md` §3.1.
 - **The other 111 still-scaling NPCs** get the level vanilla gives a level-25 player, clamped to their own min and max.
 - **Coverage audit:** no `PcLevelMult` actor is left in the base game or the DLC.
 - **Plugin size:** 3,004 records (+153 `NPC_`; 1 `LVLN` re-authored). See `archetype-tiers.md` §7.0.
+
+**The CC Daedric Invasion pack is handled (WD-64, 2026-09-27). This is not yet verified in game.**
+- **Its Vigilants are pinned at 35**, like ours. Its three sublists had rolled 14, 19 or 35.
+- **Its script never touched our lists.** It filled the pack's own Enforcer armor and crossbow lists with gated items from two
+  other CC packs: Vigil Veteran armor at 30, crossbows at 18 and 35. Those five properties are stripped and the items re-added at
+  level 1, along with the vanilla Vigilant gear the script also added (user: neutralize).
+- **Three new masters:** `ccbgssse067-daedinv.esm` (an `.esm`, not an `.esl`), `ccmtysse002-ve.esl` and
+  `ccffbsse002-crossbowpack.esl`. That makes **31 masters, 26 of them CC**.
+- **Generator changes:**
+  - `author-bucket-d.ps1` can pin a CC-defined `LVLN`.
+  - `author-injectors.ps1` can re-add into a list that is empty on disk.
+- **Plugin size:** 3,013 records (+9: the quest, 5 `LVLI`, 3 `LVLN`).
+- **How the script was read:** it was pulled from the pack's BSA and disassembled with a short Python PEX reader, because
+  `tools.json` has no `bsab` or `champollion` path. The pack's BSA is uncompressed.
 
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the `LvlQuestReward*` loot lists (WD-40). **Deferred (user, 2026-09-24):** the
@@ -832,7 +846,8 @@ Fixed now so Phase 4 does not have to argue about it:
   Hearthfire records, and Spriggit cannot write a FormKey whose plugin is not a master.
   **Revised 2026-09-26 (WD-48):** plus `ccedhsse003-redguard.esl` (22 CC, 27 in all), to raise its own Thalmor
   soldiers from 18 to 36. **Revised 2026-09-27:** plus `ccbgssse036-petbwolf.esl` (23 CC, 28 in all), to fix its Bonewolf,
-  Thrall Wolves and Necromancer. `$ccMasters` in `author-injectors.ps1` follows `Skyrim.ccc` order;
+  Thrall Wolves and Necromancer. **Revised 2026-09-27 (WD-64):** plus `ccbgssse067-daedinv.esm`, `ccmtysse002-ve.esl` and
+  `ccffbsse002-crossbowpack.esl` (26 CC, 31 in all). `$ccMasters` in `author-injectors.ps1` follows `Skyrim.ccc` order;
   `author-retargets.ps1` copies a CC-defined `NPC_` from `reference/mods/CreationClubYaml/`.
 - **EditorID prefix:** `EHL_`, then the domain, then the specific: `EHL_LVLI_DraugrBossHoard_T4`,
   `EHL_ECZN_BleakFalls`. Tier suffixes are `_T<n>` against the ladder in `design/tiers.md`.

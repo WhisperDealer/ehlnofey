@@ -31,6 +31,8 @@ ModHeader:
     FileSize: 0
   - Master: ccbgssse036-petbwolf.esl
     FileSize: 0
+  - Master: ccmtysse002-ve.esl
+    FileSize: 0
   - Master: ccbgssse050-ba_daedric.esl
     FileSize: 0
   - Master: ccbgssse052-ba_iron.esl
@@ -61,7 +63,11 @@ ModHeader:
     FileSize: 0
   - Master: ccbgssse057-ba_stalhrim.esl
     FileSize: 0
+  - Master: ccbgssse067-daedinv.esm
+    FileSize: 0
   - Master: ccvsvsse003-necroarts.esl
+    FileSize: 0
+  - Master: ccffbsse002-crossbowpack.esl
     FileSize: 0
   - Master: ccedhsse003-redguard.esl
     FileSize: 0

@@ -1,0 +1,34 @@
+FormKey: 1B2CCE:ccbgssse067-daedinv.esm
+EditorID: ccBGSSSE067_SubCharVigilantOfStendarr01
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+- CalculateForEachItemInCount
+Entries:
+- Data:
+    Level: 1
+    Reference: 10C48A:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 10C484:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 10C485:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 10C486:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 10C487:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 10C488:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 10C489:Skyrim.esm
+    Count: 1

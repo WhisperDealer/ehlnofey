@@ -1,0 +1,22 @@
+FormKey: 1B2CD0:ccbgssse067-daedinv.esm
+EditorID: ccBGSSSE067_SubCharVigilantOfStendarrEvenTonedMAccented01
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+- CalculateForEachItemInCount
+Entries:
+- Data:
+    Level: 1
+    Reference: 10C485:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 10C486:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 10C487:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 10C488:Skyrim.esm
+    Count: 1

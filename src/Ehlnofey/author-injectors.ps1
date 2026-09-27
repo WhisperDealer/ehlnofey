@@ -52,13 +52,14 @@ $loadOrder = @('01Skyrim', '02Update', '03Dawnguard', '04HearthFires', '05Dragon
 # Every CC plugin this file names, in Skyrim.ccc load order.
 $ccMasters = @(
     'ccasvsse001-almsivi.esm', 'ccbgssse001-fish.esm', 'ccbgssse002-exoticarrows.esl',
-    'ccbgssse014-spellpack01.esl', 'ccbgssse036-petbwolf.esl',
+    'ccbgssse014-spellpack01.esl', 'ccbgssse036-petbwolf.esl', 'ccmtysse002-ve.esl',
     'ccbgssse050-ba_daedric.esl', 'ccbgssse052-ba_iron.esl', 'ccbgssse054-ba_orcish.esl',
     'ccbgssse058-ba_steel.esl', 'ccbgssse059-ba_dragonplate.esl', 'ccbgssse061-ba_dwarven.esl',
     'ccbgssse064-ba_elven.esl', 'ccbgssse063-ba_ebony.esl', 'ccbgssse062-ba_dwarvenmail.esl',
     'ccbgssse060-ba_dragonscale.esl', 'ccbgssse056-ba_silver.esl', 'ccbgssse055-ba_orcishscaled.esl',
     'ccbgssse053-ba_leather.esl', 'ccbgssse051-ba_daedricmail.esl', 'ccbgssse057-ba_stalhrim.esl',
-    'ccvsvsse003-necroarts.esl', 'ccedhsse003-redguard.esl', 'cccbhsse001-gaunt.esl'
+    'ccbgssse067-daedinv.esm', 'ccvsvsse003-necroarts.esl', 'ccffbsse002-crossbowpack.esl', 'ccedhsse003-redguard.esl',
+    'cccbhsse001-gaunt.esl'
 )
 
 # ---------------------------------------------------------------- injector quests
@@ -75,6 +76,13 @@ $quests = @(
        Strip = @('LItemRobesCollegeConjuration', 'LItemRobesCollegeDestruction', 'LItemRobesConjuration', 'LItemRobesDestruction') }
     @{ Src = 'mods\CreationClubYaml\ccvsvsse003-necroarts\Quests\ccVSVSSE003_MainQuest - 0008B7_ccvsvsse003-necroarts.esl.yaml'
        Strip = @('LCharWarlockBossNecroFemaleCondescending', 'LCharWarlockBossNecroMaleCondescending', 'LCharWarlockNecroBossMaleElfHaughty') }
+    # Daedric Invasion (WD-64): its content-aware script (OnInit and every load) fills the pack's OWN Vigilant Enforcer
+    # and crossbow lists from two other CC packs, gated: Vigil Veteran armor at 30, crossbows at 18/35. It never touches
+    # our lists. The five target properties are stripped (the AddForms then hit None and do nothing); the items are
+    # re-added below at level 1. Its backpack and survival-mode additions are level 1 / not gear, and stay.
+    @{ Src = 'mods\CreationClubYaml\ccbgssse067-daedinv\Quests\ccBGSSSE067_Quest - 06BFC1_ccbgssse067-daedinv.esm.yaml'
+       Strip = @('ccBGSSSE067_CC_LItemVigilantEnforcerBoots', 'ccBGSSSE067_CC_LItemVigilantEnforcerGauntlets', 'ccBGSSSE067_CC_LItemVigilantEnforcerHelmet',
+                 'ccBGSSSE067_CC_LItemVigilantEnforcerTorso', 'ccBGSSSE067_CC_LItemWeaponCrossbows') }
 )
 $packQuests = [ordered]@{
     'ccbgssse050-ba_daedric'      = 'ccBGSSSE050_MiscQuest - 00081D'
@@ -250,6 +258,7 @@ $readdByPlace = @(
 
 $fish = 'ccbgssse001-fish.esm'; $arrows = 'ccbgssse002-exoticarrows.esl'; $spell = 'ccbgssse014-spellpack01.esl'
 $alm = 'ccasvsse001-almsivi.esm'; $necro = 'ccvsvsse003-necroarts.esl'
+$dinv = 'ccbgssse067-daedinv.esm'; $ve = 'ccmtysse002-ve.esl'; $xbow = 'ccffbsse002-crossbowpack.esl'
 $ccReadd = @(
     # fish: conjurer robes 01..05 (gates 1..40) + spellpack master robes Ench01/03/04/05 (1..40)
     @{ List = '10F9B0:Skyrim.esm'; Items = @(@("04D04D:$fish", 1), @("04D04C:$fish", 1), @("04D049:$fish", 1), @("000E53:$fish", 1), @("04D04A:$fish", 1),
@@ -282,6 +291,13 @@ $ccReadd = @(
     # MaleCondescending, pinned at 40 for want of a level-50 Breton M, takes one; the lists pinned at 50 take
     # none (WD-46, user 2026-09-26).
     @{ List = '0E106D:Skyrim.esm'; Items = @(,@("000924:$necro", 1)) }   # MaleCondescending: 06 BretonM
+    # Daedric Invasion (WD-64): what its script put into its own lists, all at level 1. The Enforcer lists are empty on
+    # disk; the script also added the four vanilla Vigilant gear lists to them at level 1, and those go back too.
+    @{ List = "06BFBB:$dinv"; Items = @(@("000D63:$ve", 1), @("000D7A:$ve", 1), @('10BFF2:Skyrim.esm', 1)) }   # EnforcerBoots: Enforcer, Veteran (30), LItemVigilantHeavyBoots
+    @{ List = "06BFBC:$dinv"; Items = @(@("000D62:$ve", 1), @("000D7C:$ve", 1), @('10BFF3:Skyrim.esm', 1)) }   # EnforcerGauntlets: Enforcer, Veteran (30), LItemVigilantHeavyGauntlets50
+    @{ List = "06BFBD:$dinv"; Items = @(@("000D65:$ve", 1), @("000D64:$ve", 1), @("000D7D:$ve", 1), @('10C460:Skyrim.esm', 1)) }   # EnforcerHelmet: Enforcer, Veteran full + helmet (30), LItemVigilantHood
+    @{ List = "06BFBE:$dinv"; Items = @(@("000D61:$ve", 1), @("000D7B:$ve", 1), @("000800:$ve", 1), @('10C45F:Skyrim.esm', 1)) }   # EnforcerTorso: Enforcer, Veteran + sash (30), LItemVigilantRobes
+    @{ List = "06BFC0:$dinv"; Items = @(@("00080B:$xbow", 1), @("00080C:$xbow", 1), @("00080D:$xbow", 1), @("00080E:$xbow", 1), @("00080F:$xbow", 1)) }   # Crossbows: Imperial, Nordic, Orcish (1), Silver (18), Stalhrim (35)
 )
 
 function Find-ListFile([string]$formKey) {
@@ -355,7 +371,9 @@ foreach ($r in ($readdByPlace + $ccReadd)) {
     $new   = @($r.Items | Where-Object { $lines -notcontains "    Reference: $($_[0])" })   # idempotent
     $flag  = $r.ContainsKey('AllLevels') -and -not ($lines -contains $allLevels)
     if ($new.Count -eq 0 -and -not $flag) { continue }
-    if ($lines -notcontains 'Entries:') { throw "no Entries: block in $path" }
+    # A list empty on disk (the Daedric Invasion Enforcer lists, filled only by script) has no Entries: block. Append one;
+    # Spriggit puts it back in canonical order on the round-trip.
+    if ($lines -notcontains 'Entries:') { $lines = @($lines + 'Entries:') }
     if ($flag -and $lines -notcontains 'Flags:') { throw "no Flags: block in $path" }
 
     $entries = New-Object System.Collections.ArrayList

@@ -229,6 +229,12 @@ foreach ($d in @(
     @('0034E8:Dawnguard.esm', 'LCharVigilantOfStendarrNordM'))) {
     Add-Spec $d[0] $d[1] @{ Gates = @{ 25 = 1 } }
 }
+# The CC Daedric Invasion pack's own Vigilants (WD-64): its LCharVigilantOfStendarr 1B2CCD (27 placements) rolls three
+# sublists of vanilla leaves, gated 1/9/14/19/25 (and the first holds only rung 03, level 14). Pinned to rung 05 like ours.
+Add-Spec '1B2CCF:ccbgssse067-daedinv.esm' 'ccBGSSSE067_SubCharVigilantOfStendarrEvenTonedF01'        @{ Gates = @{ 25 = 1 } }
+Add-Spec '1B2CD0:ccbgssse067-daedinv.esm' 'ccBGSSSE067_SubCharVigilantOfStendarrEvenTonedMAccented01' @{ Gates = @{ 25 = 1 } }
+Add-Spec '1B2CCE:ccbgssse067-daedinv.esm' 'ccBGSSSE067_SubCharVigilantOfStendarr01' @{ Pin = @('10C48A:Skyrim.esm', '10C484:Skyrim.esm',
+    '10C485:Skyrim.esm', '10C486:Skyrim.esm', '10C487:Skyrim.esm', '10C488:Skyrim.esm', '10C489:Skyrim.esm') }   # EncVigilantOfStendarr05 x7
 
 # ---- the biome ambient lists (4.1.2). Cap = the reference level of the biome's tier.
 Add-Spec '042293:Skyrim.esm' 'LCharAnimalPlainsPredator'      @{ Cap =  8 }   # T2
@@ -494,6 +500,13 @@ foreach ($d in $loadOrder) {
     $p = Join-Path $base "$d/LeveledNpcs"
     if (-not (Test-Path -LiteralPath $p)) { continue }
     foreach ($f in Get-ChildItem -LiteralPath $p -Filter '*.yaml') {
+        if ($f.Name -match '- ([0-9A-F]+)_(.+)\.yaml$') { $vix["$($Matches[1]):$($Matches[2])"] = $f.FullName }
+    }
+}
+# A list defined by a Creation Club plugin (WD-64): from that plugin's decompile. The plugin must be a master
+# (author-injectors.ps1 $ccMasters).
+foreach ($p in @(Get-ChildItem -Path 'reference/mods/CreationClubYaml/*/LeveledNpcs' -Directory -ErrorAction SilentlyContinue)) {
+    foreach ($f in Get-ChildItem -LiteralPath $p.FullName -Filter '*.yaml') {
         if ($f.Name -match '- ([0-9A-F]+)_(.+)\.yaml$') { $vix["$($Matches[1]):$($Matches[2])"] = $f.FullName }
     }
 }

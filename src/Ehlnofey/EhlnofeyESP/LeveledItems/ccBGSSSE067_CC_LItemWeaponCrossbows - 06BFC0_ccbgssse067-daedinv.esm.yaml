@@ -1,0 +1,30 @@
+FormKey: 06BFC0:ccbgssse067-daedinv.esm
+EditorID: ccBGSSSE067_CC_LItemWeaponCrossbows
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+- CalculateForEachItemInCount
+Entries:
+- Data:
+    Level: 1
+    Reference: 00D0EA:Dawnguard.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00080B:ccffbsse002-crossbowpack.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00080C:ccffbsse002-crossbowpack.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00080D:ccffbsse002-crossbowpack.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00080E:ccffbsse002-crossbowpack.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 00080F:ccffbsse002-crossbowpack.esl
+    Count: 1

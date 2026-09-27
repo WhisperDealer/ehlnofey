@@ -1,0 +1,22 @@
+FormKey: 06BFBE:ccbgssse067-daedinv.esm
+EditorID: ccBGSSSE067_CC_LItemVigilantEnforcerTorso
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+- CalculateForEachItemInCount
+Entries:
+- Data:
+    Level: 1
+    Reference: 000D61:ccmtysse002-ve.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000D7B:ccmtysse002-ve.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000800:ccmtysse002-ve.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 10C45F:Skyrim.esm
+    Count: 1

@@ -1,0 +1,23 @@
+FormKey: 06BFBD:ccbgssse067-daedinv.esm
+EditorID: ccBGSSSE067_CC_LItemVigilantEnforcerHelmet
+ChanceNone: 0.5
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+- CalculateForEachItemInCount
+Entries:
+- Data:
+    Level: 1
+    Reference: 000D65:ccmtysse002-ve.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000D64:ccmtysse002-ve.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000D7D:ccmtysse002-ve.esl
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 10C460:Skyrim.esm
+    Count: 1

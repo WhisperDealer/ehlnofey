@@ -124,6 +124,10 @@ The main table. `Vanilla rungs` are name (level) from `lore-constraints.md` §1 
 >   the Imperial bow is back in `PenitusGearWithBow`, and the steel dagger, gold, food, drink, torch and Imperial symbol in `PenitusGear`.
 > - **Vigilants 35**, pinned: every list (the two sublists that were capped at 5, the seven Hall voice lists that still rolled
 >   5–25 and Dawnguard's `…NordM`) rolls rung 05 only. Carcette 45, Tolan 35 (§7). Their gear was already flat.
+> - **The CC Daedric Invasion pack's Vigilants are 35 too** (WD-64). Its `LCharVigilantOfStendarr` 1B2CCD (27 placements)
+>   rolls three sublists of vanilla leaves that gated 1–25, one holding only rung 03 (14). All three are pinned to rung 05.
+>   Its content-aware script filled its own Enforcer armor and crossbow lists with gated items from two other CC packs
+>   (Vigil Veteran armor at 30, crossbows at 18 / 35). Those list properties are stripped and the items re-added at level 1.
 > - **Ghost wizards** roll the bandit ghosts' 5/9/14; Requiem had pinned them to 25.
 > - **Alik'r:** unchanged, except the level-1 `WERJ03` encounter (see the row).
 > - **Berserkers:** vanilla's `SubCharBandit02Melee2HBerserk` held the level-1 `EncBandit01` berserkers, so the dropped level-1 bandit
