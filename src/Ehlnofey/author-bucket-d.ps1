@@ -213,10 +213,22 @@ foreach ($d in @(
     Add-Spec $d[0] $d[1] @{ Gates = $banditBoss }
 }
 
-# ---- Vigilants of Stendarr, T2 (3.1: "5 - single gate"). The parent list is already flat; these two
-#      sublists are not. Capping at T2 leaves exactly the level-5 rung, which is what 3.1 describes.
-Add-Spec '10C45B:Skyrim.esm' 'SubCharVigilantOfStendarrEvenTonedF01'        @{ Cap = 8 }
-Add-Spec '10C45C:Skyrim.esm' 'SubCharVigilantOfStendarrEvenTonedMAccented01' @{ Cap = 8 }
+# ---- Vigilants of Stendarr (WD-56, user 2026-09-27): PINNED at 35. Every rung (5/9/14/19/25) is "Vigilant of Stendarr",
+#      so the band is pinned to rung 05 (gate 25) and author-retargets.ps1 raises its seven leaves 25 -> 35. Was Cap 8 on the
+#      two sublists (level 5 on the road) while the per-voice lists still rolled 5-25 in the Hall of the Vigilant.
+foreach ($d in @(
+    @('10C45B:Skyrim.esm',    'SubCharVigilantOfStendarrEvenTonedF01'),
+    @('10C45C:Skyrim.esm',    'SubCharVigilantOfStendarrEvenTonedMAccented01'),
+    @('10C461:Skyrim.esm',    'LCharVigilantOfStendarrRedguardF'),
+    @('10C462:Skyrim.esm',    'LCharVigilantOfStendarrDarkElfF'),
+    @('10C463:Skyrim.esm',    'LCharVigilantOfStendarrNordF'),
+    @('10C464:Skyrim.esm',    'LCharVigilantOfStendarrNordM01'),
+    @('10C465:Skyrim.esm',    'LCharVigilantOfStendarrNordM02'),
+    @('10C466:Skyrim.esm',    'LCharVigilantOfStendarrNordM03'),
+    @('10C467:Skyrim.esm',    'LCharVigilantOfStendarrNordM04'),
+    @('0034E8:Dawnguard.esm', 'LCharVigilantOfStendarrNordM'))) {
+    Add-Spec $d[0] $d[1] @{ Gates = @{ 25 = 1 } }
+}
 
 # ---- the biome ambient lists (4.1.2). Cap = the reference level of the biome's tier.
 Add-Spec '042293:Skyrim.esm' 'LCharAnimalPlainsPredator'      @{ Cap =  8 }   # T2
@@ -277,7 +289,8 @@ foreach ($d in @(
 #     the small spiders are dropped (was Cap 21 on the frost list, tracking the old T4 vampire).
 Add-Spec '01E775:Skyrim.esm'   'LCharVampireCompanion'      @{ Gates = @{ 5 = 1; 7 = 1; 13 = 1; 25 = 1 } }
 Add-Spec '0640BE:Skyrim.esm'   'LCharVampireCompanionFrost' @{ Gates = @{ 5 = 1; 7 = 1; 13 = 1; 25 = 1 } }
-Add-Spec '0029A2:Dawnguard.esm' 'DLC1LCharChaurusHunter' @{ Gates = @{ 1 = 3; 32 = 1 } } # Fledgling x3 Hunter x1
+# Chaurus Hunter 1:1 (WD-58, user 2026-09-27): Fledgling 16 / Hunter 32, mean 24. Was 3:1 (mean 20).
+Add-Spec '0029A2:Dawnguard.esm' 'DLC1LCharChaurusHunter' @{ Gates = @{ 1 = 1; 32 = 1 } }
 
 # ---- Wildlife and monsters (WD-54, user 2026-09-26). Creature levels live on the species record and stay vanilla
 #      (skeever 1 ... mammoth 38), except the hagraven (author-retargets.ps1). These lists only choose the species.
@@ -417,6 +430,60 @@ Add-Spec '02B128:Skyrim.esm' 'LCharThalmorMagic'     @{ Gates = @{ 44 = 1 } }
 Add-Spec '0ABEDD:Skyrim.esm' 'LCharThalmorMagicMale' @{ Gates = @{ 44 = 1 } }
 Add-Spec '07DCA9:Skyrim.esm' 'LCharThalmorMagicBoss' @{ Gates = @{ 52 = 1 } }
 
+# 3.1 Werewolves (WD-55, user 2026-09-27): Werewolf 1 / Savage 6 / Brute 12 / Skinwalker 20 / Beastmaster 28 / Vargr 38, each
+#     rung its own name. Skinwalker x1 / Beastmaster x3 / Vargr x2, mean 30, on a par with the Falmer. Requiem rolled all six.
+#     Sinding's LCharWerewolfBoss is left for the named-boss ticket.
+Add-Spec '01E791:Skyrim.esm' 'LCharWerewolf' @{ Gates = @{ 20 = 1; 28 = 3; 38 = 2 } }
+# 3.1 Silver Hand (WD-55, user: werewolf hunters, "a bit more capable than your average bandit"). They have no list of their
+#     own; every LvlSilverhand* took Stats from a bandit list. These three NEW lists (From = the vanilla bandit list they copy)
+#     keep the bandit rungs two up from the mooks: Highwayman 14 x1 / Plunderer 19 x3 / Marauder 25 x1, mean 19.2.
+#     author-retargets.ps1 points the Silver Hand records at them. Chiefs (Krev) stay on the bandit chief, 28.
+Add-Spec '000802:Ehlnofey.esp' 'EHL_LVLN_SilverHandMelee1H' @{ From = '039CFC:Skyrim.esm'; Gates = @{ 14 = 1; 19 = 3; 25 = 1 } }   # <- LCharBanditMelee1H
+Add-Spec '000803:Ehlnofey.esp' 'EHL_LVLN_SilverHandMelee2H' @{ From = '03DEC8:Skyrim.esm'; Gates = @{ 14 = 1; 19 = 3; 25 = 1 } }   # <- LCharBanditMelee2H
+Add-Spec '000804:Ehlnofey.esp' 'EHL_LVLN_SilverHandMissile' @{ From = '01E770:Skyrim.esm'; Gates = @{ 14 = 1; 19 = 3; 25 = 1 } }   # <- LCharBanditMissile
+
+# 3.1 Ghost wizards (WD-56, user): the same Outlaw/Thug/Highwayman roll as every other ghost, which take Stats from the
+#     bandit lists. Requiem had pinned this list to encGhost06Magic (Marauder, 25).
+Add-Spec '104B62:Skyrim.esm' 'LCharGhostWizard' @{ Gates = @{ 5 = 3; 9 = 4; 14 = 2 } }
+
+# 3.4 Dawnguard (WD-58, user 2026-09-27): only EncDawnguard00Template is named ("Dawnguard"), so the band is PINNED to rung
+#     06 (gate 25), which author-retargets.ps1 raises to 38, just above the Vigilants. The three voice lists are unused, and
+#     pinned the same way.
+foreach ($d in @(
+    @('014281:Dawnguard.esm', 'LCharDawnguardMelee1H'),
+    @('01A11B:Dawnguard.esm', 'LCharDawnguardMelee1HNordF'),
+    @('01A11A:Dawnguard.esm', 'LCharDawnguardMelee1HOrcM'),
+    @('01A11C:Dawnguard.esm', 'LCharDawnguardMelee1HRedguardM'))) {
+    Add-Spec $d[0] $d[1] @{ Gates = @{ 25 = 1 } }
+}
+# Gargoyle 13 / Brute 25 / Sentinel 43, x1 / x3 / x1, mean 26 (user). The small gargoyle also owns the player's summoned
+# gargoyle's level; that is unchanged.
+Add-Spec '017704:Dawnguard.esm' 'LCharGargoyle' @{ Gates = @{ 1 = 1; 25 = 3; 43 = 1 } }
+# Forgotten Vale, PINNED at 40 (user): each list shows one name. Melee05 / Shaman05 / Chaurus04 are the level-40 leaves.
+Add-Spec '015124:Dawnguard.esm' 'DLC1_BF_LCharFrozenFalmer'  @{ Gates = @{ 50 = 1 } }
+Add-Spec '015126:Dawnguard.esm' 'DLC1_BF_LCharFrozenShaman'  @{ Gates = @{ 50 = 1 } }
+Add-Spec '01511A:Dawnguard.esm' 'DLC1_BF_LCharFrozenChaurus' @{ Gates = @{ 40 = 1 } }
+
+# 3.4 Dragonborn (WD-59, user 2026-09-27). The Solstheim bandits (Reavers) are on the mainland ladder above.
+# Riekling 6 x2 / Scout 11 x3 / Hunter 16 x2. The Warrior (23) sits out. The Thirsk list has its rungs at gates 1/15/32.
+Add-Spec '01B653:Dragonborn.esm' 'DLC2LCharRieklingMelee'       @{ Gates = @{ 1 = 2; 8 = 3; 15 = 2 } }
+Add-Spec '01B654:Dragonborn.esm' 'DLC2LCharRieklingMissile'     @{ Gates = @{ 1 = 2; 8 = 3; 15 = 2 } }
+Add-Spec '038AB6:Dragonborn.esm' 'DLC2LCharRieklingThirskMelee' @{ Gates = @{ 1 = 2; 15 = 3; 32 = 2 } }
+# Cultist 12 / Adept 19 / Ascendant 27 / Master 36 / Arch Cultist 46: the warlock shape, 19 x2 / 27 x3 / 36 x1. Cultist04 sits
+# at gates 18 and 19 in the plain list.
+Add-Spec '030CDC:Dragonborn.esm' 'DLC2LCharCultist'         @{ Gates = @{ 18 = 1; 19 = 1; 27 = 3; 36 = 1 } }
+Add-Spec '03564D:Dragonborn.esm' 'DLC2LCharCultistSummoner' @{ Gates = @{ 19 = 2; 27 = 3; 36 = 1 } }
+# Apocrypha: Seekers and Lurkers take Traits from rung 1, so every rung shows one name. PINNED: Seeker 32, Lurker 44.
+Add-Spec '028E87:Dragonborn.esm' 'DLC2LCharSeeker' @{ Gates = @{ 32 = 1 } }
+Add-Spec '01B64D:Dragonborn.esm' 'DLC2LCharLurker' @{ Gates = @{ 45 = 1 } }
+# Ash Spawn 20 and Skirmisher 30 both show "Ash Spawn"; the rung is 30, with the Immolator (40) at x1.
+foreach ($d in @(
+    @('01B63C:Dragonborn.esm', 'DLC2LCharAshSpawn1H'),
+    @('0322BB:Dragonborn.esm', 'DLC2LCharAshSpawn2H'),
+    @('0322C2:Dragonborn.esm', 'DLC2LCharAshSpawnMagic'))) {
+    Add-Spec $d[0] $d[1] @{ Gates = @{ 30 = 3; 40 = 1 } }
+}
+
 # ---------------------------------------------------------------- run
 
 $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
@@ -432,9 +499,12 @@ foreach ($d in $loadOrder) {
 $done = 0; $dropped = 0
 foreach ($key in $spec.Keys) {
     $s = $spec[$key]
-    $vpath = $vix[$key]
-    if (-not $vpath) { throw "no vanilla LeveledNpcs record for $key ($($s.Id))" }
+    # From: a NEW list (our own FormKey) built from a vanilla one; the FormKey and EditorID lines are rewritten below.
+    $srcKey = if ($s.Rule.ContainsKey('From')) { $s.Rule.From } else { $key }
+    $vpath = $vix[$srcKey]
+    if (-not $vpath) { throw "no vanilla LeveledNpcs record for $srcKey ($($s.Id))" }
     $leaf = Split-Path $vpath -Leaf
+    if ($s.Rule.ContainsKey('From')) { $leaf = "$($s.Id) - $($key -replace ':', '_').yaml" }
     $out = Join-Path $dst $leaf
 
     if ($s.Rule.ContainsKey('Drop')) {
@@ -497,7 +567,13 @@ foreach ($key in $spec.Keys) {
     if ($kept.Count -eq 0) { throw "roster for $($s.Id) ($key) selected no entries - check the gates" }
 
     $final = New-Object System.Collections.ArrayList
-    foreach ($l in $pre)  { [void]$final.Add($l) }
+    foreach ($l in $pre)  {
+        if ($s.Rule.ContainsKey('From')) {
+            if ($l -match '^FormKey: ')  { $l = "FormKey: $key" }
+            if ($l -match '^EditorID: ') { $l = "EditorID: $($s.Id)" }
+        }
+        [void]$final.Add($l)
+    }
     foreach ($l in $kept) { [void]$final.Add($l) }
     foreach ($l in $post) { [void]$final.Add($l) }
     [System.IO.File]::WriteAllLines((Join-Path (Get-Location) $out), $final, $utf8NoBom)

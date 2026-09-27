@@ -101,15 +101,33 @@ The main table. `Vanilla rungs` are name (level) from `lore-constraints.md` §1 
 | **Thalmor soldier** | `LCharThalmorMelee1H` 02B129 + 4 siblings | 4 · 12 · 20 · 28 · 36 | **36 only** (pinned — WD-48) | **T5–T6** |
 | **Thalmor wizard** | `LCharThalmorMagic` 02B128 · `…MagicMale` 0ABEDD | 4 · 12 · 20 · 28 · 36 · 44 | **44 only** (pinned — WD-48) | **T6** |
 | Thalmor boss | `LCharThalmorMagicBoss` 07DCA9 | 14 · 23 · 32 · 40 · 50 | **50 only** (pinned — WD-48) | **T7** |
-| **Alik'r** | `LCharAlikrMelee1H` 06766F | 1 · 6 · 14 · 24 · 34 · 44 | Forager-tier 6 ×2 · **14 ×3** · 24 ×1 | **T3** (T2–T4) |
+| **Alik'r** | `LCharAlikrMelee1H` 06766F | 1 · 6 · 14 · 24 · 34 · 44 | ~~6 ×2 · 14 ×3 · 24 ×1~~ **left flat: the list feeds one ghost.** The real Alik'r are quest NPCs at **30** (Kematu 35); the `WERJ03` encounter fixed 1 → 30 (WD-56) | **T5** |
 | **Vampire** | `LCharVampire` 033973 + 4 voice lists | Fledgling 1 · Vampire 6 · Blooded 12 · Mistwalker 20 · Nightstalker 28 · Ancient 38 · Volkihar 48 · Nightlord 60 (DLC1) | Nightstalker ×1 · **Ancient ×3** · Volkihar ×2 — mean 39.7 (WD-47) | **T6** (T5–T7) |
 | Vampire boss | `LCharVampireBoss` 0339A9 + 3 race lists | Master Vampire 14 · 23 · 31 · 42 · Volkihar Master 53 · Nightmaster 65 (DLC1) | **65 only** (Nightmaster; pinned — WD-47) | **above T7** |
-| **Werewolf** | `LCharWerewolf` 01E791 | 1 · 6 · 12 · 20 · 28 · 38 | 12 ×2 · **20 ×3** · 28 ×1 | **T4** (T3–T5) |
-| **Penitus Oculatus** | `LCharPenitusOculatus` 07D99F | 1 · 4 · 8 · 13 · 18 · 23 | 8 ×2 · **13 ×3** · 18 ×1 | **T3** (T2–T4) |
-| **Ghost** | `LCharGhostWizard` 104B62 | 1 · 5 · 9 · 14 · 19 · 25 | 5 ×2 · **9 ×3** · 14 ×1 | **T2** (T2–T3) |
+| **Werewolf** | `LCharWerewolf` 01E791 | Werewolf 1 · Savage 6 · Brute 12 · Skinwalker 20 · Beastmaster 28 · Vargr 38 | ~~12 ×2 · 20 ×3 · 28 ×1~~ **Skinwalker ×1 · Beastmaster ×3 · Vargr ×2** — mean 30 (WD-55) | **T5** (T4–T6) |
+| **Silver Hand** | `EHL_LVLN_SilverHand{Melee1H,Melee2H,Missile}` 0x802–0x804 (new) | bandit rungs (no list of their own) | **Highwayman 14 ×1 · Plunderer 19 ×3 · Marauder 25 ×1** — mean 19.2; bosses (Krev) stay on the bandit chief, 28 (WD-55) | **T4** (T3–T5) |
+| **Penitus Oculatus** | `LCharPenitusOculatus` 07D99F | 1 · 4 · 8 · 13 · 18 · 23 | ~~8 ×2 · 13 ×3 · 18 ×1~~ **36 only** (rung 06 raised 23 → 36, pinned — WD-56) | **T5–T6** |
+| **Ghost** | `LCharGhostWizard` 104B62 | 1 · 5 · 9 · 14 · 19 · 25 | Outlaw 5 ×3 · **Thug 9 ×4** · Highwayman 14 ×2, like every other ghost (WD-56) | **T2** (T2–T3) |
 | **Witch** | `LCharWitchAny` 074F9D + Fire/Ice/Storm | Witch 4 · Hag 8 → **19 · 27** | Witch ×2 · **Hag ×3** — mean 23.8 (2026-09-27) | **T4** (T4–T5) |
-| **Vigilant of Stendarr** | `LCharVigilantOfStendarr` 0BFB53 | 5 — single gate | *(unchanged — already flat)* | **T2** |
-| **Dawnguard** | `LCharDawnguardMelee1H` 014281 | 1 · 5 · 9 · 14 · 19 · 25 | 9 ×2 · **14 ×3** · 19 ×1 | **T3** (T2–T4) |
+| **Vigilant of Stendarr** | `LCharVigilantOfStendarr` 0BFB53 (2 sublists) + 8 voice lists | 5 · 9 · 14 · 19 · 25 (not a single gate — see below) | **35 only** (rung 05 raised 25 → 35, pinned — WD-56) | **T5–T6** |
+| **Dawnguard** | `LCharDawnguardMelee1H` 014281 + 3 voice lists | 1 · 5 · 9 · 14 · 19 · 25 | **38 only** (rung 06 raised 25 → 38, pinned — WD-58) | **T6** |
+
+> **Werewolves, Silver Hand, minor factions (WD-55 / WD-56, user 2026-09-27). Verified in game by the user.**
+> - **Werewolves** keep their six named rungs; the list rolls Skinwalker ×1 · Beastmaster ×3 · Vargr ×2. Sinding's boss list is
+>   left for the named-boss ticket. **Werebears 30**: the three placed Snowclad Ruins werebears (were 17), the `DLC2WE07` trio (took
+>   `Stats` from bandit berserkers, 5–14; now own it) and `DLC2EncWerebear` (Torkild and the Beast Stone summon, 25 → 30).
+> - **Silver Hand** had no list: every `LvlSilverhand*` took `Stats` from a bandit list. They now point at three new lists built
+>   from the same bandit rungs, two up from the mooks. The ambush and `MeleeAny` records lose their race/voice list and draw from the
+>   one-handed list. Krev and the other two bosses stay on the bandit chief (28).
+> - **Penitus Oculatus 36**, level with the Thalmor soldiers. The Katariah archers (`LvlPenitusOculatusMissileAmbush`) lacked the
+>   `Stats` flag and were level 1 (vanilla bug); fixed. **Gear:** bucket B had stripped their bow and gear lists (the Imperial bug):
+>   the Imperial bow is back in `PenitusGearWithBow`, and the steel dagger, gold, food, drink, torch and Imperial symbol in `PenitusGear`.
+> - **Vigilants 35**, pinned: every list (the two sublists that were capped at 5, the seven Hall voice lists that still rolled
+>   5–25 and Dawnguard's `…NordM`) rolls rung 05 only. Carcette 45, Tolan 35 (§7). Their gear was already flat.
+> - **Ghost wizards** roll the bandit ghosts' 5/9/14; Requiem had pinned them to 25.
+> - **Alik'r:** unchanged, except the level-1 `WERJ03` encounter (see the row).
+> - **Berserkers:** vanilla's `SubCharBandit02Melee2HBerserk` held the level-1 `EncBandit01` berserkers, so the dropped level-1 bandit
+>   rung still rolled 3 times in 9 for every berserker and berserker ghost. Its leaves are now the `EncBandit02` (Outlaw) ones.
 
 **Thalmor (WD-48, user 2026-09-26). Levels and gear verified in game by the user.** A specialist force sent into Skyrim, so better than
 the average soldier. Only the `EncThalmor00*` templates carry a name ("Thalmor Soldier", "Thalmor Wizard"), and every
@@ -478,15 +496,33 @@ in step.
 |---|---|---|---|---|
 | **Dragon** | `LCharDragonAny` 05EACF | Dragon 10 · Blood 20 · Frost 30 · Elder 40 · Ancient 50 · (Revered 62 · Legendary 75) | ~~Dragon ×2 · Blood ×3 · Frost ×2 · Elder ×1~~ → **Dragon 50 ×2 · Blood 55 ×3 · Frost 60 ×2 · Elder 65 ×2 · Ancient 70 ×1** (WD-53, below) | **above T7** (mean 58.5) |
 | Dragon (Solstheim) | `DLC2LCharDragonAny` 036135 | + Serpentine 58 | as above · **Serpentine 72 ×2** | **above T7** (mean 60.75) |
-| **Riekling** | `DLC2LCharRieklingMelee` 01B653 | 6 · 11 · 16 · 23 | 6 ×2 · **11 ×3** · 16 ×2 | **T2** (T2–T4) |
-| **Ash Spawn** | `DLC2LCharAshSpawnAll` 0322BD | 20 — single gate | *(unchanged — already flat)* | **T4** |
-| **Cultist** | `DLC2LCharCultist` 030CDC | 12 · 19 · 27 · 36 · 46 | 19 ×2 · **27 ×3** · 36 ×1 | **T5** (T4–T6) |
-| **Seeker** | `DLC2LCharSeeker` 028E87 | 21 · 32 · 42 | 21 ×1 · **32 ×3** · 42 ×1 | **T5** (T4–T6) |
-| **Lurker** | `DLC2LCharLurker` 01B64D | 24 · 34 · 44 · 54 | 34 ×2 · **44 ×2** | **T6** (T5–T6) |
-| **Gargoyle** | `LCharGargoyle` 017704 | 13 · 25 · 43 | 13 ×1 · **25 ×3** · 43 ×1 | **T4** (T3–T6) |
-| **Chaurus Hunter** | `DLC1LCharChaurusHunter` 0029A2 | 16 · 32 | 16 ×2 · **32 ×1** | **T4** (T4–T5) |
-| **Armored Troll** | `DLC1LCharTrollArmored` 00D0BB | 14 · 22 | 14 ×2 · **22 ×1** | **T3** (T3–T4) |
-| **Solstheim bandit** | `DLC2LCharBanditMelee1H` 01E8A9 | parallel records, 1–25 | **mirror §3.1's mainland bandit exactly** | **T2** |
+| **Riekling** | `DLC2LCharRieklingMelee` 01B653 · `…Missile` 01B654 · `…ThirskMelee` 038AB6 | 6 · 11 · 16 · 23 | 6 ×2 · **11 ×3** · 16 ×2 (WD-59); mounted rieklings unchanged (25/32/40) | **T2** (T2–T4) |
+| **Ash Spawn** | `DLC2LCharAshSpawn1H` 01B63C · `…2H` 0322BB · `…Magic` 0322C2 | Ash Spawn 20 · Skirmisher 30 · Immolator 40 (not a single gate) | **30 ×3** · Immolator 40 ×1 (20 and 30 share a name; WD-59) | **T5** (T5–T6) |
+| **Cultist** | `DLC2LCharCultist` 030CDC · `…Summoner` 03564D | 12 · 19 · 27 · 36 · 46 | 19 ×2 · **27 ×3** · 36 ×1 (WD-59) | **T5** (T4–T6) |
+| **Seeker** | `DLC2LCharSeeker` 028E87 | 21 · 32 · 42 | ~~21 ×1 · 32 ×3 · 42 ×1~~ **32 only** (one name shows — pinned, WD-59) | **T5** |
+| **Lurker** | `DLC2LCharLurker` 01B64D | 24 · 34 · 44 · 54 | ~~34 ×2 · 44 ×2~~ **44 only** (pinned, WD-59) | **T6** |
+| **Gargoyle** | `LCharGargoyle` 017704 | 13 · 25 · 43 | 13 ×1 · **25 ×3** · 43 ×1 — mean 26 (WD-58) | **T4** (T3–T6) |
+| **Chaurus Hunter** | `DLC1LCharChaurusHunter` 0029A2 | 16 · 32 | ~~16 ×2 · 32 ×1~~ **16 ×1 · 32 ×1** — mean 24 (WD-58) | **T4** (T3–T5) |
+| **Armored Troll** | `DLC1LCharTrollArmored` 00D0BB | 14 · 22 | ~~14 ×2 · 22 ×1~~ rungs raised: **26 ×1 · 36 ×1** — mean 31 (WD-58) | **T5** (T5–T6) |
+| **Frozen Falmer / Shaman / Chaurus** | `DLC1_BF_LCharFrozen{Falmer,Shaman,Chaurus}` 015124 / 015126 / 01511A | 1 · 10 · 20 · 30 · 40 (chaurus 10–50) | **40 only** (one name each — pinned, WD-58) | **T6** |
+| **Solstheim bandit** | `DLC2LCharBanditMelee1H` 01E8A9 | parallel records, 1–25 | **mirrors §3.1's mainland bandit** (5 ×3 · 9 ×4 · 14 ×2; chief 28) — already built | **T2** |
+
+> **Dawnguard and Dragonborn families (WD-58 / WD-59, user 2026-09-27). Verified in game by the user.**
+> - **Dawnguard 38**, just above the Vigilants. `DLC1EncHunterTemplate` owns Agmaer, Beleval and the Fort's guards: its live
+>   Requiem graft of 50 is now 38 (WD-61 may refine the two followers). **Weapons:** every mook carried only the warhammer, because
+>   bucket B stripped Requiem's war-axe lists; the Dawnguard war axe is back in `LItemDawnguardWeaponAny`, 1:1.
+> - **Armored trolls:** the Armored Frost Troll took `Stats` from `EncTrollFrost` (every frost troll), so it owns its level now. The
+>   tamed follower trolls follow both.
+> - **Soul Cairn:** Keepers **50**, the Reaper **65** (Requiem grafts 80 / 100). The Keepers still drop their Dragonbone weapons (user:
+>   a place reward, kept). The Bonemen archers' `LItemArrowsAll` (CC magic arrows) is now the bandit arrow list.
+> - **Forgotten Vale:** Frozen Falmer, Frozen Shaman and Frozen Chaurus pinned at 40. The Frost Giant (50) and the Earth Mother (30)
+>   are kept as place exceptions.
+> - **Solstheim:** the Raven Rock attack's Ash Spawn (two `PcLevelMult` records) fixed at 30. The Frost Giant 32 → 38, level with the
+>   mainland giants. **Haknir 55** (the extract had grafted 200). Karstaag 90 and the Ebony Warrior 80 are kept (§7).
+> - **Solstheim chest loot:** the eight `DLC2LItemWeapon*` lists (plain and boss chests alike) lose glass, Stalhrim, ebony, the
+>   Daedric sublists and the almsivi ebony mace and scimitar. Those 34 go into `EHL_LVLI_SolstheimBossWeaponRare` 0x805, added to the
+>   three boss-chest lists (`DLC2Loot{Bandit,Draugr,Dwarven}Weapon100`), so a boss chest's weapon is glass or better 1 time in 10 (1 in 11 in Dwemer chests).
+>   The Town lists keep their almsivi re-add.
 
 > **Dragons, as built (WD-53, user 2026-09-27): endgame content, level 50 minimum, types kept.** The T4/T5 rosters above
 > were superseded. Every dragon type is raised on the one template that owns its level, keeping vanilla's order and names:
@@ -691,8 +727,8 @@ No edit. Listed so the audit script knows they are deliberate. `[verified]`
 | Skeleton · Deer · Elk | 1–2 | T1 |
 | **Wolf** | **5** (vanilla 2; WD-54, user) | **T1–T2** |
 | Death Hound | 5 | T2 |
-| Vigilant of Stendarr | 5 | T2 |
-| Ash Spawn | 20 | T4 |
+| ~~Vigilant of Stendarr~~ | ~~5~~ — not class C: a five-rung ladder, now pinned at **35** (§3.1, WD-56) | T5–T6 |
+| ~~Ash Spawn~~ | ~~20~~ — a 20/30/40 ladder, now **30 ×3 · 40 ×1** (§3.4, WD-59) | T5 |
 | **Giant** | **38** (vanilla 32; WD-54, user: on a par with mammoths) | **T6** |
 | **Hagraven** | **40** (vanilla 20; WD-54, user) | **T6** |
 | **Bonewolf** (CC `ccbgssse036-petbwolf`) and its Thrall Wolves | **12** (were ×1 [5–30] / [5–60]; user 2026-09-27) | **T3** |
@@ -709,10 +745,20 @@ never honoured zones anyway (`engine-behaviour.md` §1), so flattening changes n
 |---|---|---|
 | City guards | ×1 [20–50] | ~~21 (T4)~~ **25** (WD-45) |
 | Imperial / Stormcloak soldiers | ×0.25 [1–50] | ~~14 (T3)~~ **25** (WD-44) |
-| Hunters | ×0.5 [5–15] | **8 (T2)** |
-| Nightingales | ×1 [15–45] | **30 (T5)** |
-| `WE*` world encounters | various | **8 (T2)** default |
+| Hunters (`EncHunter00Template` 073FBE, also farmers, fishermen, pilgrims, trappers) | ×0.5 [5–15] | ~~8 (T2)~~ **10** (WD-57; Requiem 20) |
+| Nightingales | ×1 [15–45] | ~~30 (T5)~~ **45** kept (Requiem's graft; late Thieves Guild, below Mercer 50 — WD-57) |
+| `WE*` adventurers (9 templates) | ×1.1 [6–∞] | ~~8 (T2)~~ **25** (WD-57) |
+| `WEThiefTemplate` · `WEAssassinTemplate` (the "marked for death" DB assassin) | ×1.1 [6–45] | **19 · 25** (WD-57; Requiem 25 · 45) |
+| Dark Brotherhood Sanctuary · Initiates | ×1 | **45–50 kept · 25** (WD-57) |
+| Morag Tong (`DLC2LvlMoragTong{Melee1H,Missile}`) | bandit ladder | **30**, own `Stats`, real class (WD-57) |
 | Zahkriisos | ×1 [25–60] | **60** — matches his fixed siblings |
+
+> **World encounters and assassins (WD-57, user 2026-09-27). Verified in game by the user.** The level sits on the record that
+> owns it, via `author-retargets.ps1` `Level = N` (no SkyPatcher). Also fixed: the Solstheim netch hunters `DLC2WE15Hunter` 20 (were
+> ×0.75 [30–50]); `WEDL05Thug` 14, `WEDL07Madwoman` 6, `WEDL08DeepInHisCups` 12, the four DB torture victims 1. The Morag Tong had
+> the placeholder class `EncClassDremoraMelee`, so they get CombatAssassin / CombatScout with their own level. The ranged adventurer
+> and the Morag Tong archers carried `LItemArrowsAll` (CC magic arrows); now the bandit arrow list. The Spectral Assassin (60), the
+> stray dog and Viding are left to WD-61 / WD-62.
 
 **Lever (superseded):** SkyPatcher was the plan; the shipped architecture has no rules, so the lever is an
 `NPC_` override of the record that **owns** the level — `author-retargets.ps1`, `Level = N` edits.
@@ -779,7 +825,7 @@ rule-set — hand-setting is the point.
 | Junior Companions — Athis, Njada, Ria, Torvar | **T3** (14) | Whelps |
 | Housecarls (incl. Hearthfire) | **T4** (21) | Hold-appointed warriors — **equal to a city guard**, which is exactly what they are |
 | Senior Companions — Aela, Farkas, Vilkas | **T5** (30) | Circle members, veterans |
-| Dawnguard followers — Agmaer, Beleval, Celann, Durak, Ingjard, Florentius | **T4** (21) | Trained order, mid-campaign |
+| Dawnguard followers — Agmaer, Beleval, Celann, Durak, Ingjard, Florentius | **T4** (21) | Trained order, mid-campaign. **Agmaer and Beleval are 38 today** (WD-58): they take `Stats` from `DLC1EncHunterTemplate`, set to the Dawnguard pin |
 | Serana | **T6** (40) | Pure-blood Volkihar. Must sit above the generic vampire band (T4) and below Harkon |
 
 **The design consequence, stated so it is chosen and not discovered:** a follower now has a *place* on
@@ -810,6 +856,12 @@ the T7-and-above set.
 | `DLC2AcolyteZahkriisos` | 0248E8:Dragonborn | ×1 [25–60] | **60** — matches his fixed siblings |
 | Dragon Priests ×8 + Vahlok | — | fixed 50 | **50 (T7)** — unchanged |
 | Ahzidal, Dukaan | 0248E9, 0248E1 | fixed 60 | **60** — unchanged |
+| `DLC2dunHaknir` | 01A373:Dragonborn | ×1.25 [40–75] | **55** (WD-59). The extract had grafted 200 |
+| Karstaag · Ebony Warrior | 019665 · 0285C3:Dragonborn | fixed 90 · 80 | **90 · 80** — kept (WD-59), documented exceptions |
+| `DLC01SoulCairnReaper` | 01A73E:Dawnguard | ×1.5 [10–100] | **65** (WD-58), the Nightmaster level. Requiem 100 |
+| Soul Cairn Keepers ×3 | 0074F8 / 0074F9 / 007B0F:Dawnguard | ×1–1.2 [10–80] | **50** (WD-58). Requiem 80 |
+| `VigilantCarcette` | 0BFB55 | ×1 | **45** (WD-56), the Hall's keeper above her 35s. Requiem 56 |
+| `DLC1VigilantTolan` | 00352D:Dawnguard | ×1 [15–30] | **35** (WD-56) |
 | ~~`EncBandit04TemplateMelee`~~ | 01E60D | level 0 | **no record needed** — see below |
 
 Harkon at 55/60 clears his own court (Volkihar 48 / Volkihar Master 53), satisfying

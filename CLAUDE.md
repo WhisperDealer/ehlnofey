@@ -234,7 +234,7 @@ mod, not a new-content mod. Ehlnofey changes *where the numbers come from*, and 
 
 ## Current phase
 
-**Phase 4 is under way and `Ehlnofey.esp` exists: 2,754 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
+**Phase 4 is under way and `Ehlnofey.esp` exists: 2,812 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
 `design/requiem-method`). Read **`arch-docs/design/requiem-method.md` first** — it is the live
 architecture doc, and its §6 is the current order of work. Everything below it in this section is
 the Phase 3 record, kept because most of it still holds, but **the architecture it decided has been
@@ -465,6 +465,51 @@ See `archetype-tiers.md` §3.1.
 - **Loot:** vanilla gold and gems are back on dragon corpses, and Requiem's bones and scales stay. The armor and weapon rolls stay
   out: they point at the game-wide All lists.
 - **Plugin size:** 2,754 records (+19 `NPC_`). See `archetype-tiers.md` §3.4 and §7.
+
+**WD-55…59 are done (2026-09-27): built as one batch and verified in game by the user in one play-test.**
+- **Werewolves and the Silver Hand (WD-55).** The werewolf list rolls Skinwalker ×1 · Beastmaster ×3 · Vargr ×2 (20/28/38, mean 30).
+  The Silver Hand owned no level; they rode the bandit lists (5/9/14). They now point at three **new** Silver Hand lists
+  (`EHL_LVLN_SilverHand*` 0x802–0x804), built from the same bandit rungs two up: Highwayman ×1 · Plunderer ×3 · Marauder ×1
+  (14/19/25). Krev and the other bosses stay at the bandit chief's 28. **Werebears 30:** the placed three were 17, the `DLC2WE07` trio
+  took bandit berserker stats (5–14), and `DLC2EncWerebear` (Torkild and the Beast Stone summon) was 25.
+- **Minor factions (WD-56).** Penitus Oculatus pinned at **36**, level with the Thalmor. The Katariah archers were level 1 (a vanilla
+  bug: no `Stats` flag). Penitus archers had **no bow** (the bucket-B strip again): the Imperial bow and vanilla `PenitusGear` are
+  re-added. Vigilants are pinned at **35** across all ten lists; the ticket's "already flat at 5" was wrong, since the Hall's voice
+  lists rolled 5–25. Carcette 45, Tolan 35. Ghost wizards roll the bandit ghosts' 5/9/14 (Requiem had pinned 25). The Alik'r keep
+  their quest grafts of 30/35; the level-1 `WERJ03` Alik'r is fixed to 30.
+- **World encounters and assassins (WD-57).**
+  - **Hunters 10.** The same template also sets farmers', fishermen's and pilgrims' levels.
+  - **Adventurers:** all nine at **25**. Four were still scaling with no cap.
+  - **Road thief 19.** The DB "marked for death" assassin is **25**; it was 45 and arrives from player level 5.
+  - **DB:** the initiates are 25, and the Sanctuary keeps 45–50.
+  - **Nightingales** keep 45.
+  - **Morag Tong 30**, with their own `Stats` and a real class, off the Solstheim bandit ladder.
+  - Minor stragglers were fixed as well.
+- **Dawnguard DLC (WD-58).**
+  - **Dawnguard pinned at 38.** `DLC1EncHunterTemplate`'s live graft of 50 (Agmaer, Beleval, the Fort guards) is now 38 too.
+  - **The Dawnguard war axe is back**; mooks had only the warhammer.
+  - **Gargoyles** roll 13 ×1 · 25 ×3 · 43 ×1.
+  - **Chaurus Hunters** 1:1.
+  - **Armored trolls** raised to 26 / 36, 1:1. The frost one now owns its level.
+  - **Soul Cairn:** Keepers 50, the Reaper 65. The Keepers' Dragonbone drops are kept (user).
+  - **Frozen Falmer, Shaman and Chaurus** pinned at 40.
+- **Dragonborn DLC (WD-59).**
+  - **Rieklings:** 6 ×2 · 11 ×3 · 16 ×2.
+  - **Cultists:** 19 ×2 · 27 ×3 · 36 ×1.
+  - **Seekers and Lurkers** pinned at 32 / 44, since one name shows.
+  - **Ash Spawn:** 30 ×3 · 40 ×1. The Raven Rock attackers are 30.
+  - **Haknir 55**; he shipped at **200** from the extract.
+  - **Frost Giant** 32 → 38.
+  - **Solstheim chest weapons:** glass and above (glass, Stalhrim, ebony, Daedric, almsivi ebony) are cut from the plain lists. They
+    now sit only in boss chests, through `EHL_LVLI_SolstheimBossWeaponRare` 0x805.
+- **Across tickets.**
+  - **Berserkers:** vanilla's level-5 berserker sublist held the level-1 leaves, so the dropped level-1 bandit rung was still rolling.
+    It is fixed.
+  - **Arrows:** the CC magic-arrow leak through `LItemArrowsAll` is closed on the ranged adventurers, the Morag Tong and the Soul Cairn
+    Bonemen.
+- **Generator changes.** `author-bucket-d.ps1` can now build a **new** `LVLN` from a vanilla one (`From =`). `author-retargets.ps1`
+  now lets `Level =` share a row with the line ops.
+- **Plugin size:** 2,812 records (+58: 4 new lists, 54 overrides). The CC Daedric Invasion pack's Vigilant injector is **WD-64**.
 
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
@@ -772,8 +817,11 @@ Fixed now so Phase 4 does not have to argue about it:
 | Block | Feature | Records |
 |---|---|---|
 | `0x800`–`0x801` | Thalmor rare glass (WD-48) | `EHL_LVLI_ThalmorJusticiarWeapon1H`, `EHL_LVLI_ThalmorBossDagger` |
+| `0x802`–`0x804` | Silver Hand (WD-55) | `EHL_LVLN_SilverHandMelee1H`, `…Melee2H`, `…Missile` (bucket D, `From =`) |
+| `0x805` | Solstheim boss-chest weapons (WD-59) | `EHL_LVLI_SolstheimBossWeaponRare` |
 
-New lists are written by `author-injectors.ps1` `$newLists`. **Next free: `0x802`.** The ~7 wilderness `ECZN` and the
+New `LVLI` are written by `author-injectors.ps1` `$newLists`; new `LVLN` by `author-bucket-d.ps1` (`Add-Spec` with `From =`).
+**Next free: `0x806`.** The ~7 wilderness `ECZN` and the
 per-tier gear lists belonged to the replaced architecture and are not being built.
 
 ## Useful FormKey constants
@@ -1074,6 +1122,11 @@ A reader-facing page per finished faction, in one shared style. Each faction tic
 | Falmer & chaurus | WD-50 | https://claude.ai/artifact/V2nSnDTicPohnWL8mFaUNV |
 | Dwemer automatons | WD-51 | https://claude.ai/artifact/QFHj364NWKsoEEi5z7nwT6 |
 | Dragons + named dragons | WD-53 | https://claude.ai/artifact/So9JXyEDcgMKekkH3R9XLz |
+| Werewolves, Silver Hand, werebears | WD-55 | https://claude.ai/artifact/9DTPyW1iNoyTCN4CMJJbFa#wd55 |
+| Penitus, Vigilants, ghosts, Alik'r | WD-56 | https://claude.ai/artifact/9DTPyW1iNoyTCN4CMJJbFa#wd56 |
+| World encounters + assassins | WD-57 | https://claude.ai/artifact/9DTPyW1iNoyTCN4CMJJbFa#wd57 |
+| Dawnguard DLC families | WD-58 | https://claude.ai/artifact/9DTPyW1iNoyTCN4CMJJbFa#wd58 |
+| Dragonborn DLC families | WD-59 | https://claude.ai/artifact/9DTPyW1iNoyTCN4CMJJbFa#wd59 |
 
 Candidates still to confirm:
 

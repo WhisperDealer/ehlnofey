@@ -223,6 +223,29 @@ $readdByPlace = @(
                                              #                      LootImperialLuck, LootDragonGems25, TGLootProwlersProfit
     @{ List = '010963:Dawnguard.esm'; Items = @(,@('0F77F2:Skyrim.esm', 1)) }   # DLC1DeathItemDragon06 <- LootDragonGold
     @{ List = '010964:Dawnguard.esm'; Items = @(,@('0F77F2:Skyrim.esm', 1)) }   # DLC1DeathItemDragon07 <- LootDragonGold
+    # Penitus Oculatus (WD-56): bucket B had stripped Requiem's REQ_LI_Weapon_PenitusMissile and REQ_LI_Gear_Penitus, the same
+    # bug the Imperials had. Archers had no bow, and every agent had lost vanilla's dagger, gold, food, drink, torch and Imperial
+    # symbol. Requiem's LItemPenitusWeapon1H (the Imperial sword) stays in PenitusGear, which the bow list nests.
+    @{ List = '10FF0A:Skyrim.esm'; Items = @(,@('013841:Skyrim.esm', 1)) }   # PenitusGearWithBow <- ImperialBow
+    @{ List = '10FF09:Skyrim.esm'; Items = @(@('013986:Skyrim.esm', 1), @('04F78D:Skyrim.esm', 1), @('04F78D:Skyrim.esm', 1), @('10E0DE:Skyrim.esm', 1),
+                                             @('10E0E1:Skyrim.esm', 1), @('10E8A8:Skyrim.esm', 1), @('10FAF9:Skyrim.esm', 1), @('10FAFB:Skyrim.esm', 1)) }
+                                             # PenitusGear <- SteelDagger, LootGoldChange25 x2, LootDrinkList25, LItemFoodInnCommon10,
+                                             #                LootGoldChange50, LItemTorch50, LItemImperialSymbol10
+    # Dawnguard (WD-58): Requiem moved the war axe into its axe-and-shield lists, bucket B stripped them, and every Dawnguard
+    # mook carried only the two-handed warhammer. The axe is back, 1:1 with the hammer, as in vanilla.
+    @{ List = '01421C:Dawnguard.esm'; Items = @(,@('00D098:Dawnguard.esm', 1)) }   # LItemDawnguardWeaponAny <- DLC1DawnguardAxe
+    # Berserkers (2026-09-27): vanilla's SubCharBandit02Melee2HBerserk holds the level-1 EncBandit01 berserkers, not the
+    # Outlaw (02) ones, so the berserker roll kept the dropped level-1 rung 3 times in 9. Its five leaves are swapped for the
+    # EncBandit02 ones (cut and weighted below, keeping vanilla's 1/2/2/1/2 race mix). The berserker ghosts share the list.
+    @{ List = '03DEBB:Skyrim.esm'; Items = @(@('03DEA4:Skyrim.esm', 1), @('03DEA5:Skyrim.esm', 1), @('03DEA6:Skyrim.esm', 1),
+                                             @('03DEA7:Skyrim.esm', 1), @('03DEA8:Skyrim.esm', 1)) }   # EncBandit02Melee2HBerserk NordF/NordM/OrcM/RedguardF/RedguardM
+    # Solstheim boss chests (WD-59, user: glass and above in boss chests only). The eight DLC2LItemWeapon* lists feed both
+    # plain and boss chests and carried glass, Stalhrim, ebony and Daedric at level 1; those are cut below. The three
+    # DLC2Loot*Weapon100 lists are the boss chests only (bandit and werewolf, draugr, Dwemer); each gains the rare list as one
+    # more entry beside the eight weapon types, so a boss chest's weapon is glass or better 1 time in 10 (1 in 11 for Dwemer chests).
+    @{ List = '02BC3D:Dragonborn.esm'; Items = @(,@('000805:Ehlnofey.esp', 1)) }   # DLC2LootBanditWeapon100  <- EHL_LVLI_SolstheimBossWeaponRare
+    @{ List = '02C448:Dragonborn.esm'; Items = @(,@('000805:Ehlnofey.esp', 1)) }   # DLC2LootDraugrWeapon100  <- same
+    @{ List = '02C452:Dragonborn.esm'; Items = @(,@('000805:Ehlnofey.esp', 1)) }   # DLC2LootDwarvenWeapon100 <- same
 )
 
 $fish = 'ccbgssse001-fish.esm'; $arrows = 'ccbgssse002-exoticarrows.esl'; $spell = 'ccbgssse014-spellpack01.esl'
@@ -253,9 +276,7 @@ $ccReadd = @(
     @{ List = '0374F3:Dragonborn.esm'; Items = @(,@("00081A:$alm", 1)) }   # DLC2LItemArmorHelmetHeavyTown
     @{ List = '02BC1F:Dragonborn.esm'; Items = @(,@("00081A:$alm", 1)) }   # DLC2LItemArmorHelmetHeavy
     @{ List = '0374E2:Dragonborn.esm'; Items = @(,@("000E37:$alm", 1)) }   # DLC2LItemWeaponMaceTown
-    @{ List = '02BC11:Dragonborn.esm'; Items = @(,@("000E37:$alm", 1)) }   # DLC2LItemWeaponMace
     @{ List = '0374E7:Dragonborn.esm'; Items = @(,@("000E38:$alm", 1)) }   # DLC2LItemWeaponSwordTown
-    @{ List = '02BC12:Dragonborn.esm'; Items = @(,@("000E38:$alm", 1)) }   # DLC2LItemWeaponSword
     @{ List = '0374EA:Dragonborn.esm'; Items = @(@("000E37:$alm", 1), @("000E38:$alm", 1)) }   # DLC2LItemWeaponAny1HTown (new override)
     # necroarts: the CC boss of the rung the pinned voice list holds. Its bosses stop at 06 (level 40), so only
     # MaleCondescending, pinned at 40 for want of a level-50 Breton M, takes one; the lists pinned at 50 take
@@ -300,6 +321,18 @@ $newLists = @(
     # Boss wizard dagger: Elven, glass 1 in 10. Only EncThalmor06MagicBossM uses it (the level-50 boss).
     @{ FormKey = '000801:Ehlnofey.esp'; EditorID = 'EHL_LVLI_ThalmorBossDagger'
        Items = @(@('01399E:Skyrim.esm', 1, 9), @('0139A6:Skyrim.esm', 1, 1)) }   # ElvenDagger x9, GlassDagger x1
+    # WD-59: what the eight DLC2LItemWeapon* lists lose (glass, Stalhrim, ebony, the Daedric sublists and the almsivi ebony
+    # mace and scimitar), gathered for the Solstheim boss chests only. 0x802-0x804 are bucket D's Silver Hand LVLN.
+    @{ FormKey = '000805:Ehlnofey.esp'; EditorID = 'EHL_LVLI_SolstheimBossWeaponRare'
+       Items = @(@('0139A4:Skyrim.esm', 1, 1), @('01CDB4:Dragonborn.esm', 1, 1), @('0139AC:Skyrim.esm', 1, 1), @('000F0B:Skyrim.esm', 1, 1),    # battleaxe
+                 @('0139A5:Skyrim.esm', 1, 1), @('026231:Dragonborn.esm', 1, 1), @('0139AD:Skyrim.esm', 1, 1), @('000F0D:Skyrim.esm', 1, 1),    # bow
+                 @('0139A6:Skyrim.esm', 1, 1), @('01CDB5:Dragonborn.esm', 1, 1), @('0139AE:Skyrim.esm', 1, 1), @('000F0F:Skyrim.esm', 1, 1),    # dagger
+                 @('0139A7:Skyrim.esm', 1, 1), @('01CDB6:Dragonborn.esm', 1, 1), @('0139AF:Skyrim.esm', 1, 1), @('000F11:Skyrim.esm', 1, 1),    # greatsword
+                 @('0139A8:Skyrim.esm', 1, 1), @('01CDB7:Dragonborn.esm', 1, 1), @('0139B0:Skyrim.esm', 1, 1), @('000F13:Skyrim.esm', 1, 1),    # mace
+                 @('0139A9:Skyrim.esm', 1, 1), @('01CDB8:Dragonborn.esm', 1, 1), @('0139B1:Skyrim.esm', 1, 1), @('000F15:Skyrim.esm', 1, 1),    # sword
+                 @('0139A3:Skyrim.esm', 1, 1), @('01CDB9:Dragonborn.esm', 1, 1), @('0139AB:Skyrim.esm', 1, 1), @('000F17:Skyrim.esm', 1, 1),    # war axe
+                 @('0139AA:Skyrim.esm', 1, 1), @('01CDBA:Dragonborn.esm', 1, 1), @('0139B2:Skyrim.esm', 1, 1), @('000F19:Skyrim.esm', 1, 1),    # warhammer
+                 @("000E37:$alm", 1, 1), @("000E38:$alm", 1, 1)) }   # ccASVSSE001_EbonyMace, ccASVSSE001_EbonyScimitar
 )
 foreach ($n in $newLists) {
     $id, $master = $n.FormKey -split ':'
@@ -374,7 +407,8 @@ foreach ($f in $flatten) {
 #  - An archer always has a bow. Requiem's LItemBanditWeaponBow points half its entries at the 1H and 2H
 #    melee lists, so ~50% of archers spawned bowless with a full quiver. Those entries are cut; archers
 #    keep the dagger their own inventory already carries. The list is shared with Thalmor archers, the
-#    embassy guards, Penitus Oculatus and a few quest archers - all of them gain the fix.
+#    embassy guards and a few quest archers - all of them gain the fix. (Not the Penitus Oculatus, as this said until
+#    WD-56: their archers use PenitusGearWithBow, whose bow is re-added above.)
 #  - Bandit arrows: iron, with a 10% chance of fire. The CC bone arrow (26 damage, above Daedric's 24) is
 #    not re-added at all (see $ccReadd). The list is also the Dremora and Thalmor archers' arrow list.
 $cuts = [ordered]@{
@@ -403,6 +437,16 @@ $cuts = [ordered]@{
     '02432D:Skyrim.esm' = @('02C66F:Skyrim.esm', '01CB64:Skyrim.esm')   # LItemDraugr05EWeapon1H   - DraugrSword, DraugrBattleAxe
     '024330:Skyrim.esm' = @('0236A5:Skyrim.esm', '01CB64:Skyrim.esm')   # LItemDraugr05EWeapon2H   - DraugrGreatsword, DraugrBattleAxe
     '0559FB:Skyrim.esm' = @('013955:Skyrim.esm')                        # LItemDraugrEbonyShield50 - ArmorSteelShield
+    '03DEBB:Skyrim.esm' = @('03DE6E:Skyrim.esm', '03DE6F:Skyrim.esm', '03DE70:Skyrim.esm', '03DE71:Skyrim.esm', '03DE72:Skyrim.esm')   # SubCharBandit02Melee2HBerserk - the EncBandit01 (level 1) berserkers
+    # WD-59: glass and above out of the plain Solstheim weapon lists (Glass, Stalhrim, Ebony, SublistWeapon*Daedric05, almsivi)
+    '02BC0D:Dragonborn.esm' = @('0139A4:Skyrim.esm', '01CDB4:Dragonborn.esm', '0139AC:Skyrim.esm', '000F0B:Skyrim.esm')   # DLC2LItemWeaponBattleAxe
+    '02BC0E:Dragonborn.esm' = @('0139A5:Skyrim.esm', '026231:Dragonborn.esm', '0139AD:Skyrim.esm', '000F0D:Skyrim.esm')   # DLC2LItemWeaponBow
+    '02BC0F:Dragonborn.esm' = @('0139A6:Skyrim.esm', '01CDB5:Dragonborn.esm', '0139AE:Skyrim.esm', '000F0F:Skyrim.esm')   # DLC2LItemWeaponDagger
+    '02BC10:Dragonborn.esm' = @('0139A7:Skyrim.esm', '01CDB6:Dragonborn.esm', '0139AF:Skyrim.esm', '000F11:Skyrim.esm')   # DLC2LItemWeaponGreatSword
+    '02BC11:Dragonborn.esm' = @('0139A8:Skyrim.esm', '01CDB7:Dragonborn.esm', '0139B0:Skyrim.esm', '000F13:Skyrim.esm', "000E37:$alm")   # DLC2LItemWeaponMace
+    '02BC12:Dragonborn.esm' = @('0139A9:Skyrim.esm', '01CDB8:Dragonborn.esm', '0139B1:Skyrim.esm', '000F15:Skyrim.esm', "000E38:$alm")   # DLC2LItemWeaponSword
+    '02BC13:Dragonborn.esm' = @('0139A3:Skyrim.esm', '01CDB9:Dragonborn.esm', '0139AB:Skyrim.esm', '000F17:Skyrim.esm')   # DLC2LItemWeaponWarAxe
+    '02BC14:Dragonborn.esm' = @('0139AA:Skyrim.esm', '01CDBA:Dragonborn.esm', '0139B2:Skyrim.esm', '000F19:Skyrim.esm')   # DLC2LItemWeaponWarhammer
 }
 # Weight = the exact number of entries a reference should have (entries are the engine's only weight).
 $weights = [ordered]@{
@@ -419,6 +463,7 @@ $weights = [ordered]@{
                                       '0139A6:Skyrim.esm' = 1; '0139AE:Skyrim.esm' = 1 }   # LItemWeaponDaggerBoss
     # Thalmor Justiciar armor (WD-48): Elven no helmet 9 · Elven helmet 9 · glass no helmet 1 · glass helmet 1.
     '07D97A:Skyrim.esm' = [ordered]@{ '07D974:Skyrim.esm' = 9; '07D973:Skyrim.esm' = 9 }   # LItemThalmorArmorNoHelmetAll
+    '03DEBB:Skyrim.esm' = [ordered]@{ '03DEA5:Skyrim.esm' = 2; '03DEA6:Skyrim.esm' = 2; '03DEA8:Skyrim.esm' = 2 }   # SubCharBandit02Melee2HBerserk: vanilla's NordM/OrcM/RedguardM x2
 }
 
 function Get-Blocks([string[]]$lines) {

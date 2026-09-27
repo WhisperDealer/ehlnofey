@@ -1,7 +1,7 @@
 # Small NPC_ edits: retarget a record's Template (which list the spawn draws from) or fix a field.
 #
 # Each edit copies the WINNING vanilla record verbatim (last in load order, CLAUDE.md "last-wins") and
-# changes only the lines it names (guardrail 3): From/To or Swap (whole-line swaps), Level (+ Own),
+# changes only the lines it names (guardrail 3): From/To or Swap (whole-line swaps), Level (+ Own; can share a row with the line ops),
 # DropItem (one Items entry), DropFlag (one TemplateFlag) and Insert (a new line after a unique one). One row per record - a second row would overwrite it. It replaces any earlier override of that record in the plugin,
 # including a bucket-E level graft from extract-requiem.ps1, so the edit's From line is matched against
 # vanilla. Any master works: Npc is a full FormKey.
@@ -321,6 +321,100 @@ $edits = @(
     # Ancient's HealthOffset. MQ303Odahviing (the trapped one in Dragonsreach) takes Stats from him.
     @{ Npc = '045920:Skyrim.esm'; Swap = @(@('    Level: 1', '    Level: 85'), @('Class: 017008:Skyrim.esm', 'Class: 02F201:Skyrim.esm'));
        Insert = @(@('  - Invulnerable', '  - AutoCalcStats'), @('  - AttackData', '  HealthOffset: 2000')); DropFlag = 'Stats' }   # Odahviing
+
+    # ---- Silver Hand (WD-55, user 2026-09-27: werewolf hunters, "a bit more capable than your average bandit"). They own
+    # no level: every LvlSilverhand* took Stats and Traits from a bandit list (Outlaw/Thug/Highwayman, mean 8.8). They now
+    # point at three Silver Hand-only lists built from the same bandit rungs, Highwayman x1 / Plunderer x3 / Marauder x1
+    # (14/19/25, mean 19.2; author-bucket-d.ps1). The ambush and MeleeAny records lose their race/voice list and draw from
+    # the one-handed list. LvlSilverhandBoss (Krev and two others) stays on the bandit chief, 28.
+    @{ Npc = '02AB87:Skyrim.esm'; From = 'Template: 03DECB:Skyrim.esm'; To = 'Template: 000802:Ehlnofey.esp' }   # LvlSilverhandMelee1H           <- LvlBanditMelee1H
+    @{ Npc = '06466C:Skyrim.esm'; From = 'Template: 03DECB:Skyrim.esm'; To = 'Template: 000802:Ehlnofey.esp' }   # LvlSilverhandMelee1HAggro1024  <- LvlBanditMelee1H
+    @{ Npc = '04499F:Skyrim.esm'; From = 'Template: 01E79C:Skyrim.esm'; To = 'Template: 000802:Ehlnofey.esp' }   # LvlSilverHandMeleeAny          <- LvlBanditMeleeAny
+    @{ Npc = '108BBC:Skyrim.esm'; From = 'Template: 01AFBD:Skyrim.esm'; To = 'Template: 000802:Ehlnofey.esp' }   # LvlSilverHandAmbush1 (Dustman's) <- LvlBanditMeleeEvenTonedF
+    @{ Npc = '108BBE:Skyrim.esm'; From = 'Template: 01B0BC:Skyrim.esm'; To = 'Template: 000802:Ehlnofey.esp' }   # LvlSilverHandAmbush2           <- LvlBanditMeleeNordM
+    @{ Npc = '108BBD:Skyrim.esm'; From = 'Template: 01B0EF:Skyrim.esm'; To = 'Template: 000802:Ehlnofey.esp' }   # LvlSilverHandAmbush3           <- LvlBanditMeleeOrcM
+    @{ Npc = '108BBB:Skyrim.esm'; From = 'Template: 01AF77:Skyrim.esm'; To = 'Template: 000802:Ehlnofey.esp' }   # LvlSilverHandAmbush4           <- LvlBanditMeleeCommonerM
+    @{ Npc = '108BBF:Skyrim.esm'; From = 'Template: 01AF77:Skyrim.esm'; To = 'Template: 000802:Ehlnofey.esp' }   # LvlSilverHandAmbush5           <- LvlBanditMeleeCommonerM
+    @{ Npc = '02AB89:Skyrim.esm'; From = 'Template: 01E79D:Skyrim.esm'; To = 'Template: 000803:Ehlnofey.esp' }   # LvlSilverhandMelee2H           <- LvlBanditMelee2H
+    @{ Npc = '02AB88:Skyrim.esm'; From = 'Template: 01E770:Skyrim.esm'; To = 'Template: 000804:Ehlnofey.esp' }   # LvlSilverhandMissile (and its 3 copies) <- LCharBanditMissile
+    # Werebears 30 (user). The three placed Snowclad Ruins werebears own 17. The DLC2WE07 encounter trio took Stats from
+    # bandit berserker leaves (14 / 5 / 9); they own it now, keeping their bandit-melee class and AutoCalcStats. 03D21F had no
+    # Level line at all (level 0 by default), so it gains one. DLC2EncWerebear owns Torkild's level and the Beast Stone
+    # summon's (25 -> 30).
+    @{ Npc = '01E17C:Dragonborn.esm'; From = '    Level: 17'; To = '    Level: 30' }   # DLC2EncTribalWerebearA
+    @{ Npc = '03D2D9:Dragonborn.esm'; From = '    Level: 17'; To = '    Level: 30' }   # DLC2EncTribalWerebearB
+    @{ Npc = '03D2DA:Dragonborn.esm'; From = '    Level: 17'; To = '    Level: 30' }   # DLC2EncTribalWerebearC
+    @{ Npc = '03D21F:Dragonborn.esm'; Swap = @(,@('    MutagenObjectType: NpcLevel', @('    MutagenObjectType: NpcLevel', '    Level: 30'))); DropFlag = 'Stats' }   # DLC2WE07EncTribalWerebearA
+    @{ Npc = '03D220:Dragonborn.esm'; From = '    Level: 5'; To = '    Level: 30'; DropFlag = 'Stats' }   # DLC2WE07EncTribalWerebearB
+    @{ Npc = '03D221:Dragonborn.esm'; From = '    Level: 9'; To = '    Level: 30'; DropFlag = 'Stats' }   # DLC2WE07EncTribalWerebearC
+    @{ Npc = '0322B1:Dragonborn.esm'; From = '    Level: 25'; To = '    Level: 30' }   # DLC2EncWerebear
+
+    # ---- Penitus Oculatus 36, level with the Thalmor soldiers (WD-56, user). Every rung is "Penitus Oculatus Agent", so both
+    # lists stay pinned to rung 06 and the rung is raised (vanilla 23; Requiem had 45, deleted by WD-42).
+    @{ Npc = '07D995:Skyrim.esm'; From = '    Level: 23'; To = '    Level: 36' }   # EncPenitus06Fire
+    @{ Npc = '07D99E:Skyrim.esm'; From = '    Level: 23'; To = '    Level: 36' }   # EncPenitus06Shock
+    # The Katariah archers (5 placements) sit on LvlPenitusOculatusMissileAmbush, which templates on the Penitus chain but
+    # omits Stats: a vanilla bug that left them level 1, 50 HP, no AutoCalcStats. With the flag they follow the pin.
+    @{ Npc = '04C16C:Skyrim.esm'; Insert = @(,@('  - Traits', '  - Stats')) }   # LvlPenitusOculatusMissileAmbush
+    # Vigilants of Stendarr 35 (user). One name, five rungs (5/9/14/19/25): every list is pinned to rung 05 in bucket D and
+    # its seven leaves, which own their level, are raised 25 -> 35.
+    foreach ($v in @('10C48A', '10C484', '10C485', '10C486', '10C487', '10C488', '10C489')) {   # EncVigilantOfStendarr05 DarkElfF, NordF, NordM01-04, RedguardF
+        @{ Npc = "${v}:Skyrim.esm"; From = '    Level: 25'; To = '    Level: 35' }
+    }
+    @{ Npc = '0BFB55:Skyrim.esm';   Level = 45 }   # VigilantCarcette, Keeper of the Hall (bucket-E graft 56)
+    @{ Npc = '00352D:Dawnguard.esm'; Level = 35 }   # DLC1VigilantTolan (x1 [15-30]; his corpse takes Stats from him)
+    # Alik'r: the quest Alik'r keep their 30/35 grafts. The WERJ03 random encounter takes Stats from MS08AlikrWarrior, a
+    # level-1 record with no AutoCalcStats, so it met the player as a level-1 "Alik'r Warrior". Now 30 with AutoCalcStats.
+    @{ Npc = '020071:Skyrim.esm'; From = '    Level: 1'; To = '    Level: 30'; Insert = @(@('Configuration:', '  Flags:'), @('  Flags:', '  - AutoCalcStats')) }   # MS08AlikrWarrior
+
+    # ---- World encounters and assassins (WD-57, user 2026-09-27). All PcLevelMult in vanilla; each row is the record that
+    # owns the level. Requiem's grafts on some of them are replaced.
+    @{ Npc = '073FBE:Skyrim.esm';     Level = 10 }   # EncHunter00Template: hunters, also farmers, fishermen, pilgrims, trappers (Requiem 20)
+    @{ Npc = '039A7C:Dragonborn.esm'; Level = 20 }   # DLC2WE15Hunter, the Solstheim netch hunters (x0.75 [30-50])
+    # Adventurers: all 25. Battlemage/Berserker/Brawler/MageShieldStaff/WEAdventurerTemplate carry Requiem's 25 already;
+    # the DualPoisoner had 30 and four were never grafted (x1.1 from 6, uncapped).
+    @{ Npc = '105549:Skyrim.esm'; Level = 25 }   # WEAdventurerDualPoisoner
+    @{ Npc = '10554B:Skyrim.esm'; Level = 25; From = '    Item: 068839:Skyrim.esm'; To = '    Item: 039D2F:Skyrim.esm' }   # WEAdventurerRangedConjurer; LItemArrowsAll (CC magic arrows) -> bandit arrows
+    @{ Npc = '105540:Skyrim.esm'; Level = 25 }   # WEAdventurerSpellsword
+    @{ Npc = '105541:Skyrim.esm'; Level = 25 }   # WEAdventurerWarrior
+    @{ Npc = '105545:Skyrim.esm'; Level = 25 }   # WEAdventurerWarriorDual
+    @{ Npc = '103510:Skyrim.esm'; Level = 19 }   # WEThiefTemplate (Requiem 25)
+    @{ Npc = '1051FB:Skyrim.esm'; Level = 25 }   # WEAssassinTemplate: the "marked for death" DB assassin, from player level 5 (Requiem 45)
+    @{ Npc = '015CFA:Skyrim.esm'; Level = 25 }   # DBInitiate1 (Requiem 35)
+    @{ Npc = '015CFE:Skyrim.esm'; Level = 25 }   # DBInitiate2
+    @{ Npc = '0B91B0:Skyrim.esm'; Level = 14 }   # WEDL05Thug (x1.15, uncapped)
+    @{ Npc = '0BA1E5:Skyrim.esm'; Level = 6 }    # WEDL07Madwoman
+    @{ Npc = '0BBDA0:Skyrim.esm'; Level = 12 }   # WEDL08DeepInHisCups (x0.9 [12-12])
+    foreach ($v in @('015D02', '015D0E', '037A28', '037A2C')) { @{ Npc = "${v}:Skyrim.esm"; Level = 1 } }   # DBTortureVictim1-4, captives
+    # Morag Tong 30 (user). They took Stats from the Solstheim bandit lists (5/9/14). Now they own it: level 30, AutoCalcStats,
+    # and a real class in place of the placeholder EncClassDremoraMelee (the thrall trap). Traits still come from the list.
+    @{ Npc = '0271C3:Dragonborn.esm'; Swap = @(@('    Level: 1', '    Level: 30'), @('Class: 017008:Skyrim.esm', 'Class: 01317F:Skyrim.esm'));
+       Insert = @(@('Configuration:', '  Flags:'), @('  Flags:', '  - AutoCalcStats')); DropFlag = 'Stats' }   # DLC2LvlMoragTongMelee1H, CombatAssassin
+    @{ Npc = '0271C4:Dragonborn.esm'; Swap = @(@('    Level: 1', '    Level: 30'), @('Class: 017008:Skyrim.esm', 'Class: 01317D:Skyrim.esm'),
+                                               @('    Item: 068839:Skyrim.esm', '    Item: 039D2F:Skyrim.esm'));
+       Insert = @(@('Configuration:', '  Flags:'), @('  Flags:', '  - AutoCalcStats')); DropFlag = 'Stats' }   # DLC2LvlMoragTongMissile, CombatScout; bandit arrows
+
+    # ---- Dawnguard DLC (WD-58, user 2026-09-27).
+    # The Dawnguard: one name ("Dawnguard"), pinned to rung 06 in bucket D and raised 25 -> 38, just above the Vigilants.
+    # DLC1EncHunterTemplate owns Agmaer, Beleval and the Fort's guards (Requiem graft 50); they go to the same 38.
+    @{ Npc = '014224:Dawnguard.esm'; From = '    Level: 25'; To = '    Level: 38' }   # EncDawnguard06TemplateMelee
+    @{ Npc = '00336F:Dawnguard.esm'; Level = 38 }   # DLC1EncHunterTemplate
+    # Armored trolls: Armored Troll 26 / Armored Frost Troll 36, 1:1 (mean 31, user). The frost one took Stats from
+    # EncTrollFrost, shared by every frost troll, so it owns its level now. The tamed trolls take Stats from these two.
+    @{ Npc = '00D0B8:Dawnguard.esm'; From = '    Level: 14'; To = '    Level: 26' }   # DLC1EncTrollArmored
+    @{ Npc = '00D0B9:Dawnguard.esm'; From = '    Level: 22'; To = '    Level: 36'; DropFlag = 'Stats' }   # DLC1EncTrollFrostArmored
+    # Soul Cairn: Keepers 50, the Reaper 65 (user; Requiem grafts 80 / 100).
+    @{ Npc = '0074F8:Dawnguard.esm'; Level = 50 }   # DLC01SoulCairnKeeper2H
+    @{ Npc = '0074F9:Dawnguard.esm'; Level = 50 }   # DLC01SoulCairnKeeperBowArrow
+    @{ Npc = '007B0F:Dawnguard.esm'; Level = 50 }   # DLC01SoulCairnKeeperShield
+    @{ Npc = '01A73E:Dawnguard.esm'; Level = 65 }   # DLC01SoulCairnReaper
+    @{ Npc = '00BF5E:Dawnguard.esm'; From = '    Item: 068839:Skyrim.esm'; To = '    Item: 039D2F:Skyrim.esm' }   # DLC1LvlSoulCairnBonemanMissileAmbush: LItemArrowsAll -> bandit arrows
+
+    # ---- Dragonborn DLC (WD-59, user 2026-09-27).
+    @{ Npc = '01A568:Dragonborn.esm'; Level = 30 }   # DLC2RR01AttackingAshSpawn: the Raven Rock attack, on the pinned Ash Spawn rung
+    @{ Npc = '024DF8:Dragonborn.esm'; Level = 30 }   # DLC2RRFavor03AshSpawn
+    @{ Npc = '01A373:Dragonborn.esm'; Level = 55 }   # DLC2dunHaknir: the committed extract grafted 200
+    @{ Npc = '01CAD6:Dragonborn.esm'; From = '    Level: 32'; To = '    Level: 38' }   # DLC2FrostGiant01, on a par with the mainland giants
 )
 
 foreach ($e in $edits) {
@@ -354,15 +448,20 @@ foreach ($e in $edits) {
             $lines = @($lines[0..($s - 1)] + $lines[($s + 1)..($lines.Count - 1)])
             $was = "$was, Stats flag dropped"
         }
-        [System.IO.File]::WriteAllLines((Join-Path $dst $src.Name), $lines, $utf8NoBom)
-        "{0,-50} {1} -> Level: {2}" -f $src.Name, $was, $e.Level
-        continue
+        $lvDid = "$was -> Level: $($e.Level)"
+        # Level can share a row with the line ops below (WD-57: a level and an Items swap on one record).
+        if (-not ($e.Contains('From') -or $e.Contains('Swap') -or $e.Contains('DropItem') -or $e.Contains('DropFlag') -or $e.Contains('Insert'))) {
+            [System.IO.File]::WriteAllLines((Join-Path $dst $src.Name), $lines, $utf8NoBom)
+            "{0,-50} {1}" -f $src.Name, $lvDid
+            continue
+        }
     }
     # Line swaps: From/To for one, Swap = @(@(from, to), ...) for several.
     $swaps = @()
     if ($e.Contains('From')) { $swaps += ,@($e.From, $e.To) }
     if ($e.Contains('Swap')) { $swaps += $e.Swap }
     $did = @()
+    if ($e.Contains('Level')) { $did += $lvDid }
     foreach ($sw in $swaps) {
         $n = @($lines | Where-Object { $_ -eq $sw[0] }).Count
         if ($n -ne 1) { throw "$($src.Name): expected exactly one '$($sw[0])', found $n" }
