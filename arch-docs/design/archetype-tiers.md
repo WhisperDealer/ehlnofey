@@ -338,8 +338,28 @@ by keeping and re-weighting the sublist references. Bethesda's own head-variant 
 |---|---|---|---|
 | `LCharDraugrMelee1HMale` 055936, `Melee2H` 01E772, `Missile` 0A6844 | Draugr 1 · Restless 6 · Wight 13 · Scourge 21 · Deathlord 30 · Ebony Deathlord 40 | `SubCharDraugr02` Restless ×3 · **`SubCharDraugr03` Wight ×3** · `SubCharDraugr04` Scourge ×2 | **T3** (T2–T4) |
 | `LCharDraugrWarlockMale` 0BF7BB | 6 · 13 · 21 | 6 ×1 · **13 ×3** · 21 ×2 | **T3** (T2–T4) |
-| `LCharDraugrBoss` 042480 | Overlord 7 · Wight Lord 15 · Scourge Lord 24 · Death Overlord 34 · 45 · 50 | Wight Lord ×2 · **Scourge Lord ×3** · **Deathlord ×2** · Death Overlord ×2 · 45 ×1 | **T4** (T3–T6) |
-| `LCharDraugrBossNoDragonPriest` 0DD9D8 | 7 · 15 · 24 · 34 · 45 | same as above, minus the priest attachment | **T4** |
+| `LCharDraugrBoss` 042480 | Overlord 7 · Wight Lord 15 · Scourge Lord 24 · Death Overlord 34 · Ebony Death Overlord 45 · Dragon Priest sublist | ~~Wight Lord ×1 · Scourge Lord ×2 · Death Overlord ×1 · Ebony ×1~~ → **Death Overlord 45 ×1 · Ebony Death Overlord 45 ×1** (revised, below) | **T7-** (pinned 45) |
+| `LCharDraugrBossNoDragonPriest` 0DD9D8 | 7 · 15 · 24 · 34 · 45 | same as above | **T4** |
+
+> **Built (WD-49, 2026-09-27).** The mook roster is as the table says, across all eleven melee and missile
+> lists. The warlock lists get the same shape at 6 ×1 · 13 ×3 · 21 ×2 (they have no level-1 rung). The
+> **boss row was revised by the user**. It is a four-rung band, 15 / 24 / 34 / 45 at 1 : 2 : 1 : 1 (mean 28). The
+> Deathlord (30) is **not** moved into it, so both Deathlord rungs leave the game's leveled lists. They survive
+> only where they are placed directly. The level-60 Dragon Priest sublist stays out, as it was under Requiem.
+> The 34 and the 45 share the name "Draugr Death Overlord". Only the 45 carries Ebony: Requiem had stripped
+> Ebony from every draugr, and it is restored on the three lists that rung uses. Everything else keeps
+> Requiem's ancient Nord ceiling. Vanilla gold is back on draugr corpses and on the Dragon Priest. The
+> Hulking Draugr stay out: DLC2Init was their only route in, and it stays stripped (user decision).
+> Requiem's rosters had kept all six rungs weighted low (plain Draugr ×7 of 12, mean ≈ 7) and pinned the boss
+> to 34, so Bleak Falls Barrow's boss was level 34 at player level 1.
+>
+> **Revised the same day (user): the ranks are raised, and the boss is pinned.** This is a deliberate exception
+> to rule 1. Restless, Wight and Scourge go up +15 to **21 / 28 / 36** (mean 27.4). The change is on the nine
+> `EncDraugr0{2,3,4}Template{,Missile,Magic}` records that own their level. All nine have `AutoCalcStats`, so
+> health and skills follow the level, but perks and spells stay as they were. At that level the mooks passed
+> the boss band, so the band is dropped. The boss is now **"Draugr Death Overlord" at 45, ×1 plain and ×1
+> Ebony**. `EncDraugr05TemplateBoss` is raised from 34 to 45, so the two differ only in gear. The Dragon Priests
+> (50) still outrank everything in the barrow. Hand-placed Deathlords (30) now sit below the Scourge.
 
 **Narrowed from T1–T5 to T2–T4 (2026-07-29).** The draft gave draugr the widest band in the table on
 the argument that, with the tomb gone as an input, the *spread* had to carry the texture. Rejected:
@@ -358,14 +378,22 @@ Two rungs leave the generic pool, and rule 4 says reserve rather than drop:
 all, so the archetype's own base name effectively leaves the game. That is defensible — a tomb full
 of Restless Draugr is a better tomb — but it is a legibility cost under rule 4, and the cheapest
 mitigation is to keep `SubCharDraugr01` ×1 on the *Missile* list only, where a weak skirmisher reads
-naturally. **Flagged, not taken.**
+naturally. **Flagged, not taken** (declined again in WD-49).
 
 **And it raises the floor.** The old pool was 2/9 plain Draugr; the new floor is Restless (L=6). Every
 Nordic tomb in the game gets harder at the bottom and easier at the top. **Bleak Falls Barrow is the
 one to watch** — it is main-quest-critical and reached at character level ~2–5.
 
 **Lore invariant preserved:** the Dragon Priest (fixed 50, T7) outranks every draugr in his barrow —
-the boss band tops at 45. `[verified]` against `lore-constraints.md` §3.
+the boss band tops at 45. `[verified]` against `lore-constraints.md` §3. WD-49 re-checked all eleven: every
+generic and named priest (Vokun, Krosis, Otar, Hevnoraak, Rahgot, Morokei, Nahkriin, Volsung, Vahlok) is a
+fixed 50, and Zahkriisos is the 60 capstone. None is overridden.
+
+**Castle Volkihar's skeletons share the draugr lists.** `DLC1VCSkeletonWarrior2h`, `…Missile1/2` and
+`DLC1VCSkeletonMage` template onto `LCharDraugrMelee2HMale`, `LCharDraugrMissile` and `LCharDraugrWarlockMale`, as do
+the Labyrinthian and Rannveig skeleton mages. They take only `Stats` from the list and keep their own name
+("Skeleton"), so they roll the draugr **levels**: 21 / 28 / 36 since WD-49, where Requiem's low weighting had
+them at level 1 most of the time. `[verified]` from the records.
 
 ### 3.3 Falmer, Dwemer, Dremora
 

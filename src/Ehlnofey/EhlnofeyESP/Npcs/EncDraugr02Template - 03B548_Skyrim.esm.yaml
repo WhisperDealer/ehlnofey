@@ -1,0 +1,135 @@
+FormKey: 03B548:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+VersionControl: 1978415
+EditorID: EncDraugr02Template
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  StaminaOffset: 100
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 21
+  CalcMaxLevel: 100
+  SpeedMultiplier: 100
+  HealthOffset: 50
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02430D:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03AD7F:Skyrim.esm
+Voice: 01F1CD:Skyrim.esm
+Race: 000D53:Skyrim.esm
+WornArmor: 01FE80:Skyrim.esm
+Perks:
+- Perk: 10D1E1:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 0242FC:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsAllies
+Class: 023C0C:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Restless Draugr
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 26
+  - Key: TwoHanded
+    Value: 26
+  - Key: Archery
+    Value: 15
+  - Key: Block
+    Value: 22
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 22
+  - Key: LightArmor
+    Value: 15
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 19
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 15
+  - Key: Conjuration
+    Value: 15
+  - Key: Destruction
+    Value: 20
+  - Key: Illusion
+    Value: 20
+  - Key: Restoration
+    Value: 15
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 150
+  Stamina: 205
+CombatStyle: 072DF5:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 1
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 0BF452:Skyrim.esm
+DefaultOutfit: 023BF0:Skyrim.esm
+DefaultPackageList: 032AE2:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000

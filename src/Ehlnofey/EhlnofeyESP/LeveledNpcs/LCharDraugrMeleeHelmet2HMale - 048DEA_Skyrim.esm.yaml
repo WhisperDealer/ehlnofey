@@ -1,5 +1,7 @@
 FormKey: 048DEA:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharDraugrMeleeHelmet2HMale
+FormVersion: 40
 Version2: 6
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -7,11 +9,23 @@ Flags:
 Entries:
 - Data:
     Level: 1
-    Reference: 048DE9:Skyrim.esm
+    Reference: 023BFF:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
     Reference: 023BFF:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023BFF:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023C01:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023C01:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
@@ -23,37 +37,5 @@ Entries:
     Count: 1
 - Data:
     Level: 1
-    Reference: 023C08:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 048DE9:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 048DE9:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 048DE9:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 048DE9:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 048DE9:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023BFF:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023C01:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023BFF:Skyrim.esm
+    Reference: 023C03:Skyrim.esm
     Count: 1

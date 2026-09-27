@@ -198,6 +198,20 @@ $readdByPlace = @(
     # The two bandit-list entries are cut in $cuts.
     @{ List = '10962B:Skyrim.esm'; Items = @(@('013989:Skyrim.esm', 1), @('013991:Skyrim.esm', 1), @('013999:Skyrim.esm', 1), @('0139A1:Skyrim.esm', 1),
                                              @('013983:Skyrim.esm', 1), @('01398B:Skyrim.esm', 1), @('013993:Skyrim.esm', 1), @('01399B:Skyrim.esm', 1)) }   # LItemVampireWeaponBase <- Steel/Orcish/Dwarven/Elven Sword + WarAxe
+    # ---- Draugr (WD-49, user 2026-09-27). Requiem took Ebony off every draugr: the "Ebony" lists hold plain ancient Nord
+    # and a steel shield. Ebony goes back on the Ebony Death Overlord (45) only, the top rung of the boss band, as the
+    # only thing that tells it apart from the Death Overlord (34) under the same name. These three lists are used only
+    # by the Ebony rung (boss leaves and their mook Deathlord twins, which no longer spawn from any list); the old
+    # entries are cut in $cuts. Plain Ebony, as vanilla. Everything else stays ancient Nord (Requiem's ceiling).
+    @{ List = '02432D:Skyrim.esm'; Items = @(@('0139B1:Skyrim.esm', 1), @('0139AB:Skyrim.esm', 1)) }                            # LItemDraugr05EWeapon1H   <- EbonySword, EbonyWarAxe
+    @{ List = '024330:Skyrim.esm'; Items = @(@('0139AF:Skyrim.esm', 1), @('0139AC:Skyrim.esm', 1), @('0139B2:Skyrim.esm', 1)) }  # LItemDraugr05EWeapon2H   <- EbonyGreatsword, EbonyBattleaxe, EbonyWarhammer
+    @{ List = '0559FB:Skyrim.esm'; Items = @(,@('013964:Skyrim.esm', 1)) }                                                       # LItemDraugrEbonyShield50 <- ArmorEbonyShield
+    # Vanilla gold on draugr corpses (user, WD-49). Requiem cut it for a guaranteed bone meal, which stays. All four
+    # lists put back are already flat: DeathItemDraugrGold (25%, coin), the Golden Touch perk bonus, the Imperial
+    # racial bonus, and the Dragon Priest's 50-250 boss gold.
+    @{ List = '03AD7F:Skyrim.esm'; Items = @(@('04F78C:Skyrim.esm', 1), @('0424EB:Skyrim.esm', 1), @('0AA02C:Skyrim.esm', 1)) }  # DeathItemDraugr      <- DeathItemDraugrGold, LootPerkGoldenTouchChange, LootImperialLuck
+    @{ List = '10FACC:Skyrim.esm'; Items = @(@('04F78C:Skyrim.esm', 1), @('0424EB:Skyrim.esm', 1), @('0AA02C:Skyrim.esm', 1)) }  # DeathItemDraugrMage  <- same
+    @{ List = '03AD7E:Skyrim.esm'; Items = @(,@('088513:Skyrim.esm', 1)) }                                                       # DeathItemDragonPriest <- LootDraugrGoldBoss01
 )
 
 $fish = 'ccbgssse001-fish.esm'; $arrows = 'ccbgssse002-exoticarrows.esl'; $spell = 'ccbgssse014-spellpack01.esl'
@@ -374,6 +388,10 @@ $cuts = [ordered]@{
     '10C6ED:Skyrim.esm' = @('10C6EE:Skyrim.esm', '01D248:Skyrim.esm', '10C6EF:Skyrim.esm', '10C6F0:Skyrim.esm')   # LItemVampireAttire - Leather/Orc/Elven/Glass sets
     '02DF9F:Skyrim.esm' = @('00082E:ccbgssse002-exoticarrows.esl')      # LItemVampireWeaponArrows   - CC bone arrow
     '000810:ccbgssse002-exoticarrows.esl' = @('00082E:ccbgssse002-exoticarrows.esl')   # ccBGSSSE002_LItemArrowMagicAny_Vendor - CC bone arrow
+    # ---- Draugr (WD-49): Requiem's ancient Nord stand-ins leave the Ebony lists (Ebony re-added above).
+    '02432D:Skyrim.esm' = @('02C66F:Skyrim.esm', '01CB64:Skyrim.esm')   # LItemDraugr05EWeapon1H   - DraugrSword, DraugrBattleAxe
+    '024330:Skyrim.esm' = @('0236A5:Skyrim.esm', '01CB64:Skyrim.esm')   # LItemDraugr05EWeapon2H   - DraugrGreatsword, DraugrBattleAxe
+    '0559FB:Skyrim.esm' = @('013955:Skyrim.esm')                        # LItemDraugrEbonyShield50 - ArmorSteelShield
 }
 # Weight = the exact number of entries a reference should have (entries are the engine's only weight).
 $weights = [ordered]@{

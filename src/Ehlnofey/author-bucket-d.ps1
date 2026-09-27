@@ -319,6 +319,37 @@ Add-Spec '01E77A:Skyrim.esm' 'LCharAtronach'                      @{ Gates = @{ 
 Add-Spec '10709B:Skyrim.esm' 'dunFellglowLCharAtronachAdjusted'   @{ Gates = @{ 1 = 2; 20 = 2; 30 = 1 } }
 Add-Spec '10709A:Skyrim.esm' 'dunFellglowLCharAtronachOrFamiliar' @{ Gates = @{ 1 = 1; 6 = 2; 20 = 2; 30 = 1 } }
 
+# 3.2 Draugr (WD-49, user 2026-09-27): Draugr 1 · Restless 6 · Wight 13 · Scourge 21 · Deathlord 30 · Ebony Deathlord 40,
+#     at gates 1/6/13/21/30/40 in all eleven melee and missile lists (the rungs are SubCharDraugr0N* sublists; Bethesda's
+#     head-variant weighting inside them is untouched). Roster Restless x3 · Wight x3 · Scourge x2, mean level 12.4, T2-T4.
+#     Plain Draugr and both Deathlords leave the generic pool. MissileMale holds every gate twice, so its M mix survives.
+#     Requiem had kept all six rungs, weighted low (Draugr x7 of 12 on the 1H list, mean ~7).
+$draugrLadder = @{ 6 = 3; 13 = 3; 21 = 2 }
+foreach ($d in @(
+    @('055936:Skyrim.esm', 'LCharDraugrMelee1HMale'),         @('0BF7A9:Skyrim.esm', 'LCharDraugrMelee1HFemale'),
+    @('01E772:Skyrim.esm', 'LCharDraugrMelee2HMale'),         @('0BF7AD:Skyrim.esm', 'LCharDraugrMelee2HFemale'),
+    @('0567C9:Skyrim.esm', 'LCharDraugrMeleeHelmet1HMale'),   @('0BF7AF:Skyrim.esm', 'LCharDraugrMeleeHelmet1HFemale'),
+    @('048DEA:Skyrim.esm', 'LCharDraugrMeleeHelmet2HMale'),   @('0BF7B1:Skyrim.esm', 'LCharDraugrMeleeHelmet2HFemale'),
+    @('01E7AA:Skyrim.esm', 'LCharDraugrMissile'),             @('0A6844:Skyrim.esm', 'LCharDraugrMissileMale'),
+    @('03BCC0:Skyrim.esm', 'LCharDraugrMissileFemale'))) {
+    Add-Spec $d[0] $d[1] @{ Gates = $draugrLadder }
+}
+#     Warlocks have no level-1 rung: gate 1 is already Restless (6), then 13 and 21. Same shape: 6 x1 · 13 x3 · 21 x2.
+foreach ($d in @(
+    @('0BF7BB:Skyrim.esm', 'LCharDraugrWarlockMale'), @('01E7AB:Skyrim.esm', 'LCharDraugrWarlock'),
+    @('03BCC1:Skyrim.esm', 'LCharDraugrWarlockFemale'))) {
+    Add-Spec $d[0] $d[1] @{ Gates = @{ 1 = 1; 13 = 3; 21 = 2 } }
+}
+#     The three kept ranks are raised +15 to 21 / 28 / 36 by author-retargets.ps1 (user, 2026-09-27): mean 27.4.
+# 3.2 Draugr boss: PINNED to "Draugr Death Overlord" at 45 (user, WD-49, revised 2026-09-27 from a 15-45 band once the
+#     mooks were raised past it). Death Overlord x1 · Ebony Death Overlord x1: the plain one is raised 34 -> 45 in
+#     author-retargets.ps1, so the two share name and level and differ only in gear - one carries Ebony
+#     (author-injectors.ps1). Requiem pinned LCharDraugrBoss to Death Overlord 34.
+#     LCharDraugrBoss gates 40/50 each hold the 1H and 2H leaf; the NoDragonPriest list holds the TemplateBoss records
+#     themselves, at gates 21/30. Vanilla's gate-60 Dragon Priest sublist stays out.
+Add-Spec '042480:Skyrim.esm' 'LCharDraugrBoss'               @{ Gates = @{ 40 = 1; 50 = 1 } }
+Add-Spec '0DD9D8:Skyrim.esm' 'LCharDraugrBossNoDragonPriest' @{ Gates = @{ 21 = 1; 30 = 1 } }
+
 # 3.1 Thalmor (WD-48, user 2026-09-26): a specialist force sent into Skyrim, so better than the average soldier.
 #     Only the EncThalmor00* templates carry a name ("Thalmor Soldier" / "Thalmor Wizard"); every rung leaf is
 #     nameless and takes Traits, so each band shows one name at every level: PINNED, all three (WD-42).

@@ -1,5 +1,7 @@
 FormKey: 01E7AA:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharDraugrMissile
+FormVersion: 40
 Version2: 14
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -7,11 +9,23 @@ Flags:
 Entries:
 - Data:
     Level: 1
-    Reference: 0387CB:Skyrim.esm
+    Reference: 023C00:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
     Reference: 023C00:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023C00:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023C02:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023C02:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
@@ -23,37 +37,5 @@ Entries:
     Count: 1
 - Data:
     Level: 1
-    Reference: 023C09:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0387CB:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0387CB:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0387CB:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0387CB:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0387CB:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023C00:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023C02:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023C00:Skyrim.esm
+    Reference: 023C04:Skyrim.esm
     Count: 1

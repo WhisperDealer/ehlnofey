@@ -1,16 +1,30 @@
 FormKey: 01E772:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharDraugrMelee2HMale
+FormVersion: 40
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
 - Data:
     Level: 1
-    Reference: 023C07:Skyrim.esm
+    Reference: 023BFF:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
     Reference: 023BFF:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023BFF:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023C01:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023C01:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
@@ -22,37 +36,5 @@ Entries:
     Count: 1
 - Data:
     Level: 1
-    Reference: 023C08:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023C07:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023C07:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023C07:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023C07:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023C07:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023C07:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023C01:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023BFF:Skyrim.esm
+    Reference: 023C03:Skyrim.esm
     Count: 1

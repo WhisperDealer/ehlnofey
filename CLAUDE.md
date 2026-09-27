@@ -234,7 +234,7 @@ mod, not a new-content mod. Ehlnofey changes *where the numbers come from*, and 
 
 ## Current phase
 
-**Phase 4 is under way and `Ehlnofey.esp` exists: 2,877 records** (2026-07-31, branch
+**Phase 4 is under way and `Ehlnofey.esp` exists: 2,727 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
 `design/requiem-method`). Read **`arch-docs/design/requiem-method.md` first** — it is the live
 architecture doc, and its §6 is the current order of work. Everything below it in this section is
 the Phase 3 record, kept because most of it still holds, but **the architecture it decided has been
@@ -420,6 +420,21 @@ See `archetype-tiers.md` §3.1.
   ×1 [5–30] and [5–60]). Its quest Necromancer is fixed at **36** (was ×1.2 [12–70]). The pet is untouched. The pack is
   the **28th master** (23 CC plugins).
 - **Plugin size:** 2,716 records (+10 `NPC_`; 4 `LVLN` re-authored). See `archetype-tiers.md` §3.1 and §5.
+
+**Draugr are done (WD-49, 2026-09-27). Verified in game by the user.**
+- **Mooks:** Restless ×3 · Wight ×3 · Scourge ×2 across all eleven melee and missile lists. Warlocks get the same shape
+  at ×1 · ×3 · ×2. **All three ranks are raised +15 to 21 / 28 / 36** (user), mean 27.4, on the nine templates that own their
+  level (`AutoCalcStats`, so health and skills follow; perks do not). Plain Draugr and both Deathlord rungs leave the leveled
+  lists. Requiem had kept all six rungs, weighted low (mean ≈ 7).
+- **Bosses: pinned to "Draugr Death Overlord" at 45.** The plain one is raised from 34 to match the Ebony one, and the two roll
+  50/50 (user). Requiem had pinned the list at 34, so Bleak Falls Barrow's boss was level 34 at player level 1.
+- **Gear:** Requiem's ancient Nord ceiling stays. **Ebony comes back on the Ebony Death Overlord only**, which is the only
+  visible difference between the two bosses: its three lists, plus a retarget of `EncDraugr05TemplateBossEbony`, whose own
+  list Requiem had turned into enchanted ancient Nord.
+- **Loot:** vanilla gold is back on draugr corpses and on the Dragon Priest (50–250). Requiem's bone meal stays.
+- **Dragon priests** are all fixed at 50 already, so they needed no change. **Hulking Draugr stay out** (user).
+- **Castle Volkihar skeletons** take `Stats` from the draugr lists, so they now roll the same 21/28/36.
+- **Plugin size:** 2,727 records (+11 `NPC_`). See `archetype-tiers.md` §3.2.
 
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
@@ -1025,6 +1040,7 @@ A reader-facing page per finished faction, in one shared style. Each faction tic
 | Thalmor | WD-48 | https://claude.ai/artifact/35EZVm54hQ5fFC25A7Qa5t |
 | Wildlife & monsters + CC bonewolf | WD-54 | https://claude.ai/artifact/S7sQbvsHBKNVF21tsUAche |
 | Dremora & atronachs | WD-52 | https://claude.ai/artifact/FZrcU1aZLGgqj9aFQkfPiW |
+| Draugr & dragon priests | WD-49 | https://claude.ai/artifact/Jkxn5D8LCUjtrZrwfrYKVE |
 
 Candidates still to confirm:
 

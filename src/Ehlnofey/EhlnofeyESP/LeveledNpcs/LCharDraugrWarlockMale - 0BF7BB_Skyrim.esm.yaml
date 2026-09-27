@@ -1,5 +1,7 @@
 FormKey: 0BF7BB:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharDraugrWarlockMale
+FormVersion: 40
 Version2: 3
 Entries:
 - Data:
@@ -12,45 +14,17 @@ Entries:
     Count: 1
 - Data:
     Level: 1
+    Reference: 023C05:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 023C05:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
     Reference: 023C06:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
-    Reference: 038927:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 038927:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 038927:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 038927:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 038927:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 038927:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023C05:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 038927:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 038927:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 023C05:Skyrim.esm
+    Reference: 023C06:Skyrim.esm
     Count: 1

@@ -1,10 +1,24 @@
 FormKey: 042480:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharDraugrBoss
+FormVersion: 40
 Version2: 9
 Flags:
 - CalculateForEachItemInCount
 Entries:
 - Data:
     Level: 1
+    Reference: 0DDD5E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
     Reference: 0DDD5D:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0DDD60:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0DDD5F:Skyrim.esm
     Count: 1

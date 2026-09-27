@@ -246,6 +246,28 @@ $edits = @(
     @{ Npc = '023ABE:Skyrim.esm';     From = '    Level: 2';  To = '    Level: 5' }    # EncWolf
     @{ Npc = '0E1672:Skyrim.esm';     From = '    Level: 2';  To = '    Level: 5' }    # dunWhiteRiverWatchWolf
     @{ Npc = '0D1684:Skyrim.esm';     From = '    Level: 2';  To = '    Level: 5' }    # dunPOITrappedWolf
+
+    # ---- Draugr (WD-49, user 2026-09-27): the Ebony Death Overlord (45) carries Ebony. LCharDraugrBossNoDragonPriest
+    # spawns this template record directly, and it carries LItemDraugr05Weapon1H - Ebony in vanilla, enchanted ancient
+    # Nord since Requiem. It now draws from the restored Ebony list instead. The EncDraugr05Boss*Ebony leaves that
+    # template on it own their inventory (no Inventory flag), so nothing else changes.
+    @{ Npc = '04247F:Skyrim.esm'; From = '    Item: 023C10:Skyrim.esm'; To = '    Item: 02432D:Skyrim.esm' }   # EncDraugr05TemplateBossEbony
+    # Rank-and-file draugr +15 (user, 2026-09-27): Restless 21 · Wight 28 · Scourge 36. These nine templates own the level of
+    # every leaf in the three ranks (Template2H takes Stats from Template; Missile and Magic own theirs). AutoCalcStats is set
+    # on all nine, so health and skills follow the level; perks and spells do not. Hand-placed ambush variants follow too,
+    # as do the Castle Volkihar / Labyrinthian / Rannveig skeletons, which take Stats from the draugr lists.
+    @{ Npc = '03B548:Skyrim.esm'; From = '    Level: 6';  To = '    Level: 21' }   # EncDraugr02Template        Restless
+    @{ Npc = '03BE20:Skyrim.esm'; From = '    Level: 6';  To = '    Level: 21' }   # EncDraugr02TemplateMissile
+    @{ Npc = '038A25:Skyrim.esm'; From = '    Level: 6';  To = '    Level: 21' }   # EncDraugr02TemplateMagic
+    @{ Npc = '03B549:Skyrim.esm'; From = '    Level: 13'; To = '    Level: 28' }   # EncDraugr03Template        Wight
+    @{ Npc = '03BE21:Skyrim.esm'; From = '    Level: 13'; To = '    Level: 28' }   # EncDraugr03TemplateMissile
+    @{ Npc = '038A26:Skyrim.esm'; From = '    Level: 13'; To = '    Level: 28' }   # EncDraugr03TemplateMagic
+    @{ Npc = '03B54A:Skyrim.esm'; From = '    Level: 21'; To = '    Level: 36' }   # EncDraugr04Template        Scourge
+    @{ Npc = '03BE22:Skyrim.esm'; From = '    Level: 21'; To = '    Level: 36' }   # EncDraugr04TemplateMissile
+    @{ Npc = '038A27:Skyrim.esm'; From = '    Level: 21'; To = '    Level: 36' }   # EncDraugr04TemplateMagic
+    # The generic boss is a Death Overlord at 45 (user): the plain one is raised from 34 to match the Ebony one, so the two
+    # differ only in gear. Its EncDraugr05Boss1H/2H leaves take Stats from it.
+    @{ Npc = '04247E:Skyrim.esm'; From = '    Level: 34'; To = '    Level: 45' }   # EncDraugr05TemplateBoss
 )
 
 foreach ($e in $edits) {

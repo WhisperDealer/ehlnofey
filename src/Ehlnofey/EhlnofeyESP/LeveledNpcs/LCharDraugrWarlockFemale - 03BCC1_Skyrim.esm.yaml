@@ -1,5 +1,7 @@
 FormKey: 03BCC1:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharDraugrWarlockFemale
+FormVersion: 40
 Version2: 8
 Entries:
 - Data:
@@ -8,7 +10,7 @@ Entries:
     Count: 1
 - Data:
     Level: 1
-    Reference: 03BCB9:Skyrim.esm
+    Reference: 03BCB6:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
@@ -16,15 +18,7 @@ Entries:
     Count: 1
 - Data:
     Level: 1
-    Reference: 03BCB1:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03BCB1:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03BCB1:Skyrim.esm
+    Reference: 03BCB6:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
@@ -32,13 +26,5 @@ Entries:
     Count: 1
 - Data:
     Level: 1
-    Reference: 03BCB6:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03BCB1:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 03BCB1:Skyrim.esm
+    Reference: 03BCB9:Skyrim.esm
     Count: 1
