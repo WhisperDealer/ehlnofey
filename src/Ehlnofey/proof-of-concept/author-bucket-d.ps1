@@ -22,7 +22,7 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
 $base = 'reference/Base'
-$dst  = 'src/Ehlnofey/EhlnofeyESP/LeveledNpcs'
+$dst  = 'src/Ehlnofey/ProofOfConceptESP/LeveledNpcs'
 $loadOrder = @('01Skyrim', '02Update', '03Dawnguard', '04HearthFires', '05Dragonborn')
 
 # 3.1 Bandit: Bandit 1 · Outlaw 5 · Thug 9 · Highwayman 14 · Plunderer 19 · Marauder 25

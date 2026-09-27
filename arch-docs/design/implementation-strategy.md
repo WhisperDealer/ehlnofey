@@ -1,5 +1,10 @@
 # Implementation strategy — the decision
 
+> **SUPERSEDED by `flattening.md`.** The zone-first hybrid below was replaced after the in-game probe
+> showed zones govern 0.3% of the outdoors and cannot reach worn gear (`flattening.md` §2). SkyPatcher
+> rules are out as well. Kept for §6, the overworld census, which is still cited as evidence. Links into
+> `prior-art/` are dead: that folder was deleted on 2026-09-27.
+
 **Phase 3, document 5.** How Ehlnofey is actually built. This is the decision CLAUDE.md has carried as
 open since Phase 0, and it gates Phase 4.
 
@@ -107,8 +112,8 @@ If a later phase adds new records — most likely region-scoped leveled lists fo
 
 ## 3. Why the zones moved into the plugin
 
-CLAUDE.md assumed the zone work belonged in rules because option A's *ceiling* is frightening: Requiem
-is 108 MB / 26,620 records, MLU 22 MB / 4,751. But that ceiling is set by **NPC and leveled-list**
+CLAUDE.md assumed the zone work belonged in rules because option A's *ceiling* is frightening: the
+largest deleveling mods measured run to 108 MB / 26,620 records and 22 MB / 4,751. But that ceiling is set by **NPC and leveled-list**
 overrides, not by zones. `morrowloot.md` §8.3 measured the zone slice directly:
 
 > *"360 `ECZN` records is ~1 MB of YAML — a hand-authorable, reviewable, diffable core."*
@@ -420,7 +425,5 @@ compatibility, no scripting.
 ## Sources
 
 Design inputs: `design/tiers.md` · `design/difficulty-map.md` · `design/loot-model.md` ·
-`design/engine-behaviour.md`. Prior art: `prior-art/skypatcher.md` §§2–5 (the capability and limit
-tables, all `[verified]` from source) · `prior-art/morrowloot.md` §§0, 8 (the cost measurements) ·
-`prior-art/requiem/` (option A's ceiling). Workspace constraints: `CLAUDE.md` guardrails 3 and 6,
+`design/engine-behaviour.md`. Prior art: the prior-art write-ups (deleted 2026-09-27). Workspace constraints: `CLAUDE.md` guardrails 3 and 6,
 FormKey discipline, and the skills inventory.

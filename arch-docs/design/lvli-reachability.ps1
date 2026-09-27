@@ -1,6 +1,6 @@
-# requiem-method.md §5.1 - partition the gated LVLI into outfit-reachable vs container-only.
+# flattening.md §5.1 - partition the gated LVLI into outfit-reachable vs container-only.
 #
-# Under the Requiem-method architecture, container lists KEEP their gates (the encounter zone
+# If containers stay zone-gated (flattening.md §5.4 option B), container lists KEEP their gates (the encounter zone
 # supplies the level, verified by probe test 3) and need no edit. Only lists reachable from an
 # NPC's worn/carried inventory are bone-1 leaks. This script measures that split.
 #

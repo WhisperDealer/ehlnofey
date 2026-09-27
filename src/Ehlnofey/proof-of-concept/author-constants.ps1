@@ -7,7 +7,7 @@
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
-$dst = 'src/Ehlnofey/EhlnofeyESP'
+$dst = 'src/Ehlnofey/ProofOfConceptESP'
 
 function Copy-Record($srcPath, $subdir) {
   $d = Join-Path $dst $subdir

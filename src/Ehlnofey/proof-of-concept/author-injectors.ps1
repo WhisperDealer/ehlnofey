@@ -41,10 +41,10 @@
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
-$root = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
+$root = (Resolve-Path (Join-Path $PSScriptRoot '..\..\..')).Path
 $cc   = Join-Path $root 'reference\mods\CreationClubYaml'
 $base = Join-Path $root 'reference\Base'
-$esp  = Join-Path $root 'src\Ehlnofey\EhlnofeyESP'
+$esp  = Join-Path $root 'src\Ehlnofey\ProofOfConceptESP'
 $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
 $loadOrder = @('01Skyrim', '02Update', '03Dawnguard', '04HearthFires', '05Dragonborn')
 

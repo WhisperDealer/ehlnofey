@@ -1,12 +1,12 @@
 # Archetype tiers — the roster table
 
-**Phase 4, step 2** of `requiem-method.md` §6. Under the Requiem-method architecture the tier ladder
+**Phase 4, step 2** of `flattening.md`. Once the leveled lists are flattened the tier ladder
 stops indexing *places* and starts indexing *creature families*: a flattened list has one fixed
 roster, and that roster is what a player meets everywhere the list is placed.
 
 This document assigns that roster, for every archetype, once.
 
-Read `requiem-method.md` first. Inputs: `tiers.md` (the ladder), `enemy-taxonomy.md` §2 (the vanilla
+Read `flattening.md` first. Inputs: `tiers.md` (the ladder), `enemy-taxonomy.md` §2 (the vanilla
 ladders, `[verified]`), `lore-constraints.md` §1 (the display-name hierarchy, `[verified]`).
 
 **The ladder, unchanged:** `T1 = 4 · T2 = 8 · T3 = 14 · T4 = 21 · T5 = 30 · T6 = 40 · T7 = 50`.
@@ -33,11 +33,9 @@ Every surviving rung goes in at `Level: 1` with `CalculateFromAllLevelsLessThanO
 all rungs are always eligible and one is drawn at random. Weight by **repeating the entry**:
 `Bandit ×3` means the entry appears three times.
 
-> **Correction to `requiem-method.md` §4.4.** Weighting is *literal entry duplication*, not a `Count`
-> field. `Count` is how many actors the entry spawns; `CalculateForEachItemInCount` rolls each of
-> them separately. Requiem's `_CLI_` convention writes `Count: 5` as authoring shorthand and its
-> **patcher unrolls it into five entries** (`lessons-for-ehlnofey.md` §4) — the engine has no weight
-> field. Ehlnofey has no patcher, so it writes the duplicates out. Costs bytes, needs nothing.
+> **Weighting is *literal entry duplication*, not a `Count` field.** `Count` is how many actors the
+> entry spawns; `CalculateForEachItemInCount` rolls each of them separately. The engine has no weight
+> field, so Ehlnofey writes the duplicates out. Costs bytes, needs nothing.
 
 ### Rule 3 — a roster spans at most three adjacent tiers, and the top rung is rare
 
@@ -120,7 +118,7 @@ The main table. `Vanilla rungs` are name (level) from `lore-constraints.md` §1 
 >   from the same bandit rungs, two up from the mooks. The ambush and `MeleeAny` records lose their race/voice list and draw from the
 >   one-handed list. Krev and the other two bosses stay on the bandit chief (28).
 > - **Penitus Oculatus 36**, level with the Thalmor soldiers. The Katariah archers (`LvlPenitusOculatusMissileAmbush`) lacked the
->   `Stats` flag and were level 1 (vanilla bug); fixed. **Gear:** bucket B had stripped their bow and gear lists (the Imperial bug):
+>   `Stats` flag and were level 1 (vanilla bug); fixed. **Gear:** the POC left them with no bow or gear (the Imperial trap, §6):
 >   the Imperial bow is back in `PenitusGearWithBow`, and the steel dagger, gold, food, drink, torch and Imperial symbol in `PenitusGear`.
 > - **Vigilants 35**, pinned: every list (the two sublists that were capped at 5, the seven Hall voice lists that still rolled
 >   5–25 and Dawnguard's `…NordM`) rolls rung 05 only. Carcette 45, Tolan 35 (§7). Their gear was already flat.
@@ -128,15 +126,14 @@ The main table. `Vanilla rungs` are name (level) from `lore-constraints.md` §1 
 >   rolls three sublists of vanilla leaves that gated 1–25, one holding only rung 03 (14). All three are pinned to rung 05.
 >   Its content-aware script filled its own Enforcer armor and crossbow lists with gated items from two other CC packs
 >   (Vigil Veteran armor at 30, crossbows at 18 / 35). Those list properties are stripped and the items re-added at level 1.
-> - **Ghost wizards** roll the bandit ghosts' 5/9/14; Requiem had pinned them to 25.
+> - **Ghost wizards** roll the bandit ghosts' 5/9/14.
 > - **Alik'r:** unchanged, except the level-1 `WERJ03` encounter (see the row).
 > - **Berserkers:** vanilla's `SubCharBandit02Melee2HBerserk` held the level-1 `EncBandit01` berserkers, so the dropped level-1 bandit
 >   rung still rolled 3 times in 9 for every berserker and berserker ghost. Its leaves are now the `EncBandit02` (Outlaw) ones.
 
 **Thalmor (WD-48, user 2026-09-26). Levels and gear verified in game by the user.** A specialist force sent into Skyrim, so better than
 the average soldier. Only the `EncThalmor00*` templates carry a name ("Thalmor Soldier", "Thalmor Wizard"), and every
-rung leaf takes `Traits`, so no band is legible and all three are pinned. Requiem had flattened the lists evenly
-(soldiers ≈ 20, bosses 14 ×3 of 7).
+rung leaf takes `Traits`, so no band is legible and all three are pinned.
 - **Soldiers, melee and archers: 36** (rung 05), in `LCharThalmorMelee1H`, `…Melee1HFemale`, `…Missile` and the two
   Dragonborn male lists. Above every hold guard and civil-war soldier (25/30/35). The plain, shield and dual-wield
   leaves all stay. The embassy reception guards (`MQ201PartyGuard`, `…2`) templated straight onto a level-20 leaf; they
@@ -144,8 +141,8 @@ rung leaf takes `Traits`, so no band is legible and all three are pinned. Requie
 - **Wizards: 44** (rung 06: Chain Lightning, Incinerate, Thunderbolt, Ironflesh, storm atronach).
 - **Boss wizards: 50** (`EncThalmor06MagicBossM`, +300 HP). Still named "Thalmor Wizard". Placed only as the
   Northwatch Interrogator and Agent Lorcalin, plus CC spawns.
-- **Gear: Elven.** Every soldier wears plain Elven armor and carries Elven weapons, dagger, bow and shield (Requiem's
-  pin; unchanged). Wizards wear Thalmor robes with an Elven dagger.
+- **Gear: Elven.** Every soldier wears plain Elven armor and carries Elven weapons, dagger, bow and shield. Every soldier list is
+  pinned to its Elven entries. Wizards wear Thalmor robes with an Elven dagger.
 - **Rare glass for the higher ranks only** (user): the **Justiciars** (`WEThalmorElvenArmor*`, "Thalmor Justiciar",
   the WE32/33/34 and WERoad03 patrols) draw their weapon from `EHL_LVLI_ThalmorJusticiarWeapon1H` 000800 (Elven 9 : glass
   1). Their armor comes from the Justiciar-only no-helmet outfit, which now rolls Elven with or without a helmet 9 : 9
@@ -175,8 +172,8 @@ weights. The Nightlord (60) is out: it would out-level Harkon.
 - **Weapons:** every generic vampire carries `LItemVampireWeaponBase` (vampires only), which pointed at the bandit
   sword and war-axe lists (70% iron). It now holds steel, orcish, dwarven and elven, one sword and one war axe
   each: 25% per material, no iron, no glass.
-- **Armor:** vampire armor and enchanted vampire robes only. Requiem's Leather/Orcish/Elven/Glass sets were cut from
-  `LItemVampireAttire`; about 1 in 12 vampires had worn glass.
+- **Armor:** `LItemVampireAttire` holds vampire armor and enchanted vampire robes only: no Leather, Orcish, Elven or
+  Glass sets.
 - **Companions** (`LCharVampireCompanion`, `…Frost`): death hound, giant frostbite spider, small gargoyle and
   gargoyle. The skeever and the small spiders are dropped.
 - **CC bone arrow** cut from `LItemVampireWeaponArrows`, and from the exotic-arrows vendor sublist, which sits in
@@ -199,14 +196,14 @@ place, so the band is wide: Mage ×2 · Wizard/Ascendant ×3 · Pyromancer/Maste
 schools, their `Omit01` variants and the 22 race/voice lists (32 in all). `LCharWarlockStormElfHaughtyF` gates
 its level-19 rung at 18 (vanilla typo). An earlier 19×1 · 27×3 · 36×3 · 46×1 draft was dropped the same day.
 - **Bosses are pinned to 50, the Arch rung** — a rung and a name no mook has. Vanilla's boss lists stop at 40;
-  the `LCharWarlock07Boss*` sublists exist but vanilla never used them (Requiem wired them in), and there is no
-  Necro one, so the Necro lists take its two level-50 leaves. Bucket D's `Pin` rule writes these.
+  the `LCharWarlock07Boss*` sublists exist but vanilla never used them, so each boss list is pinned to its school's
+  `07Boss` sublist. There is no Necro one, so the Necro lists take its two level-50 leaves.
 - **Voice lists keep their voice.** Four have no level-50 leaf in their race and sex and are pinned at **40**:
   `…BossNecroMaleCondescending`, `…FireBossFemaleElfHaughty`, `…IceBossFemaleElfHaughty`,
   `…StormBossFemaleElfHaughty`.
 - **CC necro-arts bosses** (21/30/40) stay only in `…BossNecroMaleCondescending`, as its level-40 Breton M.
 - **Malkoran** (`DA03Wizard`, Rimerock Burrow) templates on `LCharWarlockBossConjurer`, so he is level 50.
-- **Gear is left at vanilla/Requiem tier** (user: mages may carry lower-level gear).
+- **Gear stays flat at whatever the lists already hold, low tiers included** (user: mages may carry lower-level gear).
 - **Witches and Hags follow the warlocks** (user, after play 2026-09-27). They are the only NPCs named "Witch" or
   "Hag": the six `EncWitch01/02Template{Fire,Ice,Storm}` records, which own Stats and SpellList for every leaf of
   `LCharWitch*` (Darklight Tower, the hagraven nests). Vanilla fixed them at 4 and 8. **Witch = the Mage rung (19,
@@ -219,9 +216,8 @@ its level-19 rung at 18 (vanilla typo). An earlier 19×1 · 27×3 · 36×3 · 46
 **Forsworn (WD-43, user 2026-09-25).** Forsworn gear is weak, so the *levels* carry the threat. That is why
 the band sits a tier above the doc's first draft (mean ≈ 20). The roster spans four tiers, which WD-42 allows
 per faction. The plain level-1 "Forsworn" is dropped, as the level-1 bandit was. All five rank-and-file lists
-(`Melee1H`, `MeleeFemale`, `Missile`, `MissileFemale`, `Shaman`) share the roster. Requiem had pinned Missile to
-Pillager/Ravager and Shaman to Ravager only. Briarhearts are pinned to **38**, not Requiem's 51. The shaman list
-gets its Magic sublist back, because Requiem had pointed it at the melee one.
+(`Melee1H`, `MeleeFemale`, `Missile`, `MissileFemale`, `Shaman`) share the roster. Briarhearts are pinned to **38**.
+The shaman list rolls its Magic sublist, not the melee one.
 - **Armor:** Forsworn armor at every level, unchanged. Every armor list was already Forsworn-only.
 - **Low rungs:** Forsworn weapons only (`LItemForswornWeapon1H`).
 - **Briarhearts and Ravagers:** `LItemForswornBossWeapon1H`, which is Forsworn ×10 · Elven ×4 · Dwarven ×4 ·
@@ -235,16 +231,16 @@ gets its Magic sublist back, because Requiem had pointed it at the melee one.
     and nothing else. So the Briarheart shaman dagger is reweighted in place: Steel 4 · Orcish 4 · Dwarven 5 ·
     Elven 5 · ench Dwarven 2 · ench Elven 2 · Glass 1 · Ebony 1. That is glass and ebony at 1 in 24 each,
     and enchanted at 1 in 12 each.
-  - Archer arrows are Forsworn or iron, 50/50. Requiem had made them all iron.
+  - Archer arrows are Forsworn or iron, 50/50.
   - The 15% bonus arrow roll (`LootForswornArrows15`) now rolls the Forsworn arrow list. Before, it rolled
     `LItemArrowsAll`, which holds the CC Exotic Arrows sublist; those were the fire and ice arrows seen in play.
 
 #### 3.1.1 The naming test — a band is only allowed where the rungs have different names
 
 Found in play (2026-07-30): the Swindler's Den chief was a lottery. That turned out to be the
-pre-bucket-D naive flatten, but investigating it exposed a rule this table had been breaking.
+POC's first naive flatten, but investigating it exposed a rule this table had been breaking.
 
-`requiem-method.md` Twist 2 is the whole legibility argument after the pivot — *"the tier must agree
+`flattening.md`'s legibility argument is the whole of it — *"the tier must agree
 with the display name of everything in the pool"*, because with encounter zones gone the **name is
 the only signal the player gets.** A ×2/×2/×1 band is therefore only legible if the three rungs
 *have three names*. Test it, per family, before writing a band:
@@ -287,9 +283,7 @@ nameless, and it is the rung the placed base's own name already describes.
 **The other four families are pinned too — decided 2026-09-25 (user, WD-42).** Naming the rungs
 was rejected: it is unproven (the "Bandit Runt" rename never showed in game, below) and it would invent
 lore vocabulary. Each faction ticket picks its family's rung, the way 28 was picked for the chief —
-the camp's capstone, not necessarily the band centre. Requiem already pins several of these lists at a
-rung of its own choosing (the Forsworn, warlock and draugr boss lists each hold one sublist); treat that
-as a candidate, not a verdict.
+the camp's capstone, not necessarily the band centre.
 
 **The level-1 rung is dropped** (revised 2026-09-24, after play; supersedes the 2026-07-30
 "rare, and called Bandit Runt" revision).
@@ -345,7 +339,7 @@ draws from.
 > and the Old Orc no longer draw from it: `author-retargets.ps1` retargets `DA06LvlOrcMelee` and
 > `WE24Orc` to `LCharBanditMeleeOrcM`, the ordinary Orc-bandit roster. The camps' archers come from
 > `LCharOrcMissile`, whose Orc Hunter ranks all inherit Stats from `EncOrcHunterTemplate` 0D9447 — fixed
-> at **level 1** in vanilla and Requiem `[verified]`; it is raised to **19**. Bilegulch Mine's lone
+> at **level 1** in vanilla `[verified]`; it is raised to **19**. Bilegulch Mine's lone
 > `LvlBanditMissileOrcM` (vanilla points it at a *melee* list) is retargeted to that Hunter list. The
 > three ordinary Orc bandits placed from the shared `LCharBanditMeleeOrcM` inside Cracked Tusk Keep and
 > outside Bilegulch are left as they are, because moving them means overriding cells.
@@ -367,13 +361,11 @@ by keeping and re-weighting the sublist references. Bethesda's own head-variant 
 > lists. The warlock lists get the same shape at 6 ×1 · 13 ×3 · 21 ×2 (they have no level-1 rung). The
 > **boss row was revised by the user**. It is a four-rung band, 15 / 24 / 34 / 45 at 1 : 2 : 1 : 1 (mean 28). The
 > Deathlord (30) is **not** moved into it, so both Deathlord rungs leave the game's leveled lists. They survive
-> only where they are placed directly. The level-60 Dragon Priest sublist stays out, as it was under Requiem.
-> The 34 and the 45 share the name "Draugr Death Overlord". Only the 45 carries Ebony: Requiem had stripped
-> Ebony from every draugr, and it is restored on the three lists that rung uses. Everything else keeps
-> Requiem's ancient Nord ceiling. Vanilla gold is back on draugr corpses and on the Dragon Priest. The
-> Hulking Draugr stay out: DLC2Init was their only route in, and it stays stripped (user decision).
-> Requiem's rosters had kept all six rungs weighted low (plain Draugr ×7 of 12, mean ≈ 7) and pinned the boss
-> to 34, so Bleak Falls Barrow's boss was level 34 at player level 1.
+> only where they are placed directly. The level-60 Dragon Priest sublist stays out of the boss list.
+> The 34 and the 45 share the name "Draugr Death Overlord". Only the 45 carries Ebony, on the three lists
+> that rung uses. **Every other draugr's gear tops out at ancient Nord: no ebony in any other draugr weapon
+> or armor list.** Draugr corpses and the Dragon Priest carry vanilla's gold, and draugr corpses also drop bone
+> meal. The Hulking Draugr stay out: DLC2Init was their only route in, and it stays stripped (user decision).
 >
 > **Revised the same day (user): the ranks are raised, and the boss is pinned.** This is a deliberate exception
 > to rule 1. Restless, Wight and Scourge go up +15 to **21 / 28 / 36** (mean 27.4). The change is on the nine
@@ -414,8 +406,7 @@ fixed 50, and Zahkriisos is the 60 capstone. None is overridden.
 **Castle Volkihar's skeletons share the draugr lists.** `DLC1VCSkeletonWarrior2h`, `…Missile1/2` and
 `DLC1VCSkeletonMage` template onto `LCharDraugrMelee2HMale`, `LCharDraugrMissile` and `LCharDraugrWarlockMale`, as do
 the Labyrinthian and Rannveig skeleton mages. They take only `Stats` from the list and keep their own name
-("Skeleton"), so they roll the draugr **levels**: 21 / 28 / 36 since WD-49, where Requiem's low weighting had
-them at level 1 most of the time. `[verified]` from the records.
+("Skeleton"), so they roll the draugr **levels**: 21 / 28 / 36 since WD-49. `[verified]` from the records.
 
 ### 3.3 Falmer, Dwemer, Dremora
 
@@ -439,8 +430,6 @@ them at level 1 most of the time. `[verified]` from the records.
 > - **Boss:** pinned one rung above the mooks' top, to the Dawnguard **Warmonger boss, level 54** (melee and
 >   spellsword, 1 : 1). The boss leaves take their name from the rung template, so a lower boss would read the
 >   same as a mook. No mook is a Warmonger.
-> - **What Requiem had done:** it pinned every Falmer list, bosses included, to rung 05, so every Falmer was a
->   Shadowmaster (38) and every boss was 44.
 > - **Chaurus:** `DLC1LCharChaurusNoHunter` now matches `LCharChaurus` at Chaurus ×3 · Reaper ×1 (12 / 20). The
 >   Chaurus Hunters and Frozen Falmer are left to the Dawnguard ticket.
 > - **Unchanged:** gear and loot are Falmer material only and were already flat. No quest injects into these
@@ -464,8 +453,7 @@ ruin, fictionally static, with a clean Spider < Sphere < Centurion order that va
 > - **Mixed list** `LCharDwarvenAutomaton`: spider ×3 · sphere ×3 · centurion ×1, mean 43.6. Vanilla's only centurion
 >   there is the Master (36), so the Centurion Guardian is pinned in.
 > - **Lost to the Ages** (Dawnguard `DLC1LD_*`): the spider and sphere lists roll their Guardian leaves, which take `Stats`
->   from the base Guardians. The **Forgemaster** is pinned at **60** (vanilla ×1 [36–60]). The extract had grafted
->   Requiem's 120.
+>   from the base Guardians. The **Forgemaster** is pinned at **60** (vanilla ×1 [36–60]).
 > - **Aetherial Staff:** the summoned Sphere Guardian drops its `Stats` flag and keeps its own vanilla 24, so the
 >   player's summon is not raised.
 > - **Inherits the raise:** the CC "Dwarven Sphere Overseer" (`ccAFDSSE001`) takes `Stats` from the Sphere Guardian, so
@@ -473,7 +461,7 @@ ruin, fictionally static, with a clean Spider < Sphere < Centurion order that va
 > - **Hand-placed automatons keep vanilla levels.** A scan of every placed ref in `Cells/` and `Worldspaces/` finds 32 of
 >   them: 24 plain Dwarven Spiders (12), 2 `EncDwarvenSpiderAmbush` (12), 2 Spider Workers (6), 3 Centurions (24) and 1
 >   Centurion Master (36). The Master is now weaker than a Guardian. No Guardian and no Sphere Master is placed by hand.
-> - **Unchanged:** loot, which Requiem already made flat (soul-gem size follows the machine). No quest injects into these
+> - **Loot:** flat, every entry at level 1 (soul-gem size follows the machine). No quest injects into these
 >   lists. Automaton weapons are natural attacks, so there is no gear to fix.
 
 **Dremora (WD-52, user 2026-09-26). Verified in game by the user.** Daedra from the planes of Oblivion. The user asked for
@@ -484,7 +472,8 @@ differently, so the band reads in play.
   conjurer boss (50)**, which outclasses the level-46 Dremora Lord it summons, gets Conjure Dremora Lord.
   `EncWarlock07TemplateBossConjurer` now owns its spell list, with the Dremora Lord in place of the storm atronach.
   Master conjurers (36) keep storm atronachs. In vanilla no generic conjurer summoned a Dremora.
-- **Gear:** every Dremora carries enchanted Daedric (user; Requiem's pin, kept) and wears Daedric armor. The Dremora
+- **Gear:** every Dremora carries enchanted Daedric (user; every Dremora weapon list is pinned to its enchanted
+  Daedric entries) and wears Daedric armor. The Dremora
   warlocks' bandit weapon list was repointed to the Dremora list.
 - **Atronachs** (§4): Flame ×2 · Frost ×2 · Storm ×1 (5/16/30), in `LCharAtronach` and Fellglow Keep's two lists.
   Summoned atronach levels are unchanged: flame 5/10, frost 16/24, storm 30/35.
@@ -512,17 +501,17 @@ in step.
 | **Solstheim bandit** | `DLC2LCharBanditMelee1H` 01E8A9 | parallel records, 1–25 | **mirrors §3.1's mainland bandit** (5 ×3 · 9 ×4 · 14 ×2; chief 28) — already built | **T2** |
 
 > **Dawnguard and Dragonborn families (WD-58 / WD-59, user 2026-09-27). Verified in game by the user.**
-> - **Dawnguard 38**, just above the Vigilants. `DLC1EncHunterTemplate` owns Agmaer, Beleval and the Fort's guards: its live
->   Requiem graft of 50 is now 38 (WD-61 may refine the two followers). **Weapons:** every mook carried only the warhammer, because
->   bucket B stripped Requiem's war-axe lists; the Dawnguard war axe is back in `LItemDawnguardWeaponAny`, 1:1.
+> - **Dawnguard 38**, just above the Vigilants. `DLC1EncHunterTemplate` owns Agmaer, Beleval and the Fort's guards: it is
+>   38 too (WD-61 may refine the two followers). **Weapons:** in the POC every mook carried only the warhammer, because
+>   the war axe had been lost from the weapon list; the Dawnguard war axe is in `LItemDawnguardWeaponAny`, 1:1 with the warhammer.
 > - **Armored trolls:** the Armored Frost Troll took `Stats` from `EncTrollFrost` (every frost troll), so it owns its level now. The
 >   tamed follower trolls follow both.
-> - **Soul Cairn:** Keepers **50**, the Reaper **65** (Requiem grafts 80 / 100). The Keepers still drop their Dragonbone weapons (user:
+> - **Soul Cairn:** Keepers **50**, the Reaper **65**. The Keepers still drop their Dragonbone weapons (user:
 >   a place reward, kept). The Bonemen archers' `LItemArrowsAll` (CC magic arrows) is now the bandit arrow list.
 > - **Forgotten Vale:** Frozen Falmer, Frozen Shaman and Frozen Chaurus pinned at 40. The Frost Giant (50) and the Earth Mother (30)
 >   are kept as place exceptions.
 > - **Solstheim:** the Raven Rock attack's Ash Spawn (two `PcLevelMult` records) fixed at 30. The Frost Giant 32 → 38, level with the
->   mainland giants. **Haknir 55** (the extract had grafted 200). Karstaag 90 and the Ebony Warrior 80 are kept (§7).
+>   mainland giants. **Haknir 55**. Karstaag 90 and the Ebony Warrior 80 are kept (§7).
 > - **Solstheim chest loot:** the eight `DLC2LItemWeapon*` lists (plain and boss chests alike) lose glass, Stalhrim, ebony, the
 >   Daedric sublists and the almsivi ebony mace and scimitar. Those 34 go into `EHL_LVLI_SolstheimBossWeaponRare` 0x805, added to the
 >   three boss-chest lists (`DLC2Loot{Bandit,Draugr,Dwarven}Weapon100`), so a boss chest's weapon is glass or better 1 time in 10 (1 in 11 in Dwemer chests).
@@ -537,9 +526,9 @@ in step.
 > pool. The skeletal dragons and the Skuldafn dragon owned a flat 721 health, so they gain `AutoCalcStats` at 50.
 > **Mirmulnir is pinned to the Dragon rung, 50** (user: the floor holds even for the first dragon; not yet play-tested at
 > main-quest level). Named: **Alduin 100, Sovngarde 110, Paarthurnax 90, Odahviing 85, Durnehviir 80** (§7). The player's
-> summons (Durnehviir 20, the Spectral Dragon and the Fire Wyrm) are unchanged. **Loot:** Requiem's bones and scales stay;
-> vanilla's dragon gold, gold change and 25% gem roll are back, and the Revered and Legendary death items get their second
-> gold roll back. The 25% armor, weapon and Daedric rolls stay out: they point at game-wide All lists. No injectors.
+> summons (Durnehviir 20, the Spectral Dragon and the Fire Wyrm) are unchanged. **Loot:** dragon death items drop dragon bones
+> and scales, plus vanilla's dragon gold, gold change and 25% gem roll, and the Revered and Legendary death items keep their second
+> gold roll. The 25% armor, weapon and Daedric rolls are cut: they point at game-wide All lists. No injectors.
 
 **Apocrypha stays flat and high** — `lore-constraints.md` §3 explicitly permits it: *"one realm,
 entered by one means, and Mora's servants have no reason to be graded by which book you opened."*
@@ -570,7 +559,7 @@ not set a level — it fixes **which animals live where**.
 
 ### 4.1 The biome ambient lists — enumerated
 
-`requiem-method.md` §5.4: Bethesda **already partitions wilderness by biome** `[verified]`, so
+`flattening.md`: Bethesda **already partitions wilderness by biome** `[verified]`, so
 flattening each list in place yields fixed *and* regionally varied wildlife with zero new records.
 Pulled from `reference/` by `arch-docs/design/biome-rosters.ps1`. **19 lists exist**, not 18.
 
@@ -635,7 +624,7 @@ Bethesda's.
 **The gradient falls out geographically**: plains T2 → forest / canyon / marsh / hills / coast T3 →
 snowy forest and snow fields T4 → **mountains T5**. That is a legible map with no zone anywhere in it.
 
-> **Built 2026-07-30 by `src/Ehlnofey/author-bucket-d.ps1`.** The cap rule stated above reproduces
+> **Built 2026-07-30 by the POC's `author-bucket-d.ps1`.** The cap rule stated above reproduces
 > this table **exactly** for all eight flagged predator lists — verified entry-for-entry against the
 > built plugin. Two rows needed a decision, because the table and the prose disagree:
 >
@@ -658,7 +647,7 @@ belong on mountains, and the player must be able to see the mountain."* T5 is th
 frozen mix contains `TrollFrost` — it appears at gate 28 and nowhere below. **The mountain is the
 warning, and it is visible from anywhere in Skyrim.**
 
-> **Gaps built 2026-09-26 (WD-54, verified in game by the user).** The extract had left these as naive flattens:
+> **Gaps built 2026-09-26 (WD-54, verified in game by the user).** A naive flatten (every entry at 1, no cap) leaves these wrong:
 > - **`LCharAnimalForestSnowPredator`** held frost trolls ×3. It is now capped at T4 (21), so it has no frost troll.
 > - **The Solstheim forest list** held cave bears ×8. It is now capped at T3.
 > - **The Solstheim mountain list** held frost trolls ×6. It is now capped at T5, where it holds ×3.
@@ -749,10 +738,10 @@ never honoured zones anyway (`engine-behaviour.md` §1), so flattening changes n
 |---|---|---|
 | City guards | ×1 [20–50] | ~~21 (T4)~~ **25** (WD-45) |
 | Imperial / Stormcloak soldiers | ×0.25 [1–50] | ~~14 (T3)~~ **25** (WD-44) |
-| Hunters (`EncHunter00Template` 073FBE, also farmers, fishermen, pilgrims, trappers) | ×0.5 [5–15] | ~~8 (T2)~~ **10** (WD-57; Requiem 20) |
-| Nightingales | ×1 [15–45] | ~~30 (T5)~~ **45** kept (Requiem's graft; late Thieves Guild, below Mercer 50 — WD-57) |
+| Hunters (`EncHunter00Template` 073FBE, also farmers, fishermen, pilgrims, trappers) | ×0.5 [5–15] | ~~8 (T2)~~ **10** (WD-57) |
+| Nightingales | ×1 [15–45] | ~~30 (T5)~~ **45** (late Thieves Guild, below Mercer 50 — WD-57) |
 | `WE*` adventurers (9 templates) | ×1.1 [6–∞] | ~~8 (T2)~~ **25** (WD-57) |
-| `WEThiefTemplate` · `WEAssassinTemplate` (the "marked for death" DB assassin) | ×1.1 [6–45] | **19 · 25** (WD-57; Requiem 25 · 45) |
+| `WEThiefTemplate` · `WEAssassinTemplate` (the "marked for death" DB assassin) | ×1.1 [6–45] | **19 · 25** (WD-57) |
 | Dark Brotherhood Sanctuary · Initiates | ×1 | **45–50 kept · 25** (WD-57) |
 | Morag Tong (`DLC2LvlMoragTong{Melee1H,Missile}`) | bandit ladder | **30**, own `Stats`, real class (WD-57) |
 | Zahkriisos | ×1 [25–60] | **60** — matches his fixed siblings |
@@ -775,14 +764,14 @@ for every uniform. The level lives on a handful of templates, not on the visible
 |---|---|---|---|---|
 | `EncGuardImperialTemplate` 0F6F37 | ×1 [20–50] | untouched — **still scaling** | 25 | 167 NPCs: Imperial-held hold guards, via `LCharGuardImperial` |
 | `EncGuardSonsTemplate` 0F6F38 | ×1 [20–50] | untouched — **still scaling** | 25 | 180 NPCs: Stormcloak-held hold guards, via `LCharGuardSons` |
-| `EncSoldierImperialTemplate` 01FC5D | ×0.25 [1–50] | 35 (Requiem) | 25 | 146 NPCs: soldiers of **both** sides, forts, patrols, field COs, couriers |
+| `EncSoldierImperialTemplate` 01FC5D | ×0.25 [1–50] | 35 (POC) | 25 | 146 NPCs: soldiers of **both** sides, forts, patrols, field COs, couriers |
 | `EncSoldierSonsTemplate` 027498 | ×0.25 [1–50] | 35 (inert) | 25 (inert) | nothing — it takes Stats from 01FC5D |
 | `EncSiege{Imperial,Sons}ArcherTemplate` 045BE0 / 045BE4 | ×1 [3–20] | 35 | 25 | siege archers |
 | `DLC2RRGuardTemplate` 0195AF:Dragonborn | ×1 [20–50] | untouched | 25 | Raven Rock Redoran guards |
 | `MQ104Soldier01–04` | ×0.5 [2–25] | untouched | 25 | the Whiterun guards at the Western Watchtower |
 
-The nine `EncGuardImperialM0x` leaves the extract grafted at 25 carry `Stats` in `TemplateFlags`, so their own
-level was always **inert** — the guards scaled 20–50 in the shipped plugin until WD-45. Read the flags.
+The nine `EncGuardImperialM0x` leaves carry `Stats` in `TemplateFlags`, so a level written on them is
+**inert** — the POC set them to 25 and the guards still scaled 20–50 until WD-45. Read the flags.
 
 **Hold guards: 25 / 30 / 35** (user decision after play, 2026-09-26: 25 lost to bandits). The nine guard
 leaves per side (`EncGuardImperialM01–M09`, `EncGuardSons{F01–F03,M01–M06}`) have `Stats` dropped from their
@@ -801,13 +790,13 @@ read. That is a bone-2 gap, and it stays open until in-game testing finds which 
 
 **Gear — unchanged (user decision).** Armor is a hold/faction uniform (outfit). Imperials carry a fixed
 Imperial sword (steel tier) and Imperial bow. Stormcloaks — and Markarth/Dawnstar guards of either side, through
-`GuardGear` 100561 — roll `LItemSoldierSons{Mace,Sword,Waraxe,Warhammer,Greatsword,Battleaxe}`, which Requiem
-flattened to iron/steel 50/50; shields are hide ×4 / steel ×4. Both mixes are kept. Only Stormcloaks, guards,
-Helgen and Valmir use those lists, so a later change would need no fork. **Imperials were unarmed** (found in play, 2026-09-26): Requiem
-had moved their Imperial sword, bow and dagger into Requiem-only lists, and bucket B stripped them, so
-`CWSoldierImperialGear` 0A6E61 carried no weapon. Every Imperial soldier and Imperial-held guard fought with
-fists. `author-injectors.ps1` puts vanilla's set back: Imperial bow → `…NoTorch` 10FAFC, Imperial sword + steel
-dagger → `…NoTorchNoBow` 10FAFD. The Thalmor bow sublists (07D983 Elven, 07D984 glass) had the same strip and get their bow back too. No injector
+`GuardGear` 100561 — roll `LItemSoldierSons{Mace,Sword,Waraxe,Warhammer,Greatsword,Battleaxe}`, flattened to
+iron/steel 50/50; shields are hide ×4 / steel ×4. Both mixes are kept. Only Stormcloaks, guards,
+Helgen and Valmir use those lists, so a later change would need no fork. **Imperials were unarmed in the POC** (found in play, 2026-09-26): their Imperial sword, bow and dagger had
+been lost from the gear lists, so `CWSoldierImperialGear` 0A6E61 carried no weapon. Every Imperial soldier and
+Imperial-held guard fought with fists, and nothing warns of it. **Check every faction gear list still holds a
+weapon.** The lists must carry vanilla's set: Imperial bow → `…NoTorch` 10FAFC, Imperial sword + steel
+dagger → `…NoTorchNoBow` 10FAFD. The Thalmor bow sublists (07D983 Elven, 07D984 glass) had lost their bow the same way and must carry it too. No injector
 touches any of these lists; the `CW` quest 019E53 holds `CWSoldier{Imperial,Sons}Gear` as script properties —
 believed to hand gear out, not `AddForm` into it, **`[unverified]`** (script source not read).
 
@@ -818,9 +807,8 @@ the apprentice warlock templates 045C60/045C5F (fixed level 6, shared with the w
 
 ### 6.1 Followers — deleveled, by role, by hand
 
-Decided in `requiem-method.md` §4.3: Ehlnofey **rejects** Requiem's ally exception. The roster is
-Requiem's own retained-68 list (`plugin-analysis.md` §1a), verdict inverted. These are hand-set, not
-rule-set — hand-setting is the point.
+Decided in `flattening.md`: Ehlnofey makes **no ally exception** — followers are fixed like everyone else.
+The roster is every recruitable follower (~68). These are hand-set, not rule-set — hand-setting is the point.
 
 | Group | Vanilla | ~~Planned~~ | **Built (WD-61)** | Reasoning |
 |---|---|---|---|---|
@@ -830,12 +818,12 @@ rule-set — hand-setting is the point.
 | Housecarls — Lydia, Argis, Iona, Jordis, Calder; Hearthfire's Rayya, Valdimar, Gregor | ×1 [10–50] | ~~21~~ | **35** | Hold-appointed, at the **top** guard rung (guards 25/30/35) |
 | Senior Companions — Aela, Farkas, Vilkas | ×1 [8–50] | ~~30~~ | **45** | The Circle: level with Erandur and Teldryn Sero |
 | Dawnguard followers — Celann, Durak, Ingjard, Florentius | ×1 [10–∞] / [10–30] | ~~21~~ | **38** | The Dawnguard pin. Agmaer and Beleval already take 38 from `DLC1EncHunterTemplate` |
-| Serana | ×1 [12–50] | ~~40~~ | **50** kept | The extract's graft: above every Volkihar mook (48), below Harkon (55/60) |
+| Serana | ×1 [12–50] | ~~40~~ | **50** | Above every Volkihar mook (48), below Harkon (55/60) |
 
 > **Built 2026-09-27 (WD-61, user). Not yet verified in game.** The planned tiers were set before the faction
 > tickets and ended up under the world: a level-21 housecarl lost to the guard it was meant to equal. Each level is
 > now set against a finished faction. 39 `NPC_` records own their level; none takes `Stats` from a template, so each
-> is one `author-retargets.ps1` `Level = N` row. **Followers Requiem already fixed keep their grafts:** Uthgerd,
+> is one `author-retargets.ps1` `Level = N` row. **The other followers are fixed individually:** Uthgerd,
 > Kharjo, Ugor, Onmund, Brelyna, Eola, Aranea and Sorine 30, Mjoll and Cicero 40, Erandur and Teldryn 45, Frea 32,
 > Ralis 28, Roggi 20, Gunmar 25. So J'zargo (20) sits below his classmates Onmund and Brelyna (30). **Gear is
 > unchanged:** every outfit and inventory list the followers draw from is already flat. **Left to WD-62:** Katria
@@ -846,7 +834,7 @@ the same ladder as the world. A T3 hireling is a real asset to a character clear
 and a liability in a T5 barrow. Choosing and changing companions becomes a decision with
 consequences — the fixed-world contract applied to allies.
 
-**Flagged as untested** (`requiem-method.md` §8.4): nobody has played this. Revisit after step 9.
+**Flagged as untested** (`flattening.md`): nobody has played this. Revisit after step 9.
 
 ---
 
@@ -858,8 +846,8 @@ the T7-and-above set.
 | Record | FormKey | Vanilla | **Ehlnofey** |
 |---|---|---|---|
 | `AlduinBase` | 08E4F1 | ×1.2 [10–100] | ~~60~~ **100** (WD-53); MQ101/106/206 Alduin take `Stats` from it |
-| `MQ304Alduin` | 04E9BC | ×1.2 [20–100] | **110** (WD-53): the Sovngarde fight. The extract had left Requiem's 250 |
-| `DLC1Durnehviir` | 0030D8:Dawnguard | ×1 [10–70] | **80** (WD-53). The extract had left Requiem's 100; his summon stays 20 |
+| `MQ304Alduin` | 04E9BC | ×1.2 [20–100] | **110** (WD-53): the Sovngarde fight. |
+| `DLC1Durnehviir` | 0030D8:Dawnguard | ×1 [10–70] | **80** (WD-53); his summon stays 20 |
 | `Paarthurnax` | 03C57C | 10 (Dragon rung) | **90** (WD-53), owns his `Stats` |
 | `Odahviing` | 045920 | 20–50 (`lvlMQDragon`) | **85** (WD-53), owns his `Stats`, dragon class, `AutoCalcStats` |
 | `DLC1Harkon` | 003BA7:Dawnguard | ×1.2 [10–60] | **55** |
@@ -869,11 +857,11 @@ the T7-and-above set.
 | `DLC2AcolyteZahkriisos` | 0248E8:Dragonborn | ×1 [25–60] | **60** — matches his fixed siblings |
 | Dragon Priests ×8 + Vahlok | — | fixed 50 | **50 (T7)** — unchanged |
 | Ahzidal, Dukaan | 0248E9, 0248E1 | fixed 60 | **60** — unchanged |
-| `DLC2dunHaknir` | 01A373:Dragonborn | ×1.25 [40–75] | **55** (WD-59). The extract had grafted 200 |
+| `DLC2dunHaknir` | 01A373:Dragonborn | ×1.25 [40–75] | **55** (WD-59) |
 | Karstaag · Ebony Warrior | 019665 · 0285C3:Dragonborn | fixed 90 · 80 | **90 · 80** — kept (WD-59), documented exceptions |
-| `DLC01SoulCairnReaper` | 01A73E:Dawnguard | ×1.5 [10–100] | **65** (WD-58), the Nightmaster level. Requiem 100 |
-| Soul Cairn Keepers ×3 | 0074F8 / 0074F9 / 007B0F:Dawnguard | ×1–1.2 [10–80] | **50** (WD-58). Requiem 80 |
-| `VigilantCarcette` | 0BFB55 | ×1 | **45** (WD-56), the Hall's keeper above her 35s. Requiem 56 |
+| `DLC01SoulCairnReaper` | 01A73E:Dawnguard | ×1.5 [10–100] | **65** (WD-58), the Nightmaster level |
+| Soul Cairn Keepers ×3 | 0074F8 / 0074F9 / 007B0F:Dawnguard | ×1–1.2 [10–80] | **50** (WD-58) |
+| `VigilantCarcette` | 0BFB55 | ×1 | **45** (WD-56), the Hall's keeper above her 35s |
 | `DLC1VigilantTolan` | 00352D:Dawnguard | ×1 [15–30] | **35** (WD-56) |
 | ~~`EncBandit04TemplateMelee`~~ | 01E60D | level 0 | **no record needed** — see below |
 
@@ -891,8 +879,8 @@ Deathlord, and a named bandit leader is a chief.
 |---|---|
 | Mercer, Astrid, Queen Potema and Potema's Remains | 50 |
 | Harkon | 55 / 60 |
-| **Ancano** | **60** (Requiem 80) |
-| **Vyrthur** | **60** (Requiem 75) |
+| **Ancano** | **60** |
+| **Vyrthur** | **60** |
 | Miraak | 65 |
 | Alduin | 100 |
 
@@ -909,7 +897,7 @@ the list.
 | Red Eagle · Curalmil | Death Overlord boss pin | **45** | unchanged, already on the boss list |
 | Captain Hargar · the Lost Knife boss · the Cragslane Butcher | bandit mooks 5 / 9 / 14 | **28** | bandit chief, +150 health |
 | Ghunzul · the Traitor's Post boss | bandit chief | **28** | unchanged |
-| Sinding | werewolf-boss list, all rungs 7–42 | **42** | `LCharWerewolfBoss` pinned to the Vargr boss (bucket D) |
+| Sinding | werewolf-boss list, all rungs 7–42 | **42** | `LCharWerewolfBoss` pinned to the Vargr boss |
 | The Southfringe boss | necromancer mooks 19 / 27 / 36 | **50** | Arch Necromancer boss |
 | Vals Veran | 40 (voice list with no level-50 leaf) | **50** | Arch Necromancer boss |
 | Malkoran · Arondil · Sild · Kornalus · the Northwatch Interrogator | warlock / Thalmor boss pin | **50** | unchanged |
@@ -975,8 +963,8 @@ Dragonborn. Anyone lifting this design onto a Skyrim-only plugin must re-add the
 | Followers — hand-set `NPC_` overrides (§6.1) | **~68** |
 | Named capstones (§7) | **8 records** |
 
-**~68 leveled lists and ~76 NPC records** for the entire actor half — against `requiem-method.md`
-§5.5's ~450 for the loot half. The actors were never the expensive part; `enemy-taxonomy.md` §6 said
+**~68 leveled lists and ~76 NPC records** for the entire actor half — against ~450 for the loot half
+(`flattening.md`). The actors were never the expensive part; `enemy-taxonomy.md` §6 said
 so in Phase 1 (*"the dominant cost is E, not the actors at all"*) and the pivot has not changed it.
 
 ---
@@ -995,18 +983,15 @@ so in Phase 1 (*"the dominant cost is E, not the actors at all"*) and the pivot 
    narrow the way draugr just did. **Decided 2026-09-25 (user, WD-42): per faction.** There is no
    blanket answer; each faction ticket decides which rungs its roster keeps and drops, and records
    the verdict in its own row above.
-1b. **Whose level numbers do the rungs carry? — Decided 2026-09-25 (user, WD-42): vanilla's.** The
-   extract's bucket E had copied Requiem's `Configuration.Level` onto 257 `NPC_` records that already
-   had a *fixed* vanilla level — Requiem's rebalance, not deleveling (Dremora 6–46 → all 55, werewolves
-   1–28 → all 50, centurions 24–36 → 60, dragons 10–40 → 75–79), tuned for the combat overhaul Ehlnofey
-   does not take. Bucket E now grafts only where vanilla is `PcLevelMult` (179 records); the 256
-   rebalance overrides were deleted. **So every rung in this document's tables is at its vanilla level
-   — which is what the tables always assumed** (bandits already were: Requiem never touched their rung
-   records). The 179 remaining grafts are Requiem's numbers as placeholders until WD-57/61/62 hand-set
-   them.
+1b. **Whose level numbers do the rungs carry? — Decided 2026-09-25 (user, WD-42): vanilla's.** An
+   `NPC_` that already has a *fixed* vanilla level keeps it; re-levelling those would be a rebalance, not
+   deleveling, and belongs to the combat overhaul Ehlnofey does not take. **Only `PcLevelMult` actors get a
+   new fixed level.** So every rung in this document's tables is at its vanilla level — which is what the
+   tables always assumed — except where a faction ticket above raises a rung deliberately (and says so).
+   The `PcLevelMult` actors are hand-set by WD-57/61/62.
 1c. **Boss bands whose rungs share one name — Decided 2026-09-25 (user, WD-42): pin.** See §3.1.1.
 2. **Bandits become trivial after ~T3, and they are ~40% of the placed world.** That is the honest
-   cost of a fixed world and Requiem accepts it. The alternative — widening the bandit band — trades
+   cost of a fixed world. The alternative — widening the bandit band — trades
    legibility for relevance. Do not decide this on paper; decide it after walking into three camps.
 3. **Weights are guesses.** The rungs are `[verified]`; the ×3/×2/×1 ratios are design judgement with
    no vanilla precedent to copy, because vanilla never needed weights. Expect to retune.
@@ -1024,7 +1009,6 @@ so in Phase 1 (*"the dominant cost is E, not the actors at all"*) and the pivot 
 ## Sources
 
 `design/tiers.md` §§3, 6, 7, 8 (the ladder, home bands, class D, exceptions) ·
-`design/requiem-method.md` §§4.2, 4.3, 4.4, 5.4 · `world/enemy-taxonomy.md` §§1, 2.1–2.7, 3, 6
+`design/flattening.md` · `world/enemy-taxonomy.md` §§1, 2.1–2.7, 3, 6
 (every vanilla rung, `[verified]`) · `world/lore-constraints.md` §§1, 2, 3, 4, 5 (the name hierarchy
-and the fictional constraints) · `prior-art/requiem/plugin-analysis.md` §§1a, 2 ·
-`prior-art/requiem/lessons-for-ehlnofey.md` §4 (the `_CLI_` weighting correction in §1).
+and the fictional constraints).

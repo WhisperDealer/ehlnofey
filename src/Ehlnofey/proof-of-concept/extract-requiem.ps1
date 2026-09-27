@@ -23,7 +23,7 @@ $ErrorActionPreference = 'Stop'
 
 $req     = 'reference/mods/RequiemYaml'
 $base    = 'reference/Base'
-$dst     = 'src/Ehlnofey/EhlnofeyESP'
+$dst     = 'src/Ehlnofey/ProofOfConceptESP'
 $masters = @('Skyrim.esm', 'Update.esm', 'Dawnguard.esm', 'Dragonborn.esm')
 # reference/Base is laid out in load order; last assignment wins (CLAUDE.md: base+DLC index rule)
 $loadOrder = @('01Skyrim', '02Update', '03Dawnguard', '04HearthFires', '05Dragonborn')
@@ -309,7 +309,7 @@ if ($degated.Count -gt 0) {
 }
 
 if ($provisional.Count -gt 0) {
-    $rep = 'arch-docs/design/bucket-d-provisional.txt'
+    $rep = 'src/Ehlnofey/proof-of-concept/bucket-d-provisional.txt'
     [System.IO.File]::WriteAllLines((Join-Path (Get-Location) $rep), (@(
         "# Bucket D - $($provisional.Count) LVLN written as a naive vanilla flatten, PROVISIONAL.",
         "# Requiem's versions are unusable: they delegate to REQ_LChar_VoiceSpawns_* sublists that are",

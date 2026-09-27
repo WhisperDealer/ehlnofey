@@ -1,5 +1,8 @@
 # Loot model — reward follows place
 
+> **Note (2026-09-27):** citations here to `morrowloot.md`, `skypatcher.md` and the Requiem analysis point
+> at the prior-art write-ups, deleted when the rebuild started. The live architecture is `flattening.md`.
+
 **Phase 3, document 4.** What the player finds, where, and what leaves the leveled lists.
 
 Bone 3: *good loot exists because of **where** it is — a Nordic tomb, a Dwemer ruin, a dragon's hoard,
@@ -270,5 +273,4 @@ records — flag census, gate census, the 162 multi-rung gear lists) ·
 names behind `LItemWeaponSwordBest`).
 
 Design inputs: `design/tiers.md` §§3–6 · `design/difficulty-map.md` §§1–2 ·
-`design/engine-behaviour.md` §3 · `prior-art/morrowloot.md` §§3, 6, 8 · `prior-art/skypatcher.md`
-§§3.4, 4.2, 5 · `world/enemy-taxonomy.md` §4 · `world/overview.md` §6.
+`design/engine-behaviour.md` §3 · the prior-art write-ups (deleted 2026-09-27) · `world/enemy-taxonomy.md` §4 · `world/overview.md` §6.

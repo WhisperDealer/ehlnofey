@@ -1,11 +1,14 @@
 # Tiers — the fixed ladder
 
+> **Note (2026-09-27):** citations here to `morrowloot.md`, `skypatcher.md` and the Requiem analysis point
+> at the prior-art write-ups, deleted when the rebuild started. The live architecture is `flattening.md`.
+
 **Phase 3, document 2.** The ladder every place and every enemy in Ehlnofey is assigned to, what each
 rung means numerically, and what it actually spawns.
 
 Read `engine-behaviour.md` first — this document is built directly on its five answers and does not
 re-derive them. Inputs: `world/enemy-taxonomy.md` (the archetype ladders), `world/lore-constraints.md`
-(the tier *names*), `world/dungeons.md` §2 (vanilla's type→level ladder), `prior-art/morrowloot.md`.
+(the tier *names*), `world/dungeons.md` §2 (vanilla's type→level ladder).
 
 Confidence marks as elsewhere: `[verified]` = read in `reference/` or computed from it, `[community]`
 = established knowledge not re-tested here, `[unverified]` = plausible, unchecked.
@@ -527,4 +530,4 @@ Computed in this document from `reference/` (`[verified]`):
 Derived from Phase 1/2 documents, which carry their own citations:
 `world/enemy-taxonomy.md` §§1–2, 4, 6, 7 · `world/lore-constraints.md` §§1, 3–5 ·
 `world/dungeons.md` §2 · `world/progression.md` §§2, 4, 5, 8 · `world/regions.md` §4 ·
-`prior-art/morrowloot.md` · `prior-art/skypatcher.md` · `design/engine-behaviour.md` §§0–4, 6.
+The prior-art write-ups (deleted 2026-09-27) · `design/engine-behaviour.md` §§0–4, 6.

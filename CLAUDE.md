@@ -75,8 +75,8 @@ build/                     # build.ps1 + manifest.json + committed FOMOD trees
 arch-docs/                 # world research + design spec + record-pattern guide (see arch-docs map)
 reference/                 # gitignored — vanilla/third-party decompiles, LOOKUP ONLY
                            #   Base/       Skyrim.esm, Update.esm and the 3 DLCs: Phase 1's evidence
-                           #   mods/       third-party mods as downloaded (Requiem/ …)
-                           #   mods/*Yaml/ Spriggit decompiles of them (RequiemYaml/ = 108 MB)
+                           #   mods/       third-party plugins as downloaded — the CC packs
+                           #   mods/*Yaml/ Spriggit decompiles of them (CreationClubYaml/)
 modlist/                   # gitignored — an installed MO2 instance, hundreds of GB
 ```
 
@@ -234,430 +234,66 @@ mod, not a new-content mod. Ehlnofey changes *where the numbers come from*, and 
 
 ## Current phase
 
-**Phase 4 is under way and `Ehlnofey.esp` exists: 3,013 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
-`design/requiem-method`). Read **`arch-docs/design/requiem-method.md` first** — it is the live
-architecture doc, and its §6 is the current order of work. Everything below it in this section is
-the Phase 3 record, kept because most of it still holds, but **the architecture it decided has been
-replaced.**
+**Phase 4 restarted on 2026-09-27: `Ehlnofey.esp` is being rebuilt from scratch.** The live
+architecture is **`arch-docs/design/flattening.md` — read it first**; its §6 is the order of work.
+The spec it executes is **`arch-docs/design/archetype-tiers.md`**: every family's levels, rosters,
+weights, pins and gear, as decided by the user faction by faction (Jira WD-43…64).
 
-**What changed.** Encounter zones govern only 0.3% of the outdoors and cannot reach worn gear, so the
-zone-first hybrid could not deliver bone 1. The mod pivoted to **Requiem's method** — flatten the
-`LVLN`/`LVLI` gate, keep the pool, fix `PcLevelMult` NPCs — and then to the cheapest possible way of
-getting it: **extract Requiem's deleveling layer directly.** Requiem's flat records are
-overwhelmingly built from vanilla FormKeys only, and an override keeps its defining master's FormKey
-suffix, so most of the job is a file copy. `src/Ehlnofey/extract-requiem.ps1` is the generator.
+**The method is called *flattening the leveled lists*:** strip the player-level gates from every
+`LVLN`/`LVLI` while keeping the pool, weight the pool by duplicate entries, and give every
+`PcLevelMult` actor a fixed level — followers included.
 
-| | | |
-|---|---:|---|
-| A copied verbatim | 1,896 | `LVLN`/`LVLI`, every FormKey one of our four masters |
-| B stripped | 173 | `LVLI` minus their Requiem-only gear entries |
-| C vanilla flatten | 259 | not covered by Requiem, or emptied by B |
-| D authored | 64 | the `LCharBandit*` ladder + the biome rosters, from `archetype-tiers.md` (+9 dropped as already-flat) |
-| E level graft | 434 | vanilla `NPC_` record + Requiem's `Configuration.Level`, nothing else |
+**The rule of the rebuild: every record is authored here, from vanilla.** Inputs are
+`reference/Base/` (the five Bethesda masters), `reference/mods/CreationClubYaml/` (only for CC plugins
+the mod takes as masters) and the design docs. **No third-party mod's records are an input, and
+nothing is copied from `ProofOfConceptESP`.** Generators for the rebuild live in `src/Ehlnofey/`.
 
-Every entry in every leveled list is now `Level: 1` or the `9999` disable sentinel. Builds clean,
-`Test-RecordYaml.ps1` passes 2,878 files, round-trip is byte-stable, **zero new FormIDs**, masters
-exactly Skyrim/Update/Dawnguard/Dragonborn. It **has** been launched, and **Bleak Falls Barrow and
-Swindler's Den both give a consistent spread of enemy types at player level 1 and 45** — the first
-real evidence bone 1 holds in play. Boss-chest loot is still unverified (guardrail 6).
+**Status:** scaffold only. `src/Ehlnofey/EhlnofeyESP/` holds a header (ESL-flagged; Skyrim, Update,
+Dawnguard, Dragonborn) and builds clean. No records yet. **Next:** the constants, then the `LVLN`
+(`flattening.md` §6 steps 2–3).
 
-**The first play report found a design bug, not a build bug** (2026-07-30): a band of levels is only
-legible if its rungs have *different names*, and the bandit boss ladder's do not. See
-`archetype-tiers.md` §3.1.1 for the naming test — **four boss families still fail it** (Forsworn,
-Warlock, Thalmor, Vampire) and are an open decision.
+**Decisions carried over from the proof of concept** (user; revisit if they no longer fit):
+- **Creation Club is a hard requirement** (2026-09-23: AE is near-universal). CC packs whose start-up
+  quests re-gate our lists become masters so those injectors can be neutralised.
+- **Rung levels are vanilla's**; a fixed vanilla level is kept. Only `PcLevelMult` actors get a new one.
+- **Illegible boss bands are pinned**, one level per displayed name.
+- **Dragon gear is craft-only** (WD-63).
+- **No SkyPatcher, no Synthesis.** The mod is one plugin.
 
-**Generators, and the order they must run in:** `extract-requiem.ps1` → `author-constants.ps1` →
-`author-bucket-d.ps1` → `author-injectors.ps1` → `author-retargets.ps1` (was `author-orc-camps.ps1`), then deserialize → re-serialize →
-adopt Spriggit's output as the source. `author-injectors.ps1` (was `author-cc-compat.ps1`) reads
-`reference/Base/` and `reference/mods/CreationClubYaml/` (Spriggit decompiles of the CC plugins in the
-Baseline modlist's `mods/Creation Club Files`).
+### The proof of concept (archived)
 
-**Creation Club is a hard requirement since 2026-09-23** (user decision: AE is near-universal). The
-plugin takes the 15 Bandit Armor packs (`ccbgssse050`–`064-ba_*.esl`) as masters and overrides their
-injector quests — see the "runtime `AddForm`" gotcha below. **Verified in game 2026-09-23:** on a
-fresh chargen start, the Robber's Gorge and Swindler's Den chiefs are both level 28 (were 6).
+`src/Ehlnofey/ProofOfConceptESP/` is the first build: **3,013 records**, extracted from a third-party
+deleveling mod and then hand-tuned faction by faction. It proved the method in play — Bleak Falls
+Barrow and Swindler's Den gave the same spread of enemies at player level 1 and 45, and most
+factions' levels and gear were verified in game. It is **not released** (the manifest builds
+`EhlnofeyESP`), and it is a derivative work that cannot be published.
 
-**Dragonborn's `DLC2Init` 016E02 is overridden the same way** (2026-09-24): its start-up fragment
-injected Nordic weapons (gate 23) and armor (gate 25) into every bandit and bandit-chief gear list, plus
-Hulking Draugr (gate 26) into `LCharDraugrMelee1HMale`. Chiefs wore iron at player level 1 and full
-Nordic at 40. The 24 list properties are removed; Nordic gear is put back **by place** as one level-1
-entry in each of the 11 `LItemBanditBoss*` lists (user decision), which also now all carry
-`CalculateFromAllLevelsLessThanOrEqualPlayer`. Built clean; **not yet verified in game.**
+Its generators are in `src/Ehlnofey/proof-of-concept/` and write only into `ProofOfConceptESP`. The
+full record of what it shipped, what play found and which bugs it hit is
+`arch-docs/design/proof-of-concept.md` §10. **Read that before starting a faction** — nearly every bug
+it found (unarmed factions, inert level grafts, runtime injectors, game-wide list leaks) is a trap the
+rebuild can walk into again.
 
-**The injector audit is done** (2026-09-24): 28 quests across the base game, DLC and all 74 CC plugins
-hold leveled-list properties. **Six more re-levelled our lists** and are now handled the same way
-(user decision: keep the CC content, re-add it by place at level 1): `ccvsvsse003-necroarts`
-(necromancer bosses on a 1–46 ladder into the three voice-boss lists; the CC boss of each tier the pinned
-list already holds is added), `ccbgssse001-fish` (honed draugr weapons 12–24, conjurer robes 1–40),
-`ccbgssse014-spellpack01` (master robes 1–40), `ccbgssse002-exoticarrows` (magic arrows 10–30 into bandit
-and vampire arrows, a gated sublist into arrow loot), `ccasvsse001-almsivi` (Ordinator gear at 36 into 13
-Solstheim lists), `cccbhsse001-gaunt` (injects at 1, but its own sublists gate 1–48 — those two
-sublists are flattened, the quest is left alone). Only the offending properties are stripped, so each
-quest's harmless level-1 injections (spell tomes, books, food, clothes) still run. The rest — Dawnguard
-books, Hearthfire food and children's clothes, and ~15 CC packs — inject flat and were left alone.
-**The plugin now has 26 masters**: the five base masters (Hearthfire included — see Naming) plus 21 CC
-plugins (27 and 22 since WD-48 added the Redguard pack). Overriding CC quests collapses their 9-language strings to English (the non-localized-`.esp`
-gotcha), so non-English players see English text in those quests.
+### Phase 3 record
 
-**Bandit chiefs have a steel floor** (2026-09-24, after play confirmed the chief mix is the same at
-levels 1 and 40): `author-injectors.ps1` removes plain iron armor and the enchanted iron weapons from 7
-`LItemBanditBoss*` lists. The armor lists also feed the no-shield chief outfit, three named outfits
-(Craglane's butcher, Fjola, Haldyn) and `DLC2LItemBanditArmorAll`, which lose the iron too. The Solstheim
-chief's own outfit (`DLC2BanditArmorBoss`: bonemold/chitin) never had any. Glass and ebony are excluded from every
-bandit list as well (the enchanted glass mace was the only one). **Archers always carry a bow** (Requiem's
-`LItemBanditWeaponBow` pointed half its entries at the melee lists) and **bandit arrows are 90% iron /
-10% fire** — the CC bone arrow (26 damage, above Daedric) is dropped. Both lists are shared with Thalmor,
-Penitus Oculatus, embassy guards and Dremora archers, who get the same fix. All in `author-injectors.ps1`'s
-cuts/weights table.
-
-**Hostile Orc camps** (Cracked Tusk Keep, Bilegulch Mine, Rift Watchtower; 2026-09-24) are **not** the
-Orc strongholds — `archetype-tiers.md` §3.1 conflated them. `LCharOrcMelee` is now Highwayman ×3 ·
-Plunderer ×4 · Marauder ×2; `author-retargets.ps1` retargets its two non-camp users (Largashbur's
-`DA06LvlOrcMelee`, the Old Orc `WE24Orc`) to the ordinary Orc-bandit list, points Bilegulch's
-`LvlBanditMissileOrcM` at the Orc Hunter list, and raises `EncOrcHunterTemplate` from **level 1** (every
-Orc Hunter rank inherits it — vanilla's archers were all level 1) to 19. Three ordinary Orc bandits placed
-directly in those cells stay on the shared bandit list (no cell edits, user decision). Re-asked after play
-(2026-09-25) and declined again once the cost was clear: two of the three are in *exterior* cells.
-
-**Faction work is tracked in Jira** (project WD, epic WD-27): one story per faction, WD-43…WD-62, and
-dragon gear craft-only is WD-63. **Two cross-cutting design decisions were made on 2026-09-25 (WD-42)**,
-and are recorded in `archetype-tiers.md` §3.1.1 and §9:
-- **Rung levels are vanilla's.** Bucket E now grafts only `PcLevelMult` records (179). The 256
-  overrides that carried Requiem's rebalance of already-fixed levels were deleted. The plugin is
-  **2,607 records**.
-- **Illegible boss bands are pinned.** Each faction ticket picks the rung.
-- **Rule 3 (at most three tiers)** is decided per faction.
-
-The same pass fixed two shipped bugs:
-- **The capstones.** `author-constants.ps1` ran *before* the extract, so bucket E overwrote them:
-  Alduin shipped at 250, Harkon at 80 and Miraak at 120. The chain order is now extract → constants.
-- **36 NPCs with blank names.** See the DLC-names gotcha.
-
-**Forsworn are done (WD-43, 2026-09-26). Levels, spawn mix and gear were verified in game by the user.**
-- **Mooks:** Forager ×1 · Looter ×3 · Pillager ×4 · Ravager ×1, mean ≈ 20, across all five rank-and-file lists.
-- **Briarhearts:** pinned to 38, where Requiem shipped 51. Shaman Briarhearts cast again.
-- **Gear:** Forsworn armor always. Only Briarhearts and Ravagers draw elven, dwarven or rare glass weapons, from
-  `LItemForswornBossWeapon1H`.
-- **Shaman Briarheart dagger:** glass and ebony at 1 in 24 each.
-- **Arrows:** Forsworn or iron, 50/50.
-- **CC arrows:** the fire and ice arrows came from the 15% bonus roll (`LootForswornArrows15`), which pointed at
-  `LItemArrowsAll`. It now rolls the Forsworn arrow list.
-- **Plugin size:** 2,610 records (+2 `NPC_` retargets, +1 `LVLI`).
-
-See `archetype-tiers.md` §3.1.
-
-**Guards and civil-war soldiers are built (WD-44/45, 2026-09-26). This is not yet verified in game.**
-- **Level: hold guards and soldiers roll 25, 30 or 35**, a third each (user, after play: 25 lost to bandits).
-  Each of the 36 guard and soldier leaves owns its level. Rank *names* are not possible yet: the nameplate shows
-  the hold record's name. The single fixed records sit at **30**, the spread's average: the siege soldier and siege
-  archer templates, Redoran guards and the MQ104 Whiterun guards. The guard and soldier templates hold 25, but
-  nothing reads their level any more. See `archetype-tiers.md` §6.
-- **Guards were still scaling 20–50 before this.** The extract's level-25 grafts sat on `EncGuardImperialM0x` leaves,
-  which take their Stats from `EncGuardImperialTemplate`, so the grafts had no effect.
-- **Gear:** Stormcloaks keep Requiem's iron/steel weapon mix and hide/steel shields (user decision). **Imperials
-  had no weapon at all.** Bucket B had stripped Requiem's Imperial weapon lists, so every Imperial soldier and guard
-  fought bare-handed in play. The Imperial sword, bow and steel dagger are re-added by `author-injectors.ps1`.
-  **The Thalmor bow sublists had the same bug** (`SublistThalmorBowAndArrows{Elven,Glass}`: arrows, no bow). The
-  Elven and glass bows are back. Which rank gets which sublist is still for the Thalmor ticket.
-- **Plugin size:** 2,646 records (+36 `NPC_`).
-
-**Warlocks are done (WD-46, 2026-09-26). Levels were verified in game by the user.**
-- **Mooks:** Mage ×2 · Wizard/Ascendant ×3 · Pyromancer/Master ×1 (19/27/36), across 32 lists (five schools, their
-  `Omit01` variants, 22 race/voice lists).
-- **Bosses:** pinned to **50** (Arch). Four voice lists with no level-50 leaf in their race and sex sit at 40. Vanilla's
-  boss lists never reached 50, so `author-bucket-d.ps1` gained a `Pin` rule for references a vanilla list lacks.
-- **Gear:** left alone (user decision). Malkoran (`DA03Wizard`) is a level-50 Conjurer boss.
-- **Plugin size:** unchanged at 2,646 (all 46 lists were already overridden). See `archetype-tiers.md` §3.1.
-
-**Vampires are done (WD-47, 2026-09-26). Levels, mix and thralls were verified in game by the user.**
-- **Mooks:** Nightstalker ×1 · Ancient ×3 · Volkihar ×2 (28/38/48, mean ≈ 40, T6), well above the warlocks (user:
-  immortal, Daedric-blessed). The four female lists roll the same roster. The male Nord list borrows boss leaves at 31/42/53.
-- **Bosses:** pinned to **65, the Nightmaster** (user), which is **above Harkon** (55/60). Serana's planned 40 now sits
-  inside the mook band. Both are flagged for their own tickets.
-- **Gear:** `LItemVampireWeaponBase` holds its own steel/orcish/dwarven/elven swords and war axes; it had pointed at the
-  bandit lists (70% iron). The armor is vampire armor and robes only; Requiem's glass/elven/orcish/leather sets were cut.
-- **Arrows:** the CC bone arrow is gone from the vampire arrows and from the exotic-arrows vendor sublist. That sublist
-  sits in `LItemArrowsAll`, so its flatten now runs before the cuts.
-- **Thralls: level 25** (user, after play: they were 5). A "Vampire's Thrall" owns no level; it templates onto a
-  bandit ladder. `author-retargets.ps1` points 37 thrall records at that ladder's gate-25 Marauder entry. Melee thralls are all
-  two-handed (user): they close in and soak damage for the vampire. Dropping
-  `Stats` was not safe: thralls carry the placeholder class `EncClassDremoraMelee` and no `AutoCalcStats`.
-- **Plugin size:** 2,684 records (+1 `LVLI`, `LItemVampireWeaponBase`; +37 thrall `NPC_`).
-
-**Thalmor are done (WD-48, 2026-09-26). Levels and gear were verified in game by the user.**
-- **Levels, all pinned** (one name per band): soldiers and archers **36**, above every guard. Wizards **44**. Boss wizards **50**.
-- **Gear:** Elven for everyone. **Rare glass (1 in 10) goes only to the Justiciars** (weapon and armor) **and the boss wizard**
-  (dagger), through two new lists and the Justiciar-only no-helmet outfit.
-- **Archer fix:** `LvlThalmorMissile` (the Embassy, Northwatch and Ratway archers) owned the bandit bow and iron arrows.
-  It now carries the Thalmor Elven bow and dagger.
-- **CC Redguard pack:** its three Thalmor soldiers (`ccEDHSSE003_EncThalmor*`) owned a fixed level 18. They are now 36
-  like every other soldier (verified in game), which makes `ccedhsse003-redguard.esl` the **27th master** (22 CC plugins).
-- **Plugin size:** 2,694 records (+2 new `LVLI`, +9 `NPC_`). See `archetype-tiers.md` §3.1.
-
-**Wildlife and monsters are done (WD-54, 2026-09-26). Verified in game by the user; the wolf raise came from that play.**
-- **Species levels stay vanilla** (skeever 1 … mammoth 38), except **wolves: 5** (was 2; they died faster than mudcrabs), **giants: 38** (was 32, on a par with mammoths)
-  and **hagravens: 40** (was 20). That covers
-  `EncHagraven` and the four named hagravens that own their level.
-- **The biome gaps are fixed:** the snowy-forest list has no frost trolls, and the two Solstheim lists are frozen at T3
-  and T5.
-- **The §4 rosters are built** for spiders, bears, the ice-wraith/frost-troll list, spriggans and spriggan companions.
-- **Hagraven companions** are trolls and giant spiders only.
-- **Plugin size:** 2,703 records (+9 `NPC_`; 16 `LVLN` re-authored). See `archetype-tiers.md` §4 and §5.
-
-**Daedra are done (WD-52, 2026-09-26). Verified in game by the user.**
-- **Dremora:** Markynaz ×1 · Valkynaz ×1 (36/46, mean 41, on par with vampires) in the melee, archer and warlock lists.
-- **Arch conjurer bosses (50)** summon a Dremora Lord (46) instead of a storm atronach. Master conjurers keep storm
-  atronachs.
-- **Gear:** every Dremora carries enchanted Daedric. The warlocks' bandit weapons were repointed.
-- **Atronachs:** Flame ×2 · Frost ×2 · Storm ×1. Summon levels are unchanged.
-- **Plugin size:** 2,706 records (+3 `NPC_`; 6 `LVLN` re-authored). See `archetype-tiers.md` §3.3.
-
-**Witches, Hags and the CC Bone Wolf pack are built (2026-09-27, after play). This is not yet verified in game.**
-- **Witch 19 · Hag 27**, the warlock Mage and Wizard rungs with their HP and magicka bonuses, weighted 2 : 3 in the four
-  `LCharWitch*` lists. Vanilla was fixed at 4 and 8, so they were flat but far below the warlocks. The six
-  `EncWitch0NTemplate*` own the level for every leaf. Spells unchanged.
-- **Bone Wolf pack (`ccbgssse036-petbwolf.esl`):** the hostile Bonewolf and the two Thrall Wolves are fixed at **12** (were
-  ×1 [5–30] and [5–60]). Its quest Necromancer is fixed at **36** (was ×1.2 [12–70]). The pet is untouched. The pack is
-  the **28th master** (23 CC plugins).
-- **Plugin size:** 2,716 records (+10 `NPC_`; 4 `LVLN` re-authored). See `archetype-tiers.md` §3.1 and §5.
-
-**Draugr are done (WD-49, 2026-09-27). Verified in game by the user.**
-- **Mooks:** Restless ×3 · Wight ×3 · Scourge ×2 across all eleven melee and missile lists. Warlocks get the same shape
-  at ×1 · ×3 · ×2. **All three ranks are raised +15 to 21 / 28 / 36** (user), mean 27.4, on the nine templates that own their
-  level (`AutoCalcStats`, so health and skills follow; perks do not). Plain Draugr and both Deathlord rungs leave the leveled
-  lists. Requiem had kept all six rungs, weighted low (mean ≈ 7).
-- **Bosses: pinned to "Draugr Death Overlord" at 45.** The plain one is raised from 34 to match the Ebony one, and the two roll
-  50/50 (user). Requiem had pinned the list at 34, so Bleak Falls Barrow's boss was level 34 at player level 1.
-- **Gear:** Requiem's ancient Nord ceiling stays. **Ebony comes back on the Ebony Death Overlord only**, which is the only
-  visible difference between the two bosses: its three lists, plus a retarget of `EncDraugr05TemplateBossEbony`, whose own
-  list Requiem had turned into enchanted ancient Nord.
-- **Loot:** vanilla gold is back on draugr corpses and on the Dragon Priest (50–250). Requiem's bone meal stays.
-- **Dragon priests** are all fixed at 50 already, so they needed no change. **Hulking Draugr stay out** (user).
-- **Castle Volkihar skeletons** take `Stats` from the draugr lists, so they now roll the same 21/28/36.
-- **Plugin size:** 2,727 records (+11 `NPC_`). See `archetype-tiers.md` §3.2.
-
-**Falmer are done (WD-50, 2026-09-27). Verified in game by the user.**
-- **Mooks:** Gloomlurker ×1 · Nightprowler ×3 · Shadowmaster ×2 (22/30/38, mean 31.3) across the melee, archer, spellsword and
-  shaman lists. Requiem had pinned every Falmer list to Shadowmaster 38 (bosses 44).
-- **Shamans** own their level. The three kept rungs are raised from 14/19/25 to their rung's 22/30/38 (shaman defect closed).
-- **Boss:** pinned to the Dawnguard Warmonger boss, level 54. Boss names are rung names, so it sits one rung above every mook.
-- **Chaurus:** the Dawnguard no-hunter list is aligned to Chaurus ×3 · Reaper ×1. Gear and loot were already flat, and no
-  quest injects into these lists.
-- **Plugin size:** 2,730 records (+3 `NPC_`; 6 `LVLN` re-authored). See `archetype-tiers.md` §3.3.
-
-**Dwemer automatons are done (WD-51, 2026-09-27). Verified in game by the user.**
-- **Every list rolls only its Guardian** (user: "deadly", average 40–50): Spider 40 · Sphere 45 · Ballista 45 ·
-  Centurion 50. The mixed list rolls spider ×3 · sphere ×3 · centurion ×1, mean 43.6. Requiem had kept every rung at ×1.
-- **Forgemaster pinned at 60** (the extract had grafted Requiem's 120). The Aetherial Staff's summoned sphere keeps 24.
-- **Loot unchanged** (already flat). No injectors.
-- **Plugin size:** 2,735 records (+5 `NPC_`; 8 `LVLN` re-authored). See `archetype-tiers.md` §3.3.
-
-**Dragons are built (WD-53, 2026-09-27). This is not yet verified in game.**
-- **Levels: 50 minimum, types kept** (user). The rungs are Dragon 50 · Blood 55 · Frost 60 · Elder 65 · Ancient 70 ·
-  Serpentine 72 · Revered 75 · Legendary 80, each raised on the template that owns every variant's `Stats`.
-- **World pool:** Dragon ×2 · Blood ×3 · Frost ×2 · Elder ×2 · Ancient ×1 (mean 58.5). Solstheim adds Serpentine ×2. Revered and
-  Legendary are ice-lake only.
-- **Mirmulnir is pinned at 50.** Whether he can be killed at main-quest level is the open play-test.
-- **Named:** Alduin 100 (110 in Sovngarde), Paarthurnax 90, Odahviing 85 (given his own stats: `AutoCalcStats` and the dragon
-  class, off the Dremora placeholder) and Durnehviir 80. The extract had left Requiem's 250 on `MQ304Alduin` and 100 on Durnehviir.
-- **Skeletal and Skuldafn dragons** owned a flat 721 health, so they gain `AutoCalcStats`. `author-retargets.ps1` has a new
-  `Insert` op for that.
-- **Loot:** vanilla gold and gems are back on dragon corpses, and Requiem's bones and scales stay. The armor and weapon rolls stay
-  out: they point at the game-wide All lists.
-- **Plugin size:** 2,754 records (+19 `NPC_`). See `archetype-tiers.md` §3.4 and §7.
-
-**WD-55…59 are done (2026-09-27): built as one batch and verified in game by the user in one play-test.**
-- **Werewolves and the Silver Hand (WD-55).** The werewolf list rolls Skinwalker ×1 · Beastmaster ×3 · Vargr ×2 (20/28/38, mean 30).
-  The Silver Hand owned no level; they rode the bandit lists (5/9/14). They now point at three **new** Silver Hand lists
-  (`EHL_LVLN_SilverHand*` 0x802–0x804), built from the same bandit rungs two up: Highwayman ×1 · Plunderer ×3 · Marauder ×1
-  (14/19/25). Krev and the other bosses stay at the bandit chief's 28. **Werebears 30:** the placed three were 17, the `DLC2WE07` trio
-  took bandit berserker stats (5–14), and `DLC2EncWerebear` (Torkild and the Beast Stone summon) was 25.
-- **Minor factions (WD-56).** Penitus Oculatus pinned at **36**, level with the Thalmor. The Katariah archers were level 1 (a vanilla
-  bug: no `Stats` flag). Penitus archers had **no bow** (the bucket-B strip again): the Imperial bow and vanilla `PenitusGear` are
-  re-added. Vigilants are pinned at **35** across all ten lists; the ticket's "already flat at 5" was wrong, since the Hall's voice
-  lists rolled 5–25. Carcette 45, Tolan 35. Ghost wizards roll the bandit ghosts' 5/9/14 (Requiem had pinned 25). The Alik'r keep
-  their quest grafts of 30/35; the level-1 `WERJ03` Alik'r is fixed to 30.
-- **World encounters and assassins (WD-57).**
-  - **Hunters 10.** The same template also sets farmers', fishermen's and pilgrims' levels.
-  - **Adventurers:** all nine at **25**. Four were still scaling with no cap.
-  - **Road thief 19.** The DB "marked for death" assassin is **25**; it was 45 and arrives from player level 5.
-  - **DB:** the initiates are 25, and the Sanctuary keeps 45–50.
-  - **Nightingales** keep 45.
-  - **Morag Tong 30**, with their own `Stats` and a real class, off the Solstheim bandit ladder.
-  - Minor stragglers were fixed as well.
-- **Dawnguard DLC (WD-58).**
-  - **Dawnguard pinned at 38.** `DLC1EncHunterTemplate`'s live graft of 50 (Agmaer, Beleval, the Fort guards) is now 38 too.
-  - **The Dawnguard war axe is back**; mooks had only the warhammer.
-  - **Gargoyles** roll 13 ×1 · 25 ×3 · 43 ×1.
-  - **Chaurus Hunters** 1:1.
-  - **Armored trolls** raised to 26 / 36, 1:1. The frost one now owns its level.
-  - **Soul Cairn:** Keepers 50, the Reaper 65. The Keepers' Dragonbone drops are kept (user).
-  - **Frozen Falmer, Shaman and Chaurus** pinned at 40.
-- **Dragonborn DLC (WD-59).**
-  - **Rieklings:** 6 ×2 · 11 ×3 · 16 ×2.
-  - **Cultists:** 19 ×2 · 27 ×3 · 36 ×1.
-  - **Seekers and Lurkers** pinned at 32 / 44, since one name shows.
-  - **Ash Spawn:** 30 ×3 · 40 ×1. The Raven Rock attackers are 30.
-  - **Haknir 55**; he shipped at **200** from the extract.
-  - **Frost Giant** 32 → 38.
-  - **Solstheim chest weapons:** glass and above (glass, Stalhrim, ebony, Daedric, almsivi ebony) are cut from the plain lists. They
-    now sit only in boss chests, through `EHL_LVLI_SolstheimBossWeaponRare` 0x805.
-- **Across tickets.**
-  - **Berserkers:** vanilla's level-5 berserker sublist held the level-1 leaves, so the dropped level-1 bandit rung was still rolling.
-    It is fixed.
-  - **Arrows:** the CC magic-arrow leak through `LItemArrowsAll` is closed on the ranged adventurers, the Morag Tong and the Soul Cairn
-    Bonemen.
-- **Generator changes.** `author-bucket-d.ps1` can now build a **new** `LVLN` from a vanilla one (`From =`). `author-retargets.ps1`
-  now lets `Level =` share a row with the line ops.
-- **Plugin size:** 2,812 records (+58: 4 new lists, 54 overrides). The CC Daedric Invasion pack's Vigilant injector is **WD-64** (done, see below).
-
-**Followers are built (WD-61, 2026-09-27). This is not yet verified in game.**
-- **Fixed by role, set against the finished factions** (user). Requiem left them scaling. The ticket's planned tiers
-  (8–21) sat under the world they walk into.
-- **Levels:**
-
-  | Group | Level |
-  |---|---|
-  | Standard followers (Faendal, Sven, J'zargo and the rest) | 20 |
-  | Hirelings | 25 |
-  | Companion whelps | 30 |
-  | Housecarls, Hearthfire's three included | 35 |
-  | Dawnguard followers | 38 |
-  | The Circle | 45 |
-  | Serana | 50 (kept) |
-
-- **Requiem's follower grafts stay:** Uthgerd and six others 30, Mjoll 40, Roggi 20.
-- **Gear is unchanged.** Every list the followers draw from is already flat.
-- **Plugin size:** 2,851 records (+39 `NPC_`). See `archetype-tiers.md` §6.1.
-- **Open play test:** recruit Lydia and a hireling at player level 1, `player.setlevel 40`, and check their levels do not move.
-
-**Named bosses and the long tail are built (WD-62, 2026-09-27). This is not yet verified in game.**
-- **A named boss sits at the top rung of its own type** (user).
-  - Jyrik, Sigdis and Kvenel are **45**, the Deathlord after the +15 draugr raise, where Red Eagle and Curalmil already sit.
-  - Captain Hargar, the Lost Knife boss and the Cragslane Butcher are **28**, the chief.
-  - Sinding is **42**; the werewolf-boss list is pinned to the Vargr boss.
-  - The Southfringe boss and Vals Veran are **50**, the Arch Necromancer.
-- **How the named bosses own their level:** their own level, the matched rung's class and offsets, `AutoCalcStats`, and
-  `Stats` dropped (the Morag Tong pattern).
-- **Questline finals:** Ancano 60 (was 80) and Vyrthur 60 (was 75). Mercer, Astrid and Potema stay 50, Harkon 55/60, Miraak 65.
-- **Villains still scaling:**
-  - The Volkihar court template is 53, and Valerica 60.
-  - Lu'ah and the Ritual Master are 50; Rulindil and Estormo 44.
-  - Ulfric and Tullius are 45, Galmar and Rikke 40, Metilius 36.
-- **The other 111 still-scaling NPCs** get the level vanilla gives a level-25 player, clamped to their own min and max.
-- **Coverage audit:** no `PcLevelMult` actor is left in the base game or the DLC.
-- **Plugin size:** 3,004 records (+153 `NPC_`; 1 `LVLN` re-authored). See `archetype-tiers.md` §7.0.
-
-**The CC Daedric Invasion pack is handled (WD-64, 2026-09-27). This is not yet verified in game.**
-- **Its Vigilants are pinned at 35**, like ours. Its three sublists had rolled 14, 19 or 35.
-- **Its script never touched our lists.** It filled the pack's own Enforcer armor and crossbow lists with gated items from two
-  other CC packs: Vigil Veteran armor at 30, crossbows at 18 and 35. Those five properties are stripped and the items re-added at
-  level 1, along with the vanilla Vigilant gear the script also added (user: neutralize).
-- **Three new masters:** `ccbgssse067-daedinv.esm` (an `.esm`, not an `.esl`), `ccmtysse002-ve.esl` and
-  `ccffbsse002-crossbowpack.esl`. That makes **31 masters, 26 of them CC**.
-- **Generator changes:**
-  - `author-bucket-d.ps1` can pin a CC-defined `LVLN`.
-  - `author-injectors.ps1` can re-add into a list that is empty on disk.
-- **Plugin size:** 3,013 records (+9: the quest, 5 `LVLI`, 3 `LVLN`).
-- **How the script was read:** it was pulled from the pack's BSA and disassembled with a short Python PEX reader, because
-  `tools.json` has no `bsab` or `champollion` path. The pack's BSA is uncompressed.
-
-**Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
-player levels), then the `LvlQuestReward*` loot lists (WD-40). **Deferred (user, 2026-09-24):** the
-translation loss on the 21 overridden injector quests. Preferred fix: stop overriding them and ship a
-small quest that calls `Revert()` on the affected lists after the injectors run - no text touched, and it
-also fixes existing saves.
-
-**Licensing:** verbatim-copied records make the plugin a derivative of Requiem. Private use is fine;
-publishing needs their permission.
-
----
-
-The four decisions Phase 3 was convened to make (**the architecture row is superseded**):
+The four decisions Phase 3 made:
 
 | Decision | Verdict |
 |---|---|
-| **The ladder** | **T1–T7 = 4 / 8 / 14 / 21 / 30 / 40 / 50**, written as `MinLevel == MaxLevel` (zero-width everywhere, no banded exceptions) |
+| **The ladder** | **T1–T7 = 4 / 8 / 14 / 21 / 30 / 40 / 50** (`design/tiers.md`) |
 | **The map** | all **355 zones** assigned, generated from rules, in `difficulty-map.md` §7 |
-| **Loot** | no truncation pass needed — the tier ladder *is* the vanilla material ladder |
-| **Architecture** | **hybrid: places and constants in the plugin, actors in rules** (see below) |
+| **Loot** | ~~no truncation pass needed~~ — **overturned** by the gear-resolution test: worn gear follows the player, not the zone (`flattening.md` §2.2) |
+| **Architecture** | ~~hybrid: zones in the plugin, actors in rules~~ — **superseded** by flattening (`flattening.md` §2) |
 
-**Scope:** Skyrim + Dawnguard + Dragonborn. Hearthfire excluded (adds no zone, no dungeon, no region).
+**Scope:** Skyrim + Dawnguard + Dragonborn. Hearthfire content is excluded (no zone, dungeon or
+region), though `HearthFires.esm` may still be needed as a master if an overridden record points at it.
 
-Three findings worth carrying, each of which overturned something the repo previously recorded:
-
-1. **Vanilla's zone floors must be stretched, not ratified.** 73% of Skyrim's 280 zones sit at level
-   ≤ 8 and nothing exceeds 24, while the content ladders run to 46–60 — freezing vanilla's numbers
-   would make every rung above ~25 dead content. MLU independently agrees (its zones run 5–64).
-   This **supersedes `dungeons.md` §5.1's "ratify the vanilla ladder" recommendation**, which
-   predates the clamp research.
-2. **The tier ladder lands exactly on the vanilla gear ladder** — T1–T7 select Steel / Orcish /
-   Dwarven / Elven / Glass / Ebony / Daedric, one rung each. Bone 3 therefore falls out of the
-   difficulty map, and **MLU's 400-list truncation pass is unnecessary**. Daedric ends up reachable in
-   ~2 places, both apex, without editing a single list.
-3. **No new records are needed.** The whole mod is overrides, so FormID usage stays at zero and
-   ESL-flagging is free. **Still true after the pivot** — the extract added 2,877 records and every
-   one is an override; the planned wilderness `ECZN` belonged to the replaced architecture.
-
-**Three cheap in-game tests still gate Phase 4** (`implementation-strategy.md` §7) — run them before
-authoring: `LevelModifier: None`, NPC gear resolution level, and zeroing
-`fSpecialLootMinPCLevelMult`. The instrument (`EhlnofeyProbe.esp`) and the script are in
-`design/probe-test-protocol.md`. **Run gear resolution first** — since §7.1 it is the only one that
-can still move a large amount of work (up to 1,378 `LVLI`); the `LevelModifier` test's exposure
-turned out to be 9 records, not ~1,928.
-
-`src/` holds exactly one mod, **`src/Ehlnofey/`** — the 2,877-record plugin plus its four generator
-scripts, `author-constants.ps1` (the 13 constants) and `extract-requiem.ps1` (everything else).
-`ExampleMod` and `EhlnofeyProbe` were deleted, and `build/staging/Example Mod/fomod/` went with them
-— the confirmed-working FOMOD image recipe now lives only in the gotcha above and in the
-`claudemoddev` template workspace. **`Ehlnofey` itself ships no FOMOD**: it is one `.esp` with
-nothing to choose, so its release carries `"fomod": false` and packs a plain archive. `reference/` holds
-Spriggit decompiles of `Skyrim.esm`, `Update.esm` and all three DLCs — Phase 1's evidence — plus
-third-party mods under `reference/mods/` as Phase 2 reads them. **`reference/` is a build input**,
-not only a lookup: `extract-requiem.ps1` reads both `reference/Base/` and
-`reference/mods/RequiemYaml/` to regenerate the plugin, and
-`arch-docs/design/build-difficulty-map.py` regenerates the difficulty map from it.
-
-**Phase 2 is complete.** Three subjects were read: **Requiem** (`prior-art/requiem/`),
-**MorrowLoot Ultimate** (`prior-art/morrowloot.md`) and **SkyPatcher** (`prior-art/skypatcher.md`).
-
-Three further candidates were **deliberately dropped** — do not re-add them:
-
-| Dropped | Why |
-|---|---|
-| Open World Loot | Uses the same method as MorrowLoot Ultimate; `morrowloot.md` already covers it |
-| SPID | A distributor, not a record patcher — not a good fit for deleveling |
-| Synthesis patchers | Not an option for this mod (see implementation strategy) |
-
-**SkyPatcher resolved the option-B question:** it can express the deleveling core of *either*
-architecture below as INI rules with **zero plugin overrides** — flatten lists (`clear` +
-`addToLLs`), fix NPC levels (`filterByPCLevelMult` + `level`), band encounter zones
-(`minLevel`/`maxLevel`). It **cannot** reach `GMST`s or placed-actor `LevelModifier`, and cannot
-filter zones by location keyword. **That points hard at the hybrid**: rules for the distribution, a
-tiny plugin for the handful of GMSTs and any new records.
-
-The two reads together defined the **central fork**. **Phase 3 resolved it in MLU's direction and
-went further**: Ehlnofey clamps `ECZN` bands (MLU's lever) but at *zero* width, keeps the vanilla
-scaling machinery, and edits **no** leveled item lists at all — so it needs neither MLU's truncation
-pass nor Requiem's bespoke patcher. The table is kept for context:
-
-| | Requiem | MorrowLoot Ultimate |
-|---|---|---|
-| Lever | **flatten `LVLN` gates** (100% of 328) | **clamp `ECZN` bands** (324 of 360) |
-| Difficulty lives on | the actor record | **the place** |
-| Vanilla scaling machinery | deleted | kept, constrained |
-| Compatibility | bespoke patcher | **Wrye Bash `Delev`/`Relev`** |
-| Repo cost | 108 MB / 26,620 records | **22 MB / 4,751 records** |
-
-Neither actually achieves bone 1: Requiem leaves followers and 114 NPCs scaling; MLU only *narrows*
-ranges (a `[38–53]` band still moves with the player). ~~`MinLevel == MaxLevel` is un-taken prior
-art~~ — **wrong, and now researched**: MLU itself ships three `Min == Max` zones (ColdRockPass
-22–22, ShrineofBoethiah 30–30, its own new `MLU_MQ301` 40–40), and the `[38–53]`-still-moves
-problem has a mechanical explanation — zones govern leveled-*list* selection but `PcLevelMult`
-actors ignore them entirely. **The five gating engine questions are answered in
-`arch-docs/design/engine-behaviour.md`** (2026-07-28). **Ehlnofey's answer to "neither achieves bone
-1" is the split in `implementation-strategy.md`**: zero-width zones fix the places, and SkyPatcher
-`filterByPCLevelMult` rules fix the actors zones structurally cannot reach.
+Two Phase 3 findings still hold. **Vanilla's zone floors must be stretched, not ratified**: 73% of
+Skyrim's 280 zones sit at level ≤ 8 and none exceeds 24, while the content ladders run to 46–60. And
+**the tier ladder lands exactly on the vanilla gear ladder**: T1–T7 select Steel / Orcish / Dwarven /
+Elven / Glass / Ebony / Daedric, which matters if containers stay zone-gated (`flattening.md` §5.4).
+The five gating engine questions are answered in `design/engine-behaviour.md`, and the in-game probe
+results are in `design/probe-test-protocol.md`.
 
 ## Phase plan
 
@@ -665,9 +301,9 @@ actors ignore them entirely. **The five gating engine questions are answered in
 |---|---|---|
 | **0 — Workspace** | Spriggit round-trip, skills, CI, base+DLC decompiles in `reference/` | ✅ complete |
 | **1 — World research** | `arch-docs/world/*` — enemy taxonomy, factions, dungeons, regions, progression, lore constraints, DLC deltas | Every hostile archetype and every dungeon is in a table with its vanilla scaling behaviour cited from `reference/` |
-| **2 — Prior art & method** | `arch-docs/prior-art/*` — how Requiem, MorrowLoot Ultimate and SkyPatcher actually do it | ✅ complete — each has a verified mechanism, a cost, and a compatibility verdict |
+| **2 — Prior art & method** | how other deleveling mods do it | ✅ complete. Its write-ups were deleted on 2026-09-27: the rebuild takes no third-party mod as an input |
 | **3 — Design spec** | `arch-docs/design/*` — tier system, region difficulty map, loot model, and the **implementation-strategy decision** | ✅ complete — 5 documents; all 355 zones assigned; architecture decided |
-| **4 — Build** | `src/Ehlnofey/` — plugin YAML, any scripts/rule files, release | Deserializes clean, opens clean in xEdit, **and has been launched in-game** |
+| **4 — Build** | `src/Ehlnofey/EhlnofeyESP/` — plugin YAML, its generators, release. **Restarted 2026-09-27**; the first attempt is archived as `ProofOfConceptESP` | Deserializes clean, opens clean in xEdit, **and has been launched in-game** |
 
 Phases 1–3 are documentation work. **Do not start authoring records in `src/` before Phase 3 has a
 written spec** — the whole point of the arch-docs is that a deleveling pass touches thousands of
@@ -680,12 +316,6 @@ Research and design live here; this file stays the index. Create these as the ph
 ```
 arch-docs/
   skyrim-record-patterns.md      # EXISTS — read before authoring any mechanic
-  summary/                       # EXISTS — talk material for people who won't read design/.
-                                 #   build-deck.py generates ehlnofey-tier-ladders.pptx (16 slides,
-                                 #   assumes zero modding knowledge). Needs python-pptx, which is
-                                 #   NOT part of the plugin toolchain — use a throwaway venv.
-                                 #   Target renderer is LibreOffice Impress; see its README for the
-                                 #   layout traps and the soffice render-check.
   world/
     overview.md                  # EXISTS — bird's-eye census of the base game; read this first
     enemy-taxonomy.md            # EXISTS — every hostile archetype, its ladder, its scaling class
@@ -698,34 +328,19 @@ arch-docs/
     dlc-deltas.md                # Dawnguard / Hearthfire / Dragonborn additions and their zones
                                  #   (DLC coverage currently lives inline: taxonomy §2.7, dungeons §3,
                                  #    factions §6, regions §4 — consolidate here if it outgrows them)
-  prior-art/
-    requiem/                     # EXISTS — README + plugin-analysis + reqtificator + bash-tags
-                                 #   + lessons-for-ehlnofey. Read the README first.
-    morrowloot.md                # EXISTS — the ECZN-clamp approach; §7 is the Requiem/MLU table
-    skypatcher.md                # EXISTS — INI rule syntax; §3.1 filter semantics (filterBy* is a
-                                 #   UNION, restrictTo* narrows), §3.4 docs-vs-parser bugs, §5 limits
-    enderal.md                   # EXISTS — the total-conversion pole: 0 LVLN, 0 PcLevelMult,
-                                 #   0 LevelModifier, 2 ECZN. Existence proof for bone 1 and the
-                                 #   third zone data point. §9 = why the METHOD IS NOT USABLE here
-                                 #   (Enderal replaced the master; Ehlnofey patches it). Its
-                                 #   decompiles were deleted after the read — §"Reproducing the
-                                 #   evidence" regenerates them if ever needed again.
-    # ^ Phase 2 is CLOSED. Open World Loot, SPID and Synthesis were dropped on
-    #   purpose — see "Current phase". Do not add files here without a reason.
-    #   enderal.md was added later on request: a total conversion, not a 4th candidate method.
   design/
-    faction-playbook.md          # EXISTS — READ BEFORE ANY FACTION TICKET (WD-44…62): survey, rungs,
-                                 #   gear, "who uses this list", game-wide-list leaks, injector audit,
-                                 #   which generator holds what, tail-only regeneration, close-out.
-    requiem-method.md            # EXISTS — READ FIRST. THE live architecture: the pivot away from
-                                 #   encounter zones, the four Ehlnofey twists, and 6 = the current
-                                 #   order of work. Supersedes implementation-strategy.md 1.
-    archetype-tiers.md           # EXISTS — the archetype tier table + the 19 biome rosters. 4/4.1
-                                 #   is what bucket D of the extract still has to be authored from.
-    bucket-d-provisional.txt     # GENERATED — the 66 LVLN the extract could not copy and left as a
-                                 #   naive vanilla flatten. Regenerated by extract-requiem.ps1.
+    flattening.md                # EXISTS — READ FIRST. THE live architecture: why flatten and not
+                                 #   clamp zones, the rules of the method, scope, and §6 = the order
+                                 #   of work for the rebuild. Supersedes implementation-strategy.md §1.
+    archetype-tiers.md           # EXISTS — THE SPEC: every family's levels, rosters, weights, pins and
+                                 #   gear, decided faction by faction (WD-43…64), + the biome rosters.
+    faction-playbook.md          # EXISTS — READ BEFORE ANY FACTION: survey, rungs, gear, "who uses
+                                 #   this list", game-wide-list leaks, injector audit, close-out.
+    proof-of-concept.md          # ARCHIVED — the first build's architecture (third-party extract) and,
+                                 #   in §10, the full log of what it shipped and what play found.
     lvli-reachability.ps1        # EXISTS — plus roster-census / leveled-list-census / lvli-fork-*
-                                 #   / biome-rosters .ps1: the evidence scripts behind 5 and 4.1.
+                                 #   / biome-rosters .ps1: the evidence behind flattening.md §5 and
+                                 #   archetype-tiers.md §4.1.
     engine-behaviour.md          # EXISTS — the five gating engine questions, answered with sources
                                  #   (ECZN clamp scope, Min==Max, loot, LevelModifier, SkyPatcher
                                  #    timing/saves). Read before tiers/difficulty-map/implementation.
@@ -736,9 +351,10 @@ arch-docs/
                                  #   type→tier + word-wall bump + region floor/ceiling + 44 explicit.
     build-difficulty-map.py      # EXISTS — regenerates difficulty-map.md §7 from reference/.
                                  #   Change the seven numbers in TIER and re-run to recalibrate.
-    loot-model.md                # EXISTS — the tier ladder IS the material ladder; no truncation pass
-                                 #   needed. One GMST. Hinges on the gear-resolution test.
-    implementation-strategy.md   # EXISTS — THE decision, now made. See below.
+    loot-model.md                # EXISTS — the tier ladder IS the material ladder. Its "no truncation
+                                 #   pass needed" headline is DEAD (flattening.md §2.2).
+    implementation-strategy.md   # EXISTS — the Phase 3 zone-first hybrid, SUPERSEDED by flattening.md.
+                                 #   §6 (the overworld census) is still cited as evidence.
     probe-test-protocol.md       # EXISTS — the instrument + script for the three gating in-game
                                  #   tests (§9 step 1). §4 holds a census that CUTS the
                                  #   LevelModifier:None exposure from ~1,928 refs to 9.
@@ -772,83 +388,23 @@ Mutagen/Spriggit field name in `reference/` before writing YAML**, and record th
 | Actor templates | `NPC_` template + template flags | A spawn may inherit stats/traits from another record, so editing the visible NPC can do nothing. Trace before editing. `[community]` |
 | Leveled actor lists | `LVLN` | Chooses which variant spawns, with per-entry level gates and chance-none. Deleveling means flattening or splitting these per tier. `[community]` |
 | Leveled item lists | `LVLI` | The loot side of the same machinery — vanilla gates gear tiers by player level here. `[community]` |
-| Encounter zones | `ECZN` | Per-location min/max level and flags. **Phase 2 verdict: viable, but only in one of two architectures.** A zone *clamps* the level the leveled-spawn machinery computes. Requiem flattened that machinery away, so its zones are inert (8 records, none for levels). MorrowLoot Ultimate kept it and clamped it — **360 zones, 324 with a real band** — making zones its entire difficulty map. **The `ECZN` and `LVLN` decisions are one decision.** See `arch-docs/prior-art/morrowloot.md` §1. `[verified]`. **Clamp semantics now researched** (`design/engine-behaviour.md`): the zone level is `clamp(playerLevel, min, max)` computed on first visit, **stored in the save, never recalculated** until zone reset; it governs leveled-list selection (and, per docs, loot lists) but **`PcLevelMult` actors ignore it** — they need per-NPC fixing. `[community]` |
-| Placed-actor difficulty | `ACHR` / `PlacedNpc` field `LevelModifier` (`Easy`/`Medium`/`Hard`/`VeryHard`) | Vanilla's hand-tuning layer, on **5,685 of 10,504** placed actors (2,524 of 4,452 interior); the four values map to `fLeveledActorMult*` = 0.33/0.67/1/1.25. Keep it. **Prior art disagrees on the multipliers:** Requiem leaves them at vanilla; MLU uses **0.7 / 0.9 / 1.1 / 1.3** — note its Hard is **1.1, not 1.0**, so every Hard-tagged actor sits a notch above its zone's nominal level. **Decided in `design/tiers.md` §4: Ehlnofey uses 0.70 / 0.85 / 1.00 / 1.25** — two GMST overrides, keeping Hard = 1.0 so "a T5 zone is a level-30 zone" is exactly true. `[verified]` |
+| Encounter zones | `ECZN` | Per-location min/max level and flags. A zone *clamps* the level the leveled-spawn machinery computes, so once the lists are flat there is nothing left for it to clamp for actors — **the `ECZN` and `LVLN` decisions are one decision.** Zones still govern container loot (`flattening.md` §5.4). **Clamp semantics now researched** (`design/engine-behaviour.md`): the zone level is `clamp(playerLevel, min, max)` computed on first visit, **stored in the save, never recalculated** until zone reset; it governs leveled-list selection (and, per docs, loot lists) but **`PcLevelMult` actors ignore it** — they need per-NPC fixing. `[community]` |
+| Placed-actor difficulty | `ACHR` / `PlacedNpc` field `LevelModifier` (`Easy`/`Medium`/`Hard`/`VeryHard`) | Vanilla's hand-tuning layer, on **5,685 of 10,504** placed actors (2,524 of 4,452 interior); the four values map to `fLeveledActorMult*` = 0.33/0.67/1/1.25. It multiplies a leveled-list *lookup* level, so it is **inert once the lists are flat**. `design/tiers.md` §4 had chosen 0.70 / 0.85 / 1.00 / 1.25 for the zone architecture; under flattening the GMSTs are not overridden. `[verified]` |
 | Global knobs | `GMST` (level-scaling and difficulty multipliers) | Blunt but cheap; changes everything at once. Use deliberately, never as a substitute for tiering. `[community]` |
 | Spawn gating by player level | 12 `LevelGate*` `GLOB` records (Spriggan 8 … Giant 24) | Vanilla's only systematic level gate — it withholds world-encounter *creatures* until the player is roughly their level. **This is a bone-1 violation that already exists**; delete or document as an exception. `[verified]` |
 | Capability, not level | `PERK`, `SPEL`, `CSTY` (combat style) | A level-20 bandit's threat comes largely from perks/spells/AI. Deleveling levels without capability produces a flat, boring world. `[community]` |
-
-## Implementation strategy — SUPERSEDED (Phase 3 record)
-
-> ⚠️ **Replaced by `arch-docs/design/requiem-method.md`.** The shipped architecture is a
-> **single plugin, no rules**: 2,877 override records extracted from Requiem's deleveling layer —
-> flat `LVLN`/`LVLI` plus grafted `NPC_` levels. There are **no encounter-zone bands and no
-> SkyPatcher rules** in it. Zones govern 0.3% of the outdoors and cannot reach worn gear, which is
-> what killed the hybrid; and once every list is flat there is nothing left for a zone to clamp.
-> The section below is kept for the reasoning, which is still worth reading, and because §§2.2–2.4,
-> §4 and §8 of `implementation-strategy.md` survive intact.
-
-**Verdict: a hybrid — places and constants in the plugin, actors in rules.** Full reasoning and the
-record-by-record manifest are in `arch-docs/design/implementation-strategy.md`; this is the summary.
-
-| Half | Contents | Size |
-|---|---|---|
-| **`Ehlnofey.esp`** | the **355 encounter-zone bands**, 3 `GMST`s, 12 `LevelGate*` `GLOB`s, 5 capstone bosses, 1 bug fix | **~376 records, all overrides**, ~1–2 MB YAML |
-| **SkyPatcher INI rules** | the ~454 `PcLevelMult` actors, the ambient leveled lists | tens of lines |
-
-**This revises the earlier working recommendation**, which had rules doing the zone distribution too.
-Phase 3 moved the zones into the plugin for two reasons: the authoring cost is **identical either
-way** (SkyPatcher's `encounterzone/` has no keyword or location filter, so all 355 must be enumerated
-by FormID regardless — `skypatcher.md` §5.3), and only the plugin route is reachable by
-xEdit, `formkey-check` and the Spriggit round-trip. Guardrail 6 decides it: for the mod's
-spine there must be *something* to verify. Conversely the ~454 class-D actors stay as rules, because
-`filterByPCLevelMult` is a **predicate** that also catches NPCs from other mods and future patches,
-where 454 overrides would only be a snapshot.
-
-Bonus property: the plugin half **degrades gracefully**. If SkyPatcher breaks on a game update the
-world still has its fixed places; under a rules-only design the mod would do nothing at all.
-
-**Masters:** `Skyrim.esm`, `Update.esm`, `Dawnguard.esm`, `Dragonborn.esm`. **Hearthfire excluded.**
-
-The two candidates as they were framed before the decision, kept for context — a third (a
-Synthesis/Mutagen generated patch) was considered and **ruled out: Synthesis is not an option for
-this mod.** Do not revive it.
-
-| Approach | Mechanism | Cost |
-|---|---|---|
-| **A. Plugin overrides** | Override vanilla records directly in Spriggit YAML | Total control, no dependencies. But thousands of override files: a huge repo, unreviewable diffs, and a hard conflict with every other mod touching the same records. Phase 2 measured the ceiling: Requiem is **108 MB / 26,620 records**, MLU **22 MB / 4,751**. |
-| **B. Runtime rule engines** | SkyPatcher INI rules, applied at load by SKSE | Few or no overrides, filter-based, very compatibility-friendly. **SkyPatcher's capabilities are `[verified]` from source** — see `arch-docs/prior-art/skypatcher.md`. It can express the deleveling core of *both* Requiem and MLU. It **cannot** touch `GMST`s or placed-actor `LevelModifier`, and cannot filter zones by location/keyword. Requires SKSE, and **none of this workspace's verification tooling applies to a rule file**. |
-
-**The overworld: SOLVED, and it was never as bad as it looked** (`implementation-strategy.md` §6,
-rewritten 2026-07-29 after the Tamriel worldspace was actually scanned). Only **40 of 12,148**
-exterior cells carry an encounter zone — but the 3,512 unzoned leveled refs resolve to just **88
-lists, 23 of them already flat**, so the job is **65 lists**, not 12,148 cells. It splits in two:
-**wildlife** flattens by rule and *keeps its regional variation for free*, because vanilla already
-ships biome-partitioned lists (`LCharAnimalForestPredator`, `…MountainSnowPredator`, …) — this
-retracts the old claim that flattening gives "one wilderness mix for the whole province". **Humanoid
-lists cannot be flattened** (they are the same lists the dungeon zones tier), so the **238** unzoned
-cells holding them get wilderness zones via SkyPatcher `cell/encounterZone=`, which *adds* a zone
-where none exists (`cell.cpp:781–802`, `[verified]`). ~7 new `ECZN` + ~7 rule lines + ~18 list
-flattens. Rules beat plugin records here: an exterior-cell override carries the whole cell and
-conflicts with every lighting/water mod. **Scope: Tamriel only — Solstheim unmeasured.**
 
 ## Naming & FormKey conventions
 
 Fixed now so Phase 4 does not have to argue about it:
 
-- **Plugin:** `Ehlnofey.esp`, **ESL-flagged**. Masters **decided in Phase 3**: `Skyrim.esm`,
-  `Update.esm`, `Dawnguard.esm`, `Dragonborn.esm`. Hearthfire is excluded — it adds no worldspace,
-  region, dungeon or encounter zone, so taking it as a master would buy nothing.
-  **Revised 2026-09-23:** plus the 15 Creation Club Bandit Armor `.esl` packs, so their runtime
-  leveled-list injections can be neutralised (`author-injectors.ps1`). **Revised 2026-09-24:** plus 6
-  more CC plugins (21 in all), and **`HearthFires.esm` is now a master** — not for Hearthfire content,
-  but because the overridden `ccbgssse001-fish` DLC-detection quest holds properties pointing at
-  Hearthfire records, and Spriggit cannot write a FormKey whose plugin is not a master.
-  **Revised 2026-09-26 (WD-48):** plus `ccedhsse003-redguard.esl` (22 CC, 27 in all), to raise its own Thalmor
-  soldiers from 18 to 36. **Revised 2026-09-27:** plus `ccbgssse036-petbwolf.esl` (23 CC, 28 in all), to fix its Bonewolf,
-  Thrall Wolves and Necromancer. **Revised 2026-09-27 (WD-64):** plus `ccbgssse067-daedinv.esm`, `ccmtysse002-ve.esl` and
-  `ccffbsse002-crossbowpack.esl` (26 CC, 31 in all). `$ccMasters` in `author-injectors.ps1` follows `Skyrim.ccc` order;
-  `author-retargets.ps1` copies a CC-defined `NPC_` from `reference/mods/CreationClubYaml/`.
+- **Plugin:** `Ehlnofey.esp`, **ESL-flagged**. Masters: `Skyrim.esm`, `Update.esm`, `Dawnguard.esm`,
+  `Dragonborn.esm`. Add a master only when a record needs it, and record why here. Expect
+  `HearthFires.esm` and a set of Creation Club plugins once the runtime injectors are neutralised
+  (`flattening.md` §5.5): the proof of concept ended with 31 masters, 26 of them CC — among them
+  `HearthFires.esm`, needed because an overridden CC quest pointed at Hearthfire records and Spriggit
+  cannot write a FormKey whose plugin is not a master. Its list is in `ProofOfConceptESP/RecordData.yaml`.
+  Keep CC masters in `Skyrim.ccc` order.
 - **EditorID prefix:** `EHL_`, then the domain, then the specific: `EHL_LVLI_DraugrBossHoard_T4`,
   `EHL_ECZN_BleakFalls`. Tier suffixes are `_T<n>` against the ladder in `design/tiers.md`.
 - **New records** start at `0x800` and are allocated in a **contiguous block per feature** (one block
@@ -856,25 +412,21 @@ Fixed now so Phase 4 does not have to argue about it:
 - **Overrides keep the original master's suffix** (`09BC43:Skyrim.esm`), which is how you tell an
   invented record from a vanilla one at a glance. Ehlnofey will be override-heavy, so this matters
   more here than in a content mod.
-- **ESL decision: RESOLVED — yes, ESL-flag it.** The verdict is unchanged but **its premise is not**:
-  Phase 3 closed this on "no new records at all", and Phase 4 testing has since added two sources of
-  new records — **~7 wilderness `ECZN`** for the overworld (`implementation-strategy.md` §6.4) and
-  whatever per-tier gear lists/outfits the loot fix needs (`probe-test-protocol.md` §6.3). Both are
-  tens of records against ESL's **2,048-slot** `0x800–0xFFF` range, so ESL still holds comfortably —
-  but the mod is no longer override-only, and `implementation-strategy.md` §2.5 still says it is.
+- **ESL decision: RESOLVED — yes, ESL-flag it.** The mod is almost all overrides; new records (a few
+  new leveled lists, forked material ladders if containers stay gated) are tens against ESL's
+  **2,048-slot** `0x800–0xFFF` range.
 - Always `/formkey-check` before claiming a block.
 
 **FormID usage** (claimed blocks; everything else is an override):
 
 | Block | Feature | Records |
 |---|---|---|
-| `0x800`–`0x801` | Thalmor rare glass (WD-48) | `EHL_LVLI_ThalmorJusticiarWeapon1H`, `EHL_LVLI_ThalmorBossDagger` |
-| `0x802`–`0x804` | Silver Hand (WD-55) | `EHL_LVLN_SilverHandMelee1H`, `…Melee2H`, `…Missile` (bucket D, `From =`) |
-| `0x805` | Solstheim boss-chest weapons (WD-59) | `EHL_LVLI_SolstheimBossWeaponRare` |
+| — | none claimed yet | |
 
-New `LVLI` are written by `author-injectors.ps1` `$newLists`; new `LVLN` by `author-bucket-d.ps1` (`Add-Spec` with `From =`).
-**Next free: `0x806`.** The ~7 wilderness `ECZN` and the
-per-tier gear lists belonged to the replaced architecture and are not being built.
+**Next free: `0x800`.** `ProofOfConceptESP` shares the ModKey `Ehlnofey.esp` and claimed `0x800`–`0x805`
+(Thalmor rare glass, Silver Hand lists, Solstheim boss-chest weapons), so `/formkey-check` will report
+those as taken. They are not collisions: the two folders are different builds of the same plugin and
+are never loaded together. Reuse the numbers freely.
 
 ## Useful FormKey constants
 
@@ -901,7 +453,6 @@ is the payoff of the research phase.
 | `01A1D9` / `01A1DB` / `01A1DA` / `023C0B` `:Skyrim.esm` | `fLeveledActorMult` Easy/Medium/Hard/VeryHard — vanilla 0.33/0.67/1/1.25, Ehlnofey 0.70/0.85/1.00/1.25 (`design/tiers.md` §4) |
 | `10FEDD` / `10FEDF` / `10FEDE` `:Skyrim.esm` | `fSpecialLootMinZoneLevelMult` 0.4 / `…MaxZoneLevelMult` 1.0 / `…MinPCLevelMult` 0.6 — the boss-chest loot roll. The `…MinPCLevelMult` is a **live bone-1 leak** (floor at 0.6 × *player* level, zone-independent); one record to close |
 | `01E60D:Skyrim.esm` | `EncBandit04TemplateMelee` — the vanilla `L=0` bug; Ehlnofey sets it to 14 |
-| `0BC0A4` / `0F5BA8` `:Skyrim.esm` | ColdRockPass / ShrineofBoethiah — MLU's two `Min == Max` overrides of vanilla zones (its third is its own `1D6A71:MLU.esp`) |
 
 The full primary-source list is `arch-docs/world/enemy-taxonomy.md` §8 — cite from there rather than
 re-deriving.
@@ -964,11 +515,10 @@ Fill this as the project teaches you things.
   `[verified]`
 - **~~DLC plugins have no display names in the decompile.~~ They do now, and the old decompile
   shipped a bug.** The DLC decompiles `reference/Base/` held until 2026-09-23 serialized `Name:` with
-  **no `Values:` block**. Any DLC `NPC_` the extract copied from them came out as `Value: ''` after a
-  round-trip, and an override with an empty `FULL` **blanks the NPC's name in game**. The committed
-  plugin had 124 such records, including Serana, Isran, Neloth, Frea and Teldryn Sero. Fixed
-  2026-09-25 (WD-42): 88 went with the bucket-E cut, and 36 had their English `Name`/`ShortName` put
-  back from the current decompile, which **does** carry the strings. **After any round-trip, grep
+  **no `Values:` block**. Any DLC `NPC_` copied from them came out as `Value: ''` after a round-trip,
+  and an override with an empty `FULL` **blanks the NPC's name in game**. The proof of concept shipped
+  124 such records, including Serana, Isran, Neloth, Frea and Teldryn Sero (fixed 2026-09-25, WD-42).
+  The current decompile **does** carry the strings. **After any round-trip, grep
   `Npcs/` for `Value: ''` under `Name:`**, because a blank name is silent. For other *record types*
   (and older copies of `reference/`), still identify DLC records by EditorID and FormKey rather than
   trusting `Name:`. `[verified]`
@@ -988,9 +538,9 @@ Fill this as the project teaches you things.
   opening line's indent and close the record only at the same or lesser indent. `[verified]`
 
 - **`GMST` records can be *added*, not only overridden.** Skyrim has game settings that exist as
-  hardcoded engine defaults with no record in `Skyrim.esm`; creating one makes it editable. MLU adds
-  `fSmithingArmorMax` / `fSmithingWeaponMax` as **new** records (`005901:MLU.esp`, `005902:MLU.esp`)
-  — there is no `fSmithing*` record in the base game at all. So "absent from `reference/Base`" does
+  hardcoded engine defaults with no record in `Skyrim.esm`; creating one makes it editable. There is,
+  for example, no `fSmithingArmorMax` / `fSmithingWeaponMax` record in the base game at all, yet other
+  mods add them as new records. So "absent from `reference/Base`" does
   not mean "not tunable". `[verified]`
 - **A base+DLC index has duplicate keys; last-wins is the correct rule.** Concatenating
   `01Skyrim` … `05Dragonborn` into one `FormID_master → data` index produces **135 duplicate keys**
@@ -1001,74 +551,13 @@ Fill this as the project teaches you things.
   you almost always want. `[verified]`
 - **Comparing a mod against vanilla means comparing against the *winning* vanilla record**, and the
   join key must be `<hex>_<master>`, never bare hex — see the "resolve FormKeys by master" gotcha
-  above. Requiem overrides records from six different masters. `[verified]`
-- **A total conversion may ship a *replaced* `Skyrim.esm`, and it will not look replaced.** Enderal
-  SE's `Data/Skyrim.esm` is 182.9 MB / 86,636 records of Enderal content, but keeps Bethesda's
-  `mcarofano` author string in the TES4 header. Assuming `reference/Base/01Skyrim/` already covers it
-  and serializing only the mod-named plugin gets you ~5% of the mod. Cheap check before deciding:
-  scan the file for the mod's EditorID prefix (Enderal's `_00E_` appears 27,059 times, "Whiterun"
-  31). `[verified]` — see `prior-art/enderal.md`, "Reproducing the evidence".
+  above. `[verified]`
 
-- **A flag census is not a gate census.** `overview.md` and `enemy-taxonomy.md` §4 both sized the loot
-  job as "1,959 of 3,075 `LVLI` are player-gated" — that is the count carrying
-  `CalculateFromAllLevelsLessThanOrEqualPlayer`. Only **1,382** have any entry above level 1, and only
-  **1,378** have more than one distinct entry level. **1,693 lists (55%) are flat variety pools
-  carrying the flag over entries that are all level 1.** Always count the entries, not the flag.
-  `[verified]`
-- **Never conclude from a truncated read.** `head -40` on `LItemBanditCuirass` (`037C22`) shows forty
-  consecutive `Level: 1` entries and looks like a flat pool; its gates at 6/7/8/9/19…28 are further
-  down the file. Spriggit orders entries as authored, not by level. Parse the whole record — or at
-  minimum `grep` for the field across it — before saying what shape it is. `[verified]`
-- **Search `GameSettings/` by keyword before believing a mechanic is undocumented.** The engine names
-  its own operands: `fSpecialLootMinZoneLevelMult` / `…MaxZoneLevelMult` / `…MinPCLevelMult` settled a
-  question (does the zone level reach loot?) that UESP itself tags as needing verification, and turned
-  up a live bone-1 leak in the process. 1,584 GMSTs exist; `ls | grep -i <concept>` is seconds.
-  `[verified]`
-- **A "player-visible signal" is only a differentiator if it is not collinear with one you already
-  use.** `difficulty-map.md`'s first draft bumped dungeon tier on an ancient tileset
-  (`LocSetNordicRuin` / `LocSetDwarvenRuin`) as well as on the type keyword — but essentially every
-  `DraugrCrypt` *is* a `NordicRuin`, so the rule differentiated nothing and merely relabelled the
-  whole type one tier up. Check the cross-tab before adding a signal. `[verified]`
-- **`ls */ | grep` over `reference/` times out the same way `grep -rl` does.** The CLAUDE.md gotcha
-  about filename matching applies to *globbed* directory listings too — `ls Npcs | grep <id>` is
-  instant, `ls */ | grep <id>` is a 2-minute timeout. Name the one directory. `[verified]`
-
-- **`LevelModifier` is inert unless the placed ref's base resolves to an `LVLN`.** It multiplies the
-  *leveled-list lookup level*, so a fixed-level NPC has nothing to modify and a `PcLevelMult` actor
-  ignores zones anyway. Censusing "placed refs with no modifier" therefore massively overstates the
-  exposure: across 291 zoned interior cells, 1,106 refs are unmodified but only **9** have a leveled
-  ladder behind them (1,014 are fixed-level corpses/skeevers/quest NPCs, 83 are `PcLevelMult`).
-  Always resolve the template chain to a terminal class before sizing a job off a field census —
-  this is the "count records, not lines" gotcha one level deeper. See
-  `design/probe-test-protocol.md` §4. `[verified]`
-- **Spriggit's canonical field order is not the order you'd write by hand.** An `ECZN` serializes as
-  `MinLevel` → `Flags` → `MaxLevel`, so hand-authoring `MinLevel`/`MaxLevel` adjacently builds a
-  correct plugin that re-serializes to a *different* file, producing a phantom diff on the next
-  round-trip. Fix: after the first deserialize, **re-serialize and adopt Spriggit's output as the
-  source**. `[verified]`
-- **Line endings will always differ between fresh Spriggit output and a checked-out working copy.**
-  Spriggit 0.40 on Windows writes **CRLF**; `.gitattributes` forces `*.yaml text eol=lf`. Both are
-  deliberate and neither is wrong — but it means a raw `diff -r <src> <fresh-serialize>` reports
-  *every line changed* on a clean round-trip. Compare with **`diff -r --strip-trailing-cr`** (or
-  `git diff`, which normalizes) and judge the round-trip on content only. Note `.gitattributes`'
-  own comment says Spriggit "uses LF" — that is inaccurate for 0.40 on Windows. `[verified]`
-- **`[System.IO.File]` does not use PowerShell's current directory.** `Set-Location` moves the
-  PowerShell provider's location; `[Environment]::CurrentDirectory` is a separate thing and stays
-  wherever the process started or was last set. So `WriteAllLines('src/…/x.yaml', …)` can silently
-  resolve against an unrelated directory and throw `DirectoryNotFoundException` with a path that
-  looks nonsensical (`…\reference\Base\src\Ehlnofey\…`). The same script had worked earlier in the
-  session, which makes it look intermittent. **Resolve to an absolute path first**
-  (`(Resolve-Path $dir).Path`) whenever mixing `[System.IO.File]` with relative paths — and note the
-  BOM gotcha below means you often *have* to use it rather than `Set-Content`. `[verified]`
-- **PowerShell 5.1's `Set-Content -Encoding utf8` writes a BOM; Spriggit does not.** Any record file
-  authored by a script that way differs from Spriggit's output on line 1 and produces a phantom diff
-  on the next round-trip. Write YAML with
-  `[System.IO.File]::WriteAllLines($path, $lines, (New-Object System.Text.UTF8Encoding($false)))`.
   `[verified]`
 - **Overriding a vanilla `NPC_` in a non-localized `.esp` collapses its name to one language.**
   `Skyrim.esm` records serialize a multi-language `Values:` block (the STRINGS table); an `.esp`
   without one stores a single `Value:`, so Spriggit picks English and the other eight are gone. This
-  hit all 393 base-game NPCs in the extract's bucket E. It is unavoidable without shipping `.STRINGS`
+  hit every base-game NPC the proof of concept overrode. It is unavoidable without shipping `.STRINGS`
   — dropping `Name:` is *not* the fix, because a Skyrim override replaces the record wholesale and an
   NPC with no `FULL` has no name at all. Accept it, or ship a localized plugin. `[verified]`
 - **A PowerShell function returning `,@(...)` breaks `foreach`, even though it fixes `.Count`.** The
@@ -1106,17 +595,9 @@ Fill this as the project teaches you things.
   VeryHard (≈7) both picked steel's gate-6 entry, so the bump took **silver at gate 10** — above the
   lookup level — and the chief wore silver, level 6. A flattened list is only as pinned as the thing
   that stops others adding to it. `[verified]` in game (silver-armored level-6 chief), 2026-09-23.
-- **`reference/mods/RequiemYaml` is Requiem 5.4.5, but the committed extract came from v6.0.2.** The
-  folder was rebuilt on 2026-09-23 from an older Requiem (its `RecordData.yaml` description says
-  `Version: 5.4.5`; `prior-art/requiem/README.md` researched v6.0.2). Nobody noticed because
-  `extract-requiem.ps1` had not been re-run since. Its master-leak check scanned `Quests/` and failed on
-  the CC injector quests; fixed 2026-09-25 (WD-41). Re-running the chain against the 5.4.5 decompile
-  rewrites **~380 records** (339 changed, 39 dropped, 1 added, after a round-trip). **The version does
-  not matter in itself** (user, 2026-09-25): Ehlnofey takes Requiem's *method*, not its exact records,
-  so 5.4.5 is an acceptable source. What does matter is that the first full re-run will carry that
-  ~380-record shift, so **review it as its own change**, not folded into a faction edit. Prove a
-  generator refactor by diffing the chain's *raw* output before and after (two runs from a clean
-  checkout), not against the committed tree. `[verified]` 2026-09-25.
+- **Prove a generator refactor by diffing its *raw* output before and after** (two runs from a clean
+  checkout), not against the committed tree. The committed tree has been through a Spriggit round-trip,
+  so it differs from fresh generator output in field order and collapsed strings. `[verified]` 2026-09-25.
 - **PowerShell variable names are case-insensitive.** `$S` (a scratch path) and a loop's `foreach ($s in …)`
   are the *same variable*: the loop silently overwrote the path, and Spriggit wrote its output into a
   folder named after the last loop item in the repo root. Use distinct names. `[verified]` 2026-09-25.
@@ -1127,30 +608,20 @@ Fill this as the project teaches you things.
   Editing those would have been a no-op. The command is in `design/faction-playbook.md` §4. `[verified]`
   2026-09-26.
 - **A faction list that points into a game-wide "All" list inherits our own CC re-adds.** `LItemArrowsAll`
-  carries the Exotic Arrows vendor sublist (re-added at level 1 by `author-injectors.ps1`). So the Forsworn's
+  carries the Exotic Arrows vendor sublist (the proof of concept re-added it at level 1). So the Forsworn's
   15% bonus arrow roll `LootForswornArrows15`, which pointed there, handed archers CC fire and ice arrows.
   When play shows an out-of-place item, walk the faction's loot and arrow lists to their leaves before
   suspecting a runtime injector. Fix by repointing the faction's list, not by editing the shared one.
   `[verified]` in game 2026-09-26.
-- **For a faction change, regenerate only the tail of the chain:** `author-bucket-d.ps1` →
-  `author-injectors.ps1` → `author-retargets.ps1`, then round-trip and adopt. Re-running `extract-requiem.ps1`
-  drags in the ~380-record Requiem 5.4.5 shift. The regenerated injector quests and orc `NPC_` show as diffs
-  until the round-trip collapses their strings; after adoption `git status` should show only the faction's
-  records. `[verified]` 2026-09-25/26.
-- **`author-injectors.ps1` applies re-adds before cuts and weights.** One pass can therefore add an item and
-  then weight it, repoint an entry (re-add the new target, cut the old), or add one item several times with
-  different `Count`s. `$weights` throws if its target is absent, so weight only what exists or what the
-  re-add just added. `[verified]` 2026-09-26.
-- **Bucket B can strip a list down to no weapon.** It removes Requiem-only entries, and where Requiem had
-  *moved* a faction's vanilla weapons into its own lists, nothing is left. The NPC spawns unarmed and fights with
-  fists, and nothing warns you. Imperials and Thalmor archers were hit; both are fixed. To find more, compare each
-  stripped list's remaining entries against `reference/mods/RequiemYaml/LeveledItems/`. `[verified]` in game
-  2026-09-26.
-- **A bucket-E level graft can be inert.** The extract grafted Requiem's level onto whichever `NPC_` carried
-  the `PcLevelMult`. If that record takes `Stats` from a template, its own level is ignored. The nine
-  `EncGuardImperialM0x` guards were grafted at 25 and still scaled 20–50 in game through `EncGuardImperialTemplate`.
-  Before claiming an NPC is fixed, find the level **owner**: follow `Stats` templates through `LVLN` entries to a
-  record without the flag. `[verified]` from the records, 2026-09-26.
+- **An edited gear list can end up with no weapon.** Stripping or repointing entries can leave a faction's
+  weapon list empty; the NPC then spawns unarmed and fights with fists, and nothing warns you. In the proof of
+  concept, Imperial soldiers and guards, Thalmor archers, Penitus archers and Dawnguard mooks (war axe) were all
+  hit. After editing a faction's gear, walk each outfit to its leaves and check a weapon is still there.
+  `[verified]` in game 2026-09-26.
+- **A level written on a record that takes `Stats` from a template is inert.** The nine
+  `EncGuardImperialM0x` guards were given level 25 and still scaled 20–50 in game through
+  `EncGuardImperialTemplate`. Before claiming an NPC is fixed, find the level **owner**: follow `Stats` templates
+  through `LVLN` entries to a record without the flag. `[verified]` from the records, 2026-09-26.
 - **In the decompile, match the string `- Language: English`, not `Language: English`.** The latter hits
   `TargetLanguage: English` on the line above first, and a name parse silently returns the wrong field.
   `[verified]` 2026-09-25.
@@ -1158,7 +629,9 @@ Fill this as the project teaches you things.
 ## Faction ledgers
 
 A reader-facing page per finished faction, in one shared style. Each faction ticket ends with one
-(`design/faction-playbook.md` §9). Private artifacts; share from the page's own menu.
+(`design/faction-playbook.md` §9). Private artifacts; share from the page's own menu. **The pages
+below describe the proof of concept.** Their levels and rosters are the decisions `archetype-tiers.md`
+carries into the rebuild, but where they mention Requiem or the extract, that is POC history.
 
 | Faction | Ticket | Page |
 |---|---|---|

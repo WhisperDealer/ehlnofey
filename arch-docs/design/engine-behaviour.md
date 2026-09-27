@@ -1,5 +1,8 @@
 # Engine behaviour — the five questions that gated Phase 3
 
+> **Note (2026-09-27):** citations here to `morrowloot.md`, `skypatcher.md` and the Requiem analysis point
+> at the prior-art write-ups, deleted when the rebuild started. The live architecture is `flattening.md`.
+
 > Researched 2026-07-28, before any design doc was written, because every candidate architecture
 > hinged on them. Sources are (a) read source code and records in `reference/` → `[verified]`,
 > (b) official Creation Kit documentation and convergent community/RE evidence → `[community]`,
@@ -56,7 +59,7 @@ The CK wiki's one-sentence summary: *"an Encounter Zone dictates how Leveled Lis
 | Class | Zone clamps it? | Ehlnofey's lever |
 |---|---|---|
 | A — LVLN ladder spawns (bandits, draugr, …) | **Yes** — selection runs at zone level | `ECZN` bands do the work; ladder edits optional |
-| D — `PcLevelMult` actors (guards ×1 [20–50], Alduin ×1.2, followers, 114 Requiem stragglers) | **No** | Must be fixed per-NPC — SkyPatcher `filterByPCLevelMult` + `level`, exactly what it's built for |
+| D — `PcLevelMult` actors (guards ×1 [20–50], Alduin ×1.2, followers) | **No** | Must be fixed per-NPC — a fixed level on the record that owns `Stats` (`flattening.md` §4.4) |
 
 This *strengthens* the hybrid recommendation: zones cannot deliver bone 1 alone even in principle,
 and the piece they miss is precisely the piece SkyPatcher's NPC patcher reaches. MLU's residual
@@ -153,7 +156,7 @@ Two implications:
 1. **In a fixed-band zone, `LevelModifier` becomes Ehlnofey's within-dungeon texture.** With
    `zoneLevel` pinned at N, Easy/Medium/Hard/VeryHard rooms sit at fixed fractions of N forever —
    vanilla's 5,685 hand-placed modifiers keep doing their job with no edits, which is what "keep
-   it" (CLAUDE.md machinery table) buys. The Requiem-vs-MLU multiplier question (leave at
+   it" (CLAUDE.md machinery table) buys. The multiplier question (leave at
    0.33–1.25 vs compress to 0.7–1.3) is now precisely: *how much intra-dungeon spread does a tier
    allow?* — a `tiers.md` decision with a known operand.
 2. **The "None" row is an anomaly worth one console check** (§7): taken literally, unmodified refs
