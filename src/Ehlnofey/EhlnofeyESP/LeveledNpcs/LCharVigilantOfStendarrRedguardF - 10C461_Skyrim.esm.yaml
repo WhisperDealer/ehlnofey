@@ -1,25 +1,12 @@
 FormKey: 10C461:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharVigilantOfStendarrRedguardF
+FormVersion: 40
+Version2: 2
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
-- Data:
-    Level: 1
-    Reference: 10C455:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 10C476:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 10C47C:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 10C483:Skyrim.esm
-    Count: 1
 - Data:
     Level: 1
     Reference: 10C489:Skyrim.esm

@@ -76,7 +76,7 @@ Configuration:
   MagickaOffset: 25
   Level:
     MutagenObjectType: NpcLevel
-    Level: 56
+    Level: 45
   CalcMinLevel: 15
   CalcMaxLevel: 30
   SpeedMultiplier: 100
