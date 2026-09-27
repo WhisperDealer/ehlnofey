@@ -1,34 +1,36 @@
 FormKey: 01E791:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharWerewolf
+FormVersion: 40
 Version2: 5
 Entries:
 - Data:
     Level: 1
-    Reference: 023ABC:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0A092B:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0A092B:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0A092C:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0A092C:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
     Reference: 0A092D:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
     Reference: 0A092D:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0A092E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0A092E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0A092E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0A092E:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0A092E:Skyrim.esm
     Count: 1
 - Data:
     Level: 1
@@ -40,7 +42,11 @@ Entries:
     Count: 1
 - Data:
     Level: 1
-    Reference: 0A092E:Skyrim.esm
+    Reference: 0A092F:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0A092F:Skyrim.esm
     Count: 1
 - Data:
     Level: 1

@@ -1,0 +1,29 @@
+FormKey: 000804:Ehlnofey.esp
+VersionControl: 944407
+EditorID: EHL_LVLN_SilverHandMissile
+FormVersion: 40
+Version2: 8
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+- CalculateForEachItemInCount
+Entries:
+- Data:
+    Level: 1
+    Reference: 039D74:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 039D75:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 039D75:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 039D75:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 039D76:Skyrim.esm
+    Count: 1
