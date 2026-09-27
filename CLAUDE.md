@@ -234,7 +234,7 @@ mod, not a new-content mod. Ehlnofey changes *where the numbers come from*, and 
 
 ## Current phase
 
-**Phase 4 is under way and `Ehlnofey.esp` exists: 2,730 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
+**Phase 4 is under way and `Ehlnofey.esp` exists: 2,735 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
 `design/requiem-method`). Read **`arch-docs/design/requiem-method.md` first** — it is the live
 architecture doc, and its §6 is the current order of work. Everything below it in this section is
 the Phase 3 record, kept because most of it still holds, but **the architecture it decided has been
@@ -444,6 +444,13 @@ See `archetype-tiers.md` §3.1.
 - **Chaurus:** the Dawnguard no-hunter list is aligned to Chaurus ×3 · Reaper ×1. Gear and loot were already flat, and no
   quest injects into these lists.
 - **Plugin size:** 2,730 records (+3 `NPC_`; 6 `LVLN` re-authored). See `archetype-tiers.md` §3.3.
+
+**Dwemer automatons are done (WD-51, 2026-09-27). Verified in game by the user.**
+- **Every list rolls only its Guardian** (user: "deadly", average 40–50): Spider 40 · Sphere 45 · Ballista 45 ·
+  Centurion 50. The mixed list rolls spider ×3 · sphere ×3 · centurion ×1, mean 43.6. Requiem had kept every rung at ×1.
+- **Forgemaster pinned at 60** (the extract had grafted Requiem's 120). The Aetherial Staff's summoned sphere keeps 24.
+- **Loot unchanged** (already flat). No injectors.
+- **Plugin size:** 2,735 records (+5 `NPC_`; 8 `LVLN` re-authored). See `archetype-tiers.md` §3.3.
 
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
 player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
@@ -1051,6 +1058,7 @@ A reader-facing page per finished faction, in one shared style. Each faction tic
 | Dremora & atronachs | WD-52 | https://claude.ai/artifact/FZrcU1aZLGgqj9aFQkfPiW |
 | Draugr & dragon priests | WD-49 | https://claude.ai/artifact/Jkxn5D8LCUjtrZrwfrYKVE |
 | Falmer & chaurus | WD-50 | https://claude.ai/artifact/V2nSnDTicPohnWL8mFaUNV |
+| Dwemer automatons | WD-51 | https://claude.ai/artifact/QFHj364NWKsoEEi5z7nwT6 |
 
 Candidates still to confirm:
 

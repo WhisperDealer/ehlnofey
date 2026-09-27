@@ -370,6 +370,21 @@ Add-Spec '05238F:Skyrim.esm' 'LCharFalmerBoss' @{ Gates = @{ 64 = 1 } }
 # 4 Chaurus: the Dawnguard no-hunter list takes LCharChaurus's mix, Chaurus x3 · Reaper x1 (user, WD-50).
 Add-Spec '00843E:Dawnguard.esm' 'DLC1LCharChaurusNoHunter' @{ Gates = @{ 1 = 3; 20 = 1 } }
 
+# 3.3 Dwemer automatons (WD-51, user 2026-09-27): "Guardians on every one, average 40-50; Dwemer automatons should be
+#     deadly". Each list is PINNED to its Guardian rung, one name per list, and author-retargets.ps1 raises the Guardians
+#     to spider 40 · sphere 45 · ballista 45 · centurion 50. Requiem had kept every rung at x1.
+Add-Spec '10EC90:Skyrim.esm'    'LCharDwarvenSpider'        @{ Gates = @{ 22 = 1 } }   # EncDwarvenSpider03
+Add-Spec '10EC8F:Skyrim.esm'    'LCharDwarvenSphere'        @{ Gates = @{ 26 = 1 } }   # EncDwarvenSphere02
+Add-Spec '10FCE5:Skyrim.esm'    'LCharDwarvenCenturion'     @{ Gates = @{ 26 = 1 } }   # EncDwarvenCenturion02
+Add-Spec '033253:Dragonborn.esm' 'DLC2LCharDwarvenBallista' @{ Gates = @{ 28 = 1 } }   # DLC2EncDwarvenBallista02
+# The mixed list, used by most ruins: spider x3 · sphere x3 · centurion x1, mean 43.6. Vanilla's only centurion here is
+# the Master (36, now below the Guardians), so the Centurion Guardian is pinned in.
+Add-Spec '01E783:Skyrim.esm'    'LCharDwarvenAutomaton'     @{ Gates = @{ 22 = 3; 26 = 3 }; Pin = @('10E753:Skyrim.esm') }
+# Lost to the Ages (Dawnguard): the DLC1LD leaves take Stats from the base rungs, so their Guardians rise with them.
+Add-Spec '01534E:Dawnguard.esm' 'DLC1LD_LCharDwarvenSpider' @{ Gates = @{ 35 = 1 } }   # DLC1LD_EncDwarvenSpider03
+Add-Spec '01534D:Dawnguard.esm' 'DLC1LD_LCharDwarvenSphere' @{ Gates = @{ 35 = 1 } }   # DLC1LD_EncDwarvenSphere02
+Add-Spec '015C49:Dawnguard.esm' 'DLC1LD_LCharForgemaster'   @{ Gates = @{ 32 = 1 } }   # DLC1LD_Forgemaster03, 60
+
 # 3.1 Thalmor (WD-48, user 2026-09-26): a specialist force sent into Skyrim, so better than the average soldier.
 #     Only the EncThalmor00* templates carry a name ("Thalmor Soldier" / "Thalmor Wizard"); every rung leaf is
 #     nameless and takes Traits, so each band shows one name at every level: PINNED, all three (WD-42).

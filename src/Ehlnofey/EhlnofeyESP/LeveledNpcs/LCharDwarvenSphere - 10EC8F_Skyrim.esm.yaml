@@ -1,18 +1,12 @@
 FormKey: 10EC8F:Skyrim.esm
+VersionControl: 944407
 EditorID: LCharDwarvenSphere
+FormVersion: 40
 Version2: 2
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
-- Data:
-    Level: 1
-    Reference: 10EC89:Skyrim.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 10EC8E:Skyrim.esm
-    Count: 1
 - Data:
     Level: 1
     Reference: 023A97:Skyrim.esm

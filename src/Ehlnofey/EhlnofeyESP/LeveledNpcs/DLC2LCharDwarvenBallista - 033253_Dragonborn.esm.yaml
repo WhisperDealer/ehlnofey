@@ -1,18 +1,13 @@
 FormKey: 033253:Dragonborn.esm
+VersionControl: 2847760
 EditorID: DLC2LCharDwarvenBallista
+FormVersion: 43
+Version2: 1
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
 - Data:
     Level: 1
-    Reference: 033250:Dragonborn.esm
-    Count: 1
-- Data:
-    Level: 1
     Reference: 033251:Dragonborn.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 033252:Dragonborn.esm
     Count: 1

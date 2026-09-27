@@ -1,5 +1,7 @@
 FormKey: 01534E:Dawnguard.esm
+VersionControl: 5468178
 EditorID: DLC1LD_LCharDwarvenSpider
+FormVersion: 43
 Version2: 1
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -7,5 +9,5 @@ Flags:
 Entries:
 - Data:
     Level: 1
-    Reference: 01534A:Dawnguard.esm
+    Reference: 01534C:Dawnguard.esm
     Count: 1

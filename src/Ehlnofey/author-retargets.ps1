@@ -275,6 +275,19 @@ $edits = @(
     @{ Npc = '025D2E:Skyrim.esm'; From = '    Level: 14'; To = '    Level: 22' }   # EncFalmer03Shaman (Gloomlurker rung)
     @{ Npc = '025D30:Skyrim.esm'; From = '    Level: 19'; To = '    Level: 30' }   # EncFalmer04Shaman (Nightprowler rung)
     @{ Npc = '025D32:Skyrim.esm'; From = '    Level: 25'; To = '    Level: 38' }   # EncFalmer05Shaman (Shadowmaster rung)
+
+    # ---- Dwemer automatons (WD-51, user 2026-09-27): "Guardians on every one, average 40-50, they should be deadly".
+    # Every automaton list rolls only its Guardian rung, raised in size order. The Guardians own their level and carry
+    # AutoCalcStats, so health follows. Rungs 01/03 template on them without Stats and keep their own level.
+    @{ Npc = '10EC87:Skyrim.esm';    From = '    Level: 16'; To = '    Level: 40' }   # EncDwarvenSpider03, "Dwarven Spider Guardian"
+    @{ Npc = '023A97:Skyrim.esm';    From = '    Level: 24'; To = '    Level: 45' }   # EncDwarvenSphere02, "Dwarven Sphere Guardian"
+    @{ Npc = '033251:Dragonborn.esm'; From = '    Level: 28'; To = '    Level: 45' }  # DLC2EncDwarvenBallista02, "Dwarven Ballista Guardian"
+    @{ Npc = '10E753:Skyrim.esm';    From = '    Level: 30'; To = '    Level: 50' }   # EncDwarvenCenturion02, "Dwarven Centurion Guardian"
+    # The Aetherial Staff's summoned sphere takes Stats from the Sphere Guardian; its own copy is the vanilla 24 with
+    # AutoCalcStats and the sphere class, so it keeps 24 and the player's summon is not raised.
+    @{ Npc = '00CFBA:Dawnguard.esm'; DropFlag = 'Stats' }   # DLC1LD_EncDwarvenSphereSummon02
+    # The Forgemaster (Aetherium Forge boss) was x1 [36-60]; the extract grafted Requiem's 120. Pinned to 60 (user).
+    @{ Npc = '015C48:Dawnguard.esm'; Level = 60 }   # DLC1LD_Forgemaster03
 )
 
 foreach ($e in $edits) {

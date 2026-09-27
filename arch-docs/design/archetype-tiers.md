@@ -434,6 +434,26 @@ should be, and it costs nothing but rung selection.
 **Automatons are the safest hard-fix in the game** (`lore-constraints.md` §3): machines in a sealed
 ruin, fictionally static, with a clean Spider < Sphere < Centurion order that vanilla already honours.
 
+> **Built (WD-51, 2026-09-27; user decisions; verified in game). This replaces the four Dwarven rows above.** The user wanted
+> "Guardians on every one, average 40–50; Dwemer automatons should be deadly".
+> - **Pinned to the Guardian rung, one name per list:** Spider Guardian **40** · Sphere Guardian **45** · Ballista
+>   Guardian **45** (Dragonborn) · Centurion Guardian **50**. Each Guardian owns its level and has AutoCalcStats, so
+>   health follows. The other rungs template on them *without* `Stats` and keep their vanilla level.
+> - **Mixed list** `LCharDwarvenAutomaton`: spider ×3 · sphere ×3 · centurion ×1, mean 43.6. Vanilla's only centurion
+>   there is the Master (36), so the Centurion Guardian is pinned in.
+> - **Lost to the Ages** (Dawnguard `DLC1LD_*`): the spider and sphere lists roll their Guardian leaves, which take `Stats`
+>   from the base Guardians. The **Forgemaster** is pinned at **60** (vanilla ×1 [36–60]). The extract had grafted
+>   Requiem's 120.
+> - **Aetherial Staff:** the summoned Sphere Guardian drops its `Stats` flag and keeps its own vanilla 24, so the
+>   player's summon is not raised.
+> - **Inherits the raise:** the CC "Dwarven Sphere Overseer" (`ccAFDSSE001`) takes `Stats` from the Sphere Guardian, so
+>   it is 45 too.
+> - **Hand-placed automatons keep vanilla levels.** A scan of every placed ref in `Cells/` and `Worldspaces/` finds 32 of
+>   them: 24 plain Dwarven Spiders (12), 2 `EncDwarvenSpiderAmbush` (12), 2 Spider Workers (6), 3 Centurions (24) and 1
+>   Centurion Master (36). The Master is now weaker than a Guardian. No Guardian and no Sphere Master is placed by hand.
+> - **Unchanged:** loot, which Requiem already made flat (soul-gem size follows the machine). No quest injects into these
+>   lists. Automaton weapons are natural attacks, so there is no gear to fix.
+
 **Dremora (WD-52, user 2026-09-26). Verified in game by the user.** Daedra from the planes of Oblivion. The user asked for
 them to be "very high level, on par with vampires at the very least". That supersedes the T3 roster and the reservation
 below. All three lists (melee, archer, warlock) roll Markynaz 36 and Valkynaz 46 evenly, mean 41. The rungs are named

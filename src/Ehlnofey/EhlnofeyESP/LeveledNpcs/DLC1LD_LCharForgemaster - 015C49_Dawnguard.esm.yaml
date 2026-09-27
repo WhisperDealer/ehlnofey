@@ -1,5 +1,7 @@
 FormKey: 015C49:Dawnguard.esm
+VersionControl: 5468178
 EditorID: DLC1LD_LCharForgemaster
+FormVersion: 43
 Version2: 2
 Flags:
 - CalculateForEachItemInCount

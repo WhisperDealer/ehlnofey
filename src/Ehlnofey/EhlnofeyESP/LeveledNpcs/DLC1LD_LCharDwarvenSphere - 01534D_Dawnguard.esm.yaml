@@ -1,5 +1,7 @@
 FormKey: 01534D:Dawnguard.esm
+VersionControl: 5468178
 EditorID: DLC1LD_LCharDwarvenSphere
+FormVersion: 43
 Version2: 1
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
