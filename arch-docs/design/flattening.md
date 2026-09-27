@@ -126,7 +126,7 @@ with the occasional veteran instead of a coin flip.
 
 A level written on an `NPC_` that takes `Stats` from a template is inert. Follow `Stats` templates —
 through `LVLN` entries if need be — to the record without the flag, and write the level there.
-See the template-chain gotchas in CLAUDE.md.
+See the template-chain gotchas in `arch-docs/gotchas.md`.
 
 ---
 
@@ -181,8 +181,8 @@ flat without that being decided, and its boss-chest loot was never verified.
 
 - **Runtime injectors.** Quests that call `LeveledActor.AddForm`/`LeveledItem.AddForm` at start-up
   re-gate lists invisibly (`DLC2Init` and a number of Creation Club packs). They have to be
-  neutralised and their content re-added at level 1. The audit of which ones matter is in CLAUDE.md
-  (the runtime `AddForm` gotcha).
+  neutralised and their content re-added at level 1. The audit of which ones matter is in `arch-docs/gotchas.md`
+  (the runtime `AddForm` gotcha) and `proof-of-concept.md` §10.
 - **The 177 unreached gated lists** — quest rewards (`LvlQuestReward*`), death items, unique gear.
   Reached from `QUST`, `FLST` and death-item roots the census does not walk. Mostly one-offs where a
   fixed level is the answer; triage them.
@@ -194,7 +194,7 @@ flat without that being decided, and its boss-chest loot was never verified.
 ## 6. Order of work
 
 Nothing is copied from `ProofOfConceptESP`: most of it is third-party-derived. Its lessons are in
-`proof-of-concept.md` and CLAUDE.md's gotchas. Generators are new, live in `src/Ehlnofey/`, and read
+`proof-of-concept.md` and `arch-docs/gotchas.md`. Generators are new, live in `src/Ehlnofey/`, and read
 only `reference/Base/` (and `reference/mods/CreationClubYaml/` for CC masters).
 
 1. **Scaffold** — ✅ done 2026-09-27. Header only, ESL-flagged, four masters; builds clean.
@@ -220,7 +220,7 @@ only `reference/Base/` (and `reference/mods/CreationClubYaml/` for CC masters).
 3. **Ordinary containers** (if §5.4 B): zone-bound resolution was verified for the boss-chest roll
    only. Open an ordinary urn in a pinned zone at two player levels.
 4. **Name legibility is unverified mechanically.** Nobody here knows how a nameless leveled leaf
-   resolves its displayed name (CLAUDE.md gotcha). Check pins against the nameplate in game.
+   resolves its displayed name (`arch-docs/gotchas.md`). Check pins against the nameplate in game.
 
 ## Sources
 
@@ -229,3 +229,26 @@ only `reference/Base/` (and `reference/mods/CreationClubYaml/` for CC masters).
 `design/archetype-tiers.md` · `world/lore-constraints.md` ·
 `reference/Base/01Skyrim/Cells/` (§2.3 roster census) ·
 `reference/Base/{01Skyrim,02Update,03Dawnguard,05Dragonborn}/{LeveledNpcs,LeveledItems}/` (§3).
+
+---
+
+## Appendix — Phase 3 record (moved from CLAUDE.md, 2026-09-27)
+
+The four decisions Phase 3 made:
+
+| Decision | Verdict |
+|---|---|
+| **The ladder** | **T1–T7 = 4 / 8 / 14 / 21 / 30 / 40 / 50** (`design/tiers.md`) |
+| **The map** | all **355 zones** assigned, generated from rules, in `difficulty-map.md` §7 |
+| **Loot** | ~~no truncation pass needed~~ — **overturned** by the gear-resolution test: worn gear follows the player, not the zone (`flattening.md` §2.2) |
+| **Architecture** | ~~hybrid: zones in the plugin, actors in rules~~ — **superseded** by flattening (`flattening.md` §2) |
+
+**Scope:** Skyrim + Dawnguard + Dragonborn. Hearthfire content is excluded (no zone, dungeon or
+region), though `HearthFires.esm` may still be needed as a master if an overridden record points at it.
+
+Two Phase 3 findings still hold. **Vanilla's zone floors must be stretched, not ratified**: 73% of
+Skyrim's 280 zones sit at level ≤ 8 and none exceeds 24, while the content ladders run to 46–60. And
+**the tier ladder lands exactly on the vanilla gear ladder**: T1–T7 select Steel / Orcish / Dwarven /
+Elven / Glass / Ebony / Daedric, which matters if containers stay zone-gated (`flattening.md` §5.4).
+The five gating engine questions are answered in `design/engine-behaviour.md`, and the in-game probe
+results are in `design/probe-test-protocol.md`.

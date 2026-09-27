@@ -63,7 +63,7 @@ it to `-i` with `;` separators. Persist it by adding the dir to **`importDirs`**
 ```
 
 Put `src/<ModName>/Scripts/source` first so your own scripts resolve each other (the build block already does).
-Also note the import in `CLAUDE.md`'s per-project imports table once known.
+Also note the import in `CLAUDE.md`'s Tooling section (Papyrus bullet) once known.
 
 ## Notes
 

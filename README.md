@@ -195,7 +195,7 @@ keep it in the gitignored `modlist/` folder.
 
 For Ehlnofey the plugin is not edited by hand: the generator scripts in `src/Ehlnofey/` write the
 YAML, which is then deserialized, re-serialized, and Spriggit's output adopted as the source (see
-`CLAUDE.md` for the chain order).
+`arch-docs/design/flattening.md` §6).
 
 ## The Ehlnofey release
 
@@ -290,8 +290,8 @@ you can grep them for FormKeys without committing them:
 - **Always grep the whole workspace for a hex FormID before assigning it** (collision check).
 - ESL-flagged plugins are limited to `0x800–0xFFF` — confirm before exceeding.
 
-See `CLAUDE.md` for Ehlnofey's design rules, phase plan, arch-docs map, research rules, scaling-record
-map, naming conventions and working guardrails — it is what a future Claude Code session reads instead
+See `CLAUDE.md` for Ehlnofey's design rules, current phase, conventions, working guardrails and the
+arch-docs map (gotchas in full are in `arch-docs/gotchas.md`) — it is what a future Claude Code session reads instead
 of re-deriving the project from scratch. See `arch-docs/skyrim-record-patterns.md` for record shapes
 that build cleanly and still do nothing in-game.
 

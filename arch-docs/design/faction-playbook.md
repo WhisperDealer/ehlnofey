@@ -25,7 +25,7 @@ Walk each rung to its template: `EncFoo0NTemplate{Melee,Missile,Magic,BossMelee,
 - **Level and name both live on the template.** The leaves (`EncFoo0NMelee1HBretonM01`) are nameless and
   take `Stats` and `Traits` from it. In the decompile, the rung's name is the `- Language: English`
   string of the template's `Name:` block.
-- **A missing `HealthOffset` means 0**, per the default-valued-scalar gotcha in CLAUDE.md.
+- **A missing `HealthOffset` means 0**, per the default-valued-scalar gotcha (`arch-docs/gotchas.md`).
 - **Run the naming test** (`archetype-tiers.md` §3.1.1) on the boss rungs. Every rung of every boss family
   so far shares one name, so expect to pin.
 - **List the rungs the lists never reach.** The Forsworn Warlord (46) is in no rank-and-file list, even in
@@ -68,7 +68,7 @@ one), not by editing the shared list.
 ## 6. Injector audit
 
 Grep `Quests/` in base, DLC and CC for a `ScriptObjectProperty` whose `Object:` is any list from steps 1–5.
-Properties serialize as `Object: <hex>:<master>`. The Forsworn had none; bandits had three sources (CLAUDE.md
+Properties serialize as `Object: <hex>:<master>`. The Forsworn had none; bandits had three sources (`gotchas.md`
 "runtime `AddForm`" gotcha).
 
 ## 7. Implement
@@ -92,7 +92,7 @@ repoint an entry: re-add the new target and cut the old one. Re-adding the same 
 different `Count`s works too (Forsworn arrows ×22/×15/×12). A gate weight should multiply every entry at
 that gate, so a list's male/female mix survives.
 
-**Check each gear list still holds a weapon** after cuts (CLAUDE.md gotcha): an emptied weapon list spawns the
+**Check each gear list still holds a weapon** after cuts (`gotchas.md`): an emptied weapon list spawns the
 faction unarmed, silently.
 
 ## 8. Regenerate, then round-trip
@@ -108,7 +108,7 @@ the generators write the decompile's multi-language strings and Spriggit collaps
 - Update the faction's row and paragraph in `archetype-tiers.md` §3.1 if anything changed, plus CLAUDE.md
   "Current phase".
 - **Publish a faction ledger page** in the house style: levels chart, roster table, gear bars (Ehlnofey
-  against vanilla at player levels 1 to 40), loot table, records table, quirks. The existing ones are in CLAUDE.md
-  under "Faction ledgers". Republish it after every tweak.
+  against vanilla at player levels 1 to 40), loot table, records table, quirks. The existing ones (from the proof of concept)
+  are in `proof-of-concept.md` §11. Republish it after every tweak.
 - Build locally for the user's in-game test. Commit, push, comment and close the ticket only after they
   confirm.

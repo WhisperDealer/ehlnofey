@@ -933,3 +933,34 @@ also fixes existing saves.
 
 **Licensing:** verbatim-copied records make the plugin a derivative of Requiem. Private use is fine;
 publishing needs their permission.
+
+---
+
+## 11. Faction ledgers (moved from CLAUDE.md, 2026-09-27)
+
+A reader-facing page per finished faction, in one shared style. Each faction ticket ends with one
+(`design/faction-playbook.md` §9). Private artifacts; share from the page's own menu. **The pages
+below describe the proof of concept.** Their levels and rosters are the decisions `archetype-tiers.md`
+carries into the rebuild, but where they mention Requiem or the extract, that is POC history.
+
+| Faction | Ticket | Page |
+|---|---|---|
+| Bandits + hostile Orc camps | WD-2x (pre-Jira) | https://claude.ai/artifact/C3vSs31Kiejw2TDTxNwLSH |
+| Forsworn | WD-43 | https://claude.ai/artifact/Xff2Gm6AbjxaRoyoZXAvTv |
+| Hold guards + civil-war soldiers | WD-44 / WD-45 | https://claude.ai/artifact/2g11MaAwsx2MJ5ybrXqoGd |
+| Warlocks, necromancers, conjurers + witches / hags | WD-46 | https://claude.ai/artifact/WhSB5WhDyXASBzhFXQYkTi |
+| Vampires + thralls | WD-47 | https://claude.ai/artifact/3eUAuGTto4q1dyxZWXPXmA |
+| Thalmor | WD-48 | https://claude.ai/artifact/35EZVm54hQ5fFC25A7Qa5t |
+| Wildlife & monsters + CC bonewolf | WD-54 | https://claude.ai/artifact/S7sQbvsHBKNVF21tsUAche |
+| Dremora & atronachs | WD-52 | https://claude.ai/artifact/FZrcU1aZLGgqj9aFQkfPiW |
+| Draugr & dragon priests | WD-49 | https://claude.ai/artifact/Jkxn5D8LCUjtrZrwfrYKVE |
+| Falmer & chaurus | WD-50 | https://claude.ai/artifact/V2nSnDTicPohnWL8mFaUNV |
+| Dwemer automatons | WD-51 | https://claude.ai/artifact/QFHj364NWKsoEEi5z7nwT6 |
+| Dragons + named dragons | WD-53 | https://claude.ai/artifact/So9JXyEDcgMKekkH3R9XLz |
+| Werewolves, Silver Hand, werebears | WD-55 | https://claude.ai/artifact/9DTPyW1iNoyTCN4CMJJbFa#wd55 |
+| Penitus, Vigilants, ghosts, Alik'r | WD-56 | https://claude.ai/artifact/9DTPyW1iNoyTCN4CMJJbFa#wd56 |
+| World encounters + assassins | WD-57 | https://claude.ai/artifact/9DTPyW1iNoyTCN4CMJJbFa#wd57 |
+| Dawnguard DLC families | WD-58 | https://claude.ai/artifact/9DTPyW1iNoyTCN4CMJJbFa#wd58 |
+| Dragonborn DLC families | WD-59 | https://claude.ai/artifact/9DTPyW1iNoyTCN4CMJJbFa#wd59 |
+| Followers | WD-61 | https://claude.ai/artifact/7kUzRSazGQdcZYztMC3a3d |
+| Named bosses, questline finals, the long tail | WD-62 | https://claude.ai/artifact/Bdv77DbCBrLru5zppmmc9K |
