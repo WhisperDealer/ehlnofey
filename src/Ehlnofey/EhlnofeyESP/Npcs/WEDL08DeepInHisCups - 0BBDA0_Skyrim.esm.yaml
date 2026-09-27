@@ -1,0 +1,207 @@
+FormKey: 0BBDA0:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+VersionControl: 1978415
+EditorID: WEDL08DeepInHisCups
+Version2: 12
+SkyrimMajorRecordFlags:
+- Compressed
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 12
+  CalcMinLevel: 12
+  CalcMaxLevel: 12
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Voice: 013AEE:Skyrim.esm
+Race: 013740:Skyrim.esm
+AttackRace: 013740:Skyrim.esm
+Items:
+- Item:
+    Item: 01397E:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 016577:Skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Class: 01326B:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Deep-In-His-Cups
+ShortName:
+  TargetLanguage: English
+  Value: Cups
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 24
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 24
+  - Key: Block
+    Value: 15
+  - Key: Smithing
+    Value: 29
+  - Key: HeavyArmor
+    Value: 15
+  - Key: LightArmor
+    Value: 29
+  - Key: Pickpocket
+    Value: 20
+  - Key: Lockpicking
+    Value: 25
+  - Key: Sneak
+    Value: 29
+  - Key: Alchemy
+    Value: 29
+  - Key: Speech
+    Value: 25
+  - Key: Alteration
+    Value: 20
+  - Key: Conjuration
+    Value: 15
+  - Key: Destruction
+    Value: 15
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 20
+  - Key: Enchanting
+    Value: 29
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 141
+  Magicka: 87
+  Stamina: 87
+  GearedUpWeapons: 1
+HeadParts:
+- 09D749:Skyrim.esm
+- 0D82F9:Skyrim.esm
+- 0B2FD5:Skyrim.esm
+HairColor: 0829CF:Skyrim.esm
+CombatStyle: 068847:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 19.999998
+SoundLevel: Normal
+DefaultOutfit: 01B3A8:Skyrim.esm
+HeadTexture: 0B3047:Skyrim.esm
+TextureLighting: '#004A4561'
+FaceMorph:
+  NoseUpVsDown: 0.3
+  JawNarrowVsWide: -0.2
+  JawForwardVsBack: 1
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 3
+  Unknown: 4294967295
+TintLayers:
+- Index: 38
+  Color: '#000F0440'
+  InterpolationValue: 0.47
+  Preset: 49
+- Index: 28
+  Color: '#006262FF'
+  InterpolationValue: 0.82
+  Preset: 66
+- Index: 6
+  Color: '#006262FF'
+  InterpolationValue: 0.82
+  Preset: 78
+- Index: 7
+  Color: '#006262FF'
+  InterpolationValue: 0.82
+  Preset: 90
+- Index: 11
+  Color: '#006262FF'
+  InterpolationValue: 0.82
+  Preset: 102
+- Index: 29
+  Color: '#006262FF'
+  InterpolationValue: 0.82
+  Preset: 126
+- Index: 8
+  Color: '#006262FF'
+  InterpolationValue: 0.82
+  Preset: 138
+- Index: 26
+  Color: '#006262FF'
+  InterpolationValue: 0.82
+  Preset: 150
+- Index: 27
+  Color: '#006262FF'
+  InterpolationValue: 0.82
+  Preset: 186
+- Index: 14
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 202
+- Index: 15
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 214
+- Index: 35
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 226
+- Index: 39
+  Color: '#006262FF'
+  InterpolationValue: 0
+  Preset: 234
+- Index: 40
+  Color: '#006262FF'
+  InterpolationValue: 0.82
+  Preset: 246
+- Index: 41
+  Color: '#00563112'
+  InterpolationValue: 0
+  Preset: 258
+- Index: 36
+  Color: '#00110E06'
+  InterpolationValue: 1
+  Preset: 265
+MajorFlags:
+- 0x40000

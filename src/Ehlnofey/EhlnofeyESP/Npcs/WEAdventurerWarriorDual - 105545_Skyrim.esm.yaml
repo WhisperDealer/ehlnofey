@@ -1,8 +1,8 @@
-FormKey: 105549:Skyrim.esm
+FormKey: 105545:Skyrim.esm
 IsCompressed: True
 MajorRecordFlagsRaw: 786432
 VersionControl: 944407
-EditorID: WEAdventurerDualPoisoner
+EditorID: WEAdventurerWarriorDual
 FormVersion: 40
 Version2: 6
 SkyrimMajorRecordFlags:
@@ -37,51 +37,57 @@ Race: 013746:Skyrim.esm
 AttackRace: 013746:Skyrim.esm
 Items:
 - Item:
-    Item: 017178:Skyrim.esm
+    Item: 0165BA:Skyrim.esm
     Count: 2
 - Item:
     Item: 037C2B:Skyrim.esm
     Count: 1
 - Item:
-    Item: 065A8A:Skyrim.esm
-    Count: 2
+    Item: 03A16A:Skyrim.esm
+    Count: 1
 - Item:
-    Item: 087134:Skyrim.esm
-    Count: 2
+    Item: 03A173:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 087138:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 09BC32:Skyrim.esm
+    Count: 1
 AIData:
   Aggression: Aggressive
   Confidence: Foolhardy
   EnergyLevel: 50
   Assistance: HelpsFriendsAndAllies
-Class: 01317D:Skyrim.esm
+Class: 013176:Skyrim.esm
 PlayerSkills:
   SkillValues:
   - Key: OneHanded
-    Value: 20
+    Value: 31
   - Key: TwoHanded
-    Value: 25
+    Value: 29
   - Key: Archery
-    Value: 26
+    Value: 22
   - Key: Block
-    Value: 20
+    Value: 27
   - Key: Smithing
     Value: 20
   - Key: HeavyArmor
-    Value: 15
+    Value: 26
   - Key: LightArmor
-    Value: 27
+    Value: 20
   - Key: Pickpocket
     Value: 15
   - Key: Lockpicking
     Value: 15
   - Key: Sneak
-    Value: 26
+    Value: 15
   - Key: Alchemy
     Value: 15
   - Key: Speech
     Value: 20
   - Key: Alteration
-    Value: 19
+    Value: 15
   - Key: Conjuration
     Value: 15
   - Key: Destruction
@@ -89,7 +95,7 @@ PlayerSkills:
   - Key: Illusion
     Value: 15
   - Key: Restoration
-    Value: 22
+    Value: 15
   - Key: Enchanting
     Value: 15
   SkillOffsets:
@@ -129,8 +135,8 @@ PlayerSkills:
     Value: 0
   - Key: Enchanting
     Value: 0
-  Health: 91
-  Magicka: 167
+  Health: 108
+  Magicka: 150
   Stamina: 87
   GearedUpWeapons: 1
 HairColor: 0A042C:Skyrim.esm
