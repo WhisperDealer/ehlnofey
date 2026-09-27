@@ -1,5 +1,7 @@
 FormKey: 015124:Dawnguard.esm
+VersionControl: 5468178
 EditorID: DLC1_BF_LCharFrozenFalmer
+FormVersion: 43
 Version2: 2
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
@@ -7,9 +9,5 @@ Flags:
 Entries:
 - Data:
     Level: 1
-    Reference: 015121:Dawnguard.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 015122:Dawnguard.esm
+    Reference: 015123:Dawnguard.esm
     Count: 1

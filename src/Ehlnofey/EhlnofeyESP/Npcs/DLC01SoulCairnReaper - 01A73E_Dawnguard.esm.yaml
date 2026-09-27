@@ -19,7 +19,7 @@ Configuration:
   - Unique
   Level:
     MutagenObjectType: NpcLevel
-    Level: 100
+    Level: 65
   CalcMinLevel: 10
   CalcMaxLevel: 100
   SpeedMultiplier: 100

@@ -1,5 +1,7 @@
 FormKey: 014281:Dawnguard.esm
+VersionControl: 5468178
 EditorID: LCharDawnguardMelee1H
+FormVersion: 43
 Version2: 2
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer

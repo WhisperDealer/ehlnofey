@@ -1,14 +1,12 @@
 FormKey: 015126:Dawnguard.esm
+VersionControl: 5468178
 EditorID: DLC1_BF_LCharFrozenShaman
+FormVersion: 43
 Version2: 2
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
-- Data:
-    Level: 1
-    Reference: 015129:Dawnguard.esm
-    Count: 1
 - Data:
     Level: 1
     Reference: 01512B:Dawnguard.esm
