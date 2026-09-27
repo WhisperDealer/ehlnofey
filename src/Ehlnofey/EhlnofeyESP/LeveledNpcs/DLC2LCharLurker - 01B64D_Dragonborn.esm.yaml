@@ -1,21 +1,12 @@
 FormKey: 01B64D:Dragonborn.esm
+VersionControl: 2848012
 EditorID: DLC2LCharLurker
+FormVersion: 43
+Version2: 3
 Flags:
 - CalculateForEachItemInCount
 Entries:
 - Data:
     Level: 1
-    Reference: 01B640:Dragonborn.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 01B641:Dragonborn.esm
-    Count: 1
-- Data:
-    Level: 1
     Reference: 01B642:Dragonborn.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 01B645:Dragonborn.esm
     Count: 1

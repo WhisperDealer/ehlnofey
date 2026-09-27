@@ -1,15 +1,14 @@
 FormKey: 01B63C:Dragonborn.esm
+VersionControl: 2847754
 EditorID: DLC2LCharAshSpawn1H
+FormVersion: 43
+Version2: 3
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
 - Data:
     Level: 1
-    Reference: 01B636:Dragonborn.esm
-    Count: 1
-- Data:
-    Level: 1
     Reference: 01B639:Dragonborn.esm
     Count: 1
 - Data:
@@ -18,5 +17,9 @@ Entries:
     Count: 1
 - Data:
     Level: 1
-    Reference: 0322B7:Dragonborn.esm
+    Reference: 01B639:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01B63A:Dragonborn.esm
     Count: 1

@@ -107,7 +107,7 @@ Configuration:
   - DoesNotBleed
   Level:
     MutagenObjectType: NpcLevel
-    Level: 200
+    Level: 55
   CalcMinLevel: 40
   CalcMaxLevel: 75
   SpeedMultiplier: 100

@@ -1,5 +1,8 @@
 FormKey: 038AB6:Dragonborn.esm
+VersionControl: 5403917
 EditorID: DLC2LCharRieklingThirskMelee
+FormVersion: 43
+Version2: 4
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
@@ -10,7 +13,23 @@ Entries:
     Count: 1
 - Data:
     Level: 1
+    Reference: 0353DE:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
     Reference: 0353E0:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0353E0:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0353E0:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0353E2:Dragonborn.esm
     Count: 1
 - Data:
     Level: 1

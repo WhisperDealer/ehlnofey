@@ -1,18 +1,13 @@
 FormKey: 028E87:Dragonborn.esm
+VersionControl: 5207055
 EditorID: DLC2LCharSeeker
+FormVersion: 43
+Version2: 2
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
 - Data:
     Level: 1
-    Reference: 0336C8:Dragonborn.esm
-    Count: 1
-- Data:
-    Level: 1
     Reference: 0336C9:Dragonborn.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0336CA:Dragonborn.esm
     Count: 1

@@ -1,15 +1,14 @@
 FormKey: 030CDC:Dragonborn.esm
+VersionControl: 2848014
 EditorID: DLC2LCharCultist
+FormVersion: 43
+Version2: 2
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
 Entries:
 - Data:
     Level: 1
-    Reference: 030CD7:Dragonborn.esm
-    Count: 1
-- Data:
-    Level: 1
     Reference: 030CD8:Dragonborn.esm
     Count: 1
 - Data:
@@ -18,7 +17,7 @@ Entries:
     Count: 1
 - Data:
     Level: 1
-    Reference: 030CD8:Dragonborn.esm
+    Reference: 030CD9:Dragonborn.esm
     Count: 1
 - Data:
     Level: 1
@@ -31,8 +30,4 @@ Entries:
 - Data:
     Level: 1
     Reference: 030CDA:Dragonborn.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 030CDB:Dragonborn.esm
     Count: 1

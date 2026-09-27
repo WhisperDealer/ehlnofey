@@ -1,5 +1,8 @@
 FormKey: 03564D:Dragonborn.esm
+VersionControl: 2323478
 EditorID: DLC2LCharCultistSummoner
+FormVersion: 43
+Version2: 2
 Flags:
 - CalculateFromAllLevelsLessThanOrEqualPlayer
 - CalculateForEachItemInCount
@@ -10,17 +13,21 @@ Entries:
     Count: 1
 - Data:
     Level: 1
+    Reference: 03564E:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 03564F:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 03564F:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
     Reference: 03564F:Dragonborn.esm
     Count: 1
 - Data:
     Level: 1
     Reference: 035657:Dragonborn.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 035658:Dragonborn.esm
-    Count: 1
-- Data:
-    Level: 1
-    Reference: 0365F5:Dragonborn.esm
     Count: 1

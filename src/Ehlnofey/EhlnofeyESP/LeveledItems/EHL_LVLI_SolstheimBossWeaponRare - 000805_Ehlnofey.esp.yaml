@@ -1,0 +1,141 @@
+FormKey: 000805:Ehlnofey.esp
+EditorID: EHL_LVLI_SolstheimBossWeaponRare
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+Entries:
+- Data:
+    Level: 1
+    Reference: 0139A4:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01CDB4:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139AC:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000F0B:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139A5:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 026231:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139AD:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000F0D:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139A6:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01CDB5:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139AE:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000F0F:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139A7:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01CDB6:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139AF:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000F11:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139A8:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01CDB7:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139B0:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000F13:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139A9:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01CDB8:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139B1:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000F15:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139A3:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01CDB9:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139AB:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000F17:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139AA:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 01CDBA:Dragonborn.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 0139B2:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000F19:Skyrim.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000E37:ccasvsse001-almsivi.esm
+    Count: 1
+- Data:
+    Level: 1
+    Reference: 000E38:ccasvsse001-almsivi.esm
+    Count: 1

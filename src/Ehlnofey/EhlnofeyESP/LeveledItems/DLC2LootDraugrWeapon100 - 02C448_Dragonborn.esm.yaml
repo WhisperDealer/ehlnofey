@@ -1,6 +1,6 @@
-FormKey: 02BC0E:Dragonborn.esm
-VersionControl: 2847747
-EditorID: DLC2LItemWeaponBow
+FormKey: 02C448:Dragonborn.esm
+VersionControl: 2847750
+EditorID: DLC2LootDraugrWeapon100
 FormVersion: 43
 Version2: 1
 Flags:
@@ -9,41 +9,41 @@ Flags:
 Entries:
 - Data:
     Level: 1
-    Reference: 03B562:Skyrim.esm
+    Reference: 02BC0D:Dragonborn.esm
     Count: 1
 - Data:
     Level: 1
-    Reference: 013985:Skyrim.esm
+    Reference: 02BC0E:Dragonborn.esm
     Count: 1
 - Data:
     Level: 1
-    Reference: 03B562:Skyrim.esm
+    Reference: 02BC0F:Dragonborn.esm
     Count: 1
 - Data:
     Level: 1
-    Reference: 013985:Skyrim.esm
+    Reference: 02BC10:Dragonborn.esm
     Count: 1
 - Data:
     Level: 1
-    Reference: 03B562:Skyrim.esm
+    Reference: 02BC11:Dragonborn.esm
     Count: 1
 - Data:
     Level: 1
-    Reference: 013985:Skyrim.esm
+    Reference: 02BC12:Dragonborn.esm
     Count: 1
 - Data:
     Level: 1
-    Reference: 01398D:Skyrim.esm
+    Reference: 02BC13:Dragonborn.esm
     Count: 1
 - Data:
     Level: 1
-    Reference: 013995:Skyrim.esm
+    Reference: 02BC14:Dragonborn.esm
     Count: 1
 - Data:
     Level: 1
-    Reference: 026232:Dragonborn.esm
+    Reference: 02BC16:Dragonborn.esm
     Count: 1
 - Data:
     Level: 1
-    Reference: 01399D:Skyrim.esm
+    Reference: 000805:Ehlnofey.esp
     Count: 1
