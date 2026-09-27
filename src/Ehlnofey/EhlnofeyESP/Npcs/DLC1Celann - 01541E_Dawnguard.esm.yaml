@@ -1,0 +1,230 @@
+FormKey: 01541E:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+VersionControl: 1978415
+EditorID: DLC1Celann
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 38
+  CalcMinLevel: 10
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 50
+Factions:
+- Faction: 003375:Dawnguard.esm
+  Fluff: 0x000000
+- Faction: 00C3CC:Dawnguard.esm
+  Fluff: 0x000000
+- Faction: 014217:Dawnguard.esm
+  Fluff: 0x000000
+- Faction: 02816B:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84D:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AD2:Skyrim.esm
+Race: 013741:Skyrim.esm
+ActorEffect:
+- 010D8D:Dawnguard.esm
+AttackRace: 013741:Skyrim.esm
+Perks:
+- Perk: 052D51:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 103A8F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 051B1B:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D50:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03FFFA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F56F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 00D098:Dawnguard.esm
+    Count: 1
+- Item:
+    Item: 01D4EC:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsFriendsAndAllies
+Class: 013176:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Celann
+ShortName:
+  TargetLanguage: English
+  Value: Celann
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 34
+  - Key: TwoHanded
+    Value: 22
+  - Key: Archery
+    Value: 28
+  - Key: Block
+    Value: 28
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 35
+  - Key: LightArmor
+    Value: 15
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 15
+  - Key: Alchemy
+    Value: 20
+  - Key: Speech
+    Value: 20
+  - Key: Alteration
+    Value: 20
+  - Key: Conjuration
+    Value: 25
+  - Key: Destruction
+    Value: 15
+  - Key: Illusion
+    Value: 20
+  - Key: Restoration
+    Value: 20
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 205
+  Magicka: 50
+  Stamina: 80
+  GearedUpWeapons: 1
+HeadParts:
+- 024259:Skyrim.esm
+- 0CDB77:Skyrim.esm
+- 0DFC01:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C7123:Skyrim.esm
+HairColor: 0A0432:Skyrim.esm
+CombatStyle: 010D8C:Dawnguard.esm
+NAM5: 255
+Height: 1
+Weight: 20
+SoundLevel: Normal
+DefaultOutfit: 0146B7:Dawnguard.esm
+DefaultPackageList: 003424:Dawnguard.esm
+CrimeFaction: 02816B:Skyrim.esm
+HeadTexture: 05164A:Skyrim.esm
+TextureLighting: '#00C6B0A8'
+FaceMorph:
+  NoseLongVsShort: -0.48000002
+  NoseUpVsDown: -0.96
+  JawUpVsDown: 0.6
+  JawNarrowVsWide: 0.7
+  CheeksUpVsDown: 0.3
+  CheeksForwardVsBack: 0.1
+  EyesUpVsDown: -0.1
+  EyesInVsOut: 0.2
+  BrowsUpVsDown: -0.7
+  BrowsInVsOut: 0.8
+  BrowsForwardVsBack: 1
+  LipsUpVsDown: -0.86
+  LipsInVsOut: -0.4
+  ChinUpVsDown: 0.5
+  ChinUnderbiteVsOverbite: -0.1
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 1
+  Unknown: 4294967295
+  Eyes: 20
+  Mouth: 16
+TintLayers:
+- Index: 2
+  Color: '#00C6B0A8'
+  InterpolationValue: 1
+  Preset: 75
+- Index: 4
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 95
+- Index: 6
+  Color: '#00A95452'
+  InterpolationValue: 0.38
+  Preset: 102
+- Index: 9
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 121
+- Index: 5
+  Color: '#00000000'
+  InterpolationValue: 0.58
+  Preset: 631
+- Index: 39
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 635
+- Index: 58
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 640
+- Index: 59
+  Color: '#00563112'
+  InterpolationValue: 1
+  Preset: 646
+MajorFlags:
+- 0x40000

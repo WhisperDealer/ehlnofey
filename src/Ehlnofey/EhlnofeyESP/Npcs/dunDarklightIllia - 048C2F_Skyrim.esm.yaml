@@ -1,0 +1,198 @@
+FormKey: 048C2F:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+VersionControl: 1978415
+EditorID: dunDarklightIllia
+Version2: 7
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -41, -25, 0
+  Second: 41, 72, 86
+Configuration:
+  Flags:
+  - Female
+  - AutoCalcStats
+  - Protected
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 20
+  CalcMinLevel: 10
+  CalcMaxLevel: 40
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - SpellList
+  - Script
+  - DefPackList
+  - AttackData
+  HealthOffset: 50
+Factions:
+- Faction: 05A1A4:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84E:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+Voice: 013ADD:Skyrim.esm
+Template: 0E1034:Skyrim.esm
+Race: 013744:Skyrim.esm
+Items:
+- Item:
+    Item: 044CD6:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 100
+  Responsibility: NoCrime
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 02E108:Skyrim.esm
+- 078167:Skyrim.esm
+- 0782F9:Skyrim.esm
+- 0782FA:Skyrim.esm
+- 04F4D9:Skyrim.esm
+- 078191:Skyrim.esm
+- 078200:Skyrim.esm
+- 051EEF:Skyrim.esm
+- 0304FF:Skyrim.esm
+- 051EFE:Skyrim.esm
+- 051EFD:Skyrim.esm
+Class: 01317A:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Illia
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 20
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 15
+  - Key: Block
+    Value: 20
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 20
+  - Key: LightArmor
+    Value: 15
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 22
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 28
+  - Key: Conjuration
+    Value: 28
+  - Key: Destruction
+    Value: 39
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 45
+  - Key: Enchanting
+    Value: 20
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 175
+  Magicka: 110
+  Stamina: 50
+  GearedUpWeapons: 1
+HeadParts:
+- 0EAA71:Skyrim.esm
+- 0E4DA8:Skyrim.esm
+- 040224:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+HairColor: 0A0435:Skyrim.esm
+CombatStyle: 03BE1C:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+DefaultOutfit: 04F4D7:Skyrim.esm
+TextureLighting: '#00DDDDDD'
+FaceMorph:
+  NoseUpVsDown: -0.4
+  JawUpVsDown: -0.7
+  JawNarrowVsWide: -0.8
+  CheeksUpVsDown: 0.1
+  CheeksForwardVsBack: -0.2
+  EyesUpVsDown: -0.8
+  BrowsUpVsDown: -0.7
+  BrowsInVsOut: -0.3
+  BrowsForwardVsBack: 0.2
+  LipsUpVsDown: 0.4
+  ChinNarrowVsWide: -0.7
+  ChinUpVsDown: 0.3
+  ChinUnderbiteVsOverbite: -0.28
+  EyesForwardVsBack: -0.7
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 16
+  Unknown: 4294967295
+  Eyes: 15
+  Mouth: 13
+TintLayers:
+- Index: 13
+  Color: '#00DDDDDD'
+  InterpolationValue: 1
+  Preset: 490
+- Index: 27
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 519
+- Index: 34
+  Color: '#002F2013'
+  InterpolationValue: 0.61
+  Preset: 550
+- Index: 33
+  Color: '#000F0440'
+  InterpolationValue: 0.41
+  Preset: 937
+MajorFlags:
+- 0x40000

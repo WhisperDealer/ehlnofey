@@ -234,7 +234,7 @@ mod, not a new-content mod. Ehlnofey changes *where the numbers come from*, and 
 
 ## Current phase
 
-**Phase 4 is under way and `Ehlnofey.esp` exists: 2,812 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
+**Phase 4 is under way and `Ehlnofey.esp` exists: 2,851 records** (2026-09-27; 2,877 at the first extract, 2026-07-31, branch
 `design/requiem-method`). Read **`arch-docs/design/requiem-method.md` first** — it is the live
 architecture doc, and its §6 is the current order of work. Everything below it in this section is
 the Phase 3 record, kept because most of it still holds, but **the architecture it decided has been
@@ -511,8 +511,28 @@ See `archetype-tiers.md` §3.1.
   now lets `Level =` share a row with the line ops.
 - **Plugin size:** 2,812 records (+58: 4 new lists, 54 overrides). The CC Daedric Invasion pack's Vigilant injector is **WD-64**.
 
+**Followers are built (WD-61, 2026-09-27). This is not yet verified in game.**
+- **Fixed by role, set against the finished factions** (user). Requiem left them scaling. The ticket's planned tiers
+  (8–21) sat under the world they walk into.
+- **Levels:**
+
+  | Group | Level |
+  |---|---|
+  | Standard followers (Faendal, Sven, J'zargo and the rest) | 20 |
+  | Hirelings | 25 |
+  | Companion whelps | 30 |
+  | Housecarls, Hearthfire's three included | 35 |
+  | Dawnguard followers | 38 |
+  | The Circle | 45 |
+  | Serana | 50 (kept) |
+
+- **Requiem's follower grafts stay:** Uthgerd and six others 30, Mjoll 40, Roggi 20.
+- **Gear is unchanged.** Every list the followers draw from is already flat.
+- **Plugin size:** 2,851 records (+39 `NPC_`). See `archetype-tiers.md` §6.1.
+- **Open play test:** recruit Lydia and a hireling at player level 1, `player.setlevel 40`, and check their levels do not move.
+
 **Owed next:** the launch verification proper (draugr tier and boss-chest loot fixed across two
-player levels), then the 65 follower + 114 unreached `PcLevelMult` NPCs. **Deferred (user, 2026-09-24):** the
+player levels), then the 114 unreached `PcLevelMult` NPCs (WD-62). **Deferred (user, 2026-09-24):** the
 translation loss on the 21 overridden injector quests. Preferred fix: stop overriding them and ship a
 small quest that calls `Revert()` on the affected lists after the injectors run - no text touched, and it
 also fixes existing saves.
@@ -1127,6 +1147,7 @@ A reader-facing page per finished faction, in one shared style. Each faction tic
 | World encounters + assassins | WD-57 | https://claude.ai/artifact/9DTPyW1iNoyTCN4CMJJbFa#wd57 |
 | Dawnguard DLC families | WD-58 | https://claude.ai/artifact/9DTPyW1iNoyTCN4CMJJbFa#wd58 |
 | Dragonborn DLC families | WD-59 | https://claude.ai/artifact/9DTPyW1iNoyTCN4CMJJbFa#wd59 |
+| Followers | WD-61 | https://claude.ai/artifact/7kUzRSazGQdcZYztMC3a3d |
 
 Candidates still to confirm:
 

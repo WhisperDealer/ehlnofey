@@ -415,6 +415,55 @@ $edits = @(
     @{ Npc = '024DF8:Dragonborn.esm'; Level = 30 }   # DLC2RRFavor03AshSpawn
     @{ Npc = '01A373:Dragonborn.esm'; Level = 55 }   # DLC2dunHaknir: the committed extract grafted 200
     @{ Npc = '01CAD6:Dragonborn.esm'; From = '    Level: 32'; To = '    Level: 38' }   # DLC2FrostGiant01, on a par with the mainland giants
+
+    # ---- Followers (WD-61, user 2026-09-27): fixed levels by role, set against the finished factions (Requiem left them scaling).
+    # Gear is untouched: every outfit and inventory list they draw from is already flat.
+    # Housecarls 35: hold-appointed, at the top guard rung (guards 25/30/35). Vanilla x1 [10-50] (Lydia [6-50]).
+    @{ Npc = '0A2C8E:Skyrim.esm'; Level = 35 }   # HousecarlWhiterun (Lydia)
+    @{ Npc = '0A2C8C:Skyrim.esm'; Level = 35 }   # HousecarlMarkarth (Argis)
+    @{ Npc = '0A2C91:Skyrim.esm'; Level = 35 }   # HousecarlRiften (Iona)
+    @{ Npc = '0A2C8F:Skyrim.esm'; Level = 35 }   # HousecarlSolitude (Jordis)
+    @{ Npc = '0A2C90:Skyrim.esm'; Level = 35 }   # HousecarlWindhelm (Calder)
+    @{ Npc = '005215:HearthFires.esm'; Level = 35 }   # BYOHHousecarlFalkreath (Rayya)
+    @{ Npc = '00521B:HearthFires.esm'; Level = 35 }   # BYOHHousecarlHjaalmarch (Valdimar)
+    @{ Npc = '00521E:HearthFires.esm'; Level = 35 }   # BYOHHousecarlPale (Gregor)
+    # Hirelings 25: level with the WE adventurers. Vanilla x1 [10-40].
+    @{ Npc = '0B9981:Skyrim.esm'; Level = 25 }   # HirelingBelrand
+    @{ Npc = '065657:Skyrim.esm'; Level = 25 }   # HirelingErikTheSlayer
+    @{ Npc = '0B9982:Skyrim.esm'; Level = 25 }   # HirelingJenassa
+    @{ Npc = '0B9980:Skyrim.esm'; Level = 25 }   # HirelingMarcurio
+    @{ Npc = '0B9983:Skyrim.esm'; Level = 25 }   # HirelingStenvar
+    @{ Npc = '0B997F:Skyrim.esm'; Level = 25 }   # HirelingVorstag
+    # Standard followers 20: villagers and drifters, above the bandit mooks, below a hireling. Vanilla x1 [6|10-30] (Sven x0.75 [6-20]).
+    # The followers Requiem already fixed keep their grafts (Uthgerd, Kharjo, Ugor, Onmund, Brelyna, Eola, Aranea 30; Mjoll 40; Roggi 20).
+    @{ Npc = '013480:Skyrim.esm'; Level = 20 }   # Faendal
+    @{ Npc = '01347F:Skyrim.esm'; Level = 20 }   # Sven
+    @{ Npc = '019FE8:Skyrim.esm'; Level = 20 }   # Golldir
+    @{ Npc = '013666:Skyrim.esm'; Level = 20 }   # Annekke
+    @{ Npc = '0135E8:Skyrim.esm'; Level = 20 }   # Benor
+    @{ Npc = '013390:Skyrim.esm'; Level = 20 }   # Cosnach
+    @{ Npc = '019959:Skyrim.esm'; Level = 20 }   # Borgakh
+    @{ Npc = '013B81:Skyrim.esm'; Level = 20 }   # Ghorbash
+    @{ Npc = '019E1E:Skyrim.esm'; Level = 20 }   # Lob
+    @{ Npc = '019E22:Skyrim.esm'; Level = 20 }   # Ogol
+    @{ Npc = '01C195:Skyrim.esm'; Level = 20 }   # Jzargo
+    @{ Npc = '01403E:Skyrim.esm'; Level = 20 }   # Derkeethus
+    @{ Npc = '01325F:Skyrim.esm'; Level = 20 }   # Ahtar
+    @{ Npc = '048C2F:Skyrim.esm'; Level = 20 }   # dunDarklightIllia
+    # Companions: whelps 30, the Circle 45 (level with Erandur and Teldryn). Vanilla x1 [5-25] / [8-50].
+    @{ Npc = '01A6D5:Skyrim.esm'; Level = 30 }   # Athis
+    @{ Npc = '01A6D9:Skyrim.esm'; Level = 30 }   # NjadaStonearm
+    @{ Npc = '01A6D7:Skyrim.esm'; Level = 30 }   # Ria
+    @{ Npc = '01A6DB:Skyrim.esm'; Level = 30 }   # Torvar
+    @{ Npc = '01A696:Skyrim.esm'; Level = 45 }   # AelaTheHuntress
+    @{ Npc = '01A692:Skyrim.esm'; Level = 45 }   # Farkas
+    @{ Npc = '01A694:Skyrim.esm'; Level = 45 }   # Vilkas
+    # Dawnguard followers 38, the Dawnguard pin (Agmaer and Beleval already take it from DLC1EncHunterTemplate). Celann, Durak and
+    # Ingjard were x1 [10-uncapped]; Florentius x1 [10-30]. Serana keeps the extract's 50: above every Volkihar mook, below Harkon.
+    @{ Npc = '01541E:Dawnguard.esm'; Level = 38 }   # DLC1Celann
+    @{ Npc = '01541D:Dawnguard.esm'; Level = 38 }   # DLC1Durak
+    @{ Npc = '01541B:Dawnguard.esm'; Level = 38 }   # DLC1Ingjard
+    @{ Npc = '00336D:Dawnguard.esm'; Level = 38 }   # DLC1FlorentiusBaenius
 )
 
 foreach ($e in $edits) {

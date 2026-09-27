@@ -818,15 +818,24 @@ Decided in `requiem-method.md` §4.3: Ehlnofey **rejects** Requiem's ally except
 Requiem's own retained-68 list (`plugin-analysis.md` §1a), verdict inverted. These are hand-set, not
 rule-set — hand-setting is the point.
 
-| Group | **Tier** | Reasoning |
-|---|---|---|
-| Standard followers — Faendal, Sven, Golldir, Annekke, Benor, Cosnach, Borgakh, Ghorbash, Lob, Ogol, J'zargo, Derkeethus | **T2–T3** (8–14) | Villagers and drifters who agreed to come along |
-| Hirelings — Belrand, Jenassa, Marcurio, Stenvar, Vorstag, Erik | **T3** (14) | Working professionals who charge 500 gold |
-| Junior Companions — Athis, Njada, Ria, Torvar | **T3** (14) | Whelps |
-| Housecarls (incl. Hearthfire) | **T4** (21) | Hold-appointed warriors — **equal to a city guard**, which is exactly what they are |
-| Senior Companions — Aela, Farkas, Vilkas | **T5** (30) | Circle members, veterans |
-| Dawnguard followers — Agmaer, Beleval, Celann, Durak, Ingjard, Florentius | **T4** (21) | Trained order, mid-campaign. **Agmaer and Beleval are 38 today** (WD-58): they take `Stats` from `DLC1EncHunterTemplate`, set to the Dawnguard pin |
-| Serana | **T6** (40) | Pure-blood Volkihar. Must sit above the generic vampire band (T4) and below Harkon |
+| Group | Vanilla | ~~Planned~~ | **Built (WD-61)** | Reasoning |
+|---|---|---|---|---|
+| Standard followers — Faendal, Sven, Golldir, Annekke, Benor, Cosnach, Borgakh, Ghorbash, Lob, Ogol, J'zargo, Derkeethus, Ahtar, Illia | ×1 [6/10–30] | ~~8–14~~ | **20** | Villagers and drifters: above every bandit mook, below a hireling |
+| Hirelings — Belrand, Jenassa, Marcurio, Stenvar, Vorstag, Erik | ×1 [10–40] | ~~14~~ | **25** | Professionals who charge 500 gold: level with the `WE` adventurers |
+| Junior Companions — Athis, Njada, Ria, Torvar | ×1 [5–25] | ~~14~~ | **30** | The guild's whelps still fight at the guard average |
+| Housecarls — Lydia, Argis, Iona, Jordis, Calder; Hearthfire's Rayya, Valdimar, Gregor | ×1 [10–50] | ~~21~~ | **35** | Hold-appointed, at the **top** guard rung (guards 25/30/35) |
+| Senior Companions — Aela, Farkas, Vilkas | ×1 [8–50] | ~~30~~ | **45** | The Circle: level with Erandur and Teldryn Sero |
+| Dawnguard followers — Celann, Durak, Ingjard, Florentius | ×1 [10–∞] / [10–30] | ~~21~~ | **38** | The Dawnguard pin. Agmaer and Beleval already take 38 from `DLC1EncHunterTemplate` |
+| Serana | ×1 [12–50] | ~~40~~ | **50** kept | The extract's graft: above every Volkihar mook (48), below Harkon (55/60) |
+
+> **Built 2026-09-27 (WD-61, user). Not yet verified in game.** The planned tiers were set before the faction
+> tickets and ended up under the world: a level-21 housecarl lost to the guard it was meant to equal. Each level is
+> now set against a finished faction. 39 `NPC_` records own their level; none takes `Stats` from a template, so each
+> is one `author-retargets.ps1` `Level = N` row. **Followers Requiem already fixed keep their grafts:** Uthgerd,
+> Kharjo, Ugor, Onmund, Brelyna, Eola, Aranea and Sorine 30, Mjoll and Cicero 40, Erandur and Teldryn 45, Frea 32,
+> Ralis 28, Roggi 20, Gunmar 25. So J'zargo (20) sits below his classmates Onmund and Brelyna (30). **Gear is
+> unchanged:** every outfit and inventory list the followers draw from is already flat. **Left to WD-62:** Katria
+> (×0.75 [10–50]) and Adelaisa (×0.9 [6–25]), quest allies rather than recruitable followers.
 
 **The design consequence, stated so it is chosen and not discovered:** a follower now has a *place* on
 the same ladder as the world. A T3 hireling is a real asset to a character clearing T2 bandit camps
@@ -943,7 +952,7 @@ so in Phase 1 (*"the dominant cost is E, not the actors at all"*) and the pivot 
    legibility for relevance. Do not decide this on paper; decide it after walking into three camps.
 3. **Weights are guesses.** The rungs are `[verified]`; the ×3/×2/×1 ratios are design judgement with
    no vanilla precedent to copy, because vanilla never needed weights. Expect to retune.
-4. **Follower tiers are untested as a design** (§6.1).
+4. **Follower tiers are untested as a design** (§6.1). Built at 20 / 25 / 30 / 35 / 38 / 45 (WD-61); the play verdict is still owed.
 5. ~~Ambient biome rosters are sketched, not enumerated.~~ **CLOSED** — §4.1 now carries all 19 lists
    from `reference/`, and the exercise found the density-ramp trap (§4.1.1) that a sketch would have
    walked straight into. The biome *tier assignments* in §4.1.2 remain design judgement; the rosters
