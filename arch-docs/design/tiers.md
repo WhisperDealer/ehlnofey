@@ -2,6 +2,9 @@
 
 > **Note (2026-09-27):** citations here to `morrowloot.md`, `skypatcher.md` and the Requiem analysis point
 > at the prior-art write-ups, deleted when the rebuild started. The live architecture is `flattening.md`.
+>
+> **Note (2026-09-28):** the T1–T7 ladder below has been replaced for actor levels by the nine named power bands
+> in `archetype-tiers.md` §0 (Weak 1–6 … Legendary 82+). This document stays as the Phase 3 record.
 
 **Phase 3, document 2.** The ladder every place and every enemy in Ehlnofey is assigned to, what each
 rung means numerically, and what it actually spawns.

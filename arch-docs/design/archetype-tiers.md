@@ -9,7 +9,64 @@ This document assigns that roster, for every archetype, once.
 Read `flattening.md` first. Inputs: `tiers.md` (the ladder), `enemy-taxonomy.md` §2 (the vanilla
 ladders, `[verified]`), `lore-constraints.md` §1 (the display-name hierarchy, `[verified]`).
 
-**The ladder, unchanged:** `T1 = 4 · T2 = 8 · T3 = 14 · T4 = 21 · T5 = 30 · T6 = 40 · T7 = 50`.
+**The ladder:** nine named power bands (below), adopted 2026-09-28 to replace `T1–T7`. The `Band` columns
+in §§3–7 still carry the old T-numbers (`T1 = 4 · T2 = 8 · T3 = 14 · T4 = 21 · T5 = 30 · T6 = 40 · T7 = 50`)
+until each family is revisited.
+
+---
+
+## 0. The power bands (user, 2026-09-28)
+
+The faction tickets (WD-43…64) put real levels from 1 to 110, so a third of the spec's bands already read
+"above T7". The bands give that range one vocabulary.
+
+| Band | Levels | Who belongs there |
+|---|---|---|
+| **Weak** | 1–6 | skeevers, mudcrabs, beggars, slaughterfish |
+| **Common** | 7–19 | townsfolk, farmers, shopkeepers, low bandits, most wildlife, world encounters |
+| **Trained** | 20–29 | bandits, Companion whelps, entry-level soldiers, guards, Forsworn, draugr, warlocks |
+| **Experienced** | 30–37 | bandit bosses, Companions, most soldiers, mages, Falmer, standard Forsworn and draugr |
+| **Elite** | 38–45 | Thalmor, Penitus Oculatus, Dark Brotherhood assassins, Forsworn Briarhearts, draugr Deathlords and Scourges, Falmer Warmongers and Shadowmasters |
+| **Powerful** | 46–54 | vampires, Dwemer automatons, lesser Daedra, werewolves and werebears, most named bosses |
+| **Fabled** | 55–67 | named Dragon Priests, the Forgemaster, vampire lords, young and low dragons, the Ebony Warrior, average Daedra |
+| **Mythic** | 68–81 | dragons, greater Daedra, and more to come; Harkon lands here at ~81 |
+| **Legendary** | 82+ | Miraak, Alduin |
+
+**What the bands are:**
+- **A design vocabulary, not an in-game label.** They go on the mod page and nowhere in the game: no
+  nameplate or record carries a band name. In play, legibility still rests on vanilla's display names (rule 4).
+- **Rows will be keyed by display name, not by faction.** One faction spans several bands (Restless Draugr is
+  Trained, a Deathlord is Elite). Each family's rows are rewritten rung by rung as it is revisited.
+
+**Decided with the bands (user, 2026-09-28):**
+- **A raised rung may keep its lower-level perks.** Raising a level without re-perking is accepted, so rule 1's
+  objection no longer blocks a raise. `AutoCalcStats` brings health and skills up to the new level. Perks and
+  spells stay as vanilla set them, as the draugr (WD-49) and Dwemer (WD-51) raises already do.
+- **Very high levels mostly add health.** Skills cap at 100, so past that point a level buys health, magicka
+  and stamina rather than new capability. `[unverified]` Accepted.
+- **Named bosses are handled when their family is reached.** Each one either reverts to the top rung of its
+  type (the WD-62 rule) or gets a hand-set level.
+
+**Open: move the world to fit the bands, or fit the bands to the decided world?** Several decided levels land
+outside the band the table above names:
+
+| Group | Decided level | Lands in | Band named above |
+|---|---|---|---|
+| Bandit mooks · chief | 5 / 9 / 14 · 28 | Weak–Common · Trained | Trained · Experienced |
+| Draugr Scourge · placed Deathlords | 36 · 30 | Experienced | Elite |
+| Thalmor soldier · Penitus Oculatus | 36 | Experienced | Elite |
+| Falmer Warmonger boss | 54 | Powerful | Elite |
+| Werewolves | 20 / 28 / 38 | Trained–Elite | Powerful |
+| Vampires | 28 / 38 / 48 | Trained–Powerful | Powerful |
+| Dwemer Spider Guardian | 40 | Elite | Powerful |
+| Dremora | 36 / 46 | Experienced–Powerful | Fabled ("average Daedra", if that is them) |
+| Dragon Priests | 50 | Powerful | Fabled |
+| Dragon (lowest rung) | 50 | Powerful | Fabled / Mythic |
+| Ebony Warrior | 80 | Mythic | Fabled |
+| Harkon · Miraak | 55–60 · 65 | Fabled | Mythic (~81) · Legendary |
+
+Either the faction tickets reopen and these levels move, or the band edges shift to meet them. Until this is
+decided, nothing is re-levelled to fit a band.
 
 ---
 
@@ -988,7 +1045,9 @@ so in Phase 1 (*"the dominant cost is E, not the actors at all"*) and the pivot 
    deleveling, and belongs to the combat overhaul Ehlnofey does not take. **Only `PcLevelMult` actors get a
    new fixed level.** So every rung in this document's tables is at its vanilla level — which is what the
    tables always assumed — except where a faction ticket above raises a rung deliberately (and says so).
-   The `PcLevelMult` actors are hand-set by WD-57/61/62.
+   The `PcLevelMult` actors are hand-set by WD-57/61/62. **Relaxed 2026-09-28 (user):** a raised rung may
+   keep its lower-level perks, so raising a fixed level is now allowed. Whether to raise rungs to fit the
+   power bands is still open (§0).
 1c. **Boss bands whose rungs share one name — Decided 2026-09-25 (user, WD-42): pin.** See §3.1.1.
 2. **Bandits become trivial after ~T3, and they are ~40% of the placed world.** That is the honest
    cost of a fixed world. The alternative — widening the bandit band — trades
@@ -1003,6 +1062,8 @@ so in Phase 1 (*"the dominant cost is E, not the actors at all"*) and the pivot 
 6. **`LCharAnimalSnowFields`, `…Forest` and `…Plains` are the three lists whose frozen rosters were
    hand-built rather than filtered**, because with no flags and one entry per gate there is no
    "eligible mix" to freeze. They are small (3–6 entries) but they are the only invented rows in §4.1.
+7. **Do decided levels move to fit the power bands, or do the band edges move?** (§0, opened 2026-09-28.)
+   The §0 table lists the groups that currently land outside their named band.
 
 ---
 
