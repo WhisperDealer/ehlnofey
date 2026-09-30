@@ -99,9 +99,15 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Design changes that fall out of it go into `archetype-tiers.md` once the user decides them.
   **Census pages hold vanilla data only** (user, 2026-09-30): no Ehlnofey levels, rosters or weights
   until the census is done. Where a page had them, the version message names the version that holds them.
-  **Page layout** (user, 2026-09-30; the Skeever page is the model): a Record · Name · Level table of
-  the *distinct* enemies (variants that inherit their level collapse into one sentence), then
-  *Lists that draw them*. No AI, faction or placement walk-throughs unless the user asks.
+  **Page layout** (user, 2026-09-30; the Mudcrab page is the model): a one-line source line, then
+  three tables and **no prose**:
+  1. **Records**: Record · Name · Level, one row per *distinct* enemy. Variants that inherit their
+     level are dropped, not described.
+  2. **Lists that draw them**: List · Draws · Owner.
+  3. **Placed only**: Name · Placed in (cell EditorID + FormKey, plus the quest alias if a quest owns
+     it), for every enemy no list draws; an unused record goes here as "not placed".
+  No gear, AI, faction or notes sections unless the user asks. Keep the survey notes in an earlier page
+  version and name it in the source line.
 - **The census lives in Confluence, not in the repo.** Space *WhisperDealer*
   (`~71202046a32e88a7ba474cbdae20a1db1fba60`), root page **Ehlnofey** (id `12451841`), on
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
