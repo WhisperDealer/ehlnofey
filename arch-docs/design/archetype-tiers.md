@@ -781,7 +781,9 @@ Creatures*. Not yet built.
 | Corrupted Spriggan | `ccBGSSSE025_EncCorruptedSpriggan{Dementia,Mania}` | ×1 [8–54] | **24** | Trained |
 | Elytra Nymph | `ccBGSSSE025_ElytraNymph{Dementia,Mania}` | ×0.6, max 26 | **10** | Common |
 
-Out of scope: the reindeer (the player's essential mount) and every pet. No leveled list is placed in the world:
+Out of scope: the reindeer (the player's essential mount) and every pet. Out of scope means *no Ehlnofey
+level*, not undocumented: the census (2026-09-30) still lists pets on their family's Confluence page, e.g. the
+*Pets of Skyrim* skeever, spider, fox, goat and rabbit, as vanilla data only. No leveled list is placed in the world:
 goblins, Nix-hounds, spriggans and nymphs are hand-placed, and the mudcrab list is reached only through the
 `Crab_MQ2`/`MQ4` quest spawners. No quest property in the five packs points at any leveled list `[verified]`.
 
