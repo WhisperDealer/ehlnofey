@@ -97,6 +97,11 @@ is **paused**. Before any more records are authored, we map every enemy and docu
 - **Document, don't author.** This phase writes no records in `EhlnofeyESP`. Record what vanilla
   (plus DLC and the CC masters) actually does, with FormKeys and confidence marks (Guardrails 1 and 9).
   Design changes that fall out of it go into `archetype-tiers.md` once the user decides them.
+  **Census pages hold vanilla data only** (user, 2026-09-30): no Ehlnofey levels, rosters or weights
+  until the census is done. Where a page had them, the version message names the version that holds them.
+  **Page layout** (user, 2026-09-30; the Skeever page is the model): a Record · Name · Level table of
+  the *distinct* enemies (variants that inherit their level collapse into one sentence), then
+  *Lists that draw them*. No AI, faction or placement walk-throughs unless the user asks.
 - **The census lives in Confluence, not in the repo.** Space *WhisperDealer*
   (`~71202046a32e88a7ba474cbdae20a1db1fba60`), root page **Ehlnofey** (id `12451841`), on
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
@@ -104,7 +109,8 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Falmer & Chaurus (WD-66), Forsworn & Hagravens (WD-67), Werebeasts (WD-68), Rieklings (WD-69),
   Daedra (WD-70), Creation Club Creatures (WD-71), Vampires (WD-72), Undead (WD-73: draugr included,
   vampires not), Conjured (WD-74: anything that exists only as a summon; a placed version stays with its
-  family), Uncategorised (WD-75: the holding group for anything that fits no group yet). CC creatures
+  family), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
+  in it go one level deeper, under its **Creation Club** page, one child per pack). CC creatures
   are filed by kind, not by pack: CC Daedra under Daedra, CC undead under Undead.
   A new family follows the same
   shape: a group page citing its ticket and spec section, and a child page per family. Search the tree
