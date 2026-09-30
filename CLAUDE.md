@@ -107,7 +107,8 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
   Jira ticket → one child page per family**. The groups so far: World Creatures (WD-65),
   Falmer & Chaurus (WD-66), Forsworn & Hagravens (WD-67), Werebeasts (WD-68), Rieklings (WD-69),
-  Daedra (WD-70), Creation Club Creatures (WD-71), Vampires (WD-72), Undead (WD-73: draugr included,
+  Daedra (WD-70), Creation Club Creatures (WD-71), Vampires (WD-72: death hounds included),
+  Dawnguard (WD-76: the faction's huskies), Undead (WD-73: draugr included,
   vampires not), Conjured (WD-74: anything that exists only as a summon; a placed version stays with its
   family), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
   in it go one level deeper, under its **Creation Club** page, one child per pack). CC creatures
