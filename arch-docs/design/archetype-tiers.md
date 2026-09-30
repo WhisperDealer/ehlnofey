@@ -766,6 +766,25 @@ keeps no vermin: trolls ×2 and a giant spider, or frost trolls ×2 and a giant 
 no giant spider, so it rolls frost trolls only. Creature death items were already flat. No quest adds to a creature
 list at runtime; WEJS20 only spawns a hagraven.
 
+### 4.2 Creation Club creatures — WD-71 (user, 2026-09-30)
+
+Surveyed from `reference/mods/CreationClubYaml/`; the evidence is on the Confluence pages under *Creation Club
+Creatures*. Not yet built.
+
+| Creature | Record(s) | Vanilla | **Ehlnofey** | Band |
+|---|---|---|---|---|
+| Goblin (one name, 9 records) | `ccBGSSSE040_EncGoblin0{1,2,3}Melee…`, `…04Hammer` | 6 | **6** (keep) | Weak |
+| Blue God (goblin boss) | `ccBGSSSE040_Blorc` 0009A0 | ×1 [5–60] | **20** | Trained |
+| Nix-Hound | `ccBGSSSE035_EncNixHoundEnemy` 000804 | 16 | **16** (keep) | Common |
+| Frenzied Mudcrab | `ccBGSSSE001_EncMudcrab{Medium,Large,Giant}Aggressive` | 9 / 13 / 20 | **keep**; `LCharMudcrabAggressive` 0009ED flattened to Medium ×2 · Large ×2 · Giant ×1 | Common |
+| Fangtusk (vampire horker) | `ccBGSSSE001_MiscWindhelm_Fangtusk` 000BF9 | ×1.25 [10–80] | **20** | Trained |
+| Corrupted Spriggan | `ccBGSSSE025_EncCorruptedSpriggan{Dementia,Mania}` | ×1 [8–54] | **24** | Trained |
+| Elytra Nymph | `ccBGSSSE025_ElytraNymph{Dementia,Mania}` | ×0.6, max 26 | **10** | Common |
+
+Out of scope: the reindeer (the player's essential mount) and every pet. No leveled list is placed in the world:
+goblins, Nix-hounds, spriggans and nymphs are hand-placed, and the mudcrab list is reached only through the
+`Crab_MQ2`/`MQ4` quest spawners. No quest property in the five packs points at any leveled list `[verified]`.
+
 ---
 
 ## 5. Class C — already fixed, verify and leave
