@@ -86,8 +86,30 @@ from*, and nothing else.
 
 ## Current phase
 
-**Phase 4 restarted on 2026-09-27: `Ehlnofey.esp` is being rebuilt from scratch.** Phases 0–3
-(workspace, world research, prior art, design spec) are complete.
+**Back in design as of 2026-09-30: the enemy census.** Phase 4 (the rebuild, restarted 2026-09-27)
+is **paused**. Before any more records are authored, we map every enemy and document it.
+
+- **Scope, per enemy:** its **level** (and which record owns it; follow the template chain), its
+  **gear** (outfit, inventory, death item, walked to the leaves), and every **leveled list** it
+  resolves through (`LVLN` and `LVLI`, with entries, levels, counts and gate flags).
+- **Perks are out of scope for now.** They may join the census in a later update; don't document them
+  unless the user asks.
+- **Document, don't author.** This phase writes no records in `EhlnofeyESP`. Record what vanilla
+  (plus DLC and the CC masters) actually does, with FormKeys and confidence marks (Guardrails 1 and 9).
+  Design changes that fall out of it go into `archetype-tiers.md` once the user decides them.
+- **The census lives in Confluence, not in the repo.** Space *WhisperDealer*
+  (`~71202046a32e88a7ba474cbdae20a1db1fba60`), root page **Ehlnofey** (id `12451841`), on
+  `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
+  Jira ticket → one child page per family**. The groups so far: World Creatures (WD-65),
+  Falmer & Chaurus (WD-66), Forsworn & Hagravens (WD-67), Werebeasts (WD-68), Rieklings (WD-69),
+  Daedra (WD-70), Creation Club Creatures (WD-71), Vampires (WD-72). A new family follows the same
+  shape: a group page citing its ticket and spec section, and a child page per family. Search the tree
+  (`ancestor = 12451841`) before creating a page, and update the existing page rather than duplicating it.
+- **Start from what exists:** the Confluence pages, `world/enemy-taxonomy.md`,
+  `world/unique-enemies.md`, the census scripts in `design/*.ps1` and `archetype-tiers.md` already cover
+  much of the ground. Extend them; don't re-derive.
+
+The rebuild resumes from the plan below once the census is done:
 
 - **Architecture: `arch-docs/design/flattening.md` — read it first.** Its §6 is the order of work.
 - **Spec: `arch-docs/design/archetype-tiers.md`** — every family's levels, rosters, weights, pins and
@@ -101,7 +123,8 @@ from*, and nothing else.
   for the rebuild live in `src/Ehlnofey/`.
 
 **Status:** scaffold only — a header (ESL; Skyrim, Update, Dawnguard, Dragonborn) that builds clean. No
-records yet. **Next:** the constants, then the `LVLN` (`flattening.md` §6 steps 2–3).
+records yet. **Next:** the enemy census (above). After it, the constants, then the `LVLN`
+(`flattening.md` §6 steps 2–3).
 
 **Decisions carried over from the proof of concept** (user; revisit if they no longer fit):
 - **Creation Club is a hard requirement** (AE is near-universal). CC packs whose start-up quests
