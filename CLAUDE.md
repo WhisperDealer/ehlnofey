@@ -111,14 +111,25 @@ is **paused**. Before any more records are authored, we map every enemy and docu
 - **The census lives in Confluence, not in the repo.** Space *WhisperDealer*
   (`~71202046a32e88a7ba474cbdae20a1db1fba60`), root page **Ehlnofey** (id `12451841`), on
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
-  Jira ticket → one child page per family**. The groups so far: World Creatures (WD-65),
-  Falmer & Chaurus (WD-66), Forsworn & Hagravens (WD-67), Werebeasts (WD-68), Rieklings (WD-69),
-  Daedra (WD-70), Creation Club Creatures (WD-71), Vampires (WD-72: death hounds included),
+  Jira ticket → one child page per family**. The groups so far: World Creatures (WD-65; one level deeper, under
+  sub-group pages **Animals**, **Aquatic**, **Beasts**, **Insectoids**, **Sentient** (giants, goblins,
+  wisp mothers, spriggans, hagravens, rieklings), **Monsters** (trolls, ice wraiths, magic anomalies)
+  and **Mounts** (horses, unicorns, reindeer); there is no Forgotten Vale page, its creatures are on
+  their families' pages),
+  Falmer (WD-66: chaurus, Frozen Chaurus and chaurus hunters live under World Creatures → Insectoids),
+  Forsworn (WD-67: the hagravens live under World Creatures → Sentient), Werebeasts (WD-68),
+  Rieklings (WD-69: no group page; under World Creatures → Sentient),
+  Daedra (WD-70), Creation Club creatures (WD-71: no group page; each is on its kind's page under
+  World Creatures), Vampires (WD-72: death hounds included),
   Dawnguard (WD-76: the faction's huskies), Undead (WD-73: draugr included,
   vampires not), Conjured (WD-74: anything that exists only as a summon; a placed version stays with its
   family), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
   in it go one level deeper, under its **Creation Club** page, one child per pack). CC creatures
-  are filed by kind, not by pack: CC Daedra under Daedra, CC undead under Undead.
+  are filed by kind, not by pack: CC Daedra under Daedra, CC undead under Undead, CC creatures on
+  (or beside) their vanilla family's page under World Creatures (Frenzied Mudcrabs on Mudcrab,
+  Fangtusk on Horker, Corrupted Spriggans on Spriggan). **Confluence titles are unique per space**, so a group and a family
+  cannot share a name (the family pages are *Common Falmer* and *Common Forsworn*). The MCP has no delete: retire a
+  page by retitling it `DELETE ME - <title>` and ask the user to delete it.
   A new family follows the same
   shape: a group page citing its ticket and spec section, and a child page per family. Search the tree
   (`ancestor = 12451841`) before creating a page, and update the existing page rather than duplicating it.
