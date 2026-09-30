@@ -102,7 +102,11 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
   Jira ticket → one child page per family**. The groups so far: World Creatures (WD-65),
   Falmer & Chaurus (WD-66), Forsworn & Hagravens (WD-67), Werebeasts (WD-68), Rieklings (WD-69),
-  Daedra (WD-70), Creation Club Creatures (WD-71), Vampires (WD-72). A new family follows the same
+  Daedra (WD-70), Creation Club Creatures (WD-71), Vampires (WD-72), Undead (WD-73: draugr included,
+  vampires not), Conjured (WD-74: anything that exists only as a summon; a placed version stays with its
+  family), Uncategorised (WD-75: the holding group for anything that fits no group yet). CC creatures
+  are filed by kind, not by pack: CC Daedra under Daedra, CC undead under Undead.
+  A new family follows the same
   shape: a group page citing its ticket and spec section, and a child page per family. Search the tree
   (`ancestor = 12451841`) before creating a page, and update the existing page rather than duplicating it.
 - **Start from what exists:** the Confluence pages, `world/enemy-taxonomy.md`,
