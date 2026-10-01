@@ -107,7 +107,10 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   3. **Placed only**: Name · Placed in (cell EditorID + FormKey, plus the quest alias if a quest owns
      it), for every enemy no list draws; an unused record goes here as "not placed".
   No gear, AI, faction or notes sections unless the user asks. Keep the survey notes in an earlier page
-  version and name it in the version message.
+  version and name it in the version message. **Armed enemies get gear** (user, 2026-10-01; Common
+  Falmer is the model): a **Gear** table (Records · Weapons · Armor · Skin), **Gear lists** (each
+  weapon/outfit list walked to its leaves) and **Gear items** (whether the player can wear each one;
+  skins are `NonPlayable`).
 - **The census lives in Confluence, not in the repo.** Space *WhisperDealer*
   (`~71202046a32e88a7ba474cbdae20a1db1fba60`), root page **Ehlnofey** (id `12451841`), on
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
