@@ -120,15 +120,19 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   and **Mounts** (horses, unicorns, reindeer, and *Otherworldly Horses*: Arvak and the Daedric
   Horses, summoned mounts included by the user's choice); there is no Forgotten Vale page, its creatures are on
   their families' pages),
-  Falmer (WD-66: chaurus, Frozen Chaurus and chaurus hunters live under World Creatures → Insectoids),
+  Falmer (WD-66: chaurus, Frozen Chaurus and chaurus hunters live under World Creatures → Insectoids;
+  *Snow Elves* holds Vyrthur and Gelebor),
   Forsworn (WD-67: the hagravens live under World Creatures → Sentient), Werebeasts (WD-68),
   Rieklings (WD-69: no group page; under World Creatures → Sentient),
   Daedra (WD-70), Creation Club creatures (WD-71: no group page; each is on its kind's page under
-  World Creatures), Vampires (WD-72: death hounds included),
+  World Creatures), Vampires (WD-72: *Common Vampires*, *Vampire Boss*, *Vampire Lord* (Harkon, plus Serana and Valerica by the user's call),
+  *Volkihar Court*, *Vampire's Thrall*, *Death Hound*, *Gargoyle*; thralls take bandit levels and gear),
   Dawnguard (WD-76: the faction's huskies), Undead (WD-73: draugr included,
   vampires not; **Draugr** is a sub-group page with *Common Draugr*, *Draugr Warlock* and *Draugr Boss*,
   the Falmer layout; **Skeletons** likewise, with *Common Skeletons*, *Soul Cairn Undead* and *Shades*,
-  and **Ghosts**, with *Common Ghosts* and *Ghost Bosses*; Karstaag stays on Giant), Conjured (WD-74: anything that exists only as a summon; a placed version stays with its
+  and **Ghosts**, with *Common Ghosts*, *Ghost Bosses* and *Spectral Warhound*; Karstaag stays on Giant; *Ash Spawn*, *Ash Guardian* and *Ash Zombie (CC)* are undead by the
+  user's call, 2026-10-01, although none of their races carries `ActorTypeUndead` and the Ash Guardian's
+  carries `ActorTypeDaedra`; their summons are on Conjured → *Undead Summons*), Conjured (WD-74: anything that exists only as a summon; a placed version stays with its
   family; sub-groups **Summoned Creatures** (*Summoned Atronachs*, *Familiars & Spirit Animals*,
   *Undead Summons*, *Daedric Summons*, *Constructs & Dragons*) and **Summoned NPCs** (*Summoned
   Dremora*, *Heroes & Spirits*), each page with a "Summoned by" table: player source and NPC casters), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
@@ -207,6 +211,8 @@ The full entries, with evidence, are in **`arch-docs/gotchas.md`**. These are th
 - **The displayed name follows the `BaseData` template flag, not `Traits`** (2026-10-01; explains the
   failed bandit rename, not yet confirmed by an in-game edit). A record with `BaseData` set shows its
   template's name. Until tested in game, still name every record of a rung when authoring.
+- **A quest alias `DisplayName` can name a nameless boss** (Movarth, Vighar, Lokil): grep quest
+  aliases for the placed ref's FormKey, not just the base record's.
 - **Runtime injectors:** start-up quests (`DLC2Init`, several CC packs) call `AddForm` on leveled lists.
   This is invisible to load-order scans and stored in the save for good. Grep quest properties for a
   list's FormKey before trusting it.
