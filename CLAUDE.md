@@ -126,7 +126,9 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Daedra (WD-70), Creation Club creatures (WD-71: no group page; each is on its kind's page under
   World Creatures), Vampires (WD-72: death hounds included),
   Dawnguard (WD-76: the faction's huskies), Undead (WD-73: draugr included,
-  vampires not), Conjured (WD-74: anything that exists only as a summon; a placed version stays with its
+  vampires not; **Draugr** is a sub-group page with *Common Draugr*, *Draugr Warlock* and *Draugr Boss*,
+  the Falmer layout; **Skeletons** likewise, with *Common Skeletons*, *Soul Cairn Undead* and *Shades*,
+  and **Ghosts**, with *Common Ghosts* and *Ghost Bosses*; Karstaag stays on Giant), Conjured (WD-74: anything that exists only as a summon; a placed version stays with its
   family), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
   in it go one level deeper, under its **Creation Club** page, one child per pack). CC creatures
   are filed by kind, not by pack: CC Daedra under Daedra, CC undead under Undead, CC creatures on
