@@ -181,6 +181,15 @@ gotchas here**, and add a one-liner to CLAUDE.md only if a session must know it 
   alias script** (the fish pack), so read the indent rather than assume it; and an injection at level 1
   can still be a leak when **what it injects is itself a gated sublist** (the gauntlet pack) — check
   the injected form's own gates.
+  **Two CC packs inject into one shared master list.** `ccBGS_LCharUndeadListMaster` 003024:Update.esm
+  is reached by `ccBGSSSE003_LvlBoneWolfZombie` 003025:Update.esm (19 Tamriel refs, 18 enable-parented
+  to the initially-disabled marker `ccBGSSSE003_BoneWolfZombieREF` 003026:Update.esm). The Zombies pack
+  overrides the list to its zombie melee list only, which cuts the Bone Wolf slot 003280 out. The Bone
+  Wolf pack gets back in at runtime: `ccBGSSSE036_SeedQuest` (start-game enabled, run once) does `AddForm`
+  of `ccBGSSSE003_LCharBonewolf` at level 2 and enables the marker. The Zombies pack does the same with
+  its melee list, gated on its quest's stage 40. So the plugin data and the in-game list disagree.
+  `[verified]` from the decompiled fragments, 2026-10-01. The CC `.bsa` files are in the Steam install
+  (`C:/Gaming/steamapps/common/Skyrim Special Edition/Data`), not the modlist's Stock Game.
 - **Overriding anything in an exterior cell means overriding the whole worldspace record.** In the
   plugin format an exterior `CELL` sits inside its `WRLD` group, so moving even one placed ref outside
   Bilegulch Mine drags in a full copy of **Tamriel** `00003C` — climate, water, map data, LOD settings,

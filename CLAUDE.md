@@ -114,7 +114,8 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Jira ticket → one child page per family**. The groups so far: World Creatures (WD-65; one level deeper, under
   sub-group pages **Animals**, **Aquatic**, **Beasts**, **Insectoids**, **Sentient** (giants, goblins,
   wisp mothers, spriggans, hagravens, rieklings), **Monsters** (trolls, ice wraiths, magic anomalies)
-  and **Mounts** (horses, unicorns, reindeer); there is no Forgotten Vale page, its creatures are on
+  and **Mounts** (horses, unicorns, reindeer, and *Otherworldly Horses*: Arvak and the Daedric
+  Horses, summoned mounts included by the user's choice); there is no Forgotten Vale page, its creatures are on
   their families' pages),
   Falmer (WD-66: chaurus, Frozen Chaurus and chaurus hunters live under World Creatures → Insectoids),
   Forsworn (WD-67: the hagravens live under World Creatures → Sentient), Werebeasts (WD-68),
