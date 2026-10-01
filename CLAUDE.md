@@ -122,7 +122,9 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   their families' pages),
   Falmer (WD-66: chaurus, Frozen Chaurus and chaurus hunters live under World Creatures → Insectoids;
   *Snow Elves* holds Vyrthur and Gelebor),
-  Forsworn (WD-67: the hagravens live under World Creatures → Sentient), Werebeasts (WD-68),
+  Forsworn (WD-67: the hagravens live under World Creatures → Sentient), Werebeasts (WD-68:
+  *Werewolf* (the six-rung ladder), *Werewolf Boss* (the boss ladder, Sinding, Arnbjorn), *Werebear*
+  (the Solstheim werebears, Torkild), *Wolf Spirits*; the Beast Stone werebear is on Conjured),
   Rieklings (WD-69: no group page; under World Creatures → Sentient),
   Daedra (WD-70), Creation Club creatures (WD-71: no group page; each is on its kind's page under
   World Creatures), Vampires (WD-72: *Common Vampires*, *Vampire Boss*, *Vampire Lord* (Harkon, plus Serana and Valerica by the user's call),
@@ -131,7 +133,12 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Dawnguard (WD-76: *Common Dawnguard* (the six-rung ladder, every rung named "Dawnguard"),
   *Dawnguard Members* (Isran and the named members), *Husky*), Vigilants (WD-77: *Common Vigilants*
   (the five-rung ladder, The Cause's Vigil Enforcers) and *Named Vigilants* (Carcette, Tyranus, Tolan,
-  Adalvald, the Vigil Enforcer pack's two); vampiric Vigilants stay under Vampires), Undead (WD-73: draugr included,
+  Adalvald, the Vigil Enforcer pack's two); vampiric Vigilants stay under Vampires), Companions
+  (WD-78: *The Circle* (Kodlak, Skjor, Aela, Farkas, Vilkas) and *Companions Members*; their
+  werewolf forms are scripted race changes with no record; the wolf spirits stay under Werebeasts),
+  Minor Factions (WD-79: one sub-group per small hostile faction; **Silver Hand** with *Common Silver
+  Hand* and *Silver Hand Leaders*: wrappers that take only `Stats` from the bandit lists; Krev and the
+  radiant camp leader are alias-named), Undead (WD-73: draugr included,
   vampires not; **Draugr** is a sub-group page with *Common Draugr*, *Draugr Warlock* and *Draugr Boss*,
   the Falmer layout; **Skeletons** likewise, with *Common Skeletons*, *Soul Cairn Undead* and *Shades*,
   and **Ghosts**, with *Common Ghosts*, *Ghost Bosses* and *Spectral Warhound*; Karstaag stays on Giant; *Ash Spawn*, *Ash Guardian* and *Ash Zombie (CC)* are undead by the
