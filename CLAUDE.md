@@ -129,7 +129,9 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   vampires not; **Draugr** is a sub-group page with *Common Draugr*, *Draugr Warlock* and *Draugr Boss*,
   the Falmer layout; **Skeletons** likewise, with *Common Skeletons*, *Soul Cairn Undead* and *Shades*,
   and **Ghosts**, with *Common Ghosts* and *Ghost Bosses*; Karstaag stays on Giant), Conjured (WD-74: anything that exists only as a summon; a placed version stays with its
-  family), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
+  family; sub-groups **Summoned Creatures** (*Summoned Atronachs*, *Familiars & Spirit Animals*,
+  *Undead Summons*, *Daedric Summons*, *Constructs & Dragons*) and **Summoned NPCs** (*Summoned
+  Dremora*, *Heroes & Spirits*), each page with a "Summoned by" table: player source and NPC casters), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
   in it go one level deeper, under its **Creation Club** page, one child per pack). CC creatures
   are filed by kind, not by pack: CC Daedra under Daedra, CC undead under Undead, CC creatures on
   (or beside) their vanilla family's page under World Creatures (Frenzied Mudcrabs on Mudcrab,
@@ -202,8 +204,9 @@ The full entries, with evidence, are in **`arch-docs/gotchas.md`**. These are th
   Follow templates, through `LVLN` entries if need be, to the record without the flag.
 - **NPC level** is `Configuration.Level`: `NpcLevel` (`Level:`) or `PcLevelMult` (`LevelMult:`, with
   `CalcMinLevel`/`CalcMaxLevel` beside it).
-- **Nobody knows how a nameless leveled leaf resolves its nameplate.** Do not attempt a display-name
-  change on a leveled rung without first finding, in game, which record the nameplate reads.
+- **The displayed name follows the `BaseData` template flag, not `Traits`** (2026-10-01; explains the
+  failed bandit rename, not yet confirmed by an in-game edit). A record with `BaseData` set shows its
+  template's name. Until tested in game, still name every record of a rung when authoring.
 - **Runtime injectors:** start-up quests (`DLC2Init`, several CC packs) call `AddForm` on leveled lists.
   This is invisible to load-order scans and stored in the save for good. Grep quest properties for a
   list's FormKey before trusting it.
