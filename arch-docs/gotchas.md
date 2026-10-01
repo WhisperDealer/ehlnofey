@@ -18,8 +18,29 @@ gotchas here**, and add a one-liner to CLAUDE.md only if a session must know it 
   which templates onto the **leveled list** `LCharDraugrWarlockMale`. Stopping at the first NPC hop
   reports `L=1` and is wrong — 21 of Skyrim's named bosses have no fixed level at all. A resolver must
   treat "template is a `LeveledNpcs` record" as a distinct terminal case. `[verified]`
-- **Nobody here knows how a nameless NPC resolves its displayed name. Do not reason about it — put
-  the name on every record in the set.** `[verified that the obvious model is wrong]`
+- **The name travels on `BaseData`, not `Traits`** (found 2026-10-01; explains every observation
+  below; **not yet confirmed by an in-game edit**). A record with `BaseData` in `TemplateFlags`
+  ignores its own `Name:` and inherits it from its template; without the flag it shows its own.
+  Evidence `[verified]` in the data: every `EncBandit01*` record *including* `EncBandit01TemplateMelee`
+  039CFD sets `BaseData`, so all 44 inherit "Bandit" from `EncBandit00Template` 039CF4 — which is why
+  naming them changed nothing; `EncBandit02TemplateMelee` 01BCD9 does **not** set it, so its own
+  "Bandit Outlaw" shows. Named bosses that template a generic for `Stats`/`Traits` but not `BaseData`
+  (Rahgot 035351, Holgeir 03D722) keep their own names, as the game shows. **Census pages written
+  before 2026-10-01 resolved names through `Traits` and report some nameplates as "none"/"unknown"
+  that `BaseData` resolves** (female draugr, draugr warlocks, Falmer shamans and B variants). Until an
+  in-game rename confirms it, still name every record in a set when authoring.
+- **A quest alias can name a nameless boss.** An alias with `DisplayName: <MESG>` renames its
+  `ForcedReference` in game, whatever the base record shows. Vampire bosses found 2026-10-01
+  `[verified]` in the data: Movarth Piquine (`dunMovarthVampireBoss` 08BB91, ref 01F593, `MS14` alias
+  `BossVampireMorvath` → `MS14BossName` 02EBE8), Vighar (05B830, ref 05B824,
+  `FreeformFalkreathQuest03B` → 0B83C9), Lokil (00F4FF:Dawnguard.esm, ref 00FBF5, `DLC1VQ01` →
+  00FC10). All three are list wrappers with `BaseData` and no name, so the record alone reads as a
+  generic Master Vampire. **For a named boss, grep quest aliases for its placed ref's FormKey**
+  (`ForcedReference: <ref>` followed by `DisplayName:`), not only for the base record. Census pages
+  written before this may miss alias-named bosses.
+- **(Superseded by the entry above; kept for its evidence.) Nobody here knows how a nameless NPC
+  resolves its displayed name. Do not reason about it — put the name on every record in the set.**
+  `[verified that the obvious model is wrong]`
   An NPC's name and its level travel on different template flags (`Traits` carries the name, `Stats`
   the level), so they can diverge — that much holds. What does **not** hold is any tidy rule for what
   a leaf with no `FULL` and no `Traits` flag falls back to. Two vanilla facts contradict every model
@@ -190,6 +211,14 @@ gotchas here**, and add a one-liner to CLAUDE.md only if a session must know it 
   its melee list, gated on its quest's stage 40. So the plugin data and the in-game list disagree.
   `[verified]` from the decompiled fragments, 2026-10-01. The CC `.bsa` files are in the Steam install
   (`C:/Gaming/steamapps/common/Skyrim Special Edition/Data`), not the modlist's Stock Game.
+  **An empty list in a plugin can be filled at runtime from another CC pack.** The Cause
+  (`ccbgssse067-daedinv.esm`) ships its Vigil Enforcer armor lists 06BFBB–06BFBE **empty**;
+  `ccBGSSSE067_ContentAwareScript` (quest `ccBGSSSE067_Quest` 06BFC1, `OnInit` and `OnPlayerLoadGame`)
+  uses `GetFormFromFile` to add the Vigil Enforcer pack's (`ccMTYSSE002-VE.esl`) Enforcer pieces at 1 and
+  Veteran pieces at 30, or the vanilla `LItemVigilant*` lists when that pack is absent (that branch sets
+  no flag, so it re-adds them on every load). It does the same for the Crossbow Pack (crossbows at 1 /
+  18 / 35), the Backpacks pack and Survival Mode. An empty `LeveledItem` in a CC plugin is a signal to
+  read the pack's scripts. `[verified]` from the decompiled `.pex`, 2026-10-01.
 - **Overriding anything in an exterior cell means overriding the whole worldspace record.** In the
   plugin format an exterior `CELL` sits inside its `WRLD` group, so moving even one placed ref outside
   Bilegulch Mine drags in a full copy of **Tamriel** `00003C` — climate, water, map data, LOD settings,
