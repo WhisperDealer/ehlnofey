@@ -126,8 +126,12 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Rieklings (WD-69: no group page; under World Creatures → Sentient),
   Daedra (WD-70), Creation Club creatures (WD-71: no group page; each is on its kind's page under
   World Creatures), Vampires (WD-72: *Common Vampires*, *Vampire Boss*, *Vampire Lord* (Harkon, plus Serana and Valerica by the user's call),
-  *Volkihar Court*, *Vampire's Thrall*, *Death Hound*, *Gargoyle*; thralls take bandit levels and gear),
-  Dawnguard (WD-76: the faction's huskies), Undead (WD-73: draugr included,
+  *Volkihar Court*, *Vampire's Thrall*, *Death Hound*, *Gargoyle*; thralls take bandit levels and gear;
+  the Bloodchill Manor CC vampires are on *Common Vampires* and *Vampire Boss*),
+  Dawnguard (WD-76: *Common Dawnguard* (the six-rung ladder, every rung named "Dawnguard"),
+  *Dawnguard Members* (Isran and the named members), *Husky*), Vigilants (WD-77: *Common Vigilants*
+  (the five-rung ladder, The Cause's Vigil Enforcers) and *Named Vigilants* (Carcette, Tyranus, Tolan,
+  Adalvald, the Vigil Enforcer pack's two); vampiric Vigilants stay under Vampires), Undead (WD-73: draugr included,
   vampires not; **Draugr** is a sub-group page with *Common Draugr*, *Draugr Warlock* and *Draugr Boss*,
   the Falmer layout; **Skeletons** likewise, with *Common Skeletons*, *Soul Cairn Undead* and *Shades*,
   and **Ghosts**, with *Common Ghosts*, *Ghost Bosses* and *Spectral Warhound*; Karstaag stays on Giant; *Ash Spawn*, *Ash Guardian* and *Ash Zombie (CC)* are undead by the
