@@ -183,7 +183,8 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   *Dawnguard Members* (Isran and the named members), *Husky*), Vigilants (WD-77: *Common Vigilants*
   (the five-rung ladder, The Cause's Vigil Enforcers) and *Named Vigilants* (Carcette, Tyranus, Tolan,
   Adalvald, the Vigil Enforcer pack's two); vampiric Vigilants stay under Vampires), Companions
-  (WD-78: *The Circle* (Kodlak, Skjor, Aela, Farkas, Vilkas) and *Companions Members*; their
+  (WD-78: *The Circle* (Kodlak, Skjor, Aela, Farkas, Vilkas), *Companions Members* and *Companion Ghosts*
+  (the Ysgramor's Tomb ghosts, moved from Common Ghosts by the user's call); their
   werewolf forms are scripted race changes with no record; the wolf spirits stay under Werebeasts),
   Silver Hand (WD-79, its own group under Factions: *Common Silver Hand* and *Silver Hand Leaders*:
   wrappers that take only `Stats` from the bandit lists; Krev and the radiant camp leader are
