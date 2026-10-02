@@ -116,8 +116,10 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
   Jira ticket → one child page per family**. **Factions** (user, 2026-10-02) is a top-level page
   that holds the faction groups: Forsworn, Dawnguard, Vigilants, Companions, Silver Hand, Minor
-  Factions, Thalmor, Imperial Legion, Stormcloaks, Guards, Housecarls and Dark Brotherhood. The groups so far:
-  Dark Brotherhood (WD-88, under Factions: *Named Dark Brotherhood* (the Falkreath Sanctuary family, their
+  Factions, Thalmor, Imperial Legion, Stormcloaks, Guards, Housecarls, Dark Brotherhood and Thieves Guild. The groups so
+  far: Thieves Guild (WD-89, under Factions: *Named Thieves Guild* (the `ThievesGuildFaction` members, Mercer
+  included, and Gallus) and *Thieves Guild Foes* (the Goldenglow mercenaries and Aringoth, Vald, the
+  Nightingale Sentinels, the `WERJ02` holdup thieves); `WIThief` stays on Common Bandits), Dark Brotherhood (WD-88, under Factions: *Named Dark Brotherhood* (the Falkreath Sanctuary family, their
   quest and dead copies, the Dawnstar initiates) and *Dark Brotherhood Assassins* (the `WEJS28` assassins,
   `WEAssassinSubChar` PC×1.1 [6–45], the Hag's End assassin, the CC Bow of Shadows and Daedric-armor
   assassins) and *Dark Brotherhood Targets* (the `DB01`–`DB11`, side-contract and `DBrecurring` victims,
