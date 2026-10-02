@@ -116,7 +116,20 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
   Jira ticket → one child page per family**. **Factions** (user, 2026-10-02) is a top-level page
   that holds the faction groups: Forsworn, Dawnguard, Vigilants, Companions, Silver Hand, Minor
-  Factions and Thalmor. The groups so far: Thalmor (WD-81, under Factions: *Common Thalmor* (the
+  Factions, Thalmor, Imperial Legion, Stormcloaks and Guards. The groups so far: Guards (WD-84, under
+  Factions: *Hold Guards* (one combined Hold Guard row, user 2026-10-02: every guard in its hold's
+  uniform, level from `LCharGuard{Imperial,Sons}`, PC×1 [20–50]; the guards in Imperial or Stormcloak
+  army armour, i.e. the occupying side's garrison, and the guard-list leaves are on *Common Legion* /
+  *Common Stormcloaks*), *Redoran Guards*, *Other Guards* (College Guard, East Empire Wardens and Mercenaries,
+  Wizards' Guards, Kolbjorn guards), *Unique Guards* (Caius, Sinmir, Urzoga, Veleth, CC Aldepius);
+  Captain Aldis stays on Named Legion; Orc stronghold members in `IsGuardFaction` are not guards),
+  Imperial Legion (WD-82) and
+  Stormcloaks (WD-83), under Factions, each with a *Common* page (the `LCharSoldier{Imperial,Sons}`
+  lists: nine leaves at PC×0.25 [1–50], owned by `EncSoldierImperialTemplate` for both sides; every
+  wrapper, the siege archers and mages, Helgen, the CC Imperial Dragon soldiers) and a *Named* page
+  (*Named Legion*: Tullius, Rikke, Hadvar, Aldis, Metilius, the nine legates, the CC Imperial
+  Champion; *Named Stormcloaks*: Ulfric, Galmar, Ralof, the nine field commanders, the CC Stormcloak
+  Champion and Klija); the hold guards are on Guards, Thalmor (WD-81, under Factions: *Common Thalmor* (the
   soldier, archer and wizard ladders, Justiciars, Northwatch, the Embassy, Solstheim, CC soldiers),
   *Thalmor Boss* (the boss wizard ladder, the Northwatch Interrogator, Agent Lorcalin), *Named Thalmor*
   (Captain Valmir included: an undercover agent, by the user's call)), Automatons (WD-80: *Dwarven Spider*, *Dwarven Sphere*, *Dwarven
