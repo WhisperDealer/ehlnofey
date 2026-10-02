@@ -114,9 +114,11 @@ is **paused**. Before any more records are authored, we map every enemy and docu
 - **The census lives in Confluence, not in the repo.** Space *WhisperDealer*
   (`~71202046a32e88a7ba474cbdae20a1db1fba60`), root page **Ehlnofey** (id `12451841`), on
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
-  Jira ticket → one child page per family**. The groups so far: World Creatures (WD-65; one level deeper, under
+  Jira ticket → one child page per family**. **Factions** (user, 2026-10-02) is a top-level page
+  that holds the faction groups: Forsworn, Dawnguard, Vigilants, Companions, Silver Hand and Minor
+  Factions. The groups so far: World Creatures (WD-65; one level deeper, under
   sub-group pages **Animals**, **Aquatic**, **Beasts**, **Insectoids**, **Sentient** (giants, goblins,
-  wisp mothers, spriggans, hagravens, rieklings), **Monsters** (trolls, ice wraiths, magic anomalies)
+  wisp mothers, spriggans, hagravens, rieklings), **Monsters** (trolls, ice wraiths, magic anomalies, gargoyles)
   and **Mounts** (horses, unicorns, reindeer, and *Otherworldly Horses*: Arvak and the Daedric
   Horses, summoned mounts included by the user's choice); there is no Forgotten Vale page, its creatures are on
   their families' pages),
@@ -132,8 +134,9 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Dremora), *Seeker*, *Lurker*, *Golden Saints & Dark Seducers* (Saints & Seducers; the hostile ones
   are the AtrForge copies its quest spawns) and *Barbas*; **atronachs are out of the census** (user,
   2026-10-02); the Dremora Butler and Merchant and the Daedric Princes are not enemies), Creation Club creatures (WD-71: no group page; each is on its kind's page under
-  World Creatures), Vampires (WD-72: *Common Vampires*, *Vampire Boss*, *Vampire Lord* (Harkon, plus Serana and Valerica by the user's call),
-  *Volkihar Court*, *Vampire's Thrall*, *Death Hound*, *Gargoyle*; thralls take bandit levels and gear;
+  World Creatures), Vampires (WD-72, a sub-group under Undead since 2026-10-02: *Common Vampires*, *Vampire Boss*, *Vampire Lord* (Harkon, plus Serana and Valerica by the user's call),
+  *Volkihar Court*, *Vampire's Thrall*, *Death Hound*; *Gargoyle* moved to World Creatures → Monsters;
+  thralls take bandit levels and gear;
   the Bloodchill Manor CC vampires are on *Common Vampires* and *Vampire Boss*),
   Dawnguard (WD-76: *Common Dawnguard* (the six-rung ladder, every rung named "Dawnguard"),
   *Dawnguard Members* (Isran and the named members), *Husky*), Vigilants (WD-77: *Common Vigilants*
@@ -141,14 +144,15 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Adalvald, the Vigil Enforcer pack's two); vampiric Vigilants stay under Vampires), Companions
   (WD-78: *The Circle* (Kodlak, Skjor, Aela, Farkas, Vilkas) and *Companions Members*; their
   werewolf forms are scripted race changes with no record; the wolf spirits stay under Werebeasts),
-  Minor Factions (WD-79: one sub-group per small hostile faction; **Silver Hand** with *Common Silver
-  Hand* and *Silver Hand Leaders*: wrappers that take only `Stats` from the bandit lists; Krev and the
-  radiant camp leader are alias-named; and single family pages **Alik'r** (the `LCharAlikr*` ladder is
+  Silver Hand (WD-79, its own group under Factions: *Common Silver Hand* and *Silver Hand Leaders*:
+  wrappers that take only `Stats` from the bandit lists; Krev and the radiant camp leader are
+  alias-named), Minor Factions (WD-79: single family pages **Alik'r** (the `LCharAlikr*` ladder is
   unused; the real Alik'r are `MS08`/`WERJ03` records plus the Lord's Mail CC ones, and the Redguard Elite Armaments Remnant Warriors, allies, by the user's call), **Penitus Oculatus**
   and **Morag Tong** (Dragonborn; takes `Stats` from the Reaver ladder; the Severins join by script)), Undead (WD-73: draugr included,
-  vampires not; **Draugr** is a sub-group page with *Common Draugr*, *Draugr Warlock* and *Draugr Boss*,
-  the Falmer layout; **Skeletons** likewise, with *Common Skeletons*, *Soul Cairn Undead* and *Shades*,
-  and **Ghosts**, with *Common Ghosts*, *Ghost Bosses* and *Spectral Warhound*; Karstaag stays on Giant; *Ash Spawn*, *Ash Guardian* and *Ash Zombie (CC)* are undead by the
+  **Vampires** a sub-group (above); **Draugr** is a sub-group page with *Common Draugr*, *Draugr Warlock* and *Draugr Boss*,
+  the Falmer layout; **Skeletons** likewise, with *Common Skeletons*, *Soul Cairn Undead*, *Shades* and
+  *Bone Wolves (CC)*, and **Ghosts**, with *Common Ghosts*, *Ghost Bosses* and *Spectral Warhound*;
+  Karstaag stays on Giant; **Ash** is a sub-group with *Ash Spawn*, *Ash Guardian* and *Ash Zombie (CC)*, undead by the
   user's call, 2026-10-01, although none of their races carries `ActorTypeUndead` and the Ash Guardian's
   carries `ActorTypeDaedra`; their summons are on Conjured → *Undead Summons*), Conjured (WD-74: anything that exists only as a summon; a placed version stays with its
   family; sub-groups **Summoned Creatures** (*Summoned Atronachs*, *Familiars & Spirit Animals*,
