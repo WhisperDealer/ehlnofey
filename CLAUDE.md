@@ -115,8 +115,14 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   (`~71202046a32e88a7ba474cbdae20a1db1fba60`), root page **Ehlnofey** (id `12451841`), on
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
   Jira ticket → one child page per family**. **Factions** (user, 2026-10-02) is a top-level page
-  that holds the faction groups: Forsworn, Dawnguard, Vigilants, Companions, Silver Hand and Minor
-  Factions. The groups so far: World Creatures (WD-65; one level deeper, under
+  that holds the faction groups: Forsworn, Dawnguard, Vigilants, Companions, Silver Hand, Minor
+  Factions and Thalmor. The groups so far: Thalmor (WD-81, under Factions: *Common Thalmor* (the
+  soldier, archer and wizard ladders, Justiciars, Northwatch, the Embassy, Solstheim, CC soldiers),
+  *Thalmor Boss* (the boss wizard ladder, the Northwatch Interrogator, Agent Lorcalin), *Named Thalmor*
+  (Captain Valmir included: an undercover agent, by the user's call)), Automatons (WD-80: *Dwarven Spider*, *Dwarven Sphere*, *Dwarven
+  Centurion*, *Dwarven Ballista*, *Unique Automatons* (the Forgemaster, CC The Messenger and The Sky
+  Orchestrator); the Aetherial Staff summons stay on Conjured, the CC Sanctuary constructs are
+  `PlayerFaction` allies), World Creatures (WD-65; one level deeper, under
   sub-group pages **Animals**, **Aquatic**, **Beasts**, **Insectoids**, **Sentient** (giants, goblins,
   wisp mothers, spriggans, hagravens, rieklings), **Monsters** (trolls, ice wraiths, magic anomalies, gargoyles)
   and **Mounts** (horses, unicorns, reindeer, and *Otherworldly Horses*: Arvak and the Daedric
