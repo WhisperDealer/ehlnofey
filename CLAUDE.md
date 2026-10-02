@@ -122,11 +122,16 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   their families' pages),
   Falmer (WD-66: chaurus, Frozen Chaurus and chaurus hunters live under World Creatures → Insectoids;
   *Snow Elves* holds Vyrthur and Gelebor),
-  Forsworn (WD-67: the hagravens live under World Creatures → Sentient), Werebeasts (WD-68:
+  Forsworn (WD-67: *Common Forsworn*, *Forsworn Briarheart*, *Named Forsworn* (the Cidhna Mine
+  prisoners, the MS01 Markarth agents, CC Crowstooth and Alvasorr); the hagravens live under World
+  Creatures → Sentient, the Forsworn dog on *Dog*), Werebeasts (WD-68:
   *Werewolf* (the six-rung ladder), *Werewolf Boss* (the boss ladder, Sinding, Arnbjorn), *Werebear*
   (the Solstheim werebears, Torkild), *Wolf Spirits*; the Beast Stone werebear is on Conjured),
   Rieklings (WD-69: no group page; under World Creatures → Sentient),
-  Daedra (WD-70), Creation Club creatures (WD-71: no group page; each is on its kind's page under
+  Daedra (WD-70: *Dremora* (the six-rung ladder, the one-offs, The Cause's and Arms of Chaos's
+  Dremora), *Seeker*, *Lurker*, *Golden Saints & Dark Seducers* (Saints & Seducers; the hostile ones
+  are the AtrForge copies its quest spawns) and *Barbas*; **atronachs are out of the census** (user,
+  2026-10-02); the Dremora Butler and Merchant and the Daedric Princes are not enemies), Creation Club creatures (WD-71: no group page; each is on its kind's page under
   World Creatures), Vampires (WD-72: *Common Vampires*, *Vampire Boss*, *Vampire Lord* (Harkon, plus Serana and Valerica by the user's call),
   *Volkihar Court*, *Vampire's Thrall*, *Death Hound*, *Gargoyle*; thralls take bandit levels and gear;
   the Bloodchill Manor CC vampires are on *Common Vampires* and *Vampire Boss*),
@@ -149,7 +154,9 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   family; sub-groups **Summoned Creatures** (*Summoned Atronachs*, *Familiars & Spirit Animals*,
   *Undead Summons*, *Daedric Summons*, *Constructs & Dragons*) and **Summoned NPCs** (*Summoned
   Dremora*, *Heroes & Spirits*), each page with a "Summoned by" table: player source and NPC casters), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
-  in it go one level deeper, under its **Creation Club** page, one child per pack). CC creatures
+  in it go one level deeper, under its **Creation Club** page, one child per pack; *Forsworn Level
+  Borrowers* holds the non-Forsworn enemies that take `Stats` from a Forsworn list: Sanctuary
+  Guardians, Champion of Boethiah, Silvia, Moric Sidrey, to be filed later). CC creatures
   are filed by kind, not by pack: CC Daedra under Daedra, CC undead under Undead, CC creatures on
   (or beside) their vanilla family's page under World Creatures (Frenzied Mudcrabs on Mudcrab,
   Fangtusk on Horker, Corrupted Spriggans on Spriggan). **Confluence titles are unique per space**, so a group and a family
