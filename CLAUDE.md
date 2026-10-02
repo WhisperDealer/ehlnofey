@@ -116,7 +116,10 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
   Jira ticket → one child page per family**. **Factions** (user, 2026-10-02) is a top-level page
   that holds the faction groups: Forsworn, Dawnguard, Vigilants, Companions, Silver Hand, Minor
-  Factions, Thalmor, Imperial Legion, Stormcloaks and Guards. The groups so far: Guards (WD-84, under
+  Factions, Thalmor, Imperial Legion, Stormcloaks, Guards and Housecarls. The groups so far: Housecarls
+  (WD-85, under Factions: *Player Housecarls* (the five hold housecarls and the three HearthFires
+  ones) and *Jarls* (both Jarls of every hold with their housecarls; Hrongar, Bryling, Erikur are in
+  the jarl faction but hold nothing)), Guards (WD-84, under
   Factions: *Hold Guards* (one combined Hold Guard row, user 2026-10-02: every guard in its hold's
   uniform, level from `LCharGuard{Imperial,Sons}`, PC×1 [20–50]; the guards in Imperial or Stormcloak
   army armour, i.e. the occupying side's garrison, and the guard-list leaves are on *Common Legion* /
