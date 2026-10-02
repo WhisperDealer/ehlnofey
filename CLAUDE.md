@@ -116,7 +116,18 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
   Jira ticket → one child page per family**. **Factions** (user, 2026-10-02) is a top-level page
   that holds the faction groups: Forsworn, Dawnguard, Vigilants, Companions, Silver Hand, Minor
-  Factions, Thalmor, Imperial Legion, Stormcloaks, Guards and Housecarls. The groups so far: Bandits
+  Factions, Thalmor, Imperial Legion, Stormcloaks, Guards, Housecarls and Dark Brotherhood. The groups so far:
+  Dark Brotherhood (WD-88, under Factions: *Named Dark Brotherhood* (the Falkreath Sanctuary family, their
+  quest and dead copies, the Dawnstar initiates) and *Dark Brotherhood Assassins* (the `WEJS28` assassins,
+  `WEAssassinSubChar` PC×1.1 [6–45], the Hag's End assassin, the CC Bow of Shadows and Daedric-armor
+  assassins) and *Dark Brotherhood Targets* (the `DB01`–`DB11`, side-contract and `DBrecurring` victims,
+  Agnis and Maluril included; the Maros stay on Penitus Oculatus, Helvard on Jarls)), Warlocks
+  (WD-87, top-level, the hostile mages: *Common Warlocks* (five schools × seven rungs, 1–46, every
+  wrapper, the Vaermina Devotees, MS06 cultists, Southfringe crew), *Warlock Bosses* (7–40; the 50
+  rung is in no list; CC Necromantic Grimoire injects boss leaves), *Witches* (Witch 4, Hag 8),
+  *Named Warlocks* (`DA03Wizard` is Sebastian Lort by quest alias, not Malkoran); the Soul Cairn mage
+  souls are on Uncategorised → *Warlock Level Borrowers*; the CC Dawnfang Guardians are ghosts, on
+  *Ghost Bosses*, by the user's call), Bandits
   (WD-86, top-level: *Common Bandits* (the six-rung ladder Bandit … Bandit Marauder, 1–25, the unnamed
   `LvlBandit*` wrappers and the gangs: Blackblood, Blood Horkers, Dainty Sload, Cragslane, Mistwatch,
   Ratway, Black-Briar, thieves, CC Saints/Seducers), *Bandit Chiefs* (boss leaves own 6/10/16/21/28;
@@ -176,7 +187,11 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   wrappers that take only `Stats` from the bandit lists; Krev and the radiant camp leader are
   alias-named), Minor Factions (WD-79: single family pages **Alik'r** (the `LCharAlikr*` ladder is
   unused; the real Alik'r are `MS08`/`WERJ03` records plus the Lord's Mail CC ones, and the Redguard Elite Armaments Remnant Warriors, allies, by the user's call), **Penitus Oculatus**
-  and **Morag Tong** (Dragonborn; takes `Stats` from the Reaver ladder; the Severins join by script)), Undead (WD-73: draugr included,
+  and **Morag Tong** (Dragonborn; takes `Stats` from the Reaver ladder; the Severins join by script),
+  and **Ghosts of the Tribunal** (the CC pack's Temple: Ordinators, Her Hands, priests; its Erden Relvel
+  and Ash Zombies stay on their own pages), and **Miraak Cultists** (the `DLC2LCharCultist` ladder 12 · 19 ·
+  27 · 36 · 46 with summoner copies; Miraak himself is on Uncategorised → *Miraak* for now, by the user's
+  call; his dragons, Acolytes, Seekers and Lurkers are on neither)), Undead (WD-73: draugr included,
   **Vampires** a sub-group (above); **Draugr** is a sub-group page with *Common Draugr*, *Draugr Warlock* and *Draugr Boss*,
   the Falmer layout; **Skeletons** likewise, with *Common Skeletons*, *Soul Cairn Undead*, *Shades* and
   *Bone Wolves (CC)*, and **Ghosts**, with *Common Ghosts*, *Ghost Bosses* and *Spectral Warhound*;
