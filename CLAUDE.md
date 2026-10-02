@@ -116,7 +116,13 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
   Jira ticket → one child page per family**. **Factions** (user, 2026-10-02) is a top-level page
   that holds the faction groups: Forsworn, Dawnguard, Vigilants, Companions, Silver Hand, Minor
-  Factions, Thalmor, Imperial Legion, Stormcloaks, Guards and Housecarls. The groups so far: Housecarls
+  Factions, Thalmor, Imperial Legion, Stormcloaks, Guards and Housecarls. The groups so far: Bandits
+  (WD-86, top-level: *Common Bandits* (the six-rung ladder Bandit … Bandit Marauder, 1–25, the unnamed
+  `LvlBandit*` wrappers and the gangs: Blackblood, Blood Horkers, Dainty Sload, Cragslane, Mistwatch,
+  Ratway, Black-Briar, thieves, CC Saints/Seducers), *Bandit Chiefs* (boss leaves own 6/10/16/21/28;
+  the 14 CC armor packs inject boss sublists into `LCharBanditBoss` at runtime), *Reavers* (the DLC2
+  ladder and its bosses), *Named Bandits*; the group page holds the injector table; non-bandits that
+  take `Stats` from a bandit list are on Uncategorised → *Bandit Level Borrowers*), Housecarls
   (WD-85, under Factions: *Player Housecarls* (the five hold housecarls and the three HearthFires
   ones) and *Jarls* (both Jarls of every hold with their housecarls; Hrongar, Bryling, Erikur are in
   the jarl faction but hold nothing)), Guards (WD-84, under
