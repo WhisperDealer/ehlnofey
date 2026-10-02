@@ -128,7 +128,7 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   assassins) and *Dark Brotherhood Targets* (the `DB01`–`DB11`, side-contract and `DBrecurring` victims,
   Agnis and Maluril included; the Maros stay on Penitus Oculatus, Helvard on Jarls)), Warlocks
   (WD-87, top-level, the hostile mages: *Common Warlocks* (five schools × seven rungs, 1–46, every
-  wrapper, the Vaermina Devotees, MS06 cultists, Southfringe crew), *Warlock Bosses* (7–40; the 50
+  wrapper, MS06 cultists, Southfringe crew), *Warlock Bosses* (7–40; the 50
   rung is in no list; CC Necromantic Grimoire injects boss leaves), *Witches* (Witch 4, Hag 8),
   *Named Warlocks* (`DA03Wizard` is Sebastian Lort by quest alias, not Malkoran); the Soul Cairn mage
   souls are on Uncategorised → *Warlock Level Borrowers*; the CC Dawnfang Guardians are ghosts, on
@@ -177,7 +177,11 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Daedra (WD-70: *Dremora* (the six-rung ladder, the one-offs, The Cause's and Arms of Chaos's
   Dremora), *Seeker*, *Lurker*, *Golden Saints & Dark Seducers* (Saints & Seducers; the hostile ones
   are the AtrForge copies its quest spawns) and *Barbas*; **atronachs are out of the census** (user,
-  2026-10-02); the Dremora Butler and Merchant and the Daedric Princes are not enemies), Creation Club creatures (WD-71: no group page; each is on its kind's page under
+  2026-10-02); the Dremora Butler and Merchant and the Daedric Princes are not enemies; the Princes'
+  mortal followers are here too, by the user's call (2026-10-02): *The Afflicted* (`DA13`, ladder 1–24,
+  Orchendor), *Boethiah Cultists* (bandit ladders, CC Goldbrand, the Champion), *Hunters of Hircine*,
+  *Mythic Dawn (CC)* (The Cause), *Vaermina Devotees* (Storm ladder, Orcish Invaders, Veren and Thorek) and
+  *Daedric Quest Foes* (Namira's Eola, Nimphaneth, Sanyon; Molag Bal's Logrolf)), Creation Club creatures (WD-71: no group page; each is on its kind's page under
   World Creatures), Vampires (WD-72, a sub-group under Undead since 2026-10-02: *Common Vampires*, *Vampire Boss*, *Vampire Lord* (Harkon, plus Serana and Valerica by the user's call),
   *Volkihar Court*, *Vampire's Thrall*, *Death Hound*; *Gargoyle* moved to World Creatures → Monsters;
   thralls take bandit levels and gear;
@@ -211,7 +215,7 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Dremora*, *Heroes & Spirits*), each page with a "Summoned by" table: player source and NPC casters), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
   in it go one level deeper, under its **Creation Club** page, one child per pack; *Forsworn Level
   Borrowers* holds the non-Forsworn enemies that take `Stats` from a Forsworn list: Sanctuary
-  Guardians, Champion of Boethiah, Silvia, Moric Sidrey, to be filed later). CC creatures
+  Guardians, Silvia, Moric Sidrey, to be filed later). CC creatures
   are filed by kind, not by pack: CC Daedra under Daedra, CC undead under Undead, CC creatures on
   (or beside) their vanilla family's page under World Creatures (Frenzied Mudcrabs on Mudcrab,
   Fangtusk on Horker, Corrupted Spriggans on Spriggan). **Confluence titles are unique per space**, so a group and a family
