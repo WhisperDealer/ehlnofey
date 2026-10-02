@@ -116,8 +116,11 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
   Jira ticket → one child page per family**. **Factions** (user, 2026-10-02) is a top-level page
   that holds the faction groups: Forsworn, Dawnguard, Vigilants, Companions, Silver Hand, Minor
-  Factions, Thalmor, Imperial Legion, Stormcloaks, Guards, Housecarls, Dark Brotherhood and Thieves Guild. The groups so
-  far: Thieves Guild (WD-89, under Factions: *Named Thieves Guild* (the `ThievesGuildFaction` members, Mercer
+  Factions, Thalmor, Imperial Legion, Stormcloaks, Guards, Housecarls, Dark Brotherhood, Thieves Guild and College of
+  Winterhold. The groups so far: College of Winterhold (WD-90, under Factions: *Named College of Winterhold*
+  (the `CollegeofWinterholdFaction` members and Savos's ghost) and *College of Winterhold Foes* (the MG07
+  Enthralled Wizards); Ancano and Estormo stay on Named Thalmor, the other questline foes on their kinds'
+  pages), Thieves Guild (WD-89, under Factions: *Named Thieves Guild* (the `ThievesGuildFaction` members, Mercer
   included, and Gallus) and *Thieves Guild Foes* (the Goldenglow mercenaries and Aringoth, Vald, the
   Nightingale Sentinels, the `WERJ02` holdup thieves); `WIThief` stays on Common Bandits), Dark Brotherhood (WD-88, under Factions: *Named Dark Brotherhood* (the Falkreath Sanctuary family, their
   quest and dead copies, the Dawnstar initiates) and *Dark Brotherhood Assassins* (the `WEJS28` assassins,
