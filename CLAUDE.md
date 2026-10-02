@@ -197,7 +197,9 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   and **Ghosts of the Tribunal** (the CC pack's Temple: Ordinators, Her Hands, priests; its Erden Relvel
   and Ash Zombies stay on their own pages), and **Miraak Cultists** (the `DLC2LCharCultist` ladder 12 · 19 ·
   27 · 36 · 46 with summoner copies; Miraak himself is on Uncategorised → *Miraak* for now, by the user's
-  call; his dragons, Acolytes, Seekers and Lurkers are on neither)), Undead (WD-73: draugr included,
+  call; his dragons, Acolytes, Seekers and Lurkers are on neither), **Blades** (Delphine, Esbern; the recruits are
+  followers with no record) and **Greybeards** (the four at High Hrothgar and Paarthurnax, level 10 from
+  `EncDragon01Fire`; the `MQ105PhantomFormActor` summon is on neither)), Undead (WD-73: draugr included,
   **Vampires** a sub-group (above); **Draugr** is a sub-group page with *Common Draugr*, *Draugr Warlock* and *Draugr Boss*,
   the Falmer layout; **Skeletons** likewise, with *Common Skeletons*, *Soul Cairn Undead*, *Shades* and
   *Bone Wolves (CC)*, and **Ghosts**, with *Common Ghosts*, *Ghost Bosses* and *Spectral Warhound*;
