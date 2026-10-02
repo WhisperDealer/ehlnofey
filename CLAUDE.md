@@ -139,7 +139,7 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Minor Factions (WD-79: one sub-group per small hostile faction; **Silver Hand** with *Common Silver
   Hand* and *Silver Hand Leaders*: wrappers that take only `Stats` from the bandit lists; Krev and the
   radiant camp leader are alias-named; and single family pages **Alik'r** (the `LCharAlikr*` ladder is
-  unused; the real Alik'r are `MS08`/`WERJ03` records plus the Lord's Mail CC ones), **Penitus Oculatus**
+  unused; the real Alik'r are `MS08`/`WERJ03` records plus the Lord's Mail CC ones, and the Redguard Elite Armaments Remnant Warriors, allies, by the user's call), **Penitus Oculatus**
   and **Morag Tong** (Dragonborn; takes `Stats` from the Reaver ladder; the Severins join by script)), Undead (WD-73: draugr included,
   vampires not; **Draugr** is a sub-group page with *Common Draugr*, *Draugr Warlock* and *Draugr Boss*,
   the Falmer layout; **Skeletons** likewise, with *Common Skeletons*, *Soul Cairn Undead* and *Shades*,
