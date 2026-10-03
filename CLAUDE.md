@@ -224,7 +224,7 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   NPCs, hold by hold; one page per hold (*Haafingar*, *Hjaalmarch*, *The Pale*, *Winterhold Hold*,
   *Eastmarch*, *The Rift*, *Whiterun Hold*, *Falkreath Hold*, *The Reach*, *Solstheim*), each with a
   city child (Solitude, Morthal, Dawnstar, Winterhold, Windhelm, Riften, Whiterun, Falkreath, Markarth,
-  Raven Rock) and a *<Hold> Countryside* child for the rest of the hold. A resident is every named NPC
+  Raven Rock) and a *<Hold> Countryside* child for the rest of the hold, plus an *Orc Strongholds* section (user, 2026-10-03): *Largashbur*, *Dushnikh Yal*, *Mor Khazgur*, *Narzulbur*, their residents kept off the hold pages. A resident is every named NPC
   whose home location (the `LCTN` `UniqueActorReferences`, else the placed ref's cell location) sits
   under the city's or the hold's `LCTN` tree; anyone already on another census page is left off (user,
   2026-10-03). Whiterun Hold, Haafingar and the Rift mapped; the rest not yet; Thorald Gray-Mane is filed on Whiterun though his only ref is at Northwatch, by the user's call), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
