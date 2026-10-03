@@ -107,6 +107,11 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   page cites the ticket), just three headed tables and **no prose**:
   1. **Records**: Record · Name · Level, one row per *distinct* enemy. Variants that inherit their
      level are dropped, not described.
+     **Also owns its level** (user, 2026-10-03; Frostbite Spider is the model): a short bullet list
+     under Records, not rows. For each Records row, name every record that uses it as its template
+     *without* `Stats` (so keeps its own level, e.g. the Helgen `MQ101FrostbiteSpider`), any same-race
+     record with no template filed elsewhere (point to its page), and one closing bullet that the rest
+     carry `Stats`. Check `TemplateFlags` across the masters and the CC plugins.
   2. **Lists that draw them**: List · Draws · Owner.
   3. **Placed only**: Name · Placed in (cell EditorID + FormKey, plus the quest alias if a quest owns
      it), for every enemy no list draws; an unused record goes here as "not placed".
@@ -120,8 +125,9 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
   Jira ticket → one child page per family**. **Factions** (user, 2026-10-02) is a top-level page
   that holds the faction groups: Forsworn, Dawnguard, Vigilants, Companions, Silver Hand, Minor
-  Factions, Thalmor, Imperial Legion, Stormcloaks, Guards, Housecarls, Dark Brotherhood, Thieves Guild and College of
-  Winterhold. The groups so far: College of Winterhold (WD-90, under Factions: *Named College of Winterhold*
+  Factions, Thalmor, Imperial Legion, Stormcloaks, Guards, Housecarls, Dark Brotherhood, Thieves Guild, College of
+  Winterhold and **Sovngarde** (user, 2026-10-03: everyone found in Sovngarde; records already on another
+  page get a pointer line). The groups so far: College of Winterhold (WD-90, under Factions: *Named College of Winterhold*
   (the `CollegeofWinterholdFaction` members and Savos's ghost) and *College of Winterhold Foes* (the MG07
   Enthralled Wizards); Ancano and Estormo stay on Named Thalmor, the other questline foes on their kinds'
   pages), Thieves Guild (WD-89, under Factions: *Named Thieves Guild* (the `ThievesGuildFaction` members, Mercer
@@ -180,7 +186,7 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Rieklings (WD-69: no group page; under World Creatures → Sentient),
   Daedra (WD-70: *Dremora* (the six-rung ladder, the one-offs, The Cause's and Arms of Chaos's
   Dremora), *Seeker*, *Lurker*, *Golden Saints & Dark Seducers* (Saints & Seducers; the hostile ones
-  are the AtrForge copies its quest spawns) and *Barbas*; **atronachs are out of the census** (user,
+  are the AtrForge copies its quest spawns), *Barbas* and *Shadow* (the CC Shadowrend doppelgangers, which copy the player's level; user, 2026-10-03); **atronachs are out of the census** (user,
   2026-10-02); the Dremora Butler and Merchant and the Daedric Princes are not enemies; the Princes'
   mortal followers are here too, by the user's call (2026-10-02): *The Afflicted* (`DA13`, ladder 1–24,
   Orchendor), *Boethiah Cultists* (bandit ladders, CC Goldbrand, the Champion), *Hunters of Hircine*,
@@ -207,7 +213,8 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   27 · 36 · 46 with summoner copies; Miraak himself and his dragons are on Dragons → *Dragonborn*; his
   Acolytes, Seekers and Lurkers are not), **Blades** (Delphine, Esbern; the recruits are
   followers with no record) and **Greybeards** (the four at High Hrothgar; Paarthurnax moved to Dragons → *Unique
-  Dragons*; the `MQ105PhantomFormActor` summon is on neither)), Undead (WD-73: draugr included,
+  Dragons*; the `MQ105PhantomFormActor` summon is on neither) and **Khajiit Caravans** (user, 2026-10-03:
+  the caravan Khajiit and Grushnag; Ma'randru-jo stays on *Dark Brotherhood Targets*)), Undead (WD-73: draugr included,
   **Vampires** a sub-group (above); **Draugr** is a sub-group page with *Common Draugr*, *Draugr Warlock* and *Draugr Boss*,
   the Falmer layout; **Skeletons** likewise, with *Common Skeletons*, *Soul Cairn Undead*, *Shades* and
   *Bone Wolves (CC)*, and **Ghosts**, with *Common Ghosts*, *Ghost Bosses* and *Spectral Warhound*;
@@ -231,7 +238,7 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Raven Rock; Solstheim also has *Skaal Village*, by the user's call) and a *<Hold> Countryside* child for the rest of the hold, plus an *Orc Strongholds* section (user, 2026-10-03): *Largashbur*, *Dushnikh Yal*, *Mor Khazgur*, *Narzulbur*, their residents kept off the hold pages. A resident is every named NPC
   whose home location (the `LCTN` `UniqueActorReferences`, else the placed ref's cell location) sits
   under the city's or the hold's `LCTN` tree; anyone already on another census page is left off (user,
-  2026-10-03). Every hold and Solstheim mapped (the College sits under the hold LCTN but its stragglers are filed on Winterhold with the town); Thorald Gray-Mane is filed on Whiterun though his only ref is at Northwatch, by the user's call), Leveled Uniques (WD-93, top-level, user 2026-10-03: every unique weapon or armour handed out through an LVLI of copies of one named item at rising levels, e.g. Chillrend 1 · 11 · 19 · 27 · 36 · 46; 28 lists plus Miraak's four fight lists, and one CC set (Spell Knight quest reward, Iron 1 · Steel 10 · Ebony 20 through nested lists); the CC player homes' display FormLists name every vanilla variant, so collapsing a unique must keep them valid; the Amulet of Articulation's seven copies are all level 1, so random, not leveled; the rebuild will pick one static variant each), Loot (WD-94, top-level, user 2026-10-03: every
+  2026-10-03). Every hold and Solstheim mapped (the College sits under the hold LCTN but its stragglers are filed on Winterhold with the town); Thorald Gray-Mane is filed on Whiterun though his only ref is at Northwatch, by the user's call; named *enemies* with a home go here too (user, 2026-10-03), e.g. Ehlhiel and Zaharia on *Falkreath Countryside*; where a location has no hold parent the home is the nearest map marker's hold, said in the row. **World Encounters** (user, 2026-10-03) is a group under World for people met on the road: *Wanderers*, *Bounty Hunters*, *Peddlers*, *Adventurers*, *Hunters*, *Sailors*, *Couriers*, *Random Encounter NPCs*), Leveled Uniques (WD-93, top-level, user 2026-10-03: every unique weapon or armour handed out through an LVLI of copies of one named item at rising levels, e.g. Chillrend 1 · 11 · 19 · 27 · 36 · 46; 28 lists plus Miraak's four fight lists, and one CC set (Spell Knight quest reward, Iron 1 · Steel 10 · Ebony 20 through nested lists); the CC player homes' display FormLists name every vanilla variant, so collapsing a unique must keep them valid; the Amulet of Articulation's seven copies are all level 1, so random, not leveled; the rebuild will pick one static variant each), Loot (WD-94, top-level, user 2026-10-03: every
   container and merchant chest and the lists they draw, for the `flattening.md` §5.4 decision; a list is
   *gated* when it or any list under it has an entry above level 1. **Containers** (*Dungeon Chests*, *Boss
   Chests*, *Clutter Containers*, *Unique Containers*, *Ungated Containers*: 530 records, 17,059 placed
@@ -258,8 +265,13 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Injectors* (52 `AddForm` groups: `DLC2Init` Nordic gear into the bandit lists at 23/25, the CC armour
   and weapon packs at 1–48)), Uncategorised (WD-75: the holding group for anything that fits no group yet; the 2026-10-03 sweep of every NPC record in the masters and the 74 CC plugins against every census page put the leftovers on *Unfiled NPCs* (named: wanderers, random encounters, Prince voices, Sovngarde, quest NPCs, CC) and *Unfiled Leveled Wrappers* (unnamed wrappers grouped by the template they draw); audio templates, test actors, chargen presets, voice-type holders and mannequins were left out; CC enemies
   in it go one level deeper, under its **Creation Club** page, one child per pack; *Forsworn Level
-  Borrowers* holds the non-Forsworn enemies that take `Stats` from a Forsworn list: Sanctuary
-  Guardians, Silvia, Moric Sidrey, to be filed later). CC creatures
+  Borrowers* is retired (user, 2026-10-03): the Sanctuary Guardians are on *Dark Brotherhood
+  Assassins*, Silvia on *Witches*, Moric Sidrey on *Named Vigilants*, each with a note that it takes
+  `Stats` from a Forsworn list or template; 2026-10-03 re-categorisation, user: the wrappers went to
+  their families, the named NPCs with a home to World, the encounter NPCs to World Encounters, the
+  Soul Cairn souls to *Soul Cairn Undead*, Queen Potema to *Ghost Bosses*, the CC Shadow to Daedra →
+  *Shadow*; *Warlock Level Borrowers* is retired; what stays here has no home or no decided group.
+  A moved record that takes `Stats` from another family carries a "borrows its level" note). CC creatures
   are filed by kind, not by pack: CC Daedra under Daedra, CC undead under Undead, CC creatures on
   (or beside) their vanilla family's page under World Creatures (Frenzied Mudcrabs on Mudcrab,
   Fangtusk on Horker, Corrupted Spriggans on Spriggan). **Confluence titles are unique per space**, so a group and a family
