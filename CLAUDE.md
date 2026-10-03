@@ -220,7 +220,11 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   the Skeletal Dragon, Naaslaarum, Voslaarum) and *Dragonborn* (Miraak, merged from the retired
   Uncategorised → *Miraak* page; Sahrotaar, Krosulhah, the MQ06 dragons, the Ancient Dragonborn);
   the Spectral Dragon summon is on Constructs & Dragons, though no
-  NPC, tome or quest holds its `dlc2DB*` spells), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
+  NPC, tome or quest holds its `dlc2DB*` spells), World (WD-92, top-level, user 2026-10-03: the named
+  NPCs, hold by hold; one page per hold (*Haafingar*, *Hjaalmarch*, *The Pale*, *Winterhold Hold*,
+  *Eastmarch*, *The Rift*, *Whiterun Hold*, *Falkreath Hold*, *The Reach*, *Solstheim*), each with a
+  city child (Solitude, Morthal, Dawnstar, Winterhold, Windhelm, Riften, Whiterun, Falkreath, Markarth,
+  Raven Rock) and a *<Hold> Countryside* child for the rest of the hold; skeleton only, not yet mapped), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
   in it go one level deeper, under its **Creation Club** page, one child per pack; *Forsworn Level
   Borrowers* holds the non-Forsworn enemies that take `Stats` from a Forsworn list: Sanctuary
   Guardians, Silvia, Moric Sidrey, to be filed later). CC creatures
