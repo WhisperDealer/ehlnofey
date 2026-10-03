@@ -224,7 +224,10 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   NPCs, hold by hold; one page per hold (*Haafingar*, *Hjaalmarch*, *The Pale*, *Winterhold Hold*,
   *Eastmarch*, *The Rift*, *Whiterun Hold*, *Falkreath Hold*, *The Reach*, *Solstheim*), each with a
   city child (Solitude, Morthal, Dawnstar, Winterhold, Windhelm, Riften, Whiterun, Falkreath, Markarth,
-  Raven Rock) and a *<Hold> Countryside* child for the rest of the hold; skeleton only, not yet mapped), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
+  Raven Rock) and a *<Hold> Countryside* child for the rest of the hold. A resident is every named NPC
+  whose home location (the `LCTN` `UniqueActorReferences`, else the placed ref's cell location) sits
+  under the city's or the hold's `LCTN` tree; anyone already on another census page is left off (user,
+  2026-10-03). Whiterun Hold mapped; the rest not yet), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
   in it go one level deeper, under its **Creation Club** page, one child per pack; *Forsworn Level
   Borrowers* holds the non-Forsworn enemies that take `Stats` from a Forsworn list: Sanctuary
   Guardians, Silvia, Moric Sidrey, to be filed later). CC creatures
