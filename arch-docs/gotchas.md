@@ -313,6 +313,13 @@ plausible-sounding claims are cheapest to make and most expensive to act on:
   `09CAF9`), whose `Base:` is the `CONT` (`MerchantWhiterunBelethorsGoodsChest` `09CAF8`). Resolve
   it through a placed-ref index before reading the stock. The 240 vendor factions resolve to 146 chest records. An `LVLI`'s
   `ChanceNone` is serialized as a fraction (`0.85`), not a percentage.
+- **A leveled spell list reads the caster's skill, not a level** (2026-10-03, the Level Gates census)
+  `[community]`. An `LVSP` entry's `Level` is compared against the caster's skill in the spell's school
+  (CK wiki *LeveledSpell*, quoted by search; not re-tested). The data agree: `DLC2ZahkriisosShockSpell`
+  gates at 100 and `DLC2LSpellConjureLeftHand` at 75, unreachable by their casters' level caps (60,
+  70). Every user of a multi-tier `LVSP` has `AutoCalcStats`, so its skills follow its level, and the
+  player's level reaches the spell only through a `PcLevelMult` caster. Fixing the caster's level is
+  enough; the `LVSP` needs no flattening. Confirm in game before relying on it.
 - **Publishing generated tables to Confluence: collapse repetition, then verify by ADF** (2026-10-03,
   the Loot census). The MCP takes the page body as a tool argument, so a generated file has to be
   re-emitted verbatim. Long, highly repetitive bodies (identical rows, the same name at four levels)

@@ -247,8 +247,10 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Start Gates* (15 story manager nodes, e.g. Ebony Warrior ≥ 80; quest scripts; CC
   `ccStartAfterChargenScript` quests), *Random Encounter Gates* (41 quests), *Dialogue Gates* (42
   lines), *Level-Scaled Effects* (trap effects, the exploding Dwarven spiders, Civil War ally health,
-  Bloodskal, Aetherial Staff, werewolf/Vampire Lord tiers) and *Level-Scaled Rewards* (Companions
-  radiant and CC Fishing gold)), Quest Rewards (WD-96, top-level, user 2026-10-03: every gated list
+  Bloodskal, Aetherial Staff, werewolf/Vampire Lord tiers), *Level-Scaled Rewards* (Companions
+  radiant and CC Fishing gold) and *Leveled Spell Lists* (the 13 multi-tier `LVSP`; they resolve by
+  the caster's school skill `[community]`, which `AutoCalcStats` derives from its level, so a fixed
+  NPC level fixes the spell tier)), Quest Rewards (WD-96, top-level, user 2026-10-03: every gated list
   reaching the player or an actor outside containers, NPC records and outfits, each use classified from
   the decompiled scripts. *Reward Lists* (75; the four `LvlQuestReward01`–`04` gold ladders, 250–1,800
   by level 40, sit under most generic rewards), *Reward Givers* (128 quests), *Mining and Fishing*
