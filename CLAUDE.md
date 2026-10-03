@@ -200,10 +200,10 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   and **Morag Tong** (Dragonborn; takes `Stats` from the Reaver ladder; the Severins join by script),
   and **Ghosts of the Tribunal** (the CC pack's Temple: Ordinators, Her Hands, priests; its Erden Relvel
   and Ash Zombies stay on their own pages), and **Miraak Cultists** (the `DLC2LCharCultist` ladder 12 · 19 ·
-  27 · 36 · 46 with summoner copies; Miraak himself is on Uncategorised → *Miraak* for now, by the user's
-  call; his dragons, Acolytes, Seekers and Lurkers are on neither), **Blades** (Delphine, Esbern; the recruits are
-  followers with no record) and **Greybeards** (the four at High Hrothgar and Paarthurnax, level 10 from
-  `EncDragon01Fire`; the `MQ105PhantomFormActor` summon is on neither)), Undead (WD-73: draugr included,
+  27 · 36 · 46 with summoner copies; Miraak himself and his dragons are on Dragons → *Dragonborn*; his
+  Acolytes, Seekers and Lurkers are not), **Blades** (Delphine, Esbern; the recruits are
+  followers with no record) and **Greybeards** (the four at High Hrothgar; Paarthurnax moved to Dragons → *Unique
+  Dragons*; the `MQ105PhantomFormActor` summon is on neither)), Undead (WD-73: draugr included,
   **Vampires** a sub-group (above); **Draugr** is a sub-group page with *Common Draugr*, *Draugr Warlock* and *Draugr Boss*,
   the Falmer layout; **Skeletons** likewise, with *Common Skeletons*, *Soul Cairn Undead*, *Shades* and
   *Bone Wolves (CC)*, and **Ghosts**, with *Common Ghosts*, *Ghost Bosses* and *Spectral Warhound*;
@@ -212,7 +212,15 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   carries `ActorTypeDaedra`; their summons are on Conjured → *Undead Summons*), Conjured (WD-74: anything that exists only as a summon; a placed version stays with its
   family; sub-groups **Summoned Creatures** (*Summoned Atronachs*, *Familiars & Spirit Animals*,
   *Undead Summons*, *Daedric Summons*, *Constructs & Dragons*) and **Summoned NPCs** (*Summoned
-  Dremora*, *Heroes & Spirits*), each page with a "Summoned by" table: player source and NPC casters), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
+  Dremora*, *Heroes & Spirits*), each page with a "Summoned by" table: player source and NPC casters),
+  Dragons (WD-91, top-level, user 2026-10-03: *Common Dragons* (`EncDragon01–05` 10 · 20 · 30 · 40 · 50,
+  Serpentine 58, Revered 62, Legendary 75; `LCharDragonAny`, `DLC2LCharDragonAny`), *Unique Dragons*
+  (Alduin, still a dragon by the user's call; Paarthurnax, moved from Greybeards; the named MQ dragons, which **are** NPC records on race
+  109C7C templated through `lvlDragon`/`lvlMQ104Dragon`/`lvlMQDragon`; Odahviing, Vulthuryol, Durnehviir,
+  the Skeletal Dragon, Naaslaarum, Voslaarum) and *Dragonborn* (Miraak, merged from the retired
+  Uncategorised → *Miraak* page; Sahrotaar, Krosulhah, the MQ06 dragons, the Ancient Dragonborn);
+  the Spectral Dragon summon is on Constructs & Dragons, though no
+  NPC, tome or quest holds its `dlc2DB*` spells), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
   in it go one level deeper, under its **Creation Club** page, one child per pack; *Forsworn Level
   Borrowers* holds the non-Forsworn enemies that take `Stats` from a Forsworn list: Sanctuary
   Guardians, Silvia, Moric Sidrey, to be filed later). CC creatures

@@ -108,7 +108,7 @@ Every questline's final antagonist is in this group. That is consistent with
 
 ---
 
-## 3. Named dragons — mostly not records at all
+## 3. Named dragons — named records that take their level from a list
 
 Only **five** dragons in `Skyrim.esm` exist as their own named NPC records `[verified]`:
 
@@ -120,13 +120,26 @@ Only **five** dragons in `Skyrim.esm` exist as their own named NPC records `[ver
 | `Odahviing` | Odahviing | static 1 (templated) |
 | `dunLabyrinthianUndeadDragon` | Skeletal Dragon | static 20 |
 
-**Mirmulnir, Sahloknir, Vuljotnaak, Nahagliiv, Viinturuth, Krosulhah, Naaslaarum and Voslaarum have no
-NPC record.** They are generic `EncDragon0n` actors whose names are applied at the *reference* level.
-`[verified]` — searching every NPC record's English `Name:` for those strings returns nothing.
+> **Correction (2026-10-03, WD-91 census) `[verified]`:** the claim below that the other named dragons
+> have no NPC record was wrong. Each one has its own named record on race `109C7C`, not `DragonRace`, so a
+> race-keyed search misses them. Each takes `Stats` from a leveled wrapper:
+>
+> | Record | Name | Level owner |
+> |---|---|---|
+> | `MQ104Dragon` 01CA05 | Mirmulnir | `lvlMQ104Dragon` → `MQ104LCharDragon` 0F8A4D (10–50) |
+> | `MQ106Dragon` 032D9B, `MQResurrectDragon1–3` 0FE430–0FE432 | Sahloknir, Vuljotnaak, Nahagliiv, Viinturuth | `lvlDragon` → `LCharDragonAny` |
+> | `DLC2MQ05Dragon` 017F87:Dragonborn.esm | Krosulhah | `DLC2lvlMQ05Dragon` → `DLC2MQ05LCharDragonNEW` (30–50) |
+> | `DLC1lvlDragonNaaslaarum` 010E9C, `…Voslaarum` 010E99 (Dawnguard.esm) | Naaslaarum, Voslaarum | `DLC1lvlDragonIceLake` → `DLC1LCharDragonIceLake` (10–62) |
+>
+> Odahviing's "static 1" is likewise inert: `Stats` comes from `lvlMQDragon` → `MQLCharDragonFire`
+> (20–50). The full census is on Confluence, Dragons (WD-91).
 
-This is the same pattern as **Vahlok** in Dragonborn (`enemy-taxonomy.md` §2.2), and it means a rule
-keyed on "named dragons" finds five, not thirteen. The generic dragon ladder is what actually governs
-them: `LCharDragonAny` at gates 1/18/27/36/45 → levels 10/20/30/40/50.
+~~**Mirmulnir, Sahloknir, Vuljotnaak, Nahagliiv, Viinturuth, Krosulhah, Naaslaarum and Voslaarum have no
+NPC record.** They are generic `EncDragon0n` actors whose names are applied at the *reference* level.~~
+(Superseded; see the correction above.)
+
+The generic dragon ladder is what actually governs them: `LCharDragonAny` at gates 1/18/27/36/45 →
+levels 10/20/30/40/50 (Dawnguard adds 59 → 62 and 78 → 75).
 
 ---
 
@@ -313,7 +326,7 @@ covers the base game entirely; Solstheim and the Soul Cairn need the range exten
    editing a single NPC record — the same lever `dungeons.md` §1 identified for dungeon bosses.
 3. **Two bosses are literally level 1** — Kyr and Titus Mede II. Both survive only because vanilla
    zones are floors. Under a capped world they need explicit levels or they become jokes.
-4. **Named dragons are five records, not thirteen.** Handle the rest through `LCharDragonAny`.
+4. **Most named dragons take `Stats` from a leveled list** (see §3); fixing their level means fixing the list or the record, not the reference.
 5. **Extend the tier ladder past 50 for DLC**, or accept that Karstaag (90) and the Ebony Warrior (80)
    sit outside it as documented exceptions.
 6. **The `_BF_` banded records are prior art.** Dawnguard's Forgotten Vale enemies use explicit
