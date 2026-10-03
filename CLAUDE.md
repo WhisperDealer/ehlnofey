@@ -227,7 +227,7 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Raven Rock) and a *<Hold> Countryside* child for the rest of the hold, plus an *Orc Strongholds* section (user, 2026-10-03): *Largashbur*, *Dushnikh Yal*, *Mor Khazgur*, *Narzulbur*, their residents kept off the hold pages. A resident is every named NPC
   whose home location (the `LCTN` `UniqueActorReferences`, else the placed ref's cell location) sits
   under the city's or the hold's `LCTN` tree; anyone already on another census page is left off (user,
-  2026-10-03). Whiterun Hold, Haafingar, the Rift, the Reach, Winterhold and the Pale mapped (the College sits under the hold LCTN but its stragglers are filed on Winterhold with the town); the rest not yet; Thorald Gray-Mane is filed on Whiterun though his only ref is at Northwatch, by the user's call), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
+  2026-10-03). Whiterun Hold, Haafingar, the Rift, the Reach, Winterhold, the Pale and Hjaalmarch mapped (the College sits under the hold LCTN but its stragglers are filed on Winterhold with the town); the rest not yet; Thorald Gray-Mane is filed on Whiterun though his only ref is at Northwatch, by the user's call), Uncategorised (WD-75: the holding group for anything that fits no group yet; CC enemies
   in it go one level deeper, under its **Creation Club** page, one child per pack; *Forsworn Level
   Borrowers* holds the non-Forsworn enemies that take `Stats` from a Forsworn list: Sanctuary
   Guardians, Silvia, Moric Sidrey, to be filed later). CC creatures
