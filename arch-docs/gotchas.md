@@ -308,6 +308,17 @@ plausible-sounding claims are cheapest to make and most expensive to act on:
   same key and cuts the entry short (Severio Pelagia lost his `Base:`). A persistent ref often has no
   `PersistentLocation`; fall back to the location's `UniqueActorReferences`, then the cell's or
   worldspace's `Location:`.
+- **A merchant's chest is a placed ref, not a container record** (2026-10-03, the Loot census). A
+  vendor faction's `MerchantContainer:` holds the FormKey of a `PlacedObject` (Belethor:
+  `09CAF9`), whose `Base:` is the `CONT` (`MerchantWhiterunBelethorsGoodsChest` `09CAF8`). Resolve
+  it through a placed-ref index before reading the stock. The 240 vendor factions resolve to 146 chest records. An `LVLI`'s
+  `ChanceNone` is serialized as a fraction (`0.85`), not a percentage.
+- **Publishing generated tables to Confluence: collapse repetition, then verify by ADF** (2026-10-03,
+  the Loot census). The MCP takes the page body as a tool argument, so a generated file has to be
+  re-emitted verbatim. Long, highly repetitive bodies (identical rows, the same name at four levels)
+  got cut off mid-row twice. Collapse first: one row per shared record, "same as X", level ranges.
+  Then check: fetch the page with `contentFormat: "adf"` (the result is always large enough to be saved
+  to a file) and diff each table row against the source file with a script.
 
 ## Workspace — FOMOD, Papyrus, Spriggit
 
