@@ -23,6 +23,10 @@ Serialize/deserialize commands are in `README.md`.
 - **oculory-rag** (optional MCP): `search` for the knowledge base, `game_search` / `game_read` for the
   decompiled game (records and Papyrus, by EditorID, FormKey or name). Use them before grepping
   `reference/` by hand, pass `game="skyrim"`, and cite the doc id or FormKey.
+- **Game scripts, decompiled:** `reference/scripts/psc/` (gitignored) holds all 15,161 vanilla, DLC
+  and CC scripts (DLC scripts live inside `Skyrim - Misc.bsa`; CC ones in the `cc*.bsa` of the Steam
+  Data folder). Grep it for script behaviour. Rebuild with `bsa-extract` (`--regex '\.pex$'`) then
+  `pex-decompile`.
 - **Papyrus:** Ehlnofey has no scripts yet. The toolchain (extract → decompile → compile) is in
   `README.md` and the `bsa-extract` / `pex-decompile` / `papyrus-compile` skills. Record any import
   directory a script needs here the first time it is needed.
@@ -236,7 +240,15 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Lists** (the 569 lists a container names directly, split *Chest Loot* / *Shared Item* / *Flat*, and
   the 1,406 gated ladders under them by kind (gear, enchanted weapon / armour / jewellery, consumables,
   valuables, magic items); the 912 `SublistEnch*` lists collapse to 15 material-tier level patterns,
-  e.g. Ebony and Stalhrim 37 · 40 · 43)), Uncategorised (WD-75: the holding group for anything that fits no group yet; the 2026-10-03 sweep of every NPC record in the masters and the 74 CC plugins against every census page put the leftovers on *Unfiled NPCs* (named: wanderers, random encounters, Prince voices, Sovngarde, quest NPCs, CC) and *Unfiled Leveled Wrappers* (unnamed wrappers grouped by the template they draw); audio templates, test actors, chargen presets, voice-type holders and mannequins were left out; CC enemies
+  e.g. Ebony and Stalhrim 37 · 40 · 43)), Level Gates (WD-95, top-level, user 2026-10-03: everything
+  outside the leveled lists that reads the player's level, from record conditions and the decompiled
+  scripts. *Encounter Gates* (the 12 `LevelGate*` globals, 7 of them read by nothing; the
+  `defaultEnableEncLinkedRef` triggers; other scripted spawn gates; aliases filled by level), *Quest
+  Start Gates* (15 story manager nodes, e.g. Ebony Warrior ≥ 80; quest scripts; CC
+  `ccStartAfterChargenScript` quests), *Random Encounter Gates* (41 quests), *Dialogue Gates* (42
+  lines), *Level-Scaled Effects* (trap effects, the exploding Dwarven spiders, Civil War ally health,
+  Bloodskal, Aetherial Staff, werewolf/Vampire Lord tiers) and *Level-Scaled Rewards* (Companions
+  radiant and CC Fishing gold)), Uncategorised (WD-75: the holding group for anything that fits no group yet; the 2026-10-03 sweep of every NPC record in the masters and the 74 CC plugins against every census page put the leftovers on *Unfiled NPCs* (named: wanderers, random encounters, Prince voices, Sovngarde, quest NPCs, CC) and *Unfiled Leveled Wrappers* (unnamed wrappers grouped by the template they draw); audio templates, test actors, chargen presets, voice-type holders and mannequins were left out; CC enemies
   in it go one level deeper, under its **Creation Club** page, one child per pack; *Forsworn Level
   Borrowers* holds the non-Forsworn enemies that take `Stats` from a Forsworn list: Sanctuary
   Guardians, Silvia, Moric Sidrey, to be filed later). CC creatures
