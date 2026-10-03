@@ -299,6 +299,15 @@ plausible-sounding claims are cheapest to make and most expensive to act on:
 - **Follow the template chain before concluding.** A leveled spawn's stats can come from an actor
   template rather than the NPC record you are looking at, so "this NPC is level 6" is a claim about
   whichever record actually owns the level. Trace it.
+- **Placed refs live in two shapes; a scanner must read both** (2026-10-03, the World census). Cell
+  files (`Cells/…/RecordData.yaml`) list refs at column 0 (`- MutagenObjectType: PlacedNpc`, fields
+  at 2 spaces). A worldspace's **persistent cell** is nested inside the worldspace's own
+  `Worldspaces/<World>/RecordData.yaml`, two spaces deeper. A column-0 split missed ~1,000 refs,
+  among them Brynjolf, Maul and every carriage driver. Also bound each entry by indentation, not by
+  the next `- MutagenObjectType:`: a script property inside a ref (`ScriptObjectProperty`) uses the
+  same key and cuts the entry short (Severio Pelagia lost his `Base:`). A persistent ref often has no
+  `PersistentLocation`; fall back to the location's `UniqueActorReferences`, then the cell's or
+  worldspace's `Location:`.
 
 ## Workspace — FOMOD, Papyrus, Spriggit
 
