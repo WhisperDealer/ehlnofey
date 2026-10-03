@@ -248,7 +248,13 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   `ccStartAfterChargenScript` quests), *Random Encounter Gates* (41 quests), *Dialogue Gates* (42
   lines), *Level-Scaled Effects* (trap effects, the exploding Dwarven spiders, Civil War ally health,
   Bloodskal, Aetherial Staff, werewolf/Vampire Lord tiers) and *Level-Scaled Rewards* (Companions
-  radiant and CC Fishing gold)), Uncategorised (WD-75: the holding group for anything that fits no group yet; the 2026-10-03 sweep of every NPC record in the masters and the 74 CC plugins against every census page put the leftovers on *Unfiled NPCs* (named: wanderers, random encounters, Prince voices, Sovngarde, quest NPCs, CC) and *Unfiled Leveled Wrappers* (unnamed wrappers grouped by the template they draw); audio templates, test actors, chargen presets, voice-type holders and mannequins were left out; CC enemies
+  radiant and CC Fishing gold)), Quest Rewards (WD-96, top-level, user 2026-10-03: every gated list
+  reaching the player or an actor outside containers, NPC records and outfits, each use classified from
+  the decompiled scripts. *Reward Lists* (75; the four `LvlQuestReward01`–`04` gold ladders, 250–1,800
+  by level 40, sit under most generic rewards), *Reward Givers* (128 quests), *Mining and Fishing*
+  (every ore vein rolls `lItemGems10`; CC fishing catches), *Alias Inventories* (21) and *Item List
+  Injectors* (52 `AddForm` groups: `DLC2Init` Nordic gear into the bandit lists at 23/25, the CC armour
+  and weapon packs at 1–48)), Uncategorised (WD-75: the holding group for anything that fits no group yet; the 2026-10-03 sweep of every NPC record in the masters and the 74 CC plugins against every census page put the leftovers on *Unfiled NPCs* (named: wanderers, random encounters, Prince voices, Sovngarde, quest NPCs, CC) and *Unfiled Leveled Wrappers* (unnamed wrappers grouped by the template they draw); audio templates, test actors, chargen presets, voice-type holders and mannequins were left out; CC enemies
   in it go one level deeper, under its **Creation Club** page, one child per pack; *Forsworn Level
   Borrowers* holds the non-Forsworn enemies that take `Stats` from a Forsworn list: Sanctuary
   Guardians, Silvia, Moric Sidrey, to be filed later). CC creatures
