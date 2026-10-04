@@ -2,7 +2,6 @@
 import Base from '../../layouts/Base.astro';
 import LevelStrip from '../../components/LevelStrip.astro';
 import BandChip from '../../components/BandChip.astro';
-import Stats from '../../components/Stats.astro';
 import { bandById, href, loadCensus } from '../../lib/census.ts';
 import { levelText, md, ref, refs } from '../../lib/format.ts';
 
@@ -100,8 +99,6 @@ const PLACED_FOLD = 4; // more locations than this collapse behind a summary
       </div>
     </>
   )}
-
-  {f.stats && <Stats stats={f.stats} />}
 
   {f.loot && (
     <>

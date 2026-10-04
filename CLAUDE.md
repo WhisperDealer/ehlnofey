@@ -137,6 +137,9 @@ published at **https://whisperdealer.github.io/ehlnofey/** (Astro, `site/`; depl
   resolves through (`LVLN` and `LVLI`, with entries, levels, counts and gate flags).
 - **Perks are out of scope for now.** They may join the census in a later update; don't document them
   unless the user asks.
+- **Stats are out of scope** (user, 2026-10-04): the mod adjusts levels only. No health, magicka,
+  stamina, skills, class, AI or auto-calc on census pages (a Stats section was added to Miraak and
+  removed the same day).
 - **Document, don't author.** This phase writes no records in `EhlnofeyESP`. Record what vanilla
   (plus DLC and the CC masters) actually does, with FormKeys and confidence marks (Guardrails 1 and 9).
   Design changes that fall out of it go into `archetype-tiers.md` once the user decides them.
