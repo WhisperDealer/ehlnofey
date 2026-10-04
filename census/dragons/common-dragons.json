@@ -248,7 +248,7 @@
   "ownsLevel": {
     "confidence": "verified",
     "items": [
-      "Changing `EncDragon01Fire` 01CA03 also needs `AlduinBase` 08E4F1 (Alduin, PC×1.2 [10–100], on *Alduin*): it uses 01CA03 as its template but not for `Stats`. Every other rung row and `BleakFallsDragon` also take their look from 01CA03 (the Serpentine rows from `EncDragon05Frost`) and keep their own levels.",
+      "`AlduinBase` (on *Alduin*), every other rung and `BleakFallsDragon` use `EncDragon01Fire` 01CA03 as a template for their look but set their own level, so changing it does not move them; the Serpentine rows use `EncDragon05Frost` the same way. Paarthurnax and the MQ206 and MQ306 dragons do follow its level (last bullet).",
       "The other rows: no other record keeps its own level.",
       "`dunLabyrinthianUndeadDragon` 09192C (the Skeletal Dragon, 20) is a dragon with no template; it is on *Unique Dragons*.",
       "Every other dragon record (the `NoScript` and `_MQ06` copies, the Frost and Snow variants, `lvlDragon`, `DLC2lvlDragon` and the other wrappers, the MQ206 and MQ306 dragons, the Skuldafn copies, Paarthurnax, Vulthuryol, Sahrotaar) carries `Stats` and follows its template or list."
