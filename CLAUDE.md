@@ -114,8 +114,9 @@ rules).
 - **`census/` is the source of truth for every migrated group**: `census/<group>/group.json` (the group
   page) plus one `<family>.json` per family page; `census/bands.json` is the home page. The schema is
   `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
-  everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons.** Every
-  other group stays Confluence-first until it is migrated.
+  everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons; Daedra in part** (Dremora, Seeker, Lurker,
+  Golden Saints & Dark Seducers; `census/daedra/group.json` lists only those, so don't push the Daedra
+  group mirror until the rest are in). Every other group stays Confluence-first until it is migrated.
 - **The site is public; keep it free of internal tooling** (user, 2026-10-04): no Jira ticket
   numbers (the tickets are deleted; `WD-xx` in the docs is history only) and no Confluence links or
   page ids in `census/` or `site/src/`. Confluence is internal documentation that supports the site.
