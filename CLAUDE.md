@@ -141,14 +141,15 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   wrapper, MS06 cultists, Southfringe crew), *Warlock Bosses* (7–40; the 50
   rung is in no list; CC Necromantic Grimoire injects boss leaves), *Witches* (Witch 4, Hag 8),
   *Named Warlocks* (`DA03Wizard` is Sebastian Lort by quest alias, not Malkoran); the Soul Cairn mage
-  souls are on Uncategorised → *Warlock Level Borrowers*; the CC Dawnfang Guardians are ghosts, on
+  souls are on Undead → *Soul Cairn Undead*; the CC Dawnfang Guardians are ghosts, on
   *Ghost Bosses*, by the user's call), Bandits
   (WD-86, top-level: *Common Bandits* (the six-rung ladder Bandit … Bandit Marauder, 1–25, the unnamed
   `LvlBandit*` wrappers and the gangs: Blackblood, Blood Horkers, Dainty Sload, Cragslane, Mistwatch,
   Ratway, Black-Briar, thieves, CC Saints/Seducers), *Bandit Chiefs* (boss leaves own 6/10/16/21/28;
   the 14 CC armor packs inject boss sublists into `LCharBanditBoss` at runtime), *Reavers* (the DLC2
   ladder and its bosses), *Named Bandits*; the group page holds the injector table; non-bandits that
-  take `Stats` from a bandit list are on Uncategorised → *Bandit Level Borrowers*), Housecarls
+  take `Stats` from a bandit list live on their own family's page with a "borrows its level" note;
+  the undecided ones are still on Uncategorised → *Bandit Level Borrowers*), Housecarls
   (WD-85, under Factions: *Player Housecarls* (the five hold housecarls and the three HearthFires
   ones) and *Jarls* (both Jarls of every hold with their housecarls; Hrongar, Bryling, Erikur are in
   the jarl faction but hold nothing)), Guards (WD-84, under
