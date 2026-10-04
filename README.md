@@ -76,7 +76,9 @@ draw it, where it is placed, and the band it is meant to land in.
 
 The data is JSON in [`census/`](census/), which is the source of truth (the Confluence census pages are
 generated mirrors of it). The site is an [Astro](https://astro.build) project in `site/`, published
-by `.github/workflows/pages.yml`. The raw JSON is served too, at `/ehlnofey/data/index.json`.
+by `.github/workflows/pages.yml`. **Deploys are manual**: pushing does not publish. Run the
+*Census site* workflow from the Actions tab (Run workflow) or with `gh workflow run pages.yml --ref main`.
+The raw JSON is served too, at `/ehlnofey/data/index.json`.
 Dragons is the first family migrated.
 
 ```sh

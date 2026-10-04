@@ -18,7 +18,7 @@ runs:
   steps:
     - name: Cache Spriggit CLI
       id: cache-spriggit
-      uses: actions/cache@v4
+      uses: actions/cache@v6
       with:
         path: .tools/spriggit
         key: spriggit-cli-${{ inputs.spriggit-version }}

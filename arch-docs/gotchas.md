@@ -420,8 +420,12 @@ plausible-sounding claims are cheapest to make and most expensive to act on:
 - **Confluence pushes: render, then send the output verbatim.** `npm run confluence -- <group>/<family>`
   is the only source of a mirror body. After pushing, diff a fresh render against what was sent.
 - **Deploy:** GitHub Pages is set to build from GitHub Actions (`build_type: workflow`, enabled
-  2026-10-04). A push to `main` touching `census/` or `site/` runs `.github/workflows/pages.yml`, and the
-  site is live at https://whisperdealer.github.io/ehlnofey/ in about a minute. Open warning:
-  `actions/checkout@v4` targets the retiring Node 20 runtime.
+  2026-10-04). **Manual deploys only**: `.github/workflows/pages.yml` has just `workflow_dispatch`, so a
+  push never publishes. Run it from the Actions tab or `gh workflow run pages.yml --ref main`; the site
+  at https://whisperdealer.github.io/ehlnofey/ updates in about a minute.
+- **Keep GitHub actions on Node 24 majors.** The `@v4` majors of `checkout`, `cache` and
+  `upload-artifact` run on the retiring Node 20 runtime and print a deprecation warning on every run.
+  Since 2026-10-04 the repo uses `checkout@v7`, `cache@v6`, `upload-artifact@v7`. Before bumping, check
+  `runs.using` in the action's `action.yml` at the new tag, and that every `with:` input still exists.
 - See `arch-docs/skyrim-record-patterns.md` for the in-game failure modes that produce no build
   error — that list is the single highest-value read before authoring a new mechanic.

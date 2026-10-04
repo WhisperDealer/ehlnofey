@@ -106,7 +106,9 @@ is **paused**. Before any more records are authored, we map every enemy and docu
 
 **The census site (since 2026-10-04).** The census is moving from Confluence into the repo as JSON and is
 **live** at **https://whisperdealer.github.io/ehlnofey/** (Astro, `site/`; GitHub Pages builds from
-Actions: `.github/workflows/pages.yml` deploys on every push to `main` that touches `census/` or `site/`).
+Actions). **Deploys are manual** (user, 2026-10-04): pushing never publishes. Run the *Census site*
+workflow (`.github/workflows/pages.yml`) from the Actions tab or with `gh workflow run pages.yml --ref
+main`, and only when the user asks for a deploy.
 Site and research gotchas from building it are in `gotchas.md` (§ Census site, and the 2026-10-04 research
 rules).
 - **`census/` is the source of truth for every migrated group**: `census/<group>/group.json` (the group

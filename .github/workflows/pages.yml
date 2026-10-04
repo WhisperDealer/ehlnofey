@@ -1,16 +1,12 @@
 name: Census site
 
 # Builds the census site (site/, an Astro project) from census/*.json and publishes it to
-# GitHub Pages at https://whisperdealer.github.io/ehlnofey/. The mod build (build.yml) ignores
-# these paths, and this workflow ignores everything else.
+# GitHub Pages at https://whisperdealer.github.io/ehlnofey/.
+#
+# Manual only: pushes never deploy. Run it from the Actions tab (Census site → Run workflow) or with
+# `gh workflow run pages.yml --ref main`. It builds whatever is on the chosen branch.
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'census/**'
-      - 'site/**'
-      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Build the site
         uses: withastro/action@v6
