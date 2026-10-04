@@ -32,6 +32,7 @@ export const Level = z.discriminatedUnion('kind', [
     mult: z.number().positive(),
     min: z.number().int().min(0),
     max: z.number().int().min(0),
+    from: Ref.optional(), // set when the record takes its level (Stats) from a template
   }),
   z.strictObject({ kind: z.literal('template'), value: z.number().int().min(0), from: Ref }),
   z.strictObject({ kind: z.literal('list'), from: Ref, rungs: z.array(z.number().int().min(0)).min(1) }),
@@ -46,16 +47,14 @@ export const Target = z.strictObject({
 });
 
 const Meta = z.strictObject({
-  ticket: z.string().regex(/^WD-\d+$/),
-  ticketTitle: z.string().optional(),
   spec: z.string().optional(),
-  confluencePageId: z.string().regex(/^\d+$/).optional(),
   updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
 });
 
 export const RecordRow = z.strictObject({
   id: z.string().regex(/^[a-z0-9-]+$/),
   name: z.string().min(1),
+  encounter: z.string().optional(), // where this row is fought, when a family is split by fight
   records: z.array(Ref).min(1),
   race: Ref.optional(),
   factions: z.array(Ref).optional(),
@@ -111,6 +110,10 @@ export const Family = z.strictObject({
   order: z.number().int(),
   meta: Meta,
   records: section(RecordRow),
+  // Records of the same enemy that are never fought (cutscenes, bases, test copies): a log, not rows.
+  otherRecords: section(
+    z.strictObject({ records: z.array(Ref).min(1), name: z.string(), level: Level, where: z.string() }),
+  ).optional(),
   ownsLevel: z.strictObject({ confidence: Confidence, items: z.array(z.string()) }),
   lists: section(ListRow).optional(),
   placed: z

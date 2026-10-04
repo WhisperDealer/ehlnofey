@@ -25,19 +25,8 @@
     "meta": {
       "type": "object",
       "properties": {
-        "ticket": {
-          "type": "string",
-          "pattern": "^WD-\\d+$"
-        },
-        "ticketTitle": {
-          "type": "string"
-        },
         "spec": {
           "type": "string"
-        },
-        "confluencePageId": {
-          "type": "string",
-          "pattern": "^\\d+$"
         },
         "updated": {
           "type": "string",
@@ -45,7 +34,6 @@
         }
       },
       "required": [
-        "ticket",
         "updated"
       ],
       "additionalProperties": false
@@ -73,6 +61,9 @@
               "name": {
                 "type": "string",
                 "minLength": 1
+              },
+              "encounter": {
+                "type": "string"
               },
               "records": {
                 "minItems": 1,
@@ -173,6 +164,23 @@
                         "type": "integer",
                         "minimum": 0,
                         "maximum": 9007199254740991
+                      },
+                      "from": {
+                        "type": "object",
+                        "properties": {
+                          "edid": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "formKey": {
+                            "type": "string",
+                            "pattern": "^[0-9A-F]{6}:[A-Za-z0-9 _.'-]+\\.(esm|esp|esl)$"
+                          },
+                          "label": {
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": false
                       }
                     },
                     "required": [
@@ -321,6 +329,214 @@
               "records",
               "level",
               "target"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "confidence",
+        "rows"
+      ],
+      "additionalProperties": false
+    },
+    "otherRecords": {
+      "type": "object",
+      "properties": {
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "community",
+            "unverified"
+          ]
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "records": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "edid": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "formKey": {
+                      "type": "string",
+                      "pattern": "^[0-9A-F]{6}:[A-Za-z0-9 _.'-]+\\.(esm|esp|esl)$"
+                    },
+                    "label": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "name": {
+                "type": "string"
+              },
+              "level": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "type": "string",
+                        "const": "fixed"
+                      },
+                      "value": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 9007199254740991
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "value"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "type": "string",
+                        "const": "pcMult"
+                      },
+                      "mult": {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                      },
+                      "min": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "max": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "from": {
+                        "type": "object",
+                        "properties": {
+                          "edid": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "formKey": {
+                            "type": "string",
+                            "pattern": "^[0-9A-F]{6}:[A-Za-z0-9 _.'-]+\\.(esm|esp|esl)$"
+                          },
+                          "label": {
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "mult",
+                      "min",
+                      "max"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "type": "string",
+                        "const": "template"
+                      },
+                      "value": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "from": {
+                        "type": "object",
+                        "properties": {
+                          "edid": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "formKey": {
+                            "type": "string",
+                            "pattern": "^[0-9A-F]{6}:[A-Za-z0-9 _.'-]+\\.(esm|esp|esl)$"
+                          },
+                          "label": {
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "value",
+                      "from"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "type": "string",
+                        "const": "list"
+                      },
+                      "from": {
+                        "type": "object",
+                        "properties": {
+                          "edid": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "formKey": {
+                            "type": "string",
+                            "pattern": "^[0-9A-F]{6}:[A-Za-z0-9 _.'-]+\\.(esm|esp|esl)$"
+                          },
+                          "label": {
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": false
+                      },
+                      "rungs": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        }
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "from",
+                      "rungs"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              },
+              "where": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "records",
+              "name",
+              "level",
+              "where"
             ],
             "additionalProperties": false
           }

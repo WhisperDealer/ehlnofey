@@ -13,7 +13,6 @@ export async function getStaticPaths() {
 }
 
 const { group, family: f } = Astro.props;
-const CONFLUENCE = 'https://whisperdealer.atlassian.net/wiki/spaces/~71202046a32e88a7ba474cbdae20a1db1fba60/pages/';
 const PLACED_FOLD = 4; // more locations than this collapse behind a summary
 ---
 
@@ -25,10 +24,9 @@ const PLACED_FOLD = 4; // more locations than this collapse behind a summary
   <header class="head">
     <h1>{f.title}</h1>
     <p class="meta">
-      <span class="tracked">{f.meta.ticket}</span>
-      <span>{f.records.rows.length} records</span>
+      <span>{f.records.rows.length} {f.records.rows.length === 1 ? 'record' : 'records'}</span>
+      {f.otherRecords && <span>{f.otherRecords.rows.length} more in the log</span>}
       <span>updated {f.meta.updated}</span>
-      {f.meta.confluencePageId && <a href={`${CONFLUENCE}${f.meta.confluencePageId}`}>Confluence mirror</a>}
       <a href={href(`data/${group.id}/${f.id}.json`)}>JSON</a>
     </p>
     <p class="lede" set:html={md(f.holds)} />
@@ -51,7 +49,10 @@ const PLACED_FOLD = 4; // more locations than this collapse behind a summary
                 {r.race && <div class="sub" set:html={`race ${ref(r.race)}`} />}
                 {r.factions && <div class="sub" set:html={`in ${refs(r.factions, ' and ')}`} />}
               </td>
-              <td>{r.name}{r.flags?.map((fl) => <span class="flag">{fl}</span>)}</td>
+              <td>
+                {r.name}{r.flags?.map((fl) => <span class="flag">{fl}</span>)}
+                {r.encounter && <div class="encounter" set:html={md(r.encounter)} />}
+              </td>
               <td set:html={levelText(r.level)} />
               <td class="target">
                 <BandChip id={b.id} proposed={r.target.status === 'proposed'} />
@@ -64,6 +65,31 @@ const PLACED_FOLD = 4; // more locations than this collapse behind a summary
       </tbody>
     </table>
   </div>
+
+  {f.otherRecords && (
+    <details class="log">
+      <summary>
+        <span>Other records</span>
+        <span class="sub">{f.otherRecords.rows.length} copies that are never fought: the base record, cutscenes, test copies</span>
+        <span class:list={['conf', f.otherRecords.confidence]}>{f.otherRecords.confidence}</span>
+      </summary>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Record</th><th>Name</th><th>Level</th><th>Where</th></tr></thead>
+          <tbody>
+            {f.otherRecords.rows.map((o) => (
+              <tr>
+                <td class="reclist" set:html={refs(o.records, '<br />')} />
+                <td>{o.name}</td>
+                <td set:html={levelText(o.level)} />
+                <td set:html={md(o.where)} />
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </details>
+  )}
 
   <h2>Also owns its level <span class:list={['conf', f.ownsLevel.confidence]}>{f.ownsLevel.confidence}</span></h2>
   <div class="panel">
@@ -224,4 +250,11 @@ const PLACED_FOLD = 4; // more locations than this collapse behind a summary
   details[open] summary { margin-bottom: 0.3rem; }
   .dis { color: var(--muted); font-style: italic; }
   .pname { min-width: 160px; }
+  .encounter { color: var(--gold); font-size: 0.85rem; margin-top: 0.2rem; }
+  .log { margin-top: 1rem; }
+  .log summary { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.8rem; padding: 0.8rem 1.1rem; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }
+  .log summary > span:first-child { font: 600 1rem var(--serif); color: var(--gold); font-variant: small-caps; letter-spacing: 0.06em; }
+  .log summary .sub { margin: 0; color: var(--muted); }
+  .log[open] summary { border-bottom-left-radius: 0; border-bottom-right-radius: 0; margin-bottom: 0; }
+  .log .table-scroll { border-top: 0; border-top-left-radius: 0; border-top-right-radius: 0; }
 </style>

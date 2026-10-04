@@ -10,24 +10,18 @@ export async function getStaticPaths() {
 }
 
 const { group: g } = Astro.props;
-const CONFLUENCE = 'https://whisperdealer.atlassian.net/wiki/spaces/~71202046a32e88a7ba474cbdae20a1db1fba60/pages/';
 
 // How many of a family's records target each band, in band order.
 const spread = (rows: { target: { band: string } }[]) =>
   bands.bands.map((b) => ({ id: b.id, n: rows.filter((r) => r.target.band === b.id).length })).filter((x) => x.n > 0);
 ---
 
-<Base title={g.title} description={`${g.title}: the census group (${g.meta.ticket}).`} crumbs={[{ label: g.title, path: `${g.id}/` }]}>
+<Base title={g.title} description={`${g.title}: the census group.`} crumbs={[{ label: g.title, path: `${g.id}/` }]}>
   <header>
     <h1>{g.title}</h1>
     <p class="meta">
-      <span class="tracked">{g.meta.ticket}</span>
-      {g.meta.ticketTitle && <span>{g.meta.ticketTitle}</span>}
-    </p>
-    <p class="meta">
       {g.meta.spec && <span>Spec <code>{g.meta.spec}</code></span>}
       <span>updated {g.meta.updated}</span>
-      {g.meta.confluencePageId && <a href={`${CONFLUENCE}${g.meta.confluencePageId}`}>Confluence mirror</a>}
       <a href={href(`data/${g.id}/group.json`)}>JSON</a>
     </p>
     {g.intro && <p class="lede">{g.intro}</p>}

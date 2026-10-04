@@ -9,6 +9,7 @@ import BandChip from './BandChip.astro';
 interface Props { rows: RecordRowData[] }
 const { rows } = Astro.props;
 
+const encounterShort = (e: string) => e.split(' (')[0];
 const vanillaTitle = (r: RecordRowData) => {
   const m = levelMark(r.level);
   if (m.kind === 'point') return `vanilla ${m.v}`;
@@ -44,7 +45,7 @@ const vanillaTitle = (r: RecordRowData) => {
     return (
       <div class="lane">
         <div class="label">
-          <a href={`#rec-${r.id}`}>{r.name}</a>
+          <a href={`#rec-${r.id}`}>{r.name}{r.encounter && <small> · {encounterShort(r.encounter)}</small>}</a>
           <BandChip id={r.target.band} proposed={proposed} />
         </div>
         <div class="track" title={`${r.name}: ${vanillaTitle(r)} → target ${tb.id} ${tb.name}${r.target.level ? ` (${r.target.level})` : ''}, ${r.target.status}`}>
@@ -89,6 +90,7 @@ const vanillaTitle = (r: RecordRowData) => {
   .label { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; font-size: 0.93rem; min-width: 0; }
   .label a { color: var(--text); text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .label a:hover { color: var(--gold); }
+  .label small { color: var(--muted); font-size: 0.85em; }
 
   .track { position: relative; height: 24px; }
   .bg { position: absolute; top: 9px; height: 6px; background: var(--c); opacity: 0.22; }

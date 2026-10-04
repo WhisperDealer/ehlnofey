@@ -14,13 +14,14 @@ for (const g of groups)
   for (const f of g.familyPages)
     for (const r of f.records.rows) {
       const list = byBand.get(r.target.band) ?? [];
-      const same = list.find((h) => h.name === r.name && h.family === f.title);
+      const name = r.encounter ? `${r.name} · ${r.encounter.split(' (')[0]}` : r.name;
+      const same = list.find((h) => h.name === name && h.family === f.title);
       if (same) {
         same.count++;
         same.proposed &&= r.target.status === 'proposed';
       } else
         list.push({
-          name: r.name,
+          name,
           url: href(`${g.id}/${f.id}/#rec-${r.id}`),
           family: f.title,
           proposed: r.target.status === 'proposed',
@@ -79,13 +80,12 @@ const recordCount = groups.reduce((n, g) => n + g.familyPages.reduce((m, f) => m
     <h2>The census</h2>
     <p class="lede">
       Every enemy in Skyrim, its DLC and the Creation Club, documented from the game data: the record that owns its level,
-      the leveled lists that draw it, and where it is placed, with each record's target band. {recordCount} records so far;
-      families are moving here from Confluence one at a time. A dashed target is a proposal, not yet decided.
+      the leveled lists that draw it, and where it is placed, with each record's target band. {recordCount} records so far,
+      with more families to come. A dashed target is a proposal, not yet decided.
     </p>
     <div class="groups">
       {groups.map((g) => (
         <a class="group panel" href={href(`${g.id}/`)}>
-          <span class="tracked">{g.meta.ticket}</span>
           <h3>{g.title}</h3>
           <ul>
             {g.familyPages.map((f) => <li>{f.title} <small>· {f.records.rows.length} records</small></li>)}

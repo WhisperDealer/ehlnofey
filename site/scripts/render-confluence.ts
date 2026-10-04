@@ -1,11 +1,14 @@
 // Renders census JSON as the Markdown body of its Confluence mirror page, in the census page
 // layout (Records, Also owns its level, Lists that draw them, Placed, Gear). Confluence is a
 // mirror: edit the JSON, render, then push the output with the Atlassian MCP
-// (updateConfluencePage, contentFormat "markdown", the page id from meta.confluencePageId).
+// (updateConfluencePage, contentFormat "markdown", the page id from scripts/confluence-pages.json).
 //
 //   npm run confluence -- dragons/common-dragons     one family, to stdout
 //   npm run confluence -- dragons                    the group page, to stdout
 //   npm run confluence -- --all                      every page, to site/.confluence/<group>/<id>.md
+//
+// Page ids live in scripts/confluence-pages.json (key <group>/<family>), not in the census:
+// the site publishes census/ and must not reference Confluence.
 import { mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { Bands, Family, Group, type FamilyData, type GroupData, type LevelData, type RefData } from '../src/schema.ts';
@@ -28,7 +31,7 @@ const refs = (rs: RefData[], sep = ' · ') => rs.map(ref).join(sep);
 function level(l: LevelData): string {
   switch (l.kind) {
     case 'fixed': return String(l.value);
-    case 'pcMult': return `PC×${l.mult} [${l.min}–${l.max}]`;
+    case 'pcMult': return `PC×${l.mult} [${l.min}–${l.max}]${l.from ? `, from ${ref(l.from)}` : ''}`;
     case 'template': return `${l.value}, from ${ref(l.from)}`;
     case 'list': return `from ${ref(l.from)} (${l.rungs.join(' · ')})`;
   }
@@ -56,10 +59,15 @@ export function renderFamily(f: FamilyData, titles: Record<string, string> = {})
         if (r.factions) rec += ` (in ${refs(r.factions, ' and ')})`;
         const flags = r.flags?.length ? ` (${r.flags.map((x) => `\`${x}\``).join(', ')})` : '';
         const target = `${b.id} ${b.name}${r.target.level ? ` ${r.target.level}` : ''} (${r.target.status}; ${r.target.source})`;
-        return [rec, r.name, level(r.level) + flags, target];
+        return [rec, r.encounter ? `${r.name}, ${r.encounter}` : r.name, level(r.level) + flags, target];
       }),
     ),
   );
+
+  if (f.otherRecords) {
+    out.push('', `## Other records ${conf(f.otherRecords.confidence)}`, '', 'Copies that are never fought: the base record, cutscenes, test copies.', '');
+    out.push(table(['Record', 'Name', 'Level', 'Where'], f.otherRecords.rows.map((o) => [refs(o.records), o.name, level(o.level), o.where])));
+  }
 
   out.push('', `## Also owns its level ${conf(f.ownsLevel.confidence)}`, '');
   out.push(...f.ownsLevel.items.map((i) => `- ${i.replace(/\[/g, '\\[').replace(/\]/g, '\\]')}`));
@@ -125,7 +133,7 @@ export function renderFamily(f: FamilyData, titles: Record<string, string> = {})
 
 export function renderGroup(g: GroupData, titles: Record<string, string>): string {
   const out: string[] = [banner(`${g.id}/group`), ''];
-  out.push(`Source: **${g.meta.ticket}**${g.meta.ticketTitle ? `, ${g.meta.ticketTitle}` : ''}.${g.meta.spec ? ` Spec \`${g.meta.spec}\`.` : ''}`, '');
+  if (g.meta.spec) out.push(`Spec \`${g.meta.spec}\`.`, '');
   if (g.intro) out.push(g.intro, '');
   out.push(table(['Page', 'Holds'], g.families.map((f) => [`*${titles[f.id] ?? f.id}*`, f.holds])));
   if (g.sweep) out.push('', `## ${g.sweep.title} ${conf(g.sweep.confidence)}`, '', g.sweep.text);

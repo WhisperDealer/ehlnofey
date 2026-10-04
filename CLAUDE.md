@@ -112,9 +112,16 @@ published at **https://whisperdealer.github.io/ehlnofey/** (Astro, `site/`; depl
   `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
   everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons.** Every
   other group stays Confluence-first until it is migrated.
+- **The site is public; keep it free of internal tooling** (user, 2026-10-04): no Jira ticket
+  numbers (the tickets are deleted; `WD-xx` in the docs is history only) and no Confluence links or
+  page ids in `census/` or `site/src/`. Confluence is internal documentation that supports the site.
 - **To change a migrated page:** edit the JSON, run `npm run schema`, then `npm run confluence --
-  <group>/<family>` and push its output to the page's `meta.confluencePageId` with
-  `updateConfluencePage` (`contentFormat: markdown`). Confluence is a mirror, never edited by hand.
+  <group>/<family>` and push its output with `updateConfluencePage` (`contentFormat: markdown`) to
+  the page id in `site/scripts/confluence-pages.json`. Confluence is a mirror, never edited by hand.
+- **A named boss's Records rows are its fights** (user, 2026-10-04; Alduin and Miraak are the
+  model): one row per place the player fights it, with `encounter` naming the place, since only
+  those levels need changing. Every other copy (base record, cutscenes, test copies) goes in
+  `otherRecords`, a collapsible log on the site.
 - **To migrate a group:** fetch its pages, transcribe them into JSON (FormKeys always
   `<hex>:<Master>`, never bare hex; check the EditorID/FormKey pairs against the `reference/Base`
   filenames), add a target band per row, build, then re-render the Confluence pages. The version
@@ -156,7 +163,7 @@ published at **https://whisperdealer.github.io/ehlnofey/** (Astro, `site/`; depl
 - **The census lives in Confluence** (except the groups migrated to `census/`, above). Space *WhisperDealer*
   (`~71202046a32e88a7ba474cbdae20a1db1fba60`), root page **Ehlnofey** (id `12451841`), on
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
-  Jira ticket → one child page per family**. **Factions** (user, 2026-10-02) is a top-level page
+  ticket (now deleted) → one child page per family**. **Factions** (user, 2026-10-02) is a top-level page
   that holds the faction groups: Forsworn, Dawnguard, Vigilants, Companions, Silver Hand, Minor
   Factions, Thalmor, Imperial Legion, Stormcloaks, Guards, Housecarls, Dark Brotherhood, Thieves Guild, College of
   Winterhold and **Sovngarde** (user, 2026-10-03: everyone found in Sovngarde; records already on another
@@ -320,7 +327,7 @@ The rebuild resumes from the plan below once the census is done:
 
 - **Architecture: `arch-docs/design/flattening.md` — read it first.** Its §6 is the order of work.
 - **Spec: `arch-docs/design/archetype-tiers.md`** — every family's levels, rosters, weights, pins and
-  gear, decided by the user faction by faction (Jira WD-43…64).
+  gear, decided by the user faction by faction (the WD-43…64 tickets, now deleted).
 - **Method — *flattening the leveled lists*:** strip the player-level gates from every `LVLN`/`LVLI`
   while keeping the pool, weight the pool by duplicate entries, and give every `PcLevelMult` actor a
   fixed level, followers included.

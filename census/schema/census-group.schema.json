@@ -21,19 +21,8 @@
     "meta": {
       "type": "object",
       "properties": {
-        "ticket": {
-          "type": "string",
-          "pattern": "^WD-\\d+$"
-        },
-        "ticketTitle": {
-          "type": "string"
-        },
         "spec": {
           "type": "string"
-        },
-        "confluencePageId": {
-          "type": "string",
-          "pattern": "^\\d+$"
         },
         "updated": {
           "type": "string",
@@ -41,7 +30,6 @@
         }
       },
       "required": [
-        "ticket",
         "updated"
       ],
       "additionalProperties": false

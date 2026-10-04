@@ -5,58 +5,15 @@
   "title": "Miraak",
   "order": 5,
   "meta": {
-    "ticket": "WD-91",
-    "confluencePageId": "16352369",
     "updated": "2026-10-04"
   },
   "records": {
     "confidence": "verified",
     "rows": [
       {
-        "id": "miraak",
+        "id": "miraak-summit",
         "name": "Miraak",
-        "records": [
-          {
-            "edid": "DLC2Miraak",
-            "formKey": "017F7D:Dragonborn.esm"
-          },
-          {
-            "edid": "DLC2MiraakMQ01",
-            "formKey": "017936:Dragonborn.esm"
-          },
-          {
-            "edid": "DLC2MiraakMQ02",
-            "formKey": "017938:Dragonborn.esm"
-          },
-          {
-            "edid": "DLC2MiraakMQ04",
-            "formKey": "017F81:Dragonborn.esm"
-          },
-          {
-            "edid": "DLC2MiraakSoulSteal",
-            "formKey": "0200D9:Dragonborn.esm"
-          },
-          {
-            "edid": "DLC2MiraakTest",
-            "formKey": "01F998:Dragonborn.esm"
-          }
-        ],
-        "level": {
-          "kind": "pcMult",
-          "mult": 1,
-          "min": 35,
-          "max": 200
-        },
-        "target": {
-          "band": "X",
-          "level": 100,
-          "status": "decided",
-          "source": "bands-of-power.md: Miraak (100)"
-        }
-      },
-      {
-        "id": "miraak-final",
-        "name": "Miraak",
+        "encounter": "the summit of Apocrypha (`DLC2MQ06`)",
         "records": [
           {
             "edid": "DLC2MiraakMQ06",
@@ -76,8 +33,8 @@
         "target": {
           "band": "X",
           "level": 100,
-          "status": "proposed",
-          "source": "bands-of-power.md: Miraak (100); the final fight"
+          "status": "decided",
+          "source": "bands-of-power.md: Miraak (100)"
         }
       }
     ]
@@ -85,8 +42,7 @@
   "ownsLevel": {
     "confidence": "verified",
     "items": [
-      "Changing `DLC2Miraak` 017F7D does not move `DLC2MiraakMQ06` 01FB98 (a row, PC×1.1 [35–150]): it uses 017F7D as its template but not for `Stats`. The other Miraak copies carry `Stats` and follow it.",
-      "The other rows: no other record keeps its own level."
+      "`DLC2MiraakMQ06` 01FB98 owns its level: it uses `DLC2Miraak` 017F7D as its template but not for `Stats`, so changing `DLC2Miraak` (and the copies that carry `Stats` from it) does not move the fight."
     ]
   },
   "placed": {
@@ -96,28 +52,6 @@
       {
         "name": "Miraak",
         "base": [
-          {
-            "edid": "DLC2MiraakMQ01",
-            "formKey": "017936:Dragonborn.esm"
-          }
-        ],
-        "locations": [
-          {
-            "cell": {
-              "edid": "DLC2TempleofMiraakExterior02",
-              "formKey": "00EDE9:Dragonborn.esm"
-            },
-            "disabled": true
-          }
-        ]
-      },
-      {
-        "name": "Miraak",
-        "base": [
-          {
-            "edid": "DLC2MiraakMQ02",
-            "formKey": "017938:Dragonborn.esm"
-          },
           {
             "edid": "DLC2MiraakMQ06",
             "formKey": "01FB98:Dragonborn.esm"
@@ -131,63 +65,127 @@
             "persistent": true
           }
         ]
-      },
+      }
+    ]
+  },
+  "otherRecords": {
+    "confidence": "verified",
+    "rows": [
       {
-        "name": "Miraak",
-        "base": [
-          {
-            "edid": "DLC2MiraakMQ04",
-            "formKey": "017F81:Dragonborn.esm"
-          }
-        ],
-        "locations": [
-          {
-            "cell": {
-              "edid": "DLC2Nchardak00",
-              "formKey": "034FD2:Dragonborn.esm"
-            },
-            "disabled": true
-          }
-        ]
-      },
-      {
-        "name": "Miraak",
-        "base": [
-          {
-            "edid": "DLC2MiraakSoulSteal",
-            "formKey": "0200D9:Dragonborn.esm"
-          }
-        ],
-        "notPlaced": true,
-        "note": "created by `DLC2SoulSteal` 0200D8, alias Miraak"
-      },
-      {
-        "name": "Miraak",
-        "base": [
-          {
-            "edid": "DLC2MiraakTest",
-            "formKey": "01F998:Dragonborn.esm"
-          }
-        ],
-        "locations": [
-          {
-            "cell": {
-              "edid": "CWTestHold",
-              "formKey": "01B44A:Skyrim.esm"
-            },
-            "note": "test worldspace"
-          }
-        ]
-      },
-      {
-        "name": "Miraak",
-        "base": [
+        "records": [
           {
             "edid": "DLC2Miraak",
             "formKey": "017F7D:Dragonborn.esm"
           }
         ],
-        "notPlaced": true
+        "name": "Miraak",
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 35,
+          "max": 200
+        },
+        "where": "the base record; not placed"
+      },
+      {
+        "records": [
+          {
+            "edid": "DLC2MiraakMQ01",
+            "formKey": "017936:Dragonborn.esm"
+          }
+        ],
+        "name": "Miraak",
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 35,
+          "max": 200,
+          "from": {
+            "edid": "DLC2Miraak",
+            "formKey": "017F7D:Dragonborn.esm"
+          }
+        },
+        "where": "`DLC2TempleofMiraakExterior02` 00EDE9:Dragonborn.esm, initially disabled"
+      },
+      {
+        "records": [
+          {
+            "edid": "DLC2MiraakMQ02",
+            "formKey": "017938:Dragonborn.esm"
+          }
+        ],
+        "name": "Miraak",
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 35,
+          "max": 200,
+          "from": {
+            "edid": "DLC2Miraak",
+            "formKey": "017F7D:Dragonborn.esm"
+          }
+        },
+        "where": "`DLC2ApocryphaWorld` persistent"
+      },
+      {
+        "records": [
+          {
+            "edid": "DLC2MiraakMQ04",
+            "formKey": "017F81:Dragonborn.esm"
+          }
+        ],
+        "name": "Miraak",
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 35,
+          "max": 200,
+          "from": {
+            "edid": "DLC2Miraak",
+            "formKey": "017F7D:Dragonborn.esm"
+          }
+        },
+        "where": "`DLC2Nchardak00` 034FD2:Dragonborn.esm, initially disabled"
+      },
+      {
+        "records": [
+          {
+            "edid": "DLC2MiraakSoulSteal",
+            "formKey": "0200D9:Dragonborn.esm"
+          }
+        ],
+        "name": "Miraak",
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 35,
+          "max": 200,
+          "from": {
+            "edid": "DLC2Miraak",
+            "formKey": "017F7D:Dragonborn.esm"
+          }
+        },
+        "where": "not placed; created by `DLC2SoulSteal` 0200D8, alias Miraak"
+      },
+      {
+        "records": [
+          {
+            "edid": "DLC2MiraakTest",
+            "formKey": "01F998:Dragonborn.esm"
+          }
+        ],
+        "name": "Miraak",
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 35,
+          "max": 200,
+          "from": {
+            "edid": "DLC2Miraak",
+            "formKey": "017F7D:Dragonborn.esm"
+          }
+        },
+        "where": "`CWTestHold` 01B44A, test worldspace"
       }
     ]
   },

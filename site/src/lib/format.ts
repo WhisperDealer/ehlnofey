@@ -34,7 +34,7 @@ export function levelText(l: LevelData): string {
     case 'fixed':
       return String(l.value);
     case 'pcMult':
-      return `PC×${l.mult} [${l.min}–${l.max}]`;
+      return `PC×${l.mult} [${l.min}–${l.max}]${l.from ? `, from ${ref(l.from)}` : ''}`;
     case 'template':
       return `${l.value}, from ${ref(l.from)}`;
     case 'list':

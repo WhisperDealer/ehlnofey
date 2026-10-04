@@ -5,29 +5,16 @@
   "title": "Alduin",
   "order": 3,
   "meta": {
-    "ticket": "WD-91",
-    "confluencePageId": "16221274",
     "updated": "2026-10-04"
   },
   "records": {
     "confidence": "verified",
     "rows": [
       {
-        "id": "alduin",
+        "id": "alduin-throat",
         "name": "Alduin",
+        "encounter": "Throat of the World (`MQ206`, *Alduin's Bane*)",
         "records": [
-          {
-            "edid": "AlduinBase",
-            "formKey": "08E4F1:Skyrim.esm"
-          },
-          {
-            "edid": "MQ101Alduin",
-            "formKey": "032B94:Skyrim.esm"
-          },
-          {
-            "edid": "MQ106Alduin",
-            "formKey": "032D9D:Skyrim.esm"
-          },
           {
             "edid": "MQ206Alduin",
             "formKey": "04424A:Skyrim.esm"
@@ -41,7 +28,11 @@
           "kind": "pcMult",
           "mult": 1.2,
           "min": 10,
-          "max": 100
+          "max": 100,
+          "from": {
+            "edid": "AlduinBase",
+            "formKey": "08E4F1:Skyrim.esm"
+          }
         },
         "target": {
           "band": "X",
@@ -53,6 +44,7 @@
       {
         "id": "alduin-sovngarde",
         "name": "Alduin",
+        "encounter": "Sovngarde (`MQ304`)",
         "records": [
           {
             "edid": "MQ304Alduin",
@@ -68,28 +60,8 @@
         "target": {
           "band": "X",
           "level": 150,
-          "status": "proposed",
-          "source": "bands-of-power.md: Alduin (150); the Sovngarde fight"
-        }
-      },
-      {
-        "id": "alduin-ancient",
-        "name": "Alduin",
-        "records": [
-          {
-            "edid": "MQ206AncientAlduin",
-            "formKey": "04377F:Skyrim.esm"
-          }
-        ],
-        "level": {
-          "kind": "fixed",
-          "value": 100
-        },
-        "target": {
-          "band": "X",
-          "level": 150,
-          "status": "proposed",
-          "source": "bands-of-power.md: Alduin (150); the Elder Scroll vision"
+          "status": "decided",
+          "source": "bands-of-power.md: Alduin (150)"
         }
       }
     ]
@@ -97,60 +69,14 @@
   "ownsLevel": {
     "confidence": "verified",
     "items": [
-      "Changing `AlduinBase` 08E4F1 does not move `MQ304Alduin` 04E9BC or `MQ206AncientAlduin` 04377F (both rows): they use it as their template but not for `Stats`. `MQ101Alduin`, `MQ106Alduin` and `MQ206Alduin` carry `Stats` and follow it.",
-      "The other rows: no other record keeps its own level."
+      "*Throat of the World*: `MQ206Alduin` 04424A carries `Stats` from `AlduinBase` 08E4F1, so the fight takes AlduinBase's level. Changing `AlduinBase` also moves `MQ101Alduin` and `MQ106Alduin` (Helgen, Kynesgrove), which carry `Stats` from it too.",
+      "*Sovngarde*: `MQ304Alduin` 04E9BC owns its level: it uses `AlduinBase` as its template but not for `Stats`."
     ]
   },
   "placed": {
     "title": "Placed",
     "confidence": "verified",
     "rows": [
-      {
-        "name": "Alduin",
-        "base": [
-          {
-            "edid": "MQ101Alduin",
-            "formKey": "032B94:Skyrim.esm"
-          }
-        ],
-        "locations": [
-          {
-            "cell": {
-              "edid": "Tamriel"
-            },
-            "persistent": true,
-            "ref": {
-              "edid": "MQ101AlduinREF",
-              "formKey": "032DB7:Skyrim.esm"
-            },
-            "disabled": true
-          }
-        ],
-        "quest": "alias Alduin of `MQ101` 03372B and `MQ102` 04E50D"
-      },
-      {
-        "name": "Alduin",
-        "base": [
-          {
-            "edid": "MQ106Alduin",
-            "formKey": "032D9D:Skyrim.esm"
-          }
-        ],
-        "locations": [
-          {
-            "cell": {
-              "edid": "KynesgroveBurialMound08",
-              "formKey": "00B55C:Skyrim.esm"
-            },
-            "ref": {
-              "edid": "MQ106AlduinREF",
-              "formKey": "032DA0:Skyrim.esm"
-            },
-            "disabled": true
-          }
-        ],
-        "quest": "alias Alduin of `MQ106` 032926 and `MQResurrectDragon` 0B3991"
-      },
       {
         "name": "Alduin",
         "base": [
@@ -178,29 +104,6 @@
         "name": "Alduin",
         "base": [
           {
-            "edid": "MQ206AncientAlduin",
-            "formKey": "04377F:Skyrim.esm"
-          }
-        ],
-        "locations": [
-          {
-            "cell": {
-              "edid": "HHpathShrine10",
-              "formKey": "0096EC:Skyrim.esm"
-            },
-            "ref": {
-              "edid": "MQ206AncientAlduinREF",
-              "formKey": "04377E:Skyrim.esm"
-            },
-            "disabled": true
-          }
-        ],
-        "quest": "alias AncientAlduin of `MQ206`"
-      },
-      {
-        "name": "Alduin",
-        "base": [
-          {
             "edid": "MQ304Alduin",
             "formKey": "04E9BC:Skyrim.esm"
           }
@@ -218,16 +121,81 @@
             "disabled": true
           }
         ]
-      },
+      }
+    ]
+  },
+  "otherRecords": {
+    "confidence": "verified",
+    "rows": [
       {
-        "name": "Alduin",
-        "base": [
+        "records": [
           {
             "edid": "AlduinBase",
             "formKey": "08E4F1:Skyrim.esm"
           }
         ],
-        "notPlaced": true
+        "name": "Alduin",
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 10,
+          "max": 100
+        },
+        "where": "the base record; owns the Throat of the World level; not placed"
+      },
+      {
+        "records": [
+          {
+            "edid": "MQ101Alduin",
+            "formKey": "032B94:Skyrim.esm"
+          }
+        ],
+        "name": "Alduin",
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 10,
+          "max": 100,
+          "from": {
+            "edid": "AlduinBase",
+            "formKey": "08E4F1:Skyrim.esm"
+          }
+        },
+        "where": "Helgen; `Tamriel` persistent, ref `MQ101AlduinREF` 032DB7, initially disabled; alias Alduin of `MQ101` 03372B and `MQ102` 04E50D"
+      },
+      {
+        "records": [
+          {
+            "edid": "MQ106Alduin",
+            "formKey": "032D9D:Skyrim.esm"
+          }
+        ],
+        "name": "Alduin",
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 10,
+          "max": 100,
+          "from": {
+            "edid": "AlduinBase",
+            "formKey": "08E4F1:Skyrim.esm"
+          }
+        },
+        "where": "Kynesgrove and the dragon mounds; `KynesgroveBurialMound08` 00B55C, ref `MQ106AlduinREF` 032DA0, initially disabled; alias Alduin of `MQ106` 032926 and `MQResurrectDragon` 0B3991"
+      },
+      {
+        "records": [
+          {
+            "edid": "MQ206AncientAlduin",
+            "formKey": "04377F:Skyrim.esm"
+          }
+        ],
+        "name": "Alduin",
+        "level": {
+          "kind": "fixed",
+          "value": 100
+        },
+        "where": "the Elder Scroll vision; uses `AlduinBase` as its template but not for `Stats`; `HHpathShrine10` 0096EC, ref `MQ206AncientAlduinREF` 04377E, initially disabled; alias AncientAlduin of `MQ206`"
       }
     ]
   }

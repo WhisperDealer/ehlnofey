@@ -4,10 +4,7 @@
   "title": "Dragons",
   "order": 1,
   "meta": {
-    "ticket": "WD-91",
-    "ticketTitle": "Rebuild: the dragons (the dragon ladder, the named dragons, Miraak and his dragons), vanilla, DLC and CC",
     "spec": "archetype-tiers.md §3.4",
-    "confluencePageId": "16351233",
     "updated": "2026-10-04"
   },
   "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record.",
@@ -18,11 +15,11 @@
     },
     {
       "id": "unique-dragons",
-      "holds": "Paarthurnax (moved from Greybeards), Mirmulnir, Sahloknir, Vuljotnaak, Nahagliiv, Viinturuth, Odahviing, Vulthuryol, the Labyrinthian Skeletal Dragon, Durnehviir, Naaslaarum, Voslaarum"
+      "holds": "Paarthurnax, Mirmulnir, Sahloknir, Vuljotnaak, Nahagliiv, Viinturuth, Odahviing, Vulthuryol, the Labyrinthian Skeletal Dragon, Durnehviir, Naaslaarum, Voslaarum"
     },
     {
       "id": "alduin",
-      "holds": "Alduin, the World-Eater: the base record and its quest copies (Helgen, Kynesgrove, Alduin's Bane, the Elder Scroll vision, Sovngarde)"
+      "holds": "Alduin, the World-Eater: his two fights, on the Throat of the World and in Sovngarde; his other copies are in the log"
     },
     {
       "id": "dragonborn",
@@ -30,7 +27,7 @@
     },
     {
       "id": "miraak",
-      "holds": "Miraak, the First Dragonborn (moved here from Uncategorised): the base record, its quest copies and the final fight, with his gear"
+      "holds": "Miraak, the First Dragonborn: his fight at the summit of Apocrypha, with his gear; his other copies are in the log"
     }
   ],
   "sweep": {
