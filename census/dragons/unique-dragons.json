@@ -374,7 +374,7 @@
     "confidence": "verified",
     "items": [
       "For every row: no other record keeps its own level.",
-      "The other dragons with no template are `EncDragon01Fire`, `dunSkuldafnDragonDraugr` and `DLC2DragonSkeleton` (on *Common Dragons*) and `DLC1DurnehviirSummon` 00C71A:Dawnguard.esm (the summoned Durnehviir, 20, on *Constructs & Dragons*).",
+      "The other dragons with no template are `EncDragon01Fire` and `dunSkuldafnDragonDraugr` (on *Common Dragons*) and `DLC1DurnehviirSummon` 00C71A:Dawnguard.esm (the summoned Durnehviir, 20, on *Constructs & Dragons*).",
       "Every other record behind these dragons (Paarthurnax, Vulthuryol, the Sahrotaar copies, the list-drawn dragons and their wrappers) carries `Stats` and follows its template or list."
     ]
   },

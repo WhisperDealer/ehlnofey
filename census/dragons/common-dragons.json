@@ -219,29 +219,6 @@
           "status": "proposed",
           "source": "bands-of-power.md: low-level dragons"
         }
-      },
-      {
-        "id": "dragon-skeleton",
-        "name": "Dragon",
-        "records": [
-          {
-            "edid": "DLC2DragonSkeleton",
-            "formKey": "02BF3B:Dragonborn.esm"
-          }
-        ],
-        "race": {
-          "edid": "UndeadDragonRace",
-          "formKey": "1052A3:Skyrim.esm"
-        },
-        "level": {
-          "kind": "fixed",
-          "value": 20
-        },
-        "target": {
-          "band": "VIII",
-          "status": "proposed",
-          "source": "bands-of-power.md: low-level dragons"
-        }
       }
     ]
   },
@@ -694,7 +671,7 @@
         ]
       },
       {
-        "name": "`dunSkuldafnDragonDraugr`, `DLC2DragonSkeleton`, the scripted rung records (`EncDragon02Fire`, `…03Frost`, `…04*`, `…05Frost`, `DLC1EncDragon06Fire`, `DLC1EncDragon07Fire`, `DLC2EncDragon06Fire`, `…Frost`)",
+        "name": "`dunSkuldafnDragonDraugr`, the scripted rung records (`EncDragon02Fire`, `…03Frost`, `…04*`, `…05Frost`, `DLC1EncDragon06Fire`, `DLC1EncDragon07Fire`, `DLC2EncDragon06Fire`, `…Frost`)",
         "notPlaced": true,
         "note": "the lists draw the `NoScript` copies"
       }
