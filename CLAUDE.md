@@ -262,8 +262,8 @@ published at **https://whisperdealer.github.io/ehlnofey/** (Astro, `site/`; depl
   family; sub-groups **Summoned Creatures** (*Summoned Atronachs*, *Familiars & Spirit Animals*,
   *Undead Summons*, *Daedric Summons*, *Constructs & Dragons*) and **Summoned NPCs** (*Summoned
   Dremora*, *Heroes & Spirits*), each page with a "Summoned by" table: player source and NPC casters),
-  Dragons (WD-91, top-level: *Common Dragons*, *Unique Dragons* (Alduin and Paarthurnax included) and
-  *Dragonborn* (Miraak); **migrated to `census/dragons/`, so edit the JSON, not Confluence**), World (WD-92, top-level, user 2026-10-03: the named
+  Dragons (WD-91, top-level: *Common Dragons*, *Unique Dragons* (Paarthurnax included), *Alduin*,
+  *Dragonborn* and *Miraak* (with his gear; Alduin and Miraak have their own pages, user 2026-10-04); **migrated to `census/dragons/`, so edit the JSON, not Confluence**), World (WD-92, top-level, user 2026-10-03: the named
   NPCs, hold by hold; one page per hold (*Haafingar*, *Hjaalmarch*, *The Pale*, *Winterhold Hold*,
   *Eastmarch*, *The Rift*, *Whiterun Hold*, *Falkreath Hold*, *The Reach*, *Solstheim*), each with a
   city child (Solitude, Morthal, Dawnstar, Winterhold, Windhelm, Riften, Whiterun, Falkreath, Markarth,

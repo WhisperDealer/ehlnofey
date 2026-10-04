@@ -1,0 +1,234 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "alduin",
+  "group": "dragons",
+  "title": "Alduin",
+  "order": 3,
+  "meta": {
+    "ticket": "WD-91",
+    "confluencePageId": "16221274",
+    "updated": "2026-10-04"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "alduin",
+        "name": "Alduin",
+        "records": [
+          {
+            "edid": "AlduinBase",
+            "formKey": "08E4F1:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101Alduin",
+            "formKey": "032B94:Skyrim.esm"
+          },
+          {
+            "edid": "MQ106Alduin",
+            "formKey": "032D9D:Skyrim.esm"
+          },
+          {
+            "edid": "MQ206Alduin",
+            "formKey": "04424A:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "AlduinRace",
+          "formKey": "0E7713:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 10,
+          "max": 100
+        },
+        "target": {
+          "band": "X",
+          "level": 150,
+          "status": "decided",
+          "source": "bands-of-power.md: Alduin (150)"
+        }
+      },
+      {
+        "id": "alduin-sovngarde",
+        "name": "Alduin",
+        "records": [
+          {
+            "edid": "MQ304Alduin",
+            "formKey": "04E9BC:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 20,
+          "max": 100
+        },
+        "target": {
+          "band": "X",
+          "level": 150,
+          "status": "proposed",
+          "source": "bands-of-power.md: Alduin (150); the Sovngarde fight"
+        }
+      },
+      {
+        "id": "alduin-ancient",
+        "name": "Alduin",
+        "records": [
+          {
+            "edid": "MQ206AncientAlduin",
+            "formKey": "04377F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 100
+        },
+        "target": {
+          "band": "X",
+          "level": 150,
+          "status": "proposed",
+          "source": "bands-of-power.md: Alduin (150); the Elder Scroll vision"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `AlduinBase` 08E4F1 does not move `MQ304Alduin` 04E9BC or `MQ206AncientAlduin` 04377F (both rows): they use it as their template but not for `Stats`. `MQ101Alduin`, `MQ106Alduin` and `MQ206Alduin` carry `Stats` and follow it.",
+      "The other rows: no other record keeps its own level."
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Alduin",
+        "base": [
+          {
+            "edid": "MQ101Alduin",
+            "formKey": "032B94:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "MQ101AlduinREF",
+              "formKey": "032DB7:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias Alduin of `MQ101` 03372B and `MQ102` 04E50D"
+      },
+      {
+        "name": "Alduin",
+        "base": [
+          {
+            "edid": "MQ106Alduin",
+            "formKey": "032D9D:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "KynesgroveBurialMound08",
+              "formKey": "00B55C:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "MQ106AlduinREF",
+              "formKey": "032DA0:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias Alduin of `MQ106` 032926 and `MQResurrectDragon` 0B3991"
+      },
+      {
+        "name": "Alduin",
+        "base": [
+          {
+            "edid": "MQ206Alduin",
+            "formKey": "04424A:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "MQ206AlduinREF",
+              "formKey": "04424B:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias Alduin of `MQ206` 036193"
+      },
+      {
+        "name": "Alduin",
+        "base": [
+          {
+            "edid": "MQ206AncientAlduin",
+            "formKey": "04377F:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "HHpathShrine10",
+              "formKey": "0096EC:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "MQ206AncientAlduinREF",
+              "formKey": "04377E:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias AncientAlduin of `MQ206`"
+      },
+      {
+        "name": "Alduin",
+        "base": [
+          {
+            "edid": "MQ304Alduin",
+            "formKey": "04E9BC:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Sovngarde"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "MQ304AlduinREF",
+              "formKey": "04E9BD:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Alduin",
+        "base": [
+          {
+            "edid": "AlduinBase",
+            "formKey": "08E4F1:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true
+      }
+    ]
+  }
+}

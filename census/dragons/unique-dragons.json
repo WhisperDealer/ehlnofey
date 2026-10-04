@@ -4,184 +4,685 @@
   "group": "dragons",
   "title": "Unique Dragons",
   "order": 2,
-  "meta": { "ticket": "WD-91", "confluencePageId": "16318486", "updated": "2026-10-04" },
-
+  "meta": {
+    "ticket": "WD-91",
+    "confluencePageId": "16318486",
+    "updated": "2026-10-04"
+  },
   "records": {
     "confidence": "verified",
     "rows": [
-      { "id": "alduin", "name": "Alduin",
+      {
+        "id": "paarthurnax",
+        "name": "Paarthurnax",
         "records": [
-          { "edid": "AlduinBase", "formKey": "08E4F1:Skyrim.esm" },
-          { "edid": "MQ101Alduin", "formKey": "032B94:Skyrim.esm" },
-          { "edid": "MQ106Alduin", "formKey": "032D9D:Skyrim.esm" },
-          { "edid": "MQ206Alduin", "formKey": "04424A:Skyrim.esm" } ],
-        "race": { "edid": "AlduinRace", "formKey": "0E7713:Skyrim.esm" },
-        "level": { "kind": "pcMult", "mult": 1.2, "min": 10, "max": 100 },
-        "target": { "band": "X", "level": 150, "status": "decided", "source": "bands-of-power.md: Alduin (150)" } },
-      { "id": "alduin-sovngarde", "name": "Alduin",
-        "records": [ { "edid": "MQ304Alduin", "formKey": "04E9BC:Skyrim.esm" } ],
-        "level": { "kind": "pcMult", "mult": 1.2, "min": 20, "max": 100 },
-        "target": { "band": "X", "level": 150, "status": "proposed", "source": "bands-of-power.md: Alduin (150); the Sovngarde fight" } },
-      { "id": "alduin-ancient", "name": "Alduin",
-        "records": [ { "edid": "MQ206AncientAlduin", "formKey": "04377F:Skyrim.esm" } ],
-        "level": { "kind": "fixed", "value": 100 },
-        "target": { "band": "X", "level": 150, "status": "proposed", "source": "bands-of-power.md: Alduin (150); the Elder Scroll vision" } },
-      { "id": "paarthurnax", "name": "Paarthurnax",
-        "records": [ { "edid": "Paarthurnax", "formKey": "03C57C:Skyrim.esm" } ],
+          {
+            "edid": "Paarthurnax",
+            "formKey": "03C57C:Skyrim.esm"
+          }
+        ],
         "factions": [
-          { "edid": "GreybeardFaction", "formKey": "02C6C8:Skyrim.esm" },
-          { "edid": "PaarthurnaxFaction", "formKey": "03F9EE:Skyrim.esm" } ],
-        "level": { "kind": "template", "value": 10, "from": { "edid": "EncDragon01Fire", "formKey": "01CA03:Skyrim.esm" } },
-        "flags": [ "Essential" ],
-        "target": { "band": "IX", "status": "proposed", "source": "role: an ancient named dragon" } },
-      { "id": "mirmulnir", "name": "Mirmulnir",
-        "records": [ { "edid": "MQ104Dragon", "formKey": "01CA05:Skyrim.esm" } ],
-        "level": { "kind": "list", "from": { "edid": "MQ104LCharDragon", "formKey": "0F8A4D:Skyrim.esm" }, "rungs": [ 10, 20, 30, 40, 50 ] },
-        "target": { "band": "VIII", "status": "proposed", "source": "role: the first dragon, a low-level dragon" } },
-      { "id": "sahloknir", "name": "Sahloknir",
-        "records": [ { "edid": "MQ106Dragon", "formKey": "032D9B:Skyrim.esm" } ],
-        "level": { "kind": "list", "from": { "edid": "LCharDragonAny", "formKey": "05EACF:Skyrim.esm" }, "rungs": [ 10, 20, 30, 40, 50, 62, 75 ] },
-        "target": { "band": "IX", "status": "proposed", "source": "bands-of-power.md: dragons" } },
-      { "id": "resurrected-dragons", "name": "Vuljotnaak · Nahagliiv · Viinturuth",
+          {
+            "edid": "GreybeardFaction",
+            "formKey": "02C6C8:Skyrim.esm"
+          },
+          {
+            "edid": "PaarthurnaxFaction",
+            "formKey": "03F9EE:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 10,
+          "from": {
+            "edid": "EncDragon01Fire",
+            "formKey": "01CA03:Skyrim.esm"
+          }
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "IX",
+          "status": "proposed",
+          "source": "role: an ancient named dragon"
+        }
+      },
+      {
+        "id": "mirmulnir",
+        "name": "Mirmulnir",
         "records": [
-          { "edid": "MQResurrectDragon1", "formKey": "0FE430:Skyrim.esm" },
-          { "edid": "MQResurrectDragon2", "formKey": "0FE431:Skyrim.esm" },
-          { "edid": "MQResurrectDragon3", "formKey": "0FE432:Skyrim.esm" } ],
-        "level": { "kind": "list", "from": { "edid": "LCharDragonAny", "formKey": "05EACF:Skyrim.esm" }, "rungs": [ 10, 20, 30, 40, 50, 62, 75 ] },
-        "target": { "band": "IX", "status": "proposed", "source": "bands-of-power.md: dragons" } },
-      { "id": "odahviing", "name": "Odahviing",
+          {
+            "edid": "MQ104Dragon",
+            "formKey": "01CA05:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "MQ104LCharDragon",
+            "formKey": "0F8A4D:Skyrim.esm"
+          },
+          "rungs": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ]
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "role: the first dragon, a low-level dragon"
+        }
+      },
+      {
+        "id": "sahloknir",
+        "name": "Sahloknir",
         "records": [
-          { "edid": "Odahviing", "formKey": "045920:Skyrim.esm" },
-          { "edid": "MQ303Odahviing", "formKey": "0F6850:Skyrim.esm" } ],
-        "level": { "kind": "list", "from": { "edid": "MQLCharDragonFire", "formKey": "0FEA9C:Skyrim.esm" }, "rungs": [ 20, 40, 50 ] },
-        "target": { "band": "IX", "status": "proposed", "source": "role: Alduin's lieutenant" } },
-      { "id": "vulthuryol", "name": "Vulthuryol",
-        "records": [ { "edid": "BlackreachDragon", "formKey": "07EAC7:Skyrim.esm" } ],
-        "level": { "kind": "template", "value": 50, "from": { "edid": "EncDragon05Fire", "formKey": "0F811C:Skyrim.esm" } },
-        "target": { "band": "IX", "status": "proposed", "source": "bands-of-power.md: dragons" } },
-      { "id": "skeletal-dragon", "name": "Skeletal Dragon",
-        "records": [ { "edid": "dunLabyrinthianUndeadDragon", "formKey": "09192C:Skyrim.esm" } ],
-        "race": { "edid": "UndeadDragonRace", "formKey": "1052A3:Skyrim.esm" },
-        "level": { "kind": "fixed", "value": 20 },
-        "target": { "band": "VIII", "status": "proposed", "source": "bands-of-power.md: low-level dragons" } },
-      { "id": "durnehviir", "name": "Durnehviir",
-        "records": [ { "edid": "DLC1Durnehviir", "formKey": "0030D8:Dawnguard.esm" } ],
-        "race": { "edid": "DLC1UndeadDragonRace", "formKey": "0117DE:Dawnguard.esm" },
-        "level": { "kind": "pcMult", "mult": 1, "min": 10, "max": 70 },
-        "target": { "band": "IX", "status": "proposed", "source": "role: a named undead dragon" } },
-      { "id": "ice-lake-dragons", "name": "Naaslaarum · Voslaarum",
+          {
+            "edid": "MQ106Dragon",
+            "formKey": "032D9B:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDragonAny",
+            "formKey": "05EACF:Skyrim.esm"
+          },
+          "rungs": [
+            10,
+            20,
+            30,
+            40,
+            50,
+            62,
+            75
+          ]
+        },
+        "target": {
+          "band": "IX",
+          "status": "proposed",
+          "source": "bands-of-power.md: dragons"
+        }
+      },
+      {
+        "id": "resurrected-dragons",
+        "name": "Vuljotnaak · Nahagliiv · Viinturuth",
         "records": [
-          { "edid": "DLC1lvlDragonNaaslaarum", "formKey": "010E9C:Dawnguard.esm" },
-          { "edid": "DLC1lvlDragonVoslaarum", "formKey": "010E99:Dawnguard.esm" } ],
-        "level": { "kind": "list", "from": { "edid": "DLC1LCharDragonIceLake", "formKey": "010E9A:Dawnguard.esm" }, "rungs": [ 10, 20, 40, 50, 62 ] },
-        "target": { "band": "IX", "status": "proposed", "source": "bands-of-power.md: dragons" } }
+          {
+            "edid": "MQResurrectDragon1",
+            "formKey": "0FE430:Skyrim.esm"
+          },
+          {
+            "edid": "MQResurrectDragon2",
+            "formKey": "0FE431:Skyrim.esm"
+          },
+          {
+            "edid": "MQResurrectDragon3",
+            "formKey": "0FE432:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDragonAny",
+            "formKey": "05EACF:Skyrim.esm"
+          },
+          "rungs": [
+            10,
+            20,
+            30,
+            40,
+            50,
+            62,
+            75
+          ]
+        },
+        "target": {
+          "band": "IX",
+          "status": "proposed",
+          "source": "bands-of-power.md: dragons"
+        }
+      },
+      {
+        "id": "odahviing",
+        "name": "Odahviing",
+        "records": [
+          {
+            "edid": "Odahviing",
+            "formKey": "045920:Skyrim.esm"
+          },
+          {
+            "edid": "MQ303Odahviing",
+            "formKey": "0F6850:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "MQLCharDragonFire",
+            "formKey": "0FEA9C:Skyrim.esm"
+          },
+          "rungs": [
+            20,
+            40,
+            50
+          ]
+        },
+        "target": {
+          "band": "IX",
+          "status": "proposed",
+          "source": "role: Alduin's lieutenant"
+        }
+      },
+      {
+        "id": "vulthuryol",
+        "name": "Vulthuryol",
+        "records": [
+          {
+            "edid": "BlackreachDragon",
+            "formKey": "07EAC7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 50,
+          "from": {
+            "edid": "EncDragon05Fire",
+            "formKey": "0F811C:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IX",
+          "status": "proposed",
+          "source": "bands-of-power.md: dragons"
+        }
+      },
+      {
+        "id": "skeletal-dragon",
+        "name": "Skeletal Dragon",
+        "records": [
+          {
+            "edid": "dunLabyrinthianUndeadDragon",
+            "formKey": "09192C:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "UndeadDragonRace",
+          "formKey": "1052A3:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: low-level dragons"
+        }
+      },
+      {
+        "id": "durnehviir",
+        "name": "Durnehviir",
+        "records": [
+          {
+            "edid": "DLC1Durnehviir",
+            "formKey": "0030D8:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1UndeadDragonRace",
+          "formKey": "0117DE:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 70
+        },
+        "target": {
+          "band": "IX",
+          "status": "proposed",
+          "source": "role: a named undead dragon"
+        }
+      },
+      {
+        "id": "ice-lake-dragons",
+        "name": "Naaslaarum · Voslaarum",
+        "records": [
+          {
+            "edid": "DLC1lvlDragonNaaslaarum",
+            "formKey": "010E9C:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1lvlDragonVoslaarum",
+            "formKey": "010E99:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "DLC1LCharDragonIceLake",
+            "formKey": "010E9A:Dawnguard.esm"
+          },
+          "rungs": [
+            10,
+            20,
+            40,
+            50,
+            62
+          ]
+        },
+        "target": {
+          "band": "IX",
+          "status": "proposed",
+          "source": "bands-of-power.md: dragons"
+        }
+      }
     ]
   },
-
   "ownsLevel": {
     "confidence": "verified",
     "items": [
-      "Changing `AlduinBase` 08E4F1 does not move `MQ304Alduin` 04E9BC or `MQ206AncientAlduin` 04377F (both rows): they use it as their template but not for `Stats`. `MQ101Alduin`, `MQ106Alduin` and `MQ206Alduin` carry `Stats` and follow it.",
-      "The other rows: no other record keeps its own level.",
+      "For every row: no other record keeps its own level.",
       "The other dragons with no template are `EncDragon01Fire`, `dunSkuldafnDragonDraugr` and `DLC2DragonSkeleton` (on *Common Dragons*) and `DLC1DurnehviirSummon` 00C71A:Dawnguard.esm (the summoned Durnehviir, 20, on *Constructs & Dragons*).",
       "Every other record behind these dragons (Paarthurnax, Vulthuryol, the list-drawn dragons and their wrappers) carries `Stats` and follows its template or list."
     ]
   },
-
   "lists": {
     "confidence": "verified",
     "rows": [
-      { "list": { "edid": "LCharDragonAny", "formKey": "05EACF:Skyrim.esm" },
+      {
+        "list": {
+          "edid": "LCharDragonAny",
+          "formKey": "05EACF:Skyrim.esm"
+        },
         "seeFamily": "common-dragons",
-        "owner": "Sahloknir, Vuljotnaak, Nahagliiv, Viinturuth through `lvlDragon` 05EACE" },
-      { "list": { "edid": "MQ104LCharDragon", "formKey": "0F8A4D:Skyrim.esm" },
+        "owner": "Sahloknir, Vuljotnaak, Nahagliiv, Viinturuth through `lvlDragon` 05EACE"
+      },
+      {
+        "list": {
+          "edid": "MQ104LCharDragon",
+          "formKey": "0F8A4D:Skyrim.esm"
+        },
         "gate": "all levels ≤ player, each",
         "entries": [
-          { "at": 1,  "label": "Dragon" },
-          { "at": 10, "label": "Blood" },
-          { "at": 18, "label": "Frost" },
-          { "at": 27, "label": "Elder" },
-          { "at": 36, "label": "Ancient" } ],
-        "owner": "Mirmulnir through `lvlMQ104Dragon` 0FAE86" },
-      { "list": { "edid": "MQLCharDragonFire", "formKey": "0FEA9C:Skyrim.esm" },
+          {
+            "at": 1,
+            "label": "Dragon"
+          },
+          {
+            "at": 10,
+            "label": "Blood"
+          },
+          {
+            "at": 18,
+            "label": "Frost"
+          },
+          {
+            "at": 27,
+            "label": "Elder"
+          },
+          {
+            "at": 36,
+            "label": "Ancient"
+          }
+        ],
+        "owner": "Mirmulnir through `lvlMQ104Dragon` 0FAE86"
+      },
+      {
+        "list": {
+          "edid": "MQLCharDragonFire",
+          "formKey": "0FEA9C:Skyrim.esm"
+        },
         "gate": "all levels ≤ player, each",
         "entries": [
-          { "at": 1,  "label": "Blood" },
-          { "at": 18, "label": "Elder (`EncDragon03FireNoScript` 0FEA9B, 40)" },
-          { "at": 27, "label": "Elder" },
-          { "at": 36, "label": "Ancient" } ],
-        "owner": "Odahviing through `lvlMQDragon` 0FEA9A" },
-      { "list": { "edid": "DLC1LCharDragonIceLake", "formKey": "010E9A:Dawnguard.esm" },
+          {
+            "at": 1,
+            "label": "Blood"
+          },
+          {
+            "at": 18,
+            "label": "Elder (`EncDragon03FireNoScript` 0FEA9B, 40)"
+          },
+          {
+            "at": 27,
+            "label": "Elder"
+          },
+          {
+            "at": 36,
+            "label": "Ancient"
+          }
+        ],
+        "owner": "Odahviing through `lvlMQDragon` 0FEA9A"
+      },
+      {
+        "list": {
+          "edid": "DLC1LCharDragonIceLake",
+          "formKey": "010E9A:Dawnguard.esm"
+        },
         "gate": "all levels ≤ player, each",
         "entries": [
-          { "at": 1,  "label": "Dragon" },
-          { "at": 18, "label": "Dragon" },
-          { "at": 27, "label": "Blood" },
-          { "at": 36, "label": "Elder (0FEA9B)" },
-          { "at": 45, "label": "Elder" },
-          { "at": 57, "label": "Ancient" },
-          { "at": 70, "label": "Revered" } ],
-        "owner": "Naaslaarum, Voslaarum through `DLC1lvlDragonIceLake` 010E9B" }
+          {
+            "at": 1,
+            "label": "Dragon"
+          },
+          {
+            "at": 18,
+            "label": "Dragon"
+          },
+          {
+            "at": 27,
+            "label": "Blood"
+          },
+          {
+            "at": 36,
+            "label": "Elder (0FEA9B)"
+          },
+          {
+            "at": 45,
+            "label": "Elder"
+          },
+          {
+            "at": 57,
+            "label": "Ancient"
+          },
+          {
+            "at": 70,
+            "label": "Revered"
+          }
+        ],
+        "owner": "Naaslaarum, Voslaarum through `DLC1lvlDragonIceLake` 010E9B"
+      }
     ]
   },
-
   "placed": {
     "title": "Placed",
     "confidence": "verified",
     "rows": [
-      { "name": "Alduin", "base": [ { "edid": "MQ101Alduin", "formKey": "032B94:Skyrim.esm" } ],
-        "locations": [ { "cell": { "edid": "Tamriel" }, "persistent": true, "ref": { "edid": "MQ101AlduinREF", "formKey": "032DB7:Skyrim.esm" }, "disabled": true } ],
-        "quest": "alias Alduin of `MQ101` 03372B and `MQ102` 04E50D" },
-      { "name": "Alduin", "base": [ { "edid": "MQ106Alduin", "formKey": "032D9D:Skyrim.esm" } ],
-        "locations": [ { "cell": { "edid": "KynesgroveBurialMound08", "formKey": "00B55C:Skyrim.esm" }, "ref": { "edid": "MQ106AlduinREF", "formKey": "032DA0:Skyrim.esm" }, "disabled": true } ],
-        "quest": "alias Alduin of `MQ106` 032926 and `MQResurrectDragon` 0B3991" },
-      { "name": "Alduin", "base": [ { "edid": "MQ206Alduin", "formKey": "04424A:Skyrim.esm" } ],
-        "locations": [ { "cell": { "edid": "Tamriel" }, "persistent": true, "ref": { "edid": "MQ206AlduinREF", "formKey": "04424B:Skyrim.esm" }, "disabled": true } ],
-        "quest": "alias Alduin of `MQ206` 036193" },
-      { "name": "Alduin", "base": [ { "edid": "MQ206AncientAlduin", "formKey": "04377F:Skyrim.esm" } ],
-        "locations": [ { "cell": { "edid": "HHpathShrine10", "formKey": "0096EC:Skyrim.esm" }, "ref": { "edid": "MQ206AncientAlduinREF", "formKey": "04377E:Skyrim.esm" }, "disabled": true } ],
-        "quest": "alias AncientAlduin of `MQ206`" },
-      { "name": "Alduin", "base": [ { "edid": "MQ304Alduin", "formKey": "04E9BC:Skyrim.esm" } ],
-        "locations": [ { "cell": { "edid": "Sovngarde" }, "persistent": true, "ref": { "edid": "MQ304AlduinREF", "formKey": "04E9BD:Skyrim.esm" }, "disabled": true } ] },
-      { "name": "Alduin", "base": [ { "edid": "AlduinBase", "formKey": "08E4F1:Skyrim.esm" } ], "notPlaced": true },
-      { "name": "Paarthurnax", "base": [ { "edid": "Paarthurnax", "formKey": "03C57C:Skyrim.esm" } ],
-        "locations": [ { "cell": { "edid": "Tamriel" }, "persistent": true, "ref": { "edid": "PaarthurnaxREF", "formKey": "03C57D:Skyrim.esm" }, "disabled": true, "note": "cell 009749 on the Throat of the World; overridden by Dragonborn.esm" } ],
-        "quest": "alias Paarthurnax of `MQ204` 02D515, `MQ205` 02D516, `MQ206`, `MQ301` 044C56, `MQ302` 045923, `MQ306` 046EF3, `MQPaarthurnax` 03FA16; named by `MQHighHrothgarTraining1–3` 10C045 · 10C052 · 10C055" },
-      { "name": "Mirmulnir", "base": [ { "edid": "MQ104Dragon", "formKey": "01CA05:Skyrim.esm" } ],
-        "locations": [ { "cell": { "edid": "Tamriel" }, "persistent": true, "ref": { "edid": "MQ104BDragonRef", "formKey": "05A6CA:Skyrim.esm" }, "disabled": true } ],
-        "quest": "forced ref of `MQ104` 02610C" },
-      { "name": "Sahloknir", "base": [ { "edid": "MQ106Dragon", "formKey": "032D9B:Skyrim.esm" } ],
-        "locations": [ { "cell": { "edid": "Tamriel" }, "persistent": true, "ref": { "edid": "MQ106DragonREF", "formKey": "032D9F:Skyrim.esm" }, "disabled": true } ],
-        "quest": "forced ref of `MQ106`, property of `DLC2Init` 016E02:Dragonborn.esm" },
-      { "name": "Vuljotnaak · Nahagliiv · Viinturuth",
+      {
+        "name": "Paarthurnax",
         "base": [
-          { "edid": "MQResurrectDragon1", "formKey": "0FE430:Skyrim.esm" },
-          { "edid": "MQResurrectDragon2", "formKey": "0FE431:Skyrim.esm" },
-          { "edid": "MQResurrectDragon3", "formKey": "0FE432:Skyrim.esm" } ],
+          {
+            "edid": "Paarthurnax",
+            "formKey": "03C57C:Skyrim.esm"
+          }
+        ],
         "locations": [
-          { "cell": { "edid": "Tamriel" }, "persistent": true, "ref": { "edid": "DragonMoundTundra01Dragon", "formKey": "0FDBAF:Skyrim.esm" }, "disabled": true },
-          { "cell": { "edid": "Tamriel" }, "persistent": true, "ref": { "edid": "DragonMoundTundra03Dragon", "formKey": "0FDBB0:Skyrim.esm" }, "disabled": true },
-          { "cell": { "edid": "Tamriel" }, "persistent": true, "ref": { "edid": "DragonMoundSnowy02Dragon", "formKey": "0FDBB1:Skyrim.esm" }, "disabled": true } ],
-        "quest": "aliases Dragon01–03 of `MQResurrectDragon` 0B3991" },
-      { "name": "Odahviing", "base": [ { "edid": "Odahviing", "formKey": "045920:Skyrim.esm" } ],
-        "locations": [ { "cell": { "edid": "WhiterunDragonsreachWorld" }, "persistent": true, "ref": { "edid": "OdahviingREF", "formKey": "045921:Skyrim.esm" }, "disabled": true } ] },
-      { "name": "Odahviing", "base": [ { "edid": "MQ303Odahviing", "formKey": "0F6850:Skyrim.esm" } ],
-        "locations": [ { "cell": { "edid": "SkuldafnWorld" }, "persistent": true, "ref": { "edid": "MQ303OdahviingRef", "formKey": "0F6851:Skyrim.esm" } } ] },
-      { "name": "Vulthuryol", "base": [ { "edid": "BlackreachDragon", "formKey": "07EAC7:Skyrim.esm" } ],
-        "locations": [ { "cell": { "edid": "Blackreach" }, "persistent": true, "ref": { "edid": "BlackreachDragonRef", "formKey": "07EAC5:Skyrim.esm" }, "disabled": true } ],
-        "quest": "alias BlackreachDragon of `dunBlackreachDragonQST` 080B66" },
-      { "name": "Skeletal Dragon", "base": [ { "edid": "dunLabyrinthianUndeadDragon", "formKey": "09192C:Skyrim.esm" } ],
-        "locations": [ { "cell": { "edid": "Labyrinthian01", "formKey": "083559:Skyrim.esm" }, "ref": { "formKey": "083588:Skyrim.esm" } } ],
-        "quest": "alias skeletalDragon of `dunLabyrinthian` 091F1A" },
-      { "name": "Durnehviir", "base": [ { "edid": "DLC1Durnehviir", "formKey": "0030D8:Dawnguard.esm" } ],
-        "locations": [ { "cell": { "edid": "DLC01Boneyard" }, "persistent": true, "ref": { "edid": "DLC1DurnehviirRef", "formKey": "007A31:Dawnguard.esm" }, "disabled": true, "note": "Soul Cairn" } ],
-        "quest": "property of `DLC1VQ05` 002850:Dawnguard.esm" },
-      { "name": "Voslaarum", "base": [ { "edid": "DLC1lvlDragonVoslaarum", "formKey": "010E99:Dawnguard.esm" } ],
-        "locations": [ { "cell": { "edid": "DLC01FalmerValley" }, "persistent": true, "ref": { "edid": "DLC1FalmerValleyDragon01REF", "formKey": "0038F0:Dawnguard.esm" }, "disabled": true } ],
-        "quest": "forced ref of `DLC1LDIceDragonFight` 0088E5" },
-      { "name": "Naaslaarum", "base": [ { "edid": "DLC1lvlDragonNaaslaarum", "formKey": "010E9C:Dawnguard.esm" } ],
-        "locations": [ { "cell": { "edid": "DLC01FalmerValley" }, "persistent": true, "ref": { "edid": "DLC1FalmerValleyDragon02REF", "formKey": "019DC0:Dawnguard.esm" }, "disabled": true } ],
-        "quest": "forced ref of `DLC1LDIceDragonFight02` 019DD2" }
+          {
+            "cell": {
+              "edid": "Tamriel"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "PaarthurnaxREF",
+              "formKey": "03C57D:Skyrim.esm"
+            },
+            "disabled": true,
+            "note": "cell 009749 on the Throat of the World; overridden by Dragonborn.esm"
+          }
+        ],
+        "quest": "alias Paarthurnax of `MQ204` 02D515, `MQ205` 02D516, `MQ206`, `MQ301` 044C56, `MQ302` 045923, `MQ306` 046EF3, `MQPaarthurnax` 03FA16; named by `MQHighHrothgarTraining1–3` 10C045 · 10C052 · 10C055"
+      },
+      {
+        "name": "Mirmulnir",
+        "base": [
+          {
+            "edid": "MQ104Dragon",
+            "formKey": "01CA05:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "MQ104BDragonRef",
+              "formKey": "05A6CA:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "forced ref of `MQ104` 02610C"
+      },
+      {
+        "name": "Sahloknir",
+        "base": [
+          {
+            "edid": "MQ106Dragon",
+            "formKey": "032D9B:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "MQ106DragonREF",
+              "formKey": "032D9F:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "forced ref of `MQ106`, property of `DLC2Init` 016E02:Dragonborn.esm"
+      },
+      {
+        "name": "Vuljotnaak · Nahagliiv · Viinturuth",
+        "base": [
+          {
+            "edid": "MQResurrectDragon1",
+            "formKey": "0FE430:Skyrim.esm"
+          },
+          {
+            "edid": "MQResurrectDragon2",
+            "formKey": "0FE431:Skyrim.esm"
+          },
+          {
+            "edid": "MQResurrectDragon3",
+            "formKey": "0FE432:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DragonMoundTundra01Dragon",
+              "formKey": "0FDBAF:Skyrim.esm"
+            },
+            "disabled": true
+          },
+          {
+            "cell": {
+              "edid": "Tamriel"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DragonMoundTundra03Dragon",
+              "formKey": "0FDBB0:Skyrim.esm"
+            },
+            "disabled": true
+          },
+          {
+            "cell": {
+              "edid": "Tamriel"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DragonMoundSnowy02Dragon",
+              "formKey": "0FDBB1:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "aliases Dragon01–03 of `MQResurrectDragon` 0B3991"
+      },
+      {
+        "name": "Odahviing",
+        "base": [
+          {
+            "edid": "Odahviing",
+            "formKey": "045920:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "WhiterunDragonsreachWorld"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "OdahviingREF",
+              "formKey": "045921:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Odahviing",
+        "base": [
+          {
+            "edid": "MQ303Odahviing",
+            "formKey": "0F6850:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "SkuldafnWorld"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "MQ303OdahviingRef",
+              "formKey": "0F6851:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Vulthuryol",
+        "base": [
+          {
+            "edid": "BlackreachDragon",
+            "formKey": "07EAC7:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Blackreach"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "BlackreachDragonRef",
+              "formKey": "07EAC5:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias BlackreachDragon of `dunBlackreachDragonQST` 080B66"
+      },
+      {
+        "name": "Skeletal Dragon",
+        "base": [
+          {
+            "edid": "dunLabyrinthianUndeadDragon",
+            "formKey": "09192C:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Labyrinthian01",
+              "formKey": "083559:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "083588:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "alias skeletalDragon of `dunLabyrinthian` 091F1A"
+      },
+      {
+        "name": "Durnehviir",
+        "base": [
+          {
+            "edid": "DLC1Durnehviir",
+            "formKey": "0030D8:Dawnguard.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC01Boneyard"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DLC1DurnehviirRef",
+              "formKey": "007A31:Dawnguard.esm"
+            },
+            "disabled": true,
+            "note": "Soul Cairn"
+          }
+        ],
+        "quest": "property of `DLC1VQ05` 002850:Dawnguard.esm"
+      },
+      {
+        "name": "Voslaarum",
+        "base": [
+          {
+            "edid": "DLC1lvlDragonVoslaarum",
+            "formKey": "010E99:Dawnguard.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC01FalmerValley"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DLC1FalmerValleyDragon01REF",
+              "formKey": "0038F0:Dawnguard.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "forced ref of `DLC1LDIceDragonFight` 0088E5"
+      },
+      {
+        "name": "Naaslaarum",
+        "base": [
+          {
+            "edid": "DLC1lvlDragonNaaslaarum",
+            "formKey": "010E9C:Dawnguard.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC01FalmerValley"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DLC1FalmerValleyDragon02REF",
+              "formKey": "019DC0:Dawnguard.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "forced ref of `DLC1LDIceDragonFight02` 019DD2"
+      }
     ]
   }
 }

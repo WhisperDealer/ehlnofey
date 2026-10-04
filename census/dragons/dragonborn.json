@@ -3,153 +3,328 @@
   "id": "dragonborn",
   "group": "dragons",
   "title": "Dragonborn",
-  "order": 3,
-  "meta": { "ticket": "WD-91", "confluencePageId": "16351254", "updated": "2026-10-04" },
-
+  "order": 4,
+  "meta": {
+    "ticket": "WD-91",
+    "confluencePageId": "16351254",
+    "updated": "2026-10-04"
+  },
   "records": {
     "confidence": "verified",
     "rows": [
-      { "id": "miraak", "name": "Miraak",
+      {
+        "id": "sahrotaar",
+        "name": "Sahrotaar",
         "records": [
-          { "edid": "DLC2Miraak", "formKey": "017F7D:Dragonborn.esm" },
-          { "edid": "DLC2MiraakMQ01", "formKey": "017936:Dragonborn.esm" },
-          { "edid": "DLC2MiraakMQ02", "formKey": "017938:Dragonborn.esm" },
-          { "edid": "DLC2MiraakMQ04", "formKey": "017F81:Dragonborn.esm" },
-          { "edid": "DLC2MiraakSoulSteal", "formKey": "0200D9:Dragonborn.esm" },
-          { "edid": "DLC2MiraakTest", "formKey": "01F998:Dragonborn.esm" } ],
-        "level": { "kind": "pcMult", "mult": 1, "min": 35, "max": 200 },
-        "target": { "band": "X", "level": 100, "status": "decided", "source": "bands-of-power.md: Miraak (100)" } },
-      { "id": "miraak-final", "name": "Miraak",
-        "records": [ { "edid": "DLC2MiraakMQ06", "formKey": "01FB98:Dragonborn.esm" } ],
-        "race": { "edid": "DLC2MiraakRace", "formKey": "03CA97:Dragonborn.esm" },
-        "level": { "kind": "pcMult", "mult": 1.1, "min": 35, "max": 150 },
-        "target": { "band": "X", "level": 100, "status": "proposed", "source": "bands-of-power.md: Miraak (100); the final fight" } },
-      { "id": "sahrotaar", "name": "Sahrotaar",
+          {
+            "edid": "DLC2MiraakDragon",
+            "formKey": "023F7B:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2MQ02MiraakDragon",
+            "formKey": "031CA5:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2MQ06MiraakDragon",
+            "formKey": "039B6B:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 58,
+          "from": {
+            "edid": "DLC2EncDragon06Frost",
+            "formKey": "02C88A:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "IX",
+          "status": "proposed",
+          "source": "bands-of-power.md: dragons"
+        }
+      },
+      {
+        "id": "krosulhah",
+        "name": "Krosulhah",
         "records": [
-          { "edid": "DLC2MiraakDragon", "formKey": "023F7B:Dragonborn.esm" },
-          { "edid": "DLC2MQ02MiraakDragon", "formKey": "031CA5:Dragonborn.esm" },
-          { "edid": "DLC2MQ06MiraakDragon", "formKey": "039B6B:Dragonborn.esm" } ],
-        "level": { "kind": "template", "value": 58, "from": { "edid": "DLC2EncDragon06Frost", "formKey": "02C88A:Dragonborn.esm" } },
-        "target": { "band": "IX", "status": "proposed", "source": "bands-of-power.md: dragons" } },
-      { "id": "krosulhah", "name": "Krosulhah",
-        "records": [ { "edid": "DLC2MQ05Dragon", "formKey": "017F87:Dragonborn.esm" } ],
-        "level": { "kind": "list", "from": { "edid": "DLC2MQ05LCharDragonNEW", "formKey": "028525:Dragonborn.esm" }, "rungs": [ 30, 40, 50 ] },
-        "target": { "band": "IX", "status": "proposed", "source": "bands-of-power.md: dragons" } },
-      { "id": "mq06-dragons", "name": "by rung (Dragon … Ancient Dragon)",
-        "records": [ { "edid": "DLC2lvlDragon_MQ06", "formKey": "03D5B5:Dragonborn.esm" } ],
-        "level": { "kind": "list", "from": { "edid": "DLC2LCharDragonAnyMQ06", "formKey": "03D5B6:Dragonborn.esm" }, "rungs": [ 10, 20, 30, 40, 50 ] },
-        "target": { "band": "IX", "status": "proposed", "source": "bands-of-power.md: dragons (the Apocrypha finale)" } },
-      { "id": "ancient-dragonborn", "name": "Ancient Dragonborn",
-        "records": [ { "edid": "dlc2DBAncientDragonborn", "formKey": "0265AA:Dragonborn.esm" } ],
-        "level": { "kind": "fixed", "value": 25 },
-        "target": { "band": "VIII", "status": "proposed", "source": "role: a named spectral boss" } }
+          {
+            "edid": "DLC2MQ05Dragon",
+            "formKey": "017F87:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "DLC2MQ05LCharDragonNEW",
+            "formKey": "028525:Dragonborn.esm"
+          },
+          "rungs": [
+            30,
+            40,
+            50
+          ]
+        },
+        "target": {
+          "band": "IX",
+          "status": "proposed",
+          "source": "bands-of-power.md: dragons"
+        }
+      },
+      {
+        "id": "mq06-dragons",
+        "name": "by rung (Dragon … Ancient Dragon)",
+        "records": [
+          {
+            "edid": "DLC2lvlDragon_MQ06",
+            "formKey": "03D5B5:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "DLC2LCharDragonAnyMQ06",
+            "formKey": "03D5B6:Dragonborn.esm"
+          },
+          "rungs": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ]
+        },
+        "target": {
+          "band": "IX",
+          "status": "proposed",
+          "source": "bands-of-power.md: dragons (the Apocrypha finale)"
+        }
+      },
+      {
+        "id": "ancient-dragonborn",
+        "name": "Ancient Dragonborn",
+        "records": [
+          {
+            "edid": "dlc2DBAncientDragonborn",
+            "formKey": "0265AA:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 25
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "role: a named spectral boss"
+        }
+      }
     ]
   },
-
   "ownsLevel": {
     "confidence": "verified",
     "items": [
-      "Changing `DLC2Miraak` 017F7D does not move `DLC2MiraakMQ06` 01FB98 (a row, PC×1.1 [35–150]): it uses 017F7D as its template but not for `Stats`. The other Miraak copies carry `Stats` and follow it.",
-      "The other rows: no other record keeps its own level.",
+      "For every row: no other record keeps its own level.",
       "Every other record behind these rows (the Sahrotaar copies, Krosulhah, the MQ06 wrapper) carries `Stats` and follows its template or list."
     ]
   },
-
   "lists": {
     "confidence": "verified",
     "rows": [
-      { "list": { "edid": "DLC2MQ05LCharDragonNEW", "formKey": "028525:Dragonborn.esm" },
+      {
+        "list": {
+          "edid": "DLC2MQ05LCharDragonNEW",
+          "formKey": "028525:Dragonborn.esm"
+        },
         "gate": "all levels ≤ player, each",
         "entries": [
-          { "at": 1,  "label": "Frost" },
-          { "at": 36, "label": "Elder" },
-          { "at": 45, "label": "Ancient" } ],
-        "owner": "Krosulhah through `DLC2lvlMQ05Dragon` 02589F" },
-      { "list": { "edid": "DLC2LCharDragonAnyMQ06", "formKey": "03D5B6:Dragonborn.esm" },
+          {
+            "at": 1,
+            "label": "Frost"
+          },
+          {
+            "at": 36,
+            "label": "Elder"
+          },
+          {
+            "at": 45,
+            "label": "Ancient"
+          }
+        ],
+        "owner": "Krosulhah through `DLC2lvlMQ05Dragon` 02589F"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharDragonAnyMQ06",
+          "formKey": "03D5B6:Dragonborn.esm"
+        },
         "gate": "all levels ≤ player, each",
         "entries": [
-          { "at": 1,  "label": "Dragon Fire + Frost", "count": 2 },
-          { "at": 18, "label": "Blood Fire + Frost", "count": 2 },
-          { "at": 27, "label": "Frost and the test NPC `AADeleteWhenDoneTestJeremyBig` 10D140:Skyrim.esm (\"TestJeremyBig\", 1)" },
-          { "at": 36, "label": "Elder Fire + Frost", "count": 2 },
-          { "at": 45, "label": "Ancient Fire + Frost", "count": 2 } ],
+          {
+            "at": 1,
+            "label": "Dragon Fire + Frost",
+            "count": 2
+          },
+          {
+            "at": 18,
+            "label": "Blood Fire + Frost",
+            "count": 2
+          },
+          {
+            "at": 27,
+            "label": "Frost and the test NPC `AADeleteWhenDoneTestJeremyBig` 10D140:Skyrim.esm (\"TestJeremyBig\", 1)"
+          },
+          {
+            "at": 36,
+            "label": "Elder Fire + Frost",
+            "count": 2
+          },
+          {
+            "at": 45,
+            "label": "Ancient Fire + Frost",
+            "count": 2
+          }
+        ],
         "note": "the `DLC2EncDragon0*NoScript_MQ06` copies (03D5B7–03D5C1)",
-        "owner": "`DLC2lvlDragon_MQ06`" }
+        "owner": "`DLC2lvlDragon_MQ06`"
+      }
     ]
   },
-
   "placed": {
     "title": "Placed",
     "confidence": "verified",
     "rows": [
-      { "name": "Miraak", "base": [ { "edid": "DLC2MiraakMQ01", "formKey": "017936:Dragonborn.esm" } ],
-        "locations": [ { "cell": { "edid": "DLC2TempleofMiraakExterior02", "formKey": "00EDE9:Dragonborn.esm" }, "disabled": true } ] },
-      { "name": "Miraak",
+      {
+        "name": "Sahrotaar",
         "base": [
-          { "edid": "DLC2MiraakMQ02", "formKey": "017938:Dragonborn.esm" },
-          { "edid": "DLC2MiraakMQ06", "formKey": "01FB98:Dragonborn.esm" } ],
-        "locations": [ { "cell": { "edid": "DLC2ApocryphaWorld" }, "persistent": true } ] },
-      { "name": "Miraak", "base": [ { "edid": "DLC2MiraakMQ04", "formKey": "017F81:Dragonborn.esm" } ],
-        "locations": [ { "cell": { "edid": "DLC2Nchardak00", "formKey": "034FD2:Dragonborn.esm" }, "disabled": true } ] },
-      { "name": "Miraak", "base": [ { "edid": "DLC2MiraakSoulSteal", "formKey": "0200D9:Dragonborn.esm" } ],
-        "notPlaced": true,
-        "note": "created by `DLC2SoulSteal` 0200D8, alias Miraak" },
-      { "name": "Miraak", "base": [ { "edid": "DLC2MiraakTest", "formKey": "01F998:Dragonborn.esm" } ],
-        "locations": [ { "cell": { "edid": "CWTestHold", "formKey": "01B44A:Skyrim.esm" }, "note": "test worldspace" } ] },
-      { "name": "Miraak", "base": [ { "edid": "DLC2Miraak", "formKey": "017F7D:Dragonborn.esm" } ], "notPlaced": true },
-      { "name": "Sahrotaar", "base": [ { "edid": "DLC2MQ02MiraakDragon", "formKey": "031CA5:Dragonborn.esm" } ],
-        "locations": [ { "cell": { "edid": "DLC2ApoStart05", "formKey": "01C28B:Dragonborn.esm" }, "ref": { "edid": "DLC2MQ02MiraakDragonRef", "formKey": "031834:Dragonborn.esm" } } ] },
-      { "name": "Sahrotaar", "base": [ { "edid": "DLC2MQ06MiraakDragon", "formKey": "039B6B:Dragonborn.esm" } ],
-        "locations": [ { "cell": { "edid": "DLC2ApocryphaWorld" }, "persistent": true, "ref": { "edid": "DLC2MQ06MiraakDragonRef", "formKey": "019ACC:Dragonborn.esm" }, "disabled": true } ] },
-      { "name": "Sahrotaar", "base": [ { "edid": "DLC2MiraakDragon", "formKey": "023F7B:Dragonborn.esm" } ], "notPlaced": true },
-      { "name": "Krosulhah", "base": [ { "edid": "DLC2MQ05Dragon", "formKey": "017F87:Dragonborn.esm" } ],
-        "locations": [ { "cell": { "edid": "DLC2NchardakExterior05", "formKey": "00EEA7:Dragonborn.esm" }, "ref": { "edid": "DLC2MQ05DragonRef", "formKey": "0176B8:Dragonborn.esm" }, "disabled": true } ] },
-      { "name": "Dragon", "base": [ { "edid": "DLC2lvlDragon_MQ06", "formKey": "03D5B5:Dragonborn.esm" } ],
+          {
+            "edid": "DLC2MQ02MiraakDragon",
+            "formKey": "031CA5:Dragonborn.esm"
+          }
+        ],
         "locations": [
-          { "cell": { "edid": "DLC2ApocryphaWorld" }, "persistent": true, "ref": { "edid": "DLC2MQ06Dragon2", "formKey": "01D573:Dragonborn.esm" }, "disabled": true },
-          { "cell": { "edid": "DLC2ApocryphaWorld" }, "persistent": true, "ref": { "edid": "DLC2MQ06Dragon3", "formKey": "01D572:Dragonborn.esm" }, "disabled": true } ],
-        "quest": "forced refs of `DLC2MQ06` 0179D7" },
-      { "name": "Ancient Dragonborn", "base": [ { "edid": "dlc2DBAncientDragonborn", "formKey": "0265AA:Dragonborn.esm" } ],
-        "locations": [ { "cell": { "edid": "DLC2SolstheimWorld" }, "persistent": true, "ref": { "edid": "dlc2DBAncientDragonbornREF", "formKey": "01DC33:Dragonborn.esm" }, "disabled": true } ],
-        "quest": "no quest names it" }
-    ]
-  },
-
-  "gear": {
-    "confidence": "verified",
-    "rows": [
-      { "records": "`DLC2Miraak` and every copy but MQ06",
-        "weapons": "Miraak's Staff 029A61",
-        "armor": "`DLC2MiraakOutfit` 017F85 (Miraak 029A62, Miraak's Robes, Gloves, Boots)",
-        "skin": "race default" },
-      { "records": "`DLC2MiraakMQ06`",
-        "weapons": "none in the record",
-        "armor": "`DLC2MQ06MiraakOutfit` 03C40B (Miraak's Gloves, Boots, `DLC2MQ06MiraakFightMask`, `DLC2MQ06MiraakFightRobes`)",
-        "skin": "race default" }
-    ]
-  },
-  "gearLists": {
-    "confidence": "verified",
-    "rows": [
-      { "list": { "edid": "DLC2MQ06MiraakFightMask", "formKey": "03C40D:Dragonborn.esm" },
-        "gate": "highest ≤ player",
-        "rolls": "`DLC2MKMiraakFightMask1–6` 03C0F1–03C0F6 \"Miraak's Mask\"",
-        "levels": [ 1, 30, 40, 50, 60, 70 ] },
-      { "list": { "edid": "DLC2MQ06MiraakFightRobes", "formKey": "03C40C:Dragonborn.esm" },
-        "gate": "highest ≤ player",
-        "rolls": "`DLC2MKMiraakFightRobes1–6` 03C0F7 · 03C0F9–03C0FD \"Miraak's Robes\"",
-        "levels": [ 1, 30, 40, 50, 60, 70 ] }
-    ]
-  },
-  "gearItems": {
-    "confidence": "verified",
-    "rows": [
-      { "item": "Miraak's Robes 02B0F7", "kind": "clothing", "playable": true },
-      { "item": "Miraak's Gloves 02B0F9, Miraak's Boots 03D2AF", "kind": "light", "playable": true },
-      { "item": "Miraak 029A62", "kind": "heavy", "playable": true },
-      { "item": "`DLC2MKMiraakFightMask1–6`", "kind": "heavy", "playable": false, "note": "`NonPlayable`" },
-      { "item": "`DLC2MKMiraakFightRobes1–6`", "kind": "clothing", "playable": false, "note": "`NonPlayable`" },
-      { "item": "Miraak's Staff", "kind": "weapon", "playable": true }
+          {
+            "cell": {
+              "edid": "DLC2ApoStart05",
+              "formKey": "01C28B:Dragonborn.esm"
+            },
+            "ref": {
+              "edid": "DLC2MQ02MiraakDragonRef",
+              "formKey": "031834:Dragonborn.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sahrotaar",
+        "base": [
+          {
+            "edid": "DLC2MQ06MiraakDragon",
+            "formKey": "039B6B:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2ApocryphaWorld"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DLC2MQ06MiraakDragonRef",
+              "formKey": "019ACC:Dragonborn.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Sahrotaar",
+        "base": [
+          {
+            "edid": "DLC2MiraakDragon",
+            "formKey": "023F7B:Dragonborn.esm"
+          }
+        ],
+        "notPlaced": true
+      },
+      {
+        "name": "Krosulhah",
+        "base": [
+          {
+            "edid": "DLC2MQ05Dragon",
+            "formKey": "017F87:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2NchardakExterior05",
+              "formKey": "00EEA7:Dragonborn.esm"
+            },
+            "ref": {
+              "edid": "DLC2MQ05DragonRef",
+              "formKey": "0176B8:Dragonborn.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Dragon",
+        "base": [
+          {
+            "edid": "DLC2lvlDragon_MQ06",
+            "formKey": "03D5B5:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2ApocryphaWorld"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DLC2MQ06Dragon2",
+              "formKey": "01D573:Dragonborn.esm"
+            },
+            "disabled": true
+          },
+          {
+            "cell": {
+              "edid": "DLC2ApocryphaWorld"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DLC2MQ06Dragon3",
+              "formKey": "01D572:Dragonborn.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "forced refs of `DLC2MQ06` 0179D7"
+      },
+      {
+        "name": "Ancient Dragonborn",
+        "base": [
+          {
+            "edid": "dlc2DBAncientDragonborn",
+            "formKey": "0265AA:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2SolstheimWorld"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "dlc2DBAncientDragonbornREF",
+              "formKey": "01DC33:Dragonborn.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "no quest names it"
+      }
     ]
   }
 }

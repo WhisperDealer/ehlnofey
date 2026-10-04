@@ -1,0 +1,285 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "miraak",
+  "group": "dragons",
+  "title": "Miraak",
+  "order": 5,
+  "meta": {
+    "ticket": "WD-91",
+    "confluencePageId": "16352369",
+    "updated": "2026-10-04"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "miraak",
+        "name": "Miraak",
+        "records": [
+          {
+            "edid": "DLC2Miraak",
+            "formKey": "017F7D:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2MiraakMQ01",
+            "formKey": "017936:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2MiraakMQ02",
+            "formKey": "017938:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2MiraakMQ04",
+            "formKey": "017F81:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2MiraakSoulSteal",
+            "formKey": "0200D9:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2MiraakTest",
+            "formKey": "01F998:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 35,
+          "max": 200
+        },
+        "target": {
+          "band": "X",
+          "level": 100,
+          "status": "decided",
+          "source": "bands-of-power.md: Miraak (100)"
+        }
+      },
+      {
+        "id": "miraak-final",
+        "name": "Miraak",
+        "records": [
+          {
+            "edid": "DLC2MiraakMQ06",
+            "formKey": "01FB98:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2MiraakRace",
+          "formKey": "03CA97:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 35,
+          "max": 150
+        },
+        "target": {
+          "band": "X",
+          "level": 100,
+          "status": "proposed",
+          "source": "bands-of-power.md: Miraak (100); the final fight"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `DLC2Miraak` 017F7D does not move `DLC2MiraakMQ06` 01FB98 (a row, PC×1.1 [35–150]): it uses 017F7D as its template but not for `Stats`. The other Miraak copies carry `Stats` and follow it.",
+      "The other rows: no other record keeps its own level."
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Miraak",
+        "base": [
+          {
+            "edid": "DLC2MiraakMQ01",
+            "formKey": "017936:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2TempleofMiraakExterior02",
+              "formKey": "00EDE9:Dragonborn.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Miraak",
+        "base": [
+          {
+            "edid": "DLC2MiraakMQ02",
+            "formKey": "017938:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2MiraakMQ06",
+            "formKey": "01FB98:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2ApocryphaWorld"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "Miraak",
+        "base": [
+          {
+            "edid": "DLC2MiraakMQ04",
+            "formKey": "017F81:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2Nchardak00",
+              "formKey": "034FD2:Dragonborn.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Miraak",
+        "base": [
+          {
+            "edid": "DLC2MiraakSoulSteal",
+            "formKey": "0200D9:Dragonborn.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "created by `DLC2SoulSteal` 0200D8, alias Miraak"
+      },
+      {
+        "name": "Miraak",
+        "base": [
+          {
+            "edid": "DLC2MiraakTest",
+            "formKey": "01F998:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "CWTestHold",
+              "formKey": "01B44A:Skyrim.esm"
+            },
+            "note": "test worldspace"
+          }
+        ]
+      },
+      {
+        "name": "Miraak",
+        "base": [
+          {
+            "edid": "DLC2Miraak",
+            "formKey": "017F7D:Dragonborn.esm"
+          }
+        ],
+        "notPlaced": true
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "`DLC2Miraak` and every copy but MQ06",
+        "weapons": "Miraak's Staff 029A61",
+        "armor": "`DLC2MiraakOutfit` 017F85 (Miraak 029A62, Miraak's Robes, Gloves, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "`DLC2MiraakMQ06`",
+        "weapons": "none in the record",
+        "armor": "`DLC2MQ06MiraakOutfit` 03C40B (Miraak's Gloves, Boots, `DLC2MQ06MiraakFightMask`, `DLC2MQ06MiraakFightRobes`)",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC2MQ06MiraakFightMask",
+          "formKey": "03C40D:Dragonborn.esm"
+        },
+        "gate": "highest ≤ player",
+        "rolls": "`DLC2MKMiraakFightMask1–6` 03C0F1–03C0F6 \"Miraak's Mask\"",
+        "levels": [
+          1,
+          30,
+          40,
+          50,
+          60,
+          70
+        ]
+      },
+      {
+        "list": {
+          "edid": "DLC2MQ06MiraakFightRobes",
+          "formKey": "03C40C:Dragonborn.esm"
+        },
+        "gate": "highest ≤ player",
+        "rolls": "`DLC2MKMiraakFightRobes1–6` 03C0F7 · 03C0F9–03C0FD \"Miraak's Robes\"",
+        "levels": [
+          1,
+          30,
+          40,
+          50,
+          60,
+          70
+        ]
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Miraak's Robes 02B0F7",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Miraak's Gloves 02B0F9, Miraak's Boots 03D2AF",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Miraak 029A62",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "`DLC2MKMiraakFightMask1–6`",
+        "kind": "heavy",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`DLC2MKMiraakFightRobes1–6`",
+        "kind": "clothing",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Miraak's Staff",
+        "kind": "weapon",
+        "playable": true
+      }
+    ]
+  }
+}
