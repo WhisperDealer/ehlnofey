@@ -147,7 +147,11 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   `LvlBandit*` wrappers and the gangs: Blackblood, Blood Horkers, Dainty Sload, Cragslane, Mistwatch,
   Ratway, Black-Briar, thieves, CC Saints/Seducers), *Bandit Chiefs* (boss leaves own 6/10/16/21/28;
   the 14 CC armor packs inject boss sublists into `LCharBanditBoss` at runtime), *Reavers* (the DLC2
-  ladder and its bosses), *Named Bandits*; the group page holds the injector table; non-bandits that
+  ladder and its bosses), *Named Bandits*, *Hired Thugs* (the three `WIThug*` records, boss ladder
+  via the chief wrappers; their own page by the user's call, 2026-10-04), *Mercenaries* (user,
+  2026-10-04: Taron Dreth's guards, the Silver-Blood Mercenaries, the CC puzzle-dungeon mercenaries;
+  employers' mercenaries such as Goldenglow's stay with the employer); Makhel Abbas is unused and
+  out of the census; the group page holds the injector table; non-bandits that
   take `Stats` from a bandit list live on their own family's page with a "borrows its level" note;
   the undecided ones are still on Uncategorised → *Bandit Level Borrowers*), Housecarls
   (WD-85, under Factions: *Player Housecarls* (the five hold housecarls and the three HearthFires
@@ -210,7 +214,7 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   unused; the real Alik'r are `MS08`/`WERJ03` records plus the Lord's Mail CC ones, and the Redguard Elite Armaments Remnant Warriors, allies, by the user's call), **Penitus Oculatus**
   and **Morag Tong** (Dragonborn; takes `Stats` from the Reaver ladder; the Severins join by script),
   and **Ghosts of the Tribunal** (the CC pack's Temple: Ordinators, Her Hands, priests; its Erden Relvel
-  and Ash Zombies stay on their own pages), and **Miraak Cultists** (the `DLC2LCharCultist` ladder 12 · 19 ·
+  is on World → *Solstheim Countryside*, its Ash Zombies on Ash), and **Miraak Cultists** (the `DLC2LCharCultist` ladder 12 · 19 ·
   27 · 36 · 46 with summoner copies; Miraak himself and his dragons are on Dragons → *Dragonborn*; his
   Acolytes, Seekers and Lurkers are not), **Blades** (Delphine, Esbern; the recruits are
   followers with no record) and **Greybeards** (the four at High Hrothgar; Paarthurnax moved to Dragons → *Unique
@@ -264,7 +268,7 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   by level 40, sit under most generic rewards), *Reward Givers* (128 quests), *Mining and Fishing*
   (every ore vein rolls `lItemGems10`; CC fishing catches), *Alias Inventories* (21) and *Item List
   Injectors* (52 `AddForm` groups: `DLC2Init` Nordic gear into the bandit lists at 23/25, the CC armour
-  and weapon packs at 1–48)), Uncategorised (WD-75: the holding group for anything that fits no group yet; the 2026-10-03 sweep of every NPC record in the masters and the 74 CC plugins against every census page put the leftovers on *Unfiled NPCs* (named: wanderers, random encounters, Prince voices, Sovngarde, quest NPCs, CC) and *Unfiled Leveled Wrappers* (unnamed wrappers grouped by the template they draw); audio templates, test actors, chargen presets, voice-type holders and mannequins were left out; CC enemies
+  and weapon packs at 1–48)), Uncategorised (WD-75: the holding group for anything that fits no group yet; the 2026-10-03 sweep of every NPC record in the masters and the 74 CC plugins against every census page put the leftovers on *Unfiled NPCs* (named: wanderers, random encounters, Sovngarde, quest NPCs, CC; the Daedric Prince voices were dropped from the census, user 2026-10-04: not enemies) and *Unfiled Leveled Wrappers* (unnamed wrappers grouped by the template they draw); audio templates, test actors, chargen presets, voice-type holders and mannequins were left out; CC enemies
   in it go one level deeper, under its **Creation Club** page, one child per pack; *Forsworn Level
   Borrowers* is retired (user, 2026-10-03): the Sanctuary Guardians are on *Dark Brotherhood
   Assassins*, Silvia on *Witches*, Moric Sidrey on *Named Vigilants*, each with a note that it takes
