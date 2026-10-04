@@ -39,35 +39,6 @@
       }
     ]
   },
-  "ownsLevel": {
-    "confidence": "verified",
-    "items": [
-      "`DLC2MiraakMQ06` 01FB98 owns its level: it uses `DLC2Miraak` 017F7D as its template but not for `Stats`, so changing `DLC2Miraak` (and the copies that carry `Stats` from it) does not move the fight."
-    ]
-  },
-  "placed": {
-    "title": "Placed",
-    "confidence": "verified",
-    "rows": [
-      {
-        "name": "Miraak",
-        "base": [
-          {
-            "edid": "DLC2MiraakMQ06",
-            "formKey": "01FB98:Dragonborn.esm"
-          }
-        ],
-        "locations": [
-          {
-            "cell": {
-              "edid": "DLC2ApocryphaWorld"
-            },
-            "persistent": true
-          }
-        ]
-      }
-    ]
-  },
   "otherRecords": {
     "confidence": "verified",
     "rows": [
@@ -189,94 +160,225 @@
       }
     ]
   },
-  "gear": {
+  "loot": {
     "confidence": "verified",
+    "source": "the death item `DLC2DeathItemMiraak` 03CA92 on `DLC2MiraakMQ06`, flagged UseAll: every list below drops, both masks included",
+    "rule": "each list has no flags, so it gives the highest tier at or below the player's level `[community]`",
     "rows": [
       {
-        "records": "`DLC2Miraak` and every copy but MQ06",
-        "weapons": "Miraak's Staff 029A61",
-        "armor": "`DLC2MiraakOutfit` 017F85 (Miraak 029A62, Miraak's Robes, Gloves, Boots)",
-        "skin": "race default"
-      },
-      {
-        "records": "`DLC2MiraakMQ06`",
-        "weapons": "none in the record",
-        "armor": "`DLC2MQ06MiraakOutfit` 03C40B (Miraak's Gloves, Boots, `DLC2MQ06MiraakFightMask`, `DLC2MQ06MiraakFightRobes`)",
-        "skin": "race default"
-      }
-    ]
-  },
-  "gearLists": {
-    "confidence": "verified",
-    "rows": [
-      {
+        "item": "Miraak's Sword",
+        "kind": "one-handed sword",
         "list": {
-          "edid": "DLC2MQ06MiraakFightMask",
-          "formKey": "03C40D:Dragonborn.esm"
+          "edid": "DLC2MQ06MiraakRewardSword",
+          "formKey": "03CA93:Dragonborn.esm"
         },
-        "gate": "highest ≤ player",
-        "rolls": "`DLC2MKMiraakFightMask1–6` 03C0F1–03C0F6 \"Miraak's Mask\"",
-        "levels": [
-          1,
-          30,
-          40,
-          50,
-          60,
-          70
+        "tiers": [
+          {
+            "at": 1,
+            "record": {
+              "edid": "DLC2MKMiraakSword1",
+              "formKey": "0397F6:Dragonborn.esm"
+            },
+            "enchantment": {
+              "edid": "DLC2MKEnchMiraakSword1",
+              "formKey": "039FAF:Dragonborn.esm"
+            }
+          },
+          {
+            "at": 45,
+            "record": {
+              "edid": "DLC2MKMiraakSword2",
+              "formKey": "039FB1:Dragonborn.esm"
+            },
+            "enchantment": {
+              "edid": "DLC2MKEnchMiraakSword2",
+              "formKey": "0397F3:Dragonborn.esm"
+            }
+          },
+          {
+            "at": 60,
+            "record": {
+              "edid": "DLC2MKMiraakSword3",
+              "formKey": "039FB4:Dragonborn.esm"
+            },
+            "enchantment": {
+              "edid": "DLC2MKEnchMiraakSword3",
+              "formKey": "039FB3:Dragonborn.esm"
+            }
+          }
         ]
-      },
-      {
-        "list": {
-          "edid": "DLC2MQ06MiraakFightRobes",
-          "formKey": "03C40C:Dragonborn.esm"
-        },
-        "gate": "highest ≤ player",
-        "rolls": "`DLC2MKMiraakFightRobes1–6` 03C0F7 · 03C0F9–03C0FD \"Miraak's Robes\"",
-        "levels": [
-          1,
-          30,
-          40,
-          50,
-          60,
-          70
-        ]
-      }
-    ]
-  },
-  "gearItems": {
-    "confidence": "verified",
-    "rows": [
-      {
-        "item": "Miraak's Robes 02B0F7",
-        "kind": "clothing",
-        "playable": true
-      },
-      {
-        "item": "Miraak's Gloves 02B0F9, Miraak's Boots 03D2AF",
-        "kind": "light",
-        "playable": true
-      },
-      {
-        "item": "Miraak 029A62",
-        "kind": "heavy",
-        "playable": true
-      },
-      {
-        "item": "`DLC2MKMiraakFightMask1–6`",
-        "kind": "heavy",
-        "playable": false,
-        "note": "`NonPlayable`"
-      },
-      {
-        "item": "`DLC2MKMiraakFightRobes1–6`",
-        "kind": "clothing",
-        "playable": false,
-        "note": "`NonPlayable`"
       },
       {
         "item": "Miraak's Staff",
-        "kind": "weapon",
-        "playable": true
+        "kind": "staff",
+        "list": {
+          "edid": "DLC2MQ06MiraakRewardStaff",
+          "formKey": "03CA94:Dragonborn.esm"
+        },
+        "tiers": [
+          {
+            "at": 1,
+            "record": {
+              "edid": "DLC2MKMiraakStaff1",
+              "formKey": "039FA6:Dragonborn.esm"
+            },
+            "enchantment": {
+              "edid": "dlc2MKEncMiraakStaff1",
+              "formKey": "039FA7:Dragonborn.esm"
+            }
+          },
+          {
+            "at": 45,
+            "record": {
+              "edid": "DLC2MKMiraakStaff2",
+              "formKey": "039FAC:Dragonborn.esm"
+            },
+            "enchantment": {
+              "edid": "dlc2MKEncMiraakStaff2",
+              "formKey": "039FA8:Dragonborn.esm"
+            }
+          },
+          {
+            "at": 60,
+            "record": {
+              "edid": "DLC2MKMiraakStaff3",
+              "formKey": "039FAD:Dragonborn.esm"
+            },
+            "enchantment": {
+              "edid": "dlc2MKEncMiraakStaff3",
+              "formKey": "039FA9:Dragonborn.esm"
+            }
+          }
+        ]
+      },
+      {
+        "item": "Miraak (mask)",
+        "kind": "light armor, head",
+        "list": {
+          "edid": "DLC2MQ06MiraakRewardMaskL",
+          "formKey": "03CA96:Dragonborn.esm"
+        },
+        "tiers": [
+          {
+            "at": 1,
+            "record": {
+              "edid": "DLC2MKMiraakMask1L",
+              "formKey": "039D2B:Dragonborn.esm"
+            },
+            "enchantment": {
+              "edid": "EnchArmorFortifyMagicka04",
+              "formKey": "0B7A31:Skyrim.esm"
+            }
+          },
+          {
+            "at": 45,
+            "record": {
+              "edid": "DLC2MKMiraakMask2L",
+              "formKey": "039D2E:Dragonborn.esm"
+            },
+            "enchantment": {
+              "edid": "EnchArmorFortifyMagicka05",
+              "formKey": "0B7A32:Skyrim.esm"
+            }
+          },
+          {
+            "at": 60,
+            "record": {
+              "edid": "DLC2MKMiraakMask3L",
+              "formKey": "039D2F:Dragonborn.esm"
+            },
+            "enchantment": {
+              "edid": "EnchArmorFortifyMagicka06",
+              "formKey": "0B7A33:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "item": "Miraak (mask)",
+        "kind": "heavy armor, head",
+        "list": {
+          "edid": "DLC2MQ06MiraakRewardMaskH",
+          "formKey": "03D12A:Dragonborn.esm"
+        },
+        "tiers": [
+          {
+            "at": 1,
+            "record": {
+              "edid": "DLC2MKMiraakMask1H",
+              "formKey": "039FA1:Dragonborn.esm"
+            },
+            "enchantment": {
+              "edid": "EnchArmorFortifyMagicka03",
+              "formKey": "0AD46C:Skyrim.esm"
+            }
+          },
+          {
+            "at": 45,
+            "record": {
+              "edid": "DLC2MKMiraakMask2H",
+              "formKey": "039FA2:Dragonborn.esm"
+            },
+            "enchantment": {
+              "edid": "EnchArmorFortifyMagicka05",
+              "formKey": "0B7A32:Skyrim.esm"
+            }
+          },
+          {
+            "at": 60,
+            "record": {
+              "edid": "DLC2MKMiraakMask3H",
+              "formKey": "039FA3:Dragonborn.esm"
+            },
+            "enchantment": {
+              "edid": "EnchArmorFortifyMagicka06",
+              "formKey": "0B7A33:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "item": "Miraak's Robes",
+        "kind": "clothing, body",
+        "list": {
+          "edid": "DLC2MQ06MiraakRewardRobes",
+          "formKey": "03CA95:Dragonborn.esm"
+        },
+        "tiers": [
+          {
+            "at": 1,
+            "record": {
+              "edid": "DLC2MKMiraakRobes1",
+              "formKey": "039D1E:Dragonborn.esm"
+            },
+            "enchantment": {
+              "edid": "DLC2EnchArmorDragonAbsorb",
+              "formKey": "01E287:Dragonborn.esm"
+            }
+          },
+          {
+            "at": 45,
+            "record": {
+              "edid": "DLC2MKMiraakRobes2",
+              "formKey": "039D20:Dragonborn.esm"
+            },
+            "enchantment": {
+              "edid": "DLC2EnchArmorDragonAbsorb",
+              "formKey": "01E287:Dragonborn.esm"
+            }
+          },
+          {
+            "at": 60,
+            "record": {
+              "edid": "DLC2MKMiraakRobes3",
+              "formKey": "039D22:Dragonborn.esm"
+            },
+            "enchantment": {
+              "edid": "DLC2EnchArmorDragonAbsorb",
+              "formKey": "01E287:Dragonborn.esm"
+            }
+          }
+        ]
       }
     ]
   }

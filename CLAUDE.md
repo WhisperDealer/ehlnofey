@@ -121,7 +121,10 @@ published at **https://whisperdealer.github.io/ehlnofey/** (Astro, `site/`; depl
 - **A named boss's Records rows are its fights** (user, 2026-10-04; Alduin and Miraak are the
   model): one row per place the player fights it, with `encounter` naming the place, since only
   those levels need changing. Every other copy (base record, cutscenes, test copies) goes in
-  `otherRecords`, a collapsible log on the site.
+  `otherRecords`, a collapsible log on the site. **A boss's gear is what the player can loot**
+  (user, 2026-10-04; Miraak is the model): a `loot` table walked from its death item, each list to its
+  tiers, and nothing else: no Also owns its level, Placed or fight-gear tables (fight gear is often
+  `NonPlayable`, and the death item can drop gear the boss never wears, e.g. Miraak's Sword).
 - **To migrate a group:** fetch its pages, transcribe them into JSON (FormKeys always
   `<hex>:<Master>`, never bare hex; check the EditorID/FormKey pairs against the `reference/Base`
   filenames), add a target band per row, build, then re-render the Confluence pages. The version

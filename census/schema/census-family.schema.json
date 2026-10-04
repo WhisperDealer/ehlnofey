@@ -572,6 +572,122 @@
       ],
       "additionalProperties": false
     },
+    "loot": {
+      "type": "object",
+      "properties": {
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "community",
+            "unverified"
+          ]
+        },
+        "source": {
+          "type": "string"
+        },
+        "rule": {
+          "type": "string"
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "item": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string"
+              },
+              "list": {
+                "type": "object",
+                "properties": {
+                  "edid": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "formKey": {
+                    "type": "string",
+                    "pattern": "^[0-9A-F]{6}:[A-Za-z0-9 _.'-]+\\.(esm|esp|esl)$"
+                  },
+                  "label": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "tiers": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "at": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 9007199254740991
+                    },
+                    "record": {
+                      "type": "object",
+                      "properties": {
+                        "edid": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "formKey": {
+                          "type": "string",
+                          "pattern": "^[0-9A-F]{6}:[A-Za-z0-9 _.'-]+\\.(esm|esp|esl)$"
+                        },
+                        "label": {
+                          "type": "string"
+                        }
+                      },
+                      "additionalProperties": false
+                    },
+                    "enchantment": {
+                      "type": "object",
+                      "properties": {
+                        "edid": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "formKey": {
+                          "type": "string",
+                          "pattern": "^[0-9A-F]{6}:[A-Za-z0-9 _.'-]+\\.(esm|esp|esl)$"
+                        },
+                        "label": {
+                          "type": "string"
+                        }
+                      },
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "at",
+                    "record"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "item",
+              "kind",
+              "list",
+              "tiers"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "confidence",
+        "source",
+        "rows"
+      ],
+      "additionalProperties": false
+    },
     "lists": {
       "type": "object",
       "properties": {
@@ -955,8 +1071,7 @@
     "title",
     "order",
     "meta",
-    "records",
-    "ownsLevel"
+    "records"
   ],
   "additionalProperties": false
 }

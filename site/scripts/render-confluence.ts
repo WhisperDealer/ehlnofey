@@ -69,8 +69,25 @@ export function renderFamily(f: FamilyData, titles: Record<string, string> = {})
     out.push(table(['Record', 'Name', 'Level', 'Where'], f.otherRecords.rows.map((o) => [refs(o.records), o.name, level(o.level), o.where])));
   }
 
-  out.push('', `## Also owns its level ${conf(f.ownsLevel.confidence)}`, '');
-  out.push(...f.ownsLevel.items.map((i) => `- ${i.replace(/\[/g, '\\[').replace(/\]/g, '\\]')}`));
+  if (f.ownsLevel) {
+    out.push('', `## Also owns its level ${conf(f.ownsLevel.confidence)}`, '');
+    out.push(...f.ownsLevel.items.map((i) => `- ${i.replace(/\[/g, '\\[').replace(/\]/g, '\\]')}`));
+  }
+
+  if (f.loot) {
+    out.push('', `## Loot ${conf(f.loot.confidence)}`, '', cell(`From ${f.loot.source}.${f.loot.rule ? ` ${f.loot.rule[0].toUpperCase()}${f.loot.rule.slice(1)}.` : ''}`), '');
+    out.push(
+      table(
+        ['Item', 'Kind', 'List', 'Tiers'],
+        f.loot.rows.map((l) => [
+          l.item,
+          l.kind,
+          ref(l.list),
+          l.tiers.map((t) => `@${t.at} ${ref(t.record)}${t.enchantment ? ` (${ref(t.enchantment)})` : ''}`).join(' · '),
+        ]),
+      ),
+    );
+  }
 
   if (f.lists) {
     out.push('', `## Lists that draw them ${conf(f.lists.confidence)}`, '');

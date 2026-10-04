@@ -114,7 +114,23 @@ export const Family = z.strictObject({
   otherRecords: section(
     z.strictObject({ records: z.array(Ref).min(1), name: z.string(), level: Level, where: z.string() }),
   ).optional(),
-  ownsLevel: z.strictObject({ confidence: Confidence, items: z.array(z.string()) }),
+  ownsLevel: z.strictObject({ confidence: Confidence, items: z.array(z.string()) }).optional(),
+  // Gear the player can take from the enemy: each list it drops, walked to its tiers.
+  loot: z
+    .strictObject({
+      confidence: Confidence,
+      source: z.string(), // where the loot comes from, e.g. the death item
+      rule: z.string().optional(), // how a tier is picked
+      rows: z.array(
+        z.strictObject({
+          item: z.string(),
+          kind: z.string(),
+          list: Ref,
+          tiers: z.array(z.strictObject({ at: z.number().int().min(1), record: Ref, enchantment: Ref.optional() })).min(1),
+        }),
+      ),
+    })
+    .optional(),
   lists: section(ListRow).optional(),
   placed: z
     .strictObject({ title: z.enum(['Placed only', 'Placed']), confidence: Confidence, rows: z.array(PlacedRow) })

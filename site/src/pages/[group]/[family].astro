@@ -91,10 +91,45 @@ const PLACED_FOLD = 4; // more locations than this collapse behind a summary
     </details>
   )}
 
-  <h2>Also owns its level <span class:list={['conf', f.ownsLevel.confidence]}>{f.ownsLevel.confidence}</span></h2>
-  <div class="panel">
-    <ul class="bullets">{f.ownsLevel.items.map((i) => <li set:html={md(i)} />)}</ul>
-  </div>
+  {f.ownsLevel && (
+    <>
+      <h2>Also owns its level <span class:list={['conf', f.ownsLevel.confidence]}>{f.ownsLevel.confidence}</span></h2>
+      <div class="panel">
+        <ul class="bullets">{f.ownsLevel.items.map((i) => <li set:html={md(i)} />)}</ul>
+      </div>
+    </>
+  )}
+
+  {f.loot && (
+    <>
+      <h2>Loot <span class:list={['conf', f.loot.confidence]}>{f.loot.confidence}</span></h2>
+      <p class="lede" set:html={md(`From ${f.loot.source}.${f.loot.rule ? ` ${f.loot.rule[0].toUpperCase()}${f.loot.rule.slice(1)}.` : ''}`)} />
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Item</th><th>Kind</th><th>List</th><th>Tiers</th></tr></thead>
+          <tbody>
+            {f.loot.rows.map((l) => (
+              <tr>
+                <td>{l.item}</td>
+                <td>{l.kind}</td>
+                <td set:html={ref(l.list)} />
+                <td>
+                  <ol class="ladder">
+                    {l.tiers.map((t) => (
+                      <li>
+                        <span class="at">@{t.at}</span><span set:html={ref(t.record)} />
+                        {t.enchantment && <div class="sub ench" set:html={ref(t.enchantment)} />}
+                      </li>
+                    ))}
+                  </ol>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
 
   {f.lists && (
     <>
@@ -250,6 +285,7 @@ const PLACED_FOLD = 4; // more locations than this collapse behind a summary
   details[open] summary { margin-bottom: 0.3rem; }
   .dis { color: var(--muted); font-style: italic; }
   .pname { min-width: 160px; }
+  .ladder .ench { margin: 0 0 0.3rem 2.6rem; }
   .encounter { color: var(--gold); font-size: 0.85rem; margin-top: 0.2rem; }
   .log { margin-top: 1rem; }
   .log summary { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.8rem; padding: 0.8rem 1.1rem; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }
