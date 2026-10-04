@@ -73,57 +73,6 @@
       "*Sovngarde*: `MQ304Alduin` 04E9BC owns its level: it uses `AlduinBase` as its template but not for `Stats`."
     ]
   },
-  "placed": {
-    "title": "Placed",
-    "confidence": "verified",
-    "rows": [
-      {
-        "name": "Alduin",
-        "base": [
-          {
-            "edid": "MQ206Alduin",
-            "formKey": "04424A:Skyrim.esm"
-          }
-        ],
-        "locations": [
-          {
-            "cell": {
-              "edid": "Tamriel"
-            },
-            "persistent": true,
-            "ref": {
-              "edid": "MQ206AlduinREF",
-              "formKey": "04424B:Skyrim.esm"
-            },
-            "disabled": true
-          }
-        ],
-        "quest": "alias Alduin of `MQ206` 036193"
-      },
-      {
-        "name": "Alduin",
-        "base": [
-          {
-            "edid": "MQ304Alduin",
-            "formKey": "04E9BC:Skyrim.esm"
-          }
-        ],
-        "locations": [
-          {
-            "cell": {
-              "edid": "Sovngarde"
-            },
-            "persistent": true,
-            "ref": {
-              "edid": "MQ304AlduinREF",
-              "formKey": "04E9BD:Skyrim.esm"
-            },
-            "disabled": true
-          }
-        ]
-      }
-    ]
-  },
   "otherRecords": {
     "confidence": "verified",
     "rows": [
