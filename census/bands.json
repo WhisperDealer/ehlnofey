@@ -12,8 +12,10 @@
     { "id": "V",    "name": "Experienced", "min": 28, "max": 34,   "colour": "#a8923c", "who": "Forsworn, guard and soldier captains, adept mages, Falmer, draugr, bandit chiefs, witches and hags, low-level vampires, regular Thalmor soldiers, Dwarven spiders, Vigilants, the Silver Hand" },
     { "id": "VI",   "name": "Elite",       "min": 35, "max": 41,   "colour": "#c08a2f", "who": "Thalmor Justiciars, Penitus Oculatus, Dark Brotherhood and Morag Tong assassins, Forsworn Briarhearts, draugr Deathlords, Falmer Shadowmasters and Warmongers, Dwarven spheres and ballistas, expert mages, the Dawnguard" },
     { "id": "VII",  "name": "Powerful",    "min": 42, "max": 50,   "colour": "#d0742a", "who": "Dwarven centurions, werewolves, vampires, lesser Daedra (Seekers, Dremora, Saints and Seducers), most lesser named bosses" },
-    { "id": "VIII", "name": "Fabled",      "min": 51, "max": 65,   "colour": "#d65a2b", "who": "Named Dragon Priests, vampire lords, named Daedra, low-level dragons" },
-    { "id": "IX",   "name": "Mythic",      "min": 66, "max": 81,   "colour": "#c9412e", "who": "Dragons, greater Daedra, Harkon, the Ebony Warrior" },
+    { "id": "VIII", "name": "Fabled",      "min": 51, "max": 65,   "colour": "#d65a2b", "who": "Named Dragon Priests, vampire lords, named Daedra, low-level dragons",
+      "featured": ["Dragon", "Mirmulnir", "Ancient Dragonborn"] },
+    { "id": "IX",   "name": "Mythic",      "min": 66, "max": 81,   "colour": "#c9412e", "who": "Dragons, greater Daedra, Harkon, the Ebony Warrior",
+      "featured": ["Paarthurnax", "Elder Dragon", "Legendary Dragon"] },
     { "id": "X",    "name": "Legendary",   "min": 82, "max": null, "colour": "#f1d68b", "who": "Miraak (100), Alduin (150)",
       "named": [ { "name": "Miraak", "level": 100 }, { "name": "Alduin", "level": 150 } ] }
   ]

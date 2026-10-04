@@ -7,22 +7,23 @@ import { bands, bandRange, href, loadCensus } from '../lib/census.ts';
 const groups = await loadCensus();
 
 // Every census record, filed under its target band. Rows that share a name in one family
-// (the four "Dragon" rows of Common Dragons) collapse into one link.
+// (the four "Dragon" rows of Common Dragons) collapse into one link. A named boss's fights
+// (Alduin's two) collapse too, without the place or a count: the boss is listed once.
 type Hit = { name: string; url: string; family: string; proposed: boolean; count: number };
 const byBand = new Map<string, Hit[]>();
 for (const g of groups)
   for (const f of g.familyPages)
     for (const r of f.records.rows) {
       const list = byBand.get(r.target.band) ?? [];
-      const name = r.encounter ? `${r.name} · ${r.encounter.split(' (')[0]}` : r.name;
+      const name = r.name;
       const same = list.find((h) => h.name === name && h.family === f.title);
       if (same) {
-        same.count++;
+        if (!r.encounter) same.count++;
         same.proposed &&= r.target.status === 'proposed';
       } else
         list.push({
           name,
-          url: href(`${g.id}/${f.id}/#rec-${r.id}`),
+          url: href(r.encounter ? `${g.id}/${f.id}/` : `${g.id}/${f.id}/#rec-${r.id}`),
           family: f.title,
           proposed: r.target.status === 'proposed',
           count: 1,
@@ -44,7 +45,12 @@ const recordCount = groups.reduce((n, g) => n + g.familyPages.reduce((m, f) => m
 
   <section id="bands" class="bands panel" aria-label="The ten bands">
     {bands.bands.map((b) => {
-      const hits = byBand.get(b.id) ?? [];
+      const all = byBand.get(b.id) ?? [];
+      // A band with a featured list shows only those names, as a sample of the band.
+      const hits = b.featured
+        ? b.featured.map((n) => all.find((h) => h.name === n)).filter((h): h is Hit => !!h)
+        : all;
+      const more = all.length - hits.length;
       return (
         <article class="band" id={`band-${b.id}`}>
           <BandChip id={b.id} size="lg" />
@@ -68,6 +74,7 @@ const recordCount = groups.reduce((n, g) => n + g.familyPages.reduce((m, f) => m
                     {h.name}{h.count > 1 && <small> ×{h.count}</small>}
                   </a>
                 ))}
+                {more > 0 && <span class="hits-more">+{more} more</span>}
               </p>
             )}
           </div>
@@ -125,6 +132,7 @@ const recordCount = groups.reduce((n, g) => n + g.familyPages.reduce((m, f) => m
   .hit.proposed { border-style: dashed; background: transparent; color: var(--text); border-color: var(--line-strong); }
   .hit:hover { border-color: var(--gold); color: var(--gold); }
   .hit small { color: var(--muted); }
+  .hits-more { font-size: 0.8rem; color: var(--muted); margin-left: 0.2rem; }
 
   .census { margin-top: 2rem; }
   .groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin-top: 1rem; }

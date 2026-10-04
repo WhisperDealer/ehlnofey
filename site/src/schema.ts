@@ -177,6 +177,8 @@ export const Bands = z.strictObject({
         colour: z.string().regex(/^#[0-9a-f]{6}$/i),
         who: z.string(),
         named: z.array(z.strictObject({ name: z.string(), level: z.number().int() })).optional(),
+        // The home page lists only these census names for the band, in this order, when set.
+        featured: z.array(z.string()).optional(),
       }),
     )
     .length(10),
