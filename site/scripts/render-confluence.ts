@@ -64,6 +64,8 @@ export function renderFamily(f: FamilyData, titles: Record<string, string> = {})
     ),
   );
 
+  for (const r of f.records.rows.filter((r) => r.note)) out.push('', cell(`**Note:** ${r.name}: ${r.note}`));
+
   if (f.otherRecords) {
     out.push('', `## Other records ${conf(f.otherRecords.confidence)}`, '', 'Copies that are never fought: the base record, cutscenes, test copies.', '');
     out.push(table(['Record', 'Name', 'Level', 'Where'], f.otherRecords.rows.map((o) => [refs(o.records), o.name, level(o.level), o.where])));

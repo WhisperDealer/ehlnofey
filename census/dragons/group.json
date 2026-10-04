@@ -15,7 +15,7 @@
     },
     {
       "id": "unique-dragons",
-      "holds": "Paarthurnax, Mirmulnir, Sahloknir, Vuljotnaak, Nahagliiv, Viinturuth, Odahviing, Vulthuryol, the Labyrinthian Skeletal Dragon, Durnehviir, Naaslaarum, Voslaarum, Sahrotaar, Krosulhah"
+      "holds": "Paarthurnax, Mirmulnir, Sahloknir, Vuljotnaak, Nahagliiv, Viinturuth, Odahviing, Vulthuryol, the Labyrinthian Skeletal Dragon, Durnehviir, Naaslaarum, Voslaarum, Sahrotaar, Krosulhah, Kruziikrel and Relonikiv (the summit of Apocrypha)"
     },
     {
       "id": "alduin",
@@ -23,7 +23,7 @@
     },
     {
       "id": "dragonborn",
-      "holds": "the `DLC2MQ06` dragons, the Ancient Dragonborn"
+      "holds": "the Ancient Dragonborn"
     },
     {
       "id": "miraak",
@@ -91,7 +91,7 @@
       },
       {
         "record": "`AADeleteWhenDoneTestJeremyBig` 10D140",
-        "why": "a test NPC (\"TestJeremyBig\", 1) that `DLC2LCharDragonAnyMQ06` draws @27 (see Dragonborn)"
+        "why": "a test NPC (\"TestJeremyBig\", 1) that `DLC2LCharDragonAnyMQ06` draws @27 (see Unique Dragons)"
       }
     ]
   }

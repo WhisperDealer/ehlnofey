@@ -337,6 +337,36 @@
           "status": "proposed",
           "source": "bands-of-power.md: dragons"
         }
+      },
+      {
+        "id": "kruziikrel-relonikiv",
+        "name": "Kruziikrel · Relonikiv",
+        "records": [
+          {
+            "edid": "DLC2lvlDragon_MQ06",
+            "formKey": "03D5B5:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "DLC2LCharDragonAnyMQ06",
+            "formKey": "03D5B6:Dragonborn.esm"
+          },
+          "rungs": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ]
+        },
+        "target": {
+          "band": "IX",
+          "status": "proposed",
+          "source": "bands-of-power.md: dragons (the Apocrypha finale)"
+        },
+        "note": "One wrapper, placed twice; each spawn rolls the list and becomes that rung. The names come from the `DLC2MQ06` aliases `Dragon2` and `Dragon3`, whose `DisplayName` is `DLC2MQ06Dragon2Name` 02A75A (\"Kruziikrel\") and `DLC2MQ06Dragon3Name` 02A75B (\"Relonikiv\")."
       }
     ]
   },
@@ -474,6 +504,41 @@
           }
         ],
         "owner": "Krosulhah through `DLC2lvlMQ05Dragon` 02589F"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharDragonAnyMQ06",
+          "formKey": "03D5B6:Dragonborn.esm"
+        },
+        "gate": "all levels ≤ player, each",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Dragon Fire + Frost",
+            "count": 2
+          },
+          {
+            "at": 18,
+            "label": "Blood Fire + Frost",
+            "count": 2
+          },
+          {
+            "at": 27,
+            "label": "Frost and the test NPC `AADeleteWhenDoneTestJeremyBig` 10D140:Skyrim.esm (\"TestJeremyBig\", 1)"
+          },
+          {
+            "at": 36,
+            "label": "Elder Fire + Frost",
+            "count": 2
+          },
+          {
+            "at": 45,
+            "label": "Ancient Fire + Frost",
+            "count": 2
+          }
+        ],
+        "note": "the `DLC2EncDragon0*NoScript_MQ06` copies (03D5B7–03D5C1)",
+        "owner": "Kruziikrel and Relonikiv through `DLC2lvlDragon_MQ06` 03D5B5"
       }
     ]
   },
@@ -835,6 +900,40 @@
             "disabled": true
           }
         ]
+      },
+      {
+        "name": "Kruziikrel · Relonikiv",
+        "base": [
+          {
+            "edid": "DLC2lvlDragon_MQ06",
+            "formKey": "03D5B5:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2ApocryphaWorld"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DLC2MQ06Dragon2",
+              "formKey": "01D573:Dragonborn.esm"
+            },
+            "disabled": true
+          },
+          {
+            "cell": {
+              "edid": "DLC2ApocryphaWorld"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DLC2MQ06Dragon3",
+              "formKey": "01D572:Dragonborn.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "forced refs of `DLC2MQ06` 0179D7, aliases `Dragon2` (Kruziikrel) and `Dragon3` (Relonikiv), both in `DLC2MQ06MiraakFaction` 03D5C4"
       }
     ]
   }
