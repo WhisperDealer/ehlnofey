@@ -17,7 +17,7 @@
       "featured": ["Dragon", "Mirmulnir", "Ancient Dragonborn", "High Seeker", "Valkyn Gatanas", "Staada"] },
     { "id": "IX",   "name": "Mythic",      "min": 66, "max": 81,   "colour": "#c9412e", "who": "Dragons, greater Daedra, Harkon, the Ebony Warrior",
       "featured": ["Paarthurnax", "Elder Dragon", "Legendary Dragon"] },
-    { "id": "X",    "name": "Legendary",   "min": 82, "max": null, "colour": "#f1d68b", "who": "Miraak (100), Alduin (150)",
+    { "id": "X",    "name": "Godlike",     "min": 82, "max": null, "colour": "#f1d68b", "who": "Miraak (100), Alduin (150)",
       "named": [ { "name": "Miraak", "level": 100 }, { "name": "Alduin", "level": 150 } ] }
   ]
 }

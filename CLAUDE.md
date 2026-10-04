@@ -95,7 +95,7 @@ from*, and nothing else.
 
 **The ten bands of power** (`arch-docs/bands-of-power.md`, poster `arch-docs/Ehlnofey Level Bands.png`,
 data `census/bands.json`): Weak 1–6 · Common 7–13 · Trained 14–20 · Blooded 21–27 · Experienced 28–34 ·
-Elite 35–41 · Powerful 42–50 · Fabled 51–65 · Mythic 66–81 · Legendary 82+. **This is the band
+Elite 35–41 · Powerful 42–50 · Fabled 51–65 · Mythic 66–81 · Godlike 82+. **This is the band
 authority** (user, 2026-10-04): it supersedes the nine-band table and the decided dragon levels in
 `archetype-tiers.md`, which carry a superseded note.
 

@@ -27,5 +27,5 @@ Named Dragon Priests, vampire lords, named Daedra, low-level dragons
 IX. Mythic (66–81)
 Dragons, greater Daedra, Harkon, the Ebony Warrior
 
-X. Legendary (82+)
+X. Godlike (82+)
 Miraak (100), Alduin (150)

@@ -55,7 +55,7 @@ const recordCount = groups.reduce((n, g) => n + g.familyPages.reduce((m, f) => m
         <article class="band" id={`band-${b.id}`}>
           <BandChip id={b.id} size="lg" />
           <div class="band-name">
-            <h2 class:list={{ legendary: b.id === 'X' }}>{b.name}</h2>
+            <h2 class:list={{ godlike: b.id === 'X' }}>{b.name}</h2>
             <p>{bandRange(b)}</p>
           </div>
           <div class="band-body">
@@ -119,7 +119,7 @@ const recordCount = groups.reduce((n, g) => n + g.familyPages.reduce((m, f) => m
   .band { display: grid; grid-template-columns: 56px minmax(170px, 230px) 1fr; gap: 1.5rem; align-items: center; padding: 1.15rem 0; scroll-margin-top: 80px; }
   .band + .band { border-top: 1px solid var(--line); }
   .band-name h2 { margin: 0; font-size: 1.5rem; font-variant: small-caps; letter-spacing: 0.06em; color: var(--text); }
-  .band-name h2.legendary { color: var(--gold); }
+  .band-name h2.godlike { color: var(--gold); }
   .band-name p { margin: 0.1rem 0 0; color: var(--muted); font-size: 0.95rem; }
   .band-body p { margin: 0; }
   .named { display: flex; gap: 2.2rem; flex-wrap: wrap; }
