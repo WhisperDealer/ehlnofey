@@ -188,25 +188,6 @@
           "status": "proposed",
           "source": "bands-of-power.md: dragons"
         }
-      },
-      {
-        "id": "skuldafn-dragon-draugr",
-        "name": "Dragon",
-        "records": [
-          {
-            "edid": "dunSkuldafnDragonDraugr",
-            "formKey": "096E48:Skyrim.esm"
-          }
-        ],
-        "level": {
-          "kind": "fixed",
-          "value": 20
-        },
-        "target": {
-          "band": "VIII",
-          "status": "proposed",
-          "source": "bands-of-power.md: low-level dragons"
-        }
       }
     ]
   },
@@ -659,7 +640,7 @@
         ]
       },
       {
-        "name": "`dunSkuldafnDragonDraugr`, the scripted rung records (`EncDragon02Fire`, `…03Frost`, `…04*`, `…05Frost`, `DLC1EncDragon06Fire`, `DLC1EncDragon07Fire`, `DLC2EncDragon06Fire`, `…Frost`)",
+        "name": "the scripted rung records (`EncDragon02Fire`, `…03Frost`, `…04*`, `…05Frost`, `DLC1EncDragon06Fire`, `DLC1EncDragon07Fire`, `DLC2EncDragon06Fire`, `…Frost`)",
         "notPlaced": true,
         "note": "the lists draw the `NoScript` copies"
       }
