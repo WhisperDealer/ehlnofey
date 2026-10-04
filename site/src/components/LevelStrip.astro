@@ -33,7 +33,10 @@ const vanillaTitle = (r: RecordRowData) => {
     <div class="track">
       {bands.bands.map((b) => {
         const s = segment(b);
-        return <span class="axis-seg" style={`left:${s.left}%;width:${s.width}%;--c:${b.colour}`}>{b.id}</span>;
+        return <span class="axis-seg" style={`left:${s.left}%;width:${s.width}%;--c:${b.colour}`}>
+          <span>{b.id}</span>
+          <small>{b.max === null ? `${b.min}+` : `${b.min}–${b.max}`}</small>
+        </span>;
       })}
     </div>
   </div>
@@ -105,13 +108,15 @@ const vanillaTitle = (r: RecordRowData) => {
   .range b { position: absolute; top: -3px; width: 2px; height: 12px; background: #fff; }
   .diamond { position: absolute; top: 50%; width: 11px; height: 11px; margin: -5.5px 0 0 -5.5px; background: var(--gold); transform: rotate(45deg); box-shadow: 0 0 0 2px rgba(7,10,18,.85); }
 
-  .axis { min-height: 22px; }
-  .axis .track { height: 18px; }
-  .axis-seg { position: absolute; top: 0; bottom: 0; display: grid; place-items: center; font: 700 0.62rem var(--serif); color: var(--c); border-left: 1px solid rgba(214,196,150,.1); }
+  .axis { min-height: 32px; }
+  .axis .track { height: 30px; }
+  .axis-seg { position: absolute; top: 0; bottom: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.05rem; font: 700 0.62rem var(--serif); color: var(--c); border-left: 1px solid rgba(214,196,150,.1); line-height: 1.1; }
+  .axis-seg small { font: 500 0.56rem var(--mono); color: var(--muted); white-space: nowrap; }
 
   @media (max-width: 640px) {
     .lane { grid-template-columns: 1fr; gap: 0.2rem; padding: 0.35rem 0; }
     .axis > div:first-child { display: none; }
     .axis-seg { font-size: 0.5rem; }
+    .axis-seg small { font-size: 0.42rem; }
   }
 </style>
