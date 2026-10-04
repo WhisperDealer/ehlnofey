@@ -5,7 +5,7 @@
   "title": "Dremora",
   "order": 1,
   "meta": {
-    "updated": "2026-10-04"
+    "updated": "2026-10-05"
   },
   "records": {
     "confidence": "verified",
@@ -193,26 +193,6 @@
           "source": "bands-of-power.md: lesser Daedra"
         },
         "note": "no maximum level set"
-      },
-      {
-        "id": "dremora-morvunskar",
-        "name": "Dremora",
-        "encounter": "Morvunskar",
-        "records": [
-          {
-            "edid": "DA14Summoned",
-            "formKey": "01F3AA:Skyrim.esm"
-          }
-        ],
-        "level": {
-          "kind": "fixed",
-          "value": 1
-        },
-        "target": {
-          "band": "VII",
-          "status": "proposed",
-          "source": "bands-of-power.md: lesser Daedra"
-        }
       }
     ]
   },
@@ -338,24 +318,6 @@
     "confidence": "verified",
     "rows": [
       {
-        "name": "Dremora",
-        "base": [
-          {
-            "edid": "DA14Summoned",
-            "formKey": "01F3AA:Skyrim.esm"
-          }
-        ],
-        "locations": [
-          {
-            "cell": {
-              "edid": "Morvunskar01",
-              "formKey": "015239:Skyrim.esm"
-            },
-            "refText": "refs 01F3AB · 01F3AC"
-          }
-        ]
-      },
-      {
         "name": "Unbound Dremora",
         "notPlaced": true,
         "note": "spawned by `MGRitual03` 099F27 (script property MGRDremoraSummon, alias DremoraAlias)"
@@ -387,12 +349,6 @@
         "records": "`DA07Dremora` 107D94 (own inventory)",
         "weapons": "`LItemEnchWeapon1HDremoraFire` 017000 · `DA07ShrineKey` 107D97",
         "armor": "`DremoraDaedricArmor` 0F1ABF",
-        "skin": "race default"
-      },
-      {
-        "records": "Dremora (`DA14Summoned`)",
-        "weapons": "none",
-        "armor": "`ArmorEbonyNoHelmetOutfit` 057A1F",
         "skin": "race default"
       }
     ]
@@ -453,17 +409,10 @@
       },
       {
         "list": {
-          "edid": "ArmorEbonyNoHelmetOutfit",
-          "formKey": "057A1F:Skyrim.esm"
-        },
-        "rolls": "Ebony Boots 013960 · Armor 013961 · Gauntlets 013962"
-      },
-      {
-        "list": {
           "edid": "DeathItemDremora",
           "formKey": "03AD80:Skyrim.esm"
         },
-        "rolls": "death item: Daedra Heart 03AD5B ×1. Set on every rung and on Velehk Sain (on *Unique Dremora*); `DA14Summoned` has none; the template wrappers set none of their own"
+        "rolls": "death item: Daedra Heart 03AD5B ×1. Set on every rung and on Velehk Sain (on *Unique Dremora*); the template wrappers set none of their own"
       }
     ]
   },
@@ -485,11 +434,6 @@
       {
         "item": "Every fire-enchanted weapon and bow above, Iron Dagger, the bandit weapons and arrows",
         "kind": "weapons",
-        "playable": true
-      },
-      {
-        "item": "Ebony Boots · Armor · Gauntlets",
-        "kind": "armor",
         "playable": true
       }
     ]
