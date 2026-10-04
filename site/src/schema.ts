@@ -115,6 +115,31 @@ export const Family = z.strictObject({
     z.strictObject({ records: z.array(Ref).min(1), name: z.string(), level: Level, where: z.string() }),
   ).optional(),
   ownsLevel: z.strictObject({ confidence: Confidence, items: z.array(z.string()) }).optional(),
+  // The fought record's stat inputs, read from it, its race and its class. With AutoCalcStats the
+  // engine derives health and skills from class and level, so `stored` is the record's snapshot.
+  stats: z
+    .strictObject({
+      confidence: Confidence,
+      record: Ref,
+      flags: z.array(z.string()),
+      speed: z.number(),
+      combatStyle: Ref.optional(),
+      ai: z.record(z.string(), z.union([z.string(), z.number()])).optional(),
+      race: z.strictObject({
+        ref: Ref,
+        start: z.strictObject({ health: z.number(), magicka: z.number(), stamina: z.number() }),
+        regen: z.strictObject({ health: z.number(), magicka: z.number(), stamina: z.number() }),
+      }),
+      class: z.strictObject({
+        ref: Ref,
+        statWeights: z.strictObject({ health: z.number(), magicka: z.number(), stamina: z.number() }),
+      }),
+      offsets: z.strictObject({ health: z.number(), magicka: z.number(), stamina: z.number() }),
+      stored: z.strictObject({ health: z.number(), magicka: z.number(), stamina: z.number() }),
+      skills: z.array(z.strictObject({ skill: z.string(), weight: z.number(), stored: z.number() })).length(18),
+      note: z.string().optional(),
+    })
+    .optional(),
   // Gear the player can take from the enemy: each list it drops, walked to its tiers.
   loot: z
     .strictObject({

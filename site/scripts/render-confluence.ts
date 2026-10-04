@@ -74,6 +74,17 @@ export function renderFamily(f: FamilyData, titles: Record<string, string> = {})
     out.push(...f.ownsLevel.items.map((i) => `- ${i.replace(/\[/g, '\\[').replace(/\]/g, '\\]')}`));
   }
 
+  if (f.stats) {
+    const s = f.stats;
+    const at = (k: 'health' | 'magicka' | 'stamina') => [k[0].toUpperCase() + k.slice(1), String(s.stored[k]), String(s.race.start[k]), `+${s.offsets[k]}`, String(s.class.statWeights[k]), String(s.race.regen[k])];
+    out.push('', `## Stats ${conf(s.confidence)}`, '', `${ref(s.record)}: ${s.flags.map((x) => `\`${x}\``).join(', ')}.`, '');
+    out.push(table(['', 'Stored', 'Race start', 'Offset', 'Class weight', 'Regen'], [at('health'), at('magicka'), at('stamina')]));
+    out.push('', table(['Skill', 'Stored', 'Class weight'], [...s.skills].sort((a, b) => b.stored - a.stored).map((k) => [k.skill, String(k.stored), String(k.weight)])));
+    const ai = s.ai ? ' · ' + Object.entries(s.ai).map(([k, v]) => `${k} ${v}`).join(' · ') : '';
+    out.push('', cell(`Race ${ref(s.race.ref)} · class ${ref(s.class.ref)}${s.combatStyle ? ` · combat style ${ref(s.combatStyle)}` : ''} · speed ${s.speed}%${ai}.`));
+    if (s.note) out.push('', cell(s.note));
+  }
+
   if (f.loot) {
     out.push('', `## Loot ${conf(f.loot.confidence)}`, '', cell(`From ${f.loot.source}.${f.loot.rule ? ` ${f.loot.rule[0].toUpperCase()}${f.loot.rule.slice(1)}.` : ''}`), '');
     out.push(

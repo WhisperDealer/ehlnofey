@@ -160,6 +160,160 @@
       }
     ]
   },
+  "stats": {
+    "confidence": "verified",
+    "record": {
+      "edid": "DLC2MiraakMQ06",
+      "formKey": "01FB98:Dragonborn.esm"
+    },
+    "flags": [
+      "Essential",
+      "AutoCalcStats",
+      "Unique",
+      "BleedoutOverride"
+    ],
+    "speed": 100,
+    "combatStyle": {
+      "edid": "DLC2csMiraakMagic",
+      "formKey": "023F64:Dragonborn.esm"
+    },
+    "ai": {
+      "Aggression": "Aggressive",
+      "Confidence": "Foolhardy",
+      "EnergyLevel": 50,
+      "Assistance": "HelpsAllies"
+    },
+    "race": {
+      "ref": {
+        "edid": "DLC2MiraakRace",
+        "formKey": "03CA97:Dragonborn.esm"
+      },
+      "start": {
+        "health": 50,
+        "magicka": 50,
+        "stamina": 50
+      },
+      "regen": {
+        "health": 0.7,
+        "magicka": 3,
+        "stamina": 5
+      }
+    },
+    "class": {
+      "ref": {
+        "edid": "DLC2EncClassMiraak",
+        "formKey": "023F78:Dragonborn.esm"
+      },
+      "statWeights": {
+        "health": 3,
+        "magicka": 3,
+        "stamina": 2
+      }
+    },
+    "offsets": {
+      "health": 400,
+      "magicka": 200,
+      "stamina": 200
+    },
+    "stored": {
+      "health": 747,
+      "magicka": 378,
+      "stamina": 335
+    },
+    "skills": [
+      {
+        "skill": "One-Handed",
+        "weight": 2,
+        "stored": 53
+      },
+      {
+        "skill": "Two-Handed",
+        "weight": 0,
+        "stored": 25
+      },
+      {
+        "skill": "Archery",
+        "weight": 0,
+        "stored": 15
+      },
+      {
+        "skill": "Block",
+        "weight": 1,
+        "stored": 38
+      },
+      {
+        "skill": "Smithing",
+        "weight": 0,
+        "stored": 20
+      },
+      {
+        "skill": "Heavy Armor",
+        "weight": 2,
+        "stored": 48
+      },
+      {
+        "skill": "Light Armor",
+        "weight": 0,
+        "stored": 20
+      },
+      {
+        "skill": "Pickpocket",
+        "weight": 0,
+        "stored": 15
+      },
+      {
+        "skill": "Lockpicking",
+        "weight": 0,
+        "stored": 15
+      },
+      {
+        "skill": "Sneak",
+        "weight": 0,
+        "stored": 15
+      },
+      {
+        "skill": "Alchemy",
+        "weight": 0,
+        "stored": 15
+      },
+      {
+        "skill": "Speech",
+        "weight": 8,
+        "stored": 100
+      },
+      {
+        "skill": "Alteration",
+        "weight": 2,
+        "stored": 48
+      },
+      {
+        "skill": "Conjuration",
+        "weight": 0,
+        "stored": 15
+      },
+      {
+        "skill": "Destruction",
+        "weight": 2,
+        "stored": 48
+      },
+      {
+        "skill": "Illusion",
+        "weight": 0,
+        "stored": 15
+      },
+      {
+        "skill": "Restoration",
+        "weight": 2,
+        "stored": 48
+      },
+      {
+        "skill": "Enchanting",
+        "weight": 0,
+        "stored": 15
+      }
+    ],
+    "note": "The record has `AutoCalcStats`, so the game derives health, magicka, stamina and skills from the class weights and the level; the stored values are the record's own snapshot, not the in-game figures `[community]`."
+  },
   "loot": {
     "confidence": "verified",
     "source": "the death item `DLC2DeathItemMiraak` 03CA92 on `DLC2MiraakMQ06`, flagged UseAll: every list below drops, both masks included",
