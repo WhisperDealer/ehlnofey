@@ -3,7 +3,7 @@
   "id": "seeker",
   "group": "daedra",
   "title": "Seeker",
-  "order": 2,
+  "order": 3,
   "meta": {
     "updated": "2026-10-04"
   },
@@ -13,23 +13,59 @@
       {
         "id": "seeker",
         "name": "Seeker",
-        "records": [{ "edid": "DLC2EncSeeker01", "formKey": "028E7F:Dragonborn.esm" }],
-        "level": { "kind": "fixed", "value": 21 },
-        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+        "records": [
+          {
+            "edid": "DLC2EncSeeker01",
+            "formKey": "028E7F:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 21
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: lesser Daedra"
+        }
       },
       {
         "id": "seeker-aspirant",
         "name": "Seeker Aspirant",
-        "records": [{ "edid": "DLC2EncSeeker02", "formKey": "01DCBA:Dragonborn.esm" }],
-        "level": { "kind": "fixed", "value": 32 },
-        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+        "records": [
+          {
+            "edid": "DLC2EncSeeker02",
+            "formKey": "01DCBA:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 32
+        },
+        "target": {
+          "band": "VIII",
+          "status": "decided",
+          "source": "user, 2026-10-04"
+        }
       },
       {
         "id": "high-seeker",
         "name": "High Seeker",
-        "records": [{ "edid": "DLC2EncSeeker03", "formKey": "028E83:Dragonborn.esm" }],
-        "level": { "kind": "fixed", "value": 42 },
-        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+        "records": [
+          {
+            "edid": "DLC2EncSeeker03",
+            "formKey": "028E83:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 42
+        },
+        "target": {
+          "band": "VIII",
+          "status": "decided",
+          "source": "user, 2026-10-04"
+        }
       }
     ]
   },
@@ -45,12 +81,24 @@
     "confidence": "verified",
     "rows": [
       {
-        "list": { "edid": "DLC2LCharSeeker", "formKey": "028E87:Dragonborn.esm" },
+        "list": {
+          "edid": "DLC2LCharSeeker",
+          "formKey": "028E87:Dragonborn.esm"
+        },
         "gate": "every gate ≤ player",
         "entries": [
-          { "at": 1, "label": "Seeker" },
-          { "at": 32, "label": "Seeker Aspirant" },
-          { "at": 42, "label": "High Seeker" }
+          {
+            "at": 1,
+            "label": "Seeker"
+          },
+          {
+            "at": 32,
+            "label": "Seeker Aspirant"
+          },
+          {
+            "at": 42,
+            "label": "High Seeker"
+          }
         ],
         "note": "the `NoScript` leaves 0336C8 · 0336C9 · 0336CA:Dragonborn.esm",
         "owner": "`DLC2LvlSeeker` 028E88:Dragonborn.esm (2 refs: `DLC2ApoIslandA01` 01C226, `DLC2ApoIslandA04` 01C230 in `DLC2ApocryphaWorld` 01C0B2:Dragonborn.esm) · `DLC2LvlSeekerInvCombat` 038FCA:Dragonborn.esm (44 refs: `DLC2Book01Dungeon` 03109D ×8, `DLC2Book01DungeonA` 03B065 ×5, `DLC2Book02DungeonNEW` 01EDE2 ×13, `DLC2Book03Dungeon` 0142F3 ×4, `DLC2Book07Dungeon` 0142F4 ×8, `DLC2POIBookLevel01` 01E9A2 ×2, `…02` 0142F5 ×2, `…03` 01EDE3 ×2) · `DLC2LvlSeekerInvCombat_MQ06End` 03D3B2:Dragonborn.esm (2 refs: `DLC2Book01DungeonEnd02` 01C165). Every cell is in Dragonborn.esm"
@@ -63,7 +111,12 @@
     "rows": [
       {
         "name": "High Seeker",
-        "base": [{ "edid": "DLC2MQ02Seeker", "formKey": "030C8D:Dragonborn.esm" }],
+        "base": [
+          {
+            "edid": "DLC2MQ02Seeker",
+            "formKey": "030C8D:Dragonborn.esm"
+          }
+        ],
         "baseNote": "level and name from `DLC2EncSeeker03`",
         "notPlaced": true,
         "quest": "created by `DLC2MQ02` 017F8F:Dragonborn.esm aliases Seeker1, Seeker2, Seeker3, Seeker4"
@@ -71,9 +124,18 @@
       {
         "name": "Seeker mirror images",
         "base": [
-          { "edid": "DLC2EncSeeker01Mirror", "formKey": "028E82:Dragonborn.esm" },
-          { "edid": "DLC2EncSeeker02Mirror", "formKey": "02856B:Dragonborn.esm" },
-          { "edid": "DLC2EncSeeker03Mirror", "formKey": "028E86:Dragonborn.esm" }
+          {
+            "edid": "DLC2EncSeeker01Mirror",
+            "formKey": "028E82:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncSeeker02Mirror",
+            "formKey": "02856B:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncSeeker03Mirror",
+            "formKey": "028E86:Dragonborn.esm"
+          }
         ],
         "baseNote": "levels 21 · 32 · 42, their own",
         "notPlaced": true,

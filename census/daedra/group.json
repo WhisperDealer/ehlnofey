@@ -7,11 +7,15 @@
     "spec": "archetype-tiers.md §3.3",
     "updated": "2026-10-04"
   },
-  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Atronachs are not part of the census. Creation Club Daedra sit on their kind's page (The Cause and Arms of Chaos Dremora on *Dremora*, Saints & Seducers on *Golden Saints & Dark Seducers*). Daedra that exist only as summons are under Conjured.",
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Atronachs are not part of the census. Creation Club Daedra sit on their kind's page (The Cause and Arms of Chaos Dremora on *Dremora* and *Unique Dremora*, Saints & Seducers on *Golden Saints & Dark Seducers*). Daedra that exist only as summons are under Conjured.",
   "families": [
     {
       "id": "dremora",
-      "holds": "the Dremora ladder (Churl 6 · Caitiff 12 · Kynval 19 · Kynreeve 27 · Markynaz 36 · Valkynaz 46) in its melee, missile and warlock lines, the Unbound Dremora, Velehk Sain, the Morvunskar Dremora, The Cause's two Valkyn and the three Arms of Chaos Dremora"
+      "holds": "the Dremora ladder (Churl 6 · Caitiff 12 · Kynval 19 · Kynreeve 27 · Markynaz 36 · Valkynaz 46) in its melee, missile and warlock lines, the Unbound Dremora and the Morvunskar Dremora"
+    },
+    {
+      "id": "unique-dremora",
+      "holds": "the named Dremora: Velehk Sain, The Cause's Valkyn Gatanas and Valkyn Methats, and the three Arms of Chaos Dremora (Sovereign, Sehtkynaz, Lyrkynaz)"
     },
     {
       "id": "seeker",

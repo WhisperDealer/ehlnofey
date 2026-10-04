@@ -3,7 +3,7 @@
   "id": "golden-saints-dark-seducers",
   "group": "daedra",
   "title": "Golden Saints & Dark Seducers",
-  "order": 4,
+  "order": 5,
   "meta": {
     "updated": "2026-10-04"
   },
@@ -13,46 +13,126 @@
       {
         "id": "golden-saint-archer",
         "name": "Golden Saint Archer",
-        "records": [{ "edid": "ccBGSSSE025_EncSummonGoldenSaintArcherAtrForge", "formKey": "1CAD44:ccbgssse025-advdsgs.esm" }],
-        "level": { "kind": "pcMult", "mult": 0.75, "min": 18, "max": 80 },
-        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+        "records": [
+          {
+            "edid": "ccBGSSSE025_EncSummonGoldenSaintArcherAtrForge",
+            "formKey": "1CAD44:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.75,
+          "min": 18,
+          "max": 80
+        },
+        "target": {
+          "band": "VII",
+          "status": "decided",
+          "source": "user, 2026-10-04"
+        }
       },
       {
         "id": "golden-saint-warrior",
         "name": "Golden Saint Warrior",
-        "records": [{ "edid": "ccBGSSSE025_EncSummonGoldenSaintWarriorAtrForge", "formKey": "1CAD45:ccbgssse025-advdsgs.esm" }],
-        "level": { "kind": "pcMult", "mult": 0.75, "min": 18, "max": 80 },
-        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+        "records": [
+          {
+            "edid": "ccBGSSSE025_EncSummonGoldenSaintWarriorAtrForge",
+            "formKey": "1CAD45:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.75,
+          "min": 18,
+          "max": 80
+        },
+        "target": {
+          "band": "VII",
+          "status": "decided",
+          "source": "user, 2026-10-04"
+        }
       },
       {
         "id": "dark-seducer-archer",
         "name": "Dark Seducer Archer",
-        "records": [{ "edid": "ccBGSSSE025_EncSummonDarkSeducerArcherAtrForge", "formKey": "1CAD42:ccbgssse025-advdsgs.esm" }],
-        "level": { "kind": "pcMult", "mult": 0.75, "min": 18, "max": 80 },
-        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+        "records": [
+          {
+            "edid": "ccBGSSSE025_EncSummonDarkSeducerArcherAtrForge",
+            "formKey": "1CAD42:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.75,
+          "min": 18,
+          "max": 80
+        },
+        "target": {
+          "band": "VII",
+          "status": "decided",
+          "source": "user, 2026-10-04"
+        }
       },
       {
         "id": "dark-seducer-warrior",
         "name": "Dark Seducer Warrior",
-        "records": [{ "edid": "ccBGSSSE025_EncSummonDarkSeducerWarriorAtrForge", "formKey": "1CAD43:ccbgssse025-advdsgs.esm" }],
-        "level": { "kind": "pcMult", "mult": 0.75, "min": 18, "max": 80 },
-        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+        "records": [
+          {
+            "edid": "ccBGSSSE025_EncSummonDarkSeducerWarriorAtrForge",
+            "formKey": "1CAD43:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.75,
+          "min": 18,
+          "max": 80
+        },
+        "target": {
+          "band": "VII",
+          "status": "decided",
+          "source": "user, 2026-10-04"
+        }
       },
       {
         "id": "staada-hostile",
         "name": "Staada",
         "encounter": "Balance of Power",
-        "records": [{ "edid": "ccBGSSSE025_EncSummonStaadaHostile", "formKey": "1B1815:ccbgssse025-advdsgs.esm" }],
-        "level": { "kind": "fixed", "value": 42 },
-        "target": { "band": "VIII", "status": "proposed", "source": "bands-of-power.md: named Daedra" }
+        "records": [
+          {
+            "edid": "ccBGSSSE025_EncSummonStaadaHostile",
+            "formKey": "1B1815:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 42
+        },
+        "target": {
+          "band": "VIII",
+          "status": "decided",
+          "source": "user, 2026-10-04"
+        }
       },
       {
         "id": "staada",
         "name": "Staada",
         "encounter": "her own quest",
-        "records": [{ "edid": "ccBGSSSE025_Staada", "formKey": "198273:ccbgssse025-advdsgs.esm" }],
-        "level": { "kind": "fixed", "value": 42 },
-        "target": { "band": "VIII", "status": "proposed", "source": "bands-of-power.md: named Daedra" }
+        "records": [
+          {
+            "edid": "ccBGSSSE025_Staada",
+            "formKey": "198273:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 42
+        },
+        "target": {
+          "band": "VIII",
+          "status": "decided",
+          "source": "user, 2026-10-04"
+        }
       }
     ]
   },
@@ -61,13 +141,28 @@
     "rows": [
       {
         "records": [
-          { "edid": "ccBGSSSE025_EncGoldenSaintArcher", "formKey": "000880:ccbgssse025-advdsgs.esm" },
-          { "edid": "ccBGSSSE025_EncGoldenSaintWarrior", "formKey": "0009C8:ccbgssse025-advdsgs.esm" },
-          { "edid": "ccBGSSSE025_EncDarkSeducerArcher", "formKey": "000A06:ccbgssse025-advdsgs.esm" },
-          { "edid": "ccBGSSSE025_EncDarkSeducerWarrior", "formKey": "000A07:ccbgssse025-advdsgs.esm" }
+          {
+            "edid": "ccBGSSSE025_EncGoldenSaintArcher",
+            "formKey": "000880:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_EncGoldenSaintWarrior",
+            "formKey": "0009C8:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_EncDarkSeducerArcher",
+            "formKey": "000A06:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_EncDarkSeducerWarrior",
+            "formKey": "000A07:ccbgssse025-advdsgs.esm"
+          }
         ],
         "name": "Golden Saint / Dark Seducer Archer / Warrior",
-        "level": { "kind": "fixed", "value": 18 },
+        "level": {
+          "kind": "fixed",
+          "value": 18
+        },
         "where": "not placed; the base records. The AtrForge copies and the summons template them for traits and inventory, not `Stats`, so their level moves nothing"
       }
     ]
@@ -86,20 +181,38 @@
     "confidence": "verified",
     "rows": [
       {
-        "list": { "edid": "ccBGSSSE025_LvlRandomGoldenSaint", "formKey": "1B1816:ccbgssse025-advdsgs.esm" },
+        "list": {
+          "edid": "ccBGSSSE025_LvlRandomGoldenSaint",
+          "formKey": "1B1816:ccbgssse025-advdsgs.esm"
+        },
         "gate": "no flags",
         "entries": [
-          { "at": 1, "label": "Golden Saint Archer (AtrForge)" },
-          { "at": 1, "label": "Golden Saint Warrior (AtrForge)" }
+          {
+            "at": 1,
+            "label": "Golden Saint Archer (AtrForge)"
+          },
+          {
+            "at": 1,
+            "label": "Golden Saint Warrior (AtrForge)"
+          }
         ],
         "owner": "`ccBGSSSE025_LvlSummonGoldenSaintAtrForge` 1CAD46:ccbgssse025-advdsgs.esm, spawned by `ccBGSSSE025_QuestA` 000912:ccbgssse025-advdsgs.esm (Balance of Power; script property HostileGS)"
       },
       {
-        "list": { "edid": "ccBGSSSE025_LvlRandomDarkSeducer", "formKey": "1B1817:ccbgssse025-advdsgs.esm" },
+        "list": {
+          "edid": "ccBGSSSE025_LvlRandomDarkSeducer",
+          "formKey": "1B1817:ccbgssse025-advdsgs.esm"
+        },
         "gate": "no flags",
         "entries": [
-          { "at": 1, "label": "Dark Seducer Archer (AtrForge)" },
-          { "at": 1, "label": "Dark Seducer Warrior (AtrForge)" }
+          {
+            "at": 1,
+            "label": "Dark Seducer Archer (AtrForge)"
+          },
+          {
+            "at": 1,
+            "label": "Dark Seducer Warrior (AtrForge)"
+          }
         ],
         "owner": "`ccBGSSSE025_LvlSummonDarkSeducerAtrForge` 1CAD47:ccbgssse025-advdsgs.esm, spawned by `ccBGSSSE025_QuestA` (script property HostileDS)"
       }
@@ -111,18 +224,33 @@
     "rows": [
       {
         "name": "Staada",
-        "base": [{ "edid": "ccBGSSSE025_EncSummonStaadaHostile", "formKey": "1B1815:ccbgssse025-advdsgs.esm" }],
+        "base": [
+          {
+            "edid": "ccBGSSSE025_EncSummonStaadaHostile",
+            "formKey": "1B1815:ccbgssse025-advdsgs.esm"
+          }
+        ],
         "notPlaced": true,
         "note": "spawned by `ccBGSSSE025_QuestA` 000912:ccbgssse025-advdsgs.esm (script property HostileStaada)"
       },
       {
         "name": "Staada",
-        "base": [{ "edid": "ccBGSSSE025_Staada", "formKey": "198273:ccbgssse025-advdsgs.esm" }],
+        "base": [
+          {
+            "edid": "ccBGSSSE025_Staada",
+            "formKey": "198273:ccbgssse025-advdsgs.esm"
+          }
+        ],
         "locations": [
           {
-            "cell": { "edid": "Tamriel", "formKey": "00003C:Skyrim.esm" },
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
             "persistent": true,
-            "ref": { "formKey": "19D37A:ccbgssse025-advdsgs.esm" },
+            "ref": {
+              "formKey": "19D37A:ccbgssse025-advdsgs.esm"
+            },
             "disabled": true
           }
         ],
@@ -169,35 +297,62 @@
     "confidence": "verified",
     "rows": [
       {
-        "list": { "edid": "ccBGSSSE025_GoldenSaintArcherOutfit", "formKey": "000A03:ccbgssse025-advdsgs.esm" },
+        "list": {
+          "edid": "ccBGSSSE025_GoldenSaintArcherOutfit",
+          "formKey": "000A03:ccbgssse025-advdsgs.esm"
+        },
         "rolls": "Golden Saint Boots 000987 · Armor 000988 · Gauntlets 000989 · Helmet 00098A"
       },
       {
-        "list": { "edid": "ccBGSSSE025_GoldenSaintWarriorOutfit", "formKey": "000A02:ccbgssse025-advdsgs.esm" },
+        "list": {
+          "edid": "ccBGSSSE025_GoldenSaintWarriorOutfit",
+          "formKey": "000A02:ccbgssse025-advdsgs.esm"
+        },
         "rolls": "as the archer, plus Golden Saint Shield 00098B"
       },
       {
-        "list": { "edid": "ccBGSSSE025_DarkSeducerArcherOutfit", "formKey": "000A04:ccbgssse025-advdsgs.esm" },
+        "list": {
+          "edid": "ccBGSSSE025_DarkSeducerArcherOutfit",
+          "formKey": "000A04:ccbgssse025-advdsgs.esm"
+        },
         "rolls": "Dark Seducer Boots 00098C · Armor 0008E5 · Gauntlets 000960 · Helmet 000985"
       },
       {
-        "list": { "edid": "ccBGSSSE025_DarkSeducerWarriorOutfit", "formKey": "000A05:ccbgssse025-advdsgs.esm" },
+        "list": {
+          "edid": "ccBGSSSE025_DarkSeducerWarriorOutfit",
+          "formKey": "000A05:ccbgssse025-advdsgs.esm"
+        },
         "rolls": "as the archer, plus Dark Seducer Shield 000986"
       },
       {
-        "list": { "edid": "ccBGSSSE025_LItemSummonGoldenSaintWeapon1H", "formKey": "0009D7:ccbgssse025-advdsgs.esm" },
+        "list": {
+          "edid": "ccBGSSSE025_LItemSummonGoldenSaintWeapon1H",
+          "formKey": "0009D7:ccbgssse025-advdsgs.esm"
+        },
         "rolls": "Golden Mace 000993 · Golden Sword 000994 · Golden War Axe 000995",
-        "levels": [1]
+        "levels": [
+          1
+        ]
       },
       {
-        "list": { "edid": "ccBGSSSE025_LItemSummonDarkSeducerWeapon1H", "formKey": "0009D6:ccbgssse025-advdsgs.esm" },
+        "list": {
+          "edid": "ccBGSSSE025_LItemSummonDarkSeducerWeapon1H",
+          "formKey": "0009D6:ccbgssse025-advdsgs.esm"
+        },
         "rolls": "Dark Mace 00098F · Dark Sword 000990 · Dark War Axe 000991",
-        "levels": [1]
+        "levels": [
+          1
+        ]
       },
       {
-        "list": { "edid": "ccBGSSSE025_LItemGoldenSaintWeapon2HUnplayable", "formKey": "198275:ccbgssse025-advdsgs.esm" },
+        "list": {
+          "edid": "ccBGSSSE025_LItemGoldenSaintWeapon2HUnplayable",
+          "formKey": "198275:ccbgssse025-advdsgs.esm"
+        },
         "rolls": "Golden Warhammer 1F3559 · Golden Greatsword 1F355A · Golden Battleaxe 1F355B",
-        "levels": [1]
+        "levels": [
+          1
+        ]
       }
     ]
   },

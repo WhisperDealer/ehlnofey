@@ -3,7 +3,7 @@
   "id": "lurker",
   "group": "daedra",
   "title": "Lurker",
-  "order": 3,
+  "order": 4,
   "meta": {
     "updated": "2026-10-04"
   },
@@ -13,38 +13,98 @@
       {
         "id": "lurker",
         "name": "Lurker",
-        "records": [{ "edid": "DLC2EncLurker01", "formKey": "01B640:Dragonborn.esm" }],
-        "level": { "kind": "fixed", "value": 24 },
-        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+        "records": [
+          {
+            "edid": "DLC2EncLurker01",
+            "formKey": "01B640:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 24
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: lesser Daedra"
+        }
       },
       {
         "id": "lurker-guardian",
         "name": "Lurker Guardian",
-        "records": [{ "edid": "DLC2EncLurker02", "formKey": "01B641:Dragonborn.esm" }],
-        "level": { "kind": "fixed", "value": 34 },
-        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+        "records": [
+          {
+            "edid": "DLC2EncLurker02",
+            "formKey": "01B641:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 34
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: lesser Daedra"
+        }
       },
       {
         "id": "lurker-sentinel",
         "name": "Lurker Sentinel",
-        "records": [{ "edid": "DLC2EncLurker03", "formKey": "01B642:Dragonborn.esm" }],
-        "level": { "kind": "fixed", "value": 44 },
-        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+        "records": [
+          {
+            "edid": "DLC2EncLurker03",
+            "formKey": "01B642:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 44
+        },
+        "target": {
+          "band": "VIII",
+          "status": "decided",
+          "source": "user, 2026-10-04"
+        }
       },
       {
         "id": "lurker-vindicator",
         "name": "Lurker Vindicator",
-        "records": [{ "edid": "DLC2EncLurker04", "formKey": "01B645:Dragonborn.esm" }],
-        "level": { "kind": "fixed", "value": 54 },
-        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+        "records": [
+          {
+            "edid": "DLC2EncLurker04",
+            "formKey": "01B645:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 54
+        },
+        "target": {
+          "band": "VIII",
+          "status": "decided",
+          "source": "user, 2026-10-04"
+        }
       },
       {
         "id": "lurker-standing-stone",
         "name": "Lurker",
         "encounter": "a freed standing stone",
-        "records": [{ "edid": "TestDLC2Lurker", "formKey": "014494:Dragonborn.esm" }],
-        "level": { "kind": "fixed", "value": 32 },
-        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" },
+        "records": [
+          {
+            "edid": "TestDLC2Lurker",
+            "formKey": "014494:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 32
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: lesser Daedra"
+        },
         "note": "despite its EditorID, live: the activator `DLC2PillarShoutTrigger` 028662:Dragonborn.esm (5 refs in the `DLC2SolstheimWorld` persistent cell) spawns it through its script property DLC2PillarMonster"
       }
     ]
@@ -61,13 +121,28 @@
     "confidence": "verified",
     "rows": [
       {
-        "list": { "edid": "DLC2LCharLurker", "formKey": "01B64D:Dragonborn.esm" },
+        "list": {
+          "edid": "DLC2LCharLurker",
+          "formKey": "01B64D:Dragonborn.esm"
+        },
         "gate": "highest gate only (`CalculateForEachItemInCount` alone)",
         "entries": [
-          { "at": 1, "label": "Lurker" },
-          { "at": 35, "label": "Lurker Guardian" },
-          { "at": 45, "label": "Lurker Sentinel" },
-          { "at": 55, "label": "Lurker Vindicator" }
+          {
+            "at": 1,
+            "label": "Lurker"
+          },
+          {
+            "at": 35,
+            "label": "Lurker Guardian"
+          },
+          {
+            "at": 45,
+            "label": "Lurker Sentinel"
+          },
+          {
+            "at": 55,
+            "label": "Lurker Vindicator"
+          }
         ],
         "owner": "`DLC2LvlLurker` 02B0EA:Dragonborn.esm (9 refs: `DLC2Book02DungeonNEW` 01EDE2 ×3, `DLC2POIBookLevel02` 0142F5 ×2, `DLC2POIBookLevel03` 01EDE3, `DLC2Book03Dungeon` 0142F3, `DLC2Book07Dungeon` 0142F4, `DLC2ApoIslandA01` 01C226) · `DLC2LvlLurkerAmbush` 02A9CA:Dragonborn.esm (via 02B0EA; 20 refs: `DLC2SolstheimWorld` 000800 persistent cell ×8, `DLC2POIAsh02DB` 00EF52, `DLC2POINorth01DB` 00ED42, `DLC2WarehouseAmbushes` 027333, `DLC2Book01DungeonA` 03B065, `DLC2Book01DungeonEnd02` 01C165, `DLC2Book02DungeonNEW`, `DLC2Book03Dungeon` ×2, `DLC2Book07Dungeon` ×2, `DLC2POIBookLevel01` 01E9A2, `DLC2POIBookLevel03`). Every cell is in Dragonborn.esm"
       }
