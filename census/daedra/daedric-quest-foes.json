@@ -96,6 +96,66 @@
           "status": "decided",
           "source": "user, 2026-10-05"
         }
+      },
+      {
+        "id": "sebastian-lort",
+        "name": "Sebastian Lort",
+        "records": [
+          {
+            "edid": "DA03Wizard",
+            "formKey": "01C4E5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockBossConjurer",
+            "formKey": "0E0FFD:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            14,
+            21,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "the record has no name of its own; the `DA03` alias WizardLeader names him (`DA03WizardName` 0E9E1A). The Conjurer boss rungs, via `Stats` (and `BaseData`, `Inventory`) from the list"
+      },
+      {
+        "id": "malkoran",
+        "name": "Malkoran",
+        "records": [
+          {
+            "edid": "dunKilkreathWarlock",
+            "formKey": "09CB66:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockBossNecroMaleCondescending",
+            "formKey": "0E106D:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            14,
+            21,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "the Necromancer boss rungs, via `Stats` from `LvlWarlockNecroBossMaleCondescending` 081EF5 (which Vals Veran, on *Named Warlocks*, shares). When he dies, his `FXChangeToNecroPriestScript` raises Malkoran's Shade `DA09ShadeUnique` 0EBE2E (26, its own level), filed on Undead → *Shades*"
       }
     ]
   },
@@ -115,6 +175,68 @@
         },
         "note": "the rung-01 necromancer leaves, on *Common Warlocks*; `Stats` and `Inventory` are taken",
         "owner": "Nimphaneth, Sanyon"
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockBossConjurer",
+          "formKey": "0E0FFD:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "entries": [
+          {
+            "at": 1,
+            "label": "7 (gates 1–12)"
+          },
+          {
+            "at": 19,
+            "label": "14"
+          },
+          {
+            "at": 27,
+            "label": "21"
+          },
+          {
+            "at": 36,
+            "label": "30"
+          },
+          {
+            "at": 46,
+            "label": "40"
+          }
+        ],
+        "note": "on *Warlock Bosses*; `Stats`, `BaseData` and `Inventory` are taken",
+        "owner": "Sebastian Lort"
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockBossNecroMaleCondescending",
+          "formKey": "0E106D:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "entries": [
+          {
+            "at": 1,
+            "label": "7 (gates 1–12)"
+          },
+          {
+            "at": 19,
+            "label": "14"
+          },
+          {
+            "at": 27,
+            "label": "21"
+          },
+          {
+            "at": 36,
+            "label": "30"
+          },
+          {
+            "at": 46,
+            "label": "40"
+          }
+        ],
+        "note": "on *Warlock Bosses*; `Stats` and `Inventory` are taken",
+        "owner": "Malkoran, through `LvlWarlockNecroBossMaleCondescending` 081EF5"
       }
     ]
   },
@@ -161,6 +283,38 @@
           }
         ],
         "quest": "`DA10` 022F08 alias Logrolf"
+      },
+      {
+        "name": "Sebastian Lort",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RimerockBurrow01",
+              "formKey": "015223:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "DA03WarlockLeaderREF",
+              "formKey": "01C4EA:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DA03` 01BFC4 alias WizardLeader"
+      },
+      {
+        "name": "Malkoran",
+        "locations": [
+          {
+            "cell": {
+              "edid": "KilkreathRuins03",
+              "formKey": "027D1C:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "DA09DragonPriestRef",
+              "formKey": "029D87:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DA09` 04E4E1 alias dragonPriest (display name `DA09DragonPriestName` 04E4EB)"
       }
     ]
   },
@@ -184,6 +338,12 @@
         "weapons": "none",
         "armor": "`WarlockOutfitSimpleWithHood` (Hooded Black Mage Robes, Boots)",
         "skin": "race default"
+      },
+      {
+        "records": "Sebastian Lort · Malkoran",
+        "weapons": "as the drawn boss leaf (`Inventory` from the list)",
+        "armor": "as the drawn leaf",
+        "skin": "race default"
       }
     ]
   },
@@ -192,7 +352,7 @@
     "rows": [
       {
         "list": {
-          "label": "`LItemWarlockDagger`, `NecromancerOutfitHood50`, `LootWarlockRandom`"
+          "label": "`LItemWarlockDagger`, `NecromancerOutfitHood50`, `LootWarlockRandom`, and the boss warlock leaves' gear"
         },
         "rolls": "as on *Common Warlocks*"
       }

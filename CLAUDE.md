@@ -164,7 +164,9 @@ rules).
   `target: { band, level?, status, source }`, its Ehlnofey band from `arch-docs/bands-of-power.md`.
   `decided` only where the bands doc names it or the user decides it (e.g. Alduin X 100 on the Throat
   of the World, 150 in Sovngarde; Miraak X 100); everything else is `proposed`, drawn dashed on the
-  site. No levels, rosters or weights beyond that.
+  site. A row the user exempts from bone 1 carries `target: { scales: true, status: 'decided', source }`
+  instead, recorded in `archetype-tiers.md` (only the Shadowrend Shadow, user 2026-10-05). No levels,
+  rosters or weights beyond that.
   **Page layout** (user, 2026-09-30; the Mudcrab page is the model): no source line (the group
   page cites the spec), just three headed tables and **no prose** (one `note` per row where needed):
   1. **Records**: Record · Name · Level, one row per *distinct* enemy. Variants that inherit their
@@ -202,7 +204,7 @@ rules).
   (WD-87, top-level, the hostile mages: *Common Warlocks* (five schools × seven rungs, 1–46, every
   wrapper, MS06 cultists, Southfringe crew), *Warlock Bosses* (7–40; the 50
   rung is in no list; CC Necromantic Grimoire injects boss leaves), *Witches* (Witch 4, Hag 8),
-  *Named Warlocks* (`DA03Wizard` is Sebastian Lort by quest alias, not Malkoran); the Soul Cairn mage
+  *Named Warlocks* (Sebastian Lort and Malkoran moved to Daedra → *Daedric Quest Foes*); the Soul Cairn mage
   souls are on Undead → *Soul Cairn Undead*; the CC Dawnfang Guardians are ghosts, on
   *Ghost Bosses*, by the user's call), Bandits
   (WD-86, top-level: *Common Bandits* (the six-rung ladder Bandit … Bandit Marauder, 1–25, the unnamed
@@ -259,7 +261,8 @@ rules).
   mortal followers are here too, by the user's call (2026-10-02): *The Afflicted* (`DA13`, ladder 1–24,
   Orchendor), *Boethiah Cultists* (bandit ladders, CC Goldbrand, the Champion), *Hunters of Hircine*,
   *Mythic Dawn (CC)* (The Cause), *Vaermina Devotees* (Storm ladder, Orcish Invaders, Veren and Thorek) and
-  *Daedric Quest Foes* (Namira's Eola, Nimphaneth, Sanyon; Molag Bal's Logrolf)), Creation Club creatures (WD-71: no group page; each is on its kind's page under
+  *Daedric Quest Foes* (Namira's Eola, Nimphaneth, Sanyon; Molag Bal's Logrolf; Clavicus Vile's
+  Sebastian Lort, who is `DA03Wizard` named by quest alias; Meridia's Malkoran)), Creation Club creatures (WD-71: no group page; each is on its kind's page under
   World Creatures), Vampires (WD-72, a sub-group under Undead since 2026-10-02: *Common Vampires*, *Vampire Boss*, *Vampire Lord* (Harkon, plus Serana and Valerica by the user's call),
   *Volkihar Court*, *Vampire's Thrall*, *Death Hound*; *Gargoyle* moved to World Creatures → Monsters;
   thralls take bandit levels and gear;

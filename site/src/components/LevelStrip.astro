@@ -43,21 +43,24 @@ const vanillaTitle = (r: RecordRowData) => {
 
   {rows.map((r) => {
     const m = levelMark(r.level);
-    const tb = bandById(r.target.band);
-    const ts = segment(tb);
-    const proposed = r.target.status === 'proposed';
+    const t = r.target;
+    // A row that keeps scaling with the player has no band to draw, only its vanilla range.
+    const tb = 'band' in t ? bandById(t.band) : null;
+    const ts = tb ? segment(tb) : null;
+    const proposed = t.status === 'proposed';
+    const goal = tb && 'band' in t ? `target ${tb.id} ${tb.name}${t.level ? ` (${t.level})` : ''}, ${t.status}` : 'keeps scaling with the player';
     return (
       <div class="lane">
         <div class="label">
           <a href={`#rec-${r.id}`}>{r.name}{r.encounter && <small> · {encounterShort(r.encounter)}</small>}</a>
-          <BandChip id={r.target.band} proposed={proposed} />
+          {tb ? <BandChip id={tb.id} proposed={proposed} /> : <span class="scales-tag" title="keeps scaling with the player">scales</span>}
         </div>
-        <div class="track" title={`${r.name}: ${vanillaTitle(r)} → target ${tb.id} ${tb.name}${r.target.level ? ` (${r.target.level})` : ''}, ${r.target.status}`}>
+        <div class="track" title={`${r.name}: ${vanillaTitle(r)} → ${goal}`}>
           {bands.bands.map((b) => {
             const s = segment(b);
             return <span class="bg" style={`left:${s.left}%;width:${s.width}%;--c:${b.colour}`}></span>;
           })}
-          <span class:list={['target', { proposed }]} style={`left:${ts.left}%;width:${ts.width}%;--c:${tb.colour}`}></span>
+          {tb && ts && <span class:list={['target', { proposed }]} style={`left:${ts.left}%;width:${ts.width}%;--c:${tb.colour}`}></span>}
           {m.kind === 'range' && (
             <span class="range" style={`left:${pos(m.min)}%;width:${pos(m.max) - pos(m.min)}%`}>
               <b style="left:0"></b><b style="right:0"></b>
@@ -71,7 +74,7 @@ const vanillaTitle = (r: RecordRowData) => {
           )}
           {m.kind === 'point' && <span class="dot" style={`left:${pos(m.v)}%`}></span>}
           {m.kind === 'points' && m.vs.map((v) => <span class="dot" style={`left:${pos(v)}%`}></span>)}
-          {r.target.level && <span class="diamond" style={`left:${pos(r.target.level)}%;--c:${tb.colour}`}></span>}
+          {tb && 'band' in t && t.level && <span class="diamond" style={`left:${pos(t.level)}%;--c:${tb.colour}`}></span>}
         </div>
       </div>
     );
@@ -89,6 +92,7 @@ const vanillaTitle = (r: RecordRowData) => {
   .lg-target { width: 18px; height: 12px; border-radius: 3px; background: rgba(214, 90, 43, .45); border: 1.5px solid #d65a2b; }
   .lg-proposed { width: 18px; height: 12px; border-radius: 3px; border: 1.5px dashed #d65a2b; }
   .lg-diamond { width: 9px; height: 9px; background: var(--gold); transform: rotate(45deg); }
+  .scales-tag { font-size: 0.75rem; color: var(--muted); border: 1.5px dotted var(--muted); border-radius: 6px; padding: 0.1em 0.4em; }
 
   .lane { display: grid; grid-template-columns: minmax(150px, 210px) 1fr; gap: 0.9rem; align-items: center; min-height: 34px; }
   .lane + .lane { border-top: 1px solid rgba(214,196,150,.06); }

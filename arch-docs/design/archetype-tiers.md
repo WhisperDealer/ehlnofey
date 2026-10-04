@@ -846,6 +846,11 @@ never honoured zones anyway (`engine-behaviour.md` §1), so flattening changes n
 | Morag Tong (`DLC2LvlMoragTong{Melee1H,Missile}`) | bandit ladder | **30**, own `Stats`, real class (WD-57) |
 | Zahkriisos | ×1 [25–60] | **60** — matches his fixed siblings |
 
+> **Exception to bone 1: the Shadow keeps scaling (user, 2026-10-05).** The Shadowrend CC pack's Shadow
+> (`BGSSSE018_Doppelganger*`, ten records in ccbgssse018-shadowrend.esl) takes `Stats` from the Player record
+> 000007, so it copies the player's level and stats. It is the player's shadow self, so it stays that way: Ehlnofey
+> gives it no band and leaves its records alone. The census marks it `target: { scales: true }`.
+
 > **World encounters and assassins (WD-57, user 2026-09-27). Verified in game by the user.** The level sits on the record that
 > owns it, via `author-retargets.ps1` `Level = N` (no SkyPatcher). Also fixed: the Solstheim netch hunters `DLC2WE15Hunter` 20 (were
 > ×0.75 [30–50]); `WEDL05Thug` 14, `WEDL07Madwoman` 6, `WEDL08DeepInHisCups` 12, the four DB torture victims 1. The Morag Tong had

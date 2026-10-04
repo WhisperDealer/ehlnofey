@@ -41,7 +41,8 @@ const PLACED_FOLD = 4; // more locations than this collapse behind a summary
       <thead><tr><th>Record</th><th>Name</th><th>Level</th><th>Target</th></tr></thead>
       <tbody>
         {f.records.rows.map((r) => {
-          const b = bandById(r.target.band);
+          const t = r.target;
+          const b = 'band' in t ? bandById(t.band) : null;
           return (
             <tr id={`rec-${r.id}`}>
               <td>
@@ -55,9 +56,15 @@ const PLACED_FOLD = 4; // more locations than this collapse behind a summary
               </td>
               <td set:html={levelText(r.level)} />
               <td class="target">
-                <BandChip id={b.id} proposed={r.target.status === 'proposed'} />
-                <span>{b.name}{r.target.level && <strong> {r.target.level}</strong>}</span>
-                <div class="sub">{r.target.status} · <span set:html={md(r.target.source)} /></div>
+                {b && 'band' in t ? (
+                  <>
+                    <BandChip id={b.id} proposed={t.status === 'proposed'} />
+                    <span>{b.name}{t.level && <strong> {t.level}</strong>}</span>
+                  </>
+                ) : (
+                  <span class="scales">Scales with the player</span>
+                )}
+                <div class="sub">{t.status} · <span set:html={md(t.source)} /></div>
               </td>
             </tr>
           );
@@ -279,6 +286,7 @@ const PLACED_FOLD = 4; // more locations than this collapse behind a summary
   .flag { margin-left: 0.5rem; font-size: 0.72rem; padding: 0.05rem 0.4rem; border: 1px solid var(--line-strong); border-radius: 4px; color: var(--muted); }
   td.target { min-width: 170px; }
   td.target > span { margin-left: 0.45rem; }
+  td.target > span.scales { margin-left: 0; font-style: italic; }
   .ladder { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.15rem; }
   .ladder .at { display: inline-block; min-width: 2.6rem; font-family: var(--mono); font-size: 0.8rem; color: var(--gold); }
   .ladder small { color: var(--muted); }

@@ -53,12 +53,14 @@ export function renderFamily(f: FamilyData, titles: Record<string, string> = {})
     table(
       ['Record', 'Name', 'Level', 'Target'],
       f.records.rows.map((r) => {
-        const b = bands.find((x) => x.id === r.target.band)!;
+        const t = r.target;
+        const b = 'band' in t ? bands.find((x) => x.id === t.band)! : null;
         let rec = refs(r.records);
         if (r.race) rec += ` (${ref(r.race)})`;
         if (r.factions) rec += ` (in ${refs(r.factions, ' and ')})`;
         const flags = r.flags?.length ? ` (${r.flags.map((x) => `\`${x}\``).join(', ')})` : '';
-        const target = `${b.id} ${b.name}${r.target.level ? ` ${r.target.level}` : ''} (${r.target.status}; ${r.target.source})`;
+        const goal = b && 'band' in t ? `${b.id} ${b.name}${t.level ? ` ${t.level}` : ''}` : 'scales with the player';
+        const target = `${goal} (${t.status}; ${t.source})`;
         return [rec, r.encounter ? `${r.name}, ${r.encounter}` : r.name, level(r.level) + flags, target];
       }),
     ),

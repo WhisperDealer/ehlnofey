@@ -14,6 +14,7 @@ const byBand = new Map<string, Hit[]>();
 for (const g of groups)
   for (const f of g.familyPages)
     for (const r of f.records.rows) {
+      if (!('band' in r.target)) continue; // keeps scaling with the player: in no band
       const list = byBand.get(r.target.band) ?? [];
       const name = r.name;
       const same = list.find((h) => h.name === name && h.family === f.title);

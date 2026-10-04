@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 const { group: g } = Astro.props;
 
 // How many of a family's records target each band, in band order.
-const spread = (rows: { target: { band: string } }[]) =>
+const spread = (rows: { target: { band?: string } }[]) =>
   bands.bands.map((b) => ({ id: b.id, n: rows.filter((r) => r.target.band === b.id).length })).filter((x) => x.n > 0);
 ---
 

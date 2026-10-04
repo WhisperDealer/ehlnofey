@@ -12,7 +12,7 @@
     - every family a group.json lists exists, and every family file is listed by its group
     - every `formKey` is `<6 upper-case hex>:<Master.esm|esp|esl>` (never bare hex)
     - every record row has a `level.kind` the site knows and a `target.band` of I-X with a
-      `target.status` of decided or proposed
+      `target.status` of decided or proposed, or a decided `target.scales` (an exception to bone 1)
 
 .EXAMPLE
   powershell -File build/Test-CensusJson.ps1
@@ -90,7 +90,12 @@ foreach ($dir in Get-ChildItem -LiteralPath $Census -Directory | Where-Object { 
         foreach ($row in @($f.records.rows)) {
             $where = "record row '$($row.id)'"
             if (-not (Has $row 'level') -or $Kinds -notcontains $row.level.kind) { Add-Error $file.FullName "$where has no known level.kind ($($Kinds -join ', '))" }
-            if (-not (Has $row 'target') -or $BandIds -notcontains $row.target.band) { Add-Error $file.FullName "$where has no target.band of I-X" }
+            if (-not (Has $row 'target')) { Add-Error $file.FullName "$where has no target" }
+            elseif (Has $row.target 'scales') {
+                # An exception to bone 1: keeps scaling with the player, decided by the user.
+                if ($row.target.scales -ne $true -or $row.target.status -ne 'decided') { Add-Error $file.FullName "$where target.scales must be true and decided" }
+            }
+            elseif ($BandIds -notcontains $row.target.band) { Add-Error $file.FullName "$where has no target.band of I-X" }
             elseif ('decided', 'proposed' -notcontains $row.target.status) { Add-Error $file.FullName "$where target.status must be decided or proposed" }
         }
         Test-FormKeys $f $file.FullName

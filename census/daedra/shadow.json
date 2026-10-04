@@ -65,9 +65,9 @@
           }
         },
         "target": {
-          "band": "V",
-          "status": "proposed",
-          "source": "no band named yet; vanilla copies the player's level"
+          "scales": true,
+          "status": "decided",
+          "source": "user, 2026-10-05: the player's shadow self (archetype-tiers.md §6)"
         },
         "note": "every Shadow has `Template: 000007:Skyrim.esm`, the Player record, with `Stats` (and `AttackData`) in `TemplateFlags`; its own `Level: 1` / `CalcMaxLevel: 100` is inert, so it copies the player's level and stats, a mirror by design. Races `BGSSSE018_{Nord,Argonian,Khajiit,Orc,WoodElf}RaceDoppelganger` 000829 · 000824 · 000828 · 00082A · 00082B:ccbgssse018-shadowrend.esl"
       }

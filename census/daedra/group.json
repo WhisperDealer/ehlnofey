@@ -35,7 +35,7 @@
     },
     {
       "id": "shadow",
-      "holds": "the Shadowrend CC pack's Shadow, a mirror of the player that copies the player's level"
+      "holds": "the Shadowrend CC pack's Shadow, a mirror of the player that keeps scaling with the player (an exception to bone 1)"
     },
     {
       "id": "the-afflicted",
@@ -59,7 +59,7 @@
     },
     {
       "id": "daedric-quest-foes",
-      "holds": "the one-offs: Namira's cannibals (Eola, Nimphaneth, Sanyon) and Molag Bal's Logrolf the Willful"
+      "holds": "the one-offs: Namira's cannibals (Eola, Nimphaneth, Sanyon), Molag Bal's Logrolf the Willful, Clavicus Vile's Sebastian Lort and Meridia's Malkoran"
     }
   ],
   "filedElsewhere": [
@@ -67,11 +67,6 @@
       "record": "`DA10` Vigilant Tyranus",
       "what": "Molag Bal's quest foe",
       "where": "Factions → Vigilants → Named Vigilants"
-    },
-    {
-      "record": "`DA03` Sebastian Lort · `DA09` Malkoran",
-      "what": "Clavicus Vile's and Meridia's quest foes",
-      "where": "Warlocks → Named Warlocks"
     },
     {
       "record": "`DA05Sinding` 0136AC",
