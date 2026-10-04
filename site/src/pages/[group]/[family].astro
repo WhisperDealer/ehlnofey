@@ -238,8 +238,8 @@ const PLACED_FOLD = 4; // more locations than this collapse behind a summary
           <tbody>
             {f.gearLists.rows.map((g) => (
               <tr>
-                <td><div set:html={ref(g.list)} /><div class="sub">{g.gate}</div></td>
-                <td><span set:html={md(g.rolls)} /><div class="sub">@{g.levels.join(' · ')}</div></td>
+                <td><div set:html={ref(g.list)} />{g.gate && <div class="sub">{g.gate}</div>}</td>
+                <td><span set:html={md(g.rolls)} />{g.levels && <div class="sub">@{g.levels.join(' · ')}</div>}</td>
               </tr>
             ))}
           </tbody>

@@ -1,0 +1,407 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "dremora",
+  "group": "daedra",
+  "title": "Dremora",
+  "order": 1,
+  "meta": {
+    "updated": "2026-10-04"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "dremora-churl",
+        "name": "Dremora Churl",
+        "records": [
+          { "edid": "EncDremoraMelee01", "formKey": "023A95:Skyrim.esm" },
+          { "edid": "EncDremoraMissile01", "formKey": "025D1C:Skyrim.esm" },
+          { "edid": "EncDremoraWarlock01", "formKey": "025D1D:Skyrim.esm" }
+        ],
+        "level": { "kind": "fixed", "value": 6 },
+        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+      },
+      {
+        "id": "dremora-caitiff",
+        "name": "Dremora Caitiff",
+        "records": [
+          { "edid": "EncDremoraMelee02", "formKey": "016EF0:Skyrim.esm" },
+          { "edid": "EncDremoraMissile02", "formKey": "016EF6:Skyrim.esm" },
+          { "edid": "EncDremoraWarlock02", "formKey": "016F04:Skyrim.esm" }
+        ],
+        "level": { "kind": "fixed", "value": 12 },
+        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+      },
+      {
+        "id": "dremora-kynval",
+        "name": "Dremora Kynval",
+        "records": [
+          { "edid": "EncDremoraMelee03", "formKey": "016F40:Skyrim.esm" },
+          { "edid": "EncDremoraMissile03", "formKey": "016F46:Skyrim.esm" },
+          { "edid": "EncDremoraWarlock03", "formKey": "016F69:Skyrim.esm" }
+        ],
+        "level": { "kind": "fixed", "value": 19 },
+        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+      },
+      {
+        "id": "dremora-kynreeve",
+        "name": "Dremora Kynreeve",
+        "records": [
+          { "edid": "EncDremoraMelee04", "formKey": "016F6A:Skyrim.esm" },
+          { "edid": "EncDremoraMissile04", "formKey": "016FE2:Skyrim.esm" },
+          { "edid": "EncDremoraWarlock04", "formKey": "016FF3:Skyrim.esm" }
+        ],
+        "level": { "kind": "fixed", "value": 27 },
+        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+      },
+      {
+        "id": "dremora-markynaz",
+        "name": "Dremora Markynaz",
+        "records": [
+          { "edid": "EncDremoraMelee05", "formKey": "016FF4:Skyrim.esm" },
+          { "edid": "EncDremoraMissile05", "formKey": "016FF6:Skyrim.esm" },
+          { "edid": "EncDremoraWarlock05", "formKey": "016FF7:Skyrim.esm" }
+        ],
+        "level": { "kind": "fixed", "value": 36 },
+        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+      },
+      {
+        "id": "dremora-valkynaz",
+        "name": "Dremora Valkynaz",
+        "records": [
+          { "edid": "EncDremoraMelee06", "formKey": "016FF8:Skyrim.esm" },
+          { "edid": "EncDremoraMissile06", "formKey": "016FF9:Skyrim.esm" },
+          { "edid": "EncDremoraWarlock06", "formKey": "016FFA:Skyrim.esm" }
+        ],
+        "level": { "kind": "fixed", "value": 46 },
+        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" },
+        "note": "the melee rung is named Dremora Valynaz"
+      },
+      {
+        "id": "unbound-dremora",
+        "name": "Unbound Dremora",
+        "records": [{ "edid": "MGRDremoraSummon", "formKey": "099F2F:Skyrim.esm" }],
+        "level": { "kind": "pcMult", "mult": 1.1, "min": 10 },
+        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" },
+        "note": "no maximum level set"
+      },
+      {
+        "id": "velehk-sain",
+        "name": "Velehk Sain",
+        "records": [{ "edid": "MiddenVelehk", "formKey": "075C7F:Skyrim.esm" }],
+        "level": { "kind": "fixed", "value": 4 },
+        "target": { "band": "VIII", "status": "proposed", "source": "bands-of-power.md: named Daedra" }
+      },
+      {
+        "id": "dremora-morvunskar",
+        "name": "Dremora",
+        "encounter": "Morvunskar",
+        "records": [{ "edid": "DA14Summoned", "formKey": "01F3AA:Skyrim.esm" }],
+        "level": { "kind": "fixed", "value": 1 },
+        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+      },
+      {
+        "id": "valkyn-gatanas",
+        "name": "Valkyn Gatanas",
+        "records": [{ "edid": "ccBGSSSE067_LvlDremoraBossAmbush01", "formKey": "0392F9:ccbgssse067-daedinv.esm" }],
+        "level": { "kind": "list", "from": { "edid": "ccBGSSSE067_LCharDremoraMelee", "formKey": "0392FA:ccbgssse067-daedinv.esm" }, "rungs": [19, 27, 36, 46] },
+        "target": { "band": "VIII", "status": "proposed", "source": "bands-of-power.md: named Daedra" }
+      },
+      {
+        "id": "valkyn-methats",
+        "name": "Valkyn Methats",
+        "records": [{ "edid": "ccBGSSSE067_LvlDremoraBossAmbush02", "formKey": "0392FB:ccbgssse067-daedinv.esm" }],
+        "level": { "kind": "list", "from": { "edid": "ccBGSSSE067_LCharDremoraMelee", "formKey": "0392FA:ccbgssse067-daedinv.esm" }, "rungs": [19, 27, 36, 46] },
+        "target": { "band": "VIII", "status": "proposed", "source": "bands-of-power.md: named Daedra" }
+      },
+      {
+        "id": "dremora-sovereign",
+        "name": "Dremora Sovereign",
+        "records": [{ "edid": "ccPEWSSE002_EncDremoraFire", "formKey": "000839:ccpewsse002-armsofchaos.esl" }],
+        "level": { "kind": "pcMult", "mult": 1.5, "min": 25, "max": 55 },
+        "target": { "band": "VIII", "status": "proposed", "source": "bands-of-power.md: named Daedra" }
+      },
+      {
+        "id": "dremora-sehtkynaz",
+        "name": "Dremora Sehtkynaz",
+        "records": [{ "edid": "ccPEWSSE002_EncDremoraWarlockIce", "formKey": "000837:ccpewsse002-armsofchaos.esl" }],
+        "level": { "kind": "pcMult", "mult": 1, "min": 10, "max": 45 },
+        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+      },
+      {
+        "id": "dremora-lyrkynaz",
+        "name": "Dremora Lyrkynaz",
+        "records": [{ "edid": "ccPEWSSE002_EncDremoraWarlockStorm", "formKey": "000835:ccpewsse002-armsofchaos.esl" }],
+        "level": { "kind": "pcMult", "mult": 1, "min": 10, "max": 45 },
+        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`SummonEncDremoraLord` 10DDEE (the Dremora Lord summon, level 46; on *Summoned Dremora*) uses `EncDremoraMelee06` 016FF8 as its template but sets its own level, so changing the Valkynaz rung does not move it.",
+      "`MGRDremoraSummon` and the three Arms of Chaos Dremora (rows above) take their template from `LCharDremoraMelee` / `LCharDremoraWarlock` without `Stats`, so they keep their own level when the rungs change.",
+      "Dremora-race records (race 0131F0) with no template: `DA07VoiceMehrunesDagon` 0252AA (level 1; on *Unfiled NPCs*), `DA14Sanguine` 02E1F2 (level 1; on *Eastmarch Countryside*), `Malacath` 019E16 (level 100; on *Largashbur*), `ccPEWSSE002_SummonEncDremoraSovereign` 000850:ccpewsse002-armsofchaos.esl (level 60; on *Summoned Dremora*).",
+      "The other rows: no other record keeps its own level.",
+      "Every other Dremora record (`DA07Dremora`, `DA14DremoraSummon`, `dunTransmogrifyDremora`, `dunLabyrinthianDremora`, `DA01LvlDremoraWarlock`, the `Lvl*` and `ccBGSSSE067_Lvl*Ambush` wrappers, `ccBGSSSE067_SummonEncDremoraLordScourge`) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": { "edid": "LCharDremoraMelee", "formKey": "01E79B:Skyrim.esm" },
+        "gate": "no flags, highest gate only",
+        "entries": [
+          { "at": 1, "label": "Churl" },
+          { "at": 12, "label": "Caitiff" },
+          { "at": 19, "label": "Kynval" },
+          { "at": 27, "label": "Kynreeve" },
+          { "at": 36, "label": "Markynaz" },
+          { "at": 46, "label": "Valynaz" }
+        ],
+        "owner": "`LvlDremoraMelee` 01E7AF (Shrine of Mehrunes Dagon `MehrunesDagonShrine` 02529E ×1; The Cause: Deadlands ×2, Tamriel ×4) · `ccBGSSSE067_LvlDremoraAmbushMelee` 1ADAE1:ccbgssse067-daedinv.esm (via 01E7AF; Deadlands ×3) · `DA07Dremora` 107D94 (via 01E7AF; 2 refs in the Tamriel persistent cell, `DA07` 0240B8 aliases Dremora01, Dremora02) · `dunTransmogrifyDremora` 000EB4 (via 01E7AF; the Wabbajack effect `DA15WabbajackFF` 09B246) · `MGRDremoraSummon` 099F2F (traits and inventory only; owns its level)"
+      },
+      {
+        "list": { "edid": "LCharDremoraMissile", "formKey": "025D1A:Skyrim.esm" },
+        "gate": "no flags, highest gate only",
+        "entries": [
+          { "at": 1, "label": "Churl" },
+          { "at": 12, "label": "Caitiff" },
+          { "at": 19, "label": "Kynval" },
+          { "at": 27, "label": "Kynreeve" },
+          { "at": 36, "label": "Markynaz" },
+          { "at": 46, "label": "Valkynaz" }
+        ],
+        "owner": "`LvlDremoraMissile` 025D39 (The Cause: Tamriel ×4)"
+      },
+      {
+        "list": { "edid": "LCharDremoraWarlock", "formKey": "025D1B:Skyrim.esm" },
+        "gate": "no flags, highest gate only",
+        "entries": [
+          { "at": 1, "label": "Churl" },
+          { "at": 12, "label": "Caitiff" },
+          { "at": 19, "label": "Kynval" },
+          { "at": 27, "label": "Kynreeve" },
+          { "at": 36, "label": "Markynaz" },
+          { "at": 46, "label": "Valkynaz" }
+        ],
+        "owner": "`LvlDremoraWarlock` 025D3A (Shrine of Mehrunes Dagon ×1; The Cause: Deadlands ×1, Tamriel ×4) · `ccBGSSSE067_LvlDremoraWarlockAmbush` 1ADAE0:ccbgssse067-daedinv.esm (via 025D3A; Deadlands ×3) · `DA01LvlDremoraWarlock` 0A2CAF (`AzurasStarInterior01` 0152BD ×3) · `dunLabyrinthianDremora` 10CCEA (spawned by `dunLabyrinthianMazeControl` 0F98B1) · Dremora Sehtkynaz and Lyrkynaz (traits and inventory only; own their level)"
+      },
+      {
+        "list": { "edid": "ccBGSSSE067_LCharDremoraMelee", "formKey": "0392FA:ccbgssse067-daedinv.esm" },
+        "gate": "no flags, highest gate only",
+        "entries": [
+          { "at": 1, "label": "Kynval" },
+          { "at": 27, "label": "Kynreeve" },
+          { "at": 36, "label": "Markynaz" },
+          { "at": 46, "label": "Valynaz" }
+        ],
+        "note": "the vanilla melee rungs 03–06",
+        "owner": "Valkyn Gatanas, Valkyn Methats. The Cause's Tamriel refs sit in four exterior cells, one melee, missile and warlock each: 00BAA1 · 00BAC1 · `DLC1RuunvaldExit` 00BB64 · 00BD0D (Skyrim.esm cells, refs from ccbgssse067-daedinv.esm); its Deadlands refs are in `ccBGSSSE067DeadlandsWorld` 0E1592:ccbgssse067-daedinv.esm"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Velehk Sain",
+        "locations": [
+          {
+            "cell": { "edid": "WinterholdCollegeMidden02", "formKey": "0AE783:Skyrim.esm" },
+            "ref": { "formKey": "0B8D3D:Skyrim.esm" },
+            "note": "The Midden"
+          }
+        ],
+        "quest": "alias VelehkSain of `dunMidden01QST` 055977"
+      },
+      {
+        "name": "Dremora",
+        "base": [{ "edid": "DA14Summoned", "formKey": "01F3AA:Skyrim.esm" }],
+        "locations": [
+          { "cell": { "edid": "Morvunskar01", "formKey": "015239:Skyrim.esm" }, "refText": "refs 01F3AB · 01F3AC" }
+        ]
+      },
+      {
+        "name": "Unbound Dremora",
+        "notPlaced": true,
+        "note": "spawned by `MGRitual03` 099F27 (script property MGRDremoraSummon, alias DremoraAlias)"
+      },
+      {
+        "name": "Valkyn Gatanas",
+        "locations": [
+          {
+            "cell": { "edid": "ccBGSSSE067DeadlandsWorld", "formKey": "0E1592:ccbgssse067-daedinv.esm" },
+            "persistent": true,
+            "ref": { "formKey": "04867C:ccbgssse067-daedinv.esm" }
+          }
+        ],
+        "quest": "alias NPCDremoraBoss01 of `ccBGSSSE067_Quest` 06BFC1:ccbgssse067-daedinv.esm"
+      },
+      {
+        "name": "Valkyn Methats",
+        "locations": [
+          {
+            "cell": { "edid": "ccBGSSSE067DeadlandsWorld", "formKey": "0E1592:ccbgssse067-daedinv.esm" },
+            "persistent": true,
+            "ref": { "formKey": "04867D:ccbgssse067-daedinv.esm" }
+          }
+        ],
+        "quest": "alias NPCDremoraBoss02 of `ccBGSSSE067_Quest` 06BFC1:ccbgssse067-daedinv.esm"
+      },
+      {
+        "name": "Dremora Sovereign",
+        "locations": [
+          {
+            "cell": { "edid": "Tamriel", "formKey": "00003C:Skyrim.esm" },
+            "persistent": true,
+            "ref": { "formKey": "00083A:ccpewsse002-armsofchaos.esl" }
+          }
+        ],
+        "quest": "alias Dremora01 of `ccPEWSSE002_Quest` 000819:ccpewsse002-armsofchaos.esl"
+      },
+      {
+        "name": "Dremora Sehtkynaz",
+        "locations": [
+          {
+            "cell": { "edid": "Tamriel", "formKey": "00003C:Skyrim.esm" },
+            "persistent": true,
+            "ref": { "formKey": "000838:ccpewsse002-armsofchaos.esl" }
+          }
+        ],
+        "quest": "alias Dremora02 of `ccPEWSSE002_Quest` 000819:ccpewsse002-armsofchaos.esl"
+      },
+      {
+        "name": "Dremora Lyrkynaz",
+        "locations": [
+          {
+            "cell": { "edid": "Tamriel", "formKey": "00003C:Skyrim.esm" },
+            "persistent": true,
+            "ref": { "formKey": "000836:ccpewsse002-armsofchaos.esl" }
+          }
+        ],
+        "quest": "alias Dremora03 of `ccPEWSSE002_Quest` 000819:ccpewsse002-armsofchaos.esl"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Melee rungs 01–06 (and Unbound Dremora, by its Inventory template)",
+        "weapons": "Iron Dagger 01397E · `LItemEnchWeapon1HDremoraFire` 017000",
+        "armor": "`DremoraDaedricArmor` 0F1ABF",
+        "skin": "race default"
+      },
+      {
+        "records": "Missile rungs 01–06",
+        "weapons": "Iron Dagger · `LItemEnchWeaponBowDremoraFire` 017007 · Iron Arrow 01397D ×1 · `LItemBanditWeaponArrows` 039D2F",
+        "armor": "`DremoraDaedricArmor` 0F1ABF",
+        "skin": "race default"
+      },
+      {
+        "records": "Warlock rungs 01–06 (and Sehtkynaz, Lyrkynaz, by their Inventory template)",
+        "weapons": "Iron Dagger · `LItemBanditWeapon` 01E60A",
+        "armor": "`DremoraWarlockOutfit` 016FFD",
+        "skin": "race default"
+      },
+      {
+        "records": "`DA07Dremora` 107D94 (own inventory)",
+        "weapons": "`LItemEnchWeapon1HDremoraFire` 017000 · `DA07ShrineKey` 107D97",
+        "armor": "`DremoraDaedricArmor` 0F1ABF",
+        "skin": "race default"
+      },
+      {
+        "records": "Velehk Sain",
+        "weapons": "Scimitar 07A91A ×2",
+        "armor": "`RedguardClothesOutfitNoHat` 06A15C",
+        "skin": "race default"
+      },
+      {
+        "records": "Dremora (`DA14Summoned`)",
+        "weapons": "none",
+        "armor": "`ArmorEbonyNoHelmetOutfit` 057A1F",
+        "skin": "race default"
+      },
+      {
+        "records": "Valkyn Gatanas, Valkyn Methats",
+        "weapons": "none (loot only: `LootWarlockSoulGems25` 03509A · `LootWarlockPotions25` 086019 · `LootWarlockIngredients25` 10FAD0)",
+        "armor": "`DremoraDaedricArmorFull` 10F760",
+        "skin": "race default"
+      },
+      {
+        "records": "Dremora Sovereign",
+        "weapons": "Daedric Sword of the Inferno `EnchDaedricSwordFire06` 028E96",
+        "armor": "`DremoraDaedricArmorFull` 10F760",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": { "edid": "LItemEnchWeapon1HDremoraFire", "formKey": "017000:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron @1 (`LItemEnchIronWeaponDremoraFire` 017003) · Steel @6 (017002) · Glass @27, 29 (017004) · Ebony @36, 38, 40 (017005) · Daedric @46, 48, 50, 52 (017006). Each material list rolls one of six fire-enchanted sublists (battleaxe, greatsword, mace, sword, war axe, warhammer), so \"1H\" includes two-handers",
+        "levels": [1, 6, 27, 29, 36, 38, 40, 46, 48, 50, 52]
+      },
+      {
+        "list": { "label": "the fire-enchanted sublists" },
+        "rolls": "Iron: Embers 1 · Burning 4 · Scorching 6 · Steel: Embers 4 · Burning 6 · Scorching 8 (every gate ≤ player) · Glass: Scorching 28 · Fire 31 · Blaze 34 · Ebony: Fire 37 · Blaze 40 · Inferno 43 · Daedric: Fire 47 · Blaze 50 · Inferno 53 (no flags, highest gate only). The Glass, Ebony and Daedric leaves gate one level above the parent entry (27 → 28, 36 → 37, 46 → 47), so at exactly that level the roll is empty"
+      },
+      {
+        "list": { "edid": "LItemEnchWeaponBowDremoraFire", "formKey": "017007:Skyrim.esm" },
+        "gate": "every gate ≤ player at the top",
+        "rolls": "Hunting Bow @1 (0AE72D: Embers 3 · Burning 5 · Scorching 7) · Glass Bow @27, 29 (0899CC: Scorching 28 · Fire 31 · Blaze 34) · Ebony Bow @36, 38, 40 (089D58: Fire 37 · Blaze 40 · Inferno 43) · Daedric Bow @46, 48, 50, 52 (08A9C0: Fire 47 · Blaze 50 · Inferno 53)",
+        "levels": [1, 27, 29, 36, 38, 40, 46, 48, 50, 52]
+      },
+      {
+        "list": { "edid": "LItemBanditWeaponArrows", "formKey": "039D2F:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "rolls": "20 arrows, each 75%: Iron ×4 @1 · Steel @5–8 · Orcish @9–12 · Dwarven @14–17 · Elven @20–23 (`BaseArrow*75`, ChanceNone 25%)"
+      },
+      {
+        "list": { "edid": "LItemBanditWeapon", "formKey": "01E60A:Skyrim.esm" },
+        "rolls": "one-handed (037C1B: mace, sword, war axe) or two-handed (037C21: battleaxe, greatsword, warhammer); each rolls Iron ×4 · Steel ×4 @1 · Orcish @9 · Dwarven @15 · Elven @22",
+        "levels": [1, 9, 15, 22]
+      },
+      {
+        "list": { "edid": "DremoraDaedricArmor", "formKey": "0F1ABF:Skyrim.esm" },
+        "rolls": "Dremora Daedric Boots 0F1ABD · Cuirass 0F1ABE · Gauntlets 0F1AC0"
+      },
+      {
+        "list": { "edid": "DremoraDaedricArmorFull", "formKey": "10F760:Skyrim.esm" },
+        "rolls": "as above, plus Dremora Daedric Helmet 10F75F"
+      },
+      {
+        "list": { "edid": "DremoraWarlockOutfit", "formKey": "016FFD:Skyrim.esm" },
+        "rolls": "Black Robes `DremoraRobesBlack` 016FFE · Boots `DremoraBoots` 016FFF"
+      },
+      {
+        "list": { "edid": "ArmorEbonyNoHelmetOutfit", "formKey": "057A1F:Skyrim.esm" },
+        "rolls": "Ebony Boots 013960 · Armor 013961 · Gauntlets 013962"
+      },
+      {
+        "list": { "edid": "RedguardClothesOutfitNoHat", "formKey": "06A15C:Skyrim.esm" },
+        "rolls": "Redguard Boots 07BC15 · Hammerfell Garb 07BC19"
+      },
+      {
+        "list": { "edid": "DeathItemDremora", "formKey": "03AD80:Skyrim.esm" },
+        "rolls": "death item: Daedra Heart 03AD5B ×1. Set on every rung and on Velehk Sain; `DA14Summoned` has none; the template wrappers set none of their own"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      { "item": "Dremora Daedric Boots · Armor · Gauntlets · Helmet 0F1ABD · 0F1ABE · 0F1AC0 · 10F75F", "kind": "armor", "playable": false, "note": "`NonPlayable`" },
+      { "item": "Black Robes 016FFE · Boots 016FFF", "kind": "clothing", "playable": false, "note": "`NonPlayable`" },
+      { "item": "Every fire-enchanted weapon and bow above, Daedric Sword of the Inferno, Iron Dagger, the bandit weapons and arrows, Scimitar", "kind": "weapons", "playable": true },
+      { "item": "Ebony Boots · Armor · Gauntlets, Redguard Boots, Hammerfell Garb", "kind": "armor and clothing", "playable": true }
+    ]
+  }
+}

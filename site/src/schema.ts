@@ -20,7 +20,7 @@ export const Ref = z
     formKey: FormKey.optional(),
     label: z.string().optional(), // for things with no EditorID, e.g. "Tamriel cell"
   })
-  .refine((r) => r.edid || r.formKey, 'a ref needs an edid or a formKey');
+  .refine((r) => r.edid || r.formKey || r.label, 'a ref needs an edid, a formKey or a label');
 
 export const Confidence = z.enum(['verified', 'community', 'unverified']);
 
@@ -32,7 +32,7 @@ export const Level = z.discriminatedUnion('kind', [
     kind: z.literal('pcMult'),
     mult: z.number().positive(),
     min: z.number().int().min(0),
-    max: z.number().int().min(0),
+    max: z.number().int().min(0).optional(), // absent: no CalcMaxLevel, so no cap
     from: Ref.optional(), // set when the record takes its level (Stats) from a template
   }),
   z.strictObject({ kind: z.literal('template'), value: z.number().int().min(0), from: Ref }),
@@ -140,7 +140,8 @@ export const Family = z.strictObject({
     z.strictObject({ records: z.string(), weapons: z.string(), armor: z.string(), skin: z.string() }),
   ).optional(),
   gearLists: section(
-    z.strictObject({ list: Ref, gate: z.string(), rolls: z.string(), levels: z.array(z.number().int()) }),
+    // gate and levels are absent for an outfit or a plain list with no level gates.
+    z.strictObject({ list: Ref, gate: z.string().optional(), rolls: z.string(), levels: z.array(z.number().int()).optional() }),
   ).optional(),
   gearItems: section(
     z.strictObject({ item: z.string(), kind: z.string(), playable: z.boolean(), note: z.string().optional() }),

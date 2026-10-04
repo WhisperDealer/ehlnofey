@@ -1,0 +1,84 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "seeker",
+  "group": "daedra",
+  "title": "Seeker",
+  "order": 2,
+  "meta": {
+    "updated": "2026-10-04"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "seeker",
+        "name": "Seeker",
+        "records": [{ "edid": "DLC2EncSeeker01", "formKey": "028E7F:Dragonborn.esm" }],
+        "level": { "kind": "fixed", "value": 21 },
+        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+      },
+      {
+        "id": "seeker-aspirant",
+        "name": "Seeker Aspirant",
+        "records": [{ "edid": "DLC2EncSeeker02", "formKey": "01DCBA:Dragonborn.esm" }],
+        "level": { "kind": "fixed", "value": 32 },
+        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+      },
+      {
+        "id": "high-seeker",
+        "name": "High Seeker",
+        "records": [{ "edid": "DLC2EncSeeker03", "formKey": "028E83:Dragonborn.esm" }],
+        "level": { "kind": "fixed", "value": 42 },
+        "target": { "band": "VII", "status": "proposed", "source": "bands-of-power.md: lesser Daedra" }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The mirror images `DLC2EncSeeker01Mirror` 028E82:Dragonborn.esm (21), `DLC2EncSeeker02Mirror` 02856B:Dragonborn.esm (32) and `DLC2EncSeeker03Mirror` 028E86:Dragonborn.esm (42) use their rung as a template but set their own level, so changing a rung does not move its mirror (under Placed only).",
+      "`DLC2EncSeeker02` and `03` template `DLC2EncSeeker01` without `Stats`, so they keep their own level when 01 changes.",
+      "Every other Seeker record (the `NoScript` leaves, `DLC2MQ02Seeker`, the `DLC2SummonSeeker`, `DLC2SummonSeekerHigh` and `ccPEWSSE002_SummonSeeker` summons) carries `Stats` and follows its template."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": { "edid": "DLC2LCharSeeker", "formKey": "028E87:Dragonborn.esm" },
+        "gate": "every gate ≤ player",
+        "entries": [
+          { "at": 1, "label": "Seeker" },
+          { "at": 32, "label": "Seeker Aspirant" },
+          { "at": 42, "label": "High Seeker" }
+        ],
+        "note": "the `NoScript` leaves 0336C8 · 0336C9 · 0336CA:Dragonborn.esm",
+        "owner": "`DLC2LvlSeeker` 028E88:Dragonborn.esm (2 refs: `DLC2ApoIslandA01` 01C226, `DLC2ApoIslandA04` 01C230 in `DLC2ApocryphaWorld` 01C0B2:Dragonborn.esm) · `DLC2LvlSeekerInvCombat` 038FCA:Dragonborn.esm (44 refs: `DLC2Book01Dungeon` 03109D ×8, `DLC2Book01DungeonA` 03B065 ×5, `DLC2Book02DungeonNEW` 01EDE2 ×13, `DLC2Book03Dungeon` 0142F3 ×4, `DLC2Book07Dungeon` 0142F4 ×8, `DLC2POIBookLevel01` 01E9A2 ×2, `…02` 0142F5 ×2, `…03` 01EDE3 ×2) · `DLC2LvlSeekerInvCombat_MQ06End` 03D3B2:Dragonborn.esm (2 refs: `DLC2Book01DungeonEnd02` 01C165). Every cell is in Dragonborn.esm"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "High Seeker",
+        "base": [{ "edid": "DLC2MQ02Seeker", "formKey": "030C8D:Dragonborn.esm" }],
+        "baseNote": "level and name from `DLC2EncSeeker03`",
+        "notPlaced": true,
+        "quest": "created by `DLC2MQ02` 017F8F:Dragonborn.esm aliases Seeker1, Seeker2, Seeker3, Seeker4"
+      },
+      {
+        "name": "Seeker mirror images",
+        "base": [
+          { "edid": "DLC2EncSeeker01Mirror", "formKey": "028E82:Dragonborn.esm" },
+          { "edid": "DLC2EncSeeker02Mirror", "formKey": "02856B:Dragonborn.esm" },
+          { "edid": "DLC2EncSeeker03Mirror", "formKey": "028E86:Dragonborn.esm" }
+        ],
+        "baseNote": "levels 21 · 32 · 42, their own",
+        "notPlaced": true,
+        "note": "spawned in combat by `DLC2SeekerMirrorScript` on `DLC2EncSeeker01` / `02` / `03` (property `DLC2EncSeekerMirror`)"
+      }
+    ]
+  }
+}

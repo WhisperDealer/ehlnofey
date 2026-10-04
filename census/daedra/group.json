@@ -1,0 +1,29 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "daedra",
+  "title": "Daedra",
+  "order": 2,
+  "meta": {
+    "spec": "archetype-tiers.md §3.3",
+    "updated": "2026-10-04"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Atronachs are not part of the census. Creation Club Daedra sit on their kind's page (The Cause and Arms of Chaos Dremora on *Dremora*, Saints & Seducers on *Golden Saints & Dark Seducers*). Daedra that exist only as summons are under Conjured.",
+  "families": [
+    {
+      "id": "dremora",
+      "holds": "the Dremora ladder (Churl 6 · Caitiff 12 · Kynval 19 · Kynreeve 27 · Markynaz 36 · Valkynaz 46) in its melee, missile and warlock lines, the Unbound Dremora, Velehk Sain, the Morvunskar Dremora, The Cause's two Valkyn and the three Arms of Chaos Dremora"
+    },
+    {
+      "id": "seeker",
+      "holds": "the Seeker ladder (Seeker 21 · Seeker Aspirant 32 · High Seeker 42), `DLC2LCharSeeker` and its Apocrypha wrappers, the MQ02 High Seekers and the Seekers' mirror images"
+    },
+    {
+      "id": "lurker",
+      "holds": "the Lurker ladder (Lurker 24 · Guardian 34 · Sentinel 44 · Vindicator 54), `DLC2LCharLurker` and its wrappers, and the Lurker that rises from a freed standing stone"
+    },
+    {
+      "id": "golden-saints-dark-seducers",
+      "holds": "Saints & Seducers: the hostile Golden Saints and Dark Seducers that Balance of Power spawns, and Staada"
+    }
+  ]
+}

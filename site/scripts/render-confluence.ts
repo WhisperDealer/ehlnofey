@@ -31,7 +31,7 @@ const refs = (rs: RefData[], sep = ' · ') => rs.map(ref).join(sep);
 function level(l: LevelData): string {
   switch (l.kind) {
     case 'fixed': return [l.value, ...(l.also ?? [])].join(' / ');
-    case 'pcMult': return `PC×${l.mult} [${l.min}–${l.max}]${l.from ? `, from ${ref(l.from)}` : ''}`;
+    case 'pcMult': return `PC×${l.mult} [${l.min}${l.max === undefined ? '+' : `–${l.max}`}]${l.from ? `, from ${ref(l.from)}` : ''}`;
     case 'template': return `${l.value}, from ${ref(l.from)}`;
     case 'list': return `from ${ref(l.from)} (${l.rungs.join(' · ')})`;
   }
@@ -139,7 +139,7 @@ export function renderFamily(f: FamilyData, titles: Record<string, string> = {})
   }
   if (f.gearLists) {
     out.push('', `## Gear lists ${conf(f.gearLists.confidence)}`, '');
-    out.push(table(['List', 'Rolls'], f.gearLists.rows.map((g) => [`${ref(g.list)} (${g.gate})`, `${g.rolls} @${g.levels.join(' · ')}`])));
+    out.push(table(['List', 'Rolls'], f.gearLists.rows.map((g) => [ref(g.list) + (g.gate ? ` (${g.gate})` : ''), g.rolls + (g.levels ? ` @${g.levels.join(' · ')}` : '')])));
   }
   if (f.gearItems) {
     out.push('', `## Gear items ${conf(f.gearItems.confidence)}`, '');

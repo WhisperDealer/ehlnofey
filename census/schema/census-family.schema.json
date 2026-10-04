@@ -194,8 +194,7 @@
                     "required": [
                       "kind",
                       "mult",
-                      "min",
-                      "max"
+                      "min"
                     ],
                     "additionalProperties": false
                   },
@@ -459,8 +458,7 @@
                     "required": [
                       "kind",
                       "mult",
-                      "min",
-                      "max"
+                      "min"
                     ],
                     "additionalProperties": false
                   },
@@ -1022,9 +1020,7 @@
             },
             "required": [
               "list",
-              "gate",
-              "rolls",
-              "levels"
+              "rolls"
             ],
             "additionalProperties": false
           }

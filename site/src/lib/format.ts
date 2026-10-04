@@ -34,7 +34,7 @@ export function levelText(l: LevelData): string {
     case 'fixed':
       return [l.value, ...(l.also ?? [])].join(' / ');
     case 'pcMult':
-      return `PC×${l.mult} [${l.min}–${l.max}]${l.from ? `, from ${ref(l.from)}` : ''}`;
+      return `PC×${l.mult} [${l.min}${l.max === undefined ? '+' : `–${l.max}`}]${l.from ? `, from ${ref(l.from)}` : ''}`;
     case 'template':
       return `${l.value}, from ${ref(l.from)}`;
     case 'list':
@@ -56,7 +56,8 @@ export function levelMark(l: LevelData): LevelMark {
     case 'template':
       return { kind: 'point', v: l.value };
     case 'pcMult':
-      return { kind: 'range', min: l.min, max: l.max };
+      // No cap: drawn to level 100, past the top of band IX.
+      return { kind: 'range', min: l.min, max: l.max ?? 100 };
     case 'list':
       return { kind: 'rungs', vs: l.rungs };
   }
