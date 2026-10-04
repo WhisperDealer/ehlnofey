@@ -151,7 +151,7 @@
           ]
         },
         "target": {
-          "band": "VII",
+          "band": "VI",
           "status": "decided",
           "source": "user, 2026-10-05"
         },
@@ -182,8 +182,8 @@
         },
         "target": {
           "band": "VII",
-          "status": "proposed",
-          "source": "no band named yet; Malkoran's band, as the second half of his fight"
+          "status": "decided",
+          "source": "user, 2026-10-05"
         },
         "note": "Malkoran's second form: his `FXChangeToNecroPriestScript` (property `EncSkeletonNecroPriest`) raises it when he dies; its own death sets `DA09` stage 400 (`DA09ShadeUniqueScript`). No template, so changing Malkoran's list does not move it"
       }
