@@ -30,7 +30,7 @@ const refs = (rs: RefData[], sep = ' · ') => rs.map(ref).join(sep);
 
 function level(l: LevelData): string {
   switch (l.kind) {
-    case 'fixed': return String(l.value);
+    case 'fixed': return [l.value, ...(l.also ?? [])].join(' / ');
     case 'pcMult': return `PC×${l.mult} [${l.min}–${l.max}]${l.from ? `, from ${ref(l.from)}` : ''}`;
     case 'template': return `${l.value}, from ${ref(l.from)}`;
     case 'list': return `from ${ref(l.from)} (${l.rungs.join(' · ')})`;

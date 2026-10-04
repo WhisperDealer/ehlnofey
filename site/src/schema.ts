@@ -26,7 +26,8 @@ export const Confidence = z.enum(['verified', 'community', 'unverified']);
 
 // Where a record's level comes from. Mirrors the census Level column.
 export const Level = z.discriminatedUnion('kind', [
-  z.strictObject({ kind: z.literal('fixed'), value: z.number().int().min(0) }),
+  // `also`: the levels of the row's later records, in record order, when they differ (shown "10 / 20").
+  z.strictObject({ kind: z.literal('fixed'), value: z.number().int().min(0), also: z.array(z.number().int().min(0)).optional() }),
   z.strictObject({
     kind: z.literal('pcMult'),
     mult: z.number().positive(),

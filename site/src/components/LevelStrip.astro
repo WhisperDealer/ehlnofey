@@ -13,6 +13,7 @@ const encounterShort = (e: string) => e.split(' (')[0];
 const vanillaTitle = (r: RecordRowData) => {
   const m = levelMark(r.level);
   if (m.kind === 'point') return `vanilla ${m.v}`;
+  if (m.kind === 'points') return `vanilla ${m.vs.join(' / ')}`;
   if (m.kind === 'range') return `vanilla PC-scaled, ${m.min}–${m.max}`;
   return `vanilla, by list: ${m.vs.join(' · ')}`;
 };
@@ -66,6 +67,7 @@ const vanillaTitle = (r: RecordRowData) => {
             </>
           )}
           {m.kind === 'point' && <span class="dot" style={`left:${pos(m.v)}%`}></span>}
+          {m.kind === 'points' && m.vs.map((v) => <span class="dot" style={`left:${pos(v)}%`}></span>)}
           {r.target.level && <span class="diamond" style={`left:${pos(r.target.level)}%;--c:${tb.colour}`}></span>}
         </div>
       </div>

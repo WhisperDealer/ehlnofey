@@ -32,7 +32,7 @@ export const refs = (rs: RefData[], sep = ' · ') => rs.map(ref).join(sep);
 export function levelText(l: LevelData): string {
   switch (l.kind) {
     case 'fixed':
-      return String(l.value);
+      return [l.value, ...(l.also ?? [])].join(' / ');
     case 'pcMult':
       return `PC×${l.mult} [${l.min}–${l.max}]${l.from ? `, from ${ref(l.from)}` : ''}`;
     case 'template':
@@ -45,12 +45,14 @@ export function levelText(l: LevelData): string {
 // What the level-on-bands strip draws for a vanilla level.
 export type LevelMark =
   | { kind: 'point'; v: number }
+  | { kind: 'points'; vs: number[] }
   | { kind: 'range'; min: number; max: number }
   | { kind: 'rungs'; vs: number[] };
 
 export function levelMark(l: LevelData): LevelMark {
   switch (l.kind) {
     case 'fixed':
+      return l.also?.length ? { kind: 'points', vs: [l.value, ...l.also] } : { kind: 'point', v: l.value };
     case 'template':
       return { kind: 'point', v: l.value };
     case 'pcMult':
