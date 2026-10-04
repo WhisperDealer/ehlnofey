@@ -114,9 +114,8 @@ rules).
 - **`census/` is the source of truth for every migrated group**: `census/<group>/group.json` (the group
   page) plus one `<family>.json` per family page; `census/bands.json` is the home page. The schema is
   `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
-  everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons; Daedra in part** (Dremora, Unique Dremora, Seeker, Lurker,
-  Golden Saints & Dark Seducers; `census/daedra/group.json` lists only those, so don't push the Daedra
-  group mirror until the rest are in). Every other group stays Confluence-first until it is migrated.
+  everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons, Daedra** (all 13 pages, the
+  Princes' followers included; since 2026-10-05). Every other group stays Confluence-first until it is migrated.
 - **The site is public; keep it free of internal tooling** (user, 2026-10-04): no Jira ticket
   numbers (the tickets are deleted; `WD-xx` in the docs is history only) and no Confluence links or
   page ids in `census/` or `site/src/`. Confluence is internal documentation that supports the site.
@@ -252,7 +251,8 @@ rules).
   *Werewolf* (the six-rung ladder), *Werewolf Boss* (the boss ladder, Sinding, Arnbjorn), *Werebear*
   (the Solstheim werebears, Torkild), *Wolf Spirits*; the Beast Stone werebear is on Conjured),
   Rieklings (WD-69: no group page; under World Creatures → Sentient),
-  Daedra (WD-70: *Dremora* (the six-rung ladder, the one-offs, The Cause's and Arms of Chaos's
+  Daedra (WD-70, **migrated to `census/daedra/`, so edit the JSON, not Confluence**:
+  *Unique Dremora* (the named Dremora), *Dremora* (the six-rung ladder, the one-offs, The Cause's and Arms of Chaos's
   Dremora), *Seeker*, *Lurker*, *Golden Saints & Dark Seducers* (Saints & Seducers; the hostile ones
   are the AtrForge copies its quest spawns), *Barbas* and *Shadow* (the CC Shadowrend doppelgangers, which copy the player's level; user, 2026-10-03); **atronachs are out of the census** (user,
   2026-10-02); the Dremora Butler and Merchant and the Daedric Princes are not enemies; the Princes'

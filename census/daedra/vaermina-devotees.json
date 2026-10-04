@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "vaermina-devotees",
+  "group": "daedra",
+  "title": "Vaermina Devotees",
+  "order": 12,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "devotee",
+        "name": "Vaermina Devotee",
+        "records": [
+          {
+            "edid": "DA16LvlVaerminaDevoteeAmbush",
+            "formKey": "09DDD2:Skyrim.esm"
+          },
+          {
+            "edid": "DA16LvlVaerminaDevoteeAmbushFemaleCon",
+            "formKey": "0E36DA:Skyrim.esm"
+          },
+          {
+            "edid": "DA16LvlVaerminaDevoteeAmbushMaleSly",
+            "formKey": "0E36D9:Skyrim.esm"
+          },
+          {
+            "edid": "DA16LvlVaerminaDevoteeAmbushMaleWarlock",
+            "formKey": "0E36D8:Skyrim.esm"
+          },
+          {
+            "edid": "DA16LvlVaerminaDevotee",
+            "formKey": "09DDCD:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockStorm",
+            "formKey": "01E7D3:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "the Storm Mage ladder, via `Stats` from `LvlWarlockShock` 01E7CF; `DA16LvlVaerminaDevotee` (`IsGhost`, `Invulnerable`) is the unplaced template of the Ambush copies"
+      },
+      {
+        "id": "devotee-dream",
+        "name": "Vaermina Devotee (dream)",
+        "records": [
+          {
+            "edid": "DA16LvlVaerminaDevoteeDream",
+            "formKey": "07AD00:Skyrim.esm"
+          },
+          {
+            "edid": "DA16LvlVaerminaDevoteeDreamMaleCon",
+            "formKey": "0E16D4:Skyrim.esm"
+          },
+          {
+            "edid": "DA16LvlVaerminaDevoteeDreamMaleSly",
+            "formKey": "0E16D2:Skyrim.esm"
+          },
+          {
+            "edid": "DA16LvlVaerminaDevoteeDreamMaleWarlock",
+            "formKey": "0E16D3:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockStorm",
+            "formKey": "01E7D3:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "flags": [
+          "Protected",
+          "Invulnerable"
+        ],
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "devotee-barrier",
+        "name": "Vaermina Devotee (barrier)",
+        "records": [
+          {
+            "edid": "DA16LvlVaerminaDevoteeBarrier",
+            "formKey": "0B91A3:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockStorm",
+            "formKey": "01E7D3:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "flags": [
+          "Essential",
+          "IsGhost",
+          "Invulnerable"
+        ],
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "orcish-invader",
+        "name": "Orcish Invader",
+        "records": [
+          {
+            "edid": "DA16LvlBanditMeleeOrcMAmbush",
+            "formKey": "09DDCE:Skyrim.esm"
+          },
+          {
+            "edid": "DA16LvlBanditMeleeOrcMDream",
+            "formKey": "09E15C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMeleeOrcM",
+            "formKey": "01B0E9:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "the Dream copy is `Invulnerable`"
+      },
+      {
+        "id": "veren-thorek",
+        "name": "Veren Duleri · Thorek",
+        "records": [
+          {
+            "edid": "VerenDuleri_Ambush",
+            "formKey": "0341FE:Skyrim.esm"
+          },
+          {
+            "edid": "Thorek_Ambush",
+            "formKey": "0341FF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.25,
+          "min": 10
+        },
+        "target": {
+          "band": "VI",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "veren-thorek-ghost",
+        "name": "Veren Duleri · Thorek (ghosts)",
+        "records": [
+          {
+            "edid": "VerenDuleri",
+            "formKey": "02427C:Skyrim.esm"
+          },
+          {
+            "edid": "Thorek",
+            "formKey": "024278:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "flags": [
+          "IsGhost",
+          "Invulnerable"
+        ],
+        "target": {
+          "band": "VI",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharWarlockStorm",
+          "formKey": "01E7D3:Skyrim.esm"
+        },
+        "note": "the Storm Mage rungs 1 · 6 · 12 · 19 · 27 · 36 · 46, on *Common Warlocks*; only `Stats` is taken",
+        "owner": "the Devotees"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMeleeOrcM",
+          "formKey": "01B0E9:Skyrim.esm"
+        },
+        "note": "the Orc melee bandit rungs 1 · 5 · 9 · 14 · 19 · 25, on *Common Bandits*; `Stats` and `Inventory` are taken",
+        "owner": "the Orcish Invaders"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Vaermina Devotee ×31",
+        "locations": [
+          {
+            "cell": {
+              "edid": "NightcallerTemple01",
+              "formKey": "09AA4A:Skyrim.esm"
+            },
+            "refText": "the Ambush copies ×19, the Dream copies ×11, the Barrier ×1"
+          }
+        ]
+      },
+      {
+        "name": "Orcish Invader ×18",
+        "locations": [
+          {
+            "cell": {
+              "edid": "NightcallerTemple01",
+              "formKey": "09AA4A:Skyrim.esm"
+            },
+            "refText": "Ambush ×11, Dream ×7"
+          }
+        ]
+      },
+      {
+        "name": "Veren Duleri, Thorek",
+        "locations": [
+          {
+            "cell": {
+              "edid": "NightcallerTemple01",
+              "formKey": "09AA4A:Skyrim.esm"
+            },
+            "refText": "the Ambush copies ×1 each; the ghost copies ×1 each, initially disabled"
+          }
+        ],
+        "quest": "`DA16` 0242AF aliases DA16VerenAmbushAlias, DA16ThorekAmbushAlias"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Vaermina Devotees (every copy)",
+        "weapons": "none; a restore-magicka potion, `LItemIngredientsCommon`",
+        "armor": "`VaerminaDevoteeOutfit` 0341FD (Vaermina Robes 0E739B, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Orcish Invaders",
+        "weapons": "as the drawn Orc bandit leaf (`Inventory` from `LCharBanditMeleeOrcM`)",
+        "armor": "as the drawn leaf",
+        "skin": "race default"
+      },
+      {
+        "records": "Veren Duleri (ambush · ghost)",
+        "weapons": "`LItemBanditBossMace` · Steel Mace",
+        "armor": "`VaerminaDevoteeOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Thorek (ambush · ghost)",
+        "weapons": "`LItemBanditBossSword` · Steel Sword",
+        "armor": "`VaerminaDevoteeOutfit`",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "VaerminaDevoteeOutfit",
+          "formKey": "0341FD:Skyrim.esm"
+        },
+        "rolls": "Vaermina Robes 0E739B, Boots (`ClothesMonkBoots`)"
+      },
+      {
+        "list": {
+          "label": "`LItemBanditBossMace` 03DF1F · `LItemBanditBossSword` 03DF1D"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Steel 1 · enchanted Iron and Orcish 6 · enchanted Steel 9 · Dwarven 12 · … (as on *Bandit Chiefs*)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Vaermina Robes, Boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "the maces and swords",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

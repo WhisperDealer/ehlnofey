@@ -100,7 +100,9 @@ export function renderFamily(f: FamilyData, titles: Record<string, string> = {})
           const qual = [l.override, l.gate].filter(Boolean).join('; ');
           const draws = l.seeFamily
             ? `see *${titles[l.seeFamily] ?? l.seeFamily}*`
-            : (l.entries ?? [])
+            : !l.entries?.length
+              ? (l.note ?? '')
+              : l.entries
                 // "Fire + Frost" already says two; a bare label with a count says "×2".
                 .map((e) => `${e.label}${e.count && e.count > 1 && !e.label.includes(' + ') ? ` ×${e.count}` : ''} @${e.at}`).join(' · ') + (l.note ? ` (${l.note})` : '');
           return [ref(l.list) + (qual ? ` (${qual})` : ''), draws, l.owner];

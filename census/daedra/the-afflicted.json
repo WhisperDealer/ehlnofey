@@ -1,0 +1,606 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "the-afflicted",
+  "group": "daedra",
+  "title": "The Afflicted",
+  "order": 8,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "afflicted-melee",
+        "name": "Afflicted (melee and tank)",
+        "records": [
+          {
+            "edid": "DA13EncAfflicted01TemplateMelee",
+            "formKey": "064A41:Skyrim.esm"
+          },
+          {
+            "edid": "DA13EncAfflicted02TemplateMelee",
+            "formKey": "064A43:Skyrim.esm"
+          },
+          {
+            "edid": "DA13EncAfflicted03TemplateMelee",
+            "formKey": "064A48:Skyrim.esm"
+          },
+          {
+            "edid": "DA13EncAfflicted04TemplateMelee",
+            "formKey": "064A4D:Skyrim.esm"
+          },
+          {
+            "edid": "DA13EncAfflicted05TemplateMelee",
+            "formKey": "064A52:Skyrim.esm"
+          },
+          {
+            "edid": "DA13EncAfflicted06TemplateMelee",
+            "formKey": "064A57:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DA13AfflictedRace",
+          "formKey": "097A3D:Skyrim.esm"
+        },
+        "factions": [
+          {
+            "edid": "DA13AfflictedFaction",
+            "formKey": "043AB7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1,
+          "also": [
+            5,
+            9,
+            14,
+            19,
+            24
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "the six melee rung templates; each rung's four `Melee1H` leaves and four `Melee1HTank` leaves take `Stats` from it (the Tank leaves through their rung's melee leaf, with their own outfit)"
+      },
+      {
+        "id": "afflicted-magic",
+        "name": "Afflicted (magic)",
+        "records": [
+          {
+            "edid": "DA13EncAfflicted01TemplateMagic",
+            "formKey": "064A69:Skyrim.esm"
+          },
+          {
+            "edid": "DA13EncAfflicted02TemplateMagic",
+            "formKey": "064A6E:Skyrim.esm"
+          },
+          {
+            "edid": "DA13EncAfflicted03TemplateMagic",
+            "formKey": "064A6D:Skyrim.esm"
+          },
+          {
+            "edid": "DA13EncAfflicted04TemplateMagic",
+            "formKey": "064A6C:Skyrim.esm"
+          },
+          {
+            "edid": "DA13EncAfflicted05TemplateMagic",
+            "formKey": "064A6B:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DA13AfflictedRace",
+          "formKey": "097A3D:Skyrim.esm"
+        },
+        "factions": [
+          {
+            "edid": "DA13AfflictedFaction",
+            "formKey": "043AB7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1,
+          "also": [
+            5,
+            9,
+            14,
+            19
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "there is no magic rung 06"
+      },
+      {
+        "id": "afflicted-missile",
+        "name": "Afflicted (missile)",
+        "records": [
+          {
+            "edid": "DA13EncAfflicted01TemplateMissile",
+            "formKey": "064AAB:Skyrim.esm"
+          },
+          {
+            "edid": "DA13EncAfflicted02TemplateMissile",
+            "formKey": "064AB7:Skyrim.esm"
+          },
+          {
+            "edid": "DA13EncAfflicted03TemplateMissile",
+            "formKey": "064AB6:Skyrim.esm"
+          },
+          {
+            "edid": "DA13EncAfflicted04TemplateMissile",
+            "formKey": "064AB8:Skyrim.esm"
+          },
+          {
+            "edid": "DA13EncAfflicted05TemplateMissile",
+            "formKey": "064AB9:Skyrim.esm"
+          },
+          {
+            "edid": "DA13EncAfflicted06TemplateMissile",
+            "formKey": "064ABA:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DA13AfflictedRace",
+          "formKey": "097A3D:Skyrim.esm"
+        },
+        "factions": [
+          {
+            "edid": "DA13AfflictedFaction",
+            "formKey": "043AB7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1,
+          "also": [
+            5,
+            9,
+            14,
+            19,
+            24
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "the rung-02 leaves `DA13EncAfflicted02MissileCondM` 064AC5 and `…02MissileEvenTonedM` 064AB5 sit on the rung-01 template, so they are 1"
+      },
+      {
+        "id": "afflicted-remnants",
+        "name": "Afflicted Remnants",
+        "records": [
+          {
+            "edid": "DA13LvlAfflictedMelee1HWERemnants",
+            "formKey": "0BEDE3:Skyrim.esm"
+          },
+          {
+            "edid": "DA13LvlAfflictedWizardWERemnants",
+            "formKey": "0BEDE4:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "DA13LCharAfflictedMelee1H",
+            "formKey": "064A36:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            24
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "the wizard copy draws `DA13LCharAfflictedWizard` 064A6F (1 · 5 · 9 · 14 · 19)"
+      },
+      {
+        "id": "afflicted-refugee",
+        "name": "Afflicted Refugee",
+        "records": [
+          {
+            "edid": "DA13LvlAfflictedMelee1HWERefugee",
+            "formKey": "0BEDE5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "DA13LCharAfflictedMelee1H",
+            "formKey": "064A36:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            24
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "through `DA13LvlAfflictedMelee1HEvenTonedM` 084447"
+      },
+      {
+        "id": "orchendor",
+        "name": "Orchendor",
+        "records": [
+          {
+            "edid": "DA13Orchendor",
+            "formKey": "045F78:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 10,
+          "max": 40
+        },
+        "target": {
+          "band": "VI",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The 17 rung templates use `DA13EncAfflicted00Template` 064A42 (level 1, never placed) as their template without `Stats`, so changing it does not move any rung.",
+      "Every row: no other record keeps its own level.",
+      "Every other Afflicted record (the rung leaves, the `DA13LvlAfflicted*` wrappers that fill Bthardamz, the Remnants and the Refugee) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DA13LCharAfflictedMelee1H",
+          "formKey": "064A36:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DA13SubCharAfflicted01Melee1H`"
+          },
+          {
+            "at": 5,
+            "label": "`DA13SubCharAfflicted02Melee1H`"
+          },
+          {
+            "at": 9,
+            "label": "`DA13SubCharAfflicted03Melee1H`"
+          },
+          {
+            "at": 14,
+            "label": "`DA13SubCharAfflicted04Melee1H`"
+          },
+          {
+            "at": 19,
+            "label": "`DA13SubCharAfflicted05Melee1H`"
+          },
+          {
+            "at": 24,
+            "label": "`DA13SubCharAfflicted06Melee1H`"
+          }
+        ],
+        "note": "each sublist one of its rung's 4 leaves",
+        "owner": "`DA13LvlAfflictedMelee1H` 064A35 ×10 · `…Melee1HEvenTonedM` 084447 ×1; the Remnants and the Refugee"
+      },
+      {
+        "list": {
+          "edid": "DA13LCharAfflictedMelee1HTank",
+          "formKey": "064A8E:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DA13SubCharAfflicted01Melee1HTank`"
+          },
+          {
+            "at": 5,
+            "label": "`DA13SubCharAfflicted02Melee1HTank`"
+          },
+          {
+            "at": 9,
+            "label": "`DA13SubCharAfflicted03Melee1HTank`"
+          },
+          {
+            "at": 14,
+            "label": "`DA13SubCharAfflicted04Melee1HTank`"
+          },
+          {
+            "at": 19,
+            "label": "`DA13SubCharAfflicted05Melee1HTank`"
+          },
+          {
+            "at": 24,
+            "label": "`DA13SubCharAfflicted06Melee1HTank`"
+          }
+        ],
+        "owner": "`DA13LvlAfflictedMeleeTank` 064A8F ×3"
+      },
+      {
+        "list": {
+          "edid": "DA13LCharAfflictedMissile",
+          "formKey": "07DD12:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DA13SubCharAfflicted01Missile`"
+          },
+          {
+            "at": 1,
+            "label": "`DA13SubCharAfflicted02Missile`"
+          },
+          {
+            "at": 1,
+            "label": "`DA13SubCharAfflicted03Missile`"
+          },
+          {
+            "at": 1,
+            "label": "`DA13SubCharAfflicted04Missile`"
+          },
+          {
+            "at": 1,
+            "label": "`DA13SubCharAfflicted05Missile`"
+          },
+          {
+            "at": 1,
+            "label": "`DA13SubCharAfflicted06Missile`"
+          }
+        ],
+        "note": "all six at gate 1, so any rung 1–24 at any player level",
+        "owner": "`DA13LvlAfflictedMissile` 064AAA ×12 · `…MissileEvenTonedM` 08443D ×2"
+      },
+      {
+        "list": {
+          "edid": "DA13LCharAfflictedWizard",
+          "formKey": "064A6F:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DA13SubCharAfflicted01Magic`"
+          },
+          {
+            "at": 5,
+            "label": "`DA13SubCharAfflicted02Magic`"
+          },
+          {
+            "at": 9,
+            "label": "`DA13SubCharAfflicted03Magic`"
+          },
+          {
+            "at": 14,
+            "label": "`DA13SubCharAfflicted04Magic`"
+          },
+          {
+            "at": 19,
+            "label": "`DA13SubCharAfflicted05Magic`"
+          }
+        ],
+        "owner": "`DA13LvlAfflictedWizard` 064A89 ×14 · `…WizardCondM` 084446 · `…WizardEvenTonedF` 084448 · `…WizardPlayIdle` 064ADB · `…WizardEvenTonedFPlayIdle` 064ADC · `…WizardEvenToneMPlayIdle` 064ADD (×1 each); the Wizard Remnants"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "the Afflicted (wrappers, 47)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Bthardamz01",
+              "formKey": "0361FA:Skyrim.esm"
+            },
+            "refText": "×19"
+          },
+          {
+            "cell": {
+              "edid": "Bthardamz01a",
+              "formKey": "05A857:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "Bthardamz01b",
+              "formKey": "05A856:Skyrim.esm"
+            },
+            "refText": "×4"
+          },
+          {
+            "cell": {
+              "edid": "Bthardamz02",
+              "formKey": "0361F9:Skyrim.esm"
+            },
+            "refText": "×16"
+          },
+          {
+            "cell": {
+              "edid": "BthardamzExterior02",
+              "formKey": "007062:Skyrim.esm"
+            },
+            "refText": "×4, Tamriel",
+            "note": "one initially disabled"
+          },
+          {
+            "cell": {
+              "edid": "BthardamzExterior03",
+              "formKey": "007063:Skyrim.esm"
+            },
+            "refText": "×2, Tamriel",
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Orchendor",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Bthardamz03",
+              "formKey": "030442:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DA13` 08998D alias Orchendor"
+      },
+      {
+        "name": "Afflicted Refugee",
+        "notPlaced": true,
+        "quest": "`WEJS14` 0BED92 alias AfflictedRefugee"
+      },
+      {
+        "name": "Afflicted Remnants",
+        "notPlaced": true,
+        "quest": "`WEJS15` 0BEDAF aliases Afflicted01, Afflicted2"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Melee rungs",
+        "weapons": "`LItemBanditWeapon1H` 037C1B; rungs 05–06 also an Orcish Dagger",
+        "armor": "`DA13LightOutfit` 064A5C",
+        "skin": "race default (`DA13AfflictedRace` 097A3D)"
+      },
+      {
+        "records": "Tank leaves",
+        "weapons": "as their melee rung",
+        "armor": "`DA13HeavyOutfit` 064A5D",
+        "skin": "as above"
+      },
+      {
+        "records": "Magic rungs",
+        "weapons": "Iron Dagger (01, 02), Steel Dagger (03), Orcish Dagger (04), Iron and Dwarven Dagger (05)",
+        "armor": "`DA13RobeOutfit` 064A5E",
+        "skin": "as above"
+      },
+      {
+        "records": "Missile rungs",
+        "weapons": "`LItemBanditWeaponMissile` 037BFD; Iron Dagger (01, 02), Steel Dagger (03–06)",
+        "armor": "`DA13MissileOutfit` 064ACF",
+        "skin": "as above"
+      },
+      {
+        "records": "Orchendor",
+        "weapons": "`LItemStaff00`, `LItemEnchWeaponDagger`, gems, boss gold",
+        "armor": "`DA13OrchendorOutfit` 08971D",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DA13LightOutfit",
+          "formKey": "064A5C:Skyrim.esm"
+        },
+        "rolls": "`LItemDA13ArmorBootsLight` (Hide, Imperial Light 1 · Leather 6 · Elven 12 · Scaled 19 · Glass 36), `…GauntletsLight` (50% none, same materials), `…HelmetLight20` (80% none), `…ShieldLight20` (80% none: Hide, Imperial Light 1 · Elven 12 · Glass 36), `LItemDA13ChanceCrapCuirass`"
+      },
+      {
+        "list": {
+          "edid": "DA13HeavyOutfit",
+          "formKey": "064A5D:Skyrim.esm"
+        },
+        "rolls": "`LItemDA13ArmorBootsHeavy` (Iron 1 · Steel 6 · Dwarven 12 · Steel Plate 18 · Orcish 25 · Ebony 32), `…GauntletsHeavy`, `…HelmetHeavy` (adds Imperial Officer's 16), `…ShieldHeavy` (each 50% none), `LItemDA13ChanceCrapCuirass`"
+      },
+      {
+        "list": {
+          "edid": "LItemDA13ChanceCrapCuirass",
+          "formKey": "10F993:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "rolls": "rags, tunics, Fur, Hide, Studded, Iron, Banded Iron 1 · Leather, Steel 6 · Dwarven, Elven 12 · Steel Plate 18 · Scaled 19 · Orcish 25 · Elven Gilded 27 · Ebony 32 · Glass 36"
+      },
+      {
+        "list": {
+          "edid": "DA13RobeOutfit",
+          "formKey": "064A5E:Skyrim.esm"
+        },
+        "rolls": "`LITemWarlockRobes` (as on *Common Warlocks*), `LItemGutterSaintBoots`"
+      },
+      {
+        "list": {
+          "edid": "DA13MissileOutfit",
+          "formKey": "064ACF:Skyrim.esm"
+        },
+        "rolls": "`LItemGutterSaintBoots` (shoes, Hide 1 · Leather 6 · Scaled 19), `…Clothes` (rags, Fur, Hide, Studded 1 · Leather 6 · Scaled 19), `…Gloves` (50% none, to Dragonscale 46), `…Hat` (75% none: Cowl, Hat, Ragged Cap)"
+      },
+      {
+        "list": {
+          "edid": "DA13OrchendorOutfit",
+          "formKey": "08971D:Skyrim.esm"
+        },
+        "rolls": "warlock robes, rings and necklace, `LItemArmorBootsAnyBest`, `LItemArmorGauntletsAny`, Gloves"
+      },
+      {
+        "list": {
+          "label": "`LItemBanditWeapon1H` 037C1B, `LItemBanditWeaponMissile` 037BFD"
+        },
+        "rolls": "as on *Common Bandits*"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "the light pieces (Hide, Leather, Imperial Light, Elven, Scaled, Glass, Studded, Fur)",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "the heavy pieces (Iron, Steel, Dwarven, Steel Plate, Orcish, Ebony)",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "robes, rags, tunics, shoes, hats",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "the daggers, bows, staves",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

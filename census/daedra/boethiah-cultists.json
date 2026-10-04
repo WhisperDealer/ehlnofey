@@ -1,0 +1,368 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "boethiah-cultists",
+  "group": "daedra",
+  "title": "Boethiah Cultists",
+  "order": 9,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "cultist-melee-1h",
+        "name": "Boethiah Cultist (one-handed)",
+        "records": [
+          {
+            "edid": "DA02CultistF1",
+            "formKey": "04D8D1:Skyrim.esm"
+          },
+          {
+            "edid": "DA02CultistF2",
+            "formKey": "04D8D3:Skyrim.esm"
+          },
+          {
+            "edid": "DA02CultistM1",
+            "formKey": "04D8D4:Skyrim.esm"
+          },
+          {
+            "edid": "WEDA02Cultist",
+            "formKey": "0B0E87:Skyrim.esm"
+          },
+          {
+            "edid": "ccBGSSSE005_DA02CultistF2",
+            "formKey": "000810:ccbgssse005-goldbrand.esl"
+          },
+          {
+            "edid": "ccBGSSSE005_DA02CultistM1",
+            "formKey": "000813:ccbgssse005-goldbrand.esl"
+          },
+          {
+            "edid": "ccBGSSSE005_DA02CultistF1_College",
+            "formKey": "000814:ccbgssse005-goldbrand.esl"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee1H",
+            "formKey": "039CFC:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "via `Stats` from `LvlBanditMelee1H` 03DECB (`WEDA02Cultist` through `LvlBanditAmbushMelee1H` 093815). The `DA02` Cultist1 alias shows \"Priestess of Boethiah\" (`DA02PriestessName` 052796)"
+      },
+      {
+        "id": "cultist-wizard",
+        "name": "Boethiah Cultist (mage)",
+        "records": [
+          {
+            "edid": "DA02CultistM2",
+            "formKey": "04D8D5:Skyrim.esm"
+          },
+          {
+            "edid": "ccBGSSSE005_DA02CultistM2_College",
+            "formKey": "000812:ccbgssse005-goldbrand.esl"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditWizard",
+            "formKey": "01E771:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "via `Stats` from `LvlBanditWizard` 01E79F"
+      },
+      {
+        "id": "cultist-melee-2h",
+        "name": "Boethiah Cultist (two-handed)",
+        "records": [
+          {
+            "edid": "DA02CultistM3",
+            "formKey": "04D8D2:Skyrim.esm"
+          },
+          {
+            "edid": "ccBGSSSE005_DA02CultistM3",
+            "formKey": "000811:ccbgssse005-goldbrand.esl"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee2H",
+            "formKey": "03DEC8:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "via `Stats` from `LvlBanditMelee2H` 01E79D"
+      },
+      {
+        "id": "champion-of-boethiah",
+        "name": "Champion of Boethiah",
+        "records": [
+          {
+            "edid": "DA02Champion",
+            "formKey": "0834FE:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharForswornBossMelee1H",
+            "formKey": "0442F2:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            16,
+            27,
+            38,
+            51
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "the Briarheart ladder, via `Stats` from `LvlForswornBoss` 0442D2"
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "`LCharBanditMelee1H` 039CFC · `LCharBanditWizard` 01E771 · `LCharBanditMelee2H` 03DEC8"
+        },
+        "note": "the bandit rungs 1 · 5 · 9 · 14 · 19 · 25, on *Common Bandits*; only `Stats` is taken",
+        "owner": "the cultists above"
+      },
+      {
+        "list": {
+          "edid": "LCharForswornBossMelee1H",
+          "formKey": "0442F2:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "entries": [
+          {
+            "at": 1,
+            "label": "7 (gates 1–14)"
+          },
+          {
+            "at": 24,
+            "label": "16"
+          },
+          {
+            "at": 34,
+            "label": "27"
+          },
+          {
+            "at": 46,
+            "label": "38"
+          },
+          {
+            "at": 58,
+            "label": "51"
+          }
+        ],
+        "note": "on *Forsworn Briarheart*; only `Stats` is taken",
+        "owner": "Champion of Boethiah"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Boethiah Cultists (vanilla)",
+        "notPlaced": true,
+        "quest": "`DA02` 04D8D6 creates them at the Sacellum of Boethiah: aliases Fighter1 (F1), Fighter2 (M1), Cultist1 (F2, the priestess), Cultist2 (M2), Cultist3 (M3), Cultist4 (F1), Cultist5 (M1)"
+      },
+      {
+        "name": "Boethiah Cultist",
+        "base": [
+          {
+            "edid": "WEDA02Cultist",
+            "formKey": "0B0E87:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "quest": "`WEDA02` 04A602 alias Cultist"
+      },
+      {
+        "name": "Boethiah Cultists (CC Goldbrand)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE005Dungeon01",
+              "formKey": "002FD3:Update.esm"
+            },
+            "refText": "×3 (F2, M1, M3)"
+          },
+          {
+            "cell": {
+              "edid": "WinterholdCollegeArcanaeum",
+              "formKey": "013810:Skyrim.esm"
+            },
+            "refText": "×2 (`…_College`)",
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Champion of Boethiah",
+        "locations": [
+          {
+            "cell": {
+              "edid": "KnifepointRidge01",
+              "formKey": "079F9F:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0834FF:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "`DA02` alias Champion"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "`DA02CultistF1` · `F2` · `M1`",
+        "weapons": "`LItemWeaponMace` (F1) · `LItemWeaponWarAxe` (F2, M1), `LItemArmorShieldAny`, Blade of Sacrifice `DA02Dagger` 079B1D",
+        "armor": "`BanditArmorMeleeShield20Outfit` (F1, F2) · `BanditArmorMeleeNoShieldOutfit` (M1)",
+        "skin": "race default"
+      },
+      {
+        "records": "`DA02CultistM2` · `M3`",
+        "weapons": "Blade of Sacrifice; M3 `LItemWeaponBattleAxe`",
+        "armor": "`BanditArmorMeleeNoShieldOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "`WEDA02Cultist`",
+        "weapons": "as the drawn bandit ambush leaf (`Inventory` from `LvlBanditAmbushMelee1H`)",
+        "armor": "as the drawn leaf",
+        "skin": "race default"
+      },
+      {
+        "records": "CC cultists",
+        "weapons": "`LItemBanditWeapon1H` (F2, M1, F1_College) · `LItemBanditWeapon2H` (M3) · Iron Dagger (M2_College); Cultist's Note (F2), invisibility potions (`_College`)",
+        "armor": "`BanditArmorMeleeShield20Outfit` (F2, F1_College) · `BanditArmorMeleeNoShieldOutfit` (M1, M2_College, M3)",
+        "skin": "race default"
+      },
+      {
+        "records": "Champion of Boethiah",
+        "weapons": "`LItemEnchWeaponSword` 04B586",
+        "armor": "`DA02ChampionOutfit` 05FA44",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "`BanditArmorMelee*Outfit`"
+        },
+        "rolls": "`LItemBanditBoots`, `LItemBanditCuirass`, `LItemBanditGauntlets50`, `LItemBanditShield20`: as on *Common Bandits*"
+      },
+      {
+        "list": {
+          "label": "`LItemWeaponMace` · `…WarAxe` · `…BattleAxe`, `LItemArmorShieldAny`, `LItemBanditWeapon1H` · `…2H`"
+        },
+        "rolls": "as on *Common Bandits*"
+      },
+      {
+        "list": {
+          "edid": "DA02ChampionOutfit",
+          "formKey": "05FA44:Skyrim.esm"
+        },
+        "rolls": "Ebony Mail 052794 · Ebony Boots 013960 · Ebony Gauntlets 013962 · Ebony Shield 013964"
+      },
+      {
+        "list": {
+          "edid": "LItemEnchWeaponSword",
+          "formKey": "04B586:Skyrim.esm"
+        },
+        "rolls": "enchanted Iron 1 · Steel 4 · Orcish 7 · Dwarven 13 · Elven 20 · Glass 28 · Ebony 37 · Daedric 47"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Ebony Mail 052794",
+        "kind": "heavy cuirass, enchanted",
+        "playable": true
+      },
+      {
+        "item": "Ebony Boots, Gauntlets, Shield; the bandit heavy pieces",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "the bandit light pieces",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Blade of Sacrifice and the other weapons",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

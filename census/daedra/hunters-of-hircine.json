@@ -1,0 +1,269 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "hunters-of-hircine",
+  "group": "daedra",
+  "title": "Hunters of Hircine",
+  "order": 10,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "hunters",
+        "name": "Rissing · Eriana · Ra'kheran · Tsrasuna · Torkild the Fearsome · Yar gro-Gatuk · Ahjisi · Heratar",
+        "records": [
+          {
+            "edid": "DA05Hunter02_Rissing",
+            "formKey": "02ABC0:Skyrim.esm"
+          },
+          {
+            "edid": "DA05Hunter03_Eriana",
+            "formKey": "02ABC4:Skyrim.esm"
+          },
+          {
+            "edid": "DA05Hunter04_Rakheran",
+            "formKey": "02ABC2:Skyrim.esm"
+          },
+          {
+            "edid": "DA05Hunter05_02Missile_Tsrasuna",
+            "formKey": "0CE081:Skyrim.esm"
+          },
+          {
+            "edid": "DA05Hunter08_03Melee_Torkild",
+            "formKey": "0CE084:Skyrim.esm"
+          },
+          {
+            "edid": "DA05Hunter10_03Missile_Yar",
+            "formKey": "0CE087:Skyrim.esm"
+          },
+          {
+            "edid": "DA05Hunter11_04Melee_Ahjisi",
+            "formKey": "0CE086:Skyrim.esm"
+          },
+          {
+            "edid": "DA05Hunter13_04Melee_Heratar",
+            "formKey": "0CE089:Skyrim.esm"
+          }
+        ],
+        "factions": [
+          {
+            "edid": "DA05HuntersOfHircineFaction",
+            "formKey": "0955E6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee1H",
+            "formKey": "039CFC:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "via `Stats` from their race copy of `DA05_LvlHuntersOfHircine` 0955B7, which takes it from `LvlBanditMelee1H` 03DECB"
+      },
+      {
+        "id": "jkier",
+        "name": "J'Kier",
+        "records": [
+          {
+            "edid": "DA05Hunter01_JKier",
+            "formKey": "02ABC3:Skyrim.esm"
+          }
+        ],
+        "factions": [
+          {
+            "edid": "DA05HuntersOfHircineFaction",
+            "formKey": "0955E6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "VI",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "his own level: his template `DA05_LvlHuntersOfHircine_KhajiitM` 0955B5 is not set for `Stats`"
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "J'Kier uses `DA05_LvlHuntersOfHircine_KhajiitM` 0955B5 as his template without `Stats`, so changing the bandit ladder does not move him.",
+      "Every other hunter carries `Stats` from its race copy (`DA05_LvlHuntersOfHircine_KhajiitF` 0CED00 · `…_KhajiitM` 0955B5 · `…_NordF` 0955B6 · `…_NordM` 0955BA · `…_OrcM` 0CE08A), which takes it from `DA05_LvlHuntersOfHircine` 0955B7 and so from `LvlBanditMelee1H`. The generic records are never placed."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharBanditMelee1H",
+          "formKey": "039CFC:Skyrim.esm"
+        },
+        "note": "the bandit melee rungs 1 · 5 · 9 · 14 · 19 · 25, on *Common Bandits*; only `Stats` is taken",
+        "owner": "every hunter above but J'Kier"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "J'Kier",
+        "locations": [
+          {
+            "cell": {
+              "edid": "BloatedMansGrottoWorld",
+              "formKey": "01FAE2:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "02ABC6:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DA05_dunBloatedMansGrottoQST` 0955CF alias Hunter00_JKier"
+      },
+      {
+        "name": "Rissing, Eriana, Ra'kheran, Tsrasuna, Torkild, Yar gro-Gatuk, Ahjisi, Heratar",
+        "locations": [
+          {
+            "cell": {
+              "edid": "BloatedMansGrottoWorld",
+              "formKey": "01FAE2:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "`DA05_dunBloatedMansGrottoQST` 0955CF enables them by alias (Ra'kheran's ref is `DA05JSavaREF` 02ABC7, alias Hunter03_Jsava)"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "J'Kier",
+        "weapons": "Iron Sword, Iron Dagger",
+        "armor": "`ArmorLeatherSimpleOutfit` (Leather Armor, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Rissing",
+        "weapons": "`LItemBanditGreatsword`, Long Bow, iron arrows",
+        "armor": "`ArmorSteelNoHelmetOutfit` (`ArmorSteelNoHelmetSet`)",
+        "skin": "race default"
+      },
+      {
+        "records": "Eriana",
+        "weapons": "`LItemBanditWeaponMissile`, `LItemBanditSword`, `LItemBanditShield`",
+        "armor": "`DA05HunterOutfit2` 0CE094 (Leather Armor, Hide Boots, Hide Bracers)",
+        "skin": "race default"
+      },
+      {
+        "records": "Ra'kheran",
+        "weapons": "`LItemBanditBossSword` 03DF1D",
+        "armor": "`ArmorLeatherAllOutfit` (Leather Armor, Boots, Bracers, Helmet)",
+        "skin": "race default"
+      },
+      {
+        "records": "Tsrasuna",
+        "weapons": "Long Bow, iron arrows, Iron Dagger, `LItemBanditMace`, `LItemBanditShield`",
+        "armor": "`ArmorHideAllOutfit` (Hide Armor, Boots, Bracers, Helmet)",
+        "skin": "race default"
+      },
+      {
+        "records": "Torkild the Fearsome",
+        "weapons": "`LItemBanditBattleaxe`",
+        "armor": "`ArmorIronNoHelmetOutfit` (`ArmorIronSetNoHelmet`)",
+        "skin": "race default"
+      },
+      {
+        "records": "Yar gro-Gatuk",
+        "weapons": "Iron Dagger, `LItemBanditWeaponMissile`",
+        "armor": "`FarmClothesOutfit03`",
+        "skin": "race default"
+      },
+      {
+        "records": "Ahjisi",
+        "weapons": "two Steel Daggers, Long Bow, iron arrows, a health poison",
+        "armor": "`DA05HunterOutfit1` 0CE093 (Hide Armor, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Heratar",
+        "weapons": "`LItemBanditWarAxe`, `LItemBanditShield`, a ring",
+        "armor": "`ArmorSteelAllOutfit` (`ArmorSteelSet`)",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "`ArmorSteelSet`, `ArmorSteelNoHelmetSet`, `ArmorIronSetNoHelmet`"
+        },
+        "rolls": "one of each piece, all @1"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditBossSword",
+          "formKey": "03DF1D:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Steel Sword 1 · enchanted Iron swords and maces 6 · Orcish 6 · enchanted Steel 9 · Dwarven 12 · … (as on *Bandit Chiefs*)"
+      },
+      {
+        "list": {
+          "label": "the other `LItemBandit*` weapon and shield lists"
+        },
+        "rolls": "as on *Common Bandits*"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Leather, Hide pieces",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Steel, Iron pieces",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "farm clothes",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "the swords, bows, daggers, axes",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,543 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "mythic-dawn",
+  "group": "daedra",
+  "title": "Mythic Dawn (CC)",
+  "order": 11,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "cultist-magic",
+        "name": "Mythic Dawn Cultist (magic)",
+        "records": [
+          {
+            "edid": "ccBGSSSE067_LvlMythicDawnCultistMagic",
+            "formKey": "000B6A:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "factions": [
+          {
+            "edid": "ccBGSSSE067_MythicDawnFaction",
+            "formKey": "000B6B:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "ccBGSSSE067_LCharMythicDawnWizard",
+            "formKey": "039275:ccbgssse067-daedinv.esm"
+          },
+          "rungs": [
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "cultist-melee",
+        "name": "Mythic Dawn Cultist (melee)",
+        "records": [
+          {
+            "edid": "ccBGSSSE067_LvlMythicDawnCultistMelee",
+            "formKey": "000DC3:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "factions": [
+          {
+            "edid": "ccBGSSSE067_MythicDawnFaction",
+            "formKey": "000B6B:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "ccBGSSSE067_LCharMythicDawnMeleeAny",
+            "formKey": "039276:ccbgssse067-daedinv.esm"
+          },
+          "rungs": [
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "explorer",
+        "name": "Mythic Dawn Explorer",
+        "records": [
+          {
+            "edid": "ccBGSSSE067_LvlMythicDawnCultistExplorer",
+            "formKey": "06BFB8:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "factions": [
+          {
+            "edid": "ccBGSSSE067_MythicDawnFaction",
+            "formKey": "000B6B:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "ccBGSSSE067_LCharMythicDawnExplorerAny",
+            "formKey": "06BFB7:ccbgssse067-daedinv.esm"
+          },
+          "rungs": [
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "guard",
+        "name": "Mythic Dawn Guard",
+        "records": [
+          {
+            "edid": "ccBGSSSE067_LvlMythicDawnGuard",
+            "formKey": "0856A4:ccbgssse067-daedinv.esm"
+          },
+          {
+            "edid": "ccBGSSSE067_LvlMythicDawnPatrol",
+            "formKey": "000E57:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "factions": [
+          {
+            "edid": "ccBGSSSE067_MythicDawnFaction",
+            "formKey": "000B6B:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "ccBGSSSE067_LCharMythicDawnExplorerAny",
+            "formKey": "06BFB7:ccbgssse067-daedinv.esm"
+          },
+          "rungs": [
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "the Patrol takes `Stats` from the Cultist (magic) instead, so it draws `ccBGSSSE067_LCharMythicDawnWizard` 039275:ccbgssse067-daedinv.esm; same levels"
+      },
+      {
+        "id": "vonos",
+        "name": "Vonos",
+        "records": [
+          {
+            "edid": "ccBGSSSE067_LvlMythicDawnBossVonos",
+            "formKey": "039270:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "factions": [
+          {
+            "edid": "ccBGSSSE067_MythicDawnFaction",
+            "formKey": "000B6B:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "ccBGSSSE067_LCharVonosBoss",
+            "formKey": "039273:ccbgssse067-daedinv.esm"
+          },
+          "rungs": [
+            14,
+            21,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Each record takes `Traits` and `Stats` (not `BaseData`) from its list, so it keeps its own name.",
+      "Every row: no other record keeps its own level."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ccBGSSSE067_LCharMythicDawnWizard",
+          "formKey": "039275:ccbgssse067-daedinv.esm"
+        },
+        "gate": "highest gate only",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Bandit Thug 9"
+          },
+          {
+            "at": 14,
+            "label": "Highwayman 14"
+          },
+          {
+            "at": 19,
+            "label": "Plunderer 19"
+          },
+          {
+            "at": 24,
+            "label": "Marauder 25"
+          }
+        ],
+        "note": "the bandit magic rungs `SubCharBandit0{3–6}Magic`; only `Stats` is taken",
+        "owner": "Cultist (magic), Patrol (through it)"
+      },
+      {
+        "list": {
+          "label": "`ccBGSSSE067_LCharMythicDawnMelee1H` 039277:ccbgssse067-daedinv.esm · `…Melee2H` 039278:ccbgssse067-daedinv.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "9"
+          },
+          {
+            "at": 14,
+            "label": "14"
+          },
+          {
+            "at": 19,
+            "label": "19"
+          },
+          {
+            "at": 25,
+            "label": "25"
+          }
+        ],
+        "note": "`SubCharBandit0{3–6}Melee1H` / `…Melee2H`",
+        "owner": "`…MeleeAny`, `…ExplorerAny`"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE067_LCharMythicDawnMeleeAny",
+          "formKey": "039276:ccbgssse067-daedinv.esm"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "`…Melee1H`"
+          },
+          {
+            "at": 1,
+            "label": "`…Melee2H`"
+          }
+        ],
+        "owner": "Cultist (melee)"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE067_LCharMythicDawnExplorerAny",
+          "formKey": "06BFB7:ccbgssse067-daedinv.esm"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "`…Melee1H`"
+          },
+          {
+            "at": 1,
+            "label": "`…Melee2H`"
+          },
+          {
+            "at": 1,
+            "label": "`…Wizard`"
+          }
+        ],
+        "owner": "Explorer, Guard"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE067_LCharVonosBoss",
+          "formKey": "039273:ccbgssse067-daedinv.esm"
+        },
+        "gate": "highest gate only",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Conjurer Adept 14"
+          },
+          {
+            "at": 27,
+            "label": "Conjurer 21"
+          },
+          {
+            "at": 36,
+            "label": "Ascendant Conjurer 30"
+          },
+          {
+            "at": 46,
+            "label": "Master Conjurer 40"
+          }
+        ],
+        "note": "the Conjurer boss rungs `LCharWarlock0{3–6}BossConjurer`; only `Stats` is taken",
+        "owner": "Vonos"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Mythic Dawn Cultist (magic) ×7",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE067MythicDawnCave01",
+              "formKey": "0030E2:Update.esm"
+            },
+            "refText": "×4"
+          },
+          {
+            "cell": {
+              "edid": "ccBGSSSE067MythicDawnCave02",
+              "formKey": "08FBF7:ccbgssse067-daedinv.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "×1",
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Mythic Dawn Cultist (melee) ×13",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE067MythicDawnCave01",
+              "formKey": "0030E2:Update.esm"
+            },
+            "refText": "×5"
+          },
+          {
+            "cell": {
+              "edid": "ccBGSSSE067MythicDawnCave02",
+              "formKey": "08FBF7:ccbgssse067-daedinv.esm"
+            },
+            "refText": "×4"
+          },
+          {
+            "cell": {
+              "edid": "ccBGSSSE067Rielle01",
+              "formKey": "0030E5:Update.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "ccBGSSSE067Rielle02",
+              "formKey": "0030E4:Update.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "×1",
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Mythic Dawn Explorer ×13",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE067Rielle01",
+              "formKey": "0030E5:Update.esm"
+            },
+            "refText": "×9"
+          },
+          {
+            "cell": {
+              "edid": "ccBGSSSE067Rielle02",
+              "formKey": "0030E4:Update.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "formKey": "0097E1:Skyrim.esm"
+            },
+            "refText": "×2, Tamriel"
+          },
+          {
+            "cell": {
+              "formKey": "0097E0:Skyrim.esm"
+            },
+            "refText": "×1, Tamriel"
+          }
+        ]
+      },
+      {
+        "name": "Mythic Dawn Guard ×4",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE067MythicDawnCave01",
+              "formKey": "0030E2:Update.esm"
+            },
+            "refText": "×3 (one Guard, two Patrol)"
+          },
+          {
+            "cell": {
+              "formKey": "00BBC5:Skyrim.esm"
+            },
+            "refText": "×1 (Patrol), Tamriel"
+          }
+        ]
+      },
+      {
+        "name": "Vonos",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE067MythicDawnCave02",
+              "formKey": "08FBF7:ccbgssse067-daedinv.esm"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Cultist (magic) · Patrol",
+        "weapons": "`LItemWarlockDagger` (Patrol: and a torch)",
+        "armor": "`ccBGSSSE067_MythicDawnRandom` 00134E:ccbgssse067-daedinv.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Cultist (melee)",
+        "weapons": "`LItemWeaponAny1H`",
+        "armor": "`ccBGSSSE067_MythicDawnRandom`",
+        "skin": "race default"
+      },
+      {
+        "records": "Explorer · Guard",
+        "weapons": "`LItemWeaponAny1H`, `LItemPotionAll` (Guard: Mythic Dawn Chamber Key, a torch)",
+        "armor": "`ccBGSSSE067_MythicDawnExplorerRandom` 06BFB9:ccbgssse067-daedinv.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Vonos",
+        "weapons": "Daedric Dagger",
+        "armor": "`ccBGSSSE067_MythicDawnOutfitVonos` 0A432E:ccbgssse067-daedinv.esm",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ccBGSSSE067_MythicDawnRandom",
+          "formKey": "00134E:ccbgssse067-daedinv.esm"
+        },
+        "rolls": "Mythic Dawn Boots 0B1460, Mythic Dawn Gloves 0B145B, `ccBGSSSE067_LVLI_MythicDawnRobeRandom` 000BB6:ccbgssse067-daedinv.esm (Mythic Dawn Robes 0B144D or the hoodless 109C11, both @1)"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE067_MythicDawnExplorerRandom",
+          "formKey": "06BFB9:ccbgssse067-daedinv.esm"
+        },
+        "rolls": "the same, plus `ccBGSSSE067_LVLI_CCBackpackRandom70` 06BFB6:ccbgssse067-daedinv.esm (70% none; the record holds no entries)"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE067_MythicDawnOutfitVonos",
+          "formKey": "0A432E:ccbgssse067-daedinv.esm"
+        },
+        "rolls": "Mythic Dawn Robes (no hood) 109C11, Steel Nordic Gauntlets, Steel Cuffed Boots"
+      },
+      {
+        "list": {
+          "label": "`LItemWarlockDagger`"
+        },
+        "rolls": "as on *Common Warlocks*"
+      },
+      {
+        "list": {
+          "label": "`LItemWeaponAny1H`, `LItemPotionAll`"
+        },
+        "rolls": "the vanilla leveled one-handed weapons and potions"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Mythic Dawn Robes, Boots, Gloves",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Steel Nordic Gauntlets, Steel Cuffed Boots",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Daedric Dagger and the other weapons",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

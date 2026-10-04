@@ -7,7 +7,7 @@
     "spec": "archetype-tiers.md §3.3",
     "updated": "2026-10-05"
   },
-  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Atronachs are not part of the census. Creation Club Daedra sit on their kind's page (The Cause and Arms of Chaos Dremora on *Dremora* and *Unique Dremora*, Saints & Seducers on *Golden Saints & Dark Seducers*). Daedra that exist only as summons are under Conjured.",
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Atronachs are not part of the census. Creation Club Daedra sit on their kind's page (The Cause and Arms of Chaos Dremora on *Dremora* and *Unique Dremora*, Saints & Seducers on *Golden Saints & Dark Seducers*, the Shadowrend Shadow on *Shadow*). Daedra that exist only as summons are under Conjured. The Daedric Princes' mortal followers and quest foes are filed here too, from *The Afflicted* on.",
   "families": [
     {
       "id": "dremora",
@@ -28,6 +28,72 @@
     {
       "id": "golden-saints-dark-seducers",
       "holds": "Saints & Seducers: the hostile Golden Saints and Dark Seducers that Balance of Power spawns, and Staada"
+    },
+    {
+      "id": "barbas",
+      "holds": "Barbas, Clavicus Vile's dog (`DA03`)"
+    },
+    {
+      "id": "shadow",
+      "holds": "the Shadowrend CC pack's Shadow, a mirror of the player that copies the player's level"
+    },
+    {
+      "id": "the-afflicted",
+      "holds": "Peryite's Afflicted (`DA13`): the melee, magic and missile ladders 1 · 5 · 9 · 14 · 19 · 24, the world-encounter Remnants and Refugee, and Orchendor"
+    },
+    {
+      "id": "boethiah-cultists",
+      "holds": "the `DA02` cultists and the world-encounter cultist (bandit ladders), the CC Goldbrand cultists, and the Champion of Boethiah (Briarheart ladder)"
+    },
+    {
+      "id": "hunters-of-hircine",
+      "holds": "the `DA05` hunters of Bloated Man's Grotto (bandit ladder; J'Kier 1)"
+    },
+    {
+      "id": "mythic-dawn",
+      "holds": "The Cause's Mythic Dawn cultists, explorers and guards (bandit rungs 9 · 14 · 19 · 25) and Vonos (Conjurer boss rungs 14 · 21 · 30 · 40)"
+    },
+    {
+      "id": "vaermina-devotees",
+      "holds": "the `DA16` Nightcaller Temple foes: the Devotees (Storm Mage ladder), the Orcish Invaders, Veren Duleri and Thorek"
+    },
+    {
+      "id": "daedric-quest-foes",
+      "holds": "the one-offs: Namira's cannibals (Eola, Nimphaneth, Sanyon) and Molag Bal's Logrolf the Willful"
+    }
+  ],
+  "filedElsewhere": [
+    {
+      "record": "`DA10` Vigilant Tyranus",
+      "what": "Molag Bal's quest foe",
+      "where": "Factions → Vigilants → Named Vigilants"
+    },
+    {
+      "record": "`DA03` Sebastian Lort · `DA09` Malkoran",
+      "what": "Clavicus Vile's and Meridia's quest foes",
+      "where": "Warlocks → Named Warlocks"
+    },
+    {
+      "record": "`DA05Sinding` 0136AC",
+      "what": "Sinding, Hircine's werewolf",
+      "where": "Werebeasts → Werewolf Boss"
+    }
+  ],
+  "neverMet": [
+    {
+      "record": "`DA05Hunter14_01DeadMage_Hoddreid` 0CE09D · `…15_01DeadMelee_Matasarr` 0CE09B · `…16_01DeadMissile_Batum` 0CE09C",
+      "what": "hunters of Hircine",
+      "why": "corpses, placed in `BloatedMansGrottoStart` 020A3C"
+    },
+    {
+      "record": "`ccBGSSSE067_MythicDawnDeadDarkElfM` 0B8A19:ccbgssse067-daedinv.esm · Janus `ccBGSSSE067_MythicDawnJanus` 0B8A14:ccbgssse067-daedinv.esm",
+      "what": "Mythic Dawn",
+      "why": "corpses, placed in `ccBGSSSE067Rielle01` and `…Rielle02`"
+    },
+    {
+      "record": "`ccBGSSSE067_MythicDawnReformedSkorvild` 000B67:ccbgssse067-daedinv.esm",
+      "what": "Skorvild, a reformed cultist (PC×0.75 [20–30])",
+      "why": "not hostile: in no faction; `Tamriel` persistent"
     }
   ]
 }

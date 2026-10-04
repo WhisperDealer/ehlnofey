@@ -1,0 +1,93 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "shadow",
+  "group": "daedra",
+  "title": "Shadow",
+  "order": 7,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "shadow",
+        "name": "Shadow",
+        "records": [
+          {
+            "edid": "BGSSSE018_DoppelgangerHuman",
+            "formKey": "00083B:ccbgssse018-shadowrend.esl"
+          },
+          {
+            "edid": "BGSSSE018_DoppelgangerHumanFemale",
+            "formKey": "000837:ccbgssse018-shadowrend.esl"
+          },
+          {
+            "edid": "BGSSSE018_DoppelgangerArgonian",
+            "formKey": "000839:ccbgssse018-shadowrend.esl"
+          },
+          {
+            "edid": "BGSSSE018_DoppelgangerArgonianFemale",
+            "formKey": "000838:ccbgssse018-shadowrend.esl"
+          },
+          {
+            "edid": "BGSSSE018_DoppelgangerKhajit",
+            "formKey": "00083A:ccbgssse018-shadowrend.esl"
+          },
+          {
+            "edid": "BGSSSE018_DoppelgangerKhajitFemale",
+            "formKey": "000835:ccbgssse018-shadowrend.esl"
+          },
+          {
+            "edid": "BGSSSE018_DoppelgangerOrc",
+            "formKey": "000833:ccbgssse018-shadowrend.esl"
+          },
+          {
+            "edid": "BGSSSE018_DoppelgangerOrcFemale",
+            "formKey": "000834:ccbgssse018-shadowrend.esl"
+          },
+          {
+            "edid": "BGSSSE018_DoppelgangerMer",
+            "formKey": "000832:ccbgssse018-shadowrend.esl"
+          },
+          {
+            "edid": "BGSSSE018_DoppelgangerMerFemale",
+            "formKey": "000836:ccbgssse018-shadowrend.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 1,
+          "from": {
+            "edid": "Player",
+            "formKey": "000007:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "no band named yet; vanilla copies the player's level"
+        },
+        "note": "every Shadow has `Template: 000007:Skyrim.esm`, the Player record, with `Stats` (and `AttackData`) in `TemplateFlags`; its own `Level: 1` / `CalcMaxLevel: 100` is inert, so it copies the player's level and stats, a mirror by design. Races `BGSSSE018_{Nord,Argonian,Khajiit,Orc,WoodElf}RaceDoppelganger` 000829 · 000824 · 000828 · 00082A · 00082B:ccbgssse018-shadowrend.esl"
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The ten Shadows: no other record keeps its own level. All ten carry `Stats` and follow the Player record 000007."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Shadow",
+        "notPlaced": true,
+        "quest": "spawned by `BGSSSE018_ShadowrendQuest` 00081C:ccbgssse018-shadowrend.esl (script `ccBGSSSE018_ShadowrendPlaceScript`, property `ShadowNPC`), one per player race and sex"
+      }
+    ]
+  }
+}

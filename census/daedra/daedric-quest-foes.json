@@ -1,0 +1,221 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "daedric-quest-foes",
+  "group": "daedra",
+  "title": "Daedric Quest Foes",
+  "order": 13,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "eola",
+        "name": "Eola",
+        "records": [
+          {
+            "edid": "Eola",
+            "formKey": "01990F:Skyrim.esm"
+          }
+        ],
+        "factions": [
+          {
+            "edid": "DA11CannibalFaction",
+            "formKey": "08942F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 30
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "IV",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "nimphaneth-sanyon",
+        "name": "Nimphaneth · Sanyon",
+        "records": [
+          {
+            "edid": "DA11Nimphaneth",
+            "formKey": "09BB45:Skyrim.esm"
+          },
+          {
+            "edid": "DA11Sanyon",
+            "formKey": "09BB47:Skyrim.esm"
+          }
+        ],
+        "factions": [
+          {
+            "edid": "DA11CannibalFaction",
+            "formKey": "08942F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlock01Necro",
+            "formKey": "0551E0:Skyrim.esm"
+          },
+          "rungs": [
+            1
+          ]
+        },
+        "target": {
+          "band": "II",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        },
+        "note": "the Novice Necromancer rung"
+      },
+      {
+        "id": "logrolf",
+        "name": "Logrolf the Willful",
+        "records": [
+          {
+            "edid": "Logrolf",
+            "formKey": "0133A6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 12
+        },
+        "target": {
+          "band": "V",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharWarlock01Necro",
+          "formKey": "0551E0:Skyrim.esm"
+        },
+        "note": "the rung-01 necromancer leaves, on *Common Warlocks*; `Stats` and `Inventory` are taken",
+        "owner": "Nimphaneth, Sanyon"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Eola",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MarkarthHalloftheDead",
+              "formKey": "023FD4:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "`DA11` 02C358 alias Glooredhel"
+      },
+      {
+        "name": "Nimphaneth, Sanyon",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ReachcliffCave01",
+              "formKey": "015227:Skyrim.esm"
+            },
+            "refText": "refs 09BB46 · 09BB48",
+            "disabled": true
+          }
+        ],
+        "quest": "`DA11` aliases Cultist01, Cultist02"
+      },
+      {
+        "name": "Logrolf the Willful",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MarkarthWarrens",
+              "formKey": "016D72:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "`DA10` 022F08 alias Logrolf"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Eola",
+        "weapons": "Steel Sword, Hunting Bow, steel arrows, a healing potion",
+        "armor": "`ArmorStuddedSimpleOutfit` (Studded Armor, Hide Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Nimphaneth · Sanyon",
+        "weapons": "as the drawn Novice Necromancer leaf: `LItemWarlockDagger`, `LootWarlockRandom`",
+        "armor": "`NecromancerOutfitHood50` 105255",
+        "skin": "race default"
+      },
+      {
+        "records": "Logrolf the Willful",
+        "weapons": "none",
+        "armor": "`WarlockOutfitSimpleWithHood` (Hooded Black Mage Robes, Boots)",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "`LItemWarlockDagger`, `NecromancerOutfitHood50`, `LootWarlockRandom`"
+        },
+        "rolls": "as on *Common Warlocks*"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Studded Armor, Hide Boots",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "the robes and boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "the sword, bow, daggers",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

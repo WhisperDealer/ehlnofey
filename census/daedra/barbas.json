@@ -1,0 +1,66 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "barbas",
+  "group": "daedra",
+  "title": "Barbas",
+  "order": 6,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "barbas",
+        "name": "Barbas",
+        "records": [
+          {
+            "edid": "DA03Barbas",
+            "formKey": "01BFC5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 15,
+          "max": 45
+        },
+        "flags": [
+          "Invulnerable"
+        ],
+        "target": {
+          "band": "VII",
+          "status": "decided",
+          "source": "user, 2026-10-05"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`DA03Barbas`: no other record keeps its own level."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Barbas",
+        "locations": [
+          {
+            "cell": {
+              "edid": "HaemarsShame02",
+              "formKey": "0216BB:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "052535:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "alias Barbas (unique actor) of `DA03` 01BFC4"
+      }
+    ]
+  }
+}
