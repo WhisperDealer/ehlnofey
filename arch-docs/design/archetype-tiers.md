@@ -17,6 +17,10 @@ until each family is revisited.
 
 ## 0. The power bands (user, 2026-09-28)
 
+> **Superseded (user, 2026-10-04) by `arch-docs/bands-of-power.md`: ten bands**, Weak 1–6 · Common 7–13 ·
+> Trained 14–20 · Blooded 21–27 · Experienced 28–34 · Elite 35–41 · Powerful 42–50 · Fabled 51–65 · Mythic 66–81 ·
+> Legendary 82+ (data in `census/bands.json`). The nine-band table and the "open" conflict table below are kept as history.
+
 The faction tickets (WD-43…64) put real levels from 1 to 110, so a third of the spec's bands already read
 "above T7". The bands give that range one vocabulary.
 
@@ -541,6 +545,12 @@ which also satisfies `lore-constraints.md` §4 item 5: a Master Conjurer (T6) su
 in step.
 
 ### 3.4 Dragons and the DLC families
+
+> **Dragon levels superseded (user, 2026-10-04).** `bands-of-power.md` now sets the dragons: low-level dragons
+> Fabled (VIII), dragons Mythic (IX), Miraak 100 and Alduin 150 (Legendary, X). The dragon levels decided here and
+> in the dragon rows further down (WD-53: Dragon 50 … Legendary 80, Paarthurnax 90, Odahviing 85, Alduin 100/110,
+> Miraak 65) no longer stand; each dragon row in `census/dragons/*.json` carries its target band, most of them
+> `proposed`. The rung levels are to be re-decided.
 
 | Archetype | List | Vanilla rungs | **Ehlnofey roster** | Band |
 |---|---|---|---|---|

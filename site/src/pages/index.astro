@@ -1,0 +1,142 @@
+---
+import Base from '../layouts/Base.astro';
+import BandBar from '../components/BandBar.astro';
+import BandChip from '../components/BandChip.astro';
+import { bands, bandRange, href, loadCensus } from '../lib/census.ts';
+
+const groups = await loadCensus();
+
+// Every census record, filed under its target band. Rows that share a name in one family
+// (the four "Dragon" rows of Common Dragons) collapse into one link.
+type Hit = { name: string; url: string; family: string; proposed: boolean; count: number };
+const byBand = new Map<string, Hit[]>();
+for (const g of groups)
+  for (const f of g.familyPages)
+    for (const r of f.records.rows) {
+      const list = byBand.get(r.target.band) ?? [];
+      const same = list.find((h) => h.name === r.name && h.family === f.title);
+      if (same) {
+        same.count++;
+        same.proposed &&= r.target.status === 'proposed';
+      } else
+        list.push({
+          name: r.name,
+          url: href(`${g.id}/${f.id}/#rec-${r.id}`),
+          family: f.title,
+          proposed: r.target.status === 'proposed',
+          count: 1,
+        });
+      byBand.set(r.target.band, list);
+    }
+const recordCount = groups.reduce((n, g) => n + g.familyPages.reduce((m, f) => m + f.records.rows.length, 0), 0);
+---
+
+<Base title="Ehlnofey" description={bands.tagline}>
+  <section class="hero">
+    <p class="tracked kicker">A Skyrim delevelling mod</p>
+    <h1 class="title">Ehlnofey</h1>
+    <p class="subtitle"><span class="rule"></span><span>{bands.title}</span><span class="rule"></span></p>
+    <p class="tagline">{bands.tagline}</p>
+  </section>
+
+  <BandBar />
+
+  <section id="bands" class="bands panel" aria-label="The ten bands">
+    {bands.bands.map((b) => {
+      const hits = byBand.get(b.id) ?? [];
+      return (
+        <article class="band" id={`band-${b.id}`}>
+          <BandChip id={b.id} size="lg" />
+          <div class="band-name">
+            <h2 class:list={{ legendary: b.id === 'X' }}>{b.name}</h2>
+            <p>{bandRange(b)}</p>
+          </div>
+          <div class="band-body">
+            {b.named ? (
+              <p class="named">
+                {b.named.map((n) => <span><strong>{n.name}</strong> <small>lvl {n.level}</small></span>)}
+              </p>
+            ) : (
+              <p>{b.who}</p>
+            )}
+            {hits.length > 0 && (
+              <p class="hits">
+                <span class="hits-label">In the census</span>
+                {hits.map((h) => (
+                  <a class:list={['hit', { proposed: h.proposed }]} href={h.url} title={`${h.family}${h.proposed ? ' · proposed' : ''}`}>
+                    {h.name}{h.count > 1 && <small> ×{h.count}</small>}
+                  </a>
+                ))}
+              </p>
+            )}
+          </div>
+        </article>
+      );
+    })}
+  </section>
+
+  <section class="census">
+    <h2>The census</h2>
+    <p class="lede">
+      Every enemy in Skyrim, its DLC and the Creation Club, documented from the game data: the record that owns its level,
+      the leveled lists that draw it, and where it is placed, with each record's target band. {recordCount} records so far;
+      families are moving here from Confluence one at a time. A dashed target is a proposal, not yet decided.
+    </p>
+    <div class="groups">
+      {groups.map((g) => (
+        <a class="group panel" href={href(`${g.id}/`)}>
+          <span class="tracked">{g.meta.ticket}</span>
+          <h3>{g.title}</h3>
+          <ul>
+            {g.familyPages.map((f) => <li>{f.title} <small>· {f.records.rows.length} records</small></li>)}
+          </ul>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { text-align: center; padding: 3.5rem 0 2.2rem; }
+  .kicker { margin: 0; }
+  .title {
+    font: 800 clamp(3rem, 12vw, 6.5rem)/1 var(--serif); letter-spacing: 0.08em; margin: 0.3rem 0 0.6rem;
+    background: linear-gradient(180deg, #fbe7a8 0%, #f1d68b 45%, #c9a54e 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
+    text-shadow: 0 2px 30px rgba(241, 214, 139, 0.12);
+  }
+  .subtitle { display: flex; align-items: center; justify-content: center; gap: 1.2rem; font: 500 clamp(1rem, 2.6vw, 1.35rem) var(--serif); letter-spacing: 0.2em; font-variant: small-caps; color: var(--text); margin: 0; }
+  .rule { flex: 0 1 90px; height: 1px; background: linear-gradient(90deg, transparent, var(--line-strong), transparent); }
+  .tagline { color: var(--muted); margin: 1rem auto 0; max-width: 60ch; }
+
+  .bands { margin-top: 1.6rem; padding: 0.4rem 1.6rem; }
+  .band { display: grid; grid-template-columns: 56px minmax(170px, 230px) 1fr; gap: 1.5rem; align-items: center; padding: 1.15rem 0; scroll-margin-top: 80px; }
+  .band + .band { border-top: 1px solid var(--line); }
+  .band-name h2 { margin: 0; font-size: 1.5rem; font-variant: small-caps; letter-spacing: 0.06em; color: var(--text); }
+  .band-name h2.legendary { color: var(--gold); }
+  .band-name p { margin: 0.1rem 0 0; color: var(--muted); font-size: 0.95rem; }
+  .band-body p { margin: 0; }
+  .named { display: flex; gap: 2.2rem; flex-wrap: wrap; }
+  .named strong { font: 700 1.45rem var(--serif); color: var(--gold); letter-spacing: 0.06em; font-variant: small-caps; }
+  .named small { color: var(--text); font-size: 0.9rem; margin-left: 0.3rem; }
+
+  .hits { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; margin-top: 0.55rem !important; }
+  .hits-label { font: 600 0.68rem var(--serif); letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-right: 0.3rem; }
+  .hit { font-size: 0.85rem; padding: 0.1rem 0.55rem; border-radius: 999px; border: 1px solid rgba(241,214,139,.45); background: rgba(241,214,139,.08); color: var(--gold); text-decoration: none; }
+  .hit.proposed { border-style: dashed; background: transparent; color: var(--text); border-color: var(--line-strong); }
+  .hit:hover { border-color: var(--gold); color: var(--gold); }
+  .hit small { color: var(--muted); }
+
+  .census { margin-top: 2rem; }
+  .groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin-top: 1rem; }
+  .group { text-decoration: none; color: var(--text); transition: border-color .15s, transform .15s; }
+  .group:hover { border-color: var(--gold-deep); transform: translateY(-2px); }
+  .group h3 { margin: 0.2rem 0 0.5rem; font-size: 1.35rem; }
+  .group ul { margin: 0; padding-left: 1.1rem; color: var(--text); }
+  .group small { color: var(--muted); }
+
+  @media (max-width: 720px) {
+    .bands { padding: 0.2rem 1rem; }
+    .band { grid-template-columns: 56px 1fr; gap: 0.6rem 1rem; }
+    .band-body { grid-column: 1 / -1; }
+  }
+</style>

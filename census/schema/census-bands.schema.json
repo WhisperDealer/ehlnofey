@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "scaleMax": {
+      "type": "integer",
+      "minimum": -9007199254740991,
+      "maximum": 9007199254740991
+    },
+    "bands": {
+      "minItems": 10,
+      "maxItems": 10,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": [
+              "I",
+              "II",
+              "III",
+              "IV",
+              "V",
+              "VI",
+              "VII",
+              "VIII",
+              "IX",
+              "X"
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "min": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "max": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "colour": {
+            "type": "string",
+            "pattern": "^#[0-9a-f]{6}$"
+          },
+          "who": {
+            "type": "string"
+          },
+          "named": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "level": {
+                  "type": "integer",
+                  "minimum": -9007199254740991,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "name",
+                "level"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "min",
+          "max",
+          "colour",
+          "who"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "source",
+    "title",
+    "tagline",
+    "scaleMax",
+    "bands"
+  ],
+  "additionalProperties": false
+}

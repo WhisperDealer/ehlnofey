@@ -1,0 +1,48 @@
+name: Census site
+
+# Builds the census site (site/, an Astro project) from census/*.json and publishes it to
+# GitHub Pages at https://whisperdealer.github.io/ehlnofey/. The mod build (build.yml) ignores
+# these paths, and this workflow ignores everything else.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'census/**'
+      - 'site/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build the site
+        uses: withastro/action@v6
+        with:
+          path: ./site
+          node-version: 24
+          package-manager: npm
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

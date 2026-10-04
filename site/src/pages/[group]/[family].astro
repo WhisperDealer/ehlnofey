@@ -1,0 +1,227 @@
+---
+import Base from '../../layouts/Base.astro';
+import LevelStrip from '../../components/LevelStrip.astro';
+import BandChip from '../../components/BandChip.astro';
+import { bandById, href, loadCensus } from '../../lib/census.ts';
+import { levelText, md, ref, refs } from '../../lib/format.ts';
+
+export async function getStaticPaths() {
+  const groups = await loadCensus();
+  return groups.flatMap((g) =>
+    g.familyPages.map((f) => ({ params: { group: g.id, family: f.id }, props: { group: g, family: f } })),
+  );
+}
+
+const { group, family: f } = Astro.props;
+const CONFLUENCE = 'https://whisperdealer.atlassian.net/wiki/spaces/~71202046a32e88a7ba474cbdae20a1db1fba60/pages/';
+const PLACED_FOLD = 4; // more locations than this collapse behind a summary
+---
+
+<Base
+  title={f.title}
+  description={`${f.title}: ${f.records.rows.length} records, their levels, lists and placements.`}
+  crumbs={[{ label: group.title, path: `${group.id}/` }, { label: f.title, path: `${group.id}/${f.id}/` }]}
+>
+  <header class="head">
+    <h1>{f.title}</h1>
+    <p class="meta">
+      <span class="tracked">{f.meta.ticket}</span>
+      <span>{f.records.rows.length} records</span>
+      <span>updated {f.meta.updated}</span>
+      {f.meta.confluencePageId && <a href={`${CONFLUENCE}${f.meta.confluencePageId}`}>Confluence mirror</a>}
+      <a href={href(`data/${group.id}/${f.id}.json`)}>JSON</a>
+    </p>
+    <p class="lede" set:html={md(f.holds)} />
+  </header>
+
+  <h2>On the bands</h2>
+  <LevelStrip rows={f.records.rows} />
+
+  <h2>Records <span class:list={['conf', f.records.confidence]}>{f.records.confidence}</span></h2>
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th>Record</th><th>Name</th><th>Level</th><th>Target</th></tr></thead>
+      <tbody>
+        {f.records.rows.map((r) => {
+          const b = bandById(r.target.band);
+          return (
+            <tr id={`rec-${r.id}`}>
+              <td>
+                <div class="reclist" set:html={refs(r.records, '<br />')} />
+                {r.race && <div class="sub" set:html={`race ${ref(r.race)}`} />}
+                {r.factions && <div class="sub" set:html={`in ${refs(r.factions, ' and ')}`} />}
+              </td>
+              <td>{r.name}{r.flags?.map((fl) => <span class="flag">{fl}</span>)}</td>
+              <td set:html={levelText(r.level)} />
+              <td class="target">
+                <BandChip id={b.id} proposed={r.target.status === 'proposed'} />
+                <span>{b.name}{r.target.level && <strong> {r.target.level}</strong>}</span>
+                <div class="sub">{r.target.status} · <span set:html={md(r.target.source)} /></div>
+              </td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Also owns its level <span class:list={['conf', f.ownsLevel.confidence]}>{f.ownsLevel.confidence}</span></h2>
+  <div class="panel">
+    <ul class="bullets">{f.ownsLevel.items.map((i) => <li set:html={md(i)} />)}</ul>
+  </div>
+
+  {f.lists && (
+    <>
+      <h2>Lists that draw them <span class:list={['conf', f.lists.confidence]}>{f.lists.confidence}</span></h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>List</th><th>Draws</th><th>Owner</th></tr></thead>
+          <tbody>
+            {f.lists.rows.map((l) => (
+              <tr>
+                <td>
+                  <div set:html={ref(l.list)} />
+                  {(l.override || l.gate) && <div class="sub">{[l.override, l.gate].filter(Boolean).join('; ')}</div>}
+                </td>
+                <td>
+                  {l.seeFamily && <a href={href(`${group.id}/${l.seeFamily}/`)}>see {group.familyPages.find((p) => p.id === l.seeFamily)?.title}</a>}
+                  {l.entries && (
+                    <ol class="ladder">
+                      {l.entries.map((e) => (
+                        <li><span class="at">@{e.at}</span><span set:html={md(e.label)} />{e.count && e.count > 1 && <small> ×{e.count}</small>}</li>
+                      ))}
+                    </ol>
+                  )}
+                  {l.note && <div class="sub" set:html={md(l.note)} />}
+                </td>
+                <td set:html={md(l.owner)} />
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  {f.placed && (
+    <>
+      <h2>{f.placed.title} <span class:list={['conf', f.placed.confidence]}>{f.placed.confidence}</span></h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Name</th><th>Placed in</th></tr></thead>
+          <tbody>
+            {f.placed.rows.map((p) => {
+              const locs = (p.locations ?? []).map((l) =>
+                [
+                  ref(l.cell) + (l.persistent ? ' persistent' : ''),
+                  l.ref ? `ref ${ref(l.ref)}` : '',
+                  l.refText ? md(l.refText) : '',
+                  l.disabled ? '<span class="dis">initially disabled</span>' : '',
+                  l.note ? md(l.note) : '',
+                ].filter(Boolean).join(', '),
+              );
+              return (
+                <tr>
+                  <td class="pname">
+                    <span set:html={md(p.name)} />
+                    {p.base && <div class="sub" set:html={refs(p.base)} />}
+                    {p.baseNote && <div class="sub" set:html={md(p.baseNote)} />}
+                  </td>
+                  <td>
+                    {p.notPlaced && <span class="dis">not placed</span>}
+                    {locs.length > PLACED_FOLD ? (
+                      <details>
+                        <summary>{locs.length} locations</summary>
+                        <ul class="locs">{locs.map((l) => <li set:html={l} />)}</ul>
+                      </details>
+                    ) : (
+                      locs.length > 0 && <ul class="locs">{locs.map((l) => <li set:html={l} />)}</ul>
+                    )}
+                    {p.quest && <div class="sub" set:html={md(p.quest)} />}
+                    {p.note && <div class="sub" set:html={md(p.note)} />}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  {f.gear && (
+    <>
+      <h2>Gear <span class:list={['conf', f.gear.confidence]}>{f.gear.confidence}</span></h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Records</th><th>Weapons</th><th>Armor</th><th>Skin</th></tr></thead>
+          <tbody>
+            {f.gear.rows.map((g) => (
+              <tr><td set:html={md(g.records)} /><td set:html={md(g.weapons)} /><td set:html={md(g.armor)} /><td set:html={md(g.skin)} /></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  {f.gearLists && (
+    <>
+      <h2>Gear lists <span class:list={['conf', f.gearLists.confidence]}>{f.gearLists.confidence}</span></h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>List</th><th>Rolls</th></tr></thead>
+          <tbody>
+            {f.gearLists.rows.map((g) => (
+              <tr>
+                <td><div set:html={ref(g.list)} /><div class="sub">{g.gate}</div></td>
+                <td><span set:html={md(g.rolls)} /><div class="sub">@{g.levels.join(' · ')}</div></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  {f.gearItems && (
+    <>
+      <h2>Gear items <span class:list={['conf', f.gearItems.confidence]}>{f.gearItems.confidence}</span></h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Item</th><th>Kind</th><th>Wearable by the player</th></tr></thead>
+          <tbody>
+            {f.gearItems.rows.map((g) => (
+              <tr>
+                <td set:html={md(g.item)} />
+                <td>{g.kind}</td>
+                <td>{g.playable ? 'yes' : 'no'}{g.note && <span set:html={` (${md(g.note)})`} />}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+</Base>
+
+<style>
+  .head h1 { margin-bottom: 0.3rem; }
+  .meta { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; align-items: center; color: var(--muted); font-size: 0.92rem; }
+  .sub { color: var(--muted); font-size: 0.85rem; margin-top: 0.2rem; }
+  .reclist { line-height: 1.7; }
+  tr[id] { scroll-margin-top: 80px; }
+  tr[id]:target td { background: rgba(241, 214, 139, 0.07); }
+  .flag { margin-left: 0.5rem; font-size: 0.72rem; padding: 0.05rem 0.4rem; border: 1px solid var(--line-strong); border-radius: 4px; color: var(--muted); }
+  td.target { min-width: 170px; }
+  td.target > span { margin-left: 0.45rem; }
+  .ladder { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.15rem; }
+  .ladder .at { display: inline-block; min-width: 2.6rem; font-family: var(--mono); font-size: 0.8rem; color: var(--gold); }
+  .ladder small { color: var(--muted); }
+  .locs { margin: 0; padding-left: 1.1rem; }
+  .locs li { margin: 0.1rem 0; }
+  details summary { cursor: pointer; color: var(--gold); }
+  details[open] summary { margin-bottom: 0.3rem; }
+  .dis { color: var(--muted); font-style: italic; }
+  .pname { min-width: 160px; }
+</style>

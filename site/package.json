@@ -1,0 +1,20 @@
+{
+  "name": "ehlnofey-census-site",
+  "private": true,
+  "type": "module",
+  "description": "The Ehlnofey census site: renders census/*.json to GitHub Pages.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "schema": "node scripts/emit-schema.ts",
+    "confluence": "node scripts/render-confluence.ts"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "dependencies": {
+    "astro": "^7.3.5",
+    "zod": "^4.6.5"
+  }
+}

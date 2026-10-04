@@ -11,7 +11,11 @@ on:
     branches: [main]
     tags:
       - 'v*'
-  workflow_dispatch:                  # manual rebuild without pushing anything
+    paths-ignore:                     # the census site has its own workflow (pages.yml); tags ignore this
+      - 'census/**'
+      - 'site/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:                 # manual rebuild without pushing anything
 
 permissions:
   contents: write   # create the Release on a v* tag

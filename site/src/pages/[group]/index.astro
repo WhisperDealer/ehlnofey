@@ -1,0 +1,104 @@
+---
+import Base from '../../layouts/Base.astro';
+import BandChip from '../../components/BandChip.astro';
+import { bands, href, loadCensus } from '../../lib/census.ts';
+import { md } from '../../lib/format.ts';
+
+export async function getStaticPaths() {
+  const groups = await loadCensus();
+  return groups.map((g) => ({ params: { group: g.id }, props: { group: g } }));
+}
+
+const { group: g } = Astro.props;
+const CONFLUENCE = 'https://whisperdealer.atlassian.net/wiki/spaces/~71202046a32e88a7ba474cbdae20a1db1fba60/pages/';
+
+// How many of a family's records target each band, in band order.
+const spread = (rows: { target: { band: string } }[]) =>
+  bands.bands.map((b) => ({ id: b.id, n: rows.filter((r) => r.target.band === b.id).length })).filter((x) => x.n > 0);
+---
+
+<Base title={g.title} description={`${g.title}: the census group (${g.meta.ticket}).`} crumbs={[{ label: g.title, path: `${g.id}/` }]}>
+  <header>
+    <h1>{g.title}</h1>
+    <p class="meta">
+      <span class="tracked">{g.meta.ticket}</span>
+      {g.meta.ticketTitle && <span>{g.meta.ticketTitle}</span>}
+    </p>
+    <p class="meta">
+      {g.meta.spec && <span>Spec <code>{g.meta.spec}</code></span>}
+      <span>updated {g.meta.updated}</span>
+      {g.meta.confluencePageId && <a href={`${CONFLUENCE}${g.meta.confluencePageId}`}>Confluence mirror</a>}
+      <a href={href(`data/${g.id}/group.json`)}>JSON</a>
+    </p>
+    {g.intro && <p class="lede">{g.intro}</p>}
+  </header>
+
+  <div class="families">
+    {g.familyPages.map((f) => (
+      <a class="family panel" href={href(`${g.id}/${f.id}/`)}>
+        <h2>{f.title}</h2>
+        <p class="holds" set:html={md(f.holds)} />
+        <p class="spread">
+          <span>{f.records.rows.length} records</span>
+          {spread(f.records.rows).map((s) => <span class="sp"><BandChip id={s.id} />{s.n > 1 && <small>×{s.n}</small>}</span>)}
+        </p>
+      </a>
+    ))}
+  </div>
+
+  {g.sweep && (
+    <>
+      <h2>{g.sweep.title} <span class:list={['conf', g.sweep.confidence]}>{g.sweep.confidence}</span></h2>
+      <div class="panel"><p set:html={md(g.sweep.text)} /></div>
+    </>
+  )}
+
+  {g.filedElsewhere && (
+    <>
+      <h3>Filed elsewhere</h3>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Record</th><th>What it is</th><th>Where it belongs</th></tr></thead>
+          <tbody>{g.filedElsewhere.map((r) => <tr><td set:html={md(r.record)} /><td set:html={md(r.what)} /><td set:html={md(r.where)} /></tr>)}</tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  {g.neverMet && (
+    <>
+      <h3>Never met as enemies</h3>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Record</th><th>What it is</th><th>Why</th></tr></thead>
+          <tbody>{g.neverMet.map((r) => <tr><td set:html={md(r.record)} /><td set:html={md(r.what)} /><td set:html={md(r.why)} /></tr>)}</tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  {g.neverInGame && (
+    <>
+      <h3>Records never met in game <span class:list={['conf', g.neverInGame.confidence]}>{g.neverInGame.confidence}</span></h3>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Record</th><th>Why</th></tr></thead>
+          <tbody>{g.neverInGame.rows.map((r) => <tr><td set:html={md(r.record)} /><td set:html={md(r.why)} /></tr>)}</tbody>
+        </table>
+      </div>
+    </>
+  )}
+</Base>
+
+<style>
+  .meta { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; align-items: center; color: var(--muted); font-size: 0.92rem; margin: 0.2rem 0; }
+  .families { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; margin-top: 1.6rem; }
+  .family { text-decoration: none; color: var(--text); display: flex; flex-direction: column; transition: border-color .15s, transform .15s; }
+  .family:hover { border-color: var(--gold-deep); transform: translateY(-2px); }
+  .family h2 { margin: 0 0 0.4rem; font-size: 1.3rem; }
+  .holds { color: var(--muted); font-size: 0.93rem; flex: 1; }
+  .spread { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; margin-top: 0.8rem; font-size: 0.88rem; color: var(--muted); }
+  .spread > span:first-child { margin-right: 0.3rem; }
+  .sp { display: inline-flex; align-items: center; gap: 0.15rem; }
+  h3 { margin-top: 1.8rem; }
+</style>

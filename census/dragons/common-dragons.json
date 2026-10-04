@@ -1,0 +1,183 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "common-dragons",
+  "group": "dragons",
+  "title": "Common Dragons",
+  "order": 1,
+  "meta": { "ticket": "WD-91", "confluencePageId": "16318466", "updated": "2026-10-04" },
+
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      { "id": "dragon", "name": "Dragon",
+        "records": [ { "edid": "EncDragon01Fire", "formKey": "01CA03:Skyrim.esm" } ],
+        "level": { "kind": "fixed", "value": 10 },
+        "target": { "band": "VIII", "status": "proposed", "source": "bands-of-power.md: low-level dragons" } },
+      { "id": "blood-dragon", "name": "Blood Dragon",
+        "records": [ { "edid": "EncDragon02Fire", "formKey": "0F80FD:Skyrim.esm" } ],
+        "level": { "kind": "fixed", "value": 20 },
+        "target": { "band": "VIII", "status": "proposed", "source": "bands-of-power.md: low-level dragons" } },
+      { "id": "frost-dragon", "name": "Frost Dragon",
+        "records": [ { "edid": "EncDragon03Frost", "formKey": "0351C3:Skyrim.esm" } ],
+        "level": { "kind": "fixed", "value": 30 },
+        "target": { "band": "VIII", "status": "proposed", "source": "bands-of-power.md: low-level dragons" } },
+      { "id": "elder-dragon", "name": "Elder Dragon",
+        "records": [
+          { "edid": "EncDragon04Fire", "formKey": "0F811B:Skyrim.esm" },
+          { "edid": "EncDragon04Frost", "formKey": "0F811A:Skyrim.esm" } ],
+        "level": { "kind": "fixed", "value": 40 },
+        "target": { "band": "IX", "status": "proposed", "source": "bands-of-power.md: dragons" } },
+      { "id": "ancient-dragon", "name": "Ancient Dragon",
+        "records": [
+          { "edid": "EncDragon05Fire", "formKey": "0F811C:Skyrim.esm" },
+          { "edid": "EncDragon05Frost", "formKey": "0F811E:Skyrim.esm" } ],
+        "level": { "kind": "fixed", "value": 50 },
+        "target": { "band": "IX", "status": "proposed", "source": "bands-of-power.md: dragons" } },
+      { "id": "serpentine-dragon", "name": "Serpentine Dragon",
+        "records": [
+          { "edid": "DLC2EncDragon06Fire", "formKey": "03612E:Dragonborn.esm" },
+          { "edid": "DLC2EncDragon06Frost", "formKey": "02C88A:Dragonborn.esm" },
+          { "edid": "DLC2EncDragon06FireNoScript", "formKey": "036134:Dragonborn.esm" },
+          { "edid": "DLC2EncDragon06FrostNoScript", "formKey": "036133:Dragonborn.esm" } ],
+        "level": { "kind": "fixed", "value": 58 },
+        "target": { "band": "IX", "status": "proposed", "source": "bands-of-power.md: dragons" } },
+      { "id": "revered-dragon", "name": "Revered Dragon",
+        "records": [ { "edid": "DLC1EncDragon06Fire", "formKey": "008431:Dawnguard.esm" } ],
+        "level": { "kind": "fixed", "value": 62 },
+        "target": { "band": "IX", "status": "proposed", "source": "bands-of-power.md: dragons" } },
+      { "id": "legendary-dragon", "name": "Legendary Dragon",
+        "records": [ { "edid": "DLC1EncDragon07Fire", "formKey": "00C5F5:Dawnguard.esm" } ],
+        "level": { "kind": "fixed", "value": 75 },
+        "target": { "band": "IX", "status": "proposed", "source": "bands-of-power.md: dragons" } },
+      { "id": "skuldafn-dragon-draugr", "name": "Dragon",
+        "records": [ { "edid": "dunSkuldafnDragonDraugr", "formKey": "096E48:Skyrim.esm" } ],
+        "level": { "kind": "fixed", "value": 20 },
+        "target": { "band": "VIII", "status": "proposed", "source": "bands-of-power.md: low-level dragons" } },
+      { "id": "bleak-falls-dragon", "name": "Dragon",
+        "records": [ { "edid": "BleakFallsDragon", "formKey": "0354CA:Skyrim.esm" } ],
+        "level": { "kind": "fixed", "value": 20 },
+        "target": { "band": "VIII", "status": "proposed", "source": "bands-of-power.md: low-level dragons" } },
+      { "id": "dragon-skeleton", "name": "Dragon",
+        "records": [ { "edid": "DLC2DragonSkeleton", "formKey": "02BF3B:Dragonborn.esm" } ],
+        "race": { "edid": "UndeadDragonRace", "formKey": "1052A3:Skyrim.esm" },
+        "level": { "kind": "fixed", "value": 20 },
+        "target": { "band": "VIII", "status": "proposed", "source": "bands-of-power.md: low-level dragons" } }
+    ]
+  },
+
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncDragon01Fire` 01CA03 also needs `AlduinBase` 08E4F1 (Alduin, PC×1.2 [10–100], on *Unique Dragons*): it uses 01CA03 as its template but not for `Stats`. Every other rung row and `BleakFallsDragon` also take their look from 01CA03 (the Serpentine rows from `EncDragon05Frost`) and keep their own levels.",
+      "The other rows: no other record keeps its own level.",
+      "`dunLabyrinthianUndeadDragon` 09192C (the Skeletal Dragon, 20) is a dragon with no template; it is on *Unique Dragons*.",
+      "Every other dragon record (the `NoScript` and `_MQ06` copies, the Frost and Snow variants, `lvlDragon`, `DLC2lvlDragon` and the other wrappers, the MQ206 and MQ306 dragons, the Skuldafn copies, Paarthurnax, Vulthuryol, Sahrotaar) carries `Stats` and follows its template or list."
+    ]
+  },
+
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      { "list": { "edid": "LCharDragonAny", "formKey": "05EACF:Skyrim.esm" },
+        "override": "Dawnguard override",
+        "gate": "all levels ≤ player, each",
+        "entries": [
+          { "at": 1,  "label": "Dragon Fire + Frost", "count": 2 },
+          { "at": 18, "label": "Blood Fire + Frost", "count": 2 },
+          { "at": 27, "label": "Frost", "count": 2 },
+          { "at": 36, "label": "Elder Fire + Frost", "count": 2 },
+          { "at": 45, "label": "Ancient Fire + Frost", "count": 2 },
+          { "at": 59, "label": "Revered", "count": 2 },
+          { "at": 78, "label": "Legendary Fire + Frost", "count": 2 } ],
+        "note": "the `NoScript` copies; Skyrim.esm's own list stops at 45",
+        "owner": "`lvlDragon` 05EACE (placed in 19 cells, below; aliases of `WE03` 09A9C9, `WE04` 09C1B8, `WE08` 09CB5B, `WEJS18` 0E8929, `WIChangeLocation09` 050AF1); Sahloknir, Vuljotnaak, Nahagliiv, Viinturuth through it (Unique Dragons)" },
+      { "list": { "edid": "DLC2LCharDragonAny", "formKey": "036135:Dragonborn.esm" },
+        "gate": "all levels ≤ player, each",
+        "entries": [
+          { "at": 1,  "label": "Dragon Fire + Frost", "count": 2 },
+          { "at": 18, "label": "Blood Fire + Frost", "count": 2 },
+          { "at": 27, "label": "Frost", "count": 2 },
+          { "at": 36, "label": "Elder Fire + Frost", "count": 2 },
+          { "at": 45, "label": "Ancient Fire + Frost", "count": 2 },
+          { "at": 55, "label": "Serpentine Fire + Frost", "count": 2 } ],
+        "note": "as `LCharDragonAny` @1–45; no Revered or Legendary",
+        "owner": "`DLC2lvlDragon` 036136:Dragonborn.esm (alias `Dragon` of `DLC2WE10` 0362B9)" }
+    ]
+  },
+
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      { "name": "Dragon", "base": [ { "edid": "lvlDragon", "formKey": "05EACE:Skyrim.esm" } ],
+        "locations": [
+          { "cell": { "edid": "MountAnthorExterior01", "formKey": "008FBC:Skyrim.esm" } },
+          { "cell": { "edid": "DragonLair10Exterior03", "formKey": "0094A6:Skyrim.esm" } },
+          { "cell": { "edid": "ShearpointExterior02", "formKey": "009118:Skyrim.esm" } },
+          { "cell": { "edid": "BonestrewnCrestExterior01", "formKey": "00BA46:Skyrim.esm" }, "ref": { "edid": "DragonLair8Boss", "formKey": "035541:Skyrim.esm" } },
+          { "cell": { "edid": "SkybornAltarExterior01", "formKey": "00943A:Skyrim.esm" } },
+          { "cell": { "edid": "DragonLair02Exterior02", "formKey": "009CDC:Skyrim.esm" } },
+          { "cell": { "edid": "DragonLair04Exterior01", "formKey": "009896:Skyrim.esm" } },
+          { "cell": { "edid": "DragonLair06Exterior02", "formKey": "00BB8C:Skyrim.esm" } },
+          { "cell": { "edid": "DragonLair01Exterior02", "formKey": "00701E:Skyrim.esm" } },
+          { "cell": { "edid": "DragonLair07Exterior03", "formKey": "00BDCD:Skyrim.esm" } },
+          { "cell": { "edid": "ArcwindPointExterior08", "formKey": "0098BA:Skyrim.esm" } },
+          { "cell": { "edid": "DragonMoundTundraMarsh01", "formKey": "009408:Skyrim.esm" } },
+          { "cell": { "edid": "DragonMoundReach02", "formKey": "0099E2:Skyrim.esm" } },
+          { "cell": { "edid": "DragonMoundPineForest02", "formKey": "009C01:Skyrim.esm" } },
+          { "cell": { "edid": "DragonMoundTundra04", "formKey": "00958B:Skyrim.esm" } },
+          { "cell": { "edid": "MilitaryCampPaleImperial07", "formKey": "0092AC:Skyrim.esm" } },
+          { "cell": { "label": "Tamriel cell", "formKey": "00913C:Skyrim.esm" } },
+          { "cell": { "edid": "DragonMoundReach01", "formKey": "0070DC:Skyrim.esm" } },
+          { "cell": { "edid": "DragonMoundReach03", "formKey": "006FA1:Skyrim.esm" } } ] },
+      { "name": "Dragon", "base": [ { "edid": "DLC2lvlDragon", "formKey": "036136:Dragonborn.esm" } ],
+        "locations": [
+          { "cell": { "edid": "DLC2SaeringsWatchExterior01", "formKey": "00ED47:Dragonborn.esm" } },
+          { "cell": { "edid": "DLC2POIDragonMound01", "formKey": "00EE6B:Dragonborn.esm" } },
+          { "cell": { "edid": "DLC2POIDragonMound01DB", "formKey": "00ECBF:Dragonborn.esm" } },
+          { "cell": { "edid": "DLC2SolstheimWorld" }, "persistent": true, "ref": { "formKey": "039887:Dragonborn.esm" }, "disabled": true } ] },
+      { "name": "Dragon",
+        "base": [
+          { "edid": "MQ206Dragon", "formKey": "044245:Skyrim.esm" },
+          { "edid": "MQ206Dragon2", "formKey": "101E6C:Skyrim.esm" },
+          { "edid": "MQ206Dragon3", "formKey": "101E6D:Skyrim.esm" },
+          { "edid": "MQ206Dragon4", "formKey": "101E6E:Skyrim.esm" } ],
+        "baseNote": "10 from `EncDragon01Fire`",
+        "locations": [
+          { "cell": { "edid": "Tamriel" }, "persistent": true, "refText": "`MQ206Dragon1Ref` 043788 – `…5Ref` 08BC83, all initially disabled but `MQ206Dragon2Ref` 070E9B" } ],
+        "quest": "*Alduin's Bane*" },
+      { "name": "Dragon",
+        "base": [
+          { "edid": "MQ306DragonA", "formKey": "09E07A:Skyrim.esm" },
+          { "edid": "MQ306DragonB", "formKey": "09E07B:Skyrim.esm" },
+          { "edid": "MQ306DragonC", "formKey": "09E07C:Skyrim.esm" } ],
+        "baseNote": "10 from `EncDragon01Fire`",
+        "locations": [
+          { "cell": { "edid": "Tamriel" }, "persistent": true, "refText": "`MQ306DragonRef1–8` 09E07D–09E091", "disabled": true } ],
+        "quest": "*Dragonslayer*" },
+      { "name": "Dragon, Frost Dragon, Elder Dragon",
+        "base": [
+          { "edid": "dunSkuldafnDragonDraugrFrost", "formKey": "10FEED:Skyrim.esm" },
+          { "edid": "dunSkuldafnDragonDraugrTundra", "formKey": "10FEEE:Skyrim.esm" },
+          { "edid": "dunSkuldafnDragonDraugrUnaggressiveFrost", "formKey": "10FEEC:Skyrim.esm" },
+          { "edid": "dunSkuldafnDragonDraugrUnaggressive", "formKey": "096E4D:Skyrim.esm" } ],
+        "baseNote": "10, 10; 30; 40",
+        "locations": [
+          { "cell": { "label": "SkuldafnWorld cell", "formKey": "02792A:Skyrim.esm" }, "ref": { "formKey": "013B4A:Skyrim.esm" } },
+          { "cell": { "edid": "xWilderness", "formKey": "027951:Skyrim.esm" }, "ref": { "formKey": "0132F0:Skyrim.esm" } },
+          { "cell": { "edid": "SkuldafnTop", "formKey": "02794E:Skyrim.esm" }, "refText": "refs 08B0A9, 013B68", "disabled": true } ] },
+      { "name": "Dragon", "base": [ { "edid": "BleakFallsDragon", "formKey": "0354CA:Skyrim.esm" } ],
+        "locations": [
+          { "cell": { "edid": "Tamriel" }, "persistent": true, "ref": { "edid": "bleakFallsDragonREF", "formKey": "0263CE:Skyrim.esm" }, "disabled": true } ],
+        "quest": "forced ref of `dunBleakFallsBarrowQST` 0354CC" },
+      { "name": "Dragon", "base": [ { "edid": "EncDragon01Fire", "formKey": "01CA03:Skyrim.esm" } ],
+        "locations": [
+          { "cell": { "edid": "Tamriel" }, "persistent": true, "refText": "`E3dragon01` 0936AD and `BFBDragon` 09FBEE", "disabled": true } ] },
+      { "name": "Ancient Dragon", "base": [ { "edid": "EncDragon05Fire", "formKey": "0F811C:Skyrim.esm" } ],
+        "locations": [
+          { "cell": { "edid": "aaaMarkers", "formKey": "05EAC7:Skyrim.esm" }, "ref": { "formKey": "10FE97:Skyrim.esm" }, "note": "dev cell" } ] },
+      { "name": "`dunSkuldafnDragonDraugr`, `DLC2DragonSkeleton`, the scripted rung records (`EncDragon02Fire`, `…03Frost`, `…04*`, `…05Frost`, `DLC1EncDragon06Fire`, `DLC1EncDragon07Fire`, `DLC2EncDragon06Fire`, `…Frost`)",
+        "notPlaced": true, "note": "the lists draw the `NoScript` copies" }
+    ]
+  }
+}

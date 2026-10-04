@@ -53,7 +53,8 @@ ladder. Its levels, rosters and gear rules are the design the rebuild works from
 | **1 — World research** | `arch-docs/world/*` — enemy taxonomy, factions, dungeons, regions, progression routes, lore constraints | ✅ complete |
 | **2 — Prior art** | how other deleveling mods work, and what each costs | ✅ complete |
 | **3 — Design spec** | `arch-docs/design/*` — the tier ladder, archetype tiers, loot model, and the implementation-strategy decision | ✅ complete |
-| **4 — Build** | `src/Ehlnofey/EhlnofeyESP/` — the plugin YAML and its generator scripts, packaged and released | ▶ restarted — scaffold only |
+| **4 — Build** | `src/Ehlnofey/EhlnofeyESP/` — the plugin YAML and its generator scripts, packaged and released | ⏸ paused for the census — scaffold only |
+| **Census** | `census/*.json` + the [census site](#the-census-site): every enemy's level, lists and placements, and its target band | ▶ in progress — Dragons published |
 
 **How it is built: flattening the leveled lists.** `Ehlnofey.esp` is a single ESL-flagged plugin of
 override records, with no scripts and no runtime rules. Every leveled list (`LVLN`/`LVLI`) loses its
@@ -65,6 +66,29 @@ name: a Draugr Scourge is the same fight in every barrow. The architecture docum
 **Requirements** (planned): Skyrim SE/AE with all three DLC and the Anniversary Edition Creation Club
 content, because several Creation Club packs re-level vanilla lists from start-up scripts and have to
 be neutralised.
+
+## The census site
+
+**https://whisperdealer.github.io/ehlnofey/** shows the design in one place: the **Ten Bands of
+Power** (the level bands every creature is set into, `arch-docs/bands-of-power.md`) and the **enemy
+census**, which records every enemy's vanilla level, the record that owns it, the leveled lists that
+draw it, where it is placed, and the band it is meant to land in.
+
+The data is JSON in [`census/`](census/), which is the source of truth (the Confluence census pages are
+generated mirrors of it). The site is an [Astro](https://astro.build) project in `site/`, published
+by `.github/workflows/pages.yml`. The raw JSON is served too, at `/ehlnofey/data/index.json`.
+Dragons is the first family migrated.
+
+```sh
+cd site
+npm ci
+npm run dev        # http://localhost:4321/ehlnofey/
+npm run schema     # validate census/*.json, regenerate census/schema/
+npm run build      # the static site, into site/dist/
+```
+
+`build/Test-CensusJson.ps1` runs the key checks without Node. Node is used for the site only; the
+mod toolchain is PowerShell 5.1.
 
 ---
 

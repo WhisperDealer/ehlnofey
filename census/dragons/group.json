@@ -1,0 +1,44 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "dragons",
+  "title": "Dragons",
+  "order": 1,
+  "meta": {
+    "ticket": "WD-91",
+    "ticketTitle": "Rebuild: the dragons (the dragon ladder, the named dragons, Miraak and his dragons), vanilla, DLC and CC",
+    "spec": "archetype-tiers.md §3.4",
+    "confluencePageId": "16351233",
+    "updated": "2026-10-04"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record.",
+  "families": [
+    { "id": "common-dragons", "holds": "the dragon ladder (Dragon 10 · Blood 20 · Frost 30 · Elder 40 · Ancient 50), Dragonborn's Serpentine 58, Dawnguard's Revered 62 and Legendary 75, `LCharDragonAny` and `DLC2LCharDragonAny`, the generic quest and dungeon dragons" },
+    { "id": "unique-dragons", "holds": "Alduin, Paarthurnax (moved from Greybeards), Mirmulnir, Sahloknir, Vuljotnaak, Nahagliiv, Viinturuth, Odahviing, Vulthuryol, the Labyrinthian Skeletal Dragon, Durnehviir, Naaslaarum, Voslaarum" },
+    { "id": "dragonborn", "holds": "Miraak (moved here from Uncategorised), Sahrotaar, Krosulhah, the `DLC2MQ06` dragons, the Ancient Dragonborn" }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-10-03)",
+    "confidence": "verified",
+    "text": "Every NPC in Skyrim, Update, Dawnguard, HearthFires, Dragonborn and the 74 CC packs whose race is `DragonRace` 012E82, `AlduinRace` 0E7713, `UndeadDragonRace` 1052A3, `DLC1UndeadDragonRace` 0117DE:Dawnguard.esm, `dlc2SpectralDragonRace` 01F98F:Dragonborn.esm, `DragonBlackRace` 02C88B:Dragonborn.esm or `DLC2DragonBlackRace` 02C88C:Dragonborn.esm (no NPC uses the last two), followed through every template and `LVLN`, plus every NPC templated on a dragon list (the `lvl*Dragon` wrappers and the named MQ dragons sit on race 109C7C, not a dragon race); then every placed reference in every cell and worldspace, and every quest that names one of them or one of their placed refs. No CC pack adds a dragon or overrides a dragon list, and no quest adds to a dragon list at runtime. Everything found is on a child page except the following."
+  },
+  "filedElsewhere": [
+    { "record": "`DLC1DurnehviirSummon` 00C71A:Dawnguard.esm", "what": "Durnehviir, summoned (20)", "where": "Conjured → Summoned Creatures → Constructs & Dragons" },
+    { "record": "`dlc2SpectralDragonSummon` 0265B1:Dragonborn.esm", "what": "Spectral Dragon (9), a summon. The `dlc2DB*` spells that place it are held by no NPC, list, tome or quest; the Ancient Dragonborn does not cast them", "where": "Conjured → Summoned Creatures → Constructs & Dragons" },
+    { "record": "`dlc2FireWyrmCreated` 01F990:Dragonborn.esm", "what": "Fire Wyrm (11), a summon with no caster", "where": "dropped, noted on Constructs & Dragons" },
+    { "record": "the dragon priests (`DragonPriestRace` 0131EF, `DLC2AcolyteDragonPriestRace` 03911A:Dragonborn.esm)", "what": "Vokun, Krosis, Nahkriin and the rest", "where": "Undead → Dragon Priests" },
+    { "record": "the `DLC2LCharCultist` ladder", "what": "Miraak's cultists", "where": "Factions → Minor Factions → Miraak Cultists" }
+  ],
+  "neverMet": [
+    { "record": "`EncDragonSnowNoScript` 0E8710 (refs `MQ206DragonCorpseRef01` 0CAF6B, `…03` 1019A1) · `EncDragon02FireNoScript` 0F8117 (ref `MQ206DragonCorpseRef02` 1019A3)", "what": "dragons on the Throat of the World (`ThroatoftheWorld02` 009729)", "why": "corpses" },
+    { "record": "`DLC2TameDragonVoice` 01EF73:Dragonborn.esm", "what": "voice actor for the tamed dragon (10)", "why": "placed only in the test cell `CWTestHold` 01B44A" }
+  ],
+  "neverInGame": {
+    "confidence": "verified",
+    "rows": [
+      { "record": "`AudioTemplateDragon` 02F2F0 · `AudioTemplateDragonQuiet` 10FD64", "why": "audio templates" },
+      { "record": "`E3DemoEncDragonFrost` 0EAFB4 · `testjeffbDragon` 017A22:Dragonborn.esm", "why": "demo and test records (the E3 ref `E3Dragon02` 0936BE is initially disabled)" },
+      { "record": "`DLC1EncDragonIceLake01` 0038BE:Dawnguard.esm · `DLDC2EncDragon03FrostNoScript_MQ06` 03D5BC:Dragonborn.esm", "why": "not placed, in no list, named by no quest" },
+      { "record": "`AADeleteWhenDoneTestJeremyBig` 10D140", "why": "a test NPC (\"TestJeremyBig\", 1) that `DLC2LCharDragonAnyMQ06` draws @27 (see Dragonborn)" }
+    ]
+  }
+}

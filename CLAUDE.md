@@ -31,6 +31,8 @@ Serialize/deserialize commands are in `README.md`.
   `README.md` and the `bsa-extract` / `pex-decompile` / `papyrus-compile` skills. Record any import
   directory a script needs here the first time it is needed.
 - **Testing** in an MO2 modlist: use the `mod-deploy` skill, never copy by hand.
+- **Census site:** `site/` (Astro). `npm run dev` previews at `http://localhost:4321/ehlnofey/`;
+  `npm run schema` validates `census/`; `npm run confluence` renders the Confluence mirror pages.
 
 ## Folder map
 
@@ -43,6 +45,9 @@ build/                  # build.ps1, Test-RecordYaml.ps1, manifest.json (release
 arch-docs/              # research, design spec, gotchas (map below)
 reference/              # gitignored, LOOKUP + BUILD INPUT: Base/ = the five Bethesda masters,
                         #   mods/CreationClubYaml/ = the CC packs
+census/                 # the enemy census as JSON, source of truth for migrated groups (Dragons first)
+  bands.json            #   the ten bands of power; <group>/group.json + <family>.json; schema/
+site/                   # Astro site that renders census/ to GitHub Pages (Node, site only)
 modlist/                # gitignored MO2 instance
 ```
 
@@ -88,10 +93,34 @@ answers to these; a violation needs an explicit exception recorded in `arch-docs
 **Non-goals:** not a combat, perk, survival or new-content mod. Ehlnofey changes *where the numbers come
 from*, and nothing else.
 
+**The ten bands of power** (`arch-docs/bands-of-power.md`, poster `arch-docs/Ehlnofey Level Bands.png`,
+data `census/bands.json`): Weak 1–6 · Common 7–13 · Trained 14–20 · Blooded 21–27 · Experienced 28–34 ·
+Elite 35–41 · Powerful 42–50 · Fabled 51–65 · Mythic 66–81 · Legendary 82+. **This is the band
+authority** (user, 2026-10-04): it supersedes the nine-band table and the decided dragon levels in
+`archetype-tiers.md`, which carry a superseded note.
+
 ## Current phase
 
 **Back in design as of 2026-09-30: the enemy census.** Phase 4 (the rebuild, restarted 2026-09-27)
 is **paused**. Before any more records are authored, we map every enemy and document it.
+
+**The census site (since 2026-10-04).** The census is moving from Confluence into the repo as JSON and is
+published at **https://whisperdealer.github.io/ehlnofey/** (Astro, `site/`; deployed by
+`.github/workflows/pages.yml` on every push to `main` that touches `census/` or `site/`).
+- **`census/` is the source of truth for every migrated group**: `census/<group>/group.json` (the group
+  page) plus one `<family>.json` per family page; `census/bands.json` is the home page. The schema is
+  `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
+  everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons.** Every
+  other group stays Confluence-first until it is migrated.
+- **To change a migrated page:** edit the JSON, run `npm run schema`, then `npm run confluence --
+  <group>/<family>` and push its output to the page's `meta.confluencePageId` with
+  `updateConfluencePage` (`contentFormat: markdown`). Confluence is a mirror, never edited by hand.
+- **To migrate a group:** fetch its pages, transcribe them into JSON (FormKeys always
+  `<hex>:<Master>`, never bare hex; check the EditorID/FormKey pairs against the `reference/Base`
+  filenames), add a target band per row, build, then re-render the Confluence pages. The version
+  message names the version that holds the hand-written page.
+- **Node is for the site only** (`site/`, Node ≥ 22.18, `npm ci` then `npm run dev`). The mod toolchain
+  stays PowerShell 5.1 (Guardrail 8).
 
 - **Scope, per enemy:** its **level** (and which record owns it; follow the template chain), its
   **gear** (outfit, inventory, death item, walked to the leaves), and every **leveled list** it
@@ -103,6 +132,10 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Design changes that fall out of it go into `archetype-tiers.md` once the user decides them.
   **Census pages hold vanilla data only** (user, 2026-09-30): no Ehlnofey levels, rosters or weights
   until the census is done. Where a page had them, the version message names the version that holds them.
+  **One exception, the target band** (user, 2026-10-04): every record row in `census/` JSON carries
+  `target: { band, level?, status, source }`, its Ehlnofey band from `arch-docs/bands-of-power.md`.
+  `decided` only where the bands doc names it (e.g. Alduin X 150, Miraak X 100); everything else is
+  `proposed`, drawn dashed on the site. No levels, rosters or weights beyond that.
   **Page layout** (user, 2026-09-30; the Mudcrab page is the model): no source line (the group
   page cites the ticket), just three headed tables and **no prose**:
   1. **Records**: Record · Name · Level, one row per *distinct* enemy. Variants that inherit their
@@ -120,7 +153,7 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   Falmer is the model): a **Gear** table (Records · Weapons · Armor · Skin), **Gear lists** (each
   weapon/outfit list walked to its leaves) and **Gear items** (whether the player can wear each one;
   skins are `NonPlayable`).
-- **The census lives in Confluence, not in the repo.** Space *WhisperDealer*
+- **The census lives in Confluence** (except the groups migrated to `census/`, above). Space *WhisperDealer*
   (`~71202046a32e88a7ba474cbdae20a1db1fba60`), root page **Ehlnofey** (id `12451841`), on
   `whisperdealer.atlassian.net` through the `atlassian` MCP. The tree is **root → one group page per
   Jira ticket → one child page per family**. **Factions** (user, 2026-10-02) is a top-level page
@@ -229,14 +262,8 @@ is **paused**. Before any more records are authored, we map every enemy and docu
   family; sub-groups **Summoned Creatures** (*Summoned Atronachs*, *Familiars & Spirit Animals*,
   *Undead Summons*, *Daedric Summons*, *Constructs & Dragons*) and **Summoned NPCs** (*Summoned
   Dremora*, *Heroes & Spirits*), each page with a "Summoned by" table: player source and NPC casters),
-  Dragons (WD-91, top-level, user 2026-10-03: *Common Dragons* (`EncDragon01–05` 10 · 20 · 30 · 40 · 50,
-  Serpentine 58, Revered 62, Legendary 75; `LCharDragonAny`, `DLC2LCharDragonAny`), *Unique Dragons*
-  (Alduin, still a dragon by the user's call; Paarthurnax, moved from Greybeards; the named MQ dragons, which **are** NPC records on race
-  109C7C templated through `lvlDragon`/`lvlMQ104Dragon`/`lvlMQDragon`; Odahviing, Vulthuryol, Durnehviir,
-  the Skeletal Dragon, Naaslaarum, Voslaarum) and *Dragonborn* (Miraak, merged from the retired
-  Uncategorised → *Miraak* page; Sahrotaar, Krosulhah, the MQ06 dragons, the Ancient Dragonborn);
-  the Spectral Dragon summon is on Constructs & Dragons, though no
-  NPC, tome or quest holds its `dlc2DB*` spells), World (WD-92, top-level, user 2026-10-03: the named
+  Dragons (WD-91, top-level: *Common Dragons*, *Unique Dragons* (Alduin and Paarthurnax included) and
+  *Dragonborn* (Miraak); **migrated to `census/dragons/`, so edit the JSON, not Confluence**), World (WD-92, top-level, user 2026-10-03: the named
   NPCs, hold by hold; one page per hold (*Haafingar*, *Hjaalmarch*, *The Pale*, *Winterhold Hold*,
   *Eastmarch*, *The Rift*, *Whiterun Hold*, *Falkreath Hold*, *The Reach*, *Solstheim*), each with a
   city child (Solitude, Morthal, Dawnstar, Winterhold, Windhelm, Riften, Whiterun, Falkreath, Markarth,

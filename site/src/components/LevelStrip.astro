@@ -1,0 +1,113 @@
+---
+// Each record of a family on the band scale: its vanilla level (a dot, the rungs of the list it
+// draws from, or the span a PC-scaled level can reach) against its Ehlnofey target band.
+import type { RecordRowData } from '../schema.ts';
+import { bands, bandById, pos, segment } from '../lib/census.ts';
+import { levelMark } from '../lib/format.ts';
+import BandChip from './BandChip.astro';
+
+interface Props { rows: RecordRowData[] }
+const { rows } = Astro.props;
+
+const vanillaTitle = (r: RecordRowData) => {
+  const m = levelMark(r.level);
+  if (m.kind === 'point') return `vanilla ${m.v}`;
+  if (m.kind === 'range') return `vanilla PC-scaled, ${m.min}–${m.max}`;
+  return `vanilla, by list: ${m.vs.join(' · ')}`;
+};
+---
+<figure class="strip panel">
+  <figcaption>
+    <span class="legend"><i class="lg-dot"></i> vanilla level</span>
+    <span class="legend"><i class="lg-range"></i> vanilla range (scales with the player)</span>
+    <span class="legend"><i class="lg-rungs"></i> vanilla list rungs</span>
+    <span class="legend"><i class="lg-target"></i> target band, decided</span>
+    <span class="legend"><i class="lg-proposed"></i> target band, proposed</span>
+    <span class="legend"><i class="lg-diamond"></i> target level</span>
+  </figcaption>
+
+  <div class="lane axis" aria-hidden="true">
+    <div></div>
+    <div class="track">
+      {bands.bands.map((b) => {
+        const s = segment(b);
+        return <span class="axis-seg" style={`left:${s.left}%;width:${s.width}%;--c:${b.colour}`}>{b.id}</span>;
+      })}
+    </div>
+  </div>
+
+  {rows.map((r) => {
+    const m = levelMark(r.level);
+    const tb = bandById(r.target.band);
+    const ts = segment(tb);
+    const proposed = r.target.status === 'proposed';
+    return (
+      <div class="lane">
+        <div class="label">
+          <a href={`#rec-${r.id}`}>{r.name}</a>
+          <BandChip id={r.target.band} proposed={proposed} />
+        </div>
+        <div class="track" title={`${r.name}: ${vanillaTitle(r)} → target ${tb.id} ${tb.name}${r.target.level ? ` (${r.target.level})` : ''}, ${r.target.status}`}>
+          {bands.bands.map((b) => {
+            const s = segment(b);
+            return <span class="bg" style={`left:${s.left}%;width:${s.width}%;--c:${b.colour}`}></span>;
+          })}
+          <span class:list={['target', { proposed }]} style={`left:${ts.left}%;width:${ts.width}%;--c:${tb.colour}`}></span>
+          {m.kind === 'range' && (
+            <span class="range" style={`left:${pos(m.min)}%;width:${pos(m.max) - pos(m.min)}%`}>
+              <b style="left:0"></b><b style="right:0"></b>
+            </span>
+          )}
+          {m.kind === 'rungs' && (
+            <>
+              <span class="rungline" style={`left:${pos(Math.min(...m.vs))}%;width:${pos(Math.max(...m.vs)) - pos(Math.min(...m.vs))}%`}></span>
+              {m.vs.map((v) => <span class="rung" style={`left:${pos(v)}%`}></span>)}
+            </>
+          )}
+          {m.kind === 'point' && <span class="dot" style={`left:${pos(m.v)}%`}></span>}
+          {r.target.level && <span class="diamond" style={`left:${pos(r.target.level)}%;--c:${tb.colour}`}></span>}
+        </div>
+      </div>
+    );
+  })}
+</figure>
+
+<style>
+  .strip { margin: 0; padding: 1rem 1.2rem 1.1rem; }
+  figcaption { display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; font-size: 0.82rem; color: var(--muted); margin-bottom: 0.9rem; }
+  .legend { display: inline-flex; align-items: center; gap: 0.4rem; }
+  .legend i { display: inline-block; position: relative; }
+  .lg-dot { width: 10px; height: 10px; border-radius: 50%; background: #fff; }
+  .lg-range { width: 22px; height: 6px; border-radius: 3px; background: rgba(255,255,255,.55); }
+  .lg-rungs { width: 22px; height: 2px; background: rgba(255,255,255,.55); box-shadow: -8px 0 0 2px #fff inset; }
+  .lg-target { width: 18px; height: 12px; border-radius: 3px; background: rgba(214, 90, 43, .45); border: 1.5px solid #d65a2b; }
+  .lg-proposed { width: 18px; height: 12px; border-radius: 3px; border: 1.5px dashed #d65a2b; }
+  .lg-diamond { width: 9px; height: 9px; background: var(--gold); transform: rotate(45deg); }
+
+  .lane { display: grid; grid-template-columns: minmax(150px, 210px) 1fr; gap: 0.9rem; align-items: center; min-height: 34px; }
+  .lane + .lane { border-top: 1px solid rgba(214,196,150,.06); }
+  .label { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; font-size: 0.93rem; min-width: 0; }
+  .label a { color: var(--text); text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .label a:hover { color: var(--gold); }
+
+  .track { position: relative; height: 24px; }
+  .bg { position: absolute; top: 9px; height: 6px; background: var(--c); opacity: 0.22; }
+  .target { position: absolute; top: 2px; bottom: 2px; border-radius: 4px; background: color-mix(in srgb, var(--c) 42%, transparent); border: 1.5px solid var(--c); }
+  .target.proposed { background: color-mix(in srgb, var(--c) 12%, transparent); border-style: dashed; }
+  .dot, .rung { position: absolute; top: 50%; width: 11px; height: 11px; margin: -5.5px 0 0 -5.5px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 2px rgba(7,10,18,.85); }
+  .rung { width: 8px; height: 8px; margin: -4px 0 0 -4px; }
+  .rungline { position: absolute; top: 11px; height: 2px; background: rgba(255,255,255,.5); }
+  .range { position: absolute; top: 9px; height: 6px; border-radius: 3px; background: rgba(255,255,255,.55); }
+  .range b { position: absolute; top: -3px; width: 2px; height: 12px; background: #fff; }
+  .diamond { position: absolute; top: 50%; width: 11px; height: 11px; margin: -5.5px 0 0 -5.5px; background: var(--gold); transform: rotate(45deg); box-shadow: 0 0 0 2px rgba(7,10,18,.85); }
+
+  .axis { min-height: 22px; }
+  .axis .track { height: 18px; }
+  .axis-seg { position: absolute; top: 0; bottom: 0; display: grid; place-items: center; font: 700 0.62rem var(--serif); color: var(--c); border-left: 1px solid rgba(214,196,150,.1); }
+
+  @media (max-width: 640px) {
+    .lane { grid-template-columns: 1fr; gap: 0.2rem; padding: 0.35rem 0; }
+    .axis > div:first-child { display: none; }
+    .axis-seg { font-size: 0.5rem; }
+  }
+</style>

@@ -1,0 +1,24 @@
+---
+// A band's numeral in its colour. `proposed` draws it hollow: an open call, not a decision.
+import { bandById } from '../lib/census.ts';
+interface Props { id: string; size?: 'sm' | 'lg'; proposed?: boolean; title?: string }
+const { id, size = 'sm', proposed = false, title } = Astro.props;
+const b = bandById(id);
+---
+<span
+  class:list={['chip', size, { proposed, light: b.id === 'X' }]}
+  style={`--c:${b.colour}`}
+  title={title ?? `${b.id} ${b.name}${proposed ? ' (proposed)' : ''}`}
+>{b.id}</span>
+
+<style>
+  .chip {
+    display: inline-grid; place-items: center; min-width: 2.1em; height: 1.7em; padding: 0 0.35em;
+    border-radius: 6px; background: var(--c); color: #fff; border: 1.5px solid var(--c);
+    font: 700 0.8rem/1 var(--serif); letter-spacing: 0.04em; text-shadow: 0 1px 1px rgba(0,0,0,.35);
+    vertical-align: middle;
+  }
+  .chip.light { color: #1b160b; text-shadow: none; }
+  .chip.lg { width: 56px; height: 56px; min-width: 0; font-size: 1.15rem; border-radius: 8px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.12); }
+  .chip.proposed { background: transparent; color: var(--c); border-style: dashed; text-shadow: none; }
+</style>
