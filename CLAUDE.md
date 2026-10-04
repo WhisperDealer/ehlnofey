@@ -262,7 +262,7 @@ rules).
   Orchendor), *Boethiah Cultists* (bandit ladders, CC Goldbrand, the Champion), *Hunters of Hircine*,
   *Mythic Dawn (CC)* (The Cause), *Vaermina Devotees* (Storm ladder, Orcish Invaders, Veren and Thorek) and
   *Daedric Quest Foes* (Namira's Eola, Nimphaneth, Sanyon; Molag Bal's Logrolf; Clavicus Vile's
-  Sebastian Lort, who is `DA03Wizard` named by quest alias; Meridia's Malkoran)), Creation Club creatures (WD-71: no group page; each is on its kind's page under
+  Sebastian Lort, who is `DA03Wizard` named by quest alias; Meridia's Malkoran and Malkoran's Shade)), Creation Club creatures (WD-71: no group page; each is on its kind's page under
   World Creatures), Vampires (WD-72, a sub-group under Undead since 2026-10-02: *Common Vampires*, *Vampire Boss*, *Vampire Lord* (Harkon, plus Serana and Valerica by the user's call),
   *Volkihar Court*, *Vampire's Thrall*, *Death Hound*; *Gargoyle* moved to World Creatures → Monsters;
   thralls take bandit levels and gear;

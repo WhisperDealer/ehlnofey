@@ -155,7 +155,37 @@
           "status": "decided",
           "source": "user, 2026-10-05"
         },
-        "note": "the Necromancer boss rungs, via `Stats` from `LvlWarlockNecroBossMaleCondescending` 081EF5 (which Vals Veran, on *Named Warlocks*, shares). When he dies, his `FXChangeToNecroPriestScript` raises Malkoran's Shade `DA09ShadeUnique` 0EBE2E (26, its own level), filed on Undead → *Shades*"
+        "note": "the Necromancer boss rungs, via `Stats` from `LvlWarlockNecroBossMaleCondescending` 081EF5 (which Vals Veran, on *Named Warlocks*, shares). When he dies, his `FXChangeToNecroPriestScript` raises Malkoran's Shade (next row)"
+      },
+      {
+        "id": "malkorans-shade",
+        "name": "Malkoran's Shade",
+        "records": [
+          {
+            "edid": "DA09ShadeUnique",
+            "formKey": "0EBE2E:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "SkeletonNecroPriestRace",
+          "formKey": "0EBE18:Skyrim.esm"
+        },
+        "factions": [
+          {
+            "edid": "dunKilkreathFaction",
+            "formKey": "09CB65:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 26
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "no band named yet; Malkoran's band, as the second half of his fight"
+        },
+        "note": "Malkoran's second form: his `FXChangeToNecroPriestScript` (property `EncSkeletonNecroPriest`) raises it when he dies; its own death sets `DA09` stage 400 (`DA09ShadeUniqueScript`). No template, so changing Malkoran's list does not move it"
       }
     ]
   },
@@ -315,6 +345,17 @@
           }
         ],
         "quest": "`DA09` 04E4E1 alias dragonPriest (display name `DA09DragonPriestName` 04E4EB)"
+      },
+      {
+        "name": "Malkoran's Shade",
+        "base": [
+          {
+            "edid": "DA09ShadeUnique",
+            "formKey": "0EBE2E:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "spawned by Malkoran (`dunKilkreathWarlock` 09CB66, in `KilkreathRuins03` 027D1C) through his script property `EncSkeletonNecroPriest`"
       }
     ]
   },
@@ -344,6 +385,12 @@
         "weapons": "as the drawn boss leaf (`Inventory` from the list)",
         "armor": "as the drawn leaf",
         "skin": "race default"
+      },
+      {
+        "records": "Malkoran's Shade",
+        "weapons": "none; death item `DeathItemDragonPriest` 03AD7E",
+        "armor": "none",
+        "skin": "`SkinSkeletonNecroPriest` 0EBE8F"
       }
     ]
   },
@@ -355,6 +402,13 @@
           "label": "`LItemWarlockDagger`, `NecromancerOutfitHood50`, `LootWarlockRandom`, and the boss warlock leaves' gear"
         },
         "rolls": "as on *Common Warlocks*"
+      },
+      {
+        "list": {
+          "edid": "DeathItemDragonPriest",
+          "formKey": "03AD7E:Skyrim.esm"
+        },
+        "rolls": "death item, every entry: Bone Meal 034CDD ×1, `LootDraugrGoldBoss01` 088513"
       }
     ]
   },
@@ -375,6 +429,12 @@
         "item": "the sword, bow, daggers",
         "kind": "weapons",
         "playable": true
+      },
+      {
+        "item": "`SkinSkeletonNecroPriest` 0EBE8F",
+        "kind": "the shade body",
+        "playable": false,
+        "note": "`NonPlayable`"
       }
     ]
   }
