@@ -27,7 +27,8 @@
           "band": "VIII",
           "status": "proposed",
           "source": "bands-of-power.md: low-level dragons"
-        }
+        },
+        "note": "`BleakFallsDragon` 0354CA follows this row (user, 2026-10-04): whatever level the Dragon gets, it gets. It is the Bleak Falls Barrow ambush: same name, look, shouts and loot as `EncDragon01Fire`, but in vanilla it sets its own level, 20. It is enabled outside the barrow by `BFBdragonFlyoverSCRIPT` once `dunBleakFallsBarrowQST` 0354CC reached stage 90 inside and `MQ105` stage 5 enabled the dragon marker."
       },
       {
         "id": "blood-dragon",
@@ -200,32 +201,13 @@
           "status": "proposed",
           "source": "bands-of-power.md: low-level dragons"
         }
-      },
-      {
-        "id": "bleak-falls-dragon",
-        "name": "Dragon",
-        "records": [
-          {
-            "edid": "BleakFallsDragon",
-            "formKey": "0354CA:Skyrim.esm"
-          }
-        ],
-        "level": {
-          "kind": "fixed",
-          "value": 20
-        },
-        "target": {
-          "band": "VIII",
-          "status": "proposed",
-          "source": "bands-of-power.md: low-level dragons"
-        }
       }
     ]
   },
   "ownsLevel": {
     "confidence": "verified",
     "items": [
-      "`AlduinBase` (on *Alduin*), every other rung and `BleakFallsDragon` use `EncDragon01Fire` 01CA03 as a template for their look but set their own level, so changing it does not move them; the Serpentine rows use `EncDragon05Frost` the same way. Paarthurnax and the MQ206 and MQ306 dragons do follow its level (last bullet).",
+      "`AlduinBase` (on *Alduin*), every other rung and `BleakFallsDragon` use `EncDragon01Fire` 01CA03 as a template for their look but set their own level, so changing it does not move them; the Serpentine rows use `EncDragon05Frost` the same way. Paarthurnax and the MQ206 and MQ306 dragons do follow its level (last bullet). `BleakFallsDragon` (vanilla 20) is to be set to the Dragon's level (see the note under Records).",
       "The other rows: no other record keeps its own level.",
       "`dunLabyrinthianUndeadDragon` 09192C (the Skeletal Dragon, 20) is a dragon with no template; it is on *Unique Dragons*.",
       "Every other dragon record (the `NoScript` and `_MQ06` copies, the Frost and Snow variants, `lvlDragon`, `DLC2lvlDragon` and the other wrappers, the MQ206 and MQ306 dragons, the Skuldafn copies, Paarthurnax, Vulthuryol, Sahrotaar) carries `Stats` and follows its template or list."

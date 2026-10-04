@@ -551,6 +551,14 @@ in step.
 > in the dragon rows further down (WD-53: Dragon 50 … Legendary 80, Paarthurnax 90, Odahviing 85, Alduin 100/110,
 > Miraak 65) no longer stand; each dragon row in `census/dragons/*.json` carries its target band, most of them
 > `proposed`. The rung levels are to be re-decided.
+>
+> **Decided since (user, 2026-10-04):**
+> - **Alduin: 100 on the Throat of the World, 150 in Sovngarde.** The Throat fight (`MQ206Alduin`) takes `Stats`
+>   from `AlduinBase` 08E4F1, so set it there (that also moves the Helgen and Kynesgrove copies, never fought);
+>   Sovngarde (`MQ304Alduin` 04E9BC) owns its level.
+> - **`BleakFallsDragon` 0354CA follows `EncDragon01Fire` 01CA03:** whatever level the Dragon gets, it gets. It is a
+>   Dragon in every visible way but sets its own level (20) in vanilla. Either give it the same fixed level or add
+>   `Stats` to its `TemplateFlags` (which also brings the Dragon's health/magicka/stamina offsets).
 
 | Archetype | List | Vanilla rungs | **Ehlnofey roster** | Band |
 |---|---|---|---|---|
