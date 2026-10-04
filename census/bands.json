@@ -14,7 +14,7 @@
     { "id": "VII",  "name": "Powerful",    "min": 42, "max": 50,   "colour": "#d0742a", "who": "Dwarven centurions, werewolves, vampires, lesser Daedra (Seekers, Dremora, Saints and Seducers), most lesser named bosses",
       "featured": ["Dremora Churl", "Golden Saint Archer", "Seeker", "Lurker"] },
     { "id": "VIII", "name": "Fabled",      "min": 51, "max": 65,   "colour": "#d65a2b", "who": "Named Dragon Priests, vampire lords, named Daedra, low-level dragons",
-      "featured": ["Dragon", "Mirmulnir", "Ancient Dragonborn"] },
+      "featured": ["Dragon", "Mirmulnir", "Ancient Dragonborn", "High Seeker", "Valkyn Gatanas", "Staada"] },
     { "id": "IX",   "name": "Mythic",      "min": 66, "max": 81,   "colour": "#c9412e", "who": "Dragons, greater Daedra, Harkon, the Ebony Warrior",
       "featured": ["Paarthurnax", "Elder Dragon", "Legendary Dragon"] },
     { "id": "X",    "name": "Legendary",   "min": 82, "max": null, "colour": "#f1d68b", "who": "Miraak (100), Alduin (150)",

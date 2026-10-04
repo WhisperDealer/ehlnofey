@@ -17,11 +17,18 @@
           {
             "edid": "DLC2EncLurker01",
             "formKey": "01B640:Dragonborn.esm"
+          },
+          {
+            "edid": "TestDLC2Lurker",
+            "formKey": "014494:Dragonborn.esm"
           }
         ],
         "level": {
           "kind": "fixed",
-          "value": 24
+          "value": 24,
+          "also": [
+            32
+          ]
         },
         "target": {
           "band": "VII",
@@ -85,33 +92,13 @@
           "status": "decided",
           "source": "user, 2026-10-04"
         }
-      },
-      {
-        "id": "lurker-standing-stone",
-        "name": "Lurker",
-        "encounter": "a freed standing stone",
-        "records": [
-          {
-            "edid": "TestDLC2Lurker",
-            "formKey": "014494:Dragonborn.esm"
-          }
-        ],
-        "level": {
-          "kind": "fixed",
-          "value": 32
-        },
-        "target": {
-          "band": "VII",
-          "status": "proposed",
-          "source": "bands-of-power.md: lesser Daedra"
-        },
-        "note": "despite its EditorID, live: the activator `DLC2PillarShoutTrigger` 028662:Dragonborn.esm (5 refs in the `DLC2SolstheimWorld` persistent cell) spawns it through its script property DLC2PillarMonster"
       }
     ]
   },
   "ownsLevel": {
     "confidence": "verified",
     "items": [
+      "`TestDLC2Lurker` 014494:Dragonborn.esm, the Lurker that rises from a freed standing stone, is listed on the Lurker row (vanilla 32) and is to be set to the Lurker's level. Despite its EditorID it is live: the activator `DLC2PillarShoutTrigger` 028662:Dragonborn.esm (5 refs in the `DLC2SolstheimWorld` persistent cell) spawns it through its script property DLC2PillarMonster. It has no template, so changing `DLC2EncLurker01` does not move it.",
       "`DLC2EncLurker02`–`04` template `DLC2EncLurker01` without the `Stats` or `BaseData` flag, so each keeps its own level and name when 01 changes.",
       "Every row: no other record keeps its own level.",
       "Every other Lurker record (the `DLC2LvlLurker` and `DLC2LvlLurkerAmbush` wrappers, the `ccPEWSSE002_SummonLurker` summon) carries `Stats` and follows its template or list."

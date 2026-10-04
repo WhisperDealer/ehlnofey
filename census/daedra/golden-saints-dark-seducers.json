@@ -95,10 +95,13 @@
         }
       },
       {
-        "id": "staada-hostile",
+        "id": "staada",
         "name": "Staada",
-        "encounter": "Balance of Power",
         "records": [
+          {
+            "edid": "ccBGSSSE025_Staada",
+            "formKey": "198273:ccbgssse025-advdsgs.esm"
+          },
           {
             "edid": "ccBGSSSE025_EncSummonStaadaHostile",
             "formKey": "1B1815:ccbgssse025-advdsgs.esm"
@@ -112,27 +115,8 @@
           "band": "VIII",
           "status": "decided",
           "source": "user, 2026-10-04"
-        }
-      },
-      {
-        "id": "staada",
-        "name": "Staada",
-        "encounter": "her own quest",
-        "records": [
-          {
-            "edid": "ccBGSSSE025_Staada",
-            "formKey": "198273:ccbgssse025-advdsgs.esm"
-          }
-        ],
-        "level": {
-          "kind": "fixed",
-          "value": 42
         },
-        "target": {
-          "band": "VIII",
-          "status": "decided",
-          "source": "user, 2026-10-04"
-        }
+        "note": "the quest copy (placed, initially disabled) and the hostile copy that Balance of Power spawns; both 42"
       }
     ]
   },

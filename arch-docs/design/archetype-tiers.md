@@ -559,6 +559,10 @@ in step.
 > - **`BleakFallsDragon` 0354CA follows `EncDragon01Fire` 01CA03:** whatever level the Dragon gets, it gets. It is a
 >   Dragon in every visible way but sets its own level (20) in vanilla. Either give it the same fixed level or add
 >   `Stats` to its `TemplateFlags` (which also brings the Dragon's health/magicka/stamina offsets).
+> - **`TestDLC2Lurker` 014494:Dragonborn.esm follows `DLC2EncLurker01` 01B640:Dragonborn.esm:** whatever level the
+>   Lurker gets, it gets. It is the Lurker that rises from a freed standing stone (spawned by
+>   `DLC2PillarShoutTrigger`), a Lurker in every visible way, but it has no template and sets its own level (32) in
+>   vanilla. Give it the same fixed level.
 
 | Archetype | List | Vanilla rungs | **Ehlnofey roster** | Band |
 |---|---|---|---|---|
