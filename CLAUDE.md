@@ -105,8 +105,10 @@ authority** (user, 2026-10-04): it supersedes the nine-band table and the decide
 is **paused**. Before any more records are authored, we map every enemy and document it.
 
 **The census site (since 2026-10-04).** The census is moving from Confluence into the repo as JSON and is
-published at **https://whisperdealer.github.io/ehlnofey/** (Astro, `site/`; deployed by
-`.github/workflows/pages.yml` on every push to `main` that touches `census/` or `site/`).
+**live** at **https://whisperdealer.github.io/ehlnofey/** (Astro, `site/`; GitHub Pages builds from
+Actions: `.github/workflows/pages.yml` deploys on every push to `main` that touches `census/` or `site/`).
+Site and research gotchas from building it are in `gotchas.md` (§ Census site, and the 2026-10-04 research
+rules).
 - **`census/` is the source of truth for every migrated group**: `census/<group>/group.json` (the group
   page) plus one `<family>.json` per family page; `census/bands.json` is the home page. The schema is
   `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
@@ -118,13 +120,24 @@ published at **https://whisperdealer.github.io/ehlnofey/** (Astro, `site/`; depl
 - **To change a migrated page:** edit the JSON, run `npm run schema`, then `npm run confluence --
   <group>/<family>` and push its output with `updateConfluencePage` (`contentFormat: markdown`) to
   the page id in `site/scripts/confluence-pages.json`. Confluence is a mirror, never edited by hand.
-- **A named boss's Records rows are its fights** (user, 2026-10-04; Alduin and Miraak are the
-  model): one row per place the player fights it, with `encounter` naming the place, since only
-  those levels need changing. Every other copy (base record, cutscenes, test copies) goes in
-  `otherRecords`, a collapsible log on the site. **A boss's gear is what the player can loot**
-  (user, 2026-10-04; Miraak is the model): a `loot` table walked from its death item, each list to its
-  tiers, and nothing else: no Also owns its level, Placed or fight-gear tables (fight gear is often
-  `NonPlayable`, and the death item can drop gear the boss never wears, e.g. Miraak's Sword).
+- **A named boss's page** (user, 2026-10-04; Alduin and Miraak are the models): Records rows are its
+  **fights**, one per place the player fights it, with `encounter` naming the place, since only those
+  levels need changing. Every other copy (base record, cutscenes, test copies) goes in
+  `otherRecords`, a collapsible log. **No Placed table.** Keep **Also owns its level** only when it
+  says which record to edit (Alduin: `AlduinBase` moves the Throat of the World fight, Sovngarde owns
+  its own); drop it otherwise (Miraak). **Its gear is what the player can loot**: a `loot` table walked
+  from the fought record's **death item**, each list to its tiers, and no fight-gear tables (fight gear
+  is often `NonPlayable`, and the death item can drop gear the boss never wears, e.g. Miraak's Sword).
+- **Drop records nothing in the game uses** (user, 2026-10-04): not placed, no template user, and no
+  list, quest, script, spell or package names it. Remove it from every page; don't list it as "not
+  placed". Prove "unused" first: `gotchas.md` has the checklist (a trigger script enabled the
+  "unused" `BleakFallsDragon`).
+- **Linked records share a row** (user, 2026-10-04): a record the user ties to a rung's level is listed
+  on that rung's row beside it, with the vanilla levels as `fixed` + `also` ("10 / 20"); the decision
+  goes in `archetype-tiers.md`. Example: `BleakFallsDragon` on the Dragon row.
+- **Name rows by what the player sees.** A `lvl*` wrapper whose placed refs fill quest aliases takes
+  the alias `DisplayName` (Kruziikrel · Relonikiv, not "by rung"); say so in the row's `note`. File a
+  named enemy by what it is, not by its DLC (Sahrotaar and Krosulhah are Unique Dragons, not Dragonborn).
 - **To migrate a group:** fetch its pages, transcribe them into JSON (FormKeys always
   `<hex>:<Master>`, never bare hex; check the EditorID/FormKey pairs against the `reference/Base`
   filenames), add a target band per row, build, then re-render the Confluence pages. The version
@@ -147,10 +160,11 @@ published at **https://whisperdealer.github.io/ehlnofey/** (Astro, `site/`; depl
   until the census is done. Where a page had them, the version message names the version that holds them.
   **One exception, the target band** (user, 2026-10-04): every record row in `census/` JSON carries
   `target: { band, level?, status, source }`, its Ehlnofey band from `arch-docs/bands-of-power.md`.
-  `decided` only where the bands doc names it (e.g. Alduin X 150, Miraak X 100); everything else is
-  `proposed`, drawn dashed on the site. No levels, rosters or weights beyond that.
+  `decided` only where the bands doc names it or the user decides it (e.g. Alduin X 100 on the Throat
+  of the World, 150 in Sovngarde; Miraak X 100); everything else is `proposed`, drawn dashed on the
+  site. No levels, rosters or weights beyond that.
   **Page layout** (user, 2026-09-30; the Mudcrab page is the model): no source line (the group
-  page cites the ticket), just three headed tables and **no prose**:
+  page cites the spec), just three headed tables and **no prose** (one `note` per row where needed):
   1. **Records**: Record · Name · Level, one row per *distinct* enemy. Variants that inherit their
      level are dropped, not described.
      **Also owns its level** (user, 2026-10-03; Frostbite Spider is the model): a short bullet list
@@ -261,7 +275,7 @@ published at **https://whisperdealer.github.io/ehlnofey/** (Astro, `site/`; depl
   and **Morag Tong** (Dragonborn; takes `Stats` from the Reaver ladder; the Severins join by script),
   and **Ghosts of the Tribunal** (the CC pack's Temple: Ordinators, Her Hands, priests; its Erden Relvel
   is on World → *Solstheim Countryside*, its Ash Zombies on Ash), and **Miraak Cultists** (the `DLC2LCharCultist` ladder 12 · 19 ·
-  27 · 36 · 46 with summoner copies; Miraak himself and his dragons are on Dragons → *Dragonborn*; his
+  27 · 36 · 46 with summoner copies; Miraak himself is on Dragons → *Miraak*, his dragons on *Unique Dragons*; his
   Acolytes, Seekers and Lurkers are not), **Blades** (Delphine, Esbern; the recruits are
   followers with no record) and **Greybeards** (the four at High Hrothgar; Paarthurnax moved to Dragons → *Unique
   Dragons*; the `MQ105PhantomFormActor` summon is on neither) and **Khajiit Caravans** (user, 2026-10-03:
@@ -323,7 +337,7 @@ published at **https://whisperdealer.github.io/ehlnofey/** (Astro, `site/`; depl
   cannot share a name (the family pages are *Common Falmer* and *Common Forsworn*). The MCP has no delete: retire a
   page by retitling it `DELETE ME - <title>` and ask the user to delete it.
   A new family follows the same
-  shape: a group page citing its ticket and spec section, and a child page per family. Search the tree
+  shape: a group page citing its spec section, and a child page per family. Search the tree
   (`ancestor = 12451841`) before creating a page, and update the existing page rather than duplicating it.
 - **Start from what exists:** the Confluence pages, `world/enemy-taxonomy.md`,
   `world/unique-enemies.md`, the census scripts in `design/*.ps1` and `archetype-tiers.md` already cover
@@ -393,6 +407,10 @@ The full entries, with evidence, are in **`arch-docs/gotchas.md`**. These are th
   template's name. Until tested in game, still name every record of a rung when authoring.
 - **A quest alias `DisplayName` can name a nameless boss** (Movarth, Vighar, Lokil): grep quest
   aliases for the placed ref's FormKey, not just the base record's.
+- **"Template without `Stats`" = does not follow its level.** Before saying no record follows X, grep
+  for records that *do* carry `Stats` from X (Paarthurnax follows `EncDragon01Fire`; Alduin does not).
+- **An initially disabled ref is not an unused one.** A trigger script in the dungeon's cells can
+  enable it (`BleakFallsDragon`); check placed refs' script properties before dropping a record.
 - **Runtime injectors:** start-up quests (`DLC2Init`, several CC packs) call `AddForm` on leveled lists.
   This is invisible to load-order scans and stored in the save for good. Grep quest properties for a
   list's FormKey before trusting it.

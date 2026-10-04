@@ -326,6 +326,48 @@ plausible-sounding claims are cheapest to make and most expensive to act on:
   got cut off mid-row twice. Collapse first: one row per shared record, "same as X", level ranges.
   Then check: fetch the page with `contentFormat: "adf"` (the result is always large enough to be saved
   to a file) and diff each table row against the source file with a script.
+- **"Uses X as its template but not for `Stats`" means it does NOT follow X's level** (2026-10-04, the
+  Dragons pages). Two traps. **(a)** Phrase it as "changing X does not move it"; "changing X also needs Y"
+  read as the opposite. **(b)** Before writing "no record follows X", grep the other direction too:
+  records that **do** carry `Stats` from X. `EncDragon01Fire` looked like it moved nothing, yet
+  Paarthurnax and the MQ206 and MQ306 dragons take its level, while `AlduinBase`, the other rungs and
+  `BleakFallsDragon` only take its look. `[verified]`
+- **"Unused" needs proof, and an initially disabled ref is not proof** (2026-10-04). Before dropping a
+  record, check all of these: placed refs (the census sweep, or the cells of its dungeon and
+  worldspace); `Template:` in `Npcs/`; `LeveledNpcs`, `Quests` (aliases, forced refs, script
+  properties), `Scenes`, `Packages`, `FormLists`, `MagicEffects`, `Spells`; and `reference/scripts/psc`
+  by EditorID. Grep each directory by name; a recursive grep over `reference/` times out.
+  **Then check its placed ref's FormKey inside the dungeon's cell files**: a trigger box's script
+  properties (`VirtualMachineAdapter` → `Object:`) can enable it. `BleakFallsDragon` (one initially
+  disabled ref, owned by a quest whose own script never enables it) is a live ambush:
+  `BFBdragonFlyoverSCRIPT` on a trigger outside Bleak Falls Barrow enables it once a trigger inside has
+  set the quest's stage 90 and `MQ105` stage 5 has enabled the dragon marker. `DLC2DragonSkeleton` and
+  `dunSkuldafnDragonDraugr` failed every check and were dropped. `[verified]`
+- **A boss's loot is its death item, not its outfit** (2026-10-04, Miraak). The fight outfit and its
+  leveled lists can be `NonPlayable` and never drop, and the death item can drop gear the boss never
+  wears. `DLC2MiraakMQ06` → `DLC2DeathItemMiraak` (`UseAll`: every entry drops) → five reward lists
+  (sword, staff, light and heavy mask, robes; tiers @1 · 45 · 60). Documenting the outfit missed
+  Miraak's Sword. Start from `DeathItem:` on the fought record and walk it to the leaves. `[verified]`
+- **`LVLN`/`LVLI` gate flags decide which entry rolls** `[community]`.
+  `CalculateFromAllLevelsLessThanOrEqualPlayer` picks at random among **every** entry at or below the
+  player's level, so a level-50 player can still roll the level-10 rung, and a stray entry rolls too
+  (`DLC2LCharDragonAnyMQ06` holds the level-1 test NPC `AADeleteWhenDoneTestJeremyBig` @27). With no
+  flags, the list gives the single highest entry at or below the player's level (Miraak's reward
+  lists).
+- **A `lvl*` wrapper NPC is a list roll in disguise** (2026-10-04). Level 1, template = an `LVLN`, nearly
+  every template flag set: each spawn becomes whichever rung rolls. Its level is set on the list, not
+  the wrapper. If its placed refs fill quest aliases, the alias `DisplayName` names them:
+  `DLC2lvlDragon_MQ06` is Kruziikrel and Relonikiv (aliases `Dragon2`/`Dragon3` of `DLC2MQ06`, names in
+  `MESG` records `02A75A`/`02A75B`).
+- **Parsing `reference/` YAML in a script: normalise CRLF first.** The decompiled files have Windows line
+  endings, so a regex on `\n` silently matches nothing. Read with `.replace(/\r\n/g, '\n')` (Node) or
+  `tr -d '\r'` (shell). An absent enum is its default here too: a light-armour piece simply has no
+  `ArmorType:` line (`DLC2MKMiraakMask1L`; its `ArmorLight` keyword `06BBD3` confirms it).
+- **Auto-calc stats, for reference only: stats are out of scope** (user, 2026-10-04). Should they ever
+  come back: health = race start + offset + 5 × (level − 1) + the class's share of 10 × (level − 1)
+  (CK wiki *Class*; UESP *Skyrim:Classes*) reproduced `DLC2MiraakMQ06`'s stored 747 / 378 / 335 exactly
+  at level 35, with magicka taking the leftover point. Skills (A. Beals' reverse-engineered method)
+  came within 1–2 points of the stored ones. `[community]`
 
 ## Workspace — FOMOD, Papyrus, Spriggit
 
@@ -360,5 +402,26 @@ plausible-sounding claims are cheapest to make and most expensive to act on:
   plugin, so any `#` comment you add to a record file is lost the next time anyone runs
   `/spriggit-serialize`. Put durable explanation in this file, not in the record YAML.
 - Edit `.psc`/YAML, never the binary `.pex`/`.esp`. Commit source, not build artifacts.
+
+## Census site (`site/`, Astro)
+
+- **A stale `astro preview` serves the old build.** A preview left running keeps port 4321, so a new
+  `npx astro preview` silently moves to 4322, and a screenshot of `localhost:4321` shows the old page.
+  Stop every listener first: `Get-NetTCPConnection -State Listen | ? LocalPort -in 4321..4325 |
+  % { Stop-Process -Id $_.OwningProcess -Force }`. (Dev mode, `npm run dev`, hot-reloads instead.)
+- **Screenshots without the Chrome extension: headless Edge.** `msedge.exe --headless=new
+  --hide-scrollbars --window-size=1280,2400 --virtual-time-budget=4000 --screenshot=<path> <url>`.
+  Headless windows have a minimum width, so a `--window-size=390,…` shot is clipped, not a phone
+  layout. For a 375px check, screenshot a local HTML page holding the site in a 375px `<iframe>`.
+- **Astro's `glob()` loader skips files whose names start with `_`**, so the group page is
+  `census/<group>/group.json`, not `_group.json`.
+- **The site is public.** No Jira numbers, Confluence links or page ids in `census/` or `site/src/`.
+  The Confluence page ids live in `site/scripts/confluence-pages.json`, which only the renderer reads.
+- **Confluence pushes: render, then send the output verbatim.** `npm run confluence -- <group>/<family>`
+  is the only source of a mirror body. After pushing, diff a fresh render against what was sent.
+- **Deploy:** GitHub Pages is set to build from GitHub Actions (`build_type: workflow`, enabled
+  2026-10-04). A push to `main` touching `census/` or `site/` runs `.github/workflows/pages.yml`, and the
+  site is live at https://whisperdealer.github.io/ehlnofey/ in about a minute. Open warning:
+  `actions/checkout@v4` targets the retiring Node 20 runtime.
 - See `arch-docs/skyrim-record-patterns.md` for the in-game failure modes that produce no build
   error — that list is the single highest-value read before authoring a new mechanic.
