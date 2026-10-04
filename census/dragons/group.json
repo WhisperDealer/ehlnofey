@@ -15,7 +15,7 @@
     },
     {
       "id": "unique-dragons",
-      "holds": "Paarthurnax, Mirmulnir, Sahloknir, Vuljotnaak, Nahagliiv, Viinturuth, Odahviing, Vulthuryol, the Labyrinthian Skeletal Dragon, Durnehviir, Naaslaarum, Voslaarum"
+      "holds": "Paarthurnax, Mirmulnir, Sahloknir, Vuljotnaak, Nahagliiv, Viinturuth, Odahviing, Vulthuryol, the Labyrinthian Skeletal Dragon, Durnehviir, Naaslaarum, Voslaarum, Sahrotaar, Krosulhah"
     },
     {
       "id": "alduin",
@@ -23,7 +23,7 @@
     },
     {
       "id": "dragonborn",
-      "holds": "Sahrotaar, Krosulhah, the `DLC2MQ06` dragons, the Ancient Dragonborn"
+      "holds": "the `DLC2MQ06` dragons, the Ancient Dragonborn"
     },
     {
       "id": "miraak",

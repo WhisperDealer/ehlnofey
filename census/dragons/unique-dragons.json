@@ -279,6 +279,64 @@
           "status": "proposed",
           "source": "bands-of-power.md: dragons"
         }
+      },
+      {
+        "id": "sahrotaar",
+        "name": "Sahrotaar",
+        "records": [
+          {
+            "edid": "DLC2MiraakDragon",
+            "formKey": "023F7B:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2MQ02MiraakDragon",
+            "formKey": "031CA5:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2MQ06MiraakDragon",
+            "formKey": "039B6B:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 58,
+          "from": {
+            "edid": "DLC2EncDragon06Frost",
+            "formKey": "02C88A:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "IX",
+          "status": "proposed",
+          "source": "bands-of-power.md: dragons"
+        }
+      },
+      {
+        "id": "krosulhah",
+        "name": "Krosulhah",
+        "records": [
+          {
+            "edid": "DLC2MQ05Dragon",
+            "formKey": "017F87:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "DLC2MQ05LCharDragonNEW",
+            "formKey": "028525:Dragonborn.esm"
+          },
+          "rungs": [
+            30,
+            40,
+            50
+          ]
+        },
+        "target": {
+          "band": "IX",
+          "status": "proposed",
+          "source": "bands-of-power.md: dragons"
+        }
       }
     ]
   },
@@ -287,7 +345,7 @@
     "items": [
       "For every row: no other record keeps its own level.",
       "The other dragons with no template are `EncDragon01Fire`, `dunSkuldafnDragonDraugr` and `DLC2DragonSkeleton` (on *Common Dragons*) and `DLC1DurnehviirSummon` 00C71A:Dawnguard.esm (the summoned Durnehviir, 20, on *Constructs & Dragons*).",
-      "Every other record behind these dragons (Paarthurnax, Vulthuryol, the list-drawn dragons and their wrappers) carries `Stats` and follows its template or list."
+      "Every other record behind these dragons (Paarthurnax, Vulthuryol, the Sahrotaar copies, the list-drawn dragons and their wrappers) carries `Stats` and follows its template or list."
     ]
   },
   "lists": {
@@ -394,6 +452,28 @@
           }
         ],
         "owner": "Naaslaarum, Voslaarum through `DLC1lvlDragonIceLake` 010E9B"
+      },
+      {
+        "list": {
+          "edid": "DLC2MQ05LCharDragonNEW",
+          "formKey": "028525:Dragonborn.esm"
+        },
+        "gate": "all levels ≤ player, each",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frost"
+          },
+          {
+            "at": 36,
+            "label": "Elder"
+          },
+          {
+            "at": 45,
+            "label": "Ancient"
+          }
+        ],
+        "owner": "Krosulhah through `DLC2lvlMQ05Dragon` 02589F"
       }
     ]
   },
@@ -680,6 +760,81 @@
           }
         ],
         "quest": "forced ref of `DLC1LDIceDragonFight02` 019DD2"
+      },
+      {
+        "name": "Sahrotaar",
+        "base": [
+          {
+            "edid": "DLC2MQ02MiraakDragon",
+            "formKey": "031CA5:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2ApoStart05",
+              "formKey": "01C28B:Dragonborn.esm"
+            },
+            "ref": {
+              "edid": "DLC2MQ02MiraakDragonRef",
+              "formKey": "031834:Dragonborn.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sahrotaar",
+        "base": [
+          {
+            "edid": "DLC2MQ06MiraakDragon",
+            "formKey": "039B6B:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2ApocryphaWorld"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DLC2MQ06MiraakDragonRef",
+              "formKey": "019ACC:Dragonborn.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Sahrotaar",
+        "base": [
+          {
+            "edid": "DLC2MiraakDragon",
+            "formKey": "023F7B:Dragonborn.esm"
+          }
+        ],
+        "notPlaced": true
+      },
+      {
+        "name": "Krosulhah",
+        "base": [
+          {
+            "edid": "DLC2MQ05Dragon",
+            "formKey": "017F87:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2NchardakExterior05",
+              "formKey": "00EEA7:Dragonborn.esm"
+            },
+            "ref": {
+              "edid": "DLC2MQ05DragonRef",
+              "formKey": "0176B8:Dragonborn.esm"
+            },
+            "disabled": true
+          }
+        ]
       }
     ]
   }
