@@ -70,7 +70,7 @@
         },
         "target": {
           "band": "VI",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "via `Stats` from their race copy of `DA05_LvlHuntersOfHircine` 0955B7, which takes it from `LvlBanditMelee1H` 03DECB"
@@ -96,7 +96,7 @@
         },
         "target": {
           "band": "VI",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "his own level: his template `DA05_LvlHuntersOfHircine_KhajiitM` 0955B5 is not set for `Stats`"

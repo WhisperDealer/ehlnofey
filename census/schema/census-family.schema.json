@@ -312,8 +312,8 @@
                       "status": {
                         "type": "string",
                         "enum": [
-                          "decided",
-                          "proposed"
+                          "proposed",
+                          "implemented"
                         ]
                       },
                       "source": {
@@ -337,7 +337,10 @@
                       },
                       "status": {
                         "type": "string",
-                        "const": "decided"
+                        "enum": [
+                          "proposed",
+                          "implemented"
+                        ]
                       },
                       "source": {
                         "type": "string",

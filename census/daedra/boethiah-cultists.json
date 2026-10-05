@@ -60,7 +60,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "via `Stats` from `LvlBanditMelee1H` 03DECB (`WEDA02Cultist` through `LvlBanditAmbushMelee1H` 093815). The `DA02` Cultist1 alias shows \"Priestess of Boethiah\" (`DA02PriestessName` 052796)"
@@ -95,7 +95,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "via `Stats` from `LvlBanditWizard` 01E79F"
@@ -130,7 +130,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "via `Stats` from `LvlBanditMelee2H` 01E79D"
@@ -160,7 +160,7 @@
         },
         "target": {
           "band": "VII",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "the Briarheart ladder, via `Stats` from `LvlForswornBoss` 0442D2"

@@ -36,7 +36,7 @@
         ],
         "target": {
           "band": "IV",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         }
       },
@@ -71,7 +71,7 @@
         },
         "target": {
           "band": "II",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "the Novice Necromancer rung"
@@ -93,7 +93,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         }
       },
@@ -122,7 +122,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "the record has no name of its own; the `DA03` alias WizardLeader names him (`DA03WizardName` 0E9E1A). The Conjurer boss rungs, via `Stats` (and `BaseData`, `Inventory`) from the list"
@@ -152,7 +152,7 @@
         },
         "target": {
           "band": "VI",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "the Necromancer boss rungs, via `Stats` from `LvlWarlockNecroBossMaleCondescending` 081EF5 (which Vals Veran, on *Named Warlocks*, shares). When he dies, his `FXChangeToNecroPriestScript` raises Malkoran's Shade (next row)"
@@ -182,7 +182,7 @@
         },
         "target": {
           "band": "VII",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "Malkoran's second form: his `FXChangeToNecroPriestScript` (property `EncSkeletonNecroPriest`) raises it when he dies; its own death sets `DA09` stage 400 (`DA09ShadeUniqueScript`). No template, so changing Malkoran's list does not move it"

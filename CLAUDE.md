@@ -162,9 +162,10 @@ rules).
   until the census is done. Where a page had them, the version message names the version that holds them.
   **One exception, the target band** (user, 2026-10-04): every record row in `census/` JSON carries
   `target: { band, level?, status, source }`, its Ehlnofey band from `arch-docs/bands-of-power.md`.
-  `decided` only where the bands doc names it or the user decides it (e.g. Alduin X 100 on the Throat
-  of the World, 150 in Sovngarde; Miraak X 100); everything else is `proposed`, drawn dashed on the
-  site. A row the user exempts from bone 1 carries `target: { scales: true, status: 'decided', source }`
+  `status` is `proposed` (drawn dashed) until the built mod sets that level, then `implemented`
+  (solid; user, 2026-10-05: the site tracks the build, so a user decision alone stays `proposed`, its
+  `source` naming the user and date, e.g. Alduin X 100 on the Throat of the World, 150 in Sovngarde).
+  A row the user exempts from bone 1 carries `target: { scales: true, status, source }`
   instead, recorded in `archetype-tiers.md` (only the Shadowrend Shadow, user 2026-10-05). No levels,
   rosters or weights beyond that.
   **Page layout** (user, 2026-09-30; the Mudcrab page is the model): no source line (the group

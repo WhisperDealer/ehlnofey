@@ -40,7 +40,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         }
       },
@@ -74,7 +74,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         }
       },
@@ -108,7 +108,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         }
       },
@@ -146,7 +146,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "the Patrol takes `Stats` from the Cultist (magic) instead, so it draws `ccBGSSSE067_LCharMythicDawnWizard` 039275:ccbgssse067-daedinv.esm; same levels"
@@ -181,7 +181,7 @@
         },
         "target": {
           "band": "VII",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         }
       }

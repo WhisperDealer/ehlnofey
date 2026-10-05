@@ -53,7 +53,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "the Storm Mage ladder, via `Stats` from `LvlWarlockShock` 01E7CF; `DA16LvlVaerminaDevotee` (`IsGhost`, `Invulnerable`) is the unplaced template of the Ambush copies"
@@ -84,7 +84,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         }
       },
@@ -108,7 +108,7 @@
         },
         "target": {
           "band": "VI",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         }
       }

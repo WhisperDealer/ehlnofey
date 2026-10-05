@@ -33,7 +33,7 @@
         "target": {
           "band": "X",
           "level": 100,
-          "status": "decided",
+          "status": "proposed",
           "source": "bands-of-power.md: Miraak (100)"
         }
       }

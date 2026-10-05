@@ -62,7 +62,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "the six melee rung templates; each rung's four `Melee1H` leaves and four `Melee1HTank` leaves take `Stats` from it (the Tank leaves through their rung's melee leaf, with their own outfit)"
@@ -114,7 +114,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "there is no magic rung 06"
@@ -171,7 +171,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "the rung-02 leaves `DA13EncAfflicted02MissileCondM` 064AC5 and `…02MissileEvenTonedM` 064AB5 sit on the rung-01 template, so they are 1"
@@ -206,7 +206,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "the wizard copy draws `DA13LCharAfflictedWizard` 064A6F (1 · 5 · 9 · 14 · 19)"
@@ -237,7 +237,7 @@
         },
         "target": {
           "band": "V",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         },
         "note": "through `DA13LvlAfflictedMelee1HEvenTonedM` 084447"
@@ -259,7 +259,7 @@
         },
         "target": {
           "band": "VI",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-05"
         }
       }

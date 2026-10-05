@@ -37,7 +37,7 @@
         "target": {
           "band": "X",
           "level": 100,
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-04: 100 on the Throat of the World"
         }
       },
@@ -60,7 +60,7 @@
         "target": {
           "band": "X",
           "level": 150,
-          "status": "decided",
+          "status": "proposed",
           "source": "bands-of-power.md: Alduin (150), in Sovngarde (user, 2026-10-04)"
         }
       }

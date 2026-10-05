@@ -44,7 +44,7 @@
         },
         "target": {
           "band": "VIII",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-04"
         }
       },
@@ -63,7 +63,7 @@
         },
         "target": {
           "band": "VIII",
-          "status": "decided",
+          "status": "proposed",
           "source": "user, 2026-10-04"
         }
       }

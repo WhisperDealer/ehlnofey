@@ -43,14 +43,14 @@ export const Level = z.discriminatedUnion('kind', [
 export const BandTarget = z.strictObject({
   band: BandId,
   level: z.number().int().positive().optional(),
-  status: z.enum(['decided', 'proposed']),
+  status: z.enum(['proposed', 'implemented']), // implemented: the built mod sets this level
   source: z.string().min(1),
 });
 // An exception to bone 1: the record keeps scaling with the player. Only the user decides one,
 // and archetype-tiers.md records it (the Shadowrend Shadow, user 2026-10-05).
 export const ScalesTarget = z.strictObject({
   scales: z.literal(true),
-  status: z.literal('decided'),
+  status: z.enum(['proposed', 'implemented']),
   source: z.string().min(1),
 });
 export const Target = z.union([BandTarget, ScalesTarget]);
