@@ -1,0 +1,178 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "werewolf",
+  "group": "werebeasts",
+  "title": "Werewolf",
+  "order": 1,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "werewolf",
+        "name": "Werewolf",
+        "records": [
+          {
+            "edid": "EncWerewolf01",
+            "formKey": "023ABC:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "werewolf-savage",
+        "name": "Werewolf Savage",
+        "records": [
+          {
+            "edid": "EncWerewolf02",
+            "formKey": "0A092B:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "werewolf-brute",
+        "name": "Werewolf Brute",
+        "records": [
+          {
+            "edid": "EncWerewolf03",
+            "formKey": "0A092C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "werewolf-skinwalker",
+        "name": "Werewolf Skinwalker",
+        "records": [
+          {
+            "edid": "EncWerewolf04",
+            "formKey": "0A092D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "werewolf-beastmaster",
+        "name": "Werewolf Beastmaster",
+        "records": [
+          {
+            "edid": "EncWerewolf05",
+            "formKey": "0A092E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 28
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "werewolf-vargr",
+        "name": "Werewolf Vargr",
+        "records": [
+          {
+            "edid": "EncWerewolf06",
+            "formKey": "0A092F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 38
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`DLC1HowlSummonWerewolf` 008A6D:Dawnguard.esm (Pack Member, level 12, summoned by the player's Howl of the Pack; on Conjured → *Familiars & Spirit Animals*) uses `EncWerewolf03` 0A092C as its template without `Stats`, so changing the Brute does not move it.",
+      "The other rows: no other record keeps its own level.",
+      "The boss rungs `EncWerewolf02Boss`–`06Boss` are werewolves with no template; they are on *Werewolf Boss*. `WerewolfPreloadActor` 07871B (level 1, no template) sits only in the preload cell.",
+      "Every other werewolf record (`LvlWerewolf`, `dunGallowsRock_LvlWerewolFeral_Prisoner`, the `TreasCorpseWerewolf` corpses) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharWerewolf",
+          "formKey": "01E791:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Werewolf"
+          },
+          {
+            "at": 6,
+            "label": "Werewolf Savage"
+          },
+          {
+            "at": 12,
+            "label": "Werewolf Brute"
+          },
+          {
+            "at": 20,
+            "label": "Werewolf Skinwalker"
+          },
+          {
+            "at": 28,
+            "label": "Werewolf Beastmaster"
+          },
+          {
+            "at": 38,
+            "label": "Werewolf Vargr"
+          }
+        ],
+        "note": "rungs 6–38 are entered twice",
+        "owner": "`LvlWerewolf` 01E7CC (Driftshade Sanctuary `DriftshadeSanctuary02` 03DD34, ref 071BE4, persistent, Easy; quest `DLC1WE01` 00876E:Dawnguard.esm ×2, `DLC1WEDB01` 01420C:Dawnguard.esm ×1) · `dunGallowsRock_LvlWerewolFeral_Prisoner` 0AA0A3 (Gallows Rock `GallowsRock01` 015273, refs 0A9543 · 0A9544, persistent, Easy)"
+      }
+    ]
+  }
+}

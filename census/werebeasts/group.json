@@ -1,0 +1,58 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "werebeasts",
+  "title": "Werebeasts",
+  "order": 3,
+  "meta": {
+    "spec": "archetype-tiers.md §3.1",
+    "updated": "2026-10-05"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. No Creation Club pack adds a werewolf or werebear. The Companions' werewolf forms are scripted race changes with no record of their own, and summoned werebeasts are under Conjured.",
+  "families": [
+    {
+      "id": "werewolf",
+      "holds": "the six-rung werewolf ladder (Werewolf 1 · Savage 6 · Brute 12 · Skinwalker 20 · Beastmaster 28 · Vargr 38) and its placed wrappers"
+    },
+    {
+      "id": "werewolf-boss",
+      "holds": "the boss ladder (7 · 14 · 23 · 31 · 42), Sinding and Arnbjorn's werewolf form"
+    },
+    {
+      "id": "werebear",
+      "holds": "the Solstheim werebears (the Snowclad Ruins and `DLC2WE07` trios) and Torkild"
+    },
+    {
+      "id": "wolf-spirits",
+      "holds": "Kodlak's and the Companions' wolf spirits in Ysgramor's Tomb"
+    }
+  ],
+  "filedElsewhere": [
+    {
+      "record": "`DLC2SummonWerebear` 0322B3:Dragonborn.esm",
+      "what": "the Beast Stone werebear",
+      "where": "Conjured → Familiars & Spirit Animals"
+    },
+    {
+      "record": "`DLC1HowlSummonWerewolf` 008A6D:Dawnguard.esm",
+      "what": "Pack Member, level 12, summoned by the player's Howl of the Pack",
+      "where": "Conjured → Familiars & Spirit Animals"
+    }
+  ],
+  "neverMet": [
+    {
+      "record": "`WerewolfPreloadActor` 07871B",
+      "what": "a werewolf, level 1, no template",
+      "why": "placed only in the `WerewolfPreload` 078715 preload cell"
+    },
+    {
+      "record": "`TreasCorpseWerewolf` 01B150 · `TreasCorpseWerewolfHanging` 10F509",
+      "what": "werewolf corpses",
+      "why": "placed dead: `DriftshadeSanctuary02` 03DD34 ×2 (0A56B5, 0B77CB); `GallowsRock01` 015273 ×3 (0A9545, 0ECB4A and one hanging)"
+    },
+    {
+      "record": "`DLC2EncWerebear` 0322B1:Dragonborn.esm",
+      "what": "Werebear, level 25",
+      "why": "not placed; the template Torkild and the Beast Stone werebear take `Stats` from (see *Werebear*)"
+    }
+  ]
+}

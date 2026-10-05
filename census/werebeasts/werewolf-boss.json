@@ -1,0 +1,241 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "werewolf-boss",
+  "group": "werebeasts",
+  "title": "Werewolf Boss",
+  "order": 2,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "werewolf-savage-boss",
+        "name": "Werewolf Savage",
+        "records": [
+          {
+            "edid": "EncWerewolf02Boss",
+            "formKey": "0A1972:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 7
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "werewolf-brute-boss",
+        "name": "Werewolf Brute",
+        "records": [
+          {
+            "edid": "EncWerewolf03Boss",
+            "formKey": "0A1973:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 14
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "werewolf-skinwalker-boss",
+        "name": "Werewolf Skinwalker",
+        "records": [
+          {
+            "edid": "EncWerewolf04Boss",
+            "formKey": "0A1974:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 23
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "werewolf-beastmaster-boss",
+        "name": "Werewolf Beastmaster",
+        "records": [
+          {
+            "edid": "EncWerewolf05Boss",
+            "formKey": "0A1975:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 31
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "werewolf-vargr-boss",
+        "name": "Werewolf Vargr",
+        "records": [
+          {
+            "edid": "EncWerewolf06Boss",
+            "formKey": "0A1976:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 42
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "sinding",
+        "name": "Sinding",
+        "encounter": "Bloated Man's Grotto",
+        "records": [
+          {
+            "edid": "DA05Sinding",
+            "formKey": "0136AC:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWerewolfBoss",
+            "formKey": "0A1981:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            14,
+            23,
+            31,
+            42
+          ]
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VII",
+          "level": 42,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: pinned to the Vargr boss"
+        },
+        "note": "via `Stats` from `LvlWerewolfBoss` 0A1980"
+      },
+      {
+        "id": "arnbjorn",
+        "name": "Arnbjorn",
+        "encounter": "Dark Brotherhood Sanctuary",
+        "records": [
+          {
+            "edid": "ArnbjornWerewolf",
+            "formKey": "032896:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "user, 2026-10-05: stays 1, he is meant to die in the quest"
+        },
+        "note": "his own level: takes only `Traits` and `SpellList` from `EncWerewolf06Boss`"
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Arnbjorn (`ArnbjornWerewolf`, a row above) uses `EncWerewolf06Boss` 0A1976 as his template without `Stats`, so changing the Vargr boss does not move him.",
+      "The other rows: no other record keeps its own level.",
+      "The common rungs `EncWerewolf01`–`06` and `WerewolfPreloadActor` are werewolves with no template; they are on *Werewolf*.",
+      "Every other boss record (Sinding, `LvlWerewolfBoss`) carries `Stats` and follows its list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharWerewolfBoss",
+          "formKey": "0A1981:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Werewolf Savage boss"
+          },
+          {
+            "at": 6,
+            "label": "Werewolf Savage boss"
+          },
+          {
+            "at": 12,
+            "label": "Werewolf Savage boss"
+          },
+          {
+            "at": 20,
+            "label": "Werewolf Brute boss"
+          },
+          {
+            "at": 28,
+            "label": "Werewolf Skinwalker boss"
+          },
+          {
+            "at": 38,
+            "label": "Werewolf Beastmaster boss"
+          },
+          {
+            "at": 48,
+            "label": "Werewolf Vargr boss"
+          }
+        ],
+        "owner": "`LvlWerewolfBoss` 0A1980 → Sinding (`BloatedMansGrottoWorld` 01FAE2, ref `DA05SindingREF` 02ABBD, persistent, initially disabled, VeryHard; quest `DA05`)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Arnbjorn",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DarkBrotherhoodSanctuary",
+              "formKey": "0AD5A1:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "101BF8:Skyrim.esm"
+            },
+            "persistent": true,
+            "disabled": true
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "wolf-spirits",
+  "group": "werebeasts",
+  "title": "Wolf Spirits",
+  "order": 4,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "wolf-spirit",
+        "name": "Wolf Spirit",
+        "encounter": "Ysgramor's Tomb",
+        "records": [
+          {
+            "edid": "EncC06WolfSpirit",
+            "formKey": "058303:Skyrim.esm"
+          },
+          {
+            "edid": "CR13FarkasWolfSpirit",
+            "formKey": "0F6087:Skyrim.esm"
+          },
+          {
+            "edid": "CR13VilkasWolfSpirit",
+            "formKey": "0F6089:Skyrim.esm"
+          },
+          {
+            "edid": "PlayerWolfSpirit",
+            "formKey": "0F608C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 8
+        },
+        "target": {
+          "band": "VII",
+          "level": 42,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the Vargr boss"
+        },
+        "note": "Kodlak's, Farkas's, Vilkas's and the player's; the other three take `Stats` from `EncC06WolfSpirit`, so its level moves all four"
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncC06WolfSpirit` uses the ice wolf `EncWolfIce` 023ABF as its template without `Stats`, so changing the ice wolf does not move it. No other record keeps its own level.",
+      "The other wolf spirits (`CR13FarkasWolfSpirit`, `CR13VilkasWolfSpirit`, `PlayerWolfSpirit`) carry `Stats` and follow `EncC06WolfSpirit`."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Kodlak's Wolf Spirit",
+        "base": [
+          {
+            "edid": "EncC06WolfSpirit",
+            "formKey": "058303:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "YsgramorsTomb01",
+              "formKey": "015254:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "C06WolfSpiritREF",
+              "formKey": "058304:Skyrim.esm"
+            },
+            "persistent": true,
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Farkas's Wolf Spirit",
+        "base": [
+          {
+            "edid": "CR13FarkasWolfSpirit",
+            "formKey": "0F6087:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "YsgramorsTomb01",
+              "formKey": "015254:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "CR13FarkasWolfSpiritREF",
+              "formKey": "0F6088:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Vilkas's Wolf Spirit",
+        "base": [
+          {
+            "edid": "CR13VilkasWolfSpirit",
+            "formKey": "0F6089:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "YsgramorsTomb01",
+              "formKey": "015254:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "CR13VilkasWolfSpiritREF",
+              "formKey": "0F608A:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Wolf Spirit (the player's)",
+        "base": [
+          {
+            "edid": "PlayerWolfSpirit",
+            "formKey": "0F608C:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "YsgramorsTomb01",
+              "formKey": "015254:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "PlayerWolfSpiritREF",
+              "formKey": "0F608D:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ]
+      }
+    ]
+  }
+}

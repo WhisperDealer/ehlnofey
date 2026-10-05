@@ -115,7 +115,7 @@ rules).
   page) plus one `<family>.json` per family page; `census/bands.json` is the home page. The schema is
   `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
   everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons, Daedra** (all 13 pages, the
-  Princes' followers included; since 2026-10-05). Every other group stays Confluence-first until it is migrated.
+  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05). Every other group stays Confluence-first until it is migrated.
 - **The site is public; keep it free of internal tooling** (user, 2026-10-04): no Jira ticket
   numbers (the tickets are deleted; `WD-xx` in the docs is history only) and no Confluence links or
   page ids in `census/` or `site/src/`. Confluence is internal documentation that supports the site.
@@ -250,7 +250,7 @@ rules).
   *Snow Elves* holds Vyrthur and Gelebor),
   Forsworn (WD-67: *Common Forsworn*, *Forsworn Briarheart*, *Named Forsworn* (the Cidhna Mine
   prisoners, the MS01 Markarth agents, CC Crowstooth and Alvasorr); the hagravens live under World
-  Creatures → Sentient, the Forsworn dog on *Dog*), Werebeasts (WD-68:
+  Creatures → Sentient, the Forsworn dog on *Dog*), Werebeasts (WD-68, **migrated to `census/werebeasts/`, so edit the JSON, not Confluence**:
   *Werewolf* (the six-rung ladder), *Werewolf Boss* (the boss ladder, Sinding, Arnbjorn), *Werebear*
   (the Solstheim werebears, Torkild), *Wolf Spirits*; the Beast Stone werebear is on Conjured),
   Rieklings (WD-69: no group page; under World Creatures → Sentient),

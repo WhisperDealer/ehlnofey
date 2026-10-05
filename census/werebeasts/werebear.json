@@ -1,0 +1,177 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "werebear",
+  "group": "werebeasts",
+  "title": "Werebear",
+  "order": 3,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "werebear-snowclad",
+        "name": "Werebear",
+        "encounter": "Snowclad Ruins",
+        "records": [
+          {
+            "edid": "DLC2EncTribalWerebearA",
+            "formKey": "01E17C:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncTribalWerebearB",
+            "formKey": "03D2D9:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncTribalWerebearC",
+            "formKey": "03D2DA:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 17
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: werebears, beside the werewolves"
+        },
+        "note": "Nords in human form who turn into werebears through `DLC2TribalWerebearScript` (`WerebearChange` 01E178); own level"
+      },
+      {
+        "id": "werebear-we07-a",
+        "name": "Werebear",
+        "encounter": "Solstheim world encounter",
+        "records": [
+          {
+            "edid": "DLC2WE07EncTribalWerebearA",
+            "formKey": "03D21F:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 14,
+          "from": {
+            "edid": "EncBandit04TemplateMelee",
+            "formKey": "01E60D:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        },
+        "note": "via `Stats` from the bandit berserker `EncBandit04Melee2HBerserkNordM` 03DE79"
+      },
+      {
+        "id": "werebear-we07-b",
+        "name": "Werebear",
+        "encounter": "Solstheim world encounter",
+        "records": [
+          {
+            "edid": "DLC2WE07EncTribalWerebearB",
+            "formKey": "03D220:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 5,
+          "from": {
+            "edid": "EncBandit02TemplateMelee",
+            "formKey": "01BCD9:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        },
+        "note": "via `Stats` from the bandit berserker `EncBandit02Melee2HBerserkNordM` 03DEA5"
+      },
+      {
+        "id": "werebear-we07-c",
+        "name": "Werebear",
+        "encounter": "Solstheim world encounter",
+        "records": [
+          {
+            "edid": "DLC2WE07EncTribalWerebearC",
+            "formKey": "03D221:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 9,
+          "from": {
+            "edid": "EncBandit03TemplateMelee",
+            "formKey": "01BCDA:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        },
+        "note": "via `Stats` from the bandit berserker `EncBandit03Melee2HBerserkNordM` 03DE74"
+      },
+      {
+        "id": "torkild",
+        "name": "Torkild",
+        "records": [
+          {
+            "edid": "DLC2WB01Torkild",
+            "formKey": "034024:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 25,
+          "from": {
+            "edid": "DLC2EncWerebear",
+            "formKey": "0322B1:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: werebears, beside the werewolves"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The Snowclad trio (`DLC2EncTribalWerebearA`–`C`, level 17) use the bandit berserker `EncBandit02Melee2HBerserkNordM` 03DEA5 as their template without `Stats`, so changing the bandit rung does not move them.",
+      "The `DLC2WE07` trio carry `Stats` and follow their bandit rungs (`EncBandit04`·`02`·`03Melee2HBerserkNordM` → `…Melee2HNordM` → `…Melee1HNordM` → `EncBandit04`·`02`·`03TemplateMelee`, which own 14 · 5 · 9). Changing those templates moves every bandit on the rung too; to set the trio alone, drop `Stats` from them.",
+      "Torkild follows `DLC2EncWerebear` 0322B1:Dragonborn.esm (25, never placed), and so does the Beast Stone werebear `DLC2SummonWerebear` (on Conjured): changing `DLC2EncWerebear` moves both.",
+      "No other record keeps its own level."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Werebear (Snowclad trio)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2SnowcladRuinsExterior02",
+              "formKey": "00EDC9:Dragonborn.esm"
+            },
+            "refText": "refs 0251F0 · 0251F2 · 0251F1"
+          }
+        ]
+      },
+      {
+        "name": "Werebear (`DLC2WE07` trio)",
+        "quest": "`DLC2WE07` 027E92:Dragonborn.esm, aliases Actor1–3 (created at a world-encounter marker)"
+      },
+      {
+        "name": "Torkild",
+        "quest": "`DLC2WESL01` 034025:Dragonborn.esm, alias Actor1"
+      }
+    ]
+  }
+}
