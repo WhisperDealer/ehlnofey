@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import BandChip from '../../components/BandChip.astro';
-import { bands, href, loadCensus } from '../../lib/census.ts';
+import { allFamilies, bands, groupCrumbs, href, loadCensus } from '../../lib/census.ts';
 import { md } from '../../lib/format.ts';
 
 export async function getStaticPaths() {
@@ -16,7 +16,7 @@ const spread = (rows: { target: { band?: string } }[]) =>
   bands.bands.map((b) => ({ id: b.id, n: rows.filter((r) => r.target.band === b.id).length })).filter((x) => x.n > 0);
 ---
 
-<Base title={g.title} description={`${g.title}: the census group.`} crumbs={[{ label: g.title, path: `${g.id}/` }]}>
+<Base title={g.title} description={`${g.title}: the census group.`} crumbs={groupCrumbs(g)}>
   <header>
     <h1>{g.title}</h1>
     <p class="meta">
@@ -26,6 +26,25 @@ const spread = (rows: { target: { band?: string } }[]) =>
     </p>
     {g.intro && <p class="lede">{g.intro}</p>}
   </header>
+
+  {g.subgroups.length > 0 && (
+    <div class="families">
+      {g.subgroups.map((s) => {
+        const fams = allFamilies(s);
+        const rows = fams.flatMap((f) => f.records.rows);
+        return (
+          <a class="family panel" href={href(`${s.id}/`)}>
+            <h2>{s.title}</h2>
+            <p class="holds">{fams.map((f) => f.title).join(" · ")}</p>
+            <p class="spread">
+              <span>{fams.length} pages · {rows.length} records</span>
+              {spread(rows).map((x) => <span class="sp"><BandChip id={x.id} />{x.n > 1 && <small>×{x.n}</small>}</span>)}
+            </p>
+          </a>
+        );
+      })}
+    </div>
+  )}
 
   <div class="families">
     {g.familyPages.map((f) => (

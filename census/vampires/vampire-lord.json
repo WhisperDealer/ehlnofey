@@ -1,0 +1,254 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "vampire-lord",
+  "group": "vampires",
+  "title": "Vampire Lord",
+  "order": 4,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "harkon",
+        "name": "Lord Harkon",
+        "encounter": "Castle Volkihar, `DLC1VampireCastleBossRoom` 019DFE:Dawnguard.esm (*Kindred Judgment*)",
+        "records": [
+          {
+            "edid": "DLC1HarkonCombat",
+            "formKey": "01A93D:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1HarkonCombatMagic",
+            "formKey": "00EC8A:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1HarkonCombatMelee",
+            "formKey": "00EC1C:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1VampireBeastRace",
+          "formKey": "00283A:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.4,
+          "min": 10,
+          "max": 60
+        },
+        "target": {
+          "band": "IX",
+          "status": "proposed",
+          "source": "bands-of-power.md: Harkon"
+        },
+        "note": "the vampire lord; the placed `DLC1HarkonCombatMagic` and `…Melee` (1 ref each in the boss room) take `Stats` from `DLC1HarkonCombat`."
+      },
+      {
+        "id": "serana",
+        "name": "Serana",
+        "records": [
+          {
+            "edid": "DLC1Serana",
+            "formKey": "002B6C:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 12,
+          "max": 50
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: vampire lords"
+        },
+        "note": "a `NordRace` follower with no template, filed here by the user's call (2026-10-01)."
+      },
+      {
+        "id": "valerica",
+        "name": "Valerica",
+        "records": [
+          {
+            "edid": "DLC1Valerica",
+            "formKey": "003B8B:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: vampire lords"
+        },
+        "note": "a `NordRace` ally with no template, filed here by the user's call (2026-10-01)."
+      }
+    ]
+  },
+  "otherRecords": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": [
+          {
+            "edid": "DLC1Harkon",
+            "formKey": "003BA7:Dawnguard.esm"
+          }
+        ],
+        "name": "Lord Harkon",
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 10,
+          "max": 60
+        },
+        "where": "his human form (`NordRace`), at court in `DLC1VampireCastleGuildhall` 000803:Dawnguard.esm, 1 ref; not fought"
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`DLC1HarkonCombat` 01A93D:Dawnguard.esm uses `DLC1Harkon` 003BA7:Dawnguard.esm as its template without `Stats`: the fight's level is set on `DLC1HarkonCombat`; changing the human form leaves the vampire lord at PC×1.4 (10–60).",
+      "`DLC1VQ02VampLordLoadDummy` 0145A5:Dawnguard.esm (Load Dummy, level 1) is a vampire lord with no template; it is a scene dummy, on the *Vampires* group page as never met as an enemy."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Serana",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1DimHollowCrypt02",
+              "formKey": "000EB7:Dawnguard.esm"
+            },
+            "note": "1 ref"
+          }
+        ],
+        "quest": "quests `DLC1VQ01`, `DLC1VQ05`, `DLC1VQ07`, `DLC1VCController` and others"
+      },
+      {
+        "name": "Valerica",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC01SoulCairnBoneyardEntrance",
+              "formKey": "0028BF:Dawnguard.esm"
+            },
+            "note": "Soul Cairn worldspace `DLC01SoulCairn` 001408:Dawnguard.esm, 1 ref"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "`DLC1HarkonCombatMagic` · `…Melee`",
+        "weapons": "none",
+        "armor": "`DLC1dunHarkonVampireLordRoyalOutfit` 011A89:Dawnguard.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "`DLC1Harkon` (human form)",
+        "weapons": "Harkon's Sword 0067CF:Dawnguard.esm",
+        "armor": "`DLC1HarkonOutfit` 015CCD:Dawnguard.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Serana",
+        "weapons": "Elven Dagger 01399E",
+        "armor": "`DLC1SeranaOutfit` 016903:Dawnguard.esm (also carries the Elder Scroll `DLC1ElderScrollBack` 01A958, an ammunition record)",
+        "skin": "race default"
+      },
+      {
+        "records": "Valerica",
+        "weapons": "Ebony Dagger 0139AE",
+        "armor": "`DLC1ValericaOutfit` 016904:Dawnguard.esm",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC1dunHarkonVampireLordRoyalOutfit",
+          "formKey": "011A89:Dawnguard.esm"
+        },
+        "rolls": "Vampire Royal Armor 011A85 · `DLC1VampireLordCape` 015BC1 · FX Vamp Skeleton 010E15 (Dawnguard.esm)"
+      },
+      {
+        "list": {
+          "edid": "DLC1HarkonOutfit",
+          "formKey": "015CCD:Dawnguard.esm"
+        },
+        "rolls": "Vampire Royal Armor 00B5DB:Dawnguard.esm · Vampire Boots 00B5DE:Dawnguard.esm · Necklace of Magic Suppression 0FC064 · Ring of Eminent Destruction 100E02"
+      },
+      {
+        "list": {
+          "edid": "DLC1SeranaOutfit",
+          "formKey": "016903:Dawnguard.esm"
+        },
+        "rolls": "Vampire Royal Armor 00B5DB · Vampire Boots 00B5DE (Dawnguard.esm)"
+      },
+      {
+        "list": {
+          "edid": "DLC1ValericaOutfit",
+          "formKey": "016904:Dawnguard.esm"
+        },
+        "rolls": "Vampire Royal Armor (Valerica's) 0194C5:Dawnguard.esm · Vampire Boots 00B5DE · Necklace of Frost Suppression 0FC04C · Ring of Regeneration 100E53"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Harkon's Sword 0067CF:Dawnguard.esm",
+        "kind": "one-handed sword, enchanted",
+        "playable": true
+      },
+      {
+        "item": "Vampire Royal Armor 00B5DB · 0194C5 (Valerica's) (Dawnguard.esm)",
+        "kind": "light body, AR 30, enchanted",
+        "playable": true
+      },
+      {
+        "item": "Vampire Boots 00B5DE:Dawnguard.esm",
+        "kind": "light feet, AR 7",
+        "playable": true
+      },
+      {
+        "item": "Necklace of Magic Suppression 0FC064 · Ring of Eminent Destruction 100E02 · Necklace of Frost Suppression 0FC04C · Ring of Regeneration 100E53",
+        "kind": "jewellery",
+        "playable": true
+      },
+      {
+        "item": "Elven Dagger 01399E · Ebony Dagger 0139AE",
+        "kind": "one-handed",
+        "playable": true
+      },
+      {
+        "item": "Vampire Royal Armor 011A85 · `DLC1VampireLordCape` 015BC1 · FX Vamp Skeleton 010E15 (Dawnguard.esm)",
+        "kind": "the vampire lord's body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

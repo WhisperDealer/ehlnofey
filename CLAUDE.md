@@ -115,7 +115,13 @@ rules).
   page) plus one `<family>.json` per family page; `census/bands.json` is the home page. The schema is
   `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
   everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons, Daedra** (all 13 pages, the
-  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05). Every other group stays Confluence-first until it is migrated.
+  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05).
+  Every other group stays Confluence-first until it is migrated.
+- **A sub-group is its own census folder with `parent`** in its `group.json` (`census/vampires/` has
+  `"parent": "undead"`); URLs stay flat (`/vampires/common-vampires/`), the parent's page lists its
+  sub-groups, and only top-level groups appear in the nav and on the home page. `census/undead/group.json`
+  is a parent with no families of its own; its Confluence page (12714066) stays hand-written, not mirrored,
+  until the rest of Undead is migrated.
 - **The site is public; keep it free of internal tooling** (user, 2026-10-04): no Jira ticket
   numbers (the tickets are deleted; `WD-xx` in the docs is history only) and no Confluence links or
   page ids in `census/` or `site/src/`. Confluence is internal documentation that supports the site.
@@ -201,7 +207,7 @@ rules).
   quest and dead copies, the Dawnstar initiates) and *Dark Brotherhood Assassins* (the `WEJS28` assassins,
   `WEAssassinSubChar` PC×1.1 [6–45], the Hag's End assassin, the CC Bow of Shadows and Daedric-armor
   assassins) and *Dark Brotherhood Targets* (the `DB01`–`DB11`, side-contract and `DBrecurring` victims,
-  Agnis and Maluril included; the Maros stay on Penitus Oculatus, Helvard on Jarls)), Warlocks
+  Agnis and Maluril included; the Maros stay on Penitus Oculatus, Helvard on Jarls, Hern on *Unique Vampires*)), Warlocks
   (WD-87, top-level, the hostile mages: *Common Warlocks* (five schools × seven rungs, 1–46, every
   wrapper, MS06 cultists, Southfringe crew), *Warlock Bosses* (7–40; the 50
   rung is in no list; CC Necromantic Grimoire injects boss leaves), *Witches* (Witch 4, Hag 8),
@@ -264,8 +270,8 @@ rules).
   *Mythic Dawn (CC)* (The Cause), *Vaermina Devotees* (Storm ladder, Orcish Invaders, Veren and Thorek) and
   *Daedric Quest Foes* (Namira's Eola, Nimphaneth, Sanyon; Molag Bal's Logrolf; Clavicus Vile's
   Sebastian Lort, who is `DA03Wizard` named by quest alias; Meridia's Malkoran and Malkoran's Shade)), Creation Club creatures (WD-71: no group page; each is on its kind's page under
-  World Creatures), Vampires (WD-72, a sub-group under Undead since 2026-10-02: *Common Vampires*, *Vampire Boss*, *Vampire Lord* (Harkon, plus Serana and Valerica by the user's call),
-  *Volkihar Court*, *Vampire's Thrall*, *Death Hound*; *Gargoyle* moved to World Creatures → Monsters;
+  World Creatures), Vampires (WD-72, a sub-group under Undead since 2026-10-02, **migrated to `census/vampires/`, so edit the JSON, not Confluence**: *Common Vampires*, *Vampire Boss*, *Unique Vampires* (Laelette, Fenrik, the Vampire Naturalist, Alva, Sybille Stentor, Hern and Hert, the Vampire Scout, Vampire Assassin and Feral Vampire, Movarth, Vighar; user 2026-10-05: named vampires leave their town or target pages for it), *Vampire Lord* (Harkon, plus Serana and Valerica by the user's call),
+  *Volkihar Court* (Lokil included, user 2026-10-05), *Vampire's Thrall*, *Death Hound*; *Gargoyle* moved to World Creatures → Monsters;
   thralls take bandit levels and gear;
   the Bloodchill Manor CC vampires are on *Common Vampires* and *Vampire Boss*),
   Dawnguard (WD-76: *Common Dawnguard* (the six-rung ladder, every rung named "Dawnguard"),

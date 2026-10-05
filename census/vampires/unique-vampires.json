@@ -1,0 +1,640 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "unique-vampires",
+  "group": "vampires",
+  "title": "Unique Vampires",
+  "order": 3,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "laelette",
+        "name": "Laelette the Vampire",
+        "records": [
+          {
+            "edid": "MS14LaeletteVampire",
+            "formKey": "0274A0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlVampire",
+            "formKey": "02F9E1:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            20,
+            28,
+            38,
+            48,
+            60
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "fenrik",
+        "name": "Fenrik",
+        "records": [
+          {
+            "edid": "ccMTYSSE002_Fenrik",
+            "formKey": "00095F:ccmtysse002-ve.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 30
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        }
+      },
+      {
+        "id": "movarth",
+        "name": "Movarth Piquine",
+        "records": [
+          {
+            "edid": "dunMovarthVampireBoss",
+            "formKey": "08BB91:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlVampireBoss",
+            "formKey": "02F9E2:Skyrim.esm"
+          },
+          "rungs": [
+            14,
+            23,
+            31,
+            42,
+            53,
+            65
+          ]
+        },
+        "target": {
+          "band": "VIII",
+          "level": 65,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the vampire boss pin"
+        },
+        "note": "a nameless record that takes `BaseData` from the list; the name is a quest alias `DisplayName` (see Placed)."
+      },
+      {
+        "id": "vighar",
+        "name": "Vighar",
+        "records": [
+          {
+            "edid": "dunBloodletThroneVampireBoss",
+            "formKey": "05B830:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlVampireBoss",
+            "formKey": "02F9E2:Skyrim.esm"
+          },
+          "rungs": [
+            14,
+            23,
+            31,
+            42,
+            53,
+            65
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        },
+        "note": "named by a quest alias `DisplayName` (see Placed)."
+      },
+      {
+        "id": "vampire-naturalist",
+        "name": "Vampire Naturalist",
+        "records": [
+          {
+            "edid": "ccVSVSSE002_Vampire",
+            "formKey": "00082E:ccvsvsse002-pets.esl"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 1,
+          "from": {
+            "edid": "EncVampire00Template",
+            "formKey": "032FE7:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "alva",
+        "name": "Alva",
+        "records": [
+          {
+            "edid": "Alva",
+            "formKey": "0135E6:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "NordRace",
+          "formKey": "013746:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 15
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        },
+        "note": "a vampire by her abilities (`InvisibilityVampiric` 033976 among them), class `EncClassVampire` 02E00F and death item `DeathItemVampire` 03ADA0, not by race (`NordRace`), so the race sweep missed her; she turns on the player in *Laid to Rest* (`MS14`). Moved here from *Morthal* (user, 2026-10-05)."
+      },
+      {
+        "id": "sybille-stentor",
+        "name": "Sybille Stentor",
+        "records": [
+          {
+            "edid": "SybilleStentor",
+            "formKey": "0132AA:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "BretonRaceVampire",
+          "formKey": "08883C:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 15
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        },
+        "note": "the Blue Palace court wizard and an expert Destruction trainer; aggression None, so she fights only if attacked. Moved here from *Solitude* (user, 2026-10-05)."
+      },
+      {
+        "id": "hern",
+        "name": "Hern",
+        "records": [
+          {
+            "edid": "Hern",
+            "formKey": "01367B:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "NordRaceVampire",
+          "formKey": "088794:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        },
+        "note": "a Dark Brotherhood side-contract target (`DBSideContract04`); aggression None. Moved here from *Dark Brotherhood Targets* (user, 2026-10-05)."
+      },
+      {
+        "id": "hert",
+        "name": "Hert",
+        "records": [
+          {
+            "edid": "Hert",
+            "formKey": "01367C:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "NordRaceVampire",
+          "formKey": "088794:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        },
+        "note": "Hern's wife at Half-Moon Mill; aggression None. She was on no family page before (user, 2026-10-05)."
+      },
+      {
+        "id": "vampire-scout",
+        "name": "Vampire Scout",
+        "records": [
+          {
+            "edid": "DLC1RadiantScoutVampire",
+            "formKey": "0041D5:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharVampire",
+            "formKey": "033973:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            20,
+            28,
+            38,
+            48,
+            60
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: stays Powerful"
+        },
+        "note": "two at a time, from the radiant patrol `DLC1ScoutPatrol` 0041CF (\"Enemy Scouts Patrolling Location\"): a 25% chance each time the player arrives at Fort Dawnguard (`DLC1HunterHQLocation`) after joining the Dawnguard (`DLC1HunterFaction`), so it can recur. On the vampire side the same quest sends two Dawnguard hunters to Castle Volkihar instead."
+      },
+      {
+        "id": "vampire-assassin",
+        "name": "Vampire Assassin",
+        "records": [
+          {
+            "edid": "DLC1_WESC04_VampireAssassin",
+            "formKey": "0034D5:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlVampire",
+            "formKey": "02F9E1:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            20,
+            28,
+            38,
+            48,
+            60
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: stays Powerful"
+        },
+        "note": "one, from the world encounter `DLC1_WESC04` 0034D4: after the player joins the Dawnguard (`DLC1HunterBaseIntro` stage 200), only at night (22:00–05:00), she teleports in beside two dead skeletons when the player comes near. She carries an *Assassin's Writ* ordering her to kill the player, and reading it marks the lair it names on the map."
+      },
+      {
+        "id": "feral-vampire",
+        "name": "Feral Vampire",
+        "records": [
+          {
+            "edid": "DLC1VCDungeonFeralVampire",
+            "formKey": "00CADF:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharVampire",
+            "formKey": "033973:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            20,
+            28,
+            38,
+            48,
+            60
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: stays Powerful"
+        },
+        "note": "one, placed in the Castle Volkihar dungeon (`DLC1VampireCastleDungeon01`)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Laelette, Movarth, Vighar, the Vampire Scout, the Vampire Assassin and the Feral Vampire own no level: each takes `Stats` from a vampire list (`LCharVampire` 033973, `LvlVampire` 02F9E1, `LvlVampireBoss` 02F9E2), so changing the list moves them. The lists are on *Common Vampires* and *Vampire Boss*.",
+      "The Vampire Naturalist takes `Stats` from `EncVampire00Template` 032FE7 (the Fledgling, on *Common Vampires*).",
+      "Fenrik, Alva, Sybille Stentor, Hern and Hert each own their level and have no template; no record uses any of them as a template.",
+      "Every row: no other record keeps its own level."
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Laelette the Vampire",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "Fenrik",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DawnstarQuicksilverMine",
+              "formKey": "02C779:Skyrim.esm"
+            },
+            "note": "1 ref"
+          }
+        ]
+      },
+      {
+        "name": "Movarth Piquine",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MovarthsLair01",
+              "formKey": "01526F:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "01F593:Skyrim.esm"
+            },
+            "disabled": true,
+            "note": "level modifier VeryHard"
+          }
+        ],
+        "quest": "quest `MS14` 025F3E alias `BossVampireMorvath` (display name `MS14BossName` 02EBE8)"
+      },
+      {
+        "name": "Vighar",
+        "locations": [
+          {
+            "cell": {
+              "edid": "BloodletThrone01",
+              "formKey": "016EA1:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "05B824:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "quest `FreeformFalkreathQuest03B` 0D6986 alias `Vighar` (display name `FreeformFalkreathQuest03Vighar` 0B83C9); also alias `VampireBoss` in `dunBloodletThroneQST` 0C19F8"
+      },
+      {
+        "name": "Vampire Naturalist",
+        "locations": [
+          {
+            "cell": {
+              "edid": "CronvangrHall01",
+              "formKey": "0152A7:Skyrim.esm"
+            },
+            "note": "1 ref"
+          }
+        ]
+      },
+      {
+        "name": "Alva",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MorthalAlvasHouse",
+              "formKey": "0138E1:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "AlvaREF",
+              "formKey": "01AA5C:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "quest `MS14` 025F3E (*Laid to Rest*)"
+      },
+      {
+        "name": "Sybille Stentor",
+        "locations": [
+          {
+            "cell": {
+              "edid": "SolitudeBluePalace",
+              "formKey": "016A04:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Hern",
+        "locations": [
+          {
+            "cell": {
+              "edid": "HalfMoonMill",
+              "formKey": "0161EF:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "HernREF",
+              "formKey": "01982E:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "quest `DBSideContract04` 01EA60"
+      },
+      {
+        "name": "Hert",
+        "locations": [
+          {
+            "cell": {
+              "edid": "HalfMoonMill",
+              "formKey": "0161EF:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "HertREF",
+              "formKey": "01982F:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Vampire Scout",
+        "notPlaced": true,
+        "quest": "spawned in pairs by quest `DLC1ScoutPatrol` 0041CF (aliases `ScoutVampire1`, `ScoutVampire2`, level modifier Medium) outside Fort Dawnguard"
+      },
+      {
+        "name": "Vampire Assassin",
+        "notPlaced": true,
+        "quest": "spawned by quest `DLC1_WESC04` 0034D4 (alias `Vampire`, level modifier Hard)"
+      },
+      {
+        "name": "Feral Vampire",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1VampireCastleDungeon01",
+              "formKey": "00285B:Dawnguard.esm"
+            },
+            "note": "1 ref, level modifier Medium"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Laelette, Movarth, Vighar, the Vampire Scout, the Vampire Assassin",
+        "weapons": "`LItemVampireWeaponBase` 10962B",
+        "armor": "`DLC1vampireOutfit` 033840 (both walked on *Common Vampires*)",
+        "skin": "race default"
+      },
+      {
+        "records": "Fenrik",
+        "weapons": "`LItemWeaponMace` 016577",
+        "armor": "`ccMTYSSE002_VigilantOfStendarrOutfitFenrik` 000974:ccmtysse002-ve.esl",
+        "skin": "race default"
+      },
+      {
+        "records": "Vampire Naturalist",
+        "weapons": "`LItemVampireWeaponBase` 10962B",
+        "armor": "`DLC1vampireOutfit` 033840 (both from `EncVampire00Template`, walked on *Common Vampires*)",
+        "skin": "race default"
+      },
+      {
+        "records": "Alva",
+        "weapons": "Steel Dagger 013986",
+        "armor": "`ClothesTavernWenchOutfit` 0F966E",
+        "skin": "race default"
+      },
+      {
+        "records": "Sybille Stentor",
+        "weapons": "Iron Dagger 01397E",
+        "armor": "`CourtWizardOutfit` 10FE69 (Blue Mage Robes, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Hern",
+        "weapons": "Steel War Axe 013983",
+        "armor": "`ArmorScaledBSimpleOutfit` 037C51 (Scaled Horn Armor, Scaled Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Hert",
+        "weapons": "Iron Dagger 01397E",
+        "armor": "`ArmorHideSimpleOutfit` 037C4F (Hide Armor, Hide Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Feral Vampire",
+        "weapons": "Elven Dagger of Fear 0BE18B · Ring of Minor Destruction 100DFF",
+        "armor": "`DLC1VCFeralVampireOutfit` 00CAE0:Dawnguard.esm",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ccMTYSSE002_VigilantOfStendarrOutfitFenrik",
+          "formKey": "000974:ccmtysse002-ve.esl"
+        },
+        "rolls": "Vigil Corrupted Helmet 000D82 · Armor 000D7F · Gauntlets 000D80 · Boots 000D7E (ccmtysse002-ve.esl)"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponMace",
+          "formKey": "016577:Skyrim.esm"
+        },
+        "rolls": "Iron ×3 (1) · Steel (2) · Orcish (6) · Dwarven (12) · Elven (19) · Glass (27) · Ebony (36) · Daedric (46)",
+        "levels": [
+          1,
+          2,
+          6,
+          12,
+          19,
+          27,
+          36,
+          46
+        ]
+      },
+      {
+        "list": {
+          "edid": "DLC1VCFeralVampireOutfit",
+          "formKey": "00CAE0:Dawnguard.esm"
+        },
+        "rolls": "Footwraps 00E9EA · Ragged Trousers 00E9EB (Dawnguard.esm)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Vigil Corrupted Helmet · Armor · Gauntlets · Boots (ccmtysse002-ve.esl)",
+        "kind": "heavy, AR 19 · 40 · 14 · 14",
+        "playable": true
+      },
+      {
+        "item": "Scaled Horn Armor, Scaled Boots, Hide Armor, Hide Boots",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "tavern clothes, Blue Mage Robes and Boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Footwraps · Ragged Trousers (Dawnguard.esm)",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Ring of Minor Destruction 100DFF",
+        "kind": "jewellery",
+        "playable": true
+      },
+      {
+        "item": "every weapon above",
+        "kind": "one-handed",
+        "playable": true
+      }
+    ]
+  }
+}

@@ -418,6 +418,10 @@ plausible-sounding claims are cheapest to make and most expensive to act on:
   `npx astro preview` silently moves to 4322, and a screenshot of `localhost:4321` shows the old page.
   Stop every listener first: `Get-NetTCPConnection -State Listen | ? LocalPort -in 4321..4325 |
   % { Stop-Process -Id $_.OwningProcess -Force }`. (Dev mode, `npm run dev`, hot-reloads instead.)
+- **`npm run dev` does not hot-reload a new `census/` folder or a `schema.ts` change** (2026-10-05).
+  Editing an existing JSON file reloads, but a new group folder (`census/vampires/`) stays invisible
+  to a running dev server: its content store is cached. `npm run build` sees it, so a clean build
+  does not prove the dev page. Restart with `npx astro dev --force`, which also clears the store.
 - **Screenshots without the Chrome extension: headless Edge.** `msedge.exe --headless=new
   --hide-scrollbars --window-size=1280,2400 --virtual-time-budget=4000 --screenshot=<path> <url>`.
   Headless windows have a minimum width, so a `--window-size=390,…` shot is clipped, not a phone

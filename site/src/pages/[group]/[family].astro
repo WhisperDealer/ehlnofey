@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import LevelStrip from '../../components/LevelStrip.astro';
 import BandChip from '../../components/BandChip.astro';
-import { bandById, href, loadCensus } from '../../lib/census.ts';
+import { bandById, groupCrumbs, href, loadCensus } from '../../lib/census.ts';
 import { levelText, md, ref, refs } from '../../lib/format.ts';
 
 export async function getStaticPaths() {
@@ -19,7 +19,7 @@ const PLACED_FOLD = 4; // more locations than this collapse behind a summary
 <Base
   title={f.title}
   description={`${f.title}: ${f.records.rows.length} records, their levels, lists and placements.`}
-  crumbs={[{ label: group.title, path: `${group.id}/` }, { label: f.title, path: `${group.id}/${f.id}/` }]}
+  crumbs={[...groupCrumbs(group), { label: f.title, path: `${group.id}/${f.id}/` }]}
 >
   <header class="head">
     <h1>{f.title}</h1>

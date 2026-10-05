@@ -1,0 +1,141 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "vampires",
+  "title": "Vampires",
+  "order": 1,
+  "parent": "undead",
+  "meta": {
+    "spec": "archetype-tiers.md §3.1 and §3.4",
+    "updated": "2026-10-05"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The Volkihar court are vampire lords (user, 2026-10-05), so they share the vampire lords' band. The gargoyles are under World Creatures → Monsters (*Gargoyle*).",
+  "families": [
+    {
+      "id": "common-vampires",
+      "holds": "the eight rungs Fledgling 1 → Nightlord 60 and the three disguised travellers that draw them"
+    },
+    {
+      "id": "vampire-boss",
+      "holds": "Master Vampire 14 → Nightmaster 65, the boss lists, the disguised \"Traveler\""
+    },
+    {
+      "id": "unique-vampires",
+      "holds": "the one-off vampires: Laelette, Fenrik (CC), the Vampire Naturalist (CC), Alva, Sybille Stentor, Hern and Hert, the Vampire Scout, the Vampire Assassin, the Feral Vampire, and the bosses Movarth Piquine and Vighar"
+    },
+    {
+      "id": "vampire-lord",
+      "holds": "Lord Harkon, Serana, Valerica"
+    },
+    {
+      "id": "volkihar-court",
+      "holds": "the thirteen court members of Castle Volkihar, its Watchman, and Lokil"
+    },
+    {
+      "id": "vampires-thrall",
+      "holds": "the thralls (bandit rungs, own name) and the CC \"Vampire Thrall\""
+    },
+    {
+      "id": "death-hound",
+      "holds": "Death Hound"
+    }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-10-01)",
+    "confidence": "verified",
+    "text": "Every NPC in Skyrim, Update, Dawnguard, HearthFires, Dragonborn and the CC packs whose race carries the `Vampire` keyword 0A82BB or is a gargoyle or death hound race, followed through every template and `LVLN`; then every NPC named or edited as a vampire or thrall; then every quest alias that renames a placed ref of them. Alva (`NordRace`, a vampire by her abilities) was added by hand on 2026-10-05. Everything found is on a family page except the following."
+  },
+  "filedElsewhere": [
+    {
+      "record": "`DLC1EncGargoyleSmall` · `DLC1EncGargoyle` · `DLC1EncGargoyleSentinel` (Dawnguard.esm)",
+      "what": "gargoyles",
+      "where": "World Creatures → Monsters → Gargoyle"
+    },
+    {
+      "record": "`DLC1_BF_FrozenFalmerMelee*` (Dawnguard.esm)",
+      "what": "Frozen Vampire Falmer",
+      "where": "Falmer → Common Falmer"
+    },
+    {
+      "record": "`DLC1LvlVampireFalmer*` 00B3CC–00B3D5:Dawnguard.esm",
+      "what": "wrappers on the Falmer lists",
+      "where": "Falmer"
+    },
+    {
+      "record": "`DLC1EncGargoyleSummon` 016907 · `…SummonAmulet` 00F4D6 · `DLC1dunHarkonEncGargoyleSummon` 00F4E3 (Dawnguard.esm)",
+      "what": "summoned gargoyles",
+      "where": "Conjured → Daedric Summons"
+    },
+    {
+      "record": "`ccBGSSSE001_MiscWindhelm_Fangtusk` 000BF9:ccbgssse001-fish.esm",
+      "what": "the CC vampire horker",
+      "where": "World Creatures → Horker"
+    },
+    {
+      "record": "`DLC1EncHunterTemplate*`, `DLC1_WESC05_DawnguardHunter`",
+      "what": "Vampire Hunters",
+      "where": "Dawnguard"
+    },
+    {
+      "record": "`TreasCorpseVampire*`, `dunFellglow_TreasCorpseVampire*`",
+      "what": "corpses",
+      "where": "not enemies"
+    }
+  ],
+  "neverMet": [
+    {
+      "record": "`Babette` 01D4B7",
+      "what": "Dark Brotherhood vampire child, level 10",
+      "why": "`Essential`, aggression None"
+    },
+    {
+      "record": "`DLC1HireableVampireDeathhound1` 01AA77 · `…2` 01AA78 (Dawnguard.esm)",
+      "what": "Garmr, Cu Sith: death hounds, level 5 (from `DLC1encDeathHound`)",
+      "why": "hireable followers, Castle Volkihar"
+    },
+    {
+      "record": "`DLC1LvlCastleThrall` 018066 (×7), `DLC1VQ02FeastThrall1`/`2`, `DLC1CastleThrallTemplateDead` (Dawnguard.esm)",
+      "what": "Vampire Cattle, level 1",
+      "why": "Castle Volkihar's fed-on thralls"
+    },
+    {
+      "record": "`ccEEJSSE001_DLC1EncVampire00NordF` 0B7B36 · `ccEEJSSE001_DLC1EncVampireBard2` 0D1095 (cceejsse005-cave.esm)",
+      "what": "Bard ×2, level 1 (from `EncVampire00Template`)",
+      "why": "house staff in Bloodchill Cavern `ccEEJSSE005Interior01` 002FD1:Update.esm, aggression None"
+    },
+    {
+      "record": "`ccEEJSSE005_StewardVampire` 0B7B27:cceejsse005-cave.esm",
+      "what": "Waiter, level 65 (from `DLC1EncVampire07TemplateBoss` 00282B:Dawnguard.esm)",
+      "why": "house staff in Bloodchill Cavern, aggression None"
+    },
+    {
+      "record": "`DLC1VQ02VampLordLoadDummy` 0145A5:Dawnguard.esm",
+      "what": "\"Load Dummy\"",
+      "why": "scene dummy"
+    }
+  ],
+  "neverInGame": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "record": "`LvlCronvangrVampire` 051843 · `dunHaemarsShameLvlVampire` 046282 · `dunHaemarsShame_LvlVampireBoss` 046283 · `DLC1LvlVampire_Ambush` 00996B · `DLC1LvlVampireBoss_Ambush` 00996C · `DLC1LvlVampireFemaleCondescending` 00D0AD · `DLC1VQ01LvlVampireFemaleCondescending` 004D87 · `DLC1RadiantDisguisedVampireMerchant` 005E4D · `LvlVampireCompanionSnow` 0640BF · `DLC1VQ01LvlDeathHound` 004D88 · `tempDLC1EncGargoyleBoss` 010CFA",
+        "why": "no placed reference, quest, list or script names them"
+      },
+      {
+        "record": "`DLC1VQ03VampireDriver` 00887B · `DLC1VQ03VampireDriverDead` 006E5C (Dawnguard.esm)",
+        "why": "Rogen, a vampire carriage driver, level 6 (the dead copy takes `Stats` from the living one): not placed, and no quest, scene, package, list, form list or script names either record (checked 2026-10-05)"
+      },
+      {
+        "record": "`ccEEJSSE005_DLC1LvlVampire_Ambush` 0D1093:cceejsse005-cave.esm",
+        "why": "Porter, on `LvlVampire`: not placed, and nothing in the pack references it"
+      },
+      {
+        "record": "`DLC1LCharVampireFCondescending` 00D0AC · `LCharVampireWolf` 008D75 · `LCharVampireCompanionFrost` 0640BE",
+        "why": "lists whose only users are the records above, or none"
+      },
+      {
+        "record": "`LvlVampireThrallMelee1HGuard` 02EC1B and the other unplaced `LvlVampireThrall*` wrappers",
+        "why": "no placed reference or quest"
+      }
+    ]
+  }
+}

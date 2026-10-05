@@ -161,9 +161,12 @@ export const Group = z.strictObject({
   id: z.string().regex(/^[a-z0-9-]+$/),
   title: z.string().min(1),
   order: z.number().int(),
+  // A sub-group names its parent group (Vampires under Undead). A parent lists its sub-groups on its
+  // page, and its own families may be empty while every family sits in a sub-group.
+  parent: z.string().regex(/^[a-z0-9-]+$/).optional(),
   meta: Meta,
   intro: z.string().optional(),
-  families: z.array(z.strictObject({ id: z.string(), holds: z.string() })).min(1),
+  families: z.array(z.strictObject({ id: z.string(), holds: z.string() })),
   sweep: z.strictObject({ title: z.string(), confidence: Confidence, text: z.string() }).optional(),
   filedElsewhere: z.array(z.strictObject({ record: z.string(), what: z.string(), where: z.string() })).optional(),
   neverMet: z.array(z.strictObject({ record: z.string(), what: z.string(), why: z.string() })).optional(),

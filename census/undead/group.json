@@ -1,0 +1,12 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "undead",
+  "title": "Undead",
+  "order": 4,
+  "meta": {
+    "spec": "archetype-tiers.md §3.2 and §5",
+    "updated": "2026-10-05"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Every undead family placed or spawned as an enemy, draugr included (user, 2026-09-30). An undead that exists only as a summon is under Conjured. The sub-groups move here one at a time: Vampires first; Draugr, Skeletons, Ghosts, Ash, Dragon Priests and the Creation Club undead are still to come.",
+  "families": []
+}

@@ -10,6 +10,7 @@
     - the file parses as JSON, with no UTF-8 BOM
     - a family's `id` matches its filename and its `group` matches its folder
     - every family a group.json lists exists, and every family file is listed by its group
+    - a sub-group's `parent` names a group that exists
     - every `formKey` is `<6 upper-case hex>:<Master.esm|esp|esl>` (never bare hex)
     - every record row has a `level.kind` the site knows and a `target.band` of I-X with a
       `target.status` of proposed or implemented, or a `target.scales` (an exception to bone 1)
@@ -73,6 +74,9 @@ foreach ($dir in Get-ChildItem -LiteralPath $Census -Directory | Where-Object { 
         $group = Read-Json $groupFile
         if ($null -ne $group) {
             if ($group.id -ne $dir.Name) { Add-Error $groupFile "id '$($group.id)' should be '$($dir.Name)'" }
+            if ((Has $group 'parent') -and -not (Test-Path -LiteralPath (Join-Path (Join-Path $Census $group.parent) 'group.json'))) {
+                Add-Error $groupFile "names parent '$($group.parent)', which has no census/$($group.parent)/group.json"
+            }
             $listed = @($group.families | ForEach-Object { $_.id })
             foreach ($id in $listed) {
                 if (-not (Test-Path -LiteralPath (Join-Path $dir.FullName "$id.json"))) { Add-Error $groupFile "lists '$id', which has no $id.json" }

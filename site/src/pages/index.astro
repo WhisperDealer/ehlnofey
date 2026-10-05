@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import BandBar from '../components/BandBar.astro';
 import BandChip from '../components/BandChip.astro';
-import { bands, bandRange, href, loadCensus } from '../lib/census.ts';
+import { allFamilies, bands, bandRange, href, loadCensus } from '../lib/census.ts';
 
 const groups = await loadCensus();
 
@@ -92,14 +92,29 @@ const recordCount = groups.reduce((n, g) => n + g.familyPages.reduce((m, f) => m
       with more families to come. A dashed target is a proposal; a solid one is implemented in the mod.
     </p>
     <div class="groups">
-      {groups.map((g) => (
-        <a class="group panel" href={href(`${g.id}/`)}>
-          <h3>{g.title}</h3>
-          <ul>
-            {g.familyPages.map((f) => <li>{f.title} <small>· {f.records.rows.length} records</small></li>)}
-          </ul>
-        </a>
-      ))}
+      {groups.filter((g) => !g.parent).map((g) =>
+        g.subgroups.length === 0 ? (
+          <a class="group panel" href={href(`${g.id}/`)}>
+            <h3>{g.title}</h3>
+            <ul>
+              {g.familyPages.map((f) => <li>{f.title} <small>· {f.records.rows.length} records</small></li>)}
+            </ul>
+          </a>
+        ) : (
+          // A parent group: a link can hold no other link, so the title and each line link on their own.
+          <div class="group panel parent">
+            <h3><a href={href(`${g.id}/`)}>{g.title}</a></h3>
+            <ul>
+              {g.subgroups.map((s) => (
+                <li><a href={href(`${s.id}/`)}>{s.title}</a> <small>· {allFamilies(s).reduce((n, f) => n + f.records.rows.length, 0)} records</small></li>
+              ))}
+              {g.familyPages.map((f) => (
+                <li><a href={href(`${g.id}/${f.id}/`)}>{f.title}</a> <small>· {f.records.rows.length} records</small></li>
+              ))}
+            </ul>
+          </div>
+        )
+      )}
     </div>
   </section>
 </Base>
@@ -142,6 +157,8 @@ const recordCount = groups.reduce((n, g) => n + g.familyPages.reduce((m, f) => m
   .group h3 { margin: 0.2rem 0 0.5rem; font-size: 1.35rem; }
   .group ul { margin: 0; padding-left: 1.1rem; color: var(--text); }
   .group small { color: var(--muted); }
+  .group.parent a { color: var(--text); text-decoration: none; }
+  .group.parent a:hover { color: var(--gold); }
 
   @media (max-width: 720px) {
     .bands { padding: 0.2rem 1rem; }

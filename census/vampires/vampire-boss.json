@@ -1,0 +1,393 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "vampire-boss",
+  "group": "vampires",
+  "title": "Vampire Boss",
+  "order": 2,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "master-vampire",
+        "name": "Master Vampire",
+        "records": [
+          {
+            "edid": "EncVampire02TemplateBoss",
+            "formKey": "02E098:Skyrim.esm"
+          },
+          {
+            "edid": "EncVampire03TemplateBoss",
+            "formKey": "02E12A:Skyrim.esm"
+          },
+          {
+            "edid": "EncVampire04TemplateBoss",
+            "formKey": "02E1B1:Skyrim.esm"
+          },
+          {
+            "edid": "EncVampire05TemplateBoss",
+            "formKey": "02E1B8:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 14,
+          "also": [
+            23,
+            31,
+            42
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: vampires"
+        }
+      },
+      {
+        "id": "volkihar-master-vampire",
+        "name": "Volkihar Master Vampire",
+        "records": [
+          {
+            "edid": "EncVampire06TemplateBoss",
+            "formKey": "02E1BF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 53
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "role: a vampire boss, above the vampires"
+        }
+      },
+      {
+        "id": "nightmaster-vampire",
+        "name": "Nightmaster Vampire",
+        "records": [
+          {
+            "edid": "DLC1EncVampire07TemplateBoss",
+            "formKey": "00282B:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 65
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "role: a vampire boss, above the vampires"
+        }
+      },
+      {
+        "id": "vampire-dlc1-boss",
+        "name": "Vampire",
+        "records": [
+          {
+            "edid": "DLC1EncVampire00TemplateBoss",
+            "formKey": "01223F:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1EncVampire01TemplateBoss",
+            "formKey": "01223E:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1,
+          "also": [
+            6
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: low-level vampires"
+        },
+        "note": "the levels come from `EncVampire00Template` 032FE7 · `EncVampire01Template` 032FE8; the two lowest rungs of `DLC1LCharVampireMaleNordM`."
+      },
+      {
+        "id": "traveler",
+        "name": "Traveler",
+        "records": [
+          {
+            "edid": "DLC1RadiantDisguisedVampireLord",
+            "formKey": "004208:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlVampireBoss",
+            "formKey": "02F9E2:Skyrim.esm"
+          },
+          "rungs": [
+            14,
+            23,
+            31,
+            42,
+            53,
+            65
+          ]
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: vampire lords"
+        },
+        "note": "a disguised vampire lord, spawned by quest `DLC1RadiantDisguisedVampireLordSpawner`."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The boss templates `EncVampire02TemplateBoss`–`06` and `DLC1EncVampire07TemplateBoss` use the matching *Common Vampires* rung template (`EncVampire02Template`–`06`, `DLC1EncVampire07Template`) without `Stats`: changing a common rung leaves its boss at 14 · 23 · 31 · 42 · 53 · 65.",
+      "Each boss rung is a male template plus five race variants that inherit its level (`EncVampire0NBoss{Breton,DarkElf,HighElf,Imperial,Nord}M`, `DLC1EncVampire07Boss…M`).",
+      "Every row: no other record keeps its own level.",
+      "`EncVampire00Template` 032FE7 (level 1) shares the boss race with no template; it is on *Common Vampires*. Hern and Hert, likewise with no template, are on *Unique Vampires*.",
+      "Every other boss record (the five race variants of each boss rung, the male `TreasCorpseVampire*` corpses, the Bloodchill Waiter and every `Lvl*VampireBoss*` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharVampireBoss",
+          "formKey": "0339A9:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`SubCharVampire02Boss` 02EAE6 (also @12, @20)"
+          },
+          {
+            "at": 28,
+            "label": "`SubCharVampire03Boss` 02EAE7"
+          },
+          {
+            "at": 38,
+            "label": "`SubCharVampire04Boss` 02EAE8"
+          },
+          {
+            "at": 48,
+            "label": "`SubCharVampire05Boss` 02EAE9"
+          },
+          {
+            "at": 58,
+            "label": "`SubCharVampire06Boss` 02EAEA"
+          },
+          {
+            "at": 60,
+            "label": "`DLC1SubCharVampire07Boss` 002837:Dawnguard.esm"
+          }
+        ],
+        "note": "each sub-list rolls one of five races",
+        "owner": "`LvlVampireBoss` 02F9E2 (9 refs, one each in `DLC1DimHollowCrypt01` 000EB8:Dawnguard.esm, `DLC1RedwaterDen02` 005EAA:Dawnguard.esm, `DLC1MolderingRuins01` 00285D:Dawnguard.esm, `DLC1AncestorGladePortcullis` 0048D0:Dawnguard.esm, `MovarthsLair01` 01526F, `PinemoonCave01` 015231, `BrokenFangCave01` 0152B1, `ShriekwindBastion01` 0A1A61, `HaemarsShame02` 0216BB; also spawned by quests `DLC1EclipseAttack2`, `3`, `5`, `6`, `DLC1HunterBaseIntroAmbush`, `DLC1RH03`, `DLC1RH04`, `DLC1RH06`, `DLC1RV04`, `DLC1RV09`); Movarth and Vighar (*Unique Vampires*); Traveler (quest `DLC1RadiantDisguisedVampireLordSpawner`)"
+      },
+      {
+        "list": {
+          "edid": "LCharVampireBossDLC1MaleVampireDarkElf",
+          "formKey": "00633A:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Master Vampire 14 (also @12, @20)"
+          },
+          {
+            "at": 28,
+            "label": "Master Vampire 23"
+          },
+          {
+            "at": 38,
+            "label": "Master Vampire 31"
+          },
+          {
+            "at": 48,
+            "label": "Master Vampire 42"
+          },
+          {
+            "at": 58,
+            "label": "Volkihar Master Vampire 53"
+          },
+          {
+            "at": 60,
+            "label": "Nightmaster Vampire 65"
+          }
+        ],
+        "note": "all Dark Elf",
+        "owner": "`LvlVampireBossMaleVampireDarkElf` 006343:Dawnguard.esm (`DLC1RedwaterDen01` 005EAB:Dawnguard.esm, 1 ref)"
+      },
+      {
+        "list": {
+          "edid": "DLC1LCharVampireBossImperialM",
+          "formKey": "014C6A:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player",
+        "note": "the same, Imperial",
+        "owner": "`DLC1LvlVampireBossImperialM` 014C7C:Dawnguard.esm (`DLC1RedwaterDen02`, 1 ref)"
+      },
+      {
+        "list": {
+          "edid": "LCharVampireBossDLC1MaleVampireNordM",
+          "formKey": "00F4FE:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player",
+        "note": "the same, Nord",
+        "owner": "Lokil (*Volkihar Court*)"
+      },
+      {
+        "list": {
+          "edid": "DLC1LCharVampireMaleNordM",
+          "formKey": "01223D:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Vampire 1"
+          },
+          {
+            "at": 12,
+            "label": "Vampire 6"
+          },
+          {
+            "at": 20,
+            "label": "Master Vampire 14"
+          },
+          {
+            "at": 28,
+            "label": "Master Vampire 23"
+          },
+          {
+            "at": 38,
+            "label": "Master Vampire 31"
+          },
+          {
+            "at": 48,
+            "label": "Master Vampire 42"
+          },
+          {
+            "at": 58,
+            "label": "Volkihar Master Vampire 53"
+          },
+          {
+            "at": 60,
+            "label": "Nightmaster Vampire 65"
+          }
+        ],
+        "note": "all Nord",
+        "owner": "`DLC1LvlVampireMaleVampire` 0123A5:Dawnguard.esm (`DLC1DimHollowCrypt01`, 1 ref)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Master Vampire",
+        "base": [
+          {
+            "edid": "EncVampire02BossDarkElfM",
+            "formKey": "02E1DD:Skyrim.esm"
+          }
+        ],
+        "baseNote": "level 14",
+        "locations": [
+          {
+            "cell": {
+              "edid": "HalloftheVigilantExterior01",
+              "formKey": "008FCF:Skyrim.esm"
+            },
+            "note": "Tamriel, 1 ref"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Every boss rung (inventory from `EncVampire00Template` 032FE7, `EncVampire05Template` 033851, `EncVampire06Template` 033852 or `DLC1EncVampire07Template` 00282A, all the same), every list owner above (Movarth and Vighar are on *Unique Vampires*, Lokil on *Volkihar Court*)",
+        "weapons": "`LItemVampireWeaponBase` 10962B",
+        "armor": "`DLC1vampireOutfit` 033840",
+        "skin": "race default"
+      },
+      {
+        "records": "Traveler",
+        "weapons": "none",
+        "armor": "`DLC1RadiantDisguisedVampireLordOutfit` 004209:Dawnguard.esm",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC1vampireOutfit",
+          "formKey": "033840:Skyrim.esm"
+        },
+        "rolls": "Vampire Boots + Vampire Armor, Vampire Robes or an enchanted Vampire Armor (walked on *Common Vampires*)"
+      },
+      {
+        "list": {
+          "edid": "LItemVampireWeaponBase",
+          "formKey": "10962B:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "a sword or war axe: Iron, Steel ×4 (1) · Orcish (9) · Dwarven (15) · Elven (22)",
+        "levels": [
+          1,
+          9,
+          15,
+          22
+        ]
+      },
+      {
+        "list": {
+          "edid": "DLC1RadiantDisguisedVampireLordOutfit",
+          "formKey": "004209:Dawnguard.esm"
+        },
+        "rolls": "Hooded Black Robes 107108 · Vampire Boots 00B5DE · Vampire Gauntlets 01A51F (Dawnguard.esm)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Vampire Armor, Vampire Robes, Vampire Boots",
+        "kind": "light / clothing",
+        "playable": true
+      },
+      {
+        "item": "Vampire Gauntlets 01A51F:Dawnguard.esm",
+        "kind": "light hands, AR 8",
+        "playable": true
+      },
+      {
+        "item": "Hooded Black Robes 107108",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "every weapon above",
+        "kind": "one-handed",
+        "playable": true
+      }
+    ]
+  }
+}

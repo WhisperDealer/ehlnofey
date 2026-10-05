@@ -1,0 +1,165 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "death-hound",
+  "group": "vampires",
+  "title": "Death Hound",
+  "order": 7,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "death-hound",
+        "name": "Death Hound",
+        "records": [
+          {
+            "edid": "DLC1encDeathHound",
+            "formKey": "00C5EF:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`DLC1encDeathHound`: no other record keeps its own level.",
+      "Every other death hound record (`DLC1EncDeathHound_Indoor`, `DLC1LvlDeathHound`, `DLC1VQ01LvlDeathHound` and the hireable Garmr and Cu Sith, `DLC1HireableVampireDeathhound1`/`2`) carries `Stats` and follows `DLC1encDeathHound`."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharVampireWolf_Indoor",
+          "formKey": "008D77:Dawnguard.esm"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "Death Hound (`DLC1EncDeathHound_Indoor` 008D76)"
+          }
+        ],
+        "owner": "`DLC1LvlDeathHound_Indoor` 008D79:Dawnguard.esm (13 refs: `DLC1VampireCastleDungeon01` 00285B ×7, `DLC1RedwaterDen02` 005EAA ×4, `DLC1RedwaterDen01` 005EAB ×2, all Dawnguard.esm)"
+      },
+      {
+        "list": {
+          "edid": "LCharVampireCompanion",
+          "formKey": "01E775:Skyrim.esm"
+        },
+        "override": "Dawnguard override",
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider, Skeever"
+          },
+          {
+            "at": 3,
+            "label": "Frostbite Spider 6"
+          },
+          {
+            "at": 5,
+            "label": "Death Hound"
+          },
+          {
+            "at": 7,
+            "label": "Giant Frostbite Spider"
+          },
+          {
+            "at": 13,
+            "label": "Gargoyle"
+          },
+          {
+            "at": 25,
+            "label": "Gargoyle Brute"
+          }
+        ],
+        "owner": "`LvlVampireCompanion` 01E7C8 (`DLC1AncestorGladePortcullis` 0048D0:Dawnguard.esm, 1 ref)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Death Hound",
+        "base": [
+          {
+            "edid": "DLC1LvlDeathHound",
+            "formKey": "017EC2:Dawnguard.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1DimHollowCrypt01",
+              "formKey": "000EB8:Dawnguard.esm"
+            },
+            "note": "×3"
+          },
+          {
+            "cell": {
+              "edid": "BloodletThrone01",
+              "formKey": "016EA1:Skyrim.esm"
+            },
+            "note": "×3"
+          },
+          {
+            "cell": {
+              "edid": "DLC1ForebearsHoldoutEnd",
+              "formKey": "002FB7:Dawnguard.esm"
+            },
+            "note": "×2"
+          },
+          {
+            "cell": {
+              "edid": "DLC1MolderingRuinsExterior01",
+              "formKey": "00959B:Skyrim.esm"
+            },
+            "note": "Tamriel, ×1"
+          }
+        ],
+        "quest": "also spawned by quests `DLC1EclipseAttack4` 01764A, `DLC1EclipseAttack5` 01764B, `DLC1EclipseAttack6` 01764C, `DLC1WE04` 017863, `DLC1WE05` 017865 (Dawnguard.esm)"
+      },
+      {
+        "name": "Death Hound",
+        "base": [
+          {
+            "edid": "DLC1EncDeathHound_Indoor",
+            "formKey": "008D76:Dawnguard.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "HalloftheVigilantExterior01",
+              "formKey": "008FCF:Skyrim.esm"
+            },
+            "note": "Tamriel, ×3"
+          },
+          {
+            "cell": {
+              "edid": "DLC1DimHollowCrypt01",
+              "formKey": "000EB8:Dawnguard.esm"
+            },
+            "note": "×1"
+          }
+        ]
+      }
+    ]
+  }
+}

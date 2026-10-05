@@ -1,0 +1,508 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "vampires-thrall",
+  "group": "vampires",
+  "title": "Vampire's Thrall",
+  "order": 6,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "vampires-thrall",
+        "name": "Vampire's Thrall",
+        "records": [
+          {
+            "label": "`LvlVampireThrall*` (34 wrappers, 12 of them placed; see Lists)"
+          },
+          {
+            "edid": "DLC1LvlVampireThrallMeleeCommonerAcM",
+            "formKey": "0183A4:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1LvlRedwaterThrallMeleeCommonerAcMAggro1024",
+            "formKey": "014070:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1LvlRedwaterThrallMissileEvenTonedFAggro1024",
+            "formKey": "014071:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1dunRedwaterDenBouncer",
+            "formKey": "008BF2:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1dunRedwaterDenVampireThrallWizardEvenTonedM",
+            "formKey": "008D28:Dawnguard.esm"
+          },
+          {
+            "edid": "WERJ07Thrall",
+            "formKey": "0BF33F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "the bandit lists (see Lists)"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3: thralls at the Bandit Marauder"
+        },
+        "note": "every thrall takes its level and inventory from a bandit list but keeps its own name, so it shows \"Vampire's Thrall\" at every rung (Bandit 1 → Bandit Marauder 25); the Berserker list has no 5."
+      },
+      {
+        "id": "dealer",
+        "name": "Dealer",
+        "records": [
+          {
+            "edid": "DLC1dunRedwaterDenVampireThrallDealer",
+            "formKey": "01A3C0:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMissileEvenTonedF",
+            "formKey": "01A344:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3: thralls at the Bandit Marauder"
+        }
+      },
+      {
+        "id": "vampire-thrall-cc",
+        "name": "Vampire Thrall",
+        "records": [
+          {
+            "edid": "ccMTYSSE002_DLC1RadiantDisguisedVampireMerchant",
+            "formKey": "000970:ccmtysse002-ve.esl"
+          },
+          {
+            "edid": "ccMTYSSE002_DLC1RadiantDisguisedVampireBard",
+            "formKey": "000971:ccmtysse002-ve.esl"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlVampire",
+            "formKey": "02F9E1:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            20,
+            28,
+            38,
+            48,
+            60
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: vampires"
+        },
+        "note": "vampires (vampire race, from `LvlVampire`) named \"Vampire Thrall\"."
+      },
+      {
+        "id": "vampire-thrall-cc-pilgrim",
+        "name": "Vampire Thrall",
+        "records": [
+          {
+            "edid": "ccMTYSSE002_DLC1RadiantDisguisedVampirePilgrim",
+            "formKey": "000972:ccmtysse002-ve.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3: thralls at the Bandit Marauder"
+        },
+        "note": "a Redguard (`RedguardFemalePreset06` 10AB99) that keeps its own level 1 from its chargen preset."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level.",
+      "Every thrall record (the 34 `LvlVampireThrall*` wrappers, the Redwater Den thralls, `WERJ07Thrall`, the CC Merchant and Bard) carries `Stats` and follows its bandit or vampire list or wrapper; the CC Pilgrim keeps its own level 1 from its chargen preset."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharBanditMelee1HTank",
+          "formKey": "03DEC9:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Bandit"
+          },
+          {
+            "at": 5,
+            "label": "Bandit Outlaw"
+          },
+          {
+            "at": 9,
+            "label": "Bandit Thug"
+          },
+          {
+            "at": 14,
+            "label": "Bandit Highwayman"
+          },
+          {
+            "at": 19,
+            "label": "Bandit Plunderer"
+          },
+          {
+            "at": 25,
+            "label": "Bandit Marauder"
+          }
+        ],
+        "note": "all the bandit lists below share these gates",
+        "owner": "`LvlVampireThrallMeleeTank` 02EED7 (6 refs: `DLC1MolderingRuinsExterior01` 00959B, `DLC1RedwaterDen01` 005EAB:Dawnguard.esm, `DLC1AncestorGladePortcullis` 0048D0:Dawnguard.esm, `CronvangrHall01` 0152A7, `ShriekwindBastion01` 0A1A61, `HaemarsShame02` 0216BB)"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditWizard",
+          "formKey": "01E771:Skyrim.esm"
+        },
+        "note": "the wizard rungs",
+        "owner": "`LvlVampireThrallWizard` 02EEE7 (4: `DLC1RedwaterDen01` ×2, `DLC1MolderingRuinsExterior01`, `DLC1AncestorGladePortcullis`) · `LvlVampireThrallConjurer` 042267 (2: `DLC1RedwaterDenExterior` 00BC34, `DLC1RedwaterDen02` 005EAA:Dawnguard.esm)"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMissile",
+          "formKey": "01E770:Skyrim.esm"
+        },
+        "note": "the archer rungs",
+        "owner": "`LvlVampireThrallMissile` 02EEDC (4: `DLC1RedwaterDen01`, `DLC1ForebearsHoldout` 002F64:Dawnguard.esm, `DLC1ForebearsHoldoutEnd` 002FB7:Dawnguard.esm, `BloodletThrone01` 016EA1) · `…MissileGuard` 02EEE1 (`MovarthsLair01` 01526F) · `…MissileHold` 08E2F7 (`HaemarsShame01` 015268)"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMelee2H",
+          "formKey": "03DEC8:Skyrim.esm"
+        },
+        "note": "the two-handed rungs",
+        "owner": "`LvlVampireThrallMelee2H` 02ED6B (3: `DLC1DimHollowCrypt02` 000EB7:Dawnguard.esm, `DLC1RedwaterDen01`, `DLC1AncestorGladePortcullis`)"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMelee2HBerserk",
+          "formKey": "03DECA:Skyrim.esm"
+        },
+        "note": "the berserker rungs (no 5)",
+        "owner": "`LvlVampireThrallMeleeBerserker` 02EE9E (3: `MovarthsLair01` ×2, `HaemarsShame01`)"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMelee1H",
+          "formKey": "039CFC:Skyrim.esm"
+        },
+        "note": "the one-handed rungs",
+        "owner": "`LvlVampireThrallMelee1H` 02EB0B (2: `MovarthsLair01`, `BloodletThrone01`)"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMeleeAny",
+          "formKey": "03DECD:Skyrim.esm"
+        },
+        "note": "the melee rungs",
+        "owner": "`LvlVampireThrallMeleeAny` 02ED6E (`HaemarsShame01`)"
+      },
+      {
+        "list": {
+          "label": "`LCharBanditMeleeEvenTonedM` 01A323 · `…EvenTonedF` 01A322"
+        },
+        "note": "one race's melee rungs",
+        "owner": "`LvlVampireThrallMeleeEvenTonedM` 02EED3 (`MovarthsLair01`) · `DLC1LvlVampireThrallMeleeCommonerAcM` 0183A4 (`DLC1RedwaterDen02`) · `DLC1LvlRedwaterThrallMeleeCommonerAcMAggro1024` 014070 (`DLC1RedwaterDenExterior`) · `LvlVampireThrallMeleeEvenTonedF` 02EED2 (`DLC1MolderingRuins01` 00285D:Dawnguard.esm)"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMissileEvenTonedF",
+          "formKey": "01A344:Skyrim.esm"
+        },
+        "note": "one race's archer rungs",
+        "owner": "`DLC1LvlRedwaterThrallMissileEvenTonedFAggro1024` 014071 (`DLC1RedwaterDenExterior`) · the Dealer (`DLC1RedwaterDen01`)"
+      },
+      {
+        "list": {
+          "label": "`LCharBanditMeleeNordM` 01A320 · `LCharBanditWizardEvenTonedM` 01B0F5"
+        },
+        "note": "one race's rungs",
+        "owner": "`DLC1dunRedwaterDenBouncer` 008BF2 · `DLC1dunRedwaterDenVampireThrallWizardEvenTonedM` 008D28 (`DLC1RedwaterDen01`, 1 each)"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMeleeCommonerF",
+          "formKey": "01A31E:Skyrim.esm"
+        },
+        "note": "one race's melee rungs",
+        "owner": "`WERJ07Thrall` 0BF33F (quest `WERJ07`)"
+      },
+      {
+        "list": {
+          "edid": "LCharVampire",
+          "formKey": "033973:Skyrim.esm"
+        },
+        "seeFamily": "common-vampires",
+        "owner": "the CC Merchant and Bard"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Vampire Thrall (CC Pilgrim)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DawnstarQuicksilverMine",
+              "formKey": "02C779:Skyrim.esm"
+            },
+            "note": "1 ref; the CC Merchant and Bard are placed beside it, 1 ref each"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Melee one-handed thralls (`Melee1H`, the race-specific melee wrappers, `…CommonerAcM`, `…Aggro1024` melee)",
+        "weapons": "`LItemBanditWeapon1H` 037C1B",
+        "armor": "`BanditArmorMeleeShield20Outfit` 0C0197 (the Nord ones also `BanditArmorMeleeNoShieldOutfit` 01E608)",
+        "skin": "race default"
+      },
+      {
+        "records": "Tank thralls",
+        "weapons": "`LItemBanditWeapon1H`, sometimes an Orcish Dagger 01398E",
+        "armor": "`BanditArmorMeleeHeavyOutfit` 015BE6 (a few rungs `BanditArmorMeleeNoShieldOutfit`)",
+        "skin": "race default"
+      },
+      {
+        "records": "Two-handed and berserker thralls",
+        "weapons": "`LItemBanditWeapon2H` 037C21, sometimes an Orcish Dagger",
+        "armor": "`BanditArmorMeleeNoShieldOutfit` 01E608",
+        "skin": "race default"
+      },
+      {
+        "records": "`MeleeAny` thralls",
+        "weapons": "either of the two rows above",
+        "armor": "the matching outfit",
+        "skin": "race default"
+      },
+      {
+        "records": "Archer thralls",
+        "weapons": "`LItemBanditWeaponMissile` 037BFD · `LItemWeaponDaggerTown` 017177 · `LootBanditArrows15` 08777F",
+        "armor": "`BanditArmorMeleeNoShieldOutfit` 01E608",
+        "skin": "race default"
+      },
+      {
+        "records": "Wizard and conjurer thralls",
+        "weapons": "Iron, Steel or `LItemWeaponDaggerTown` dagger",
+        "armor": "`BanditMageOutfit` 06E26F",
+        "skin": "race default"
+      },
+      {
+        "records": "Redwater Den bouncer",
+        "weapons": "`LItemBanditMace` 037C18",
+        "armor": "`DLC1dunRedwaterDenBouncerOutfit` 008D7E:Dawnguard.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Redwater Den dealer · Redwater Den wizard thrall",
+        "weapons": "none",
+        "armor": "`BarkeepClothes01` 05FB81",
+        "skin": "race default"
+      },
+      {
+        "records": "`WERJ07Thrall`",
+        "weapons": "`LItemVampireDagger` 02E1EE",
+        "armor": "`FarmClothesRandom` 09D4B5",
+        "skin": "race default"
+      },
+      {
+        "records": "CC Merchant · Bard · Pilgrim",
+        "weapons": "`DLC1LItemDisguisedVampireInventory` 011F3B:Dawnguard.esm",
+        "armor": "`MerchantClothesOutfit01` 045C34 · `MerchantClothesOutfit02NoHat` 09593C · `BeggarWithHatOutfit` 028B61",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "BanditArmorMeleeShield20Outfit",
+          "formKey": "0C0197:Skyrim.esm"
+        },
+        "rolls": "boots `LItemBanditBoots` 037C23 (Fur Shoes, Hide 1 · Leather 6 · Scaled 19) · cuirass `LItemBanditCuirass` 037C22 (Studded, Hide, Fur 1 · Leather 6 · Scaled, Scaled Horn 19) · 50% bracers `LItemBanditGauntlets50` 037C25 (Fur, Hide 1 · Leather 6 · Scaled 19) · 20% shield `LItemBanditShield20` 0C0196 (Hide, Iron 1 · Elven 12)"
+      },
+      {
+        "list": {
+          "edid": "BanditArmorMeleeNoShieldOutfit",
+          "formKey": "01E608:Skyrim.esm"
+        },
+        "rolls": "the same boots, cuirass and bracers, no shield"
+      },
+      {
+        "list": {
+          "edid": "BanditArmorMeleeHeavyOutfit",
+          "formKey": "015BE6:Skyrim.esm"
+        },
+        "rolls": "Iron (1) · Steel (6) · Steel Plate (18) boots, cuirass and helmet; 50% gauntlets Iron (1) · Steel (6) · Steel Plate (15); shield Hide, Iron, Banded Iron (1) · Steel (6)"
+      },
+      {
+        "list": {
+          "edid": "BanditMageOutfit",
+          "formKey": "06E26F:Skyrim.esm"
+        },
+        "rolls": "`LItemBanditBoots` · Fur Armor (`LItemBanditCuirassVariants` 106D0C)"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditWeapon1H",
+          "formKey": "037C1B:Skyrim.esm"
+        },
+        "rolls": "mace, sword or war axe: Iron, Steel (1) · Orcish (9) · Dwarven (15) · Elven (22)",
+        "levels": [
+          1,
+          9,
+          15,
+          22
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemBanditWeapon2H",
+          "formKey": "037C21:Skyrim.esm"
+        },
+        "rolls": "battleaxe, greatsword or warhammer: Iron, Steel (1) · Orcish (9) · Dwarven (15) · Elven (22)",
+        "levels": [
+          1,
+          9,
+          15,
+          22
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemBanditWeaponMissile",
+          "formKey": "037BFD:Skyrim.esm"
+        },
+        "rolls": "Long, Hunting (1) · Imperial (4) · Orcish (10) · Dwarven (15) · Elven (20) Bow, with matching arrows",
+        "levels": [
+          1,
+          4,
+          10,
+          15,
+          20
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponDaggerTown",
+          "formKey": "017177:Skyrim.esm"
+        },
+        "rolls": "Iron (1) · Steel (4) · Orcish (10) · Dwarven (15) · Elven (20) Dagger",
+        "levels": [
+          1,
+          4,
+          10,
+          15,
+          20
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemVampireDagger",
+          "formKey": "02E1EE:Skyrim.esm"
+        },
+        "rolls": "Steel (1) · Orcish (10) · Dwarven (15) · Elven (20) Dagger",
+        "levels": [
+          1,
+          10,
+          15,
+          20
+        ]
+      },
+      {
+        "list": {
+          "edid": "DLC1dunRedwaterDenBouncerOutfit",
+          "formKey": "008D7E:Dawnguard.esm"
+        },
+        "rolls": "Studded Armor 01B3A2 · Hide Boots 013910 · Scaled Helmet 01B3A1 · heavy gauntlets `LItemArmorGauntletsHeavy` 01673D (Iron 1 → Daedric 48)"
+      },
+      {
+        "list": {
+          "edid": "DLC1LItemDisguisedVampireInventory",
+          "formKey": "011F3B:Dawnguard.esm"
+        },
+        "rolls": "use all: an enchanted dagger (`LItemEnchWeaponDagger` 08992F) · an enchanted ring (`LItemEnchRingAll` 100E8A)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "every bandit armour piece above (Fur, Hide, Leather, Studded, Scaled, Iron, Steel, Steel Plate)",
+        "kind": "light / heavy",
+        "playable": true
+      },
+      {
+        "item": "every weapon above",
+        "kind": "one-handed, two-handed, bow",
+        "playable": true
+      },
+      {
+        "item": "clothing outfits (barkeep, farm, merchant, beggar)",
+        "kind": "clothing",
+        "playable": true
+      }
+    ]
+  }
+}

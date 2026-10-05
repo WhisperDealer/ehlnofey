@@ -1,0 +1,583 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "volkihar-court",
+  "group": "vampires",
+  "title": "Volkihar Court",
+  "order": 5,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "feran-sadri",
+        "name": "Feran Sadri",
+        "records": [
+          {
+            "edid": "DLC1FeranSadri",
+            "formKey": "003366:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0,
+          "from": {
+            "edid": "DLC1EncVampireTemplateMagic",
+            "formKey": "003372:Dawnguard.esm"
+          }
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Volkihar court are vampire lords"
+        }
+      },
+      {
+        "id": "fura-bloodmouth",
+        "name": "Fura Bloodmouth",
+        "records": [
+          {
+            "edid": "DLC1FuraBloodmouth",
+            "formKey": "003363:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Volkihar court are vampire lords"
+        }
+      },
+      {
+        "id": "garan-marethi",
+        "name": "Garan Marethi",
+        "records": [
+          {
+            "edid": "DLC1GaranMarethi",
+            "formKey": "003364:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Volkihar court are vampire lords"
+        }
+      },
+      {
+        "id": "hestla",
+        "name": "Hestla",
+        "records": [
+          {
+            "edid": "DLC1Hestla",
+            "formKey": "003365:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0,
+          "from": {
+            "edid": "DLC1EncVampireTemplate",
+            "formKey": "003373:Dawnguard.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Volkihar court are vampire lords"
+        }
+      },
+      {
+        "id": "malkus",
+        "name": "Malkus",
+        "records": [
+          {
+            "edid": "DLC1Malkus",
+            "formKey": "003D05:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1MalkusDead",
+            "formKey": "003D7B:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0,
+          "from": {
+            "edid": "DLC1EncVampireTemplateMagic",
+            "formKey": "003372:Dawnguard.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Volkihar court are vampire lords"
+        }
+      },
+      {
+        "id": "modhna",
+        "name": "Modhna",
+        "records": [
+          {
+            "edid": "DLC1Modhna",
+            "formKey": "011E5E:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Volkihar court are vampire lords"
+        }
+      },
+      {
+        "id": "namasur",
+        "name": "Namasur",
+        "records": [
+          {
+            "edid": "DLC1Namasur",
+            "formKey": "011E5D:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Volkihar court are vampire lords"
+        }
+      },
+      {
+        "id": "orthjolf",
+        "name": "Orthjolf",
+        "records": [
+          {
+            "edid": "DLC1Orthjolf",
+            "formKey": "003361:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0,
+          "from": {
+            "edid": "DLC1EncVampireTemplateMissile",
+            "formKey": "003374:Dawnguard.esm"
+          }
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Volkihar court are vampire lords"
+        }
+      },
+      {
+        "id": "rargal",
+        "name": "Rargal Thrallmaster",
+        "records": [
+          {
+            "edid": "DLC1RargalThrallmaster",
+            "formKey": "003362:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0,
+          "from": {
+            "edid": "DLC1EncVampireTemplate",
+            "formKey": "003373:Dawnguard.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Volkihar court are vampire lords"
+        }
+      },
+      {
+        "id": "ronthil",
+        "name": "Ronthil",
+        "records": [
+          {
+            "edid": "DLC1Ronthil",
+            "formKey": "003367:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Volkihar court are vampire lords"
+        }
+      },
+      {
+        "id": "salonia-caelia",
+        "name": "Salonia Caelia",
+        "records": [
+          {
+            "edid": "DLC1SaloniaCaelia",
+            "formKey": "003369:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Volkihar court are vampire lords"
+        }
+      },
+      {
+        "id": "stalf",
+        "name": "Stalf",
+        "records": [
+          {
+            "edid": "DLC1Stalf",
+            "formKey": "003368:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Volkihar court are vampire lords"
+        }
+      },
+      {
+        "id": "vingalmo",
+        "name": "Vingalmo",
+        "records": [
+          {
+            "edid": "DLC1Vingalmo",
+            "formKey": "003360:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0,
+          "from": {
+            "edid": "DLC1EncVampireTemplateMagic",
+            "formKey": "003372:Dawnguard.esm"
+          }
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Volkihar court are vampire lords"
+        }
+      },
+      {
+        "id": "watchman",
+        "name": "Watchman",
+        "records": [
+          {
+            "edid": "DLC1VampireCastleGuard",
+            "formKey": "01A416:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 1,
+          "from": {
+            "edid": "TreasCorpseCommonerNordMale",
+            "formKey": "045804:Skyrim.esm"
+          }
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Watchman stays level 1"
+        },
+        "note": "the castle's gate guard (alias `Guard` of `DLC1VQCastleGuard`). It borrows its level from the treasure corpses: it takes only `Stats` (with `Factions`, `SpellList` and AI) from the thrall template `DLC1VCThrallMaleOldGrumpy` 015B49:Dawnguard.esm, which takes them from `TreasCorpseCommonerNordMale` 045804. A vampire (race 067CD8, Nord vampire) in no Volkihar faction: its only faction, from the thrall template, is `dunPrisonerFaction` 0AA784. Moved here from Uncategorised → *Unfiled NPCs* (user, 2026-10-03)."
+      },
+      {
+        "id": "lokil",
+        "name": "Lokil",
+        "records": [
+          {
+            "edid": "DLC1LvlVampireBossMaleVampireNord",
+            "formKey": "00F4FF:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharVampireBossDLC1MaleVampireNordM",
+            "formKey": "00F4FE:Dawnguard.esm"
+          },
+          "rungs": [
+            14,
+            23,
+            31,
+            42,
+            53,
+            65
+          ]
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Volkihar court are vampire lords"
+        },
+        "note": "the vampire boss of Dimhollow Crypt's puzzle room (alias `PuzzleRoomVampireBoss` of `DLC1VQ01`, *Awakening*), filed with the court by the user's call (2026-10-05). A nameless record that takes `BaseData` from the list; the name is a quest alias `DisplayName` (see Placed only)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "\"No cap\" is `CalcMaxLevel` 0 (with `CalcMinLevel` 0 unless given). The three templates (`DLC1EncVampireTemplate` 003373, `…Magic` 003372, `…Missile` 003374, \"Vampire Court Member\") are never placed.",
+      "Changing `DLC1EncVampireTemplate` 003373:Dawnguard.esm changes Hestla and Rargal only: Fura, Modhna and Salonia use it as their template but not for `Stats`, and so do the other two templates, `…Magic` 003372 and `…Missile` 003374.",
+      "Changing `DLC1EncVampireTemplateMagic` 003372:Dawnguard.esm changes Feran, Malkus (both records) and Vingalmo only: Garan, Namasur, Ronthil and Stalf use it as their template but not for `Stats`. `…Missile` 003374 sets Orthjolf alone.",
+      "Changing `TreasCorpseCommonerNordMale` 045804 also changes the Watchman and the corpses, beggars and thrall templates that take `Stats` from it; no record keeps its own level beside it.",
+      "Lokil owns no level: he takes `Stats` from `LCharVampireBossDLC1MaleVampireNordM` 00F4FE:Dawnguard.esm (the Nord boss ladder, on *Vampire Boss*), so changing that list moves him.",
+      "Every row: no other record keeps its own level.",
+      "The vampire-race records with no template (`EncVampire00Template` 032FE7 on *Common Vampires*; Hern, Hert and Sybille Stentor on *Unique Vampires*) are not court members."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Feran Sadri · Fura Bloodmouth · Garan Marethi · Hestla · Modhna · Namasur · Orthjolf · Rargal Thrallmaster · Ronthil · Salonia Caelia · Stalf · Vingalmo",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1VampireCastleGuildhall",
+              "formKey": "000803:Dawnguard.esm"
+            },
+            "note": "1 ref each"
+          }
+        ]
+      },
+      {
+        "name": "Malkus (alive and dead)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1ForebearsHoldout",
+              "formKey": "002F64:Dawnguard.esm"
+            },
+            "persistent": true,
+            "note": "1 ref each"
+          }
+        ]
+      },
+      {
+        "name": "Watchman",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "01A683:Dawnguard.esm"
+            }
+          }
+        ],
+        "quest": "alias `Guard` of `DLC1VQCastleGuard` 01A415:Dawnguard.esm (also a property of `DLC1VQ02` 002F65, *Bloodline*)"
+      },
+      {
+        "name": "Lokil",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1DimHollowCrypt02",
+              "formKey": "000EB7:Dawnguard.esm"
+            },
+            "ref": {
+              "formKey": "00FBF5:Dawnguard.esm"
+            }
+          }
+        ],
+        "quest": "quest `DLC1VQ01` 00352A alias `PuzzleRoomVampireBoss` (display name `DLC1VQ01PuzzleRoomVampireBossName` 00FC10:Dawnguard.esm)"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Feran Sadri · Namasur · Salonia Caelia · Stalf",
+        "weapons": "`LItemBanditWeapon1H` 037C1B",
+        "armor": "`DLC1VolkiharVampireOutfitGray` 013AF9:Dawnguard.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Fura Bloodmouth · Garan Marethi · Rargal Thrallmaster · Vingalmo",
+        "weapons": "`LItemBanditWeapon1H`",
+        "armor": "`DLC1VolkiharVampireOutfitGrayLight` 00677D:Dawnguard.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Hestla · Modhna · Orthjolf · Ronthil",
+        "weapons": "`LItemBanditWeapon1H`",
+        "armor": "`DLC1VolkiharVampireOutfitLightRed` 0067CD:Dawnguard.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Malkus",
+        "weapons": "`LItemBanditWeapon1H`",
+        "armor": "`DLC1MalkusOutfit` 003D06:Dawnguard.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Watchman",
+        "weapons": "Iron Sword 012EB7",
+        "armor": "`ArmorLeatherSimpleOutfit` 057A34",
+        "skin": "race default"
+      },
+      {
+        "records": "Lokil",
+        "weapons": "`LItemVampireWeaponBase` 10962B",
+        "armor": "`DLC1vampireOutfit` 033840 (both walked on *Common Vampires*)",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemBanditWeapon1H",
+          "formKey": "037C1B:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "mace, sword or war axe: Iron, Steel (1) · Orcish (9) · Dwarven (15) · Elven (22)",
+        "levels": [
+          1,
+          9,
+          15,
+          22
+        ]
+      },
+      {
+        "list": {
+          "edid": "DLC1VolkiharVampireOutfitGray",
+          "formKey": "013AF9:Dawnguard.esm"
+        },
+        "rolls": "Vampire Armor (grey) 0142C7 · Vampire Boots 00B5DE"
+      },
+      {
+        "list": {
+          "edid": "DLC1VolkiharVampireOutfitGrayLight",
+          "formKey": "00677D:Dawnguard.esm"
+        },
+        "rolls": "Vampire Armor (grey-light) 0191F2 · Vampire Boots"
+      },
+      {
+        "list": {
+          "edid": "DLC1VolkiharVampireOutfitLightRed",
+          "formKey": "0067CD:Dawnguard.esm"
+        },
+        "rolls": "Vampire Armor (red) 0191F3 · Vampire Boots"
+      },
+      {
+        "list": {
+          "edid": "DLC1MalkusOutfit",
+          "formKey": "003D06:Dawnguard.esm"
+        },
+        "rolls": "Vampire Armor of Destruction 015CBA · Vampire Boots"
+      },
+      {
+        "list": {
+          "edid": "ArmorLeatherSimpleOutfit",
+          "formKey": "057A34:Skyrim.esm"
+        },
+        "rolls": "Leather Armor 03619E · Leather Boots 013920"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Vampire Armor 0142C7 · 0191F2 · 0191F3 · Vampire Armor of Destruction 015CBA (Dawnguard.esm)",
+        "kind": "light body, AR 25",
+        "playable": true
+      },
+      {
+        "item": "Vampire Boots 00B5DE:Dawnguard.esm",
+        "kind": "light feet, AR 7",
+        "playable": true
+      },
+      {
+        "item": "Leather Armor, Leather Boots",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "every weapon above",
+        "kind": "one-handed",
+        "playable": true
+      }
+    ]
+  }
+}

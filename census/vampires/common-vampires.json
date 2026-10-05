@@ -1,0 +1,576 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "common-vampires",
+  "group": "vampires",
+  "title": "Common Vampires",
+  "order": 1,
+  "meta": {
+    "updated": "2026-10-05"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "vampire-fledgling",
+        "name": "Vampire Fledgling",
+        "records": [
+          {
+            "edid": "EncVampire00Template",
+            "formKey": "032FE7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: low-level vampires"
+        }
+      },
+      {
+        "id": "vampire",
+        "name": "Vampire",
+        "records": [
+          {
+            "edid": "EncVampire01Template",
+            "formKey": "032FE8:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: low-level vampires"
+        }
+      },
+      {
+        "id": "blooded-vampire",
+        "name": "Blooded Vampire",
+        "records": [
+          {
+            "edid": "EncVampire02Template",
+            "formKey": "03384E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: low-level vampires"
+        }
+      },
+      {
+        "id": "vampire-mistwalker",
+        "name": "Vampire Mistwalker",
+        "records": [
+          {
+            "edid": "EncVampire03Template",
+            "formKey": "03384F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: between the low-level vampires and the vampires"
+        }
+      },
+      {
+        "id": "vampire-nightstalker",
+        "name": "Vampire Nightstalker",
+        "records": [
+          {
+            "edid": "EncVampire04Template",
+            "formKey": "033850:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 28
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: vampires"
+        }
+      },
+      {
+        "id": "ancient-vampire",
+        "name": "Ancient Vampire",
+        "records": [
+          {
+            "edid": "EncVampire05Template",
+            "formKey": "033851:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 38
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "volkihar-vampire",
+        "name": "Volkihar Vampire",
+        "records": [
+          {
+            "edid": "EncVampire06Template",
+            "formKey": "033852:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 48
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: vampires"
+        }
+      },
+      {
+        "id": "nightlord-vampire",
+        "name": "Nightlord Vampire",
+        "records": [
+          {
+            "edid": "DLC1EncVampire07Template",
+            "formKey": "00282A:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 60
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-10-05"
+        }
+      },
+      {
+        "id": "traveling-bard",
+        "name": "Traveling Bard",
+        "records": [
+          {
+            "edid": "DLC1RadiantDisguisedVampireBard",
+            "formKey": "005E4C:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlVampire",
+            "formKey": "02F9E1:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            20,
+            28,
+            38,
+            48,
+            60
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: vampires"
+        },
+        "note": "`NordRace`, not a vampire race; takes only `Stats` from `LvlVampire`, like the Pilgrim and the Advisor."
+      },
+      {
+        "id": "traveling-pilgrim",
+        "name": "Traveling Pilgrim",
+        "records": [
+          {
+            "edid": "DLC1RadiantDisguisedVampirePilgrim",
+            "formKey": "005E4E:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlVampire",
+            "formKey": "02F9E1:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            20,
+            28,
+            38,
+            48,
+            60
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: vampires"
+        }
+      },
+      {
+        "id": "visiting-advisor",
+        "name": "Visiting Advisor",
+        "records": [
+          {
+            "edid": "DLC1RadiantDisguisedVampireAdvisor",
+            "formKey": "007EC8:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlVampire",
+            "formKey": "02F9E1:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            20,
+            28,
+            38,
+            48,
+            60
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: vampires"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncVampire02Template` 03384E also needs `EncVampire02TemplateBoss` 02E098 (Master Vampire, level 14; on *Vampire Boss*): it uses 03384E as its template but not for `Stats`.",
+      "Changing `EncVampire03Template` 03384F also needs `EncVampire03TemplateBoss` 02E12A (level 23; on *Vampire Boss*): same pattern.",
+      "Changing `EncVampire04Template` 033850 also needs `EncVampire04TemplateBoss` 02E1B1 (level 31; on *Vampire Boss*): same pattern.",
+      "Changing `EncVampire05Template` 033851 also needs `EncVampire05TemplateBoss` 02E1B8 (level 42; on *Vampire Boss*): same pattern.",
+      "Changing `EncVampire06Template` 033852 also needs `EncVampire06TemplateBoss` 02E1BF (level 53; on *Vampire Boss*): same pattern.",
+      "Changing `DLC1EncVampire07Template` 00282A:Dawnguard.esm also needs `DLC1EncVampire07TemplateBoss` 00282B:Dawnguard.esm (level 65; on *Vampire Boss*): same pattern.",
+      "The rung templates `EncVampire01Template`–`06` and `DLC1EncVampire07Template` use `EncVampire00Template` 032FE7 as their template without `Stats`: changing the Fledgling changes none of them.",
+      "Each rung is a template plus female race variants that inherit its level: five vanilla (`EncVampire0NBretonF`/`DarkElfF`/`HighElfF`/`ImperialF`/`NordF`) and three Dawnguard (`DLC1EncVampire0NBretonF`/`DarkElfF`/`NordF`); the Nightlord has five plus three `…Alt`.",
+      "The other rows: no other record keeps its own level.",
+      "Hern, Hert and Sybille Stentor, vampires with no template, are on *Unique Vampires*.",
+      "Every other vampire record (the female race variants of each rung, the `TreasCorpseVampire*` corpses, the Bloodchill CC copies, the Vampire Naturalist (on *Unique Vampires*) and every `Lvl*Vampire*` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharVampire",
+          "formKey": "033973:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharVampire00` 107AA0"
+          },
+          {
+            "at": 6,
+            "label": "`LCharVampire01` 033930"
+          },
+          {
+            "at": 12,
+            "label": "`LCharVampire02` 033942"
+          },
+          {
+            "at": 20,
+            "label": "`LCharVampire03` 033968"
+          },
+          {
+            "at": 28,
+            "label": "`LCharVampire04` 03396B"
+          },
+          {
+            "at": 38,
+            "label": "`LCharVampire05` 03396C"
+          },
+          {
+            "at": 48,
+            "label": "`LCharVampire06` 033970"
+          },
+          {
+            "at": 60,
+            "label": "`DLC1LCharVampire07` 002836:Dawnguard.esm"
+          }
+        ],
+        "note": "each sub-list rolls one of the rung's race variants",
+        "owner": "`LvlVampire` 02F9E1 (40 refs in 16 cells: `BloodletThrone01` 016EA1 ×7, `DLC1DimHollowCrypt01` 000EB8:Dawnguard.esm ×5, `HaemarsShame01` 015268 ×4, `HaemarsShame02` 0216BB ×3, `CronvangrHall01` 0152A7 ×3, `DLC1RedwaterDen02` 005EAA:Dawnguard.esm ×3, …; also spawned by quests `DLC1HunterBaseIntroAmbush`, `DLC1Radiant`, `DLC1WE05`, `DLC1WE06`, `DLC1WE07`, `DLC1WEJS01`, `DLC1WEDB01`, `DLC1_WESC06`, `WEDLVigilOfStendarr02`); the Vampire Scout and the Feral Vampire (*Unique Vampires*); `DLC1WEJS02LvlVampire` 013809:Dawnguard.esm (quest `DLC1WEJS02`)"
+      },
+      {
+        "list": {
+          "edid": "LvlVampire",
+          "formKey": "02F9E1:Skyrim.esm"
+        },
+        "note": "draws `LCharVampire`, above",
+        "owner": "`MS06VampireGeneral` 01F148 (`PotemasCatacombs02` 0261C6, `PotemasCatacombs03` 0263EF) · `MS06VampireGeneralBanter` 015711 (quest `MS06PotemasCatacombsDungeon`) · `dunBloodletThroneSceneVampire` 07B77E (`BloodletThrone01`) · `dunFellglow_LvlVampirePrisoner` 07E7A4 ×2 · `…Prisoner02` 085557 · `…CagedTarget` 09362E (`FellglowKeep01` 015283) · `WERJ07Vampire` 0BF31E (quests `WERJ07`, `WERJ09`) · `DLC1_WESC01_LvlVampireFleeing` 0034DF · `DLC1_WESC02_VigilantVampire` 0034EC · `…Leader` 0034EE · `DLC1_WESC08_LvlVampireNoLoot` 00351F (quests `DLC1_WESC01`/`02`/`08`) · the Vampire Assassin (*Unique Vampires*) · Laelette (*Unique Vampires*) · the disguised travellers (quests `DLC1Radiant`, `DLC1RH07`)"
+      },
+      {
+        "list": {
+          "edid": "DLC1LCharVampireFSultry",
+          "formKey": "00D09B:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Vampire Fledgling"
+          },
+          {
+            "at": 6,
+            "label": "Vampire"
+          },
+          {
+            "at": 12,
+            "label": "Blooded Vampire"
+          },
+          {
+            "at": 20,
+            "label": "Vampire Mistwalker"
+          },
+          {
+            "at": 28,
+            "label": "Vampire Nightstalker"
+          },
+          {
+            "at": 38,
+            "label": "Ancient Vampire"
+          },
+          {
+            "at": 48,
+            "label": "Volkihar Vampire"
+          },
+          {
+            "at": 60,
+            "label": "Nightlord Vampire"
+          }
+        ],
+        "note": "the Breton, Imperial and Nord variants of each rung: `DLC1LCharVampire0NFSultry` 00D09C–00D0A3",
+        "owner": "`DLC1LvlVampireFemaleSultry` 00D079:Dawnguard.esm (`DLC1ForebearsHoldout` 002F64:Dawnguard.esm, 1 ref)"
+      },
+      {
+        "list": {
+          "edid": "DLC1LCharVampireFVampire",
+          "formKey": "00F508:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Vampire Fledgling"
+          },
+          {
+            "at": 6,
+            "label": "Vampire"
+          },
+          {
+            "at": 12,
+            "label": "Blooded Vampire"
+          },
+          {
+            "at": 20,
+            "label": "Vampire Mistwalker"
+          },
+          {
+            "at": 28,
+            "label": "Vampire Nightstalker"
+          },
+          {
+            "at": 38,
+            "label": "Ancient Vampire"
+          },
+          {
+            "at": 48,
+            "label": "Volkihar Vampire"
+          },
+          {
+            "at": 60,
+            "label": "Nightlord Vampire"
+          }
+        ],
+        "note": "the Dawnguard race variants of each rung: `DLC1LCharVampire0NFVampire` 00F500–00F507",
+        "owner": "`DLC1LvlVampireFemaleVampire` 00F509:Dawnguard.esm (`DLC1DimHollowCrypt01` 000EB8, `DLC1DimHollowCrypt02` 000EB7, 1 ref each)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Vampire Fledgling",
+        "base": [
+          {
+            "edid": "EncVampire00ImperialF",
+            "formKey": "107A9E:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "HalloftheVigilantExterior01",
+              "formKey": "008FCF:Skyrim.esm"
+            },
+            "note": "Tamriel, 1 ref"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Every rung and every wrapper above not listed below (inventory from `EncVampire00Template` 032FE7; `05`, `06` and `DLC1EncVampire07Template` carry the same)",
+        "weapons": "`LItemVampireWeaponBase` 10962B",
+        "armor": "`DLC1vampireOutfit` 033840",
+        "skin": "race default"
+      },
+      {
+        "records": "`WERJ07Vampire` 0BF31E",
+        "weapons": "`LItemVampireDagger` 02E1EE",
+        "armor": "`DLC1vampireOutfit` 033840",
+        "skin": "race default"
+      },
+      {
+        "records": "Vigilant vampires (`DLC1_WESC02_VigilantVampire` · `…Leader`)",
+        "weapons": "Iron Dagger 01397E · `LItemWeaponAny1H` 0165BA",
+        "armor": "`DLC1_WESC02_VigilantVampireOutfitHood` 0034ED · leader `…OutfitNoHood` 0034EF",
+        "skin": "race default"
+      },
+      {
+        "records": "Traveling Bard · Traveling Pilgrim · Visiting Advisor",
+        "weapons": "`DLC1LItemDisguisedVampireInventory` 011F3B:Dawnguard.esm",
+        "armor": "`MerchantClothesOutfit02NoHat` 09593C · `BeggarWithHatOutfit` 028B61 · `DLC1VampireClotheOnly` 012240:Dawnguard.esm",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC1vampireOutfit",
+          "formKey": "033840:Skyrim.esm"
+        },
+        "rolls": "Dawnguard's override of `vampireOutfit`: Vampire Boots 00B5DE:Dawnguard.esm + one of `LItemVampireAttire` 10C6ED: Vampire Armor (grey 0142C7 · grey-light 0191F2 · red 0191F3, Dawnguard.esm) · Vampire Robes 019ADF:Dawnguard.esm · `LItemEnchVampireRobes` 106D0D (Vampire Armor of Destruction or of Conjuration, Minor 1 · 8 · 16 · 24 · 32 · Peerless 40, or a plain Vampire Armor); every gate ≤ player"
+      },
+      {
+        "list": {
+          "edid": "LItemVampireWeaponBase",
+          "formKey": "10962B:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "`LItemBanditSword` 037C19 or `LItemBanditWarAxe` 037C1A: Iron, Steel ×4 (1) · Orcish (9) · Dwarven (15) · Elven (22)",
+        "levels": [
+          1,
+          9,
+          15,
+          22
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemVampireDagger",
+          "formKey": "02E1EE:Skyrim.esm"
+        },
+        "rolls": "Steel Dagger ×4 (1) · Orcish (10) · Dwarven (15) · Elven (20)",
+        "levels": [
+          1,
+          10,
+          15,
+          20
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponAny1H",
+          "formKey": "0165BA:Skyrim.esm"
+        },
+        "rolls": "mace, sword or war axe: Iron (1) · Steel (2) · Orcish (6) · Dwarven (12) · Elven (19) · Glass (27) · Ebony (36) · Daedric (46)",
+        "levels": [
+          1,
+          2,
+          6,
+          12,
+          19,
+          27,
+          36,
+          46
+        ]
+      },
+      {
+        "list": {
+          "label": "`DLC1_WESC02_VigilantVampireOutfitHood` 0034ED · `…NoHood` 0034EF"
+        },
+        "rolls": "Novice Robes of Restoration or Alteration (`LItemVigilantRobes` 10C45F) · Steel Cuffed (1) or Steel Plate (18) Boots (`LItemVigilantHeavyBoots` 10BFF2) · 50%: Steel (1) or Steel Plate (15) Gauntlets (`LItemVigilantHeavyGauntlets50` 10BFF3) · Hood only: 50% Novice Hood (`LItemVigilantHood` 10C460)"
+      },
+      {
+        "list": {
+          "edid": "DLC1LItemDisguisedVampireInventory",
+          "formKey": "011F3B:Dawnguard.esm"
+        },
+        "rolls": "use all: one enchanted dagger (`LItemEnchWeaponDagger` 08992F, Iron 1 → Daedric 47) · one enchanted ring (`LItemEnchRingAll` 100E8A)"
+      },
+      {
+        "list": {
+          "edid": "DLC1VampireClotheOnly",
+          "formKey": "012240:Dawnguard.esm"
+        },
+        "rolls": "Vampire Robes 019ADF · Vampire Boots 019AE1 · Vampire Gloves 019AE3 · Vampire Hood 019ADE (Dawnguard.esm, clothing)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Vampire Armor 0142C7 · 0191F2 · 0191F3, and the enchanted Vampire Armor of Destruction / Conjuration 015CB9–015CC4 (Dawnguard.esm)",
+        "kind": "light body, AR 25",
+        "playable": true
+      },
+      {
+        "item": "Vampire Boots 00B5DE:Dawnguard.esm",
+        "kind": "light feet, AR 7",
+        "playable": true
+      },
+      {
+        "item": "Vampire Robes · Boots · Gloves · Hood 019ADF · 019AE1 · 019AE3 · 019ADE:Dawnguard.esm",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "every weapon above",
+        "kind": "one-handed",
+        "playable": true
+      }
+    ]
+  }
+}
