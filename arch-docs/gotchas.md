@@ -260,6 +260,15 @@ gotchas here**, and add a one-liner to CLAUDE.md only if a session must know it 
   `EncGuardImperialM0x` guards were given level 25 and still scaled 20–50 in game through
   `EncGuardImperialTemplate`. Before claiming an NPC is fixed, find the level **owner**: follow `Stats` templates
   through `LVLN` entries to a record without the flag. `[verified]` from the records, 2026-09-26.
+- **Dropping `Stats` to give a borrower its own level also drops its class, skills and offsets.** The
+  `Stats` template flag carries the whole Stats tab: level, class, skills, health/magicka/stamina offsets,
+  speed and auto-calc (CK wiki *Template Data*: "level, attributes, skills, and class") `[community]`.
+  Records that borrow a faction list's level often carry the placeholder class `EncClassDremoraMelee`
+  017008 and no `AutoCalcStats` (the vampire thralls; the Boethiah cultists, e.g. `DA02CultistF1`
+  04D8D1, which takes `Stats` from `LvlBanditMelee1H` → `LCharBanditMelee1H`). Without `Stats` they
+  fall back to those placeholder fields. Either follow the Morag Tong pattern (own level, the matched
+  rung's class and offsets, `AutoCalcStats` on, `Stats` dropped), or keep `Stats` and repoint
+  `Template` at a different rung or list. Found 2026-10-05.
 - **In the decompile, match the string `- Language: English`, not `Language: English`.** The latter hits
   `TargetLanguage: English` on the line above first, and a name parse silently returns the wrong field.
   `[verified]` 2026-09-25.
