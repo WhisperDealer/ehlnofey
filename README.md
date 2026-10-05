@@ -35,6 +35,14 @@ Every design decision answers to these three rules:
 **Non-goals:** not a combat overhaul, not a perk or skill overhaul, not a survival mod, not new
 content. Ehlnofey changes *where the numbers come from*, and nothing else.
 
+## The ten bands of power
+
+Every creature is set into one of ten fixed bands, from Weak to Godlike. The bands are defined in
+[`arch-docs/bands-of-power.md`](arch-docs/bands-of-power.md), with the data in
+[`census/bands.json`](census/bands.json).
+
+![The ten bands of power: Weak 1–6, Common 7–13, Trained 14–20, Blooded 21–27, Experienced 28–34, Elite 35–41, Powerful 42–50, Fabled 51–65, Mythic 66–81, Godlike 82+](arch-docs/Ehlnofey%20Level%20Bands.png)
+
 ## Status: rebuilding (Phase 4, build)
 
 **Ehlnofey is being rebuilt from scratch** (2026-09-27). Every record in the new plugin is authored in
