@@ -1,0 +1,464 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "heroes-spirits",
+  "group": "summoned-npcs",
+  "title": "Heroes & Spirits",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "gormlaith",
+        "name": "Gormlaith Golden-Hilt",
+        "records": [
+          {
+            "edid": "SummonGormlaith",
+            "formKey": "0923FA:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "NordRace",
+          "formKey": "013746:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 30,
+          "from": {
+            "edid": "GormlaithGoldenHilt",
+            "formKey": "044236:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (30); its Sovngarde record is on no migrated page"
+        },
+        "note": "takes `Stats` and its inventory from the Sovngarde record `GormlaithGoldenHilt`."
+      },
+      {
+        "id": "felldir",
+        "name": "Felldir the Old",
+        "records": [
+          {
+            "edid": "SummonFelldir",
+            "formKey": "0923F9:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "NordRace",
+          "formKey": "013746:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 30,
+          "from": {
+            "edid": "FelldirTheOld",
+            "formKey": "044237:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (30); its Sovngarde record is on no migrated page"
+        },
+        "note": "takes `Stats` and its inventory from the Sovngarde record `FelldirTheOld`."
+      },
+      {
+        "id": "hakon",
+        "name": "Hakon One-Eye",
+        "records": [
+          {
+            "edid": "SummonHakon",
+            "formKey": "0923FB:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "NordRace",
+          "formKey": "013746:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 30,
+          "from": {
+            "edid": "HakonOneEye",
+            "formKey": "044238:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (30); its Sovngarde record is on no migrated page"
+        },
+        "note": "takes `Stats` and its inventory from the Sovngarde record `HakonOneEye`."
+      },
+      {
+        "id": "spectral-assassin",
+        "name": "Spectral Assassin",
+        "records": [
+          {
+            "edid": "DBSpectralAssassin",
+            "formKey": "0A0E49:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "ImperialRace",
+          "formKey": "013744:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 100
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: capped at VI"
+        },
+        "note": "no template."
+      },
+      {
+        "id": "arniels-shade",
+        "name": "Arniel's Shade",
+        "records": [
+          {
+            "edid": "MGArnielSummon",
+            "formKey": "06A152:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "BretonRace",
+          "formKey": "013741:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 40
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (40)"
+        },
+        "note": "no template."
+      },
+      {
+        "id": "dragon-priest",
+        "name": "Dragon Priest",
+        "records": [
+          {
+            "edid": "SummonEncDragonPriest",
+            "formKey": "10FC15:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DragonPriestRace",
+          "formKey": "0131EF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 50,
+          "from": {
+            "edid": "EncDragonPriest",
+            "formKey": "023A93:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "role: a summon, banded with Dragon Priest (on *Dragon Priests*), whose Stats it takes"
+        }
+      },
+      {
+        "id": "phantom",
+        "name": "Phantom",
+        "records": [
+          {
+            "edid": "MQ105PhantomFormActor",
+            "formKey": "02F2DC:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "NordRace",
+          "formKey": "013746:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 3
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (3)"
+        },
+        "note": "the record has no name of its own; \"Phantom\" is the shout's. No template; the effect `MQ105PhantomForm` 02F2DD summons it. `SummonPhantom` 072310 (Phantom, 1) is dropped: its effect `VoicePhantomForm` has no spell."
+      },
+      {
+        "id": "subjugated-ghost",
+        "name": "Subjugated Ghost",
+        "records": [
+          {
+            "edid": "DunRannveigGhostLvlBandit01Melee1H",
+            "formKey": "03481A:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "NordRace",
+          "formKey": "013746:Skyrim.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlBanditMeleeNordM",
+            "formKey": "01B0BC:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "bands-of-power.md: most bandits (it takes Stats from the bandit ladder)"
+        },
+        "note": "borrows its level from the Bandits: takes `Stats` from the wrapper `LvlBanditMeleeNordM`, which draws the Nord melee bandit ladder."
+      },
+      {
+        "id": "karstaag",
+        "name": "Karstaag",
+        "records": [
+          {
+            "edid": "DLC2dunKarstaagSummon",
+            "formKey": "024811:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2GhostFrostGiantRace",
+          "formKey": "01CAD8:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 90,
+          "from": {
+            "edid": "DLC2dunKarstaag",
+            "formKey": "019665:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "X",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (90); the placed Karstaag is on no migrated page"
+        },
+        "note": "takes `Stats` and `BaseData` from the placed Karstaag `DLC2dunKarstaag` (on *Giant*)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The summons that template a placed record all take `Stats` from it: the three heroes from their Sovngarde records `GormlaithGoldenHilt` 044236, `FelldirTheOld` 044237, `HakonOneEye` 044238, `SummonEncDragonPriest` from `EncDragonPriest` 023A93 (on *Dragon Priests*), `DLC2dunKarstaagSummon` from `DLC2dunKarstaag` 019665:Dragonborn.esm (on *Giant*), the Subjugated Ghost from the bandit list. Changing those changes the summons.",
+      "`DBSpectralAssassin`, `MGArnielSummon` and `MQ105PhantomFormActor` have no template and own their level.",
+      "Untemplated records of the same races: `EncDragonPriest` (on *Dragon Priests*), `DLC2FrostGiant01` 01CAD6:Dragonborn.esm (level 32, on *Giant*).",
+      "Every row: no other record keeps its own level.",
+      "Every other record (the Sovngarde copies `MQ206Gormlaith`, `MQ206Felldir`, `MQ206Hakon`, which template the summons) carries `Stats` and follows its template."
+    ]
+  },
+  "summonedBy": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Gormlaith · Felldir · Hakon",
+        "spell": "`VoiceCallHero1` · `2` · `3`",
+        "player": "shout `CallofValorShout` (Call of Valor)",
+        "npcs": "none"
+      },
+      {
+        "name": "Spectral Assassin",
+        "spell": "power `DBSummonAssassin`",
+        "player": "Dark Brotherhood reward `[community]`",
+        "npcs": "none"
+      },
+      {
+        "name": "Arniel's Shade",
+        "spell": "`MGRSummonArniel`",
+        "player": "granted by the College radiant quest `MGRArniel04`",
+        "npcs": "none"
+      },
+      {
+        "name": "Dragon Priest",
+        "spell": "`ConjureDragonPriest`",
+        "player": "Konahrik mask (`EnchDragonPriestUltraMaskEffect`)",
+        "npcs": "none"
+      },
+      {
+        "name": "Phantom (MQ105)",
+        "spell": "`MQ105VoicePhantomForm3`",
+        "player": "none",
+        "npcs": "shout `MQ105PhantomFormShout`, used in The Way of the Voice `[community]`; caster not traced"
+      },
+      {
+        "name": "Subjugated Ghost",
+        "spell": "staff enchantment `dunRannveigStaffEnchSummonGhost`",
+        "player": "Sild's Staff `dunRannveigSildsStaff` 0A88C9 (Rannveig's Fast `[community]`)",
+        "npcs": "none found in any `dun*` NPC inventory"
+      },
+      {
+        "name": "Karstaag",
+        "spell": "powers `DLC2dunSummonKarstaag1Left` · `2Left` · `3Left`",
+        "player": "Karstaag's skull, Castle Karstaag `[community]`",
+        "npcs": "none"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Gormlaith Golden-Hilt",
+        "weapons": "`DraugrSword` 02C66F, `LongBow` 03B562, `SteelArrow` 01397F",
+        "armor": "outfit `ArmorSteelPlateNoHelmetOutfit` 0579A3; `ArmorSteelShield` 013955",
+        "skin": "race default"
+      },
+      {
+        "records": "Felldir the Old",
+        "weapons": "`DraugrGreatsword` 0236A5",
+        "armor": "outfit `GreybeardOutfit` 039F20",
+        "skin": "race default"
+      },
+      {
+        "records": "Hakon One-Eye",
+        "weapons": "`DraugrBattleAxe` 01CB64",
+        "armor": "outfit `DraugrArmorForNonDraugrOutfitNoHelmet` 0EA537",
+        "skin": "race default"
+      },
+      {
+        "records": "Spectral Assassin",
+        "weapons": "`SteelDagger` 013986",
+        "armor": "outfit `DBRobesHood` 0E1EC1",
+        "skin": "race default"
+      },
+      {
+        "records": "Arniel's Shade",
+        "weapons": "none",
+        "armor": "outfit `CollegeAdeptAlterationOutfit` 10DD2F",
+        "skin": "race default"
+      },
+      {
+        "records": "Phantom (MQ105)",
+        "weapons": "`MQ105PhantomSword` 0771B9",
+        "armor": "outfit `GreybeardOutfitWithHat` 039F21",
+        "skin": "race default"
+      },
+      {
+        "records": "Subjugated Ghost",
+        "weapons": "`LItemBanditWeapon1H` 037C1B",
+        "armor": "outfit `BanditArmorMeleeShield20Outfit` 0C0197",
+        "skin": "race default"
+      },
+      {
+        "records": "The three heroes",
+        "weapons": "inventory from their Sovngarde records (`GormlaithGoldenHilt` 044236, `FelldirTheOld` 044237, `HakonOneEye` 044238)",
+        "armor": "as above",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ArmorSteelPlateNoHelmetOutfit",
+          "formKey": "0579A3:Skyrim.esm"
+        },
+        "rolls": "Steel Plate Armor, Boots, Gauntlets"
+      },
+      {
+        "list": {
+          "edid": "GreybeardOutfit",
+          "formKey": "039F20:Skyrim.esm"
+        },
+        "rolls": "Greybeard's Robes, Boots (`GreybeardOutfitWithHat` 039F21 adds the Hood)"
+      },
+      {
+        "list": {
+          "edid": "DraugrArmorForNonDraugrOutfitNoHelmet",
+          "formKey": "0EA537:Skyrim.esm"
+        },
+        "rolls": "Ancient Nord Armor, Boots, Gauntlets"
+      },
+      {
+        "list": {
+          "edid": "DBRobesHood",
+          "formKey": "0E1EC1:Skyrim.esm"
+        },
+        "rolls": "Shrouded Robes, Hood, Hand Wraps, Shoes"
+      },
+      {
+        "list": {
+          "edid": "CollegeAdeptAlterationOutfit",
+          "formKey": "10DD2F:Skyrim.esm"
+        },
+        "rolls": "Adept Robes of Alteration, Adept Hood, Boots"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditWeapon1H",
+          "formKey": "037C1B:Skyrim.esm"
+        },
+        "rolls": "Iron, Orcish, Dwarven and Elven Sword / War Axe / Mace"
+      },
+      {
+        "list": {
+          "edid": "BanditArmorMeleeShield20Outfit",
+          "formKey": "0C0197:Skyrim.esm"
+        },
+        "rolls": "Fur, Hide, Leather, Studded, Scaled and Scaled Horn armor with matching boots and bracers; Hide, Iron or Elven shield"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Steel Plate set, Steel Shield, Long Bow, Steel Arrow, Steel Dagger",
+        "kind": "heavy armour, shield, bow, arrow, dagger",
+        "playable": true
+      },
+      {
+        "item": "Ancient Nord Sword / Greatsword / Battle Axe, Ancient Nord Armor set",
+        "kind": "weapons, heavy armour",
+        "playable": true
+      },
+      {
+        "item": "Shrouded set, Adept Hood / Robes of Alteration / Boots",
+        "kind": "light armour, clothing",
+        "playable": true
+      },
+      {
+        "item": "Bandit list leaves (weapons, armor, shields)",
+        "kind": "weapons, armour, shields",
+        "playable": true
+      },
+      {
+        "item": "Greybeard's Robes / Boots / Hood",
+        "kind": "clothing",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Phantom Sword",
+        "kind": "one-handed",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

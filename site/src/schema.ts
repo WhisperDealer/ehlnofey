@@ -84,7 +84,7 @@ const ListRow = z.strictObject({
   override: z.string().optional(),
   gate: z.string().optional(),
   entries: z.array(ListEntry).optional(),
-  seeFamily: z.string().optional(), // the list is documented in full on that family's page
+  seeFamily: z.string().regex(/^[a-z0-9-]+$/, 'seeFamily is a family id in the same group').optional(), // the list is documented in full on that family's page
   note: z.string().optional(),
   owner: z.string().min(1),
 });
@@ -124,6 +124,10 @@ export const Family = z.strictObject({
     z.strictObject({ records: z.array(Ref).min(1), name: z.string(), level: Level, where: z.string() }),
   ).optional(),
   ownsLevel: z.strictObject({ confidence: Confidence, items: z.array(z.string()) }).optional(),
+  // Conjured pages: how each summon is reached, by the player and by NPCs.
+  summonedBy: section(
+    z.strictObject({ name: z.string().min(1), spell: z.string(), player: z.string(), npcs: z.string() }),
+  ).optional(),
   // Gear the player can take from the enemy: each list it drops, walked to its tiers.
   loot: z
     .strictObject({

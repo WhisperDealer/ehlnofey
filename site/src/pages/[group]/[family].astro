@@ -110,6 +110,22 @@ const PLACED_FOLD = 4; // more locations than this collapse behind a summary
     </>
   )}
 
+  {f.summonedBy && (
+    <>
+      <h2>Summoned by <span class:list={['conf', f.summonedBy.confidence]}>{f.summonedBy.confidence}</span></h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Name</th><th>Spell</th><th>Player</th><th>NPC casters</th></tr></thead>
+          <tbody>
+            {f.summonedBy.rows.map((s) => (
+              <tr><td set:html={md(s.name)} /><td set:html={md(s.spell)} /><td set:html={md(s.player)} /><td set:html={md(s.npcs)} /></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+
   {f.loot && (
     <>
       <h2>Loot <span class:list={['conf', f.loot.confidence]}>{f.loot.confidence}</span></h2>

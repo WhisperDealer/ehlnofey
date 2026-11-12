@@ -1,0 +1,407 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "summoned-atronachs",
+  "group": "summoned-creatures",
+  "title": "Summoned Atronachs",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "familiar",
+        "name": "Familiar",
+        "records": [
+          {
+            "edid": "EncSummonFamiliar",
+            "formKey": "0640B5:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "WolfRace",
+          "formKey": "01320A:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 2
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (2)"
+        }
+      },
+      {
+        "id": "flame-atronach",
+        "name": "Flame Atronach",
+        "records": [
+          {
+            "edid": "SummonAtronachFlame",
+            "formKey": "0204C0:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "AtronachFlameRace",
+          "formKey": "0131F5:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 5,
+          "from": {
+            "edid": "EncAtronachFlame",
+            "formKey": "023AA6:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (5)"
+        },
+        "note": "takes `Stats` from the placed `EncAtronachFlame`; atronachs are out of the census, so it is banded at the level it takes."
+      },
+      {
+        "id": "potent-flame-atronach",
+        "name": "Potent Flame Atronach",
+        "records": [
+          {
+            "edid": "SummonAtronachFlamePotent",
+            "formKey": "04E940:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "AtronachFlameRace",
+          "formKey": "0131F5:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (10)"
+        }
+      },
+      {
+        "id": "frost-atronach",
+        "name": "Frost Atronach",
+        "records": [
+          {
+            "edid": "SummonAtronachFrost",
+            "formKey": "0204C1:Skyrim.esm"
+          },
+          {
+            "edid": "SummonAtronachFrostNPC",
+            "formKey": "10EE43:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "AtronachFrostRace",
+          "formKey": "0131F6:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 16
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (16)"
+        }
+      },
+      {
+        "id": "potent-frost-atronach",
+        "name": "Potent Frost Atronach",
+        "records": [
+          {
+            "edid": "SummonAtronachFrostPotent",
+            "formKey": "04E943:Skyrim.esm"
+          },
+          {
+            "edid": "SummonAtronachFrostNPCPotent",
+            "formKey": "10EE46:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "AtronachFrostRace",
+          "formKey": "0131F6:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 24
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (24)"
+        }
+      },
+      {
+        "id": "storm-atronach",
+        "name": "Storm Atronach",
+        "records": [
+          {
+            "edid": "SummonAtronachStorm",
+            "formKey": "0204C2:Skyrim.esm"
+          },
+          {
+            "edid": "SummonAtronachStormNPC",
+            "formKey": "10EE45:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "AtronachStormRace",
+          "formKey": "0131F7:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 30
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (30)"
+        }
+      },
+      {
+        "id": "potent-storm-atronach",
+        "name": "Potent Storm Atronach",
+        "records": [
+          {
+            "edid": "SummonAtronachStormPotent",
+            "formKey": "04E944:Skyrim.esm"
+          },
+          {
+            "edid": "SummonAtronachStormNPCPotent",
+            "formKey": "10EE47:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "AtronachStormRace",
+          "formKey": "0131F7:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 35
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (35)"
+        }
+      },
+      {
+        "id": "flame-thrall",
+        "name": "Flame Thrall",
+        "records": [
+          {
+            "edid": "SummonAtronachFlameThrall",
+            "formKey": "07E87D:Skyrim.esm"
+          },
+          {
+            "edid": "SummonAtronachFlameThrallPotent",
+            "formKey": "0CDECC:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "AtronachFlameRace",
+          "formKey": "0131F5:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 30,
+          "also": [
+            35
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (35)"
+        }
+      },
+      {
+        "id": "frost-thrall",
+        "name": "Frost Thrall",
+        "records": [
+          {
+            "edid": "SummonAtronachFrostThrall",
+            "formKey": "07E87E:Skyrim.esm"
+          },
+          {
+            "edid": "SummonAtronachFrostThrallPotent",
+            "formKey": "0CDECD:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "AtronachFrostRace",
+          "formKey": "0131F6:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 30,
+          "also": [
+            35
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (35)"
+        }
+      },
+      {
+        "id": "storm-thrall",
+        "name": "Storm Thrall",
+        "records": [
+          {
+            "edid": "SummonAtronachStormThrallPotent",
+            "formKey": "0CDECE:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "AtronachStormRace",
+          "formKey": "0131F7:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 35
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (35)"
+        },
+        "note": "the plain Storm Thrall effect `SummonStormThrall` 07E5D4 summons `SummonAtronachStorm` (Storm Atronach, 30); only the Potent copy is named Storm Thrall. `SummonAtronachStormThrall` 07E87F (30) exists but no effect, list or perk names it."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The Potent records replace the plain ones through the Atromancy perk entries (`PerkSummon*Potent`). No spell was found for the `…NPC` copies (`SummonFrostAtronachNPC` 10EE48 and `SummonStormAtronachNPC` 10EE49), and none for their Potent perk entries.",
+      "The summons use the placed atronachs as their template, mostly without `Stats`. `EncAtronachFlame` 023AA6 (level 5; on no census page, atronachs being out of the census): `SummonAtronachFlame` takes `Stats` from it; `SummonAtronachFlamePotent`, `SummonAtronachFlameThrall` and `…ThrallPotent` do not, and keep 10 · 30 · 35.",
+      "`EncAtronachFrost` 023AA7 (level 16; on no census page): `SummonAtronachFrostNPC` takes `Stats` from it; `SummonAtronachFrost`, `…FrostPotent`, `…FrostNPCPotent`, `…FrostThrall` and `…FrostThrallPotent` do not, and keep 16 · 24 · 24 · 30 · 35.",
+      "`EncAtronachStorm` 023AA8 (level 30; on no census page): `SummonAtronachStormNPC` takes `Stats` from it; `SummonAtronachStorm`, `…StormPotent`, `…StormNPCPotent` and `…StormThrallPotent` do not, and keep 30 · 35 · 35 · 35.",
+      "`EncSummonFamiliar` uses `EncWolf` 023ABE (on *Wolf*) as its template but not for `Stats`, so it stays at level 2 when the wolf changes.",
+      "Atronach-race records with no template, besides the three above: `EncAtronachFlameHoldPosLinked256` 0F8B11 (level 5), `DLC1_BF_FrostAtronachBossTemplate` 015138:Dawnguard.esm and `DLC1_BF_LVLFrostAtronachBoss` 00E193:Dawnguard.esm (level 16), `DLCDwarvenPuzzleDungeon_FlameAtronach` 0008E4:cctwbsse001-puzzledungeon.esm (level 5) and `…FrostAtronach` 0008F8:cctwbsse001-puzzledungeon.esm (level 16); all on no census page. The untemplated wolves (`EncWolf`, `EncWolfIce`, `dunHunterWolfGuardian`) are on *Wolf*.",
+      "Every row: no other record keeps its own level.",
+      "Every other record (`ccPEWSSE002_SummonEncDaedra`, the `dunFellglowLvlWarlockAtronachOrFamiliarCompanion` wrappers) carries `Stats` and follows its template or list."
+    ]
+  },
+  "summonedBy": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Familiar",
+        "spell": "`ConjureFamiliar` · `ConjureFamiliarRightHand`",
+        "player": "tome `SpellTomeConjureFamiliar`, `ConjureFamiliarScroll`, `StaffConjureFamiliar` + 6 CC staves (`ccBGSSSE066_StaffConjureFamiliar*`)",
+        "npcs": "12 NPCs on `ConjureFamiliar` (Anwen, Banning, Bothela…); 33 on `…RightHand` (conjurer warlocks, named mages); `LSpellWEConjurerRighHand` (WE adventurer conjurers)"
+      },
+      {
+        "name": "Flame Atronach",
+        "spell": "`ConjureFlameAtronach` · `…LeftHand` · `…RightHand`",
+        "player": "tome `SpellTomeConjureFlameAtronach`, `ConjureFlameAtronachScroll`, `StaffConjureFlameAtronach`, `DLC1StaffFalmerConjureFlameAtronach` + CC staves",
+        "npcs": "34 on `…LeftHand` (Forsworn magic bosses, college mages); `LSpellDragonPriestFire` (5 dragon priests incl. Rahgot, Hevnoraak); 31 on `…RightHand` (conjurer warlocks 02–03, atronach warlocks); WE adventurer conjurers"
+      },
+      {
+        "name": "Frost Atronach",
+        "spell": "`ConjureFrostAtronach` · `…LeftHand` · `…RightHand`",
+        "player": "tome, `ConjureFrostAtronachScroll`, `StaffConjureFrostAtronach`, `DLC1StaffFalmerConjureFrostAtronach` + CC staves",
+        "npcs": "40 on `…LeftHand` (draugr warlocks `EncDraugr04Magic*`, Ancano, Aranea); `LSpellDragonPriestFrost` (4: `dunShearpointKrosisDragonPriest`, `dunVolskyggeDragonPriest01`, `EncDragonPriestAmbushSarcFrost`…); 17 on `…RightHand` (conjurer warlocks 04); WE adventurer conjurers"
+      },
+      {
+        "name": "Storm Atronach",
+        "spell": "`ConjureStormAtronach` · `…LeftHand` · `…RightHand` · `ccBGSSSE040_ConjureStormAtronach`",
+        "player": "tome, `ConjureStormAtronachScroll`, `StaffConjureStormAtronach` + CC staves",
+        "npcs": "Elenwen, Esbern, CC Green Guardian, CC goblin follower; 22 on `…LeftHand` (Forsworn 06, Potema's skeleton); `LSpellDragonPriestDestruction` (7 dragon priests); 35 on `…RightHand` (conjurer warlocks 05–07, Gauldur)"
+      },
+      {
+        "name": "Flame / Frost / Storm Thrall",
+        "spell": "`FlameThrall` · `FrostThrall` · `StormThrall`",
+        "player": "tomes `SpellTome{Flame,Frost,Storm}Thrall`, `{Flame,Frost,Storm}ThrallScroll`",
+        "npcs": "none"
+      }
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ccPEWSSE002_LCharSummons",
+          "formKey": "00084D:ccpewsse002-armsofchaos.esl"
+        },
+        "gate": "every entry at level 1",
+        "owner": "Sovereign Band ring `ccPEWSSE002_Ring` 000813 (script property); template of `ccPEWSSE002_SummonEncDaedra`",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Dremora Lord (`SummonEncDremoraLord` 10DDEE, 46)"
+          },
+          {
+            "at": 1,
+            "label": "Flame Atronach (`SummonAtronachFlame` 0204C0, 5)"
+          },
+          {
+            "at": 1,
+            "label": "Frost Atronach (`SummonAtronachFrost` 0204C1, 16)"
+          },
+          {
+            "at": 1,
+            "label": "Storm Atronach (`SummonAtronachStorm` 0204C2, 30)"
+          },
+          {
+            "at": 1,
+            "label": "Lurker (`ccPEWSSE002_SummonLurker` 000817, 24)"
+          },
+          {
+            "at": 1,
+            "label": "Seeker (`DLC2SummonSeeker` 01EEC9:Dragonborn.esm, 21)"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "ccPEWSSE002_LCharSummonsSpecial",
+          "formKey": "00084F:ccpewsse002-armsofchaos.esl"
+        },
+        "gate": "every entry at level 1",
+        "owner": "Sovereign Band ring (script property)",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Dremora Lord (`SummonEncDremoraLord` 10DDEE, 46)"
+          },
+          {
+            "at": 1,
+            "label": "Flame Atronach (`SummonAtronachFlame` 0204C0, 5)"
+          },
+          {
+            "at": 1,
+            "label": "Frost Atronach (`SummonAtronachFrost` 0204C1, 16)"
+          },
+          {
+            "at": 1,
+            "label": "Storm Atronach (`SummonAtronachStorm` 0204C2, 30)"
+          },
+          {
+            "at": 1,
+            "label": "Lurker (`ccPEWSSE002_SummonLurker` 000817, 24)"
+          },
+          {
+            "at": 1,
+            "label": "Seeker (`DLC2SummonSeeker` 01EEC9:Dragonborn.esm, 21)"
+          },
+          {
+            "at": 1,
+            "label": "Dremora Sovereign (`ccPEWSSE002_SummonEncDremoraSovereign` 000850, 60)",
+            "count": 6
+          }
+        ]
+      }
+    ]
+  }
+}

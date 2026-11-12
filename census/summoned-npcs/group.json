@@ -1,0 +1,21 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "summoned-npcs",
+  "title": "Summoned NPCs",
+  "order": 2,
+  "parent": "conjured",
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record.",
+  "families": [
+    {
+      "id": "summoned-dremora",
+      "holds": "Dremora Lord, Sanguine Rose Dremora, Scourge Dremora Lord, Dremora Sovereign"
+    },
+    {
+      "id": "heroes-spirits",
+      "holds": "Sovngarde heroes, Spectral Assassin, Arniel's Shade, Dragon Priest, Phantom, Subjugated Ghost, Karstaag"
+    }
+  ]
+}

@@ -9,7 +9,7 @@
 //
 // Page ids live in scripts/confluence-pages.json (key <group>/<family>), not in the census:
 // the site publishes census/ and must not reference Confluence.
-import { mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { Bands, Family, Group, type FamilyData, type GroupData, type LevelData, type RefData } from '../src/schema.ts';
 
@@ -76,6 +76,11 @@ export function renderFamily(f: FamilyData, titles: Record<string, string> = {})
   if (f.ownsLevel) {
     out.push('', `## Also owns its level ${conf(f.ownsLevel.confidence)}`, '');
     out.push(...f.ownsLevel.items.map((i) => `- ${i.replace(/\[/g, '\\[').replace(/\]/g, '\\]')}`));
+  }
+
+  if (f.summonedBy) {
+    out.push('', `## Summoned by ${conf(f.summonedBy.confidence)}`, '');
+    out.push(table(['Name', 'Spell', 'Player', 'NPC casters'], f.summonedBy.rows.map((s) => [s.name, s.spell, s.player, s.npcs])));
   }
 
   if (f.loot) {
@@ -154,11 +159,12 @@ export function renderFamily(f: FamilyData, titles: Record<string, string> = {})
   return out.join('\n') + '\n';
 }
 
-export function renderGroup(g: GroupData, titles: Record<string, string>): string {
+// subgroups: a parent group's sub-groups (title and the families they hold), listed before its own families.
+export function renderGroup(g: GroupData, titles: Record<string, string>, subgroups: { title: string; holds: string }[] = []): string {
   const out: string[] = [banner(`${g.id}/group`), ''];
   if (g.meta.spec) out.push(`Spec \`${g.meta.spec}\`.`, '');
   if (g.intro) out.push(g.intro, '');
-  out.push(table(['Page', 'Holds'], g.families.map((f) => [`*${titles[f.id] ?? f.id}*`, f.holds])));
+  out.push(table(['Page', 'Holds'], [...subgroups.map((s) => [`*${s.title}* (sub-group)`, s.holds]), ...g.families.map((f) => [`*${titles[f.id] ?? f.id}*`, f.holds])]));
   if (g.sweep) out.push('', `## ${g.sweep.title} ${conf(g.sweep.confidence)}`, '', g.sweep.text);
   if (g.filedElsewhere) out.push('', '### Filed elsewhere', '', table(['Record', 'What it is', 'Where it belongs'], g.filedElsewhere.map((r) => [r.record, r.what, r.where])));
   if (g.neverMet) out.push('', '### Never met as enemies', '', table(['Record', 'What it is', 'Why'], g.neverMet.map((r) => [r.record, r.what, r.why])));
@@ -173,7 +179,16 @@ function render(path: string): string {
     const titles = Object.fromEntries(
       g.families.map((f) => [f.id, Family.parse(JSON.parse(readFileSync(join(census, group, `${f.id}.json`), 'utf8'))).title]),
     );
-    return renderGroup(g, titles);
+    const subgroups = readdirSync(census)
+      .filter((d) => d !== 'schema' && statSync(join(census, d)).isDirectory() && existsSync(join(census, d, 'group.json')))
+      .map((d) => Group.parse(JSON.parse(readFileSync(join(census, d, 'group.json'), 'utf8'))))
+      .filter((s) => s.parent === g.id)
+      .sort((a, b) => a.order - b.order)
+      .map((s) => ({
+        title: s.title,
+        holds: s.families.map((f) => Family.parse(JSON.parse(readFileSync(join(census, s.id, `${f.id}.json`), 'utf8'))).title).join(' · '),
+      }));
+    return renderGroup(g, titles, subgroups);
   }
   const titles = Object.fromEntries(
     readdirSync(join(census, group))

@@ -115,7 +115,7 @@ rules).
   page) plus one `<family>.json` per family page; `census/bands.json` is the home page. The schema is
   `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
   everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons, Daedra** (all 13 pages, the
-  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05), Dragon Priests (one page, a family of `census/undead/`, 2026-11-12), Draugr (all 4 pages, `census/draugr/`), Skeletons (all 5 pages, `census/skeletons/`), Ghosts (all 4 pages, `census/ghosts/`) and Ash (all 4 pages, `census/ash/`), sub-groups of Undead, and the CC Zombies and Ayleid Undead (families of `census/undead/`): **Undead is fully migrated** (2026-11-12). Falmer (all 5 pages, `census/falmer/`, 2026-11-12). Automatons (all 6 pages, `census/automatons/`, 2026-11-12).
+  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05), Dragon Priests (one page, a family of `census/undead/`, 2026-11-12), Draugr (all 4 pages, `census/draugr/`), Skeletons (all 5 pages, `census/skeletons/`), Ghosts (all 4 pages, `census/ghosts/`) and Ash (all 4 pages, `census/ash/`), sub-groups of Undead, and the CC Zombies and Ayleid Undead (families of `census/undead/`): **Undead is fully migrated** (2026-11-12). Falmer (all 5 pages, `census/falmer/`, 2026-11-12). Automatons (all 6 pages, `census/automatons/`, 2026-11-12). Conjured (all 10 pages, 2026-11-12): `census/conjured/` is a parent with no families of its own, over the sub-groups `census/summoned-creatures/` and `census/summoned-npcs/`; its family pages carry a `summonedBy` table (spell, player source, NPC casters).
   Every other group stays Confluence-first until it is migrated.
 - **A sub-group is its own census folder with `parent`** in its `group.json` (`census/vampires/` has
   `"parent": "undead"`); URLs stay flat (`/vampires/common-vampires/`), the parent's page lists its
@@ -298,7 +298,7 @@ rules).
   *Bone Wolves (CC)*, and **Ghosts**, with *Common Ghosts*, *Ghost Bosses* and *Spectral Warhound*;
   Karstaag stays on Giant; **Ash** is a sub-group with *Ash Spawn*, *Ash Guardian* and *Ash Zombie (CC)*, undead by the
   user's call, 2026-10-01, although none of their races carries `ActorTypeUndead` and the Ash Guardian's
-  carries `ActorTypeDaedra`; their summons are on Conjured → *Undead Summons*), Conjured (WD-74: anything that exists only as a summon; a placed version stays with its
+  carries `ActorTypeDaedra`; their summons are on Conjured → *Undead Summons*), Conjured (WD-74, **migrated to `census/conjured/`, `census/summoned-creatures/` and `census/summoned-npcs/`, so edit the JSON, not Confluence**: anything that exists only as a summon; a placed version stays with its
   family; sub-groups **Summoned Creatures** (*Summoned Atronachs*, *Familiars & Spirit Animals*,
   *Undead Summons*, *Daedric Summons*, *Constructs & Dragons*) and **Summoned NPCs** (*Summoned
   Dremora*, *Heroes & Spirits*), each page with a "Summoned by" table: player source and NPC casters),

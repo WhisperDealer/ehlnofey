@@ -1,0 +1,213 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "familiars-spirit-animals",
+  "group": "summoned-creatures",
+  "title": "Familiars & Spirit Animals",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "flaming-thrall",
+        "name": "Flaming Thrall",
+        "records": [
+          {
+            "edid": "SummonFlamingThrall",
+            "formKey": "09CE28:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "WolfRace",
+          "formKey": "01320A:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (1)"
+        }
+      },
+      {
+        "id": "bear",
+        "name": "Bear",
+        "records": [
+          {
+            "edid": "ccBGSSSE014_SummonBear",
+            "formKey": "000873:ccbgssse014-spellpack01.esl"
+          }
+        ],
+        "race": {
+          "edid": "BearBlackRace",
+          "formKey": "0131E8:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 30
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (30)"
+        }
+      },
+      {
+        "id": "bear-spirit",
+        "name": "Bear Spirit",
+        "records": [
+          {
+            "edid": "ccFFBSSE001_BearSpirit",
+            "formKey": "000828:ccffbsse001-imperialdragon.esl"
+          }
+        ],
+        "race": {
+          "edid": "BearSnowRace",
+          "formKey": "0131E9:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a summon that scales with the player and has no cap, banded with its kin, the summoned Bear (V)"
+        },
+        "note": "no `CalcMinLevel` or `CalcMaxLevel` on the record (both default to 0)."
+      },
+      {
+        "id": "wolf-spirit",
+        "name": "Wolf Spirit",
+        "records": [
+          {
+            "edid": "ccFFBSSE001_WolfSpirit",
+            "formKey": "000829:ccffbsse001-imperialdragon.esl"
+          }
+        ],
+        "race": {
+          "edid": "WolfRace",
+          "formKey": "01320A:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a summon that scales with the player and has no cap, banded with the Bear Spirit cast beside it (V)"
+        },
+        "note": "no `CalcMinLevel` or `CalcMaxLevel` on the record (both default to 0)."
+      },
+      {
+        "id": "werebear",
+        "name": "Werebear",
+        "records": [
+          {
+            "edid": "DLC2SummonWerebear",
+            "formKey": "0322B3:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2WerebearBeastRace",
+          "formKey": "01E17B:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 25,
+          "from": {
+            "edid": "DLC2EncWerebear",
+            "formKey": "0322B1:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a summon, banded with the Werebear (on *Werebear*), whose Stats it takes"
+        }
+      },
+      {
+        "id": "ice-wraith",
+        "name": "Ice Wraith",
+        "records": [
+          {
+            "edid": "DLC2dunKarstaagIceWraith",
+            "formKey": "028246:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2dunKarstaagIceWraithSummoned",
+            "formKey": "034B5A:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2dunKarstaagIceWraithRace",
+          "formKey": "029EE7:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 9,
+          "from": {
+            "edid": "EncIceWraith",
+            "formKey": "023AB3:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a summon, banded at the level it takes from `EncIceWraith` (9); ice wraiths are not yet migrated"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The werewolf howls (`HowlWerewolfSummonWolves1–3` and their Dawnguard ice-wolf and werewolf effects) have no `Association`; their wolves are spawned by script and are not counted here.",
+      "`SummonFlamingThrall` and `ccFFBSSE001_WolfSpirit` use `EncWolf` 023ABE (on *Wolf*) as their template but not for `Stats`; `ccBGSSSE014_SummonBear` and `ccFFBSSE001_BearSpirit` do the same with `EncBear` 023A8A (on *Bear*). All four keep their own level (1, PC ×1, 30, PC ×1) when the wolf or bear changes.",
+      "The other summons follow the placed creature through `Stats`: `DLC2SummonWerebear` from `DLC2EncWerebear` 0322B1:Dragonborn.esm (on *Werebear*), the two Karstaag ice wraiths from `EncIceWraith` 023AB3 (on *Ice Wraith*); changing those changes the summons.",
+      "Every row: no other record keeps its own level."
+    ]
+  },
+  "summonedBy": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Flaming Thrall",
+        "spell": "`dunHighGateSummonFlamingThrall`",
+        "player": "tome `dunHighGateSpellTomeFlamingFamiliar` (High Gate Ruins)",
+        "npcs": "none"
+      },
+      {
+        "name": "Bear",
+        "spell": "`ccBGSSSE014_Oblivion_PrideOfHirstaang`",
+        "player": "tome `ccBGSSSE014_SpellTome_ConjureExpert_PrideOfHirstaang`",
+        "npcs": "none"
+      },
+      {
+        "name": "Bear Spirit · Wolf Spirit",
+        "spell": "`ccFFBSSE001_SummonBearSpiritSpell` · `ccFFBSSE001_SummonWolfSpiritSpell`",
+        "player": "cast by script from the Imperial Dragon pack",
+        "npcs": "none"
+      },
+      {
+        "name": "Werebear",
+        "spell": "`DLC2StandingStoneBeastSpell` · `DLC2ConjureWerebear` (powers)",
+        "player": "Beast Stone",
+        "npcs": "none"
+      },
+      {
+        "name": "Ice Wraith",
+        "spell": "`DLC2dunKarstaagConjureIceWraith` 029EE2 · `…Summoned` 034B57",
+        "player": "none",
+        "npcs": "Karstaag, placed `DLC2dunKarstaag` 019665 and summoned `DLC2dunKarstaagSummon` 024811. Neither has the spells in `ActorEffect`; both carry `DLC2dunKarstaagModifySummonCountPerk` 029EE4. Cast by script `[unverified]`"
+      }
+    ]
+  }
+}

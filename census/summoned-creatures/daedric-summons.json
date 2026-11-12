@@ -1,0 +1,546 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "daedric-summons",
+  "group": "summoned-creatures",
+  "title": "Daedric Summons",
+  "order": 4,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "seeker",
+        "name": "Seeker",
+        "records": [
+          {
+            "edid": "DLC2SummonSeeker",
+            "formKey": "01EEC9:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2SeekerRace",
+          "formKey": "01DCB9:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 21,
+          "from": {
+            "edid": "DLC2EncSeeker01",
+            "formKey": "028E7F:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a summon, banded with the Seeker (on *Seeker*), whose Stats it takes"
+        }
+      },
+      {
+        "id": "high-seeker",
+        "name": "High Seeker",
+        "records": [
+          {
+            "edid": "DLC2SummonSeekerHigh",
+            "formKey": "030CDE:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2SeekerRace",
+          "formKey": "01DCB9:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 42,
+          "from": {
+            "edid": "DLC2EncSeeker03",
+            "formKey": "028E83:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "role: a summon, banded with the High Seeker (on *Seeker*), whose Stats it takes"
+        }
+      },
+      {
+        "id": "gargoyle",
+        "name": "Gargoyle",
+        "records": [
+          {
+            "edid": "DLC1EncGargoyleSummon",
+            "formKey": "016907:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1GargoyleVariantGreenRace",
+          "formKey": "019D86:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 13,
+          "from": {
+            "edid": "DLC1EncGargoyleSmall",
+            "formKey": "017702:Dawnguard.esm"
+          }
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a summon, banded at the level it takes from `DLC1EncGargoyleSmall` (13); gargoyles are not yet migrated"
+        }
+      },
+      {
+        "id": "lurker",
+        "name": "Lurker",
+        "records": [
+          {
+            "edid": "ccPEWSSE002_SummonLurker",
+            "formKey": "000817:ccpewsse002-armsofchaos.esl"
+          }
+        ],
+        "race": {
+          "edid": "DLC2LurkerRace",
+          "formKey": "014495:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 24,
+          "from": {
+            "edid": "DLC2EncLurker01",
+            "formKey": "01B640:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a summon, banded with the Lurker (on *Lurker*), whose Stats it takes"
+        }
+      },
+      {
+        "id": "sovereign-band-summon",
+        "name": "Dremora Lord · Flame / Frost / Storm Atronach · Lurker · Seeker",
+        "records": [
+          {
+            "edid": "ccPEWSSE002_SummonEncDaedra",
+            "formKey": "00084C:ccpewsse002-armsofchaos.esl"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "ccPEWSSE002_LCharSummons",
+            "formKey": "00084D:ccpewsse002-armsofchaos.esl"
+          },
+          "rungs": [
+            5,
+            16,
+            21,
+            24,
+            30,
+            46
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a summon drawn from a list, banded at its top draw (Dremora Lord, 46)"
+        },
+        "note": "a shell that templates `ccPEWSSE002_LCharSummons` (`Stats` and `BaseData`), so it takes the drawn record's name and level."
+      },
+      {
+        "id": "golden-saint-archer",
+        "name": "Golden Saint Archer",
+        "records": [
+          {
+            "edid": "ccBGSSSE025_EncSummonGoldenSaintArcher",
+            "formKey": "095E1F:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE025_GoldenSaintRace",
+          "formKey": "000816:ccbgssse025-advdsgs.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 18
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-11-12: as the placed saints (*Golden Saints & Dark Seducers*)"
+        }
+      },
+      {
+        "id": "golden-saint-warrior",
+        "name": "Golden Saint Warrior",
+        "records": [
+          {
+            "edid": "ccBGSSSE025_EncSummonGoldenSaintWarrior",
+            "formKey": "095E20:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE025_GoldenSaintRace",
+          "formKey": "000816:ccbgssse025-advdsgs.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 18
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-11-12: as the placed saints (*Golden Saints & Dark Seducers*)"
+        }
+      },
+      {
+        "id": "dark-seducer-archer",
+        "name": "Dark Seducer Archer",
+        "records": [
+          {
+            "edid": "ccBGSSSE025_EncSummonDarkSeducerArcher",
+            "formKey": "095E21:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE025_DarkSeducerRace",
+          "formKey": "000817:ccbgssse025-advdsgs.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 18
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-11-12: as the placed saints (*Golden Saints & Dark Seducers*)"
+        }
+      },
+      {
+        "id": "dark-seducer-warrior",
+        "name": "Dark Seducer Warrior",
+        "records": [
+          {
+            "edid": "ccBGSSSE025_EncSummonDarkSeducerWarrior",
+            "formKey": "095E22:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE025_DarkSeducerRace",
+          "formKey": "000817:ccbgssse025-advdsgs.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 18
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-11-12: as the placed saints (*Golden Saints & Dark Seducers*)"
+        }
+      },
+      {
+        "id": "thorons-saints",
+        "name": "Thoron's Golden Saint / Dark Seducer Archer / Warrior",
+        "records": [
+          {
+            "edid": "ccBGSSSE025_EncSummonGoldenSaintArcherBoss",
+            "formKey": "0BE6B4:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_EncSummonGoldenSaintWarriorBoss",
+            "formKey": "0BE6B5:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_EncSummonDarkSeducerArcherBoss",
+            "formKey": "0BE6B2:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_EncSummonDarkSeducerWarriorBoss",
+            "formKey": "0BE6B3:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.75,
+          "min": 18,
+          "max": 80
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a summon, banded with the Golden Saints & Dark Seducers (VII), whose scaling it shares"
+        }
+      },
+      {
+        "id": "staada",
+        "name": "Staada",
+        "records": [
+          {
+            "edid": "ccBGSSSE025_EncSummonStaada",
+            "formKey": "19D3FD:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE025_GoldenSaintRace",
+          "formKey": "000816:ccbgssse025-advdsgs.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 42
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (42)"
+        },
+        "note": "the hostile copy `…StaadaHostile` 1B1815, spawned by the pack's quest, is on *Golden Saints & Dark Seducers* with the placed Staada (VIII)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The `ccBGSSSE025_` records are in `ccbgssse025-advdsgs.esm`. The summoned Ash Spawn and Ash Guardians are on *Undead Summons*. The AtrForge copies (`ccBGSSSE025_EncSummon{GoldenSaint,DarkSeducer}{Archer,Warrior}AtrForge` 1CAD42–1CAD45) are the hostile saints the pack's quest spawns, so they are on *Golden Saints & Dark Seducers*.",
+      "The Golden Saint and Dark Seducer summons (`…Archer` 095E1F, `…Warrior` 095E20, `…DarkSeducerArcher` 095E21, `…DarkSeducerWarrior` 095E22, level 18; Thoron's `…Boss` 0BE6B2–0BE6B5, PC ×0.75 [18–80]) use the base saints `ccBGSSSE025_Enc{GoldenSaint,DarkSeducer}{Archer,Warrior}` 000880 · 0009C8 · 000A06 · 000A07 (on *Golden Saints & Dark Seducers*) as their template but not for `Stats`: changing a base saint leaves every summon at its own level.",
+      "`ccBGSSSE025_EncSummonStaada` 19D3FD uses `ccBGSSSE025_Staada` 198273 (on *Golden Saints & Dark Seducers*) as its template but not for `Stats`, and `…StaadaHostile` 1B1815 templates 19D3FD the same way: all three keep level 42 separately.",
+      "The other summons follow the placed creature through `Stats`: `DLC2SummonSeeker` from `DLC2EncSeeker01` 028E7F:Dragonborn.esm and `DLC2SummonSeekerHigh` from `DLC2EncSeeker03` 028E83:Dragonborn.esm (on *Seeker*), `ccPEWSSE002_SummonLurker` from `DLC2EncLurker01` 01B640:Dragonborn.esm (on *Lurker*), `DLC1EncGargoyleSummon` from `DLC1EncGargoyleSmall` 017702:Dawnguard.esm (on *Gargoyle*); changing those changes the summons.",
+      "`ccPEWSSE002_SummonSeeker` 00084E:ccpewsse002-armsofchaos.esl (named \"Lurker\", `Stats` from `DLC2EncSeeker01`) is in neither Sovereign Band list and no effect names it: the lists draw the Dragonborn `DLC2SummonSeeker` instead.",
+      "Every row: no other record keeps its own level.",
+      "Every other record (`DLC1dunHarkonEncGargoyleSummon`, the `ccBGSSSE025_LvlSummon*AtrForge` wrappers) carries `Stats` and follows its template or list."
+    ]
+  },
+  "summonedBy": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Seeker",
+        "spell": "`DLC2ConjureSeeker` · `DLC2ConjureSeekerLeftHand`",
+        "player": "tome `DLC2SpellTomeConjureSeeker`",
+        "npcs": "17 on `…LeftHand` (Miraak cultist summoners `DLC2EncCultist04/05*Summoner`)"
+      },
+      {
+        "name": "High Seeker",
+        "spell": "`DLC2ConjureSeekerHighLeftHand`",
+        "player": "none",
+        "npcs": "Dukaan, Zahkriisos"
+      },
+      {
+        "name": "Gargoyle",
+        "spell": "`DLC1ConjureGargoyleLeftHand` · `DLC1dunHarkonConjureGargoyleLeftHand`",
+        "player": "Vampire Lord power",
+        "npcs": "Harkon"
+      },
+      {
+        "name": "`SummonEncDaedra`",
+        "spell": "`ccPEWSSE002_ConjureSpell`",
+        "player": "no source found `[unverified]`",
+        "npcs": "none"
+      },
+      {
+        "name": "Lurker",
+        "spell": "effect `ccPEWSSE002_SummonLurkerEffect` (no spell)",
+        "player": "Sovereign Band ring through its lists",
+        "npcs": "none"
+      },
+      {
+        "name": "Golden Saint / Dark Seducer Archer / Warrior",
+        "spell": "`ccBGSSSE025_Conjure{GoldenSaint,DarkSeducer}{Archer,Warrior}`",
+        "player": "tomes and scrolls of the same names",
+        "npcs": "`…WarriorBanditNonPlayable` copies: `ccBGSSSE025_EncGoldenBanditBoss2HRedguardM` (Golden Saint Warrior), `ccBGSSSE025_EncSeducerBanditBoss2HNordM` (Dark Seducer Warrior)"
+      },
+      {
+        "name": "Thoron's copies",
+        "spell": "not traced",
+        "player": "none",
+        "npcs": "Thoron"
+      },
+      {
+        "name": "Staada",
+        "spell": "`ccBGSSSE025_ConjureStaada`",
+        "player": "tome, scroll",
+        "npcs": "none"
+      }
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ccPEWSSE002_LCharSummons",
+          "formKey": "00084D:ccpewsse002-armsofchaos.esl"
+        },
+        "gate": "every entry at level 1",
+        "owner": "Sovereign Band ring `ccPEWSSE002_Ring` 000813 (script property); template of `ccPEWSSE002_SummonEncDaedra`",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Dremora Lord (`SummonEncDremoraLord` 10DDEE, 46)"
+          },
+          {
+            "at": 1,
+            "label": "Flame Atronach (`SummonAtronachFlame` 0204C0, 5)"
+          },
+          {
+            "at": 1,
+            "label": "Frost Atronach (`SummonAtronachFrost` 0204C1, 16)"
+          },
+          {
+            "at": 1,
+            "label": "Storm Atronach (`SummonAtronachStorm` 0204C2, 30)"
+          },
+          {
+            "at": 1,
+            "label": "Lurker (`ccPEWSSE002_SummonLurker` 000817, 24)"
+          },
+          {
+            "at": 1,
+            "label": "Seeker (`DLC2SummonSeeker` 01EEC9:Dragonborn.esm, 21)"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "ccPEWSSE002_LCharSummonsSpecial",
+          "formKey": "00084F:ccpewsse002-armsofchaos.esl"
+        },
+        "gate": "every entry at level 1",
+        "owner": "Sovereign Band ring (script property)",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Dremora Lord (`SummonEncDremoraLord` 10DDEE, 46)"
+          },
+          {
+            "at": 1,
+            "label": "Flame Atronach (`SummonAtronachFlame` 0204C0, 5)"
+          },
+          {
+            "at": 1,
+            "label": "Frost Atronach (`SummonAtronachFrost` 0204C1, 16)"
+          },
+          {
+            "at": 1,
+            "label": "Storm Atronach (`SummonAtronachStorm` 0204C2, 30)"
+          },
+          {
+            "at": 1,
+            "label": "Lurker (`ccPEWSSE002_SummonLurker` 000817, 24)"
+          },
+          {
+            "at": 1,
+            "label": "Seeker (`DLC2SummonSeeker` 01EEC9:Dragonborn.esm, 21)"
+          },
+          {
+            "at": 1,
+            "label": "Dremora Sovereign (`ccPEWSSE002_SummonEncDremoraSovereign` 000850, 60)",
+            "count": 6
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Golden Saint Archer (all)",
+        "weapons": "`ccBGSSSE025_GoldenSaintBowUnplayable` 000992, `…DaggerUnplayable` 000996, `…ArrowUnplayable` 000997",
+        "armor": "outfit `ccBGSSSE025_GoldenSaintArcherOutfit` 000A03",
+        "skin": "race default"
+      },
+      {
+        "records": "Golden Saint Warrior (all)",
+        "weapons": "`ccBGSSSE025_LItemSummonGoldenSaintWeapon1H` 0009D7",
+        "armor": "outfit `ccBGSSSE025_GoldenSaintWarriorOutfit` 000A02",
+        "skin": "race default"
+      },
+      {
+        "records": "Dark Seducer Archer (all)",
+        "weapons": "`ccBGSSSE025_DarkSeducerBowUnplayable` 00098E, `…DaggerUnplayable` 000A08, `…ArrowUnplayable` 000998",
+        "armor": "outfit `ccBGSSSE025_DarkSeducerArcherOutfit` 000A04",
+        "skin": "race default"
+      },
+      {
+        "records": "Dark Seducer Warrior (all)",
+        "weapons": "`ccBGSSSE025_LItemSummonDarkSeducerWeapon1H` 0009D6",
+        "armor": "outfit `ccBGSSSE025_DarkSeducerWarriorOutfit` 000A05",
+        "skin": "race default"
+      },
+      {
+        "records": "Staada",
+        "weapons": "`ccBGSSSE025_LItemGoldenSaintWeapon2HUnplayable` 198275",
+        "armor": "outfit `ccBGSSSE025_GoldenSaintArcherOutfit` 000A03",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ccBGSSSE025_GoldenSaintArcherOutfit",
+          "formKey": "000A03:ccbgssse025-advdsgs.esm"
+        },
+        "rolls": "Golden Saint Armor, Boots, Gauntlets, Helmet"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE025_GoldenSaintWarriorOutfit",
+          "formKey": "000A02:ccbgssse025-advdsgs.esm"
+        },
+        "rolls": "as Archer, plus Golden Saint Shield"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE025_DarkSeducerArcherOutfit",
+          "formKey": "000A04:ccbgssse025-advdsgs.esm"
+        },
+        "rolls": "Dark Seducer Armor, Boots, Gauntlets, Helmet"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE025_DarkSeducerWarriorOutfit",
+          "formKey": "000A05:ccbgssse025-advdsgs.esm"
+        },
+        "rolls": "as Archer, plus Dark Seducer Shield"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE025_LItemSummonGoldenSaintWeapon1H",
+          "formKey": "0009D7:ccbgssse025-advdsgs.esm"
+        },
+        "rolls": "Golden Mace, Golden Sword, Golden War Axe"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE025_LItemSummonDarkSeducerWeapon1H",
+          "formKey": "0009D6:ccbgssse025-advdsgs.esm"
+        },
+        "rolls": "Dark Mace, Dark Sword, Dark War Axe"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE025_LItemGoldenSaintWeapon2HUnplayable",
+          "formKey": "198275:ccbgssse025-advdsgs.esm"
+        },
+        "rolls": "Golden Battleaxe, Golden Greatsword, Golden Warhammer"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Every Golden Saint and Dark Seducer outfit piece, weapon and arrow above",
+        "kind": "outfit pieces, weapons, ammunition",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

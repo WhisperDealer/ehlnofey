@@ -1,0 +1,33 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "summoned-creatures",
+  "title": "Summoned Creatures",
+  "order": 1,
+  "parent": "conjured",
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record.",
+  "families": [
+    {
+      "id": "summoned-atronachs",
+      "holds": "Familiar, Flame/Frost/Storm Atronach, the Thralls, the Potent perk copies"
+    },
+    {
+      "id": "familiars-spirit-animals",
+      "holds": "Flaming Thrall, CC Bear, Bear/Wolf Spirit, Werebear, Karstaag's ice wraiths"
+    },
+    {
+      "id": "undead-summons",
+      "holds": "Soul Cairn summons, Ash Spawn, Ash Guardians, CC zombies, necroarts undead, Ayleid Lich, Ancestor Ghosts"
+    },
+    {
+      "id": "daedric-summons",
+      "holds": "Seekers, Gargoyle, Lurker, Saints & Seducers"
+    },
+    {
+      "id": "constructs-dragons",
+      "holds": "Aetherial Staff Dwarven constructs, Durnehviir, Spectral Dragon, Arvak, Daedric Horse, the Friend spiders, the Fire Wyrm"
+    }
+  ]
+}

@@ -1,0 +1,1008 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "undead-summons",
+  "group": "summoned-creatures",
+  "title": "Undead Summons",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "boneman",
+        "name": "Boneman",
+        "records": [
+          {
+            "edid": "DLC1SoulCairnBonemanSummon",
+            "formKey": "0045B9:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1EncUndeadSummon2",
+            "formKey": "01A16B:Dawnguard.esm"
+          },
+          {
+            "edid": "ccRMSSSE001_BonemanSummon",
+            "formKey": "000863:ccrmssse001-necrohouse.esl"
+          }
+        ],
+        "race": {
+          "edid": "DLC1BlackSkeletonRace",
+          "formKey": "019FD3:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (6)"
+        }
+      },
+      {
+        "id": "mistman",
+        "name": "Mistman",
+        "records": [
+          {
+            "edid": "DLC1SoulCairnMistmanSummon",
+            "formKey": "0045B7:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1EncUndeadSummon3",
+            "formKey": "01A16C:Dawnguard.esm"
+          },
+          {
+            "edid": "ccRMSSSE001_MistmanSummon",
+            "formKey": "000852:ccrmssse001-necrohouse.esl"
+          }
+        ],
+        "race": {
+          "edid": "DLC1SoulCairnSkeletonNecroRace",
+          "formKey": "006AFA:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 13,
+          "also": [
+            6,
+            13
+          ]
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (13)"
+        }
+      },
+      {
+        "id": "wrathman",
+        "name": "Wrathman",
+        "records": [
+          {
+            "edid": "DLC1SoulCairnWrathmanSummon",
+            "formKey": "0045B4:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1EncUndeadSummon1",
+            "formKey": "01A16A:Dawnguard.esm"
+          },
+          {
+            "edid": "ccRMSSSE001_WrathmanSummon",
+            "formKey": "000843:ccrmssse001-necrohouse.esl"
+          }
+        ],
+        "race": {
+          "edid": "DLC1SoulCairnSkeletonArmorRace",
+          "formKey": "00894D:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 30,
+          "also": [
+            6,
+            30
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (30)"
+        }
+      },
+      {
+        "id": "ash-spawn",
+        "name": "Ash Spawn",
+        "records": [
+          {
+            "edid": "DLC2SummonAshSpawn01",
+            "formKey": "01CDF8:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2AshSpawnRace",
+          "formKey": "01B637:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 20,
+          "from": {
+            "edid": "DLC2EncAshSpawn1H01",
+            "formKey": "01B636:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a summon, banded with the Ash Spawn (on *Ash Spawn*), whose Stats it takes"
+        }
+      },
+      {
+        "id": "ash-guardian",
+        "name": "Ash Guardian",
+        "records": [
+          {
+            "edid": "DLC2SummonAshGuardian",
+            "formKey": "0177B6:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2SummonAshGuardianNeloth",
+            "formKey": "01DBDC:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "dlc2AshGuardianRace",
+          "formKey": "027BFC:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 30,
+          "from": {
+            "edid": "DLC2encAshGuardian",
+            "formKey": "01AAAF:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a summon, banded with the Ash Guardian (on *Ash Guardian*), whose Stats it takes"
+        }
+      },
+      {
+        "id": "zombie",
+        "name": "Zombie",
+        "records": [
+          {
+            "edid": "ccBGSSSE003EncZombie01BodyA_Summon",
+            "formKey": "000874:ccbgssse003-zombies.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE003ZombieRace",
+          "formKey": "000D6B:ccbgssse003-zombies.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 3
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (3)"
+        }
+      },
+      {
+        "id": "foul-zombie",
+        "name": "Foul Zombie",
+        "records": [
+          {
+            "edid": "ccBGSSSE003EncZombie02BodyB_Summon",
+            "formKey": "000873:ccbgssse003-zombies.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE003ZombieRace",
+          "formKey": "000D6B:ccbgssse003-zombies.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (6)"
+        }
+      },
+      {
+        "id": "putrid-zombie",
+        "name": "Putrid Zombie",
+        "records": [
+          {
+            "edid": "ccBGSSSE003EncZombie03BodyC_Summon",
+            "formKey": "000875:ccbgssse003-zombies.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE003ZombieRace",
+          "formKey": "000D6B:ccbgssse003-zombies.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 13
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (13)"
+        }
+      },
+      {
+        "id": "malignant-zombie",
+        "name": "Malignant Zombie",
+        "records": [
+          {
+            "edid": "ccBGSSSE003EncZombie04BodyA_Summon",
+            "formKey": "000876:ccbgssse003-zombies.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE003ZombieRace",
+          "formKey": "000D6B:ccbgssse003-zombies.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 21
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (21)"
+        }
+      },
+      {
+        "id": "ayleid-lich",
+        "name": "Ayleid Lich",
+        "records": [
+          {
+            "edid": "ccBGSSSE067_ConjureEncAyleidLich",
+            "formKey": "147D97:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "race": {
+          "edid": "DragonPriestRace",
+          "formKey": "0131EF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 50,
+          "from": {
+            "edid": "EncDragonPriest",
+            "formKey": "023A93:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "role: a summon, banded with the Dragon Priest (on *Dragon Priests*), whose Stats it takes"
+        }
+      },
+      {
+        "id": "sundered-shade",
+        "name": "Sundered Shade",
+        "records": [
+          {
+            "edid": "ccVSVSSE003_WailingWraith",
+            "formKey": "0008A9:ccvsvsse003-necroarts.esl"
+          },
+          {
+            "edid": "ccVSVSSE003_WailingWraithDS",
+            "formKey": "00097C:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccVSVSSE003_WailingWraithRace",
+          "formKey": "00080F:ccvsvsse003-necroarts.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (4)"
+        }
+      },
+      {
+        "id": "haunting-spirit",
+        "name": "Haunting Spirit",
+        "records": [
+          {
+            "edid": "ccVSVSSE003_HauntingSpirit",
+            "formKey": "0008A0:ccvsvsse003-necroarts.esl"
+          },
+          {
+            "edid": "ccVSVSSE003_HauntingSpiritDS",
+            "formKey": "00097A:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "race": {
+          "edid": "NordRace",
+          "formKey": "013746:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (5)"
+        }
+      },
+      {
+        "id": "undying-ghost",
+        "name": "Undying Ghost",
+        "records": [
+          {
+            "edid": "ccVSVSSE003_UndyingGhost",
+            "formKey": "00089D:ccvsvsse003-necroarts.esl"
+          },
+          {
+            "edid": "ccVSVSSE003_UndyingGhostDS",
+            "formKey": "00097D:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "race": {
+          "edid": "NordRace",
+          "formKey": "013746:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (5)"
+        }
+      },
+      {
+        "id": "skeleton-minion",
+        "name": "Skeleton Minion",
+        "records": [
+          {
+            "edid": "ccVSVSSE003_Skeleton_minion",
+            "formKey": "0008A2:ccvsvsse003-necroarts.esl"
+          },
+          {
+            "edid": "ccVSVSSE003_Skeleton_minionDS",
+            "formKey": "000980:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "race": {
+          "edid": "SkeletonRace",
+          "formKey": "0B7998:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (5)"
+        }
+      },
+      {
+        "id": "tortured-shade",
+        "name": "Tortured Shade",
+        "records": [
+          {
+            "edid": "ccVSVSSE003_TorturedShade",
+            "formKey": "0008A8:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccVSVSSE003_TorturedShadeRace",
+          "formKey": "00080D:ccvsvsse003-necroarts.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 7
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (7)"
+        }
+      },
+      {
+        "id": "skeleton-marksman",
+        "name": "Skeleton Marksman",
+        "records": [
+          {
+            "edid": "ccVSVSSE003_Skeleton_archer",
+            "formKey": "0008A1:ccvsvsse003-necroarts.esl"
+          },
+          {
+            "edid": "ccVSVSSE003_Skeleton_archerDS",
+            "formKey": "000976:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "race": {
+          "edid": "SkeletonRace",
+          "formKey": "0B7998:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 14
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (14)"
+        }
+      },
+      {
+        "id": "skeleton-champion",
+        "name": "Skeleton Champion",
+        "records": [
+          {
+            "edid": "ccVSVSSE003_Skeleton_champion",
+            "formKey": "0008A7:ccvsvsse003-necroarts.esl"
+          },
+          {
+            "edid": "ccVSVSSE003_Skeleton_championDS",
+            "formKey": "000977:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "race": {
+          "edid": "SkeletonRace",
+          "formKey": "0B7998:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 24
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (24)"
+        }
+      },
+      {
+        "id": "tomb-guardian",
+        "name": "Tomb Guardian",
+        "records": [
+          {
+            "edid": "ccVSVSSE003_TombGuardian",
+            "formKey": "0008A4:ccvsvsse003-necroarts.esl"
+          },
+          {
+            "edid": "ccVSVSSE003_TombGuardianDS",
+            "formKey": "000979:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "race": {
+          "edid": "NordRace",
+          "formKey": "013746:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 24
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (24)"
+        }
+      },
+      {
+        "id": "cursed-spectre",
+        "name": "Cursed Spectre",
+        "records": [
+          {
+            "edid": "ccVSVSSE003_Gloomwraith",
+            "formKey": "00089E:ccvsvsse003-necroarts.esl"
+          },
+          {
+            "edid": "ccVSVSSE003_GloomwraithDS",
+            "formKey": "00097B:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccVSVSSE003_LichRace",
+          "formKey": "00080C:ccvsvsse003-necroarts.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 26
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (26)"
+        }
+      },
+      {
+        "id": "skeleton-warlock",
+        "name": "Skeleton Warlock",
+        "records": [
+          {
+            "edid": "ccVSVSSE003_Skeleton_warlock",
+            "formKey": "0008A5:ccvsvsse003-necroarts.esl"
+          },
+          {
+            "edid": "ccVSVSSE003_Skeleton_warlockDS",
+            "formKey": "000978:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "race": {
+          "edid": "SkeletonRace",
+          "formKey": "0B7998:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 30
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (30)"
+        }
+      },
+      {
+        "id": "bone-colossus",
+        "name": "Bone Colossus",
+        "records": [
+          {
+            "edid": "ccVSVSSE003_BoneColossus",
+            "formKey": "00089F:ccvsvsse003-necroarts.esl"
+          },
+          {
+            "edid": "ccVSVSSE003_BoneColossusDS",
+            "formKey": "00097F:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccVSVSSE003_BoneColossusRace",
+          "formKey": "00080E:ccvsvsse003-necroarts.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 40
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (40)"
+        }
+      },
+      {
+        "id": "ancient-deathpriest",
+        "name": "Ancient Deathpriest",
+        "records": [
+          {
+            "edid": "ccVSVSSE003_AncientLich",
+            "formKey": "0008A3:ccvsvsse003-necroarts.esl"
+          },
+          {
+            "edid": "ccVSVSSE003_AncientLichDS",
+            "formKey": "00097E:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccVSVSSE003_LichRace",
+          "formKey": "00080C:ccvsvsse003-necroarts.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 40
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (40)"
+        }
+      },
+      {
+        "id": "ancestor-ghost",
+        "name": "Ancestor Ghost",
+        "records": [
+          {
+            "edid": "ccBGSSSE066_SummonDraugrMelee",
+            "formKey": "000813:ccbgssse066-staves.esl"
+          },
+          {
+            "edid": "ccBGSSSE066_SummonDraugrMissile",
+            "formKey": "000818:ccbgssse066-staves.esl"
+          },
+          {
+            "edid": "ccBGSSSE066_SummonDraugrMixed",
+            "formKey": "00081A:ccbgssse066-staves.esl"
+          },
+          {
+            "edid": "ccBGSSSE066_SummonDraugrWarlock",
+            "formKey": "000812:ccbgssse066-staves.esl"
+          },
+          {
+            "edid": "ccBGSSSE066_SummonDraugrBossFIX",
+            "formKey": "000819:ccbgssse066-staves.esl"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "the draugr lists (see note)"
+          },
+          "rungs": [
+            1,
+            6,
+            7,
+            13,
+            15,
+            21,
+            24,
+            30,
+            34,
+            40,
+            45
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a summon that rolls the draugr lists, banded with the draugr (V)"
+        },
+        "note": "each templates a draugr list and takes `Stats` and its name from the draugr it draws: Melee, Missile, Mixed and Warlock use the pack's own `ccBGSSSE066_LCharDraugrMelee` 000814 · `…Missile` 000815 · `…Mix` 000817 · `…Warlock` 000816 (wrappers on the vanilla draugr melee, missile and warlock lists), BossFIX uses vanilla `LCharDraugrBossNoDragonPriest` 0DD9D8."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The `ccVSVSSE003_` records are in `ccvsvsse003-necroarts.esl`, and each `DS` twin has the same level.",
+      "The Soul Cairn summons use the Soul Cairn wrappers as their template but not for `Stats`: `DLC1SoulCairnBonemanSummon` and `ccRMSSSE001_BonemanSummon` template `DLC1LvlSoulCairnBonemanMissile` 0071AA:Dawnguard.esm, `DLC1SoulCairnMistmanSummon` and `ccRMSSSE001_MistmanSummon` template `DLC1LvlSoulCairnMistman` 0071AF:Dawnguard.esm, `DLC1SoulCairnWrathmanSummon` and `ccRMSSSE001_WrathmanSummon` template `DLC1LvlSoulCairnWrathman` 0071AD:Dawnguard.esm (all on *Soul Cairn Undead*, where they take the draugr levels). The summons keep 6 · 13 · 30 whatever those lists do; the shout copies `DLC1EncUndeadSummon1–3` template the summons, also without `Stats`, and keep 6.",
+      "The zombie summons use the placed zombies `ccBGSSSE003EncZombie01BodyA` 000D64 (Zombie, Malignant), `…BodyB` 000D69 (Foul) and `…BodyC` 000D6A (Putrid), all :ccbgssse003-zombies.esl and on *Zombies (CC)*, as their template but not for `Stats`: they keep 3 · 6 · 13 · 21.",
+      "The other templated summons follow the placed creature through `Stats`: `DLC2SummonAshSpawn01` from `DLC2EncAshSpawn1H01` 01B636:Dragonborn.esm (on *Ash Spawn*), both Ash Guardians from `DLC2encAshGuardian` 01AAAF:Dragonborn.esm (on *Ash Guardian*), `ccBGSSSE067_ConjureEncAyleidLich` from `EncDragonPriest` 023A93 (on *Dragon Priests*), the Ancestor Ghosts from their draugr lists. The `ccVSVSSE003_` summons have no template.",
+      "Untemplated records of the same races: `EncSkeleton01Melee1H` · `…Melee1Hshield` · `…Melee2H` · `…Missile` (level 1; on *Common Skeletons*), `DLC01SoulCairnReaper` 01A73E:Dawnguard.esm (on *Soul Cairn Undead*), `DLC2EncAshSpawn1H03` 01B63A:Dragonborn.esm (on *Ash Spawn*). `DLC1SoulCairnEncMistMen01Magic1` 019AB0, `DLC1SoulCairnEncSkeleton01Melee2H` 019AB1, `DLC1SoulCairnEncSkeletonNecro01Melee1H` 006AF0 and `…02` 006AF1 (all :Dawnguard.esm, level 1), `ccRMSSSE001_Skeleton01Summon` 000873:ccrmssse001-necrohouse.esl and `ccVSVSSE004_ChildSkeleton` 000858:ccvsvsse004-beafarmer.esl (level 1) are named only on the *Skeletons* group page; `ccBGSSSE031_Corpse` 000810:ccbgssse031-advcyrus.esm (level 1) is on *Solitude*.",
+      "Every row: no other record keeps its own level."
+    ]
+  },
+  "summonedBy": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Boneman · Mistman · Wrathman",
+        "spell": "`DLC1ConjureBoneman` · `DLC1ConjureMistman` · `DLC1ConjureWrathman`",
+        "player": "tomes `DLC1SpellTomeConjure{Boneman,Mistman,Wrathman}`",
+        "npcs": "`ccBGSSSE045_LushakgraRagdam` (Boneman, Mistman), `ccBGSSSE045_IvaraofOlenveld` (Mistman, Wrathman)"
+      },
+      {
+        "name": "Boneman · Mistman · Wrathman (level 6 copies)",
+        "spell": "`DLC1VoiceUndeadSummon1–3`",
+        "player": "none",
+        "npcs": "shout `DLC1DragonUndeadSummonShout` (dragon shout)"
+      },
+      {
+        "name": "Boneman · Mistman · Wrathman (necrohouse copies)",
+        "spell": "effect `ccRMSSSE001_GhostEffect` 000CE2 (Boneman, no spell); the activator `ccRMSSSE001_NecroSummonerTrigger` 000815 names all three as script properties",
+        "player": "the Gray Cowl Nocturnal player home (ccrmssse001-necrohouse), by script `[unverified]`",
+        "npcs": "none"
+      },
+      {
+        "name": "Ash Spawn",
+        "spell": "`DLC2ConjureAshSpawn`",
+        "player": "tome `DLC2SpellTomeConjureAshSpawn`",
+        "npcs": "none"
+      },
+      {
+        "name": "Ash Guardian (0177B6)",
+        "spell": "rune `DLC2AshGuardianRune` 017782 → effect `DLC2SummonAshGuardianHeartStone` 01777E → projectile 017783 → explosion `DLC2ExplosionAshGuardian` 017781",
+        "player": "tome `DLC2SpellTomeConjureAshGuardian` 01AABA; also a script property of quest `DLC2TTF1`",
+        "npcs": "none"
+      },
+      {
+        "name": "Ash Guardian (Neloth)",
+        "spell": "`DLC2ConjureAshGuardianLeftHand`",
+        "player": "none",
+        "npcs": "Neloth"
+      },
+      {
+        "name": "Zombie · Foul · Putrid · Malignant",
+        "spell": "`ccBGSSSE003ConjureZombie` · `…2` · `…3` · `…4`",
+        "player": "tomes `ccBGSSSE003_ConjureZombie01–04`",
+        "npcs": "none"
+      },
+      {
+        "name": "Ayleid Lich",
+        "spell": "`ccBGSSSE067_ConjureAyleidLichSpell`",
+        "player": "tome `ccBGSSSE067_ConjureAyleidLichTome`",
+        "npcs": "none"
+      },
+      {
+        "name": "Skeleton Minion · Marksman · Champion · Warlock",
+        "spell": "`ccVSVSSE003_SPELL_Skeleton{Minion,Marksman,Champion,Warlock}` · `…LeftHand`",
+        "player": "tomes `ccVSVSSE003_BOOK_Skeleton*`",
+        "npcs": "`…LeftHand` through `ccVSVSSE003_LSPELL_ConjureSkeleton` on 34 NPCs (the pack's necromancer ladder `ccVSVSSE003_EncWarlock01–07TemplateNecro` and conjurer warlocks)"
+      },
+      {
+        "name": "Haunting Spirit · Undying Ghost · Tomb Guardian · Cursed Spectre · Bone Colossus · Ancient Deathpriest",
+        "spell": "`ccVSVSSE003_SPELL_*`",
+        "player": "tomes `ccVSVSSE003_BOOK_*`",
+        "npcs": "none"
+      },
+      {
+        "name": "Sundered Shade",
+        "spell": "`ccVSVSSE003_SPELL_SoulSplit_SummonWraith`",
+        "player": "Soul Split (no tome found)",
+        "npcs": "none"
+      },
+      {
+        "name": "Tortured Shade",
+        "spell": "`ccVSVSSE003_MGEF_AncientLichAb`",
+        "player": "none",
+        "npcs": "the Ancient Deathpriest summon"
+      },
+      {
+        "name": "Ancestor Ghost",
+        "spell": "staff enchantments `ccBGSSSE066_StaffAncestors*`",
+        "player": "Staves of the Ancestors / Forefathers: `Wooden` (×2) → Warlock; `Silver`, `Dreugh` → Melee; `Steel` → Missile; `Glass` → Mixed; `Ebony`, `Daedric` → BossFIX",
+        "npcs": "none"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Boneman (all)",
+        "weapons": "`LItemDraugr02WeaponBow` 024302",
+        "armor": "none",
+        "skin": "`DLC1EncSoulCairnBonemanSkin` 0071CE:Dawnguard.esm (Soul Cairn copy)"
+      },
+      {
+        "records": "Wrathman (all)",
+        "weapons": "`DLC1WrathmanSummonedWeapon2H` 014CA1:Dawnguard.esm",
+        "armor": "none",
+        "skin": "race default"
+      },
+      {
+        "records": "Ash Spawn",
+        "weapons": "`DLC2AshSpawnWarAxe` 030CB2:Dragonborn.esm",
+        "armor": "none",
+        "skin": "`DLC2SkinAshSpawn` 02B04B:Dragonborn.esm"
+      },
+      {
+        "records": "Ash Guardian (both)",
+        "weapons": "none",
+        "armor": "none",
+        "skin": "`DLC2SkinAshGuardian` 027118:Dragonborn.esm"
+      },
+      {
+        "records": "Zombies (all four)",
+        "weapons": "`ccBGSSSE003LtemZombieWeapon_ConjureNoDrop` 000878",
+        "armor": "none",
+        "skin": "`ccBGSSSE003SkinZombieMale01` 000D66"
+      },
+      {
+        "records": "Skeleton Minion",
+        "weapons": "`ccVSVSSE003_WPN_SkeleWarAxe` 0008F9",
+        "armor": "`ArmorIronShield` 012EB6",
+        "skin": "`SkinSkeleton` 0B799A"
+      },
+      {
+        "records": "Skeleton Marksman",
+        "weapons": "`ccVSVSSE003_WPN_SkeleBow` 000897 + `…AMMO_SkeleArrow` 00089C",
+        "armor": "none",
+        "skin": "`ccVSVSSE003_SkinSkeleArmor_archer` 00087F"
+      },
+      {
+        "records": "Skeleton Champion",
+        "weapons": "`ccVSVSSE003_WPN_SkeleGreatsword` 000916",
+        "armor": "none",
+        "skin": "`ccVSVSSE003_SkinSkeleArmor_champion` 000880"
+      },
+      {
+        "records": "Skeleton Warlock",
+        "weapons": "none",
+        "armor": "outfit `ccVSVSSE003_OUT_SkeleWarlock` 0008F3",
+        "skin": "`SkinSkeleton` 0B799A"
+      },
+      {
+        "records": "Haunting Spirit",
+        "weapons": "`ccVSVSSE003_WPN_HauntingSpiritDagger` 00089B",
+        "armor": "outfit `ccVSVSSE003_OUT_HauntingSpirit` 0008E7",
+        "skin": "race default"
+      },
+      {
+        "records": "Undying Ghost",
+        "weapons": "`ccVSVSSE003_WPN_UndyingGhostSword` 00089A",
+        "armor": "outfit `ccVSVSSE003_OUT_UndyingGhost` 0008E6",
+        "skin": "race default"
+      },
+      {
+        "records": "Tomb Guardian",
+        "weapons": "`ccVSVSSE003_WPN_TombGuardianAxe` 000898",
+        "armor": "outfit `ccVSVSSE003_OUT_TombGuardian` 0008E4",
+        "skin": "race default"
+      },
+      {
+        "records": "Ancient Deathpriest",
+        "weapons": "`ccVSVSSE003_WPN_LichStaff` 000899",
+        "armor": "none",
+        "skin": "`ccVSVSSE003_AncientLichSkin2` 000885"
+      },
+      {
+        "records": "Tortured Shade",
+        "weapons": "`LItemDraugr02Weapon1H` 0242FC",
+        "armor": "none",
+        "skin": "`SkinSkeletonNecro` 0EB874"
+      },
+      {
+        "records": "Ancestor Ghost Melee · Mixed",
+        "weapons": "`LItemDraugr02Weapon1HShield50` 0559F8",
+        "armor": "none",
+        "skin": "`SkinDraugrMale02` 01FE7F"
+      },
+      {
+        "records": "Ancestor Ghost Missile",
+        "weapons": "`LItemDraugr02WeaponBow` 024302 + `DraugrWarAxe` 02C672",
+        "armor": "none",
+        "skin": "inherited from `EncDraugr01MissileHeadF00`"
+      },
+      {
+        "records": "Ancestor Ghost Warlock",
+        "weapons": "`LItemDraugr02Weapon1H` 0242FC",
+        "armor": "none",
+        "skin": "`SkinDraugrMale02` 01FE7F"
+      },
+      {
+        "records": "Ancestor Ghost BossFIX",
+        "weapons": "`LItemDraugr02Weapon1H` 0242FC",
+        "armor": "outfit `Draugr02Helmet01Beard02Outfit` 01F9FC",
+        "skin": "`SkinDraugrMale04` 01FE81"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemDraugr02WeaponBow",
+          "formKey": "024302:Skyrim.esm"
+        },
+        "rolls": "Ancient Nord Bow, Supple Ancient Nord Bow, Ancient Nord Arrow"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr02Weapon1H",
+          "formKey": "0242FC:Skyrim.esm"
+        },
+        "rolls": "Ancient Nord Sword, Honed Ancient Nord Sword, Ancient Nord War Axe, Honed Draugr War Axe"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr02Weapon1HShield50",
+          "formKey": "0559F8:Skyrim.esm"
+        },
+        "rolls": "as `LItemDraugr02Weapon1H`, plus Iron Shield"
+      },
+      {
+        "list": {
+          "edid": "DLC1WrathmanSummonedWeapon2H",
+          "formKey": "014CA1:Dawnguard.esm"
+        },
+        "rolls": "Dragonbone Battleaxe, Dragonbone Greatsword, Dragonbone Warhammer"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE003LtemZombieWeapon_ConjureNoDrop",
+          "formKey": "000878:ccbgssse003-zombies.esl"
+        },
+        "rolls": "Ancient Nord Sword / War Axe / Battle Axe; Honed Ancient Nord Sword / Greatsword / Battle Axe; Honed Draugr War Axe"
+      },
+      {
+        "list": {
+          "edid": "ccVSVSSE003_OUT_SkeleWarlock",
+          "formKey": "0008F3:ccvsvsse003-necroarts.esl"
+        },
+        "rolls": "Hooded Black Mage Robes"
+      },
+      {
+        "list": {
+          "edid": "ccVSVSSE003_OUT_HauntingSpirit",
+          "formKey": "0008E7:ccvsvsse003-necroarts.esl"
+        },
+        "rolls": "Haunting Spirit Hood, Vampire Robes, Boots, Silver Sapphire Necklace"
+      },
+      {
+        "list": {
+          "edid": "ccVSVSSE003_OUT_UndyingGhost",
+          "formKey": "0008E6:ccvsvsse003-necroarts.esl"
+        },
+        "rolls": "Ancient Nord Armor, Boots, Gauntlets, Helmet"
+      },
+      {
+        "list": {
+          "edid": "ccVSVSSE003_OUT_TombGuardian",
+          "formKey": "0008E4:ccvsvsse003-necroarts.esl"
+        },
+        "rolls": "Executioner's Hood, Executioner's Robes, Gloves, Boots"
+      },
+      {
+        "list": {
+          "edid": "Draugr02Helmet01Beard02Outfit",
+          "formKey": "01F9FC:Skyrim.esm"
+        },
+        "rolls": "Ancient Nord Helmet (draugr)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Draugr list leaves (Ancient Nord bows, swords, war axes, arrows; Iron Shield)",
+        "kind": "weapons, shield",
+        "playable": true
+      },
+      {
+        "item": "Dragonbone Battleaxe / Greatsword / Warhammer (`DLC1WrathmanSummonedWeapon2H`)",
+        "kind": "two-handed weapons",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Ash Spawn War Axe",
+        "kind": "one-handed weapon",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Zombie weapons (`…ConjureNoDrop` copies)",
+        "kind": "weapons",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Skeleton Minion War Axe · Skeleton Champion Greatsword · Undying Ghost Sword",
+        "kind": "weapons",
+        "playable": true
+      },
+      {
+        "item": "Skeleton Marksman Bow / Arrow · Bound Dagger (Haunting Spirit) · Headsman's Axe · Staff of Ancient Lich",
+        "kind": "weapons, ammunition, staff",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Hooded Black Mage Robes · Haunting Spirit outfit · Undying Ghost outfit",
+        "kind": "outfit pieces",
+        "playable": true
+      },
+      {
+        "item": "Tomb Guardian outfit (Executioner's Hood, Robes, Gloves, Boots)",
+        "kind": "outfit pieces",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Ancient Nord Helmet (draugr, `Draugr02Helmet01Beard02Outfit`)",
+        "kind": "helmet",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Skins",
+        "kind": "skin",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

@@ -616,6 +616,52 @@
       ],
       "additionalProperties": false
     },
+    "summonedBy": {
+      "type": "object",
+      "properties": {
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "community",
+            "unverified"
+          ]
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "spell": {
+                "type": "string"
+              },
+              "player": {
+                "type": "string"
+              },
+              "npcs": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "spell",
+              "player",
+              "npcs"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "confidence",
+        "rows"
+      ],
+      "additionalProperties": false
+    },
     "loot": {
       "type": "object",
       "properties": {
@@ -799,7 +845,8 @@
                 }
               },
               "seeFamily": {
-                "type": "string"
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$"
               },
               "note": {
                 "type": "string"

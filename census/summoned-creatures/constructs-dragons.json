@@ -1,0 +1,423 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "constructs-dragons",
+  "group": "summoned-creatures",
+  "title": "Constructs & Dragons",
+  "order": 5,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "dwarven-spider-worker",
+        "name": "Dwarven Spider Worker",
+        "records": [
+          {
+            "edid": "DLC1LD_EncDwarvenSpiderSummon01",
+            "formKey": "00CFBB:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSpiderRace",
+          "formKey": "0131F3:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 6,
+          "from": {
+            "edid": "EncDwarvenSpider01",
+            "formKey": "10EC86:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a summon, banded with the Dwarven Spider Worker (on *Dwarven Spider*), whose Stats it takes"
+        }
+      },
+      {
+        "id": "dwarven-spider",
+        "name": "Dwarven Spider",
+        "records": [
+          {
+            "edid": "DLC1LD_EncDwarvenSpiderSummon02",
+            "formKey": "00CFBC:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSpiderRace",
+          "formKey": "0131F3:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 12,
+          "from": {
+            "edid": "EncDwarvenSpider02",
+            "formKey": "023A98:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a summon, banded with the Dwarven Spider (on *Dwarven Spider*), whose Stats it takes"
+        }
+      },
+      {
+        "id": "dwarven-sphere",
+        "name": "Dwarven Sphere",
+        "records": [
+          {
+            "edid": "DLC1LD_EncDwarvenSphereSummon01",
+            "formKey": "00CFB8:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSphereRace",
+          "formKey": "0131F2:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 16,
+          "from": {
+            "edid": "EncDwarvenSphere01",
+            "formKey": "10EC89:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a summon, banded with the Dwarven Sphere (on *Dwarven Sphere*), whose Stats it takes"
+        }
+      },
+      {
+        "id": "dwarven-sphere-guardian",
+        "name": "Dwarven Sphere Guardian",
+        "records": [
+          {
+            "edid": "DLC1LD_EncDwarvenSphereSummon02",
+            "formKey": "00CFBA:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSphereRace",
+          "formKey": "0131F2:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 24,
+          "from": {
+            "edid": "EncDwarvenSphere02",
+            "formKey": "023A97:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a summon, banded with the Dwarven Sphere Guardian (on *Dwarven Sphere*), whose Stats it takes"
+        }
+      },
+      {
+        "id": "broken-dwarven-spider",
+        "name": "Broken Dwarven Spider",
+        "records": [
+          {
+            "edid": "DLC1LD_EncDwarvenSpiderSummonMishap",
+            "formKey": "0142BC:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1LD_EncDwarvenSpiderSummonMishapScrap",
+            "formKey": "0121A9:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSpiderRace",
+          "formKey": "0131F3:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 6,
+          "from": {
+            "edid": "EncDwarvenSpider01",
+            "formKey": "10EC86:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a summon, banded with the Dwarven Spider Worker (on *Dwarven Spider*), whose Stats it takes"
+        }
+      },
+      {
+        "id": "broken-dwarven-sphere",
+        "name": "Broken Dwarven Sphere",
+        "records": [
+          {
+            "edid": "DLC1LD_EncDwarvenSphereSummonMishap",
+            "formKey": "0142BD:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSphereRace",
+          "formKey": "0131F2:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 16,
+          "from": {
+            "edid": "EncDwarvenSphere01",
+            "formKey": "10EC89:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a summon, banded with the Dwarven Sphere (on *Dwarven Sphere*), whose Stats it takes"
+        }
+      },
+      {
+        "id": "durnehviir",
+        "name": "Durnehviir",
+        "records": [
+          {
+            "edid": "DLC1DurnehviirSummon",
+            "formKey": "00C71A:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1UndeadDragonRace",
+          "formKey": "0117DE:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "IX",
+          "status": "proposed",
+          "source": "user, 2026-11-12: as the placed Durnehviir (*Unique Dragons*)"
+        },
+        "note": "no template; the placed Durnehviir (`DLC1Durnehviir` 0030D8:Dawnguard.esm, PC ×1 [10–70]) is a separate record on *Unique Dragons* (IX)."
+      },
+      {
+        "id": "spectral-dragon",
+        "name": "Spectral Dragon",
+        "records": [
+          {
+            "edid": "dlc2SpectralDragonSummon",
+            "formKey": "0265B1:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "dlc2SpectralDragonRace",
+          "formKey": "01F98F:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 9
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (9)"
+        },
+        "note": "no template; `Summonable` race."
+      },
+      {
+        "id": "arvak",
+        "name": "Arvak",
+        "records": [
+          {
+            "edid": "DLC01SoulCairnHorseSummon",
+            "formKey": "00BDD0:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "HorseRace",
+          "formKey": "0131FD:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 4,
+          "from": {
+            "edid": "DLC1EncHorseBone",
+            "formKey": "00966D:Dawnguard.esm"
+          }
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a summon, banded at the level it takes from `DLC1EncHorseBone` (4); horses are not yet migrated"
+        },
+        "note": "also on World Creatures → Mounts → *Otherworldly Horses*."
+      },
+      {
+        "id": "daedric-horse",
+        "name": "Daedric Horse",
+        "records": [
+          {
+            "edid": "ccBGSSSE067_DaedricHorseMount",
+            "formKey": "000B4B:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "race": {
+          "edid": "HorseRace",
+          "formKey": "0131FD:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 50
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (50)"
+        },
+        "note": "also on World Creatures → Mounts → *Otherworldly Horses*."
+      },
+      {
+        "id": "cloaked-spiders",
+        "name": "Flame / Frost / Poisonous / Shock Cloaked Spider",
+        "records": [
+          {
+            "edid": "DLC2ExpSpiderFireCloakingFriend",
+            "formKey": "019529:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2ExpSpiderFrostCloakingFriend",
+            "formKey": "0206DC:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2ExpSpiderPoisonCloakingFriend",
+            "formKey": "01CAAE:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2ExpSpiderShockCloakingFriend",
+            "formKey": "02095D:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2ExpSpiderBaseRace",
+          "formKey": "014449:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (12)"
+        }
+      },
+      {
+        "id": "oil-spider",
+        "name": "Oil Spider",
+        "records": [
+          {
+            "edid": "DLC2ExpSpiderOilFriend",
+            "formKey": "02749A:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2ExpSpiderBaseRace",
+          "formKey": "014449:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a summon that scales with the player and has no cap, banded with the cloaked spiders summoned the same way (II)"
+        },
+        "note": "no `CalcMinLevel` or `CalcMaxLevel` on the record."
+      },
+      {
+        "id": "fire-wyrm",
+        "name": "Fire Wyrm",
+        "records": [
+          {
+            "edid": "dlc2FireWyrmCreated",
+            "formKey": "01F990:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "dlc2SpectralDragonRace",
+          "formKey": "01F98F:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 11
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a summon, banded at its vanilla level (11)"
+        },
+        "note": "no template; same race as the Spectral Dragon."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The Aetherial Staff constructs follow the placed machines through `Stats`: the spider summons and both Broken spiders from `EncDwarvenSpider01` 10EC86 / `EncDwarvenSpider02` 023A98 (on *Dwarven Spider*), the sphere summons and the Broken sphere from `EncDwarvenSphere01` 10EC89 / `EncDwarvenSphere02` 023A97 (on *Dwarven Sphere*); Arvak follows `DLC1EncHorseBone` 00966D:Dawnguard.esm (on *Otherworldly Horses*). Changing those changes the summons.",
+      "The Friend spiders keep their own level: the four cloaked ones use the cloaked spiders (`DLC2ExpSpider{Fire,Frost,Poison,Shock}Cloaking`, on *Exploding Spider*) as their template but not for `Stats`, and `DLC2ExpSpiderOilFriend` does the same with `DLC2ExpSpiderTemplate` 014490:Dragonborn.esm.",
+      "`DLC1DurnehviirSummon` has no template (level 20); the placed Durnehviir `DLC1Durnehviir` 0030D8:Dawnguard.esm (PC×1 [10–70], on *Unique Dragons*) is a separate record with its own level, so changing one leaves the other.",
+      "`ccBGSSSE067_DaedricHorseMount` has no template (level 50); the other Daedric Horses, `ccBGSSSE067_DaedricHorseEnemyAmbush` 0FB4F8 (25) and `…RunScene` 142C0F (50), both :ccbgssse067-daedinv.esm, keep their own levels (on *Otherworldly Horses*).",
+      "Other untemplated records of the same races: the Dwarven spiders and spheres (`EncDwarvenSphereMalfunction` 10E752, `POIBlackreachSinderionDwarvenSphere` 0EED25, `MS04VisionDwarvenSphere` 0C272D, the `cctwbsse001-puzzledungeon.esm` spiders and spheres, 9 records) are on *Dwarven Spider*, *Dwarven Sphere* and *Unique Automatons*; the horses (`EncHorse*`, Shadowmere, the BYOH horses, the CC wild horses and Dwarven Horse) are on *Horse*, the CC unicorn on *Unicorn*.",
+      "Every other row (the Fire Wyrm included, no template): no other record keeps its own level."
+    ]
+  },
+  "summonedBy": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Dwarven constructs and Broken copies",
+        "spell": "`DLC1LD_AetherialStaffSummon*Spell` (seven spells, one per record)",
+        "player": "Aetherial Staff",
+        "npcs": "none"
+      },
+      {
+        "name": "Durnehviir",
+        "spell": "`DLC1SummonDragon`",
+        "player": "shout `DLC1SummonDragonShout`",
+        "npcs": "none"
+      },
+      {
+        "name": "Spectral Dragon",
+        "spell": "placed by the scripts of `dlc2DBDragonStormCastBodyEffect` 0265A6, `dlc2DBDragonBreathCastBodyEffect` 02A759 and `dlc2DBConjureAncientsCastBodyEffect` 031856 (property `specDragon`), reached from `dlc2DBDragonStormSpell` 0265A8, `dlc2DBDragonBreathSpell` 0265A3 and `dlc2DBConjureAncientsSpell` 031853",
+        "player": "none: no tome, shout, scroll, staff or quest grants the three spells",
+        "npcs": "none: no NPC, leveled spell list or script holds them (the Ancient Dragonborn, `dlc2DBAncientDragonborn` 0265AA, shares the `dlc2DB` prefix but carries only `dlc2DBAncientDragonbornAggroCloak` 0265AB, and its script casts nothing)"
+      },
+      {
+        "name": "Arvak",
+        "spell": "`DLC01SummonSoulHorse`",
+        "player": "granted by `DLC01SoulCairnHorseQuest2`",
+        "npcs": "none"
+      },
+      {
+        "name": "Daedric Horse",
+        "spell": "`ccBGSSSE067_SummonDaedricHorse`",
+        "player": "tome `ccBGSSSE067_ConjureSummonDaedricHorse`",
+        "npcs": "none"
+      },
+      {
+        "name": "Friend spiders",
+        "spell": "effects `DLC2ExpSpider{Fire,Frost,Poison,Shock}CloakingScrollFF` · `DLC2ExpSpiderOilScrollFF` → projectiles `…ProjectileFriend` → explosions `…SpawnFriend` 01952B · 0206E2 · 01CAB2 · 020969 · 02749F, which spawn the spider",
+        "player": "scrolls `DLC2ExpSpiderFireCloakScroll` 01952C (Flame Cloaked Spider; in `DLC2MerilarRendasDeathItem` 03CB92) · `…FrostCloakScroll` 0206D9 · `…PoisonCloakScroll` 01CAB0 · `…ShockCloakScroll` 020960 · `DLC2ExpSpiderOilScroll` 02749D; the last four only in the QA container `DLC02QAScrollContainer` 026B68",
+        "npcs": "none found"
+      },
+      {
+        "name": "Fire Wyrm",
+        "spell": "Fire Breath shout effects `VoiceFireBreathEffect1`–`3` (020E16 · 0562EA · 0562EB, as overridden by Dragonborn.esm) run `DLC2VoiceFireBreathScript` (property `Wyrm`): when the player's Fire Breath target dies, the script calls `PlaceActorAtMe(Wyrm)`, only while global `DLC2BlackBookReward3` 020E99 is 2. Also named by `dlc2DBConjureSpectralDragonEffect` 0265A1",
+        "player": "shout Fire Breath, after the Black Book power that sets `DLC2BlackBookReward3` = 2",
+        "npcs": "none (the script checks that the caster is the player)"
+      }
+    ]
+  }
+}

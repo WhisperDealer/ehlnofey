@@ -1,0 +1,11 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "conjured",
+  "title": "Conjured",
+  "order": 7,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. **Scope rule** (user, 2026-09-30): every actor that exists only as a summon, reached from a `MagicEffect` (or a leveled list that one uses), never from a placed reference. A placed or quest-spawned version of the same creature stays with its own family (Daedra, Undead). Each family page has a *Summoned by* table: the spell, how the player gets it, and the NPCs that cast it.",
+  "families": []
+}
