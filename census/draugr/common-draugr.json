@@ -1,0 +1,807 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "common-draugr",
+  "group": "draugr",
+  "title": "Common Draugr",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "draugr",
+        "name": "Draugr",
+        "records": [
+          {
+            "edid": "EncDraugr01Template",
+            "formKey": "03B547:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr01Template2H",
+            "formKey": "05B752:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr01TemplateMissile",
+            "formKey": "03BE1E:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: low-level draugr"
+        }
+      },
+      {
+        "id": "restless-draugr",
+        "name": "Restless Draugr",
+        "records": [
+          {
+            "edid": "EncDraugr02Template",
+            "formKey": "03B548:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr02Template2H",
+            "formKey": "05B753:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr02TemplateMissile",
+            "formKey": "03BE20:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: low-level draugr"
+        }
+      },
+      {
+        "id": "draugr-wight",
+        "name": "Draugr Wight",
+        "records": [
+          {
+            "edid": "EncDraugr03Template",
+            "formKey": "03B549:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr03Template2H",
+            "formKey": "05B754:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr03TemplateMissile",
+            "formKey": "03BE21:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 13
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: draugr"
+        }
+      },
+      {
+        "id": "draugr-scourge",
+        "name": "Draugr Scourge",
+        "records": [
+          {
+            "edid": "EncDraugr04Template",
+            "formKey": "03B54A:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr04Template2H",
+            "formKey": "05B755:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr04TemplateMissile",
+            "formKey": "03BE22:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 21
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: draugr"
+        }
+      },
+      {
+        "id": "draugr-deathlord",
+        "name": "Draugr Deathlord",
+        "records": [
+          {
+            "edid": "EncDraugr05Template",
+            "formKey": "03B54B:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr05Template2H",
+            "formKey": "05B756:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr05TemplateMissile",
+            "formKey": "03BE23:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr05TemplateMissileEbony",
+            "formKey": "0640B7:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 30,
+          "also": [
+            30,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: draugr Deathlords"
+        },
+        "note": "40 is the ebony archer only: the ebony melee Deathlords take `Stats` from `EncDraugr05Template` and are 30."
+      },
+      {
+        "id": "hulking-draugr",
+        "name": "Hulking Draugr",
+        "records": [
+          {
+            "edid": "DLC2EncDraugrHulkingM00",
+            "formKey": "02A6FE:Dragonborn.esm"
+          },
+          {
+            "label": "`DLC2EncDraugrHulkingM01`–`M06` 036140–036145:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2HulkingDraugrRace",
+          "formKey": "02A6FD:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 26
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a heavy draugr, drawn beside the Scourge rung"
+        },
+        "note": "M00 owns the level; M01–M06 take `Stats` and `BaseData` from it."
+      },
+      {
+        "id": "fjori",
+        "name": "Fjori",
+        "records": [
+          {
+            "edid": "DunAnsilvundDraugrWarlordFemale",
+            "formKey": "0A222B:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrMelee1HFemale",
+            "formKey": "0BF7A9:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            13,
+            21,
+            30
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        }
+      },
+      {
+        "id": "guardian-saerek",
+        "name": "Guardian Saerek",
+        "records": [
+          {
+            "edid": "dunRagSaerek",
+            "formKey": "03725E:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrMelee2HMale",
+            "formKey": "01E772:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            13,
+            21,
+            30
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        }
+      },
+      {
+        "id": "sigdis-gauldurson",
+        "name": "Sigdis Gauldurson",
+        "records": [
+          {
+            "edid": "dunGeirmundSigdis",
+            "formKey": "0A6842:Skyrim.esm"
+          },
+          {
+            "edid": "dunGeirmundSigdisDuplicate",
+            "formKey": "0A6848:Skyrim.esm"
+          },
+          {
+            "edid": "dunReachwaterRockSigdisDuplicate",
+            "formKey": "0ECF13:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrMissileMale",
+            "formKey": "0A6844:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            13,
+            21,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        },
+        "note": "the duplicates use their wrapper without `Stats` and stay at level 1."
+      },
+      {
+        "id": "japhet",
+        "name": "Japhet",
+        "records": [
+          {
+            "edid": "dunJaphetsFollySkeleton",
+            "formKey": "0E63D6:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 1,
+          "from": {
+            "edid": "EncDraugr01Template",
+            "formKey": "03B547:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: low-level draugr"
+        },
+        "note": "takes `Stats` from the corpse `TreasCorpseDraugrMale` 05AFA6, which takes them from the rung-01 leaf `EncDraugr01Melee1HHeadM01` 05593C, so the Draugr rung owns his level."
+      },
+      {
+        "id": "draugr-thrall",
+        "name": "Draugr Thrall",
+        "records": [
+          {
+            "edid": "dunFolgunthurThralls_LvlDraugrAmbushMelee1HDefender",
+            "formKey": "0ABA9C:Skyrim.esm"
+          },
+          {
+            "edid": "dunFolgunthurThralls_LvlDraugrAmbushMelee1HMelee",
+            "formKey": "0ABAA0:Skyrim.esm"
+          },
+          {
+            "edid": "dunFolgunthurThralls_LvlDraugrAmbushMissile",
+            "formKey": "0ABAA1:Skyrim.esm"
+          },
+          {
+            "edid": "dunReachwaterRockThralls_LvlDraugrAmbushMelee1HDefender",
+            "formKey": "0ECF41:Skyrim.esm"
+          },
+          {
+            "edid": "dunReachwaterRockThralls_LvlDraugrAmbushMelee1HMelee",
+            "formKey": "0ECF40:Skyrim.esm"
+          },
+          {
+            "edid": "dunReachwaterRockThralls_LvlDraugrAmbushMissile",
+            "formKey": "0ECF3F:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: low-level draugr"
+        },
+        "note": "the Folgunthur three use their draugr wrapper without `Stats`; the Reachwater Rock three take `Stats` from the Folgunthur three."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Each rung's level sits on its 1H template, which also carries the name; the 2H template takes `Stats` and `BaseData` from it, but the archer template (`EncDraugr0NTemplateMissile`) takes only `BaseData` and keeps its own level: a rung change has to be made on the 1H and archer templates both. Every male and female head leaf takes `Stats` from one of them.",
+      "Changing `EncDraugr01Template` 03B547 also needs `ccBGSSSE060_Ulfnir` 00081E:ccbgssse060-ba_dragonscale.esl (Ulfnir Bone-Hide, PC×1 [15–50]; on *Common Skeletons*): it uses 03B547 as its template but not for `Stats`. The CC zombie rungs `ccBGSSSE003EncZombie02`–`06Body{A,B,C}` and their `_Summon` copies (levels 3–40; on *Zombies (CC)*) also look like it: their `…Zombie01Body*` base takes `Stats` from the draugr leaf `EncDraugr01Melee1HHeadM00` 05593B, but they use it without `Stats`.",
+      "Changing `EncDraugr02Template` 03B548, `EncDraugr03Template` 03B549 or `EncDraugr04Template` 03B54A also needs `EncDraugr02TemplateMagic` 038A25 · `…03…` 038A26 · `…04…` 038A27 (levels 6 · 13 · 21; on *Draugr Warlock*): they use the rung template but not for `Stats`.",
+      "Six wrappers take their template from a draugr list or wrapper without `Stats`, so they stay at their own level 1 whatever rung they draw: `dunHighGateAnskaDraugr` 0B3199 (from `LCharDraugrMelee1HMale`), the three Folgunthur thralls (a row), and the Kolbjorn `DLC2dunKolbjorn_LvlDraugrMelee1HDefenderFemaleWeak` 03A428 · `…MissileMaleHoldPosition512Weak` 03A429 (Dragonborn.esm). The Sigdis duplicates do the same. The Folgunthur warlock is on *Draugr Warlock*.",
+      "Every other draugr record (the ebony melee leaves, the Hulking variants, the `TreasCorpseDraugr*` corpses and every other `LvlDraugr*` wrapper, the Reachwater Rock thralls included) carries `Stats` and follows its template or list; besides the records above, only the `E3Demo` test copies do not."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharDraugrMelee1HMale",
+          "formKey": "055936:Skyrim.esm"
+        },
+        "override": "Dawnguard.esm",
+        "gate": "`CalculateFromAllLevelsLessThanOrEqualPlayer`: every rung at or below the player can roll, as in every list on this page",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Draugr"
+          },
+          {
+            "at": 6,
+            "label": "Restless Draugr"
+          },
+          {
+            "at": 13,
+            "label": "Draugr Wight"
+          },
+          {
+            "at": 21,
+            "label": "Draugr Scourge"
+          },
+          {
+            "at": 26,
+            "label": "Hulking Draugr (`DLC2SubCharDraugrHulkingMeleeM`, added at start-up)"
+          },
+          {
+            "at": 30,
+            "label": "Draugr Deathlord"
+          },
+          {
+            "at": 40,
+            "label": "Draugr Deathlord (ebony)"
+          }
+        ],
+        "note": "the Hulking entry is added at runtime by `DLC2Init` 016E02:Dragonborn.esm (`AddForm(DLC2SubCharDraugrHulkingMeleeM, 26)`).",
+        "owner": "`LvlDraugrMelee1HMale` 055953 · `LvlDraugrMelee1HDefenderMale` 055957 (and its ambush, no-furniture and rush copies; the ambush copy `LvlDraugrAmbushMelee1HDefenderMale` 06F837 templates the Draugr Thrall 0ABA9C) · `LvlDraugrAmbushMelee1HMale` 0567C8 (and `MG07LabyrinthianDraugrAmbushMelee1H` 0F82F5) · `dunUstengravLvlDraugrMelee1HDefenderMale` 039981 · `dunHighGateAnskaDraugr` 0B3199 · `DLC2LvlDraugrMelee1HMalePatrolWeap` 028818:Dragonborn.esm"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrMelee2HMale",
+          "formKey": "01E772:Skyrim.esm"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "Draugr"
+          },
+          {
+            "at": 6,
+            "label": "Restless Draugr"
+          },
+          {
+            "at": 13,
+            "label": "Draugr Wight"
+          },
+          {
+            "at": 21,
+            "label": "Draugr Scourge"
+          },
+          {
+            "at": 30,
+            "label": "Draugr Deathlord"
+          },
+          {
+            "at": 40,
+            "label": "Draugr Deathlord (ebony)"
+          }
+        ],
+        "note": "2H.",
+        "owner": "`LvlDraugrMelee2HMale` 01E7AD · `LvlDraugrMelee2HBerserkerMale` 055956 (and its ambush copy `LvlDraugrAmbushMelee2HBerserkerMale` 06F838 with `LvlDraugrAmbushBerserkerMaleNoFurniture` 0E7A56 · `LvlDraugrAmbushBerserkerRushMaleNoFurniture` 027AC3:Dragonborn.esm, `dunAnsilvundDraugrAmbushMelee2HAggro` 10F544, Guardian Saerek) · `LvlDraugrAmbushMelee2HMale` 04A04E · `DunUstengravLvlDraugrMelee2HBerserkerMale` 03997E · `dunAnsilvundLvlDraugrMelee` 03E4C1 · `DLC2LvlDraugrMelee2HBerserkerMalePatrolWeap` 028819:Dragonborn.esm"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrMissileMale",
+          "formKey": "0A6844:Skyrim.esm"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "Draugr"
+          },
+          {
+            "at": 6,
+            "label": "Restless Draugr"
+          },
+          {
+            "at": 13,
+            "label": "Draugr Wight"
+          },
+          {
+            "at": 21,
+            "label": "Draugr Scourge"
+          },
+          {
+            "at": 30,
+            "label": "Draugr Deathlord"
+          },
+          {
+            "at": 40,
+            "label": "Draugr Deathlord (ebony)"
+          }
+        ],
+        "note": "archers; every entry is listed twice.",
+        "owner": "`LvlDraugrMissileMale` 0A6851 (and its copies `LvlDraugrAmbushMissileMale` 0A6850 (which templates the Draugr Thrall 0ABAA1) · `LvlDraugrMissileMaleHoldPosition256` 0C3B26 (and `DLC2dunKolbjorn_LvlDraugrMissileMaleHoldPosition256` 0338E3:Dragonborn.esm) · `LvlDraugrMissileMaleHoldPosition512` 106E41 · `DLC2dunKolbjorn_LvlDraugrMissileMaleHoldPosition512Weak` 03A429:Dragonborn.esm · Sigdis) · `LvlDraugrMissileGuardMale` 028F52"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrMelee1HFemale",
+          "formKey": "0BF7A9:Skyrim.esm"
+        },
+        "note": "with `LCharDraugrMelee2HFemale` 0BF7AD and `LCharDraugrMissileFemale` 03BCC0: the same six rungs, female.",
+        "owner": "`LvlDraugrMelee1HFemale` 0BF7AC (and Fjori) · `LvlDraugrMelee1HDefenderFemale` 0BF7AB · `LvlDraugrAmbushMelee1HFemale` 0BF7AA · `LvlDraugrMelee2HFemale` 025EAE (and `dunYngvildLvlDraugrMeleeFemale2H` 07D8F8) · `LvlDraugrMelee2HBerserkerFemale` 0BF7AE · `LvlDraugrAmbushMelee2HFemale` 0BF7B5 (which templates the Draugr Thrall 0ABAA0) · `LvlDraugrMissileFemale` 025EAF (and its copies `LvlDraugrAmbushMissileFemale` 06F83A (with `LvlDraugrAmbushMissileFemaleNoFurniture` 0E7A57 · `LvlDraugrAmbushMissileRushFemaleNoFurniture` 027AC6:Dragonborn.esm) · `LvlDraugrMissileFemaleHoldPosition256` 027AC2:Dragonborn.esm (with `DLC2dunKolbjorn_LvlDraugrMissileFemaleHoldPosition256` 0338E1:Dragonborn.esm) · `LvlDraugrMissileFemaleHoldPosition256NoShouts` 03A2AA:Dragonborn.esm · `DLC2LvlDraugrMissileFemaleHoldPositionPatrol` 028817:Dragonborn.esm · `dunYngvildLvlDraugrMissileFemale` 07D8F9 · `dunYngvildLvlDraugrBedroom` 0FB7DC) · `LvlDraugrMissileGuardFemale` 0BF7BA · `MG07LabyrinthianDraugr{Melee1HFemale,Melee2H,Missile}` 0F82F7 · 0F845A · 0F845C · `DLC2dunKolbjorn_LvlDraugrMelee1HDefenderFemaleWeak` 03A428:Dragonborn.esm"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrMeleeHelmet1HMale",
+          "formKey": "0567C9:Skyrim.esm"
+        },
+        "note": "with `LCharDraugrMeleeHelmet2HMale` 048DEA, `…1HFemale` 0BF7AF and `…2HFemale` 0BF7B1: as the plain lists, but rung 01 draws only the helmeted heads.",
+        "owner": "`LvlDraugrMeleeHelmet*` 0567CD · 048DEB · 0BF7B0 · 0BF7B2, `LvlDraugrAmbushMelee*Helmet*` 0567CB · 04A59A · 0BF7B4 · 0BF7B7, `MG07LabyrinthianDraugrAmbushMelee2H` 0F82FD"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrMeleeAllMale",
+          "formKey": "055955:Skyrim.esm"
+        },
+        "note": "with `LCharDraugrMeleeAllFemale` 0BF7B8: the 1H and 2H lists together, both at 1.",
+        "owner": "`LvlDraugrMeleeAllMale` 055954 · `DLC1VQ01LvlDraugr` 01A535:Dawnguard.esm · `LvlDraugrMeleeAllFemale` 0BF7B9"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrMissile",
+          "formKey": "01E7AA:Skyrim.esm"
+        },
+        "note": "the male archer rungs, once each.",
+        "owner": "no draugr: only the Volkihar skeletons (on Skeletons → *Common Skeletons*)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Fjori",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Ansilvund02",
+              "formKey": "01F358:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Guardian Saerek",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Ragnvald02",
+              "formKey": "01B7C0:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sigdis Gauldurson",
+        "locations": [
+          {
+            "cell": {
+              "edid": "GeirmundsHall01",
+              "formKey": "0A5A71:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "ReachwaterRock01",
+              "formKey": "015226:Skyrim.esm"
+            },
+            "refText": "×1"
+          }
+        ],
+        "note": "the duplicates are spawned by `dunGeirmundQST` 0E738F (0A6848) and `dunGauldursonQST` 0E4D31 (0ECF13)"
+      },
+      {
+        "name": "Japhet",
+        "locations": [
+          {
+            "cell": {
+              "edid": "JaphetsFolly02",
+              "formKey": "0414DD:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Draugr Thrall",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Folgunthur02",
+              "formKey": "0AB531:Skyrim.esm"
+            },
+            "note": "0ABA9C ×4 · 0ABAA0 ×3 · 0ABAA1 ×1"
+          },
+          {
+            "cell": {
+              "edid": "ReachwaterRock01",
+              "formKey": "015226:Skyrim.esm"
+            },
+            "note": "0ECF41 ×2 · 0ECF3F ×4; 0ECF40 not placed"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "1H melee, rungs 01–04, male and female",
+        "weapons": "`LItemDraugr02Weapon1HShield50` 0559F8",
+        "armor": "Ancient Nord Helmet `DraugrHelmet01` 01FD77 (rungs 01–03) or `DraugrHelmet02` 01FD7B (rung 04) on some heads; hair and beard on the rest",
+        "skin": "`SkinDraugrMale01`–`07` 01FE7E–01FE84, one per head"
+      },
+      {
+        "records": "2H melee, rungs 01–04",
+        "weapons": "`LItemDraugr02Weapon2H` 024300",
+        "armor": "as 1H",
+        "skin": "as 1H"
+      },
+      {
+        "records": "Archers, rungs 01–04",
+        "weapons": "`LItemDraugr02WeaponBow` 024302 · Ancient Nord War Axe 02C672",
+        "armor": "none at rung 01; as 1H at 02–04",
+        "skin": "as 1H"
+      },
+      {
+        "records": "Deathlord 1H · 2H · archer",
+        "weapons": "`LItemDraugr05Weapon1HShield` 0559F9 · `LItemDraugr05Weapon2H` 023C1E · `LItemDraugr05WeaponBow` 024305 + Ancient Nord War Axe",
+        "armor": "Ancient Nord Helmet `DraugrHelmet03` 01FD7C, every head",
+        "skin": "as 1H"
+      },
+      {
+        "records": "Ebony Deathlord 1H · 2H · archer",
+        "weapons": "`LItemDraugr05EWeapon1HShield` 0559FA · `LItemDraugr05EWeapon2H` 024330 · `LItemDraugr05EWeaponBow` 024338 + Ancient Nord War Axe",
+        "armor": "`DraugrHelmet03`",
+        "skin": "as 1H"
+      },
+      {
+        "records": "Hulking Draugr M01–M06 · M00",
+        "weapons": "`DLC2LItemDraugrHulkingWeapon1HShield50` 03399D:Dragonborn.esm · M00: `LItemDraugr02Weapon1H` 0242FC + `DLC2LItemDraugrHulkingShield67` 03399E:Dragonborn.esm",
+        "armor": "hair and beard only",
+        "skin": "`DLC2SkinHulkingDraugr` 02A6FC:Dragonborn.esm"
+      },
+      {
+        "records": "Sigdis Gauldurson",
+        "weapons": "Gauldur Blackbow (`dunLItemGeirmundSigdisBow` 0F5D23) · Ancient Nord Arrow 034182; duplicates: illusion bow 0A5DF0 and arrows 0E738A",
+        "armor": "`DraugrHelmet02`; duplicates `DraugrHelmet01`",
+        "skin": "as 1H"
+      },
+      {
+        "records": "Japhet",
+        "weapons": "none",
+        "armor": "`DraugrHelmet02`",
+        "skin": "as 1H"
+      },
+      {
+        "records": "Fjori, Guardian Saerek",
+        "weapons": "from their list's leaves (`Inventory` flag)",
+        "armor": "as the list",
+        "skin": "as the list"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemDraugr02Weapon1HShield50",
+          "formKey": "0559F8:Skyrim.esm"
+        },
+        "rolls": "all of: `LItemDraugr02Weapon1H` 0242FC · Iron Shield 012EB6 50% (`LItemDraugrShield50` 0559F7)"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr02Weapon1H",
+          "formKey": "0242FC:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Ancient Nord Sword 02C66F ×4 · Ancient Nord War Axe 02C672 ×4 (1) · Honed Ancient Nord Sword 05BF14 · Honed Draugr War Axe 05BF15, one each at 12–15 and 21–24"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr02Weapon2H",
+          "formKey": "024300:Skyrim.esm"
+        },
+        "rolls": "Ancient Nord Battle Axe 01CB64 ×4 · Greatsword 0236A5 ×4 (1) · Honed Battle Axe 05BF12 · Honed Greatsword 05BF13, one each at 12–15 and 21–24"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr02WeaponBow",
+          "formKey": "024302:Skyrim.esm"
+        },
+        "rolls": "all of: Ancient Nord Bow 0302CA ×2 (1) · Supple Ancient Nord Bow 05D179 (12–15); 20 Ancient Nord Arrows 034182 each 75%, plus 1"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr05Weapon1HShield",
+          "formKey": "0559F9:Skyrim.esm"
+        },
+        "rolls": "all of: Ebony Sword 0139B1 · Ebony War Axe 0139AB (`LItemDraugr05Weapon1H` 023C10) · Iron Shield 50%"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr05Weapon2H",
+          "formKey": "023C1E:Skyrim.esm"
+        },
+        "rolls": "×2 Honed Ancient Nord Greatsword · Battle Axe (05BF21) · ×1 Ancient Nord Greatsword · Battle Axe of Ice 05BF0B · 05BF08 (05BF22)"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr05WeaponBow",
+          "formKey": "024305:Skyrim.esm"
+        },
+        "rolls": "all of: Orcish Bow 01398D ×4 (1) · Elven Bow 01399D (14–17) · Glass Bow 0139A5 (18–21); 20 Orcish Arrows each 75%, plus 1"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr05EWeapon1HShield",
+          "formKey": "0559FA:Skyrim.esm"
+        },
+        "rolls": "all of: Ebony Sword · Ebony War Axe (02432D) · Ebony Shield 013964 50% (0559FB)"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr05EWeapon2H",
+          "formKey": "024330:Skyrim.esm"
+        },
+        "rolls": "Ebony Greatsword 0139AF · Battleaxe 0139AC · Warhammer 0139B2"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr05EWeaponBow",
+          "formKey": "024338:Skyrim.esm"
+        },
+        "rolls": "all of: Ebony Bow 0139AD; 20 Ebony Arrows 0139BF each 75%, plus 1"
+      },
+      {
+        "list": {
+          "edid": "DLC2LItemDraugrHulkingWeapon1HShield50",
+          "formKey": "03399D:Dragonborn.esm"
+        },
+        "rolls": "all of: `LItemDraugr02Weapon1H` · Dented Iron Shield 03399C 67% (03399E)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Ancient Nord weapons (sword, war axe, battle axe, greatsword, bow, honed, supple, of Ice)",
+        "kind": "weapons",
+        "playable": true
+      },
+      {
+        "item": "Ebony, Orcish, Elven, Glass weapons · Iron, Ebony and Dented Iron shields",
+        "kind": "weapons, heavy shields",
+        "playable": true
+      },
+      {
+        "item": "Gauldur Blackbow 0A5DEF · 0F5D1F–0F5D22",
+        "kind": "bow, enchanted",
+        "playable": true
+      },
+      {
+        "item": "Ancient Nord Helmet `DraugrHelmet01` · `02` · `03` 01FD77 · 01FD7B · 01FD7C",
+        "kind": "the draugr's helmet, AR 1",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`SkinDraugrMale01`–`07` 01FE7E–01FE84 · `DLC2SkinHulkingDraugr` 02A6FC:Dragonborn.esm",
+        "kind": "the draugr body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`SkinDraugrHair01`/`02` · `SkinDraugrBeard01`/`02` 03BC81–03BC84",
+        "kind": "hair and beard pieces, no name",
+        "playable": true,
+        "note": "flagged playable, but nameless body parts"
+      },
+      {
+        "item": "Ancient Nord Armor · Boots · Gauntlets · Helmet `ArmorDraugr*` 018388 · 056A9D · 056B17 · 056A9E",
+        "kind": "heavy, AR 25 · 10 · 10 · 15",
+        "playable": true,
+        "note": "worn by no draugr"
+      }
+    ]
+  }
+}

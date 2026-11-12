@@ -1,0 +1,363 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "draugr-warlock",
+  "group": "draugr",
+  "title": "Draugr Warlock",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "restless-draugr-warlock",
+        "name": "Restless Draugr",
+        "records": [
+          {
+            "edid": "EncDraugr02TemplateMagic",
+            "formKey": "038A25:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: low-level draugr"
+        },
+        "note": "the warlock of rung 02; the name comes from `EncDraugr02Template` through `BaseData`."
+      },
+      {
+        "id": "draugr-wight-warlock",
+        "name": "Draugr Wight",
+        "records": [
+          {
+            "edid": "EncDraugr03TemplateMagic",
+            "formKey": "038A26:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 13
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: draugr"
+        },
+        "note": "the warlock of rung 03."
+      },
+      {
+        "id": "draugr-scourge-warlock",
+        "name": "Draugr Scourge",
+        "records": [
+          {
+            "edid": "EncDraugr04TemplateMagic",
+            "formKey": "038A27:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 21
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: draugr"
+        },
+        "note": "the warlock of rung 04; there is no rung-01 or Deathlord warlock."
+      },
+      {
+        "id": "jyrik-gauldurson",
+        "name": "Jyrik Gauldurson",
+        "records": [
+          {
+            "edid": "JyrikGauldurson",
+            "formKey": "01BB28:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrWarlockMale",
+            "formKey": "0BF7BB:Skyrim.esm"
+          },
+          "rungs": [
+            6,
+            13,
+            21
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        }
+      },
+      {
+        "id": "guardian-torsten",
+        "name": "Guardian Torsten",
+        "records": [
+          {
+            "edid": "dunRagnTorsten",
+            "formKey": "037231:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrWarlockMale",
+            "formKey": "0BF7BB:Skyrim.esm"
+          },
+          "rungs": [
+            6,
+            13,
+            21
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        }
+      },
+      {
+        "id": "halldir",
+        "name": "Halldir",
+        "records": [
+          {
+            "edid": "dunHalldirsBoss",
+            "formKey": "064B1C:Skyrim.esm"
+          },
+          {
+            "edid": "dunHalldirsBoss_HalldirFire",
+            "formKey": "0642C1:Skyrim.esm"
+          },
+          {
+            "edid": "dunHalldirsBoss_HalldirFrost",
+            "formKey": "0642C2:Skyrim.esm"
+          },
+          {
+            "edid": "dunHalldirsBoss_HalldirStorm",
+            "formKey": "0642C3:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrWarlockMale",
+            "formKey": "0BF7BB:Skyrim.esm"
+          },
+          "rungs": [
+            6,
+            13,
+            21
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        },
+        "note": "the boss and his Fire, Frost and Storm copies; the records inherit the warlock rung names, and \"Halldir\" is the alias display name `dunHalldirsBossName` 0642C7 on their aliases in `dunHalldirsCairnQST` 03AD4A."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The three magic templates use their rung's melee template (`EncDraugr02Template`–`04`, on *Common Draugr*) for `BaseData` only, not `Stats`: changing a melee rung leaves its warlock at 6 · 13 · 21.",
+      "`dunFolgunthurThralls_LvlDraugrAmbushWarlock` 0ABAA2 takes its template from `LvlDraugrAmbushWarlock` without `Stats` and stays at its own level 1 whatever rung it draws; no rung change reaches it (its melee and archer siblings are on *Common Draugr*).",
+      "Every other warlock record (the male and female `EncDraugr0NMagicHead*` leaves, Jyrik, Torsten, Halldir's four records and every other `LvlDraugr*Warlock*` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharDraugrWarlockMale",
+          "formKey": "0BF7BB:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Restless Draugr (warlock)"
+          },
+          {
+            "at": 13,
+            "label": "Draugr Wight (warlock)"
+          },
+          {
+            "at": 21,
+            "label": "Draugr Scourge (warlock)"
+          }
+        ],
+        "owner": "`LvlDraugrWarlockMale` 01E7AC · `LvlDraugrAmbushWarlock` 06F83E (and its no-furniture 0E738E, rush `LvlDraugrAmbushWarlockRushNoFurniture` 027AC7:Dragonborn.esm and Folgunthur/Reachwater thrall copies 0ABAA2 · 0ECF42, Jyrik, Torsten, Halldir 064B1C) · `LvlDraugrAmbushWarlockFemale` 1019BB (templates the male list) · `MG07LabyrinthianDraugrAmbushWarlock` 0F82FB · `dunGeirmund_LvlDraugrWarlockHoldPosition` 0A5F87 · Halldir's three copies"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrWarlockFemale",
+          "formKey": "03BCC1:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Restless Draugr (warlock)"
+          },
+          {
+            "at": 13,
+            "label": "Draugr Wight (warlock)"
+          },
+          {
+            "at": 21,
+            "label": "Draugr Scourge (warlock)"
+          }
+        ],
+        "owner": "`LvlDraugrWarlockFemale` 025EB0 · `MG07LabyrinthianDraugrWarlock` 0F82F8 · `dunUstengravLvlDraugrWarlockFemale` 03997F · `dunYngvildLvlDraugrWarlockFemale` 07D8FA"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Jyrik Gauldurson",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Saarthal02",
+              "formKey": "01AEC3:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "ReachwaterRock01",
+              "formKey": "015226:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Guardian Torsten",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Ragnvald03",
+              "formKey": "01D09A:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Halldir",
+        "locations": [
+          {
+            "cell": {
+              "edid": "HalldirsCairn01",
+              "formKey": "015265:Skyrim.esm"
+            },
+            "note": "all four records"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Warlocks, rungs 02–04, male and female",
+        "weapons": "`LItemDraugr02Weapon1H` 0242FC",
+        "armor": "none: hair and beard only",
+        "skin": "`SkinDraugrMale*`, one per head"
+      },
+      {
+        "records": "Jyrik Gauldurson",
+        "weapons": "Ancient Nord War Axe 02C672",
+        "armor": "Ancient Nord Helmet `DraugrHelmet03` 01FD7C",
+        "skin": "as the warlocks"
+      },
+      {
+        "records": "Halldir 064B1C",
+        "weapons": "`LItemDraugr02BossWeapon1HMagic` 0DDD62",
+        "armor": "Ancient Nord Helmet `DraugrHelmet01` 01FD77",
+        "skin": "as the warlocks"
+      },
+      {
+        "records": "Halldir Fire · Frost · Storm",
+        "weapons": "`LItemDraugr02BossWeapon1HMagic` · `LItemDraugr02WeaponBow` 024302",
+        "armor": "`DraugrHelmet01`",
+        "skin": "as the warlocks"
+      },
+      {
+        "records": "Guardian Torsten",
+        "weapons": "from the list's leaves (`Inventory` flag)",
+        "armor": "as the list",
+        "skin": "as the list"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemDraugr02Weapon1H",
+          "formKey": "0242FC:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Ancient Nord Sword 02C66F ×4 · Ancient Nord War Axe 02C672 ×4 (1) · Honed Ancient Nord Sword 05BF14 · Honed Draugr War Axe 05BF15, one each at 12–15 and 21–24"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr02BossWeapon1HMagic",
+          "formKey": "0DDD62:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Ancient Nord Sword · War Axe of Cold 05BF0C · 05BF0F ×4 (1) · of Frost 05BF0D · 05BF10 and Honed of Cold 0DDD6A · 0DDD6D (6–9) · of Ice 05BF0E · 05BF11 and Honed of Frost 0DDD6B · 0DDD6E (13–16) · Honed of Ice 0DDD6C · 0DDD6F (21–24)"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr02WeaponBow",
+          "formKey": "024302:Skyrim.esm"
+        },
+        "rolls": "all of: Ancient Nord Bow 0302CA ×2 (1) · Supple Ancient Nord Bow 05D179 (12–15); 20 Ancient Nord Arrows 034182 each 75%, plus 1"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Every weapon above",
+        "kind": "weapons",
+        "playable": true
+      },
+      {
+        "item": "Ancient Nord Helmets and the draugr skins",
+        "kind": "helmet, body",
+        "playable": false,
+        "note": "`NonPlayable`; see *Common Draugr* → Gear items"
+      }
+    ]
+  }
+}

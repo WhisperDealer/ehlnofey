@@ -335,7 +335,7 @@
         "target": {
           "band": "VIII",
           "status": "proposed",
-          "source": "bands-of-power.md: Dragon Priests (the generic priest is not named there)"
+          "source": "user, 2026-11-12: the generic priest shares the named priests' band"
         },
         "note": "the generic priest, placed by hand and drawn by the draugr boss list at 60. `EncDragonPriest` owns the level; the others take `Stats` and `BaseData` from it."
       }

@@ -1,0 +1,590 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "draugr-boss",
+  "group": "draugr",
+  "title": "Draugr Boss",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "draugr-overlord",
+        "name": "Draugr Overlord",
+        "records": [
+          {
+            "edid": "EncDraugr02TemplateBoss",
+            "formKey": "04247B:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr02Boss1H",
+            "formKey": "0DDD57:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr02Boss2H",
+            "formKey": "0DDD58:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 7
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a draugr boss, a band above its rung (Restless Draugr IV)"
+        }
+      },
+      {
+        "id": "draugr-wight-lord",
+        "name": "Draugr Wight Lord",
+        "records": [
+          {
+            "edid": "EncDraugr03TemplateBoss",
+            "formKey": "04247C:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr03Boss1H",
+            "formKey": "0DDD5A:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr03Boss2H",
+            "formKey": "0DDD59:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 15
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a draugr boss, a band above its rung (Draugr Wight V)"
+        }
+      },
+      {
+        "id": "draugr-scourge-lord",
+        "name": "Draugr Scourge Lord",
+        "records": [
+          {
+            "edid": "EncDraugr04TemplateBoss",
+            "formKey": "04247D:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr04Boss1H",
+            "formKey": "0DDD5B:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr04Boss2H",
+            "formKey": "0DDD5C:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 24
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a draugr boss, a band above its rung (Draugr Scourge V)"
+        }
+      },
+      {
+        "id": "draugr-death-overlord",
+        "name": "Draugr Death Overlord",
+        "records": [
+          {
+            "edid": "EncDraugr05TemplateBoss",
+            "formKey": "04247E:Skyrim.esm"
+          },
+          {
+            "edid": "EncDraugr05TemplateBossEbony",
+            "formKey": "04247F:Skyrim.esm"
+          },
+          {
+            "label": "`EncDraugr05Boss1H`/`2H` 0DDD5D · 0DDD5E, `…Boss1HEbony`/`2HEbony` 0DDD60 · 0DDD5F"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 34,
+          "also": [
+            45
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a draugr boss, a band above its rung (Draugr Deathlord VI)"
+        },
+        "note": "two levels behind one name: 34 (`EncDraugr05TemplateBoss`) and 45 (`…TemplateBossEbony`). The 1H and 2H bosses take level and name from their rung's template."
+      },
+      {
+        "id": "holgeir",
+        "name": "Holgeir",
+        "records": [
+          {
+            "edid": "DunAnsilvundDraugrWarlord",
+            "formKey": "03D722:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrBoss",
+            "formKey": "042480:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            15,
+            24,
+            34,
+            45,
+            50
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        }
+      },
+      {
+        "id": "curalmil",
+        "name": "Curalmil",
+        "records": [
+          {
+            "edid": "dunForsakenCaveCuralmil",
+            "formKey": "048B55:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrBoss",
+            "formKey": "042480:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            15,
+            24,
+            34,
+            45,
+            50
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        }
+      },
+      {
+        "id": "red-eagle",
+        "name": "Red Eagle",
+        "records": [
+          {
+            "edid": "dunRebelsCairnLvlDraugrBossRedEagle",
+            "formKey": "0C1908:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrBoss",
+            "formKey": "042480:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            15,
+            24,
+            34,
+            45,
+            50
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        }
+      },
+      {
+        "id": "mikrul-gauldurson",
+        "name": "Mikrul Gauldurson",
+        "records": [
+          {
+            "edid": "dunFolgunthur_MikrulGauldurson",
+            "formKey": "0AB6FF:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DraugrRace",
+          "formKey": "000D53:Skyrim.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrBossNoDragonPriest",
+            "formKey": "0DD9D8:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            15,
+            24,
+            34,
+            45
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level.",
+      "Every other boss record (the 1H and 2H bosses, the `LvlDraugrBoss*` wrappers and the CC `ccBGSSSE066_SummonDraugrBossFIX`) carries `Stats` and follows its template or list. The generic Dragon Priest the boss list draws at 60 is on Undead → *Dragon Priests*."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharDraugrBoss",
+          "formKey": "042480:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Overlord 1H"
+          },
+          {
+            "at": 6,
+            "label": "Overlord 2H"
+          },
+          {
+            "at": 13,
+            "label": "Overlord 1H · 2H"
+          },
+          {
+            "at": 21,
+            "label": "Wight Lord 1H · 2H"
+          },
+          {
+            "at": 30,
+            "label": "Scourge Lord 1H · 2H"
+          },
+          {
+            "at": 40,
+            "label": "Death Overlord 1H · 2H"
+          },
+          {
+            "at": 50,
+            "label": "Ebony Death Overlord 1H · 2H"
+          },
+          {
+            "at": 60,
+            "label": "`LCharDraugr05BossWithDragonPriest` 042482"
+          }
+        ],
+        "owner": "`LvlDraugrBossMale` 0B7988 (and `LvlDraugrAmbushBossMale` 0B7989 with Curalmil and Red Eagle, `LvlDraugrAmbushBossFemale` 1019BD) · Holgeir"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugr05BossWithDragonPriest",
+          "formKey": "042482:Skyrim.esm"
+        },
+        "gate": "no gate: every entry is at 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Dragon Priest · Fire · Frost · Shock (×1 each)"
+          },
+          {
+            "at": 1,
+            "label": "Ebony Death Overlord 1H · 2H (×2 each)"
+          }
+        ],
+        "note": "a 1-in-2 chance of a Dragon Priest; the priests are on Undead → *Dragon Priests*.",
+        "owner": "`LCharDraugrBoss` (gate 60)"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrBossNoDragonPriest",
+          "formKey": "0DD9D8:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Overlord"
+          },
+          {
+            "at": 6,
+            "label": "Wight Lord"
+          },
+          {
+            "at": 13,
+            "label": "Scourge Lord"
+          },
+          {
+            "at": 21,
+            "label": "Death Overlord"
+          },
+          {
+            "at": 30,
+            "label": "Ebony Death Overlord"
+          }
+        ],
+        "note": "the boss templates, not the 1H/2H bosses; no priest.",
+        "owner": "`LvlDraugrBossMaleNoDragonPriest` 0DD9D7 (and `LvlDraugrAmbushBossMaleNoDragonPriest` 0DD9D9 with Mikrul)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Holgeir",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Ansilvund02",
+              "formKey": "01F358:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Curalmil",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ForsakenCave02",
+              "formKey": "02FD85:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Red Eagle",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RebelsCairn01",
+              "formKey": "0A9194:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Mikrul Gauldurson",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Folgunthur02",
+              "formKey": "0AB531:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "ReachwaterRock01",
+              "formKey": "015226:Skyrim.esm"
+            },
+            "refText": "×1"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Overlord 1H · Wight Lord 1H (0DDD57 · 0DDD5A)",
+        "weapons": "`LItemDraugr02BossWeapon1HShield100` 0DDD61",
+        "armor": "Ancient Nord Helmet `DraugrHelmet01` 01FD77",
+        "skin": "`SkinDraugrMale*`"
+      },
+      {
+        "records": "Overlord 2H (0DDD58)",
+        "weapons": "`LItemDraugr02Weapon2HMagic` 05BF1E",
+        "armor": "`DraugrHelmet01`",
+        "skin": "`SkinDraugrMale*`"
+      },
+      {
+        "records": "Wight Lord 2H (0DDD59)",
+        "weapons": "`LItemDraugr02BossWeapon2HMagic` 0DDD63",
+        "armor": "`DraugrHelmet01`",
+        "skin": "`SkinDraugrMale*`"
+      },
+      {
+        "records": "Scourge Lord 1H · 2H (0DDD5B · 0DDD5C)",
+        "weapons": "`LItemDraugr04BossWeapon1HShield100` 0DDD72 · `LItemDraugr04BossWeapon2HMagic` 0DDD71",
+        "armor": "`DraugrHelmet02` 01FD7B",
+        "skin": "`SkinDraugrMale*`"
+      },
+      {
+        "records": "Death Overlord 1H · 2H (0DDD5D · 0DDD5E)",
+        "weapons": "`LItemDraugr05Weapon1HShield` 0559F9 · `LItemDraugr05Weapon2H` 023C1E",
+        "armor": "`DraugrHelmet03` 01FD7C",
+        "skin": "`SkinDraugrMale*`"
+      },
+      {
+        "records": "Ebony Death Overlord 1H · 2H (0DDD60 · 0DDD5F)",
+        "weapons": "`LItemDraugr05EWeapon1HShield` 0559FA · `LItemDraugr05EWeapon2H` 024330",
+        "armor": "`DraugrHelmet03`",
+        "skin": "`SkinDraugrMale*`"
+      },
+      {
+        "records": "Boss templates, as `LCharDraugrBossNoDragonPriest` draws them: Overlord · Wight Lord · Scourge Lord",
+        "weapons": "`LItemDraugr02Weapon1H` 0242FC",
+        "armor": "`DraugrHelmet01` (Overlord, Wight Lord) · `DraugrHelmet02` (Scourge Lord)",
+        "skin": "`SkinDraugrMale*`"
+      },
+      {
+        "records": "Boss templates: Death Overlord 34 and 45",
+        "weapons": "`LItemDraugr05Weapon1H` 023C10",
+        "armor": "`DraugrHelmet03`",
+        "skin": "`SkinDraugrMale*`"
+      },
+      {
+        "records": "Holgeir · Curalmil",
+        "weapons": "from the list's bosses (`Inventory` flag)",
+        "armor": "as the list",
+        "skin": "as the list"
+      },
+      {
+        "records": "Red Eagle",
+        "weapons": "Honed Ancient Nord Greatsword of Burning 106252",
+        "armor": "`DraugrHelmet03`",
+        "skin": "`SkinDraugrMale*`"
+      },
+      {
+        "records": "Mikrul Gauldurson",
+        "weapons": "Gauldur Blackblade (`dunLItemFolgunthurMikrulSword` 0F5D1E)",
+        "armor": "`DraugrHelmet03`",
+        "skin": "`SkinDraugrMale*`"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemDraugr02BossWeapon1HShield100",
+          "formKey": "0DDD61:Skyrim.esm"
+        },
+        "rolls": "all of: `LItemDraugr02BossWeapon1HMagic` 0DDD62 · Iron Shield 012EB6 100% (`LItemDraugrShield100` 02D279)"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr02BossWeapon1HMagic",
+          "formKey": "0DDD62:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Ancient Nord Sword · War Axe of Cold ×4 (1) · of Frost and Honed of Cold (6–9) · of Ice and Honed of Frost (13–16) · Honed of Ice (21–24)"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr02Weapon2HMagic",
+          "formKey": "05BF1E:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Ancient Nord Battle Axe · Greatsword of Cold ×8 (1) · of Frost and Honed of Cold ×4 (13) · Honed of Frost and of Ice (21–24)"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr02BossWeapon2HMagic",
+          "formKey": "0DDD63:Skyrim.esm"
+        },
+        "rolls": "Battle Axe · Greatsword of Cold ×4 (1) · of Frost and Honed of Cold (6–9) · of Ice and Honed of Frost (13–16) · Honed of Ice (21–24)"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr04BossWeapon1HShield100",
+          "formKey": "0DDD72:Skyrim.esm"
+        },
+        "rolls": "all of: `LItemDraugr04BossWeapon1HMagic` 0DDD70 (Honed Sword · War Axe of Cold and Sword · War Axe of Frost ×4 (1) · of Ice and Honed of Frost (13–16) · Honed of Ice (21–24)) · Iron Shield 100%"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr04BossWeapon2HMagic",
+          "formKey": "0DDD71:Skyrim.esm"
+        },
+        "rolls": "Honed Battle Axe · Greatsword of Cold and Battle Axe · Greatsword of Frost ×4 (1) · of Ice and Honed of Frost (13–16) · Honed of Ice (21–24)"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr05Weapon1HShield",
+          "formKey": "0559F9:Skyrim.esm"
+        },
+        "rolls": "as on *Common Draugr* → Gear lists, with `LItemDraugr05Weapon2H` 023C1E, `LItemDraugr05EWeapon1HShield` 0559FA and `LItemDraugr05EWeapon2H` 024330"
+      },
+      {
+        "list": {
+          "edid": "dunLItemFolgunthurMikrulSword",
+          "formKey": "0F5D1E:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "rolls": "one Gauldur Blackblade per gate: 0AB702 (1) · 0F5D1A (12) · 0F5D1B (19) · 0F5D1C (27) · 0F5D1D (36)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Ancient Nord, Ebony and enchanted weapons · Gauldur Blackblade · Iron and Ebony shields",
+        "kind": "weapons, shields",
+        "playable": true
+      },
+      {
+        "item": "Ancient Nord Helmet `DraugrHelmet01`–`03` · `SkinDraugrMale*`",
+        "kind": "helmet, body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

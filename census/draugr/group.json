@@ -1,0 +1,97 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "draugr",
+  "title": "Draugr",
+  "order": 2,
+  "parent": "undead",
+  "meta": {
+    "spec": "archetype-tiers.md §3.2",
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The Dragon Priests have their own page under Undead.",
+  "families": [
+    {
+      "id": "common-draugr",
+      "holds": "the six melee and archer rungs Draugr 1 → Deathlord 30 · 40, the Hulking Draugr, and the named draugr that draw from those lists"
+    },
+    {
+      "id": "draugr-warlock",
+      "holds": "the three warlock rungs 6 · 13 · 21, Jyrik Gauldurson, Guardian Torsten and Halldir"
+    },
+    {
+      "id": "draugr-boss",
+      "holds": "Draugr Overlord 7 → Death Overlord 34 · 45, the boss lists, Holgeir, Curalmil, Red Eagle and Mikrul Gauldurson"
+    }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-10-01)",
+    "confidence": "verified",
+    "text": "Every NPC in Skyrim, Update, Dawnguard, HearthFires, Dragonborn and the CC packs whose race is `DraugrRace` 000D53, `DraugrMagicRace` 0F71DC or `DLC2HulkingDraugrRace` 02A6FD:Dragonborn.esm, followed through every template and `LVLN` that points at it. No CC pack adds a draugr of its own. Re-checked 2026-11-12: every draugr-race record that keeps its own level is on a family page or below. Everything found is on a family page except the following."
+  },
+  "filedElsewhere": [
+    {
+      "record": "`DLC1VCSkeleton*` (Dawnguard.esm), `dunLabyrinthianSkeletonMage` 09362B, `dunRannveigSkeletonMage` 104176, `dunpoiSkeletonMageAggro` 10B18A, `dunMS06PotemaSkeleton` 10349B",
+      "what": "skeletons on the draugr melee, archer and warlock lists",
+      "where": "Skeletons → Common Skeletons"
+    },
+    {
+      "record": "`DLC1LvlSoulCairnBoneman*`, `…Wrathman*`, `…Mistman*` (Dawnguard.esm)",
+      "what": "Soul Cairn undead",
+      "where": "Skeletons → Soul Cairn Undead (their summons: Conjured)"
+    },
+    {
+      "record": "`dunForelhostLvlGhost*` 0CD63E–0CD644 · `DunVolunruudBoss` 1019C6",
+      "what": "ghosts (Nord race)",
+      "where": "Ghosts → Common Ghosts · Ghost Bosses"
+    },
+    {
+      "record": "`ccBGSSSE067_Lvl…Wight…` (ccbgssse067-daedinv)",
+      "what": "CC Ayleid Wights",
+      "where": "Ayleid Undead (CC)"
+    },
+    {
+      "record": "`ccRMSSSE001_SkeletonMage` · `…SkeletonWarrior1h2` (ccrmssse001-necrohouse)",
+      "what": "CC skeletons",
+      "where": "Skeletons (never met in game)"
+    },
+    {
+      "record": "`ccBGSSSE066_SummonDraugr*` (ccbgssse066-staves)",
+      "what": "staff summons",
+      "where": "Conjured"
+    },
+    {
+      "record": "`EncDragonPriest` 023A93 · `…Fire` 02025A · `…Frost` 02025B · `…Shock` 02025C",
+      "what": "the generic Dragon Priest, drawn by the draugr boss list at 60",
+      "where": "Undead → *Dragon Priests*"
+    }
+  ],
+  "neverInGame": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "record": "`MG07LabyrinthianDraugrTemplate` 0F71E0",
+        "why": "\"Hallowed Dead\", level 1 (`Stats` from `EncDraugr01Template`): no placed reference, list, quest, form list or spell names it"
+      },
+      {
+        "record": "`dunYngvildDraugr` 0735DA",
+        "why": "nameless draugr, level 1 (`Stats` from `EncDraugr01Melee1HHeadF00` 055937): the same"
+      },
+      {
+        "record": "`EncDraugr05TemplateEbony` 044C5B",
+        "why": "Deathlord template at 40: no NPC takes its level (`EncDraugr05TemplateMissileEbony` uses it without `Stats`)"
+      },
+      {
+        "record": "`LCharDraugrWarlock` 01E7AB",
+        "why": "the both-sexes warlock list: no NPC or list uses it"
+      },
+      {
+        "record": "`E3Demo*` / `e3Demo*` draugr",
+        "why": "E3 demo copies, placed only in the dev cell `E3demoBleakFallsBarrow` 075669"
+      },
+      {
+        "record": "`TreasCorpseDraugrMale` 05AFA6 · `…Female` 04192C",
+        "why": "corpses, not enemies (Japhet takes `Stats` from the male one; see *Common Draugr*)"
+      }
+    ]
+  }
+}
