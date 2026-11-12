@@ -1,0 +1,177 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "dwarven-ballista",
+  "group": "automatons",
+  "title": "Dwarven Ballista",
+  "order": 4,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "dwarven-ballista",
+        "name": "Dwarven Ballista",
+        "records": [
+          {
+            "edid": "DLC2EncDwarvenBallista01",
+            "formKey": "033250:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2DwarvenBallistaRace",
+          "formKey": "02B014:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven ballistas"
+        }
+      },
+      {
+        "id": "dwarven-ballista-guardian",
+        "name": "Dwarven Ballista Guardian",
+        "records": [
+          {
+            "edid": "DLC2EncDwarvenBallista02",
+            "formKey": "033251:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2DwarvenBallistaRace",
+          "formKey": "02B014:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 28
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven ballistas"
+        }
+      },
+      {
+        "id": "dwarven-ballista-master",
+        "name": "Dwarven Ballista Master",
+        "records": [
+          {
+            "edid": "DLC2EncDwarvenBallista03",
+            "formKey": "033252:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2DwarvenBallistaRace",
+          "formKey": "02B014:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 33
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven ballistas"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `DLC2EncDwarvenBallista02` 033251:Dragonborn.esm does not change the Ballista and the Master (`01`, `03`, rows above, 20 and 33): they use 033251 as their template but not for `Stats`.",
+      "The rows: no other record keeps its own level.",
+      "Every other ballista record (`DLC2LvlDwarvenBallista`, `DLC2LvlDwarvenBallistaAmbush` and its hold-position copy, the Kagrumez `Fight1` · `Fight3` wrappers) carries `Stats` and follows its list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC2LCharDwarvenBallista",
+          "formKey": "033253:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Dwarven Ballista"
+          },
+          {
+            "at": 28,
+            "label": "Dwarven Ballista Guardian"
+          },
+          {
+            "at": 33,
+            "label": "Dwarven Ballista Master"
+          }
+        ],
+        "owner": "`DLC2LvlDwarvenBallista` 033254 (×4: `DLC2Fahlbtharz01` 0142FA ×3, `DLC2Fahlbtharz03` 01DD04 ×1; CC ×2 in `ccTWBSSE001DwarvenPuzzleDungeon01` 000A98:cctwbsse001-puzzledungeon.esm) and the wrappers on it: `DLC2LvlDwarvenBallistaAmbush` 033255 (×5: `DLC2Nchardak01` 0142F1 ×2, `DLC2Fahlbtharz04` 01DD03 ×2, `DLC2Nchardak03` 0173B2 ×1) → `DLC2LvlDwarvenBallistaAmbush_HoldPositionLinkCustom02256` 033BE1 (×2, `DLC2Nchardak02` 0173B3) · `DLC2KagrumezLvlDwarvenBallistaFight1` 0260A0 (×3) · `…Fight3` 034D1D (×2), both in `DLC2Kagrumez01` 0142F9; all Dragonborn.esm"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Dwarven Ballista",
+        "weapons": "`DLC2crDwarvenBallistaBow01` 0339A3 · `DLC2DwarvenBallistaBolt` 0339A1",
+        "armor": "`FXDwarvenSphereOutfit` 0F9071",
+        "skin": "`SkinDwarvenBallistaCenturion` 02B017:Dragonborn.esm"
+      },
+      {
+        "records": "Dwarven Ballista Guardian",
+        "weapons": "`DLC2crDwarvenBallistaBow02` 0339A2 · `DLC2DwarvenBallistaBolt`",
+        "armor": "`FXDwarvenSphereOutfit`",
+        "skin": "`SkinDwarvenBallistaCenturion`"
+      },
+      {
+        "records": "Dwarven Ballista Master",
+        "weapons": "`DLC2crDwarvenBallistaBow03` 0339A4 · `DLC2DwarvenBallistaBolt`",
+        "armor": "`FXDwarvenSphereOutfit`",
+        "skin": "`SkinDwarvenBallistaCenturion`"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "FXDwarvenSphereOutfit",
+          "formKey": "0F9071:Skyrim.esm"
+        },
+        "rolls": "`FXDwarvenSphereCenturion` 0F9070"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Dwarven Ballista (the three bows)",
+        "kind": "bow",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Ballista Bolt `DLC2DwarvenBallistaBolt`",
+        "kind": "bolt",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`FXDwarvenSphereCenturion` · skin",
+        "kind": "effect armour, body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

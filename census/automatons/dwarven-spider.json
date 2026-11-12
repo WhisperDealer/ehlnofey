@@ -1,0 +1,434 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "dwarven-spider",
+  "group": "automatons",
+  "title": "Dwarven Spider",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "dwarven-spider-worker",
+        "name": "Dwarven Spider Worker",
+        "records": [
+          {
+            "edid": "EncDwarvenSpider01",
+            "formKey": "10EC86:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSpiderRace",
+          "formKey": "0131F3:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven spiders"
+        }
+      },
+      {
+        "id": "dwarven-spider",
+        "name": "Dwarven Spider",
+        "records": [
+          {
+            "edid": "EncDwarvenSpider02",
+            "formKey": "023A98:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSpiderRace",
+          "formKey": "0131F3:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven spiders"
+        }
+      },
+      {
+        "id": "dwarven-spider-guardian",
+        "name": "Dwarven Spider Guardian",
+        "records": [
+          {
+            "edid": "EncDwarvenSpider03",
+            "formKey": "10EC87:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSpiderRace",
+          "formKey": "0131F3:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 16
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven spiders"
+        }
+      },
+      {
+        "id": "warped-dwarven-spider",
+        "name": "Warped Dwarven Spider",
+        "records": [
+          {
+            "edid": "DLC1LD_EncDwarvenSpider00",
+            "formKey": "01534B:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSpiderRace",
+          "formKey": "0131F3:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven spiders"
+        },
+        "note": "Bthalft's rung-01 spider; its template `EncDwarvenSpider01` gives it no `Stats`."
+      },
+      {
+        "id": "aicantars-spider",
+        "name": "Aicantar's Spider",
+        "records": [
+          {
+            "edid": "dunMarkarthWizard_Spider",
+            "formKey": "05CF36:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSpiderRace",
+          "formKey": "0131F3:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 12,
+          "from": {
+            "edid": "EncDwarvenSpiderAmbush",
+            "formKey": "07DE80:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven spiders"
+        },
+        "note": "takes `Stats` from `EncDwarvenSpiderAmbush`, which takes them from `EncDwarvenSpider02`."
+      },
+      {
+        "id": "frosted-dwarven-spider",
+        "name": "Frosted Dwarven Spider",
+        "records": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_SpiderFrost",
+            "formKey": "0008EA:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSpiderRace",
+          "formKey": "0131F3:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven spiders"
+        },
+        "note": "Forgotten Seasons (CC), no template."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncDwarvenSpider02` 023A98 also needs `ccAARSSE001DwarvenMaintenanceSentinel` 00080C:ccafdsse001-dwesanctuary.esm (a Dwemer Sanctuary player-home construct, level 16; on *Automatons*): it uses 023A98 as its template but not for `Stats`. The Worker and the Guardian (rows above) do the same and keep their 6 and 16.",
+      "Changing `EncDwarvenSpider01` 10EC86 does not change the Warped Dwarven Spider (`DLC1LD_EncDwarvenSpider00`, a row above, level 5): it uses 10EC86 as its template but not for `Stats`.",
+      "The other rows: no other record keeps its own level.",
+      "`DLCDwarvenPuzzleDungeon_SpiderSummer` 0008F9 (Repair Spider, 12) and `DLCDwarvenPuzzleDungeon_SpiderBossFAKE` 0008FD (the Sky Orchestrator scene copy, 75) (cctwbsse001-puzzledungeon.esm) are Dwarven Spiders with no template; both are on *Automatons*. The Sky Orchestrator itself is on *Unique Automatons*.",
+      "Every other spider record (`EncDwarvenSpiderAmbush`, Aicantar's Spider, `DLC1LD_EncDwarvenSpider01`–`03`, the Aetherial Staff summons, the Kagrumez wrappers and pet, `DLCDwarvenPuzzleDungeon_RepairSpider`, `ccAFDSSE001_EncDwarvenSpiderAmbush`, `TreasCorpseDwarvenSpider` and every `Lvl*` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharDwarvenSpider",
+          "formKey": "10EC90:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Dwarven Spider Worker"
+          },
+          {
+            "at": 16,
+            "label": "Dwarven Spider"
+          },
+          {
+            "at": 22,
+            "label": "Dwarven Spider Guardian"
+          }
+        ],
+        "owner": "`LvlDwarvenSpider` 10EC91 (placed ×24; CC ×8 in Forgotten Seasons) · `LvlDwarvenSpiderAmbush` 10EE4D (×88; CC ×17 in Forgotten Seasons and ×2 in the Tamriel persistent cell, aliases `Spider1Ambush1`/`2` of `ccBGSSSE001_Misc_Dwarven` 000AD6:ccbgssse001-fish.esm) · `LvlDwarvenSpiderUseWeapon` 0A218F (×14) · the Kagrumez wrappers `DLC2KagrumezLvlDwarvenSpiderFight2` 027518 (×5), `…Fight3` 027527 (×2) and `DLC2KagrumezLvlSpiderAmbushFight1` 027502 (×3, through `LvlDwarvenSpiderAmbush`), all in `DLC2Kagrumez01` 0142F9:Dragonborn.esm"
+      },
+      {
+        "list": {
+          "edid": "LCharDwarvenAutomaton",
+          "formKey": "01E783:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Dwarven Spider Worker"
+          },
+          {
+            "at": 16,
+            "label": "Dwarven Spider"
+          },
+          {
+            "at": 20,
+            "label": "Dwarven Sphere"
+          },
+          {
+            "at": 22,
+            "label": "Dwarven Spider Guardian"
+          },
+          {
+            "at": 26,
+            "label": "Dwarven Sphere Guardian"
+          },
+          {
+            "at": 32,
+            "label": "Dwarven Sphere Master"
+          },
+          {
+            "at": 38,
+            "label": "Dwarven Centurion Master"
+          }
+        ],
+        "owner": "`LvlDwarvenAutomaton` 10EC93 (×1 in `Raldbthar02` 078124, added by Dawnguard, initially disabled; CC ×5 in Forgotten Seasons) · `LvlDweAutomaton` 01E7B0 (×1, `Mzulft03` 054B6F)"
+      },
+      {
+        "list": {
+          "edid": "DLC1LD_LCharDwarvenSpider",
+          "formKey": "01534E:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Warped Dwarven Spider (5)"
+          },
+          {
+            "at": 15,
+            "label": "Dwarven Spider Worker (`DLC1LD_EncDwarvenSpider01`)"
+          },
+          {
+            "at": 25,
+            "label": "Dwarven Spider (`…02`)"
+          },
+          {
+            "at": 35,
+            "label": "Dwarven Spider Guardian (`…03`)"
+          }
+        ],
+        "owner": "`DLC1LD_LvlDwarvenSpiderAmbush` 015346:Dawnguard.esm (×10 in `DLC1Bthalft01` 005734:Dawnguard.esm, all initially disabled; ref 014BD8 is a property of `DLC1LD_Bthalft` 00CFFF)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Aicantar's Spider",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MarkarthWizardsQuarters02",
+              "formKey": "036A72:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "TG06Spider",
+              "formKey": "05CF33:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "property `Spider` of `TG06_dunMarkarthWizardsQuartersQST` 087105"
+      },
+      {
+        "name": "Frosted Dwarven Spider",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeonSeason01",
+              "formKey": "001B73:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×8"
+          }
+        ]
+      },
+      {
+        "name": "Dwarven Spider (by hand)",
+        "base": [
+          {
+            "edid": "EncDwarvenSpider02",
+            "formKey": "023A98:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Avanchnzel02",
+              "formKey": "037B76:Skyrim.esm"
+            },
+            "refText": "×11"
+          },
+          {
+            "cell": {
+              "edid": "Alftand01",
+              "formKey": "0152C3:Skyrim.esm"
+            },
+            "refText": "×7"
+          },
+          {
+            "cell": {
+              "edid": "Mzinchaleft02",
+              "formKey": "0BE46A:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "Irkngthand01",
+              "formKey": "052CB5:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "Raldbthar01",
+              "formKey": "015257:Skyrim.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "edid": "Mzinchaleft01",
+              "formKey": "01523D:Skyrim.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeonSeason04",
+              "formKey": "0030B5:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×2",
+            "note": "CC"
+          }
+        ]
+      },
+      {
+        "name": "Dwarven Spider (by hand)",
+        "base": [
+          {
+            "edid": "EncDwarvenSpiderAmbush",
+            "formKey": "07DE80:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Raldbthar01",
+              "formKey": "015257:Skyrim.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "edid": "CCBGSSSE008Vault",
+              "formKey": "000823:ccbgssse008-wraithguard.esl"
+            },
+            "refText": "×2",
+            "note": "CC"
+          }
+        ]
+      },
+      {
+        "name": "Dwarven Spider Worker (by hand)",
+        "base": [
+          {
+            "edid": "EncDwarvenSpider01",
+            "formKey": "10EC86:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1Bthalft01",
+              "formKey": "005734:Dawnguard.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "edid": "DLC2Fahlbtharz02",
+              "formKey": "01D502:Dragonborn.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeon01",
+              "formKey": "000A98:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×9",
+            "note": "CC"
+          }
+        ]
+      },
+      {
+        "name": "Dwarven Spider Guardian (by hand)",
+        "base": [
+          {
+            "edid": "EncDwarvenSpider03",
+            "formKey": "10EC87:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeonSeason04",
+              "formKey": "0030B5:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×1",
+            "note": "CC only"
+          }
+        ]
+      }
+    ]
+  }
+}

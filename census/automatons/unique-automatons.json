@@ -1,0 +1,186 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "unique-automatons",
+  "group": "automatons",
+  "title": "Unique Automatons",
+  "order": 5,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "the-forgemaster",
+        "name": "The Forgemaster",
+        "records": [
+          {
+            "edid": "DLC1LD_Forgemaster",
+            "formKey": "015401:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1LD_ForgemasterRace",
+          "formKey": "015C34:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "DLC1LD_LCharForgemaster",
+            "formKey": "015C49:Dawnguard.esm"
+          },
+          "rungs": [
+            24,
+            30,
+            36
+          ]
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "role: a unique automaton boss, a band above the centurions"
+        },
+        "note": "the list draws `DLC1LD_Forgemaster01` 015C45 (24) below player level 26, `…02` 015C47 (30) from 26 and `…03` 015C48 (PC × 1, 36–60) from 32 (highest gate only); the placed wrapper takes `Stats` and `Traits` only, so it keeps its own name."
+      },
+      {
+        "id": "the-messenger",
+        "name": "The Messenger",
+        "records": [
+          {
+            "edid": "ccBGSSSE008_CenturionBoss",
+            "formKey": "000822:ccbgssse008-wraithguard.esl"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenCenturionRace",
+          "formKey": "0131F1:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 40
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "role: a unique automaton boss, a band above the centurions"
+        },
+        "note": "Wraithguard (CC), no template."
+      },
+      {
+        "id": "the-sky-orchestrator",
+        "name": "The Sky Orchestrator",
+        "records": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_SpiderBoss",
+            "formKey": "0008E5:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSpiderRace",
+          "formKey": "0131F3:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.5,
+          "min": 0,
+          "max": 75
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "role: a unique automaton boss, a band above the centurions"
+        },
+        "note": "Forgotten Seasons (CC), no template."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing the Forgemaster means changing `DLC1LD_Forgemaster01` 015C45 (24), `…02` 015C47 (30) and `…03` 015C48 (PcLevelMult 1 (36–60)) (Dawnguard.esm), the three records its list draws. Each uses a centurion rung (`EncDwarvenCenturion01`, `02`, `03`) as its template but not for `Stats`, so they keep their levels when the centurions change (see *Dwarven Centurion*).",
+      "`ccBGSSSE008_CenturionBoss`, `DLCDwarvenPuzzleDungeon_SpiderBoss`: no other record keeps its own level.",
+      "The Sky Orchestrator's scene copy `DLCDwarvenPuzzleDungeon_SpiderBossFAKE` 0008FD (75) and the unplaced Messenger `ccBGSSSE008_Boss` 000821:ccbgssse008-wraithguard.esl (36) have no template; both are on *Automatons*."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC1LD_LCharForgemaster",
+          "formKey": "015C49:Dawnguard.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DLC1LD_Forgemaster01` 015C45 (24)"
+          },
+          {
+            "at": 26,
+            "label": "`…02` 015C47 (30)"
+          },
+          {
+            "at": 32,
+            "label": "`…03` 015C48 (PC × 1, 36–60)"
+          }
+        ],
+        "owner": "The Forgemaster (`DLC1LD_Forgemaster` 015401:Dawnguard.esm)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "The Forgemaster",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1Bthalft01",
+              "formKey": "005734:Dawnguard.esm"
+            },
+            "ref": {
+              "edid": "ForgemasterRef",
+              "formKey": "015C5F:Dawnguard.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias `Forgemaster` of `DLC1LD_Bthalft` 00CFFF and of `DLC1LD` 005817"
+      },
+      {
+        "name": "The Messenger",
+        "locations": [
+          {
+            "cell": {
+              "edid": "CCBGSSSE008Vault",
+              "formKey": "000823:ccbgssse008-wraithguard.esl"
+            },
+            "ref": {
+              "formKey": "00083C:ccbgssse008-wraithguard.esl"
+            },
+            "disabled": true
+          }
+        ],
+        "note": "named by the activator `ccBGSSSE008_ReleaseValve` 000813"
+      },
+      {
+        "name": "The Sky Orchestrator",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeon03",
+              "formKey": "000916:cctwbsse001-puzzledungeon.esm"
+            },
+            "ref": {
+              "formKey": "000930:cctwbsse001-puzzledungeon.esm"
+            }
+          }
+        ],
+        "quest": "alias `DLCDwarvenPuzzleDungeonWeatherWitch` of `DLCDwarvenPuzzleDungeonQuest01` 0038D9; named by the activator `DLCDwarvenPuzzleDungeonBossGenerator` 000860"
+      }
+    ]
+  }
+}

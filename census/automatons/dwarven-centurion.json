@@ -1,0 +1,300 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "dwarven-centurion",
+  "group": "automatons",
+  "title": "Dwarven Centurion",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "dwarven-centurion",
+        "name": "Dwarven Centurion",
+        "records": [
+          {
+            "edid": "EncDwarvenCenturion01",
+            "formKey": "10F9B9:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenCenturionRace",
+          "formKey": "0131F1:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 24
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven centurions"
+        }
+      },
+      {
+        "id": "dwarven-centurion-guardian",
+        "name": "Dwarven Centurion Guardian",
+        "records": [
+          {
+            "edid": "EncDwarvenCenturion02",
+            "formKey": "10E753:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenCenturionRace",
+          "formKey": "0131F1:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 30
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven centurions"
+        }
+      },
+      {
+        "id": "dwarven-centurion-master",
+        "name": "Dwarven Centurion Master",
+        "records": [
+          {
+            "edid": "EncDwarvenCenturion03",
+            "formKey": "023A96:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenCenturionRace",
+          "formKey": "0131F1:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 36
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven centurions"
+        }
+      },
+      {
+        "id": "harvest-dwarven-centurion",
+        "name": "Harvest Dwarven Centurion",
+        "records": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_CenturionAutumn",
+            "formKey": "0008E8:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenCenturionRace",
+          "formKey": "0131F1:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 36
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven centurions"
+        },
+        "note": "Forgotten Seasons (CC), no template."
+      },
+      {
+        "id": "frosted-dwarven-centurion",
+        "name": "Frosted Dwarven Centurion",
+        "records": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_CenturionFrost",
+            "formKey": "0008EC:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenCenturionRace",
+          "formKey": "0131F1:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 24
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven centurions"
+        },
+        "note": "Forgotten Seasons (CC), no template."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncDwarvenCenturion01` 10F9B9 also needs `DLC1LD_Forgemaster01` 015C45:Dawnguard.esm (the Forgemaster's first form, level 24; on *Unique Automatons*): it uses 10F9B9 as its template but not for `Stats`.",
+      "Changing `EncDwarvenCenturion02` 10E753 also needs `DLC1LD_Forgemaster02` 015C47:Dawnguard.esm (level 30; on *Unique Automatons*): same pattern.",
+      "Changing `EncDwarvenCenturion03` 023A96 also needs `DLC1LD_Forgemaster03` 015C48:Dawnguard.esm (PcLevelMult 1 (36–60); on *Unique Automatons*): same pattern.",
+      "`DLCDwarvenPuzzleDungeon_CenturionAutumn`, `DLCDwarvenPuzzleDungeon_CenturionFrost`: no other record keeps its own level.",
+      "`MS04EncDwarvenCenturionVision` 0C3CB9 (38) and `ccBGSSSE008_Boss` 000821:ccbgssse008-wraithguard.esl (36) are Dwarven Centurions with no template; both are on *Automatons*. The Messenger (`ccBGSSSE008_CenturionBoss`) is on *Unique Automatons*.",
+      "Every other centurion record (`EncDwarvenCenturion01Ambush` · `02Ambush` · `03Ambush`, `dunShimmermistCenturion`, `dunIrkngthandEncDwarvenCenturionAmbush`, `DLC2dunNchardakCenturionBoss`, `DLC2dunNchardakWorkshopEndCenturion`, `DLC2KagrumezLvlDwarvenCenturionFight3`, `TreasCorpseDwarvenCenturion` and every `Lvl*` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharDwarvenCenturion",
+          "formKey": "10FCE5:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Dwarven Centurion"
+          },
+          {
+            "at": 26,
+            "label": "Dwarven Centurion Guardian"
+          },
+          {
+            "at": 32,
+            "label": "Dwarven Centurion Master"
+          }
+        ],
+        "owner": "`LvlDwarvenCenturion` 10FCE6 (×2, both initially disabled: `NchuandZel02` 055215 ref `dunNZSteam` 0A1A31, `Bthardamz03` 030442) · `LvlDwarvenCenturionAmbush` 10FCE7 (×8; CC ×3 in Forgotten Seasons) and the wrappers on it: `dunShimmermistCenturion` 09B94B (×4: `ShimmermistCave02` 01FC66 and Blackreach `BlackreachOverpass` 0237DF · `BlackreachWeatherTest2` 0237D2 · `POIBlackreach07` 01EE6D) · `dunIrkngthandEncDwarvenCenturionAmbush` 10C6FE (×2: `Irkngthand02` 07614C, `Raldbthar02` 078124) · `DLC2dunNchardakCenturionBoss` 01D4EE:Dragonborn.esm (×1, `DLC2Nchardak01` 0142F1, ref 017514, property of `DLC2dunNchardakTracking` 0173BE)"
+      },
+      {
+        "list": {
+          "edid": "LCharDwarvenAutomaton",
+          "formKey": "01E783:Skyrim.esm"
+        },
+        "seeFamily": "*Dwarven Spider*",
+        "note": "Master (38), above the spiders and spheres",
+        "owner": "`LvlDwarvenAutomaton` 10EC93 · `LvlDweAutomaton` 01E7B0"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Harvest Dwarven Centurion",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeonSeason04",
+              "formKey": "0030B5:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×3"
+          }
+        ]
+      },
+      {
+        "name": "Frosted Dwarven Centurion",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeonSeason01",
+              "formKey": "001B73:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      },
+      {
+        "name": "Dwarven Centurion (by hand)",
+        "base": [
+          {
+            "edid": "EncDwarvenCenturion01",
+            "formKey": "10F9B9:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2Nchardak02",
+              "formKey": "0173B3:Dragonborn.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "Mzinchaleft02",
+              "formKey": "0BE46A:Skyrim.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeon01",
+              "formKey": "000A98:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×2",
+            "note": "CC"
+          }
+        ]
+      },
+      {
+        "name": "Dwarven Centurion (by hand)",
+        "base": [
+          {
+            "edid": "EncDwarvenCenturion01Ambush",
+            "formKey": "10F9BB:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeonSeason02",
+              "formKey": "00215E:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×1",
+            "note": "CC only"
+          }
+        ]
+      },
+      {
+        "name": "Dwarven Centurion Master (by hand)",
+        "base": [
+          {
+            "edid": "EncDwarvenCenturion03",
+            "formKey": "023A96:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2Kagrumez01",
+              "formKey": "0142F9:Dragonborn.esm"
+            },
+            "refText": "×1"
+          }
+        ]
+      },
+      {
+        "name": "Dwarven Centurion Master (by hand)",
+        "base": [
+          {
+            "edid": "EncDwarvenCenturion03Ambush",
+            "formKey": "087102:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccAFDSSE001Interior03Manufactory",
+              "formKey": "00080D:ccafdsse001-dwesanctuary.esm"
+            },
+            "refText": "×1",
+            "note": "CC only"
+          }
+        ]
+      }
+    ]
+  }
+}

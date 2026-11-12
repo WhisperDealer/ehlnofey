@@ -115,7 +115,7 @@ rules).
   page) plus one `<family>.json` per family page; `census/bands.json` is the home page. The schema is
   `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
   everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons, Daedra** (all 13 pages, the
-  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05), Dragon Priests (one page, a family of `census/undead/`, 2026-11-12), Draugr (all 4 pages, `census/draugr/`), Skeletons (all 5 pages, `census/skeletons/`), Ghosts (all 4 pages, `census/ghosts/`) and Ash (all 4 pages, `census/ash/`), sub-groups of Undead, and the CC Zombies and Ayleid Undead (families of `census/undead/`): **Undead is fully migrated** (2026-11-12). Falmer (all 5 pages, `census/falmer/`, 2026-11-12).
+  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05), Dragon Priests (one page, a family of `census/undead/`, 2026-11-12), Draugr (all 4 pages, `census/draugr/`), Skeletons (all 5 pages, `census/skeletons/`), Ghosts (all 4 pages, `census/ghosts/`) and Ash (all 4 pages, `census/ash/`), sub-groups of Undead, and the CC Zombies and Ayleid Undead (families of `census/undead/`): **Undead is fully migrated** (2026-11-12). Falmer (all 5 pages, `census/falmer/`, 2026-11-12). Automatons (all 6 pages, `census/automatons/`, 2026-11-12).
   Every other group stays Confluence-first until it is migrated.
 - **A sub-group is its own census folder with `parent`** in its `group.json` (`census/vampires/` has
   `"parent": "undead"`); URLs stay flat (`/vampires/common-vampires/`), the parent's page lists its
@@ -243,7 +243,7 @@ rules).
   Champion and Klija); the hold guards are on Guards, Thalmor (WD-81, under Factions: *Common Thalmor* (the
   soldier, archer and wizard ladders, Justiciars, Northwatch, the Embassy, Solstheim, CC soldiers),
   *Thalmor Boss* (the boss wizard ladder, the Northwatch Interrogator, Agent Lorcalin), *Named Thalmor*
-  (Captain Valmir included: an undercover agent, by the user's call)), Automatons (WD-80: *Dwarven Spider*, *Dwarven Sphere*, *Dwarven
+  (Captain Valmir included: an undercover agent, by the user's call)), Automatons (WD-80, **migrated to `census/automatons/`, so edit the JSON, not Confluence**: *Dwarven Spider*, *Dwarven Sphere*, *Dwarven
   Centurion*, *Dwarven Ballista*, *Unique Automatons* (the Forgemaster, CC The Messenger and The Sky
   Orchestrator); the Aetherial Staff summons stay on Conjured, the CC Sanctuary constructs are
   `PlayerFaction` allies), World Creatures (WD-65; one level deeper, under

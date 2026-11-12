@@ -1,0 +1,117 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "automatons",
+  "title": "Automatons",
+  "order": 6,
+  "meta": {
+    "spec": "archetype-tiers.md §3.3",
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The Dwemer machines: spiders, spheres, centurions, ballistas and the unique automatons, from the base game, the DLC and the Creation Club.",
+  "families": [
+    {
+      "id": "dwarven-spider",
+      "holds": "the three-rung spider ladder (6 · 12 · 16), Bthalft's Warped spiders, Aicantar's Spider, the Forgotten Seasons Frosted spiders"
+    },
+    {
+      "id": "dwarven-sphere",
+      "holds": "the three-rung sphere ladder (16 · 24 · 30), Bthalft's Warped spheres, Kagrumez's Tempered Spheres, Sinderion's sphere"
+    },
+    {
+      "id": "dwarven-centurion",
+      "holds": "the three-rung centurion ladder (24 · 30 · 36), the Nchardak, Shimmermist and Irkngthand centurions, the Forgotten Seasons Harvest and Frosted centurions"
+    },
+    {
+      "id": "dwarven-ballista",
+      "holds": "the Dragonborn ballista ladder (20 · 28 · 33)"
+    },
+    {
+      "id": "unique-automatons",
+      "holds": "the Forgemaster, The Messenger (Wraithguard), The Sky Orchestrator (Forgotten Seasons)"
+    }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-10-02)",
+    "confidence": "verified",
+    "text": "Every NPC in Skyrim, Update, Dawnguard, HearthFires, Dragonborn and the 74 CC packs whose race is `DwarvenSpiderRace` 0131F3, `DwarvenSphereRace` 0131F2, `DwarvenCenturionRace` 0131F1, `DLC1LD_ForgemasterRace` 015C34:Dawnguard.esm, `DLC2DwarvenBallistaRace` 02B014:Dragonborn.esm, `ccAARSSE001DwarvenSpherePetRace` 000800 · `…SpiderPetRace` 000802 (ccafdsse001-dwesanctuary) or `ccBGSSSE010_PetDwarvenMudcrabRace` 000800 (ccbgssse010-petdwarvenarmoredmudcrab), followed through every template and `LVLN`; then every placed reference of them in every cell and worldspace, and every other record that names one of them or one of their placed refs. No quest or script adds to an automaton list at runtime. Placement counts leave out the dev cells `WarehouseAmbushes` 07E00F and `DLC2WarehouseAmbushes` 027333:Dragonborn.esm. Re-checked 2026-11-12: levels, template flags and lists. Everything found is on a family page except the following."
+  },
+  "filedElsewhere": [
+    {
+      "record": "`DLC1LD_EncDwarvenSpiderSummon01` · `…02` · `DLC1LD_EncDwarvenSphereSummon01` · `…02` and the three `…Mishap` copies (Dawnguard.esm)",
+      "what": "Aetherial Staff summons",
+      "where": "Conjured → Summoned Creatures → *Constructs & Dragons*"
+    },
+    {
+      "record": "`ccBGSSSE010_PetDwarvenMudcrab` 000D62:ccbgssse010-petdwarvenarmoredmudcrab.esl",
+      "what": "Dwarven Armored Mudcrab (pet)",
+      "where": "World Creatures → Aquatic → *Mudcrab*"
+    },
+    {
+      "record": "`DLCDwarvenPuzzleDungeon_DwarvenHorse` 0008FA:cctwbsse001-puzzledungeon.esm",
+      "what": "Dwarven Horse (50), a mount",
+      "where": "World Creatures → Mounts → *Horse*"
+    },
+    {
+      "record": "`ccASVSSE001_DwarvenSpectre` 00083C:ccasvsse001-almsivi.esm",
+      "what": "a Dwemer ghost",
+      "where": "Undead → Ghosts → *Common Ghosts*"
+    }
+  ],
+  "neverMet": [
+    {
+      "record": "`DLC2KagrumezDwarvenSpiderPet` 031D94 · `DLC2KagrumezDwarvenSpherePet` 031D95 (Dragonborn.esm)",
+      "what": "Steadfast Dwarven Spider · Steadfast Dwarven Sphere (levels from the spider and sphere lists)",
+      "why": "followers granted by `DLC2KagrumezQST` 03166D"
+    },
+    {
+      "record": "`ccAARSSE001DwarvenSpiderManufactoryConstruct` 00080B · `ccAFDSSE001_EncDwarvenSpiderAmbush` 000841 · `ccAFDSSE001_LvlDwarvenSphereAmbushOverseer` 08010B · `ccAARSSE001DwarvenMaintenanceSentinel` 00080C (ccafdsse001-dwesanctuary.esm)",
+      "what": "Dwarven Spider (12) · Dwarven Spider Renovator (12) · Dwarven Sphere Overseer (24, from `EncDwarvenSphere02`) · Dwarven Sphere Overseer (16)",
+      "why": "all in `PlayerFaction`: the player home's constructs, run by `ccAARSSE001ManufactoryControlQuest` 000A39"
+    },
+    {
+      "record": "`DLCDwarvenPuzzleDungeon_RepairSpider` 0008E7 · `…_SpiderSummer` 0008F9 (cctwbsse001-puzzledungeon.esm)",
+      "what": "Repair Spider (12)",
+      "why": "aggression None, no faction; 0008E7 is the escort alias of `DLCDwarvenPuzzleDungeonQuest01` 0038D9"
+    },
+    {
+      "record": "`DLCDwarvenPuzzleDungeon_SpiderBossFAKE` 0008FD:cctwbsse001-puzzledungeon.esm",
+      "what": "The Sky Orchestrator (75)",
+      "why": "`Essential`, ghost: the scene copy in `ccTWBSSE001DwarvenPuzzleDungeon02` 001703"
+    },
+    {
+      "record": "`MS04VisionDwarvenSphere` 0C272D · `MS04EncDwarvenCenturionVision` 0C3CB9",
+      "what": "Dwarven Sphere (26) · Dwarven Centurion (38)",
+      "why": "invulnerable ghosts of the MS04 visions in `Avanchnzel01` 0152BE and `Avanchnzel03` 04C6DD"
+    },
+    {
+      "record": "`TreasCorpseDwarvenSpider` 01B14F · `…Sphere` 01B14D · `…Centurion` 01B14E",
+      "what": "wrecks",
+      "why": "corpses"
+    }
+  ],
+  "neverInGame": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "record": "`TestCenturionBoss` 009D42:Dawnguard.esm · `TestMeleeAndMissile` 01832C:Dragonborn.esm (\"Test Guardian\") · `TestDwarvenBallista` 02B019:Dragonborn.esm",
+        "why": "test records: no placed reference, list or quest"
+      },
+      {
+        "record": "`EncDwarvenSphereMalfunction` 10E752",
+        "why": "\"Malfunctioning Dwarven Sphere\", 16: no placed reference, list, quest or script names it"
+      },
+      {
+        "record": "`ccBGSSSE008_Boss` 000821:ccbgssse008-wraithguard.esl",
+        "why": "\"The Messenger\", 36: the placed Messenger is `ccBGSSSE008_CenturionBoss`"
+      },
+      {
+        "record": "`DLCDwarvenPuzzleDungeon_SphereFrost` 000904:cctwbsse001-puzzledungeon.esm",
+        "why": "\"Frosted Dwarven Sphere\", 24: not placed, named by nothing"
+      },
+      {
+        "record": "`DLC2KagrumezLvlSpiderAmbushFight2` 02751C · `DLC2KagrumezLvlDwarvenCenturionFight3` 027520 · `DLC2dunNchardakWorkshopEndCenturion` 02BD2B (Dragonborn.esm)",
+        "why": "not placed (027520 only in the QA list `DLC2QANPCList04` 02A8A6)"
+      }
+    ]
+  }
+}

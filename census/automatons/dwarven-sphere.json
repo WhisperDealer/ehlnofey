@@ -1,0 +1,349 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "dwarven-sphere",
+  "group": "automatons",
+  "title": "Dwarven Sphere",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "dwarven-sphere",
+        "name": "Dwarven Sphere",
+        "records": [
+          {
+            "edid": "EncDwarvenSphere01",
+            "formKey": "10EC89:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSphereRace",
+          "formKey": "0131F2:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 16
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven spheres"
+        }
+      },
+      {
+        "id": "dwarven-sphere-guardian",
+        "name": "Dwarven Sphere Guardian",
+        "records": [
+          {
+            "edid": "EncDwarvenSphere02",
+            "formKey": "023A97:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSphereRace",
+          "formKey": "0131F2:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 24
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven spheres"
+        }
+      },
+      {
+        "id": "dwarven-sphere-master",
+        "name": "Dwarven Sphere Master",
+        "records": [
+          {
+            "edid": "EncDwarvenSphere03",
+            "formKey": "10EC8E:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSphereRace",
+          "formKey": "0131F2:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 30
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven spheres"
+        }
+      },
+      {
+        "id": "warped-dwarven-sphere",
+        "name": "Warped Dwarven Sphere",
+        "records": [
+          {
+            "edid": "DLC1LD_EncDwarvenSphere00",
+            "formKey": "015343:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSphereRace",
+          "formKey": "0131F2:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 7
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven spheres"
+        },
+        "note": "Bthalft's rung-01 sphere; its template `EncDwarvenSphere01` gives it no `Stats`."
+      },
+      {
+        "id": "tempered-sphere",
+        "name": "Tempered Sphere",
+        "records": [
+          {
+            "edid": "DLC2KagrumezLvlDwarvenSphereFight2",
+            "formKey": "026638:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2KagrumezLvlDwarvenSphereFight3",
+            "formKey": "026637:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSphereRace",
+          "formKey": "0131F2:Skyrim.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDwarvenSphere",
+            "formKey": "10EC8F:Skyrim.esm"
+          },
+          "rungs": [
+            16,
+            24,
+            30
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven spheres"
+        },
+        "note": "the Kagrumez wrappers name their sphere Tempered Sphere (no `BaseData`); Fight3 draws the list through `LvlDwarvenSphereAmbush`."
+      },
+      {
+        "id": "sinderions-sphere",
+        "name": "Dwarven Sphere",
+        "encounter": "Sinderion's Field Laboratory",
+        "records": [
+          {
+            "edid": "POIBlackreachSinderionDwarvenSphere",
+            "formKey": "0EED25:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DwarvenSphereRace",
+          "formKey": "0131F2:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 26
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dwarven spheres"
+        },
+        "note": "Sinderion's sphere in Blackreach, no template."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncDwarvenSphere02` 023A97 does not change the Sphere and the Master (`EncDwarvenSphere01`, `03`, rows above, 16 and 30): they use 023A97 as their template but not for `Stats`. Likewise the Warped Dwarven Sphere (`DLC1LD_EncDwarvenSphere00`, 7) keeps its level against its template `EncDwarvenSphere01`.",
+      "The rows: no other record keeps its own level.",
+      "`DLCDwarvenPuzzleDungeon_SphereFrost` 000904:cctwbsse001-puzzledungeon.esm (Frosted Dwarven Sphere, 24), `EncDwarvenSphereMalfunction` 10E752 (16) and `MS04VisionDwarvenSphere` 0C272D (26) are Dwarven Spheres with no template; all three are on *Automatons*.",
+      "Every other sphere record (`DLC1LD_EncDwarvenSphere01`–`03`, the Aetherial Staff summons, the Kagrumez pet, the Nchardak wrapper, `ccAFDSSE001_LvlDwarvenSphereAmbushOverseer`, `TreasCorpseDwarvenSphere` and every `Lvl*` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharDwarvenSphere",
+          "formKey": "10EC8F:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Dwarven Sphere"
+          },
+          {
+            "at": 26,
+            "label": "Dwarven Sphere Guardian"
+          },
+          {
+            "at": 32,
+            "label": "Dwarven Sphere Master"
+          }
+        ],
+        "owner": "`LvlDwarvenSphere` 10EC92 (placed ×26, 7 initially disabled; CC ×8 in Forgotten Seasons) · `LvlDwarvenSphereAmbush` 10EE51 (×43; CC ×13 in Forgotten Seasons and ×2 in `CCBGSSSE008Vault` 000823:ccbgssse008-wraithguard.esl) · `DLC2dunNchardakLvlDwarvenSphereAmbushHoldPositionLinkCustom02384` 01CB9C:Dragonborn.esm (×3, `DLC2Nchardak03` 0173B2) · the Tempered Spheres (×3, `DLC2Kagrumez01` 0142F9:Dragonborn.esm)"
+      },
+      {
+        "list": {
+          "edid": "LCharDwarvenAutomaton",
+          "formKey": "01E783:Skyrim.esm"
+        },
+        "seeFamily": "*Dwarven Spider*",
+        "note": "Sphere (20) · Guardian (26) · Master (32), between the spiders and the Centurion Master (38)",
+        "owner": "`LvlDwarvenAutomaton` 10EC93 · `LvlDweAutomaton` 01E7B0"
+      },
+      {
+        "list": {
+          "edid": "DLC1LD_LCharDwarvenSphere",
+          "formKey": "01534D:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Warped Dwarven Sphere (7)"
+          },
+          {
+            "at": 25,
+            "label": "Dwarven Sphere (`DLC1LD_EncDwarvenSphere01`)"
+          },
+          {
+            "at": 35,
+            "label": "Dwarven Sphere Guardian (`…02`)"
+          },
+          {
+            "at": 45,
+            "label": "Dwarven Sphere Master (`…03`)"
+          }
+        ],
+        "owner": "`DLC1LD_LvlDwarvenSphereAmbush` 015345:Dawnguard.esm (×6 in `DLC1Bthalft01` 005734:Dawnguard.esm, all initially disabled)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Dwarven Sphere (Sinderion's)",
+        "base": [
+          {
+            "edid": "POIBlackreachSinderionDwarvenSphere",
+            "formKey": "0EED25:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "BlackreachSinderionsShack",
+              "formKey": "0237C1:Skyrim.esm"
+            },
+            "note": "Blackreach"
+          }
+        ]
+      },
+      {
+        "name": "Dwarven Sphere (by hand)",
+        "base": [
+          {
+            "edid": "EncDwarvenSphere01",
+            "formKey": "10EC89:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "SightlessPit03",
+              "formKey": "025195:Skyrim.esm"
+            },
+            "refText": "×1",
+            "note": "CC only (ccbgssse008-wraithguard)"
+          },
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeon01",
+              "formKey": "000A98:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×1",
+            "note": "CC only"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Dwarven Sphere (`EncDwarvenSphere01`)",
+        "weapons": "none (its own inventory is empty)",
+        "armor": "`FXDwarvenSphereOutfit` 0F9071",
+        "skin": "`SkinDwarvenSphereCenturion` 07874B"
+      },
+      {
+        "records": "Dwarven Sphere Guardian, Warped, Sinderion's sphere",
+        "weapons": "`crDwarvenSphereCrossbow` 07F6DF · `DwarvenSphereBolt01` 07B935",
+        "armor": "`FXDwarvenSphereOutfit`",
+        "skin": "`SkinDwarvenSphereCenturion`"
+      },
+      {
+        "records": "Dwarven Sphere Master",
+        "weapons": "`crDwarvenSphereCrossbow02` 10EC8A · `DwarvenSphereBolt01`",
+        "armor": "`FXDwarvenSphereOutfit`",
+        "skin": "`SkinDwarvenSphereCenturion`"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "FXDwarvenSphereOutfit",
+          "formKey": "0F9071:Skyrim.esm"
+        },
+        "rolls": "`FXDwarvenSphereCenturion` 0F9070"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Dwarven Sphere Crossbow (07F6DF, 10EC8A)",
+        "kind": "crossbow",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Dwemer Bolt `DwarvenSphereBolt01`",
+        "kind": "bolt",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`FXDwarvenSphereCenturion` · skin",
+        "kind": "effect armour, body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}
