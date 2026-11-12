@@ -159,6 +159,11 @@ const recordCount = groups.reduce((n, g) => n + g.familyPages.reduce((m, f) => m
   .group small { color: var(--muted); }
   .group.parent a { color: var(--text); text-decoration: none; }
   .group.parent a:hover { color: var(--gold); }
+  .group.parent h3 a { color: inherit; } /* the heading's gold, like the other boxes' titles */  /* The whole parent box goes to the group page: the title link is stretched over the box, and the
+     sub-group links sit above it so they keep their own targets. */
+  .group.parent { position: relative; cursor: pointer; }
+  .group.parent h3 a::after { content: ''; position: absolute; inset: 0; }
+  .group.parent li a { position: relative; z-index: 1; }
 
   @media (max-width: 720px) {
     .bands { padding: 0.2rem 1rem; }
