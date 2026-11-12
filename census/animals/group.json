@@ -1,0 +1,33 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "animals",
+  "title": "Animals",
+  "order": 1,
+  "parent": "world-creatures",
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Scope: chickens, cows, deer, dogs, elk, foxes, goats and rabbits, with the Creation Club pets (Sweet Roll, Hilda, Thistle) on their kind's page. All of them are level 1 to 3 in vanilla, except the three follower dogs, which scale with the player. The prey lists that draw elk and deer, and the ambient lists that draw foxes and rabbits, are on *Game & Livestock* and *Fox*. Elk, deer, cows and chickens keep their vanilla level: the mod leaves them out (user, 2026-11-12).",
+  "families": [
+    {
+      "id": "dog",
+      "holds": "the Dog (2), every bandit, Forsworn and named dog that follows it, and the follower dogs Stray Dog, Vigilance and Meeko"
+    },
+    {
+      "id": "fox",
+      "holds": "the Fox and Snow Fox (2), Pumpkin, the HearthFires foxes, the CC pet Sweet Roll; the ambient-creature lists"
+    },
+    {
+      "id": "goat",
+      "holds": "the wild (1) and domestic (3) goats, Gleda, the Pelagius Wing goat, the CC pet Hilda"
+    },
+    {
+      "id": "rabbit",
+      "holds": "the Rabbit (1) and the CC pet Thistle"
+    },
+    {
+      "id": "game-livestock",
+      "holds": "the Elk, the White Stag of *Ill Met By Moonlight*, the Deer and Vale Deer, the Cow (and its painted and Rorikstead copies) and the Chicken; all level 1 to 3, left out of the delevelling; the prey lists"
+    }
+  ]
+}

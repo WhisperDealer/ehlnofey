@@ -1,0 +1,25 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "aquatic",
+  "title": "Aquatic",
+  "order": 2,
+  "parent": "world-creatures",
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Scope: mudcrabs, slaughterfish and horkers, with the Creation Club creatures of their kind beside them (the Frenzied Mudcrabs, Snippy and the Dwarven Armored Mudcrab on *Mudcrab*, Fangtusk on *Horker*). bands-of-power.md names mudcrabs and slaughterfish as Weak.",
+  "families": [
+    {
+      "id": "mudcrab",
+      "holds": "the three mudcrab sizes (1–3), Old Salty, the Mudcrab Guardian Spirit, the Solstheim Mudcrab, the CC Frenzied Mudcrabs (9–20), Snippy and the Dwarven Armored Mudcrab"
+    },
+    {
+      "id": "slaughterfish",
+      "holds": "the Slaughterfish (1)"
+    },
+    {
+      "id": "horker",
+      "holds": "the Horker (3), Lord Tusk (25), the Horker Youngling, the CC vampire horker Fangtusk"
+    }
+  ]
+}

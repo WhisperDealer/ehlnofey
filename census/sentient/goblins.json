@@ -1,0 +1,215 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "goblins",
+  "group": "sentient",
+  "title": "Goblins",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "goblin",
+        "name": "Goblin",
+        "records": [
+          {
+            "edid": "ccBGSSSE040_EncGoblin01Melee",
+            "formKey": "000806:ccbgssse040-advobgobs.esl"
+          },
+          {
+            "edid": "ccBGSSSE040_EncGoblin01MeleeArena",
+            "formKey": "000AD4:ccbgssse040-advobgobs.esl"
+          },
+          {
+            "edid": "ccBGSSSE040_EncGoblin01MeleeDUPLICATE001",
+            "formKey": "0008B0:ccbgssse040-advobgobs.esl"
+          },
+          {
+            "edid": "ccBGSSSE040_EncGoblin02Melee",
+            "formKey": "000809:ccbgssse040-advobgobs.esl"
+          },
+          {
+            "edid": "ccBGSSSE040_EncGoblin02MeleeArena",
+            "formKey": "000AD6:ccbgssse040-advobgobs.esl"
+          },
+          {
+            "edid": "ccBGSSSE040_EncGoblin02MeleeDUPLICATE001",
+            "formKey": "000897:ccbgssse040-advobgobs.esl"
+          },
+          {
+            "edid": "ccBGSSSE040_EncGoblin03Melee",
+            "formKey": "000808:ccbgssse040-advobgobs.esl"
+          },
+          {
+            "edid": "ccBGSSSE040_EncGoblin03MeleeDUPLICATE001",
+            "formKey": "0008E0:ccbgssse040-advobgobs.esl"
+          },
+          {
+            "edid": "ccBGSSSE040_EncGoblin04Hammer",
+            "formKey": "000B2D:ccbgssse040-advobgobs.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE040_GoblinRace",
+          "formKey": "000800:ccbgssse040-advobgobs.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "archetype-tiers.md: goblin 6 kept (Weak)"
+        },
+        "note": "nine records, all level 6 and each owning its level. 01, 02 and 03 differ in outfit (cloth, leather, iron; 04Hammer iron too); the `Arena` pair fight in the arena; the `DUPLICATE001` copies are the overworld goblins and take their name from `04Hammer`."
+      },
+      {
+        "id": "blue-god",
+        "name": "Blue God",
+        "records": [
+          {
+            "edid": "ccBGSSSE040_Blorc",
+            "formKey": "0009A0:ccbgssse040-advobgobs.esl"
+          }
+        ],
+        "race": {
+          "edid": "OrcRace",
+          "formKey": "013747:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 60
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "archetype-tiers.md: the goblin boss fixed at 20 (Trained)"
+        }
+      },
+      {
+        "id": "gogh",
+        "name": "Gogh",
+        "records": [
+          {
+            "edid": "ccBGSSSE040_EncGoblinFollower",
+            "formKey": "000815:ccbgssse040-advobgobs.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE040_GoblinRace",
+          "formKey": "000800:ccbgssse040-advobgobs.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "a Creation Club pet, out of scope for a new level (archetype-tiers.md §4.2): banded at its vanilla level (6)"
+        },
+        "note": "the Creation Club pet goblin, `Essential`."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `…04Hammer` 000B2D does not change the three `DUPLICATE001` copies: they use it as their template but not for `Stats`, so each of the nine Goblin records must be changed on its own.",
+      "`ccBGSSSE040_Blorc`, `ccBGSSSE040_EncGoblinFollower`: no other record keeps its own level."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "none"
+        },
+        "owner": "—",
+        "note": "no leveled list draws a goblin"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Goblin",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE040Interior01",
+              "formKey": "002FD2:Update.esm"
+            },
+            "refText": "01 ×3 · 01Arena · 02 · 02Arena · 03 ×3 · 04Hammer"
+          }
+        ],
+        "quest": "aliases `PrayingGoblin01` · `PrayingGoblin02` (01), `ArenaGoblin` · `ArenaGoblin02`, `PatrolGoblin` (02) of `ccBGSSSE040_Quest` 0009B6:ccbgssse040-advobgobs.esl (*Blue in the Face*)"
+      },
+      {
+        "name": "Goblin (`DUPLICATE001` copies)",
+        "locations": [
+          {
+            "cell": {
+              "formKey": "00BD4A:Skyrim.esm"
+            },
+            "refText": "×7",
+            "note": "Tamriel (52, −28); with persistent ref 00093B:ccbgssse040-advobgobs.esl"
+          },
+          {
+            "cell": {
+              "formKey": "0098C9:Skyrim.esm"
+            },
+            "refText": "×3",
+            "note": "Tamriel (31, −26)"
+          },
+          {
+            "cell": {
+              "formKey": "009CE8:Skyrim.esm"
+            },
+            "refText": "×5",
+            "note": "Tamriel (−13, −25); with persistent ref 000D4C:ccbgssse040-advobgobs.esl"
+          }
+        ],
+        "note": "some refs stand on the same spot as another (one copy enabled by the persistent ref, one not)"
+      },
+      {
+        "name": "Blue God",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE040Interior01",
+              "formKey": "002FD2:Update.esm"
+            },
+            "ref": {
+              "formKey": "0009AD:ccbgssse040-advobgobs.esl"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Gogh",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE040Interior01",
+              "formKey": "002FD2:Update.esm"
+            },
+            "ref": {
+              "formKey": "0009E6:ccbgssse040-advobgobs.esl"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "aliases `GoblinFollower` of `ccBGSSSE040_Quest` and `PetGoblin` of `ccBGSSSE040_PetControlQuest` 000AE5"
+      }
+    ]
+  }
+}

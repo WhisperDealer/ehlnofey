@@ -1,0 +1,541 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "mudcrab",
+  "group": "aquatic",
+  "title": "Mudcrab",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "mudcrab-medium",
+        "name": "Mudcrab (medium)",
+        "records": [
+          {
+            "edid": "EncMudcrabMedium",
+            "formKey": "0E4010:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "MudcrabRace",
+          "formKey": "0BA545:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "bands-of-power.md: mudcrabs"
+        }
+      },
+      {
+        "id": "mudcrab-large",
+        "name": "Mudcrab (large)",
+        "records": [
+          {
+            "edid": "EncMudcrabLarge",
+            "formKey": "0E4011:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "MudcrabRace",
+          "formKey": "0BA545:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 2
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "bands-of-power.md: mudcrabs"
+        }
+      },
+      {
+        "id": "mudcrab-giant",
+        "name": "Mudcrab (giant)",
+        "records": [
+          {
+            "edid": "EncMudcrabGiant",
+            "formKey": "021875:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "MudcrabRace",
+          "formKey": "0BA545:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 3
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "bands-of-power.md: mudcrabs"
+        }
+      },
+      {
+        "id": "old-salty",
+        "name": "Old Salty",
+        "records": [
+          {
+            "edid": "DLC2dunNorthshoreLandingCrabBoss",
+            "formKey": "01D77A:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "MudcrabRace",
+          "formKey": "0BA545:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 3,
+          "from": {
+            "edid": "EncMudcrabGiant",
+            "formKey": "021875:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a named mudcrab boss, a band above the mudcrabs"
+        },
+        "note": "takes `Stats` from the giant mudcrab"
+      },
+      {
+        "id": "mudcrab-guardian-spirit",
+        "name": "Mudcrab Guardian Spirit",
+        "records": [
+          {
+            "edid": "dunHunterMudcrab",
+            "formKey": "0E662B:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "MudcrabRace",
+          "formKey": "0BA545:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 5
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a Kyne's Sacred Trials guardian, banded at its vanilla level (5)"
+        }
+      },
+      {
+        "id": "solstheim-mudcrab",
+        "name": "Solstheim Mudcrab",
+        "records": [
+          {
+            "edid": "DLC2EncMudcrabSolstheim",
+            "formKey": "025AE4:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "MudcrabRace",
+          "formKey": "0BA545:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "bands-of-power.md: mudcrabs"
+        },
+        "note": "not placed (only the QA lists)"
+      },
+      {
+        "id": "dwarven-armored-mudcrab",
+        "name": "Dwarven Armored Mudcrab",
+        "records": [
+          {
+            "edid": "ccBGSSSE010_PetDwarvenMudcrab",
+            "formKey": "000D62:ccbgssse010-petdwarvenarmoredmudcrab.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE010_PetDwarvenMudcrabRace",
+          "formKey": "000800:ccbgssse010-petdwarvenarmoredmudcrab.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "flags": [
+          "Essential",
+          "Invulnerable"
+        ],
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a CC pet (`Essential`), banded at its vanilla level (5)"
+        }
+      },
+      {
+        "id": "frenzied-mudcrab-medium",
+        "name": "Frenzied Mudcrab (medium)",
+        "records": [
+          {
+            "edid": "ccBGSSSE001_EncMudcrabMediumAggressive",
+            "formKey": "0009E5:ccbgssse001-fish.esm"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE001_MudcrabRaceFrenzied",
+          "formKey": "00081B:ccbgssse001-fish.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 9
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a CC Frenzied Mudcrab, banded at its vanilla level (9)"
+        }
+      },
+      {
+        "id": "frenzied-mudcrab-large",
+        "name": "Frenzied Mudcrab (large)",
+        "records": [
+          {
+            "edid": "ccBGSSSE001_EncMudcrabLargeAggressive",
+            "formKey": "0009E7:ccbgssse001-fish.esm"
+          },
+          {
+            "edid": "ccBGSSSE001_EncMudcrabLargeFlamingPot",
+            "formKey": "0FEC46:ccbgssse001-fish.esm"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE001_MudcrabRaceFrenzied",
+          "formKey": "00081B:ccbgssse001-fish.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 13
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a CC Frenzied Mudcrab, banded at its vanilla level (13)"
+        },
+        "note": "the flaming-pot copy uses `ccBGSSSE001_MudcrabRaceFlamingPot` 0FEC48"
+      },
+      {
+        "id": "frenzied-mudcrab-giant",
+        "name": "Frenzied Mudcrab (giant)",
+        "records": [
+          {
+            "edid": "ccBGSSSE001_EncMudcrabGiantAggressive",
+            "formKey": "0009E0:ccbgssse001-fish.esm"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE001_MudcrabRaceFrenzied",
+          "formKey": "00081B:ccbgssse001-fish.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: a CC Frenzied Mudcrab, banded at its vanilla level (20)"
+        }
+      },
+      {
+        "id": "snippy",
+        "name": "Snippy",
+        "records": [
+          {
+            "edid": "ccBGSSSE001_MudcrabViriyaPetSmall",
+            "formKey": "033A45:ccbgssse001-fish.esm"
+          },
+          {
+            "edid": "ccBGSSSE001_MudcrabViriyaPetMedium",
+            "formKey": "033A46:ccbgssse001-fish.esm"
+          },
+          {
+            "edid": "ccBGSSSE001_MudcrabViriyaPetLarge",
+            "formKey": "033A47:ccbgssse001-fish.esm"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE001_ViriyaMudcrabPetRace",
+          "formKey": "033A4F:ccbgssse001-fish.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a CC pet (`Essential`), banded at its vanilla level (1)"
+        },
+        "note": "three sizes"
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncMudcrabLarge` 0E4011: no record outside the table keeps its own level. The Guardian Spirit `dunHunterMudcrab` 0E662B uses it as its template but not for `Stats`, so it stays at PC × 1 [5–5] when 0E4011 changes.",
+      "The other rows: no other record keeps its own level.",
+      "Every other mudcrab record (Old Salty, which follows `EncMudcrabGiant`; the HearthFires `BYOHHouseTameMudcrab` and adoption mudcrab; `dunTransmogrifyMudcrab`; the `LvlMudcrab` and CC `ccBGSSSE001_LvlMudcrabAggressiveMQ2` / `MQ4` wrappers) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharMudcrab",
+          "formKey": "02183E:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Mudcrab (medium)",
+            "count": 2
+          },
+          {
+            "at": 1,
+            "label": "Mudcrab (large)"
+          },
+          {
+            "at": 5,
+            "label": "Mudcrab (large)"
+          },
+          {
+            "at": 10,
+            "label": "Mudcrab (giant)"
+          },
+          {
+            "at": 15,
+            "label": "Mudcrab (giant)"
+          }
+        ],
+        "owner": "`LvlMudcrab` 08CACC (placed ×220)"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE001_LCharMudcrabAggressive",
+          "formKey": "0009ED:ccbgssse001-fish.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frenzied Mudcrab (medium)",
+            "count": 2
+          },
+          {
+            "at": 1,
+            "label": "Frenzied Mudcrab (large)"
+          },
+          {
+            "at": 9,
+            "label": "Frenzied Mudcrab (large)"
+          },
+          {
+            "at": 12,
+            "label": "Frenzied Mudcrab (giant)"
+          },
+          {
+            "at": 16,
+            "label": "Frenzied Mudcrab (giant)"
+          }
+        ],
+        "owner": "`ccBGSSSE001_LvlMudcrabAggressiveMQ2` 0009E1 and `…MQ4` 10DF7A, quest spawners of `ccBGSSSE001_Crab_MQ2` 0009DA and `…MQ4` 0009E9 (ccbgssse001-fish.esm)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Old Salty",
+        "base": [
+          {
+            "edid": "DLC2dunNorthshoreLandingCrabBoss",
+            "formKey": "01D77A:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2NorthshoreLandingExterior01",
+              "formKey": "00ED0A:Dragonborn.esm"
+            },
+            "note": "Northshore Landing, Solstheim"
+          }
+        ]
+      },
+      {
+        "name": "Mudcrab Guardian Spirit",
+        "base": [
+          {
+            "edid": "dunHunterMudcrab",
+            "formKey": "0E662B:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "0E662C:Skyrim.esm"
+            },
+            "disabled": true,
+            "note": "`POITundra10` 009A35, (-15, -4)"
+          }
+        ],
+        "quest": "alias `guardianMudcrab` of `dunHunterQST` 018601 (*Kyne's Sacred Trials*)"
+      },
+      {
+        "name": "Mudcrab",
+        "base": [
+          {
+            "edid": "BYOHHouseTameMudcrab",
+            "formKey": "0008E9:HearthFires.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "0008EA:HearthFires.esm"
+            },
+            "note": "(-7, 25), Windstad Manor grounds"
+          },
+          {
+            "cell": {
+              "formKey": "009271:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "BYOHHouse2Exterior03",
+              "formKey": "009292:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Pincer",
+        "base": [
+          {
+            "edid": "BYOHRelationshipAdoptionCritter_Mudcrab",
+            "formKey": "013818:HearthFires.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "spawned by `BYOHRelationshipAdoption` 0042B4:HearthFires.esm from form list `BYOHRelationshipAdoption_CrittersMale` 013815:HearthFires.esm"
+      },
+      {
+        "name": "Mudcrab",
+        "base": [
+          {
+            "edid": "dunTransmogrifyMudcrab",
+            "formKey": "000EB2:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "created by the Wabbajack effect `DA15WabbajackFF` 09B246"
+      },
+      {
+        "name": "Dwarven Armored Mudcrab",
+        "base": [
+          {
+            "edid": "ccBGSSSE010_PetDwarvenMudcrab",
+            "formKey": "000D62:ccbgssse010-petdwarvenarmoredmudcrab.esl"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "MarkarthUnderStoneKeep",
+              "formKey": "016DF2:Skyrim.esm"
+            },
+            "note": "Understone Keep, Markarth"
+          }
+        ]
+      },
+      {
+        "name": "Snippy",
+        "base": [
+          {
+            "edid": "ccBGSSSE001_MudcrabViriyaPetSmall",
+            "formKey": "033A45:ccbgssse001-fish.esm"
+          },
+          {
+            "edid": "ccBGSSSE001_MudcrabViriyaPetMedium",
+            "formKey": "033A46:ccbgssse001-fish.esm"
+          },
+          {
+            "edid": "ccBGSSSE001_MudcrabViriyaPetLarge",
+            "formKey": "033A47:ccbgssse001-fish.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenFishery",
+              "formKey": "016BDB:Skyrim.esm"
+            },
+            "note": "one ref per size"
+          }
+        ]
+      },
+      {
+        "name": "Frenzied Mudcrab",
+        "base": [
+          {
+            "edid": "ccBGSSSE001_EncMudcrabLargeFlamingPot",
+            "formKey": "0FEC46:ccbgssse001-fish.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "spawned by the `ccBGSSSE001_Crab_MQ4` 0009E9 script (property `potCrab`)"
+      },
+      {
+        "name": "Solstheim Mudcrab",
+        "base": [
+          {
+            "edid": "DLC2EncMudcrabSolstheim",
+            "formKey": "025AE4:Dragonborn.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "only the QA lists `DLC2QANPCList` 02A1BA and `…05` 02A8A7"
+      }
+    ]
+  }
+}

@@ -59,8 +59,8 @@ export function renderFamily(f: FamilyData, titles: Record<string, string> = {})
         if (r.race) rec += ` (${ref(r.race)})`;
         if (r.factions) rec += ` (in ${refs(r.factions, ' and ')})`;
         const flags = r.flags?.length ? ` (${r.flags.map((x) => `\`${x}\``).join(', ')})` : '';
-        const goal = b && 'band' in t ? `${b.id} ${b.name}${t.level ? ` ${t.level}` : ''}` : 'scales with the player';
-        const target = `${goal} (${t.status}; ${t.source})`;
+        const goal = b && 'band' in t ? `${b.id} ${b.name}${t.level ? ` ${t.level}` : ''}` : 'unchanged' in t ? 'unchanged' : 'scales with the player';
+        const target = 'status' in t ? `${goal} (${t.status}; ${t.source})` : `${goal} (${t.source})`;
         return [rec, r.encounter ? `${r.name}, ${r.encounter}` : r.name, level(r.level) + flags, target];
       }),
     ),

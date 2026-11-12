@@ -53,7 +53,13 @@ export const ScalesTarget = z.strictObject({
   status: z.enum(['proposed', 'implemented']),
   source: z.string().min(1),
 });
-export const Target = z.union([BandTarget, ScalesTarget]);
+// Left out of the delevelling: the record keeps its vanilla level and the mod never touches it
+// (harmless animals; user 2026-11-12: elk, cows, chickens, deer). In no band.
+export const UnchangedTarget = z.strictObject({
+  unchanged: z.literal(true),
+  source: z.string().min(1),
+});
+export const Target = z.union([BandTarget, ScalesTarget, UnchangedTarget]);
 
 const Meta = z.strictObject({
   spec: z.string().optional(),

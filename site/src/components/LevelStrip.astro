@@ -47,13 +47,13 @@ const vanillaTitle = (r: RecordRowData) => {
     // A row that keeps scaling with the player has no band to draw, only its vanilla range.
     const tb = 'band' in t ? bandById(t.band) : null;
     const ts = tb ? segment(tb) : null;
-    const proposed = t.status === 'proposed';
-    const goal = tb && 'band' in t ? `target ${tb.id} ${tb.name}${t.level ? ` (${t.level})` : ''}, ${t.status}` : 'keeps scaling with the player';
+    const proposed = 'status' in t && t.status === 'proposed';
+    const goal = tb && 'band' in t ? `target ${tb.id} ${tb.name}${t.level ? ` (${t.level})` : ''}, ${t.status}` : 'unchanged' in t ? 'unchanged: the mod leaves it at its vanilla level' : 'keeps scaling with the player';
     return (
       <div class="lane">
         <div class="label">
           <a href={`#rec-${r.id}`}>{r.name}{r.encounter && <small> · {encounterShort(r.encounter)}</small>}</a>
-          {tb ? <BandChip id={tb.id} proposed={proposed} /> : <span class="scales-tag" title="keeps scaling with the player">scales</span>}
+          {tb ? <BandChip id={tb.id} proposed={proposed} /> : 'unchanged' in t ? <span class="scales-tag" title="the mod leaves it at its vanilla level">unchanged</span> : <span class="scales-tag" title="keeps scaling with the player">scales</span>}
         </div>
         <div class="track" title={`${r.name}: ${vanillaTitle(r)} → ${goal}`}>
           {bands.bands.map((b) => {

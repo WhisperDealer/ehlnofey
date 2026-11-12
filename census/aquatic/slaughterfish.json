@@ -1,0 +1,159 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "slaughterfish",
+  "group": "aquatic",
+  "title": "Slaughterfish",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "slaughterfish",
+        "name": "Slaughterfish",
+        "records": [
+          {
+            "edid": "EncSlaughterfish",
+            "formKey": "023AB8:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "SlaughterfishRace",
+          "formKey": "013203:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "bands-of-power.md: slaughterfish"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncSlaughterfish` 023AB8: no other record keeps its own level.",
+      "The only other slaughterfish record, the HearthFires `BYOHHouseTameSlaughterfish`, carries `Stats` and follows 023AB8."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "dunMiddenForgeFailureListTemplate",
+          "formKey": "058275:Skyrim.esm"
+        },
+        "gate": "every entry at level 1 (no flags)",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Goat (wild)"
+          },
+          {
+            "at": 1,
+            "label": "frostbite spider"
+          },
+          {
+            "at": 1,
+            "label": "skeever"
+          },
+          {
+            "at": 1,
+            "label": "slaughterfish"
+          },
+          {
+            "at": 1,
+            "label": "wolf"
+          }
+        ],
+        "owner": "none found (no record uses it)",
+        "note": "the goat is on Animals → *Goat*"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Slaughterfish",
+        "base": [
+          {
+            "edid": "EncSlaughterfish",
+            "formKey": "023AB8:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "BoulderfallCave01",
+              "formKey": "0681DD:Skyrim.esm"
+            },
+            "refText": "×3"
+          },
+          {
+            "cell": {
+              "edid": "PurewaterRun01",
+              "formKey": "01522C:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "RiftenFishery",
+              "formKey": "016BDB:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "LabyrinthianBossArena",
+              "formKey": "021EEE:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "OLDBluePalaceWing01",
+              "formKey": "0152B4:Skyrim.esm"
+            }
+          }
+        ],
+        "note": "103 refs, all Skyrim.esm: about 95 in Tamriel's rivers, lakes and coast, plus the interiors listed"
+      },
+      {
+        "name": "Slaughterfish",
+        "base": [
+          {
+            "edid": "BYOHHouseTameSlaughterfish",
+            "formKey": "0008E6:HearthFires.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "0008E8:HearthFires.esm"
+            },
+            "note": "(-7, 24), Windstad Manor grounds"
+          },
+          {
+            "cell": {
+              "formKey": "009271:Skyrim.esm"
+            }
+          }
+        ],
+        "note": "also in the CC fishing list `ccBGSSSE001_FishCritterListAll` 000A11:ccbgssse001-fish.esm"
+      }
+    ]
+  }
+}

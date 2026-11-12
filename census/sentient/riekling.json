@@ -1,0 +1,295 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "riekling",
+  "group": "sentient",
+  "title": "Riekling",
+  "order": 7,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "riekling",
+        "name": "Riekling",
+        "records": [
+          {
+            "edid": "DLC2EncRiekling01Melee",
+            "formKey": "017F47:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2RieklingRace",
+          "formKey": "017F44:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "banded at its vanilla level (6)"
+        }
+      },
+      {
+        "id": "riekling-scout",
+        "name": "Riekling Scout",
+        "records": [
+          {
+            "edid": "DLC2EncRiekling02Melee",
+            "formKey": "01B64E:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2RieklingRace",
+          "formKey": "017F44:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 11
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "banded at its vanilla level (11)"
+        }
+      },
+      {
+        "id": "riekling-hunter",
+        "name": "Riekling Hunter",
+        "records": [
+          {
+            "edid": "DLC2EncRiekling03Melee",
+            "formKey": "01B64F:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2RieklingRace",
+          "formKey": "017F44:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 16
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "banded at its vanilla level (16)"
+        },
+        "note": "also placed directly twice in `DLC2Fahlbtharz01` 0142FA:Dragonborn.esm."
+      },
+      {
+        "id": "riekling-warrior",
+        "name": "Riekling Warrior",
+        "records": [
+          {
+            "edid": "DLC2EncRiekling04Melee",
+            "formKey": "03CBA3:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2RieklingRace",
+          "formKey": "017F44:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 23
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "banded at its vanilla level (23)"
+        }
+      },
+      {
+        "id": "riekling-tribe-leader",
+        "name": "Riekling Tribe Leader (dead)",
+        "records": [
+          {
+            "edid": "ccBGSSSE041_DLC2LvlRieklingMeleeChiefDEAD",
+            "formKey": "0008AF:ccbgssse041-netchleather.esl"
+          }
+        ],
+        "race": {
+          "edid": "DLC2RieklingRace",
+          "formKey": "017F44:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "a corpse; banded at its vanilla level (1)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing any of the four rungs also needs four Netch Leather wrappers (ccbgssse041-netchleather.esl): `ccBGSSSE041_DLC2LvlRieklingMeleeFighter` 00088A (PcLevelMult 1 (10–30)) and `…MeleeDead` 0008B0 (level 1) take their template from `DLC2LCharRieklingMelee`, which draws them, without `Stats`; `…MissileFighter01` 00088E and `…MissileFighter02` 00088B (PcLevelMult 1 (10–30)) do the same through `DLC2LCharRieklingMissile`, which draws the rungs' missile copies. All four are listed below as list owners.",
+      "`DLC2EncRiekling02Melee`, `03Melee` and `04Melee` use `DLC2EncRiekling01Melee` as their template but not for `Stats`: changing the Riekling does not change them.",
+      "`ccBGSSSE041_DLC2LvlRieklingMeleeChiefDEAD` 0008AF:ccbgssse041-netchleather.esl (the dead Riekling Chief, a row) is a Riekling with no template and level 1.",
+      "Every other riekling record (the `Missile` and `Thirsk` copies, the `DLC2TempleWorkerRiekling` records, the Riekling Chief `DLC2ThirskRieklingChief`, `DLC2RieklingRescuer`, every `DLC2LvlRiekling*` wrapper and the CC `…MeleeChief`, `…LvlRieklingMelee`, `…LvlRieklingMissile`, `…MissileDead`) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC2LCharRieklingMelee",
+          "formKey": "01B653:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Riekling"
+          },
+          {
+            "at": 8,
+            "label": "Riekling Scout"
+          },
+          {
+            "at": 15,
+            "label": "Riekling Hunter"
+          },
+          {
+            "at": 32,
+            "label": "Riekling Warrior"
+          }
+        ],
+        "owner": "`DLC2LvlRieklingMelee` 01B656 (and its ambush copy `DLC2LvlRieklingMeleeAmbush` 026EC8, with `DLC2LvlRieklingMeleeAmbushBarrel` 02B231 · `DLC2LvlRieklingMelee_AmbushNoFurniture` 02973C) · `DLC2LvlRieklingThirskPillarBuilder` 038E93 · `DLC2RieklingRescuer` 038C0D (aliases `Riekling1`–`3` of `DLC2RieklingRescue` 038C07, *Rieklings to the Rescue*) (Dragonborn.esm) · `ccBGSSSE041_DLC2LvlRieklingMelee` 00084C · `…MeleeFighter` 00088A · `…MeleeDead` 0008B0 (ccbgssse041-netchleather.esl)"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharRieklingMissile",
+          "formKey": "01B654:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Riekling (missile copy)"
+          },
+          {
+            "at": 8,
+            "label": "Riekling Scout (missile copy)"
+          },
+          {
+            "at": 15,
+            "label": "Riekling Hunter (missile copy)"
+          },
+          {
+            "at": 32,
+            "label": "Riekling Warrior (missile copy)"
+          }
+        ],
+        "owner": "`DLC2LvlRieklingMissile` 01B655 (and its copies `DLC2LvlRieklingMissileAmbush` 026ECD, with `DLC2LvlRieklingMissileAmbushBarrel` 02BB0F · `DLC2LvlRieklingMissileAmbush_HoldPositionLinkCustom02256UntilReleased` 029746 · `DLC2LvlRieklingMissile_AmbushNoFurniture` 02974F; `DLC2LvlRieklingMissile_HoldPositionLinkCustom02128UntilReleased` 029742 · `…_HoldPositionLinkCustom02256` 024850 · `…_HoldPositionLinkCustom02256UntilReleased` 029714 · `…_HoldPositionLinkCustom02256_NoRespawn` 034B52 · `…_HoldPositionLinkCustom02512UntilReleased` 029713) · `DLC2LvlRieklingThirskMissile` 038AB5 · `DLC2LvlRieklingThirskOutsideMissile` 03D572 (Dragonborn.esm) · `ccBGSSSE041_DLC2LvlRieklingMissile` 00084D · `…MissileFighter01` 00088E · `…MissileFighter02` 00088B · `…MissileDead` 0008AE (ccbgssse041-netchleather.esl)"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharRieklingThirskMelee",
+          "formKey": "038AB6:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Riekling (Thirsk copy)"
+          },
+          {
+            "at": 15,
+            "label": "Riekling Scout (Thirsk copy)"
+          },
+          {
+            "at": 32,
+            "label": "Riekling Hunter (Thirsk copy)"
+          }
+        ],
+        "owner": "`DLC2LvlRieklingThirskMelee` 0208D8 · `DLC2LvlRieklingThirskOutsideMelee` 03D571 (Dragonborn.esm)"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharRieklingThirskMissile",
+          "formKey": "038AB7:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Riekling (Thirsk missile copy)"
+          },
+          {
+            "at": 8,
+            "label": "Riekling Scout (Thirsk missile copy)"
+          },
+          {
+            "at": 15,
+            "label": "Riekling Hunter (Thirsk missile copy)"
+          }
+        ],
+        "owner": "none found (no record uses it; the two Thirsk missile wrappers draw `DLC2LCharRieklingMissile`)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Riekling Chief (`DLC2ThirskRieklingChief` 01A508:Dragonborn.esm)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2ThirskMeadHallInterior01",
+              "formKey": "016FEB:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "01A509:Dragonborn.esm"
+            }
+          }
+        ],
+        "quest": "alias `Chief` of `DLC2MH02` 01A50C (*The Chief of Thirsk Hall*) and `Riekling001` of `DLC2MHRieklingHandler` 01A523",
+        "note": "level 16, from `DLC2EncRiekling03Melee` (`Stats`); its name is its own"
+      },
+      {
+        "name": "Riekling Chief (`ccBGSSSE041_DLC2LvlRieklingMeleeChief` 0008AB:ccbgssse041-netchleather.esl, named by alias)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2SolstheimWorld",
+              "formKey": "000800:Dragonborn.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "00082C:ccbgssse041-netchleather.esl"
+            },
+            "note": "at `DLC2POINorth03DB` 00ECFF:Dragonborn.esm; enable parent 00084B"
+          }
+        ],
+        "quest": "alias `RieklingChief` of `ccBGSSSE041_Quest` 00081C (*More than you can Chew*)",
+        "note": "level 23, from `DLC2EncRiekling04Melee` (`Stats`)"
+      },
+      {
+        "name": "Riekling Tribe Leader (`ccBGSSSE041_DLC2LvlRieklingMeleeChiefDEAD` 0008AF:ccbgssse041-netchleather.esl)",
+        "locations": [
+          {
+            "cell": {
+              "formKey": "00ECFF:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "0008B6:ccbgssse041-netchleather.esl"
+            },
+            "note": "`DLC2POINorth03DB`"
+          }
+        ]
+      }
+    ]
+  }
+}

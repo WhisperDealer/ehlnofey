@@ -1,0 +1,42 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "mounts",
+  "title": "Mounts",
+  "order": 7,
+  "parent": "world-creatures",
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Scope: horses, unicorns, reindeer, and the otherworldly horses (Arvak and the Daedric Horses; the summoned mounts are here by the user's choice and also on Conjured → *Constructs & Dragons*). The reindeer, the player's essential mount, is out of the rebuild's scope (`archetype-tiers.md`): its row keeps its vanilla level.",
+  "families": [
+    {
+      "id": "reindeer",
+      "holds": "the CC Reindeer (4)"
+    },
+    {
+      "id": "horse",
+      "holds": "the Horse (4) and carriage horse (3), Shadowmere, Frost, the CC Wild Horses and Dwarven Horse; the stable, camp and quest horses that follow them"
+    },
+    {
+      "id": "unicorn",
+      "holds": "the CC Unicorn (50)"
+    },
+    {
+      "id": "otherworldly-horses",
+      "holds": "Arvak and the Soul Cairn horses, the CC Daedric Horses"
+    }
+  ],
+  "neverInGame": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "record": "`DA08KarindaHorse` 05F865 (\"Karinda\", `Stats` from `EncHorseBlack`) · `WhiterunPlayerHorse` 109E3D · `CaravanAHorse` 102D71 · `CaravanBHorse` 102D72 · `CaravanCHorse` 102D73",
+        "why": "no placed reference, list, quest, script property or other record names them (grep of every master and CC plugin, 2026-11-12)"
+      },
+      {
+        "record": "`LvlHorse` 068D71 and its list `LCharHorse` 068D6F (the five unsaddled colours, all @1) · `LvlHorseSaddledPlayer` 068D72 · `ccVSVSSE004_LvlHorseSaddled` 00081E:ccvsvsse004-beafarmer.esl",
+        "why": "wrappers with no placed reference or quest; `LCharHorse` has no other user. The Farmer pack spawns from `LCharHorseSaddled` directly, not through its own wrapper"
+      }
+    ]
+  }
+}

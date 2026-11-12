@@ -1,0 +1,510 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "exploding-spider",
+  "group": "insectoids",
+  "title": "Exploding Spider",
+  "order": 4,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "jumping-flame-spider",
+        "name": "Jumping Flame Spider",
+        "records": [
+          {
+            "edid": "DLC2ExpSpiderFireJumping",
+            "formKey": "01447A:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2ExpSpiderBaseRace",
+          "formKey": "014449:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0,
+          "from": {
+            "edid": "DLC2ExpSpiderTemplate",
+            "formKey": "014490:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "user, 2026-11-12: banded with the cloaked spiders (6)"
+        }
+      },
+      {
+        "id": "jumping-frost-spider",
+        "name": "Jumping Frost Spider",
+        "records": [
+          {
+            "edid": "DLC2ExpSpiderFrostJumping",
+            "formKey": "01DFEC:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2ExpSpiderBaseRace",
+          "formKey": "014449:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0,
+          "from": {
+            "edid": "DLC2ExpSpiderTemplate",
+            "formKey": "014490:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "user, 2026-11-12: banded with the cloaked spiders (6)"
+        }
+      },
+      {
+        "id": "jumping-poisonous-spider",
+        "name": "Jumping Poisonous Spider",
+        "records": [
+          {
+            "edid": "DLC2ExpSpiderPoisonJumping",
+            "formKey": "014447:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2ExpSpiderPoisonJumpingFriend",
+            "formKey": "01448B:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2ExpSpiderZombieFriend",
+            "formKey": "016E1A:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2ExpSpiderBaseRace",
+          "formKey": "014449:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0,
+          "from": {
+            "edid": "DLC2ExpSpiderTemplate",
+            "formKey": "014490:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "user, 2026-11-12: banded with the cloaked spiders (6)"
+        },
+        "note": "the two copies take `Stats` from 014447; each is a scroll summon (the spider scrolls crafted from `DLC2ExpSpiderCraftingResultsList` 017061)."
+      },
+      {
+        "id": "jumping-shock-spider",
+        "name": "Jumping Shock Spider",
+        "records": [
+          {
+            "edid": "DLC2ExpSpiderShockJumping",
+            "formKey": "01DFED:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2ExpSpiderShockJumpingFriend",
+            "formKey": "02095E:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2ExpSpiderBaseRace",
+          "formKey": "014449:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0,
+          "from": {
+            "edid": "DLC2ExpSpiderTemplate",
+            "formKey": "014490:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "user, 2026-11-12: banded with the cloaked spiders (6)"
+        },
+        "note": "the Friend takes `Stats` from 01DFED and is a scroll summon (the spider scrolls crafted from `DLC2ExpSpiderCraftingResultsList` 017061)."
+      },
+      {
+        "id": "flame-cloaked-spider",
+        "name": "Flame Cloaked Spider",
+        "records": [
+          {
+            "edid": "DLC2ExpSpiderFireCloaking",
+            "formKey": "017077:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2ExpSpiderBaseRace",
+          "formKey": "014449:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "user, 2026-11-12: wildlife banded at its vanilla level (6)"
+        }
+      },
+      {
+        "id": "frost-cloaked-spider",
+        "name": "Frost Cloaked Spider",
+        "records": [
+          {
+            "edid": "DLC2ExpSpiderFrostCloaking",
+            "formKey": "0206E1:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2ExpSpiderBaseRace",
+          "formKey": "014449:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "user, 2026-11-12: wildlife banded at its vanilla level (6)"
+        }
+      },
+      {
+        "id": "poisonous-cloaked-spider",
+        "name": "Poisonous Cloaked Spider",
+        "records": [
+          {
+            "edid": "DLC2ExpSpiderPoisonCloaking",
+            "formKey": "01CAAD:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2ExpSpiderBaseRace",
+          "formKey": "014449:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "user, 2026-11-12: wildlife banded at its vanilla level (6)"
+        }
+      },
+      {
+        "id": "shock-cloaked-spider",
+        "name": "Shock Cloaked Spider",
+        "records": [
+          {
+            "edid": "DLC2ExpSpiderShockCloaking",
+            "formKey": "02095C:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2ExpSpiderBaseRace",
+          "formKey": "014449:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "user, 2026-11-12: wildlife banded at its vanilla level (6)"
+        }
+      },
+      {
+        "id": "oil-spider",
+        "name": "Oil Spider",
+        "records": [
+          {
+            "edid": "DLC2ExpSpiderOil",
+            "formKey": "01D9FE:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2ExpSpiderBaseRace",
+          "formKey": "014449:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "user, 2026-11-12: wildlife banded at its vanilla level (6)"
+        }
+      },
+      {
+        "id": "spider-zombie-hosts",
+        "name": "the drawn bandit rung's name (spider-zombie host)",
+        "records": [
+          {
+            "edid": "DLC2ExpSpiderZombieLvlBanditMelee1H",
+            "formKey": "01795F:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2ExpSpiderZombieLvlBanditMissile",
+            "formKey": "01CA33:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee1H",
+            "formKey": "039CFC:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "bands-of-power.md: most bandits"
+        },
+        "note": "borrows its level from the Bandits: the hosts take `Stats`, `Traits`, `BaseData` and `Inventory` from `LCharBanditMelee1H` 039CFC (melee) and `LCharBanditMissile` 01E770 (archer, the same rungs), so they roll the bandit ladder with its names and gear (Bandits → *Common Bandits*). Changing that ladder changes them. Moved here from Uncategorised → *Bandit Level Borrowers* (user, 2026-10-04)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `DLC2ExpSpiderFireCloaking` 017077 also needs `DLC2ExpSpiderFireCloakingFriend` 019529 (friendly twin, level 12): it uses 017077 as its template but not for `Stats`. Likewise `DLC2ExpSpiderFrostCloaking` 0206E1 → `DLC2ExpSpiderFrostCloakingFriend` 0206DC (level 12), `DLC2ExpSpiderPoisonCloaking` 01CAAD → `DLC2ExpSpiderPoisonCloakingFriend` 01CAAE (level 12) and `DLC2ExpSpiderShockCloaking` 02095C → `DLC2ExpSpiderShockCloakingFriend` 02095D (level 12). All :Dragonborn.esm; the twins are scroll summons, on Conjured → Summoned Creatures → *Constructs & Dragons*.",
+      "The Jumping spiders' level owner is `DLC2ExpSpiderTemplate` 014490:Dragonborn.esm (\"Imbued Spider\", PcLevelMult 1, no template, not placed). Changing it also moves every spider that carries `Stats` from it: the Fire and Frost Jumping Friend twins `DLC2ExpSpiderFireJumpingFriend` 014491 and `DLC2ExpSpiderFrostJumpingFriend` 0206DD (scroll summons), the Poison and Shock Jumping spiders and their twins, `DLC2ExpSpiderZombieFriend`, and the placed Albino copy `DLC2ExpSpiderAlbinoEMPTY` (see *Albino Spider*).",
+      "Two more spiders use 014490 as their template but keep their own level: `DLC2ExpSpiderShockCloaking` 02095C (level 6, a row) and the scroll summon `DLC2ExpSpiderOilFriend` 02749A (PcLevelMult 1, on *Constructs & Dragons*). The Glowing and Pack spiders are never in game (see *Insectoids*).",
+      "`DLC2ExpSpiderOil`: no other record keeps its own level.",
+      "The spider-zombie hosts follow the bandit ladder; the records that keep their own level beside it are on *Common Bandits*."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharBanditMelee1H",
+          "formKey": "039CFC:Skyrim.esm"
+        },
+        "note": "with `LCharBanditMissile` 01E770: the common bandit rungs 1 · 5 · 9 · 14 · 19 · 25; the lists are on Bandits → *Common Bandits*",
+        "owner": "the spider-zombie hosts 01795F · 01CA33:Dragonborn.esm; the rest on *Common Bandits*"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Jumping Flame Spider",
+        "baseNote": "the dev cell `DLC2WarehouseSpiders` 0285C6 left out, here and below",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2FortFrostmoth01",
+              "formKey": "0142F8:Dragonborn.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "DLC2WhiteRidgeBarrow02",
+              "formKey": "03C7F5:Dragonborn.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "DLC2WhiteRidgeBarrow01",
+              "formKey": "0142ED:Dragonborn.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "edid": "DLC2POIAsh01DB",
+              "formKey": "00EF10:Dragonborn.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (14, 6)",
+              "formKey": "00EF11:Dragonborn.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (16, 5)",
+              "formKey": "00EF30:Dragonborn.esm"
+            },
+            "refText": "×1"
+          }
+        ]
+      },
+      {
+        "name": "Jumping Frost Spider",
+        "locations": [
+          {
+            "cell": {
+              "label": "Solstheim cell (8, 17)",
+              "formKey": "00EDAC:Dragonborn.esm"
+            },
+            "refText": "×1"
+          }
+        ]
+      },
+      {
+        "name": "Flame Cloaked Spider",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2WhiteRidgeBarrow01",
+              "formKey": "0142ED:Dragonborn.esm"
+            },
+            "refText": "×3",
+            "note": "one initially disabled"
+          },
+          {
+            "cell": {
+              "edid": "DLC2HighpointTower01",
+              "formKey": "0184F0:Dragonborn.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "DLC2POIAsh01DB",
+              "formKey": "00EF10:Dragonborn.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "DLC2FortFrostmoth01",
+              "formKey": "0142F8:Dragonborn.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "edid": "TestAsh01",
+              "formKey": "00EF0F:Dragonborn.esm"
+            },
+            "refText": "×1",
+            "note": "Solstheim (16, 6)"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (16, 5)",
+              "formKey": "00EF30:Dragonborn.esm"
+            },
+            "refText": "×1"
+          }
+        ]
+      },
+      {
+        "name": "Frost Cloaked Spider",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2HighpointTower01",
+              "formKey": "0184F0:Dragonborn.esm"
+            },
+            "refText": "×1"
+          }
+        ]
+      },
+      {
+        "name": "Poisonous Cloaked Spider",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2KolbjornBarrow01",
+              "formKey": "0142EE:Dragonborn.esm"
+            },
+            "refText": "×1"
+          }
+        ]
+      },
+      {
+        "name": "Oil Spider",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2Fahlbtharz01",
+              "formKey": "0142FA:Dragonborn.esm"
+            },
+            "refText": "×4"
+          },
+          {
+            "cell": {
+              "edid": "DLC2Fahlbtharz04",
+              "formKey": "01DD03:Dragonborn.esm"
+            },
+            "refText": "×4"
+          }
+        ]
+      },
+      {
+        "name": "Jumping Poisonous Spider (014447) · Jumping Shock Spider (01DFED) · Shock Cloaked Spider",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2WarehouseSpiders",
+              "formKey": "0285C6:Dragonborn.esm"
+            },
+            "refText": "refs 028621 · 028626 · 028627",
+            "note": "developer cell only"
+          }
+        ],
+        "note": "with their spawning eggs `DLC2ExpSpiderPoisonEggJumping` 01444C · `DLC2ExpSpiderShockEggJumping` 026D6A · `DLC2ExpSpiderShockEggCloak` 026D69 (Activators, placed nowhere else). Their copies are met only as scroll summons."
+      },
+      {
+        "name": "the Poison and Shock Jumping Friends · `DLC2ExpSpiderZombieFriend`",
+        "notPlaced": true,
+        "note": "scroll summons only (the rows above)."
+      },
+      {
+        "name": "spider-zombie hosts",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2WhiteRidgeBarrow02",
+              "formKey": "03C7F5:Dragonborn.esm"
+            },
+            "refText": "melee 01795F ×4 · archer 01CA33 ×2"
+          },
+          {
+            "cell": {
+              "edid": "DLC2WhiteRidgeBarrow01",
+              "formKey": "0142ED:Dragonborn.esm"
+            },
+            "refText": "melee ×1 · archer ×1"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -851,6 +851,12 @@ never honoured zones anyway (`engine-behaviour.md` §1), so flattening changes n
 > 000007, so it copies the player's level and stats. It is the player's shadow self, so it stays that way: Ehlnofey
 > gives it no band and leaves its records alone. The census marks it `target: { scales: true }`.
 
+> **Left out of the delevelling: the harmless animals (user, 2026-11-12).** Elk (the White Stag included), deer
+> (the Vale Deer included), cows and chickens are already fixed at level 1–3 and stay that way: Ehlnofey leaves
+> their records and their prey lists alone. The census merges them into Animals → *Game & Livestock* and marks
+> them `target: { unchanged: true }`, in no band. The follower dogs get bands: Meeko **III**, Vigilance **IV**
+> (user, 2026-11-12), the Stray Dog II.
+
 > **World encounters and assassins (WD-57, user 2026-09-27). Verified in game by the user.** The level sits on the record that
 > owns it, via `author-retargets.ps1` `Level = N` (no SkyPatcher). Also fixed: the Solstheim netch hunters `DLC2WE15Hunter` 20 (were
 > ×0.75 [30–50]); `WEDL05Thug` 14, `WEDL07Madwoman` 6, `WEDL08DeepInHisCups` 12, the four DB torture victims 1. The Morag Tong had

@@ -1,0 +1,70 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "monsters",
+  "title": "Monsters",
+  "order": 6,
+  "parent": "world-creatures",
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Scope: magic anomalies, trolls, ice wraiths and gargoyles. The gargoyles joined from Vampires (user, 2026-10-02). The summoned gargoyles and the Karstaag ice wraiths are on Conjured → *Daedric Summons* and *Familiars & Spirit Animals*.",
+  "families": [
+    {
+      "id": "magic-anomaly",
+      "holds": "the Magic Anomaly (PC×1.75) of the College questline and its *Aftershock* radiant"
+    },
+    {
+      "id": "troll",
+      "holds": "the Troll (14) and Frost Troll (22), the Dawnguard Armored Trolls, Udefrykte, the Guardian Troll Spirit; the predator lists that draw them"
+    },
+    {
+      "id": "ice-wraith",
+      "holds": "the Ice Wraith (9) and its ambush copies; the snow predator lists that draw it"
+    },
+    {
+      "id": "gargoyle",
+      "holds": "the three-rung gargoyle ladder Gargoyle 13 · Gargoyle Brute 25 · Gargoyle Sentinel 43"
+    }
+  ],
+  "filedElsewhere": [
+    {
+      "record": "`DLC1EncGargoyleSummon` 016907 · `…SummonAmulet` 00F4D6 · `DLC1dunHarkonEncGargoyleSummon` 00F4E3 (Dawnguard.esm)",
+      "what": "summoned gargoyles",
+      "where": "Conjured → Daedric Summons"
+    },
+    {
+      "record": "`DLC2dunKarstaagIceWraith` 028246 · `…Summoned` 034B5A (Dragonborn.esm)",
+      "what": "Karstaag's conjured ice wraiths",
+      "where": "Conjured → Familiars & Spirit Animals"
+    }
+  ],
+  "neverInGame": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "record": "`EncUderfrykte` 0F077A (Troll, 14) · `DLC1_BF_FrozenTrollFrost` 006D12:Dawnguard.esm (no name, 22) · `DLC2SummonTrollFrost` 01DFA1:Dragonborn.esm (Frost Troll, 22)",
+        "why": "trolls with no `Stats` template: no placed reference, list, quest, script property, spell or other record names them (grep of every master and CC plugin, 2026-11-12)"
+      },
+      {
+        "record": "`E3DemoEncTrollFrost` 0EBC2E (Frost Troll, 22, no template)",
+        "why": "placed only in `E3demoBleakFallsBarrow` 075669, a demo test cell with no way in"
+      },
+      {
+        "record": "`DLC2EncIceWraith` 031845:Dragonborn.esm · `DLCDwarvenPuzzle_IceWraith` 0008E6:cctwbsse001-puzzledungeon.esm (Ice Wraith, 9, no template)",
+        "why": "no placed reference, list, quest, script property or other record names them"
+      },
+      {
+        "record": "`dunClearspringTarnLCharPredator` 0F334B (sabre cat, bear, troll, cave bear)",
+        "why": "a list no NPC, list, quest or script uses"
+      },
+      {
+        "record": "`tempDLC1EncGargoyleBoss` 010CFA:Dawnguard.esm (Gargoyle Brute, 25, no template)",
+        "why": "no placed reference, quest, list or script names it (also logged on *Vampires*)"
+      },
+      {
+        "record": "`LCharVampireCompanionFrost` 0640BE (Dawnguard override: Gargoyle @13 · Gargoyle Brute @25)",
+        "why": "its only user, `LvlVampireCompanionSnow` 0640BF, is never placed (logged on *Vampires*)"
+      }
+    ]
+  }
+}

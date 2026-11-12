@@ -1,0 +1,642 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "bear",
+  "group": "beasts",
+  "title": "Bear",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "bear",
+        "name": "Bear",
+        "records": [
+          {
+            "edid": "EncBear",
+            "formKey": "023A8A:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "BearBlackRace",
+          "formKey": "0131E8:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "bands-of-power.md: most wildlife; vanilla level 12"
+        }
+      },
+      {
+        "id": "cave-bear",
+        "name": "Cave Bear",
+        "records": [
+          {
+            "edid": "EncBearCave",
+            "formKey": "023A8B:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "BearBrownRace",
+          "formKey": "0131E7:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 16
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: wildlife, banded at its vanilla level (16)"
+        }
+      },
+      {
+        "id": "snow-bear",
+        "name": "Snow Bear",
+        "records": [
+          {
+            "edid": "EncBearSnow",
+            "formKey": "023A8C:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "BearSnowRace",
+          "formKey": "0131E9:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: wildlife, banded at its vanilla level (20)"
+        }
+      },
+      {
+        "id": "ursine-guardian",
+        "name": "Ursine Guardian",
+        "records": [
+          {
+            "edid": "dunHunterBear",
+            "formKey": "0E7EA9:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "BearSnowRace",
+          "formKey": "0131E9:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 32
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a *Kyne’s Sacred Trials* quarry, banded at its vanilla level (32)"
+        }
+      },
+      {
+        "id": "bear-helgen",
+        "name": "Bear (Helgen)",
+        "records": [
+          {
+            "edid": "MQ101Bear",
+            "formKey": "0B70F7:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "BearBlackRace",
+          "formKey": "0131E8:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Helgen bear, banded with the Bear"
+        },
+        "note": "takes `BaseData` (its name) from `EncBear` but not `Stats`."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncBear` 023A8A also needs `ccBGSSSE014_SummonBear` 000873:ccbgssse014-spellpack01.esl (summoned bear, level 30) and `ccFFBSSE001_BearSpirit` 000828:ccffbsse001-imperialdragon.esl (Bear Spirit, PC × 1): they use 023A8A as their template but not for `Stats` (both on Conjured → *Familiars & Spirit Animals*). Cave Bear, Snow Bear, the Ursine Guardian and the Helgen bear (all rows) do the same and keep their own levels.",
+      "`EncBearCave`, `EncBearSnow`, `dunHunterBear`, `MQ101Bear`: no other record keeps its own level.",
+      "Every other bear record (the `Enc*SprigganCompanion` bears and every `Lvl*Predator` / `LvlBear*` / `LvlAnimalSnowFields` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharBearPlainsForestHills",
+          "formKey": "01E796:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Bear"
+          },
+          {
+            "at": 16,
+            "label": "Cave Bear"
+          }
+        ],
+        "owner": "`LvlBearAll` 042265 · `LvlBearNotSnow` 01E7A4"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalForestPredator",
+          "formKey": "042297:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 12,
+            "label": "Bear"
+          },
+          {
+            "at": 13,
+            "label": "Bear",
+            "count": 2
+          },
+          {
+            "at": 14,
+            "label": "Bear",
+            "count": 2
+          },
+          {
+            "at": 16,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 20,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 24,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 28,
+            "label": "Cave Bear",
+            "count": 2
+          },
+          {
+            "at": 30,
+            "label": "Cave Bear",
+            "count": 2
+          },
+          {
+            "at": 35,
+            "label": "Cave Bear"
+          }
+        ],
+        "owner": "`LvlAnimalForestPredator` 01E7A0"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharAnimalForestPredator",
+          "formKey": "01E1C5:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 12,
+            "label": "Bear"
+          },
+          {
+            "at": 13,
+            "label": "Bear",
+            "count": 2
+          },
+          {
+            "at": 14,
+            "label": "Bear",
+            "count": 2
+          },
+          {
+            "at": 16,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 20,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 24,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 28,
+            "label": "Cave Bear",
+            "count": 2
+          },
+          {
+            "at": 30,
+            "label": "Cave Bear",
+            "count": 2
+          },
+          {
+            "at": 35,
+            "label": "Cave Bear"
+          }
+        ],
+        "owner": "`DLC2LvlAnimalForestPredator` 03A9C2:Dragonborn.esm"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalCanyonPredator",
+          "formKey": "04229B:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 12,
+            "label": "Bear"
+          },
+          {
+            "at": 13,
+            "label": "Bear"
+          },
+          {
+            "at": 14,
+            "label": "Bear",
+            "count": 2
+          },
+          {
+            "at": 15,
+            "label": "Bear"
+          },
+          {
+            "at": 16,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 18,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 20,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 24,
+            "label": "Cave Bear",
+            "count": 2
+          },
+          {
+            "at": 28,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 30,
+            "label": "Cave Bear"
+          }
+        ],
+        "owner": "`LvlAnimalCanyonPredator` 0422B3"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalHills",
+          "formKey": "01E78F:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 12,
+            "label": "Bear",
+            "count": 2
+          },
+          {
+            "at": 14,
+            "label": "Bear"
+          },
+          {
+            "at": 15,
+            "label": "Bear"
+          },
+          {
+            "at": 16,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 20,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 24,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 30,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 32,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 35,
+            "label": "Cave Bear"
+          }
+        ],
+        "owner": "`LvlAnimalHillsPredator` 0DC5A3"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalCoastSnowPredator",
+          "formKey": "0422A3:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 16,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 18,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 20,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 20,
+            "label": "Snow Bear"
+          },
+          {
+            "at": 24,
+            "label": "Snow Bear"
+          },
+          {
+            "at": 28,
+            "label": "Snow Bear"
+          },
+          {
+            "at": 30,
+            "label": "Snow Bear"
+          },
+          {
+            "at": 32,
+            "label": "Snow Bear"
+          },
+          {
+            "at": 35,
+            "label": "Snow Bear",
+            "count": 2
+          }
+        ],
+        "owner": "`LvlAnimalCoastSnowPredator` 0422B5"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalForestSnowPredator",
+          "formKey": "042299:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 20,
+            "label": "Snow Bear",
+            "count": 2
+          },
+          {
+            "at": 22,
+            "label": "Snow Bear"
+          }
+        ],
+        "owner": "`LvlAnimalForestSnowPredator` 0422B0"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalMountainSnowPredator",
+          "formKey": "04229D:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 20,
+            "label": "Snow Bear",
+            "count": 2
+          },
+          {
+            "at": 22,
+            "label": "Snow Bear"
+          }
+        ],
+        "owner": "`LvlAnimalMountainSnowPredator` 01E7A3"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharAnimalMountainSnowPredator",
+          "formKey": "01E1C6:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 20,
+            "label": "Snow Bear",
+            "count": 2
+          },
+          {
+            "at": 22,
+            "label": "Snow Bear"
+          }
+        ],
+        "owner": "`DLC2LvlAnimalMountainSnowPredator` 03A9C1:Dragonborn.esm"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalSnowFields",
+          "formKey": "01E78E:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 20,
+            "label": "Snow Bear"
+          }
+        ],
+        "owner": "`LvlAnimalSnowFields` 065A3B"
+      },
+      {
+        "list": {
+          "edid": "CR01LCharBeast",
+          "formKey": "025232:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 12,
+            "label": "Bear"
+          },
+          {
+            "at": 16,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 20,
+            "label": "Snow Bear"
+          }
+        ],
+        "owner": "Companions (`CR01` 01CEEE)"
+      },
+      {
+        "list": {
+          "edid": "LCharSprigganCompanion",
+          "formKey": "01E776:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 12,
+            "label": "Bear (`EncBearSprigganCompanion` 0C96C2)"
+          },
+          {
+            "at": 16,
+            "label": "Cave Bear (`EncBearCaveSprigganCompanion` 0C96C3)"
+          }
+        ],
+        "owner": "`LvlSprigganCompanion` 01E7C6 · `LvlSprigganGuard` 022837"
+      },
+      {
+        "list": {
+          "edid": "LCharSprigganCompanionFrost",
+          "formKey": "0640BD:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 16,
+            "label": "Cave Bear (`EncBearCaveSprigganCompanion` 0C96C3)"
+          },
+          {
+            "at": 20,
+            "label": "Snow Bear (`EncBearSnowSprigganCompanion` 0C96C4)"
+          }
+        ],
+        "owner": "`LvlSprigganCompanionSnow` 025D3B"
+      },
+      {
+        "list": {
+          "edid": "LCharBearAll",
+          "formKey": "042266:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Bear"
+          },
+          {
+            "at": 16,
+            "label": "Cave Bear"
+          },
+          {
+            "at": 20,
+            "label": "Snow Bear"
+          }
+        ],
+        "owner": "none found (no record uses it; `LvlBearAll` templates 01E796)"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalForest",
+          "formKey": "01E790:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 12,
+            "label": "Bear"
+          }
+        ],
+        "owner": "none found (no record uses it)"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalPlains",
+          "formKey": "01E78D:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 12,
+            "label": "Bear"
+          }
+        ],
+        "owner": "none found (no record uses it)"
+      },
+      {
+        "list": {
+          "edid": "dunClearspringTarnLCharPredator",
+          "formKey": "0F334B:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 12,
+            "label": "Bear"
+          },
+          {
+            "at": 16,
+            "label": "Cave Bear"
+          }
+        ],
+        "owner": "none found (no record uses it)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Ursine Guardian",
+        "quest": "alias `guardianBear` of `dunHunterQST` 018601 (*Kyne’s Sacred Trials*)",
+        "locations": [
+          {
+            "cell": {
+              "label": "Tamriel cell (-17, -19)",
+              "formKey": "009C26:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0E7EAA:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Bear (Helgen)",
+        "quest": "alias `Bear` of `MQ101` 03372B",
+        "locations": [
+          {
+            "cell": {
+              "edid": "HelgenKeep01",
+              "formKey": "05DE24:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0B301C:Skyrim.esm"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

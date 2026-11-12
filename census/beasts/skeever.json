@@ -1,0 +1,553 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "skeever",
+  "group": "beasts",
+  "title": "Skeever",
+  "order": 5,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "skeever",
+        "name": "Skeever",
+        "records": [
+          {
+            "edid": "EncSkeever",
+            "formKey": "023AB7:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "SkeeverRace",
+          "formKey": "013201:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "bands-of-power.md: skeevers"
+        }
+      },
+      {
+        "id": "venomfang-skeever",
+        "name": "Venomfang Skeever",
+        "records": [
+          {
+            "edid": "dunHonningbrewMeaderyencSkeever",
+            "formKey": "0490F2:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "SkeeverWhiteRace",
+          "formKey": "0C3EDF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 7
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a named skeever, banded at its vanilla level (7)"
+        },
+        "note": "uses `EncSkeever` as its template but not for `Stats`."
+      },
+      {
+        "id": "skeever-guardian-spirit",
+        "name": "Skeever Guardian Spirit",
+        "records": [
+          {
+            "edid": "dunHunterSkeeverGuardian",
+            "formKey": "0E662E:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "SkeeverRace",
+          "formKey": "013201:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "bands-of-power.md: skeevers (a *Kyne’s Sacred Trials* quarry)"
+        }
+      },
+      {
+        "id": "skritch",
+        "name": "Skritch (pet)",
+        "records": [
+          {
+            "edid": "ccVSVSSE002_Skeever",
+            "formKey": "00082D:ccvsvsse002-pets.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccVSVSSE002_SkeeverRace",
+          "formKey": "000810:ccvsvsse002-pets.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "bands-of-power.md: skeevers"
+        },
+        "note": "Pets of Skyrim (CC), a recruitable pet: `Essential`, `Invulnerable`."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncSkeever` 023AB7: no record outside the table keeps its own level. The Venomfang Skeever `dunHonningbrewMeaderyencSkeever` 0490F2 uses it as its template but not for `Stats`, so it stays at 7 when 023AB7 changes.",
+      "The other rows: no other record keeps its own level.",
+      "Two more skeevers have no template and set their own level 1: `dunbwpSkeever` 0481A0 (under Placed only) and `TG03SkeeverDead` 10195B (dead, two refs in `HonningbrewMeadery01` 015207; on no census page).",
+      "Every other skeever record (`EncSkeeverAggroRadius1024`, `dunHonningbrewMeaderyencSkeever02`, `DA13hallucinatedSkeever`, the HearthFires `BYOHHouseSkeeverTame` and adoption skeever, and every `Lvl*Predator` / `Lvl*Companion` / `LvlNuisiance` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharAnimalPlainsPredator",
+          "formKey": "042293:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`LvlAnimalPlainsPredator` 01E7A1"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalHills",
+          "formKey": "01E78F:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`LvlAnimalHillsPredator` 0DC5A3"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalCanyonPredator",
+          "formKey": "04229B:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`LvlAnimalCanyonPredator` 0422B3"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalForestPredator",
+          "formKey": "042297:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`LvlAnimalForestPredator` 01E7A0"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharAnimalForestPredator",
+          "formKey": "01E1C5:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`DLC2LvlAnimalForestPredator` 03A9C2:Dragonborn.esm"
+      },
+      {
+        "list": {
+          "edid": "LCharNuisance",
+          "formKey": "01E77B:Skyrim.esm"
+        },
+        "gate": "no flags; every entry at level 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`LvlNuisiance` 01E7BA · `dunMiddenForgeFailureList` 058272"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrCompanion",
+          "formKey": "01E773:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`LvlDraugrCompanion` 0640B9"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrCompanionFrost",
+          "formKey": "0640B8:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`LvlDraugrCompanionSnow` 0640BA"
+      },
+      {
+        "list": {
+          "edid": "LCharHagravenCompanion",
+          "formKey": "0640C0:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`LvlHagravenCompanion` 04B473"
+      },
+      {
+        "list": {
+          "edid": "LCharHagravenCompanionFrost",
+          "formKey": "0640C1:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`LvlHagravenCompanionSnow` 0640C2"
+      },
+      {
+        "list": {
+          "edid": "dunHagsEnd_LCharHagravenCompanionFrost",
+          "formKey": "09D59F:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`dunHagsEnd_LvlHagravenCompanionSnow` 09D59E"
+      },
+      {
+        "list": {
+          "edid": "LCharVampireCompanion",
+          "formKey": "01E775:Skyrim.esm"
+        },
+        "override": "Dawnguard.esm override",
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`LvlVampireCompanion` 01E7C8"
+      },
+      {
+        "list": {
+          "edid": "LCharVampireCompanionFrost",
+          "formKey": "0640BE:Skyrim.esm"
+        },
+        "override": "Dawnguard.esm override",
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`LvlVampireCompanionSnow` 0640BF (never placed; Undead → *Vampires*)"
+      },
+      {
+        "list": {
+          "edid": "LCharFalmerCompanion",
+          "formKey": "01E786:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`LvlFalmerCompanion` 01E7B1"
+      },
+      {
+        "list": {
+          "edid": "LCharFalmerCompanionFrost",
+          "formKey": "0640BC:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`LvlFalmerCompanionSnow` 0640BB"
+      },
+      {
+        "list": {
+          "edid": "dunFellglow_LCharWarlockPetForScene",
+          "formKey": "08A1B7:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "none found (no record uses it)"
+      },
+      {
+        "list": {
+          "edid": "dunMiddenForgeFailureListTemplate",
+          "formKey": "058275:Skyrim.esm"
+        },
+        "gate": "no flags; every entry at level 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "none found (no record uses it)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Venomfang Skeever",
+        "locations": [
+          {
+            "cell": {
+              "edid": "HonningbrewMeadery02",
+              "formKey": "03D35A:Skyrim.esm"
+            },
+            "refText": "×7, one a corpse"
+          }
+        ]
+      },
+      {
+        "name": "Skeever",
+        "base": [
+          {
+            "edid": "dunHonningbrewMeaderyencSkeever02",
+            "formKey": "10FC24:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "HonningbrewMeadery02",
+              "formKey": "03D35A:Skyrim.esm"
+            },
+            "refText": "×6, one a corpse"
+          }
+        ]
+      },
+      {
+        "name": "Skeever",
+        "base": [
+          {
+            "edid": "EncSkeeverAggroRadius1024",
+            "formKey": "0B5559:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "FaldarsTooth01",
+              "formKey": "015286:Skyrim.esm"
+            },
+            "refText": "×3"
+          },
+          {
+            "cell": {
+              "edid": "Forelhost02",
+              "formKey": "022F53:Skyrim.esm"
+            },
+            "refText": "×3"
+          },
+          {
+            "cell": {
+              "edid": "RiftenRatway01",
+              "formKey": "03B698:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "RiftenRatway02",
+              "formKey": "0A1BFD:Skyrim.esm"
+            },
+            "refText": "×3"
+          },
+          {
+            "cell": {
+              "edid": "NightcallerTemple01",
+              "formKey": "09AA4A:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "DLC1VampireCastleDungeon01",
+              "formKey": "00285B:Dawnguard.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "DLC2BloodskalBarrow01",
+              "formKey": "0142FC:Dragonborn.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "edid": "ccBGSSSE025RootDungeon",
+              "formKey": "00083C:ccbgssse025-advdsgs.esm"
+            },
+            "refText": "×2",
+            "note": "CC"
+          }
+        ]
+      },
+      {
+        "name": "Skeever Guardian Spirit",
+        "quest": "alias `guardianSkeever` of `dunHunterQST` 018601 (*Kyne’s Sacred Trials*)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WindwardRuinsExterior",
+              "formKey": "008F15:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0E662F:Skyrim.esm"
+            },
+            "refText": "(4, 22)",
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Skritch",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenRatway01",
+              "formKey": "03B698:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "00083C:ccvsvsse002-pets.esl"
+            }
+          }
+        ]
+      },
+      {
+        "name": "none",
+        "base": [
+          {
+            "edid": "DA13hallucinatedSkeever",
+            "formKey": "0C026A:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "quest": "created by aliases `Skeever01`–`03` of `DA13` 08998D (*The Mind of Madness*)"
+      },
+      {
+        "name": "Skeever",
+        "base": [
+          {
+            "edid": "BYOHHouseSkeeverTame",
+            "formKey": "010A47:HearthFires.esm"
+          }
+        ],
+        "notPlaced": true,
+        "quest": "created by alias `SkeeverTame` of `BYOHHouseSkeeverInfestation` 010A44:HearthFires.esm"
+      },
+      {
+        "name": "Biter",
+        "base": [
+          {
+            "edid": "BYOHRelationshipAdoptionCritter_Skeever",
+            "formKey": "013819:HearthFires.esm"
+          }
+        ],
+        "notPlaced": true,
+        "quest": "spawned by `BYOHRelationshipAdoption` 0042B4:HearthFires.esm from form list `BYOHRelationshipAdoption_CrittersMale` 013815:HearthFires.esm"
+      },
+      {
+        "name": "Skeever",
+        "base": [
+          {
+            "edid": "dunbwpSkeever",
+            "formKey": "0481A0:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "OLDBluePalaceWing01",
+              "formKey": "0152B4:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "04819D:Skyrim.esm"
+            },
+            "note": "an old unused cell"
+          }
+        ],
+        "note": "level 1, no template"
+      }
+    ]
+  }
+}

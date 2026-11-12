@@ -1,0 +1,159 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "ash-hopper",
+  "group": "insectoids",
+  "title": "Ash Hopper",
+  "order": 7,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "ash-hopper",
+        "name": "Ash Hopper",
+        "records": [
+          {
+            "edid": "DLC2EncAshHopper",
+            "formKey": "01B657:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2AshHopperRace",
+          "formKey": "01B658:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: Solstheim's vermin, banded at its vanilla level (4)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`DLC2EncAshHopper` 01B657:Dragonborn.esm: no other record keeps its own level, apart from the unplaced test copy `DLC2EncAshHopperTest` 019AD0:Dragonborn.esm (level 4, template 01B657 without `Stats`).",
+      "Every other ash hopper record (`DLC2EncAshHopperAmbush`, `DLC2EncAshHopperExtra`) carries `Stats` and follows 01B657."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Ash Hopper",
+        "base": [
+          {
+            "edid": "DLC2EncAshHopper",
+            "formKey": "01B657:Dragonborn.esm"
+          }
+        ],
+        "baseNote": "Solstheim (`DLC2SolstheimWorld`), 9 refs",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2FortFrostmothExterior02",
+              "formKey": "00EF12:Dragonborn.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (17, 10)",
+              "formKey": "00EE8A:Dragonborn.esm"
+            },
+            "refText": "×3"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (10, 9)",
+              "formKey": "00EEB2:Dragonborn.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (14, 8)",
+              "formKey": "00EECF:Dragonborn.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (13, 7)",
+              "formKey": "00EEF1:Dragonborn.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (9, 4)",
+              "formKey": "00EF58:Dragonborn.esm"
+            },
+            "refText": "×1"
+          }
+        ]
+      },
+      {
+        "name": "Ash Hopper",
+        "base": [
+          {
+            "edid": "DLC2EncAshHopperAmbush",
+            "formKey": "030F26:Dragonborn.esm"
+          }
+        ],
+        "baseNote": "Solstheim, 15 refs (the dev cell `DLC2WarehouseAmbushes` 027333 left out)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2POIAshRJ01",
+              "formKey": "00EF3A:Dragonborn.esm"
+            },
+            "refText": "×3"
+          },
+          {
+            "cell": {
+              "edid": "DLC2POISpider02",
+              "formKey": "00EE6E:Dragonborn.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (10, 6)",
+              "formKey": "00EF15:Dragonborn.esm"
+            },
+            "refText": "×3"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (13, 7)",
+              "formKey": "00EEF1:Dragonborn.esm"
+            },
+            "refText": "×3"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (10, 9)",
+              "formKey": "00EEB2:Dragonborn.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (9, 4)",
+              "formKey": "00EF58:Dragonborn.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      }
+    ]
+  }
+}

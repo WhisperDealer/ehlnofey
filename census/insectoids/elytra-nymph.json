@@ -1,0 +1,130 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "elytra-nymph",
+  "group": "insectoids",
+  "title": "Elytra Nymph",
+  "order": 9,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "elytra-nymph",
+        "name": "Elytra Nymph",
+        "records": [
+          {
+            "edid": "ccBGSSSE025_ElytraNymphDementia",
+            "formKey": "000B4B:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_ElytraNymphMania",
+            "formKey": "000CDC:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE025_ElytraRace",
+          "formKey": "000A76:ccbgssse025-advdsgs.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.6,
+          "min": 0,
+          "max": 26
+        },
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "archetype-tiers.md §4.2: the Elytra Nymph at 10 (user, 2026-09-30)"
+        },
+        "note": "each comes as a Dementia and a Mania record. The pair differ only in skin (`WornArmor` 000A77 vs 000A98) and outfit; stats, level and AI are the same. No template."
+      },
+      {
+        "id": "elytra-nymph-pets",
+        "name": "Demented / Manic Elytra Nymph",
+        "records": [
+          {
+            "edid": "ccBGSSSE025_ElytraNymphDementia_PET",
+            "formKey": "000CB2:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_ElytraNymphMania_PET",
+            "formKey": "000CBB:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE025_ElytraRace_PET",
+          "formKey": "000A52:ccbgssse025-advdsgs.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a pet, banded at its vanilla level (1); archetype-tiers.md §4.2 leaves pets out of scope"
+        },
+        "note": "the Creation Club pets: `Essential`, `Invulnerable`, ghosts; no template."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "All four records: no other record keeps its own level, and no record uses one as a template. Each Dementia / Mania pair sets its level twice, so a change must be made on both records of the pair."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Elytra Nymph",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE025RootDungeon",
+              "formKey": "00083C:ccbgssse025-advdsgs.esm"
+            },
+            "refText": "15 refs (Dementia ×9, Mania ×6)"
+          }
+        ]
+      },
+      {
+        "name": "Demented Elytra Nymph",
+        "locations": [
+          {
+            "cell": {
+              "label": "Tamriel"
+            },
+            "persistent": true,
+            "note": "(24, 12)",
+            "ref": {
+              "formKey": "001008:ccbgssse025-advdsgs.esm"
+            }
+          }
+        ],
+        "quest": "alias `ElytraDementia` of `ccBGSSSE025_ElytraPetAcquisition_Dementia` 0010C0 and `ccBGSSSE025_ElytraPetAdoption_Dementia` 0010C2"
+      },
+      {
+        "name": "Manic Elytra Nymph",
+        "locations": [
+          {
+            "cell": {
+              "label": "Tamriel"
+            },
+            "persistent": true,
+            "note": "(-7, -8)",
+            "ref": {
+              "formKey": "001005:ccbgssse025-advdsgs.esm"
+            }
+          }
+        ],
+        "quest": "alias `ElytraMania` of `ccBGSSSE025_ElytraPetAcquisition_Mania` 0010C3 and `ccBGSSSE025_ElytraPetAdoption_Mania` 0010BE"
+      }
+    ]
+  }
+}

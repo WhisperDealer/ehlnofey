@@ -13,7 +13,8 @@
     - a sub-group's `parent` names a group that exists
     - every `formKey` is `<6 upper-case hex>:<Master.esm|esp|esl>` (never bare hex)
     - every record row has a `level.kind` the site knows and a `target.band` of I-X with a
-      `target.status` of proposed or implemented, or a `target.scales` (an exception to bone 1)
+      `target.status` of proposed or implemented, or a `target.scales` (an exception to bone 1), or a
+      `target.unchanged` (left out of the delevelling)
 
 .EXAMPLE
   powershell -File build/Test-CensusJson.ps1
@@ -99,7 +100,11 @@ foreach ($dir in Get-ChildItem -LiteralPath $Census -Directory | Where-Object { 
                 # An exception to bone 1: keeps scaling with the player.
                 if ($row.target.scales -ne $true -or 'proposed', 'implemented' -notcontains $row.target.status) { Add-Error $file.FullName "$where target.scales must be true, proposed or implemented" }
             }
-            elseif ($BandIds -notcontains $row.target.band) { Add-Error $file.FullName "$where has no target.band of I-X" }
+            elseif (Has $row.target 'unchanged') {
+                # Left out of the delevelling: keeps its vanilla level, in no band.
+                if ($row.target.unchanged -ne $true -or -not (Has $row.target 'source')) { Add-Error $file.FullName "$where target.unchanged must be true, with a source" }
+            }
+            elseif (-not (Has $row.target 'band') -or $BandIds -notcontains $row.target.band) { Add-Error $file.FullName "$where has no target.band of I-X" }
             elseif ('proposed', 'implemented' -notcontains $row.target.status) { Add-Error $file.FullName "$where target.status must be proposed or implemented" }
         }
         Test-FormKeys $f $file.FullName

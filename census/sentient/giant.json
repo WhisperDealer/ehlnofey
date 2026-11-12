@@ -1,0 +1,238 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "giant",
+  "group": "sentient",
+  "title": "Giant",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "giant",
+        "name": "Giant",
+        "records": [
+          {
+            "edid": "EncGiant01",
+            "formKey": "023AAE:Skyrim.esm"
+          },
+          {
+            "edid": "C00GiantForWhiterunBattle",
+            "formKey": "0C97D1:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "GiantRace",
+          "formKey": "0131F9:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 32
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "archetype-tiers.md: giants raised to 38, on a par with the mammoths they herd (user); vanilla 32 is band V"
+        },
+        "note": "`EncGiant01` is the giant the list and the named giants use. `C00GiantForWhiterunBattle` (the giant at Pelagia Farm, race `C00GiantOutsideWhiterunRace` 0CAE13) sets its own level, PcLevelMult 1 (min 10, no max), and takes only spells, AI packages, model, scripts, attack data and keywords from `EncGiant01`."
+      },
+      {
+        "id": "frost-giant",
+        "name": "Frost Giant",
+        "records": [
+          {
+            "edid": "DLC1FrostGiant",
+            "formKey": "00E25A:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "GiantRace",
+          "formKey": "0131F9:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 50
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "archetype-tiers.md: the Forgotten Vale Frost Giant kept at 50 as a place exception"
+        }
+      },
+      {
+        "id": "karstaag",
+        "name": "Karstaag",
+        "records": [
+          {
+            "edid": "DLC2dunKarstaag",
+            "formKey": "019665:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2GhostFrostGiantRace",
+          "formKey": "01CAD8:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 90
+        },
+        "target": {
+          "band": "X",
+          "status": "proposed",
+          "source": "archetype-tiers.md: Karstaag 90 kept; the same band as his summon on Conjured → *Heroes & Spirits*"
+        },
+        "note": "his summon `DLC2dunKarstaagSummon` 024811:Dragonborn.esm takes `Stats` from him; it is on Conjured → *Heroes & Spirits*."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncGiant01`, `DLC1FrostGiant`, `DLC2dunKarstaag`: no other record keeps its own level.",
+      "`DLC2FrostGiant01` 01CAD6:Dragonborn.esm is a Frost Giant (`DLC2GhostFrostGiantRace` 01CAD8:Dragonborn.esm) with no template and level 32; it is Karstaag's template (Karstaag sets his own level) and is under Placed only.",
+      "Every other giant record (`EncGiant02` · `03`, `DA06GiantBoss`, `DA14Giant`, `dunKarthspireGiant`, `dunTalkingStoneHerderGiant`, `BYOHGiant`, `DLC1FrostGiantAggresive`, `DLC2dunKarstaagSummon` and every `Lvl*Giant*` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharGiant",
+          "formKey": "030529:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player (all three at 1)",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Giant ×3 (`EncGiant01` · `02` · `03`)"
+          }
+        ],
+        "owner": "`LvlGiant` 03053F (18 refs) and its copies `dunTalkingStoneHerderGiant` 0B5F6F (Tamriel, ref 04BB23) · `LvlGiantNoAggro` 10157F (Tamriel ×7, `POIVolcanicTundra14` 00B9E1 ×1) · `BYOHGiant` 000C3F:HearthFires.esm (not placed) · `ccKRTSSE001_LvlGiantNoAggro` 000C16:cckrtsse001_altar.esl (`ccKRTSSE001QNWorld` 000A5F ×2); `DA06LvlGiant` 08BEE6"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Giant (`C00GiantForWhiterunBattle`)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "0C97D2:Skyrim.esm"
+            },
+            "disabled": true,
+            "note": "Pelagia Farm, enable parent 045855"
+          }
+        ],
+        "quest": "alias `Giant` of `C00GiantAttack` 0C97D9"
+      },
+      {
+        "name": "Giant (`DA06GiantBoss` 0C0BE5)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "FallowstoneCaveWorldEnd",
+              "formKey": "0204C7:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0223F7:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "alias `DA06GiantAlias` of `DA06` 03B681 (*The Cursed Tribe*)"
+      },
+      {
+        "name": "Giant (`dunKarthspireGiant` 069F7D)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "069F7C:Skyrim.esm"
+            },
+            "note": "Karthspire"
+          }
+        ]
+      },
+      {
+        "name": "Grok (`DA14Giant` 01F3BB)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "07A0E9:Skyrim.esm"
+            },
+            "disabled": true,
+            "note": "cell −21, −4"
+          }
+        ],
+        "quest": "alias `DA14GiantAlias` of `DA14` 01BB9B (*A Night To Remember*)"
+      },
+      {
+        "name": "Frost Giant",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC01FalmerValley",
+              "formKey": "000BB5:Dawnguard.esm"
+            },
+            "persistent": true,
+            "refText": "×4",
+            "note": "the Forgotten Vale"
+          },
+          {
+            "cell": {
+              "edid": "DLC1FalmerTemple01",
+              "formKey": "00384F:Dawnguard.esm"
+            },
+            "ref": {
+              "formKey": "012631:Dawnguard.esm"
+            },
+            "note": "the variant `DLC1FrostGiantAggresive` 014CC3:Dawnguard.esm"
+          }
+        ],
+        "quest": "aliases `DLC1PortalGem{Purple,Blue,Green,White}KeyGIANT` (the four) and `DLC1PortalGemOrangeKeyGIANT` (the fifth) of `DLC1dunMasterQST` 007773:Dawnguard.esm"
+      },
+      {
+        "name": "Karstaag",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2SolstheimWorld",
+              "formKey": "000800:Dragonborn.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "019666:Dragonborn.esm"
+            },
+            "disabled": true,
+            "note": "Castle Karstaag"
+          }
+        ],
+        "quest": "alias `Karstaag` of `DLC2dunKarstaagQST` 0247F8:Dragonborn.esm"
+      },
+      {
+        "name": "Frost Giant (`DLC2FrostGiant01` 01CAD6:Dragonborn.esm, level 32)",
+        "notPlaced": true,
+        "note": "Karstaag's template (not for `Stats`) and in the QA list `DLC2QANPCList07` 02A8A9"
+      }
+    ]
+  }
+}

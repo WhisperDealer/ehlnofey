@@ -61,10 +61,12 @@ const PLACED_FOLD = 4; // more locations than this collapse behind a summary
                     <BandChip id={b.id} proposed={t.status === 'proposed'} />
                     <span>{b.name}{t.level && <strong> {t.level}</strong>}</span>
                   </>
+                ) : 'unchanged' in t ? (
+                  <span class="scales">Unchanged</span>
                 ) : (
                   <span class="scales">Scales with the player</span>
                 )}
-                <div class="sub">{t.status} · <span set:html={md(t.source)} /></div>
+                <div class="sub">{'status' in t && <>{t.status} · </>}<span set:html={md(t.source)} /></div>
               </td>
             </tr>
           );

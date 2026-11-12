@@ -1,0 +1,481 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "spriggan",
+  "group": "sentient",
+  "title": "Spriggan",
+  "order": 4,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "spriggan",
+        "name": "Spriggan",
+        "records": [
+          {
+            "edid": "EncSpriggan",
+            "formKey": "023AB9:Skyrim.esm"
+          },
+          {
+            "edid": "dunSnaplegSpriggan",
+            "formKey": "09DA9B:Skyrim.esm"
+          },
+          {
+            "edid": "DLC2SprigganPrisoner",
+            "formKey": "039FD7:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "SprigganRace",
+          "formKey": "013204:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 8,
+          "also": [
+            7,
+            8
+          ]
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "bands-of-power.md: most wildlife; banded at its vanilla level (8)"
+        },
+        "note": "three records that set their own level: `EncSpriggan` (the list's; also placed directly in `RavenscarHollow01` and twice on Solstheim), `dunSnaplegSpriggan` (Snapleg Cave, 7) and `DLC2SprigganPrisoner` (Tel Mithryn)."
+      },
+      {
+        "id": "spriggan-matron",
+        "name": "Spriggan Matron",
+        "records": [
+          {
+            "edid": "EncSprigganMatron",
+            "formKey": "0F3905:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "SprigganMatronRace",
+          "formKey": "0F3903:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 18
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "banded at its vanilla level (18)"
+        }
+      },
+      {
+        "id": "spriggan-earth-mother",
+        "name": "Spriggan Earth Mother",
+        "records": [
+          {
+            "edid": "DLC1EncSprigganEarthMother",
+            "formKey": "013B74:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "SprigganEarthMotherRace",
+          "formKey": "013B77:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 30
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "archetype-tiers.md: the Earth Mother kept at 30 as a place exception"
+        }
+      },
+      {
+        "id": "burnt-spriggan",
+        "name": "Burnt Spriggan",
+        "records": [
+          {
+            "edid": "DLC2EncSprigganBurnt",
+            "formKey": "01B63F:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2SprigganBurntPrisoner",
+            "formKey": "039FDA:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2SprigganBurntRace",
+          "formKey": "01B644:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 28
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "banded at its vanilla level (28)"
+        },
+        "note": "two records that set their own level: `DLC2EncSprigganBurnt` and `DLC2SprigganBurntPrisoner` (Tel Mithryn)."
+      },
+      {
+        "id": "corrupted-spriggan",
+        "name": "Corrupted Spriggan",
+        "records": [
+          {
+            "edid": "ccBGSSSE025_EncCorruptedSprigganDementia",
+            "formKey": "000CDB:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_EncCorruptedSprigganMania",
+            "formKey": "000B77:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 8,
+          "max": 54
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "archetype-tiers.md: Corrupted Spriggan fixed at 24"
+        },
+        "note": "one record per realm, each with its own race (`ccBGSSSE025_CorruptedSprigganRaceDementia` 1B691F, `…RaceMania` 1B6918, ccbgssse025-advdsgs.esm)."
+      },
+      {
+        "id": "blooming-spriggan",
+        "name": "Blooming Spriggan",
+        "records": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_SprigganSpringMatron",
+            "formKey": "000901:cctwbsse001-puzzledungeon.esm"
+          },
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_SprigganSpring",
+            "formKey": "000908:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 8,
+          "also": [
+            28
+          ]
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "banded at the placed record's vanilla level (8); the pollen-spawned copy is 28 (band V)"
+        },
+        "note": "two records that set their own level: `…SpringMatron` (`SprigganMatronRace`, 8, placed) and `…Spring` (`DLC2SprigganBurntRace`, 28, spawned by the pollen trigger)."
+      },
+      {
+        "id": "blooming-spriggan-matron",
+        "name": "Blooming Spriggan Matron",
+        "records": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_SprigganSpringMatronKey",
+            "formKey": "0008FF:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "race": {
+          "edid": "SprigganMatronRace",
+          "formKey": "0F3903:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 8,
+          "max": 18
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: the puzzle season's key-holder; banded at its cap (18), with the Spriggan Matron"
+        }
+      },
+      {
+        "id": "enraged-spriggan",
+        "name": "Enraged Spriggan",
+        "records": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_SprigganBoss",
+            "formKey": "00090A:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2SprigganBurntRace",
+          "formKey": "01B644:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "banded at its vanilla level (10)"
+        }
+      },
+      {
+        "id": "spriggan-swarm",
+        "name": "Spriggan Swarm",
+        "records": [
+          {
+            "edid": "EncSprigganSwarm",
+            "formKey": "09AA3B:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "SprigganSwarmRace",
+          "formKey": "09AA44:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "banded at its vanilla level (1)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The rows: no other record keeps its own level.",
+      "`DLCDwarvenPuzzleDungeon_SprigganBoss` 00090A:cctwbsse001-puzzledungeon.esm (Enraged Spriggan, a row) has no template and level 10. `EncSprigganSwarm` 09AA3B (a row) has no template and level 1.",
+      "Every other spriggan record (`LvlSpriggan`, `LvlSprigganAmbush`, the `dunShadowgreenLvlSprigganAmbush*` wrappers, `TreasCorpseSpriggan`, `DLC1EncSprigganEarthMother_Ambush`, `DLC2EncSprigganBurntAmbush`) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharSpriggan",
+          "formKey": "10EC84:Skyrim.esm"
+        },
+        "override": "Dawnguard.esm (wins)",
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Spriggan"
+          },
+          {
+            "at": 18,
+            "label": "Spriggan Matron"
+          },
+          {
+            "at": 30,
+            "label": "Spriggan Earth Mother"
+          }
+        ],
+        "owner": "`LvlSpriggan` 02B710 (and its Shadowgreen copy `dunShadowgreenLvlSprigganAmbush` 08540C, `ShadowgreenCavernOrigin` 02A9F1 ×2, with `dunShadowgreenLvlSprigganAmbushHoldPositionCustom011024` 085553, not placed) · `LvlSprigganAmbush` 08900D"
+      },
+      {
+        "list": {
+          "edid": "LCharSprigganCompanion",
+          "formKey": "01E776:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`EncWolfSprigganCompanion` 0C96BE"
+          },
+          {
+            "at": 6,
+            "label": "`EncSabreCatSprigganCompanion` 0C96BF"
+          },
+          {
+            "at": 12,
+            "label": "`EncBearSprigganCompanion` 0C96C2"
+          },
+          {
+            "at": 16,
+            "label": "`EncBearCaveSprigganCompanion` 0C96C3"
+          }
+        ],
+        "note": "no spriggan: the spriggans' animals, on World Creatures → Animals",
+        "owner": "`LvlSprigganCompanion` 01E7C6 (and its Shadowgreen copy `dunShadowgreen_LvlSprigganCompanionAmbush` 08540E, `ShadowgreenCavernOrigin` 02A9F1 ×3) · `LvlSprigganGuard` 022837 (`AutumnshadeClearingExterior` 00BC51 ×1)"
+      },
+      {
+        "list": {
+          "edid": "LCharSprigganCompanionFrost",
+          "formKey": "0640BD:Skyrim.esm"
+        },
+        "note": "no spriggan: the frost version of the spriggans' animals, on World Creatures → Animals",
+        "owner": "`LvlSprigganCompanionSnow` 025D3B (`ShroudedGrove01` 015215 ×2, `ShroudedGroveExterior` 00907F ×1)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Spriggan (`dunSnaplegSpriggan`)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "SnaplegCave01",
+              "formKey": "067F2A:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0689F8:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Spriggan · Burnt Spriggan (`DLC2SprigganPrisoner` · `DLC2SprigganBurntPrisoner`)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2TelMithryn",
+              "formKey": "017787:Dragonborn.esm"
+            },
+            "refText": "refs 039FD8 · 039FDB",
+            "note": "enable parent 035827"
+          }
+        ]
+      },
+      {
+        "name": "Spriggan Earth Mother (`DLC1EncSprigganEarthMother_Ambush` 01AAB2:Dawnguard.esm)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1AncestorGladePortcullis",
+              "formKey": "0048D0:Dawnguard.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "formKey": "0048D4:Dawnguard.esm"
+            },
+            "refText": "×1",
+            "note": "Ancestor Glade exterior"
+          }
+        ],
+        "note": "enable parent 01AA4B"
+      },
+      {
+        "name": "Burnt Spriggan (`DLC2EncSprigganBurnt`)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "TestAsh01",
+              "formKey": "00EF0F:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "029680:Dragonborn.esm"
+            }
+          },
+          {
+            "cell": {
+              "formKey": "00EF78:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "03A5FC:Dragonborn.esm"
+            },
+            "note": "Solstheim (10, 3)"
+          }
+        ]
+      },
+      {
+        "name": "Burnt Spriggan (`DLC2EncSprigganBurntAmbush` 035E6E)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2POIJS03",
+              "formKey": "00EEF0:Dragonborn.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "formKey": "00EEB2:Dragonborn.esm"
+            },
+            "note": "Solstheim (10, 9)"
+          },
+          {
+            "cell": {
+              "formKey": "00EEF4:Dragonborn.esm"
+            },
+            "note": "Solstheim (10, 7)"
+          },
+          {
+            "cell": {
+              "formKey": "00EE8F:Dragonborn.esm"
+            },
+            "note": "Solstheim (12, 10)"
+          }
+        ]
+      },
+      {
+        "name": "Corrupted Spriggan (Mania ×3, Dementia ×2)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE025RootDungeon",
+              "formKey": "00083C:ccbgssse025-advdsgs.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Blooming Spriggan (`…SpringMatron`)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeonSeason02",
+              "formKey": "00215E:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×4"
+          }
+        ],
+        "quest": "aliases `DLCDwarvenPuzzleDungeonSpringSpriggan01`–`03` · `05` of `DLCDwarvenPuzzleDungeonQuest01` 0038D9"
+      },
+      {
+        "name": "Blooming Spriggan (`…Spring`)",
+        "notPlaced": true,
+        "note": "spawned by the activator `DLCDwarvenPuzzleDungeonPollenTrigger` 00086B"
+      },
+      {
+        "name": "Blooming Spriggan Matron",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeonSeason02",
+              "formKey": "00215E:cctwbsse001-puzzledungeon.esm"
+            },
+            "ref": {
+              "formKey": "002169:cctwbsse001-puzzledungeon.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias `DLCDwarvenPuzzleDungeonSpringSpriggan04`"
+      },
+      {
+        "name": "Enraged Spriggan",
+        "notPlaced": true,
+        "note": "two at a time are spawned (`PlaceActorAtMe`, script `dlcdwarvenpuzzlesummonspriggan` on effect 000810) by the spell `DLCDwarvenPuzzleDungeonBossSpell_Spring` 00084D of `DLCDwarvenPuzzleDungeon_SpiderBoss` 0008E5 (cctwbsse001-puzzledungeon.esm)"
+      },
+      {
+        "name": "Spriggan Swarm",
+        "notPlaced": true,
+        "note": "nothing spawns it; its race's ability `AbSprigganSwarm` 09AA46 holds it as a script property but never places it"
+      }
+    ]
+  }
+}

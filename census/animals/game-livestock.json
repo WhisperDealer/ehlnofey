@@ -1,0 +1,538 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "game-livestock",
+  "group": "animals",
+  "title": "Game & Livestock",
+  "order": 5,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "elk",
+        "name": "Elk",
+        "records": [
+          {
+            "edid": "EncElk",
+            "formKey": "023A91:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "ElkRace",
+          "formKey": "0131ED:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "unchanged": true,
+          "source": "user, 2026-11-12: harmless animals, left out of the delevelling; they keep their vanilla level"
+        }
+      },
+      {
+        "id": "white-stag",
+        "name": "White Stag",
+        "records": [
+          {
+            "edid": "DA05EncWhiteStag",
+            "formKey": "104F46:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "WhiteStagRace",
+          "formKey": "104F45:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "unchanged": true,
+          "source": "user, 2026-11-12: harmless animals, left out of the delevelling; they keep their vanilla level"
+        }
+      },
+      {
+        "id": "white-stag-quest",
+        "name": "White Stag",
+        "records": [
+          {
+            "edid": "DA05QuestingBeast",
+            "formKey": "090CE2:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "WhiteStagRace",
+          "formKey": "104F45:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "unchanged": true,
+          "source": "user, 2026-11-12: harmless animals, left out of the delevelling; they keep their vanilla level"
+        },
+        "note": "nameless, shown as White Stag through `BaseData`; not placed, the ghost stag's template"
+      },
+      {
+        "id": "deer",
+        "name": "Deer",
+        "records": [
+          {
+            "edid": "EncDeer",
+            "formKey": "0CF89D:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DeerRace",
+          "formKey": "0CF89B:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "unchanged": true,
+          "source": "user, 2026-11-12: harmless animals, left out of the delevelling; they keep their vanilla level"
+        }
+      },
+      {
+        "id": "vale-deer",
+        "name": "Vale Deer",
+        "records": [
+          {
+            "edid": "DLC1EncDeerGlowing",
+            "formKey": "002C02:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1DeerGlowRace",
+          "formKey": "00D0B2:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "unchanged": true,
+          "source": "user, 2026-11-12: harmless animals, left out of the delevelling; they keep their vanilla level"
+        }
+      },
+      {
+        "id": "cow",
+        "name": "Cow",
+        "records": [
+          {
+            "edid": "EncCow",
+            "formKey": "023A90:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "CowRace",
+          "formKey": "04E785:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 3
+        },
+        "target": {
+          "unchanged": true,
+          "source": "user, 2026-11-12: harmless animals, left out of the delevelling; they keep their vanilla level"
+        }
+      },
+      {
+        "id": "chicken",
+        "name": "Chicken",
+        "records": [
+          {
+            "edid": "EncChicken",
+            "formKey": "0A91A0:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "ChickenRace",
+          "formKey": "0A919D:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "unchanged": true,
+          "source": "user, 2026-11-12: harmless animals, left out of the delevelling; they keep their vanilla level"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncElk` 023A91: no other record keeps its own level.",
+      "`DA05EncWhiteStag` 104F46: no record outside the table keeps its own level. `DA05QuestingBeast` 090CE2 uses it as its template but not for `Stats`, so changing 104F46 leaves the quest stag at level 1.",
+      "Every other elk record (the female elk `EncElkFemale`, `EncElkFemaleSprigganCompanion`, the ghost stag `DA05QuestingBeastGhost`, which follows 090CE2, and the `Lvl*Prey` / `LvlElk` wrappers) carries `Stats` and follows its template or list.",
+      "`EncDeer`, `DLC1EncDeerGlowing`: no templated record keeps its own level.",
+      "Three more deer have no template and set their own level 1: `TestEncReinDeer` 0D249A (\"Deer\", placed ×3 in the wild, under Placed only); `DLC1EncDeerGlowingDEAD` 00F797:Dawnguard.esm (a Vale Deer placed dead ×3 in the Forgotten Vale and Darkfall Passage) and `DLCDwarvenPuzzleDungeon_DeerSpring` 000909:cctwbsse001-puzzledungeon.esm, both on no census page.",
+      "Every other deer record (`dunCGEncDeer`, `EncDeerSprigganCompanion`, the `LvlDeer` and `Lvl*Prey` wrappers) carries `Stats` and follows its template or list.",
+      "`EncCow` 023A90: no templated record keeps its own level.",
+      "Three more cows have no template and set their own level 3: `CWMission08EncCowPainted` 06681E (Civil War painted cow) and `EncCowNoRespawn` 00F9A9:Dawnguard.esm, both under Placed only; `DLCDwarvenPuzzleDungeon_AutumnCow` 0008F1:cctwbsse001-puzzledungeon.esm (not placed), on no census page.",
+      "Every other cow record (`EncCowPainted`, `RoriksteadCow`, the Soul Cairn `DLC01SoulCairnSoulCow`) carries `Stats` and follows 023A90.",
+      "`EncChicken` 0A91A0: no templated record keeps its own level.",
+      "`DLCDwarvenPuzzleDungeon_AutumnChicken` 0008F0:cctwbsse001-puzzledungeon.esm is a chicken with no template and level 1 (placed ×8 in the puzzle dungeon's autumn cell); it is on no census page.",
+      "Every other chicken record (`SnowShodFarmChicken`, `dunTransmogrifyChicken`) carries `Stats` and follows 0A91A0."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharElk",
+          "formKey": "0DB2AC:Skyrim.esm"
+        },
+        "gate": "every entry at level 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Elk"
+          },
+          {
+            "at": 1,
+            "label": "female elk (`EncElkFemale` 0ABEDF)",
+            "count": 2
+          }
+        ],
+        "owner": "`LvlElk` 0DB2AB (not placed) and the three prey lists below"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalForestPrey",
+          "formKey": "042298:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player; both at 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharDeer`"
+          },
+          {
+            "at": 1,
+            "label": "`LCharElk`"
+          }
+        ],
+        "owner": "`LvlAnimalForestPrey` 0422AF (placed ×77); Solstheim `DLC2LvlAnimalForestPrey` 03A9C4:Dragonborn.esm (×4)"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalMarshPrey",
+          "formKey": "042296:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player; both at 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharDeer`"
+          },
+          {
+            "at": 1,
+            "label": "`LCharElk`"
+          }
+        ],
+        "owner": "`LvlAnimalMarshPrey` 042478 (placed ×50)"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalPlainsPrey",
+          "formKey": "042294:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player; both at 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharDeer`"
+          },
+          {
+            "at": 1,
+            "label": "`LCharElk`"
+          }
+        ],
+        "owner": "`LvlAnimalPlainsPrey` 0422B1 (placed ×98)"
+      },
+      {
+        "list": {
+          "edid": "LCharDeerSprigganCompanion",
+          "formKey": "0D2071:Skyrim.esm"
+        },
+        "gate": "every entry at level 1 (no flags)",
+        "entries": [
+          {
+            "at": 1,
+            "label": "female elk (`EncElkFemaleSprigganCompanion` 0D2070)",
+            "count": 2
+          },
+          {
+            "at": 1,
+            "label": "deer (`EncDeerSprigganCompanion` 0D206F)"
+          }
+        ],
+        "owner": "none found (no record uses it)"
+      },
+      {
+        "list": {
+          "edid": "LCharDeer",
+          "formKey": "0ABEDC:Skyrim.esm"
+        },
+        "gate": "one entry, at 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Deer"
+          }
+        ],
+        "owner": "`LvlDeer` 0ABEE0 (placed ×15) and the three prey lists below"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "White Stag",
+        "base": [
+          {
+            "edid": "DA05EncWhiteStag",
+            "formKey": "104F46:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DA05QuestingBeastREF",
+              "formKey": "090CE1:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias `QuestingBeast` of `DA05` 02A49A (*Ill Met By Moonlight*)"
+      },
+      {
+        "name": "White Stag",
+        "base": [
+          {
+            "edid": "DA05QuestingBeast",
+            "formKey": "090CE2:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "template of the ghost stag `DA05QuestingBeastGhost` 090CE8 (ref 090CE9, Tamriel persistent cell; initially disabled, alias `QuestingBeastGhost` of `DA05`, shown as *Aspect of Hircine*)"
+      },
+      {
+        "name": "Elk (female)",
+        "base": [
+          {
+            "edid": "EncElkFemaleSprigganCompanion",
+            "formKey": "0D2070:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "POIVolcanicTundra10",
+              "formKey": "0095A8:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0EA56D:Skyrim.esm"
+            }
+          }
+        ],
+        "note": "follows `EncElk`; its list is unused"
+      },
+      {
+        "name": "Vale Deer",
+        "base": [
+          {
+            "edid": "DLC1EncDeerGlowing",
+            "formKey": "002C02:Dawnguard.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1FVWayShrine01",
+              "formKey": "000C59:Dawnguard.esm"
+            },
+            "note": "Forgotten Vale"
+          },
+          {
+            "cell": {
+              "edid": "FalmerValleyStart",
+              "formKey": "000CFD:Dawnguard.esm"
+            },
+            "refText": "×2",
+            "note": "Forgotten Vale"
+          },
+          {
+            "cell": {
+              "formKey": "005AC9:Dawnguard.esm"
+            },
+            "refText": "×3",
+            "note": "Darkfall Passage, cell (-39, 18)"
+          }
+        ]
+      },
+      {
+        "name": "Deer",
+        "base": [
+          {
+            "edid": "TestEncReinDeer",
+            "formKey": "0D249A:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "formKey": "009C00:Skyrim.esm"
+            },
+            "refText": "×3 (0D2497–0D2499)",
+            "note": "Tamriel cell (-12, -18)"
+          }
+        ],
+        "note": "level 1, no template; a test record that is placed in the live world"
+      },
+      {
+        "name": "Deer",
+        "base": [
+          {
+            "edid": "dunCGEncDeer",
+            "formKey": "0B8F25:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "×2 (0B8EF2, 0B8F24)"
+          }
+        ],
+        "note": "follows `EncDeer`"
+      },
+      {
+        "name": "Cow",
+        "base": [
+          {
+            "edid": "EncCow",
+            "formKey": "023A90:Skyrim.esm"
+          }
+        ],
+        "note": "14 refs, all Skyrim.esm: the farms (Loreius ×2, Chillfurrow, Pelagia, Battle-Born, Merryfair, Snow-Shod), Riverwood, Ivarstead, Falkreath, Guldun Rock, the Whiterun plains, a dragon lair, and the three HearthFires house plots. No list draws it."
+      },
+      {
+        "name": "Cow",
+        "base": [
+          {
+            "edid": "EncCowPainted",
+            "formKey": "0C39F1:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "CradlecrushRockExterior",
+              "formKey": "0095EA:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0399B2:Skyrim.esm"
+            }
+          }
+        ],
+        "note": "follows `EncCow`"
+      },
+      {
+        "name": "Cow",
+        "base": [
+          {
+            "edid": "RoriksteadCow",
+            "formKey": "09DA4B:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "RoriksteadExterior01",
+              "formKey": "009576:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "RoriksteadExterior03",
+              "formKey": "009597:Skyrim.esm"
+            }
+          }
+        ],
+        "note": "follows `EncCow`"
+      },
+      {
+        "name": "Cow",
+        "base": [
+          {
+            "edid": "CWMission08EncCowPainted",
+            "formKey": "06681E:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "level 3; no ref, list, quest, script or other record uses it"
+      },
+      {
+        "name": "Cow",
+        "base": [
+          {
+            "edid": "EncCowNoRespawn",
+            "formKey": "00F9A9:Dawnguard.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "level 3; no ref, list, quest, script or other record uses it"
+      },
+      {
+        "name": "Chicken",
+        "base": [
+          {
+            "edid": "EncChicken",
+            "formKey": "0A91A0:Skyrim.esm"
+          }
+        ],
+        "note": "95 refs, all Skyrim.esm: the farms, mills, towns and villages of every hold (Riften, Morthal, Rorikstead, Karthwasten, Riverwood, Ivarstead, Winterhold, Shor's Stone, Kynesgrove and the rest) and the three HearthFires house plots. No list draws it."
+      },
+      {
+        "name": "Chicken",
+        "base": [
+          {
+            "edid": "SnowShodFarmChicken",
+            "formKey": "0FA6D9:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "SnowShodFarmExterior01",
+              "formKey": "00BD35:Skyrim.esm"
+            },
+            "refText": "×4"
+          }
+        ],
+        "note": "follows `EncChicken`"
+      }
+    ]
+  }
+}

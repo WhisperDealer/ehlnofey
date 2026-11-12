@@ -84,9 +84,9 @@
           "value": 2
         },
         "target": {
-          "band": "III",
+          "band": "I",
           "status": "proposed",
-          "source": "role: the pack's pet companion, at its vanilla level"
+          "source": "user, 2026-11-12: a pet, at its vanilla level (2)"
         },
         "note": "the Creation Club pet; no template."
       }

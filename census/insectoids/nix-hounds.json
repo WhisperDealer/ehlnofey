@@ -1,0 +1,146 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "nix-hounds",
+  "group": "insectoids",
+  "title": "Nix-Hounds",
+  "order": 8,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "nix-hound",
+        "name": "Nix-Hound",
+        "records": [
+          {
+            "edid": "ccBGSSSE035_EncNixHoundEnemy",
+            "formKey": "000804:ccbgssse035-petnhound.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE035_NixHoundEnemyRace",
+          "formKey": "000861:ccbgssse035-petnhound.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 16
+        },
+        "target": {
+          "band": "III",
+          "level": 16,
+          "status": "proposed",
+          "source": "archetype-tiers.md §4.2: the Nix-Hound keeps its 16 (user, 2026-09-30)"
+        },
+        "note": "My Pet Nix-Hound (CC); no template."
+      },
+      {
+        "id": "nix-hound-pet",
+        "name": "Nix-Hound",
+        "records": [
+          {
+            "edid": "ccBGSSSE035_PetNixHound",
+            "formKey": "000D64:ccbgssse035-petnhound.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE035_NixHoundCompanionRace",
+          "formKey": "002F74:Update.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 2
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a pet, banded at its vanilla level (2); archetype-tiers.md §4.2 leaves pets out of scope"
+        },
+        "note": "the Creation Club pet: `Essential`, `Invulnerable`, a ghost; no template."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`ccBGSSSE035_EncNixHoundEnemy`, `ccBGSSSE035_PetNixHound`: no other record keeps its own level, and no record uses either as a template."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Nix-Hound",
+        "baseNote": "Solstheim (`DLC2SolstheimWorld`), 10 refs",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2POIAshRJ02",
+              "formKey": "00EEB7:Dragonborn.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "edid": "DLC2POIWestRJ03",
+              "formKey": "00EE71:Dragonborn.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (13, 11)",
+              "formKey": "00EE6D:Dragonborn.esm"
+            },
+            "refText": "×3"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (10, 11)",
+              "formKey": "00EE70:Dragonborn.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (9, 10)",
+              "formKey": "00EE92:Dragonborn.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (14, 9)",
+              "formKey": "00EEAE:Dragonborn.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (16, 12)",
+              "formKey": "00EE49:Dragonborn.esm"
+            },
+            "refText": "×1"
+          }
+        ]
+      },
+      {
+        "name": "Nix-Hound (pet)",
+        "locations": [
+          {
+            "cell": {
+              "label": "Solstheim"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "000806:ccbgssse035-petnhound.esl"
+            }
+          }
+        ],
+        "quest": "alias `PetNixHound` of `ccBGSSSE035_PetControlQuest` 00080B and `PetRefTemp` of `ccBGSSSE035_PetAcquireQuest` 00080A (*My Pet Nix-Hound*)"
+      }
+    ]
+  }
+}

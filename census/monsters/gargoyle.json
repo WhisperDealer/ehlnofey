@@ -1,0 +1,138 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "gargoyle",
+  "group": "monsters",
+  "title": "Gargoyle",
+  "order": 4,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "gargoyle",
+        "name": "Gargoyle",
+        "records": [
+          {
+            "edid": "DLC1EncGargoyleSmall",
+            "formKey": "017702:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1GargoyleVariantGreenRace",
+          "formKey": "019D86:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 13
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: the bottom rung of the gargoyle ladder, banded at its vanilla level (13), with the summoned Gargoyle"
+        }
+      },
+      {
+        "id": "gargoyle-brute",
+        "name": "Gargoyle Brute",
+        "records": [
+          {
+            "edid": "DLC1EncGargoyle",
+            "formKey": "00A2CC:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1GargoyleRace",
+          "formKey": "00A2C6:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 25
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: the middle rung of the gargoyle ladder, banded at its vanilla level (25)"
+        }
+      },
+      {
+        "id": "gargoyle-sentinel",
+        "name": "Gargoyle Sentinel",
+        "records": [
+          {
+            "edid": "DLC1EncGargoyleSentinel",
+            "formKey": "014487:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1GargoyleVariantBossRace",
+          "formKey": "010D00:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 43
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: the top rung of the gargoyle ladder, banded at its vanilla level (43)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The rows: no other record keeps its own level.",
+      "Every other gargoyle record (the summons `DLC1EncGargoyleSummon`, `…SummonAmulet`, `DLC1dunHarkonEncGargoyleSummon` (on Conjured → *Daedric Summons*), the `DLC1LvlGargoyle*` wrappers and `LvlVampireCompanion`) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharGargoyle",
+          "formKey": "017704:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Gargoyle"
+          },
+          {
+            "at": 25,
+            "label": "Gargoyle Brute"
+          },
+          {
+            "at": 43,
+            "label": "Gargoyle Sentinel"
+          }
+        ],
+        "owner": "`DLC1LvlGargoyle` 017705:Dawnguard.esm (quests `DLC1EclipseAttack1`, `3`, `6`, `DLC1WE03`) and the wrappers on it: `DLC1LvlGargoyle_Ambush` 003DCF:Dawnguard.esm (17 refs: `DLC1VampireCastleDungeon02` 00285A ×7, `DLC1VampireCastleBossRoom` 019DFE ×3, `DLC1DimHollowCrypt02` 000EB7 ×2, `DLC1VampireCastleZCell1` 007203 ×1 (all Dawnguard.esm), `BloodletThrone01` 016EA1 ×2, `ccEEJSSE005Interior01` 002FD1:Update.esm ×2) · `DLC1VQ08LvlGargoyle_Ambush` 012407:Dawnguard.esm (`DLC1VampireCastleExterior02` 00191D, `…Exterior03` 0018FE, Tamriel, 1 each)"
+      },
+      {
+        "list": {
+          "edid": "LCharVampireCompanion",
+          "formKey": "01E775:Skyrim.esm"
+        },
+        "override": "Dawnguard override",
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 13,
+            "label": "Gargoyle"
+          },
+          {
+            "at": 25,
+            "label": "Gargoyle Brute"
+          }
+        ],
+        "note": "with spiders, a skeever and a death hound below",
+        "owner": "`LvlVampireCompanion` 01E7C8 (`DLC1AncestorGladePortcullis` 0048D0:Dawnguard.esm, 1 ref)"
+      }
+    ]
+  }
+}

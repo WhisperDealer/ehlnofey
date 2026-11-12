@@ -1,0 +1,566 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "horse",
+  "group": "mounts",
+  "title": "Horse",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "horse",
+        "name": "Horse",
+        "records": [
+          {
+            "edid": "EncHorseBlack",
+            "formKey": "068D07:Skyrim.esm"
+          },
+          {
+            "edid": "EncHorseBlackAndWhite",
+            "formKey": "068D6B:Skyrim.esm"
+          },
+          {
+            "edid": "EncHorseBrown",
+            "formKey": "068D5B:Skyrim.esm"
+          },
+          {
+            "edid": "EncHorseGrey",
+            "formKey": "068D6D:Skyrim.esm"
+          },
+          {
+            "edid": "EncHorsePalomino",
+            "formKey": "068D6E:Skyrim.esm"
+          },
+          {
+            "edid": "EncHorseSaddledBlack",
+            "formKey": "068CFA:Skyrim.esm"
+          },
+          {
+            "edid": "EncHorseSaddledBlackAndWhite",
+            "formKey": "068D02:Skyrim.esm"
+          },
+          {
+            "edid": "EncHorseSaddledBrown",
+            "formKey": "023AB2:Skyrim.esm"
+          },
+          {
+            "edid": "EncHorseSaddledGrey",
+            "formKey": "068D03:Skyrim.esm"
+          },
+          {
+            "edid": "EncHorseSaddledPalomino",
+            "formKey": "068D04:Skyrim.esm"
+          },
+          {
+            "edid": "TG05KarliahHorse",
+            "formKey": "10F7FD:Skyrim.esm"
+          },
+          {
+            "edid": "BYOHPlayerHorseSaddledBlackNoRespawn",
+            "formKey": "010FBE:HearthFires.esm"
+          },
+          {
+            "edid": "BYOHPlayerHorseSaddledGreyNoRespawn",
+            "formKey": "010FBB:HearthFires.esm"
+          },
+          {
+            "edid": "BYOHPlayerHorseSaddledPalominoNoRespawn",
+            "formKey": "00F9A8:HearthFires.esm"
+          }
+        ],
+        "race": {
+          "edid": "HorseRace",
+          "formKey": "0131FD:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a mount, banded at its vanilla level (4)"
+        },
+        "note": "fourteen records, each owning its level 4: five unsaddled and five saddled colours, Karliah's horse and the three Hearthfire homestead horses. The colours are also placed by hand (over 50 refs, mostly the Civil War camps, forts and roadside camps, plus two by the CC Hasedoki and Redguard packs), and the stablemasters sell the saddled ones (`stables` 068D73, property `LvlHorseSaddled` per stable)."
+      },
+      {
+        "id": "carriage-horse",
+        "name": "Horse",
+        "encounter": "carriage",
+        "records": [
+          {
+            "edid": "HorseForCarrriageTemplate",
+            "formKey": "084785:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "CartHorseRace",
+          "formKey": "0DE505:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 3
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a carriage horse, banded at its vanilla level (3)"
+        },
+        "note": "the template of every carriage horse; its own race."
+      },
+      {
+        "id": "shadowmere",
+        "name": "Shadowmere",
+        "records": [
+          {
+            "edid": "Shadowmere",
+            "formKey": "09CCD7:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HorseRace",
+          "formKey": "0131FD:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 50
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a named mount, banded at its vanilla level (50)"
+        }
+      },
+      {
+        "id": "frost",
+        "name": "Frost",
+        "records": [
+          {
+            "edid": "MS03Horse",
+            "formKey": "097E1E:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HorseRace",
+          "formKey": "0131FD:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 25
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a named mount, banded at its vanilla level (25)"
+        },
+        "note": "uses `EncHorseSaddledPalomino` as its template, but not for `Stats`."
+      },
+      {
+        "id": "wild-horse",
+        "name": "Wild Horse",
+        "records": [
+          {
+            "edid": "ccBGSSSE034_WildHorse01_Chestnut",
+            "formKey": "000D61:ccbgssse034-mntuni.esl"
+          },
+          {
+            "edid": "ccBGSSSE034_WildHorse02_Black",
+            "formKey": "00080D:ccbgssse034-mntuni.esl"
+          },
+          {
+            "edid": "ccBGSSSE034_WildHorse03_GreyBlack",
+            "formKey": "00080E:ccbgssse034-mntuni.esl"
+          },
+          {
+            "edid": "ccBGSSSE034_WildHorse04_Pale",
+            "formKey": "00080F:ccbgssse034-mntuni.esl"
+          },
+          {
+            "edid": "ccBGSSSE034_WildHorse05_RedBrown",
+            "formKey": "000810:ccbgssse034-mntuni.esl"
+          },
+          {
+            "edid": "ccBGSSSE034_WildHorse06_WhiteSpotted",
+            "formKey": "000811:ccbgssse034-mntuni.esl"
+          },
+          {
+            "edid": "ccBGSSSE034_WildHorse07_BrownSpotted",
+            "formKey": "000821:ccbgssse034-mntuni.esl"
+          }
+        ],
+        "race": {
+          "edid": "HorseRace",
+          "formKey": "0131FD:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: a mount, banded at its vanilla level (20)"
+        },
+        "note": "seven records (CC *Wild Horses*), each owning its level 20."
+      },
+      {
+        "id": "dwarven-horse",
+        "name": "Dwarven Horse",
+        "records": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_DwarvenHorse",
+            "formKey": "0008FA:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "race": {
+          "edid": "HorseRace",
+          "formKey": "0131FD:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 50
+        },
+        "flags": [
+          "Invulnerable"
+        ],
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a mount, banded at its vanilla level (50)"
+        },
+        "note": "Forgotten Seasons (CC)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncHorseSaddledPalomino` 068D04 does not change Frost (`MS03Horse`, a row above, level 25): it uses 068D04 as its template but not for `Stats`.",
+      "The other rows: no other record keeps its own level.",
+      "The other horse-race records with no template are on *Unicorn* (`ccBGSSSE034_MountUnicorn`) and *Otherworldly Horses* (`DLC1EncHorseBone`, the three Daedric Horses).",
+      "Every other horse record (the stable horses, `MQ101Horse`, `MQ101CartHorse`, `HorseForCarriageNew`, `DBCiceroHorse`, `DB10PenitusOculatusHorse`, `dunPOISmugglerHorse`, `CWCourierHorse`, `WERoad12Horse`, `DLC1_WESC07_EncHorseSaddledGrey` and the `LvlHorse*` wrappers) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharHorseSaddled",
+          "formKey": "068D70:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Horse (the five saddled colours)",
+            "count": 5
+          }
+        ],
+        "owner": "`LvlHorseSaddled` 0D0702 (alias `Horse` of `WEJS24` 0E8924, created) · the Farmer pack's script property `lvlHorse` of `ccVSVSSE004_ModManagerQuest` 000D29:ccvsvsse004-beafarmer.esl (`ccVSVSSE004_FarmModManagerScript` places one at the farm's horse marker)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Horse (carriage)",
+        "base": [
+          {
+            "edid": "HorseForCarriageNew",
+            "formKey": "072A08:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "×9, the hold-city stables"
+          },
+          {
+            "cell": {
+              "label": "the Hearthfire homesteads"
+            },
+            "refText": "×3, one each"
+          }
+        ]
+      },
+      {
+        "name": "Horse (stables)",
+        "base": [
+          {
+            "edid": "WindhelmPlayerHorse",
+            "formKey": "109AB1:Skyrim.esm"
+          },
+          {
+            "edid": "SolitudePlayerHorse",
+            "formKey": "109E3E:Skyrim.esm"
+          },
+          {
+            "edid": "RiftenPlayerHorse",
+            "formKey": "109E40:Skyrim.esm"
+          },
+          {
+            "edid": "MarkarthPlayerHorse",
+            "formKey": "109E41:Skyrim.esm"
+          },
+          {
+            "edid": "WindhelmStablesHorseUnsaddled",
+            "formKey": "109823:Skyrim.esm"
+          },
+          {
+            "edid": "SolitudeStablesHorseUnsaddled",
+            "formKey": "109827:Skyrim.esm"
+          },
+          {
+            "edid": "RiftenStablesHorseUnsaddled",
+            "formKey": "10982A:Skyrim.esm"
+          },
+          {
+            "edid": "MarkarthStablesHorseUnsaddled",
+            "formKey": "10982B:Skyrim.esm"
+          }
+        ],
+        "note": "one each by the four cities' stables: the player horses in the Tamriel persistent cell, the unsaddled ones in `WindhelmBridge01` · `KatlasFarmExterior` · `RiftenCityNorthGateExterior` · `MarkarthExterior01`"
+      },
+      {
+        "name": "Horse (Helgen)",
+        "base": [
+          {
+            "edid": "MQ101Horse",
+            "formKey": "0654E5:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101CartHorse",
+            "formKey": "0B9E1D:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "`MQ101Horse` ×3, `MQ101CartHorse` ×2"
+          },
+          {
+            "cell": {
+              "edid": "HelgenExterior06",
+              "formKey": "00982B:Skyrim.esm"
+            },
+            "refText": "`MQ101CartHorse` ×2"
+          }
+        ],
+        "note": "mostly initially disabled"
+      },
+      {
+        "name": "Horse",
+        "base": [
+          {
+            "edid": "DBCiceroHorse",
+            "formKey": "08B5D1:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "07AD8E:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Horse",
+        "base": [
+          {
+            "edid": "DB10PenitusOculatusHorse",
+            "formKey": "0B076A:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DarkBrotherhoodSanctuaryExterior",
+              "formKey": "009C62:Skyrim.esm"
+            },
+            "refText": "×1"
+          },
+          {
+            "cell": {
+              "label": "exterior 009C82"
+            },
+            "refText": "×2"
+          }
+        ],
+        "note": "enable parent 0B06F8"
+      },
+      {
+        "name": "Horse",
+        "base": [
+          {
+            "edid": "dunPOISmugglerHorse",
+            "formKey": "0D9806:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "label": "exterior 00919F"
+            },
+            "ref": {
+              "formKey": "0D9793:Skyrim.esm"
+            },
+            "note": "enable parent 045855"
+          }
+        ]
+      },
+      {
+        "name": "Horse",
+        "base": [
+          {
+            "edid": "TG05KarliahHorse",
+            "formKey": "10F7FD:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "SnowVeilSanctumOrigin",
+              "formKey": "00B3B0:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "077DA7:Skyrim.esm"
+            },
+            "note": "enable parent 0644D8"
+          }
+        ]
+      },
+      {
+        "name": "Horse (Hearthfire)",
+        "base": [
+          {
+            "edid": "BYOHPlayerHorseSaddledBlackNoRespawn",
+            "formKey": "010FBE:HearthFires.esm"
+          },
+          {
+            "edid": "BYOHPlayerHorseSaddledGreyNoRespawn",
+            "formKey": "010FBB:HearthFires.esm"
+          },
+          {
+            "edid": "BYOHPlayerHorseSaddledPalominoNoRespawn",
+            "formKey": "00F9A8:HearthFires.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "label": "the Hearthfire homesteads"
+            },
+            "refText": "one each"
+          }
+        ],
+        "quest": "alias `HouseHorse` of `BYOHHousePale` 010BEE, `BYOHHouseHjaalmarch` 00BE09, `BYOHHouseFalkreath` 00305E"
+      },
+      {
+        "name": "Horse (quest-spawned)",
+        "base": [
+          {
+            "edid": "CWCourierHorse",
+            "formKey": "0C214E:Skyrim.esm"
+          },
+          {
+            "edid": "WERoad12Horse",
+            "formKey": "10BF90:Skyrim.esm"
+          },
+          {
+            "edid": "DLC1_WESC07_EncHorseSaddledGrey",
+            "formKey": "0113C1:Dawnguard.esm"
+          }
+        ],
+        "notPlaced": true,
+        "quest": "created by `CWMission03` 03BCC4 · `WERoad12` 10BF8E · `DLC1_WESC07` 003508:Dawnguard.esm"
+      },
+      {
+        "name": "Shadowmere",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "09CCD8:Skyrim.esm"
+            },
+            "note": "Falkreath Sanctuary (−11, −21)"
+          }
+        ],
+        "quest": "alias `ShadowmereAlias` of `DB07` 01EA56 (*The Cure for Madness*) and `Shadowmere` of `DLC2EbonyWarriorQuest` 02C49E:Dragonborn.esm"
+      },
+      {
+        "name": "Frost",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "097E1F:Skyrim.esm"
+            },
+            "note": "(48, −24)"
+          }
+        ],
+        "quest": "alias `MS03Grane` of `MS03` 01DA3C (*Promises to Keep*)"
+      },
+      {
+        "name": "Wild Horse ×7",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "one ref each"
+          }
+        ],
+        "quest": "aliases `HorseWild01…07` of `ccBGSSSE034_WildHorsesQuest` 000D65 (*Horse Whisperer*)"
+      },
+      {
+        "name": "Dwarven Horse",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "0038D5:cctwbsse001-puzzledungeon.esm"
+            },
+            "note": "(−26, −9)"
+          }
+        ]
+      }
+    ]
+  }
+}

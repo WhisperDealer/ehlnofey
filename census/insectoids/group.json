@@ -1,0 +1,66 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "insectoids",
+  "title": "Insectoids",
+  "order": 4,
+  "parent": "world-creatures",
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The albino spiders, ash hoppers, chaurus, chaurus hunters, elytra nymphs, exploding spiders, frostbite spiders, nix-hounds and silt striders, with the Creation Club ones (the Web Mother, Arachnia, the nix-hounds, the elytra nymphs) beside their kin. The chaurus and chaurus hunters fight beside the Falmer, so their bands follow the Falmer rungs they share the hives with (*Falmer*).",
+  "families": [
+    {
+      "id": "silt-strider",
+      "holds": "no actor: the one silt strider is a MoveableStatic by Raven Rock"
+    },
+    {
+      "id": "frostbite-spider",
+      "holds": "the six frostbite spiders (1 · 6 · 14, snow 3 · 8 · 17), the two Wounded Frostbite Spiders, the Web Mother (CC), Arachnia (CC pet)"
+    },
+    {
+      "id": "albino-spider",
+      "holds": "the Albino Spider of Solstheim (5)"
+    },
+    {
+      "id": "exploding-spider",
+      "holds": "Neloth's imbued spiders: the Jumping spiders (player's level), the Cloaked and Oil spiders (6), the spider-zombie hosts"
+    },
+    {
+      "id": "chaurus",
+      "holds": "Chaurus 12 · Chaurus Reaper 20, the five Frozen Chaurus (10–50)"
+    },
+    {
+      "id": "chaurus-hunter",
+      "holds": "Chaurus Hunter Fledgling 16 · Chaurus Hunter 32"
+    },
+    {
+      "id": "ash-hopper",
+      "holds": "the Ash Hopper of Solstheim (4)"
+    },
+    {
+      "id": "nix-hounds",
+      "holds": "the Nix-Hound (CC, 16) and the CC pet"
+    },
+    {
+      "id": "elytra-nymph",
+      "holds": "the Elytra Nymphs of the Root dungeon (CC) and the two CC pets"
+    }
+  ],
+  "neverInGame": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "record": "`DLC2ExpSpiderGlowing` 02747E · `DLC2ExpSpiderGlowingFriend` 027495 (Dragonborn.esm)",
+        "why": "\"Glowing Spider\", the player's level (from `DLC2ExpSpiderTemplate` 014490): not placed and in no list; the Friend is spawned only by `DLC2ExpSpiderGlowingScroll` 027490, which is only in the QA container `DLC02QAScrollContainer` 026B68 and in no crafting list"
+      },
+      {
+        "record": "`DLC2ExpSpiderPackmuleCUT` 027482 · `DLC2ExpSpiderPackmuleFriendCUT` 0274A0 (Dragonborn.esm)",
+        "why": "\"Pack Spider\", PcLevelMult 1.2: cut content; not placed and in no list; the Friend is spawned only by `DLC2ExpSpiderPackmuleScroll` 0274A5, which is only in the QA container 026B68"
+      },
+      {
+        "record": "`DLC2ExpSpiderAlbinoFriend` 017074:Dragonborn.esm",
+        "why": "\"Albino Spider\", the player's level (from 014490): not placed; only its own magic effect `DLC2ExpSpiderAlbinoScrollFF` 0145CD names it, and no scroll or spell uses that effect"
+      }
+    ]
+  }
+}

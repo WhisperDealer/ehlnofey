@@ -1,0 +1,160 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "wisp",
+  "group": "sentient",
+  "title": "Wisp",
+  "order": 6,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "wisp",
+        "name": "Wisp",
+        "records": [
+          {
+            "edid": "EncWisp",
+            "formKey": "02C3C7:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "WitchlightRace",
+          "formKey": "013209:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: the wispmother's companions; banded at its vanilla level (1)"
+        }
+      },
+      {
+        "id": "wispmother",
+        "name": "Wispmother",
+        "records": [
+          {
+            "edid": "EncWispMother",
+            "formKey": "023ABD:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "WispRace",
+          "formKey": "013208:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 28
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "banded at its vanilla level (28)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncWisp`, `EncWispMother`: no other record keeps its own level.",
+      "`MS06Potema` 026C52 is a `WispRace` record with no template and PcLevelMult 1 (no min or max set), a voice-type source only; it is on Undead → *Ghost Bosses*.",
+      "The Pale Lady (`dunFrostmereCryptPaleLady` 0D37F4) carries `Stats` and follows `EncWispMother`."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "none"
+        },
+        "owner": "—",
+        "note": "no leveled list draws a wisp or a wispmother"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Wispmother",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Blackreach",
+              "formKey": "01EE62:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0F3AAE:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "Labyrinthian03",
+              "formKey": "091872:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0F2CF1:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "refs 015A75 (by `POIReach19`) · 07F896 (by `MilitaryCampWinterholdSons`, enable parent 07F89C) · 0CD768 (by `TestGlaciers`, 31, 20) · 0D13A1 (by `RkundExterior01`) · 0E407D (by `SkybornAltarExterior01`, enable parent 0E4078) · 108FD6 (by `SouthSkyboundWatchExterior01`)"
+          },
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "10C630:Skyrim.esm"
+            },
+            "disabled": true,
+            "note": "cell 20, −12: enabled by the `defaultEnableEncLinkedRef` triggers 10FF70 · 10FF71 once the player is at least `LevelGateWispMother` 0F4A38 (15)"
+          }
+        ]
+      },
+      {
+        "name": "The Pale Lady (`dunFrostmereCryptPaleLady` 0D37F4)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "FrostmereCryptWorld",
+              "formKey": "0C97EB:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0D37D5:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "alias `PaleLady` of `dunFrostmereCryptQST` 0CF915 (*The Pale Lady*) and `dunFrostmereToggleQST` 02AA57"
+      },
+      {
+        "name": "Wisp",
+        "locations": [
+          {
+            "cell": {
+              "edid": "FrostmereCryptWorld",
+              "formKey": "0C97EB:Skyrim.esm"
+            },
+            "refText": "×3",
+            "note": "two initially disabled"
+          }
+        ],
+        "quest": "aliases `KyrSoulWitchlight` · `RajirrSoulWitchlight` of `dunFrostmereCryptQST`",
+        "note": "and three beside each of the nine wispmothers above (27 refs, linked to and enabled with their wispmother)"
+      }
+    ]
+  }
+}

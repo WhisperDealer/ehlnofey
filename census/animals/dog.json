@@ -1,0 +1,341 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "dog",
+  "group": "animals",
+  "title": "Dog",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "dog",
+        "name": "Dog",
+        "records": [
+          {
+            "edid": "EncDog",
+            "formKey": "023A92:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DogRace",
+          "formKey": "0131EE:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 2
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a dog, banded at its vanilla level (2); flagged: bands-of-power.md puts most wildlife in Common"
+        }
+      },
+      {
+        "id": "stray-dog",
+        "name": "Stray Dog",
+        "records": [
+          {
+            "edid": "WEFollowerDog",
+            "formKey": "109487:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DogCompanionRace",
+          "formKey": "0F1AC4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 25
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a follower; banded at its vanilla floor (10), flagged for the user"
+        }
+      },
+      {
+        "id": "vigilance",
+        "name": "Vigilance",
+        "records": [
+          {
+            "edid": "TrainedDog",
+            "formKey": "09A7AA:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DogCompanionRace",
+          "formKey": "0F1AC4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 50
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Blooded"
+        }
+      },
+      {
+        "id": "meeko",
+        "name": "Meeko",
+        "records": [
+          {
+            "edid": "dunPOITundraMarshDog",
+            "formKey": "0D95E9:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DogCompanionRace",
+          "formKey": "0F1AC4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 25
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Trained"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncDog` 023A92: no record outside the table keeps its own level. The three followers (`WEFollowerDog`, `TrainedDog`, `dunPOITundraMarshDog`) use 023A92 as their template but not for `Stats`, so they keep the PC × 1 levels above when 023A92 changes.",
+      "Every other dog record (`EncBanditDog`, `EncBanditDogAggro1024`, `EncForswornDog`, and the named `Stump`, `TiberDog`, `YsgramorDog`, `Torom`) carries `Stats` and follows 023A92.",
+      "The Dawnguard hunting dogs Bran and Sceolang (`DLC1HireableHunterDog1`/`2`) are on Dawnguard → *Husky*."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Dog",
+        "base": [
+          {
+            "edid": "EncDog",
+            "formKey": "023A92:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "MarkarthUnderStoneKeep",
+              "formKey": "016DF2:Skyrim.esm"
+            },
+            "refText": "×2",
+            "note": "Understone Keep"
+          },
+          {
+            "cell": {
+              "edid": "RannveigsFast01",
+              "formKey": "015229:Skyrim.esm"
+            },
+            "note": "Rannveig's Fast"
+          }
+        ],
+        "quest": "created by alias `Dog1` of `WE14` 09F332 and alias `Dog` of `WEJS13` 0BC037, `WEJS21` 0E892E and `DLC2WE03` 01F989:Dragonborn.esm"
+      },
+      {
+        "name": "Dog",
+        "base": [
+          {
+            "edid": "EncBanditDog",
+            "formKey": "054AE3:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "FaldarsTooth01",
+              "formKey": "015286:Skyrim.esm"
+            },
+            "note": "Faldar's Tooth"
+          },
+          {
+            "cell": {
+              "edid": "RedoransRetreat01",
+              "formKey": "015224:Skyrim.esm"
+            },
+            "note": "Redoran's Retreat"
+          },
+          {
+            "cell": {
+              "formKey": "05D343:Skyrim.esm"
+            },
+            "note": "Brinewater Grotto (`BrinewaterGrottoWorld` 050015)"
+          }
+        ]
+      },
+      {
+        "name": "Dog",
+        "base": [
+          {
+            "edid": "EncBanditDogAggro1024",
+            "formKey": "0CE60C:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "POIFallForest05",
+              "formKey": "00BC34:Skyrim.esm"
+            },
+            "note": "Tamriel; Dawnguard renames the cell `DLC1RedwaterDenExterior`"
+          }
+        ]
+      },
+      {
+        "name": "Dog",
+        "base": [
+          {
+            "edid": "EncForswornDog",
+            "formKey": "09D74E:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "POIReach22b",
+              "formKey": "007083:Skyrim.esm"
+            },
+            "note": "Tamriel"
+          }
+        ]
+      },
+      {
+        "name": "Stump",
+        "base": [
+          {
+            "edid": "Stump",
+            "formKey": "01E62A:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Riverwood04",
+              "formKey": "009731:Skyrim.esm"
+            },
+            "note": "Tamriel"
+          }
+        ],
+        "quest": "alias `Stump` of `MQ102B` 02610A and `DialogueRiverwoodKidsScene` 0340A4"
+      },
+      {
+        "name": "Ysgramor",
+        "base": [
+          {
+            "edid": "YsgramorDog",
+            "formKey": "023EED:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "HollyfrostFarm",
+              "formKey": "0161FB:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Tiber",
+        "base": [
+          {
+            "edid": "TiberDog",
+            "formKey": "023EF1:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "HollyfrostFarm",
+              "formKey": "0161FB:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Torom",
+        "base": [
+          {
+            "edid": "Torom",
+            "formKey": "02F442:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "LeftHandMineDaighresHouse",
+              "formKey": "0198DE:Skyrim.esm"
+            },
+            "note": "Daighre's house, Left Hand Mine"
+          }
+        ],
+        "quest": "alias `MarkarthHandleNearbyActor01` of `CWSiege` 0954E1"
+      },
+      {
+        "name": "Stray Dog",
+        "base": [
+          {
+            "edid": "WEFollowerDog",
+            "formKey": "109487:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "quest": "created by alias `Dog` of `WEJS18` 0E8929 and `WEJS23` 0E8933"
+      },
+      {
+        "name": "Vigilance",
+        "base": [
+          {
+            "edid": "TrainedDog",
+            "formKey": "09A7AA:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "MarkarthStableHouse",
+              "formKey": "08E906:Skyrim.esm"
+            },
+            "note": "Markarth stables"
+          }
+        ]
+      },
+      {
+        "name": "Meeko",
+        "base": [
+          {
+            "edid": "dunPOITundraMarshDog",
+            "formKey": "0D95E9:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "note": "outside Meeko's Shack"
+          }
+        ]
+      }
+    ]
+  }
+}

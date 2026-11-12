@@ -1,0 +1,79 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "sentient",
+  "title": "Sentient",
+  "order": 5,
+  "parent": "world-creatures",
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Giants, goblins, wisps and wispmothers, spriggans, hagravens and rieklings, the Creation Club goblins and spriggans included. The giants and hagravens take the levels the user set in `archetype-tiers.md` (giants 38, hagravens 40), so their bands sit above their vanilla levels.",
+  "families": [
+    {
+      "id": "giant",
+      "holds": "Giant 32, the Forgotten Vale Frost Giant 50, Karstaag 90, and the named giants (Grok, the Cursed Tribe and Karthspire giants)"
+    },
+    {
+      "id": "goblins",
+      "holds": "the Creation Club goblins (all level 6), the Blue God and Gogh"
+    },
+    {
+      "id": "mounted-riekling",
+      "holds": "Riekling Rider 25, Courser 32, Charger 40"
+    },
+    {
+      "id": "spriggan",
+      "holds": "Spriggan 8, Matron 18, Earth Mother 30, Burnt Spriggan 28, the CC Corrupted, Blooming and Enraged Spriggans, and the Spriggan Swarm"
+    },
+    {
+      "id": "hagraven",
+      "holds": "the Hagraven 20 and the named hagravens: Melka, Lucerne, the Altar of Thrond three, Moira, Drascua, the Glenmoril Witches"
+    },
+    {
+      "id": "wisp",
+      "holds": "Wisp 1, Wispmother 28, the Pale Lady"
+    },
+    {
+      "id": "riekling",
+      "holds": "the four riekling rungs Riekling 6 → Warrior 23, the Thirsk chief and the CC chiefs"
+    }
+  ],
+  "filedElsewhere": [
+    {
+      "record": "`DLC2dunKarstaagSummon` 024811:Dragonborn.esm",
+      "what": "Karstaag's summon, `Stats` from the placed Karstaag",
+      "where": "Conjured → *Heroes & Spirits*"
+    },
+    {
+      "record": "`MS06Potema` 026C52",
+      "what": "Queen Potema, a `WispRace` voice source",
+      "where": "Undead → *Ghost Bosses*"
+    },
+    {
+      "record": "the spriggan and hagraven companions (`LCharSprigganCompanion*`, `LCharHagravenCompanion*`)",
+      "what": "wolves, sabre cats, bears, trolls and spiders",
+      "where": "World Creatures → Animals, Monsters and Insectoids"
+    }
+  ],
+  "neverInGame": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "record": "`E3demoGiant01` 0936D1 · `E3demoGiant02` 0936D3",
+        "why": "giants with their own PcLevelMult 1 (min 10): their two Tamriel refs have the enable parent `E3demoMarker` 093638, which is initially disabled and never enabled outside the E3 demo"
+      },
+      {
+        "record": "`TestGiantActor` 048D97",
+        "why": "level 1, one initially disabled ref in `RiverwoodPath` 0096D4 with no enable parent and no script or quest to enable it"
+      },
+      {
+        "record": "`ccBGSSE040_TestRiekling` 000B33:ccbgssse040-advobgobs.esl",
+        "why": "a Riekling Warrior copy that keeps its own level 23: not placed, and nothing in the pack references it"
+      },
+      {
+        "record": "`DLCDwarvenPuzzle_SprigganNonHostile` 0008E9:cctwbsse001-puzzledungeon.esm",
+        "why": "a Spriggan with no template and level 8: not placed, and nothing in the pack references it"
+      }
+    ]
+  }
+}

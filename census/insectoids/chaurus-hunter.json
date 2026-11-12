@@ -1,0 +1,222 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "chaurus-hunter",
+  "group": "insectoids",
+  "title": "Chaurus Hunter",
+  "order": 6,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "chaurus-hunter-fledgling",
+        "name": "Chaurus Hunter Fledgling",
+        "records": [
+          {
+            "edid": "DLC1EncChaurusHunterFledgling",
+            "formKey": "0029A1:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1ChaurusHunterRace",
+          "formKey": "0051FB:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 16
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: the Falmer's beast, banded with the Falmer Skulker (15) it rides out beside (IV), below the Chaurus Reaper (V)"
+        }
+      },
+      {
+        "id": "chaurus-hunter",
+        "name": "Chaurus Hunter",
+        "records": [
+          {
+            "edid": "DLC1EncChaurusHunter",
+            "formKey": "005204:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1ChaurusHunterRace",
+          "formKey": "0051FB:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 32
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: the Falmer's beast, banded at its vanilla level (32) with the Falmer Nightprowler (30)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`DLC1EncChaurusHunterFledgling`, `DLC1EncChaurusHunter`: no other record keeps its own level.",
+      "Every other chaurus hunter record (`DLC1EncChaurusHunterAmbush`, `DLC1EncChaurusHunterRanged` and every `DLC1LvlChaurusHunter*` / `LvlChaurus*` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC1LCharChaurusHunter",
+          "formKey": "0029A2:Dawnguard.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Chaurus Hunter Fledgling"
+          },
+          {
+            "at": 32,
+            "label": "Chaurus Hunter"
+          }
+        ],
+        "owner": "`DLC1LvlChaurusHunter` 0029A3 · `DLC1LvlChaurusHunterCocoonAmbush` 0029A4 (and its copy `DLC1LvlChaurusHunterCocoonAmbushLevelGated` 002B58: 22 refs in Blackreach, Darkfall Passage, Frostflow Abyss and others, one of them in the dev cell `DLC1WarehousePrefabs` 00A3BF) · `DLC1LvlChaurusHunterRanged` 0029A5 (Dawnguard.esm)"
+      },
+      {
+        "list": {
+          "edid": "DLC1LCharChaurusHunterAmbushPodMelee",
+          "formKey": "002B60:Dawnguard.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Falmer melee (`SubCharFalmerMelee01Variants`)"
+          },
+          {
+            "at": 16,
+            "label": "Chaurus Hunter Fledgling"
+          },
+          {
+            "at": 32,
+            "label": "Chaurus Hunter"
+          }
+        ],
+        "owner": "`DLC1LvlChaurusHunterPodAmbush_AltFalmerMelee` 002B5C:Dawnguard.esm"
+      },
+      {
+        "list": {
+          "edid": "DLC1LCharChaurusHunterAmbushPodMissile",
+          "formKey": "002B5F:Dawnguard.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Falmer archer (`SubCharFalmerMissile01Variants`)"
+          },
+          {
+            "at": 16,
+            "label": "Chaurus Hunter Fledgling"
+          },
+          {
+            "at": 32,
+            "label": "Chaurus Hunter"
+          }
+        ],
+        "owner": "`DLC1LvlChaurusHunterPodAmbush_AltFalmerMissile` 002B5B:Dawnguard.esm"
+      },
+      {
+        "list": {
+          "edid": "DLC1LCharChaurusHunterAmbushPodShaman",
+          "formKey": "002B5E:Dawnguard.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Falmer shaman (`EncFalmer01Shaman`)"
+          },
+          {
+            "at": 16,
+            "label": "Chaurus Hunter Fledgling"
+          },
+          {
+            "at": 32,
+            "label": "Chaurus Hunter"
+          }
+        ],
+        "owner": "`DLC1LvlChaurusHunterPodAmbush_AltFalmerShaman` 002B5A:Dawnguard.esm"
+      },
+      {
+        "list": {
+          "edid": "DLC1LCharChaurusHunterAmbushPodSpellsword",
+          "formKey": "002B5D:Dawnguard.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Falmer spellsword (`SubCharFalmerSpellsword01Variants`)"
+          },
+          {
+            "at": 16,
+            "label": "Chaurus Hunter Fledgling"
+          },
+          {
+            "at": 32,
+            "label": "Chaurus Hunter"
+          }
+        ],
+        "owner": "`DLC1LvlChaurusHunterPodAmbush_AltFalmerSpellsword` 002B59:Dawnguard.esm"
+      },
+      {
+        "list": {
+          "edid": "LCharChaurus",
+          "formKey": "01FA27:Skyrim.esm"
+        },
+        "override": "Dawnguard override",
+        "seeFamily": "chaurus",
+        "entries": [
+          {
+            "at": 16,
+            "label": "Chaurus Hunter Fledgling"
+          },
+          {
+            "at": 32,
+            "label": "Chaurus Hunter"
+          }
+        ],
+        "owner": "`LvlChaurus` 01FA28 · `LvlChaurusAmbush` 07932F"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Chaurus Hunter",
+        "base": [
+          {
+            "edid": "DLC1EncChaurusHunterAmbush",
+            "formKey": "00C21D:Dawnguard.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1Arkngthamz01",
+              "formKey": "00140A:Dawnguard.esm"
+            },
+            "refText": "refs 0168A1 · 0168A4 (Dawnguard.esm)"
+          }
+        ]
+      }
+    ]
+  }
+}

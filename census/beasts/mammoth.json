@@ -1,0 +1,264 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "mammoth",
+  "group": "beasts",
+  "title": "Mammoth",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "mammoth",
+        "name": "Mammoth",
+        "records": [
+          {
+            "edid": "EncMammothWild",
+            "formKey": "023AB4:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "MammothRace",
+          "formKey": "0131FF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 38
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: wildlife, banded at its vanilla level (38)"
+        }
+      },
+      {
+        "id": "mammoth-guardian-spirit",
+        "name": "Mammoth Guardian Spirit",
+        "records": [
+          {
+            "edid": "dunHunterMammoth",
+            "formKey": "0E7EAF:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "MammothRace",
+          "formKey": "0131FF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 3
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a *Kyne’s Sacred Trials* quarry, banded at its vanilla level (3)"
+        },
+        "note": "uses `EncMammothWild` as its template but not for `Stats`."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncMammothWild` 023AB4: no record outside the table keeps its own level. The Guardian Spirit `dunHunterMammoth` 0E7EAF uses it as its template but not for `Stats`, so it stays at 3 when 023AB4 changes.",
+      "Every other mammoth record (`EncMammothTamed`, `EncMammothWildNoAggro`, `EncMammothTamedNoAggro`, `dunTalkingStoneMammoth`) carries `Stats` and follows 023AB4."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "none"
+        },
+        "note": "no leveled list draws a mammoth",
+        "owner": "—"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Mammoth",
+        "base": [
+          {
+            "edid": "EncMammothWild",
+            "formKey": "023AB4:Skyrim.esm"
+          }
+        ],
+        "quest": "created by `WE07` 09CAC2 (alias `Mammoth1`), `WE11` 09F329 (alias `Mammoth1`) and `WERJ11` 0F5185 (alias `Mammoth`)",
+        "locations": [
+          {
+            "cell": {
+              "label": "Tamriel cell (8, 12)",
+              "formKey": "009047:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "09834C:Skyrim.esm"
+            },
+            "note": "a corpse"
+          }
+        ]
+      },
+      {
+        "name": "Mammoth",
+        "base": [
+          {
+            "edid": "EncMammothTamed",
+            "formKey": "0DD641:Skyrim.esm"
+          }
+        ],
+        "baseNote": "giants’ herd",
+        "locations": [
+          {
+            "cell": {
+              "edid": "TumbleArchPassExterior",
+              "formKey": "0090DA:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "BleakwindBasinExterior01",
+              "formKey": "0099A2:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Tamriel cell (-1, 0)",
+              "formKey": "0099A3:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "BlizzardRestExterior",
+              "formKey": "0090A3:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "RedRoadPassExterior",
+              "formKey": "008F71:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "SteamcragCampExterior02",
+              "formKey": "00BA23:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "SleepingTreeCampExterior01",
+              "formKey": "009A51:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "POIVolcanicTundra13",
+              "formKey": "00BAA6:Skyrim.esm"
+            },
+            "note": "a corpse"
+          }
+        ]
+      },
+      {
+        "name": "Mammoth",
+        "base": [
+          {
+            "edid": "EncMammothWildNoAggro",
+            "formKey": "101580:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "label": "Tamriel cell (-11, -3)",
+              "formKey": "009A10:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Tamriel cell (-7, -3)",
+              "formKey": "009A0C:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Tamriel cell (-1, 5)",
+              "formKey": "0094FF:Skyrim.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      },
+      {
+        "name": "Mammoth",
+        "base": [
+          {
+            "edid": "EncMammothTamedNoAggro",
+            "formKey": "101581:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "label": "Tamriel cell (34, -2)",
+              "formKey": "00BA02:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "label": "Tamriel cell (-6, 0)",
+              "formKey": "0099A8:Skyrim.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      },
+      {
+        "name": "Mammoth",
+        "base": [
+          {
+            "edid": "dunTalkingStoneMammoth",
+            "formKey": "0B6234:Skyrim.esm"
+          }
+        ],
+        "quest": "aliases `Mammoth01` and `Mammoth02` of `dunTalkingStoneQST` 04BA6C",
+        "locations": [
+          {
+            "cell": {
+              "edid": "TalkingStoneCampExterior01",
+              "formKey": "00950F:Skyrim.esm"
+            },
+            "refText": "(-17, 5), refs 04BB24 and 04BB31"
+          }
+        ]
+      },
+      {
+        "name": "Mammoth Guardian Spirit",
+        "quest": "alias `guardianMammoth` of `dunHunterQST` 018601 (*Kyne’s Sacred Trials*)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "POITundra03",
+              "formKey": "009103:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0E7EAE:Skyrim.esm"
+            },
+            "refText": "(6, 6)",
+            "disabled": true
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "fox",
+  "group": "animals",
+  "title": "Fox",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "fox",
+        "name": "Fox",
+        "records": [
+          {
+            "edid": "EncFox",
+            "formKey": "0829B3:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FoxRace",
+          "formKey": "109C7C:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 2
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: harmless prey, banded at its vanilla level (2)"
+        }
+      },
+      {
+        "id": "fox-e3-demo",
+        "name": "Fox",
+        "records": [
+          {
+            "edid": "E3demoFox",
+            "formKey": "09A744:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FoxRace",
+          "formKey": "109C7C:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 2
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: harmless prey, banded at its vanilla level (2)"
+        },
+        "note": "the E3 demo fox, no template"
+      },
+      {
+        "id": "sweet-roll",
+        "name": "Sweet Roll",
+        "records": [
+          {
+            "edid": "ccVSVSSE002_Fox",
+            "formKey": "000831:ccvsvsse002-pets.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccVSVSSE002_FoxRace",
+          "formKey": "00080E:ccvsvsse002-pets.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 2
+        },
+        "flags": [
+          "Essential",
+          "Invulnerable"
+        ],
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a CC pet (`Essential`), banded at its vanilla level (2)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncFox`, `E3demoFox`, `ccVSVSSE002_Fox`: no other record keeps its own level.",
+      "Every other fox record (the Snow Fox `EncFoxArctic`, Pumpkin `dunSouthfringePetFox`, the HearthFires adoption foxes `BYOHRelationshipAdoptionCritter_Fox` / `_FoxArctic`) carries `Stats` and follows 0829B3."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharAmbientCreatures",
+          "formKey": "0EC969:Skyrim.esm"
+        },
+        "gate": "every entry at level 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Fox",
+            "count": 3
+          },
+          {
+            "at": 1,
+            "label": "Rabbit",
+            "count": 2
+          }
+        ],
+        "owner": "`LvlAmbientCreatures` 0EC968 (placed ×372 across Skyrim and Solstheim)"
+      },
+      {
+        "list": {
+          "edid": "LCharAmbientCreaturesSnow",
+          "formKey": "0EC96B:Skyrim.esm"
+        },
+        "gate": "every entry at level 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Snow Fox (`EncFoxArctic` 0829B6)",
+            "count": 3
+          },
+          {
+            "at": 1,
+            "label": "Rabbit",
+            "count": 2
+          }
+        ],
+        "owner": "`LvlAmbientCreaturesSnow` 0EC96A (placed ×275)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Fox",
+        "base": [
+          {
+            "edid": "E3demoFox",
+            "formKey": "09A744:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "09A72A:Skyrim.esm"
+            },
+            "note": "cell (1, -15)"
+          }
+        ],
+        "quest": "alias `Fox` of `e3demo` 093637"
+      },
+      {
+        "name": "Pumpkin",
+        "base": [
+          {
+            "edid": "dunSouthfringePetFox",
+            "formKey": "0B11A7:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "SouthfringeWorld",
+              "formKey": "020BFE:Skyrim.esm"
+            },
+            "persistent": true,
+            "note": "Southfringe Sanctum"
+          }
+        ]
+      },
+      {
+        "name": "Kit / Vix",
+        "base": [
+          {
+            "edid": "BYOHRelationshipAdoptionCritter_Fox",
+            "formKey": "01381A:HearthFires.esm"
+          },
+          {
+            "edid": "BYOHRelationshipAdoptionCritter_FoxArctic",
+            "formKey": "01381B:HearthFires.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "spawned by `BYOHRelationshipAdoption` 0042B4:HearthFires.esm from form list `BYOHRelationshipAdoption_CrittersFemale` 013816:HearthFires.esm"
+      },
+      {
+        "name": "Sweet Roll",
+        "base": [
+          {
+            "edid": "ccVSVSSE002_Fox",
+            "formKey": "000831:ccvsvsse002-pets.esl"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      }
+    ]
+  }
+}

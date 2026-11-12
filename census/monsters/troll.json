@@ -1,0 +1,547 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "troll",
+  "group": "monsters",
+  "title": "Troll",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "troll",
+        "name": "Troll",
+        "records": [
+          {
+            "edid": "EncTroll",
+            "formKey": "023ABA:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "TrollRace",
+          "formKey": "013205:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 14
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: a predator above common wildlife, banded at its vanilla level (14)"
+        }
+      },
+      {
+        "id": "frost-troll",
+        "name": "Frost Troll",
+        "records": [
+          {
+            "edid": "EncTrollFrost",
+            "formKey": "023ABB:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "TrollFrostRace",
+          "formKey": "013206:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 22
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: the mountain predator, banded at its vanilla level (22)"
+        }
+      },
+      {
+        "id": "armored-troll",
+        "name": "Armored Troll",
+        "records": [
+          {
+            "edid": "DLC1EncTrollArmored",
+            "formKey": "00D0B8:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1TrollRaceArmored",
+          "formKey": "0117F5:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 14
+        },
+        "target": {
+          "band": "IV",
+          "level": 26,
+          "status": "proposed",
+          "source": "archetype-tiers.md: rung raised to 26 (WD-58, user)"
+        },
+        "note": "uses `EncTroll` as its template, but not for `Stats`."
+      },
+      {
+        "id": "armored-frost-troll",
+        "name": "Armored Frost Troll",
+        "records": [
+          {
+            "edid": "DLC1EncTrollFrostArmored",
+            "formKey": "00D0B9:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1TrollFrostRaceArmored",
+          "formKey": "0117F4:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 22,
+          "from": {
+            "edid": "EncTrollFrost",
+            "formKey": "023ABB:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md: rung raised to 36 (WD-58, user)"
+        }
+      },
+      {
+        "id": "udefrykte",
+        "name": "Udefrykte",
+        "records": [
+          {
+            "edid": "DBEncTroll",
+            "formKey": "0AFBA2:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "TrollFrostRace",
+          "formKey": "013206:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 22
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a named frost troll, one band above the Frost Troll (22)"
+        },
+        "note": "the Dark Brotherhood's troll at the Dawnstar Sanctuary."
+      },
+      {
+        "id": "guardian-troll-spirit",
+        "name": "Guardian Troll Spirit",
+        "records": [
+          {
+            "edid": "dunHunterTroll",
+            "formKey": "0E7EB2:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "TrollFrostRace",
+          "formKey": "013206:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 14
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: a Kyne's Sacred Trials guardian, banded at its vanilla level (14)"
+        },
+        "note": "uses `EncTrollFrost` as its template, but not for `Stats`; flagged `Unique`."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncTroll` 023ABA does not change the Armored Troll (`DLC1EncTrollArmored`, a row above): it uses 023ABA as its template but not for `Stats`.",
+      "Changing `EncTrollFrost` 023ABB does not change the Guardian Troll Spirit (`dunHunterTroll`, a row above): it uses 023ABB as its template but not for `Stats`, and keeps its 14.",
+      "`DLC1EncTrollFrostArmored`, `DBEncTroll`: no other record keeps its own level.",
+      "Every other troll record (`EncTrollFrostAmbush`, `dunPOIAggroTroll1024`, `dunPOIRaiderFrostTroll`, the `…Tamed` armoured copies and every `Lvl*` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC1LCharTrollArmored",
+          "formKey": "00D0BB:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Armored Troll"
+          },
+          {
+            "at": 20,
+            "label": "Armored Frost Troll"
+          }
+        ],
+        "owner": "`DLC1LvlTrollArmored` 00D0BC (×1, `DLC1ForebearsHoldoutEnd` 002FB7) · `DLC1LvlTrollArmoredPlayerFollower` 0117F1 (property of `DLC1Radiant` 004C1C) (Dawnguard.esm)"
+      },
+      {
+        "list": {
+          "edid": "DLC1LCharTrollArmoredTamed",
+          "formKey": "01981F:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Armored Troll (`DLC1EncTrollArmoredTamed` 011BA9)"
+          },
+          {
+            "at": 20,
+            "label": "Armored Frost Troll (`DLC1EncTrollFrostArmoredTamed` 01981E)"
+          }
+        ],
+        "owner": "`DLC1LvlTrollArmoredTamed` 019820:Dawnguard.esm (property of `DLC1VQ08HunterMove` 01A8BB)"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalForestPredator",
+          "formKey": "042297:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 14,
+            "label": "Troll"
+          },
+          {
+            "at": 15,
+            "label": "Troll",
+            "count": 2
+          },
+          {
+            "at": 16,
+            "label": "Troll"
+          }
+        ],
+        "note": "among 22 entries of skeever, wolves, spiders and bears",
+        "owner": "`LvlAnimalForestPredator` 01E7A0"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharAnimalForestPredator",
+          "formKey": "01E1C5:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 14,
+            "label": "Troll"
+          },
+          {
+            "at": 15,
+            "label": "Troll",
+            "count": 2
+          },
+          {
+            "at": 16,
+            "label": "Troll"
+          }
+        ],
+        "note": "among 22 entries of skeever, wolves, boars and bears",
+        "owner": "`DLC2LvlAnimalForestPredator` 03A9C2:Dragonborn.esm"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalMarshPredator",
+          "formKey": "042295:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 14,
+            "label": "Troll"
+          },
+          {
+            "at": 16,
+            "label": "Troll"
+          },
+          {
+            "at": 18,
+            "label": "Troll"
+          },
+          {
+            "at": 20,
+            "label": "Troll"
+          }
+        ],
+        "note": "among 13 entries of spiders and chaurus",
+        "owner": "`LvlAnimalMarshPredator` 0422B7"
+      },
+      {
+        "list": {
+          "edid": "LCharHagravenCompanion",
+          "formKey": "0640C0:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 14,
+            "label": "Troll",
+            "count": 2
+          }
+        ],
+        "note": "among 4 entries of spiders and a skeever",
+        "owner": "`LvlHagravenCompanion` 04B473"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalForestSnowPredator",
+          "formKey": "042299:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 24,
+            "label": "Frost Troll"
+          },
+          {
+            "at": 28,
+            "label": "Frost Troll",
+            "count": 2
+          },
+          {
+            "at": 30,
+            "label": "Frost Troll"
+          },
+          {
+            "at": 32,
+            "label": "Frost Troll"
+          },
+          {
+            "at": 35,
+            "label": "Frost Troll",
+            "count": 2
+          }
+        ],
+        "note": "among 14 entries of snow spiders, snow sabre cats, ice wraiths (on *Ice Wraith*) and snow bears",
+        "owner": "`LvlAnimalForestSnowPredator` 0422B0"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalMountainSnowPredator",
+          "formKey": "04229D:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 28,
+            "label": "Frost Troll",
+            "count": 2
+          },
+          {
+            "at": 30,
+            "label": "Frost Troll"
+          },
+          {
+            "at": 32,
+            "label": "Frost Troll"
+          },
+          {
+            "at": 35,
+            "label": "Frost Troll",
+            "count": 2
+          }
+        ],
+        "note": "among 16 entries of wolves, ice wolves, snow sabre cats, ice wraiths (on *Ice Wraith*) and snow bears",
+        "owner": "`LvlAnimalMountainSnowPredator` 01E7A3"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharAnimalMountainSnowPredator",
+          "formKey": "01E1C6:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 28,
+            "label": "Frost Troll",
+            "count": 2
+          },
+          {
+            "at": 30,
+            "label": "Frost Troll"
+          },
+          {
+            "at": 32,
+            "label": "Frost Troll"
+          },
+          {
+            "at": 35,
+            "label": "Frost Troll",
+            "count": 2
+          }
+        ],
+        "note": "among 16 entries of ice wolves, boars, snow sabre cats, ice wraiths (on *Ice Wraith*) and snow bears",
+        "owner": "`DLC2LvlAnimalMountainSnowPredator` 03A9C1:Dragonborn.esm"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalSnowFields",
+          "formKey": "01E78E:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 22,
+            "label": "Frost Troll"
+          }
+        ],
+        "note": "a ladder Wolf 1 · Ice Wolf 6 · Snow Sabre Cat 11 · Snow Bear 20 · Frost Troll 22 · Ice Wraith 28",
+        "owner": "`LvlAnimalSnowFields` 065A3B"
+      },
+      {
+        "list": {
+          "edid": "LCharCustomIceWraithFrostTroll",
+          "formKey": "106386:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Ice Wraith (on *Ice Wraith*)"
+          },
+          {
+            "at": 22,
+            "label": "Frost Troll"
+          }
+        ],
+        "owner": "`LvlAnimalMountainSnowCustomIceWraithFrostTroll` 106387 (×1, Tamriel exterior 009746)"
+      },
+      {
+        "list": {
+          "edid": "LCharHagravenCompanionFrost",
+          "formKey": "0640C1:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 22,
+            "label": "Frost Troll",
+            "count": 2
+          }
+        ],
+        "note": "among 6 entries of snow spiders, a skeever and ice wraiths (on *Ice Wraith*)",
+        "owner": "`LvlHagravenCompanionSnow` 0640C2"
+      },
+      {
+        "list": {
+          "edid": "dunHagsEnd_LCharHagravenCompanionFrost",
+          "formKey": "09D59F:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 11,
+            "label": "Frost Troll",
+            "count": 2
+          }
+        ],
+        "note": "among 5 entries of snow spiders, a skeever and ice wraiths (on *Ice Wraith*)",
+        "owner": "`dunHagsEnd_LvlHagravenCompanionSnow` 09D59E (×2, `HagsEndOrigin` 09829C)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Udefrykte",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DawnstarSanctuary",
+              "formKey": "0193EE:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "03E40E:Skyrim.esm"
+            },
+            "note": "enable parent 097297"
+          }
+        ]
+      },
+      {
+        "name": "Guardian Troll Spirit",
+        "locations": [
+          {
+            "cell": {
+              "edid": "GraywinterWatch01",
+              "formKey": "01526C:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0E7EB3:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias `guardianTroll` of `dunHunterQST` 018601 (*Kyne's Sacred Trials*)"
+      },
+      {
+        "name": "Troll",
+        "base": [
+          {
+            "edid": "dunPOIAggroTroll1024",
+            "formKey": "06AF65:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "×2 (03E971, 03E972)",
+            "note": "by `POIReach15b` (−26, −8)"
+          }
+        ]
+      },
+      {
+        "name": "Frost Troll",
+        "base": [
+          {
+            "edid": "EncTrollFrostAmbush",
+            "formKey": "0F4C90:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "SteepfallBurrow01",
+              "formKey": "0151F2:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0F4E33:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Frost Troll",
+        "base": [
+          {
+            "edid": "dunPOIRaiderFrostTroll",
+            "formKey": "06AF5A:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "spawned by the `dunPOIRaiders` script on Tamriel persistent ref 06AF53 east of Windhelm (property `Raider1Base`, `PlaceActorAtMe`), enable parent 06AF52"
+      }
+    ]
+  }
+}

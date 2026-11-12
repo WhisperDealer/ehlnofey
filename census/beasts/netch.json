@@ -1,0 +1,367 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "netch",
+  "group": "beasts",
+  "title": "Netch",
+  "order": 4,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "netch-calf",
+        "name": "Netch Calf",
+        "records": [
+          {
+            "edid": "DLC2EncNetchCalf",
+            "formKey": "02857F:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2NetchCalfRace",
+          "formKey": "028580:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 25
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Common"
+        }
+      },
+      {
+        "id": "bull-netch",
+        "name": "Bull Netch",
+        "records": [
+          {
+            "edid": "DLC2EncNetchBull",
+            "formKey": "02857E:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2NetchRace",
+          "formKey": "01FEB8:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 36
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Blooded"
+        }
+      },
+      {
+        "id": "betty-netch",
+        "name": "Betty Netch",
+        "records": [
+          {
+            "edid": "DLC2EncNetchBetty",
+            "formKey": "01B649:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2NetchRace",
+          "formKey": "01FEB8:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 40
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Blooded"
+        }
+      },
+      {
+        "id": "bull-netch-staff-of-sheogorath",
+        "name": "Bull Netch (Staff of Sheogorath)",
+        "records": [
+          {
+            "edid": "ccBGSSSE019_DLC2EncNetchBull_Special",
+            "formKey": "000812:ccbgssse019-staffofsheogorath.esl"
+          }
+        ],
+        "race": {
+          "edid": "DLC2NetchRace",
+          "formKey": "01FEB8:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 15
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Blooded, with the Bull Netch whose name it shows"
+        },
+        "note": "Staff of Sheogorath (CC); shows the same name as the level-36 Bull Netch."
+      },
+      {
+        "id": "giant-bull-netch",
+        "name": "Giant Bull Netch",
+        "records": [
+          {
+            "edid": "ccBGSSSE041_DLC2EncNetchBull",
+            "formKey": "000885:ccbgssse041-netchleather.esl"
+          }
+        ],
+        "race": {
+          "edid": "DLC2NetchRace",
+          "formKey": "01FEB8:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 36
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Experienced"
+        },
+        "note": "Netch Leather Armor (CC); `Unique`, `Invulnerable`."
+      },
+      {
+        "id": "netch-calf-netch-leather",
+        "name": "Netch Calf (Netch Leather)",
+        "records": [
+          {
+            "edid": "ccBGSSSE041_DLC2EncNetchCalf",
+            "formKey": "000886:ccbgssse041-netchleather.esl"
+          }
+        ],
+        "race": {
+          "edid": "DLC2NetchCalfRace",
+          "formKey": "028580:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 25
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Common, with the Netch Calf"
+        },
+        "note": "Netch Leather Armor (CC); `Invulnerable`."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level, and no other record uses a row as its template. Each row sets its own level, so changing one netch changes no other."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "none"
+        },
+        "note": "no leveled list draws a netch (only the QA form lists `DLC2QANPCList` 02A1BA and `…03` 02A8A5)",
+        "owner": "—"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Netch Calf",
+        "locations": [
+          {
+            "cell": {
+              "label": "Solstheim cell (10, 5)",
+              "formKey": "00EF36:Dragonborn.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (11, 2)",
+              "formKey": "00EF98:Dragonborn.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (17, 4)",
+              "formKey": "00EF50:Dragonborn.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (4, 16)",
+              "formKey": "00EDD1:Dragonborn.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "DLC2TelMithrynGraveyard",
+              "formKey": "00EEEB:Dragonborn.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "DLC2HaknirsTreasurePOI02",
+              "formKey": "00EEB8:Dragonborn.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "DLC2POIWestRJ01",
+              "formKey": "00EDB0:Dragonborn.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "DLC2RRBulwarkCave",
+              "formKey": "03929E:Dragonborn.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      },
+      {
+        "name": "Bull Netch",
+        "quest": "also created by alias `Actor5` of `DLC2WE15` 039A77:Dragonborn.esm",
+        "locations": [
+          {
+            "cell": {
+              "label": "Solstheim cell (10, 5)",
+              "formKey": "00EF36:Dragonborn.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (11, 2)",
+              "formKey": "00EF98:Dragonborn.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (17, 4)",
+              "formKey": "00EF50:Dragonborn.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (4, 16)",
+              "formKey": "00EDD1:Dragonborn.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "DLC2TelMithrynGraveyard",
+              "formKey": "00EEEB:Dragonborn.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "DLC2HaknirsTreasurePOI02",
+              "formKey": "00EEB8:Dragonborn.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Betty Netch",
+        "note": "the Netch Leather CC also places a dead one (ref 00088F:ccbgssse041-netchleather.esl, `StartsDead`) beside the Giant Bull Netch",
+        "locations": [
+          {
+            "cell": {
+              "label": "Solstheim cell (10, 5)",
+              "formKey": "00EF36:Dragonborn.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (4, 16)",
+              "formKey": "00EDD1:Dragonborn.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "DLC2POIWestRJ01",
+              "formKey": "00EDB0:Dragonborn.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Solstheim",
+              "formKey": "000800:Dragonborn.esm"
+            },
+            "persistent": true,
+            "refText": "×3, at (11, 2), (17, 4) and (4, 10)"
+          },
+          {
+            "cell": {
+              "edid": "DLC2RRBulwarkCave",
+              "formKey": "03929E:Dragonborn.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Bull Netch (Staff of Sheogorath)",
+        "quest": "aliases `BullNetch01` and `BullNetch02` of `ccBGSSSE019_StaffOfSheogorathQuest` 000822:ccbgssse019-staffofsheogorath.esl",
+        "locations": [
+          {
+            "cell": {
+              "label": "Solstheim",
+              "formKey": "000800:Dragonborn.esm"
+            },
+            "persistent": true,
+            "refText": "refs 00081F (cell 00EEFB, 3, 7) and 000820 (cell 00ED83, 16, 18), both :ccbgssse019-staffofsheogorath.esl",
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Giant Bull Netch",
+        "quest": "alias `Netch01` of `ccBGSSSE041_Quest` 00081C:ccbgssse041-netchleather.esl",
+        "locations": [
+          {
+            "cell": {
+              "label": "Solstheim",
+              "formKey": "000800:Dragonborn.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "000889:ccbgssse041-netchleather.esl"
+            },
+            "refText": "cell 00EECB (18, 8)",
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Netch Calf (Netch Leather)",
+        "quest": "alias `Netch02` of `ccBGSSSE041_Quest` 00081C:ccbgssse041-netchleather.esl",
+        "locations": [
+          {
+            "cell": {
+              "label": "Solstheim",
+              "formKey": "000800:Dragonborn.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "00088D:ccbgssse041-netchleather.esl"
+            },
+            "note": "beside the Giant Bull Netch, enabled with it"
+          }
+        ]
+      }
+    ]
+  }
+}

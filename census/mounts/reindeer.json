@@ -1,0 +1,82 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "reindeer",
+  "group": "mounts",
+  "title": "Reindeer",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "reindeer",
+        "name": "Reindeer",
+        "records": [
+          {
+            "edid": "ccVSVSSE001_Reindeer",
+            "formKey": "000D65:ccvsvsse001-winter.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccVSVSSE001_ReindeerRace",
+          "formKey": "000D61:ccvsvsse001-winter.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "archetype-tiers.md: the player's essential mount, out of scope; keeps its vanilla level (4)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`ccVSVSSE001_Reindeer`: no other record keeps its own level."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "none"
+        },
+        "owner": "—",
+        "note": "no leveled list draws a reindeer"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Reindeer",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "ccVSVSSE001_ReindeerRef",
+              "formKey": "00080E:ccvsvsse001-winter.esl"
+            }
+          }
+        ],
+        "quest": "alias `Reindeer` of `ccVSVSSE001_StableQuest` 00082C"
+      }
+    ]
+  }
+}

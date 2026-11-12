@@ -1,0 +1,11 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "world-creatures",
+  "title": "World Creatures",
+  "order": 8,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Scope: the wildlife, beasts and monsters of Skyrim and Solstheim (trolls, giants, spiders, spriggans, wisps and the rest), with the Creation Club creatures filed on or beside their vanilla family's page. Seven sub-groups, one page per family. Giants, mammoths and netch: none of their factions has a relation to `PlayerFaction`; giants and mammoths are `Aggression: Aggressive`, netch are unaggressive (no `Aggression` field) `[verified]`.",
+  "families": []
+}

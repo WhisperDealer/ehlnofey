@@ -1,0 +1,206 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "otherworldly-horses",
+  "group": "mounts",
+  "title": "Otherworldly Horses",
+  "order": 4,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "arvak",
+        "name": "Arvak",
+        "records": [
+          {
+            "edid": "DLC01SoulCairnHorseSummon",
+            "formKey": "00BDD0:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "HorseRace",
+          "formKey": "0131FD:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 4,
+          "from": {
+            "edid": "DLC1EncHorseBone",
+            "formKey": "00966D:Dawnguard.esm"
+          }
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a summoned mount, banded at the level it takes from `DLC1EncHorseBone` (4), as on Conjured → *Constructs & Dragons*"
+        },
+        "note": "also on Conjured → *Constructs & Dragons*."
+      },
+      {
+        "id": "daedric-horse-ambush",
+        "name": "Daedric Horse",
+        "encounter": "Deadlands arena",
+        "records": [
+          {
+            "edid": "ccBGSSSE067_DaedricHorseEnemyAmbush",
+            "formKey": "0FB4F8:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "race": {
+          "edid": "HorseRace",
+          "formKey": "0131FD:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 25
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a Deadlands foe, banded at its vanilla level (25)"
+        }
+      },
+      {
+        "id": "daedric-horse-mount",
+        "name": "Daedric Horse",
+        "encounter": "the player's summoned mount",
+        "records": [
+          {
+            "edid": "ccBGSSSE067_DaedricHorseMount",
+            "formKey": "000B4B:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "race": {
+          "edid": "HorseRace",
+          "formKey": "0131FD:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 50
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a summoned mount, banded at its vanilla level (50), as on Conjured → *Constructs & Dragons*"
+        },
+        "note": "also on Conjured → *Constructs & Dragons*."
+      }
+    ]
+  },
+  "otherRecords": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": [
+          {
+            "edid": "ccBGSSSE067_DaedricHorseRunScene",
+            "formKey": "142C0F:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "name": "Daedric Horse",
+        "level": {
+          "kind": "fixed",
+          "value": 50
+        },
+        "where": "a scene horse (`IsGhost`, `Invulnerable`), Deadlands persistent ref 142C10:ccbgssse067-daedinv.esm"
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The rows, `ccBGSSSE067_DaedricHorseRunScene` and `DLC1EncHorseBone` (which owns Arvak's level): no other record keeps its own level.",
+      "The other horse-race records with no template are on *Horse* (the Horse rows, Shadowmere, Frost, the Wild Horses, the Dwarven Horse) and *Unicorn*.",
+      "Every other Soul Cairn horse (`DLC01SoulCairnHorseUnrideable`, `DLC01SoulCairnHorseScene`) carries `Stats` and follows `DLC1EncHorseBone`."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "none"
+        },
+        "owner": "—",
+        "note": "no leveled list draws an otherworldly horse"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Arvak",
+        "notPlaced": true,
+        "note": "summoned by the spell *Summon Arvak* (`DLC01SummonSoulHorse` 00C600:Dawnguard.esm, effect `DLC01SummonSoulHorseEffect` 00C601)"
+      },
+      {
+        "name": "Soul Cairn horse, no name",
+        "base": [
+          {
+            "edid": "DLC01SoulCairnHorseUnrideable",
+            "formKey": "00BDCF:Dawnguard.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC01SoulCairn",
+              "formKey": "001408:Dawnguard.esm"
+            },
+            "ref": {
+              "formKey": "00BDD6:Dawnguard.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias `Horse` of `DLC01SoulCairnHorseQuest` 00BDD1"
+      },
+      {
+        "name": "Soul Cairn horse, no name",
+        "base": [
+          {
+            "edid": "DLC01SoulCairnHorseScene",
+            "formKey": "0163CE:Dawnguard.esm"
+          }
+        ],
+        "notPlaced": true,
+        "quest": "created at alias `Horse` of `DLC01SoulCairnHorseQuest2` 0163CD:Dawnguard.esm"
+      },
+      {
+        "name": "Daedric Horse",
+        "base": [
+          {
+            "edid": "ccBGSSSE067_DaedricHorseEnemyAmbush",
+            "formKey": "0FB4F8:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE067DeadlandsArena01",
+              "formKey": "0E15C5:ccbgssse067-daedinv.esm"
+            },
+            "ref": {
+              "formKey": "16B86C:ccbgssse067-daedinv.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Daedric Horse",
+        "base": [
+          {
+            "edid": "ccBGSSSE067_DaedricHorseMount",
+            "formKey": "000B4B:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "summoned by the spell *Summon Daedric Horse* (`ccBGSSSE067_SummonDaedricHorse` 000B62:ccbgssse067-daedinv.esm, effect 000B63)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,546 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "sabre-cat",
+  "group": "beasts",
+  "title": "Sabre Cat",
+  "order": 7,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "sabre-cat",
+        "name": "Sabre Cat",
+        "records": [
+          {
+            "edid": "EncSabreCat",
+            "formKey": "023AB5:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "SabreCatRace",
+          "formKey": "013200:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: wildlife, banded at its vanilla level (6)"
+        }
+      },
+      {
+        "id": "snowy-sabre-cat",
+        "name": "Snowy Sabre Cat",
+        "records": [
+          {
+            "edid": "EncSabreCatSnow",
+            "formKey": "023AB6:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "SabreCatSnowyRace",
+          "formKey": "013202:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 11
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: wildlife, banded at its vanilla level (11)"
+        }
+      },
+      {
+        "id": "sabre-cat-guardian-spirit",
+        "name": "Sabre Cat Guardian Spirit",
+        "records": [
+          {
+            "edid": "dunHunterSabreCat",
+            "formKey": "0E7EAD:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "SabreCatSnowyRace",
+          "formKey": "013202:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a *Kyne’s Sacred Trials* quarry, banded at its vanilla level (12)"
+        }
+      },
+      {
+        "id": "vale-sabre-cat",
+        "name": "Vale Sabre Cat",
+        "records": [
+          {
+            "edid": "DLC1EncSabreCatVale",
+            "formKey": "003C67:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1SabreCatGlowRace",
+          "formKey": "00D0B6:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Blooded; a place exception for the Forgotten Vale"
+        }
+      },
+      {
+        "id": "vale-sabre-cat-darkfall",
+        "name": "Vale Sabre Cat (Darkfall)",
+        "records": [
+          {
+            "edid": "DLC1DarkFallEncSabreCat",
+            "formKey": "01063C:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1SabreCatGlowRace",
+          "formKey": "00D0B6:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Blooded; a place exception for the Forgotten Vale"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncSabreCat` 023AB5: no record outside the table keeps its own level. The Snowy Sabre Cat `EncSabreCatSnow` 023AB6 uses it as its template but not for `Stats`, and the Guardian Spirit `dunHunterSabreCat` 0E7EAD does the same with 023AB6, so each keeps its own level when the one above it changes.",
+      "The other rows: no other record keeps its own level.",
+      "One more Vale Sabre Cat has no template and sets its own level 6: `DLC1EncSabreCatDEAD` 00F798:Dawnguard.esm (a corpse in `DLC1FalmerValleyPOI02` 000CC0:Dawnguard.esm; on no census page).",
+      "Every other sabre cat record (`DunLostKnifeSabreCat`, `dunRavenscarSabreCat`, the spriggan-companion cats and every `Lvl*Predator` / `LvlSabreCatAll` / `LvlAnimalSnowFields` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharSabrecat",
+          "formKey": "0FE2D5:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Sabre Cat"
+          },
+          {
+            "at": 11,
+            "label": "Snowy Sabre Cat"
+          }
+        ],
+        "owner": "`LvlSabreCatAll` 0FE2D6"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalPlainsPredator",
+          "formKey": "042293:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 6,
+            "label": "Sabre Cat"
+          },
+          {
+            "at": 10,
+            "label": "Sabre Cat"
+          },
+          {
+            "at": 15,
+            "label": "Sabre Cat"
+          },
+          {
+            "at": 20,
+            "label": "Sabre Cat"
+          },
+          {
+            "at": 22,
+            "label": "Sabre Cat"
+          },
+          {
+            "at": 28,
+            "label": "Sabre Cat"
+          }
+        ],
+        "owner": "`LvlAnimalPlainsPredator` 01E7A1"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalCanyonPredator",
+          "formKey": "04229B:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 6,
+            "label": "Sabre Cat"
+          },
+          {
+            "at": 8,
+            "label": "Sabre Cat"
+          },
+          {
+            "at": 10,
+            "label": "Sabre Cat"
+          }
+        ],
+        "owner": "`LvlAnimalCanyonPredator` 0422B3"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalHills",
+          "formKey": "01E78F:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 6,
+            "label": "Sabre Cat"
+          },
+          {
+            "at": 10,
+            "label": "Sabre Cat"
+          }
+        ],
+        "owner": "`LvlAnimalHillsPredator` 0DC5A3"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalCoastSnowPredator",
+          "formKey": "0422A3:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 11,
+            "label": "Snowy Sabre Cat"
+          },
+          {
+            "at": 12,
+            "label": "Snowy Sabre Cat"
+          },
+          {
+            "at": 13,
+            "label": "Snowy Sabre Cat"
+          },
+          {
+            "at": 14,
+            "label": "Snowy Sabre Cat"
+          }
+        ],
+        "owner": "`LvlAnimalCoastSnowPredator` 0422B5"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalForestSnowPredator",
+          "formKey": "042299:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 11,
+            "label": "Snowy Sabre Cat",
+            "count": 2
+          },
+          {
+            "at": 12,
+            "label": "Snowy Sabre Cat"
+          }
+        ],
+        "owner": "`LvlAnimalForestSnowPredator` 0422B0"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalMountainSnowPredator",
+          "formKey": "04229D:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 11,
+            "label": "Snowy Sabre Cat",
+            "count": 2
+          },
+          {
+            "at": 12,
+            "label": "Snowy Sabre Cat"
+          }
+        ],
+        "owner": "`LvlAnimalMountainSnowPredator` 01E7A3"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharAnimalMountainSnowPredator",
+          "formKey": "01E1C6:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 11,
+            "label": "Snowy Sabre Cat",
+            "count": 2
+          },
+          {
+            "at": 12,
+            "label": "Snowy Sabre Cat"
+          }
+        ],
+        "owner": "`DLC2LvlAnimalMountainSnowPredator` 03A9C1:Dragonborn.esm"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalSnowFields",
+          "formKey": "01E78E:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 11,
+            "label": "Snowy Sabre Cat"
+          }
+        ],
+        "owner": "`LvlAnimalSnowFields` 065A3B"
+      },
+      {
+        "list": {
+          "edid": "CR01LCharBeast",
+          "formKey": "025232:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 6,
+            "label": "Sabre Cat"
+          },
+          {
+            "at": 11,
+            "label": "Snowy Sabre Cat"
+          }
+        ],
+        "owner": "Companions (`CR01` 01CEEE)"
+      },
+      {
+        "list": {
+          "edid": "LCharSprigganCompanion",
+          "formKey": "01E776:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 6,
+            "label": "Sabre Cat (`EncSabreCatSprigganCompanion` 0C96BF)"
+          }
+        ],
+        "owner": "`LvlSprigganCompanion` 01E7C6 · `LvlSprigganGuard` 022837"
+      },
+      {
+        "list": {
+          "edid": "LCharSprigganCompanionFrost",
+          "formKey": "0640BD:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 11,
+            "label": "Snowy Sabre Cat (`EncSabreCatSnowSprigganCompanion` 0C96C0)"
+          }
+        ],
+        "owner": "`LvlSprigganCompanionSnow` 025D3B"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalForest",
+          "formKey": "01E790:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 6,
+            "label": "Sabre Cat"
+          }
+        ],
+        "owner": "none found (no record uses it)"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalPlains",
+          "formKey": "01E78D:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 6,
+            "label": "Sabre Cat"
+          }
+        ],
+        "owner": "none found (no record uses it)"
+      },
+      {
+        "list": {
+          "edid": "dunClearspringTarnLCharPredator",
+          "formKey": "0F334B:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Sabre Cat"
+          }
+        ],
+        "owner": "none found (no record uses it)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Sabre Cat Guardian Spirit",
+        "quest": "alias `guardianSabrecat` of `dunHunterQST` 018601 (*Kyne’s Sacred Trials*)",
+        "locations": [
+          {
+            "cell": {
+              "label": "Tamriel cell (33, 21)",
+              "formKey": "00B30D:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0E7EAC:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Sabre Cat",
+        "base": [
+          {
+            "edid": "DunLostKnifeSabreCat",
+            "formKey": "059397:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "LostKnifeHideout02",
+              "formKey": "01A337:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "01CE7B:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sabre Cat",
+        "base": [
+          {
+            "edid": "dunRavenscarSabreCat",
+            "formKey": "03D278:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "RavenscarHollowExterior01",
+              "formKey": "0091DC:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "03D277:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Vale Sabre Cat",
+        "locations": [
+          {
+            "cell": {
+              "edid": "FalmerValleyStart",
+              "formKey": "000CFD:Dawnguard.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Forgotten Vale cell (5, 2)",
+              "formKey": "000C84:Dawnguard.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Forgotten Vale cell (4, 2)",
+              "formKey": "000CFC:Dawnguard.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Forgotten Vale cell (3, 1)",
+              "formKey": "000CBF:Dawnguard.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Forgotten Vale cell (2, 2)",
+              "formKey": "000D02:Dawnguard.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Vale Sabre Cat (Darkfall)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1DarkfallPassageEndStart",
+              "formKey": "005AC8:Dawnguard.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Darkfall Passage cell",
+              "formKey": "005AC9:Dawnguard.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "DLC1DarkfallPassageWorld",
+              "formKey": "004BEA:Dawnguard.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "010640:Dawnguard.esm"
+            },
+            "disabled": true
+          }
+        ]
+      }
+    ]
+  }
+}

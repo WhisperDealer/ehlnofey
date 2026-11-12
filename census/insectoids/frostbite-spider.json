@@ -1,0 +1,914 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "frostbite-spider",
+  "group": "insectoids",
+  "title": "Frostbite Spider",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "frostbite-spider",
+        "name": "Frostbite Spider",
+        "records": [
+          {
+            "edid": "EncFrostbiteSpider",
+            "formKey": "023AAA:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FrostbiteSpiderRace",
+          "formKey": "0131F8:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: vermin (the companion lists pair it with the skeever), banded at its vanilla level (1)"
+        }
+      },
+      {
+        "id": "frostbite-spider-large",
+        "name": "Frostbite Spider",
+        "records": [
+          {
+            "edid": "EncFrostbiteSpiderLarge",
+            "formKey": "041FB4:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FrostbiteSpiderRaceLarge",
+          "formKey": "053477:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "user, 2026-11-12: wildlife banded at its vanilla level (6)"
+        },
+        "note": "the large spider; it shows the same name as the small one."
+      },
+      {
+        "id": "giant-frostbite-spider",
+        "name": "Giant Frostbite Spider",
+        "records": [
+          {
+            "edid": "EncFrostbiteSpiderGiant",
+            "formKey": "023AAB:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FrostbiteSpiderRaceGiant",
+          "formKey": "04E507:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 14
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: the largest spider, banded at its vanilla level (14)"
+        }
+      },
+      {
+        "id": "frostbite-spider-snow",
+        "name": "Frostbite Spider",
+        "records": [
+          {
+            "edid": "EncFrostbiteSpiderSnow",
+            "formKey": "023AAC:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FrostbiteSpiderRace",
+          "formKey": "0131F8:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 3
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: vermin, banded with the Frostbite Spider (I)"
+        },
+        "note": "the snow spider; it uses `EncFrostbiteSpider` as its template but not for `Stats`."
+      },
+      {
+        "id": "frostbite-spider-snow-large",
+        "name": "Frostbite Spider",
+        "records": [
+          {
+            "edid": "EncFrostbiteSpiderSnowLarge",
+            "formKey": "04203F:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FrostbiteSpiderRaceLarge",
+          "formKey": "053477:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 8
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "bands-of-power.md: most wildlife"
+        },
+        "note": "the large snow spider; template `EncFrostbiteSpiderLarge` without `Stats`."
+      },
+      {
+        "id": "giant-frostbite-spider-snow",
+        "name": "Giant Frostbite Spider",
+        "records": [
+          {
+            "edid": "EncFrostbiteSpiderSnowGiant",
+            "formKey": "023AAD:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FrostbiteSpiderRaceGiant",
+          "formKey": "04E507:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 17
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: the largest spider, banded at its vanilla level (17)"
+        },
+        "note": "the giant snow spider; template `EncFrostbiteSpiderGiant` without `Stats`."
+      },
+      {
+        "id": "wounded-frostbite-spider-bleak-falls",
+        "name": "Wounded Frostbite Spider",
+        "encounter": "Bleak Falls Barrow (*The Golden Claw*)",
+        "records": [
+          {
+            "edid": "MS13FrostbiteSpider",
+            "formKey": "03A1E0:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FrostbiteSpiderRaceGiant",
+          "formKey": "04E507:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 5,
+          "max": 14
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Bleak Falls spider, at the start of the game"
+        },
+        "note": "template `EncFrostbiteSpiderGiantAmbush` 02A1DC without `Stats`."
+      },
+      {
+        "id": "wounded-frostbite-spider-dimhollow",
+        "name": "Wounded Frostbite Spider",
+        "encounter": "Dimhollow Crypt (*Dusk*)",
+        "records": [
+          {
+            "edid": "DLC1VQ01GiantSpider",
+            "formKey": "01A5C6:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "FrostbiteSpiderRaceGiant",
+          "formKey": "04E507:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 5,
+          "max": 14
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: a Giant Frostbite Spider with its own name, banded with the Giant (III)"
+        },
+        "note": "template `EncFrostbiteSpiderGiant` without `Stats`."
+      },
+      {
+        "id": "web-mother",
+        "name": "Web Mother",
+        "records": [
+          {
+            "edid": "ccBGSSSE069_WebMother",
+            "formKey": "000802:ccbgssse069-contest.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE069_FrostbiteSpiderRaceGiant",
+          "formKey": "000829:ccbgssse069-contest.esl"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.75,
+          "min": 15,
+          "max": 100
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a boss, a band above the Giant Frostbite Spider (III)"
+        },
+        "note": "the *Caught in a Web* boss (CC); no template."
+      },
+      {
+        "id": "arachnia",
+        "name": "Arachnia",
+        "records": [
+          {
+            "edid": "ccVSVSSE002_Spider",
+            "formKey": "00082B:ccvsvsse002-pets.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccVSVSSE002_SpiderRace",
+          "formKey": "000811:ccvsvsse002-pets.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a pet, banded at its vanilla level (1)"
+        },
+        "note": "the Pets of Skyrim pet (CC): `Essential`, `Invulnerable`, a ghost; no template."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncFrostbiteSpider` 023AAA also needs `MQ101FrostbiteSpider` 109C1C (Helgen, level 1): it uses 023AAA as its template but not for `Stats`. The snow spider `EncFrostbiteSpiderSnow` (a row above, 3) does the same.",
+      "Changing `EncFrostbiteSpiderLarge` 041FB4 also needs `MQ101FrostbiteSpiderLarge` 109C1D (Helgen, level 1): same pattern. `EncFrostbiteSpiderSnowLarge` (a row above, 8) does the same.",
+      "Changing `EncFrostbiteSpiderGiant` 023AAB does not change `EncFrostbiteSpiderSnowGiant` (17) or `DLC1VQ01GiantSpider` (both rows above): they use 023AAB as their template but not for `Stats`. `MS13FrostbiteSpider` (a row) does the same with `EncFrostbiteSpiderGiantAmbush` 02A1DC.",
+      "Lis (`DBLis` 0A19FE, `DBLisDead` 0A19FF) is a Frostbite Spider (`FrostbiteSpiderRace`) with no template and level 1; she is on Factions → Dark Brotherhood → *Named Dark Brotherhood*.",
+      "Every other spider record (the `Ambush`, `dunHarmugstahl`, `dunHonningbrew`, `dunChillwind`, `dunFellglow`, `E3Demo`, `DLC1VC` variants and every `Lvl*FrostbiteSpider*` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharFrostbiteSpider",
+          "formKey": "01E77C:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider"
+          },
+          {
+            "at": 6,
+            "label": "Frostbite Spider (large)"
+          },
+          {
+            "at": 14,
+            "label": "Giant Frostbite Spider"
+          }
+        ],
+        "owner": "`LvlFrostbiteSpiderAll` 01E7B9 (and its Harmugstahl copy `dunHarmugstahlLvlFrostbiteSpiderAll` 08C40A, `Harmugstahl01` 05F536 ×2) · `LvlFrostbiteSpiderAllAmbush` 05CFD4"
+      },
+      {
+        "list": {
+          "edid": "LCharFrostbiteSpiderNoGiant",
+          "formKey": "041FB6:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider"
+          },
+          {
+            "at": 6,
+            "label": "Frostbite Spider (large)"
+          }
+        ],
+        "owner": "`LvlFrostbiteSpiderNoGiant` 041FB5 (and its Harmugstahl copy `dunHarmugstahlLvlFrostbiteSpiderNoGiant` 08C40C, `Harmugstahl01` ×2) · `LvlFrostbiteSpiderNoGiantAmbush` 05D007 (and its Harmugstahl copy `dunHarmugstahlEncFrostbiteSpiderLargeAmbush` 08C409, `Harmugstahl01` ×1) · `LvlFrostbiteSpiderNoGiantHoldPosition256` 0D08C0 · `…HoldPosition1024` 039662 · `dunCronvangr_LvlFrostbiteSpiderNoGiantHoldPosition` 0471FC"
+      },
+      {
+        "list": {
+          "edid": "LCharFrostbiteSpiderSnow",
+          "formKey": "025D37:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider (snow)"
+          },
+          {
+            "at": 8,
+            "label": "Frostbite Spider (snow, large)"
+          },
+          {
+            "at": 17,
+            "label": "Giant Frostbite Spider (snow)"
+          }
+        ],
+        "owner": "`LvlFrostbiteSpiderSnowAll` 0421FF · `LvlFrostbiteSpiderSnowAllAmbush` 05D005"
+      },
+      {
+        "list": {
+          "edid": "LCharFrostbiteSpiderSnowNoGiant",
+          "formKey": "042040:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider (snow)"
+          },
+          {
+            "at": 6,
+            "label": "Frostbite Spider (snow, large)"
+          }
+        ],
+        "owner": "`LvlFrostbiteSpiderSnowNoGiant` 042264 · `LvlFrostbiteSpiderSnowNoGiantAmbush` 05D006"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalForestPredator",
+          "formKey": "042297:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 6,
+            "label": "Frostbite Spider (large)"
+          },
+          {
+            "at": 7,
+            "label": "Frostbite Spider (large)"
+          },
+          {
+            "at": 8,
+            "label": "Frostbite Spider (large)"
+          },
+          {
+            "at": 10,
+            "label": "Frostbite Spider (large)"
+          }
+        ],
+        "note": "spider entries only; the rest are a skeever, wolves, bears, cave bears and trolls",
+        "owner": "`LvlAnimalForestPredator` 01E7A0"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalMarshPredator",
+          "formKey": "042295:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider"
+          },
+          {
+            "at": 1,
+            "label": "Frostbite Spider"
+          },
+          {
+            "at": 5,
+            "label": "Frostbite Spider (large)"
+          },
+          {
+            "at": 6,
+            "label": "Frostbite Spider (large)"
+          },
+          {
+            "at": 8,
+            "label": "Frostbite Spider (large)"
+          }
+        ],
+        "note": "spider entries only; the rest are chaurus and Chaurus Reapers (on *Chaurus*) and trolls",
+        "owner": "`LvlAnimalMarshPredator` 0422B7"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalForestSnowPredator",
+          "formKey": "042299:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider (snow)"
+          },
+          {
+            "at": 5,
+            "label": "Frostbite Spider (snow, large)"
+          },
+          {
+            "at": 6,
+            "label": "Frostbite Spider (snow, large)"
+          },
+          {
+            "at": 8,
+            "label": "Frostbite Spider (snow, large)"
+          }
+        ],
+        "note": "spider entries only; the rest are snowy sabre cats, ice wraiths, snow bears and frost trolls",
+        "owner": "`LvlAnimalForestSnowPredator` 0422B0"
+      },
+      {
+        "list": {
+          "edid": "LCharNuisance",
+          "formKey": "01E77B:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider"
+          },
+          {
+            "at": 1,
+            "label": "Skeever"
+          }
+        ],
+        "owner": "`LvlNuisiance` 01E7BA · `dunMiddenForgeFailureList` 058272"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrCompanion",
+          "formKey": "01E773:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider"
+          },
+          {
+            "at": 1,
+            "label": "Skeever"
+          },
+          {
+            "at": 6,
+            "label": "Frostbite Spider (large)"
+          },
+          {
+            "at": 14,
+            "label": "Giant Frostbite Spider"
+          }
+        ],
+        "owner": "`LvlDraugrCompanion` 0640B9"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrCompanionFrost",
+          "formKey": "0640B8:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider (snow)"
+          },
+          {
+            "at": 1,
+            "label": "Skeever"
+          },
+          {
+            "at": 8,
+            "label": "Frostbite Spider (snow, large)"
+          },
+          {
+            "at": 17,
+            "label": "Giant Frostbite Spider (snow)"
+          }
+        ],
+        "owner": "`LvlDraugrCompanionSnow` 0640BA"
+      },
+      {
+        "list": {
+          "edid": "LCharHagravenCompanion",
+          "formKey": "0640C0:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider"
+          },
+          {
+            "at": 1,
+            "label": "Skeever"
+          },
+          {
+            "at": 6,
+            "label": "Frostbite Spider (large)"
+          },
+          {
+            "at": 14,
+            "label": "Troll"
+          },
+          {
+            "at": 14,
+            "label": "Troll"
+          },
+          {
+            "at": 14,
+            "label": "Giant Frostbite Spider"
+          }
+        ],
+        "owner": "`LvlHagravenCompanion` 04B473"
+      },
+      {
+        "list": {
+          "edid": "LCharHagravenCompanionFrost",
+          "formKey": "0640C1:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider (snow)"
+          },
+          {
+            "at": 1,
+            "label": "Skeever"
+          },
+          {
+            "at": 8,
+            "label": "Frostbite Spider (snow, large)"
+          },
+          {
+            "at": 17,
+            "label": "Giant Frostbite Spider (snow)"
+          },
+          {
+            "at": 22,
+            "label": "Frost Troll"
+          },
+          {
+            "at": 22,
+            "label": "Frost Troll"
+          },
+          {
+            "at": 28,
+            "label": "Ice Wraith"
+          },
+          {
+            "at": 28,
+            "label": "Ice Wraith"
+          }
+        ],
+        "owner": "`LvlHagravenCompanionSnow` 0640C2"
+      },
+      {
+        "list": {
+          "edid": "dunHagsEnd_LCharHagravenCompanionFrost",
+          "formKey": "09D59F:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider (snow)"
+          },
+          {
+            "at": 3,
+            "label": "Frostbite Spider (snow, large)"
+          }
+        ],
+        "note": "spider entries only; the rest are a skeever, frost trolls and ice wraiths",
+        "owner": "`dunHagsEnd_LvlHagravenCompanionSnow` 09D59E"
+      },
+      {
+        "list": {
+          "edid": "LCharVampireCompanion",
+          "formKey": "01E775:Skyrim.esm"
+        },
+        "override": "Dawnguard override wins",
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider"
+          },
+          {
+            "at": 3,
+            "label": "Frostbite Spider (large)"
+          },
+          {
+            "at": 7,
+            "label": "Giant Frostbite Spider"
+          }
+        ],
+        "note": "spider entries only; the rest are a skeever, a death hound and the gargoyles",
+        "owner": "`LvlVampireCompanion` 01E7C8"
+      },
+      {
+        "list": {
+          "edid": "LCharVampireCompanionFrost",
+          "formKey": "0640BE:Skyrim.esm"
+        },
+        "override": "Dawnguard override wins",
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider"
+          },
+          {
+            "at": 3,
+            "label": "Frostbite Spider (snow)"
+          },
+          {
+            "at": 7,
+            "label": "Giant Frostbite Spider (snow)"
+          }
+        ],
+        "note": "spider entries only; the rest are a skeever, a death hound and the gargoyles",
+        "owner": "`LvlVampireCompanionSnow` 0640BF"
+      },
+      {
+        "list": {
+          "edid": "LCharFalmerCompanion",
+          "formKey": "01E786:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider"
+          },
+          {
+            "at": 6,
+            "label": "Frostbite Spider (large)"
+          },
+          {
+            "at": 14,
+            "label": "Giant Frostbite Spider"
+          }
+        ],
+        "note": "spider entries only; the rest are a skeever, a chaurus and two Chaurus Reapers (on *Chaurus*)",
+        "owner": "`LvlFalmerCompanion` 01E7B1"
+      },
+      {
+        "list": {
+          "edid": "LCharFalmerCompanionFrost",
+          "formKey": "0640BC:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider (snow)"
+          },
+          {
+            "at": 8,
+            "label": "Frostbite Spider (snow, large)"
+          },
+          {
+            "at": 17,
+            "label": "Giant Frostbite Spider (snow)"
+          }
+        ],
+        "note": "spider entries only; the rest are a skeever, a chaurus and two Chaurus Reapers (on *Chaurus*)",
+        "owner": "`LvlFalmerCompanionSnow` 0640BB"
+      },
+      {
+        "list": {
+          "edid": "dunChillwind_LCharFalmerCompanion",
+          "formKey": "078C1B:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frostbite Spider"
+          }
+        ],
+        "note": "the other entry is a chaurus (10, on *Chaurus*)",
+        "owner": "`dunChillwind_LvlFalmerCompanion` 079BFD"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Wounded Frostbite Spider",
+        "base": [
+          {
+            "edid": "MS13FrostbiteSpider",
+            "formKey": "03A1E0:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "BleakFallsBarrow01",
+              "formKey": "0371DE:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "03A1E1:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "alias `FrostbiteSpider` of `MS13` 039645 (*The Golden Claw*)"
+      },
+      {
+        "name": "Wounded Frostbite Spider",
+        "base": [
+          {
+            "edid": "DLC1VQ01GiantSpider",
+            "formKey": "01A5C6:Dawnguard.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1DimHollowCrypt01",
+              "formKey": "000EB8:Dawnguard.esm"
+            },
+            "ref": {
+              "formKey": "01A5A2:Dawnguard.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Web Mother",
+        "locations": [
+          {
+            "cell": {
+              "edid": "CronvangrHall02",
+              "formKey": "02D5D1:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "000806:ccbgssse069-contest.esl"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias `WebMother` of `ccBGSSSE069_Quest` 000805 (*Caught in a Web*)"
+      },
+      {
+        "name": "Frostbite Spider",
+        "base": [
+          {
+            "edid": "dunHonningbrewMeaderyEncFrostbiteSpider",
+            "formKey": "048D67:Skyrim.esm"
+          },
+          {
+            "edid": "dunHonningbrewMeaderyEncFrostbiteSpiderLarge",
+            "formKey": "048D64:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "HonningbrewMeadery02",
+              "formKey": "03D35A:Skyrim.esm"
+            },
+            "refText": "048D67 ×4 · 048D64 ×1"
+          }
+        ]
+      },
+      {
+        "name": "Frostbite Spider",
+        "base": [
+          {
+            "edid": "dunHarmugstahlEncFrostbiteSpider",
+            "formKey": "08C40B:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Harmugstahl01",
+              "formKey": "05F536:Skyrim.esm"
+            },
+            "refText": "10 refs",
+            "note": "ref 055D4A initially disabled, alias `AdvSpider` of `DunHarmugstahlQST` 039BB5"
+          }
+        ]
+      },
+      {
+        "name": "Frostbite Spider",
+        "base": [
+          {
+            "edid": "dunHarmugstahlEncFrostbiteSpiderCage",
+            "formKey": "08E4FC:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Harmugstahl01",
+              "formKey": "05F536:Skyrim.esm"
+            },
+            "refText": "refs 070001 · 070144 · 070145"
+          }
+        ],
+        "quest": "aliases `SpiderCage01`–`03` of `DunHarmugstahlQST` 039BB5"
+      },
+      {
+        "name": "Frostbite Spider",
+        "base": [
+          {
+            "edid": "dunChillwind_EncFrostbiteSpiderAmbush",
+            "formKey": "08327D:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "ChillwindDepths01",
+              "formKey": "03E908:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "08327A:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Giant Frostbite Spider",
+        "base": [
+          {
+            "edid": "EncFrostbiteSpiderSnowGiantAmbush",
+            "formKey": "0424F6:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1FalmerValleyPOI07",
+              "formKey": "000D07:Dawnguard.esm"
+            },
+            "ref": {
+              "formKey": "013E40:Dawnguard.esm"
+            },
+            "note": "Forgotten Vale"
+          }
+        ]
+      },
+      {
+        "name": "Giant Frostbite Spider",
+        "base": [
+          {
+            "edid": "DLC1VCEncFrostbiteSpiderGiantAmbush",
+            "formKey": "0138B8:Dawnguard.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1VampireCastleDungeon01",
+              "formKey": "00285B:Dawnguard.esm"
+            },
+            "ref": {
+              "formKey": "00DBC0:Dawnguard.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Arachnia",
+        "locations": [
+          {
+            "cell": {
+              "edid": "CronvangrHall01",
+              "formKey": "0152A7:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "00085E:ccvsvsse002-pets.esl"
+            }
+          }
+        ],
+        "quest": "alias `AliasSpider` of `ccVSVSSE002_MainQuest` 0008C8"
+      }
+    ]
+  }
+}

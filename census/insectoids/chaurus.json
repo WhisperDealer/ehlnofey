@@ -1,0 +1,330 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "chaurus",
+  "group": "insectoids",
+  "title": "Chaurus",
+  "order": 5,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "chaurus",
+        "name": "Chaurus",
+        "records": [
+          {
+            "edid": "EncChaurus",
+            "formKey": "0A5600:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "ChaurusRace",
+          "formKey": "0131EB:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: the Falmer's beast, banded with the low-level Falmer it hunts beside (Falmer 9, Skulker 15: IV)"
+        }
+      },
+      {
+        "id": "chaurus-reaper",
+        "name": "Chaurus Reaper",
+        "records": [
+          {
+            "edid": "EncChaurusReaper",
+            "formKey": "023A8F:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "ChaurusReaperRace",
+          "formKey": "0A5601:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: the Falmer's beast, banded with the Falmer (Gloomlurker 22, Nightprowler 30: V)"
+        }
+      },
+      {
+        "id": "frozen-chaurus",
+        "name": "Frozen Chaurus",
+        "records": [
+          {
+            "edid": "DLC1_BF_FrozenChaurus01",
+            "formKey": "006D06:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_BF_FrozenChaurus02",
+            "formKey": "015117:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_BF_FrozenChaurus03",
+            "formKey": "015118:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_BF_FrozenChaurus04",
+            "formKey": "015119:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_BF_FrozenChaurus05",
+            "formKey": "01511C:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1_BF_ChaurusRace",
+          "formKey": "015136:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 10,
+          "also": [
+            20,
+            30,
+            40,
+            50
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: the Forgotten Vale's chaurus, banded with the Frozen Falmer (VI)"
+        },
+        "note": "five records, one per level, all named Frozen Chaurus. Each sets its own level and takes the rest (its name included) from `DLC1_BF_FrozenChaurusTemplate` 01511B:Dawnguard.esm."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncChaurus` 0A5600 and `EncChaurusReaper` 023A8F: no other record keeps its own level.",
+      "Frozen Chaurus: all five records own their level, so changing it means editing all five. `DLC1_BF_FrozenChaurusTemplate` 01511B (level 1) is inert: no record takes `Stats` from it.",
+      "Every other chaurus record (`dunFrostflowEncChaurus_HoldPos` 0D0872 and every `Lvl*` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharChaurus",
+          "formKey": "01FA27:Skyrim.esm"
+        },
+        "override": "Dawnguard override wins",
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Chaurus"
+          },
+          {
+            "at": 16,
+            "label": "Chaurus Hunter Fledgling"
+          },
+          {
+            "at": 20,
+            "label": "Chaurus Reaper"
+          },
+          {
+            "at": 32,
+            "label": "Chaurus Hunter"
+          }
+        ],
+        "owner": "`LvlChaurus` 01FA28 · `LvlChaurusAmbush` 07932F"
+      },
+      {
+        "list": {
+          "edid": "DLC1LCharChaurusNoHunter",
+          "formKey": "00843E:Dawnguard.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Chaurus"
+          },
+          {
+            "at": 20,
+            "label": "Chaurus Reaper"
+          }
+        ],
+        "owner": "`DLC1LvlChaurusNoHunter` 00843F · `DLC1LvlChaurusNoHunterAmbush` 008440 (Dawnguard.esm)"
+      },
+      {
+        "list": {
+          "edid": "DLC1_BF_LCharFrozenChaurus",
+          "formKey": "01511A:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frozen Chaurus 01 (10)"
+          },
+          {
+            "at": 15,
+            "label": "Frozen Chaurus 02 (20)"
+          },
+          {
+            "at": 30,
+            "label": "Frozen Chaurus 03 (30)"
+          },
+          {
+            "at": 40,
+            "label": "Frozen Chaurus 04 (40)"
+          },
+          {
+            "at": 50,
+            "label": "Frozen Chaurus 05 (50)"
+          }
+        ],
+        "owner": "`DLC1_BF_LVLFrozenChaurus` 01511D:Dawnguard.esm"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalMarshPredator",
+          "formKey": "042295:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 12,
+            "label": "Chaurus"
+          },
+          {
+            "at": 13,
+            "label": "Chaurus"
+          },
+          {
+            "at": 14,
+            "label": "Chaurus"
+          },
+          {
+            "at": 20,
+            "label": "Chaurus Reaper"
+          },
+          {
+            "at": 24,
+            "label": "Chaurus Reaper"
+          },
+          {
+            "at": 30,
+            "label": "Chaurus Reaper"
+          },
+          {
+            "at": 32,
+            "label": "Chaurus Reaper"
+          },
+          {
+            "at": 35,
+            "label": "Chaurus Reaper"
+          }
+        ],
+        "note": "chaurus entries only; the rest are frostbite spiders (on *Frostbite Spider*) and trolls",
+        "owner": "`LvlAnimalMarshPredator` 0422B7"
+      },
+      {
+        "list": {
+          "edid": "LCharFalmerCompanion",
+          "formKey": "01E786:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 12,
+            "label": "Chaurus"
+          },
+          {
+            "at": 20,
+            "label": "Chaurus Reaper"
+          },
+          {
+            "at": 20,
+            "label": "Chaurus Reaper"
+          }
+        ],
+        "note": "chaurus entries only; the rest are a skeever and the frostbite spiders (on *Frostbite Spider*)",
+        "owner": "`LvlFalmerCompanion` 01E7B1"
+      },
+      {
+        "list": {
+          "edid": "LCharFalmerCompanionFrost",
+          "formKey": "0640BC:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 12,
+            "label": "Chaurus"
+          },
+          {
+            "at": 20,
+            "label": "Chaurus Reaper"
+          },
+          {
+            "at": 20,
+            "label": "Chaurus Reaper"
+          }
+        ],
+        "note": "chaurus entries only; the rest are a skeever and the snow spiders (on *Frostbite Spider*)",
+        "owner": "`LvlFalmerCompanionSnow` 0640BB"
+      },
+      {
+        "list": {
+          "edid": "dunChillwind_LCharFalmerCompanion",
+          "formKey": "078C1B:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 10,
+            "label": "Chaurus"
+          }
+        ],
+        "note": "the other entry is a Frostbite Spider (1, on *Frostbite Spider*)",
+        "owner": "`dunChillwind_LvlFalmerCompanion` 079BFD"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Chaurus",
+        "base": [
+          {
+            "edid": "dunFrostflowEncChaurus_HoldPos",
+            "formKey": "0D0872:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "FrostflowAbyss",
+              "formKey": "0471DC:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "FrostflowLighthouse",
+              "formKey": "015274:Skyrim.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      }
+    ]
+  }
+}

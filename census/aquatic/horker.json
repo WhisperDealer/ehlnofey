@@ -1,0 +1,253 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "horker",
+  "group": "aquatic",
+  "title": "Horker",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "horker",
+        "name": "Horker",
+        "records": [
+          {
+            "edid": "EncHorker",
+            "formKey": "023AB1:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HorkerRace",
+          "formKey": "0131FC:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 3
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a horker, banded at its vanilla level (3); flagged: bands-of-power.md puts most wildlife in Common"
+        }
+      },
+      {
+        "id": "lord-tusk",
+        "name": "Lord Tusk",
+        "records": [
+          {
+            "edid": "DLC2dunHorkerIslandEncHorker",
+            "formKey": "026196:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "HorkerRace",
+          "formKey": "0131FC:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 25
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a named horker boss, banded at its vanilla level (25)"
+        }
+      },
+      {
+        "id": "fangtusk",
+        "name": "Fangtusk",
+        "records": [
+          {
+            "edid": "ccBGSSSE001_MiscWindhelm_Fangtusk",
+            "formKey": "000BF9:ccbgssse001-fish.esm"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE001_HorkerRaceVampire",
+          "formKey": "000BFC:ccbgssse001-fish.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.25,
+          "min": 10,
+          "max": 80
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: a named horker boss; above Lord Tusk (IV)"
+        },
+        "note": "the CC vampire horker"
+      },
+      {
+        "id": "horker-youngling",
+        "name": "Horker Youngling",
+        "records": [
+          {
+            "edid": "DLC2EncHorkerYoungling",
+            "formKey": "01B63E:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "HorkerRace",
+          "formKey": "0131FC:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a horker calf, banded at its vanilla level (1)"
+        },
+        "note": "not placed (only the QA lists)"
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncHorker` 023AB1: no record outside the table keeps its own level. Lord Tusk (`DLC2dunHorkerIslandEncHorker` 026196:Dragonborn.esm) uses it as its template but not for `Stats`, so it stays at 25 when 023AB1 changes.",
+      "`ccBGSSSE001_MiscWindhelm_Fangtusk`, `DLC2EncHorkerYoungling`: no template, and no other record keeps its own level.",
+      "`POIHorkerEnchanted` 0EF607 (level 3, no template) is a horker under Placed only."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharAnimalCoastSnowPrey",
+          "formKey": "0422A4:Skyrim.esm"
+        },
+        "gate": "one entry, at 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Horker"
+          }
+        ],
+        "owner": "none found (no record uses it)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Horker",
+        "base": [
+          {
+            "edid": "EncHorker",
+            "formKey": "023AB1:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2HorkerIslandExterior01",
+              "formKey": "00ED9F:Dragonborn.esm"
+            },
+            "refText": "×5"
+          },
+          {
+            "cell": {
+              "edid": "WinterholdJailExteriorNew",
+              "formKey": "0038F4:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "BrinewaterGrottoStart",
+              "formKey": "05001C:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "DawnstarSanctuary",
+              "formKey": "0193EE:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "BYOHHouse2Exterior03",
+              "formKey": "009292:Skyrim.esm"
+            },
+            "note": "the Windstad Manor shore"
+          }
+        ],
+        "note": "162 refs along Skyrim's north coast and Solstheim, including the cells listed"
+      },
+      {
+        "name": "Lord Tusk",
+        "base": [
+          {
+            "edid": "DLC2dunHorkerIslandEncHorker",
+            "formKey": "026196:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2HorkerIslandExterior01",
+              "formKey": "00ED9F:Dragonborn.esm"
+            },
+            "note": "Horker Island, Solstheim"
+          }
+        ]
+      },
+      {
+        "name": "Fangtusk",
+        "base": [
+          {
+            "edid": "ccBGSSSE001_MiscWindhelm_Fangtusk",
+            "formKey": "000BF9:ccbgssse001-fish.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "000BFA:ccbgssse001-fish.esm"
+            },
+            "note": "off Windhelm"
+          }
+        ],
+        "quest": "alias `Fangtusk` of `ccBGSSSE001_Misc_Windhelm` 0009D5:ccbgssse001-fish.esm"
+      },
+      {
+        "name": "Horker",
+        "base": [
+          {
+            "edid": "POIHorkerEnchanted",
+            "formKey": "0EF607:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "level 3; no ref, list, quest, script or other record uses it"
+      },
+      {
+        "name": "Horker Youngling",
+        "base": [
+          {
+            "edid": "DLC2EncHorkerYoungling",
+            "formKey": "01B63E:Dragonborn.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "only in the QA lists `DLC2QANPCList` 02A1BA · `DLC2QANPCList05` 02A8A7:Dragonborn.esm"
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "magic-anomaly",
+  "group": "monsters",
+  "title": "Magic Anomaly",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "magic-anomaly",
+        "name": "Magic Anomaly",
+        "records": [
+          {
+            "edid": "EncMagicAnomaly",
+            "formKey": "0B6F94:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "MagicAnomalyRace",
+          "formKey": "0B6F95:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.75,
+          "min": 1
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a College questline foe of the middle quests (*Containment*, *The Staff of Magnus*, *The Eye of Magnus*), banded with apprentice mages and ghosts; no vanilla fixed level to keep"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncMagicAnomaly`: no other record keeps its own level.",
+      "`MG05Creature` 079915 and `MG07Creature` 053F1D carry `Stats` and follow `EncMagicAnomaly`."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "none"
+        },
+        "owner": "—",
+        "note": "no leveled list draws a magic anomaly"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Magic Anomaly",
+        "base": [
+          {
+            "edid": "MG05Creature",
+            "formKey": "079915:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "×10, Winterhold",
+            "disabled": true,
+            "note": "enable parent `MG05CreatureEnableParentREF` 017138"
+          }
+        ],
+        "quest": "aliases `MG05CreatureAlias01`–`010` of `MG05` 01F255 (*Containment*)"
+      },
+      {
+        "name": "Magic Anomaly",
+        "base": [
+          {
+            "edid": "MG07Creature",
+            "formKey": "053F1D:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "quest": "`MG07` 01F257 (*The Staff of Magnus*) creates it: its fragment `QF_MG07_0001F257` calls `PlaceAtMe(MG07Creature)` at its creature marker alias"
+      },
+      {
+        "name": "Magic Anomaly",
+        "base": [
+          {
+            "edid": "EncMagicAnomaly",
+            "formKey": "0B6F94:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "quest": "three per activation of the activator `MagicAnomalySpawner` 0DFB04 (`MagicAnomalySpawnerSCRIPT`, `PlaceActorAtMe`), which College radiant `MGR30` 0C1E72 (*Aftershock*) creates at alias `Anomaly`; and three at the Eye's creature markers from alias `MG08EyeAlias` of `MG08` 01F258 (*The Eye of Magnus*; `MG08EyeScript`, `PlaceAtMe`)"
+      }
+    ]
+  }
+}

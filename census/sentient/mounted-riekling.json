@@ -1,0 +1,145 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "mounted-riekling",
+  "group": "sentient",
+  "title": "Mounted Riekling",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "riekling-rider",
+        "name": "Riekling Rider",
+        "records": [
+          {
+            "edid": "DLC2EncMountedRiekling01",
+            "formKey": "03CFE5:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2MountedRieklingRace",
+          "formKey": "0179CF:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 25
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "archetype-tiers.md: mounted rieklings unchanged; banded at its vanilla level (25)"
+        }
+      },
+      {
+        "id": "riekling-courser",
+        "name": "Riekling Courser",
+        "records": [
+          {
+            "edid": "DLC2EncMountedRiekling02",
+            "formKey": "03CFE6:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2MountedRieklingRace",
+          "formKey": "0179CF:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 32
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "archetype-tiers.md: mounted rieklings unchanged; banded at its vanilla level (32)"
+        }
+      },
+      {
+        "id": "riekling-charger",
+        "name": "Riekling Charger",
+        "records": [
+          {
+            "edid": "DLC2EncMountedRiekling03A",
+            "formKey": "03CFE7:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2MountedRieklingRace",
+          "formKey": "0179CF:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 40
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "archetype-tiers.md: mounted rieklings unchanged; banded at its vanilla level (40)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing any of the three rows also needs `ccBGSSSE041_DLC2LvlMountedRieklingBoss` 000890:ccbgssse041-netchleather.esl (Netch Leather pack, named Riekling Rider, PcLevelMult 1 (15–50)): it takes its template from `DLC2LCharMountedRiekling`, which draws them, without `Stats` (it is listed below as an owner of that list).",
+      "`DLC2EncMountedRiekling02` and `03A` use `DLC2EncMountedRiekling01` as their template but not for `Stats`: changing the Rider does not change them.",
+      "`DLC2EncMountedRiekling` 0179D1:Dragonborn.esm is a mounted riekling with no template and level 20; it is under Placed only.",
+      "Every other mounted riekling record (the Chargers `03B`–`03E`, `DLC2LvlMountedRiekling`, `DLC2LvlMountedRieklingBoss` and `…BossNoRespawn`) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC2LCharMountedRiekling",
+          "formKey": "038EB0:Dragonborn.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Riekling Rider"
+          },
+          {
+            "at": 27,
+            "label": "Riekling Courser"
+          },
+          {
+            "at": 35,
+            "label": "`DLC2LCharMountedRiekling03`"
+          }
+        ],
+        "owner": "`DLC2LvlMountedRiekling` 025E18 (4 refs) · `DLC2LvlMountedRieklingBoss` 025E19 (7 refs) and its copy `…BossNoRespawn` 034B51 (Castle Karstaag ruins, named Mounted Riekling) (Dragonborn.esm) · `ccBGSSSE041_DLC2LvlMountedRieklingBoss` 000890:ccbgssse041-netchleather.esl (Solstheim ×1)"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharMountedRiekling03",
+          "formKey": "03CFEC:Dragonborn.esm"
+        },
+        "gate": "no flags (all five at 1)",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Riekling Charger ×5 (`03A`–`03E`)"
+          }
+        ],
+        "owner": "sub-list of `DLC2LCharMountedRiekling`"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Mounted Riekling (`DLC2EncMountedRiekling` 0179D1:Dragonborn.esm, level 20)",
+        "notPlaced": true,
+        "note": "referenced only by the QA list `DLC2QANPCList` 02A1BA"
+      }
+    ]
+  }
+}

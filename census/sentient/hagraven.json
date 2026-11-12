@@ -1,0 +1,428 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "hagraven",
+  "group": "sentient",
+  "title": "Hagraven",
+  "order": 5,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "hagraven",
+        "name": "Hagraven",
+        "records": [
+          {
+            "edid": "EncHagraven",
+            "formKey": "023AB0:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HagravenRace",
+          "formKey": "0131FB:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "archetype-tiers.md: the hagraven raised to 40 (user), above the Briarhearts it commands"
+        },
+        "note": "also placed directly 12 times (Snapleg Cave, Ravenscar Hollow ×3, Darklight Tower ×2, the Tamriel exteriors), beside the named copies under Placed only."
+      },
+      {
+        "id": "melka",
+        "name": "Melka",
+        "records": [
+          {
+            "edid": "dunBlindcliffHagraven",
+            "formKey": "039B3E:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HagravenRace",
+          "formKey": "0131FB:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-11-12: a named boss, one band above the hagravens (VI)"
+        }
+      },
+      {
+        "id": "lucerne",
+        "name": "Lucerne",
+        "records": [
+          {
+            "edid": "DA05Lucerne",
+            "formKey": "02ABBE:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HagravenRace",
+          "formKey": "0131FB:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-11-12: a named boss, one band above the hagravens (VI)"
+        }
+      },
+      {
+        "id": "ettiene",
+        "name": "Ettiene",
+        "records": [
+          {
+            "edid": "DLC2dunAltarOfThrondEttiene",
+            "formKey": "0369ED:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "HagravenRace",
+          "formKey": "0131FB:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "archetype-tiers.md: the hagraven raised to 40 (user), above the Briarhearts it commands; raised with it"
+        }
+      },
+      {
+        "id": "fallaise",
+        "name": "Fallaise",
+        "records": [
+          {
+            "edid": "DLC2dunAltarOfThrondFallaise",
+            "formKey": "0369EE:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "HagravenRace",
+          "formKey": "0131FB:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "archetype-tiers.md: the hagraven raised to 40 (user), above the Briarhearts it commands; raised with it"
+        }
+      },
+      {
+        "id": "isobel",
+        "name": "Isobel",
+        "records": [
+          {
+            "edid": "DLC2dunAltarOfThrondIsobel",
+            "formKey": "0369EC:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "HagravenRace",
+          "formKey": "0131FB:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "archetype-tiers.md: the hagraven raised to 40 (user), above the Briarhearts it commands; raised with it"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncHagraven` 023AB0 does not change Melka (`dunBlindcliffHagraven` 039B3E, level 20, a row above): she uses 023AB0 as her template but not for `Stats`.",
+      "The other rows: no other record keeps its own level.",
+      "Every other hagraven record (Drascua, Moira `DA14Hagraven`, the Glenmoril Witches, `dunHagsEndHagraven`, `dunLostValleyRedoubtHagraven`, `dunKarthspireHagraven`, the `HoldPosition` variants and `TreasCorpseHagraven`) carries `Stats` and follows `EncHagraven`."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "CR01LCharBeast",
+          "formKey": "025232:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 20,
+            "label": "Hagraven (the top entry; the rest are wolves, sabre cats, an ice wraith and bears)"
+          }
+        ],
+        "owner": "Companions radiant `CR01` 01CEEE (*Animal Extermination*), alias `Beast`"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Melka",
+        "locations": [
+          {
+            "cell": {
+              "edid": "BlindCliffCave01",
+              "formKey": "0152B7:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "alias `Melka` of `dunBlindCliffQST` 039B3B (*The Affairs of Hagravens*)"
+      },
+      {
+        "name": "Petra (`EncHagraven`, named by alias)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "BlindCliffCave01",
+              "formKey": "0152B7:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "077C60:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "alias `Petra` of `dunBlindCliffQST` 039B3B"
+      },
+      {
+        "name": "Linelle (`EncHagraven`, named by alias)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "000858:ccbgssse059-ba_dragonplate.esl"
+            },
+            "note": "cell 33, −30; enable parent 00085C"
+          }
+        ],
+        "quest": "alias `Linelle` of `ccBGSSSE059_Quest` 000824 (*Bones for a Crow*)"
+      },
+      {
+        "name": "Beldama Ward Mother (`EncHagraven`, named by alias)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "000884:ccedhsse002-splkntset.esl"
+            },
+            "note": "Karthspire; enable parent 000856"
+          }
+        ],
+        "quest": "alias `BeldamaWitch000` of `ccEDHSSE002_Quest` 000800 (*Crypt of the Heart*)"
+      },
+      {
+        "name": "Lucerne",
+        "locations": [
+          {
+            "cell": {
+              "edid": "GlenmorilCoven01",
+              "formKey": "01526E:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "alias `GlenmorilLeader` of `DA05` 02A49A (*Ill Met By Moonlight*) and `DA05Hagraven` of `C04` 01CEF5 (*Blood's Honor*)"
+      },
+      {
+        "name": "Glenmoril Witch (`C04GlenmorilWitch` 0A350A, `…Headless` 106269)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "GlenmorilCoven01",
+              "formKey": "01526E:Skyrim.esm"
+            },
+            "refText": "×5 each",
+            "disabled": true
+          }
+        ],
+        "quest": "also spawned by alias `Witch` of `CR13` 0E3163 (*Purity*)"
+      },
+      {
+        "name": "Hagraven (`dunHagsEndHagraven` 09D257)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "HagsEnd01",
+              "formKey": "059398:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "09D256:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Hagraven (`dunLostValleyRedoubtHagraven` 10E7FE)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "refs 0340D5 · 03412A",
+            "note": "Lost Valley Redoubt"
+          }
+        ],
+        "quest": "aliases `Hagraven01` · `Hagraven02` of `dunLostValleyRedoubtQST` 0B0F5B"
+      },
+      {
+        "name": "Hagraven (`dunOrphanRockHagravenHoldPosition512` 10E84B)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "OrphanRockExterior01",
+              "formKey": "0097C9:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "03565A:Skyrim.esm"
+            },
+            "note": "enable parent 04C1D2"
+          }
+        ]
+      },
+      {
+        "name": "Hagraven (`EncHagravenHoldPosition256` 0D281F)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "BleakwindBluffExterior",
+              "formKey": "00955A:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0BDF8C:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "03614F:Skyrim.esm"
+            },
+            "note": "Karthspire; the Spell Knight pack (ccedhsse002-splkntset.esl) overrides it to add enable parent 000856"
+          }
+        ]
+      },
+      {
+        "name": "Hagraven (`EncHagravenHoldPosition256UntilReleased` 0B6002)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "SerpentsBluffRedoubt01",
+              "formKey": "0151FA:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0D281E:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Hagraven (`EncHagravenHoldPosition512` 045D7C)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "CradleStoneTowerExterior01",
+              "formKey": "009AE4:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "032BF5:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "DragonLair01Exterior03",
+              "formKey": "00703D:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "05EFCA:Skyrim.esm"
+            },
+            "note": "enable parent 05EFC2"
+          }
+        ]
+      },
+      {
+        "name": "Ettiene · Fallaise · Isobel",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2AltarOfThrond01",
+              "formKey": "036798:Dragonborn.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Moira (`DA14Hagraven` 01CB33)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DA14HagravenREF",
+              "formKey": "01CB38:Skyrim.esm"
+            },
+            "disabled": true,
+            "note": "Witchmist Grove"
+          }
+        ],
+        "quest": "alias `DA14HagravenAlias` of `DA14` 01BB9B (*A Night To Remember*)"
+      },
+      {
+        "name": "Drascua (`Drascua` 0240D7)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "0240D8:Skyrim.esm"
+            },
+            "note": "Dead Crone Rock"
+          }
+        ],
+        "quest": "alias `Drascua` of `DA07` 0240B8 (*Pieces of the Past*)"
+      }
+    ]
+  }
+}

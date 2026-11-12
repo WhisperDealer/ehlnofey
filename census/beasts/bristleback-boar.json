@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "bristleback-boar",
+  "group": "beasts",
+  "title": "Bristleback Boar",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "bristleback",
+        "name": "Bristleback",
+        "records": [
+          {
+            "edid": "DLC2EncBoar01",
+            "formKey": "02403B:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2BoarRace",
+          "formKey": "024038:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 7
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "bands-of-power.md: most wildlife; vanilla level 7"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`DLC2EncBoar01` 02403B:Dragonborn.esm: no other record keeps its own level.",
+      "Every other bristleback record (`DLC2EncBoarWild`, Bilgemuck `DLC2MH02Bilgemuck`, the `DLC2LvlBoar` and `DLC2LvlBoar_AmbushNoFurniture` wrappers) carries `Stats` and follows 02403B."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC2LCharAnimalForestPredator",
+          "formKey": "01E1C5:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 6,
+            "label": "Bristleback (`DLC2EncBoarWild` 03284D)"
+          },
+          {
+            "at": 7,
+            "label": "Bristleback (`DLC2EncBoarWild` 03284D)"
+          },
+          {
+            "at": 8,
+            "label": "Bristleback (`DLC2EncBoarWild` 03284D)"
+          },
+          {
+            "at": 10,
+            "label": "Bristleback (`DLC2EncBoarWild` 03284D)"
+          }
+        ],
+        "owner": "`DLC2LvlAnimalForestPredator` 03A9C2:Dragonborn.esm"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharAnimalMountainSnowPredator",
+          "formKey": "01E1C6:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 6,
+            "label": "Bristleback (`DLC2EncBoarWild` 03284D)"
+          },
+          {
+            "at": 7,
+            "label": "Bristleback (`DLC2EncBoarWild` 03284D)"
+          },
+          {
+            "at": 8,
+            "label": "Bristleback (`DLC2EncBoarWild` 03284D)"
+          },
+          {
+            "at": 9,
+            "label": "Bristleback (`DLC2EncBoarWild` 03284D)"
+          }
+        ],
+        "owner": "`DLC2LvlAnimalMountainSnowPredator` 03A9C1:Dragonborn.esm"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Bristleback",
+        "base": [
+          {
+            "edid": "DLC2LvlBoar",
+            "formKey": "025F9A:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2BristlebackCave01",
+              "formKey": "01BBFB:Dragonborn.esm"
+            },
+            "refText": "×4"
+          },
+          {
+            "cell": {
+              "edid": "DLC2Benkongerike01",
+              "formKey": "0142E2:Dragonborn.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "DLC2Frossel01",
+              "formKey": "0142F7:Dragonborn.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      },
+      {
+        "name": "Bristleback",
+        "base": [
+          {
+            "edid": "DLC2LvlBoar_AmbushNoFurniture",
+            "formKey": "029789:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2CastleKarstaagRuins01",
+              "formKey": "0142FB:Dragonborn.esm"
+            },
+            "refText": "×3"
+          }
+        ]
+      },
+      {
+        "name": "Bilgemuck",
+        "base": [
+          {
+            "edid": "DLC2MH02Bilgemuck",
+            "formKey": "01F189:Dragonborn.esm"
+          }
+        ],
+        "notPlaced": true,
+        "quest": "created by alias `Bilgemuck` of `DLC2MH02` 01A50C:Dragonborn.esm"
+      }
+    ]
+  }
+}

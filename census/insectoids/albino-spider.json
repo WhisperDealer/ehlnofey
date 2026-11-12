@@ -1,0 +1,140 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "albino-spider",
+  "group": "insectoids",
+  "title": "Albino Spider",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "albino-spider",
+        "name": "Albino Spider",
+        "records": [
+          {
+            "edid": "DLC2ExpSpiderAlbino",
+            "formKey": "0145C5:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2ExpSpiderBaseRace",
+          "formKey": "014449:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "user, 2026-11-12: wildlife banded at its vanilla level (5)"
+        },
+        "note": "template `DLC2ExpSpiderTemplate` 014490 without `Stats`."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`DLC2ExpSpiderAlbino` 0145C5:Dragonborn.esm: no other record keeps its own level, and no record uses it as a template. It uses `DLC2ExpSpiderTemplate` 014490:Dragonborn.esm as its template but not for `Stats`.",
+      "The placed copy `DLC2ExpSpiderAlbinoEMPTY` 01926C:Dragonborn.esm does not follow 0145C5: it carries `Stats` from `DLC2ExpSpiderTemplate` 014490 (PcLevelMult 1, no template; on *Exploding Spider*), so changing 0145C5 leaves it on the player's level."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Albino Spider",
+        "base": [
+          {
+            "edid": "DLC2ExpSpiderAlbino",
+            "formKey": "0145C5:Dragonborn.esm"
+          }
+        ],
+        "baseNote": "30 refs (the dev cell `DLC2WarehouseSpiders` 0285C6 left out)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2WhiteRidgeBarrow01",
+              "formKey": "0142ED:Dragonborn.esm"
+            },
+            "refText": "×9",
+            "note": "ref 019323 initially disabled"
+          },
+          {
+            "cell": {
+              "edid": "DLC2WhiteRidgeBarrow02",
+              "formKey": "03C7F5:Dragonborn.esm"
+            },
+            "refText": "×10"
+          },
+          {
+            "cell": {
+              "edid": "DLC2HighpointTower01",
+              "formKey": "0184F0:Dragonborn.esm"
+            },
+            "refText": "×3"
+          },
+          {
+            "cell": {
+              "edid": "DLC2Fahlbtharz04",
+              "formKey": "01DD03:Dragonborn.esm"
+            },
+            "refText": "×3"
+          },
+          {
+            "cell": {
+              "edid": "DLC2FortFrostmoth01",
+              "formKey": "0142F8:Dragonborn.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "DLC2KolbjornBarrow01",
+              "formKey": "0142EE:Dragonborn.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "label": "Solstheim cell (8, 17)",
+              "formKey": "00EDAC:Dragonborn.esm"
+            },
+            "refText": "×1"
+          }
+        ]
+      },
+      {
+        "name": "Albino Spider",
+        "base": [
+          {
+            "edid": "DLC2ExpSpiderAlbinoEMPTY",
+            "formKey": "01926C:Dragonborn.esm"
+          }
+        ],
+        "baseNote": "level from `DLC2ExpSpiderTemplate` 014490, PcLevelMult 1",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2WhiteRidgeBarrow01",
+              "formKey": "0142ED:Dragonborn.esm"
+            },
+            "refText": "×4"
+          },
+          {
+            "cell": {
+              "edid": "DLC2WhiteRidgeBarrow02",
+              "formKey": "03C7F5:Dragonborn.esm"
+            },
+            "refText": "×4"
+          }
+        ]
+      }
+    ]
+  }
+}

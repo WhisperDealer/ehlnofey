@@ -1,0 +1,310 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "goat",
+  "group": "animals",
+  "title": "Goat",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "goat-wild",
+        "name": "Goat (wild)",
+        "records": [
+          {
+            "edid": "EncGoatWild",
+            "formKey": "02EBE2:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "GoatRace",
+          "formKey": "0131FA:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: harmless prey, banded at its vanilla level (1)"
+        }
+      },
+      {
+        "id": "goat-domestic",
+        "name": "Goat (domestic)",
+        "records": [
+          {
+            "edid": "EncGoatDomestic",
+            "formKey": "04359C:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "GoatRace",
+          "formKey": "0131FA:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 3
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: livestock, banded at its vanilla level (3)"
+        }
+      },
+      {
+        "id": "hilda",
+        "name": "Hilda",
+        "records": [
+          {
+            "edid": "ccVSVSSE002_Goat",
+            "formKey": "000830:ccvsvsse002-pets.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccVSVSSE002_GoatRace",
+          "formKey": "000812:ccvsvsse002-pets.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "flags": [
+          "Essential",
+          "Invulnerable"
+        ],
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a CC pet (`Essential`), banded at its vanilla level (1)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncGoatWild`, `EncGoatDomestic`, `ccVSVSSE002_Goat`: no templated record keeps its own level.",
+      "Three more goats (`GoatRace`) have no template and set their own level: `EncGoatSprigganCompanion` 0D206E (level 1) and `dunBluePalaceWingEncGoatDomestic` 000804:Update.esm (level 3), both under Placed only; `DLCDwarvenPuzzleDungeon_AutumnGoat` 0008F2:cctwbsse001-puzzledungeon.esm (level 3, placed ×3 in the puzzle dungeon's autumn cell), on no census page.",
+      "Every other goat record (Gleda `DA14Goat`, `DragonBridgeGoatLucky`) carries `Stats` and follows 04359C."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharAnimalCanyonPrey",
+          "formKey": "04229C:Skyrim.esm"
+        },
+        "gate": "one entry, at 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Goat (wild)"
+          }
+        ],
+        "owner": "`LvlAnimalCanyonPrey` 0422B4 (placed ×87)"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalMountainSnowPrey",
+          "formKey": "0422A2:Skyrim.esm"
+        },
+        "gate": "one entry, at 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Goat (wild)"
+          }
+        ],
+        "owner": "`LvlAnimalMountainSnowPrey` 0422B2 (placed ×100); Solstheim `DLC2LvlAnimalMountainSnowPrey` 03A9C3:Dragonborn.esm (×4)"
+      },
+      {
+        "list": {
+          "edid": "dunMiddenForgeFailureListTemplate",
+          "formKey": "058275:Skyrim.esm"
+        },
+        "gate": "every entry at level 1 (no flags)",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Goat (wild)"
+          },
+          {
+            "at": 1,
+            "label": "frostbite spider"
+          },
+          {
+            "at": 1,
+            "label": "skeever"
+          },
+          {
+            "at": 1,
+            "label": "slaughterfish"
+          },
+          {
+            "at": 1,
+            "label": "wolf"
+          }
+        ],
+        "owner": "none found (no record uses it)",
+        "note": "the slaughterfish is on Aquatic → *Slaughterfish*"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Goat (domestic)",
+        "base": [
+          {
+            "edid": "EncGoatDomestic",
+            "formKey": "04359C:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "HollyfrostFarmExterior",
+              "formKey": "00B4B7:Skyrim.esm"
+            },
+            "refText": "×4"
+          },
+          {
+            "cell": {
+              "edid": "KatlasFarmExterior",
+              "formKey": "0092BF:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "KarthwastenExterior01",
+              "formKey": "007079:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "LargashburExterior01",
+              "formKey": "00BD3C:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "NarzulburExterior01",
+              "formKey": "00B57B:Skyrim.esm"
+            },
+            "refText": "×2"
+          }
+        ],
+        "note": "32 refs: the farms, Orc strongholds and Reach settlements, a few caves, and Skaal Village on Solstheim (`DLC2SkaalVillage01` 00EDA3:Dragonborn.esm); the five busiest cells are listed. No list draws it."
+      },
+      {
+        "name": "Goat",
+        "base": [
+          {
+            "edid": "DragonBridgeGoatLucky",
+            "formKey": "05487E:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DragonBridgeExterior04",
+              "formKey": "00934A:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0548DF:Skyrim.esm"
+            }
+          }
+        ],
+        "note": "follows `EncGoatDomestic`"
+      },
+      {
+        "name": "Hilda",
+        "base": [
+          {
+            "edid": "ccVSVSSE002_Goat",
+            "formKey": "000830:ccvsvsse002-pets.esl"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "Gleda the Goat",
+        "base": [
+          {
+            "edid": "DA14Goat",
+            "formKey": "01CB2C:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DA14GledaREf"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias `DA14SammyAlias` of `DA14` 01BB9B (*A Night to Remember*)"
+      },
+      {
+        "name": "Goat",
+        "base": [
+          {
+            "edid": "EncGoatSprigganCompanion",
+            "formKey": "0D206E:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "level 1; no ref, list, quest, script or other record uses it"
+      },
+      {
+        "name": "Goat",
+        "base": [
+          {
+            "edid": "dunBluePalaceWingEncGoatDomestic",
+            "formKey": "000804:Update.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "BluePalaceWingWorld",
+              "formKey": "034240:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "09F836:Skyrim.esm"
+            },
+            "disabled": true,
+            "note": "Pelagius Wing"
+          }
+        ],
+        "quest": "alias `Dream1` of `dunBluePalaceQST` 09B285",
+        "note": "level 3"
+      }
+    ]
+  }
+}

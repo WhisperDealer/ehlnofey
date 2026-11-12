@@ -1,0 +1,43 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "silt-strider",
+  "group": "insectoids",
+  "title": "Silt Strider",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": []
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Silt strider",
+        "base": [
+          {
+            "edid": "SiltStrider",
+            "formKey": "023F10:Dragonborn.esm"
+          }
+        ],
+        "baseNote": "a MoveableStatic: no race, level, AI or name",
+        "locations": [
+          {
+            "cell": {
+              "edid": "TestAsh01",
+              "formKey": "00EF0F:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "023F11:Dragonborn.esm"
+            },
+            "note": "Solstheim, by Raven Rock (16, 6)"
+          }
+        ],
+        "note": "not an enemy: there is no silt strider race or actor in Skyrim, Update, the DLC or the CC packs."
+      }
+    ]
+  }
+}

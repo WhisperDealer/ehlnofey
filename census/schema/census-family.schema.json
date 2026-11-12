@@ -353,6 +353,24 @@
                       "source"
                     ],
                     "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "unchanged": {
+                        "type": "boolean",
+                        "const": true
+                      },
+                      "source": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "required": [
+                      "unchanged",
+                      "source"
+                    ],
+                    "additionalProperties": false
                   }
                 ]
               },

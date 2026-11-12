@@ -1,0 +1,326 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "ice-wraith",
+  "group": "monsters",
+  "title": "Ice Wraith",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "ice-wraith",
+        "name": "Ice Wraith",
+        "records": [
+          {
+            "edid": "EncIceWraith",
+            "formKey": "023AB3:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "IceWraithRace",
+          "formKey": "0131FE:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 9
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "bands-of-power.md: most wildlife; banded at its vanilla level (9)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`EncIceWraith`: no other record keeps its own level.",
+      "Every other ice wraith record (`EncIceWraithAmbush`, `CW01BIceWraith`, Karstaag's `DLC2dunKarstaagIceWraith` and `…Summoned` (on Conjured → *Familiars & Spirit Animals*), and every `Lvl*` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharAnimalForestSnowPredator",
+          "formKey": "042299:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 12,
+            "label": "Ice Wraith"
+          },
+          {
+            "at": 13,
+            "label": "Ice Wraith"
+          },
+          {
+            "at": 14,
+            "label": "Ice Wraith"
+          },
+          {
+            "at": 15,
+            "label": "Ice Wraith"
+          }
+        ],
+        "note": "among 17 entries of snow spiders, snow sabre cats, snow bears and frost trolls (on *Troll*)",
+        "owner": "`LvlAnimalForestSnowPredator` 0422B0"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalMountainSnowPredator",
+          "formKey": "04229D:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 12,
+            "label": "Ice Wraith"
+          },
+          {
+            "at": 13,
+            "label": "Ice Wraith"
+          },
+          {
+            "at": 14,
+            "label": "Ice Wraith"
+          },
+          {
+            "at": 15,
+            "label": "Ice Wraith"
+          }
+        ],
+        "note": "among 18 entries of wolves, ice wolves, snow sabre cats, snow bears and frost trolls (on *Troll*)",
+        "owner": "`LvlAnimalMountainSnowPredator` 01E7A3"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharAnimalMountainSnowPredator",
+          "formKey": "01E1C6:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 12,
+            "label": "Ice Wraith"
+          },
+          {
+            "at": 13,
+            "label": "Ice Wraith"
+          },
+          {
+            "at": 14,
+            "label": "Ice Wraith"
+          },
+          {
+            "at": 15,
+            "label": "Ice Wraith"
+          }
+        ],
+        "note": "among 18 entries of ice wolves, boars, snow sabre cats, snow bears and frost trolls (on *Troll*)",
+        "owner": "`DLC2LvlAnimalMountainSnowPredator` 03A9C1:Dragonborn.esm"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalSnowFields",
+          "formKey": "01E78E:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 28,
+            "label": "Ice Wraith"
+          }
+        ],
+        "note": "a ladder Wolf 1 · Ice Wolf 6 · Snow Sabre Cat 11 · Snow Bear 20 · Frost Troll 22 · Ice Wraith 28",
+        "owner": "`LvlAnimalSnowFields` 065A3B"
+      },
+      {
+        "list": {
+          "edid": "LCharCustomIceWraithFrostTroll",
+          "formKey": "106386:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Ice Wraith"
+          },
+          {
+            "at": 22,
+            "label": "Frost Troll (on *Troll*)"
+          }
+        ],
+        "owner": "`LvlAnimalMountainSnowCustomIceWraithFrostTroll` 106387 (×1, Tamriel exterior 009746)"
+      },
+      {
+        "list": {
+          "edid": "LCharHagravenCompanionFrost",
+          "formKey": "0640C1:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 28,
+            "label": "Ice Wraith",
+            "count": 2
+          }
+        ],
+        "note": "among 6 entries of snow spiders, a skeever and frost trolls (on *Troll*)",
+        "owner": "`LvlHagravenCompanionSnow` 0640C2"
+      },
+      {
+        "list": {
+          "edid": "dunHagsEnd_LCharHagravenCompanionFrost",
+          "formKey": "09D59F:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 14,
+            "label": "Ice Wraith",
+            "count": 2
+          }
+        ],
+        "note": "among 5 entries of snow spiders, a skeever and frost trolls (on *Troll*)",
+        "owner": "`dunHagsEnd_LvlHagravenCompanionSnow` 09D59E (×2, `HagsEndOrigin` 09829C)"
+      },
+      {
+        "list": {
+          "edid": "CR01LCharBeast",
+          "formKey": "025232:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 9,
+            "label": "Ice Wraith"
+          }
+        ],
+        "note": "among 8 entries of wolves, sabre cats, bears and a hagraven",
+        "owner": "Companions radiant `CR01` 01CEEE (*Animal Extermination*), alias `Beast`"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Ice Wraith",
+        "base": [
+          {
+            "edid": "EncIceWraithAmbush",
+            "formKey": "084095:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "label": "Throat of the World, exterior 009766 (14, −14)"
+            }
+          },
+          {
+            "cell": {
+              "edid": "ThroatofTheWorldPath01",
+              "formKey": "009726:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "BonechillPassage01",
+              "formKey": "03538D:Skyrim.esm"
+            },
+            "note": "enable parent 0FDC3A"
+          },
+          {
+            "cell": {
+              "edid": "MazeStart",
+              "formKey": "104220:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "POISnowy24",
+              "formKey": "008FDE:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "WeynonStonesExterior01",
+              "formKey": "009064:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "WeynonStonesExterior02",
+              "formKey": "009063:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "WinterholdCollegeMidden02",
+              "formKey": "0AE783:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Forgotten Vale exteriors 000CD7:Dawnguard.esm ×2 and 000CD9:Dawnguard.esm"
+            },
+            "note": "all three enable parent 05EACD"
+          },
+          {
+            "cell": {
+              "label": "Forgotten Vale exterior 000D12:Dawnguard.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "DLC1FalmerValleyPOI06",
+              "formKey": "000D0E:Dawnguard.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "FalmerTempleExterior01",
+              "formKey": "000CDB:Dawnguard.esm"
+            }
+          },
+          {
+            "cell": {
+              "label": "Solstheim exteriors 00ED03:Dragonborn.esm (12, 22) and 00ED24:Dragonborn.esm (12, 21) ×2"
+            }
+          }
+        ],
+        "note": "18 refs"
+      },
+      {
+        "name": "Ice Wraith",
+        "base": [
+          {
+            "edid": "CW01BIceWraith",
+            "formKey": "0E2D2B:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DoomstoneNorthernCoast02",
+              "formKey": "00B222:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0E2D2A:Skyrim.esm"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

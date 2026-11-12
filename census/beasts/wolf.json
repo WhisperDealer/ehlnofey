@@ -1,0 +1,467 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "wolf",
+  "group": "beasts",
+  "title": "Wolf",
+  "order": 6,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "wolf",
+        "name": "Wolf",
+        "records": [
+          {
+            "edid": "EncWolf",
+            "formKey": "023ABE:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "WolfRace",
+          "formKey": "01320A:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 2
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: wildlife, banded at its vanilla level (2)"
+        }
+      },
+      {
+        "id": "ice-wolf",
+        "name": "Ice Wolf",
+        "records": [
+          {
+            "edid": "EncWolfIce",
+            "formKey": "023ABF:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "WolfRace",
+          "formKey": "01320A:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: wildlife, banded at its vanilla level (6)"
+        }
+      },
+      {
+        "id": "wolf-guardian-spirit",
+        "name": "Wolf Guardian Spirit",
+        "records": [
+          {
+            "edid": "dunHunterWolfGuardian",
+            "formKey": "0E662D:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "WolfRace",
+          "formKey": "01320A:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 2
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "role: a *Kyne’s Sacred Trials* quarry, banded at its vanilla level (2)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncWolf` 023ABE also needs six records that use it as their template but not for `Stats`: `EncSummonFamiliar` 0640B5 (Familiar, level 2; on Conjured → *Summoned Atronachs*); `SummonFlamingThrall` 09CE28 (Flaming Thrall, level 1) and `ccFFBSSE001_WolfSpirit` 000829:ccffbsse001-imperialdragon.esl (Wolf Spirit, PC × 1) (both on Conjured → *Familiars & Spirit Animals*); `HowlSummonWolf` 0CF79E (werewolf howl summon, level 1; named on the *Companions* group page); `dunPOITrappedWolf` 0D1684 and `dunWhiteRiverWatchWolf` 0E1672 (placed dungeon wolves, level 2; under Placed only).",
+      "Changing `EncWolfIce` 023ABF also needs `DLC1HowlSummonIceWolf` 008A6C:Dawnguard.esm (werewolf howl summon, level 6; named on the *Companions* group page) and `EncC06WolfSpirit` 058303 (Kodlak’s Wolf Spirit, PC × 1 [8–]; on Werebeasts → *Wolf Spirits*): they use 023ABF as their template but not for `Stats`.",
+      "`dunHunterWolfGuardian`: no other record keeps its own level.",
+      "`EncWolfDead` 0753CE (a wolf corpse, level 2, no template; three refs) is on no census page.",
+      "Every other wolf record (`EncWolfRed`, `EncWolf_Indoor`, `EncWolfIce_Indoor`, `EncBanditWolf`, the `dunBloatedMans`, `dunShadowgreen`, `dunFellglow` wolves, `ccBGSSSE064_Wolf`, `SummonFireStorm`, `BYOHWolf`, the spriggan-companion wolves and every `Lvl*` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharWolf",
+          "formKey": "0B83C2:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Wolf",
+            "count": 2
+          },
+          {
+            "at": 1,
+            "label": "red wolf (`EncWolfRed` 10FE05)"
+          }
+        ],
+        "owner": "`LvlWolf` 0B83C1 · `dunBloodletThrone_LvlWolf` 10D29C · `BYOHWolf` 000C3A:HearthFires.esm"
+      },
+      {
+        "list": {
+          "edid": "DunCragslaneLCharPitWolf",
+          "formKey": "0E160C:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Wolf"
+          },
+          {
+            "at": 5,
+            "label": "Ice Wolf"
+          }
+        ],
+        "owner": "`dunCragslaneLvlPitWolf` 0E160D"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalHills",
+          "formKey": "01E78F:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Wolf",
+            "count": 3
+          }
+        ],
+        "owner": "`LvlAnimalHillsPredator` 0DC5A3"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalSnowFields",
+          "formKey": "01E78E:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Wolf"
+          },
+          {
+            "at": 6,
+            "label": "Ice Wolf"
+          }
+        ],
+        "owner": "`LvlAnimalSnowFields` 065A3B"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalForestPredator",
+          "formKey": "042297:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Wolf",
+            "count": 4
+          }
+        ],
+        "owner": "`LvlAnimalForestPredator` 01E7A0"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalPlainsPredator",
+          "formKey": "042293:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Wolf",
+            "count": 4
+          }
+        ],
+        "owner": "`LvlAnimalPlainsPredator` 01E7A1"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalCanyonPredator",
+          "formKey": "04229B:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Wolf",
+            "count": 4
+          }
+        ],
+        "owner": "`LvlAnimalCanyonPredator` 0422B3"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalCoastSnowPredator",
+          "formKey": "0422A3:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Wolf",
+            "count": 2
+          },
+          {
+            "at": 6,
+            "label": "Ice Wolf"
+          },
+          {
+            "at": 7,
+            "label": "Ice Wolf"
+          },
+          {
+            "at": 8,
+            "label": "Ice Wolf"
+          },
+          {
+            "at": 9,
+            "label": "Ice Wolf"
+          }
+        ],
+        "owner": "`LvlAnimalCoastSnowPredator` 0422B5"
+      },
+      {
+        "list": {
+          "edid": "LCharAnimalMountainSnowPredator",
+          "formKey": "04229D:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Wolf",
+            "count": 2
+          },
+          {
+            "at": 6,
+            "label": "Ice Wolf"
+          },
+          {
+            "at": 7,
+            "label": "Ice Wolf"
+          },
+          {
+            "at": 8,
+            "label": "Ice Wolf"
+          },
+          {
+            "at": 9,
+            "label": "Ice Wolf"
+          }
+        ],
+        "owner": "`LvlAnimalMountainSnowPredator` 01E7A3"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharAnimalForestPredator",
+          "formKey": "01E1C5:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Wolf",
+            "count": 4
+          }
+        ],
+        "owner": "`DLC2LvlAnimalForestPredator` 03A9C2:Dragonborn.esm"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharAnimalMountainSnowPredator",
+          "formKey": "01E1C6:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Ice Wolf",
+            "count": 2
+          }
+        ],
+        "owner": "`DLC2LvlAnimalMountainSnowPredator` 03A9C1:Dragonborn.esm"
+      },
+      {
+        "list": {
+          "edid": "LCharSprigganCompanion",
+          "formKey": "01E776:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Wolf (`EncWolfSprigganCompanion` 0C96BE)"
+          }
+        ],
+        "owner": "`LvlSprigganCompanion` 01E7C6 · `LvlSprigganGuard` 022837"
+      },
+      {
+        "list": {
+          "edid": "LCharSprigganCompanionFrost",
+          "formKey": "0640BD:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Ice Wolf (`EncWolfIceSprigganCompanion` 0C96C1)"
+          }
+        ],
+        "owner": "`LvlSprigganCompanionSnow` 025D3B"
+      },
+      {
+        "list": {
+          "edid": "LCharVampireCompanion",
+          "formKey": "01E775:Skyrim.esm"
+        },
+        "override": "Dawnguard.esm override",
+        "gate": "every gate ≤ player",
+        "note": "draws no wolf in game: the Dawnguard.esm override drops the Skyrim.esm entry Wolf @2",
+        "owner": "`LvlVampireCompanion` 01E7C8"
+      },
+      {
+        "list": {
+          "edid": "LCharVampireCompanionFrost",
+          "formKey": "0640BE:Skyrim.esm"
+        },
+        "override": "Dawnguard.esm override",
+        "gate": "every gate ≤ player",
+        "note": "draws no wolf in game: the Dawnguard.esm override drops the Skyrim.esm entries Wolf @1 and Ice Wolf @6",
+        "owner": "`LvlVampireCompanionSnow` 0640BF (never placed; Undead → *Vampires*)"
+      },
+      {
+        "list": {
+          "edid": "CR01LCharBeast",
+          "formKey": "025232:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Wolf"
+          },
+          {
+            "at": 6,
+            "label": "Ice Wolf"
+          }
+        ],
+        "owner": "Companions (`CR01` 01CEEE)"
+      },
+      {
+        "list": {
+          "edid": "dunMiddenForgeFailureListTemplate",
+          "formKey": "058275:Skyrim.esm"
+        },
+        "gate": "no flags; every entry at level 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Wolf"
+          }
+        ],
+        "owner": "none found (no record uses it)"
+      },
+      {
+        "list": {
+          "edid": "DunDarkshadeCopseLCharWolf",
+          "formKey": "023BC0:Skyrim.esm"
+        },
+        "gate": "no flags; every entry at level 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Wolf"
+          }
+        ],
+        "owner": "none found (no record uses it)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Wolf Guardian Spirit",
+        "quest": "alias `guardianWolf` of `dunHunterQST` 018601 (*Kyne’s Sacred Trials*)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "POIPineForest29",
+              "formKey": "009BD7:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0E6630:Skyrim.esm"
+            },
+            "refText": "(-4, -17)",
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Wolf",
+        "base": [
+          {
+            "edid": "dunPOITrappedWolf",
+            "formKey": "0D1684:Skyrim.esm"
+          }
+        ],
+        "note": "level 2",
+        "locations": [
+          {
+            "cell": {
+              "label": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "0D1677:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Wolf",
+        "base": [
+          {
+            "edid": "dunWhiteRiverWatchWolf",
+            "formKey": "0E1672:Skyrim.esm"
+          }
+        ],
+        "note": "level 2",
+        "quest": "alias `Wolf` of `dunWhiteRiverWatchQST` 01C3FB",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WhiteRiverWatch01",
+              "formKey": "0151F9:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "086A88:Skyrim.esm"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

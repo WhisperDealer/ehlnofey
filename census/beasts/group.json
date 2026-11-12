@@ -1,0 +1,41 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "beasts",
+  "title": "Beasts",
+  "order": 3,
+  "parent": "world-creatures",
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Sub-group of World Creatures: bears, bristleback boars, mammoths, netch, sabre cats, skeevers and wolves. Mammoths and netch: none of their factions has a relation to `PlayerFaction`; mammoths are `Aggression: Aggressive`, netch are unaggressive (no `Aggression` field) `[verified]`. The Guardian Spirits on these pages (mammoth, bear, skeever, wolf, sabre cat) are among the quarry of *Kyne’s Sacred Trials* (`dunHunterQST` 018601).",
+  "families": [
+    {
+      "id": "mammoth",
+      "holds": "the Mammoth (38) and the Mammoth Guardian Spirit (3)"
+    },
+    {
+      "id": "bear",
+      "holds": "Bear 12, Cave Bear 16, Snow Bear 20, the Ursine Guardian 32 and the Helgen bear 1"
+    },
+    {
+      "id": "bristleback-boar",
+      "holds": "the Bristleback (7) and Bilgemuck"
+    },
+    {
+      "id": "netch",
+      "holds": "Netch Calf 25, Bull Netch 36, Betty Netch 40, and the CC netch of the Staff of Sheogorath and Netch Leather packs"
+    },
+    {
+      "id": "skeever",
+      "holds": "Skeever 1, the Venomfang Skeever 7, the Skeever Guardian Spirit and Skritch (CC pet)"
+    },
+    {
+      "id": "wolf",
+      "holds": "Wolf 2, Ice Wolf 6 and the Wolf Guardian Spirit"
+    },
+    {
+      "id": "sabre-cat",
+      "holds": "Sabre Cat 6, Snowy Sabre Cat 11, the Sabre Cat Guardian Spirit 12 and the Vale Sabre Cats 6"
+    }
+  ]
+}
