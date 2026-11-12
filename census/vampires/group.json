@@ -93,9 +93,9 @@
       "why": "hireable followers, Castle Volkihar"
     },
     {
-      "record": "`DLC1LvlCastleThrall` 018066 (×7), `DLC1VQ02FeastThrall1`/`2`, `DLC1CastleThrallTemplateDead` (Dawnguard.esm)",
+      "record": "`DLC1LvlCastleThrall` 018066 (×7), `DLC1VQ02FeastThrall1`/`2`, `DLC1CastleThrallTemplateDead` (Dawnguard.esm); `ccEEJSSE005_DLC1LvlCastleThrall` 0EA5DB:cceejsse005-cave.esm (×1, Bloodchill Cavern, on the same `DLC1LCharCastleThrall`)",
       "what": "Vampire Cattle, level 1",
-      "why": "Castle Volkihar's fed-on thralls"
+      "why": "the fed-on thralls of Castle Volkihar and of Bloodchill Cavern"
     },
     {
       "record": "`ccEEJSSE001_DLC1EncVampire00NordF` 0B7B36 · `ccEEJSSE001_DLC1EncVampireBard2` 0D1095 (cceejsse005-cave.esm)",

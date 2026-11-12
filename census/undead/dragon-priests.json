@@ -1,0 +1,659 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "dragon-priests",
+  "group": "undead",
+  "title": "Dragon Priests",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "vokun",
+        "name": "Vokun",
+        "records": [
+          {
+            "edid": "Ianusu",
+            "formKey": "0327C2:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DragonPriestRace",
+          "formKey": "0131EF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 50,
+          "from": {
+            "edid": "EncDragonPriest",
+            "formKey": "023A93:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: named Dragon Priests"
+        }
+      },
+      {
+        "id": "krosis",
+        "name": "Krosis",
+        "records": [
+          {
+            "edid": "dunShearpointKrosisDragonPriest",
+            "formKey": "100767:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DragonPriestRace",
+          "formKey": "0131EF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 50,
+          "from": {
+            "edid": "EncDragonPriestFrost",
+            "formKey": "02025B:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: named Dragon Priests"
+        }
+      },
+      {
+        "id": "otar",
+        "name": "Otar the Mad",
+        "records": [
+          {
+            "edid": "dunRagnOtar",
+            "formKey": "03763A:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DragonPriestRace",
+          "formKey": "0131EF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 50,
+          "from": {
+            "edid": "EncDragonPriestAmbushSarcShock",
+            "formKey": "08A1C9:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: named Dragon Priests"
+        }
+      },
+      {
+        "id": "hevnoraak",
+        "name": "Hevnoraak",
+        "records": [
+          {
+            "edid": "dunValthumeHevnoraak",
+            "formKey": "04D6E7:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DragonPriestRace",
+          "formKey": "0131EF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 50,
+          "from": {
+            "edid": "EncDragonPriestAmbushSarcShock",
+            "formKey": "08A1C9:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: named Dragon Priests"
+        }
+      },
+      {
+        "id": "rahgot",
+        "name": "Rahgot",
+        "records": [
+          {
+            "edid": "DunForelhostDragonPriestRahgot",
+            "formKey": "035351:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DragonPriestRace",
+          "formKey": "0131EF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 50,
+          "from": {
+            "edid": "EncDragonPriestFire",
+            "formKey": "02025A:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: named Dragon Priests"
+        }
+      },
+      {
+        "id": "morokei",
+        "name": "Morokei",
+        "records": [
+          {
+            "edid": "MG07LabyrinthianDragonPriest",
+            "formKey": "0F496C:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DragonPriestRace",
+          "formKey": "0131EF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 50,
+          "from": {
+            "edid": "EncDragonPriestShock",
+            "formKey": "02025C:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: named Dragon Priests"
+        }
+      },
+      {
+        "id": "nahkriin",
+        "name": "Nahkriin",
+        "records": [
+          {
+            "edid": "dunSkuldafnNahkriin",
+            "formKey": "0F849B:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DragonPriestRace",
+          "formKey": "0131EF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 50,
+          "from": {
+            "edid": "EncDragonPriest",
+            "formKey": "023A93:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: named Dragon Priests"
+        }
+      },
+      {
+        "id": "volsung",
+        "name": "Volsung",
+        "records": [
+          {
+            "edid": "dunVolskyggeDragonPriest01",
+            "formKey": "041930:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DragonPriestRace",
+          "formKey": "0131EF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 50,
+          "from": {
+            "edid": "EncDragonPriestAmbushSarcFrost",
+            "formKey": "0480B9:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: named Dragon Priests"
+        }
+      },
+      {
+        "id": "vahlok",
+        "name": "Vahlok the Jailor",
+        "records": [
+          {
+            "edid": "DLC2SV01DragonPriestBoss",
+            "formKey": "01CAD5:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DragonPriestRace",
+          "formKey": "0131EF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 50,
+          "from": {
+            "edid": "EncDragonPriestFire",
+            "formKey": "02025A:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: named Dragon Priests"
+        }
+      },
+      {
+        "id": "ahzidal-dukaan",
+        "name": "Ahzidal · Dukaan",
+        "records": [
+          {
+            "edid": "DLC2AcolyteAhzidal",
+            "formKey": "0248E9:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2AcolyteDukaan",
+            "formKey": "0248E1:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2AcolyteDragonPriestRace",
+          "formKey": "03911A:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 60
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: named Dragon Priests"
+        },
+        "note": "no template: the acolytes own every field."
+      },
+      {
+        "id": "zahkriisos",
+        "name": "Zahkriisos",
+        "records": [
+          {
+            "edid": "DLC2AcolyteZahkriisos",
+            "formKey": "0248E8:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2AcolyteDragonPriestRace",
+          "formKey": "03911A:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 25,
+          "max": 60
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: named Dragon Priests"
+        },
+        "note": "no template, and the only priest that scales with the player."
+      },
+      {
+        "id": "dragon-priest",
+        "name": "Dragon Priest",
+        "records": [
+          {
+            "edid": "EncDragonPriest",
+            "formKey": "023A93:Skyrim.esm"
+          },
+          {
+            "edid": "dunValthumeHevnoraakGhost",
+            "formKey": "03ED80:Skyrim.esm"
+          },
+          {
+            "edid": "EncDragonPriestAmbushSarcFire",
+            "formKey": "08A1C8:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DragonPriestRace",
+          "formKey": "0131EF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 50
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "bands-of-power.md: Dragon Priests (the generic priest is not named there)"
+        },
+        "note": "the generic priest, placed by hand and drawn by the draugr boss list at 60. `EncDragonPriest` owns the level; the others take `Stats` and `BaseData` from it."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row except the acolytes takes `Stats` from a template and ends at `EncDragonPriest` 023A93 (level 50), directly or through `EncDragonPriestFire` 02025A · `…Frost` 02025B · `…Shock` 02025C and the `…AmbushSarcFire` 08A1C8 · `…Frost` 0480B9 · `…Shock` 08A1C9 copies. None of the eight Skyrim priests or Vahlok sets `BaseData`, so each keeps its own name.",
+      "Changing `EncDragonPriest` moves every row but the acolytes at once, plus the summoned `SummonEncDragonPriest` 10FC15 (on Conjured → *Heroes & Spirits*), the unplaced `EncDragonPriestStaff` 08DC3E, and the CC Ayleid liches `ccBGSSSE067_AyleidLichBossAmbush` 000B73 and `ccBGSSSE067_ConjureEncAyleidLich` 147D97:ccbgssse067-daedinv.esm (Norion the Undying, on Undead → *Ayleid Undead (CC)*).",
+      "The three acolytes have no template; no other record follows them."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharDraugr05BossWithDragonPriest",
+          "formKey": "042482:Skyrim.esm"
+        },
+        "gate": "no gate: every entry is at 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Dragon Priest (`EncDragonPriest`, `…Fire`, `…Frost`, `…Shock`)",
+            "count": 1
+          },
+          {
+            "at": 1,
+            "label": "Ebony Death Overlord 1H · 2H (×2 each)",
+            "count": 1
+          }
+        ],
+        "note": "the level-60 entry of `LCharDraugrBoss` 042480 (no gate flags: only the highest rung at or below the player), so a draugr boss spawn has a 4 in 8 chance of a Dragon Priest from player level 60. `LCharDraugrBoss` is documented on Undead → Draugr → *Draugr Boss*.",
+        "owner": "`LCharDraugrBoss` and the draugr boss wrappers that draw it"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Vokun",
+        "locations": [
+          {
+            "cell": {
+              "edid": "HighGateRuins03",
+              "formKey": "02F83D:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Krosis",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ShearpointExterior01",
+              "formKey": "009137:Skyrim.esm"
+            },
+            "note": "Tamriel exterior"
+          }
+        ]
+      },
+      {
+        "name": "Otar the Mad",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Ragnvald01",
+              "formKey": "01522A:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Hevnoraak",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Valthume01",
+              "formKey": "033D68:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Rahgot",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Forelhost03",
+              "formKey": "022F52:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Morokei",
+        "locations": [
+          {
+            "cell": {
+              "edid": "LabyrinthianWorld04",
+              "formKey": "021EDB:Skyrim.esm"
+            },
+            "persistent": true,
+            "note": "a worldspace; quest `MG07` 01F257"
+          }
+        ]
+      },
+      {
+        "name": "Nahkriin",
+        "locations": [
+          {
+            "cell": {
+              "edid": "SkuldafnTop",
+              "formKey": "02794E:Skyrim.esm"
+            },
+            "note": "worldspace `SkuldafnWorld` 0278DD; quest `MQ303` 046EF0"
+          }
+        ]
+      },
+      {
+        "name": "Volsung",
+        "locations": [
+          {
+            "cell": {
+              "edid": "VolskyggeExterior04",
+              "formKey": "006EE7:Skyrim.esm"
+            },
+            "note": "Tamriel exterior"
+          }
+        ]
+      },
+      {
+        "name": "Vahlok the Jailor",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2VahloksTomb01",
+              "formKey": "0142EF:Dragonborn.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Ahzidal",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2KolbjornBarrow01",
+              "formKey": "0142EE:Dragonborn.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Dukaan",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2WhiteRidgeBarrow02",
+              "formKey": "03C7F5:Dragonborn.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Zahkriisos",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2BloodskalBarrow01",
+              "formKey": "0142FC:Dragonborn.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Dragon Priest (generic)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Valthume01",
+              "formKey": "033D68:Skyrim.esm"
+            },
+            "refText": "×3",
+            "note": "`dunValthumeHevnoraakGhost`"
+          },
+          {
+            "cell": {
+              "edid": "Forelhost03",
+              "formKey": "022F52:Skyrim.esm"
+            },
+            "note": "`EncDragonPriestAmbushSarcFire`"
+          },
+          {
+            "cell": {
+              "edid": "BluePalaceWingWorld",
+              "formKey": "034240:Skyrim.esm"
+            },
+            "persistent": true,
+            "note": "a worldspace (Pelagius Wing); `EncDragonPriest`"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Vokun",
+        "weapons": "Staff of Fireballs 029B82",
+        "armor": "mask Vokun 061CC9 (`dunHighgateVokunOutfit` 0F8499)",
+        "skin": "`SkinDragonPriest` 03B5AB"
+      },
+      {
+        "records": "Krosis",
+        "weapons": "Staff of Fireballs 029B82",
+        "armor": "mask Krosis 061CB9 (`dunShearpointKrosisOutfit` 0F9917)",
+        "skin": "`SkinDragonPriest` 03B5AB"
+      },
+      {
+        "records": "Otar the Mad",
+        "weapons": "Staff of the Storm Wall 029B87",
+        "armor": "mask Otar 061CC2 (`dunRagnvaldOtarOutfit` 0F849A)",
+        "skin": "`SkinDragonPriest` 03B5AB"
+      },
+      {
+        "records": "Hevnoraak",
+        "weapons": "Hevnoraak's Staff 10076D; also carries `LItemGems` 068525 and a large coin purse 0D8E7E",
+        "armor": "mask Hevnoraak 061CC1 (`dunValthumeDragonPriestOutfit` 0D787D)",
+        "skin": "`SkinDragonPriest` 03B5AB"
+      },
+      {
+        "records": "Rahgot",
+        "weapons": "Dragon Priest Staff 07E5BB",
+        "armor": "mask Rahgot 061CC0, put on him by `dunForelhostEquipMaskScript` on `dunForelhostQST` 035354 (not in his outfit `dunForelhostRahgotOutfit` 0F8498)",
+        "skin": "`SkinDragonPriest` 03B5AB"
+      },
+      {
+        "records": "Morokei",
+        "weapons": "none on the record; the Staff of Magnus 035369 comes from the `MG07` quest 01F257 (alias `MG07StaffAlias`)",
+        "armor": "mask Morokei 061C8B (`MG07DragonPriestOutfit` 0F496B)",
+        "skin": "`SkinDragonPriest` 03B5AB"
+      },
+      {
+        "records": "Nahkriin",
+        "weapons": "none on the record; the Dragon Priest Staff 04DE5B comes from `MQ303` 046EF0 (alias `PortalStaff`)",
+        "armor": "mask Nahkriin 061CA5 (`dunSkuldafnNahkriinOutfit` 0F849C)",
+        "skin": "`SkinDragonPriest` 03B5AB"
+      },
+      {
+        "records": "Volsung",
+        "weapons": "none",
+        "armor": "mask Volsung 061CAB (`dunVolskyggeVolsungOutfit` 0F849D)",
+        "skin": "`SkinDragonPriest` 03B5AB"
+      },
+      {
+        "records": "Vahlok the Jailor",
+        "weapons": "none (inventory from `EncDragonPriestFire`, which is empty)",
+        "armor": "none",
+        "skin": "`SkinDragonPriest` 03B5AB"
+      },
+      {
+        "records": "Ahzidal",
+        "weapons": "none",
+        "armor": "mask Ahzidal 0240FE (`DLC2AcolyteAhzidalOutfit` 0248E3:Dragonborn.esm)",
+        "skin": "`SkinDragonPriestAcolyte2` 024FE3:Dragonborn.esm"
+      },
+      {
+        "records": "Dukaan",
+        "weapons": "none",
+        "armor": "mask Dukaan 0240FF (`DLC2AcolyteDukaanOutfit` 0248E4:Dragonborn.esm)",
+        "skin": "`SkinDragonPriestAcolyte3` 024FE4:Dragonborn.esm"
+      },
+      {
+        "records": "Zahkriisos",
+        "weapons": "none",
+        "armor": "mask Zahkriisos 024037 (`DLC2AcolyteZahkriisosOutfit` 0248E2:Dragonborn.esm)",
+        "skin": "`SkinDragonPriestAcolyte` 024FE1:Dragonborn.esm"
+      },
+      {
+        "records": "Dragon Priest (generic)",
+        "weapons": "none",
+        "armor": "none",
+        "skin": "`SkinDragonPriest` 03B5AB"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "The eleven masks (Vokun, Krosis, Otar, Hevnoraak, Rahgot, Morokei, Nahkriin, Volsung, Ahzidal, Dukaan, Zahkriisos)",
+        "kind": "enchanted helmets",
+        "playable": true
+      },
+      {
+        "item": "Staff of Fireballs · Staff of the Storm Wall · Hevnoraak's Staff · the Dragon Priest Staves 07E5BB · 04DE5B · Staff of Magnus",
+        "kind": "staves",
+        "playable": true
+      },
+      {
+        "item": "`SkinDragonPriest` 03B5AB · `SkinDragonPriestAcolyte*` 024FE1 · 024FE3 · 024FE4:Dragonborn.esm",
+        "kind": "the priest body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`SkinDragonPriestFXMist` 05F280",
+        "kind": "mist effect, no name, in every priest's outfit",
+        "playable": true,
+        "note": "flagged playable, but a nameless body effect"
+      }
+    ]
+  }
+}

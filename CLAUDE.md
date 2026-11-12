@@ -115,12 +115,12 @@ rules).
   page) plus one `<family>.json` per family page; `census/bands.json` is the home page. The schema is
   `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
   everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons, Daedra** (all 13 pages, the
-  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05).
+  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05), Dragon Priests (one page, a family of `census/undead/`, 2026-11-12).
   Every other group stays Confluence-first until it is migrated.
 - **A sub-group is its own census folder with `parent`** in its `group.json` (`census/vampires/` has
   `"parent": "undead"`); URLs stay flat (`/vampires/common-vampires/`), the parent's page lists its
   sub-groups, and only top-level groups appear in the nav and on the home page. `census/undead/group.json`
-  is a parent with no families of its own; its Confluence page (12714066) stays hand-written, not mirrored,
+  is a parent whose only family is `dragon-priests` (URL `/undead/dragon-priests/`); its Confluence page (12714066) stays hand-written, not mirrored,
   until the rest of Undead is migrated.
 - **The site is public; keep it free of internal tooling** (user, 2026-10-04): no Jira ticket
   numbers (the tickets are deleted; `WD-xx` in the docs is history only) and no Confluence links or
