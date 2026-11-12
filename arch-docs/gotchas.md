@@ -432,6 +432,9 @@ plausible-sounding claims are cheapest to make and most expensive to act on:
   The Confluence page ids live in `site/scripts/confluence-pages.json`, which only the renderer reads.
 - **Confluence pushes: render, then send the output verbatim.** `npm run confluence -- <group>/<family>`
   is the only source of a mirror body. After pushing, diff a fresh render against what was sent.
+- **A markdown push can 422 on a page that held a merged table cell** (2026-11-12, *Soul Cairn
+  Undead*): Confluence rejects the markdown body over the old page's colspan cell. Convert the
+  render to HTML and push with `contentFormat: html`; the result is the same mirror.
 - **Deploy:** GitHub Pages is set to build from GitHub Actions (`build_type: workflow`, enabled
   2026-10-04). **Manual deploys only**: `.github/workflows/pages.yml` has just `workflow_dispatch`, so a
   push never publishes. Run it from the Actions tab or `gh workflow run pages.yml --ref main`; the site

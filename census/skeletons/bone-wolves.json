@@ -1,0 +1,175 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "bone-wolves",
+  "group": "skeletons",
+  "title": "Bone Wolves (CC)",
+  "order": 4,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "bonewolf",
+        "name": "Bonewolf",
+        "records": [
+          {
+            "edid": "ccBGSSSE036_LvlBonewolf",
+            "formKey": "000865:ccbgssse036-petbwolf.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE036_BoneWolfCompanionRace",
+          "formKey": "002F93:Update.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 30
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: an undead wolf, banded with the low-level draugr"
+        },
+        "note": "no template; not placed, drawn only by the lists below."
+      },
+      {
+        "id": "thrall-wolf",
+        "name": "Thrall Wolf",
+        "records": [
+          {
+            "edid": "ccBGSSSE036_EncNecromancerThrall01",
+            "formKey": "00080C:ccbgssse036-petbwolf.esl"
+          },
+          {
+            "edid": "ccBGSSSE036_EncNecromancerThrall02",
+            "formKey": "00080D:ccbgssse036-petbwolf.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE036_BoneWolfCompanionRace",
+          "formKey": "002F93:Update.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 60
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a necromancer's bone wolves, a band above the wild Bonewolf"
+        },
+        "note": "no template."
+      },
+      {
+        "id": "bone-wolf-pet",
+        "name": "Bone Wolf",
+        "records": [
+          {
+            "edid": "ccBGSSSE036_EncBoneWolf",
+            "formKey": "000D63:ccbgssse036-petbwolf.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE036_BoneWolfCompanionRace",
+          "formKey": "002F93:Update.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 2
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: the pack's pet companion, at its vanilla level"
+        },
+        "note": "the Creation Club pet; no template."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`ccBGSSSE036_LvlBonewolf`, `ccBGSSSE036_EncNecromancerThrall01`/`02`, `ccBGSSSE036_EncBoneWolf`: no other record keeps its own level."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ccBGSSSE003_LCharBonewolf",
+          "formKey": "000867:ccbgssse036-petbwolf.esl"
+        },
+        "gate": "`CalculateFromAllLevelsLessThanOrEqualPlayer`",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Bonewolf"
+          }
+        ],
+        "note": "added to `ccBGS_LCharUndeadListMaster` at level 2 at game start by `ccBGSSSE036_SeedQuest` 000866:ccbgssse036-petbwolf.esl (`AddForm`, script `SSE_QF_ccBGSSSE036_SeedQuest_04000866`).",
+        "owner": "the Bone Wolf pack"
+      },
+      {
+        "list": {
+          "edid": "ccBGS_LCharUndeadListSlot01BoneWolf",
+          "formKey": "003280:Update.esm"
+        },
+        "override": "ccbgssse036-petbwolf.esl",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Bonewolf"
+          }
+        ],
+        "note": "Update.esm holds the placeholder `EncHare` 06DC9D; the pack's override puts the Bonewolf in.",
+        "owner": "shared CC undead (`ccBGS_LCharUndeadListMaster`)"
+      },
+      {
+        "list": {
+          "edid": "ccBGS_LCharUndeadListMaster",
+          "formKey": "003024:Update.esm"
+        },
+        "note": "Update.esm: Slot01 (bone wolf) · Slot02 (zombies) 003281, both at 1. `ccbgssse003-zombies` overrides it to the zombie melee list 000822:ccbgssse003-zombies.esl only. At runtime, + `ccBGSSSE003_LCharBonewolf` (2) from the Bone Wolf pack and + the zombie melee list (2) from the Zombies pack's quests.",
+        "owner": "`ccBGSSSE003_LvlBoneWolfZombie` 003025:Update.esm, placed 19× in 13 Tamriel cells (18 enable-parented to `ccBGSSSE003_BoneWolfZombieREF` 003026:Update.esm, initially disabled, enabled by either pack's start quest) and 6× in `ccbgssse031-advcyrus`"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Thrall Wolf",
+        "locations": [
+          {
+            "cell": {
+              "edid": "POINorthernCoast10",
+              "formKey": "0092BA:Skyrim.esm"
+            },
+            "persistent": true,
+            "note": "Tamriel (-14, 23), refs 000817 and 000818:ccbgssse036-petbwolf.esl, beside the pack's Necromancer (`ccBGSSSE036_NecromancerREF` 000815)"
+          }
+        ]
+      },
+      {
+        "name": "Bone Wolf (pet)",
+        "locations": [
+          {
+            "cell": {
+              "label": "Tamriel cell 0092DB (-14, 22)"
+            },
+            "persistent": true,
+            "note": "ref `ccBGSSSE036_BoneWolfREF` 000813:ccbgssse036-petbwolf.esl; used by `ccBGSSSE036_StartChangeQuest` 000868"
+          }
+        ]
+      }
+    ]
+  }
+}

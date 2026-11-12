@@ -1,0 +1,518 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "ghost-bosses",
+  "group": "ghosts",
+  "title": "Ghost Bosses",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "haknir",
+        "name": "Haknir Death-Brand",
+        "records": [
+          {
+            "edid": "DLC2dunHaknir",
+            "formKey": "01A373:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.25,
+          "min": 40,
+          "max": 75
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        },
+        "note": "uses `LvlBanditGhostMeleeBerserkerMale` 0B1F98 as template without `Stats`."
+      },
+      {
+        "id": "haknir-officers",
+        "name": "Garuk Windrime · Thalin Ebonhand",
+        "records": [
+          {
+            "edid": "DLC2dunHaknirGarukWindrime",
+            "formKey": "037FE3:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2dunHaknirThalinEbonhand",
+            "formKey": "037FE5:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMissile",
+            "formKey": "01E770:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        },
+        "note": "Garuk takes `Stats` through `LvlBanditGhostMissileMale` 0B1F9A, Thalin through `LvlBanditGhostWizardMale` 0B1F9B (`LvlBanditWizard`)."
+      },
+      {
+        "id": "kvenel",
+        "name": "Kvenel the Tongue",
+        "encounter": "Volunruud",
+        "records": [
+          {
+            "edid": "DunVolunruudBoss",
+            "formKey": "1019C6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrMeleeHelmet1HMale",
+            "formKey": "0567C9:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            13,
+            21,
+            30
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        },
+        "note": "the record has no name; \"Kvenel the Tongue\" is the display name `dunVolunruudBossName` 08FFDD on the alias Kvenel of `dunVolunruudQST` 08ADFA, which holds the placed ref 07491C."
+      },
+      {
+        "id": "lost-paladin",
+        "name": "Lost Paladin",
+        "records": [
+          {
+            "edid": "ccBGSSSE007_LvlGhostPaladin",
+            "formKey": "000807:ccbgssse007-chrysamere.esl"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlBanditBossNordM",
+            "formKey": "01B0E1:Skyrim.esm"
+          },
+          "rungs": [
+            6,
+            10,
+            16,
+            21,
+            28
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        }
+      },
+      {
+        "id": "the-guardian",
+        "name": "The Guardian",
+        "records": [
+          {
+            "edid": "ccBGSSSE013_BlueGuardian",
+            "formKey": "000843:ccbgssse013-dawnfang.esl"
+          },
+          {
+            "edid": "ccBGSSSE013_GreenGuardian",
+            "formKey": "000845:ccbgssse013-dawnfang.esl"
+          },
+          {
+            "edid": "ccBGSSSE013_RedGuardian",
+            "formKey": "000842:ccbgssse013-dawnfang.esl"
+          },
+          {
+            "edid": "ccBGSSSE013_GreenLASTSTAND",
+            "formKey": "00083D:ccbgssse013-dawnfang.esl"
+          },
+          {
+            "edid": "ccBGSSSE013_RedLASTSTAND",
+            "formKey": "000846:ccbgssse013-dawnfang.esl"
+          },
+          {
+            "edid": "ccBGSSSE013_BlueGuardianFinalWifeScene",
+            "formKey": "00083C:ccbgssse013-dawnfang.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 70
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        },
+        "note": "each record owns the level; the Green Guardian uses `LvlWarlockElemental` 01E7CB as template without `Stats`."
+      },
+      {
+        "id": "simon-rodayne",
+        "name": "Simon Rodayne",
+        "records": [
+          {
+            "edid": "ccEDHSSE002_SpellKnight03",
+            "formKey": "00087B:ccedhsse002-splkntset.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20,
+          "max": 70
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        },
+        "note": "the Frenzied Simon Rodayne; uses `WEHeadlessHorseman` 10B302 as template without `Stats`."
+      },
+      {
+        "id": "urval-jonquil",
+        "name": "Urval · Jonquil",
+        "records": [
+          {
+            "edid": "ccVSVSSE004_GhostHusband",
+            "formKey": "000857:ccvsvsse004-beafarmer.esl"
+          },
+          {
+            "edid": "ccVSVSSE004_GhostWife",
+            "formKey": "000856:ccvsvsse004-beafarmer.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.5,
+          "min": 5,
+          "max": 15,
+          "from": {
+            "edid": "ccVSVSSE004_Husband",
+            "formKey": "000859:ccvsvsse004-beafarmer.esl"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts (level 5–15, not a boss's)"
+        },
+        "note": "own the name \"Ghost\" but take their living selves' names through `Traits`, and `Stats` from `ccVSVSSE004_Husband` 000859 · `…Wife` 00085A, so their level is changed there."
+      },
+      {
+        "id": "self-doubt",
+        "name": "Pelagius the Mad",
+        "records": [
+          {
+            "edid": "dunBluePalaceInvisbleAttacker",
+            "formKey": "09F847:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a level-1 fight inside Pelagius's mind"
+        },
+        "note": "own name Self Doubt; takes Pelagius's name through `Traits` from `DA15Pelagius` 02AC6A, without `Stats`."
+      }
+    ]
+  },
+  "otherRecords": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": [
+          {
+            "edid": "MS06Potema",
+            "formKey": "026C52:Skyrim.esm"
+          }
+        ],
+        "name": "Queen Potema",
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "where": "a `WispRace` 013208 record (`Essential`, `Invulnerable`, `IsGhost`, no template, no gear), never placed: the voice of the aliases `PotemaMural` (ref 068D76), `PotemaMural02` (ref 098AA2) and `PotemaBossEntity` (ref 098895) of `MS06PotemasCatacombsDungeon` 01F142. Her fight is Potema's Remains (`dunMS06PotemaSkeleton`), on Skeletons → *Common Skeletons*."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level.",
+      "Urval and Jonquil carry `Stats` from their living selves `ccVSVSSE004_Husband` 000859 and `ccVSVSSE004_Wife` 00085A (ccvsvsse004-beafarmer.esl, PC×0.5 [5–15]).",
+      "Haknir (from `LvlBanditGhostMeleeBerserkerMale`), the Green Guardian (from `LvlWarlockElemental`), Simon Rodayne (from `WEHeadlessHorseman`) and Self Doubt (from `DA15Pelagius`) use a template without `Stats` and keep their own level.",
+      "Garuk, Thalin, Kvenel and the Lost Paladin carry `Stats` and follow their lists."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharBanditMissile",
+          "formKey": "01E770:Skyrim.esm"
+        },
+        "note": "via `LvlBanditGhostMissileMale` 0B1F9A: bandit levels. No list draws a ghost boss; these lend the level.",
+        "owner": "Garuk Windrime"
+      },
+      {
+        "list": {
+          "edid": "LvlBanditWizard",
+          "formKey": "01E79F:Skyrim.esm"
+        },
+        "note": "via `LvlBanditGhostWizardMale` 0B1F9B: bandit wizard levels.",
+        "owner": "Thalin Ebonhand"
+      },
+      {
+        "list": {
+          "edid": "LvlBanditBossNordM",
+          "formKey": "01B0E1:Skyrim.esm"
+        },
+        "note": "bandit boss levels.",
+        "owner": "Lost Paladin"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrMeleeHelmet1HMale",
+          "formKey": "0567C9:Skyrim.esm"
+        },
+        "note": "draugr levels; documented on Draugr → *Common Draugr*.",
+        "owner": "Kvenel the Tongue"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Haknir Death-Brand · Garuk Windrime · Thalin Ebonhand",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2GyldenhulBarrow01",
+              "formKey": "0142F6:Dragonborn.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Kvenel the Tongue",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Volunruud02",
+              "formKey": "02031A:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "07491C:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "alias Kvenel of `dunVolunruudQST` 08ADFA"
+      },
+      {
+        "name": "Lost Paladin",
+        "notPlaced": true,
+        "quest": "spawned by `ccBGSSSE007_Quest` 000809:ccbgssse007-chrysamere.esl"
+      },
+      {
+        "name": "The Guardian",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE013Lair",
+              "formKey": "002FCF:Update.esm"
+            },
+            "note": "Red (enabled), Blue, Green, Green last stand and the final-scene Blue (initially disabled); Red last stand not placed"
+          }
+        ],
+        "quest": "`ccBGSSSE013_AquisitionQuest` 000F18 aliases BlueGuardian, GreenFinal, RedFinal"
+      },
+      {
+        "name": "Simon Rodayne",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "Urval · Jonquil",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true
+          },
+          {
+            "cell": {
+              "edid": "ccVSVSSE004RefCell",
+              "formKey": "000B20:ccvsvsse004-beafarmer.esl"
+            },
+            "note": "a holding cell"
+          }
+        ]
+      },
+      {
+        "name": "Pelagius the Mad (Self Doubt)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "BluePalaceWingWorld",
+              "formKey": "034240:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "×2",
+            "note": "a worldspace"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Haknir Death-Brand",
+        "weapons": "Bloodscythe 037FF2 · Soulrender 037FF3 (Dragonborn.esm); also carries Ectoplasm",
+        "armor": "Deathbrand Helm · Armor · Gauntlets · Boots (`DLC2dunHaknirOutfit` 037FED)",
+        "skin": "race default"
+      },
+      {
+        "records": "Garuk Windrime",
+        "weapons": "`LItemBanditWeaponMissile` 037BFD · `LItemBanditWeapon1H` 037C1B · town dagger 017177",
+        "armor": "Chitin Armor · Boots · Bracers (`DLC2dunHaknirGarukWindrimeOutfit` 037FE8)",
+        "skin": "race default"
+      },
+      {
+        "records": "Thalin Ebonhand",
+        "weapons": "2 × `LItemWeaponAny1H` 0165BA",
+        "armor": "Nordic Carved Armor · Boots · Gauntlets · Helmet (`DLC2dunHaknirThalinEbonhandOutfit` 037FE7)",
+        "skin": "race default"
+      },
+      {
+        "records": "Kvenel the Tongue",
+        "weapons": "2 × `LootDraugr1HWeapon100` 1019D0",
+        "armor": "non-playable Ancient Nord set (`DraugrArmorForNonDraugrOutfitUnplayable` 1019CE)",
+        "skin": "race default"
+      },
+      {
+        "records": "Lost Paladin",
+        "weapons": "Chrysamere 000D63:ccbgssse007-chrysamere.esl",
+        "armor": "non-playable Ancient Nord set (`ccBGSSSE007_PaladinArmorOutfit` 00080A)",
+        "skin": "race default"
+      },
+      {
+        "records": "The Guardian (Blue, Green, Red, the last stands)",
+        "weapons": "Akaviri Katana 03AEB9; the Blue one also a note (Letter from Home)",
+        "armor": "Blades Armor · Boots · Gauntlets · Helmet · Shield (`ArmorBladesOutfit` 0E3E66)",
+        "skin": "race default"
+      },
+      {
+        "records": "The Guardian (final scene)",
+        "weapons": "none",
+        "armor": "Blades Armor · Boots · Gauntlets (`ArmorBladesOutfitNoHelmet`)",
+        "skin": "race default"
+      },
+      {
+        "records": "Simon Rodayne",
+        "weapons": "Bound Sword 0BA30E",
+        "armor": "Ebony Spell Knight Armor · Boots · Gauntlets · Helmet (`ccEDHSSE002_SpellKnightOutfit` 000835)",
+        "skin": "race default"
+      },
+      {
+        "records": "Urval · Jonquil",
+        "weapons": "Woodcutter's Axe 02F2F4 · Iron Dagger 01397E",
+        "armor": "farm clothes",
+        "skin": "race default"
+      },
+      {
+        "records": "Pelagius (Self Doubt)",
+        "weapons": "Bound Battleaxe 058F5E",
+        "armor": "none",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemWeaponAny1H",
+          "formKey": "0165BA:Skyrim.esm"
+        },
+        "rolls": "with `LootDraugr1HWeapon100` 1019D0: game-wide one-handed lists, iron (1) to daedric (46)"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditWeapon1H",
+          "formKey": "037C1B:Skyrim.esm"
+        },
+        "rolls": "with `LItemBanditWeaponMissile` 037BFD: the bandit weapon lists (on *Common Bandits*)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Chrysamere · Akaviri Katana · bandit and game-wide weapons · Woodcutter's Axe · Iron Dagger",
+        "kind": "weapons",
+        "playable": true
+      },
+      {
+        "item": "Chitin, Nordic Carved, Blades and Ebony Spell Knight armor · farm clothes",
+        "kind": "armor, clothing",
+        "playable": true
+      },
+      {
+        "item": "Haknir's Deathbrand set 037FEE–037FF1 and Bloodscythe 037FF2 · Soulrender 037FF3 (Dragonborn.esm)",
+        "kind": "his own copies of the artifacts",
+        "playable": false,
+        "note": "`NonPlayable`; the wearable Deathbrand set is found elsewhere"
+      },
+      {
+        "item": "Non-playable Ancient Nord sets · Bound Sword · Bound Battleaxe",
+        "kind": "armor, conjured weapons",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

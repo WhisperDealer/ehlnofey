@@ -1,0 +1,810 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "common-ghosts",
+  "group": "ghosts",
+  "title": "Common Ghosts",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "ghost",
+        "name": "Ghost",
+        "records": [
+          {
+            "edid": "LvlBanditGhostMelee1HMale",
+            "formKey": "0B1F96:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditGhostMelee2HMale",
+            "formKey": "0B1F97:Skyrim.esm"
+          },
+          {
+            "label": "Halldir's Cairn `dunHalldirs_LvlBanditGhost*Ambush` 0B28A0 · 0B28A2 · 0B28A3 · 0B28A4 · 065C07"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee1H",
+            "formKey": "039CFC:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts"
+        },
+        "note": "each takes `Stats` from its bandit list (berserkers skip 5) and owns the name \"Ghost\"."
+      },
+      {
+        "id": "ghost-wizard",
+        "name": "Bandit Outlaw · Bandit Thug · Bandit Highwayman · Bandit Plunderer · Bandit Marauder",
+        "records": [
+          {
+            "label": "`encGhost01Magic`–`06Magic` 104B61–104B5C"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharGhostWizard",
+            "formKey": "104B62:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts"
+        },
+        "note": "the ghost wizards own the name \"Ghost\" but take `Traits` with `Stats` from the bandit magic templates `EncBandit0NTemplateMagic` (on *Common Bandits*), so they show the bandit tier names (rung 01 none)."
+      },
+      {
+        "id": "dwarven-spectre",
+        "name": "Ghost",
+        "records": [
+          {
+            "edid": "ccASVSSE001_DwarvenSpectre",
+            "formKey": "00083C:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts"
+        },
+        "note": "the CC Dwarven Spectre; uses `EncBandit01TemplateMagic` 039D31 without `Stats`."
+      },
+      {
+        "id": "haknirs-crew",
+        "name": "Haknir's Crew",
+        "records": [
+          {
+            "label": "`DLC2dunHaknir_LvlBanditGhost*` 037FF4 · 037FF7–037FFF:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee1H",
+            "formKey": "039CFC:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts"
+        },
+        "note": "bandit levels through the bandit lists and `LCharGhostWizard`."
+      },
+      {
+        "id": "yngvild-ghosts",
+        "name": "Yngvild ghosts",
+        "records": [
+          {
+            "label": "`dunYngvildLvlGhostMelee{Commoner,EvenToned,Nord}` 0743AE · 074361 · 074360"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlBanditMeleeCommonerF",
+            "formKey": "01AEF1:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts"
+        },
+        "note": "own name Yngvild Ghost, not shown: they take `Traits` from bandit leaves with no name."
+      },
+      {
+        "id": "rannveig-ghosts",
+        "name": "Rannveig's Fast ghosts",
+        "records": [
+          {
+            "edid": "DunRannveigGhostLvlBandit01Melee1H",
+            "formKey": "03481A:Skyrim.esm"
+          },
+          {
+            "edid": "DunRannveigGhostLvlBandit01Melee2H",
+            "formKey": "0515F6:Skyrim.esm"
+          },
+          {
+            "edid": "DunRannveigGhostLvlBanditMissile",
+            "formKey": "0515F5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlBanditMeleeNordM",
+            "formKey": "01B0BC:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts"
+        },
+        "note": "own names Subjugated Ghost and Ghost Adventurer, not shown (`Traits` from nameless bandit leaves)."
+      },
+      {
+        "id": "sanctuary-guardian",
+        "name": "Sanctuary Guardian",
+        "records": [
+          {
+            "edid": "dunDawnstarSanctuary_LvlBrotherhoodSentry",
+            "formKey": "0942CC:Skyrim.esm"
+          },
+          {
+            "edid": "dunDawnstarSanctuary_LvlBrotherhoodSentryMissile",
+            "formKey": "0D5451:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlForswornMeleeBerserker",
+            "formKey": "03E085:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            14,
+            24,
+            34
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts"
+        },
+        "note": "borrows its level from the Forsworn lists (the archer from `LvlForswornMissile` 01E7B7)."
+      },
+      {
+        "id": "labyrinthian-spirits",
+        "name": "Fire Spirit · Frost Spirit",
+        "records": [
+          {
+            "edid": "dunLabyrinthianFireMagi",
+            "formKey": "0F82BC:Skyrim.esm"
+          },
+          {
+            "edid": "dunLabyrinthianFrostMagi",
+            "formKey": "0F82BA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlBanditWizard",
+            "formKey": "01E79F:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts"
+        }
+      },
+      {
+        "id": "dragon-cultist",
+        "name": "Dragon Cultist",
+        "records": [
+          {
+            "edid": "dunForelhostLvlGhostMelee1HMale",
+            "formKey": "07A2B1:Skyrim.esm"
+          },
+          {
+            "edid": "dunForelhostLvlGhostMelee1HFemale",
+            "formKey": "0CD63F:Skyrim.esm"
+          },
+          {
+            "edid": "dunForelhostLvlGhostTankMale",
+            "formKey": "0CD643:Skyrim.esm"
+          },
+          {
+            "edid": "dunForelhostLvlGhostTankFemale",
+            "formKey": "0CD644:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrMelee1HMale",
+            "formKey": "055936:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            13,
+            21,
+            26,
+            30
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts"
+        },
+        "note": "take `Stats` from `dunForelhostLvlGhostBase` 0CD63E, which takes them from `LvlDraugrMelee1HMale` 055953; the female copies show no name."
+      },
+      {
+        "id": "dragon-cultist-wizard",
+        "name": "Dragon Cultist",
+        "records": [
+          {
+            "edid": "dunForelhostLvlGhostWizardMale",
+            "formKey": "0CD640:Skyrim.esm"
+          },
+          {
+            "edid": "dunForelhostLvlGhostWizardFemale",
+            "formKey": "0CD642:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 35
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts"
+        },
+        "note": "the male uses `dunForelhostLvlGhostBase` without `Stats` and owns the level; the female takes `Stats` from him."
+      },
+      {
+        "id": "dunmer-ghost",
+        "name": "Dunmer Ghost",
+        "records": [
+          {
+            "edid": "TGCrownGhostBase",
+            "formKey": "084D15:Skyrim.esm"
+          },
+          {
+            "edid": "TGCrownGhost01",
+            "formKey": "084D13:Skyrim.esm"
+          },
+          {
+            "edid": "TGCrownGhost02",
+            "formKey": "084D16:Skyrim.esm"
+          },
+          {
+            "edid": "TGCrownGhost03",
+            "formKey": "084D18:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DarkElfRace",
+          "formKey": "013742:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts"
+        },
+        "note": "the copies show no name of their own (`BaseData`); 01 and 03 take `Stats` from the base, 02 keeps its own 12."
+      },
+      {
+        "id": "ghost-sailor",
+        "name": "Ghost Sailor",
+        "records": [
+          {
+            "edid": "ccBGSSSE031_LvlAlikrMelee1H_Female",
+            "formKey": "00080F:ccbgssse031-advcyrus.esm"
+          },
+          {
+            "edid": "ccBGSSSE031_LvlAlikrMelee1H_Male",
+            "formKey": "000969:ccbgssse031-advcyrus.esm"
+          },
+          {
+            "edid": "ccBGSSSE031_LvlAlikrMelee1H_Male2",
+            "formKey": "000980:ccbgssse031-advcyrus.esm"
+          },
+          {
+            "edid": "ccBGSSSE031_LvlAlikrMissileF",
+            "formKey": "000814:ccbgssse031-advcyrus.esm"
+          },
+          {
+            "edid": "ccBGSSSE031_LvlAlikrMissileM",
+            "formKey": "000974:ccbgssse031-advcyrus.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts"
+        },
+        "note": "each record owns its level; `…MissileM` 000974 is level 1. The male copies show no name of their own (`BaseData`)."
+      },
+      {
+        "id": "ghost-captain",
+        "name": "Ghost Captain",
+        "records": [
+          {
+            "edid": "ccBGSSSE031_LvlAlikrMelee2H",
+            "formKey": "000AA4:ccbgssse031-advcyrus.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.5,
+          "min": 25,
+          "max": 60
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: the ghost sailors' captain, a band above them"
+        },
+        "note": "uses `LvlBanditGhostMelee2HMale` as template without `Stats`."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Some rows keep their own level although they have a template, so each must be changed on its own: `TGCrownGhost02` 084D16 (from `TGCrownGhostBase`, both 12); the advcyrus `…Melee1H_Male` 000969 and `…Male2` 000980 (from `…Melee1H_Female`) and `…MissileM` 000974 (from `…MissileF`, at level 1 against the female's PC×1.2); the Ghost Captain 000AA4 (from `LvlBanditGhostMelee2HMale`); the Forelhost wizards (from `dunForelhostLvlGhostBase`); and the Dwarven Spectre (from `EncBandit01TemplateMagic` 039D31, level 1).",
+      "The ghost wizards `encGhost01Magic`–`06Magic` carry `Stats` from the bandit magic templates `EncBandit0NTemplateMagic` (on *Common Bandits*), so changing those templates changes them.",
+      "Every other ghost record (Halldir's, Haknir's Crew, the Yngvild and Rannveig ghosts, the Sanctuary Guardians, the Forelhost melee and tank cultists, the Labyrinthian spirits, `TGCrownGhost01`/`03` and the Ysgramor's Tomb ghosts) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharGhostWizard",
+          "formKey": "104B62:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`encGhost01Magic`"
+          },
+          {
+            "at": 5,
+            "label": "`encGhost02Magic`"
+          },
+          {
+            "at": 9,
+            "label": "`encGhost03Magic`"
+          },
+          {
+            "at": 14,
+            "label": "`encGhost04Magic`"
+          },
+          {
+            "at": 19,
+            "label": "`encGhost05Magic`"
+          },
+          {
+            "at": 24,
+            "label": "`encGhost06Magic`"
+          }
+        ],
+        "owner": "Halldir's ghost wizard `dunHalldirs_LvlBanditGhostWizardAmbush` 0B28A5 · Haknir's Crew wizard 037FFD"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMelee1H",
+          "formKey": "039CFC:Skyrim.esm"
+        },
+        "note": "with `…Melee2H` 03DEC8 · `…Melee2HBerserk` 03DECA · `…Melee1HTank` 03DEC9 · `LCharBanditMissile` 01E770: bandit levels, used for level only; documented on *Common Bandits*.",
+        "owner": "the generic and Halldir's ghosts (via `LvlBanditGhost*`) and Haknir's Crew"
+      },
+      {
+        "list": {
+          "edid": "LvlBanditWizard",
+          "formKey": "01E79F:Skyrim.esm"
+        },
+        "note": "bandit wizard levels.",
+        "owner": "Fire Spirit · Frost Spirit · Haknir's Crew wizard 037FFE"
+      },
+      {
+        "list": {
+          "edid": "LvlBanditMeleeNordM",
+          "formKey": "01B0BC:Skyrim.esm"
+        },
+        "note": "with `LvlBanditMissileNordM` 01B0D5: bandit levels.",
+        "owner": "Rannveig's Fast ghosts"
+      },
+      {
+        "list": {
+          "edid": "LvlBanditMeleeCommonerF",
+          "formKey": "01AEF1:Skyrim.esm"
+        },
+        "note": "with `LvlBanditMeleeEvenTonedF` 01AFBD · `LvlBanditMeleeNordF` 01B083: bandit levels.",
+        "owner": "Yngvild ghosts"
+      },
+      {
+        "list": {
+          "edid": "LvlForswornMeleeBerserker",
+          "formKey": "03E085:Skyrim.esm"
+        },
+        "note": "with `LvlForswornMissile` 01E7B7: Forsworn levels.",
+        "owner": "Sanctuary Guardians"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrMelee1HMale",
+          "formKey": "055936:Skyrim.esm"
+        },
+        "note": "via `LvlDraugrMelee1HMale` 055953: draugr levels; documented on Draugr → *Common Draugr*.",
+        "owner": "Forelhost Dragon Cultists (not the wizards)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Ghost",
+        "locations": [
+          {
+            "cell": {
+              "edid": "HalldirsCairn01",
+              "formKey": "015265:Skyrim.esm"
+            },
+            "refText": "×10",
+            "note": "2 of them wizards"
+          },
+          {
+            "cell": {
+              "edid": "AbandonedPrison01",
+              "formKey": "021594:Skyrim.esm"
+            },
+            "refText": "×3"
+          },
+          {
+            "cell": {
+              "edid": "ccASVSSE001Interior01",
+              "formKey": "0030E9:Update.esm"
+            },
+            "note": "the Dwarven Spectre"
+          }
+        ]
+      },
+      {
+        "name": "Haknir's Crew",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2GyldenhulBarrow01",
+              "formKey": "0142F6:Dragonborn.esm"
+            },
+            "refText": "×17"
+          }
+        ]
+      },
+      {
+        "name": "Yngvild ghosts",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Yngvild01",
+              "formKey": "0151F4:Skyrim.esm"
+            },
+            "refText": "×5"
+          },
+          {
+            "cell": {
+              "edid": "Yngvild02",
+              "formKey": "0227B9:Skyrim.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      },
+      {
+        "name": "Rannveig's Fast ghosts",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RannveigsFast01",
+              "formKey": "015229:Skyrim.esm"
+            },
+            "refText": "×5"
+          },
+          {
+            "cell": {
+              "edid": "RannveigsFastExterior01",
+              "formKey": "0094E9:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "RannveigsFastExterior03",
+              "formKey": "00950B:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sanctuary Guardian",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DawnstarSanctuary",
+              "formKey": "0193EE:Skyrim.esm"
+            },
+            "refText": "×12"
+          }
+        ]
+      },
+      {
+        "name": "Fire Spirit · Frost Spirit",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Labyrinthian03",
+              "formKey": "091872:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "LabyrinthianWorld03",
+              "formKey": "01CDD9:Skyrim.esm"
+            },
+            "persistent": true,
+            "note": "a worldspace"
+          }
+        ]
+      },
+      {
+        "name": "Dragon Cultist",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Forelhost01",
+              "formKey": "01527F:Skyrim.esm"
+            },
+            "refText": "×10"
+          },
+          {
+            "cell": {
+              "edid": "Forelhost02",
+              "formKey": "022F53:Skyrim.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      },
+      {
+        "name": "Dunmer Ghost",
+        "locations": [
+          {
+            "cell": {
+              "edid": "TolvaldsCave03",
+              "formKey": "0275D8:Skyrim.esm"
+            },
+            "refText": "×3"
+          }
+        ]
+      },
+      {
+        "name": "Ghost Sailor · Ghost Captain",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE031Interior01",
+              "formKey": "000818:ccbgssse031-advcyrus.esm"
+            },
+            "refText": "×4",
+            "note": "and the Captain"
+          },
+          {
+            "cell": {
+              "edid": "ccBGSSSE031Interior02",
+              "formKey": "0009D5:ccbgssse031-advcyrus.esm"
+            },
+            "refText": "×3"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Ghost (generic, Halldir's), Haknir's Crew, Rannveig's ghosts, the ghost wizards",
+        "weapons": "the bandit leaves' gear: `LItemBanditWeapon1H` 037C1B · `…2H` 037C21 · `…Missile` 037BFD with a town dagger 017177 · wizards an Iron Dagger 01397E",
+        "armor": "bandit outfits: `BanditArmorMeleeShield20Outfit` 0C0197 · `…NoShieldOutfit` 01E608 · `…HeavyOutfit` 015BE6 · `BanditMageOutfit` 06E26F",
+        "skin": "race default"
+      },
+      {
+        "records": "Ghost (Dwarven Spectre)",
+        "weapons": "none",
+        "armor": "full Dwarven armor (`ArmorDwarvenAllOutfit` 057981)",
+        "skin": "race default"
+      },
+      {
+        "records": "Yngvild ghosts",
+        "weapons": "`LItemWeaponDagger` 017178",
+        "armor": "farm clothes (`FarmClothesRandom` 09D4B5)",
+        "skin": "race default"
+      },
+      {
+        "records": "Sanctuary Guardian",
+        "weapons": "`LItemWeaponSwordBest` 0571AA · archer: `LItemWeaponBowBest` 05719E · `LItemWeaponDaggerBest` 0571A1 · `LItemArrowsAll` 068839",
+        "armor": "Shrouded Armor, Boots, Gloves and Cowl (`DBArmorWithHood` 0D3BF8)",
+        "skin": "race default"
+      },
+      {
+        "records": "Fire Spirit · Frost Spirit",
+        "weapons": "`LItemDraugrSword` 018EC9 · Ancient Nord War Axe 02C672",
+        "armor": "non-playable Ancient Nord set (`DraugrArmorForNonDraugrOutfitUnplayable` 1019CE)",
+        "skin": "race default"
+      },
+      {
+        "records": "Dragon Cultist",
+        "weapons": "melee: `LItemDraugr02Weapon1H` · `…Bow` · arrows; tank: `…Weapon1H` · `…Weapon1HShield50` 0559F8; wizard: Dragon Priest Dagger 01C1FE",
+        "armor": "Ancient Nord set (0C7B18); wizards without the helmet, with a Black Mage Hood 0C5D10",
+        "skin": "race default"
+      },
+      {
+        "records": "Dunmer Ghost",
+        "weapons": "Elven Sword 0139A1 · Elven Shield 01391E",
+        "armor": "full Elven armor (`ArmorElvenAllOutfit` 057A22)",
+        "skin": "race default"
+      },
+      {
+        "records": "Ghost Sailor",
+        "weapons": "melee: Scimitar 07A91A; archers: Steel Dagger · `LItemBanditWeaponMissile` 037BFD · `LItemArrowsAll`",
+        "armor": "Scrub or Boatswain clothes and boots (advcyrus)",
+        "skin": "race default"
+      },
+      {
+        "records": "Ghost Captain",
+        "weapons": "`LItemWeaponAny2HSpecial` 1031B4",
+        "armor": "Captain clothes and boots (advcyrus)",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "BanditArmorMeleeShield20Outfit",
+          "formKey": "0C0197:Skyrim.esm"
+        },
+        "rolls": "with `…NoShieldOutfit` 01E608: Fur, Hide, Studded or Leather armor, boots and 50% bracers; Scaled from 19; the shield outfit adds a 20% Hide, Iron or (12–15) Elven shield"
+      },
+      {
+        "list": {
+          "edid": "BanditArmorMeleeHeavyOutfit",
+          "formKey": "015BE6:Skyrim.esm"
+        },
+        "rolls": "Iron armor, helmet, boots, 50% gauntlets and a shield; Steel from 6; Steel Plate from 15–18"
+      },
+      {
+        "list": {
+          "edid": "BanditMageOutfit",
+          "formKey": "06E26F:Skyrim.esm"
+        },
+        "rolls": "Fur Armor and bandit boots"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugrSword",
+          "formKey": "018EC9:Skyrim.esm"
+        },
+        "rolls": "with the `LItemDraugr02Weapon*` lists: as on Draugr → *Common Draugr* → Gear lists"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Bandit, Ancient Nord, Dwarven, Elven and Shrouded armor · all weapons · the CC sailor and captain clothes",
+        "kind": "armor, weapons, clothing",
+        "playable": true,
+        "note": "whether a ghost leaves its gear to loot is `[unverified]`"
+      },
+      {
+        "item": "Non-playable Ancient Nord set 1019CA–1019CD · Black Mage Hood 0C5D10",
+        "kind": "heavy armor, hood",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

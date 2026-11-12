@@ -1,0 +1,520 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "soul-cairn-undead",
+  "group": "skeletons",
+  "title": "Soul Cairn Undead",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "boneman",
+        "name": "Boneman",
+        "records": [
+          {
+            "edid": "DLC1LvlSoulCairnBonemanMelee",
+            "formKey": "0150AE:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1LvlSoulCairnBonemanMeleeAmbush",
+            "formKey": "0150AF:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1LvlSoulCairnBonemanMissile",
+            "formKey": "0071AA:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1LvlSoulCairnBonemanMissileAmbush",
+            "formKey": "00BF5E:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1VQ05BonemanSummon",
+            "formKey": "00BFF0:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1BlackSkeletonRace",
+          "formKey": "019FD3:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrMelee1HMale",
+            "formKey": "055936:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            13,
+            21,
+            26,
+            30
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: rolls the draugr ladder, so banded with the draugr"
+        },
+        "note": "the melee two take `Stats` from `LvlDraugrMelee1HMale` 055953, the archers from `LvlDraugrMissileMale` 0A6851 (1 · 6 · 13 · 21 · 30 · 40); `DLC1VQ05BonemanSummon` takes `Stats` from 0150AF and is placed, not conjured."
+      },
+      {
+        "id": "mistman",
+        "name": "Mistman",
+        "records": [
+          {
+            "edid": "DLC1LvlSoulCairnMistman",
+            "formKey": "0071AF:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1LvlSoulCairnMistmanAmbush",
+            "formKey": "00BF5C:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1SoulCairnSkeletonNecroRace",
+          "formKey": "006AFA:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrWarlockMale",
+            "formKey": "0BF7BB:Skyrim.esm"
+          },
+          "rungs": [
+            6,
+            13,
+            21
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: rolls the draugr warlock ladder, so banded with the draugr"
+        },
+        "note": "takes `Stats` from `LvlDraugrWarlockMale` 01E7AC."
+      },
+      {
+        "id": "wrathman",
+        "name": "Wrathman",
+        "records": [
+          {
+            "edid": "DLC1LvlSoulCairnWrathman",
+            "formKey": "0071AD:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1LvlSoulCairnWrathmanAmbush",
+            "formKey": "004575:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1SoulCairnSkeletonArmorRace",
+          "formKey": "00894D:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrMelee2HMale",
+            "formKey": "01E772:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            13,
+            21,
+            30
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: rolls the draugr ladder, so banded with the draugr"
+        },
+        "note": "takes `Stats` from `LvlDraugrMelee2HMale` 01E7AD."
+      },
+      {
+        "id": "reaper",
+        "name": "Reaper",
+        "records": [
+          {
+            "edid": "DLC01SoulCairnReaper",
+            "formKey": "01A73E:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "SkeletonRace",
+          "formKey": "0B7998:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.5,
+          "min": 10,
+          "max": 100
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "role: the Soul Cairn's optional boss, beside the vampire lords"
+        },
+        "note": "no template."
+      },
+      {
+        "id": "keeper",
+        "name": "Keeper",
+        "records": [
+          {
+            "edid": "DLC01SoulCairnKeeperBowArrow",
+            "formKey": "0074F9:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC01SoulCairnKeeperShield",
+            "formKey": "007B0F:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC01SoulCairnKeeper2H",
+            "formKey": "0074F8:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC1SoulCairnKeeperRace",
+          "formKey": "007AF3:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 10,
+          "max": 80
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        },
+        "note": "the 2H Keeper is PC×1 [10–80]. Each uses a Common Skeleton record as its template without `Stats`."
+      },
+      {
+        "id": "soul-bandit",
+        "name": "Soul",
+        "encounter": "the bandit-ladder Souls",
+        "records": [
+          {
+            "label": "`DLC01SoulCairnSoulDefault` 00A906 · `…SoulFarmMale` 015DF3 · `…SoulHorseRider` 002B0D · `…SoulMeleeMale` 004759 · `…SoulMeleeMale02` 01A4FE · `…SoulPrisonerMale` 01A502 · `…SoulMeleeFemale` 0150B1 · `…SoulMeleeFemale02` 01A4FA · `…SoulFarmFemale` 015DF4 · `…SoulMissileFemale` 0150B5 · `…SoulPrisonerFemale` 01A4FF · `…SoulHunterF` 01A4FC · `…SoulHunterM` 01A4FD · `…SoulMissileMale` 0150B4 · `…SoulOrcMale` 0150B6 · `DLC01SoulCairnKeeperSoul` 00EA8B (Dawnguard.esm)"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMeleeNordM",
+            "formKey": "01A320:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "bands-of-power.md: most bandits"
+        },
+        "note": "borrows its level from the Bandits: takes only `Stats` from `LvlBanditMeleeNordM` 01B0BC · `LvlBanditMeleeNordF` 01B083 · `LvlBanditMissileNordF` 01B0D1 · `LvlBanditMissileNordM` 01B0D5 · `LvlBanditMeleeOrcM` 01B0EF; the Keeper Soul takes `Stats` from `DLC01SoulCairnSoulDefault`. Moved here from *Bandit Level Borrowers* (user, 2026-10-03)."
+      },
+      {
+        "id": "soul-necromancer",
+        "name": "Soul",
+        "encounter": "the necromancer and mage Souls",
+        "records": [
+          {
+            "label": "`DLC01SoulCairnSoulNecromancerFemale` 0150B3 · `…NecromancerMale` 0150B2 · `…SoulMageMale` 01A4F7 · `…MageMale02` 01A4F9 · `…MageMale03` 01A503 · `…MageFemale` 01A4F8 · `…MageFemale02` 01A504 · `…MageFemale03` 01A505 (Dawnguard.esm)"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockNecromancer",
+            "formKey": "01E777:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: adept mages"
+        },
+        "note": "borrows its level from the Warlocks: takes only `Stats` from `LvlWarlockNecromancerFemaleHighElf` 0713DD or `LvlWarlockNecromancerMaleDarkElf` 0235FD. Moved here from *Warlock Level Borrowers* (user, 2026-10-03)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `DLC1LvlSoulCairnBonemanMissile` 0071AA also needs `DLC1SoulCairnBonemanSummon` 0045B9:Dawnguard.esm and `ccRMSSSE001_BonemanSummon` 000863:ccrmssse001-necrohouse.esl (summons, level 6; on *Undead Summons*): they use 0071AA as their template but not for `Stats`. `DLC1LvlSoulCairnMistman` 0071AF likewise has `DLC1SoulCairnMistmanSummon` 0045B7 and `ccRMSSSE001_MistmanSummon` 000852 (level 13), and `DLC1LvlSoulCairnWrathman` 0071AD has `DLC1SoulCairnWrathmanSummon` 0045B4 and `ccRMSSSE001_WrathmanSummon` 000843 (level 30).",
+      "The Keepers use the Common Skeleton records as their templates (BowArrow `EncSkeleton01Melee1H` 02D1DE, Shield `…Melee1Hshield` 02D1FD, 2H `…Melee2H` 02D1E0) but not for `Stats`, so they keep their own levels.",
+      "Every Soul carries `Stats`; the records that keep their own level beside the bandit and warlock ladders are on *Common Bandits* and *Common Warlocks*.",
+      "The same-race records with no template are filed elsewhere: the four `EncSkeleton01*` skeletons on *Common Skeletons*; the CC necromancy skeletons on *Undead Summons*; the unused `DLC1SoulCairnEnc*` records on the *Skeletons* group page.",
+      "The other rows: no other record keeps its own level."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharDraugrMelee1HMale",
+          "formKey": "055936:Skyrim.esm"
+        },
+        "note": "via `LvlDraugrMelee1HMale` 055953: draugr levels 1 · 6 · 13 · 21 · 26 · 30, as level only. No list draws a Soul Cairn undead; these lend their levels.",
+        "owner": "Boneman 0150AE · 0150AF (and 00BFF0)"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrMissileMale",
+          "formKey": "0A6844:Skyrim.esm"
+        },
+        "note": "via `LvlDraugrMissileMale` 0A6851: 1 · 6 · 13 · 21 · 30 · 40.",
+        "owner": "Boneman 0071AA · 00BF5E"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrWarlockMale",
+          "formKey": "0BF7BB:Skyrim.esm"
+        },
+        "note": "via `LvlDraugrWarlockMale` 01E7AC: 6 · 13 · 21; highest gate only.",
+        "owner": "Mistman 0071AF · 00BF5C"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrMelee2HMale",
+          "formKey": "01E772:Skyrim.esm"
+        },
+        "note": "via `LvlDraugrMelee2HMale` 01E7AD: 1 · 6 · 13 · 21 · 30.",
+        "owner": "Wrathman 0071AD · 004575"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMeleeNordM",
+          "formKey": "01A320:Skyrim.esm"
+        },
+        "note": "with `LCharBanditMeleeNordF` 01A321, `…MissileNordF` 01A346, `…MissileNordM` 01A348 and `…MeleeOrcM` 01B0E9, via `LvlBanditMeleeNordM` 01B0BC, `…MeleeNordF` 01B083, `…MissileNordF` 01B0D1, `…MissileNordM` 01B0D5, `…MeleeOrcM` 01B0EF: bandit levels 1 · 5 · 9 · 14 · 19 · 25; on *Common Bandits*.",
+        "owner": "the bandit-ladder Souls"
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockNecromancer",
+          "formKey": "01E777:Skyrim.esm"
+        },
+        "note": "via `LvlWarlockNecromancerFemaleHighElf` 0713DD · `LvlWarlockNecromancerMaleDarkElf` 0235FD: 1 · 6 · 12 · 19 · 27 · 36 · 46; on *Common Warlocks*.",
+        "owner": "the necromancer and mage Souls"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Boneman",
+        "note": "90 refs: Boneyard persistent cell (`DLC01Boneyard` worldspace) ×20 (00BFF0) · Soul Cairn (`DLC01SoulCairn` worldspace) ×55 across its persistent cell and 25 cells · `DLC1SoulCairnReaperCell` 006429 ×4 · `SoulCairnZcell01` 006439 ×2 · `BrittleShinPass01` 081DEC ×3 (Skyrim, 0071AA); plus dev cells (`DLC1WarehouseAmbushes` 0074F5, `TestJoelDLC01` 01A68A)"
+      },
+      {
+        "name": "Mistman",
+        "note": "21 refs, all in the Soul Cairn (`DLC01SoulCairn` worldspace) except 2 in `DLC1WarehouseAmbushes` 0074F5"
+      },
+      {
+        "name": "Wrathman",
+        "note": "24 refs, all in the Soul Cairn except 2 in `DLC1WarehouseAmbushes` 0074F5 and 1 in `TestJoelDLC01` 01A68A"
+      },
+      {
+        "name": "Reaper",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1SoulCairnReaperCell",
+              "formKey": "006429:Dawnguard.esm"
+            }
+          }
+        ],
+        "note": "and the test cell `TESTRyanJDLC` 001DB9"
+      },
+      {
+        "name": "Keeper",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC01SoulCairn",
+              "formKey": "001408:Dawnguard.esm"
+            },
+            "persistent": true,
+            "note": "a worldspace; refs 0064AB (Shield) · 0071EB (BowArrow) · 0071EC (2H)"
+          }
+        ],
+        "quest": "aliases `DLC1VQ05Keeper01Alias`–`03Alias` of `DLC1VQ05` 002850 (*Beyond Death*)"
+      },
+      {
+        "name": "Soul (bandit ladder)",
+        "note": "Soul Cairn (Dawnguard.esm): `DLC01SoulCairn` 001408 ×6 (015DF4 · 002B0D ×2, one initially disabled · 01A4FD · 01A4FE · 0150B5) · `DLC01SoulCairnStart` 0028BA ×3 (015DF3 · 01A4FC · 01A4FA) · `SoulCairnHorseTrigger` 002D47 (015DF3) · `SoulCairnPOIRJ05` 002CA2 (015DF3) · `SoulCairnPOIRJ07` 002C93 ×2 (0150B1 · 0150B5) · `SoulCairnStartAmbush` 002CFB (004759) · `SoulCairnPOIRJ08` 002C76 ×3 (0150B6); Keeper Soul 00EA8B: `DLC01SoulCairn` ×4 · `DLC01SoulCairnCemetaryKeeper01` 002D16 ×4 · `DLC01SoulCairnCraterKeeper` 002C75 ×1 · `DLC01SoulCairnForestKeeper` 002CA5 ×4; 00A906 · 0150B4 · 01A4FF · 01A502 not placed"
+      },
+      {
+        "name": "Soul (necromancer ladder)",
+        "note": "`DLC01SoulCairn` 001408:Dawnguard.esm (0150B3 ×5 · 0150B2 ×3) · `SoulCairnStartAmbush` 002CFB (01A4F7) · `SoulCairnHorseTrigger` 002D47 (01A503); 01A4F9 · 01A4F8 · 01A504 · 01A505 not placed"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Boneman melee (0150AE · 0150AF · 00BFF0)",
+        "weapons": "`LItemDraugr02Weapon1HShield50` 0559F8",
+        "armor": "none",
+        "skin": "`DLC1EncSoulCairnBonemanSkin` 0071CE"
+      },
+      {
+        "records": "Boneman archer 0071AA",
+        "weapons": "`LItemDraugr02WeaponBow` 024302",
+        "armor": "none",
+        "skin": "`DLC1EncSoulCairnBonemanSkin`"
+      },
+      {
+        "records": "Boneman archer 00BF5E",
+        "weapons": "`LItemWeaponBow` 017024 · `LItemArrowsAll` 068839 (the game-wide bow and arrow lists)",
+        "armor": "none",
+        "skin": "`DLC1EncSoulCairnBonemanSkin`"
+      },
+      {
+        "records": "Mistman",
+        "weapons": "none (spells)",
+        "armor": "none",
+        "skin": "`DLC1SoulCairnSkinSkeletonNecro` 006AFB"
+      },
+      {
+        "records": "Wrathman 0071AD",
+        "weapons": "`LItemDraugr02Weapon2H` 024300",
+        "armor": "none",
+        "skin": "race default"
+      },
+      {
+        "records": "Wrathman 004575",
+        "weapons": "`LItemWeaponAny2H` 0165B9 (the game-wide two-hander list)",
+        "armor": "none",
+        "skin": "race default"
+      },
+      {
+        "records": "Reaper",
+        "weapons": "Iron Battleaxe 013980; also carries 3 Black Soul Gems 02E500 and a Daedra Heart 03AD5B",
+        "armor": "Reaper's Hood 01A73F · Reaper's Robes 01A752 · Reaper Bracers 01A755 (`DLC01SoulCairnReaperOutfit` 01A73D)",
+        "skin": "race default"
+      },
+      {
+        "records": "Soul 00A906 · 004759 · 0150B1 · 0150B5 · 0150B4 · 0150B6 · 0150B3 · 0150B2",
+        "weapons": "from their bandit or warlock list's leaves (`Inventory` flag), as on *Common Bandits* and *Common Warlocks*",
+        "armor": "as the list",
+        "skin": "as the list"
+      },
+      {
+        "records": "Soul 01A4FE · 01A4FA",
+        "weapons": "`LItemBanditWeapon2H` 037C21",
+        "armor": "Banded Iron Armor, Iron Gauntlets · Boots · Helmet (`ArmorBandedIronAllOutfit` 0B1FAE)",
+        "skin": "race default"
+      },
+      {
+        "records": "Soul 01A4FC · 01A4FD",
+        "weapons": "Hunting Bow 013985 · Iron Arrow 01397D",
+        "armor": "Hide Armor, farm boots, gloves and hat (`HunterClothesRND` 073FC7)",
+        "skin": "race default"
+      },
+      {
+        "records": "Soul 002B0D",
+        "weapons": "none",
+        "armor": "Leather Armor · Boots · Gauntlets · Helmet (`ArmorLeatherAllOutfit` 057A2A)",
+        "skin": "race default"
+      },
+      {
+        "records": "Soul 015DF3 · 015DF4 · 01A502 · 01A4FF",
+        "weapons": "none",
+        "armor": "farm clothes (`FarmClothesRandom` 09D4B5) · prisoner rags (`PrisonerOutfit` 0A1983)",
+        "skin": "race default"
+      },
+      {
+        "records": "Soul (mages) 01A4F7 · 01A4F9 · 01A503 · 01A4F8 · 01A504 · 01A505",
+        "weapons": "none (spells)",
+        "armor": "College robes and boots, enchanted (`College*Outfit` 0D3DFE · 10DD3F · 10DD34 · 0D3DF9 · 10FB23 · 0D3E09)",
+        "skin": "race default"
+      },
+      {
+        "records": "Keeper Soul 00EA8B",
+        "weapons": "none",
+        "armor": "bandit armor (`BanditArmorMeleeNoShieldOutfit` 01E608)",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemDraugr02Weapon1HShield50",
+          "formKey": "0559F8:Skyrim.esm"
+        },
+        "rolls": "with `LItemDraugr02Weapon2H` 024300 and `LItemDraugr02WeaponBow` 024302: as on Draugr → *Common Draugr* → Gear lists"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponBow",
+          "formKey": "017024:Skyrim.esm"
+        },
+        "rolls": "with `LItemArrowsAll` 068839 and `LItemWeaponAny2H` 0165B9: game-wide lists, any bow, any arrows, any two-hander, by player level"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditWeapon2H",
+          "formKey": "037C21:Skyrim.esm"
+        },
+        "rolls": "with `BanditArmorMeleeNoShieldOutfit` 01E608 (`LItemBanditCuirass` 037C22 · `LItemBanditBoots` 037C23 · `LItemBanditGauntlets50` 037C25): the bandit weapon and armor lists, as on *Common Bandits*"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Ancient Nord and game-wide weapons · Iron Shield · Iron Battleaxe",
+        "kind": "weapons, shield",
+        "playable": true
+      },
+      {
+        "item": "Reaper's Hood · Robes · Bracers 01A73F · 01A752 · 01A755",
+        "kind": "the Reaper's outfit",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`DLC1EncSoulCairnBonemanSkin` 0071CE · `DLC1SoulCairnSkinSkeletonNecro` 006AFB",
+        "kind": "the undead body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "The Souls' armor, clothes, College robes and weapons (vanilla Skyrim.esm items)",
+        "kind": "armor, clothing, weapons",
+        "playable": true
+      }
+    ]
+  }
+}

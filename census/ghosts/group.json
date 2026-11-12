@@ -1,0 +1,123 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "ghosts",
+  "title": "Ghosts",
+  "order": 4,
+  "parent": "undead",
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Karstaag, a ghost Frost Giant, stays on the *Giant* page (user, 2026-10-01).",
+  "families": [
+    {
+      "id": "common-ghosts",
+      "holds": "ghosts that take their level from a bandit, Forsworn or draugr list, plus the fixed-level Dunmer Ghosts and the CC ghost sailors"
+    },
+    {
+      "id": "ghost-bosses",
+      "holds": "the named ghosts: Haknir Death-Brand and his officers, the Volunruud boss, the CC Lost Paladin, Guardians, Simon Rodayne, Urval and Jonquil, and Pelagius's Self Doubt"
+    },
+    {
+      "id": "spectral-warhound",
+      "holds": "the Labyrinthian ghost dogs"
+    }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-10-01)",
+    "confidence": "verified",
+    "text": "Every NPC in Skyrim, Update, Dawnguard, HearthFires, Dragonborn and the CC packs that carries the `ActorTypeGhost` keyword 0D205E, a ghost ability spell (`GhostAbility` 05030B, `GhostAbilityNew` 0D2056 and the Fire, Frost, Storm, Violet and half-damage variants) or a ghost script, through templates; plus every record with Ghost, Spirit, Spectre, Wraith or Phantom in its EditorID or name. Hostile means aggressive or in a faction that is an enemy of the player. Re-checked 2026-11-12 (keyword, ability and EditorID): nothing new. Everything hostile is on a family page except the following."
+  },
+  "filedElsewhere": [
+    {
+      "record": "Kyne's Sacred Trials Guardian Spirits (`dunHunter*`)",
+      "what": "animal spirits",
+      "where": "their animal family pages (Mudcrab, Skeever, Wolf, Bear, Sabre Cat, Mammoth, Troll)"
+    },
+    {
+      "record": "`DunYsgramorsTomb_LvlGhost*` 0AB102 · 0DE517 · 0DE519 · 0DE516 · 0AB104 · 0DE518",
+      "what": "the Companion Ghosts",
+      "where": "Companions → Companion Ghosts (user, 2026-10-02)"
+    },
+    {
+      "record": "`dunValthumeHevnoraakGhost` 03ED80",
+      "what": "the generic Dragon Priest at Valthume",
+      "where": "Undead → *Dragon Priests*"
+    },
+    {
+      "record": "`dunHalldirsBoss` 064B1C and his three copies",
+      "what": "Halldir",
+      "where": "Draugr → *Draugr Warlock*"
+    },
+    {
+      "record": "`dunKilkreathGhost{Imperial,Sons}{Melee,Missile}` 09CB62 · 0E77DA · 09CB63 · 0E77DB and their bases `dunKilkreathGhostMelee` 0F5BBC · `…Missile` 0F5BBE",
+      "what": "Corrupted Shades",
+      "where": "Skeletons → Shades"
+    },
+    {
+      "record": "`MG07LabyrinthianThrall01` 0F737C · `…02` 0F7385",
+      "what": "Enthralled Wizards (ghost ability)",
+      "where": "College of Winterhold → College of Winterhold Foes"
+    },
+    {
+      "record": "`DLC2dunKarstaag` 019665 · `…Summon` (Dragonborn.esm)",
+      "what": "Karstaag",
+      "where": "Giant"
+    },
+    {
+      "record": "`MS04EncDwarvenCenturionVision` · `MS04VisionDwarvenSphere`",
+      "what": "visions in Avanchnzel",
+      "where": "Automatons"
+    },
+    {
+      "record": "`Malacath`",
+      "what": "the Prince's voice",
+      "where": "Daedra"
+    },
+    {
+      "record": "`SummonPhantom`, `SummonFlamingThrall`, `MQ105PhantomFormActor`, `MGArnielSummon`, `DBSpectralAssassin` 0A0E49, `dlc2SpectralDragonSummon`, `ccBGSSSE066_SummonDraugr*` (Ancestor Ghosts), the `ccVSVSSE003_*` necromancy ghosts, `ccRMSSSE001_Ghost`",
+      "what": "summons",
+      "where": "Conjured"
+    }
+  ],
+  "neverMet": [
+    {
+      "record": "Kodlak, Fjori and Holgeir's ghosts, Azzadal, Svaknir, Valdar, Gallus, the Labyrinthian ghosts (Savos Aren, Atmah, Elvali, Girduin, Hafnar, Takes-In-Light), the Snow Elf Prelates, Katria, Jiub, Morven Stroud, Helgi, Fenrig, Ruki, the Ghost of Old Hroldan, the Questing Beast and Sinding, the Tolvald's Cave quest ghosts 0F6779 · 0F677B · 0F677D, Elianora, Daenella, Rin, Holrik and Grenwulf (`PlayerFaction`), the Ghostly Apparition, Kodlak's and the twins' Wolf Spirits, the Bear and Wolf Spirits (ccffbsse001)",
+      "what": "quest, ally or friendly ghosts",
+      "why": "not hostile"
+    },
+    {
+      "record": "The Soul Cairn Souls (`DLC01SoulCairnSoul*`, `…KeeperSoul`)",
+      "what": "souls",
+      "why": "unaggressive, no enemy faction"
+    },
+    {
+      "record": "`ccVSVSSE004_Husband` 000859 · `…Wife` 00085A (ccvsvsse004-beafarmer.esl)",
+      "what": "Urval and Jonquil, peaceful",
+      "why": "the living selves; their hostile ghosts are on *Ghost Bosses*"
+    },
+    {
+      "record": "`ccEDHSSE002_SpellKnight` 000834 \"Ghost Knight\" · `…SpellKnight02` 000867 Simon Rodayne (peaceful) (ccedhsse002-splkntset)",
+      "what": "Spell Knight ghosts",
+      "why": "unaggressive, no enemy faction (only the Frenzied Simon Rodayne 00087B fights); `[unverified]` in game"
+    },
+    {
+      "record": "`dunSnowyPOIGhost` 0725F6, \"Ghost\"",
+      "what": "a roadside ghost",
+      "why": "unaggressive, no enemy faction; placed once in Tamriel; `[unverified]` in game"
+    },
+    {
+      "record": "`WEJS01Ghost` · `WEJS01AvengeGhost` · `WEJS09GhostCorpse`, `WEHeadlessHorseman`, `DA13hallucinatedSkeever`, `InvisibleNPC` \"Ghost Axe\"",
+      "what": "encounter props",
+      "why": "hallucinations, props or not enemies"
+    }
+  ],
+  "neverInGame": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "record": "`LvlBanditGhost*` other than 1H and 2H male, the `dunHalldirs_LvlBanditGhost*` non-ambush bases, `DLC2dunHaknir_*_Weak`, `dunWaywardPassGhost` 0F6768",
+        "why": "never placed or spawned (several are templates of placed ghosts, which keep or take their levels as their pages say)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,549 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "common-skeletons",
+  "group": "skeletons",
+  "title": "Common Skeletons",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "skeleton",
+        "name": "Skeleton",
+        "records": [
+          {
+            "edid": "EncSkeleton01Melee1H",
+            "formKey": "02D1DE:Skyrim.esm"
+          },
+          {
+            "edid": "EncSkeleton01Melee1Hshield",
+            "formKey": "02D1FD:Skyrim.esm"
+          },
+          {
+            "edid": "EncSkeleton01Melee2H",
+            "formKey": "02D1E0:Skyrim.esm"
+          },
+          {
+            "edid": "EncSkeleton01Missile",
+            "formKey": "02D1FC:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "SkeletonRace",
+          "formKey": "0B7998:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: the weakest undead, a band below the low-level draugr"
+        },
+        "note": "no template; every copy (`LvlSkeletonMeleeMixed`, `dunLabyrinthianSkeletonCharger` and the placed refs) takes `Stats` from these four."
+      },
+      {
+        "id": "volkihar-skeleton",
+        "name": "Skeleton",
+        "encounter": "Castle Volkihar and the Dawnguard dungeons",
+        "records": [
+          {
+            "edid": "DLC1VCSkeletonWarrior1h1",
+            "formKey": "017E94:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1VCSkeletonWarrior1h2",
+            "formKey": "00CADD:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1VCSkeletonWarrior2h",
+            "formKey": "017E95:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1VCSkeletonWarriorMissile1",
+            "formKey": "017E96:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1VCSkeletonWarriorMissile2",
+            "formKey": "00CADB:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "SkeletonArmorRace",
+          "formKey": "0023E2:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrMelee1HMale",
+            "formKey": "055936:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            13,
+            21,
+            26,
+            30
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: rolls the draugr ladder, so banded with the draugr"
+        },
+        "note": "each takes `Stats` from a draugr list: 1h1 from `LvlDraugrMelee1HMale` 055953 (1 · 6 · 13 · 21 · 26 · 30), 1h2 from `LCharDraugrMeleeHelmet1HMale` 0567C9, 2h from `LCharDraugrMelee2HMale` 01E772 (1 · 6 · 13 · 21 · 30), the archers from `LCharDraugrMissile` 01E7AA (up to 40). The `_Ambush` copies take `Stats` from them. Same name as the level-1 Skeleton."
+      },
+      {
+        "id": "skeleton-mage",
+        "name": "Skeleton",
+        "encounter": "the skeleton mages",
+        "records": [
+          {
+            "edid": "DLC1VCSkeletonMage",
+            "formKey": "017E92:Dawnguard.esm"
+          },
+          {
+            "edid": "dunLabyrinthianSkeletonMage",
+            "formKey": "09362B:Skyrim.esm"
+          },
+          {
+            "edid": "dunRannveigSkeletonMage",
+            "formKey": "104176:Skyrim.esm"
+          },
+          {
+            "edid": "dunpoiSkeletonMageAggro",
+            "formKey": "10B18A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrWarlockMale",
+            "formKey": "0BF7BB:Skyrim.esm"
+          },
+          "rungs": [
+            6,
+            13,
+            21
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: rolls the draugr warlock ladder, so banded with the draugr"
+        },
+        "note": "`DLC1VCSkeletonMage` is `SkeletonArmorRace`, the other three `SkeletonRace`; `dunpoiSkeletonMageAggro` and `DLC1VCSkeletonMage_Ambush` 01830B take `Stats` from a mage above. Only the highest warlock rung at or below the player is drawn."
+      },
+      {
+        "id": "advcyrus-skeleton",
+        "name": "Skeleton",
+        "encounter": "the Cyrus the Restless quest dungeon (CC)",
+        "records": [
+          {
+            "edid": "ccBGSSSE031_LvlSkeletonMissileMixed",
+            "formKey": "00081E:ccbgssse031-advcyrus.esm"
+          }
+        ],
+        "race": {
+          "edid": "SkeletonRace",
+          "formKey": "0B7998:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 30
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a player-scaled skeleton archer, banded with the low-level draugr"
+        },
+        "note": "uses `EncSkeleton01Missile` for `BaseData` and `Traits` only, so keeps its own level."
+      },
+      {
+        "id": "potemas-remains",
+        "name": "Potema's Remains",
+        "records": [
+          {
+            "edid": "dunMS06PotemaSkeleton",
+            "formKey": "10349B:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "SkeletonRace",
+          "formKey": "0B7998:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 7,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        },
+        "note": "uses `dunLabyrinthianSkeletonMage` as its template without `Stats`."
+      },
+      {
+        "id": "cursed-smuggler",
+        "name": "Cursed Smuggler",
+        "records": [
+          {
+            "edid": "ccBGSSSE013_EncSkelMelee1H",
+            "formKey": "000841:ccbgssse013-dawnfang.esl"
+          },
+          {
+            "edid": "ccBGSSSE013_Skeleton01AmbushMelee1HShield",
+            "formKey": "00083E:ccbgssse013-dawnfang.esl"
+          },
+          {
+            "edid": "ccBGSSSE013_Skeleton01AmbushMelee2H",
+            "formKey": "000847:ccbgssse013-dawnfang.esl"
+          },
+          {
+            "edid": "ccBGSSSE013_SkeletonMeleeMissile",
+            "formKey": "000844:ccbgssse013-dawnfang.esl"
+          },
+          {
+            "edid": "ccBGSSSE013_SkeletonMeleeMissileDuplicate",
+            "formKey": "000CB9:ccbgssse013-dawnfang.esl"
+          }
+        ],
+        "race": {
+          "edid": "SkeletonRace",
+          "formKey": "0B7998:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 1,
+          "from": {
+            "edid": "EncSkeleton01Melee1H",
+            "formKey": "02D1DE:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: a level-1 skeleton under another name"
+        },
+        "note": "each takes `Stats` from the matching `EncSkeleton01*` record but keeps its own name."
+      },
+      {
+        "id": "verrick-tilwald",
+        "name": "Verrick Tilwald",
+        "records": [
+          {
+            "edid": "ccBGSSSE013_SmugglerLeader",
+            "formKey": "000C40:ccbgssse013-dawnfang.esl"
+          }
+        ],
+        "race": {
+          "edid": "SkeletonRace",
+          "formKey": "0B7998:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 100
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        },
+        "note": "uses `EncSkeleton01Melee1Hshield` as its template without `Stats`."
+      },
+      {
+        "id": "ulfnir-bone-skin",
+        "name": "Ulfnir Bone-Skin",
+        "records": [
+          {
+            "edid": "ccBGSSSE060_Ulfnir",
+            "formKey": "00081E:ccbgssse060-ba_dragonscale.esl"
+          }
+        ],
+        "race": {
+          "edid": "SkeletonArmorRace",
+          "formKey": "0023E2:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 15,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "bands-of-power.md: most lesser named bosses"
+        },
+        "note": "uses `EncDraugr01Template` as its template without `Stats`."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncSkeleton01Melee1H` 02D1DE also needs `DLC01SoulCairnKeeperBowArrow` 0074F9:Dawnguard.esm (Keeper, PC×1.2 [10–80]; on *Soul Cairn Undead*); `…Melee1Hshield` 02D1FD also needs `DLC01SoulCairnKeeperShield` 007B0F:Dawnguard.esm (Keeper) and Verrick Tilwald; `…Melee2H` 02D1E0 also needs `DLC01SoulCairnKeeper2H` 0074F8:Dawnguard.esm (Keeper, PC×1 [10–80]); `…Missile` 02D1FC also needs the advcyrus archer. Each uses the row as its template without `Stats`. The corpse `DBTreasCorpseSkeleton` 0F23B8 does the same with 02D1DE.",
+      "Potema's Remains uses `dunLabyrinthianSkeletonMage` without `Stats`, and Ulfnir uses `EncDraugr01Template` the same way: each keeps its own player-scaled level when the row changes.",
+      "The skeleton-race records with no template are filed elsewhere: the Reaper on *Soul Cairn Undead*; the CC necromancy skeletons on Conjured → *Undead Summons*; the unused Soul Cairn skeletons, `ccRMSSSE001_Skeleton01Summon`, `ccVSVSSE004_ChildSkeleton` and `ccBGSSSE031_Corpse` on the *Skeletons* group page.",
+      "Every other skeleton record (the Volkihar `_Ambush` copies, `dunpoiSkeletonMageAggro`, `LvlSkeletonMeleeMixed`, `dunLabyrinthianSkeletonCharger` and the `TreasCorpseSkeleton*` corpses) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharSkeletonMeleeMixed",
+          "formKey": "02D2D4:Skyrim.esm"
+        },
+        "gate": "`CalculateFromAllLevelsLessThanOrEqualPlayer`; every entry at 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Skeleton 1H · 1H with shield · 2H"
+          }
+        ],
+        "owner": "`LvlSkeletonMeleeMixed` 0BCCC7 · `dunLabyrinthianSkeletonCharger` 091F1F"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrMelee1HMale",
+          "formKey": "055936:Skyrim.esm"
+        },
+        "note": "with `LCharDraugrMeleeHelmet1HMale` 0567C9, `LCharDraugrMelee2HMale` 01E772 and `LCharDraugrMissile` 01E7AA: the draugr rungs, as level only; documented on Draugr → *Common Draugr*.",
+        "owner": "the Volkihar warriors and archers"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrWarlockMale",
+          "formKey": "0BF7BB:Skyrim.esm"
+        },
+        "note": "6 · 13 · 21, as level only; documented on Draugr → *Draugr Warlock*.",
+        "owner": "`DLC1VCSkeletonMage` · the three skeleton mages"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Skeleton",
+        "note": "271 refs in 70 cells. Most: `DLC1VampireCastleDungeon02` 00285A:Dawnguard.esm ×22 · `ShriekwindBastion01` 0A1A61 ×12 · `DLC1VampireCastleBossRoom` 019DFE:Dawnguard.esm ×10 · `DLC2TempleofMiraak02` 019CD7:Dragonborn.esm ×10 · `FortSnowhawkExterior01` 0093A2 ×10 · `Labyrinthian01` 083559 ×8 · `Labyrinthian03` 091872 ×8 · `BrittleShinPass01` 081DEC ×8 · `Ansilvund02` 01F358 ×7 · `Ustengrav02` 0152AA ×7 · `DLC1DimHollowCrypt02` 000EB7:Dawnguard.esm ×7 · `HobsFallCave01` 01525F ×6 · `IlinaltasDeep01` 015258 ×6 · `ShroudHearthBarrow01` 06CCBB ×6, and fewer in 56 more cells (every skeleton row together)"
+      },
+      {
+        "name": "Skeleton (mages)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Labyrinthian03",
+              "formKey": "091872:Skyrim.esm"
+            },
+            "note": "09362B ×4"
+          },
+          {
+            "cell": {
+              "edid": "Labyrinthian01",
+              "formKey": "083559:Skyrim.esm"
+            },
+            "note": "09362B ×2"
+          },
+          {
+            "cell": {
+              "edid": "IronbindBarrow01",
+              "formKey": "035604:Skyrim.esm"
+            },
+            "note": "09362B ×1"
+          },
+          {
+            "cell": {
+              "edid": "ColdRockPassExterior01",
+              "formKey": "0094C8:Skyrim.esm"
+            },
+            "note": "104176 ×1"
+          },
+          {
+            "cell": {
+              "edid": "POITundra11b",
+              "formKey": "009A2D:Skyrim.esm"
+            },
+            "note": "10B18A ×1"
+          }
+        ]
+      },
+      {
+        "name": "Skeleton (advcyrus)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE031Interior01",
+              "formKey": "000818:ccbgssse031-advcyrus.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      },
+      {
+        "name": "Potema's Remains",
+        "locations": [
+          {
+            "cell": {
+              "edid": "PotemasCatacombs03",
+              "formKey": "0263EF:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Cursed Smuggler · Verrick Tilwald",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE013Lair",
+              "formKey": "002FCF:Update.esm"
+            },
+            "note": "Cursed Smugglers ×15, Verrick ×1"
+          }
+        ]
+      },
+      {
+        "name": "Ulfnir Bone-Skin",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Skeleton 1H · 1H with shield · 2H · archer (and every copy, Cursed Smuggler included)",
+        "weapons": "`LItemDraugr02Weapon1HShield50` 0559F8 · `…1HShield100` 02D290 · `LItemDraugr02Weapon2H` 024300 · `LItemDraugr02WeaponBow` 024302",
+        "armor": "none",
+        "skin": "`SkinSkeleton` 0B799A"
+      },
+      {
+        "records": "Skeleton, Volkihar",
+        "weapons": "`LItemDraugrSword` 018EC9 (1h, mage) · `LItemDraugr02Weapon2H` · `LItemDraugr02WeaponBow`",
+        "armor": "the mage adds a Black Mage Hood 017E9B:Dawnguard.esm",
+        "skin": "the armored skin `SkinSkeletonArmor`/`1`–`4`"
+      },
+      {
+        "records": "Skeleton, mages",
+        "weapons": "`LItemDraugrSword` (Labyrinthian, 10B18A) · `LItemStaff00` 035319 (Rannveig)",
+        "armor": "Black Mage Hood 0C5D10 (not Rannveig)",
+        "skin": "`SkinSkeleton`"
+      },
+      {
+        "records": "Potema's Remains",
+        "weapons": "`LItemEnchWeaponSwordShock` 10782F",
+        "armor": "Copper and Moonstone Circlet 016730 · Fine Raiment 0CEE76",
+        "skin": "`SkinSkeleton`"
+      },
+      {
+        "records": "Verrick Tilwald",
+        "weapons": "`LItemEnchIronWarAxeBoss` 0DDDA0",
+        "armor": "none",
+        "skin": "`SkinSkeleton`"
+      },
+      {
+        "records": "Ulfnir Bone-Skin",
+        "weapons": "`LItemDraugr02Weapon2H` 024300",
+        "armor": "none",
+        "skin": "the armored skin `SkinSkeletonArmor1` 01A151:Dawnguard.esm"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemDraugr02Weapon1HShield50",
+          "formKey": "0559F8:Skyrim.esm"
+        },
+        "rolls": "with `…1HShield100` 02D290: all of `LItemDraugr02Weapon1H` 0242FC (Ancient Nord Sword · War Axe; honed from 12) · Iron Shield 012EB6 at 50% or 100%"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr02Weapon2H",
+          "formKey": "024300:Skyrim.esm"
+        },
+        "rolls": "with `LItemDraugr02WeaponBow` 024302: as on Draugr → *Common Draugr* → Gear lists"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugrSword",
+          "formKey": "018EC9:Skyrim.esm"
+        },
+        "rolls": "Ancient Nord Sword 02C66F ×4 (1) · Honed Ancient Nord Sword 05BF14 (12–15)"
+      },
+      {
+        "list": {
+          "edid": "LItemStaff00",
+          "formKey": "035319:Skyrim.esm"
+        },
+        "rolls": "one of seven novice staves (Zombies, Familiar, Courage, Fury, Flames, Frostbite, Sparks)"
+      },
+      {
+        "list": {
+          "edid": "LItemEnchWeaponSwordShock",
+          "formKey": "10782F:Skyrim.esm"
+        },
+        "rolls": "a shock-enchanted sword, iron (1) to daedric (47)"
+      },
+      {
+        "list": {
+          "edid": "LItemEnchIronWarAxeBoss",
+          "formKey": "0DDDA0:Skyrim.esm"
+        },
+        "rolls": "an enchanted Iron War Axe: fire, frost, shock, magicka or stamina"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Ancient Nord, Iron, enchanted and staff weapons · Iron Shield",
+        "kind": "weapons, shield",
+        "playable": true
+      },
+      {
+        "item": "Copper and Moonstone Circlet · Fine Raiment",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Black Mage Hoods 0C5D10 · 017E9B:Dawnguard.esm",
+        "kind": "hood",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`SkinSkeleton` 0B799A · `SkinSkeletonArmor` 0023E0 · `…Armor1`–`4` 01A151 · 01A153 · 01A155 · 01A157 (Dawnguard.esm)",
+        "kind": "the skeleton body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

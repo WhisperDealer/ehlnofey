@@ -1,0 +1,201 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "shades",
+  "group": "skeletons",
+  "title": "Shades",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "corrupted-shade-kilkreath",
+        "name": "Corrupted Shade",
+        "encounter": "Kilkreath Ruins",
+        "records": [
+          {
+            "edid": "dunKilkreathGhostImperialMelee",
+            "formKey": "09CB62:Skyrim.esm"
+          },
+          {
+            "edid": "dunKilkreathGhostImperialMissile",
+            "formKey": "0E77DA:Skyrim.esm"
+          },
+          {
+            "edid": "dunKilkreathGhostSonsMelee",
+            "formKey": "09CB63:Skyrim.esm"
+          },
+          {
+            "edid": "dunKilkreathGhostSonsMissile",
+            "formKey": "0E77DB:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "SkeletonNecroRace",
+          "formKey": "0EB872:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0,
+          "max": 100
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: undead of draugr strength, banded with the draugr"
+        },
+        "note": "own a `PcLevelMult` level with no `CalcMinLevel` (so 0); the name comes from `EncSkeletonNecroImp01Melee1H` 0EB870 · `…Imp01Missile` 0F5BB9 · `EncSkeletonNecroSC01Melee1H` 0EBA05 · `…SC01Missile` 0F5BBA through `BaseData` and `Traits`, not `Stats`."
+      },
+      {
+        "id": "corrupted-shade-vahlok",
+        "name": "Corrupted Shade",
+        "encounter": "Vahlok's Tomb",
+        "records": [
+          {
+            "edid": "DLC2SV01EncSkeletonNecro01Melee1HAllowWander",
+            "formKey": "026373:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "SkeletonNecroRace",
+          "formKey": "0EB872:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: the same name as the Kilkreath shades, so the same band"
+        },
+        "note": "no template."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level.",
+      "The four `EncSkeletonNecroImp01*` / `…SC01*` templates (level 1, no template) give the Kilkreath shades their name only; none is placed. `EncSkeletonNecro01Melee1H` 0EB876 · `…01Missile` 0F5BBB are used only by the unused `dunKilkreathGhostMelee`/`Missile` (on the *Skeletons* group page). `DLC1nVampireCorruptedShade` 00E7B9:Dawnguard.esm (level 1, no template) is the vampire's summon, on *Conjured*.",
+      "Malkoran's Shade (`DA09ShadeUnique` 0EBE2E) is on Daedra → *Daedric Quest Foes* (user, 2026-10-05). The Forelhost and Volunruud ghosts are on Undead → Ghosts."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Corrupted Shade (Kilkreath)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "KilkreathRuins01",
+              "formKey": "015255:Skyrim.esm"
+            },
+            "refText": "×7"
+          },
+          {
+            "cell": {
+              "edid": "KilkreathRuins02",
+              "formKey": "04624F:Skyrim.esm"
+            },
+            "refText": "×7"
+          },
+          {
+            "cell": {
+              "edid": "KilkreathRuins03",
+              "formKey": "027D1C:Skyrim.esm"
+            },
+            "refText": "×4"
+          }
+        ]
+      },
+      {
+        "name": "Corrupted Shade (Vahlok's Tomb)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2VahloksTomb01",
+              "formKey": "0142EF:Dragonborn.esm"
+            },
+            "refText": "×15"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Corrupted Shade, Imperial melee (09CB62)",
+        "weapons": "Imperial Sword 0135B8",
+        "armor": "none",
+        "skin": "`SkinSkeletonNecroImperial` 0EB875"
+      },
+      {
+        "records": "Corrupted Shade, Imperial archer (0E77DA)",
+        "weapons": "Imperial Sword · Imperial Bow 013841 · Steel Arrows 01397F (and `BaseArrowSteel75` 037C0E)",
+        "armor": "none",
+        "skin": "`SkinSkeletonNecroImperial`"
+      },
+      {
+        "records": "Corrupted Shade, Stormcloak melee (09CB63)",
+        "weapons": "`LItemSoldierSonsWeapon2H` 01715C",
+        "armor": "none",
+        "skin": "`SkinSkeletonNecroStormCloak` 0EB87C"
+      },
+      {
+        "records": "Corrupted Shade, Stormcloak archer (0E77DB)",
+        "weapons": "Hunting Bow 013985 · Steel Dagger 013986 · Steel Arrows",
+        "armor": "none",
+        "skin": "`SkinSkeletonNecroStormCloak`"
+      },
+      {
+        "records": "Corrupted Shade (Vahlok's Tomb)",
+        "weapons": "`LItemDraugr02Weapon1HShield50` 0559F8",
+        "armor": "none",
+        "skin": "`SkinSkeletonNecro` 0EB874"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemSoldierSonsWeapon2H",
+          "formKey": "01715C:Skyrim.esm"
+        },
+        "rolls": "Iron or Steel Warhammer · Greatsword · Battleaxe (steel from 4–5 to 13)"
+      },
+      {
+        "list": {
+          "edid": "LItemDraugr02Weapon1HShield50",
+          "formKey": "0559F8:Skyrim.esm"
+        },
+        "rolls": "as on Draugr → *Common Draugr* → Gear lists"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Imperial, Stormcloak and Ancient Nord weapons",
+        "kind": "weapons",
+        "playable": true
+      },
+      {
+        "item": "`SkinSkeletonNecro` 0EB874 · `…Imperial` 0EB875 · `…StormCloak` 0EB87C",
+        "kind": "the shade body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "skeletons",
+  "title": "Skeletons",
+  "order": 3,
+  "parent": "undead",
+  "meta": {
+    "spec": "archetype-tiers.md §5 (class C)",
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Ghosts are their own sub-group of Undead.",
+  "families": [
+    {
+      "id": "common-skeletons",
+      "holds": "the level-1 skeletons, the draugr-levelled Volkihar skeletons and skeleton mages, Potema's Remains and the CC skeletons"
+    },
+    {
+      "id": "soul-cairn-undead",
+      "holds": "Bonemen, Mistmen, Wrathmen, the Keepers, the Reaper and the Souls"
+    },
+    {
+      "id": "shades",
+      "holds": "the Corrupted Shades of Kilkreath and Vahlok's Tomb"
+    },
+    {
+      "id": "bone-wolves",
+      "holds": "the Bone Wolf pack's Bonewolves, Thrall Wolves and pet"
+    }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-10-01)",
+    "confidence": "verified",
+    "text": "Every NPC in Skyrim, Update, Dawnguard, HearthFires, Dragonborn and the CC packs whose race is `SkeletonRace` 0B7998, `RigidSkeletonRace` 0B9FD7, `SkeletonNecroRace` 0EB872, `SkeletonNecroPriestRace` 0EBE18, `SkeletonArmorRace` 0023E2, `DLC1BlackSkeletonRace` 019FD3, `DLC1SoulCairnSkeletonArmorRace` 00894D, `DLC1SoulCairnSkeletonNecroRace` 006AFA, `DLC01SoulCairnBonemanRace` 00A94B, `DLC1SoulCairnKeeperRace` 007AF3 (Dawnguard.esm), `DLC2RigidSkeletonRace` 03CECB:Dragonborn.esm, `ccBGSSSE036_BoneWolfCompanionRace` 002F93:Update.esm or `ccVSVSSE003_BoneColossusRace` 00080E:ccvsvsse003-necroarts.esl, followed through every template and list. Re-checked 2026-11-12: every one of these that keeps its own level is on a family page or below. Everything found is on a family page except the following."
+  },
+  "filedElsewhere": [
+    {
+      "record": "`DLC1SoulCairn{Boneman,Mistman,Wrathman}Summon` 0045B9 · 0045B7 · 0045B4 · `DLC1EncUndeadSummon1`–`3` 01A16A–01A16C (Dawnguard.esm)",
+      "what": "Soul Cairn summons",
+      "where": "Conjured → *Undead Summons*"
+    },
+    {
+      "record": "`DLC1nVampireCorruptedShade` 00E7B9:Dawnguard.esm",
+      "what": "the vampire's Corrupted Shade",
+      "where": "Conjured"
+    },
+    {
+      "record": "`ccRMSSSE001_{Boneman,Mistman,Wrathman}Summon` 000863 · 000852 · 000843 (ccrmssse001-necrohouse)",
+      "what": "CC summons",
+      "where": "Conjured → *Undead Summons*"
+    },
+    {
+      "record": "`ccVSVSSE003_Skeleton_{minion,archer,champion,warlock}` and `…BoneColossus`, each with a `DS` copy (ccvsvsse003-necroarts)",
+      "what": "CC necromancy summons (levels 5 · 14 · 24 · 30 · 40)",
+      "where": "Conjured → *Undead Summons*"
+    },
+    {
+      "record": "`DA09ShadeUnique` 0EBE2E",
+      "what": "Malkoran's Shade (`SkeletonNecroPriestRace`, level 26)",
+      "where": "Daedra → *Daedric Quest Foes* (user, 2026-10-05)"
+    }
+  ],
+  "neverMet": [
+    {
+      "record": "`ccRMSSSE001_Skeleton01Summon` 000873 (ccrmssse001-necrohouse)",
+      "what": "skeleton, level 1",
+      "why": "in `PlayerFaction` and `DunPlayerAllyFaction`: fights for the player"
+    },
+    {
+      "record": "`ccRMSSSE001_Skeleton` 000CE5 (ccrmssse001-necrohouse)",
+      "what": "\"Skeleton Mage\", level 1",
+      "why": "a unique `DarkBrotherhoodFaction` servant in the player home"
+    },
+    {
+      "record": "`ccVSVSSE004_ChildSkeleton` 000858 (ccvsvsse004-beafarmer)",
+      "what": "\"Child's Skeleton\"",
+      "why": "not an enemy (user, 2026-10-01)"
+    },
+    {
+      "record": "`DLC2TT2IldariRemenant` 03CECC:Dragonborn.esm",
+      "what": "Ildari's remnant",
+      "why": "an invisible quest skeleton (`DLC2TT2SkeletonInvisible` outfit)"
+    },
+    {
+      "record": "`ccBGSSSE060_Fathrys` 000820:ccbgssse060-ba_dragonscale.esl",
+      "what": "skeleton NPC",
+      "why": "non-hostile"
+    },
+    {
+      "record": "`TreasCorpseSkeleton*`, `DBTreasCorpseSkeleton` 0F23B8, `ccBGSSSE031_Corpse` 000810 and the named story corpses (Malyn Varen, Drokt, Gaston Bellefort, Gauldur, Haknir Death-Brand, Anders, Nystrom, Sinderion, Maximian, Gratian, Millius, Advard, Skeggr, Bern, Kevon, the Dawnfang and advcyrus corpses)",
+      "what": "corpses",
+      "why": "not enemies"
+    }
+  ],
+  "neverInGame": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "record": "`EncSkeletonArmor01`–`05Melee1H00` 0023E3 · 01A158–01A15B:Dawnguard.esm",
+        "why": "no placed reference, list, quest, spell or NPC names them"
+      },
+      {
+        "record": "`DLC1SoulCairnEncMistMen01Magic1` 019AB0 · `DLC1SoulCairnEncSkeleton01Melee2H` 019AB1 · `DLC1SoulCairnEncSkeletonNecro01Melee1H` 006AF0 · `…02` 006AF1 (Dawnguard.esm)",
+        "why": "the same"
+      },
+      {
+        "record": "`dunKilkreathGhostMelee` 0F5BBC · `…Missile` 0F5BBE (and the templates only they use, `EncSkeletonNecro01Melee1H` 0EB876 · `…01Missile` 0F5BBB) · `dunFortSnowhawkSummonedSkeleton01` 0D8D95 · `DLC1dunLabyrinthianSkeletonAmbushMage` 0162B8:Dawnguard.esm",
+        "why": "the same"
+      },
+      {
+        "record": "`ccRMSSSE001_SkeletonMage` 0008F3 · `…Warrior1h1` 0008D7 · `…Warrior1h2` 000890 · `…Archer` 000887 (ccrmssse001-necrohouse)",
+        "why": "the same"
+      },
+      {
+        "record": "`DLC1VCLCharSkeletonMissile` 00CADA:Dawnguard.esm",
+        "why": "a list used by nothing"
+      }
+    ]
+  }
+}
