@@ -253,7 +253,7 @@
         "list": {
           "label": "`LCharFalmerMelee` 01E77D · `LCharFalmerMissile` 01E77E · `LCharFalmerSpellsword` 063229"
         },
-        "seeFamily": "*Common Falmer*",
+        "seeFamily": "common-falmer",
         "note": "the rank-and-file Warmonger at 48 (×2 in Melee), beside the common rungs",
         "owner": "Falmer (the wrappers are on *Common Falmer*)"
       }

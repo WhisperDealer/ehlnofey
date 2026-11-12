@@ -172,7 +172,7 @@
           "edid": "LCharDwarvenAutomaton",
           "formKey": "01E783:Skyrim.esm"
         },
-        "seeFamily": "*Dwarven Spider*",
+        "seeFamily": "dwarven-spider",
         "note": "Master (38), above the spiders and spheres",
         "owner": "`LvlDwarvenAutomaton` 10EC93 · `LvlDweAutomaton` 01E7B0"
       }

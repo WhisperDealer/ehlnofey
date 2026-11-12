@@ -417,8 +417,7 @@
           "edid": "LCharBanditMelee1H",
           "formKey": "039CFC:Skyrim.esm"
         },
-        "seeFamily": "*Common Bandits*",
-        "note": "the common 1H bandit rungs, as level and race only",
+        "note": "the common 1H bandit rungs, as level and race only; the list is on Bandits → *Common Bandits*",
         "owner": "Falmer Servant `dunBlackreachLVLFalmerServant` 0B2D35; the rest on *Common Bandits*"
       }
     ]
