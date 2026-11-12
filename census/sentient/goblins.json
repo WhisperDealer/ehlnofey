@@ -60,9 +60,9 @@
           "value": 6
         },
         "target": {
-          "band": "I",
+          "band": "IV",
           "status": "proposed",
-          "source": "archetype-tiers.md: goblin 6 kept (Weak)"
+          "source": "user, 2026-11-12: Blooded (replaces the kept 6)"
         },
         "note": "nine records, all level 6 and each owning its level. 01, 02 and 03 differ in outfit (cloth, leather, iron; 04Hammer iron too); the `Arena` pair fight in the arena; the `DUPLICATE001` copies are the overworld goblins and take their name from `04Hammer`."
       },
@@ -86,9 +86,9 @@
           "max": 60
         },
         "target": {
-          "band": "III",
+          "band": "IV",
           "status": "proposed",
-          "source": "archetype-tiers.md: the goblin boss fixed at 20 (Trained)"
+          "source": "user, 2026-11-12: Blooded (replaces the fixed 20)"
         }
       },
       {
@@ -109,9 +109,9 @@
           "value": 6
         },
         "target": {
-          "band": "I",
+          "band": "IV",
           "status": "proposed",
-          "source": "a Creation Club pet, out of scope for a new level (archetype-tiers.md §4.2): banded at its vanilla level (6)"
+          "source": "user, 2026-11-12: Blooded, with the goblins"
         },
         "note": "the Creation Club pet goblin, `Essential`."
       }

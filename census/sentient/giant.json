@@ -79,9 +79,10 @@
           "value": 90
         },
         "target": {
-          "band": "X",
+          "band": "IX",
+          "level": 80,
           "status": "proposed",
-          "source": "archetype-tiers.md: Karstaag 90 kept; the same band as his summon on Conjured → *Heroes & Spirits*"
+          "source": "user, 2026-11-12: Mythic, level 80 (replaces the kept 90); his summon follows"
         },
         "note": "his summon `DLC2dunKarstaagSummon` 024811:Dragonborn.esm takes `Stats` from him; it is on Conjured → *Heroes & Spirits*."
       }

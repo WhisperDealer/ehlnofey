@@ -252,9 +252,10 @@
           }
         },
         "target": {
-          "band": "X",
+          "band": "IX",
+          "level": 80,
           "status": "proposed",
-          "source": "role: a summon, banded at its vanilla level (90); the placed Karstaag is on no migrated page"
+          "source": "user, 2026-11-12: banded with the placed Karstaag (on *Giant*), whose Stats it takes"
         },
         "note": "takes `Stats` and `BaseData` from the placed Karstaag `DLC2dunKarstaag` (on *Giant*)."
       }

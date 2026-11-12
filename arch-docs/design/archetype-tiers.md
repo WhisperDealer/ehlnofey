@@ -590,7 +590,7 @@ in step.
 > - **Forgotten Vale:** Frozen Falmer, Frozen Shaman and Frozen Chaurus pinned at 40. The Frost Giant (50) and the Earth Mother (30)
 >   are kept as place exceptions.
 > - **Solstheim:** the Raven Rock attack's Ash Spawn (two `PcLevelMult` records) fixed at 30. The Frost Giant 32 → 38, level with the
->   mainland giants. **Haknir 55**. Karstaag 90 and the Ebony Warrior 80 are kept (§7).
+>   mainland giants. **Haknir 55**. Karstaag ~~90~~ 80 (user, 2026-11-12) and the Ebony Warrior 80 are kept (§7).
 > - **Solstheim chest loot:** the eight `DLC2LItemWeapon*` lists (plain and boss chests alike) lose glass, Stalhrim, ebony, the
 >   Daedric sublists and the almsivi ebony mace and scimitar. Those 34 go into `EHL_LVLI_SolstheimBossWeaponRare` 0x805, added to the
 >   three boss-chest lists (`DLC2Loot{Bandit,Draugr,Dwarven}Weapon100`), so a boss chest's weapon is glass or better 1 time in 10 (1 in 11 in Dwemer chests).
@@ -795,8 +795,8 @@ Creatures*. Not yet built.
 
 | Creature | Record(s) | Vanilla | **Ehlnofey** | Band |
 |---|---|---|---|---|
-| Goblin (one name, 9 records) | `ccBGSSSE040_EncGoblin0{1,2,3}Melee…`, `…04Hammer` | 6 | **6** (keep) | Weak |
-| Blue God (goblin boss) | `ccBGSSSE040_Blorc` 0009A0 | ×1 [5–60] | **20** | Trained |
+| Goblin (one name, 9 records) | `ccBGSSSE040_EncGoblin0{1,2,3}Melee…`, `…04Hammer` | 6 | ~~6~~ **Blooded (IV)** (user, 2026-11-12) | Blooded |
+| Blue God (goblin boss) | `ccBGSSSE040_Blorc` 0009A0 | ×1 [5–60] | ~~20~~ **Blooded (IV)** (user, 2026-11-12) | Blooded |
 | Nix-Hound | `ccBGSSSE035_EncNixHoundEnemy` 000804 | 16 | **16** (keep) | Common |
 | Frenzied Mudcrab | `ccBGSSSE001_EncMudcrab{Medium,Large,Giant}Aggressive` | 9 / 13 / 20 | **keep**; `LCharMudcrabAggressive` 0009ED flattened to Medium ×2 · Large ×2 · Giant ×1 | Common |
 | Fangtusk (vampire horker) | `ccBGSSSE001_MiscWindhelm_Fangtusk` 000BF9 | ×1.25 [10–80] | **20** | Trained |
@@ -969,7 +969,7 @@ the T7-and-above set.
 | Dragon Priests ×8 + Vahlok | — | fixed 50 | **50 (T7)** — unchanged |
 | Ahzidal, Dukaan | 0248E9, 0248E1 | fixed 60 | **60** — unchanged |
 | `DLC2dunHaknir` | 01A373:Dragonborn | ×1.25 [40–75] | **55** (WD-59) |
-| Karstaag · Ebony Warrior | 019665 · 0285C3:Dragonborn | fixed 90 · 80 | **90 · 80** — kept (WD-59), documented exceptions |
+| Karstaag · Ebony Warrior | 019665 · 0285C3:Dragonborn | fixed 90 · 80 | ~~90~~ **80** (Mythic, user 2026-11-12) · **80** kept (WD-59), documented exceptions |
 | `DLC01SoulCairnReaper` | 01A73E:Dawnguard | ×1.5 [10–100] | **65** (WD-58), the Nightmaster level |
 | Soul Cairn Keepers ×3 | 0074F8 / 0074F9 / 007B0F:Dawnguard | ×1–1.2 [10–80] | **50** (WD-58) |
 | `VigilantCarcette` | 0BFB55 | ×1 | **45** (WD-56), the Hall's keeper above her 35s |
