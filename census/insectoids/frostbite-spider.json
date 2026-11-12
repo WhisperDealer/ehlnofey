@@ -28,9 +28,9 @@
           "value": 1
         },
         "target": {
-          "band": "I",
+          "band": "II",
           "status": "proposed",
-          "source": "role: vermin (the companion lists pair it with the skeever), banded at its vanilla level (1)"
+          "source": "user, 2026-11-12: Common"
         },
         "note": "In game it shows just \"Frostbite Spider\"; the small spider (`FrostbiteSpiderRace`) in the race's own skin."
       },
@@ -52,9 +52,9 @@
           "value": 6
         },
         "target": {
-          "band": "I",
+          "band": "II",
           "status": "proposed",
-          "source": "user, 2026-11-12: wildlife banded at its vanilla level (6)"
+          "source": "user, 2026-11-12: Common"
         },
         "note": "In game it shows just \"Frostbite Spider\"; the same spider at the larger size (`FrostbiteSpiderRaceLarge`), between the small one and the Giant."
       },
@@ -99,9 +99,9 @@
           "value": 3
         },
         "target": {
-          "band": "I",
+          "band": "II",
           "status": "proposed",
-          "source": "role: vermin, banded with the Frostbite Spider (I)"
+          "source": "user, 2026-11-12: Common"
         },
         "note": "In game it shows just \"Frostbite Spider\"; the small spider in the pale snow skin `SkinFrostbiteSpiderCold` 048C0E, drawn by the snow lists; it uses `EncFrostbiteSpider` as its template but not for `Stats`."
       },
@@ -251,9 +251,9 @@
           "value": 1
         },
         "target": {
-          "band": "I",
+          "band": "II",
           "status": "proposed",
-          "source": "role: a pet, banded at its vanilla level (1)"
+          "source": "user, 2026-11-12: Common"
         },
         "note": "the Pets of Skyrim pet (CC): `Essential`, `Invulnerable`, a ghost; no template."
       }
