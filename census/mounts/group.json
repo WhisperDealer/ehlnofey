@@ -15,15 +15,11 @@
     },
     {
       "id": "horse",
-      "holds": "the Horse (4) and carriage horse (3), Shadowmere, Frost, the CC Wild Horses and Dwarven Horse; the stable, camp and quest horses that follow them"
-    },
-    {
-      "id": "unicorn",
-      "holds": "the CC Unicorn (50)"
+      "holds": "the Horse (4) and carriage horse (3), Shadowmere, Frost, the CC Wild Horses; the stable, camp and quest horses that follow them"
     },
     {
       "id": "otherworldly-horses",
-      "holds": "Arvak and the Soul Cairn horses, the CC Daedric Horses"
+      "holds": "Arvak and the Soul Cairn horses, the CC Daedric Horses, the CC Dwarven Horse and Unicorn"
     }
   ],
   "neverInGame": {

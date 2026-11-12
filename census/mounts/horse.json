@@ -208,33 +208,6 @@
           "source": "role: a mount, banded at its vanilla level (20)"
         },
         "note": "seven records (CC *Wild Horses*), each owning its level 20."
-      },
-      {
-        "id": "dwarven-horse",
-        "name": "Dwarven Horse",
-        "records": [
-          {
-            "edid": "DLCDwarvenPuzzleDungeon_DwarvenHorse",
-            "formKey": "0008FA:cctwbsse001-puzzledungeon.esm"
-          }
-        ],
-        "race": {
-          "edid": "HorseRace",
-          "formKey": "0131FD:Skyrim.esm"
-        },
-        "level": {
-          "kind": "fixed",
-          "value": 50
-        },
-        "flags": [
-          "Invulnerable"
-        ],
-        "target": {
-          "band": "VII",
-          "status": "proposed",
-          "source": "role: a mount, banded at its vanilla level (50)"
-        },
-        "note": "Forgotten Seasons (CC)."
       }
     ]
   },
@@ -243,7 +216,7 @@
     "items": [
       "Changing `EncHorseSaddledPalomino` 068D04 does not change Frost (`MS03Horse`, a row above, level 25): it uses 068D04 as its template but not for `Stats`.",
       "The other rows: no other record keeps its own level.",
-      "The other horse-race records with no template are on *Unicorn* (`ccBGSSSE034_MountUnicorn`) and *Otherworldly Horses* (`DLC1EncHorseBone`, the three Daedric Horses).",
+      "The other horse-race records with no template are on *Otherworldly Horses*: the Dwarven Horse (`DLCDwarvenPuzzleDungeon_DwarvenHorse`), the Unicorn (`ccBGSSSE034_MountUnicorn`), `DLC1EncHorseBone` and the three Daedric Horses.",
       "Every other horse record (the stable horses, `MQ101Horse`, `MQ101CartHorse`, `HorseForCarriageNew`, `DBCiceroHorse`, `DB10PenitusOculatusHorse`, `dunPOISmugglerHorse`, `CWCourierHorse`, `WERoad12Horse`, `DLC1_WESC07_EncHorseSaddledGrey` and the `LvlHorse*` wrappers) carries `Stats` and follows its template or list."
     ]
   },
@@ -544,22 +517,6 @@
           }
         ],
         "quest": "aliases `HorseWild01…07` of `ccBGSSSE034_WildHorsesQuest` 000D65 (*Horse Whisperer*)"
-      },
-      {
-        "name": "Dwarven Horse",
-        "locations": [
-          {
-            "cell": {
-              "edid": "Tamriel",
-              "formKey": "00003C:Skyrim.esm"
-            },
-            "persistent": true,
-            "ref": {
-              "formKey": "0038D5:cctwbsse001-puzzledungeon.esm"
-            },
-            "note": "(−26, −9)"
-          }
-        ]
       }
     ]
   }

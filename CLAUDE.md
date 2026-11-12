@@ -115,7 +115,7 @@ rules).
   page) plus one `<family>.json` per family page; `census/bands.json` is the home page. The schema is
   `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
   everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons, Daedra** (all 13 pages, the
-  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05), Dragon Priests (one page, a family of `census/undead/`, 2026-11-12), Draugr (all 4 pages, `census/draugr/`), Skeletons (all 5 pages, `census/skeletons/`), Ghosts (all 4 pages, `census/ghosts/`) and Ash (all 4 pages, `census/ash/`), sub-groups of Undead, and the CC Zombies and Ayleid Undead (families of `census/undead/`): **Undead is fully migrated** (2026-11-12). Falmer (all 5 pages, `census/falmer/`, 2026-11-12). Automatons (all 6 pages, `census/automatons/`, 2026-11-12). Conjured (all 10 pages, 2026-11-12): `census/conjured/` is a parent with no families of its own, over the sub-groups `census/summoned-creatures/` and `census/summoned-npcs/`; its family pages carry a `summonedBy` table (spell, player source, NPC casters). World Creatures (all 47 pages, 2026-11-12): `census/world-creatures/` is a parent with no families of its own, over seven sub-groups `census/{animals,aquatic,beasts,insectoids,sentient,monsters,mounts}/`.
+  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05), Dragon Priests (one page, a family of `census/undead/`, 2026-11-12), Draugr (all 4 pages, `census/draugr/`), Skeletons (all 5 pages, `census/skeletons/`), Ghosts (all 4 pages, `census/ghosts/`) and Ash (all 4 pages, `census/ash/`), sub-groups of Undead, and the CC Zombies and Ayleid Undead (families of `census/undead/`): **Undead is fully migrated** (2026-11-12). Falmer (all 5 pages, `census/falmer/`, 2026-11-12). Automatons (all 6 pages, `census/automatons/`, 2026-11-12). Conjured (all 10 pages, 2026-11-12): `census/conjured/` is a parent with no families of its own, over the sub-groups `census/summoned-creatures/` and `census/summoned-npcs/`; its family pages carry a `summonedBy` table (spell, player source, NPC casters). World Creatures (all pages, 2026-11-12): `census/world-creatures/` is a parent with no families of its own, over seven sub-groups `census/{animals,aquatic,beasts,insectoids,sentient,monsters,mounts}/`.
   Every other group stays Confluence-first until it is migrated.
 - **A sub-group is its own census folder with `parent`** in its `group.json` (`census/vampires/` has
   `"parent": "undead"`); URLs stay flat (`/vampires/common-vampires/`), the parent's page lists its
@@ -251,8 +251,8 @@ rules).
   `PlayerFaction` allies), World Creatures (WD-65, **migrated to `census/world-creatures/` and its seven sub-group folders, so edit the JSON, not Confluence**; one level deeper, under
   sub-group pages **Animals** (Elk, Deer, Cow and Chicken merged into *Game & Livestock*, user 2026-11-12), **Aquatic**, **Beasts**, **Insectoids**, **Sentient** (giants, goblins,
   wisp mothers, spriggans, hagravens, rieklings), **Monsters** (trolls, ice wraiths, magic anomalies, gargoyles)
-  and **Mounts** (horses, unicorns, reindeer, and *Otherworldly Horses*: Arvak and the Daedric
-  Horses, summoned mounts included by the user's choice); there is no Forgotten Vale page, its creatures are on
+  and **Mounts** (horses, reindeer, and *Otherworldly Horses*: Arvak and the Daedric
+  Horses, summoned mounts included by the user's choice, plus the CC Dwarven Horse and Unicorn, user 2026-11-12); there is no Forgotten Vale page, its creatures are on
   their families' pages),
   Falmer (WD-66, **migrated to `census/falmer/`, so edit the JSON, not Confluence**: chaurus, Frozen Chaurus and chaurus hunters live under World Creatures → Insectoids;
   *Snow Elves* holds Vyrthur and Gelebor),

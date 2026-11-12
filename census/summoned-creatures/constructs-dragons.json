@@ -246,9 +246,9 @@
           }
         },
         "target": {
-          "band": "I",
+          "band": "VI",
           "status": "proposed",
-          "source": "role: a summon, banded at the level it takes from `DLC1EncHorseBone` (4); horses are not yet migrated"
+          "source": "user, 2026-11-12: Elite, as on Mounts → *Otherworldly Horses*"
         },
         "note": "also on World Creatures → Mounts → *Otherworldly Horses*."
       },
@@ -270,9 +270,9 @@
           "value": 50
         },
         "target": {
-          "band": "VII",
+          "band": "VI",
           "status": "proposed",
-          "source": "role: a summon, banded at its vanilla level (50)"
+          "source": "user, 2026-11-12: Elite, as on Mounts → *Otherworldly Horses*"
         },
         "note": "also on World Creatures → Mounts → *Otherworldly Horses*."
       },

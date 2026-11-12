@@ -32,9 +32,9 @@
           }
         },
         "target": {
-          "band": "I",
+          "band": "VI",
           "status": "proposed",
-          "source": "role: a summoned mount, banded at the level it takes from `DLC1EncHorseBone` (4), as on Conjured → *Constructs & Dragons*"
+          "source": "user, 2026-11-12: Elite"
         },
         "note": "also on Conjured → *Constructs & Dragons*."
       },
@@ -57,9 +57,9 @@
           "value": 25
         },
         "target": {
-          "band": "IV",
+          "band": "VI",
           "status": "proposed",
-          "source": "role: a Deadlands foe, banded at its vanilla level (25)"
+          "source": "user, 2026-11-12: Elite"
         }
       },
       {
@@ -81,11 +81,64 @@
           "value": 50
         },
         "target": {
-          "band": "VII",
+          "band": "VI",
           "status": "proposed",
-          "source": "role: a summoned mount, banded at its vanilla level (50), as on Conjured → *Constructs & Dragons*"
+          "source": "user, 2026-11-12: Elite"
         },
         "note": "also on Conjured → *Constructs & Dragons*."
+      },
+      {
+        "id": "dwarven-horse",
+        "name": "Dwarven Horse",
+        "records": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_DwarvenHorse",
+            "formKey": "0008FA:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "race": {
+          "edid": "HorseRace",
+          "formKey": "0131FD:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 50
+        },
+        "flags": [
+          "Invulnerable"
+        ],
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a mount, banded at its vanilla level (50)"
+        },
+        "note": "Forgotten Seasons (CC)."
+      },
+      {
+        "id": "unicorn",
+        "name": "Unicorn",
+        "records": [
+          {
+            "edid": "ccBGSSSE034_MountUnicorn",
+            "formKey": "000804:ccbgssse034-mntuni.esl"
+          }
+        ],
+        "race": {
+          "edid": "HorseRace",
+          "formKey": "0131FD:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 50
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a named mount, banded at its vanilla level (50)"
+        }
       }
     ]
   },
@@ -111,8 +164,8 @@
   "ownsLevel": {
     "confidence": "verified",
     "items": [
-      "The rows, `ccBGSSSE067_DaedricHorseRunScene` and `DLC1EncHorseBone` (which owns Arvak's level): no other record keeps its own level.",
-      "The other horse-race records with no template are on *Horse* (the Horse rows, Shadowmere, Frost, the Wild Horses, the Dwarven Horse) and *Unicorn*.",
+      "The rows, `ccBGSSSE067_DaedricHorseRunScene` and `DLC1EncHorseBone` (which owns Arvak's level): no other record keeps its own level. The Dwarven Horse and the Unicorn moved here from *Horse* and *Unicorn* (user, 2026-11-12).",
+      "The other horse-race records with no template are on *Horse* (the Horse rows, Shadowmere, Frost, the Wild Horses).",
       "Every other Soul Cairn horse (`DLC01SoulCairnHorseUnrideable`, `DLC01SoulCairnHorseScene`) carries `Stats` and follows `DLC1EncHorseBone`."
     ]
   },
@@ -200,6 +253,39 @@
         ],
         "notPlaced": true,
         "note": "summoned by the spell *Summon Daedric Horse* (`ccBGSSSE067_SummonDaedricHorse` 000B62:ccbgssse067-daedinv.esm, effect 000B63)"
+      },
+      {
+        "name": "Dwarven Horse",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "0038D5:cctwbsse001-puzzledungeon.esm"
+            },
+            "note": "(−26, −9)"
+          }
+        ]
+      },
+      {
+        "name": "Unicorn",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "000D7B:ccbgssse034-mntuni.esl"
+            },
+            "note": "(46, −22)"
+          }
+        ],
+        "quest": "alias `UnicornREF` of `ccBGSSSE034_UnicornQuest` 000DE8 (*Creature of Legend*) and `HorseWild08_UnicornREF` of `ccBGSSSE034_WildHorsesQuest` 000D65 (*Horse Whisperer*)"
       }
     ]
   }
