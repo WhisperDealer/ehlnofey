@@ -1,0 +1,63 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "forsworn",
+  "title": "Forsworn",
+  "order": 1,
+  "parent": "factions",
+  "meta": {
+    "spec": "archetype-tiers.md §3.1 and §4.1.5",
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The Forsworn of the Reach: the rank-and-file ladder, the Briarheart boss ladder and the named Forsworn of the Cidhna Mine and Markarth questlines, vanilla and CC. Forsworn gear is weak, so the levels carry the threat (archetype-tiers.md §3.1). Enemies that only take their level from a Forsworn list stay on their own kinds' pages, linked from each list row under *Drawn elsewhere*.",
+  "families": [
+    {
+      "id": "common-forsworn",
+      "holds": "the rank-and-file ladder: Forsworn 1 · Forager 6 · Looter 14 · Pillager 24 · Ravager 34 · Warlord 46, melee, archer and shaman; the `LvlForsworn*` wrappers; the CC Spell Knight wrappers"
+    },
+    {
+      "id": "forsworn-briarheart",
+      "holds": "the Briarheart boss ladder, melee and shaman: 7 · 16 · 27 · 38 · 51"
+    },
+    {
+      "id": "named-forsworn",
+      "holds": "the Cidhna Mine prisoners (Madanach, Borkul the Beast, Kaie and the rest), the Markarth agents of *The Forsworn Conspiracy*, the CC Dragonplate pack's Crowstooth and Alvasorr the Rat"
+    }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-11-12)",
+    "confidence": "verified",
+    "text": "Every `NPC_` and `LVLN` in `Skyrim.esm` whose EditorID holds \"Forsw\" (270 records), and every record in the five masters and the CC plugins that names one of them as its template or holds one as a list entry. Eight records outside the two Forsworn ladders take a Forsworn record or list as their template: the Champion of Boethiah, Silvia, the two Sanctuary Guardians, Moric Sidrey, Crowstooth and the CC Spell Knight's Daenella and her corpse. No list outside the Forsworn ones holds a Forsworn list."
+  },
+  "filedElsewhere": [
+    {
+      "record": "the hagravens",
+      "what": "hagravens",
+      "where": "World Creatures → Sentient → *Hagraven*"
+    },
+    {
+      "record": "the Forsworn dog `EncForswornDog`",
+      "what": "dog",
+      "where": "World Creatures → Animals → *Dog*"
+    },
+    {
+      "record": "the Sanctuary Guardians (Dawnstar Sanctuary)",
+      "what": "ghosts",
+      "where": "Undead → Ghosts → *Common Ghosts*"
+    },
+    {
+      "record": "the Champion of Boethiah",
+      "what": "Boethiah cultist",
+      "where": "Daedra → *Boethiah Cultists*"
+    },
+    {
+      "record": "Silvia (Darklight Tower)",
+      "what": "witch",
+      "where": "Warlocks → *Witches*"
+    },
+    {
+      "record": "Moric Sidrey `DLC1DunRuunvaldMoric`",
+      "what": "Vigilant",
+      "where": "Factions → Vigilants → *Named Vigilants*"
+    }
+  ]
+}

@@ -1019,6 +1019,7 @@ the list.
 - Lu'ah Al-Skaven and the Ritual Master: **50**, the warlock boss. ~~50~~ the Ritual Master **V Experienced** (user, 2026-11-12).
 - **Named Warlocks** (user, 2026-11-12): Thoron (CC) **VIII Fabled**; Naris the Wicked, Drelas, Faldrus, Ardwen, Ivara of Olenveld, Lushak gra-Ragdam and Modig Gilgar (CC) **V Experienced**; Selveni Nethri **IV Blooded** (the 50 pin is `dunSouthfringeBoss`'s, not hers); Taron Dreth **III Trained**. Sild's Assistant is dead when found and left out.
 - **Named Bandits** (user, 2026-11-12), superseding "a named bandit leader is a chief" (28): Ulfr the Blind **II Common**; Brandish, Eisa Blackthorn, Viparth, Remy, Erwan and Yakhtu gra-Orkulg (CC) **IV Blooded**; Captain Hargar, Ghunzul, the Bandit Leader (Fjola), Celeste, Urgnok, Neski Skull-Sabre (CC) and Elberon's Apprentice **V Experienced**. Kyr stays 1; Kinthal and Svarig (CC) stay on the chief 28; Evethra IV.
+- **Named Forsworn** (user, 2026-11-12), superseding the level-25 rule for them: Madanach and Borkul the Beast **VI Elite**; Kaie, Crowstooth and Alvasorr the Rat (CC) **V Experienced**; Braig, Odvan, Uraccen, Duach, Uaile and Nana Ildene **IV Blooded**; Tynan, Morven and Donnel **III Trained**; Nepos the Nose **II Common**; Weylin stays 3, **I Weak**.
 - Rulindil and Estormo: **44**, the Thalmor wizard.
 - **The Volkihar court: 53**, the Volkihar Master Vampire. Orthjolf, Vingalmo, Malkus, Hestla, Rargal and Feran take
   `Stats` from `DLC1EncVampireTemplate` and its magic and missile variants.

@@ -335,7 +335,7 @@
               }
             ],
             "how": "template",
-            "where": "Factions → Forsworn → *Forsworn Briarheart*",
+            "page": "forsworn/forsworn-briarheart",
             "note": "the list's own users: `LvlForswornBossShaman` is also Silvia's template"
           }
         ]

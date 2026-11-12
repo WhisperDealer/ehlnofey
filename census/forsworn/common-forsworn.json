@@ -1,0 +1,321 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "common-forsworn",
+  "group": "forsworn",
+  "title": "Common Forsworn",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "forsworn",
+        "name": "Forsworn",
+        "records": [
+          { "edid": "EncForsworn01TemplateMelee", "formKey": "023AA9:Skyrim.esm" },
+          { "edid": "EncForsworn01TemplateMissile", "formKey": "043BE3:Skyrim.esm" }
+        ],
+        "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
+        "level": { "kind": "fixed", "value": 1 },
+        "target": { "band": "IV", "status": "proposed", "source": "bands-of-power.md: low-level Forsworn" },
+        "note": "name from `EncForsworn00Template` 043BDC. archetype-tiers.md §3.1 (WD-43) drops the plain level-1 Forsworn from the rebuilt lists, as the level-1 bandit was."
+      },
+      {
+        "id": "forsworn-shaman",
+        "name": "Forsworn Shaman",
+        "records": [
+          { "edid": "EncForsworn01TemplateMagic", "formKey": "043BEA:Skyrim.esm" }
+        ],
+        "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
+        "level": { "kind": "fixed", "value": 1 },
+        "target": { "band": "IV", "status": "proposed", "source": "bands-of-power.md: low-level Forsworn" }
+      },
+      {
+        "id": "forsworn-forager",
+        "name": "Forsworn Forager",
+        "records": [
+          { "edid": "EncForsworn02TemplateMelee", "formKey": "043BEE:Skyrim.esm" },
+          { "edid": "EncForsworn02TemplateMissile", "formKey": "043BEF:Skyrim.esm" },
+          { "edid": "EncForsworn02TemplateMagic", "formKey": "043BF0:Skyrim.esm" }
+        ],
+        "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
+        "level": { "kind": "fixed", "value": 6 },
+        "target": { "band": "IV", "status": "proposed", "source": "bands-of-power.md: low-level Forsworn" }
+      },
+      {
+        "id": "forsworn-looter",
+        "name": "Forsworn Looter",
+        "records": [
+          { "edid": "EncForsworn03TemplateMelee", "formKey": "044263:Skyrim.esm" },
+          { "edid": "EncForsworn03TemplateMissile", "formKey": "044264:Skyrim.esm" },
+          { "edid": "EncForsworn03TemplateMagic", "formKey": "044262:Skyrim.esm" }
+        ],
+        "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
+        "level": { "kind": "fixed", "value": 14 },
+        "target": { "band": "IV", "status": "proposed", "source": "bands-of-power.md: low-level Forsworn" }
+      },
+      {
+        "id": "forsworn-pillager",
+        "name": "Forsworn Pillager",
+        "records": [
+          { "edid": "EncForsworn04TemplateMelee", "formKey": "044275:Skyrim.esm" },
+          { "edid": "EncForsworn04TemplateMissile", "formKey": "044276:Skyrim.esm" },
+          { "edid": "EncForsworn04TemplateMagic", "formKey": "044274:Skyrim.esm" }
+        ],
+        "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
+        "level": { "kind": "fixed", "value": 24 },
+        "target": { "band": "V", "status": "proposed", "source": "bands-of-power.md: Forsworn" }
+      },
+      {
+        "id": "forsworn-ravager",
+        "name": "Forsworn Ravager",
+        "records": [
+          { "edid": "EncForsworn05TemplateMelee", "formKey": "044287:Skyrim.esm" },
+          { "edid": "EncForsworn05TemplateMissile", "formKey": "044288:Skyrim.esm" },
+          { "edid": "EncForsworn05TemplateMagic", "formKey": "044286:Skyrim.esm" }
+        ],
+        "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
+        "level": { "kind": "fixed", "value": 34 },
+        "target": { "band": "V", "status": "proposed", "source": "bands-of-power.md: Forsworn" }
+      },
+      {
+        "id": "forsworn-warlord",
+        "name": "Forsworn Warlord",
+        "records": [
+          { "edid": "EncForsworn06TemplateMelee", "formKey": "044299:Skyrim.esm" },
+          { "edid": "EncForsworn06TemplateMissile", "formKey": "04429A:Skyrim.esm" },
+          { "edid": "EncForsworn06TemplateMagic", "formKey": "044298:Skyrim.esm" }
+        ],
+        "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
+        "level": { "kind": "fixed", "value": 46 },
+        "target": { "band": "VI", "status": "proposed", "source": "the top rung, banded with the Briarhearts (bands-of-power.md)" },
+        "note": "never met: no list or record draws its `LCharForsworn06*` lists and it is not placed. Kept because its Melee and Magic templates are the rung-06 Briarhearts' templates."
+      },
+      {
+        "id": "cc-forsworn-ravager",
+        "name": "Forsworn Ravager (CC)",
+        "records": [
+          { "edid": "ccEDHSSE002_LvlForswornMeleeFemale", "formKey": "000847:ccedhsse002-splkntset.esl" }
+        ],
+        "level": {
+          "kind": "list",
+          "from": { "edid": "LCharForswornMeleeFemale", "formKey": "0442C8:Skyrim.esm" },
+          "rungs": [1, 6, 14, 24, 34]
+        },
+        "target": { "band": "V", "status": "proposed", "source": "bands-of-power.md: Forsworn" },
+        "note": "the Spell Knight pack's wrapper; its own name, Forsworn Ravager, at every rung."
+      },
+      {
+        "id": "cc-forsworn-shaman",
+        "name": "Forsworn Shaman (CC)",
+        "records": [
+          { "edid": "ccEDHSSE002_LvlForswornShaman", "formKey": "000845:ccedhsse002-splkntset.esl" }
+        ],
+        "level": {
+          "kind": "list",
+          "from": { "edid": "LCharForswornShaman", "formKey": "01E795:Skyrim.esm" },
+          "rungs": [1, 6, 14, 24, 34]
+        },
+        "target": { "band": "IV", "status": "proposed", "source": "bands-of-power.md: low-level Forsworn" },
+        "note": "the Spell Knight pack's wrapper; its own name, Forsworn Shaman, at every rung."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncForsworn01TemplateMelee` 023AA9 also needs `ccBGSSSE059_Crowstooth` 00086D:ccbgssse059-ba_dragonplate.esl (PC × 1.25, min 25, max 100): it uses 023AA9 as its template but not for `Stats` (on *Named Forsworn*).",
+      "Changing `EncForsworn01TemplateMissile` 043BE3 also needs `ccEDHSSE002_Daenella` 000877:ccedhsse002-splkntset.esl and `ccEDHSSE002_DaenellaCorpse` 00080E:ccedhsse002-splkntset.esl (the Spell Knight quest NPC and her corpse, level 1): same pattern (on no census page).",
+      "Changing the Melee or Magic template of rungs 02–06 also needs that rung's Briarheart: `EncForsworn02TemplateBossMelee` 04430B · `…BossMagic` 04430A (7), `03` 04430D · 04430C (16), `04` 04430F · 04430E (27), `05` 044311 · 044310 (38), `06` 044313 · 044312 (51): each uses the rung template as its template but not for `Stats` (on *Forsworn Briarheart*).",
+      "`EncForsworn01TemplateMagic`, the Missile templates of rungs 02–06 and the two CC wrappers: no other record keeps its own level.",
+      "Every other Forsworn record (the Breton and Berserk variants of each rung, the two `TreasCorpseForsworn*` corpses and every `LvlForsworn*` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": { "edid": "LCharForswornMelee1H", "formKey": "01E792:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "entries": [
+          { "at": 1, "label": "Forsworn (`LCharForsworn01MeleeF` 0442AB, `…MeleeM` 0442AA ×2)" },
+          { "at": 6, "label": "Forsworn Forager (0442AC, 0442AD ×2)" },
+          { "at": 14, "label": "Forsworn Looter (0442AE, 0442AF ×2)" },
+          { "at": 24, "label": "Forsworn Pillager (0442B0, 0442B1 ×2)" },
+          { "at": 34, "label": "Forsworn Ravager (0442B2, 0442B3 ×2)" }
+        ],
+        "note": "per rung one female and two male picks; the male lists include the `EncForsworn0{1–5}Melee1HBretonBerserk` variant.",
+        "owner": "`LvlForswornMelee` 01E7B5 (also `WE05` 098B52, `WEJS03` 0B5D46, `WEJS04` 0B5D5E) → `LvlForswornMeleeAmbush` 09FF74 · `LvlForswornMeleeHoldPosition256UntilReleased` 106E3D; `LvlForswornMeleeBerserker` 03E085 → `…Aggro1024` 0317D3 · `…Ambush` 0A064C → `dunRedEagle_LvlForswornMeleeBerserkerAmbushRush` 09FF75; `LvlForswornMeleeGuard` 0442CB; `LvlForswornMeleePoisoner` 03E089 → `…Ambush` 0345A3; `LvlForswornMeleePoisonerAggro1024` 0317D8; `LvlForswornMelee_Aggro1024` 0C24BB; `LvlForswornMelee_Hold256` 104B55; `dunDruadachRedoubt_LvlForswornMelee` 083F77; `dunLostValleyRedoubForswornBerserker` 0B3B95; `WEForswornMeleeNoFaction` 0A0713 (not placed)",
+        "drawnBy": [
+          {
+            "name": "Sanctuary Guardian",
+            "records": [
+              { "edid": "dunDawnstarSanctuary_LvlBrotherhoodSentry", "formKey": "0942CC:Skyrim.esm" }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken, through `LvlForswornMeleeBerserker` 03E085"
+          }
+        ]
+      },
+      {
+        "list": { "edid": "LCharForswornMeleeFemale", "formKey": "0442C8:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "entries": [
+          { "at": 1, "label": "Forsworn (`LCharForsworn01MeleeF` 0442AB)" },
+          { "at": 6, "label": "Forsworn Forager (0442AC)" },
+          { "at": 14, "label": "Forsworn Looter (0442AE)" },
+          { "at": 24, "label": "Forsworn Pillager (0442B0)" },
+          { "at": 34, "label": "Forsworn Ravager (0442B2)" }
+        ],
+        "owner": "`LvlForswornMeleeFemale` 0442CA (also `WE05`); `ccEDHSSE002_LvlForswornMeleeFemale` 000847:ccedhsse002-splkntset.esl"
+      },
+      {
+        "list": { "edid": "LCharForswornMissile", "formKey": "01E794:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "entries": [
+          { "at": 1, "label": "Forsworn (`LCharForsworn01MissileF` 0442BC, `…MissileM` 0442BD ×2)" },
+          { "at": 6, "label": "Forsworn Forager (0442BF, 0442C0 ×2)" },
+          { "at": 14, "label": "Forsworn Looter (0442C1, 0442C2 ×2)" },
+          { "at": 24, "label": "Forsworn Pillager (0442C3, 0442C4 ×2)" },
+          { "at": 34, "label": "Forsworn Ravager (0442C5, 0442C6 ×2)" }
+        ],
+        "note": "per rung one female and two male picks.",
+        "owner": "`LvlForswornMissile` 01E7B7 (also `WEJS03`, `WEJS04`) → `…Aggro1024` 0B41FC · `…Aggro2500` 0B41FD · `…HoldPosition64UntilReleased` 0C291B · `…HoldPosition128UntilReleased` 0C291A (not placed) · `…HoldPosition256UntilReleased` 0A08CD (→ `dunDeepwood_LvlForswornMissileGateGuard` 0A4FFD) · `…HoldPosition512UntilReleased` 106E39 · `…HoldPosition768UntilReleased` 0C22CE · `LvlForswornMissileAmbush` 09FF83 (→ `…AmbushHoldPosition64UntilReleased` 0C22C7, `…AmbushHoldPosition256UntilReleased` 0C232B (not placed), `dunRedEagle_LvlForswornMissileAmbushHoldPositionRunner` 09FF6C) · `dunDeepwood_LvlForswornMissileAmbushTargetPractice` 0A4E60 · `dunDeepwood_LvlForswornMissilePullLever` 09A933 · `dunDeepwood_LvlForswornMissileSentry` 096EE3 · `dunRedEagle_LvlForswornMissilePullBar` 0C22F9; `LvlForswornMissilePoisoner` 03E08A; `LvlForswornMissilePoisoner_Hold256` 0C24B6; `LvlForswornMissile_Hold256` 0C24B5; `dunDruadachRedoubt_LvlForswornMissile` 083F7B; `WEForswornMissileNoFaction` 0A0714 (not placed)",
+        "drawnBy": [
+          {
+            "name": "Sanctuary Guardian (archer)",
+            "records": [
+              { "edid": "dunDawnstarSanctuary_LvlBrotherhoodSentryMissile", "formKey": "0D5451:Skyrim.esm" }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken, through `LvlForswornMissile` 01E7B7"
+          }
+        ]
+      },
+      {
+        "list": { "edid": "LCharForswornMissileFemale", "formKey": "0442C9:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "entries": [
+          { "at": 1, "label": "Forsworn (`LCharForsworn01MissileF` 0442BC)" },
+          { "at": 6, "label": "Forsworn Forager (0442BF)" },
+          { "at": 14, "label": "Forsworn Looter (0442C1)" },
+          { "at": 24, "label": "Forsworn Pillager (0442C3)" },
+          { "at": 34, "label": "Forsworn Ravager (0442C5)" }
+        ],
+        "owner": "`LvlForswornMissileFemale` 03F8D4; `dunDruadachRedoubt_LvlForswornMissileFemale` 0E360A"
+      },
+      {
+        "list": { "edid": "LCharForswornShaman", "formKey": "01E795:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "entries": [
+          { "at": 1, "label": "Forsworn Shaman (`LCharForsworn01Magic` 0442B6)" },
+          { "at": 6, "label": "Forsworn Forager (0442B7)" },
+          { "at": 14, "label": "Forsworn Looter (0442B8)" },
+          { "at": 24, "label": "Forsworn Pillager (0442B9)" },
+          { "at": 34, "label": "Forsworn Ravager (0442BA)" }
+        ],
+        "owner": "`LvlForswornShaman` 01E7B8 → `…Aggro1024` 0317D5 · `…Ambush` 09FF88; `LvlForswornShamanGuard` 03E087; `LvlForswornShaman_Hold256` 04C26A; `WEForswornShamanNoFaction` 0A0715 (not placed); `ccEDHSSE002_LvlForswornShaman` 000845:ccedhsse002-splkntset.esl"
+      },
+      {
+        "list": { "label": "`LCharForsworn06Magic` 0442BB · `…MeleeF` 0442B4 · `…MeleeM` 0442B5 · `…MissileF` 0442C7 · `…MissileM` 0442BE" },
+        "entries": [
+          { "at": 1, "label": "Forsworn Warlord (46)" }
+        ],
+        "owner": "none: no list or record draws them"
+      },
+      {
+        "list": { "edid": "LCharForswordBerserker", "formKey": "0F961C:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "entries": [
+          { "at": 1, "label": "the Berserk variants of rungs 01 and 06" },
+          { "at": 6, "label": "rung 02" },
+          { "at": 14, "label": "rung 03" },
+          { "at": 24, "label": "rung 04" },
+          { "at": 34, "label": "rung 05" }
+        ],
+        "owner": "none: no list or record draws it"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      { "name": "Forsworn Warlord", "notPlaced": true }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Melee, rungs 01–06 (`EncForsworn0{1–6}TemplateMelee`; the `…Melee1HBreton*` variants take it, the Berserk variants carry the same on their own record)",
+        "weapons": "`LItemForswornWeapon1H` 043BD5 ×2",
+        "armor": "`ForswornArmorMeleeOutfit` 043BD9",
+        "skin": "Breton race default"
+      },
+      {
+        "records": "Archer, rungs 01–06 (`EncForsworn0{1–6}TemplateMissile`)",
+        "weapons": "`LItemForswornWeaponMissile` 043BD8 · `LootForswornArrows15` 06A3CD · `LItemWeaponDaggerForsworn` 10FABF",
+        "armor": "`ForswornArmorMeleeOutfit` 043BD9",
+        "skin": "Breton race default"
+      },
+      {
+        "records": "Magic, rungs 01–02 (`EncForsworn0{1–2}TemplateMagic`)",
+        "weapons": "`LItemWeaponDaggerForsworn` 10FABF",
+        "armor": "`ForswornArmorMeleeOutfit` 043BD9",
+        "skin": "Breton race default"
+      },
+      {
+        "records": "Magic, rungs 03–06 (`EncForsworn0{3–6}TemplateMagic`)",
+        "weapons": "`LItemWeaponDagger` 017178",
+        "armor": "`ForswornArmorMeleeOutfit` 043BD9",
+        "skin": "Breton race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": { "edid": "ForswornArmorMeleeOutfit", "formKey": "043BD9:Skyrim.esm" },
+        "rolls": "Forsworn Boots (`LItemForswornBoots` 043BD4) · Forsworn Armor (`LItemForswornCuirass` 043BCE) · 50% Forsworn Gauntlets (`LItemForswornGauntlets50` 0647B0) · 50% Forsworn Headdress (`LItemForswornHelmet50` 0647B2); all at 1"
+      },
+      {
+        "list": { "edid": "LItemForswornWeapon1H", "formKey": "043BD5:Skyrim.esm" },
+        "rolls": "Forsworn Axe 0CC829 · Forsworn Sword 0CADE9 (1)"
+      },
+      {
+        "list": { "edid": "LItemForswornWeaponMissile", "formKey": "043BD8:Skyrim.esm" },
+        "rolls": "all of: Forsworn Bow 0CEE9B · 1 Forsworn Arrow 0CEE9E · `LItemForswornArrows` 10FABD (22, 15 or 12 Forsworn Arrows, each 75% via `BaseArrowForsworn75` 10FABE)"
+      },
+      {
+        "list": { "edid": "LootForswornArrows15", "formKey": "06A3CD:Skyrim.esm" },
+        "rolls": "15%: `LItemArrowsAll` 068839 (12 arrows, each 75%: iron 1 · steel 3 · orcish 6 · dwarven 12 · elven 19 · glass 27 · ebony 36 · daedric 46)"
+      },
+      {
+        "list": { "edid": "LItemWeaponDaggerForsworn", "formKey": "10FABF:Skyrim.esm" },
+        "rolls": "Iron Dagger 1 · Steel Dagger 4 · Orcish Dagger 10"
+      },
+      {
+        "list": { "edid": "LItemWeaponDagger", "formKey": "017178:Skyrim.esm" },
+        "rolls": "Iron 1 · Steel 2 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46 (`SublistWeaponDaggerDaedric05` 000F0F)"
+      },
+      {
+        "list": { "label": "`ForswornArmorMissileOutfit` 043BDA · `ForswornArmorMagicOutfit` 043BDB · `ForswornArmorBossOutfit` 044314" },
+        "rolls": "unused: no record wears them"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      { "item": "Forsworn Armor `ForswornCuirass` 0D8D50 · Boots 0D8D4E · Gauntlets 0D8D55 · Headdress `ForswornHelmet` 0D8D52", "kind": "light, AR 26 · 7 · 7 · 12", "playable": true },
+      { "item": "Forsworn Axe 0CC829 · Forsworn Sword 0CADE9 · Forsworn Bow 0CEE9B · Forsworn Arrow 0CEE9E", "kind": "one-handed, bow, arrow", "playable": true },
+      { "item": "the daggers and `LItemArrowsAll` arrows", "kind": "vanilla tiers", "playable": true }
+    ]
+  }
+}

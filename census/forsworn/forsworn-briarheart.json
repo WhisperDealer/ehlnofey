@@ -1,0 +1,193 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "forsworn-briarheart",
+  "group": "forsworn",
+  "title": "Forsworn Briarheart",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "briarheart-02",
+        "name": "Forsworn Briarheart",
+        "records": [
+          { "edid": "EncForsworn02TemplateBossMelee", "formKey": "04430B:Skyrim.esm" },
+          { "edid": "EncForsworn02TemplateBossMagic", "formKey": "04430A:Skyrim.esm" }
+        ],
+        "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
+        "level": { "kind": "fixed", "value": 7 },
+        "target": { "band": "VI", "level": 38, "status": "proposed", "source": "archetype-tiers.md §3.1.1 (WD-43, user): one name, one level; every Briarheart rung pinned to 38" }
+      },
+      {
+        "id": "briarheart-03",
+        "name": "Forsworn Briarheart",
+        "records": [
+          { "edid": "EncForsworn03TemplateBossMelee", "formKey": "04430D:Skyrim.esm" },
+          { "edid": "EncForsworn03TemplateBossMagic", "formKey": "04430C:Skyrim.esm" }
+        ],
+        "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
+        "level": { "kind": "fixed", "value": 16 },
+        "target": { "band": "VI", "level": 38, "status": "proposed", "source": "archetype-tiers.md §3.1.1 (WD-43, user): one name, one level; every Briarheart rung pinned to 38" }
+      },
+      {
+        "id": "briarheart-04",
+        "name": "Forsworn Briarheart",
+        "records": [
+          { "edid": "EncForsworn04TemplateBossMelee", "formKey": "04430F:Skyrim.esm" },
+          { "edid": "EncForsworn04TemplateBossMagic", "formKey": "04430E:Skyrim.esm" }
+        ],
+        "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
+        "level": { "kind": "fixed", "value": 27 },
+        "target": { "band": "VI", "level": 38, "status": "proposed", "source": "archetype-tiers.md §3.1.1 (WD-43, user): one name, one level; every Briarheart rung pinned to 38" }
+      },
+      {
+        "id": "briarheart-05",
+        "name": "Forsworn Briarheart",
+        "records": [
+          { "edid": "EncForsworn05TemplateBossMelee", "formKey": "044311:Skyrim.esm" },
+          { "edid": "EncForsworn05TemplateBossMagic", "formKey": "044310:Skyrim.esm" }
+        ],
+        "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
+        "level": { "kind": "fixed", "value": 38 },
+        "target": { "band": "VI", "level": 38, "status": "proposed", "source": "archetype-tiers.md §3.1.1 (WD-43, user): one name, one level; every Briarheart rung pinned to 38" }
+      },
+      {
+        "id": "briarheart-06",
+        "name": "Forsworn Briarheart",
+        "records": [
+          { "edid": "EncForsworn06TemplateBossMelee", "formKey": "044313:Skyrim.esm" },
+          { "edid": "EncForsworn06TemplateBossMagic", "formKey": "044312:Skyrim.esm" }
+        ],
+        "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
+        "level": { "kind": "fixed", "value": 51 },
+        "target": { "band": "VI", "level": 38, "status": "proposed", "source": "archetype-tiers.md §3.1.1 (WD-43, user): one name, one level; every Briarheart rung pinned to 38" }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "All ten records: no other record keeps its own level. Each uses its rung's `EncForsworn0NTemplateMelee` or `…Magic` as its template but not for `Stats`, so changing a common rung (on *Common Forsworn*) does not move the Briarheart.",
+      "Every other Briarheart record (the `EncForsworn0{2–6}BossMelee1HBretonM0*` and `…BossMagicBretonM0*` variants, and `DLC1DunRuunvaldMoric` 019582:Dawnguard.esm, Moric Sidrey on *Named Vigilants*, which follows the rung-02 melee boss variant `EncForsworn02BossMelee1HBretonM01` 0442D7) carries `Stats` and follows its template."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": { "edid": "LCharForswornBossMelee1H", "formKey": "0442F2:Skyrim.esm" },
+        "gate": "highest gate only",
+        "entries": [
+          { "at": 1, "label": "rung 02 (7) (`SubCharForsworn02BossMelee` 0442F3)" },
+          { "at": 6, "label": "rung 02 (7)" },
+          { "at": 14, "label": "rung 02 (7)" },
+          { "at": 24, "label": "rung 03 (16) (0442F6)" },
+          { "at": 34, "label": "rung 04 (27) (0442F8)" },
+          { "at": 46, "label": "rung 05 (38) (0442FA)" },
+          { "at": 58, "label": "rung 06 (51) (0442FC)" }
+        ],
+        "owner": "`LvlForswornBoss` 0442D2; `LvlForswornBossAmbush` 0A4E5C → `dunRedEagle_LvlForswornBossAmbush` 09FF4C; `dunLostValley_LvlForswornBossAmbush` 0B3BD0; `ccEDHSSE002_LvlForswornBoss` 0008A4:ccedhsse002-splkntset.esl",
+        "drawnBy": [
+          {
+            "name": "Champion of Boethiah",
+            "records": [
+              { "edid": "DA02Champion", "formKey": "0834FE:Skyrim.esm" }
+            ],
+            "how": "template",
+            "page": "daedra/boethiah-cultists",
+            "note": "`Stats` taken, through `LvlForswornBoss` 0442D2"
+          }
+        ]
+      },
+      {
+        "list": { "edid": "LCharForswornBossShaman", "formKey": "0442FD:Skyrim.esm" },
+        "gate": "highest gate only",
+        "entries": [
+          { "at": 1, "label": "rung 02 (7) (`SubCharForsworn02BossMagic` 0442F4)" },
+          { "at": 6, "label": "rung 02 (7)" },
+          { "at": 14, "label": "rung 02 (7)" },
+          { "at": 24, "label": "rung 03 (16) (0442F5)" },
+          { "at": 34, "label": "rung 04 (27) (0442F7)" },
+          { "at": 46, "label": "rung 05 (38) (0442F9)" },
+          { "at": 58, "label": "rung 06 (51) (0442FB)" }
+        ],
+        "owner": "`LvlForswornBossShaman` 0442D3; `dunDruadachRedoubt_LvlForswornBoss` 083F78",
+        "drawnBy": [
+          {
+            "name": "Silvia",
+            "records": [
+              { "edid": "dunDarklightSilvia", "formKey": "04B0AE:Skyrim.esm" }
+            ],
+            "how": "template",
+            "page": "warlocks/witches",
+            "note": "`Stats` taken, through `LvlForswornBossShaman` 0442D3"
+          }
+        ]
+      },
+      {
+        "list": { "label": "`SubCharForsworn0{2–6}BossMelee` · `…BossMagic` 0442F3–0442FC" },
+        "entries": [
+          { "at": 1, "label": "one of the rung's two or three Breton variants (`EncForsworn0{2–6}BossMelee1HBretonM0*`, `…BossMagicBretonM0*`)" }
+        ],
+        "owner": "the two lists above"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Melee, rungs 02–05 (`EncForsworn0{2–5}TemplateBossMelee`; the variants take it)",
+        "weapons": "`LItemForswornBossWeapon1H` 044303 ×2",
+        "armor": "`SkinBriarHeart` 07EABC",
+        "skin": "Breton race default"
+      },
+      {
+        "records": "Melee, rung 06 (`EncForsworn06TemplateBossMelee` 044313)",
+        "weapons": "`LItemForswornWeapon1H` 043BD5 ×2",
+        "armor": "`SkinBriarHeart` 07EABC",
+        "skin": "Breton race default"
+      },
+      {
+        "records": "Shaman, rungs 02–06 (`EncForsworn0{2–6}TemplateBossMagic`)",
+        "weapons": "`LItemWeaponDaggerBoss` 08CA38",
+        "armor": "`SkinBriarHeart` 07EABC",
+        "skin": "Breton race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": { "edid": "SkinBriarHeart", "formKey": "07EABC:Skyrim.esm" },
+        "rolls": "outfit: `ArmorBriarHeart` 05D008 · Forsworn Boots 0D8D4E · Forsworn Headdress 0D8D52"
+      },
+      {
+        "list": { "edid": "LItemForswornBossWeapon1H", "formKey": "044303:Skyrim.esm" },
+        "gate": "highest gate only",
+        "rolls": "`LItemForswornBossSword` 044301 or `LItemForswornBossWarAxe` 044302, each: Forsworn Sword or Axe 1 · Orcish 6 · enchanted Steel 9 · plain Dwarven or enchanted Orcish 12 · plain Elven or enchanted Dwarven 19 · plain Glass or enchanted Elven 27 · plain Ebony or enchanted Glass 36"
+      },
+      {
+        "list": { "edid": "LItemForswornWeapon1H", "formKey": "043BD5:Skyrim.esm" },
+        "rolls": "Forsworn Axe 0CC829 · Forsworn Sword 0CADE9 (1)"
+      },
+      {
+        "list": { "edid": "LItemWeaponDaggerBoss", "formKey": "08CA38:Skyrim.esm" },
+        "gate": "highest gate only",
+        "rolls": "Steel 1 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      { "item": "`ArmorBriarHeart` 05D008", "kind": "body slot, clothing, AR 5 (the briar-heart chest)", "playable": false, "note": "`NonPlayable`" },
+      { "item": "Forsworn Boots 0D8D4E · Forsworn Headdress 0D8D52", "kind": "light, AR 7 · 12", "playable": true },
+      { "item": "Forsworn Sword · Axe, the boss swords and war axes (plain and enchanted), the boss daggers", "kind": "one-handed", "playable": true }
+    ]
+  }
+}

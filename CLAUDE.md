@@ -116,6 +116,7 @@ rules).
   `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
   everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons, Daedra** (all 13 pages, the
   Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05), Dragon Priests (one page, a family of `census/undead/`, 2026-11-12), Draugr (all 4 pages, `census/draugr/`), Skeletons (all 5 pages, `census/skeletons/`), Ghosts (all 4 pages, `census/ghosts/`) and Ash (all 4 pages, `census/ash/`), sub-groups of Undead, and the CC Zombies and Ayleid Undead (families of `census/undead/`): **Undead is fully migrated** (2026-11-12). Falmer (all 5 pages, `census/falmer/`, 2026-11-12). Automatons (all 6 pages, `census/automatons/`, 2026-11-12). Conjured (all 10 pages, 2026-11-12): `census/conjured/` is a parent with no families of its own, over the sub-groups `census/summoned-creatures/` and `census/summoned-npcs/`; its family pages carry a `summonedBy` table (spell, player source, NPC casters). World Creatures (all pages, 2026-11-12): `census/world-creatures/` is a parent with no families of its own, over seven sub-groups `census/{animals,aquatic,beasts,insectoids,sentient,monsters,mounts}/`. Warlocks (all 9 pages, `census/warlocks/`, 2026-11-12). Bandits (all 7 pages, `census/bandits/`, 2026-11-12; *Bandit Gangs* split from *Common Bandits* by the user).
+  Factions (2026-11-12): `census/factions/` is a parent with no families of its own, one sub-group per faction as each migrates; so far Forsworn (all 4 pages, `census/forsworn/`).
 - **Lists borrowed across pages** (user, 2026-11-12): a list row's `drawnBy` names every record filed on another page that draws the list (as its template, or an `LVLN` holding it as an entry), with `page` (`<group>/<family>`, a migrated page, linked on the site and checked by `npm run schema`) or `where` (a Confluence-only page, as text). Warlocks and Bandits lend their lists widely (the Vaermina Devotees draw `LCharWarlockStorm`); find drawers in the game files across all masters and CC plugins, not only in the census.
   Every other group stays Confluence-first until it is migrated.
 - **A sub-group is its own census folder with `parent`** in its `group.json` (`census/vampires/` has
@@ -260,7 +261,7 @@ rules).
   their families' pages),
   Falmer (WD-66, **migrated to `census/falmer/`, so edit the JSON, not Confluence**: chaurus, Frozen Chaurus and chaurus hunters live under World Creatures → Insectoids;
   *Snow Elves* holds Vyrthur and Gelebor),
-  Forsworn (WD-67: *Common Forsworn*, *Forsworn Briarheart*, *Named Forsworn* (the Cidhna Mine
+  Forsworn (WD-67, **migrated to `census/forsworn/`, a sub-group of `census/factions/`, so edit the JSON, not Confluence**: *Common Forsworn*, *Forsworn Briarheart*, *Named Forsworn* (the Cidhna Mine
   prisoners, the MS01 Markarth agents, CC Crowstooth and Alvasorr); the hagravens live under World
   Creatures → Sentient, the Forsworn dog on *Dog*), Werebeasts (WD-68, **migrated to `census/werebeasts/`, so edit the JSON, not Confluence**:
   *Werewolf* (the six-rung ladder), *Werewolf Boss* (the boss ladder, Sinding, Arnbjorn), *Werebear*

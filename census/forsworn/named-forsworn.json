@@ -1,0 +1,590 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "named-forsworn",
+  "group": "forsworn",
+  "title": "Named Forsworn",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "madanach",
+        "name": "Madanach",
+        "records": [
+          {
+            "edid": "Madanach",
+            "formKey": "0133A7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Madanach to Elite"
+        }
+      },
+      {
+        "id": "borkul",
+        "name": "Borkul the Beast",
+        "records": [
+          {
+            "edid": "Borkul",
+            "formKey": "01338A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Borkul the Beast to Elite"
+        }
+      },
+      {
+        "id": "kaie",
+        "name": "Kaie",
+        "records": [
+          {
+            "edid": "MS02Kaie",
+            "formKey": "054882:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Kaie to Experienced"
+        }
+      },
+      {
+        "id": "cidhna-prisoners",
+        "name": "Braig · Odvan · Uraccen",
+        "records": [
+          {
+            "edid": "Braig",
+            "formKey": "013389:Skyrim.esm"
+          },
+          {
+            "edid": "Odvan",
+            "formKey": "0133AC:Skyrim.esm"
+          },
+          {
+            "edid": "Uraccen",
+            "formKey": "0133BD:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 30
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Braig · Odvan · Uraccen stay Blooded"
+        }
+      },
+      {
+        "id": "duach",
+        "name": "Duach",
+        "records": [
+          {
+            "edid": "Duach",
+            "formKey": "013393:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.5,
+          "min": 1,
+          "max": 30
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Duach to Blooded"
+        }
+      },
+      {
+        "id": "nepos",
+        "name": "Nepos the Nose",
+        "records": [
+          {
+            "edid": "Nepos",
+            "formKey": "0133AA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 25
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Nepos the Nose to Common"
+        }
+      },
+      {
+        "id": "uaile-ildene",
+        "name": "Uaile · Nana Ildene",
+        "records": [
+          {
+            "edid": "Uaile",
+            "formKey": "0133BC:Skyrim.esm"
+          },
+          {
+            "edid": "Ildene",
+            "formKey": "0133A0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 25
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Uaile · Nana Ildene to Blooded"
+        }
+      },
+      {
+        "id": "markarth-agents",
+        "name": "Tynan · Morven · Donnel",
+        "records": [
+          {
+            "edid": "Tynan",
+            "formKey": "0D6718:Skyrim.esm"
+          },
+          {
+            "edid": "Morven",
+            "formKey": "0D6719:Skyrim.esm"
+          },
+          {
+            "edid": "Donnel",
+            "formKey": "0D673A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 1,
+          "max": 6
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Tynan · Morven · Donnel to Trained"
+        }
+      },
+      {
+        "id": "weylin",
+        "name": "Weylin",
+        "records": [
+          {
+            "edid": "MS01Weylin",
+            "formKey": "09C8AA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 3
+        },
+        "target": {
+          "band": "I",
+          "level": 3,
+          "status": "proposed",
+          "source": "user, 2026-11-12: Weylin stays Weak"
+        }
+      },
+      {
+        "id": "crowstooth",
+        "name": "Crowstooth",
+        "records": [
+          {
+            "edid": "ccBGSSSE059_Crowstooth",
+            "formKey": "00086D:ccbgssse059-ba_dragonplate.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.25,
+          "min": 25,
+          "max": 100
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Crowstooth to Experienced"
+        },
+        "note": "uses `EncForsworn01TemplateMelee` 023AA9 as his template but not for `Stats`."
+      },
+      {
+        "id": "alvasorr",
+        "name": "Alvasorr the Rat",
+        "records": [
+          {
+            "edid": "ccBGSSSE059_Alvasorr",
+            "formKey": "00086C:ccbgssse059-ba_dragonplate.esl"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditWizardNordM",
+            "formKey": "01B0FB:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Alvasorr the Rat to Experienced"
+        },
+        "note": "borrows its level from the bandit wizard ladder: `Stats` from `LCharBanditWizardNordM`, on Bandits → *Common Bandits*."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level (none of them is used as a template). Crowstooth uses `EncForsworn01TemplateMelee` 023AA9 as his template but not for `Stats`, so changing that rung (on *Common Forsworn*) does not move him."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharBanditWizardNordM",
+          "formKey": "01B0FB:Skyrim.esm"
+        },
+        "note": "the bandit wizard rungs (1 · 5 · 9 · 14 · 19 · 25), on Bandits → *Common Bandits*; only `Stats` is taken",
+        "owner": "`ccBGSSSE059_Alvasorr` 00086C:ccbgssse059-ba_dragonplate.esl"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Madanach · Borkul the Beast · Braig · Duach · Odvan · Uraccen",
+        "locations": [
+          {
+            "cell": {
+              "edid": "CidhnaMine01",
+              "formKey": "016203:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "aliases `Madanach`, `Borkul`, `Braig`, `Duach`, `Odvan`, `Uraccen` of `MS02` 040A5E"
+      },
+      {
+        "name": "Kaie",
+        "locations": [
+          {
+            "cell": {
+              "edid": "CidhnaMine02",
+              "formKey": "0597D4:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Nepos the Nose · Uaile · Tynan · Morven",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MarkarthNepossHouse",
+              "formKey": "016DFB:Skyrim.esm"
+            },
+            "note": "Nepos's house"
+          }
+        ],
+        "quest": "aliases `Nepos`, `Uaile`, `Tynan`, `Morven` of `MS01` 018B4B"
+      },
+      {
+        "name": "Nana Ildene · Donnel",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MarkarthTreasuryHouse",
+              "formKey": "016E00:Skyrim.esm"
+            },
+            "note": "Treasury House"
+          }
+        ],
+        "quest": "aliases `Ildene`, `Donnel` of `MS01` 018B4B"
+      },
+      {
+        "name": "Weylin",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MarkarthWarrens",
+              "formKey": "016D72:Skyrim.esm"
+            },
+            "note": "The Warrens"
+          }
+        ],
+        "quest": "alias `Weylin` of `MS01` 018B4B"
+      },
+      {
+        "name": "Crowstooth",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "00086F:ccbgssse059-ba_dragonplate.esl"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Alvasorr the Rat",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "00086E:ccbgssse059-ba_dragonplate.esl"
+            },
+            "note": "level modifier Easy"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Madanach · Braig",
+        "weapons": "Shiv `MS02Shiv` 0426C8",
+        "armor": "`PrisonerOutfit` 0A1983",
+        "skin": "race default"
+      },
+      {
+        "records": "Duach · Odvan",
+        "weapons": "Shiv",
+        "armor": "`PrisonerNoShoesOutfit` 0A1982",
+        "skin": "race default"
+      },
+      {
+        "records": "Uraccen",
+        "weapons": "Shiv",
+        "armor": "`PrisonerPantsOutfit` 0A1984",
+        "skin": "race default"
+      },
+      {
+        "records": "Borkul the Beast",
+        "weapons": "Pickaxe `weapPickaxe` 0E3C16",
+        "armor": "`BorkulOutfit` 0DF1E3",
+        "skin": "race default"
+      },
+      {
+        "records": "Kaie",
+        "weapons": "`LItemForswornWeapon1H` 043BD5",
+        "armor": "`ForswornArmorMeleeOutfit` 043BD9",
+        "skin": "race default"
+      },
+      {
+        "records": "Nepos the Nose",
+        "weapons": "Steel Sword 013989",
+        "armor": "`FineClothesOutfit01` 09D5E0",
+        "skin": "race default"
+      },
+      {
+        "records": "Uaile",
+        "weapons": "Steel Dagger 013986",
+        "armor": "`BarkeepClothes01` 05FB81",
+        "skin": "race default"
+      },
+      {
+        "records": "Tynan · Morven",
+        "weapons": "Iron Dagger 01397E",
+        "armor": "`BarkeepClothes01` 05FB81",
+        "skin": "race default"
+      },
+      {
+        "records": "Nana Ildene · Donnel",
+        "weapons": "Steel Dagger",
+        "armor": "`FarmClothesOutfit02` 02D75E",
+        "skin": "race default"
+      },
+      {
+        "records": "Weylin",
+        "weapons": "Steel Dagger",
+        "armor": "`MinerClothesOutfit01withGloves` 0F8719",
+        "skin": "race default"
+      },
+      {
+        "records": "Crowstooth",
+        "weapons": "Tyrant's Bane 000869 · Forsworn Sword 00086A (ccbgssse059-ba_dragonplate.esl) · Forsworn Bow 0CEE9B · `LItemForswornArrows` 10FABD",
+        "armor": "`ForswornArmorMeleeOutfit` 043BD9",
+        "skin": "race default"
+      },
+      {
+        "records": "Alvasorr the Rat",
+        "weapons": "Namira's Itch 00086B:ccbgssse059-ba_dragonplate.esl · Falmer Bow 038340 · 10 × `BaseArrowFalmer75` 037C16",
+        "armor": "`ccBGSSSE059_AlvasorrOutfit` 00087D:ccbgssse059-ba_dragonplate.esl",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "PrisonerOutfit",
+          "formKey": "0A1983:Skyrim.esm"
+        },
+        "rolls": "Roughspun Tunic 03C9FE · Footwraps 03CA00"
+      },
+      {
+        "list": {
+          "edid": "PrisonerNoShoesOutfit",
+          "formKey": "0A1982:Skyrim.esm"
+        },
+        "rolls": "Roughspun Tunic 03C9FE"
+      },
+      {
+        "list": {
+          "edid": "PrisonerPantsOutfit",
+          "formKey": "0A1984:Skyrim.esm"
+        },
+        "rolls": "Ragged Trousers 08F19A"
+      },
+      {
+        "list": {
+          "edid": "BorkulOutfit",
+          "formKey": "0DF1E3:Skyrim.esm"
+        },
+        "rolls": "Ragged Trousers 08F19A · Iron Gauntlets 012E46"
+      },
+      {
+        "list": {
+          "edid": "ForswornArmorMeleeOutfit",
+          "formKey": "043BD9:Skyrim.esm"
+        },
+        "rolls": "Forsworn Boots · Forsworn Armor · 50% Forsworn Gauntlets · 50% Forsworn Headdress (see *Common Forsworn*)"
+      },
+      {
+        "list": {
+          "edid": "LItemForswornWeapon1H",
+          "formKey": "043BD5:Skyrim.esm"
+        },
+        "rolls": "Forsworn Axe 0CC829 · Forsworn Sword 0CADE9 (1)"
+      },
+      {
+        "list": {
+          "edid": "LItemForswornArrows",
+          "formKey": "10FABD:Skyrim.esm"
+        },
+        "rolls": "22, 15 or 12 Forsworn Arrows 0CEE9E, each 75%"
+      },
+      {
+        "list": {
+          "edid": "FineClothesOutfit01",
+          "formKey": "09D5E0:Skyrim.esm"
+        },
+        "rolls": "Fine Clothes 086991 · Fine Boots 086993"
+      },
+      {
+        "list": {
+          "edid": "BarkeepClothes01",
+          "formKey": "05FB81:Skyrim.esm"
+        },
+        "rolls": "Clothes 05B6A1 · Shoes 05B6A0"
+      },
+      {
+        "list": {
+          "edid": "FarmClothesOutfit02",
+          "formKey": "02D75E:Skyrim.esm"
+        },
+        "rolls": "Clothes 0209A6 · Boots 0209A5"
+      },
+      {
+        "list": {
+          "edid": "MinerClothesOutfit01withGloves",
+          "formKey": "0F8719:Skyrim.esm"
+        },
+        "rolls": "Miner's Clothes 080697 · Boots 080699 · Gloves 0261C1"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE059_AlvasorrOutfit",
+          "formKey": "00087D:ccbgssse059-ba_dragonplate.esl"
+        },
+        "rolls": "Dismal Visage 000867:ccbgssse059-ba_dragonplate.esl · Falmer Armor 0B83CB · Falmer Boots 0B83CD · Falmer Gauntlets 0B83CF"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Shiv 0426C8 · Pickaxe 0E3C16 · Steel Sword · Steel and Iron Daggers",
+        "kind": "one-handed",
+        "playable": true
+      },
+      {
+        "item": "Tyrant's Bane 000869 · Namira's Itch 00086B (ccbgssse059-ba_dragonplate.esl)",
+        "kind": "one-handed war axes, enchanted",
+        "playable": true
+      },
+      {
+        "item": "Forsworn Sword 00086A:ccbgssse059-ba_dragonplate.esl",
+        "kind": "one-handed sword",
+        "playable": true
+      },
+      {
+        "item": "Dismal Visage 000867:ccbgssse059-ba_dragonplate.esl",
+        "kind": "heavy helmet, AR 12, enchanted",
+        "playable": true
+      },
+      {
+        "item": "Forsworn and Falmer armour, the prisoner and town clothes, Iron Gauntlets",
+        "kind": "light (Forsworn), heavy (Falmer, Iron), clothing",
+        "playable": true
+      }
+    ]
+  }
+}

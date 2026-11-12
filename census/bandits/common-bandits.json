@@ -2844,7 +2844,7 @@
               }
             ],
             "how": "template",
-            "where": "Forsworn → *Named Forsworn*",
+            "page": "forsworn/named-forsworn",
             "note": "`Stats` taken. `ccBGSSSE059_Alvasorr`: `LCharBanditWizardNordM`"
           },
           {
