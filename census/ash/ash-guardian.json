@@ -1,0 +1,82 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "ash-guardian",
+  "group": "ash",
+  "title": "Ash Guardian",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "ash-guardian",
+        "name": "Ash Guardian",
+        "records": [
+          {
+            "edid": "DLC2TTF1AshGuardian",
+            "formKey": "01AAB2:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2dunHighpointAshGuardian",
+            "formKey": "0296BE:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "dlc2AshGuardianRace",
+          "formKey": "027BFC:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 30,
+          "from": {
+            "edid": "DLC2encAshGuardian",
+            "formKey": "01AAAF:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: at its vanilla 30, beside the Ash Spawn Skirmisher"
+        },
+        "note": "the race still carries the `ActorTypeDaedra` and `ActorTypeCreature` keywords; filed as undead by the user (2026-10-01)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every Ash Guardian record carries `Stats` from `DLC2encAshGuardian` 01AAAF:Dragonborn.esm (30, never placed or drawn): changing it moves this row and the two summons `DLC2SummonAshGuardian` and `DLC2SummonAshGuardianNeloth` on *Undead Summons*."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Ash Guardian (`DLC2TTF1AshGuardian`)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2SolstheimWorld",
+              "formKey": "000800:Dragonborn.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "DLC2TTF1AshGuardianRef",
+              "formKey": "01AAB1:Dragonborn.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "quest `DLC2TTF1` alias AshGuardian"
+      },
+      {
+        "name": "Ash Guardian (`DLC2dunHighpointAshGuardian`)",
+        "notPlaced": true,
+        "note": "spawned in `DLC2HighpointTower01` 0184F0 by the spell `DLC2dunHighpointAshGuardianSpell` 0296BA (a scripted object's `myCenterSpell` property), via `DLC2dunHighpointAshGuardianME` 0296BC → projectile 0296BF → explosion `DLC2dunHighpointExpAshGuardian` 0296BD"
+      }
+    ]
+  }
+}

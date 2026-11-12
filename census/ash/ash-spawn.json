@@ -1,0 +1,325 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "ash-spawn",
+  "group": "ash",
+  "title": "Ash Spawn",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "ash-spawn",
+        "name": "Ash Spawn",
+        "records": [
+          {
+            "edid": "DLC2EncAshSpawn1H01",
+            "formKey": "01B636:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncAshSpawn2H01",
+            "formKey": "0322B5:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncAshSpawnMagic01",
+            "formKey": "0322BF:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2AshSpawnRace",
+          "formKey": "01B637:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: Solstheim's common ash undead, banded with the low-level draugr"
+        }
+      },
+      {
+        "id": "ash-spawn-skirmisher",
+        "name": "Ash Spawn Skirmisher",
+        "records": [
+          {
+            "edid": "DLC2EncAshSpawn1H02",
+            "formKey": "01B639:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncAshSpawn2H02",
+            "formKey": "0322B6:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncAshSpawnMagic02",
+            "formKey": "0322C0:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2AshSpawnRace",
+          "formKey": "01B637:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 30
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: the middle rung, at its vanilla 30"
+        }
+      },
+      {
+        "id": "ash-spawn-immolator",
+        "name": "Ash Spawn Immolator",
+        "records": [
+          {
+            "edid": "DLC2EncAshSpawn1H03",
+            "formKey": "01B63A:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncAshSpawn2H03",
+            "formKey": "0322B7:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncAshSpawnMagic03",
+            "formKey": "0322C1:Dragonborn.esm"
+          }
+        ],
+        "race": {
+          "edid": "DLC2AshSpawnRace",
+          "formKey": "01B637:Dragonborn.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 40
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: the top rung, at its vanilla 40"
+        }
+      },
+      {
+        "id": "attacking-ash-spawn",
+        "name": "Ash Spawn",
+        "encounter": "Attius Farm, the opening attack of `DLC2RR01`",
+        "records": [
+          {
+            "edid": "DLC2RR01AttackingAshSpawn",
+            "formKey": "01A568:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.75,
+          "min": 25,
+          "max": 50
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: the Ash Spawn rung's band"
+        },
+        "note": "owns its level; takes only `Traits` from `DLC2LCharAshSpawn1H`, so it keeps its own name and level whatever rung the list draws."
+      },
+      {
+        "id": "temple-tomb-ash-spawn",
+        "name": "Ash Spawn · Skirmisher · Immolator",
+        "encounter": "Raven Rock Temple tomb (`DLC2RRFavor03`)",
+        "records": [
+          {
+            "edid": "DLC2RRFavor03AshSpawn",
+            "formKey": "024DF8:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.75,
+          "min": 25,
+          "max": 50
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: scales 25–50 and draws every rung, banded at the middle rung"
+        },
+        "note": "owns its level; takes `Traits` and `BaseData` from `DLC2LCharAshSpawn1H`, so its name is the drawn rung's."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Each rung owns its level on its 1H record. The 2H record takes `Stats` from its rung's 1H record (`2H02` from `1H02`, `2H03` from `1H03`), but the Magic record (`DLC2EncAshSpawnMagic0N`) uses it without `Stats` and keeps its own level: a rung change has to be made on its 1H and Magic records both.",
+      "`DLC2EncAshSpawn1H02` uses `1H01` as its template without `Stats`; `1H03` has no template.",
+      "The two Raven Rock rows keep their own PC×0.75 [25–50] level whatever the list draws.",
+      "Every other Ash Spawn record (every `DLC2LvlAshSpawn*` wrapper, and the summon `DLC2SummonAshSpawn01` on *Undead Summons*, which follows `1H01`) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC2LCharAshSpawn1H",
+          "formKey": "01B63C:Dragonborn.esm"
+        },
+        "gate": "`CalculateFromAllLevelsLessThanOrEqualPlayer`: every rung at or below the player can roll, as in every list on this page",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Ash Spawn"
+          },
+          {
+            "at": 30,
+            "label": "Ash Spawn Skirmisher"
+          },
+          {
+            "at": 40,
+            "label": "Ash Spawn Immolator"
+          }
+        ],
+        "owner": "`DLC2LvlAshSpawnMelee1H` 01B63D (placed ×9; quest aliases `DLC2TT1` AshSpawn1 · AshSpawn3, `DLC2TTR5` ×3) · `DLC2LvlAshSpawnAmbushMelee1H` 035E5F (placed ×10) · the two Raven Rock rows (template) · `DLC2LCharAshSpawnAll`"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharAshSpawn2H",
+          "formKey": "0322BB:Dragonborn.esm"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "Ash Spawn"
+          },
+          {
+            "at": 30,
+            "label": "Ash Spawn Skirmisher"
+          },
+          {
+            "at": 40,
+            "label": "Ash Spawn Immolator"
+          }
+        ],
+        "note": "2H.",
+        "owner": "`DLC2LvlAshSpawnMelee2H` 0322BC (placed ×3) · `DLC2LvlAshSpawnAmbushMelee2H` 035E60 (placed ×8) · `DLC2LCharAshSpawnAll`"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharAshSpawnMagic",
+          "formKey": "0322C2:Dragonborn.esm"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "Ash Spawn"
+          },
+          {
+            "at": 30,
+            "label": "Ash Spawn Skirmisher"
+          },
+          {
+            "at": 40,
+            "label": "Ash Spawn Immolator"
+          }
+        ],
+        "note": "Magic.",
+        "owner": "`DLC2LvlAshSpawnMagic` 01C06D (placed ×10; quest alias `DLC2TT1` AshSpawn2) · `DLC2LvlAshSpawnAmbushMagic` 035E5E (placed ×13)"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharAshSpawnAll",
+          "formKey": "0322BD:Dragonborn.esm"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DLC2LCharAshSpawn1H`"
+          },
+          {
+            "at": 1,
+            "label": "`DLC2LCharAshSpawn2H`"
+          }
+        ],
+        "note": "the placed wrappers sit in `DLC2HighpointTower01` 0184F0, `DLC2FortFrostmoth01` 0142F8, `DLC2RRTempleTomb` 024D9D, `DLC2RRBulwarkCave` 03929E and Solstheim exterior cells; counts leave out the dev cell `DLC2WarehouseAmbushes`. No quest adds to these lists at runtime.",
+        "owner": "`DLC2LvlAshSpawnMeleeAny` 0322BE (placed ×1) · `DLC2LvlAshSpawnAmbushMeleeAny` 035E61 (placed ×6)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Ash Spawn (`DLC2RR01AttackingAshSpawn`)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2SolstheimWorld",
+              "formKey": "000800:Dragonborn.esm"
+            },
+            "persistent": true,
+            "refText": "×3",
+            "note": "`DLC2RR01StartGhoul01–03Ref` 01A565–01A567 (Attius Farm, enable parent 01A569)"
+          }
+        ],
+        "quest": "quest `DLC2RR01` property `pDLC2RR01AttackingAshGhouls`"
+      },
+      {
+        "name": "Ash Spawn (`DLC2RRFavor03AshSpawn`)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2RRTempleTomb",
+              "formKey": "024D9D:Dragonborn.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "1H line, both Raven Rock records",
+        "weapons": "`DLC2AshSpawnWarAxe` 030CB2:Dragonborn.esm",
+        "armor": "none",
+        "skin": "`DLC2SkinAshSpawn` 02B04B:Dragonborn.esm"
+      },
+      {
+        "records": "2H line",
+        "weapons": "`DLC2AshSpawnBattleAxe` 0317D3:Dragonborn.esm",
+        "armor": "none",
+        "skin": "`DLC2SkinAshSpawn`"
+      },
+      {
+        "records": "Magic line",
+        "weapons": "none",
+        "armor": "none",
+        "skin": "`DLC2SkinAshSpawn`"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Ash Spawn War Axe · Ash Spawn Battle Axe",
+        "kind": "weapons",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`DLC2SkinAshSpawn` 02B04B:Dragonborn.esm",
+        "kind": "the ash body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

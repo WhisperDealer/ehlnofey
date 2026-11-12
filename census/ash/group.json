@@ -1,0 +1,37 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "ash",
+  "title": "Ash",
+  "order": 5,
+  "parent": "undead",
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Undead by the user's call (2026-10-01), although none of their races carries `ActorTypeUndead` and the Ash Guardian's carries `ActorTypeDaedra`. Their summons are on Conjured → Undead Summons.",
+  "families": [
+    {
+      "id": "ash-spawn",
+      "holds": "the three rungs Ash Spawn 20 · Skirmisher 30 · Immolator 40 (1H, 2H and Magic lines) and the two Raven Rock records"
+    },
+    {
+      "id": "ash-guardian",
+      "holds": "the Ash Guardian of Tel Mithryn and of Highpoint Tower"
+    },
+    {
+      "id": "ash-zombie",
+      "holds": "the Ghosts of the Tribunal (CC) Ash Zombies"
+    }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-11-12)",
+    "confidence": "verified",
+    "text": "Every NPC in the masters and the CC packs whose race is `DLC2AshSpawnRace` 01B637:Dragonborn.esm or `dlc2AshGuardianRace` 027BFC:Dragonborn.esm, followed through every template and `LVLN`, plus every `*AshZombie*` record in ccasvsse001-almsivi.esm (the zombies are `DarkElfRace`). Everything found is on a family page except the following."
+  },
+  "filedElsewhere": [
+    {
+      "record": "`DLC2SummonAshSpawn01` 01CDF8 · `DLC2SummonAshGuardian` 0177B6 · `DLC2SummonAshGuardianNeloth` 01DBDC (Dragonborn.esm)",
+      "what": "summoned Ash Spawn and Ash Guardians",
+      "where": "Conjured → Undead Summons"
+    }
+  ]
+}

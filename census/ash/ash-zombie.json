@@ -1,0 +1,122 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "ash-zombie",
+  "group": "ash",
+  "title": "Ash Zombie (CC)",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "ash-zombie",
+        "name": "Ash Zombie",
+        "records": [
+          {
+            "edid": "ccASVSSE001_EncAshZombie",
+            "formKey": "0A840A:ccasvsse001-almsivi.esm"
+          },
+          {
+            "label": "`…01` 1CDFCD · `…02` 1CDFCE · `…03` 1CDFCF:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "race": {
+          "edid": "DarkElfRace",
+          "formKey": "013742:Skyrim.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 50
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a CC zombie, banded with the low-level draugr"
+        },
+        "note": "Ghosts of the Tribunal. `EncAshZombie` owns the level; it templates `DLC2EncBandit01TemplateMelee` 01E808:Dragonborn.esm only for attack data and default packages. `…01`–`03` take everything but their looks from it."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The three copies and `ccASVSSE001_LvlAshZombie` 1CDFD1 carry `Stats` and follow `ccASVSSE001_EncAshZombie` 0A840A; no other record keeps its own level."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ccASVSSE001_LCharAshZombie",
+          "formKey": "1CDFD0:ccasvsse001-almsivi.esm"
+        },
+        "gate": "`CalculateFromAllLevelsLessThanOrEqualPlayer`, every entry at 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`EncAshZombie` · `…01` · `…02` · `…03`"
+          }
+        ],
+        "owner": "`ccASVSSE001_LvlAshZombie` 1CDFD1, placed ×19: `ccASVSSE001Interior02` 0030E8:Update.esm ×14, `DLC2TelMithrynGraveyard` 00EEEB:Dragonborn.esm ×2, Solstheim cells 00EF0C and 00EE94 (Dragonborn.esm) ×1 each, and a `DLC2SolstheimWorld` persistent ref 0C192C (initially disabled)"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Ash Zombie (all)",
+        "weapons": "none",
+        "armor": "outfit `ccASVSSE001_AshZombieOutfit` 0A840B",
+        "skin": "`ccASVSSE001_SkinNakedAshZombie` 1CDFCC"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ccASVSSE001_AshZombieOutfit",
+          "formKey": "0A840B:ccasvsse001-almsivi.esm"
+        },
+        "rolls": "`ccASVSSE001_AshZombieHead` 0A8408 · `ccASVSSE001_AshZombieClothes` 11CC05"
+      },
+      {
+        "list": {
+          "edid": "ccASVSSE001_AshZombieClothes",
+          "formKey": "11CC05:ccasvsse001-almsivi.esm"
+        },
+        "gate": "75% chance of nothing",
+        "rolls": "one of Ragged Trousers `ClothesPrisonerRags` 08F19A · Footwraps `ClothesPrisonerShoes` 03CA00, both at 1"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Footwraps · Ragged Trousers",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "`ccASVSSE001_AshZombieHead` 0A8408",
+        "kind": "the zombie's head",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`ccASVSSE001_SkinNakedAshZombie` 1CDFCC",
+        "kind": "the zombie body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}
