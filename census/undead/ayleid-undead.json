@@ -1,0 +1,358 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "ayleid-undead",
+  "group": "undead",
+  "title": "Ayleid Undead (CC)",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "wight",
+        "name": "Wight",
+        "records": [
+          {
+            "edid": "ccBGSSSE067_LvlAyleidWightMelee1H",
+            "formKey": "029D21:ccbgssse067-daedinv.esm"
+          },
+          {
+            "edid": "ccBGSSSE067_LvlAyleidWightMelee2H",
+            "formKey": "029D17:ccbgssse067-daedinv.esm"
+          },
+          {
+            "edid": "ccBGSSSE067_LvlAyleidWightAmbushMelee1H",
+            "formKey": "029D1D:ccbgssse067-daedinv.esm"
+          },
+          {
+            "edid": "ccBGSSSE067_LvlAyleidWightAmbushMissile",
+            "formKey": "029D1E:ccbgssse067-daedinv.esm"
+          },
+          {
+            "edid": "ccBGSSSE067_LvlAyleidWightAmbushMissileStay",
+            "formKey": "1C215E:ccbgssse067-daedinv.esm"
+          },
+          {
+            "edid": "ccBGSSSE067_LvlWightMeleeAllMale",
+            "formKey": "0B8A16:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE067_WightRace",
+          "formKey": "1DB955:ccbgssse067-daedinv.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrMelee1HMale",
+            "formKey": "055936:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            13,
+            21,
+            26,
+            30
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: draugr (it rolls the draugr rungs and shows the Draugr Wight's rung name)"
+        },
+        "note": "takes `Stats` from the vanilla draugr lists: the 1H list (with the Hulking 26 from `DLC2Init`), the 2H list (1 · 6 · 13 · 21 · 30), the 1H+2H list, and the archer list through `LvlDraugrMissileMale` (1 · 6 · 13 · 21 · 30 · 40). Its own race and name."
+      },
+      {
+        "id": "wight-lord",
+        "name": "Wight Lord",
+        "records": [
+          {
+            "edid": "ccBGSSSE067_LvlAyleidWightMelee2HLord",
+            "formKey": "1B2CC8:ccbgssse067-daedinv.esm"
+          },
+          {
+            "edid": "ccBGSSSE067_LvlAyleidWightAmbushMelee2HLord",
+            "formKey": "1B2CC9:ccbgssse067-daedinv.esm"
+          },
+          {
+            "edid": "ccBGSSSE067_LvlAyleidWightAmbushWarlockLord",
+            "formKey": "1B2CC7:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE067_WightRace",
+          "formKey": "1DB955:ccbgssse067-daedinv.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharDraugrMelee1HMale",
+            "formKey": "055936:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            13,
+            21,
+            26,
+            30
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a Wight's lord, a band above the Wight, as Draugr Wight Lord (VI)"
+        },
+        "note": "1B2CC8 takes `Stats` from the 1H list, 1B2CC9 from the 2H list (1 · 6 · 13 · 21 · 30), 1B2CC7 from `LvlDraugrWarlockMale` (6 · 13 · 21, highest rung only), so a Wight Lord shares every level with a Wight."
+      },
+      {
+        "id": "norion",
+        "name": "Norion the Undying",
+        "records": [
+          {
+            "edid": "ccBGSSSE067_AyleidLichBossAmbush",
+            "formKey": "000B73:ccbgssse067-daedinv.esm"
+          }
+        ],
+        "race": {
+          "edid": "DragonPriestRace",
+          "formKey": "0131EF:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 50,
+          "from": {
+            "edid": "EncDragonPriestAmbushSarcShock",
+            "formKey": "08A1C9:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "role: a named lich on the Dragon Priest chain, as the named Dragon Priests (VIII)"
+        },
+        "note": "a Dragon Priest-race lich; its level follows `EncDragonPriest` 023A93 (on *Dragon Priests*) through `EncDragonPriestAmbushSarcShock`."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no Ayleid record keeps its own level; each takes `Stats` from a vanilla draugr list or the Dragon Priest chain, so a draugr rung change moves the Wights and a change to `EncDragonPriest` 023A93 moves Norion.",
+      "The conjured Ayleid Lich `ccBGSSSE067_ConjureEncAyleidLich` 147D97 also takes `Stats` from `EncDragonPriest` (on Conjured → *Undead Summons*)."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharDraugrMelee1HMale",
+          "formKey": "055936:Skyrim.esm"
+        },
+        "note": "1 · 6 · 13 · 21 · 30 (the gate-40 ebony Deathlord is level 30) · Hulking 26 (`DLC2Init`); documented on Draugr → *Common Draugr*.",
+        "owner": "Wight 029D21 · 029D1D, Wight Lord 1B2CC8"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrMelee2HMale",
+          "formKey": "01E772:Skyrim.esm"
+        },
+        "note": "1 · 6 · 13 · 21 · 30; on *Common Draugr*.",
+        "owner": "Wight 029D17, Wight Lord 1B2CC9"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrMeleeAllMale",
+          "formKey": "055955:Skyrim.esm"
+        },
+        "note": "the 1H and 2H lists together; on *Common Draugr*.",
+        "owner": "Wight 0B8A16"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrMissileMale",
+          "formKey": "0A6844:Skyrim.esm"
+        },
+        "note": "through `LvlDraugrMissileMale` 0A6851: 1 · 6 · 13 · 21 · 30 · 40; on *Common Draugr*.",
+        "owner": "Wight 029D1E · 1C215E"
+      },
+      {
+        "list": {
+          "edid": "LCharDraugrWarlockMale",
+          "formKey": "0BF7BB:Skyrim.esm"
+        },
+        "note": "through `LvlDraugrWarlockMale` 01E7AC: 6 · 13 · 21, highest rung only; on Draugr → *Draugr Warlock*.",
+        "owner": "Wight Lord 1B2CC7"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Wight",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE067Rielle01",
+              "formKey": "0030E5:Update.esm"
+            },
+            "note": "Rielle: 029D1D ×3 · 029D1E · 029D21 ×2 · 029D17 · 0B8A16 ×3"
+          },
+          {
+            "cell": {
+              "edid": "ccBGSSSE067Rielle02",
+              "formKey": "0030E4:Update.esm"
+            },
+            "note": "Rielle Crypt: 029D1D ×4 · 1C215E ×2 · 029D21"
+          }
+        ]
+      },
+      {
+        "name": "Wight Lord",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE067Rielle01",
+              "formKey": "0030E5:Update.esm"
+            },
+            "note": "1B2CC7 · 1B2CC8"
+          },
+          {
+            "cell": {
+              "edid": "ccBGSSSE067Rielle02",
+              "formKey": "0030E4:Update.esm"
+            },
+            "note": "1B2CC7 · 1B2CC9"
+          }
+        ]
+      },
+      {
+        "name": "Norion the Undying",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE067Rielle02",
+              "formKey": "0030E4:Update.esm"
+            },
+            "refText": "ref 0012B8"
+          }
+        ],
+        "quest": "alias `NPCAyleidLichBoss` of `ccBGSSSE067_Quest` 06BFC1 (*The Cause*)"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Wight 1H (029D1D · 029D21)",
+        "weapons": "`ccBGSSSE067_LVLI_SublistAyleidLichWeaponElven1H` 057A41 · Elven Shield 50% (`ccBGSSSE067_LVLI_WightShield50` 1EAD98)",
+        "armor": "`ccBGSSSE067_Wight01OutfitMixedArmorFull` 12429D",
+        "skin": "race skin `SkinAyleidWight01` 029D1A"
+      },
+      {
+        "records": "Wight 2H (029D17) · Wight Lord 2H (1B2CC8 · 1B2CC9)",
+        "weapons": "`ccBGSSSE067_LVLI_SublistAyleidLichWeaponElven2H` 057A42",
+        "armor": "12429D",
+        "skin": "race skin"
+      },
+      {
+        "records": "Wight archers (029D1E · 1C215E)",
+        "weapons": "Elven Bow 01399D · Elven Arrows 0139BD",
+        "armor": "12429D",
+        "skin": "race skin"
+      },
+      {
+        "records": "Wight 0B8A16",
+        "weapons": "057A41",
+        "armor": "`ccBGSSSE067_Wight03OutfitMixedLowChance` 13371D",
+        "skin": "race skin"
+      },
+      {
+        "records": "Wight Lord warlock (1B2CC7)",
+        "weapons": "none (spells from the draugr warlock list)",
+        "armor": "12429D",
+        "skin": "race skin"
+      },
+      {
+        "records": "Norion the Undying",
+        "weapons": "Staff of Ehlno Ede 147D9F; also carries the Rielle Key 0A9430 and Welkynd Stones 20E802",
+        "armor": "none",
+        "skin": "`ccBGSSSE067_SkinAyleidLich01` 029D22"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ccBGSSSE067_Wight01OutfitMixedArmorFull",
+          "formKey": "12429D:ccbgssse067-daedinv.esm"
+        },
+        "rolls": "one of each, 100%: body `SkinAyleidWight01` 029D1A or `…02` 12427F · boots `ArmorAyleidWightBoots01`/`02` 12429F · 1242A0 · gauntlets `…Gauntlets01`/`02` 1242A1 · 1242A2 · helmet `…Helmet01`–`04` 124291–124294"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE067_Wight03OutfitMixedLowChance",
+          "formKey": "13371D:ccbgssse067-daedinv.esm"
+        },
+        "rolls": "as 12429D, but the helmet 90% (`…WightHelmetRandom90` 1C72D7)"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE067_LVLI_SublistAyleidLichWeaponElven1H",
+          "formKey": "057A41:ccbgssse067-daedinv.esm"
+        },
+        "rolls": "Elven War Axe 01399B · Elven Sword 0139A1 · Elven Mace 0139A0"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE067_LVLI_SublistAyleidLichWeaponElven2H",
+          "formKey": "057A42:ccbgssse067-daedinv.esm"
+        },
+        "rolls": "Elven Battleaxe 01399C · Elven Greatsword 01399F · Elven Warhammer 0139A2"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE067_LVLI_WightShield50",
+          "formKey": "1EAD98:ccbgssse067-daedinv.esm"
+        },
+        "rolls": "Elven Shield 01391E, 50%"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Elven weapons, Elven Bow and Arrows · Elven Shield 01391E",
+        "kind": "weapons, light shield (AR 21)",
+        "playable": true
+      },
+      {
+        "item": "Staff of Ehlno Ede 147D9F",
+        "kind": "staff, enchanted (147D9A)",
+        "playable": true
+      },
+      {
+        "item": "Ayleid Wight body, boots, gauntlets and helmets 029D1A · 12427F · 12429F–1242A2 · 124291–124294",
+        "kind": "the wight's look, no name",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`ccBGSSSE067_SkinAyleidLich01` 029D22",
+        "kind": "the lich body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

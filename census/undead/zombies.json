@@ -1,0 +1,303 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "zombies",
+  "group": "undead",
+  "title": "Zombies (CC)",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "zombie",
+        "name": "Zombie",
+        "records": [
+          {
+            "edid": "ccBGSSSE003EncZombie01BodyA",
+            "formKey": "000D64:ccbgssse003-zombies.esl"
+          },
+          {
+            "edid": "ccBGSSSE003EncZombie01BodyB",
+            "formKey": "000D69:ccbgssse003-zombies.esl"
+          },
+          {
+            "edid": "ccBGSSSE003EncZombie01BodyC",
+            "formKey": "000D6A:ccbgssse003-zombies.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE003ZombieRace",
+          "formKey": "000D6B:ccbgssse003-zombies.esl"
+        },
+        "level": {
+          "kind": "template",
+          "value": 1,
+          "from": {
+            "edid": "EncDraugr01Template",
+            "formKey": "03B547:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: rung 01 of a draugr-shaped ladder, as Draugr (IV)"
+        },
+        "note": "the three bodies take `Stats` from the draugr leaf `EncDraugr01Melee1HHeadM00` 05593B:Skyrim.esm, so the Draugr rung owns their level."
+      },
+      {
+        "id": "foul-zombie",
+        "name": "Foul Zombie",
+        "records": [
+          {
+            "edid": "ccBGSSSE003EncZombie02BodyA",
+            "formKey": "000817:ccbgssse003-zombies.esl"
+          },
+          {
+            "edid": "ccBGSSSE003EncZombie02BodyB",
+            "formKey": "000818:ccbgssse003-zombies.esl"
+          },
+          {
+            "edid": "ccBGSSSE003EncZombie02BodyC",
+            "formKey": "000813:ccbgssse003-zombies.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE003ZombieRace",
+          "formKey": "000D6B:ccbgssse003-zombies.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 6,
+          "also": [
+            6,
+            5
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: rung 02, as Restless Draugr (IV)"
+        }
+      },
+      {
+        "id": "putrid-zombie",
+        "name": "Putrid Zombie",
+        "records": [
+          {
+            "edid": "ccBGSSSE003EncZombie03BodyA",
+            "formKey": "000819:ccbgssse003-zombies.esl"
+          },
+          {
+            "edid": "ccBGSSSE003EncZombie03BodyB",
+            "formKey": "00081A:ccbgssse003-zombies.esl"
+          },
+          {
+            "edid": "ccBGSSSE003EncZombie03BodyC",
+            "formKey": "00081B:ccbgssse003-zombies.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE003ZombieRace",
+          "formKey": "000D6B:ccbgssse003-zombies.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 13
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: rung 03, as Draugr Wight (V)"
+        }
+      },
+      {
+        "id": "malignant-zombie",
+        "name": "Malignant Zombie",
+        "records": [
+          {
+            "edid": "ccBGSSSE003EncZombie04BodyA",
+            "formKey": "00081C:ccbgssse003-zombies.esl"
+          },
+          {
+            "edid": "ccBGSSSE003EncZombie04BodyB",
+            "formKey": "00080D:ccbgssse003-zombies.esl"
+          },
+          {
+            "edid": "ccBGSSSE003EncZombie04BodyC",
+            "formKey": "000816:ccbgssse003-zombies.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE003ZombieRace",
+          "formKey": "000D6B:ccbgssse003-zombies.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 21
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: rung 04, as Draugr Scourge (V)"
+        }
+      },
+      {
+        "id": "relentless-zombie",
+        "name": "Relentless Zombie",
+        "records": [
+          {
+            "edid": "ccBGSSSE003EncZombie05BodyA",
+            "formKey": "000815:ccbgssse003-zombies.esl"
+          },
+          {
+            "edid": "ccBGSSSE003EncZombie05BodyB",
+            "formKey": "000814:ccbgssse003-zombies.esl"
+          },
+          {
+            "edid": "ccBGSSSE003EncZombie05BodyC",
+            "formKey": "00080F:ccbgssse003-zombies.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE003ZombieRace",
+          "formKey": "000D6B:ccbgssse003-zombies.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 30
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: rung 05, as Draugr Deathlord (VI)"
+        }
+      },
+      {
+        "id": "dread-zombie",
+        "name": "Dread Zombie",
+        "records": [
+          {
+            "edid": "ccBGSSSE003EncZombie06BodyA",
+            "formKey": "000811:ccbgssse003-zombies.esl"
+          },
+          {
+            "edid": "ccBGSSSE003EncZombie06BodyB",
+            "formKey": "00080E:ccbgssse003-zombies.esl"
+          },
+          {
+            "edid": "ccBGSSSE003EncZombie06BodyC",
+            "formKey": "000812:ccbgssse003-zombies.esl"
+          }
+        ],
+        "race": {
+          "edid": "ccBGSSSE003ZombieRace",
+          "formKey": "000D6B:ccbgssse003-zombies.esl"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 40,
+          "also": [
+            40,
+            30
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: rung 06, as the ebony Deathlord (VI)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Rungs 02–06 use the rung-01 bodies `ccBGSSSE003EncZombie01Body{A,B,C}` as their template for `Traits` only, not `Stats`, so every rung owns its level, and changing rung 01 (or `EncDraugr01Template`) changes none of them.",
+      "The four summon copies `ccBGSSSE003EncZombie01BodyA_Summon` 000874 (level 3), `…02BodyB_Summon` 000873 (6), `…03BodyC_Summon` 000875 (13) and `…04BodyA_Summon` 000876 (21) use the rung-01 bodies the same way and keep their own level, so a change to rung 02, 03 or 04 does not reach them (on Conjured → *Undead Summons*).",
+      "The wrapper `ccBGSSSE003_LvlEncZombie` 000810 takes `Stats`, `Traits` and `BaseData` from the zombie list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ccBGSSSE003_LCharBGSSSE003ZombieMelee",
+          "formKey": "000822:ccbgssse003-zombies.esl"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Zombie"
+          },
+          {
+            "at": 6,
+            "label": "Foul Zombie"
+          },
+          {
+            "at": 13,
+            "label": "Putrid Zombie"
+          },
+          {
+            "at": 21,
+            "label": "Malignant Zombie"
+          },
+          {
+            "at": 30,
+            "label": "Relentless Zombie"
+          },
+          {
+            "at": 40,
+            "label": "Dread Zombie"
+          }
+        ],
+        "note": "one sublist per rung, `ccBGSSSE003_SubCharBGSSSE003Zombie01`–`06` 00081E · 00081D · 000823 · 000820 · 000821 · 00081F, each holding the rung's three bodies at 1 (`CalculateFromAllLevelsLessThanOrEqualPlayer`).",
+        "owner": "`ccBGSSSE003_LvlEncZombie` 000810, placed ×10 in `POIPineForest31` 0098C2:Skyrim.esm (Tamriel) and created by the aliases `Zombie1`–`Zombie4` of the encounter quests `B003_WE_Quest` 00083A, `…02` 000839, `…03` 000838, `…04` 000837 and `…05` 000836"
+      },
+      {
+        "list": {
+          "edid": "ccBGS_LCharUndeadListMaster",
+          "formKey": "003024:Update.esm"
+        },
+        "override": "ccbgssse003-zombies.esl (as `ccBGSSSE003_LCharUndeadList`)",
+        "gate": "`CalculateForEachItemInCount` only",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the zombie list"
+          }
+        ],
+        "note": "the pack's override replaces Update.esm's two slots with the zombie list. At runtime `AddForm(ccBGSSSE003_LCharBGSSSE003ZombieMelee, 2)` adds the zombie list again at 2, from `ccBGSSSE003_ZombieQuestStartEncounter` 00083D (its quest fragment) and from `ccBGSSSE003_ZombieQuestCheck` 0008B9 (once stage 40 of 00083D is done); the Bone Wolf pack's `ccBGSSSE036_SeedQuest` adds `ccBGSSSE003_LCharBonewolf` at 2.",
+        "owner": "the shared Creation Club undead wrapper `ccBGSSSE003_LvlBoneWolfZombie` 003025:Update.esm (placements on Skeletons → *Bone Wolves (CC)*)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Zombie",
+        "base": [
+          {
+            "edid": "ccBGSSSE003EncZombie01BodyA",
+            "formKey": "000D64:ccbgssse003-zombies.esl"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "POIPineForest31",
+              "formKey": "0098C2:Skyrim.esm"
+            },
+            "refText": "×2",
+            "note": "Tamriel exterior, beside the ten `ccBGSSSE003_LvlEncZombie` refs"
+          }
+        ]
+      }
+    ]
+  }
+}

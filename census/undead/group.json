@@ -7,11 +7,19 @@
     "spec": "archetype-tiers.md §3.2 and §5",
     "updated": "2026-11-12"
   },
-  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Every undead family placed or spawned as an enemy, draugr included (user, 2026-09-30). An undead that exists only as a summon is under Conjured. The sub-groups move here one at a time: Vampires, Draugr, Skeletons, Ghosts, Ash and Dragon Priests so far; only the Creation Club undead (Zombies, Ayleid Undead) are still to come.",
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Scope (user, 2026-09-30): every undead family placed or spawned as an enemy, draugr included. Vampires are a sub-group here (user, 2026-10-02); the gargoyles are under World Creatures → Monsters. Ash is undead by the user's call (2026-10-01). An undead that exists only as a summon is under Conjured. Every Undead page is now in the census: five sub-groups (Vampires, Draugr, Skeletons, Ghosts, Ash), plus the Dragon Priests and the two Creation Club families, which sit directly in this group.",
   "families": [
     {
       "id": "dragon-priests",
       "holds": "the eight Skyrim priests, Vahlok the Jailor, the three Solstheim acolytes (Ahzidal, Dukaan, Zahkriisos) and the generic Dragon Priest"
+    },
+    {
+      "id": "zombies",
+      "holds": "the Creation Club Zombies pack: six rungs Zombie 1 → Dread Zombie 40, their list and its runtime injectors"
+    },
+    {
+      "id": "ayleid-undead",
+      "holds": "the Creation Club Ayleid Wights and Wight Lords of Rielle (draugr-levelled) and Norion the Undying"
     }
   ]
 }

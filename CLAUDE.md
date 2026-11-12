@@ -115,13 +115,13 @@ rules).
   page) plus one `<family>.json` per family page; `census/bands.json` is the home page. The schema is
   `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
   everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons, Daedra** (all 13 pages, the
-  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05), Dragon Priests (one page, a family of `census/undead/`, 2026-11-12), Draugr (all 4 pages, `census/draugr/`), Skeletons (all 5 pages, `census/skeletons/`), Ghosts (all 4 pages, `census/ghosts/`) and Ash (all 4 pages, `census/ash/`), sub-groups of Undead (2026-11-12).
+  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05), Dragon Priests (one page, a family of `census/undead/`, 2026-11-12), Draugr (all 4 pages, `census/draugr/`), Skeletons (all 5 pages, `census/skeletons/`), Ghosts (all 4 pages, `census/ghosts/`) and Ash (all 4 pages, `census/ash/`), sub-groups of Undead, and the CC Zombies and Ayleid Undead (families of `census/undead/`): **Undead is fully migrated** (2026-11-12).
   Every other group stays Confluence-first until it is migrated.
 - **A sub-group is its own census folder with `parent`** in its `group.json` (`census/vampires/` has
   `"parent": "undead"`); URLs stay flat (`/vampires/common-vampires/`), the parent's page lists its
   sub-groups, and only top-level groups appear in the nav and on the home page. `census/undead/group.json`
-  is a parent whose only family is `dragon-priests` (URL `/undead/dragon-priests/`); its Confluence page (12714066) stays hand-written, not mirrored,
-  until the rest of Undead is migrated.
+  is a parent with five sub-groups and three families of its own (`dragon-priests`, `zombies`, `ayleid-undead`;
+  URLs `/undead/<family>/`); its Confluence page (12714066) is a mirror like the rest.
 - **The site is public; keep it free of internal tooling** (user, 2026-10-04): no Jira ticket
   numbers (the tickets are deleted; `WD-xx` in the docs is history only) and no Confluence links or
   page ids in `census/` or `site/src/`. Confluence is internal documentation that supports the site.
