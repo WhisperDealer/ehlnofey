@@ -1,0 +1,378 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "falmer-shaman",
+  "group": "falmer",
+  "title": "Falmer Shaman",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "falmer-shaman",
+        "name": "Falmer",
+        "records": [
+          {
+            "edid": "EncFalmer01Shaman",
+            "formKey": "025D36:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: low-level Falmer"
+        },
+        "note": "the shaman of rung 01; it has no name of its own and takes `EncFalmer01Template`'s through `BaseData`, so it shows the name of its rung's melee Falmer at a lower level."
+      },
+      {
+        "id": "falmer-skulker-shaman",
+        "name": "Falmer Skulker",
+        "records": [
+          {
+            "edid": "EncFalmer02Shaman",
+            "formKey": "025D34:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 8
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: low-level Falmer"
+        },
+        "note": "the shaman of rung 02; it has no name of its own and takes `EncFalmer02Template`'s through `BaseData`, so it shows the name of its rung's melee Falmer at a lower level."
+      },
+      {
+        "id": "falmer-gloomlurker-shaman",
+        "name": "Falmer Gloomlurker",
+        "records": [
+          {
+            "edid": "EncFalmer03Shaman",
+            "formKey": "025D2E:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 14
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: Falmer"
+        },
+        "note": "the shaman of rung 03; it has no name of its own and takes `EncFalmer03Template`'s through `BaseData`, so it shows the name of its rung's melee Falmer at a lower level."
+      },
+      {
+        "id": "falmer-nightprowler-shaman",
+        "name": "Falmer Nightprowler",
+        "records": [
+          {
+            "edid": "EncFalmer04Shaman",
+            "formKey": "025D30:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 19
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: Falmer"
+        },
+        "note": "the shaman of rung 04; it has no name of its own and takes `EncFalmer04Template`'s through `BaseData`, so it shows the name of its rung's melee Falmer at a lower level."
+      },
+      {
+        "id": "falmer-shadowmaster-shaman",
+        "name": "Falmer Shadowmaster",
+        "records": [
+          {
+            "edid": "EncFalmer05Shaman",
+            "formKey": "025D32:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 25
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Falmer Shadowmasters"
+        },
+        "note": "the shaman of rung 05; it has no name of its own and takes `EncFalmer05Template`'s through `BaseData`, so it shows the name of its rung's melee Falmer at a lower level."
+      },
+      {
+        "id": "falmer-warmonger-shaman",
+        "name": "Falmer Warmonger",
+        "records": [
+          {
+            "edid": "DLC1EncFalmer06Shaman",
+            "formKey": "015CB0:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 35
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Falmer Warmongers"
+        },
+        "note": "the shaman of rung 06; it has no name of its own and takes `DLC1EncFalmer06Template`'s through `BaseData`, so it shows the name of its rung's melee Falmer at a lower level."
+      },
+      {
+        "id": "frozen-shaman",
+        "name": "Frozen Shaman",
+        "records": [
+          {
+            "edid": "DLC1_BF_LVLFrozenFalmerShaman",
+            "formKey": "015125:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_BF_FrozenFalmerShaman01",
+            "formKey": "015127:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_BF_FrozenFalmerShaman02",
+            "formKey": "015128:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_BF_FrozenFalmerShaman03",
+            "formKey": "015129:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_BF_FrozenFalmerShaman04",
+            "formKey": "01512A:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_BF_FrozenFalmerShaman05",
+            "formKey": "01512B:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerFrozenVampRace",
+          "formKey": "01AACC:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "DLC1_BF_LCharFrozenShaman",
+            "formKey": "015126:Dawnguard.esm"
+          },
+          "rungs": [
+            1,
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: the Forgotten Vale's Falmer, banded with the Shadowmasters"
+        },
+        "note": "five records, one per level, drawn at 1 · 15 · 30 · 40 · 50 and named Frozen Falmer Shaman; the placed wrapper 015125 does not take `BaseData` from them and shows its own name, Frozen Shaman."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncFalmer05Shaman` 025D32 also needs `DLC1_BF_FrozenFalmerShamanTemplate` 006D11:Dawnguard.esm (the Frozen Shaman base, level 1; the five Frozen Shaman records keep their own levels too): it uses 025D32 as its template but not for `Stats`.",
+      "`EncFalmer0{1–4}Shaman`, `DLC1EncFalmer06Shaman`, `DLC1_BF_FrozenFalmerShaman01`–`05`: no other record keeps its own level.",
+      "Each shaman row keeps its own level while it takes its look from its rung's template (`EncFalmer0{1–5}Template` on *Common Falmer*, `DLC1EncFalmer06Template` 015CAC:Dawnguard.esm on *Falmer Boss*); those templates are Falmer with no template of their own.",
+      "Every other shaman record (every `Lvl*FalmerShaman*` wrapper, `DLC1_BF_LVLFrozenFalmerShaman`) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharFalmerShaman",
+          "formKey": "01E77F:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Falmer (5)"
+          },
+          {
+            "at": 15,
+            "label": "Falmer Skulker (8)"
+          },
+          {
+            "at": 22,
+            "label": "Falmer Gloomlurker (14)"
+          },
+          {
+            "at": 30,
+            "label": "Falmer Nightprowler (19)"
+          },
+          {
+            "at": 38,
+            "label": "Falmer Shadowmaster (25)"
+          },
+          {
+            "at": 48,
+            "label": "Falmer Warmonger (35)"
+          }
+        ],
+        "owner": "`LvlFalmerShaman` 01E7B4 · `LvlFalmerShamanGuard` 03E081 · `LvlFalmerShamanHoldPosition256` 0F21DE · `LvlFalmerAmbushShaman` 0F5610 · `dunChillwind_LvlFalmerAmbushShaman` 076238 and `…HoldPosition` 083264"
+      },
+      {
+        "list": {
+          "edid": "DLC1_BF_LCharFrozenShaman",
+          "formKey": "015126:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frozen Shaman 01 (level 1)"
+          },
+          {
+            "at": 15,
+            "label": "Frozen Shaman 02 (level 10)"
+          },
+          {
+            "at": 30,
+            "label": "Frozen Shaman 03 (level 20)"
+          },
+          {
+            "at": 40,
+            "label": "Frozen Shaman 04 (level 30)"
+          },
+          {
+            "at": 50,
+            "label": "Frozen Shaman 05 (level 40)"
+          }
+        ],
+        "owner": "`DLC1_BF_LVLFrozenFalmerShaman` 015125:Dawnguard.esm (3 refs in the Forgotten Vale persistent cell 000EA6:Dawnguard.esm)"
+      },
+      {
+        "list": {
+          "edid": "DLC1LCharChaurusHunterAmbushPodShaman",
+          "formKey": "002B5E:Dawnguard.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Falmer shaman, rung 01"
+          },
+          {
+            "at": 16,
+            "label": "Chaurus Hunter Fledgling"
+          },
+          {
+            "at": 32,
+            "label": "Chaurus Hunter"
+          }
+        ],
+        "owner": "Chaurus Hunter (`DLC1LvlChaurusHunterPodAmbush_AltFalmerShaman` 002B5A:Dawnguard.esm)"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Rungs 01–05",
+        "weapons": "`DLC1FalmerShamanWeapon` 00E8DA:Dawnguard.esm",
+        "armor": "none",
+        "skin": "`DLC1SkinFalmerFemale01` 00284B:Dawnguard.esm"
+      },
+      {
+        "records": "Rung 06",
+        "weapons": "`DLC1LItemWeaponFalmerShaman` 015CB5:Dawnguard.esm",
+        "armor": "none",
+        "skin": "`DLC1SkinFalmerFemale01`"
+      },
+      {
+        "records": "Frozen Shaman 01–05 (inventory from `DLC1_BF_FrozenFalmerShamanTemplate` 006D11)",
+        "weapons": "Mystic Bound Sword 0424F9",
+        "armor": "none; outfit `DLC1FalmerVampFrozenShamenOutfit` 01AACD holds only the winged skin",
+        "skin": "`DLC1SkinVampireFalmerWings` 00D97F:Dawnguard.esm"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC1FalmerShamanWeapon",
+          "formKey": "00E8DA:Dawnguard.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "1: Bound Sword 058F5F or `DLC1LitemStaffFalmer00` 011D64 (Staff of Firebolts · Ice Spikes · Lightning Bolts) · 14: Bound Sword or `DLC1LItemStaffFalmer25` 011D65 (adds Staff of the Flame Atronach) · 25: Mystic Bound Sword 0424F9 or `DLC1LItemStaffFalmer50` 011D66 (Staff of the Frost Atronach · Chain Lightning · Fireballs · Ice Storms)"
+      },
+      {
+        "list": {
+          "edid": "DLC1LItemWeaponFalmerShaman",
+          "formKey": "015CB5:Dawnguard.esm"
+        },
+        "rolls": "Mystic Bound Sword 0424F9 or `DLC1SublistStaffDestructionFalmer` 015CB4 (Skyrim's Staff of Firebolts 04C6CA · Ice Spikes 04DED8 · Lightning Bolts 04DEE3)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Falmer staves `DLC1StaffFalmer*` 011D56–011D60:Dawnguard.esm",
+        "kind": "staff",
+        "playable": true
+      },
+      {
+        "item": "Bound Sword 058F5F · Mystic Bound Sword 0424F9",
+        "kind": "one-handed, enchanted",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`DLC1SkinFalmerFemale01` 00284B · `DLC1SkinVampireFalmerWings` 00D97F (Dawnguard.esm)",
+        "kind": "the shaman body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

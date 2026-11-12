@@ -1,0 +1,68 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "falmer",
+  "title": "Falmer",
+  "order": 5,
+  "meta": {
+    "spec": "archetype-tiers.md §3.3",
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The chaurus (Frozen Chaurus included) and the chaurus hunters are under World Creatures → Insectoids.",
+  "families": [
+    {
+      "id": "common-falmer",
+      "holds": "the five rungs Falmer 9 → Shadowmaster 38, the Frozen Falmer and Feral Falmer of the Forgotten Vale, and Blackreach's Falmer Servant"
+    },
+    {
+      "id": "falmer-shaman",
+      "holds": "the six shaman rungs 5 → 35, below the melee Falmer of the same name, and the Frozen Shaman"
+    },
+    {
+      "id": "falmer-boss",
+      "holds": "the boss of each rung, Skulker 18 → Shadowmaster 44, and every Falmer Warmonger, the Forgotten Vale boss with Auriel's Shield included"
+    },
+    {
+      "id": "snow-elves",
+      "holds": "Arch-Curate Vyrthur, Knight-Paladin Gelebor and the five Prelates of the Forgotten Vale"
+    }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-09-30)",
+    "confidence": "verified",
+    "text": "Every NPC in Skyrim, Update, Dawnguard, HearthFires, Dragonborn and the CC packs whose race is Falmer, Chaurus, Chaurus Reaper, Chaurus Hunter, Frozen Falmer or Frozen Chaurus, or whose factions include `FalmerFaction` 02997E, `ChaurusFaction` 03C9A8 or `dunBlackreachFalmerServantFaction` 0B2D37, followed through every `LVLN` and template that points at them. Re-checked 2026-11-12: every Falmer-race record that keeps its own level is on a family page or below. Vanilla has no named Falmer: the only individually placed Falmer boss is the Forgotten Vale Warmonger, on *Falmer Boss*. Everything found is on a family page except the following."
+  },
+  "filedElsewhere": [
+    {
+      "record": "the chaurus, Chaurus Reaper, Frozen Chaurus and Chaurus Hunter records",
+      "what": "the Falmer's insects",
+      "where": "World Creatures → Insectoids"
+    },
+    {
+      "record": "`dunShimmermistCenturion` 09B94B",
+      "what": "a Dwarven centurion in Shimmermist Cave; takes `Stats` and `Traits` from `LvlDwarvenCenturionAmbush` 10FCE7",
+      "where": "Automatons → *Dwarven Centurion*"
+    },
+    {
+      "record": "`ccBGSSSE053_Ehlhiel` · `ccBGSSSE053_ZahariaALIVE` (ccbgssse053-ba_leather)",
+      "what": "CC humanoids in `FalmerFaction`, Lost Echo Cave, with their own `PcLevelMult`",
+      "where": "World → *Falkreath Countryside*"
+    }
+  ],
+  "neverInGame": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "record": "`DLC1LvlVampireFalmer{Melee,Missile,Shaman,Spellsword}` 00B3CC · 00B3CF · 00B3CD · 00B3CE, `DLC1LvlVampireFalmerShamanHoldPosition256` 00B3D0, `DLC1LvlVampireFalmerMissileHoldPosition256` 00B3D5 (Dawnguard.esm)",
+        "why": "nameless wrappers on the ordinary Falmer lists with the vampire skin `DLC1SkinVampireFalmer` 006DBC (Melee and Shaman are crossed: `…Melee` draws `LCharFalmerShaman`, the two `…Shaman` draw `LCharFalmerMelee`): no placed reference, list, quest, package, form list or scene names them"
+      },
+      {
+        "record": "`DLC1_BF_FrozenFalmerWingsMelee` 00D982 · `DLC1FalmerFeralWingsMelee` 00D983 (Dawnguard.esm)",
+        "why": "winged copies of the Frozen Vampire Falmer and the Feral Falmer: the same"
+      },
+      {
+        "record": "`TestFalmerARMOR` 002B15 · `TESTFemaleFalmerStaff` 002C08 · `EncFalmer01StaffF` 003627 (Dawnguard.esm)",
+        "why": "test records: the same"
+      }
+    ]
+  }
+}

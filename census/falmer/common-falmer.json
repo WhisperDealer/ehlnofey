@@ -1,0 +1,660 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "common-falmer",
+  "group": "falmer",
+  "title": "Common Falmer",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "falmer",
+        "name": "Falmer",
+        "records": [
+          {
+            "edid": "EncFalmer01Template",
+            "formKey": "03B54C:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 9
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: low-level Falmer"
+        }
+      },
+      {
+        "id": "falmer-skulker",
+        "name": "Falmer Skulker",
+        "records": [
+          {
+            "edid": "EncFalmer02Template",
+            "formKey": "03B54D:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 15
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: low-level Falmer"
+        }
+      },
+      {
+        "id": "falmer-gloomlurker",
+        "name": "Falmer Gloomlurker",
+        "records": [
+          {
+            "edid": "EncFalmer03Template",
+            "formKey": "029980:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 22
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: Falmer"
+        }
+      },
+      {
+        "id": "falmer-nightprowler",
+        "name": "Falmer Nightprowler",
+        "records": [
+          {
+            "edid": "EncFalmer04Template",
+            "formKey": "03B54E:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 30
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: Falmer"
+        }
+      },
+      {
+        "id": "falmer-shadowmaster",
+        "name": "Falmer Shadowmaster",
+        "records": [
+          {
+            "edid": "EncFalmer05Template",
+            "formKey": "03B54F:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 38
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Falmer Shadowmasters"
+        }
+      },
+      {
+        "id": "frozen-falmer",
+        "name": "Frozen Falmer",
+        "records": [
+          {
+            "edid": "DLC1_BF_LVLFrozenFalmerMelee",
+            "formKey": "006D10:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_BF_FrozenFalmerMelee01",
+            "formKey": "01511F:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_BF_FrozenFalmerMelee02",
+            "formKey": "015120:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_BF_FrozenFalmerMelee03",
+            "formKey": "015121:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_BF_FrozenFalmerMelee04",
+            "formKey": "015122:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_BF_FrozenFalmerMelee05",
+            "formKey": "015123:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerFrozenVampRace",
+          "formKey": "01AACC:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "DLC1_BF_LCharFrozenFalmer",
+            "formKey": "015124:Dawnguard.esm"
+          },
+          "rungs": [
+            1,
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: the Forgotten Vale's Falmer, banded with the Shadowmasters"
+        },
+        "note": "five records, one per level, drawn at 1 · 15 · 30 · 40 · 50. They are named Frozen Vampire Falmer (from `DLC1_BF_FrozenFalmerMeleeTemplate` 01511E), but the placed wrapper 006D10 does not take `BaseData` from them, so it shows its own name, Frozen Falmer."
+      },
+      {
+        "id": "feral-falmer",
+        "name": "Feral Falmer",
+        "records": [
+          {
+            "edid": "DLC1FalmerFeralMelee",
+            "formKey": "00D984:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 9,
+          "from": {
+            "edid": "EncFalmer01Template",
+            "formKey": "03B54C:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: low-level Falmer"
+        },
+        "note": "takes `Stats` from `EncFalmer01Template`, not `BaseData`: its name is its own."
+      },
+      {
+        "id": "falmer-servant",
+        "name": "Falmer Servant",
+        "records": [
+          {
+            "edid": "dunBlackreachLVLFalmerServant",
+            "formKey": "0B2D35:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee1H",
+            "formKey": "039CFC:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "bands-of-power.md: most bandits"
+        },
+        "note": "borrows its level from the Bandits: takes `Stats` and `Traits` (so a bandit's race and body) from `LCharBanditMelee1H`, so changing that ladder changes it. Its name, inventory and outfit are its own. Moved here from Uncategorised → *Bandit Level Borrowers* (user, 2026-10-04)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncFalmer01Template` 03B54C also needs `EncFalmer01Shaman` 025D36 (level 5, on *Falmer Shaman*) and `DLC1_BF_FrozenFalmerMeleeTemplate` 01511E:Dawnguard.esm (the Frozen Falmer base, level 1; the five Frozen Falmer records keep their own levels too): they use 03B54C as their template but not for `Stats`.",
+      "Changing `EncFalmer02Template` 03B54D also needs `EncFalmer02Shaman` 025D34 (level 8, on *Falmer Shaman*), `EncFalmer02MeleeBoss` 052387 and `EncFalmer02SpellswordBoss` 06322D (level 18, on *Falmer Boss*): same pattern.",
+      "Changing `EncFalmer03Template` 029980 also needs `EncFalmer03Shaman` 025D2E (level 14, on *Falmer Shaman*), `EncFalmer03MeleeBoss` 05238C and `EncFalmer03SpellswordBoss` 06322F (level 26, on *Falmer Boss*): same pattern.",
+      "Changing `EncFalmer04Template` 03B54E also needs `EncFalmer04Shaman` 025D30 (level 19, on *Falmer Shaman*), `EncFalmer04MeleeBoss` 05238D and `EncFalmer04SpellswordBoss` 06322E (level 35, on *Falmer Boss*): same pattern.",
+      "Changing `EncFalmer05Template` 03B54F also needs `EncFalmer05Shaman` 025D32 (level 25, on *Falmer Shaman*), `EncFalmer05MeleeBoss` 05238E and `EncFalmer05SpellswordBoss` 063230 (level 44, on *Falmer Boss*): same pattern.",
+      "Changing the melee rungs also needs `TG08BFalmerScene` 094C8A (level 1, two refs in `Irkngthand02` 07614C): it takes its template from `LCharFalmerMelee` 01E77D, which draws them, without `Stats`.",
+      "`DLC1_BF_FrozenFalmerMelee01`–`05`, `DLC1FalmerFeralMelee`: no other record keeps its own level.",
+      "The Falmer Servant follows the bandit ladder; the records that keep their own level beside it are listed on *Common Bandits*.",
+      "The Warmonger template `DLC1EncFalmer06Template` 015CAC:Dawnguard.esm is a Falmer with no template and level 48; it is on *Falmer Boss*.",
+      "Every other Falmer record (the melee, archer and spellsword `A`/`B` leaves, the `DLC1EncFalmer0{2–5}MeleeHeavy` leaves, `TreasCorpseFalmer`, the other `Lvl*Falmer*` wrappers) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharFalmerMelee",
+          "formKey": "01E77D:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Falmer A/B (via `SubCharFalmerMelee01Variants` 052384)"
+          },
+          {
+            "at": 15,
+            "label": "Falmer Skulker + Heavy"
+          },
+          {
+            "at": 22,
+            "label": "Falmer Gloomlurker + Heavy"
+          },
+          {
+            "at": 30,
+            "label": "Falmer Nightprowler + Heavy"
+          },
+          {
+            "at": 38,
+            "label": "Falmer Shadowmaster + Heavy"
+          },
+          {
+            "at": 48,
+            "label": "Falmer Warmonger (on *Falmer Boss*)",
+            "count": 2
+          }
+        ],
+        "owner": "`LvlFalmerMelee` 01E7B2 · `LvlFalmerMeleeGuard` 03E080 · `LvlFalmerMeleeHoldPosition256` 0F21DD · `LvlFalmerAmbushMelee` 0BDFAE · `dunChillwind_LvlFalmerAmbushMelee` 08326D · `TG08BFalmerScene` 094C8A"
+      },
+      {
+        "list": {
+          "edid": "LCharFalmerMissile",
+          "formKey": "01E77E:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Falmer A/B (via `SubCharFalmerMissile01Variants` 052386)"
+          },
+          {
+            "at": 15,
+            "label": "Falmer Skulker"
+          },
+          {
+            "at": 22,
+            "label": "Falmer Gloomlurker"
+          },
+          {
+            "at": 30,
+            "label": "Falmer Nightprowler"
+          },
+          {
+            "at": 38,
+            "label": "Falmer Shadowmaster"
+          },
+          {
+            "at": 48,
+            "label": "Falmer Warmonger (on *Falmer Boss*)"
+          }
+        ],
+        "owner": "`LvlFalmerMissile` 01E7B3 · `LvlFalmerMissileGuard` 03E07F · `LvlFalmerMissileHoldPosition256` 09C959 · `…TillRelease` 1093FB · `LvlFalmerAmbushMissile` 076249 · `dunChillwind_LvlFalmerAmbushMissile` 07625C · `dunChillwind_LvlFalmerMissileHoldPosition128` 0A0924 · `…256` 08326F"
+      },
+      {
+        "list": {
+          "edid": "LCharFalmerSpellsword",
+          "formKey": "063229:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Falmer A/B (via `SubCharFalmerSpellsword01Variants` 063228)"
+          },
+          {
+            "at": 15,
+            "label": "Falmer Skulker"
+          },
+          {
+            "at": 22,
+            "label": "Falmer Gloomlurker"
+          },
+          {
+            "at": 30,
+            "label": "Falmer Nightprowler"
+          },
+          {
+            "at": 38,
+            "label": "Falmer Shadowmaster"
+          },
+          {
+            "at": 48,
+            "label": "Falmer Warmonger (on *Falmer Boss*)"
+          }
+        ],
+        "owner": "`LvlFalmerSpellsword` 06322C · `LvlFalmerSpellswordHoldPosition256` 0F2295 · `dunChillwind_LvlFalmerAmbushSpellsword` 083270"
+      },
+      {
+        "list": {
+          "edid": "DLC1_BF_LCharFrozenFalmer",
+          "formKey": "015124:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Frozen Falmer 01 (level 1)"
+          },
+          {
+            "at": 15,
+            "label": "Frozen Falmer 02 (level 10)"
+          },
+          {
+            "at": 30,
+            "label": "Frozen Falmer 03 (level 20)"
+          },
+          {
+            "at": 40,
+            "label": "Frozen Falmer 04 (level 30)"
+          },
+          {
+            "at": 50,
+            "label": "Frozen Falmer 05 (level 40)"
+          }
+        ],
+        "owner": "`DLC1_BF_LVLFrozenFalmerMelee` 006D10:Dawnguard.esm (12 refs in the Forgotten Vale persistent cell 000EA6:Dawnguard.esm)"
+      },
+      {
+        "list": {
+          "label": "`DLC1LCharChaurusHunterAmbushPod{Melee,Missile,Spellsword}` 002B60 · 002B5F · 002B5D:Dawnguard.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Falmer A/B (via the rung-01 variant lists)"
+          },
+          {
+            "at": 16,
+            "label": "Chaurus Hunter Fledgling"
+          },
+          {
+            "at": 32,
+            "label": "Chaurus Hunter"
+          }
+        ],
+        "owner": "Chaurus Hunter (`DLC1LvlChaurusHunterPodAmbush_AltFalmer{Melee,Missile,Spellsword}` 002B5C · 002B5B · 002B59:Dawnguard.esm)"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMelee1H",
+          "formKey": "039CFC:Skyrim.esm"
+        },
+        "seeFamily": "*Common Bandits*",
+        "note": "the common 1H bandit rungs, as level and race only",
+        "owner": "Falmer Servant `dunBlackreachLVLFalmerServant` 0B2D35; the rest on *Common Bandits*"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Feral Falmer",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1zFalmerValley01",
+              "formKey": "008482:Dawnguard.esm"
+            },
+            "refText": "×3",
+            "note": "Darkfall Grotto"
+          }
+        ]
+      },
+      {
+        "name": "Falmer Servant",
+        "locations": [
+          {
+            "cell": {
+              "edid": "BlackreachZcell04",
+              "formKey": "0B29D6:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "BlackreachZcell05",
+              "formKey": "0B29D5:Skyrim.esm"
+            },
+            "refText": "×4"
+          },
+          {
+            "cell": {
+              "edid": "BlackreachZcell06",
+              "formKey": "0B29D4:Skyrim.esm"
+            },
+            "refText": "×7"
+          },
+          {
+            "cell": {
+              "edid": "Blackreach",
+              "formKey": "01EE62:Skyrim.esm"
+            },
+            "refText": "×5",
+            "note": "the worldspace"
+          },
+          {
+            "cell": {
+              "edid": "BlackreachCity",
+              "formKey": "0237DE:Skyrim.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Melee, rungs 01–02 (`EncFalmer01MeleeA/B` 023A99 · 052382, `EncFalmer02Melee` 023A9A)",
+        "weapons": "`LItemFalmerWeapon` 051951 · Falmer Shield 05C06C",
+        "armor": "none",
+        "skin": "01: `SkinFalmer01` 050F30 (A), `SkinFalmer03` 050F34 (B) · 02: `SkinFalmer02` 050F32"
+      },
+      {
+        "records": "Melee, rungs 03–05 (023A9B · 023A9C · 023A9D)",
+        "weapons": "`LItemFalmerWeapon` · Falmer Shield",
+        "armor": "Falmer Helmet (`FalmerHelmetOutfit` 052381)",
+        "skin": "03: `SkinFalmer04` 050F36 · 04: `SkinFalmer05` 050F38 · 05: `SkinFalmer06` 050F3A"
+      },
+      {
+        "records": "Heavy melee, rungs 02–05 (`DLC1EncFalmer0{2–5}MeleeHeavy` 00E8E4 · 00E8E8 · 00E8EE · 00E8EF:Dawnguard.esm)",
+        "weapons": "`LItemFalmerWeapon` · Falmer Shield",
+        "armor": "`DLC1FalmerHeavyOutfit` 015CAB:Dawnguard.esm",
+        "skin": "the rung's skin"
+      },
+      {
+        "records": "Archer, rung 01 (`EncFalmer01MissileA/B` 025D2C · 052385)",
+        "weapons": "Falmer Bow 038340 · Falmer Sword 02E6D1 · `LItemFalmerArrows` 1092B3 · `LootFalmerSpecialArrows10` 10F9D6",
+        "armor": "none",
+        "skin": "as melee 01"
+      },
+      {
+        "records": "Archer, rung 02 (`EncFalmer02Missile` 025D2A)",
+        "weapons": "Falmer Bow · `LItemFalmerArrows` · `LootFalmerSpecialArrows10`",
+        "armor": "none",
+        "skin": "`SkinFalmer02`"
+      },
+      {
+        "records": "Archer, rungs 03–05 (025D24 · 025D26 · 025D28)",
+        "weapons": "Falmer Bow · `LItemFalmerArrows` · `LootFalmerSpecialArrows10`",
+        "armor": "Falmer Helmet",
+        "skin": "as melee 03–05"
+      },
+      {
+        "records": "Spellsword, rungs 01–02 (`EncFalmer01SpellswordA/B` 063224 · 063225, `EncFalmer02Spellsword` 063226)",
+        "weapons": "`LItemFalmerWeapon`",
+        "armor": "none",
+        "skin": "as melee 01–02"
+      },
+      {
+        "records": "Spellsword, rungs 03–05 (063227 · 06322A · 06322B)",
+        "weapons": "`LItemFalmerWeapon`",
+        "armor": "Falmer Helmet",
+        "skin": "as melee 03–05"
+      },
+      {
+        "records": "Frozen Falmer 01–05",
+        "weapons": "none (inventory from `EncFalmer01Template` 03B54C, which is empty)",
+        "armor": "none",
+        "skin": "`DLC1SkinVampireFalmer` 006DBC:Dawnguard.esm"
+      },
+      {
+        "records": "Feral Falmer",
+        "weapons": "none",
+        "armor": "none",
+        "skin": "`DLC1SkinVampireFalmerFeral` 00D980:Dawnguard.esm"
+      },
+      {
+        "records": "Falmer Servant (own)",
+        "weapons": "`LItemWeaponAny1HTown` 0165C5 · `LootBanditGold` 037C27 · `LootFalmerIngredients25` 10F9D0 ×2",
+        "armor": "Beggar Robes, no shoes (`BeggarNoShoesOutfit` 028B58)",
+        "skin": "the drawn bandit's race default (playable body)"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemFalmerWeapon",
+          "formKey": "051951:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Falmer Sword 02E6D1 ×4 · Falmer War Axe 0302CD ×4 (1) · Honed Falmer Sword 06F6FF · Honed Falmer War Axe 06F700, one each at 18, 19, 20, 21, 25, 26, 27, 28"
+      },
+      {
+        "list": {
+          "edid": "DLC1FalmerHeavyOutfit",
+          "formKey": "015CAB:Dawnguard.esm"
+        },
+        "rolls": "helmet 100% (`DLC1LItemFalmerHelmetHeavy100` 00E8E1) · cuirass 75% (`DLC1LItemFalmerCuriassHeavy75` 015CB6) · boots 25% (`…BootsHeavy25` 015CB7) · gauntlets 25% (`…GauntletsHeavy25` 015CB8); each rolls Falmer Hardened (1) or Falmer Heavy (30), every gate ≤ player"
+      },
+      {
+        "list": {
+          "edid": "FalmerHelmetOutfit",
+          "formKey": "052381:Skyrim.esm"
+        },
+        "rolls": "Falmer Helmet 04C3CB"
+      },
+      {
+        "list": {
+          "edid": "LItemFalmerArrows",
+          "formKey": "1092B3:Skyrim.esm"
+        },
+        "rolls": "12 Falmer Arrows 038341, each 75% (`BaseArrowFalmer75` 037C16)"
+      },
+      {
+        "list": {
+          "edid": "LootFalmerSpecialArrows10",
+          "formKey": "10F9D6:Skyrim.esm"
+        },
+        "rolls": "10%: 6 arrows from `LItemArrowsAllRandomLoot` 10E0DB (iron 1 → ebony 36)"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponAny1HTown",
+          "formKey": "0165C5:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "one of `LItemWeaponMaceTown` 0165BB · `…SwordTown` 0165BC · `…WarAxeTown` 0165BE; each: Iron ×4 (1) · Steel (4, 5, 6, 7) · Orcish (13) · Dwarven (18) · Elven (23)"
+      },
+      {
+        "list": {
+          "edid": "BeggarNoShoesOutfit",
+          "formKey": "028B58:Skyrim.esm"
+        },
+        "rolls": "Beggar Robes `ClothesBeggarRobes` 013105"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Falmer Helmet `ArmorFAlmerHelmet` 04C3CB",
+        "kind": "heavy helmet, AR 10",
+        "playable": true
+      },
+      {
+        "item": "Falmer Shield `ArmorFalmerShield` 05C06C",
+        "kind": "heavy shield, AR 28",
+        "playable": true
+      },
+      {
+        "item": "Falmer Hardened Helm · Armor · Boots · Gauntlets 00E8E0 · 00E8DE · 00E8DD · 00E8DF:Dawnguard.esm",
+        "kind": "heavy, AR 18 · 34 · 13 · 13",
+        "playable": true
+      },
+      {
+        "item": "Falmer Heavy Helm · Armor · Boots · Gauntlets 0023EB · 0023E9 · 0023EF · 0023ED:Dawnguard.esm",
+        "kind": "heavy, AR 21 · 43 · 16 · 16",
+        "playable": true
+      },
+      {
+        "item": "Falmer Armor · Boots · Gauntlets 0B83CB · 0B83CD · 0B83CF",
+        "kind": "heavy, AR 31 · 12 · 12",
+        "playable": true,
+        "note": "worn by no Falmer; placed once each in `Mzinchaleft02` 0BE46A"
+      },
+      {
+        "item": "Falmer Sword · War Axe · Bow, Honed Sword · War Axe",
+        "kind": "one-handed, bow",
+        "playable": true
+      },
+      {
+        "item": "Beggar Robes 013105 · the town maces, swords and war axes",
+        "kind": "clothing, one-handed",
+        "playable": true
+      },
+      {
+        "item": "`SkinFalmer01`–`06` 050F30–050F3A · `DLC1SkinVampireFalmer` 006DBC · `DLC1SkinVampireFalmerFeral` 00D980 (Dawnguard.esm)",
+        "kind": "the Falmer body (`Falmer0N.nif`)",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

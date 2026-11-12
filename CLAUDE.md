@@ -115,7 +115,7 @@ rules).
   page) plus one `<family>.json` per family page; `census/bands.json` is the home page. The schema is
   `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
   everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons, Daedra** (all 13 pages, the
-  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05), Dragon Priests (one page, a family of `census/undead/`, 2026-11-12), Draugr (all 4 pages, `census/draugr/`), Skeletons (all 5 pages, `census/skeletons/`), Ghosts (all 4 pages, `census/ghosts/`) and Ash (all 4 pages, `census/ash/`), sub-groups of Undead, and the CC Zombies and Ayleid Undead (families of `census/undead/`): **Undead is fully migrated** (2026-11-12).
+  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05), Dragon Priests (one page, a family of `census/undead/`, 2026-11-12), Draugr (all 4 pages, `census/draugr/`), Skeletons (all 5 pages, `census/skeletons/`), Ghosts (all 4 pages, `census/ghosts/`) and Ash (all 4 pages, `census/ash/`), sub-groups of Undead, and the CC Zombies and Ayleid Undead (families of `census/undead/`): **Undead is fully migrated** (2026-11-12). Falmer (all 5 pages, `census/falmer/`, 2026-11-12).
   Every other group stays Confluence-first until it is migrated.
 - **A sub-group is its own census folder with `parent`** in its `group.json` (`census/vampires/` has
   `"parent": "undead"`); URLs stay flat (`/vampires/common-vampires/`), the parent's page lists its
@@ -252,7 +252,7 @@ rules).
   and **Mounts** (horses, unicorns, reindeer, and *Otherworldly Horses*: Arvak and the Daedric
   Horses, summoned mounts included by the user's choice); there is no Forgotten Vale page, its creatures are on
   their families' pages),
-  Falmer (WD-66: chaurus, Frozen Chaurus and chaurus hunters live under World Creatures → Insectoids;
+  Falmer (WD-66, **migrated to `census/falmer/`, so edit the JSON, not Confluence**: chaurus, Frozen Chaurus and chaurus hunters live under World Creatures → Insectoids;
   *Snow Elves* holds Vyrthur and Gelebor),
   Forsworn (WD-67: *Common Forsworn*, *Forsworn Briarheart*, *Named Forsworn* (the Cidhna Mine
   prisoners, the MS01 Markarth agents, CC Crowstooth and Alvasorr); the hagravens live under World

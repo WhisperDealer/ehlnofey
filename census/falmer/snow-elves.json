@@ -1,0 +1,310 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "snow-elves",
+  "group": "falmer",
+  "title": "Snow Elves",
+  "order": 4,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "vyrthur",
+        "name": "Arch-Curate Vyrthur",
+        "records": [
+          {
+            "edid": "DLC1AlthadanVyrthur",
+            "formKey": "003788:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "SnowElfRace",
+          "formKey": "00377D:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 15,
+          "max": 75
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "role: the Dawnguard questline's last boss before Harkon, beside the vampire lords"
+        },
+        "note": "no template; `SnowElfRace` carries no `Vampire` keyword, though he is a vampire in the story."
+      },
+      {
+        "id": "gelebor",
+        "name": "Knight-Paladin Gelebor",
+        "records": [
+          {
+            "edid": "DLC1Gelebor",
+            "formKey": "00A877:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "SnowElfRace",
+          "formKey": "00377D:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.25,
+          "min": 0
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: an ally of the Forgotten Vale, a band above the Vale's Falmer"
+        },
+        "note": "no template; an ally (`Essential`, `Invulnerable`, `IsGhost`), filed here by the user's call (2026-10-01)."
+      },
+      {
+        "id": "prelates",
+        "name": "Prelate",
+        "records": [
+          {
+            "edid": "DLC1Prelate00",
+            "formKey": "002B44:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1Prelate01",
+            "formKey": "00A8AC:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1Prelate02",
+            "formKey": "00A8AD:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1Prelate03",
+            "formKey": "00A8AE:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1Prelate04",
+            "formKey": "00A8B0:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "SnowElfRace",
+          "formKey": "00377D:Dawnguard.esm"
+        },
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: the Forgotten Vale's wayshrine allies, banded with the Vale's Falmer"
+        },
+        "note": "Prelate Sidanyis · Athring · Celegriath · Nirilor · Edhelbor, in record order; no template, allies (`Essential`, `Invulnerable`, `IsGhost`). Moved here from Uncategorised → *Unfiled NPCs* (user, 2026-10-03)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`DLC1AlthadanVyrthur`, `DLC1Gelebor`, the five Prelates: no other record keeps its own level."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Arch-Curate Vyrthur",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC01FalmerValley",
+              "formKey": "000BB5:Dawnguard.esm"
+            },
+            "persistent": true,
+            "disabled": true,
+            "note": "the worldspace, 1 ref"
+          }
+        ],
+        "quest": "quest `DLC1VQ07` alias `DLC1VQ07VyrthurAlias`"
+      },
+      {
+        "name": "Knight-Paladin Gelebor",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1DarkfallCave01",
+              "formKey": "004346:Dawnguard.esm"
+            },
+            "note": "1 ref"
+          }
+        ],
+        "quest": "aliases `DLC1VQ07GeleborAlias` (`DLC1VQ07`), `DLC1VQ07PostGeleborAlias` (`DLC1VQ07Post`)"
+      },
+      {
+        "name": "Prelate Sidanyis",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1DarkfallPassageWayshrine02",
+              "formKey": "005AC1:Dawnguard.esm"
+            },
+            "ref": {
+              "formKey": "002B48:Dawnguard.esm"
+            }
+          }
+        ],
+        "quest": "alias `DLC1VQ07Prelate00Alias` of `DLC1VQ07` 002853"
+      },
+      {
+        "name": "Prelate Athring",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1FVWayShrine01",
+              "formKey": "000C59:Dawnguard.esm"
+            },
+            "ref": {
+              "formKey": "00A8AF:Dawnguard.esm"
+            }
+          }
+        ],
+        "quest": "alias `DLC1VQ07Prelate01Alias` of `DLC1VQ07` 002853"
+      },
+      {
+        "name": "Prelate Celegriath",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1FVWayShrine02",
+              "formKey": "000D0A:Dawnguard.esm"
+            },
+            "ref": {
+              "formKey": "00A8B8:Dawnguard.esm"
+            }
+          }
+        ],
+        "quest": "alias `DLC1VQ07Prelate02Alias` of `DLC1VQ07` 002853"
+      },
+      {
+        "name": "Prelate Nirilor",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1FVWayShrine03",
+              "formKey": "000CD5:Dawnguard.esm"
+            },
+            "ref": {
+              "formKey": "00A8BB:Dawnguard.esm"
+            }
+          }
+        ],
+        "quest": "alias `DLC1VQ07Prelate03Alias` of `DLC1VQ07` 002853"
+      },
+      {
+        "name": "Prelate Edhelbor",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1FVWayShrine04",
+              "formKey": "000C2D:Dawnguard.esm"
+            },
+            "ref": {
+              "formKey": "00A8BF:Dawnguard.esm"
+            }
+          }
+        ],
+        "quest": "alias `DLC1VQ07Prelate04Alias` of `DLC1VQ07` 002853"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Arch-Curate Vyrthur",
+        "weapons": "Elven Dagger of Blizzards 0BE193",
+        "armor": "`DLC1VyrthurOutfit` 0153AF:Dawnguard.esm",
+        "skin": "the race default"
+      },
+      {
+        "records": "Knight-Paladin Gelebor",
+        "weapons": "Prelate's Mace 01681E:Dawnguard.esm",
+        "armor": "`DLC1GeleborOutfit` 002B49:Dawnguard.esm",
+        "skin": "the race default"
+      },
+      {
+        "records": "The five Prelates",
+        "weapons": "Elven Dagger `DLC1PrelateDagger` 01681F:Dawnguard.esm",
+        "armor": "`DLC1PrelateOutfit` 01570F:Dawnguard.esm",
+        "skin": "the race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC1VyrthurOutfit",
+          "formKey": "0153AF:Dawnguard.esm"
+        },
+        "rolls": "Ancient Falmer Cuirass 00C816 · Boots 00C815 · Gauntlets 00C817 (Dawnguard.esm)"
+      },
+      {
+        "list": {
+          "edid": "DLC1GeleborOutfit",
+          "formKey": "002B49:Dawnguard.esm"
+        },
+        "rolls": "Ancient Falmer Cuirass (alternate) 00CAD3 · Boots 00C815 · Gauntlets 00C817 (Dawnguard.esm)"
+      },
+      {
+        "list": {
+          "edid": "DLC1PrelateOutfit",
+          "formKey": "01570F:Dawnguard.esm"
+        },
+        "rolls": "Monk Robes `DLC1ClothesPrelateRobes` 01570C · Boots `DLC1ClothesPrelateBoots` 01570B (Dawnguard.esm)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Ancient Falmer Cuirass 00C816 · Boots 00C815 · Gauntlets 00C817 (Dawnguard.esm)",
+        "kind": "light, AR 38 · 11 · 11",
+        "playable": true
+      },
+      {
+        "item": "Elven Dagger of Blizzards 0BE193",
+        "kind": "one-handed, enchanted",
+        "playable": true
+      },
+      {
+        "item": "Ancient Falmer Cuirass (alternate) 00CAD3:Dawnguard.esm",
+        "kind": "light body, AR 38",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Prelate's Mace 01681E:Dawnguard.esm",
+        "kind": "one-handed mace",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Elven Dagger `DLC1PrelateDagger` 01681F:Dawnguard.esm",
+        "kind": "one-handed dagger",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Monk Robes 01570C · Boots 01570B (Dawnguard.esm)",
+        "kind": "clothing",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

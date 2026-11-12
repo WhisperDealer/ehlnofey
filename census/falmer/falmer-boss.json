@@ -1,0 +1,378 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "falmer-boss",
+  "group": "falmer",
+  "title": "Falmer Boss",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "falmer-skulker-boss",
+        "name": "Falmer Skulker",
+        "records": [
+          {
+            "edid": "EncFalmer02MeleeBoss",
+            "formKey": "052387:Skyrim.esm"
+          },
+          {
+            "edid": "EncFalmer02SpellswordBoss",
+            "formKey": "06322D:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 18
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a Falmer boss, a band above its rung (Falmer Skulker IV)"
+        },
+        "note": "the melee and spellsword bosses of the Skulker rung; they take the name from `EncFalmer02Template` through `BaseData`."
+      },
+      {
+        "id": "falmer-gloomlurker-boss",
+        "name": "Falmer Gloomlurker",
+        "records": [
+          {
+            "edid": "EncFalmer03MeleeBoss",
+            "formKey": "05238C:Skyrim.esm"
+          },
+          {
+            "edid": "EncFalmer03SpellswordBoss",
+            "formKey": "06322F:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 26
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a Falmer boss, a band above its rung (Falmer Gloomlurker V)"
+        },
+        "note": "the melee and spellsword bosses of the Gloomlurker rung; they take the name from `EncFalmer03Template` through `BaseData`."
+      },
+      {
+        "id": "falmer-nightprowler-boss",
+        "name": "Falmer Nightprowler",
+        "records": [
+          {
+            "edid": "EncFalmer04MeleeBoss",
+            "formKey": "05238D:Skyrim.esm"
+          },
+          {
+            "edid": "EncFalmer04SpellswordBoss",
+            "formKey": "06322E:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 35
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a Falmer boss, a band above its rung (Falmer Nightprowler V)"
+        },
+        "note": "the melee and spellsword bosses of the Nightprowler rung; they take the name from `EncFalmer04Template` through `BaseData`."
+      },
+      {
+        "id": "falmer-shadowmaster-boss",
+        "name": "Falmer Shadowmaster",
+        "records": [
+          {
+            "edid": "EncFalmer05MeleeBoss",
+            "formKey": "05238E:Skyrim.esm"
+          },
+          {
+            "edid": "EncFalmer05SpellswordBoss",
+            "formKey": "063230:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 44
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a Falmer boss, a band above its rung (Falmer Shadowmaster VI)"
+        },
+        "note": "the melee and spellsword bosses of the Shadowmaster rung; they take the name from `EncFalmer05Template` through `BaseData`."
+      },
+      {
+        "id": "falmer-warmonger",
+        "name": "Falmer Warmonger",
+        "records": [
+          {
+            "edid": "DLC1EncFalmer06Template",
+            "formKey": "015CAC:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 48
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Falmer Warmongers"
+        },
+        "note": "the rank-and-file Warmonger: the template of the melee, archer and spellsword leaves `DLC1EncFalmer06Melee` 015CAA · `…Missile` 015CAF · `…Spellsword` 015CB1, which the common Falmer lists draw at 48."
+      },
+      {
+        "id": "falmer-warmonger-boss",
+        "name": "Falmer Warmonger",
+        "records": [
+          {
+            "edid": "DLC1EncFalmer06MeleeBoss",
+            "formKey": "015CB2:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1EncFalmer06SpellswordBoss",
+            "formKey": "015CB3:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 54
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a Falmer boss, a band above its rung (Falmer Warmonger VI)"
+        },
+        "note": "the boss pair of `LCharFalmerBoss`, drawn at 64; same name as the rank-and-file Warmonger, six levels above it."
+      },
+      {
+        "id": "forgotten-vale-warmonger",
+        "name": "Falmer Warmonger",
+        "records": [
+          {
+            "edid": "DLC1FalmerValleyForestFalmerBoss",
+            "formKey": "00FC80:Dawnguard.esm"
+          }
+        ],
+        "race": {
+          "edid": "FalmerRace",
+          "formKey": "0131F4:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 54
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: the Forgotten Vale boss, banded with the Warmonger bosses"
+        },
+        "note": "the Forgotten Vale's boss, carrying Auriel's Shield; named Falmer Warmonger on its own record (no `BaseData`), with `DLC1EncFalmer06Template` as its template for its look only."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `DLC1EncFalmer06Template` 015CAC:Dawnguard.esm also needs `DLC1EncFalmer06Shaman` 015CB0:Dawnguard.esm (level 35, on *Falmer Shaman*): it uses 015CAC as its template but not for `Stats`. The three Warmonger bosses above (54) keep their own levels the same way.",
+      "The other rows: no other record keeps its own level. Each boss row keeps its own level while it takes its look from its rung's template (`EncFalmer0{2–5}Template`, on *Common Falmer*).",
+      "Every other Warmonger record (`DLC1EncFalmer06Melee`, `…Missile`, `…Spellsword`) and every `Lvl*FalmerBoss*` wrapper carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharFalmerBoss",
+          "formKey": "05238F:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest rung at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Falmer Skulker pair (18)"
+          },
+          {
+            "at": 15,
+            "label": "Falmer Skulker pair"
+          },
+          {
+            "at": 22,
+            "label": "Falmer Skulker pair"
+          },
+          {
+            "at": 38,
+            "label": "Falmer Gloomlurker pair (26)"
+          },
+          {
+            "at": 46,
+            "label": "Falmer Nightprowler pair (35)"
+          },
+          {
+            "at": 54,
+            "label": "Falmer Shadowmaster pair (44)"
+          },
+          {
+            "at": 64,
+            "label": "Falmer Warmonger pair (54)"
+          }
+        ],
+        "owner": "`LvlFalmerBoss` 03E082, and through it `LvlFalmerBossAggro1024` 0D8000 · `LvlFalmerAmbushBoss` 0D6C20 · `dunShimmermistFalmerBoss` 0CB11B; `dunDuskglowLvlFalmerBoss` 0A512F"
+      },
+      {
+        "list": {
+          "label": "`LCharFalmerMelee` 01E77D · `LCharFalmerMissile` 01E77E · `LCharFalmerSpellsword` 063229"
+        },
+        "seeFamily": "*Common Falmer*",
+        "note": "the rank-and-file Warmonger at 48 (×2 in Melee), beside the common rungs",
+        "owner": "Falmer (the wrappers are on *Common Falmer*)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Falmer Warmonger (Forgotten Vale)",
+        "base": [
+          {
+            "edid": "DLC1FalmerValleyForestFalmerBoss",
+            "formKey": "00FC80:Dawnguard.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "label": "Forgotten Vale persistent cell 000EA6:Dawnguard.esm"
+            },
+            "ref": {
+              "edid": "DLC1FalmerForestBossREF",
+              "formKey": "018170:Dawnguard.esm"
+            },
+            "note": "grid (-2, 7)"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Skulker bosses (052387 · 06322D)",
+        "weapons": "`LItemFalmerWeapon` 051951; the melee boss adds Falmer Shield 05C06C",
+        "armor": "none",
+        "skin": "`SkinFalmer02` 050F32"
+      },
+      {
+        "records": "Gloomlurker, Nightprowler, Shadowmaster bosses",
+        "weapons": "`LItemFalmerWeapon`; melee adds Falmer Shield",
+        "armor": "Falmer Helmet (`FalmerHelmetOutfit` 052381)",
+        "skin": "`SkinFalmer04` 050F36 · `SkinFalmer05` 050F38 · `SkinFalmer06` 050F3A"
+      },
+      {
+        "records": "Warmonger melee (`DLC1EncFalmer06Melee` 015CAA) and melee boss (015CB2)",
+        "weapons": "`LItemFalmerWeapon` · Falmer Shield",
+        "armor": "`DLC1FalmerHeavyOutfit` 015CAB:Dawnguard.esm",
+        "skin": "`DLC1SkinFalmer07` 002B16:Dawnguard.esm"
+      },
+      {
+        "records": "Warmonger archer (`DLC1EncFalmer06Missile` 015CAF)",
+        "weapons": "Falmer Bow 038340 · `LItemFalmerArrows` 1092B3 · `LootFalmerSpecialArrows10` 10F9D6",
+        "armor": "`DLC1FalmerHeavyOutfit`",
+        "skin": "`DLC1SkinFalmer07`"
+      },
+      {
+        "records": "Warmonger spellsword (`DLC1EncFalmer06Spellsword` 015CB1) and spellsword boss (015CB3)",
+        "weapons": "`LItemFalmerWeapon`",
+        "armor": "`DLC1FalmerHeavyOutfit`",
+        "skin": "`DLC1SkinFalmer07`"
+      },
+      {
+        "records": "Forgotten Vale Warmonger (00FC80)",
+        "weapons": "`LItemFalmerWeapon` · **Auriel's Shield** `DLC1ArmorAurielsShield` 00284D:Dawnguard.esm",
+        "armor": "`DLC1FalmerHeavyOutfit`",
+        "skin": "`DLC1SkinFalmer07`"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemFalmerWeapon",
+          "formKey": "051951:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Falmer Sword · Falmer War Axe (1) · Honed Falmer Sword · Honed Falmer War Axe (18–21, 25–28); see *Common Falmer*"
+      },
+      {
+        "list": {
+          "edid": "DLC1FalmerHeavyOutfit",
+          "formKey": "015CAB:Dawnguard.esm"
+        },
+        "rolls": "helmet 100% · cuirass 75% · boots 25% · gauntlets 25%; each Falmer Hardened (1) or Falmer Heavy (30), every gate ≤ player"
+      },
+      {
+        "list": {
+          "edid": "FalmerHelmetOutfit",
+          "formKey": "052381:Skyrim.esm"
+        },
+        "rolls": "Falmer Helmet 04C3CB"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Auriel's Shield `DLC1ArmorAurielsShield` 00284D:Dawnguard.esm",
+        "kind": "heavy shield, AR 32, enchanted",
+        "playable": true
+      },
+      {
+        "item": "Every other weapon and armour piece above",
+        "kind": "see *Common Falmer* → Gear items",
+        "playable": true
+      },
+      {
+        "item": "`SkinFalmer02`–`06` · `DLC1SkinFalmer07` 002B16:Dawnguard.esm",
+        "kind": "the Falmer body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}
