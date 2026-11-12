@@ -1,0 +1,76 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "thalmor",
+  "title": "Thalmor",
+  "order": 2,
+  "parent": "factions",
+  "meta": {
+    "spec": "archetype-tiers.md §3.1",
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The Thalmor: soldiers, archers, wizards, boss wizards and the named Thalmor, vanilla, DLC and CC. Only the `EncThalmor00*` templates carry a name, so every rung of a ladder shows the same one (Thalmor Soldier, Thalmor Wizard): no band is legible, and archetype-tiers.md §3.1 pins each ladder to one level (soldiers 36, wizards 44, boss wizards 45). No plugin overrides a Thalmor list or Thalmor gear list, and no quest adds to one at runtime.",
+  "families": [
+    {
+      "id": "common-thalmor",
+      "holds": "the soldier and archer ladders (4 · 12 · 20 · 28 · 36) and the wizard ladder (4 · 12 · 20 · 28 · 36 · 44), with the Justiciars, Northwatch, the Embassy, the Ratway agents, Helgen, Markarth, Solstheim and the CC Bandit Armor and Redguard soldiers"
+    },
+    {
+      "id": "thalmor-boss",
+      "holds": "the boss wizard ladder (14 · 23 · 32 · 40 · 50), the Northwatch Interrogator and Agent Lorcalin"
+    },
+    {
+      "id": "named-thalmor",
+      "holds": "Elenwen, Ondolemar, Ancano, Rulindil, Estormo, Ancarion, Captain Valmir (the undercover agent at Forelhost, by the user's call), Gissur, Tsavani, J'datharr, Shavari"
+    }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-10-02)",
+    "confidence": "verified",
+    "text": "Every NPC in Skyrim, Update, Dawnguard, HearthFires, Dragonborn and the 74 CC packs that is in `ThalmorFaction` 039F26, `WEThalmorFaction` 0B80F7, `MGThalmorFaction` 0135A0, `MarkarthThalmorFaction` 0C78E5, `MQ202ThalmorAgentFaction` 06CCFB, `MQ201ThalmorCombatFaction` 039F27, `MQ201ThalmorEnemyFaction` 05450B, `WEThalmorPlayerEnemyFaction` 0B5E16 or `DLC2SV02ThalmorCrimeFaction` 02173A:Dragonborn.esm, or whose EditorID or name holds \"Thalmor\" or \"Justiciar\"; every `LVLN` whose EditorID holds \"Thalmor\"; then every template and list above and below them, every placed reference in every cell and worldspace, and every other record that names one of them. Everything found is on a family page except the records below. Re-checked 2026-11-12: no record outside the Thalmor pages takes a Thalmor record or list as its template, and no other list holds a Thalmor list."
+  },
+  "filedElsewhere": [
+    {
+      "record": "`WEThalmorPrisoner` 0B80FF",
+      "what": "Thalmor Prisoner, the Justiciars' Stormcloak captive in `WE32` 0B80F3; level from `LCharSoldierSons` 01FC5C",
+      "where": "Factions → Stormcloaks → *Common Stormcloaks*"
+    }
+  ],
+  "neverMet": [
+    {
+      "record": "`ccBGSSSE055_LvlThalmorSpy` 00081E:ccbgssse055-ba_orcishscaled.esl",
+      "what": "Armor Collector, a Thalmor spy (`Stats` from `LCharThalmorMagic`)",
+      "why": "aggression None, in `TownRiftenFaction` and `BanditAllyFaction`; a pickpocket target in `RiftenBeeandBarb` 016BDF (initially disabled)"
+    },
+    {
+      "record": "`VoiceTypeNPCMaleElfHaughty` 0391BF · `VoiceTypeNPCFemaleElfHaughty` 0391D1",
+      "what": "voice-type templates in `WEThalmorFaction`",
+      "why": "not actors in the world"
+    },
+    {
+      "record": "`TreasCorpseThalmorM` 0978AA · `TreasCorpseThalmorMelee1HM` 0AF9CD",
+      "what": "dead Thalmor Soldiers",
+      "why": "corpses"
+    }
+  ],
+  "neverInGame": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "record": "`ValmirBASE` 07E5B4",
+        "why": "Captain Valmir's base record: not placed; the two placed versions take `Stats` and `BaseData` from it"
+      },
+      {
+        "record": "`Muril` 034D99",
+        "why": "\"Muril\", level 4, `MGThalmorFaction`: not placed; the optional unique-actor alias `MG07MurilAlias` of `MG07` 01F257 never fills"
+      },
+      {
+        "record": "`LvlThalmorMelee1HFemale` 0423A6 · `LvlThalmorMageAggro1024` 0DC32F",
+        "why": "not placed and no record templates them"
+      },
+      {
+        "record": "`ccBGSSSE056_LvlThalmorBoss` 00081A · `…Melee1H` 00081B · `…Mage` 00081C (ccbgssse056-ba_silver.esl)",
+        "why": "not placed; nothing names them"
+      }
+    ]
+  }
+}

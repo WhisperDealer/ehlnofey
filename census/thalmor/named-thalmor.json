@@ -1,0 +1,645 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "named-thalmor",
+  "group": "thalmor",
+  "title": "Named Thalmor",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "elenwen",
+        "name": "Elenwen",
+        "records": [
+          {
+            "edid": "Elenwen",
+            "formKey": "013269:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 30
+        },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "user, 2026-11-12: Elenwen to Powerful (45)"
+        }
+      },
+      {
+        "id": "ondolemar",
+        "name": "Ondolemar",
+        "records": [
+          {
+            "edid": "Ondolemar",
+            "formKey": "0133AF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 25
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Ondolemar to Elite"
+        }
+      },
+      {
+        "id": "ancano",
+        "name": "Ancano",
+        "records": [
+          {
+            "edid": "Ancano",
+            "formKey": "01E7D7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 15,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Ancano to Powerful"
+        }
+      },
+      {
+        "id": "rulindil",
+        "name": "Rulindil",
+        "records": [
+          {
+            "edid": "Rulindil",
+            "formKey": "039F1F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 8,
+          "max": 40
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Rulindil to Elite"
+        }
+      },
+      {
+        "id": "estormo",
+        "name": "Estormo",
+        "records": [
+          {
+            "edid": "Estormo",
+            "formKey": "034D97:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Estormo to Elite"
+        }
+      },
+      {
+        "id": "ancarion",
+        "name": "Ancarion",
+        "records": [
+          {
+            "edid": "DLC2SV02Ancarion",
+            "formKey": "01CAF3:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 23,
+          "from": {
+            "edid": "EncThalmor03MagicBossM",
+            "formKey": "07D988:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Ancarion to Powerful"
+        }
+      },
+      {
+        "id": "captain-valmir",
+        "name": "Captain Valmir",
+        "records": [
+          {
+            "edid": "ValmirSons",
+            "formKey": "07E5B5:Skyrim.esm"
+          },
+          {
+            "edid": "ValmirImperial",
+            "formKey": "07E5B6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 4,
+          "from": {
+            "edid": "ValmirBASE",
+            "formKey": "07E5B4:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Captain Valmir to Elite"
+        },
+        "note": "an undercover Thalmor agent at Forelhost, filed here by the user's call; `Stats` from `ValmirBASE` → `EncThalmor01Melee1HM` 02B126."
+      },
+      {
+        "id": "gissur",
+        "name": "Gissur",
+        "records": [
+          {
+            "edid": "Gissur",
+            "formKey": "039F23:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "tsavani",
+        "name": "Tsavani",
+        "records": [
+          {
+            "edid": "Tsavani",
+            "formKey": "0353C7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "jdatharr",
+        "name": "J'datharr",
+        "records": [
+          {
+            "edid": "Jdatharr",
+            "formKey": "04D12B:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 15
+        },
+        "target": {
+          "band": "III",
+          "level": 15,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0 (WD-62, user): the long tail takes the level vanilla gives a level-25 player (25 × 1, capped at 15)"
+        }
+      },
+      {
+        "id": "shavari",
+        "name": "Shavari",
+        "records": [
+          {
+            "edid": "Shavari",
+            "formKey": "06C868:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 15
+        },
+        "target": {
+          "band": "III",
+          "level": 15,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0 (WD-62, user): the long tail takes the level vanilla gives a level-25 player (25 × 1, capped at 15)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Captain Valmir's level 4 is owned by `EncThalmor00MeleeTemplate` 02B124 (through `ValmirBASE` and `EncThalmor01Melee1HM`). Changing it leaves the higher melee rungs `EncThalmor02Melee1HM`–`05Melee1HM` 072AA6 · 07D962 · 07D96E · 07D96F (12 · 20 · 28 · 36) and CC `ccEDHSSE003_EncThalmor03Melee1HM` 000E40:ccedhsse003-redguard.esl (18) at their own levels: they use 02B124 as template but not for `Stats` (all on *Common Thalmor*).",
+      "Ancarion's level owner `EncThalmor03MagicBossM` 07D988 (on *Thalmor Boss*) has no other record that keeps its own level.",
+      "The other rows: no other record keeps its own level; no record uses any of them as a template."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Elenwen",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ThalmorEmbassy01",
+              "formKey": "07C98B:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "ElenwenREF",
+              "formKey": "0198BC:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "named by `MQ201` 035D5F, `MQ301` 044C56 and `MQ302` 045923",
+        "note": "`Essential`"
+      },
+      {
+        "name": "Ondolemar",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MarkarthUnderStoneKeep",
+              "formKey": "016DF2:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "OndolemarREF",
+              "formKey": "01990D:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "named by `MQ201Party` 063B57 and `FreeformMarkarthM` 064798"
+      },
+      {
+        "name": "Ancano",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WinterholdCollegeHallofTheElements",
+              "formKey": "01380E:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "AncanoRef",
+              "formKey": "01E7D8:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "the College quests `MG01`–`MG08` (the fight is `MG08` 01F258)",
+        "note": "`Essential`"
+      },
+      {
+        "name": "Rulindil",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ThalmorEmbassy02",
+              "formKey": "07DCFC:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "RulindilREF",
+              "formKey": "039F25:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "named by `MQ201`"
+      },
+      {
+        "name": "Estormo",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "MG07EstormoRef",
+              "formKey": "034D98:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "unique-actor alias `MG07EstormoAlias` of `MG07` 01F257"
+      },
+      {
+        "name": "Ancarion",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2NorthshoreLandingExterior01",
+              "formKey": "00ED0A:Dragonborn.esm"
+            },
+            "ref": {
+              "edid": "DLC2SV02AncarionRef",
+              "formKey": "01E8C7:Dragonborn.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias `Ancarion` of `DLC2SV02` 01CAF1"
+      },
+      {
+        "name": "Captain Valmir (Stormcloak)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "ValmirSonsRef",
+              "formKey": "090F06:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "property `ValmirSonsBase` of `dunForelhostQST` 035354"
+      },
+      {
+        "name": "Captain Valmir (Imperial)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "edid": "ValmirImpRef",
+              "formKey": "07E5B7:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "property `ValmirImpBase` of `dunForelhostQST`"
+      },
+      {
+        "name": "Gissur",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ThalmorEmbassy02",
+              "formKey": "07DCFC:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "GissurREF",
+              "formKey": "039F24:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "named by `MQ201` and `MQ202` 036191"
+      },
+      {
+        "name": "Tsavani",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ThalmorEmbassy01",
+              "formKey": "07C98B:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "TsvaniRef",
+              "formKey": "0353BE:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "named by `MQ201`"
+      },
+      {
+        "name": "J'datharr",
+        "notPlaced": true,
+        "quest": "created by the alias `Assassin` of `MQ201Malborn` 04CECE"
+      },
+      {
+        "name": "Shavari",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenRatway01",
+              "formKey": "03B698:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "ShavariREF",
+              "formKey": "0A3E22:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "named by `MQ202`"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Elenwen",
+        "weapons": "`LItemThalmorDagger` 07D986",
+        "armor": "`ThalmorOutfitNoHood` 06A158",
+        "skin": "race default"
+      },
+      {
+        "records": "Ondolemar",
+        "weapons": "Elven Mace 0139A0",
+        "armor": "`ThalmorOutfit01` 039F22",
+        "skin": "race default"
+      },
+      {
+        "records": "Ancano",
+        "weapons": "none",
+        "armor": "`ThalmorOutfitNoHood`",
+        "skin": "race default"
+      },
+      {
+        "records": "Rulindil",
+        "weapons": "Elven Dagger 01399E",
+        "armor": "`ThalmorOutfit01`",
+        "skin": "race default"
+      },
+      {
+        "records": "Estormo",
+        "weapons": "none",
+        "armor": "`ThalmorOutfit01`",
+        "skin": "race default"
+      },
+      {
+        "records": "Ancarion (inventory of `EncThalmor00WizardTemplate` 0728AD)",
+        "weapons": "`LItemThalmorDagger`",
+        "armor": "`ThalmorOutfit01`",
+        "skin": "race default"
+      },
+      {
+        "records": "Captain Valmir (`ValmirSons`)",
+        "weapons": "`LItemSoldierSonsWaraxe` 046052 · Torch · Forelhost Entrance Key 03A694 · 3 Potions of Minor Healing",
+        "armor": "`SonsOfSkyrimForelhostGrifter` 090F09",
+        "skin": "race default"
+      },
+      {
+        "records": "Captain Valmir (`ValmirImperial`)",
+        "weapons": "Imperial Sword 0135B8 · Torch · Forelhost Entrance Key · 3 Potions of Minor Healing",
+        "armor": "`GuardImperialOutfit` 0267EF",
+        "skin": "race default"
+      },
+      {
+        "records": "Gissur",
+        "weapons": "`LItemWeaponDaggerTown` 017177",
+        "armor": "`FarmClothesOutfit02Variant` 0DAB76",
+        "skin": "race default"
+      },
+      {
+        "records": "Tsavani",
+        "weapons": "none",
+        "armor": "`FarmClothesOutfit01` 01DC10",
+        "skin": "race default"
+      },
+      {
+        "records": "J'datharr",
+        "weapons": "Elven Bow 01399D · Elven Dagger · 8 Elven Arrows 0139BD",
+        "armor": "`MerchantClothesOutfit01NoHat` 07144A",
+        "skin": "race default"
+      },
+      {
+        "records": "Shavari",
+        "weapons": "Elven Dagger",
+        "armor": "`FarmClothesOutfit02` 02D75E",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemThalmorDagger",
+          "formKey": "07D986:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Steel 1 (×4) · Elven 19 (×4) · Glass 27 (×4)"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponDaggerTown",
+          "formKey": "017177:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron 1 (×4) · Steel 4 (×4) · Orcish 10 · Dwarven 15 · Elven 20"
+      },
+      {
+        "list": {
+          "edid": "LItemSoldierSonsWaraxe",
+          "formKey": "046052:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron War Axe 1 (×4) · Steel War Axe 4 (×8)"
+      },
+      {
+        "list": {
+          "edid": "ThalmorOutfit01",
+          "formKey": "039F22:Skyrim.esm"
+        },
+        "rolls": "Hooded Thalmor Robes 10C698 · Thalmor Gloves 065BB3 · Thalmor Boots 065BAC"
+      },
+      {
+        "list": {
+          "edid": "ThalmorOutfitNoHood",
+          "formKey": "06A158:Skyrim.esm"
+        },
+        "rolls": "Thalmor Robes 065BBF · Thalmor Gloves · Thalmor Boots"
+      },
+      {
+        "list": {
+          "edid": "SonsOfSkyrimForelhostGrifter",
+          "formKey": "090F09:Skyrim.esm"
+        },
+        "rolls": "Stormcloak Officer Helmet 086985 · Armor 08697E · Bracers 086983 · Boots 086981"
+      },
+      {
+        "list": {
+          "edid": "GuardImperialOutfit",
+          "formKey": "0267EF:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "rolls": "→ `OutfitListSoldierImperial` 0ABF40, all at 1: the Imperial Light set or the Studded Imperial set (Imperial Light Boots, Bracers and Helmet with Imperial Light or Studded Imperial Armor)"
+      },
+      {
+        "list": {
+          "edid": "FarmClothesOutfit01",
+          "formKey": "01DC10:Skyrim.esm"
+        },
+        "rolls": "Belted Tunic 01BE1A · Boots 01BE1B"
+      },
+      {
+        "list": {
+          "edid": "FarmClothesOutfit02",
+          "formKey": "02D75E:Skyrim.esm"
+        },
+        "rolls": "Clothes 0209A6 · Boots 0209A5"
+      },
+      {
+        "list": {
+          "edid": "FarmClothesOutfit02Variant",
+          "formKey": "0DAB76:Skyrim.esm"
+        },
+        "rolls": "Clothes 06C1D9 · Boots 0209A5"
+      },
+      {
+        "list": {
+          "edid": "MerchantClothesOutfit01NoHat",
+          "formKey": "07144A:Skyrim.esm"
+        },
+        "rolls": "Clothes 04223C · Boots 04223D"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Thalmor Robes, Hooded Thalmor Robes, Thalmor Gloves, Thalmor Boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "the farm and merchant clothes",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Stormcloak Officer armor, Imperial Light and Studded Imperial armor",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Elven Mace, Elven Bow, the daggers, Elven Arrows, Iron and Steel War Axe, Imperial Sword",
+        "kind": "one-handed, bow",
+        "playable": true
+      }
+    ]
+  }
+}

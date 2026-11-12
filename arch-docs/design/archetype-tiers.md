@@ -201,7 +201,7 @@ rung leaf takes `Traits`, so no band is legible and all three are pinned.
   leaves all stay. The embassy reception guards (`MQ201PartyGuard`, `…2`) templated straight onto a level-20 leaf; they
   move to the same sex's rung-05 leaf.
 - **Wizards: 44** (rung 06: Chain Lightning, Incinerate, Thunderbolt, Ironflesh, storm atronach).
-- **Boss wizards: 50** (`EncThalmor06MagicBossM`, +300 HP). Still named "Thalmor Wizard". Placed only as the
+- **Boss wizards: ~~50~~ 45** (user, 2026-11-12) (`EncThalmor06MagicBossM`, +300 HP). Still named "Thalmor Wizard". Placed only as the
   Northwatch Interrogator and Agent Lorcalin, plus CC spawns.
 - **Gear: Elven.** Every soldier wears plain Elven armor and carries Elven weapons, dagger, bow and shield. Every soldier list is
   pinned to its Elven entries. Wizards wear Thalmor robes with an Elven dagger.
@@ -318,7 +318,7 @@ the only signal the player gets.** A ×2/×2/×1 band is therefore only legible 
 | **Bandit** | *none* → `LvlBanditBoss` 03DF17 = "Bandit Chief" | **pinned to 28** |
 | **Forsworn** | "Forsworn Briarheart" at all five rungs | **pinned to 38** (WD-43) |
 | **Warlock** | nameless leaves, no `Traits` (templates are named per rung) | **pinned to 50** (WD-46) |
-| **Thalmor** | "Thalmor Wizard" at all seven rungs | **pinned to 50** (WD-48) |
+| **Thalmor** | "Thalmor Wizard" at all seven rungs | **pinned to ~~50~~ 45** (WD-48; 45 user, 2026-11-12) |
 | **Vampire** | nameless leaves, no `Traits` (templates: "Master Vampire" ×4, then Volkihar Master, Nightmaster) | **pinned to 65** (WD-47) |
 
 So the bandit boss is pinned to a single rung: a Bandit Chief is the same level in Swindler's Den, in
@@ -991,7 +991,7 @@ Deathlord, and a named bandit leader is a chief.
 |---|---|
 | Mercer, Astrid, Queen Potema and Potema's Remains | 50 |
 | Harkon | 55 / 60 |
-| **Ancano** | **60** |
+| **Ancano** | ~~60~~ **VII Powerful** (user, 2026-11-12: one record, the college NPC is the boss) |
 | **Vyrthur** | **60** |
 | Miraak | 65 |
 | Alduin | 100 |
@@ -1012,7 +1012,7 @@ the list.
 | Sinding | werewolf-boss list, all rungs 7–42 | **42** | `LCharWerewolfBoss` pinned to the Vargr boss |
 | The Southfringe boss | necromancer mooks 19 / 27 / 36 | **50** | Arch Necromancer boss |
 | Vals Veran | 40 (voice list with no level-50 leaf) | ~~50~~ **VI Elite** (user, 2026-11-12) | Arch Necromancer boss |
-| Malkoran · Arondil · Sild · Kornalus · the Northwatch Interrogator | warlock / Thalmor boss pin | **50** | unchanged; ~~50~~ Sild and Kornalus **VI Elite**, Arondil **V Experienced** (user, 2026-11-12) |
+| Malkoran · Arondil · Sild · Kornalus · the Northwatch Interrogator | warlock / Thalmor boss pin | **50** | unchanged; ~~50~~ Sild and Kornalus **VI Elite**, Arondil **V Experienced**, the Northwatch Interrogator **45** (user, 2026-11-12) |
 | Movarth · the Bloodlet Throne boss | vampire boss pin | **65** | unchanged |
 
 **Villains and leaders that were still scaling:**
@@ -1020,7 +1020,8 @@ the list.
 - **Named Warlocks** (user, 2026-11-12): Thoron (CC) **VIII Fabled**; Naris the Wicked, Drelas, Faldrus, Ardwen, Ivara of Olenveld, Lushak gra-Ragdam and Modig Gilgar (CC) **V Experienced**; Selveni Nethri **IV Blooded** (the 50 pin is `dunSouthfringeBoss`'s, not hers); Taron Dreth **III Trained**. Sild's Assistant is dead when found and left out.
 - **Named Bandits** (user, 2026-11-12), superseding "a named bandit leader is a chief" (28): Ulfr the Blind **II Common**; Brandish, Eisa Blackthorn, Viparth, Remy, Erwan and Yakhtu gra-Orkulg (CC) **IV Blooded**; Captain Hargar, Ghunzul, the Bandit Leader (Fjola), Celeste, Urgnok, Neski Skull-Sabre (CC) and Elberon's Apprentice **V Experienced**. Kyr stays 1; Kinthal and Svarig (CC) stay on the chief 28; Evethra IV.
 - **Named Forsworn** (user, 2026-11-12), superseding the level-25 rule for them: Madanach and Borkul the Beast **VI Elite**; Kaie, Crowstooth and Alvasorr the Rat (CC) **V Experienced**; Braig, Odvan, Uraccen, Duach, Uaile and Nana Ildene **IV Blooded**; Tynan, Morven and Donnel **III Trained**; Nepos the Nose **II Common**; Weylin stays 3, **I Weak**.
-- Rulindil and Estormo: **44**, the Thalmor wizard.
+- **Named Thalmor** (user, 2026-11-12): Elenwen **VII Powerful, 45**; Ancarion **VII Powerful**; Ondolemar, Rulindil, Estormo and Captain Valmir **VI Elite**. Ancano **VII Powerful** (his one record walks the college and fights at the Eye); Gissur and Tsavani keep 4; J'datharr and Shavari take the level-25 rule (15).
+- Rulindil and Estormo: ~~44, the Thalmor wizard~~ **VI Elite** (user, 2026-11-12).
 - **The Volkihar court: 53**, the Volkihar Master Vampire. Orthjolf, Vingalmo, Malkus, Hestla, Rargal and Feran take
   `Stats` from `DLC1EncVampireTemplate` and its magic and missile variants.
 - Stalf, Salonia Caelia, Modhna and Namasur: **53**. Valerica: **60**.

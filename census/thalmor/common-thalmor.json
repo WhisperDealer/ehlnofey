@@ -1,0 +1,1113 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "common-thalmor",
+  "group": "thalmor",
+  "title": "Common Thalmor",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "thalmor-soldier-01",
+        "name": "Thalmor Soldier",
+        "records": [
+          {
+            "edid": "EncThalmor01Melee1HM",
+            "formKey": "02B126:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor01Melee1HF",
+            "formKey": "072883:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor01Melee1HMDual",
+            "formKey": "0F960A:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor01Melee1HFDual",
+            "formKey": "0F960B:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor01MissileM",
+            "formKey": "02B127:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor01MissileF",
+            "formKey": "072884:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+        },
+        "note": "melee (plain and dual) and archer; rung 01 has no shield soldier. The name comes from `EncThalmor00MeleeTemplate` 02B124 and `…MissileTemplate` 0728AC (`Traits`)."
+      },
+      {
+        "id": "thalmor-soldier-02",
+        "name": "Thalmor Soldier",
+        "records": [
+          {
+            "edid": "EncThalmor02Melee1HM",
+            "formKey": "072AA6:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor02Melee1HF",
+            "formKey": "07297A:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor02Melee1HMShield",
+            "formKey": "0F95F1:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor02Melee1HFShield",
+            "formKey": "0F95F2:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor02Melee1HMDual",
+            "formKey": "0F960D:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor02Melee1HFDual",
+            "formKey": "0F960E:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor02MissileM",
+            "formKey": "072AF6:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor02MissileF",
+            "formKey": "072AA8:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+        },
+        "note": "the three female melee records (07297A · 0F95F2 · 0F960E) are 4, not 12: they take `Stats` from `EncThalmor01Melee1HM` 02B126."
+      },
+      {
+        "id": "thalmor-soldier-03",
+        "name": "Thalmor Soldier",
+        "records": [
+          {
+            "edid": "EncThalmor03Melee1HM",
+            "formKey": "07D962:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor03Melee1HF",
+            "formKey": "07D961:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor03Melee1HMShield",
+            "formKey": "0F95F3:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor03Melee1HFShield",
+            "formKey": "0F95F4:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor03Melee1HMDual",
+            "formKey": "0F960F:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor03Melee1HFDual",
+            "formKey": "0F9610:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor03MissileM",
+            "formKey": "07D964:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor03MissileF",
+            "formKey": "07D963:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+        }
+      },
+      {
+        "id": "thalmor-soldier-04",
+        "name": "Thalmor Soldier",
+        "records": [
+          {
+            "edid": "EncThalmor04Melee1HM",
+            "formKey": "07D96E:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor04Melee1HF",
+            "formKey": "07D967:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor04Melee1HMShield",
+            "formKey": "0F95F5:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor04Melee1HFShield",
+            "formKey": "0F95F6:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor04Melee1HMDual",
+            "formKey": "0F9611:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor04Melee1HFDual",
+            "formKey": "0F9612:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor04MissileM",
+            "formKey": "07D969:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor04MissileF",
+            "formKey": "07D968:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 28
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+        }
+      },
+      {
+        "id": "thalmor-soldier-05",
+        "name": "Thalmor Soldier",
+        "records": [
+          {
+            "edid": "EncThalmor05Melee1HM",
+            "formKey": "07D96F:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor05Melee1HF",
+            "formKey": "07D96C:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor05Melee1HMShield",
+            "formKey": "0F95F7:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor05Melee1HFShield",
+            "formKey": "0F95F8:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor05Melee1HMDual",
+            "formKey": "0F9613:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor05Melee1HFDual",
+            "formKey": "0F9614:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor05MissileM",
+            "formKey": "07D970:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor05MissileF",
+            "formKey": "07D96D:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 36
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+        }
+      },
+      {
+        "id": "embassy-party-guard",
+        "name": "Thalmor Soldier",
+        "encounter": "the Embassy reception",
+        "records": [
+          {
+            "edid": "MQ201PartyGuard",
+            "formKey": "033F45:Skyrim.esm"
+          },
+          {
+            "edid": "MQ201PartyGuard2",
+            "formKey": "03AF2F:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "template",
+          "value": 20,
+          "from": {
+            "edid": "EncThalmor03Melee1HF",
+            "formKey": "07D961:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+        },
+        "note": "`Stats` from rung 03 (`MQ201PartyGuard2` from `EncThalmor03Melee1HM` 07D962). archetype-tiers.md §3.1 moves them to the same sex's rung-05 leaf."
+      },
+      {
+        "id": "cc-redguard-soldier",
+        "name": "Thalmor Soldier (CC)",
+        "records": [
+          {
+            "edid": "ccEDHSSE003_EncThalmor03Melee1HF",
+            "formKey": "000E3F:ccedhsse003-redguard.esl"
+          },
+          {
+            "edid": "ccEDHSSE003_EncThalmor03Melee1HM",
+            "formKey": "000E40:ccedhsse003-redguard.esl"
+          },
+          {
+            "edid": "ccEDHSSE003_EncThalmor02MissileM",
+            "formKey": "000E41:ccedhsse003-redguard.esl"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 18
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): the CC Redguard pack's Thalmor raised from 18 to 36"
+        },
+        "note": "the Redguard Elite Armaments pack's own soldiers."
+      },
+      {
+        "id": "thalmor-wizard-01",
+        "name": "Thalmor Wizard",
+        "records": [
+          {
+            "edid": "EncThalmor01MagicM",
+            "formKey": "02B125:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor01MagicF",
+            "formKey": "072885:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "VII",
+          "level": 44,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+        },
+        "note": "the name comes from `EncThalmor00WizardTemplate` 0728AD (`Traits`)."
+      },
+      {
+        "id": "thalmor-wizard-02",
+        "name": "Thalmor Wizard",
+        "records": [
+          {
+            "edid": "EncThalmor02MagicM",
+            "formKey": "0728AE:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor02MagicF",
+            "formKey": "072886:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "VII",
+          "level": 44,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+        }
+      },
+      {
+        "id": "thalmor-wizard-03",
+        "name": "Thalmor Wizard",
+        "records": [
+          {
+            "edid": "EncThalmor03MagicM",
+            "formKey": "07D960:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor03MagicF",
+            "formKey": "07D95F:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 20
+        },
+        "target": {
+          "band": "VII",
+          "level": 44,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+        }
+      },
+      {
+        "id": "thalmor-wizard-04",
+        "name": "Thalmor Wizard",
+        "records": [
+          {
+            "edid": "EncThalmor04MagicM",
+            "formKey": "07D966:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor04MagicF",
+            "formKey": "07D965:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 28
+        },
+        "target": {
+          "band": "VII",
+          "level": 44,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+        }
+      },
+      {
+        "id": "thalmor-wizard-05",
+        "name": "Thalmor Wizard",
+        "records": [
+          {
+            "edid": "EncThalmor05MagicM",
+            "formKey": "07D96B:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor05MagicF",
+            "formKey": "07D96A:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 36
+        },
+        "target": {
+          "band": "VII",
+          "level": 44,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+        }
+      },
+      {
+        "id": "thalmor-wizard-06",
+        "name": "Thalmor Wizard",
+        "records": [
+          {
+            "edid": "EncThalmor06MagicM",
+            "formKey": "07D972:Skyrim.esm"
+          },
+          {
+            "edid": "EncThalmor06MagicF",
+            "formKey": "07D971:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 44
+        },
+        "target": {
+          "band": "VII",
+          "level": 44,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+        }
+      },
+      {
+        "id": "thalmor-justiciar",
+        "name": "Thalmor Justiciar",
+        "records": [
+          {
+            "edid": "WEThalmorElvenArmor",
+            "formKey": "10516F:Skyrim.esm"
+          },
+          {
+            "edid": "WEThalmorElvenArmorNoHelmet",
+            "formKey": "10516E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharThalmorMelee1H",
+            "formKey": "02B129:Skyrim.esm"
+          },
+          "rungs": [
+            4,
+            12,
+            20,
+            28,
+            36
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "bands-of-power.md: Thalmor Justiciars; archetype-tiers.md §3.1 (WD-48): the soldier pin, 36"
+        },
+        "note": "the road patrols of `WE32`, `WE33`, `WE34` and `WERoad03`."
+      },
+      {
+        "id": "thalmor-justiciar-mage",
+        "name": "Thalmor Justiciar",
+        "records": [
+          {
+            "edid": "WEThalmorMage",
+            "formKey": "0B5E11:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharThalmorMagic",
+            "formKey": "02B128:Skyrim.esm"
+          },
+          "rungs": [
+            4,
+            12,
+            20,
+            28,
+            36,
+            44
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "level": 44,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+        },
+        "note": "the patrols' mage (`WE32`, `WE34`, `WERoad03`)."
+      },
+      {
+        "id": "northwatch-guard",
+        "name": "Northwatch Guard",
+        "records": [
+          {
+            "edid": "MS09LvlGuard",
+            "formKey": "0C07C2:Skyrim.esm"
+          },
+          {
+            "edid": "MS09LvlMelee1H",
+            "formKey": "027F78:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharThalmorMelee1H",
+            "formKey": "02B129:Skyrim.esm"
+          },
+          "rungs": [
+            4,
+            12,
+            20,
+            28,
+            36
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+        }
+      },
+      {
+        "id": "northwatch-archer",
+        "name": "Northwatch Archer",
+        "records": [
+          {
+            "edid": "MS09LvlMissile",
+            "formKey": "09F35F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharThalmorMissile",
+            "formKey": "02B12A:Skyrim.esm"
+          },
+          "rungs": [
+            4,
+            12,
+            20,
+            28,
+            36
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+        }
+      },
+      {
+        "id": "northwatch-mage",
+        "name": "Northwatch Mage",
+        "records": [
+          {
+            "edid": "MS09LvlMage",
+            "formKey": "0C4EB1:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharThalmorMagic",
+            "formKey": "02B128:Skyrim.esm"
+          },
+          "rungs": [
+            4,
+            12,
+            20,
+            28,
+            36,
+            44
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "level": 44,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing a wizard rung `EncThalmor0{2–6}MagicM` 0728AE · 07D960 · 07D966 · 07D96B · 07D972 also needs its boss copy `EncThalmor0{2–6}MagicBossM` 07D987 · 07D988 · 07D989 · 07D98A · 07D98B (levels 14 · 23 · 32 · 40 · 50; on *Thalmor Boss*): each uses its rung as template but not for `Stats`.",
+      "The CC Redguard soldiers keep their own level 18 when a rung changes: `ccEDHSSE003_EncThalmor03Melee1HF` uses `EncThalmor03Melee1HM` 07D962 as template without `Stats`, the other two the `EncThalmor00` templates.",
+      "The other rows: no other record keeps its own level.",
+      "Every other Thalmor record (the female, shield and dual variants, `ValmirBASE`, `TreasCorpseThalmorM`, the `MQ101`, `MQ201`, `MQ202`, `ThalmorEmbassyGuard*`, `DLC2SV02` and CC wrappers, and every `LvlThalmor*` wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharThalmorMelee1H",
+          "formKey": "02B129:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Thalmor Soldier 01 (`SubCharThalmor01Melee` 0F95F9)"
+          },
+          {
+            "at": 12,
+            "label": "Thalmor Soldier 02 (`…02Melee` 0F95FC)"
+          },
+          {
+            "at": 20,
+            "label": "Thalmor Soldier 03 (`…03Melee` 0F9600)"
+          },
+          {
+            "at": 28,
+            "label": "Thalmor Soldier 04 (`…04Melee` 0F9603)"
+          },
+          {
+            "at": 36,
+            "label": "Thalmor Soldier 05 (`…05Melee` 0F9606)"
+          }
+        ],
+        "note": "each `SubChar` draws one of its rung's M, F, shield and dual records (rung 01 has no shield).",
+        "owner": "`LvlThalmorMelee1H` 02B35E (placed ×1 in `ThalmorEmbassy02` 07DCFC; CC ×1 in `ccKRTSSE001QPInterior01` 002FD6:Update.esm, cckrtsse001_altar) and the wrappers on it: `MS09LvlMelee1H` (×8: `NorthwatchKeep01` 015235 ×6, Northwatch exteriors 006E2F · 006E2E ×1 each) · `MS09LvlGuard` (×2: exteriors 006E0F · 006E2F) · `MarkarthImperialThalmor` 060ABA (×2, `MarkarthUnderStoneKeep` 016DF2) · `MQ201TortureChamberGuard` 0683A5 (×1, `ThalmorEmbassy03` 0362D8) · `MQ202ThalmorAgentMelee` 06CCFC (×1, `RiftenRatway01` 03B698) · `dunPOITundra_LvlThalmor02` 0DD99F (×1, `POITundra07` 009198, initially disabled) · `MQ101Justiciar` 0467B8 (created by aliases `Justiciar01`/`02` of `MQ101` 03372B) · the two Justiciar soldiers (created by `WE32` 0B80F3, `WE33` 0BA0B4, `WE34` 0BA0BC, `WERoad03` 105170). Direct: `MQ201ThalmorGuardCanBeFooled` 06B29F (×2, `ThalmorEmbassy01` 07C98B, initially disabled) · CC `ccBGSSSE052_LvlThalmorMelee1H` 00081A:ccbgssse052-ba_iron.esl (×1, Tamriel persistent)"
+      },
+      {
+        "list": {
+          "edid": "LCharThalmorMissile",
+          "formKey": "02B12A:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Thalmor Soldier 01, M or F (`SubCharThalmor01Missile` 0F95FB)"
+          },
+          {
+            "at": 12,
+            "label": "Thalmor Soldier 02, M or F (`SubCharThalmor02Missile` 0F95FE)"
+          },
+          {
+            "at": 20,
+            "label": "Thalmor Soldier 03, M or F (`SubCharThalmor03Missile` 0F9601)"
+          },
+          {
+            "at": 28,
+            "label": "Thalmor Soldier 04, M or F (`SubCharThalmor04Missile` 0F9604)"
+          },
+          {
+            "at": 36,
+            "label": "Thalmor Soldier 05, M or F (`SubCharThalmor05Missile` 0F9607)"
+          }
+        ],
+        "owner": "`LvlThalmorMissile` 02B361 (not placed) and the wrappers on it: `MS09LvlMissile` (×6: `NorthwatchKeep01` ×3, exterior 006E2F ×3) · `ThalmorEmbassyGuardDayShift01`/`02` 0A6D67 · 0A6D68 and `…NightShift01`/`02` 0A6D6B · 0A6D6C (×1 each, `ThalmorEmbassy04` 06DAA0) · `MQ202ThalmorAgentMissile` 0A845F (×4: `RiftenRatway02` 0A1BFD ×3, `RiftenRatway01` ×1). Direct: `MQ201ThalmorGuardCanBeFooledArcher` 054507 (×2, `ThalmorEmbassyExterior01` 00921B) · CC `ccBGSSSE052_LvlThalmorMissile` 00081B:ccbgssse052-ba_iron.esl (×1, Tamriel persistent)"
+      },
+      {
+        "list": {
+          "edid": "LCharThalmorMagic",
+          "formKey": "02B128:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Thalmor Wizard 01, M or F (`SubCharThalmor01Magic` 0F95FA)"
+          },
+          {
+            "at": 12,
+            "label": "Thalmor Wizard 02, M or F (`SubCharThalmor02Magic` 0F95FD)"
+          },
+          {
+            "at": 20,
+            "label": "Thalmor Wizard 03, M or F (`SubCharThalmor03Magic` 0F95FF)"
+          },
+          {
+            "at": 28,
+            "label": "Thalmor Wizard 04, M or F (`SubCharThalmor04Magic` 0F9602)"
+          },
+          {
+            "at": 36,
+            "label": "Thalmor Wizard 05, M or F (`SubCharThalmor05Magic` 0F9605)"
+          },
+          {
+            "at": 44,
+            "label": "Thalmor Wizard 06, M or F (`SubCharThalmor06Magic` 0F9608)"
+          }
+        ],
+        "owner": "`LvlThalmorMage` 02B362 (not placed) and the wrappers on it: `ThalmorEmbassyGuardDayShift03`/`04` 0A6D69 · 0A6D6A and `…NightShift03`/`04` 0A6D6D · 0A6D6E (×1 each, `ThalmorEmbassy04`) · `MS09LvlMage` (×2, `NorthwatchKeep01`) · `WEThalmorMage` (created by `WE32`, `WE34`, `WERoad03`). Direct: `MQ201ThalmorMageCanBeFooled` 015F72 (×1, `ThalmorEmbassy01`)"
+      },
+      {
+        "list": {
+          "edid": "LCharThalmorMagicMale",
+          "formKey": "0ABEDD:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Thalmor Wizard 01, male"
+          },
+          {
+            "at": 12,
+            "label": "Thalmor Wizard 02, male"
+          },
+          {
+            "at": 20,
+            "label": "Thalmor Wizard 03, male"
+          },
+          {
+            "at": 28,
+            "label": "Thalmor Wizard 04, male"
+          },
+          {
+            "at": 36,
+            "label": "Thalmor Wizard 05, male"
+          },
+          {
+            "at": 44,
+            "label": "Thalmor Wizard 06, male"
+          }
+        ],
+        "owner": "`LvlThalmorMageMale` 0ABEE2 → `MQ202ThalmorAgentMage` 0A8460 (×3: `RiftenRatway02` ×2, `RiftenRatway01` ×1). Direct: `MQ201ThalmorMageSolarGuard` 06B3F2 (×1, `ThalmorEmbassyExterior01`)"
+      },
+      {
+        "list": {
+          "edid": "LCharThalmorMelee1HFemale",
+          "formKey": "0AC130:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Thalmor Soldier 01, F"
+          },
+          {
+            "at": 12,
+            "label": "Thalmor Soldier 02, F and F shield"
+          },
+          {
+            "at": 20,
+            "label": "Thalmor Soldier 03, F and F shield"
+          },
+          {
+            "at": 28,
+            "label": "Thalmor Soldier 04, F and F shield"
+          },
+          {
+            "at": 36,
+            "label": "Thalmor Soldier 05, F and F shield"
+          }
+        ],
+        "owner": "`LvlThalmorMelee1HFemale` 0423A6 (never met)"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharThalmorMelee1HMale",
+          "formKey": "0354F5:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Thalmor Soldier 01, M"
+          },
+          {
+            "at": 12,
+            "label": "Thalmor Soldier 02, M and M shield"
+          },
+          {
+            "at": 20,
+            "label": "Thalmor Soldier 03, M and M shield"
+          },
+          {
+            "at": 28,
+            "label": "Thalmor Soldier 04, M and M shield"
+          },
+          {
+            "at": 36,
+            "label": "Thalmor Soldier 05, M and M shield"
+          }
+        ],
+        "owner": "`DLC2SV02LvlThalmorMelee1H` 025884 (×1, `DLC2NorthshoreLandingExterior01` 00ED0A) · `…Melee1HAggro1024` 025888 (×2, `DLC2AbandonedLodgeExterior01` 00EE51); aliases of `DLC2SV02` 01CAF1; all Dragonborn.esm"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharThalmorMissileMale",
+          "formKey": "0354F6:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Thalmor Soldier 01, M archer"
+          },
+          {
+            "at": 12,
+            "label": "Thalmor Soldier 02, M archer"
+          },
+          {
+            "at": 20,
+            "label": "Thalmor Soldier 03, M archer"
+          },
+          {
+            "at": 28,
+            "label": "Thalmor Soldier 04, M archer"
+          },
+          {
+            "at": 36,
+            "label": "Thalmor Soldier 05, M archer"
+          }
+        ],
+        "owner": "`DLC2SV02LvlThalmorMissile` 025885 (×2, 00ED0A) · `…MissileAggro1024` 025887 (×2, 00EE51); aliases of `DLC2SV02`"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Thalmor Soldier (`MQ201PartyGuard`)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ThalmorEmbassy01",
+              "formKey": "07C98B:Skyrim.esm"
+            },
+            "refText": "×2"
+          }
+        ],
+        "note": "`MQ201PartyGuard2` is not placed, only named by `MQ201` 035D5F"
+      },
+      {
+        "name": "Thalmor Soldier (CC Redguard)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "`…Melee1HF` ×2 · `…Melee1HM` ×1 · `…02MissileM` ×1 (ccedhsse003-redguard.esl)",
+            "disabled": true
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Soldiers: rung 01–05 M and F, rung 01 dual, rung 02 F shield (inventory of `EncThalmor00MeleeTemplate` 02B124); `EncThalmor02Melee1HF` (its own, the same lists)",
+        "weapons": "`LItemThalmorWeapon1H` 07D97D · `LItemThalmorDagger` 07D986",
+        "armor": "`ThalmorArmorWithHelmetOutfit` 02B0FB",
+        "skin": "race default"
+      },
+      {
+        "records": "Shield soldiers: rung 02–05 M, rung 03–05 F",
+        "weapons": "`LItemThalmorWeapon1H` · `LItemThalmorDagger` · `LItemThalmorShield` 0F95F0",
+        "armor": "`ThalmorArmorWithHelmetOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Dual soldiers: rung 02–05 M and F",
+        "weapons": "`LItemThalmorWeapon1H` only",
+        "armor": "`ThalmorArmorWithHelmetOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Archers, every rung (inventory of `EncThalmor00MissileTemplate` 0728AC)",
+        "weapons": "`LItemThalmorWeaponBow` 07D985 · `LItemThalmorDagger`",
+        "armor": "`ThalmorArmorWithHelmetOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Wizards, every rung (inventory of `EncThalmor00WizardTemplate` 0728AD)",
+        "weapons": "`LItemThalmorDagger`",
+        "armor": "`ThalmorOutfit01` 039F22",
+        "skin": "race default"
+      },
+      {
+        "records": "`LvlThalmorMissile` and every wrapper on it (Northwatch Archer, the Embassy archer guards, the Ratway archers), CC `ccBGSSSE052_LvlThalmorMissile`",
+        "weapons": "Iron Dagger 01397E · `LItemBanditWeaponBow` 039D2E · `LItemBanditWeaponArrows` 039D2F (their own, not the drawn rung's)",
+        "armor": "`ThalmorArmorWithHelmetOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Thalmor Justiciar soldiers (own inventory)",
+        "weapons": "`LItemThalmorWeapon1H` · `LItemThalmorShield`",
+        "armor": "`ThalmorArmorWithHelmetOutfit` (10516F) · `ThalmorArmorNoHelmetOutfit` 07D97E (10516E)",
+        "skin": "race default"
+      },
+      {
+        "records": "`DLC2SV02` melee wrappers (own)",
+        "weapons": "`LItemThalmorWeapon1H`",
+        "armor": "`DLC2SV02ThalmorOutfit02` 032123:Dragonborn.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "`DLC2SV02` archer wrappers (own)",
+        "weapons": "Iron Dagger · `LItemThalmorWeaponBow`",
+        "armor": "`DLC2SV02ThalmorOutfit01` 032122:Dragonborn.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "CC Redguard soldiers",
+        "weapons": "as the soldiers and archers (inventory of the `EncThalmor00` templates)",
+        "armor": "`ThalmorArmorWithHelmetOutfit`",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemThalmorWeapon1H",
+          "formKey": "07D97D:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "rolls": "Steel mace, sword or war axe 1 · Elven 19 · Glass 27"
+      },
+      {
+        "list": {
+          "edid": "LItemThalmorDagger",
+          "formKey": "07D986:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Steel 1 (×4) · Elven 19 (×4) · Glass 27 (×4)"
+      },
+      {
+        "list": {
+          "edid": "LItemThalmorWeaponBow",
+          "formKey": "07D985:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Hunting Bow + steel arrows 1 (×4) · Elven Bow + elven arrows 19 (×4) · Glass Bow + glass arrows 27 (×4); each arrow set is 1 arrow + 22 at 75%"
+      },
+      {
+        "list": {
+          "edid": "LItemThalmorShield",
+          "formKey": "0F95F0:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Elven Shield 12 (×4) · Glass Shield 36 (×4); nothing below 12"
+      },
+      {
+        "list": {
+          "edid": "ThalmorArmorWithHelmetOutfit",
+          "formKey": "02B0FB:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "rolls": "→ `LItemThalmorArmorWithHelmetBest` 07D979: Elven Light 1 · Elven 12 · Elven Gilded cuirass 27 · Glass 36; each a full set with helmet"
+      },
+      {
+        "list": {
+          "edid": "ThalmorArmorNoHelmetOutfit",
+          "formKey": "07D97E:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "→ `LItemThalmorArmorNoHelmetAll` 07D97A: Elven Light 1 (×4) · Elven 12 (×4) · Elven Gilded cuirass 27 (×4) · Glass 36 (×4); no helmet"
+      },
+      {
+        "list": {
+          "edid": "ThalmorOutfit01",
+          "formKey": "039F22:Skyrim.esm"
+        },
+        "rolls": "Hooded Thalmor Robes 10C698 · Thalmor Gloves 065BB3 · Thalmor Boots 065BAC"
+      },
+      {
+        "list": {
+          "edid": "DLC2SV02ThalmorOutfit01",
+          "formKey": "032122:Dragonborn.esm"
+        },
+        "rolls": "Elven Helmet 01391D · Leather Armor 03619E · Elven Gauntlets 01391C · Elven Light Boots 105F11"
+      },
+      {
+        "list": {
+          "edid": "DLC2SV02ThalmorOutfit02",
+          "formKey": "032123:Dragonborn.esm"
+        },
+        "rolls": "Elven Light Boots · Elven Light Gauntlets 105F13 · Leather Armor"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditWeaponBow",
+          "formKey": "039D2E:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Long or Hunting Bow 1 · Imperial 4 · Orcish 10 · Dwarven 15 · Elven 20"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditWeaponArrows",
+          "formKey": "039D2F:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "each a 75% arrow: iron 1 · steel 5 · orcish 9 · dwarven 14 · elven 20"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Elven Light, Elven, Elven Gilded and Glass armor; Elven and Glass shields",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Hooded Thalmor Robes, Thalmor Gloves, Thalmor Boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Leather Armor",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "the Steel, Elven, Glass, Hunting, Long, Imperial, Orcish and Dwarven weapons and bows; the arrows",
+        "kind": "one-handed, bow",
+        "playable": true
+      }
+    ]
+  }
+}

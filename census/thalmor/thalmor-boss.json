@@ -1,0 +1,300 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "thalmor-boss",
+  "group": "thalmor",
+  "title": "Thalmor Boss",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "thalmor-boss-02",
+        "name": "Thalmor Wizard",
+        "records": [
+          {
+            "edid": "EncThalmor02MagicBossM",
+            "formKey": "07D987:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 14
+        },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "user, 2026-11-12: Thalmor bosses at 45, not 50"
+        }
+      },
+      {
+        "id": "thalmor-boss-03",
+        "name": "Thalmor Wizard",
+        "records": [
+          {
+            "edid": "EncThalmor03MagicBossM",
+            "formKey": "07D988:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 23
+        },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "user, 2026-11-12: Thalmor bosses at 45, not 50"
+        }
+      },
+      {
+        "id": "thalmor-boss-04",
+        "name": "Thalmor Wizard",
+        "records": [
+          {
+            "edid": "EncThalmor04MagicBossM",
+            "formKey": "07D989:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 32
+        },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "user, 2026-11-12: Thalmor bosses at 45, not 50"
+        }
+      },
+      {
+        "id": "thalmor-boss-05",
+        "name": "Thalmor Wizard",
+        "records": [
+          {
+            "edid": "EncThalmor05MagicBossM",
+            "formKey": "07D98A:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 40
+        },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "user, 2026-11-12: Thalmor bosses at 45, not 50"
+        }
+      },
+      {
+        "id": "thalmor-boss-06",
+        "name": "Thalmor Wizard",
+        "records": [
+          {
+            "edid": "EncThalmor06MagicBossM",
+            "formKey": "07D98B:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 50
+        },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "user, 2026-11-12: Thalmor bosses at 45, not 50"
+        }
+      },
+      {
+        "id": "northwatch-interrogator",
+        "name": "Northwatch Interrogator",
+        "records": [
+          {
+            "edid": "MS09LvllThalmorBoss",
+            "formKey": "09F360:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharThalmorMagicBoss",
+            "formKey": "07DCA9:Skyrim.esm"
+          },
+          "rungs": [
+            14,
+            23,
+            32,
+            40,
+            50
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "user, 2026-11-12: Thalmor bosses at 45, not 50"
+        }
+      },
+      {
+        "id": "agent-lorcalin",
+        "name": "Agent Lorcalin",
+        "records": [
+          {
+            "edid": "dunPOITundra_LvlThalmor01",
+            "formKey": "0DD99E:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharThalmorMagicBoss",
+            "formKey": "07DCA9:Skyrim.esm"
+          },
+          "rungs": [
+            14,
+            23,
+            32,
+            40,
+            50
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "user, 2026-11-12: Thalmor bosses at 45, not 50"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Each boss rung uses the matching wizard rung `EncThalmor0{2–6}MagicM` (on *Common Thalmor*) as its template but not for `Stats`, so it keeps its own level when that rung changes.",
+      "The rows: no other record keeps its own level.",
+      "Every other record that looks like a boss rung (`DLC2SV02Ancarion`, on *Named Thalmor*; `LvlThalmorBoss` and the wrappers on it, CC `ccBGSSSE052_LvlThalmorBoss` and `ccBGSSSE056_LvlThalmorBoss` included) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharThalmorMagicBoss",
+          "formKey": "07DCA9:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Thalmor Wizard 02 (14)"
+          },
+          {
+            "at": 12,
+            "label": "Thalmor Wizard 02 (14)"
+          },
+          {
+            "at": 20,
+            "label": "Thalmor Wizard 02 (14)"
+          },
+          {
+            "at": 28,
+            "label": "Thalmor Wizard 03 (23)"
+          },
+          {
+            "at": 36,
+            "label": "Thalmor Wizard 04 (32)"
+          },
+          {
+            "at": 44,
+            "label": "Thalmor Wizard 05 (40)"
+          },
+          {
+            "at": 52,
+            "label": "Thalmor Wizard 06 (50)"
+          }
+        ],
+        "owner": "`LvlThalmorBoss` 07DCAA (not placed) and the wrappers on it: the Northwatch Interrogator (×1, `NorthwatchKeep01` 015235) · Agent Lorcalin (×1, Tamriel persistent, initially disabled). Direct: CC `ccBGSSSE052_LvlThalmorBoss` 00081D:ccbgssse052-ba_iron.esl (×1, `POINorthernCoast12` 006E50)"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "every boss rung (inventory of `EncThalmor00WizardTemplate` 0728AD), and the wrappers, which take `Inventory` from the drawn rung",
+        "weapons": "`LItemThalmorDagger` 07D986",
+        "armor": "`ThalmorOutfit01` 039F22",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemThalmorDagger",
+          "formKey": "07D986:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Steel 1 (×4) · Elven 19 (×4) · Glass 27 (×4)"
+      },
+      {
+        "list": {
+          "edid": "ThalmorOutfit01",
+          "formKey": "039F22:Skyrim.esm"
+        },
+        "rolls": "Hooded Thalmor Robes 10C698 · Thalmor Gloves 065BB3 · Thalmor Boots 065BAC"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Hooded Thalmor Robes, Thalmor Gloves, Thalmor Boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Steel, Elven, Glass Dagger",
+        "kind": "one-handed",
+        "playable": true
+      }
+    ]
+  }
+}
