@@ -143,7 +143,7 @@ const fullTitle = title === 'Ehlnofey' ? 'Ehlnofey — The Ten Bands of Power' :
     opacity: 0.35;
   }
 
-  .wrap { width: min(1120px, 100% - 32px); margin-inline: auto; }
+  .wrap { width: calc(100% - 2 * clamp(16px, 3vw, 48px)); margin-inline: auto; }
 
   a { color: var(--gold); text-decoration-color: rgba(241, 214, 139, 0.35); text-underline-offset: 3px; }
   a:hover { text-decoration-color: var(--gold); }
