@@ -34,10 +34,9 @@
           "max": 26
         },
         "target": {
-          "band": "II",
-          "level": 10,
+          "band": "IV",
           "status": "proposed",
-          "source": "archetype-tiers.md §4.2: the Elytra Nymph at 10 (user, 2026-09-30)"
+          "source": "user, 2026-11-12: Blooded (replaces the 10 of archetype-tiers.md §4.2)"
         },
         "note": "each comes as a Dementia and a Mania record. The pair differ only in skin (`WornArmor` 000A77 vs 000A98) and outfit; stats, level and AI are the same. No template."
       },

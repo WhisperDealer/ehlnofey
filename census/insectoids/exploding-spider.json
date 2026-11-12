@@ -33,9 +33,9 @@
           }
         },
         "target": {
-          "band": "I",
+          "band": "IV",
           "status": "proposed",
-          "source": "user, 2026-11-12: banded with the cloaked spiders (6)"
+          "source": "user, 2026-11-12: Blooded"
         }
       },
       {
@@ -61,9 +61,9 @@
           }
         },
         "target": {
-          "band": "I",
+          "band": "IV",
           "status": "proposed",
-          "source": "user, 2026-11-12: banded with the cloaked spiders (6)"
+          "source": "user, 2026-11-12: Blooded"
         }
       },
       {
@@ -97,9 +97,9 @@
           }
         },
         "target": {
-          "band": "I",
+          "band": "IV",
           "status": "proposed",
-          "source": "user, 2026-11-12: banded with the cloaked spiders (6)"
+          "source": "user, 2026-11-12: Blooded"
         },
         "note": "the two copies take `Stats` from 014447; each is a scroll summon (the spider scrolls crafted from `DLC2ExpSpiderCraftingResultsList` 017061)."
       },
@@ -130,9 +130,9 @@
           }
         },
         "target": {
-          "band": "I",
+          "band": "IV",
           "status": "proposed",
-          "source": "user, 2026-11-12: banded with the cloaked spiders (6)"
+          "source": "user, 2026-11-12: Blooded"
         },
         "note": "the Friend takes `Stats` from 01DFED and is a scroll summon (the spider scrolls crafted from `DLC2ExpSpiderCraftingResultsList` 017061)."
       },
@@ -154,9 +154,9 @@
           "value": 6
         },
         "target": {
-          "band": "I",
+          "band": "IV",
           "status": "proposed",
-          "source": "user, 2026-11-12: wildlife banded at its vanilla level (6)"
+          "source": "user, 2026-11-12: Blooded"
         }
       },
       {
@@ -177,9 +177,9 @@
           "value": 6
         },
         "target": {
-          "band": "I",
+          "band": "IV",
           "status": "proposed",
-          "source": "user, 2026-11-12: wildlife banded at its vanilla level (6)"
+          "source": "user, 2026-11-12: Blooded"
         }
       },
       {
@@ -200,9 +200,9 @@
           "value": 6
         },
         "target": {
-          "band": "I",
+          "band": "IV",
           "status": "proposed",
-          "source": "user, 2026-11-12: wildlife banded at its vanilla level (6)"
+          "source": "user, 2026-11-12: Blooded"
         }
       },
       {
@@ -223,9 +223,9 @@
           "value": 6
         },
         "target": {
-          "band": "I",
+          "band": "IV",
           "status": "proposed",
-          "source": "user, 2026-11-12: wildlife banded at its vanilla level (6)"
+          "source": "user, 2026-11-12: Blooded"
         }
       },
       {
@@ -246,9 +246,9 @@
           "value": 6
         },
         "target": {
-          "band": "I",
+          "band": "IV",
           "status": "proposed",
-          "source": "user, 2026-11-12: wildlife banded at its vanilla level (6)"
+          "source": "user, 2026-11-12: Blooded"
         }
       },
       {

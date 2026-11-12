@@ -801,9 +801,9 @@ Creatures*. Not yet built.
 | Frenzied Mudcrab | `ccBGSSSE001_EncMudcrab{Medium,Large,Giant}Aggressive` | 9 / 13 / 20 | **keep**; `LCharMudcrabAggressive` 0009ED flattened to Medium ×2 · Large ×2 · Giant ×1 | Common |
 | Fangtusk (vampire horker) | `ccBGSSSE001_MiscWindhelm_Fangtusk` 000BF9 | ×1.25 [10–80] | **20** | Trained |
 | Corrupted Spriggan | `ccBGSSSE025_EncCorruptedSpriggan{Dementia,Mania}` | ×1 [8–54] | **24** | Trained |
-| Elytra Nymph | `ccBGSSSE025_ElytraNymph{Dementia,Mania}` | ×0.6, max 26 | **10** | Common |
+| Elytra Nymph | `ccBGSSSE025_ElytraNymph{Dementia,Mania}` | ×0.6, max 26 | ~~10~~ **Blooded (IV)** (user, 2026-11-12) | Blooded |
 
-Out of scope: the reindeer (the player's essential mount) and every pet. Out of scope means *no Ehlnofey
+Out of scope: the reindeer (the player's essential mount) and every pet. Exception (user, 2026-11-12): the Nix-Hound pet takes the Nix-Hound's 16. Out of scope means *no Ehlnofey
 level*, not undocumented: the census (2026-09-30) still lists pets on their family's Confluence page, e.g. the
 *Pets of Skyrim* skeever, spider, fox, goat and rabbit, as vanilla data only. No leveled list is placed in the world:
 goblins, Nix-hounds, spriggans and nymphs are hand-placed, and the mudcrab list is reached only through the

@@ -53,9 +53,10 @@
           "value": 2
         },
         "target": {
-          "band": "I",
+          "band": "III",
+          "level": 16,
           "status": "proposed",
-          "source": "role: a pet, banded at its vanilla level (2); archetype-tiers.md §4.2 leaves pets out of scope"
+          "source": "user, 2026-11-12: the same level as the Nix-Hound (16)"
         },
         "note": "the Creation Club pet: `Essential`, `Invulnerable`, a ghost; no template."
       }
