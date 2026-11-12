@@ -1,0 +1,3162 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "common-bandits",
+  "group": "bandits",
+  "title": "Common Bandits",
+  "order": 1,
+  "meta": {
+    "spec": "archetype-tiers.md §3.1",
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "bandit",
+        "name": "Bandit",
+        "records": [
+          {
+            "edid": "EncBandit01TemplateMelee",
+            "formKey": "039CFD:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit01TemplateMissile",
+            "formKey": "037C2C:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit01TemplateMagic",
+            "formKey": "039D31:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "bands-of-power.md: level 1 sits in Weak; archetype-tiers.md §3.1.1 (user, 2026-09-24) drops this rung from the rebuilt mook lists"
+        },
+        "note": "each rung has 41 leaves (`EncBandit0N{Melee1H,Melee1HTank,Melee2H,Melee2HBerserk,Missile,Magic}<Race><Sex>`: 8 one-handed, 7 tank, 5 two-handed, 5 berserker, 9 archers, 7 wizards; the tank, two-handed and berserker leaves chain through the rung's one-handed leaves), all taking `Stats` and `BaseData` from their rung's three templates. Only the rung-01 templates are nameless and take `BaseData` (so \"Bandit\") from `EncBandit00Template` 039CF4; rungs 02–06 carry their own name."
+      },
+      {
+        "id": "bandit-outlaw",
+        "name": "Bandit Outlaw",
+        "records": [
+          {
+            "edid": "EncBandit02TemplateMelee",
+            "formKey": "01BCD9:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit02TemplateMissile",
+            "formKey": "037C2D:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit02TemplateMagic",
+            "formKey": "039D38:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Bandit Outlaw up a band"
+        },
+        "note": "the rung-02 berserker leaves `EncBandit02Melee2HBerserk*` 03DEA4–03DEA8 are in no list: `SubCharBandit02Melee2HBerserk` holds the rung-01 berserkers (Lists below)."
+      },
+      {
+        "id": "bandit-thug",
+        "name": "Bandit Thug",
+        "records": [
+          {
+            "edid": "EncBandit03TemplateMelee",
+            "formKey": "01BCDA:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit03TemplateMissile",
+            "formKey": "037C2E:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit03TemplateMagic",
+            "formKey": "039D43:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 9
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Bandit Thug up a band"
+        }
+      },
+      {
+        "id": "bandit-highwayman",
+        "name": "Bandit Highwayman",
+        "records": [
+          {
+            "edid": "EncBandit04TemplateMelee",
+            "formKey": "01E60D:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit04TemplateMissile",
+            "formKey": "037C35:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit04TemplateMagic",
+            "formKey": "039D4A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 14
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "bands-of-power.md: most bandits"
+        },
+        "note": "`EncBandit04TemplateMelee` 01E60D has no level in `Skyrim.esm` (0); `Dragonborn.esm` overrides it to 14 (archetype-tiers.md §7.1)."
+      },
+      {
+        "id": "bandit-plunderer",
+        "name": "Bandit Plunderer",
+        "records": [
+          {
+            "edid": "EncBandit05TemplateMelee",
+            "formKey": "01E610:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit05TemplateMissile",
+            "formKey": "037C3C:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit05TemplateMagic",
+            "formKey": "039D51:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 19
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Bandit Plunderer up a band"
+        }
+      },
+      {
+        "id": "bandit-marauder",
+        "name": "Bandit Marauder",
+        "records": [
+          {
+            "edid": "EncBandit06TemplateMelee",
+            "formKey": "01E611:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit06TemplateMissile",
+            "formKey": "037C43:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit06TemplateMagic",
+            "formKey": "039D58:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 25
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: fort bandits (25 sits in Blooded)"
+        }
+      },
+      {
+        "id": "wrappers",
+        "name": "the drawn rung's name",
+        "records": [
+          {
+            "edid": "LvlBanditAmbushMelee1H",
+            "formKey": "093815:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditAmbushMeleeBeserker",
+            "formKey": "0D0E53:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditAmbushMeleeEvenTonedM",
+            "formKey": "0D0017:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditAmbushMeleeNordM",
+            "formKey": "0D07C9:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditAmbushMeleeTank",
+            "formKey": "0D0E54:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditAmbushMissile",
+            "formKey": "093814:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditAmbushMissileEvenTonedF",
+            "formKey": "0D0018:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditAmbushMissileEvenTonedM",
+            "formKey": "10474A:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditAmbushWizard",
+            "formKey": "08E19D:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditAmbushWizardCommonerM",
+            "formKey": "0D07CA:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMelee1H",
+            "formKey": "03DECB:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMelee1HAggro1024",
+            "formKey": "0B6FCD:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMelee1HGuard",
+            "formKey": "03DF52:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMelee2H",
+            "formKey": "01E79D:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMelee2HGuard",
+            "formKey": "02639D:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeAny",
+            "formKey": "01E79C:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeAnyAggro1024",
+            "formKey": "0B623A:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeAnyAggro1536",
+            "formKey": "0F62D7:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeAnyGuard",
+            "formKey": "03DF51:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeBerserker",
+            "formKey": "03DECC:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeCommonerF",
+            "formKey": "01AEF1:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeCommonerFAggro1024",
+            "formKey": "09BD70:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeCommonerM",
+            "formKey": "01AF77:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeEvenTonedF",
+            "formKey": "01AFBD:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeEvenTonedM",
+            "formKey": "01B060:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeNordF",
+            "formKey": "01B083:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeNordM",
+            "formKey": "01B0BC:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeOrcM",
+            "formKey": "01B0EF:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeTank",
+            "formKey": "015BE5:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeTankAggro1024",
+            "formKey": "0B623C:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeTankAggro1536",
+            "formKey": "0F62D9:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMeleeTankGuard",
+            "formKey": "03DF53:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissile",
+            "formKey": "01E79E:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileAggro1024",
+            "formKey": "0B623B:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileAggro1536",
+            "formKey": "0F62D8:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileAmbush",
+            "formKey": "0F31E4:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileAmbushCommonerF",
+            "formKey": "0D07B6:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileAmbushHoldPositionLinkCustom02256",
+            "formKey": "0F31E7:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileCommonerF",
+            "formKey": "01B0BD:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileCommonerM",
+            "formKey": "01B0BE:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileCommonerMAggro1024",
+            "formKey": "09BD71:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileEvenTonedF",
+            "formKey": "01B0BF:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileEvenTonedM",
+            "formKey": "01B0C7:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileEvenTonedMAggro1024",
+            "formKey": "0C007D:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileGuard",
+            "formKey": "026372:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileHoldPos256LinkRef",
+            "formKey": "0296FE:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileHoldPosition256",
+            "formKey": "0B4597:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileHoldPositionCurrentLoc256",
+            "formKey": "0C8673:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileHoldPositionLinkCustom02256",
+            "formKey": "0F31C6:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileHoldPositionLinkCustom0264",
+            "formKey": "0CC590:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileNordF",
+            "formKey": "01B0D1:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileNordM",
+            "formKey": "01B0D5:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditMissileOrcM",
+            "formKey": "0EEFE4:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditWizard",
+            "formKey": "01E79F:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditWizardAggro1024",
+            "formKey": "073B26:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditWizardAggro1536",
+            "formKey": "0F62DB:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditWizardAmbush",
+            "formKey": "0F31DE:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditWizardCommonerF",
+            "formKey": "01B0FF:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditWizardCommonerM",
+            "formKey": "01B102:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditWizardCommonerMAggro1024",
+            "formKey": "09BD6F:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditWizardEvenTonedF",
+            "formKey": "01B106:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditWizardEvenTonedFGuard",
+            "formKey": "0D2968:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditWizardEvenTonedM",
+            "formKey": "01B108:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditWizardGuard",
+            "formKey": "03DF54:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditWizardHoldPosition256",
+            "formKey": "0C861A:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditWizardNordF",
+            "formKey": "01B1E0:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditWizardNordM",
+            "formKey": "01B1E1:Skyrim.esm"
+          },
+          {
+            "edid": "TestDefMasterPackMultiLinkBandit",
+            "formKey": "057501:Skyrim.esm"
+          },
+          {
+            "edid": "TestFollowOrPatrolBandit",
+            "formKey": "03EABE:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "the bandit list each draws (Lists below); wizards 1 · 5 · 9 · 14 · 19 · 24"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "the unnamed wrappers: every `LvlBandit*` record (ambush, aggro, guard and hold-position variants included) and the two `Test*` warehouse copies; each takes `Stats` and `BaseData` from its list or wrapper, so it shows the rung it draws. 69 records; where they are placed is under Lists."
+      },
+      {
+        "id": "own-level-wrappers",
+        "name": "the drawn rung's name",
+        "records": [
+          {
+            "edid": "DLC1dunRedwaterDenKhajiitM",
+            "formKey": "008D21:Dawnguard.esm"
+          },
+          {
+            "edid": "dunDuskglowBanditSuperMortal",
+            "formKey": "0A638E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "fixed vanilla level 1 → Weak (bands-of-power.md); flagged: they stand in bandit camps"
+        },
+        "note": "`BaseData` from `DLC1LvlBanditMeleeKhajiitM` · `LCharBanditMeleeAny`, but no `Stats`, so both keep their own level 1. Moved here from *Unfiled Leveled Wrappers* (user, 2026-10-03)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing a rung's melee template `EncBandit0{2–6}TemplateMelee` also needs that rung's boss leaves, which take their template from the rung's one-handed leaf (one from the template itself) but not `Stats`: `EncBandit02Boss*` (10, level 6), `…03Boss*` (10), `…04Boss*` (16), `…05Boss*` (21), `…06Boss*` (28), and the 140 CC armor-pack copies (`ccBGSSSE052_`/`053_`/`056_`/`058_` rung 02 at 6, `064_` at 12; `061_` rung 03 at 10, `062_` at 15; `054_`/`055_` rung 05 at 21; `050_`/`059_`/`063_` rung 06 at 28, `060_` at 44, `051_` at 48); all on *Bandit Chiefs*.",
+      "Changing `EncBandit01TemplateMelee` 039CFD also needs `DLC1EncHunterTemplate` 00336F:Dawnguard.esm (PC×1 [5–25], on *Dawnguard Members*; every Dawnguard rung template hangs off it through `EncDawnguard00Template`), `DLC1EncVampireTemplate` 003373:Dawnguard.esm (PC×1, on *Volkihar Court*), `Vald` 072B04 (PC×1.2 [8–42], on *Thieves Guild Foes*), `ccBGSSSE057_Skjol` 000828:ccbgssse057-ba_stalhrim.esl (PC×1 [20–50], on *Solstheim Countryside*), `ccEDHSSE003_RedguardEliteF01` 00081C:ccedhsse003-redguard.esl (48, on *Alik'r*) and `dunAlftandYagGraGortwog` 03B0E5 (Alftand corpse, 6, on *Winterhold Countryside*): they use 039CFD or one of its leaves as their template but not for `Stats`.",
+      "Changing `EncBandit01TemplateMagic` 039D31 also needs `ccASVSSE001_DwarvenSpectre` 00083C:ccasvsse001-almsivi.esm (1, on Undead → Ghosts → *Common Ghosts*) and `ccEEJSSE002_CorpseBanditDarkElfMale` 000FDF:cceejsse002-tower.esl (a corpse, 1, on no census page): same pattern.",
+      "Changing `EncBandit01TemplateMissile` 037C2C also needs `Gadnor` 02EB58 (4, on *The Rift Countryside*), through `TreasCorpseBanditWoodElfMale`: same pattern.",
+      "Changing `EncBandit02TemplateMelee` 01BCD9 also needs `DLC2EncTribalWerebearA`–`C` 01E17C · 03D2D9 · 03D2DA:Dragonborn.esm (17, on Werebeasts → *Werebear*; through the unlisted leaf `EncBandit02Melee2HBerserkNordM` 03DEA5) and `ccBGSSSE031_Celeste` 000A55:ccbgssse031-advcyrus.esm (PC×1 [6–30], on *Named Bandits*): same pattern.",
+      "Changing `EncBandit03TemplateMagic` 039D43 also needs `ccBGSSSE025_SmithEnchanter` 000CBF:ccbgssse025-advdsgs.esm (PC×1 [6–35], on *Named Bandits*): same pattern.",
+      "Changing `EncBandit03TemplateMelee` 01BCDA also needs `ccBGSSSE016_UmbraImageBase` 000BFD:ccbgssse016-umbra.esm (PC×0.75 [12–40], on *Unfiled NPCs*, with its three Umbra images), `ccEDHSSE003_Azadi` 00081E:ccedhsse003-redguard.esl (PC×1 [–30], on *Alik'r*) and `dunSkybornAltarAdventurer` 0E4D2D (10, on *Hjaalmarch Countryside*; `dunGeirmundsHallAdventurer` 104750 takes `Stats` from it): same pattern.",
+      "Changing `EncBandit04TemplateMagic` 039D4A also needs `DLC2NB01CorpseFall2` 027168:Dragonborn.esm (Castor's corpse, 9, on *Unfiled NPCs*); `EncBandit05TemplateMissile` 037C3C, `E3demoThief` 0E93D3 (19, never met: the E3 demo); `EncBandit06TemplateMelee` 01E611, `ccBGSSSE062_OrcM` 00081F:ccbgssse062-ba_dwarvenmail.esl (Urgnok, PC×1 [15–40], on *Named Bandits*): same pattern.",
+      "Changing `EncBandit00Template` 039CF4 (the name source) also needs `EncOrcHunterTemplate` 0D9447 (the Orc Hunter template, 1, on World Encounters → *Hunters*, with its leaves): same pattern.",
+      "Changing the rung leaves (through the lists that draw them) also needs the records that take their template from a bandit wrapper or list without `Stats`: on World Encounters → *Random Encounter NPCs* the Revelers `WERJ06Drunk01`–`03` 0BD15A · 0BD15B · 0E842F (1, through `LvlBanditMeleeNordM`); on *Unfiled NPCs* `ccKRTSSE001_Inimoro` 000A94:cckrtsse001_altar.esl (PC×1 [60–80], through `LvlBanditMelee2H`); rows of this page, `dunDuskglowBanditSuperMortal` 0A638E and `DLC1dunRedwaterDenKhajiitM` 008D21:Dawnguard.esm (1); on *Bandit Gangs* `MS07LvlBlackbloodMeleeTankEvenTonedMAmbush` 088F0D (1), the CC pit bandits `ccKRTSSE001_WindhelmPitMelee` (1) and `…WindhelmPitMissile` (PC×1), and through `dunRatwayBanditMelee` `dunRatwayGian` 10A062 (Gian the Fist, PC×0.8 [–30], on *Riften*); on *Hunters of Hircine* `DA05Hunter01_JKier` 02ABC3 (1) and `DA05Hunter09_03Missile_Viding` 0CE085 (PC×0.75); on *Ghost Bosses* `DLC2dunHaknir` 01A373:Dragonborn.esm (Haknir Death-Brand, PC×1.25 [40–75]); on *Common Ghosts* `ccBGSSSE031_LvlAlikrMelee2H` 000AA4 · `…LvlAlikrMissileF` 000814 · `…LvlAlikrMissileM` 000974 (ccbgssse031-advcyrus.esm, through the bandit ghost wrappers or `LCharBanditMissile`); on *The Pale Countryside* `dunFrostmereCrypt_Rajirr` 0D37CF (1, `LvlBanditMelee1H`); on *Hjaalmarch Countryside* `MS05_dunDeadMensRespite_Svaknir` 016C87 (PC×0.75, `LvlBanditMelee1H`), whose Sovngarde copy `MQ304Svaknir` 0EA57A (PC×1 [5–10], on Factions → *Sovngarde*) takes `Stats` from it.",
+      "Every other bandit record (the 246 rung leaves, the 34 CC Saints and Seducers leaves, every `LvlBandit*` wrapper) carries `Stats` and follows its template or list. `DunLostKnifeBanditBoss` 01C902 (on *Bandit Chiefs*) also takes `Stats` from `LCharBanditMelee2H`."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharBanditMelee1H",
+          "formKey": "039CFC:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`SubCharBandit01Melee1H` 039D26"
+          },
+          {
+            "at": 5,
+            "label": "`SubCharBandit02Melee1H` 039D27"
+          },
+          {
+            "at": 9,
+            "label": "`SubCharBandit03Melee1H` 039D28"
+          },
+          {
+            "at": 14,
+            "label": "`SubCharBandit04Melee1H` 039D29"
+          },
+          {
+            "at": 19,
+            "label": "`SubCharBandit05Melee1H` 039D2A"
+          },
+          {
+            "at": 25,
+            "label": "`SubCharBandit06Melee1H` 039D2B"
+          }
+        ],
+        "note": "each `SubChar` list rolls one of its rung's 8 one-handed leaves, 12 entries with four doubled, the Khajiit leaf among them",
+        "owner": "6 records here, 6 placed, ×66: `LvlBanditMelee1H` 03DECB ×38 · `TestDefMasterPackMultiLinkBandit` 057501 ×9 · `TestFollowOrPatrolBandit` 03EABE ×8 · `LvlBanditMelee1HAggro1024` 0B6FCD ×5 · `LvlBanditAmbushMelee1H` 093815 ×3 · `LvlBanditMelee1HGuard` 03DF52 ×3",
+        "drawnBy": [
+          {
+            "name": "Boethiah Cultists",
+            "records": [
+              {
+                "edid": "ccBGSSSE005_DA02CultistF1_College",
+                "formKey": "000814:ccbgssse005-goldbrand.esl"
+              },
+              {
+                "edid": "ccBGSSSE005_DA02CultistF2",
+                "formKey": "000810:ccbgssse005-goldbrand.esl"
+              },
+              {
+                "edid": "ccBGSSSE005_DA02CultistM1",
+                "formKey": "000813:ccbgssse005-goldbrand.esl"
+              },
+              {
+                "edid": "DA02CultistF1",
+                "formKey": "04D8D1:Skyrim.esm"
+              },
+              {
+                "edid": "DA02CultistF2",
+                "formKey": "04D8D3:Skyrim.esm"
+              },
+              {
+                "edid": "DA02CultistM1",
+                "formKey": "04D8D4:Skyrim.esm"
+              },
+              {
+                "edid": "WEDA02Cultist",
+                "formKey": "0B0E87:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "daedra/boethiah-cultists",
+            "note": "`Stats` taken. `ccBGSSSE005_DA02CultistF1_College`: through `LvlBanditMelee1H`; `ccBGSSSE005_DA02CultistF2`: through `LvlBanditMelee1H`; `ccBGSSSE005_DA02CultistM1`: through `LvlBanditMelee1H`; `DA02CultistF1`: through `LvlBanditMelee1H`, not placed; `DA02CultistF2`: through `LvlBanditMelee1H`, not placed; `DA02CultistM1`: through `LvlBanditMelee1H`, not placed; `WEDA02Cultist`: through `LvlBanditAmbushMelee1H` → `LvlBanditMelee1H`, not placed"
+          },
+          {
+            "name": "Human Shades (CC Necromantic Grimoire)",
+            "records": [
+              {
+                "edid": "ccVSVSSE003_HumanShadeF",
+                "formKey": "000982:ccvsvsse003-necroarts.esl"
+              },
+              {
+                "edid": "ccVSVSSE003_HumanShadeM",
+                "formKey": "00080A:ccvsvsse003-necroarts.esl"
+              }
+            ],
+            "how": "template",
+            "where": "on no census page (not placed; the *Ghosts* group page sends the `ccVSVSSE003_*` necromancy ghosts to Conjured, whose pages do not list these two)",
+            "note": "`Stats` taken. `ccVSVSSE003_HumanShadeF`: not placed; `ccVSVSSE003_HumanShadeM`: not placed"
+          },
+          {
+            "name": "Hunters of Hircine",
+            "records": [
+              {
+                "edid": "DA05_LvlHuntersOfHircine",
+                "formKey": "0955B7:Skyrim.esm"
+              },
+              {
+                "edid": "DA05_LvlHuntersOfHircine_KhajiitF",
+                "formKey": "0CED00:Skyrim.esm"
+              },
+              {
+                "edid": "DA05_LvlHuntersOfHircine_KhajiitM",
+                "formKey": "0955B5:Skyrim.esm"
+              },
+              {
+                "edid": "DA05_LvlHuntersOfHircine_NordF",
+                "formKey": "0955B6:Skyrim.esm"
+              },
+              {
+                "edid": "DA05_LvlHuntersOfHircine_NordM",
+                "formKey": "0955BA:Skyrim.esm"
+              },
+              {
+                "edid": "DA05_LvlHuntersOfHircine_OrcF",
+                "formKey": "0CED01:Skyrim.esm"
+              },
+              {
+                "edid": "DA05_LvlHuntersOfHircine_OrcM",
+                "formKey": "0CE08A:Skyrim.esm"
+              },
+              {
+                "edid": "DA05Hunter01_JKier",
+                "formKey": "02ABC3:Skyrim.esm"
+              },
+              {
+                "edid": "DA05Hunter02_Rissing",
+                "formKey": "02ABC0:Skyrim.esm"
+              },
+              {
+                "edid": "DA05Hunter03_Eriana",
+                "formKey": "02ABC4:Skyrim.esm"
+              },
+              {
+                "edid": "DA05Hunter04_Rakheran",
+                "formKey": "02ABC2:Skyrim.esm"
+              },
+              {
+                "edid": "DA05Hunter05_02Missile_Tsrasuna",
+                "formKey": "0CE081:Skyrim.esm"
+              },
+              {
+                "edid": "DA05Hunter06_02Melee_Mazgak",
+                "formKey": "0CE082:Skyrim.esm"
+              },
+              {
+                "edid": "DA05Hunter08_03Melee_Torkild",
+                "formKey": "0CE084:Skyrim.esm"
+              },
+              {
+                "edid": "DA05Hunter09_03Missile_Viding",
+                "formKey": "0CE085:Skyrim.esm"
+              },
+              {
+                "edid": "DA05Hunter10_03Missile_Yar",
+                "formKey": "0CE087:Skyrim.esm"
+              },
+              {
+                "edid": "DA05Hunter11_04Melee_Ahjisi",
+                "formKey": "0CE086:Skyrim.esm"
+              },
+              {
+                "edid": "DA05Hunter12_04Archer_Thjollod",
+                "formKey": "0CE088:Skyrim.esm"
+              },
+              {
+                "edid": "DA05Hunter13_04Melee_Heratar",
+                "formKey": "0CE089:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "daedra/hunters-of-hircine",
+            "note": "`Stats` taken except where said. `DA05_LvlHuntersOfHircine`: through `LvlBanditMelee1H`, not placed; `DA05_LvlHuntersOfHircine_KhajiitF`: through `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`, not placed; `DA05_LvlHuntersOfHircine_KhajiitM`: through `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`, not placed; `DA05_LvlHuntersOfHircine_NordF`: through `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`, not placed; `DA05_LvlHuntersOfHircine_NordM`: through `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`, not placed; `DA05_LvlHuntersOfHircine_OrcF`: through `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`, not placed; `DA05_LvlHuntersOfHircine_OrcM`: through `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`, not placed; `DA05Hunter01_JKier`: through `DA05_LvlHuntersOfHircine_KhajiitM` → `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`, keeps its own level, 1; `DA05Hunter02_Rissing`: through `DA05_LvlHuntersOfHircine_NordM` → `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`; `DA05Hunter03_Eriana`: through `DA05_LvlHuntersOfHircine_NordF` → `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`; `DA05Hunter04_Rakheran`: through `DA05_LvlHuntersOfHircine_KhajiitM` → `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`; `DA05Hunter05_02Missile_Tsrasuna`: through `DA05_LvlHuntersOfHircine_KhajiitF` → `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`; `DA05Hunter06_02Melee_Mazgak`: through `DA05_LvlHuntersOfHircine_OrcF` → `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`, not placed; `DA05Hunter08_03Melee_Torkild`: through `DA05_LvlHuntersOfHircine_NordM` → `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`; `DA05Hunter09_03Missile_Viding`: through `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`, keeps its own level, PC×0.75, not placed; `DA05Hunter10_03Missile_Yar`: through `DA05_LvlHuntersOfHircine_OrcM` → `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`; `DA05Hunter11_04Melee_Ahjisi`: through `DA05_LvlHuntersOfHircine_KhajiitF` → `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`; `DA05Hunter12_04Archer_Thjollod`: through `DA05_LvlHuntersOfHircine_NordM` → `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`, not placed; `DA05Hunter13_04Melee_Heratar`: through `DA05_LvlHuntersOfHircine_NordF` → `DA05_LvlHuntersOfHircine` → `LvlBanditMelee1H`"
+          },
+          {
+            "name": "Haknir's Crew",
+            "records": [
+              {
+                "edid": "DLC2dunHaknir_LvlBanditGhostMelee1HFemale",
+                "formKey": "037FF4:Dragonborn.esm"
+              },
+              {
+                "edid": "DLC2dunHaknir_LvlBanditGhostMelee1HMale",
+                "formKey": "037FF5:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken. `DLC2dunHaknir_LvlBanditGhostMelee1HMale`: not placed"
+          },
+          {
+            "name": "spider-zombie hosts",
+            "records": [
+              {
+                "edid": "DLC2ExpSpiderZombieLvlBanditMelee1H",
+                "formKey": "01795F:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "page": "insectoids/exploding-spider",
+            "note": "`Stats` taken"
+          },
+          {
+            "name": "Solstheim Countryside resident",
+            "records": [
+              {
+                "edid": "DLC2SiltStriderMerchant",
+                "formKey": "02C1EB:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → Solstheim → *Solstheim Countryside*",
+            "note": "`Stats` taken. `DLC2SiltStriderMerchant`: through `LvlBanditMelee1H`"
+          },
+          {
+            "name": "Falmer Servant",
+            "records": [
+              {
+                "edid": "dunBlackreachLVLFalmerServant",
+                "formKey": "0B2D35:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "falmer/common-falmer",
+            "note": "`Stats` taken"
+          },
+          {
+            "name": "Pale Countryside residents",
+            "records": [
+              {
+                "edid": "dunFrostmereCrypt_Rajirr",
+                "formKey": "0D37CF:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → The Pale → *The Pale Countryside*",
+            "note": "`Stats` taken except where said. `dunFrostmereCrypt_Rajirr`: through `LvlBanditMelee1H`, keeps its own level, 1"
+          },
+          {
+            "name": "unplaced ghost wrappers",
+            "records": [
+              {
+                "edid": "dunHalldirs_LvlBanditGhostMelee1H",
+                "formKey": "0B289A:Skyrim.esm"
+              },
+              {
+                "edid": "LvlBanditGhostMelee1HFemale",
+                "formKey": "0D93A2:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Undead → *Ghosts* group page, never met (not placed); three of them lend Haknir, Garuk and Thalin their template",
+            "note": "`Stats` taken. `dunHalldirs_LvlBanditGhostMelee1H`: through `LvlBanditGhostMelee1HMale`, not placed; `LvlBanditGhostMelee1HFemale`: not placed"
+          },
+          {
+            "name": "Ghosts (the generic and Halldir's Cairn ghosts)",
+            "records": [
+              {
+                "edid": "dunHalldirs_LvlBanditGhostMelee1HAmbush",
+                "formKey": "0B28A0:Skyrim.esm"
+              },
+              {
+                "edid": "LvlBanditGhostMelee1HMale",
+                "formKey": "0B1F96:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken. `dunHalldirs_LvlBanditGhostMelee1HAmbush`: through `dunHalldirs_LvlBanditGhostMelee1H` → `LvlBanditGhostMelee1HMale`"
+          },
+          {
+            "name": "Companion Ghosts",
+            "records": [
+              {
+                "edid": "DunYsgramorsTomb_LvlGhostMelee1HFemale",
+                "formKey": "0DE517:Skyrim.esm"
+              },
+              {
+                "edid": "DunYsgramorsTomb_LvlGhostMelee1HMale",
+                "formKey": "0AB102:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Companions → *Companion Ghosts*",
+            "note": "`Stats` taken. `DunYsgramorsTomb_LvlGhostMelee1HFemale`: through `LvlBanditGhostMelee1HFemale`; `DunYsgramorsTomb_LvlGhostMelee1HMale`: through `LvlBanditGhostMelee1HMale`"
+          },
+          {
+            "name": "Silver Hand",
+            "records": [
+              {
+                "edid": "LvlSilverhandMelee1H",
+                "formKey": "02AB87:Skyrim.esm"
+              },
+              {
+                "edid": "LvlSilverhandMelee1HAggro1024",
+                "formKey": "06466C:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Silver Hand → *Common Silver Hand*",
+            "note": "`Stats` taken. `LvlSilverhandMelee1H`: through `LvlBanditMelee1H`; `LvlSilverhandMelee1HAggro1024`: through `LvlBanditMelee1H`"
+          },
+          {
+            "name": "Vampire's Thralls",
+            "records": [
+              {
+                "edid": "LvlVampireThrallMelee1H",
+                "formKey": "02EB0B:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMelee1HGuard",
+                "formKey": "02EC1B:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "vampires/vampires-thrall",
+            "note": "`Stats` taken. `LvlVampireThrallMelee1HGuard`: not placed"
+          },
+          {
+            "name": "Svaknir (Sovngarde)",
+            "records": [
+              {
+                "edid": "MQ304Svaknir",
+                "formKey": "0EA57A:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → *Sovngarde*",
+            "note": "`Stats` taken except where said. `MQ304Svaknir`: through `MS05_dunDeadMensRespite_Svaknir` → `LvlBanditMelee1H`, keeps its own level, PC×1 [5–10]"
+          },
+          {
+            "name": "Svaknir",
+            "records": [
+              {
+                "edid": "MS05_dunDeadMensRespite_Svaknir",
+                "formKey": "016C87:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → Hjaalmarch → *Hjaalmarch Countryside*",
+            "note": "`Stats` taken except where said. `MS05_dunDeadMensRespite_Svaknir`: through `LvlBanditMelee1H`, keeps its own level, PC×0.75"
+          },
+          {
+            "name": "Riften residents",
+            "records": [
+              {
+                "edid": "OriniDral",
+                "formKey": "085D44:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → The Rift → *Riften*",
+            "note": "`Stats` taken. `OriniDral`: through `LvlBanditMelee1H`, not placed"
+          },
+          {
+            "name": "Random Encounter NPCs",
+            "records": [
+              {
+                "edid": "WEJS11Sigar",
+                "formKey": "0B85BE:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → World Encounters → *Random Encounter NPCs*",
+            "note": "`Stats` taken. `WEJS11Sigar`: through `LvlBanditMelee1H`, not placed"
+          },
+          {
+            "name": "Peddlers",
+            "records": [
+              {
+                "edid": "WEMerchantMiscFemaleCommoner",
+                "formKey": "0B5D5A:Skyrim.esm"
+              },
+              {
+                "edid": "WEMerchantMiscMaleCommoner",
+                "formKey": "0BBCD2:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → World Encounters → *Peddlers*",
+            "note": "`Stats` taken. `WEMerchantMiscFemaleCommoner`: through `LvlBanditMelee1H`, not placed; `WEMerchantMiscMaleCommoner`: through `LvlBanditMelee1H`, not placed"
+          },
+          {
+            "name": "the `WERJ` thieves",
+            "records": [
+              {
+                "edid": "WERJ03Thief",
+                "formKey": "0EF9C3:Skyrim.esm"
+              },
+              {
+                "edid": "WERJThief",
+                "formKey": "0B816E:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "on no census page (not placed; world-encounter aliases)",
+            "note": "`Stats` taken. `WERJ03Thief`: through `LvlBanditMelee1H`, not placed; `WERJThief`: through `WIThief` → `LvlBanditMelee1H`, not placed"
+          },
+          {
+            "name": "Bandit gangs and the dungeon wrappers",
+            "records": [
+              {
+                "edid": "ccBGSSSE020_WIThief",
+                "formKey": "00080C:ccbgssse020-graycowl.esl"
+              },
+              {
+                "edid": "ccKRTSSE001_PitFighter",
+                "formKey": "000809:cckrtsse001_altar.esl"
+              },
+              {
+                "edid": "dunCragslaneBartender",
+                "formKey": "0D823D:Skyrim.esm"
+              },
+              {
+                "edid": "dunDaintySloadLvlSailor",
+                "formKey": "0E5F38:Skyrim.esm"
+              },
+              {
+                "edid": "dunDaintySloadLvlSailorAmbush",
+                "formKey": "100567:Skyrim.esm"
+              },
+              {
+                "edid": "dunDaintySloadLvlSailorExterior",
+                "formKey": "05B615:Skyrim.esm"
+              },
+              {
+                "edid": "dunFortNeugrad_LvlBanditMelee1HCarryFirewood",
+                "formKey": "0C8668:Skyrim.esm"
+              },
+              {
+                "edid": "dunFortNeugrad_LvlBanditMelee1HCarryFirewoodAmbush",
+                "formKey": "0C8619:Skyrim.esm"
+              },
+              {
+                "edid": "dunKnifepointRidgeLvlBanditMeleeTraining",
+                "formKey": "0BBC6A:Skyrim.esm"
+              },
+              {
+                "edid": "DunLostKnifeBanditTalk01a",
+                "formKey": "034C8C:Skyrim.esm"
+              },
+              {
+                "edid": "dunMistwatchLvlBanditMelee1H",
+                "formKey": "0C0127:Skyrim.esm"
+              },
+              {
+                "edid": "dunWhiteRiverWatch_AlarmBandit1",
+                "formKey": "08130A:Skyrim.esm"
+              },
+              {
+                "edid": "LvlEscapedPrisoner",
+                "formKey": "071733:Skyrim.esm"
+              },
+              {
+                "edid": "MS07Bandit01Melee1H",
+                "formKey": "025F8A:Skyrim.esm"
+              },
+              {
+                "edid": "WE17Bandit3",
+                "formKey": "09F7F2:Skyrim.esm"
+              },
+              {
+                "edid": "WIThief",
+                "formKey": "023EE8:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/bandit-gangs",
+            "note": "`Stats` taken. `ccBGSSSE020_WIThief`: through `LvlBanditMelee1H`; `dunCragslaneBartender`: through `LvlBanditMelee1H`; `dunDaintySloadLvlSailor`: through `LvlBanditMelee1H`; `dunDaintySloadLvlSailorAmbush`: through `LvlBanditMelee1H`; `dunDaintySloadLvlSailorExterior`: through `LvlBanditMelee1HAggro1024`; `dunFortNeugrad_LvlBanditMelee1HCarryFirewood`: through `LvlBanditMelee1H`; `dunFortNeugrad_LvlBanditMelee1HCarryFirewoodAmbush`: through `LvlBanditAmbushMelee1H` → `LvlBanditMelee1H`; `dunKnifepointRidgeLvlBanditMeleeTraining`: through `LvlBanditMelee1H`; `DunLostKnifeBanditTalk01a`: through `LvlBanditMelee1H`; `dunWhiteRiverWatch_AlarmBandit1`: through `LvlBanditMelee1H`; `LvlEscapedPrisoner`: not placed; `MS07Bandit01Melee1H`: not placed; `WE17Bandit3`: through `LvlBanditMelee1H`, not placed; `WIThief`: through `LvlBanditMelee1H`, not placed"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMelee1HTank",
+          "formKey": "03DEC9:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`SubCharBandit01Melee1HTank` 03DEB7"
+          },
+          {
+            "at": 5,
+            "label": "`SubCharBandit02Melee1HTank` 03DEBA"
+          },
+          {
+            "at": 9,
+            "label": "`SubCharBandit03Melee1HTank` 03DEBD"
+          },
+          {
+            "at": 14,
+            "label": "`SubCharBandit04Melee1HTank` 03DEC0"
+          },
+          {
+            "at": 19,
+            "label": "`SubCharBandit05Melee1HTank` 03DEC4"
+          },
+          {
+            "at": 25,
+            "label": "`SubCharBandit06Melee1HTank` 03DEC6"
+          }
+        ],
+        "note": "each rung list: the 7 tank leaves, 11 entries",
+        "owner": "5 records here, 5 placed, ×47: `LvlBanditMeleeTank` 015BE5 ×26 · `LvlBanditMeleeTankAggro1024` 0B623C ×8 · `LvlBanditMeleeTankGuard` 03DF53 ×6 · `LvlBanditAmbushMeleeTank` 0D0E54 ×5 · `LvlBanditMeleeTankAggro1536` 0F62D9 ×2",
+        "drawnBy": [
+          {
+            "name": "Other Guards",
+            "records": [
+              {
+                "edid": "ccBGSSSE056_EECGuard",
+                "formKey": "000821:ccbgssse056-ba_silver.esl"
+              },
+              {
+                "edid": "TG04EECGuard",
+                "formKey": "0CA6D1:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Guards → *Other Guards*",
+            "note": "`Stats` taken"
+          },
+          {
+            "name": "Haknir's Crew",
+            "records": [
+              {
+                "edid": "DLC2dunHaknir_LvlBanditGhostMeleeTankFemale",
+                "formKey": "037FFF:Dragonborn.esm"
+              },
+              {
+                "edid": "DLC2dunHaknir_LvlBanditGhostMeleeTankMale",
+                "formKey": "037FFA:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken"
+          },
+          {
+            "name": "unplaced ghost wrappers",
+            "records": [
+              {
+                "edid": "dunHalldirs_LvlBanditGhostMeleeTank",
+                "formKey": "0B289C:Skyrim.esm"
+              },
+              {
+                "edid": "LvlBanditGhostMeleeTankFemale",
+                "formKey": "0D93A5:Skyrim.esm"
+              },
+              {
+                "edid": "LvlBanditGhostMeleeTankMale",
+                "formKey": "0B1F99:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Undead → *Ghosts* group page, never met (not placed); three of them lend Haknir, Garuk and Thalin their template",
+            "note": "`Stats` taken. `dunHalldirs_LvlBanditGhostMeleeTank`: through `LvlBanditGhostMeleeTankMale`, not placed; `LvlBanditGhostMeleeTankFemale`: not placed; `LvlBanditGhostMeleeTankMale`: not placed"
+          },
+          {
+            "name": "Ghosts (the generic and Halldir's Cairn ghosts)",
+            "records": [
+              {
+                "edid": "dunHalldirs_LvlBanditGhostMeleeTankAmbush",
+                "formKey": "0B28A3:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken. `dunHalldirs_LvlBanditGhostMeleeTankAmbush`: through `dunHalldirs_LvlBanditGhostMeleeTank` → `LvlBanditGhostMeleeTankMale`"
+          },
+          {
+            "name": "Named bandits",
+            "records": [
+              {
+                "edid": "dunWhiteRiverWatch_BanditWatchman",
+                "formKey": "0812FC:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/named-bandits",
+            "note": "`Stats` taken. `dunWhiteRiverWatch_BanditWatchman`: through `LvlBanditMeleeTank`"
+          },
+          {
+            "name": "Vampire's Thralls",
+            "records": [
+              {
+                "edid": "LvlVampireThrallMeleeTank",
+                "formKey": "02EED7:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMeleeTankGuard",
+                "formKey": "02EED8:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "vampires/vampires-thrall",
+            "note": "`Stats` taken. `LvlVampireThrallMeleeTankGuard`: not placed"
+          },
+          {
+            "name": "Bandit gangs and the dungeon wrappers",
+            "records": [
+              {
+                "edid": "ccBGSSSE054_LvlBanditMeleeTank",
+                "formKey": "000812:ccbgssse054-ba_orcish.esl"
+              },
+              {
+                "edid": "dunFortNeugradBanditMeleeTraining",
+                "formKey": "0CC509:Skyrim.esm"
+              },
+              {
+                "edid": "dunJaphetsLvlBanditMeleeTank",
+                "formKey": "0E6D74:Skyrim.esm"
+              },
+              {
+                "edid": "dunMistwatchLvlBanditMeleeTank",
+                "formKey": "0C0125:Skyrim.esm"
+              },
+              {
+                "edid": "dunPOIPoacherLvlBanditMeleeTankAggro1024",
+                "formKey": "0D96D3:Skyrim.esm"
+              },
+              {
+                "edid": "dunPOISmugglerLvlBanditMeleeTankAggro1024",
+                "formKey": "0D97EE:Skyrim.esm"
+              },
+              {
+                "edid": "dunRobbersGorge_LvlBanditGuard",
+                "formKey": "0EE52B:Skyrim.esm"
+              },
+              {
+                "edid": "dunRobbersGorge_LvlBanditMeleeTank",
+                "formKey": "078C17:Skyrim.esm"
+              },
+              {
+                "edid": "MS07LvlBlackbloodMeleeTankEvenTonedM",
+                "formKey": "0DC8DB:Skyrim.esm"
+              },
+              {
+                "edid": "MS07LvlBlackbloodMeleeTankEvenTonedMAmbush",
+                "formKey": "088F0D:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/bandit-gangs",
+            "note": "`Stats` taken except where said. `dunFortNeugradBanditMeleeTraining`: through `LvlBanditMeleeTank`; `dunMistwatchLvlBanditMeleeTank`: through `LvlBanditMeleeTank`; `dunPOIPoacherLvlBanditMeleeTankAggro1024`: through `LvlBanditMeleeTank`; `dunPOISmugglerLvlBanditMeleeTankAggro1024`: through `LvlBanditMeleeTankAggro1024`; `dunRobbersGorge_LvlBanditGuard`: through `LvlBanditMeleeTank`; `dunRobbersGorge_LvlBanditMeleeTank`: through `LvlBanditMeleeTank`, not placed; `MS07LvlBlackbloodMeleeTankEvenTonedM`: through `LvlBanditMeleeTank`; `MS07LvlBlackbloodMeleeTankEvenTonedMAmbush`: through `MS07LvlBlackbloodMeleeTankEvenTonedM` → `LvlBanditMeleeTank`, keeps its own level, 1"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMelee2H",
+          "formKey": "03DEC8:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`SubCharBandit01Melee2H` 03CF5F"
+          },
+          {
+            "at": 5,
+            "label": "`SubCharBandit02Melee2H` 03DEB9"
+          },
+          {
+            "at": 9,
+            "label": "`SubCharBandit03Melee2H` 03DEBC"
+          },
+          {
+            "at": 14,
+            "label": "`SubCharBandit04Melee2H` 03DEBF"
+          },
+          {
+            "at": 19,
+            "label": "`SubCharBandit05Melee2H` 03DEC2"
+          },
+          {
+            "at": 25,
+            "label": "`SubCharBandit06Melee2H` 03DEC5"
+          }
+        ],
+        "note": "each rung list: the 5 two-handed leaves, 8 entries",
+        "owner": "1 records here, 1 placed, ×14: `LvlBanditMelee2H` 01E79D ×14",
+        "drawnBy": [
+          {
+            "name": "Boethiah Cultists",
+            "records": [
+              {
+                "edid": "ccBGSSSE005_DA02CultistM3",
+                "formKey": "000811:ccbgssse005-goldbrand.esl"
+              },
+              {
+                "edid": "DA02CultistM3",
+                "formKey": "04D8D2:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "daedra/boethiah-cultists",
+            "note": "`Stats` taken. `ccBGSSSE005_DA02CultistM3`: through `LvlBanditMelee2H`; `DA02CultistM3`: through `LvlBanditMelee2H`, not placed"
+          },
+          {
+            "name": "Ghost Sailors and the Ghost Captain (CC)",
+            "records": [
+              {
+                "edid": "ccBGSSSE031_LvlAlikrMelee2H",
+                "formKey": "000AA4:ccbgssse031-advcyrus.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken except where said. `ccBGSSSE031_LvlAlikrMelee2H`: through `LvlBanditGhostMelee2HMale`, keeps its own level, PC×1.5 [25–60]"
+          },
+          {
+            "name": "Inimoro (CC)",
+            "records": [
+              {
+                "edid": "ccKRTSSE001_Inimoro",
+                "formKey": "000A94:cckrtsse001_altar.esl"
+              }
+            ],
+            "how": "template",
+            "where": "Uncategorised → *Unfiled NPCs* (per the Common Bandits page; a search also hits *Dark Brotherhood Assassins*)",
+            "note": "`Stats` taken except where said. `ccKRTSSE001_Inimoro`: through `LvlBanditMelee2H`, keeps its own level, PC×1 [60–80], not placed"
+          },
+          {
+            "name": "Mercenaries",
+            "records": [
+              {
+                "edid": "DLC1_WESC09TaronGuard03",
+                "formKey": "014BFE:Dawnguard.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/mercenaries",
+            "note": "`Stats` taken. `DLC1_WESC09TaronGuard03`: through `LvlBanditMelee2H`, not placed"
+          },
+          {
+            "name": "Haknir's Crew",
+            "records": [
+              {
+                "edid": "DLC2dunHaknir_LvlBanditGhostMelee2HFemale",
+                "formKey": "037FF6:Dragonborn.esm"
+              },
+              {
+                "edid": "DLC2dunHaknir_LvlBanditGhostMelee2HMale",
+                "formKey": "037FF7:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken. `DLC2dunHaknir_LvlBanditGhostMelee2HFemale`: not placed"
+          },
+          {
+            "name": "Slitter",
+            "records": [
+              {
+                "edid": "DLC2MogrulThugTT1b",
+                "formKey": "019596:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → Solstheim → *Raven Rock*",
+            "note": "`Stats` taken. `DLC2MogrulThugTT1b`: through `LvlBanditMelee2H`"
+          },
+          {
+            "name": "the Lost Knife Hideout boss",
+            "records": [
+              {
+                "edid": "DunLostKnifeBanditBoss",
+                "formKey": "01C902:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/bandit-chiefs",
+            "note": "`Stats` taken"
+          },
+          {
+            "name": "Companion Ghosts",
+            "records": [
+              {
+                "edid": "DunYsgramorsTomb_LvlGhostMelee2HFemale",
+                "formKey": "0DE516:Skyrim.esm"
+              },
+              {
+                "edid": "DunYsgramorsTomb_LvlGhostMelee2HMale",
+                "formKey": "0DE519:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Companions → *Companion Ghosts*",
+            "note": "`Stats` taken. `DunYsgramorsTomb_LvlGhostMelee2HFemale`: through `LvlBanditGhostMelee2HFemale`; `DunYsgramorsTomb_LvlGhostMelee2HMale`: through `LvlBanditGhostMelee2HMale`"
+          },
+          {
+            "name": "unplaced ghost wrappers",
+            "records": [
+              {
+                "edid": "LvlBanditGhostMelee2HFemale",
+                "formKey": "0D93A3:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Undead → *Ghosts* group page, never met (not placed); three of them lend Haknir, Garuk and Thalin their template",
+            "note": "`Stats` taken. `LvlBanditGhostMelee2HFemale`: not placed"
+          },
+          {
+            "name": "Ghosts (the generic and Halldir's Cairn ghosts)",
+            "records": [
+              {
+                "edid": "LvlBanditGhostMelee2HMale",
+                "formKey": "0B1F97:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken"
+          },
+          {
+            "name": "Silver Hand",
+            "records": [
+              {
+                "edid": "LvlSilverhandMelee2H",
+                "formKey": "02AB89:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Silver Hand → *Common Silver Hand*",
+            "note": "`Stats` taken. `LvlSilverhandMelee2H`: through `LvlBanditMelee2H`"
+          },
+          {
+            "name": "Vampire's Thralls",
+            "records": [
+              {
+                "edid": "LvlVampireThrallMelee2H",
+                "formKey": "02ED6B:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "vampires/vampires-thrall",
+            "note": "`Stats` taken"
+          },
+          {
+            "name": "Bandit gangs and the dungeon wrappers",
+            "records": [
+              {
+                "edid": "ccBGSSSE054_LvlBanditMelee2H",
+                "formKey": "000805:ccbgssse054-ba_orcish.esl"
+              },
+              {
+                "edid": "dunJaphetslvlBanditMelee2H",
+                "formKey": "0E6D73:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/bandit-gangs",
+            "note": "`Stats` taken. `dunJaphetslvlBanditMelee2H`: through `LvlBanditMelee2H`"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMelee2HBerserk",
+          "formKey": "03DECA:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`SubCharBandit01Melee2HBerserk` 03DEB8"
+          },
+          {
+            "at": 5,
+            "label": "`SubCharBandit02Melee2HBerserk` 03DEBB"
+          },
+          {
+            "at": 9,
+            "label": "`SubCharBandit03Melee2HBerserk` 03DEBE"
+          },
+          {
+            "at": 14,
+            "label": "`SubCharBandit04Melee2HBerserk` 03DEC1"
+          },
+          {
+            "at": 19,
+            "label": "`SubCharBandit05Melee2HBerserk` 03DEC3"
+          },
+          {
+            "at": 25,
+            "label": "`SubCharBandit06Melee2HBerserk` 03DEC7"
+          }
+        ],
+        "note": "each rung list: the 5 berserker leaves, 8 entries; but `SubCharBandit02Melee2HBerserk` 03DEBB holds the rung-01 (level 1) berserkers, not the rung-02 ones, so the berserkers roll 1 · 1 · 9 · 14 · 19 · 25 and `EncBandit02Melee2HBerserk*` are in no list (archetype-tiers.md §3.1)",
+        "owner": "2 records here, 2 placed, ×36: `LvlBanditMeleeBerserker` 03DECC ×32 · `LvlBanditAmbushMeleeBeserker` 0D0E53 ×4",
+        "drawnBy": [
+          {
+            "name": "Ghost Bosses",
+            "records": [
+              {
+                "edid": "DLC2dunHaknir",
+                "formKey": "01A373:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/ghost-bosses",
+            "note": "`Stats` taken except where said. `DLC2dunHaknir`: through `LvlBanditGhostMeleeBerserkerMale`, keeps its own level, PC×1.25 [40–75]"
+          },
+          {
+            "name": "Haknir's Crew",
+            "records": [
+              {
+                "edid": "DLC2dunHaknir_LvlBanditGhostMeleeBerserkerFemale",
+                "formKey": "037FF8:Dragonborn.esm"
+              },
+              {
+                "edid": "DLC2dunHaknir_LvlBanditGhostMeleeBerserkerMale",
+                "formKey": "037FF9:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken"
+          },
+          {
+            "name": "Winterhold Countryside residents",
+            "records": [
+              {
+                "edid": "dunAlftandJdarr",
+                "formKey": "03B0E7:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → Winterhold Hold → *Winterhold Countryside*",
+            "note": "`Stats` taken. `dunAlftandJdarr`: through `LvlBanditMeleeBerserker`"
+          },
+          {
+            "name": "Named bandits",
+            "records": [
+              {
+                "edid": "dunBrokenOarHargar",
+                "formKey": "01E38B:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/named-bandits",
+            "note": "`Stats` taken. `dunBrokenOarHargar`: through `MS07LvlBlackbloodMeleeBerserkerCommonerM` → `LvlBanditMeleeBerserker`"
+          },
+          {
+            "name": "unplaced ghost wrappers",
+            "records": [
+              {
+                "edid": "dunHalldirs_LvlBanditGhostMeleeBerserker",
+                "formKey": "0B289F:Skyrim.esm"
+              },
+              {
+                "edid": "LvlBanditGhostMeleeBerserkerFemale",
+                "formKey": "0D93A4:Skyrim.esm"
+              },
+              {
+                "edid": "LvlBanditGhostMeleeBerserkerMale",
+                "formKey": "0B1F98:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Undead → *Ghosts* group page, never met (not placed); three of them lend Haknir, Garuk and Thalin their template",
+            "note": "`Stats` taken. `dunHalldirs_LvlBanditGhostMeleeBerserker`: through `LvlBanditGhostMeleeBerserkerMale`, not placed; `LvlBanditGhostMeleeBerserkerFemale`: not placed; `LvlBanditGhostMeleeBerserkerMale`: not placed"
+          },
+          {
+            "name": "Ghosts (the generic and Halldir's Cairn ghosts)",
+            "records": [
+              {
+                "edid": "dunHalldirs_LvlBanditGhostMeleeBerserkerAmbush",
+                "formKey": "0B28A2:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken. `dunHalldirs_LvlBanditGhostMeleeBerserkerAmbush`: through `dunHalldirs_LvlBanditGhostMeleeBerserker` → `LvlBanditGhostMeleeBerserkerMale`"
+          },
+          {
+            "name": "Vampire's Thralls",
+            "records": [
+              {
+                "edid": "LvlVampireThrallMeleeBerserker",
+                "formKey": "02EE9E:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "vampires/vampires-thrall",
+            "note": "`Stats` taken"
+          },
+          {
+            "name": "Bandit gangs and the dungeon wrappers",
+            "records": [
+              {
+                "edid": "dunCragslaneButcher",
+                "formKey": "0D823E:Skyrim.esm"
+              },
+              {
+                "edid": "dunMistwatchLvlBanditMeleeBerserker",
+                "formKey": "0C0124:Skyrim.esm"
+              },
+              {
+                "edid": "dunPOISmugglerLvlBanditMeleeBerserker",
+                "formKey": "0D97ED:Skyrim.esm"
+              },
+              {
+                "edid": "dunRobbersGorge_LvlBanditMeleeBerserker",
+                "formKey": "078C16:Skyrim.esm"
+              },
+              {
+                "edid": "MS07LvlBlackbloodMeleeBerserkerCommonerM",
+                "formKey": "0DC8DA:Skyrim.esm"
+              },
+              {
+                "edid": "MS07LvlBlackbloodMeleeBerserkerCommonerMAmbush",
+                "formKey": "088F0C:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/bandit-gangs",
+            "note": "`Stats` taken. `dunCragslaneButcher`: through `LvlBanditMeleeBerserker`; `dunMistwatchLvlBanditMeleeBerserker`: through `LvlBanditMeleeBerserker`; `dunPOISmugglerLvlBanditMeleeBerserker`: through `LvlBanditMeleeBerserker`; `dunRobbersGorge_LvlBanditMeleeBerserker`: through `LvlBanditMeleeBerserker`; `MS07LvlBlackbloodMeleeBerserkerCommonerM`: through `LvlBanditMeleeBerserker`; `MS07LvlBlackbloodMeleeBerserkerCommonerMAmbush`: through `MS07LvlBlackbloodMeleeBerserkerCommonerM` → `LvlBanditMeleeBerserker`"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMeleeAny",
+          "formKey": "03DECD:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharBanditMelee1H` 039CFC"
+          },
+          {
+            "at": 1,
+            "label": "`LCharBanditMelee2H` 03DEC8"
+          }
+        ],
+        "note": "one of the two ladders, then its rung",
+        "owner": "6 records here, 5 placed, ×66: `LvlBanditMeleeAny` 01E79C ×55 · `LvlBanditMeleeAnyAggro1024` 0B623A ×8 · `dunDuskglowBanditSuperMortal` 0A638E ×1 · `LvlBanditMelee2HGuard` 02639D ×1 · `LvlBanditMeleeAnyGuard` 03DF51 ×1; not placed: `LvlBanditMeleeAnyAggro1536`",
+        "drawnBy": [
+          {
+            "name": "Afflicted wrapper",
+            "records": [
+              {
+                "edid": "DA13encAfflicted",
+                "formKey": "043AB8:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "on no census page: not placed, named by no alias found (*The Afflicted* page files the `DA13` ladder, not this wrapper)",
+            "note": "`Stats` taken. `DA13encAfflicted`: not placed"
+          },
+          {
+            "name": "Mercenaries",
+            "records": [
+              {
+                "edid": "DLCDwarvenPuzzleDungeon_LvlMercMelee",
+                "formKey": "000900:cctwbsse001-puzzledungeon.esm"
+              },
+              {
+                "edid": "DLCDwarvenPuzzleDungeonDeadMercenary",
+                "formKey": "0008FB:cctwbsse001-puzzledungeon.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/mercenaries",
+            "note": "`Stats` taken"
+          },
+          {
+            "name": "Riften residents",
+            "records": [
+              {
+                "edid": "dunRatwayGian",
+                "formKey": "10A062:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → The Rift → *Riften*",
+            "note": "`Stats` taken except where said. `dunRatwayGian`: through `dunRatwayBanditMelee` → `LvlBanditMeleeAny`, keeps its own level, PC×0.8 [0–30]"
+          },
+          {
+            "name": "Silver Hand",
+            "records": [
+              {
+                "edid": "LvlSilverHandMeleeAny",
+                "formKey": "04499F:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Silver Hand → *Common Silver Hand*",
+            "note": "`Stats` taken. `LvlSilverHandMeleeAny`: through `LvlBanditMeleeAny`"
+          },
+          {
+            "name": "Vampire's Thralls",
+            "records": [
+              {
+                "edid": "LvlVampireThrallMelee2HGuard",
+                "formKey": "02ED6D:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMeleeAny",
+                "formKey": "02ED6E:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMeleeAnyGuard",
+                "formKey": "02ED86:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMeleeAnySitLinkedRef",
+                "formKey": "02EE9D:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "vampires/vampires-thrall",
+            "note": "`Stats` taken. `LvlVampireThrallMelee2HGuard`: through `LvlBanditMeleeAny`, not placed; `LvlVampireThrallMeleeAnyGuard`: not placed; `LvlVampireThrallMeleeAnySitLinkedRef`: not placed"
+          },
+          {
+            "name": "Adventurers",
+            "records": [
+              {
+                "edid": "WE23Scavenger",
+                "formKey": "062105:Skyrim.esm"
+              },
+              {
+                "edid": "WETreasureHunterActor",
+                "formKey": "0A17AF:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → World Encounters → *Adventurers*",
+            "note": "`Stats` taken. `WE23Scavenger`: through `LvlBanditMeleeAny`, not placed; `WETreasureHunterActor`: through `LvlBanditMeleeAny`, not placed"
+          },
+          {
+            "name": "Bandit gangs and the dungeon wrappers",
+            "records": [
+              {
+                "edid": "ccKRTSSE001_WindhelmPitMelee",
+                "formKey": "000985:cckrtsse001_altar.esl"
+              },
+              {
+                "edid": "dunCragslaneLvlDogfightCrowd",
+                "formKey": "0D81F3:Skyrim.esm"
+              },
+              {
+                "edid": "dunCragslaneOutdoorGuy",
+                "formKey": "090C87:Skyrim.esm"
+              },
+              {
+                "edid": "dunJaphetslvlBanditMeleeAny",
+                "formKey": "0E6D71:Skyrim.esm"
+              },
+              {
+                "edid": "dunMistwatchLvlBanditMeleeAnyAggro1024",
+                "formKey": "0C0115:Skyrim.esm"
+              },
+              {
+                "edid": "dunNilheimLvlBanditGuard",
+                "formKey": "01BB21:Skyrim.esm"
+              },
+              {
+                "edid": "dunPOIRaidingBandit01",
+                "formKey": "0DC2D3:Skyrim.esm"
+              },
+              {
+                "edid": "dunRatwayBanditMelee",
+                "formKey": "05CBE9:Skyrim.esm"
+              },
+              {
+                "edid": "dunRobbersGorge_LvlBanditMeleeAny",
+                "formKey": "078C18:Skyrim.esm"
+              },
+              {
+                "edid": "dunVolskyggeBanditGate01",
+                "formKey": "041928:Skyrim.esm"
+              },
+              {
+                "edid": "dunVolskyggeBanditGate02",
+                "formKey": "041929:Skyrim.esm"
+              },
+              {
+                "edid": "dunVolskyggeBanditScene01a",
+                "formKey": "04192A:Skyrim.esm"
+              },
+              {
+                "edid": "dunVolskyggeBanditScene01b",
+                "formKey": "04192B:Skyrim.esm"
+              },
+              {
+                "edid": "MS03ChaletGuard",
+                "formKey": "046E84:Skyrim.esm"
+              },
+              {
+                "edid": "MS03ChaletGuardExterior",
+                "formKey": "068C8A:Skyrim.esm"
+              },
+              {
+                "edid": "WEBanditMeleeNoFactionAggro",
+                "formKey": "09F80F:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/bandit-gangs",
+            "note": "`Stats` taken except where said. `ccKRTSSE001_WindhelmPitMelee`: keeps its own level, 1; `dunCragslaneLvlDogfightCrowd`: through `LvlBanditMeleeAny`; `dunCragslaneOutdoorGuy`: through `LvlBanditMeleeAnyAggro1024`; `dunJaphetslvlBanditMeleeAny`: through `LvlBanditMeleeAny`; `dunNilheimLvlBanditGuard`: through `LvlBanditMeleeAny`; `dunPOIRaidingBandit01`: through `LvlBanditMeleeAny`, not placed; `dunRatwayBanditMelee`: through `LvlBanditMeleeAny`; `dunRobbersGorge_LvlBanditMeleeAny`: through `LvlBanditMeleeAny`, not placed; `dunVolskyggeBanditGate01`: through `LvlBanditMeleeAny`; `dunVolskyggeBanditGate02`: through `LvlBanditMeleeAny`; `dunVolskyggeBanditScene01a`: through `LvlBanditMeleeAny`; `dunVolskyggeBanditScene01b`: through `LvlBanditMeleeAny`; `MS03ChaletGuard`: through `LvlBanditMeleeAny`; `MS03ChaletGuardExterior`: through `MS03ChaletGuard` → `LvlBanditMeleeAny`; `WEBanditMeleeNoFactionAggro`: through `LvlBanditMeleeAny`, not placed"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMissile",
+          "formKey": "01E770:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`SubCharBandit01Missile` 039D71"
+          },
+          {
+            "at": 5,
+            "label": "`SubCharBandit02Missile` 039D72"
+          },
+          {
+            "at": 9,
+            "label": "`SubCharBandit03Missile` 039D73"
+          },
+          {
+            "at": 14,
+            "label": "`SubCharBandit04Missile` 039D74"
+          },
+          {
+            "at": 19,
+            "label": "`SubCharBandit05Missile` 039D75"
+          },
+          {
+            "at": 25,
+            "label": "`SubCharBandit06Missile` 039D76"
+          }
+        ],
+        "note": "each rung list: the 9 archer leaves, 12 entries; `SubCharBandit01Missile` also holds the melee leaf `EncBandit01Melee1HRedguardM` 039CF9",
+        "owner": "12 records here, 11 placed, ×148: `LvlBanditMissile` 01E79E ×83 · `LvlBanditMissileAggro1024` 0B623B ×31 · `LvlBanditMissileGuard` 026372 ×9 · `LvlBanditAmbushMissile` 093814 ×7 · `LvlBanditMissileHoldPos256LinkRef` 0296FE ×6 · `LvlBanditMissileHoldPosition256` 0B4597 ×4 · `LvlBanditMissileAggro1536` 0F62D8 ×3 · `LvlBanditMissileHoldPositionLinkCustom0264` 0CC590 ×2 and 3 more; not placed: `LvlBanditMissileAmbush`",
+        "drawnBy": [
+          {
+            "name": "Ghost Sailors and the Ghost Captain (CC)",
+            "records": [
+              {
+                "edid": "ccBGSSSE031_LvlAlikrMissileF",
+                "formKey": "000814:ccbgssse031-advcyrus.esm"
+              },
+              {
+                "edid": "ccBGSSSE031_LvlAlikrMissileM",
+                "formKey": "000974:ccbgssse031-advcyrus.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken except where said. `ccBGSSSE031_LvlAlikrMissileF`: through `LvlBanditGhostMissileFemale`, keeps its own level, PC×1.2 [10–50]; `ccBGSSSE031_LvlAlikrMissileM`: through `ccBGSSSE031_LvlAlikrMissileF` → `LvlBanditGhostMissileFemale`, keeps its own level, 1"
+          },
+          {
+            "name": "Named bandits",
+            "records": [
+              {
+                "edid": "ccMTYSSE001_LvlBanditBoss04",
+                "formKey": "000844:ccmtysse001-knightsofthenine.esl"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/named-bandits",
+            "note": "`Stats` taken"
+          },
+          {
+            "name": "Mercenaries",
+            "records": [
+              {
+                "edid": "DLC1_WESC09TaronGuard02",
+                "formKey": "014BFD:Dawnguard.esm"
+              },
+              {
+                "edid": "DLCDwarvenPuzzleDungeon_LvlMercMisHoldPos",
+                "formKey": "000902:cctwbsse001-puzzledungeon.esm"
+              },
+              {
+                "edid": "DLCDwarvenPuzzleDungeon_LvlMercMissile",
+                "formKey": "0008FC:cctwbsse001-puzzledungeon.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/mercenaries",
+            "note": "`Stats` taken. `DLC1_WESC09TaronGuard02`: through `LvlBanditMissile`, not placed"
+          },
+          {
+            "name": "Haknir's Crew",
+            "records": [
+              {
+                "edid": "DLC2dunHaknir_LvlBanditGhostMeleeMissileFemale",
+                "formKey": "037FFB:Dragonborn.esm"
+              },
+              {
+                "edid": "DLC2dunHaknir_LvlBanditGhostMeleeMissileMale",
+                "formKey": "037FFC:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken"
+          },
+          {
+            "name": "Ghost Bosses",
+            "records": [
+              {
+                "edid": "DLC2dunHaknirGarukWindrime",
+                "formKey": "037FE3:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/ghost-bosses",
+            "note": "`Stats` taken. `DLC2dunHaknirGarukWindrime`: through `LvlBanditGhostMissileMale`"
+          },
+          {
+            "name": "spider-zombie hosts",
+            "records": [
+              {
+                "edid": "DLC2ExpSpiderZombieLvlBanditMissile",
+                "formKey": "01CA33:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "page": "insectoids/exploding-spider",
+            "note": "`Stats` taken"
+          },
+          {
+            "name": "Silver Hand",
+            "records": [
+              {
+                "edid": "DunGallowsRock_LvlSilverHandMissileHold",
+                "formKey": "0AA08A:Skyrim.esm"
+              },
+              {
+                "edid": "LvlSilverhandMissile",
+                "formKey": "02AB88:Skyrim.esm"
+              },
+              {
+                "edid": "LvlSilverhandMissile_Aggro1024",
+                "formKey": "06466D:Skyrim.esm"
+              },
+              {
+                "edid": "LvlSilverhandMissile_HoldPos256",
+                "formKey": "0C7410:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Silver Hand → *Common Silver Hand*",
+            "note": "`Stats` taken. `DunGallowsRock_LvlSilverHandMissileHold`: through `LvlSilverhandMissile`; `LvlSilverhandMissile_Aggro1024`: through `LvlSilverhandMissile`; `LvlSilverhandMissile_HoldPos256`: through `LvlSilverhandMissile`"
+          },
+          {
+            "name": "unplaced ghost wrappers",
+            "records": [
+              {
+                "edid": "dunHalldirs_LvlBanditGhostMissile",
+                "formKey": "0B289D:Skyrim.esm"
+              },
+              {
+                "edid": "LvlBanditGhostMissileFemale",
+                "formKey": "0D93A6:Skyrim.esm"
+              },
+              {
+                "edid": "LvlBanditGhostMissileMale",
+                "formKey": "0B1F9A:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Undead → *Ghosts* group page, never met (not placed); three of them lend Haknir, Garuk and Thalin their template",
+            "note": "`Stats` taken. `dunHalldirs_LvlBanditGhostMissile`: through `LvlBanditGhostMissileMale`, not placed; `LvlBanditGhostMissileFemale`: not placed; `LvlBanditGhostMissileMale`: not placed"
+          },
+          {
+            "name": "Ghosts (the generic and Halldir's Cairn ghosts)",
+            "records": [
+              {
+                "edid": "dunHalldirs_LvlBanditGhostMissileAmbush",
+                "formKey": "0B28A4:Skyrim.esm"
+              },
+              {
+                "edid": "dunHalldirs_LvlBanditGhostMissileAmbushHoldPos256",
+                "formKey": "065C07:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken. `dunHalldirs_LvlBanditGhostMissileAmbush`: through `dunHalldirs_LvlBanditGhostMissile` → `LvlBanditGhostMissileMale`; `dunHalldirs_LvlBanditGhostMissileAmbushHoldPos256`: through `dunHalldirs_LvlBanditGhostMissile` → `LvlBanditGhostMissileMale`"
+          },
+          {
+            "name": "Companion Ghosts",
+            "records": [
+              {
+                "edid": "DunYsgramorsTomb_LvlGhostMissileFemale",
+                "formKey": "0DE518:Skyrim.esm"
+              },
+              {
+                "edid": "DunYsgramorsTomb_LvlGhostMissileMale",
+                "formKey": "0AB104:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Companions → *Companion Ghosts*",
+            "note": "`Stats` taken. `DunYsgramorsTomb_LvlGhostMissileFemale`: through `LvlBanditGhostMissileFemale`; `DunYsgramorsTomb_LvlGhostMissileMale`: through `LvlBanditGhostMissileMale`"
+          },
+          {
+            "name": "Vampire's Thralls",
+            "records": [
+              {
+                "edid": "LvlVampireThrallMissile",
+                "formKey": "02EEDC:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMissileGuard",
+                "formKey": "02EEE1:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMissileHold",
+                "formKey": "08E2F7:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "vampires/vampires-thrall",
+            "note": "`Stats` taken"
+          },
+          {
+            "name": "Hunter",
+            "records": [
+              {
+                "edid": "WE25Hunter",
+                "formKey": "06218C:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → World Encounters → *Hunters*",
+            "note": "`Stats` taken. `WE25Hunter`: through `LvlBanditMissile`, not placed"
+          },
+          {
+            "name": "Bounty Hunters",
+            "records": [
+              {
+                "edid": "WEBountyHunterMissile",
+                "formKey": "0BC0A0:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → World Encounters → *Bounty Hunters*",
+            "note": "`Stats` taken. `WEBountyHunterMissile`: through `LvlBanditMissile`, not placed"
+          },
+          {
+            "name": "Bandit gangs and the dungeon wrappers",
+            "records": [
+              {
+                "edid": "ccBGSSSE054_LvlBanditMissile",
+                "formKey": "000804:ccbgssse054-ba_orcish.esl"
+              },
+              {
+                "edid": "ccKRTSSE001_WindhelmPitMissile",
+                "formKey": "000C2B:cckrtsse001_altar.esl"
+              },
+              {
+                "edid": "DunBrokenOarLvlBanditMissileHoldPos256LinkRef",
+                "formKey": "0F6934:Skyrim.esm"
+              },
+              {
+                "edid": "dunJaphetslvlBanditMissile",
+                "formKey": "0E6D75:Skyrim.esm"
+              },
+              {
+                "edid": "dunKnifepointRidge_TowerGuard01",
+                "formKey": "02B15C:Skyrim.esm"
+              },
+              {
+                "edid": "dunKnifepointRidgeLvlBanditMissileTraining",
+                "formKey": "0BBC66:Skyrim.esm"
+              },
+              {
+                "edid": "dunKnifepointRidgeTowerGuard",
+                "formKey": "034197:Skyrim.esm"
+              },
+              {
+                "edid": "DunLostKnifeBanditTalk01b",
+                "formKey": "034C8D:Skyrim.esm"
+              },
+              {
+                "edid": "dunMistwatchLvlBanditMissile",
+                "formKey": "0C0116:Skyrim.esm"
+              },
+              {
+                "edid": "dunMistwatchLvlBanditMissileAggro1024",
+                "formKey": "0C0114:Skyrim.esm"
+              },
+              {
+                "edid": "dunPOILvlBanditMissileAggro1536",
+                "formKey": "07F89F:Skyrim.esm"
+              },
+              {
+                "edid": "dunPOILvlBanditMissileAggro1536HoldPosition512",
+                "formKey": "0C8672:Skyrim.esm"
+              },
+              {
+                "edid": "dunPOIPineForest28Bandits",
+                "formKey": "0F5356:Skyrim.esm"
+              },
+              {
+                "edid": "dunPOIPoacherLvlBanditMissileAggro1024",
+                "formKey": "0D96D2:Skyrim.esm"
+              },
+              {
+                "edid": "dunPOIRaidingBandit02",
+                "formKey": "0DC2D2:Skyrim.esm"
+              },
+              {
+                "edid": "dunPOISmugglerLvlBanditMissileAggro1024",
+                "formKey": "0D97F0:Skyrim.esm"
+              },
+              {
+                "edid": "dunRatwayBanditMissile",
+                "formKey": "0A3F8E:Skyrim.esm"
+              },
+              {
+                "edid": "dunRobbersGorge_LvlBanditMissile",
+                "formKey": "078C14:Skyrim.esm"
+              },
+              {
+                "edid": "MS03ChaletGuardBow",
+                "formKey": "0AD09C:Skyrim.esm"
+              },
+              {
+                "edid": "MS07LvlBlackbloodMissileNordM",
+                "formKey": "0DC8DC:Skyrim.esm"
+              },
+              {
+                "edid": "WEBanditMissileNoFactionAggro",
+                "formKey": "09F80D:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/bandit-gangs",
+            "note": "`Stats` taken except where said. `ccKRTSSE001_WindhelmPitMissile`: keeps its own level, PC×1 (no min, no cap); `DunBrokenOarLvlBanditMissileHoldPos256LinkRef`: through `MS07LvlBlackbloodMissileNordM` → `LvlBanditMissile`; `dunJaphetslvlBanditMissile`: through `LvlBanditMissile`; `dunKnifepointRidge_TowerGuard01`: through `LvlBanditMissile`; `dunKnifepointRidgeLvlBanditMissileTraining`: through `LvlBanditMissile`; `dunKnifepointRidgeTowerGuard`: through `LvlBanditMissile`, not placed; `DunLostKnifeBanditTalk01b`: through `LvlBanditMissile`; `dunMistwatchLvlBanditMissileAggro1024`: through `LvlBanditMissileAggro1024`; `dunPOILvlBanditMissileAggro1536HoldPosition512`: through `LvlBanditMissile`; `dunPOIPineForest28Bandits`: through `LvlBanditMissile`; `dunPOIRaidingBandit02`: through `LvlBanditMissile`, not placed; `dunPOISmugglerLvlBanditMissileAggro1024`: through `LvlBanditMissileAggro1024`; `dunRobbersGorge_LvlBanditMissile`: through `LvlBanditMissile`; `MS03ChaletGuardBow`: through `LvlBanditMissile`; `MS07LvlBlackbloodMissileNordM`: through `LvlBanditMissile`; `WEBanditMissileNoFactionAggro`: through `LvlBanditMissile`, not placed"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharBanditWizard",
+          "formKey": "01E771:Skyrim.esm"
+        },
+        "gate": "highest gate ≤ player only (no flags)",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`SubCharBandit01Magic` 039D5F"
+          },
+          {
+            "at": 5,
+            "label": "`SubCharBandit02Magic` 039D60"
+          },
+          {
+            "at": 9,
+            "label": "`SubCharBandit03Magic` 039D61"
+          },
+          {
+            "at": 14,
+            "label": "`SubCharBandit04Magic` 039D62"
+          },
+          {
+            "at": 19,
+            "label": "`SubCharBandit05Magic` 039D63"
+          },
+          {
+            "at": 24,
+            "label": "`SubCharBandit06Magic` 039D64"
+          }
+        ],
+        "note": "each rung list: the 7 wizard leaves (the Argonian among them)",
+        "owner": "7 records here, 5 placed, ×32: `LvlBanditWizard` 01E79F ×23 · `LvlBanditAmbushWizard` 08E19D ×4 · `LvlBanditWizardHoldPosition256` 0C861A ×3 · `LvlBanditWizardAggro1536` 0F62DB ×1 · `LvlBanditWizardAmbush` 0F31DE ×1; not placed: `LvlBanditWizardAggro1024`, `LvlBanditWizardGuard`",
+        "drawnBy": [
+          {
+            "name": "Boethiah Cultists",
+            "records": [
+              {
+                "edid": "ccBGSSSE005_DA02CultistM2_College",
+                "formKey": "000812:ccbgssse005-goldbrand.esl"
+              },
+              {
+                "edid": "DA02CultistM2",
+                "formKey": "04D8D5:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "daedra/boethiah-cultists",
+            "note": "`Stats` taken. `ccBGSSSE005_DA02CultistM2_College`: through `LvlBanditWizard`; `DA02CultistM2`: through `LvlBanditWizard`, not placed"
+          },
+          {
+            "name": "Haknir's Crew",
+            "records": [
+              {
+                "edid": "DLC2dunHaknir_LvlBanditGhostWizardMale",
+                "formKey": "037FFE:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken. `DLC2dunHaknir_LvlBanditGhostWizardMale`: through `LvlBanditWizard`"
+          },
+          {
+            "name": "Ghost Bosses",
+            "records": [
+              {
+                "edid": "DLC2dunHaknirThalinEbonhand",
+                "formKey": "037FE5:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/ghost-bosses",
+            "note": "`Stats` taken. `DLC2dunHaknirThalinEbonhand`: through `LvlBanditGhostWizardMale` → `LvlBanditWizard`"
+          },
+          {
+            "name": "Random Encounter NPCs",
+            "records": [
+              {
+                "edid": "DLC2WE05Wizard",
+                "formKey": "020FC1:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → World Encounters → *Random Encounter NPCs*",
+            "note": "`Stats` taken. `DLC2WE05Wizard`: through `LvlBanditWizard`, not placed"
+          },
+          {
+            "name": "Mercenaries",
+            "records": [
+              {
+                "edid": "DLCDwarvenPuzzleDungeon_LvlMercWizard",
+                "formKey": "0008FE:cctwbsse001-puzzledungeon.esm"
+              },
+              {
+                "edid": "DLCDwarvenPuzzleDungeon_LvlMercWizHoldPos",
+                "formKey": "0008ED:cctwbsse001-puzzledungeon.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/mercenaries",
+            "note": "`Stats` taken. `DLCDwarvenPuzzleDungeon_LvlMercWizHoldPos`: through `LvlBanditWizard`"
+          },
+          {
+            "name": "Labyrinthian Fire and Frost Spirits",
+            "records": [
+              {
+                "edid": "dunLabyrinthianFireMagi",
+                "formKey": "0F82BC:Skyrim.esm"
+              },
+              {
+                "edid": "dunLabyrinthianFrostMagi",
+                "formKey": "0F82BA:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken. `dunLabyrinthianFireMagi`: through `LvlBanditWizard`; `dunLabyrinthianFrostMagi`: through `LvlBanditWizard`"
+          },
+          {
+            "name": "unplaced ghost wrappers",
+            "records": [
+              {
+                "edid": "LvlBanditGhostWizardMale",
+                "formKey": "0B1F9B:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Undead → *Ghosts* group page, never met (not placed); three of them lend Haknir, Garuk and Thalin their template",
+            "note": "`Stats` taken. `LvlBanditGhostWizardMale`: through `LvlBanditWizard`, not placed"
+          },
+          {
+            "name": "Vampire's Thralls",
+            "records": [
+              {
+                "edid": "LvlVampireThrallConjurer",
+                "formKey": "042267:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallWizard",
+                "formKey": "02EEE7:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallWizardGuard",
+                "formKey": "02EEEC:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "vampires/vampires-thrall",
+            "note": "`Stats` taken. `LvlVampireThrallWizardGuard`: not placed"
+          },
+          {
+            "name": "Bounty Hunters",
+            "records": [
+              {
+                "edid": "WEBountyHunterWizard",
+                "formKey": "0BC0A1:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → World Encounters → *Bounty Hunters*",
+            "note": "`Stats` taken. `WEBountyHunterWizard`: through `LvlBanditWizard`, not placed"
+          },
+          {
+            "name": "Bandit gangs and the dungeon wrappers",
+            "records": [
+              {
+                "edid": "ccBGSSSE001_LvlVagrantWizard",
+                "formKey": "000E54:ccbgssse001-fish.esm"
+              },
+              {
+                "edid": "dunJaphetsLvlBanditWizard",
+                "formKey": "0E6D76:Skyrim.esm"
+              },
+              {
+                "edid": "dunMIstwatchLvlBanditWizard",
+                "formKey": "0C0126:Skyrim.esm"
+              },
+              {
+                "edid": "dunPOILvlBanditWizardAggro1536",
+                "formKey": "07F89E:Skyrim.esm"
+              },
+              {
+                "edid": "dunPOISmugglerLvlBanditWizard",
+                "formKey": "0D97EF:Skyrim.esm"
+              },
+              {
+                "edid": "dunRobbersGorge_LvlBanditWizard",
+                "formKey": "078C15:Skyrim.esm"
+              },
+              {
+                "edid": "dunWhiteRiverWatch_AlarmBandit2",
+                "formKey": "08130B:Skyrim.esm"
+              },
+              {
+                "edid": "MS07LvlBlackbloodWizardCondescendingM",
+                "formKey": "0DC8D9:Skyrim.esm"
+              },
+              {
+                "edid": "MS07LvlBlackbloodWizardCondescendingMAmbush",
+                "formKey": "088F11:Skyrim.esm"
+              },
+              {
+                "edid": "MS07LvlBlackbloodWizardNordM",
+                "formKey": "0DC8D8:Skyrim.esm"
+              },
+              {
+                "edid": "WE17Bandit2",
+                "formKey": "09F7F1:Skyrim.esm"
+              },
+              {
+                "edid": "WE30Alchemist",
+                "formKey": "074937:Skyrim.esm"
+              },
+              {
+                "edid": "WEBanditWizardNoFaction",
+                "formKey": "09F80E:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/bandit-gangs",
+            "note": "`Stats` taken. `dunJaphetsLvlBanditWizard`: through `LvlBanditWizard`; `dunMIstwatchLvlBanditWizard`: through `LvlBanditWizard`; `dunPOILvlBanditWizardAggro1536`: through `LvlBanditWizard`; `dunPOISmugglerLvlBanditWizard`: through `LvlBanditWizard`; `dunRobbersGorge_LvlBanditWizard`: through `LvlBanditWizard`; `dunWhiteRiverWatch_AlarmBandit2`: through `LvlBanditWizard`; `MS07LvlBlackbloodWizardCondescendingM`: through `LvlBanditWizard`; `MS07LvlBlackbloodWizardCondescendingMAmbush`: through `MS07LvlBlackbloodWizardCondescendingM` → `LvlBanditWizard`; `MS07LvlBlackbloodWizardNordM`: through `MS07LvlBlackbloodWizardCondescendingM` → `LvlBanditWizard`; `WE17Bandit2`: through `LvlBanditWizard`, not placed; `WE30Alchemist`: not placed; `WEBanditWizardNoFaction`: through `LvlBanditWizard`, not placed"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharBanditWizardOmit01",
+          "formKey": "0EE523:Skyrim.esm"
+        },
+        "gate": "highest gate ≤ player only (no flags)",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`SubCharBandit02Magic` 039D60"
+          },
+          {
+            "at": 9,
+            "label": "`SubCharBandit03Magic` 039D61"
+          },
+          {
+            "at": 14,
+            "label": "`SubCharBandit04Magic` 039D62"
+          },
+          {
+            "at": 19,
+            "label": "`SubCharBandit05Magic` 039D63"
+          },
+          {
+            "at": 24,
+            "label": "`SubCharBandit06Magic` 039D64"
+          }
+        ],
+        "note": "the wizard rungs 02–06, rung 02 from level 1",
+        "owner": "no record draws it"
+      },
+      {
+        "list": {
+          "label": "the race and voice sublists: `LCharBandit{Melee,Missile,Wizard}{Commoner,EvenToned,Nord}{F,M}`, `LCharBanditMeleeOrcM` 01B0E9, `LCharBanditOnly{NordM,OrcM,RedguardF}` 037C28 · 037C2A · 037C29, Dawnguard's `LCharBandit{Melee,Missile}KhajiitM` 008BF7 · 008BF8:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player (`LCharBanditOnlyNordM`: highest gate only)",
+        "entries": [
+          {
+            "at": 1,
+            "label": "rung 01 leaf"
+          },
+          {
+            "at": 5,
+            "label": "rung 02 leaf"
+          },
+          {
+            "at": 9,
+            "label": "rung 03 leaf"
+          },
+          {
+            "at": 14,
+            "label": "rung 04 leaf"
+          },
+          {
+            "at": 19,
+            "label": "rung 05 leaf"
+          },
+          {
+            "at": 25,
+            "label": "rung 06 leaf"
+          }
+        ],
+        "note": "that race and voice's leaf from each rung (the Nord, Orc and EvenToned melee and missile lists hold two leaves a rung: one-handed and two-handed, or two races); the wizard voice lists gate 1–25. `LvlBanditMissileOrcM` 0EEFE4 points at the melee list `LCharBanditMeleeOrcM`. `LCharOrcMelee` 01E780 holds the six `EncBandit0NMelee1HOrcM` leaves directly, not these lists",
+        "owner": "32 records here, 26 placed, ×56: `LvlBanditMeleeOrcM` 01B0EF ×11 · `LvlBanditMeleeCommonerM` 01AF77 ×6 · `LvlBanditMeleeEvenTonedF` 01AFBD ×4 · `LvlBanditMeleeEvenTonedM` 01B060 ×3 · `LvlBanditMissileCommonerM` 01B0BE ×3 · `LvlBanditMissileEvenTonedM` 01B0C7 ×3 · `LvlBanditMissileNordF` 01B0D1 ×3 · `LvlBanditMeleeCommonerF` 01AEF1 ×2 and 18 more; not placed: `LvlBanditMeleeNordF`, `LvlBanditAmbushMissileEvenTonedM`, `LvlBanditMissileEvenTonedMAggro1024`, `LvlBanditWizardEvenTonedM`, `LvlBanditWizardNordF`, `LvlBanditWizardNordM`",
+        "drawnBy": [
+          {
+            "name": "Yngvild ghosts",
+            "records": [
+              {
+                "edid": "dunYngvildLvlGhostMeleeCommoner",
+                "formKey": "0743AE:Skyrim.esm"
+              },
+              {
+                "edid": "dunYngvildLvlGhostMeleeEvenToned",
+                "formKey": "074361:Skyrim.esm"
+              },
+              {
+                "edid": "dunYngvildLvlGhostMeleeNord",
+                "formKey": "074360:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken. `dunYngvildLvlGhostMeleeCommoner`: `LCharBanditMeleeCommonerF`, through `LvlBanditMeleeCommonerF`; `dunYngvildLvlGhostMeleeEvenToned`: `LCharBanditMeleeEvenTonedF`, through `LvlBanditMeleeEvenTonedF`; `dunYngvildLvlGhostMeleeNord`: `LCharBanditMeleeNordF`, through `LvlBanditMeleeNordF`"
+          },
+          {
+            "name": "Vampire's Thralls",
+            "records": [
+              {
+                "edid": "LvlVampireThrallMeleeCommonerF",
+                "formKey": "02EED0:Skyrim.esm"
+              },
+              {
+                "edid": "WERJ07Thrall",
+                "formKey": "0BF33F:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMeleeCommonerM",
+                "formKey": "02EED1:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMeleeEvenTonedF",
+                "formKey": "02EED2:Skyrim.esm"
+              },
+              {
+                "edid": "DLC1LvlRedwaterThrallMeleeCommonerAcMAggro1024",
+                "formKey": "014070:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC1LvlVampireThrallMeleeCommonerAcM",
+                "formKey": "0183A4:Dawnguard.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMeleeEvenTonedM",
+                "formKey": "02EED3:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMeleeNordF",
+                "formKey": "02EED5:Skyrim.esm"
+              },
+              {
+                "edid": "DLC1dunRedwaterDenBouncer",
+                "formKey": "008BF2:Dawnguard.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMeleeNordM",
+                "formKey": "02EED6:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMissileCommonerF",
+                "formKey": "02EEDD:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMissileCommonerM",
+                "formKey": "02EEDE:Skyrim.esm"
+              },
+              {
+                "edid": "DLC1dunRedwaterDenVampireThrallDealer",
+                "formKey": "01A3C0:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC1dunRedwaterDenVampireThrallMissileEvenTonedF",
+                "formKey": "008D27:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC1LvlRedwaterThrallMissileEvenTonedFAggro1024",
+                "formKey": "014071:Dawnguard.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMissileEvenTonedF",
+                "formKey": "02EEDF:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMissileEvenTonedM",
+                "formKey": "02EEE0:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMissileNordF",
+                "formKey": "02EEE5:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallMissileNordM",
+                "formKey": "02EEE6:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallWizardCommonerF",
+                "formKey": "02EEE8:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallWizardCommonerM",
+                "formKey": "02EEE9:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallWizardEvenTonedF",
+                "formKey": "02EEEA:Skyrim.esm"
+              },
+              {
+                "edid": "DLC1dunRedwaterDenVampireThrallWizardEvenTonedM",
+                "formKey": "008D28:Dawnguard.esm"
+              },
+              {
+                "edid": "LvlVampireThrallWizardEvenTonedM",
+                "formKey": "02EEEB:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallWizardNordF",
+                "formKey": "02EEED:Skyrim.esm"
+              },
+              {
+                "edid": "LvlVampireThrallWizardNordM",
+                "formKey": "02EEEE:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "vampires/vampires-thrall",
+            "note": "`Stats` taken. `LvlVampireThrallMeleeCommonerF`: `LCharBanditMeleeCommonerF`, not placed; `WERJ07Thrall`: `LCharBanditMeleeCommonerF`, through `LvlVampireThrallMeleeCommonerF`, not placed; `LvlVampireThrallMeleeCommonerM`: `LCharBanditMeleeCommonerM`, not placed; `LvlVampireThrallMeleeEvenTonedF`: `LCharBanditMeleeEvenTonedF`; `DLC1LvlRedwaterThrallMeleeCommonerAcMAggro1024`: `LCharBanditMeleeEvenTonedM`; `DLC1LvlVampireThrallMeleeCommonerAcM`: `LCharBanditMeleeEvenTonedM`; `LvlVampireThrallMeleeEvenTonedM`: `LCharBanditMeleeEvenTonedM`; `LvlVampireThrallMeleeNordF`: `LCharBanditMeleeNordF`, not placed; `DLC1dunRedwaterDenBouncer`: `LCharBanditMeleeNordM`, through `LvlVampireThrallMeleeNordM`; `LvlVampireThrallMeleeNordM`: `LCharBanditMeleeNordM`, not placed; `LvlVampireThrallMissileCommonerF`: `LCharBanditMissileCommonerF`, not placed; `LvlVampireThrallMissileCommonerM`: `LCharBanditMissileCommonerM`, not placed; `DLC1dunRedwaterDenVampireThrallDealer`: `LCharBanditMissileEvenTonedF`, through `DLC1dunRedwaterDenVampireThrallMissileEvenTonedF` → `LvlVampireThrallMissileEvenTonedF`; `DLC1dunRedwaterDenVampireThrallMissileEvenTonedF`: `LCharBanditMissileEvenTonedF`, through `LvlVampireThrallMissileEvenTonedF`, not placed; `DLC1LvlRedwaterThrallMissileEvenTonedFAggro1024`: `LCharBanditMissileEvenTonedF`; `LvlVampireThrallMissileEvenTonedF`: `LCharBanditMissileEvenTonedF`, not placed; `LvlVampireThrallMissileEvenTonedM`: `LCharBanditMissileEvenTonedM`, not placed; `LvlVampireThrallMissileNordF`: `LCharBanditMissileNordF`, not placed; `LvlVampireThrallMissileNordM`: `LCharBanditMissileNordM`, not placed; `LvlVampireThrallWizardCommonerF`: `LCharBanditWizardCommonerF`, not placed; `LvlVampireThrallWizardCommonerM`: `LCharBanditWizardCommonerM`, not placed; `LvlVampireThrallWizardEvenTonedF`: `LCharBanditWizardEvenTonedF`, not placed; `DLC1dunRedwaterDenVampireThrallWizardEvenTonedM`: `LCharBanditWizardEvenTonedM`; `LvlVampireThrallWizardEvenTonedM`: `LCharBanditWizardEvenTonedM`, not placed; `LvlVampireThrallWizardNordF`: `LCharBanditWizardNordF`, not placed; `LvlVampireThrallWizardNordM`: `LCharBanditWizardNordM`, not placed"
+          },
+          {
+            "name": "Adventurers",
+            "records": [
+              {
+                "edid": "dunHarmugstahlAdventurer",
+                "formKey": "055BA7:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → World Encounters → *Adventurers*",
+            "note": "`Stats` taken. `dunHarmugstahlAdventurer`: `LCharBanditMeleeCommonerM`, through `LvlBanditMeleeCommonerM`"
+          },
+          {
+            "name": "Silver Hand",
+            "records": [
+              {
+                "edid": "LvlSilverHandAmbush4",
+                "formKey": "108BBB:Skyrim.esm"
+              },
+              {
+                "edid": "LvlSilverHandAmbush5",
+                "formKey": "108BBF:Skyrim.esm"
+              },
+              {
+                "edid": "LvlSilverHandAmbush1",
+                "formKey": "108BBC:Skyrim.esm"
+              },
+              {
+                "edid": "LvlSilverHandAmbush2",
+                "formKey": "108BBE:Skyrim.esm"
+              },
+              {
+                "edid": "LvlSilverHandAmbush3",
+                "formKey": "108BBD:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Silver Hand → *Common Silver Hand*",
+            "note": "`Stats` taken. `LvlSilverHandAmbush4`: `LCharBanditMeleeCommonerM`, through `LvlBanditMeleeCommonerM`; `LvlSilverHandAmbush5`: `LCharBanditMeleeCommonerM`, through `LvlBanditMeleeCommonerM`; `LvlSilverHandAmbush1`: `LCharBanditMeleeEvenTonedF`, through `LvlBanditMeleeEvenTonedF`; `LvlSilverHandAmbush2`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`; `LvlSilverHandAmbush3`: `LCharBanditMeleeOrcM`, through `LvlBanditMeleeOrcM`"
+          },
+          {
+            "name": "Random Encounter NPCs",
+            "records": [
+              {
+                "edid": "WE25Fugitive",
+                "formKey": "062158:Skyrim.esm"
+              },
+              {
+                "edid": "WEJS02Balbus",
+                "formKey": "0B5D42:Skyrim.esm"
+              },
+              {
+                "edid": "WERJ06Drunk01",
+                "formKey": "0BD15A:Skyrim.esm"
+              },
+              {
+                "edid": "WERJ06Drunk02",
+                "formKey": "0BD15B:Skyrim.esm"
+              },
+              {
+                "edid": "WERJ06Drunk03",
+                "formKey": "0E842F:Skyrim.esm"
+              },
+              {
+                "edid": "WIChangeLocation03Wizard",
+                "formKey": "06E02C:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → World Encounters → *Random Encounter NPCs*",
+            "note": "`Stats` taken except where said. `WE25Fugitive`: `LCharBanditMeleeCommonerM`, not placed; `WEJS02Balbus`: `LCharBanditMeleeNordM`, through `LvlBanditAmbushMeleeNordM` → `LvlBanditMeleeNordM`, not placed; `WERJ06Drunk01`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`, keeps its own level, 1, not placed; `WERJ06Drunk02`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`, keeps its own level, 1, not placed; `WERJ06Drunk03`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`, keeps its own level, 1, not placed; `WIChangeLocation03Wizard`: `LCharBanditWizardCommonerM`, not placed"
+          },
+          {
+            "name": "Other Guards",
+            "records": [
+              {
+                "edid": "dunMarkarthWizardSecurity_Melee_EvenTonedF",
+                "formKey": "0154C8:Skyrim.esm"
+              },
+              {
+                "edid": "dunMarkarthWizardSecurity_Melee_Captain",
+                "formKey": "0154E7:Skyrim.esm"
+              },
+              {
+                "edid": "dunMarkarthWizardSecurity_Melee_EvenTonedM",
+                "formKey": "0154C7:Skyrim.esm"
+              },
+              {
+                "edid": "dunMarkarthWizardSecurity_Missile_EvenTonedF",
+                "formKey": "0154CA:Skyrim.esm"
+              },
+              {
+                "edid": "dunMarkarthWizardSecurity_Missile_EvenTonedM",
+                "formKey": "0154C9:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Guards → *Other Guards*",
+            "note": "`Stats` taken. `dunMarkarthWizardSecurity_Melee_EvenTonedF`: `LCharBanditMeleeEvenTonedF`, through `LvlBanditMeleeEvenTonedF`; `dunMarkarthWizardSecurity_Melee_Captain`: `LCharBanditMeleeEvenTonedM`, through `dunMarkarthWizardSecurity_Melee_EvenTonedM` → `LvlBanditMeleeEvenTonedM`; `dunMarkarthWizardSecurity_Melee_EvenTonedM`: `LCharBanditMeleeEvenTonedM`, through `LvlBanditMeleeEvenTonedM`; `dunMarkarthWizardSecurity_Missile_EvenTonedF`: `LCharBanditMissileEvenTonedF`, through `LvlBanditMissileEvenTonedF`; `dunMarkarthWizardSecurity_Missile_EvenTonedM`: `LCharBanditMissileEvenTonedM`, through `LvlBanditMissileEvenTonedM`"
+          },
+          {
+            "name": "Mercenaries",
+            "records": [
+              {
+                "edid": "KarthwastenSilverBloodGuard",
+                "formKey": "0622E1:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/mercenaries",
+            "note": "`Stats` taken. `KarthwastenSilverBloodGuard`: `LCharBanditMeleeEvenTonedM`, through `LvlBanditMeleeEvenTonedM`"
+          },
+          {
+            "name": "Soul Cairn Souls",
+            "records": [
+              {
+                "edid": "DLC01SoulCairnSoulMeleeFemale",
+                "formKey": "0150B1:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulMeleeFemale02",
+                "formKey": "01A4FA:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnKeeperSoul",
+                "formKey": "00EA8B:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulDefault",
+                "formKey": "00A906:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulFarmMale",
+                "formKey": "015DF3:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulHorseRider",
+                "formKey": "002B0D:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulMeleeMale",
+                "formKey": "004759:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulMeleeMale02",
+                "formKey": "01A4FE:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulPrisonerMale",
+                "formKey": "01A502:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulOrcMale",
+                "formKey": "0150B6:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulFarmFemale",
+                "formKey": "015DF4:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulMissileFemale",
+                "formKey": "0150B5:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulPrisonerFemale",
+                "formKey": "01A4FF:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulHunterF",
+                "formKey": "01A4FC:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulHunterM",
+                "formKey": "01A4FD:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulMissileMale",
+                "formKey": "0150B4:Dawnguard.esm"
+              }
+            ],
+            "how": "template",
+            "page": "skeletons/soul-cairn-undead",
+            "note": "`Stats` taken. `DLC01SoulCairnSoulMeleeFemale`: `LCharBanditMeleeNordF`, through `LvlBanditMeleeNordF`; `DLC01SoulCairnSoulMeleeFemale02`: `LCharBanditMeleeNordF`, through `LvlBanditMeleeNordF`; `DLC01SoulCairnKeeperSoul`: `LCharBanditMeleeNordM`, through `DLC01SoulCairnSoulDefault` → `LvlBanditMeleeNordM`; `DLC01SoulCairnSoulDefault`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`, not placed; `DLC01SoulCairnSoulFarmMale`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`; `DLC01SoulCairnSoulHorseRider`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`; `DLC01SoulCairnSoulMeleeMale`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`; `DLC01SoulCairnSoulMeleeMale02`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`; `DLC01SoulCairnSoulPrisonerMale`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`, not placed; `DLC01SoulCairnSoulOrcMale`: `LCharBanditMeleeOrcM`, through `LvlBanditMeleeOrcM`; `DLC01SoulCairnSoulFarmFemale`: `LCharBanditMissileNordF`, through `LvlBanditMissileNordF`; `DLC01SoulCairnSoulMissileFemale`: `LCharBanditMissileNordF`, through `LvlBanditMissileNordF`; `DLC01SoulCairnSoulPrisonerFemale`: `LCharBanditMissileNordF`, through `LvlBanditMissileNordF`, not placed; `DLC01SoulCairnSoulHunterF`: `LCharBanditMissileNordM`, through `LvlBanditMissileNordM`; `DLC01SoulCairnSoulHunterM`: `LCharBanditMissileNordM`, through `LvlBanditMissileNordM`; `DLC01SoulCairnSoulMissileMale`: `LCharBanditMissileNordM`, through `LvlBanditMissileNordM`, not placed"
+          },
+          {
+            "name": "Grenwulf, Holrik (CC)",
+            "records": [
+              {
+                "edid": "ccBGSSSE069_Grenwulf",
+                "formKey": "00080E:ccbgssse069-contest.esl"
+              },
+              {
+                "edid": "ccBGSSSE069_HolrikNPC",
+                "formKey": "00080D:ccbgssse069-contest.esl"
+              }
+            ],
+            "how": "template",
+            "where": "World → Eastmarch → *Eastmarch Countryside*",
+            "note": "`Stats` taken. `ccBGSSSE069_Grenwulf`: `LCharBanditMeleeNordM`; `ccBGSSSE069_HolrikNPC`: `LCharBanditMeleeNordM`"
+          },
+          {
+            "name": "CC Knights of the Nine bandit boss",
+            "records": [
+              {
+                "edid": "ccMTYSSE001_LvlBanditBoss01",
+                "formKey": "000826:ccmtysse001-knightsofthenine.esl"
+              }
+            ],
+            "how": "template",
+            "where": "on no census page (one ref, `Tamriel` persistent; the CC pack's `…BanditBoss03`/`04` are on *Named Bandits*)",
+            "note": "`Stats` taken. `ccMTYSSE001_LvlBanditBoss01`: `LCharBanditMeleeNordM`"
+          },
+          {
+            "name": "Rannveig's Fast ghosts",
+            "records": [
+              {
+                "edid": "DunRannveigGhostLvlBandit01Melee1H",
+                "formKey": "03481A:Skyrim.esm"
+              },
+              {
+                "edid": "DunRannveigGhostLvlBandit01Melee2H",
+                "formKey": "0515F6:Skyrim.esm"
+              },
+              {
+                "edid": "DunRannveigGhostLvlBanditMissile",
+                "formKey": "0515F5:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "`Stats` taken. `DunRannveigGhostLvlBandit01Melee1H`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`; `DunRannveigGhostLvlBandit01Melee2H`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`; `DunRannveigGhostLvlBanditMissile`: `LCharBanditMissileNordM`, through `LvlBanditMissileNordM`"
+          },
+          {
+            "name": "the `WERJ05` Blood Horkers",
+            "records": [
+              {
+                "edid": "WERJ05BloodHorker2H",
+                "formKey": "0DAE86:Skyrim.esm"
+              },
+              {
+                "edid": "WERJ05BloodHorkerMissile",
+                "formKey": "0DAE8C:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "on no census page (not placed; world-encounter aliases; the placed Blood Horkers are a row here)",
+            "note": "`Stats` taken. `WERJ05BloodHorker2H`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`, not placed; `WERJ05BloodHorkerMissile`: `LCharBanditMissileNordM`, through `LvlBanditMissileNordM`, not placed"
+          },
+          {
+            "name": "Orcish Invaders",
+            "records": [
+              {
+                "edid": "DA16LvlBanditMeleeOrcMAmbush",
+                "formKey": "09DDCE:Skyrim.esm"
+              },
+              {
+                "edid": "DA16LvlBanditMeleeOrcMDream",
+                "formKey": "09E15C:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "daedra/vaermina-devotees",
+            "note": "`Stats` taken. `DA16LvlBanditMeleeOrcMAmbush`: `LCharBanditMeleeOrcM`, through `LvlBanditMeleeOrcM`; `DA16LvlBanditMeleeOrcMDream`: `LCharBanditMeleeOrcM`"
+          },
+          {
+            "name": "Rift Countryside residents",
+            "records": [
+              {
+                "edid": "Telrav",
+                "formKey": "01BA08:Skyrim.esm"
+              },
+              {
+                "edid": "dunTrevasWatchStalleosVanguardMale",
+                "formKey": "04B4B1:Skyrim.esm"
+              },
+              {
+                "edid": "stalleo",
+                "formKey": "04B4AF:Skyrim.esm"
+              },
+              {
+                "edid": "WyndeliusGatharian",
+                "formKey": "05FFDF:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → The Rift → *The Rift Countryside*",
+            "note": "`Stats` taken. `Telrav`: `LCharBanditMissileCommonerM`, through `LvlBanditMissileCommonerM`; `dunTrevasWatchStalleosVanguardMale`: `LCharBanditMissileNordM`, through `LvlBanditMissileNordM`; `stalleo`: `LCharBanditWizardNordM`; `WyndeliusGatharian`: `LCharBanditWizardNordM`, through `LvlBanditWizardNordM`"
+          },
+          {
+            "name": "Named bandits",
+            "records": [
+              {
+                "edid": "dunFortNeugradBanditWizard",
+                "formKey": "0CD64C:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/named-bandits",
+            "note": "`Stats` taken. `dunFortNeugradBanditWizard`: `LCharBanditWizardCommonerM`, through `LvlBanditAmbushWizardCommonerM` → `LvlBanditWizardCommonerM`"
+          },
+          {
+            "name": "the Honningbrew rat-catcher",
+            "records": [
+              {
+                "edid": "dunHonningbrewRatGuy",
+                "formKey": "10A04C:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → Whiterun Hold → *Whiterun* (search hit, not confirmed)",
+            "note": "`Stats` taken. `dunHonningbrewRatGuy`: `LCharBanditWizardCommonerM`, through `LvlBanditWizardCommonerM`"
+          },
+          {
+            "name": "Winterhold Countryside residents",
+            "records": [
+              {
+                "edid": "Trius",
+                "formKey": "043BAD:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → Winterhold Hold → *Winterhold Countryside*",
+            "note": "`Stats` taken. `Trius`: `LCharBanditWizardCommonerM`, through `LvlBanditWizardCommonerM`"
+          },
+          {
+            "name": "Pale Countryside residents",
+            "records": [
+              {
+                "edid": "Anska",
+                "formKey": "0443F3:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → The Pale → *The Pale Countryside*",
+            "note": "`Stats` taken. `Anska`: `LCharBanditWizardNordF`, through `LvlBanditWizardNordF`"
+          },
+          {
+            "name": "the Morthal ambush wizard (CC)",
+            "records": [
+              {
+                "edid": "ccBGSSSE001_MiscMorthal_LvlBanditWizardImperialM",
+                "formKey": "000B30:ccbgssse001-fish.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → Hjaalmarch → *Morthal* (search hit, not confirmed)",
+            "note": "`Stats` taken. `ccBGSSSE001_MiscMorthal_LvlBanditWizardImperialM`: `LCharBanditWizardNordM`"
+          },
+          {
+            "name": "Alvasorr the Rat (CC)",
+            "records": [
+              {
+                "edid": "ccBGSSSE059_Alvasorr",
+                "formKey": "00086C:ccbgssse059-ba_dragonplate.esl"
+              }
+            ],
+            "how": "template",
+            "where": "Forsworn → *Named Forsworn*",
+            "note": "`Stats` taken. `ccBGSSSE059_Alvasorr`: `LCharBanditWizardNordM`"
+          },
+          {
+            "name": "Subjugated Ghost",
+            "records": [
+              {
+                "edid": "DunRannveigGhostLvlBandit01Melee1H",
+                "formKey": "03481A:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "summoned-npcs/heroes-spirits",
+            "note": "the Rannveig's Fast ghost above, also filed as a summon; `Stats` through `LvlBanditMeleeNordM` (`LCharBanditMeleeNordM`)"
+          },
+          {
+            "name": "Bandit gangs and the dungeon wrappers",
+            "records": [
+              {
+                "edid": "dunFrostmereCryptPursuer1",
+                "formKey": "0D0022:Skyrim.esm"
+              },
+              {
+                "edid": "dunRavenscarTrappedBandit",
+                "formKey": "03D279:Skyrim.esm"
+              },
+              {
+                "edid": "WhiterunJailPrisoner",
+                "formKey": "0590EF:Skyrim.esm"
+              },
+              {
+                "edid": "dunDuskglowBanditBoss",
+                "formKey": "0A63A1:Skyrim.esm"
+              },
+              {
+                "edid": "dunFrostmereCryptBridgeGuard",
+                "formKey": "10474B:Skyrim.esm"
+              },
+              {
+                "edid": "dunFrostmereCryptPursuer2",
+                "formKey": "0D07D1:Skyrim.esm"
+              },
+              {
+                "edid": "dunFrostmereCryptPursuer3",
+                "formKey": "0D0038:Skyrim.esm"
+              },
+              {
+                "edid": "DunLostKnifeBanditTalk02b",
+                "formKey": "01CE59:Skyrim.esm"
+              },
+              {
+                "edid": "DLC1LvlBanditMeleeKhajiitM",
+                "formKey": "008CA9:Dawnguard.esm"
+              },
+              {
+                "edid": "dunCragslaneLvlBanditGuard",
+                "formKey": "0D55D3:Skyrim.esm"
+              },
+              {
+                "edid": "dunDaintySloadLvlSailorOutfit",
+                "formKey": "100566:Skyrim.esm"
+              },
+              {
+                "edid": "DunLostKnifeBanditTalk02a",
+                "formKey": "04003B:Skyrim.esm"
+              },
+              {
+                "edid": "dunDaintySload_LvlSailorCaptain",
+                "formKey": "0E5F37:Skyrim.esm"
+              },
+              {
+                "edid": "dunDuskglowBandit02",
+                "formKey": "05B0E7:Skyrim.esm"
+              },
+              {
+                "edid": "dunMistwatchGuard01",
+                "formKey": "0C0113:Skyrim.esm"
+              },
+              {
+                "edid": "dunMistwatchLvlBanditMeleeOrcM",
+                "formKey": "0C013C:Skyrim.esm"
+              },
+              {
+                "edid": "dunRobbersGorge_LvlBanditSentry",
+                "formKey": "0B94E4:Skyrim.esm"
+              },
+              {
+                "edid": "DLC1LvlBanditMissileKhajiitM",
+                "formKey": "008CAA:Dawnguard.esm"
+              },
+              {
+                "edid": "dunMistwatchGuard02",
+                "formKey": "0D3BDF:Skyrim.esm"
+              },
+              {
+                "edid": "MS13BanditCampfire02",
+                "formKey": "039FE5:Skyrim.esm"
+              },
+              {
+                "edid": "dunDuskglowBandit01",
+                "formKey": "05B0E6:Skyrim.esm"
+              },
+              {
+                "edid": "MS13BanditCampfire01",
+                "formKey": "039FE3:Skyrim.esm"
+              },
+              {
+                "edid": "MS13BanditCampfire03",
+                "formKey": "039FE6:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/bandit-gangs",
+            "note": "`Stats` taken. `dunFrostmereCryptPursuer1`: `LCharBanditMeleeCommonerF`, through `LvlBanditMeleeCommonerF`; `dunRavenscarTrappedBandit`: `LCharBanditMeleeCommonerM`; `WhiterunJailPrisoner`: `LCharBanditMeleeCommonerM`, through `LvlBanditMeleeCommonerM`, not placed; `dunDuskglowBanditBoss`: `LCharBanditMeleeEvenTonedM`; `dunFrostmereCryptBridgeGuard`: `LCharBanditMeleeEvenTonedM`, through `LvlBanditMeleeEvenTonedM`; `dunFrostmereCryptPursuer2`: `LCharBanditMeleeEvenTonedM`, through `LvlBanditMeleeEvenTonedM`; `dunFrostmereCryptPursuer3`: `LCharBanditMeleeEvenTonedM`, through `LvlBanditMeleeEvenTonedM`; `DunLostKnifeBanditTalk02b`: `LCharBanditMeleeEvenTonedM`; `DLC1LvlBanditMeleeKhajiitM`: `LCharBanditMeleeKhajiitM`, not placed; `dunCragslaneLvlBanditGuard`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`; `dunDaintySloadLvlSailorOutfit`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`; `DunLostKnifeBanditTalk02a`: `LCharBanditMeleeNordM`; `dunDaintySload_LvlSailorCaptain`: `LCharBanditMeleeOrcM`, through `LvlBanditMeleeOrcM`; `dunDuskglowBandit02`: `LCharBanditMeleeOrcM`; `dunMistwatchGuard01`: `LCharBanditMeleeOrcM`, through `LvlBanditMeleeOrcM`; `dunMistwatchLvlBanditMeleeOrcM`: `LCharBanditMeleeOrcM`; `dunRobbersGorge_LvlBanditSentry`: `LCharBanditMissileEvenTonedM`, through `LvlBanditMissileEvenTonedM`; `DLC1LvlBanditMissileKhajiitM`: `LCharBanditMissileKhajiitM`, not placed; `dunMistwatchGuard02`: `LCharBanditMissileNordF`, through `LvlBanditMissileNordF`; `MS13BanditCampfire02`: `LCharBanditMissileNordF`; `dunDuskglowBandit01`: `LCharBanditMissileNordM`; `MS13BanditCampfire01`: `LCharBanditOnlyNordM`; `MS13BanditCampfire03`: `LCharBanditOnlyNordM`"
+          }
+        ]
+      },
+      {
+        "list": {
+          "label": "the rung lists `SubCharBandit0{1–6}{Melee1H,Melee1HTank,Melee2H,Melee2HBerserk,Missile,Magic}`"
+        },
+        "gate": "every leaf at 1",
+        "note": "each rolls one of its rung's leaves (above)",
+        "owner": "the six ladders above",
+        "drawnBy": [
+          {
+            "name": "Mythic Dawn (CC)",
+            "records": [
+              {
+                "edid": "ccBGSSSE067_LCharMythicDawnMelee1H",
+                "formKey": "039277:ccbgssse067-daedinv.esm"
+              },
+              {
+                "edid": "ccBGSSSE067_LCharMythicDawnMelee2H",
+                "formKey": "039278:ccbgssse067-daedinv.esm"
+              },
+              {
+                "edid": "ccBGSSSE067_LCharMythicDawnWizard",
+                "formKey": "039275:ccbgssse067-daedinv.esm"
+              }
+            ],
+            "how": "entry",
+            "page": "daedra/mythic-dawn",
+            "note": "ccbgssse067-daedinv.esm: each holds `SubCharBandit0{3–6}{Melee1H,Melee2H,Magic}` at 1 · 14 · 19 · 25 (wizard 24); its Mythic Dawn agents take only `Stats` from them"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "one-handed leaves",
+        "weapons": "`LItemBanditWeapon1H` 037C1B · gold (`LootGoldChange25` 04F78D) · `LootBanditRandom` 10E0DD (rungs 05–06: `LootBanditGold` 037C27, `LootGoldChange` 037C2B, `LItemLockPick25` 08FFFB)",
+        "armor": "`BanditArmorMeleeShield20Outfit` 0C0197",
+        "skin": "race default"
+      },
+      {
+        "records": "tank leaves",
+        "weapons": "`LItemBanditWeapon1H` · gold · `LItemLockPick25` (05–06: Orcish Dagger 01398E, `LootBanditGold`)",
+        "armor": "`BanditArmorMeleeHeavyOutfit` 015BE6 (one leaf per rung 03–05: `BanditArmorMeleeNoShieldOutfit`)",
+        "skin": "race default"
+      },
+      {
+        "records": "two-handed and berserker leaves",
+        "weapons": "`LItemBanditWeapon2H` 037C21 · gold · lockpick (05–06: Orcish Dagger, `LootBanditGold`)",
+        "armor": "`BanditArmorMeleeNoShieldOutfit` 01E608",
+        "skin": "race default"
+      },
+      {
+        "records": "archer leaves",
+        "weapons": "`LItemWeaponDaggerTown` 017177 · `LItemBanditWeaponMissile` 037BFD · `LootBanditArrows15` 08777F · gold · `LootBanditRandom`",
+        "armor": "`BanditArmorMeleeNoShieldOutfit` 01E608",
+        "skin": "race default"
+      },
+      {
+        "records": "wizard leaves",
+        "weapons": "Iron Dagger (01–02), Steel Dagger (03), `LItemWeaponDaggerTown` (04–06) · gold · `LootBanditRandomWizard` 10E0E5",
+        "armor": "`BanditMageOutfit` 06E26F",
+        "skin": "race default"
+      },
+      {
+        "records": "the unnamed wrappers; `dunDuskglowBanditSuperMortal`",
+        "weapons": "as the drawn leaf",
+        "armor": "as the drawn leaf",
+        "skin": "race default"
+      },
+      {
+        "records": "`DLC1dunRedwaterDenKhajiitM` (own)",
+        "weapons": "none",
+        "armor": "`BanditArmorMeleeNoShieldOutfit` 01E608",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "`LItemBanditWeapon1H` 037C1B"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron and Steel mace, sword, war axe 1 · Orcish 9 · Dwarven 15 · Elven 22",
+        "levels": [
+          1,
+          9,
+          15,
+          22
+        ]
+      },
+      {
+        "list": {
+          "label": "`LItemBanditWeapon2H` 037C21"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron and Steel battleaxe, greatsword, warhammer 1 · Orcish 9 · Dwarven 15 · Elven 22",
+        "levels": [
+          1,
+          9,
+          15,
+          22
+        ]
+      },
+      {
+        "list": {
+          "label": "`LItemBanditWeaponMissile` 037BFD"
+        },
+        "gate": "highest gate only",
+        "rolls": "all of: a bow (Hunting or Long 1 · Imperial 4 · Orcish 10 · Dwarven 15 · Elven 20) and arrows (Iron 1 · Steel 5 · Orcish 9 · Dwarven 14 · Elven 20)"
+      },
+      {
+        "list": {
+          "label": "`LItemWeaponDaggerTown` 017177"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron 1 · Steel 4 · Orcish 10 · Dwarven 15 · Elven 20",
+        "levels": [
+          1,
+          4,
+          10,
+          15,
+          20
+        ]
+      },
+      {
+        "list": {
+          "label": "`LootBanditArrows15` 08777F"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "85% none; Iron 1 · Steel 3 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46",
+        "levels": [
+          1,
+          3,
+          6,
+          12,
+          19,
+          27,
+          36,
+          46
+        ]
+      },
+      {
+        "list": {
+          "label": "`BanditArmorMeleeShield20Outfit` 0C0197"
+        },
+        "rolls": "Fur, Hide, Iron, Studded 1 · Leather 6 · Elven 12 · Scaled 19 (pieces and a 20% shield)"
+      },
+      {
+        "list": {
+          "label": "`BanditArmorMeleeHeavyOutfit` 015BE6"
+        },
+        "rolls": "Banded Iron, Hide, Iron 1 · Steel 6"
+      },
+      {
+        "list": {
+          "label": "`BanditArmorMeleeNoShieldOutfit` 01E608 · `BanditMageOutfit` 06E26F"
+        },
+        "rolls": "Fur, Hide, Studded 1 · Leather 6 · Scaled 19 (the mage set: no Studded)"
+      },
+      {
+        "list": {
+          "label": "`LootBanditRandom` 10E0DD · `…Wizard` 10E0E5"
+        },
+        "rolls": "25% / 15% none; all of: lockpick, food, gems, ingots, jewelry, drink, tools (wizard: ingredients, soul gems, spell tomes, books, staves)"
+      },
+      {
+        "list": {
+          "label": "`DLC2Init` (Dragonborn) runtime additions"
+        },
+        "rolls": "Nordic weapons (gate 23) and armor (gate 25) added to the bandit weapon and armor lists at runtime (Bandits group page)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Fur, Hide, Studded, Leather, Elven, Scaled armor",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Iron, Banded Iron, Steel armor and shields",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "the Iron, Steel, Orcish, Dwarven, Elven weapons, bows and arrows",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

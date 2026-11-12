@@ -152,6 +152,7 @@ The main table. `Vanilla rungs` are name (level) from `lore-constraints.md` §1 
 |---|---|---|---|---|
 | **Bandit** | `LCharBanditMelee1H` 039CFC &c. | Bandit 1 · Outlaw 5 · Thug 9 · Highwayman 14 · Plunderer 19 · Marauder 25 | **Outlaw ×3** · **Thug ×4** · Highwayman ×2 | **T2** (T2–T3) |
 | Bandit boss | `LCharBanditBoss` 03DF16 | 6 · 10 · 16 · 21 · 28 | **28 only** (pinned — see 3.1.1) | **T5** |
+| *Bandit bands (user, 2026-11-12)* | census `bandits/` | Bandit **I** · Outlaw **II** · Thug **III** · Highwayman **III** · Plunderer **IV** · Marauder **IV**; the Reavers match rung for rung | wrappers and gangs on the 1–25 mook ladder **III**, except Blackblood Marauders and Mistwatch **IV**, the Ratway's Lowlife and Vagrant **II**, Black-Briar Mercenaries **V**; chiefs **V 28**, and the rebuilt lists spawn Bandit Chiefs **only at 28** (the other boss rungs and the CC Bandit Armor leaves stay documented at their own bands); Hired Thugs **IV**; Mercenaries **IV** | |
 | **Orc melee** (hostile Orc camps) | `LCharOrcMelee` 01E780 | reuses bandit records | Highwayman ×3 · **Plunderer ×4** · Marauder ×2 (revised 2026-09-24) | **T4** (T3–T5) |
 | **Forsworn** | `LCharForswornMelee1H` 01E792 + 4 siblings | Forsworn 1 · Forager 6 · Looter 14 · Pillager 24 · Ravager 34 · Warlord 46 | Forager ×1 · Looter ×3 · **Pillager ×4** · Ravager ×1 — mean 19.8 (revised WD-43) | **T4** (T2–T5) |
 | Forsworn boss | `LCharForswornBossMelee1H` 0442F2 · `…BossShaman` 0442FD | Briarheart 7 · 16 · 27 · 38 · 51 | **38 only** (pinned — see 3.1.1, WD-43) | **T6** |
@@ -1006,8 +1007,8 @@ the list.
 | Sigdis Gauldurson | draugr archer 21 / 28 / 36 | **45** | Deathlord, draugr missile class |
 | Kvenel the Tongue (`DunVolunruudBoss`) | draugr melee 21 / 28 / 36 | **45** | Deathlord, draugr melee class |
 | Red Eagle · Curalmil | Death Overlord boss pin | **45** | unchanged, already on the boss list |
-| Captain Hargar · the Lost Knife boss · the Cragslane Butcher | bandit mooks 5 / 9 / 14 | **28** | bandit chief, +150 health |
-| Ghunzul · the Traitor's Post boss | bandit chief | **28** | unchanged |
+| Captain Hargar · the Lost Knife boss · the Cragslane Butcher | bandit mooks 5 / 9 / 14 | **28** | bandit chief, +150 health; ~~28~~ Hargar **V Experienced** (user, 2026-11-12) |
+| Ghunzul · the Traitor's Post boss | bandit chief | **28** | unchanged; ~~28~~ Ghunzul **V Experienced** (user, 2026-11-12) |
 | Sinding | werewolf-boss list, all rungs 7–42 | **42** | `LCharWerewolfBoss` pinned to the Vargr boss |
 | The Southfringe boss | necromancer mooks 19 / 27 / 36 | **50** | Arch Necromancer boss |
 | Vals Veran | 40 (voice list with no level-50 leaf) | ~~50~~ **VI Elite** (user, 2026-11-12) | Arch Necromancer boss |
@@ -1017,6 +1018,7 @@ the list.
 **Villains and leaders that were still scaling:**
 - Lu'ah Al-Skaven and the Ritual Master: **50**, the warlock boss. ~~50~~ the Ritual Master **V Experienced** (user, 2026-11-12).
 - **Named Warlocks** (user, 2026-11-12): Thoron (CC) **VIII Fabled**; Naris the Wicked, Drelas, Faldrus, Ardwen, Ivara of Olenveld, Lushak gra-Ragdam and Modig Gilgar (CC) **V Experienced**; Selveni Nethri **IV Blooded** (the 50 pin is `dunSouthfringeBoss`'s, not hers); Taron Dreth **III Trained**. Sild's Assistant is dead when found and left out.
+- **Named Bandits** (user, 2026-11-12), superseding "a named bandit leader is a chief" (28): Ulfr the Blind **II Common**; Brandish, Eisa Blackthorn, Viparth, Remy, Erwan and Yakhtu gra-Orkulg (CC) **IV Blooded**; Captain Hargar, Ghunzul, the Bandit Leader (Fjola), Celeste, Urgnok, Neski Skull-Sabre (CC) and Elberon's Apprentice **V Experienced**. Kyr stays 1; Kinthal and Svarig (CC) stay on the chief 28; Evethra IV.
 - Rulindil and Estormo: **44**, the Thalmor wizard.
 - **The Volkihar court: 53**, the Volkihar Master Vampire. Orthjolf, Vingalmo, Malkus, Hestla, Rargal and Feran take
   `Stats` from `DLC1EncVampireTemplate` and its magic and missile variants.

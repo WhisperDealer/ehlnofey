@@ -1,0 +1,858 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "named-bandits",
+  "group": "bandits",
+  "title": "Named Bandits",
+  "order": 7,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "ulfr",
+        "name": "Ulfr the Blind",
+        "records": [
+          {
+            "edid": "dunWhiteRiverWatch_BanditWatchman",
+            "formKey": "0812FC:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee1HTank",
+            "formKey": "03DEC9:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Ulfr the Blind to Common"
+        },
+        "note": "through `LvlBanditMeleeTank` 015BE5 (`Stats`); own name, gear and outfit."
+      },
+      {
+        "id": "hargar",
+        "name": "Captain Hargar",
+        "records": [
+          {
+            "edid": "dunBrokenOarHargar",
+            "formKey": "01E38B:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee2HBerserk",
+            "formKey": "03DECA:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Captain Hargar to Experienced"
+        },
+        "note": "through `MS07LvlBlackbloodMeleeBerserkerCommonerM` 0DC8DA (the Blackblood Marauder, *Common Bandits*) and `LvlBanditMeleeBerserker` 03DECC; the rung-02 sublist `SubCharBandit02Melee2HBerserk` holds the level-1 berserkers, so the gate-5 roll is level 1."
+      },
+      {
+        "id": "ghunzul",
+        "name": "Ghunzul",
+        "records": [
+          {
+            "edid": "dunCrackedTuskGhunzul",
+            "formKey": "013679:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditBossOrcM",
+            "formKey": "01B0EA:Skyrim.esm"
+          },
+          "rungs": [
+            6,
+            10,
+            16,
+            21,
+            28
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Ghunzul to Experienced"
+        },
+        "note": "through `LvlBanditBossOrcMAmbush` 0E8B1F and `LvlBanditBossOrcM` 01B0EB."
+      },
+      {
+        "id": "brandish",
+        "name": "Brandish",
+        "records": [
+          {
+            "edid": "dunFortNeugradBanditWizard",
+            "formKey": "0CD64C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditWizardCommonerM",
+            "formKey": "01B0F3:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Brandish to Blooded"
+        },
+        "note": "through `LvlBanditAmbushWizardCommonerM` 0D07CA and `LvlBanditWizardCommonerM` 01B102."
+      },
+      {
+        "id": "eisa",
+        "name": "Eisa Blackthorn",
+        "records": [
+          {
+            "edid": "dunFrostmereCryptEisa",
+            "formKey": "0D001A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditBossNordF",
+            "formKey": "01A340:Skyrim.esm"
+          },
+          "rungs": [
+            6,
+            10,
+            16,
+            21,
+            28
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Eisa Blackthorn to Blooded"
+        },
+        "note": "takes only `Stats` from the list (no `Traits`); own name, gear and outfit."
+      },
+      {
+        "id": "kyr",
+        "name": "Kyr",
+        "records": [
+          {
+            "edid": "dunFrostmereCrypt_Kyr",
+            "formKey": "0D37D1:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0 (WD-62): Kyr owns a fixed 1, as in vanilla, and is left"
+        },
+        "note": "templated on `LvlBanditBossNordM` 01B0E1 without `Stats` or `Traits`: it takes only spells, animations, script, packages and attack data."
+      },
+      {
+        "id": "fjola",
+        "name": "Bandit Leader (Fjola)",
+        "records": [
+          {
+            "edid": "dunMistwatchFjola",
+            "formKey": "090739:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 5
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Bandit Leader (Fjola) to Experienced"
+        },
+        "note": "takes `Traits` and `Inventory` from `LCharBanditBossNordF` 01A340, not `Stats`."
+      },
+      {
+        "id": "kinthal-svarig",
+        "name": "Kinthal · Svarig",
+        "records": [
+          {
+            "edid": "ccBGSSSE025_LvlGoldenBanditBossAggro768",
+            "formKey": "0009B3:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_LvlSeducerBanditBossAggro768",
+            "formKey": "0009B4:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.25,
+          "min": 1,
+          "max": 25,
+          "from": {
+            "label": "`ccBGSSSE025_LChar{Golden,Seducer}BanditBoss` 0009D2 · 0009D3, one leaf each"
+          }
+        },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0 (WD-62, user): a named bandit leader is a chief; §3.1.1 pins the bandit chief to 28 (applied to the CC Saints & Seducers bosses)"
+        },
+        "note": "CC Saints & Seducers; each list holds one boss leaf (`ccBGSSSE025_EncGoldenBanditBoss2HRedguardM` 0009AE · `…EncSeducerBanditBoss2HNordM` 0009B0), which owns PC×1.25 [1–25]."
+      },
+      {
+        "id": "viparth",
+        "name": "Viparth",
+        "records": [
+          {
+            "edid": "ccMTYSSE001_LvlBanditBoss03",
+            "formKey": "000843:ccmtysse001-knightsofthenine.esl"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditBoss",
+            "formKey": "03DF16:Skyrim.esm"
+          },
+          "rungs": [
+            6,
+            10,
+            16,
+            21,
+            28
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Viparth to Blooded"
+        },
+        "note": "CC Knights of the Nine; own gear (no `Inventory` flag)."
+      },
+      {
+        "id": "remy",
+        "name": "Remy",
+        "records": [
+          {
+            "edid": "ccMTYSSE001_LvlBanditBoss04",
+            "formKey": "000844:ccmtysse001-knightsofthenine.esl"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMissile",
+            "formKey": "01E770:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Remy to Blooded"
+        },
+        "note": "CC Knights of the Nine; gear from the drawn leaf."
+      },
+      {
+        "id": "evethra",
+        "name": "Evethra",
+        "records": [
+          {
+            "edid": "ccBGSSSE025_SmithEnchanter",
+            "formKey": "000CBF:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 35
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0 rule for the long tail: the level vanilla gives a level-25 player (25), applied to CC"
+        },
+        "note": "CC Saints & Seducers; templated on `EncBandit03TemplateMagic` 039D43 without `Stats`."
+      },
+      {
+        "id": "celeste",
+        "name": "Celeste",
+        "records": [
+          {
+            "edid": "ccBGSSSE031_Celeste",
+            "formKey": "000A55:ccbgssse031-advcyrus.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 30
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Celeste to Experienced"
+        },
+        "note": "CC `ccbgssse031-advcyrus.esm`; templated on `EncBandit02Melee1HNordF` 039D00 without `Stats`."
+      },
+      {
+        "id": "erwan",
+        "name": "Erwan",
+        "records": [
+          {
+            "edid": "ccBGSSSE051_Erwan",
+            "formKey": "00081C:ccbgssse051-ba_daedricmail.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 15,
+          "max": 60
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Erwan to Blooded"
+        },
+        "note": "CC Daedric Mail; templated on `EncWarlock06TemplateBossIce` 0E0FD4 without `Stats` (*Warlock Bosses*)."
+      },
+      {
+        "id": "urgnok",
+        "name": "Urgnok",
+        "records": [
+          {
+            "edid": "ccBGSSSE062_OrcM",
+            "formKey": "00081F:ccbgssse062-ba_dwarvenmail.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 15,
+          "max": 40
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Urgnok to Experienced"
+        },
+        "note": "CC Dwarven Mail; templated on `EncBandit06Melee1HOrcM` 039D23 without `Stats`."
+      },
+      {
+        "id": "yakhtu",
+        "name": "Yakhtu gra-Orkulg",
+        "records": [
+          {
+            "edid": "ccBGSSSE054_Yakhtu",
+            "formKey": "00081C:ccbgssse054-ba_orcish.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.5,
+          "min": 15
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Yakhtu gra-Orkulg to Blooded"
+        },
+        "note": "CC Orcish; no template."
+      },
+      {
+        "id": "neski",
+        "name": "Neski Skull-Sabre",
+        "records": [
+          {
+            "edid": "ccKRTSSE001_Neski",
+            "formKey": "000817:cckrtsse001_altar.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 40
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Neski Skull-Sabre to Experienced"
+        },
+        "note": "CC `cckrtsse001_altar.esl`; no template."
+      },
+      {
+        "id": "elberons-apprentice",
+        "name": "Elberon's Apprentice",
+        "records": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_ElberrosApprentice",
+            "formKey": "000906:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 30
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Elberon's Apprentice to Experienced"
+        },
+        "note": "CC Forgotten Seasons (`cctwbsse001-puzzledungeon.esm`); no template."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level (no record uses any of them as its template).",
+      "Kyr, Fjola, Evethra, Celeste, Erwan, Urgnok and the two CC boss leaves keep their own levels while they take their look from a bandit (or, for Erwan, warlock) template or list; changing those templates or lists does not move them (they are listed on *Common Bandits*, *Bandit Chiefs* and Warlocks → *Warlock Bosses*)."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "none"
+        },
+        "note": "each is a placed record; the bandit lists in the Level column only lend the level",
+        "owner": "—"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Ulfr the Blind",
+        "base": [
+          {
+            "edid": "dunWhiteRiverWatch_BanditWatchman",
+            "formKey": "0812FC:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "WhiteRiverWatch01",
+              "formKey": "0151F9:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Captain Hargar",
+        "base": [
+          {
+            "edid": "dunBrokenOarHargar",
+            "formKey": "01E38B:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "BrokenOarGrotto01",
+              "formKey": "0BA599:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Ghunzul",
+        "base": [
+          {
+            "edid": "dunCrackedTuskGhunzul",
+            "formKey": "013679:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "CrackedTuskKeep01",
+              "formKey": "01526A:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Brandish",
+        "base": [
+          {
+            "edid": "dunFortNeugradBanditWizard",
+            "formKey": "0CD64C:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "FortNeugradExterior04",
+              "formKey": "009883:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Eisa Blackthorn",
+        "base": [
+          {
+            "edid": "dunFrostmereCryptEisa",
+            "formKey": "0D001A:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "Kyr",
+        "base": [
+          {
+            "edid": "dunFrostmereCrypt_Kyr",
+            "formKey": "0D37D1:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "FrostmereCryptWorld",
+              "formKey": "0C97EB:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Bandit Leader (Fjola)",
+        "base": [
+          {
+            "edid": "dunMistwatchFjola",
+            "formKey": "090739:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Mistwatch03",
+              "formKey": "042BEC:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Kinthal, Svarig",
+        "base": [
+          {
+            "edid": "ccBGSSSE025_LvlGoldenBanditBossAggro768",
+            "formKey": "0009B3:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_LvlSeducerBanditBossAggro768",
+            "formKey": "0009B4:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "Viparth, Remy",
+        "base": [
+          {
+            "edid": "ccMTYSSE001_LvlBanditBoss03",
+            "formKey": "000843:ccmtysse001-knightsofthenine.esl"
+          },
+          {
+            "edid": "ccMTYSSE001_LvlBanditBoss04",
+            "formKey": "000844:ccmtysse001-knightsofthenine.esl"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "FourSkullLookoutExterior01",
+              "formKey": "0070F5:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Evethra, Celeste, Erwan, Urgnok",
+        "base": [
+          {
+            "edid": "ccBGSSSE025_SmithEnchanter",
+            "formKey": "000CBF:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE031_Celeste",
+            "formKey": "000A55:ccbgssse031-advcyrus.esm"
+          },
+          {
+            "edid": "ccBGSSSE051_Erwan",
+            "formKey": "00081C:ccbgssse051-ba_daedricmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE062_OrcM",
+            "formKey": "00081F:ccbgssse062-ba_dwarvenmail.esl"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "Yakhtu gra-Orkulg",
+        "base": [
+          {
+            "edid": "ccBGSSSE054_Yakhtu",
+            "formKey": "00081C:ccbgssse054-ba_orcish.esl"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "EmbershardMine01",
+              "formKey": "0B6BE6:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Neski Skull-Sabre",
+        "base": [
+          {
+            "edid": "ccKRTSSE001_Neski",
+            "formKey": "000817:cckrtsse001_altar.esl"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccKRTSSE001QPInterior02",
+              "formKey": "002FD5:Update.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Elberon's Apprentice",
+        "base": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_ElberrosApprentice",
+            "formKey": "000906:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeon02",
+              "formKey": "001703:cctwbsse001-puzzledungeon.esm"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Ulfr the Blind",
+        "weapons": "`LItemBanditWeapon1H`, gold, lockpick",
+        "armor": "`dunWhiteRiverWatchWatchmanOutfit` 108E29 (bandit heavy boots, cuirass, 50% gauntlets, `LItemBanditShield`)",
+        "skin": "race default"
+      },
+      {
+        "records": "Captain Hargar",
+        "weapons": "`LItemBanditWeapon2H`, gold (from `MS07LvlBlackbloodMeleeBerserkerCommonerM`, through `Inventory`)",
+        "armor": "`ArmorLeatherSimpleOutfit` 057A34 (from the same wrapper)",
+        "skin": "race default"
+      },
+      {
+        "records": "Ghunzul, Remy, Kinthal, Svarig",
+        "weapons": "from the drawn leaf (`Inventory`)",
+        "armor": "from the drawn leaf",
+        "skin": "race default"
+      },
+      {
+        "records": "Brandish",
+        "weapons": "Steel Dagger, health potion, `LootBanditGoldBoss`",
+        "armor": "`WarlockOutfitLeveled` 044CD5",
+        "skin": "race default"
+      },
+      {
+        "records": "Eisa Blackthorn",
+        "weapons": "`LItemBanditWarAxe`, `LItemBanditShield`, health potion, lockpick, gold",
+        "armor": "`ArmorSteelNoHelmetOutfit` 028B44",
+        "skin": "race default"
+      },
+      {
+        "records": "Kyr",
+        "weapons": "`LItemWeaponWarAxe`, `LItemArmorShieldAnyBest`, gold",
+        "armor": "`ArmorSteelNoHelmetOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Bandit Leader (Fjola)",
+        "weapons": "from her template (`Inventory`)",
+        "armor": "from her template",
+        "skin": "race default"
+      },
+      {
+        "records": "Kinthal · Svarig (their leaves)",
+        "weapons": "`ccBGSSSE025_LItemGoldenBanditWeapon2H` · `…SeducerBanditWeapon2H`, a Golden Saint · Dark Seducer dagger, a conjure scroll, rare ingredients, `LootBanditGoldBoss`",
+        "armor": "`ccBGSSSE025_GoldenBanditArmorMeleeNoShieldBossOutfit` 0009FD · `…SeducerBanditArmorMeleeNoShieldBossOutfit` 0009FC",
+        "skin": "race default"
+      },
+      {
+        "records": "Viparth",
+        "weapons": "`LItemWeaponMaceBest`, Viparth's Journal, `LootBanditRandom`",
+        "armor": "`BanditArmorMeleeNoShieldOutfit` 01E608",
+        "skin": "race default"
+      },
+      {
+        "records": "Evethra",
+        "weapons": "Iron Dagger, `LootBanditRandomWizard`, gold",
+        "armor": "`ccBGSSSE025_BlacksmithOutfit01` 0010DC (Arcane Blacksmith's Apron)",
+        "skin": "race default"
+      },
+      {
+        "records": "Celeste",
+        "weapons": "`LItemBanditBossShield`, `LootBanditGoldBoss` (no weapon in the record)",
+        "armor": "`BanditArmorHeavyBossOutfit` 03DED3",
+        "skin": "race default"
+      },
+      {
+        "records": "Erwan",
+        "weapons": "`LItemWeaponAny1H`, Long Bow, `LItemWarlockDagger`, `LootBanditArrows100`",
+        "armor": "`ArmorScaledSimpleOutfit` 037C50 (Scaled Armor, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Urgnok",
+        "weapons": "`LItemBanditWeapon2HBoss` 03DEDA, Orcish Dagger, `LootBanditGoldBoss`",
+        "armor": "`ccBGSSSE062_ArmorBladesOutfit` 000810 (Dwarven Mail set, Dwarven Shield)",
+        "skin": "race default"
+      },
+      {
+        "records": "Yakhtu gra-Orkulg",
+        "weapons": "`LItemBanditWeapon2H` 037C21, `LootBanditGold`",
+        "armor": "`BlacksmithOutfit01` 057C4C",
+        "skin": "race default"
+      },
+      {
+        "records": "Neski Skull-Sabre",
+        "weapons": "Grand Champion's Sword 000807:cckrtsse001_altar.esl, Imperial Shield, `LootBanditGold`",
+        "armor": "`ccKRTSSE001_ArmorImperialHeavyOutfitOfficer` 000CDD (Grand Champion's Helm, Iron set)",
+        "skin": "race default"
+      },
+      {
+        "records": "Elberon's Apprentice",
+        "weapons": "Dwarven Dagger",
+        "armor": "`CollegeApprenticeIllusionOutfit` 0D3DFD (Apprentice Robes of Illusion, Apprentice Hood)",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "the bandit weapon, armor and boss lists"
+        },
+        "rolls": "as on *Common Bandits* and *Bandit Chiefs*"
+      },
+      {
+        "list": {
+          "label": "`ccBGSSSE025_GoldenBanditArmorMeleeNoShieldBossOutfit` · `…Seducer…`"
+        },
+        "rolls": "Golden Saint or Dark Seducer bandit boots, gauntlets and helmet lists; `LItemBanditCuirass` · the Seducers cuirass variant"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Dwarven Mail set (CC 062); Scaled, Leather, the bandit light pieces",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Steel, Iron, Dwarven Shield, Imperial Shield, Grand Champion's Helm",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Grand Champion's Sword, the CC Golden Saint and Dark Seducer bandit weapons",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "bandits",
+  "title": "Bandits",
+  "order": 10,
+  "meta": {
+    "spec": "archetype-tiers.md §3.1",
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The bandits are the six-rung ladder, the chiefs, the hired thugs, the mercenaries, the Reavers of Solstheim and the named bandit leaders, vanilla, DLC and CC. Their lists are the most borrowed in the game (the Silver Hand, the Dawnguard Hunter, the vampire thralls, the bandit-list ghosts, the Soul Cairn souls, the Orcish Invaders, world-encounter NPCs and more): each list row on a family page links to every record that draws it, under *Drawn elsewhere*. Non-bandits that take their level from a bandit list stay on their own kinds' pages with a \"borrows its level\" note.\n\nRuntime injectors `[verified]` (decompiled quest fragments): the 14 CC Bandit Armor packs `ccBGSSSE050`–`064` each call `LCharBanditBoss.AddForm` with their own chief list at their own level (052 at 2, 053 at 3, 058 at 6, 056 at 10, 064 at 12, 061 and 062 at 15, 055 at 23, 054 at 26, 063 at 32, 059 at 40, 060 at 44, 050 and 051 at 48). 050, 052–056, 058, 059, 061 and 063 inject from their `…_MiscQuest` after chargen (`ccstartafterchargenscript`; 063 waits for player level 32); 051, 060, 062 and 064 inject at stage 100 of their `…_Quest`, when the pack's armor quest completes. `ccBGSSSE057_Quest` (Stalhrim) adds its Reaver Marauder to `DLC2LCharBanditBoss` `[unverified]`. `DLC2Init` adds Nordic weapons and armor to 23 bandit and bandit-boss gear lists; `ccBGSSSE002_StartUpQuest`, `ccBGSSSE041_Quest` and `ccBGSSSE066_Quest` add the CC arrows, Netch leather and staves to `LItemBanditWeaponArrows`, `DLC2LItemBanditArmor` and `LootStaffsWeaponBandit` `[unverified]`.",
+  "families": [
+    {
+      "id": "common-bandits",
+      "holds": "the `LCharBandit*` ladders: Bandit 1 · Bandit Outlaw 5 · Bandit Thug 9 · Bandit Highwayman 14 · Bandit Plunderer 19 · Bandit Marauder 25; the race and voice sublists; the unnamed `LvlBandit*` wrappers on them"
+    },
+    {
+      "id": "bandit-gangs",
+      "holds": "the gangs and the dungeons' own wrappers on the mook lists: Blackblood Marauders, Blood Horkers, Dainty Sload, Cragslane, Mistwatch, the Ratway, poachers, Black-Briar, the WE17 soldiers, Nilheim, the pit fighters, the CC Saints and Seducers bandits"
+    },
+    {
+      "id": "bandit-chiefs",
+      "holds": "`LCharBanditBoss` (6 · 10 · 16 · 21 · 28) and its sublists, the Bandit Chief wrappers, the 14 CC Bandit Armor boss packs"
+    },
+    {
+      "id": "hired-thugs",
+      "holds": "the three `WIThug*` records the `WIAddItem03` and `WIKill06` encounters send after the player; they take the boss ladder from the chief wrappers"
+    },
+    {
+      "id": "mercenaries",
+      "holds": "Taron Dreth's three Dawnguard mercenaries, the Silver-Blood Mercenaries at Karthwasten, the CC puzzle dungeon's Mercenary Archers, Warriors and Wizards; most take the bandit ladder"
+    },
+    {
+      "id": "reavers",
+      "holds": "the Solstheim ladder (Reaver 1 · 5 · 9 · 14 · 19 · 25, Reaver Lord 6 · 10 · 16 · 21 · 28), Haknir's Shoal pirates, Miraak's workers, the CC Stalhrim and Nordic Jewelry reavers"
+    },
+    {
+      "id": "named-bandits",
+      "holds": "the named bandit leaders, vanilla and CC"
+    }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-10-02)",
+    "confidence": "verified",
+    "text": "Every `LVLN` whose EditorID holds \"Bandit\" (128, base game, DLC and CC) and everything they draw; every NPC in `BanditFaction` 01BCC0 or whose EditorID holds \"Bandit\"; every record that takes a template from any of them; every placed reference in every cell and worldspace (1,416, three deleted by Dawnguard at `DLC1RedwaterDenExterior`, 30 moved by CC packs: Bloodfall's Lost Knife Hideout, Cyrus, Dragonplate, Orcish, Daedric Mail); every quest that names a bandit list. No plugin overrides a bandit `LVLN`. `EncBandit04TemplateMelee` 01E60D has no level in `Skyrim.esm` (0) and Dragonborn.esm gives it 14. Re-checked 2026-11-12 with a template-chain sweep of every NPC and `LVLN` in the five masters and the CC plugins for the *Drawn elsewhere* tables."
+  },
+  "filedElsewhere": [
+    {
+      "record": "the bandit-list ghosts (Halldir's Cairn, Ysgramor's Tomb, Haknir Death-Brand and his crew, Garuk Windrime, Thalin Ebonhand, the CC shades and Dwarven Spectre, the Labyrinthian Fire and Frost Spirits)",
+      "what": "ghosts",
+      "where": "Undead → Ghosts"
+    },
+    {
+      "record": "the vampire thralls, Redwater Den",
+      "what": "thralls",
+      "where": "Vampires → *Vampire's Thrall*"
+    },
+    {
+      "record": "the Silver Hand",
+      "what": "werewolf hunters",
+      "where": "Factions → Silver Hand"
+    },
+    {
+      "record": "the Dawnguard (rungs, members, hunters)",
+      "what": "vampire hunters",
+      "where": "Factions → Dawnguard"
+    },
+    {
+      "record": "the Morag Tong (DLC2)",
+      "what": "assassins",
+      "where": "Factions → Minor Factions → *Morag Tong*"
+    },
+    {
+      "record": "the Wizards' Guards, Captain Aquilius, the East Empire Wardens",
+      "what": "guards",
+      "where": "Guards → *Other Guards*"
+    },
+    {
+      "record": "the Alik'r (`WERJ`, CC Lord's Mail)",
+      "what": "Alik'r warriors",
+      "where": "Minor Factions → *Alik'r*"
+    },
+    {
+      "record": "Alvasorr the Rat",
+      "what": "Forsworn",
+      "where": "Forsworn → *Named Forsworn*"
+    },
+    {
+      "record": "the CC Ash Zombie",
+      "what": "undead",
+      "where": "Ash → *Ash Zombie (CC)*"
+    },
+    {
+      "record": "the Solstheim werebears templated on bandit rungs",
+      "what": "werebears",
+      "where": "Werebeasts → *Werebear*"
+    },
+    {
+      "record": "bandit dogs, pit wolves, the smuggler's horse",
+      "what": "animals",
+      "where": "World Creatures (Dog, Wolf, Horse)"
+    },
+    {
+      "record": "the Soul Cairn souls",
+      "what": "undead",
+      "where": "Skeletons → *Soul Cairn Undead*"
+    },
+    {
+      "record": "the Falmer Servant",
+      "what": "Falmer",
+      "where": "Falmer → *Common Falmer*"
+    },
+    {
+      "record": "the spider-zombie hosts",
+      "what": "insectoids",
+      "where": "Insectoids → *Exploding Spider*"
+    },
+    {
+      "record": "the world-encounter NPCs and named residents",
+      "what": "people",
+      "where": "World Encounters pages · World hold pages"
+    }
+  ],
+  "neverMet": [
+    {
+      "record": "106 corpse records (`TreasCorpseBandit*`, `DLC2TreasCorpseBandit*`, the dead adventurers and prisoners, Vidgrod, Raen, Agrius, Ulag, Castor, Hans, Shogarz gro-Batul, the CC Knights of the Nine Oren and Eigorn)",
+      "what": "corpses",
+      "why": "placed `StartsDead` or named as corpses"
+    },
+    {
+      "record": "`E3DemoBandit*`, `E3demoThief` 0E93D3",
+      "what": "the E3 demo bandits",
+      "why": "in `E3demoBleakFallsBarrow` 075669 or behind the initially disabled `E3demoMarker` 093638, named only by the `e3demo` quest"
+    },
+    {
+      "record": "`DEMO_Bandit1HNordM` 09F357 · `DEMO_BanditTankImperialM` 09F358 · `WarehouseNPCWebActorSit` 0684CD",
+      "what": "test actors",
+      "why": "not placed"
+    }
+  ]
+}

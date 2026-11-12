@@ -188,9 +188,11 @@ gotchas here**, and add a one-liner to CLAUDE.md only if a session must know it 
 
 - **Scripts can edit a leveled list at runtime, invisibly to every load-order scan.** A Papyrus
   `LeveledActor.AddForm` / `LeveledItem.AddForm` never appears as an override in any plugin, and the
-  result is stored in the save for good. The 15 Creation Club Bandit Armor packs do exactly this from a
-  `RunOnce` start-up quest fired after chargen (`ccstartafterchargenscript`): they add their own
-  `SubCharBandit0NBoss` to `LCharBanditBoss` at gates 2–48 and their armor to ~15 `LItemArmor*` lists.
+  result is stored in the save for good. The 14 Creation Club Bandit Armor packs do exactly this: ten from a
+  `RunOnce` start-up quest fired after chargen (`ccstartafterchargenscript`; 063 also waits for player
+  level 32), and four (051, 060, 062, 064) only at stage 100 of their `…_Quest`, when the pack's armor
+  quest completes (census, 2026-11-12, from the decompiled fragments). Each adds its own
+  `SubCharBandit0NBoss` to `LCharBanditBoss` at its own gate, 2–48 and their armor to ~15 `LItemArmor*` lists.
   Symptom: bandit chiefs came out level 6 when the player walked in, but 28 via `coc` from the main menu
   (no chargen, so no injection) and via `placeatme` (no `LevelModifier`). **Before concluding a list
   is what the plugin says, grep `reference/` quest/script properties for its FormKey**, and read the

@@ -1,0 +1,108 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "hired-thugs",
+  "group": "bandits",
+  "title": "Hired Thugs",
+  "order": 4,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "hired-thug",
+        "name": "Hired Thug",
+        "records": [
+          {
+            "edid": "WIThug",
+            "formKey": "035B5E:Skyrim.esm"
+          },
+          {
+            "edid": "WIThugCommonerM",
+            "formKey": "0D783C:Skyrim.esm"
+          },
+          {
+            "edid": "WIThugNordM",
+            "formKey": "0D783B:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "the chief wrappers `LvlBanditBoss` 03DF17 · `LvlBanditBossCommonerM` 01B0DB · `LvlBanditBossNordM` 01B0E1"
+          },
+          "rungs": [
+            6,
+            10,
+            16,
+            21,
+            28
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Hired Thugs down to Blooded"
+        },
+        "note": "the Hired Thugs borrow their level from the bandit chiefs: each takes `Stats`, `Traits` and `Inventory` from a chief wrapper, which takes them from `LCharBanditBoss` 03DF16, `LCharBanditBossCommonerM` 01A33A or `LCharBanditBossNordM` 01A341 (*Bandit Chiefs*), so they roll the boss ladder and its gear. Changing that ladder changes them. Moved here from Uncategorised → *Bandit Level Borrowers* (user, 2026-10-04)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "No record uses a Hired Thug as its template. The records that keep their own level beside the boss ladder (the CC Bounty Hunter, Kyr, Fjola, the `WEDL05` Thug, Salma, Umbra) are listed on *Bandit Chiefs*.",
+      "All three records carry `Stats` and follow their chief wrapper."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "none"
+        },
+        "owner": "—",
+        "note": "the Hired Thugs are created by quest aliases; the chief lists only lend the level (*Bandit Chiefs*)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Hired Thug",
+        "base": [
+          {
+            "edid": "WIThug",
+            "formKey": "035B5E:Skyrim.esm"
+          },
+          {
+            "edid": "WIThugCommonerM",
+            "formKey": "0D783C:Skyrim.esm"
+          },
+          {
+            "edid": "WIThugNordM",
+            "formKey": "0D783B:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "quest": "`WIAddItem03` 035B5A: `Thug1` (`WIThugNordM`), `Thug2` (`WIThugCommonerM`), `Thug3` (`WIThug`); `WIKill06` 04EEF5: `Thug1`–`3` (all `WIThug`)",
+        "note": "created by the quest aliases (create reference to object)"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Hired Thug (all three)",
+        "weapons": "as the drawn boss leaf (*Bandit Chiefs* → Gear)",
+        "armor": "as the drawn boss leaf",
+        "skin": "race default"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1481 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "bandit-gangs",
+  "group": "bandits",
+  "title": "Bandit Gangs",
+  "order": 2,
+  "meta": {
+    "spec": "archetype-tiers.md §3.1",
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "moved-wrappers",
+        "name": "the drawn rung's name",
+        "records": [
+          {
+            "edid": "MS07Bandit01Melee1H",
+            "formKey": "025F8A:Skyrim.esm"
+          },
+          {
+            "edid": "ccBGSSSE054_LvlBanditMeleeTank",
+            "formKey": "000812:ccbgssse054-ba_orcish.esl"
+          },
+          {
+            "edid": "ccBGSSSE054_LvlBanditMelee2H",
+            "formKey": "000805:ccbgssse054-ba_orcish.esl"
+          },
+          {
+            "edid": "dunPOILvlBanditMissileAggro1536",
+            "formKey": "07F89F:Skyrim.esm"
+          },
+          {
+            "edid": "ccBGSSSE054_LvlBanditMissile",
+            "formKey": "000804:ccbgssse054-ba_orcish.esl"
+          },
+          {
+            "edid": "dunRavenscarTrappedBandit",
+            "formKey": "03D279:Skyrim.esm"
+          },
+          {
+            "edid": "dunDuskglowBanditBoss",
+            "formKey": "0A63A1:Skyrim.esm"
+          },
+          {
+            "edid": "DunLostKnifeBanditTalk02b",
+            "formKey": "01CE59:Skyrim.esm"
+          },
+          {
+            "edid": "DunLostKnifeBanditTalk02a",
+            "formKey": "04003B:Skyrim.esm"
+          },
+          {
+            "edid": "dunDuskglowBandit02",
+            "formKey": "05B0E7:Skyrim.esm"
+          },
+          {
+            "edid": "MS13BanditCampfire02",
+            "formKey": "039FE5:Skyrim.esm"
+          },
+          {
+            "edid": "dunDuskglowBandit01",
+            "formKey": "05B0E6:Skyrim.esm"
+          },
+          {
+            "edid": "MS13BanditCampfire01",
+            "formKey": "039FE3:Skyrim.esm"
+          },
+          {
+            "edid": "MS13BanditCampfire03",
+            "formKey": "039FE6:Skyrim.esm"
+          },
+          {
+            "edid": "DLC1LvlBanditMeleeKhajiitM",
+            "formKey": "008CA9:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1LvlBanditMissileKhajiitM",
+            "formKey": "008CAA:Dawnguard.esm"
+          },
+          {
+            "edid": "WE30Alchemist",
+            "formKey": "074937:Skyrim.esm"
+          },
+          {
+            "edid": "ccBGSSSE001_LvlVagrantWizard",
+            "formKey": "000E54:ccbgssse001-fish.esm"
+          },
+          {
+            "edid": "dunFortNeugrad_LvlBanditMelee1HCarryFirewoodAmbush",
+            "formKey": "0C8619:Skyrim.esm"
+          },
+          {
+            "edid": "dunFortNeugrad_LvlBanditMelee1HCarryFirewood",
+            "formKey": "0C8668:Skyrim.esm"
+          },
+          {
+            "edid": "dunKnifepointRidgeLvlBanditMeleeTraining",
+            "formKey": "0BBC6A:Skyrim.esm"
+          },
+          {
+            "edid": "DunLostKnifeBanditTalk01a",
+            "formKey": "034C8C:Skyrim.esm"
+          },
+          {
+            "edid": "dunWhiteRiverWatch_AlarmBandit1",
+            "formKey": "08130A:Skyrim.esm"
+          },
+          {
+            "edid": "dunPOIRaidingBandit01",
+            "formKey": "0DC2D3:Skyrim.esm"
+          },
+          {
+            "edid": "dunRobbersGorge_LvlBanditMeleeAny",
+            "formKey": "078C18:Skyrim.esm"
+          },
+          {
+            "edid": "dunVolskyggeBanditGate01",
+            "formKey": "041928:Skyrim.esm"
+          },
+          {
+            "edid": "dunVolskyggeBanditGate02",
+            "formKey": "041929:Skyrim.esm"
+          },
+          {
+            "edid": "dunVolskyggeBanditScene01a",
+            "formKey": "04192A:Skyrim.esm"
+          },
+          {
+            "edid": "dunVolskyggeBanditScene01b",
+            "formKey": "04192B:Skyrim.esm"
+          },
+          {
+            "edid": "WEBanditMeleeNoFactionAggro",
+            "formKey": "09F80F:Skyrim.esm"
+          },
+          {
+            "edid": "dunPOISmugglerLvlBanditMeleeBerserker",
+            "formKey": "0D97ED:Skyrim.esm"
+          },
+          {
+            "edid": "dunRobbersGorge_LvlBanditMeleeBerserker",
+            "formKey": "078C16:Skyrim.esm"
+          },
+          {
+            "edid": "dunFrostmereCryptPursuer1",
+            "formKey": "0D0022:Skyrim.esm"
+          },
+          {
+            "edid": "WhiterunJailPrisoner",
+            "formKey": "0590EF:Skyrim.esm"
+          },
+          {
+            "edid": "dunFrostmereCryptBridgeGuard",
+            "formKey": "10474B:Skyrim.esm"
+          },
+          {
+            "edid": "dunFrostmereCryptPursuer2",
+            "formKey": "0D07D1:Skyrim.esm"
+          },
+          {
+            "edid": "dunFrostmereCryptPursuer3",
+            "formKey": "0D0038:Skyrim.esm"
+          },
+          {
+            "edid": "dunFortNeugradBanditMeleeTraining",
+            "formKey": "0CC509:Skyrim.esm"
+          },
+          {
+            "edid": "dunRobbersGorge_LvlBanditGuard",
+            "formKey": "0EE52B:Skyrim.esm"
+          },
+          {
+            "edid": "dunRobbersGorge_LvlBanditMeleeTank",
+            "formKey": "078C17:Skyrim.esm"
+          },
+          {
+            "edid": "dunPOISmugglerLvlBanditMeleeTankAggro1024",
+            "formKey": "0D97EE:Skyrim.esm"
+          },
+          {
+            "edid": "dunKnifepointRidgeLvlBanditMissileTraining",
+            "formKey": "0BBC66:Skyrim.esm"
+          },
+          {
+            "edid": "dunKnifepointRidgeTowerGuard",
+            "formKey": "034197:Skyrim.esm"
+          },
+          {
+            "edid": "dunKnifepointRidge_TowerGuard01",
+            "formKey": "02B15C:Skyrim.esm"
+          },
+          {
+            "edid": "DunLostKnifeBanditTalk01b",
+            "formKey": "034C8D:Skyrim.esm"
+          },
+          {
+            "edid": "dunPOILvlBanditMissileAggro1536HoldPosition512",
+            "formKey": "0C8672:Skyrim.esm"
+          },
+          {
+            "edid": "dunPOIPineForest28Bandits",
+            "formKey": "0F5356:Skyrim.esm"
+          },
+          {
+            "edid": "dunPOIRaidingBandit02",
+            "formKey": "0DC2D2:Skyrim.esm"
+          },
+          {
+            "edid": "dunRobbersGorge_LvlBanditMissile",
+            "formKey": "078C14:Skyrim.esm"
+          },
+          {
+            "edid": "WEBanditMissileNoFactionAggro",
+            "formKey": "09F80D:Skyrim.esm"
+          },
+          {
+            "edid": "dunPOISmugglerLvlBanditMissileAggro1024",
+            "formKey": "0D97F0:Skyrim.esm"
+          },
+          {
+            "edid": "dunRobbersGorge_LvlBanditSentry",
+            "formKey": "0B94E4:Skyrim.esm"
+          },
+          {
+            "edid": "dunPOILvlBanditWizardAggro1536",
+            "formKey": "07F89E:Skyrim.esm"
+          },
+          {
+            "edid": "dunPOISmugglerLvlBanditWizard",
+            "formKey": "0D97EF:Skyrim.esm"
+          },
+          {
+            "edid": "dunRobbersGorge_LvlBanditWizard",
+            "formKey": "078C15:Skyrim.esm"
+          },
+          {
+            "edid": "dunWhiteRiverWatch_AlarmBandit2",
+            "formKey": "08130B:Skyrim.esm"
+          },
+          {
+            "edid": "WEBanditWizardNoFaction",
+            "formKey": "09F80E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "the list or wrapper each takes `Stats` from (Lists below)"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03). All take `BaseData` from their list. By list: `LCharBanditMelee1H`: `MS07Bandit01Melee1H` · `LCharBanditMelee1HTank`, `…Melee2H`, `…Missile`: the three CC `ccBGSSSE054_LvlBandit*` (ccbgssse054-ba_orcish.esl) · `LCharBanditMissile`: `dunPOILvlBanditMissileAggro1536` · `LCharBanditMeleeCommonerM`: `dunRavenscarTrappedBandit` · `LCharBanditMeleeEvenTonedM`: `dunDuskglowBanditBoss`, `DunLostKnifeBanditTalk02b` · `LCharBanditMeleeNordM`: `DunLostKnifeBanditTalk02a` · `LCharBanditMeleeOrcM`: `dunDuskglowBandit02` · `LCharBanditMissileNordF`: `MS13BanditCampfire02` · `LCharBanditMissileNordM`: `dunDuskglowBandit01` · `LCharBanditOnlyNordM`: `MS13BanditCampfire01`, `…03` · `LCharBandit{Melee,Missile}KhajiitM`: the two `DLC1LvlBandit…KhajiitM` (Dawnguard.esm) · `LCharBanditWizard`: `WE30Alchemist`, CC `ccBGSSSE001_LvlVagrantWizard` · the rest through a `LvlBandit*` wrapper (Lists below). 57 records; the other four moved that day are the CC Saints and Seducers wrappers (their own row), 61 in all."
+      },
+      {
+        "id": "blackblood-marauders",
+        "name": "Blackblood Marauder",
+        "records": [
+          {
+            "edid": "MS07LvlBlackbloodMeleeTankEvenTonedM",
+            "formKey": "0DC8DB:Skyrim.esm"
+          },
+          {
+            "edid": "MS07LvlBlackbloodMeleeBerserkerCommonerM",
+            "formKey": "0DC8DA:Skyrim.esm"
+          },
+          {
+            "edid": "MS07LvlBlackbloodMissileNordM",
+            "formKey": "0DC8DC:Skyrim.esm"
+          },
+          {
+            "edid": "MS07LvlBlackbloodWizardCondescendingM",
+            "formKey": "0DC8D9:Skyrim.esm"
+          },
+          {
+            "edid": "MS07LvlBlackbloodWizardNordM",
+            "formKey": "0DC8D8:Skyrim.esm"
+          },
+          {
+            "edid": "MS07LvlBlackbloodMeleeBerserkerCommonerMAmbush",
+            "formKey": "088F0C:Skyrim.esm"
+          },
+          {
+            "edid": "MS07LvlBlackbloodWizardCondescendingMAmbush",
+            "formKey": "088F11:Skyrim.esm"
+          },
+          {
+            "edid": "MS07LvlBlackbloodMeleeTankEvenTonedMAmbush",
+            "formKey": "088F0D:Skyrim.esm"
+          },
+          {
+            "edid": "DunBrokenOarLvlBanditMissileHoldPos256LinkRef",
+            "formKey": "0F6934:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "the bandit lists, through `LvlBanditMeleeTank`, `…MeleeBerserker`, `…Missile`, `…Wizard`"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Blackblood Marauder to Blooded"
+        },
+        "note": "`MS07LvlBlackbloodMeleeTankEvenTonedMAmbush` 088F0D takes its template from `MS07LvlBlackbloodMeleeTankEvenTonedM` without `Stats`, so it owns level 1. `DunBrokenOarLvlBanditMissileHoldPos256LinkRef` is nameless and takes `BaseData` from `MS07LvlBlackbloodMissileNordM`."
+      },
+      {
+        "id": "blood-horkers",
+        "name": "Blood Horker",
+        "records": [
+          {
+            "edid": "dunJaphetsLvlBanditMeleeTank",
+            "formKey": "0E6D74:Skyrim.esm"
+          },
+          {
+            "edid": "dunJaphetslvlBanditMelee2H",
+            "formKey": "0E6D73:Skyrim.esm"
+          },
+          {
+            "edid": "dunJaphetslvlBanditMeleeAny",
+            "formKey": "0E6D71:Skyrim.esm"
+          },
+          {
+            "edid": "dunJaphetslvlBanditMissile",
+            "formKey": "0E6D75:Skyrim.esm"
+          },
+          {
+            "edid": "dunJaphetsLvlBanditWizard",
+            "formKey": "0E6D76:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "the bandit lists"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: the wrappers that draw the 1–25 mook ladder are III"
+        }
+      },
+      {
+        "id": "dainty-sload",
+        "name": "Corsair · First Mate",
+        "records": [
+          {
+            "edid": "dunDaintySloadLvlSailor",
+            "formKey": "0E5F38:Skyrim.esm"
+          },
+          {
+            "edid": "dunDaintySloadLvlSailorAmbush",
+            "formKey": "100567:Skyrim.esm"
+          },
+          {
+            "edid": "dunDaintySloadLvlSailorExterior",
+            "formKey": "05B615:Skyrim.esm"
+          },
+          {
+            "edid": "dunDaintySloadLvlSailorOutfit",
+            "formKey": "100566:Skyrim.esm"
+          },
+          {
+            "edid": "dunDaintySload_LvlSailorCaptain",
+            "formKey": "0E5F37:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "`LCharBanditMelee1H`, `…MeleeNordM`, `…MeleeOrcM`"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "First Mate: `dunDaintySload_LvlSailorCaptain`."
+      },
+      {
+        "id": "cragslane",
+        "name": "Barkeep · Butcher · Bouncer · Gambler",
+        "records": [
+          {
+            "edid": "dunCragslaneBartender",
+            "formKey": "0D823D:Skyrim.esm"
+          },
+          {
+            "edid": "dunCragslaneButcher",
+            "formKey": "0D823E:Skyrim.esm"
+          },
+          {
+            "edid": "dunCragslaneLvlBanditGuard",
+            "formKey": "0D55D3:Skyrim.esm"
+          },
+          {
+            "edid": "dunCragslaneOutdoorGuy",
+            "formKey": "090C87:Skyrim.esm"
+          },
+          {
+            "edid": "dunCragslaneLvlDogfightCrowd",
+            "formKey": "0D81F3:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "the bandit lists"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "records from Update.esm overrides of Skyrim.esm; the Butcher (`dunCragslaneButcher`) is set by archetype-tiers.md §7.0 (WD-62) to the bandit chief, 28; for the census he stays with the gang."
+      },
+      {
+        "id": "mistwatch",
+        "name": "Mistwatch Bandit",
+        "records": [
+          {
+            "edid": "dunMistwatchGuard01",
+            "formKey": "0C0113:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchGuard02",
+            "formKey": "0D3BDF:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchLvlBanditMissileAggro1024",
+            "formKey": "0C0114:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchLvlBanditMeleeAnyAggro1024",
+            "formKey": "0C0115:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchLvlBanditMissile",
+            "formKey": "0C0116:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchLvlBanditMeleeBerserker",
+            "formKey": "0C0124:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchLvlBanditMeleeTank",
+            "formKey": "0C0125:Skyrim.esm"
+          },
+          {
+            "edid": "dunMIstwatchLvlBanditWizard",
+            "formKey": "0C0126:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchLvlBanditMelee1H",
+            "formKey": "0C0127:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchLvlBanditMeleeOrcM",
+            "formKey": "0C013C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "the bandit lists"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Mistwatch Bandit to Blooded"
+        },
+        "note": "`dunMistwatchLvlBanditMelee1H` 0C0127 and `dunMistwatchLvlBanditMeleeOrcM` 0C013C are nameless (`BaseData` from their list) and so show the rung name."
+      },
+      {
+        "id": "ratway",
+        "name": "Lowlife · Vagrant",
+        "records": [
+          {
+            "edid": "dunRatwayBanditMelee",
+            "formKey": "05CBE9:Skyrim.esm"
+          },
+          {
+            "edid": "dunRatwayBanditMissile",
+            "formKey": "0A3F8E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "`LCharBanditMeleeAny` · `LCharBanditMissile`"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Lowlife · Vagrant to Common"
+        }
+      },
+      {
+        "id": "poacher",
+        "name": "Poacher",
+        "records": [
+          {
+            "edid": "dunPOIPoacherLvlBanditMeleeTankAggro1024",
+            "formKey": "0D96D3:Skyrim.esm"
+          },
+          {
+            "edid": "dunPOIPoacherLvlBanditMissileAggro1024",
+            "formKey": "0D96D2:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "the bandit lists"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Poacher to Trained"
+        }
+      },
+      {
+        "id": "black-briar-mercenary",
+        "name": "Black-Briar Mercenary",
+        "records": [
+          {
+            "edid": "MS03ChaletGuard",
+            "formKey": "046E84:Skyrim.esm"
+          },
+          {
+            "edid": "MS03ChaletGuardBow",
+            "formKey": "0AD09C:Skyrim.esm"
+          },
+          {
+            "edid": "MS03ChaletGuardExterior",
+            "formKey": "068C8A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "the bandit lists"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Black-Briar Mercenary to Experienced"
+        },
+        "note": "in `BanditFaction`."
+      },
+      {
+        "id": "we17-soldiers",
+        "name": "Soldier",
+        "records": [
+          {
+            "edid": "WE17Bandit1",
+            "formKey": "09F7EA:Skyrim.esm"
+          },
+          {
+            "edid": "WE17Bandit2",
+            "formKey": "09F7F1:Skyrim.esm"
+          },
+          {
+            "edid": "WE17Bandit3",
+            "formKey": "09F7F2:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "`LvlBanditBoss` (so `LCharBanditBoss`, 6 · 10 · 16 · 21 · 28) · `LvlBanditWizard` · `LvlBanditMelee1H`"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "bands-of-power.md: most bandits; flagged: `WE17Bandit1` draws the chief ladder (on *Bandit Chiefs*)"
+        },
+        "note": "bandits in disguise, a world encounter."
+      },
+      {
+        "id": "guard-prisoner-thief",
+        "name": "Guard · Escaped Prisoner · Thief",
+        "records": [
+          {
+            "edid": "dunNilheimLvlBanditGuard",
+            "formKey": "01BB21:Skyrim.esm"
+          },
+          {
+            "edid": "LvlEscapedPrisoner",
+            "formKey": "071733:Skyrim.esm"
+          },
+          {
+            "edid": "WIThief",
+            "formKey": "023EE8:Skyrim.esm"
+          },
+          {
+            "edid": "ccBGSSSE020_WIThief",
+            "formKey": "00080C:ccbgssse020-graycowl.esl"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "`LCharBanditMeleeAny` · `LCharBanditMelee1H`"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "Guard: the Nilheim bandits; Thief: `WIThief` and the CC Gray Cowl copy (ccbgssse020-graycowl.esl)."
+      },
+      {
+        "id": "pit-fighters",
+        "name": "Pit Fighter · Pit Bandit",
+        "records": [
+          {
+            "edid": "ccKRTSSE001_PitFighter",
+            "formKey": "000809:cckrtsse001_altar.esl"
+          },
+          {
+            "edid": "ccKRTSSE001_WindhelmPitMelee",
+            "formKey": "000985:cckrtsse001_altar.esl"
+          },
+          {
+            "edid": "ccKRTSSE001_WindhelmPitMissile",
+            "formKey": "000C2B:cckrtsse001_altar.esl"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "`LCharBanditMelee1H` (the Pit Fighter)"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "CC cckrtsse001_altar.esl. `ccKRTSSE001_WindhelmPitMelee` takes no `Stats` from `LCharBanditMeleeAny` and owns level 1; `ccKRTSSE001_WindhelmPitMissile` takes none from `LCharBanditMissile` and owns PC×1 (no min, no cap)."
+      },
+      {
+        "id": "saints-seducers-bandits",
+        "name": "Saints Bandit · Seducers Bandit",
+        "records": [
+          {
+            "edid": "ccBGSSSE025_EncBanditTemplateMeleeGolden",
+            "formKey": "0009B7:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_EncBanditTemplateMissileGolden",
+            "formKey": "0009A6:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_EncBanditTemplateMeleeSeducer",
+            "formKey": "0009BF:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_EncBanditTemplateMissileSeducer",
+            "formKey": "0009A7:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_LvlGoldenBanditMelee1HAggro768",
+            "formKey": "0009CC:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_LvlGoldenBanditMissileAggro768",
+            "formKey": "0009A9:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_LvlSeducerBanditMelee1HAggro768",
+            "formKey": "0009A8:ccbgssse025-advdsgs.esm"
+          },
+          {
+            "edid": "ccBGSSSE025_LvlSeducerBanditMissileAggro768",
+            "formKey": "0009AA:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.5,
+          "min": 1,
+          "max": 25
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "bands-of-power.md: most bandits (PC×0.5, capped at 25); flagged"
+        },
+        "note": "CC ccbgssse025-advdsgs.esm: four templates (taking `BaseData` from `EncBandit00Template`) and their 34 leaves, and four wrappers moved here from *Unfiled Leveled Wrappers* (user, 2026-10-03). Saints Bandit Leader · Seducers Bandit Leader (`ccBGSSSE025_SaintsBanditLeaderName` 0A512D · `…SeducersBanditLeaderName` 0A512E) on the two refs the quest's `…BanditWithNote` aliases name."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The rung templates `EncBandit0{1–6}Template{Melee,Missile,Magic}` that set every gang's level are on *Common Bandits*; changing them also needs the records listed there.",
+      "Changing `dunRatwayBanditMelee` 05CBE9 also needs `dunRatwayGian` 10A062 (Gian the Fist, PC×0.8 [–30], on *Riften*): it uses 05CBE9 as its template but not for `Stats`.",
+      "Changing the CC `ccBGSSSE025_EncBanditTemplateMelee{Golden,Seducer}` 0009B7 · 0009BF also needs their boss leaves `ccBGSSSE025_EncGoldenBanditBoss2HRedguardM` 0009AE · `…EncSeducerBanditBoss2HNordM` 0009B0 (PC×1.25 [1–25], on *Named Bandits*): they use the templates' one-handed leaves as their template but not for `Stats`.",
+      "Rows of this page that keep their own level: `MS07LvlBlackbloodMeleeTankEvenTonedMAmbush` 088F0D (1; its template `MS07LvlBlackbloodMeleeTankEvenTonedM` without `Stats`), `ccKRTSSE001_WindhelmPitMelee` 000985 (1, no `Stats` from `LCharBanditMeleeAny`) and `ccKRTSSE001_WindhelmPitMissile` 000C2B (PC×1, no `Stats` from `LCharBanditMissile`).",
+      "Every other record here (the moved wrappers, the gang records, the 34 CC Saints and Seducers leaves) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharBanditMelee1H",
+          "formKey": "039CFC:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "seeFamily": "common-bandits",
+        "owner": "16 records here, 12 placed, ×13: `dunDaintySloadLvlSailorAmbush` 100567 ×2 · `ccBGSSSE020_WIThief` 00080C:ccbgssse020-graycowl.esl ×1 · `ccKRTSSE001_PitFighter` 000809:cckrtsse001_altar.esl ×1 · `dunCragslaneBartender` 0D823D ×1 · `dunDaintySloadLvlSailor` 0E5F38 ×1 · `dunDaintySloadLvlSailorExterior` 05B615 ×1 · `dunFortNeugrad_LvlBanditMelee1HCarryFirewood` 0C8668 ×1 · `dunFortNeugrad_LvlBanditMelee1HCarryFirewoodAmbush` 0C8619 ×1 and 4 more; not placed: `LvlEscapedPrisoner`, `MS07Bandit01Melee1H`, `WE17Bandit3`, `WIThief`"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMelee1HTank",
+          "formKey": "03DEC9:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "seeFamily": "common-bandits",
+        "owner": "10 records here, 9 placed, ×16: `MS07LvlBlackbloodMeleeTankEvenTonedM` 0DC8DB ×6 · `ccBGSSSE054_LvlBanditMeleeTank` 000812:ccbgssse054-ba_orcish.esl ×2 · `dunRobbersGorge_LvlBanditGuard` 0EE52B ×2 · `dunFortNeugradBanditMeleeTraining` 0CC509 ×1 · `dunJaphetsLvlBanditMeleeTank` 0E6D74 ×1 · `dunMistwatchLvlBanditMeleeTank` 0C0125 ×1 · `dunPOIPoacherLvlBanditMeleeTankAggro1024` 0D96D3 ×1 · `dunPOISmugglerLvlBanditMeleeTankAggro1024` 0D97EE ×1 and 1 more; not placed: `dunRobbersGorge_LvlBanditMeleeTank`"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMelee2H",
+          "formKey": "03DEC8:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "seeFamily": "common-bandits",
+        "owner": "2 records here, 2 placed, ×3: `dunJaphetslvlBanditMelee2H` 0E6D73 ×2 · `ccBGSSSE054_LvlBanditMelee2H` 000805:ccbgssse054-ba_orcish.esl ×1"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMelee2HBerserk",
+          "formKey": "03DECA:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "seeFamily": "common-bandits",
+        "owner": "6 records here, 6 placed, ×13: `MS07LvlBlackbloodMeleeBerserkerCommonerM` 0DC8DA ×7 · `dunPOISmugglerLvlBanditMeleeBerserker` 0D97ED ×2 · `dunCragslaneButcher` 0D823E ×1 · `dunMistwatchLvlBanditMeleeBerserker` 0C0124 ×1 · `dunRobbersGorge_LvlBanditMeleeBerserker` 078C16 ×1 · `MS07LvlBlackbloodMeleeBerserkerCommonerMAmbush` 088F0C ×1"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMeleeAny",
+          "formKey": "03DECD:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "seeFamily": "common-bandits",
+        "owner": "16 records here, 13 placed, ×36: `ccKRTSSE001_WindhelmPitMelee` 000985:cckrtsse001_altar.esl ×6 · `dunNilheimLvlBanditGuard` 01BB21 ×5 · `dunRatwayBanditMelee` 05CBE9 ×5 · `dunJaphetslvlBanditMeleeAny` 0E6D71 ×4 · `MS03ChaletGuard` 046E84 ×4 · `dunCragslaneLvlDogfightCrowd` 0D81F3 ×3 · `dunCragslaneOutdoorGuy` 090C87 ×2 · `MS03ChaletGuardExterior` 068C8A ×2 and 5 more; not placed: `dunPOIRaidingBandit01`, `dunRobbersGorge_LvlBanditMeleeAny`, `WEBanditMeleeNoFactionAggro`"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMissile",
+          "formKey": "01E770:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "seeFamily": "common-bandits",
+        "owner": "21 records here, 18 placed, ×40: `MS07LvlBlackbloodMissileNordM` 0DC8DC ×7 · `ccKRTSSE001_WindhelmPitMissile` 000C2B:cckrtsse001_altar.esl ×5 · `dunRatwayBanditMissile` 0A3F8E ×5 · `DunBrokenOarLvlBanditMissileHoldPos256LinkRef` 0F6934 ×3 · `dunPOIPineForest28Bandits` 0F5356 ×3 · `ccBGSSSE054_LvlBanditMissile` 000804:ccbgssse054-ba_orcish.esl ×2 · `dunJaphetslvlBanditMissile` 0E6D75 ×2 · `dunPOILvlBanditMissileAggro1536` 07F89F ×2 and 10 more; not placed: `dunKnifepointRidgeTowerGuard`, `dunPOIRaidingBandit02`, `WEBanditMissileNoFactionAggro`"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditWizard",
+          "formKey": "01E771:Skyrim.esm"
+        },
+        "gate": "highest gate ≤ player only (no flags)",
+        "seeFamily": "common-bandits",
+        "owner": "13 records here, 10 placed, ×12: `ccBGSSSE001_LvlVagrantWizard` 000E54:ccbgssse001-fish.esm ×2 · `dunJaphetsLvlBanditWizard` 0E6D76 ×2 · `dunMIstwatchLvlBanditWizard` 0C0126 ×1 · `dunPOILvlBanditWizardAggro1536` 07F89E ×1 · `dunPOISmugglerLvlBanditWizard` 0D97EF ×1 · `dunRobbersGorge_LvlBanditWizard` 078C15 ×1 · `dunWhiteRiverWatch_AlarmBandit2` 08130B ×1 · `MS07LvlBlackbloodWizardCondescendingM` 0DC8D9 ×1 and 2 more; not placed: `WE17Bandit2`, `WE30Alchemist`, `WEBanditWizardNoFaction`"
+      },
+      {
+        "list": {
+          "label": "the race and voice sublists: `LCharBandit{Melee,Missile,Wizard}{Commoner,EvenToned,Nord}{F,M}`, `LCharBanditMeleeOrcM` 01B0E9, `LCharBanditOnly{NordM,OrcM,RedguardF}` 037C28 · 037C2A · 037C29, Dawnguard's `LCharBandit{Melee,Missile}KhajiitM` 008BF7 · 008BF8:Dawnguard.esm"
+        },
+        "gate": "every gate ≤ player (`LCharBanditOnlyNordM`: highest gate only)",
+        "seeFamily": "common-bandits",
+        "owner": "23 records here, 20 placed, ×21: `dunDaintySloadLvlSailorOutfit` 100566 ×2 · `dunFrostmereCryptPursuer1` 0D0022 ×1 · `dunRavenscarTrappedBandit` 03D279 ×1 · `dunDuskglowBanditBoss` 0A63A1 ×1 · `dunFrostmereCryptBridgeGuard` 10474B ×1 · `dunFrostmereCryptPursuer2` 0D07D1 ×1 · `dunFrostmereCryptPursuer3` 0D0038 ×1 · `DunLostKnifeBanditTalk02b` 01CE59 ×1 and 12 more; not placed: `WhiterunJailPrisoner`, `DLC1LvlBanditMeleeKhajiitM`, `DLC1LvlBanditMissileKhajiitM`"
+      },
+      {
+        "list": {
+          "label": "CC `ccBGSSSE025_LChar{Golden,Seducer}Bandit{Melee1H,Missile}` 0009CF · 0009D1 · 0009D0 · 0009CE (ccbgssse025-advdsgs.esm)"
+        },
+        "gate": "every leaf at 1",
+        "note": "the Saints and Seducers leaves (8 melee, 9 archers each)",
+        "owner": "four `…Aggro768` wrappers, ×15: `Tamriel` persistent ×13 (the `009479` cell ×1), `CrystaldriftCave01` 0152A0 ×2 (initially disabled); aliases of `ccBGSSSE025_QuestA` 000912 (`SaintsCampBandit…`, `SeducersCampBandit…`), `…MiscQuest_GSDSGearBook` 000C4B, `…MiscQuest_Nerveshatter` 0010BF, and `Thug1`–`3` of `…WIKillSaintLeader` 21BD5F and `…WIKillSeducerLeader` 21BD6D"
+      },
+      {
+        "list": {
+          "label": "the lists above, for the wrappers moved here on 2026-10-03 (and the two own-level wrappers, on *Common Bandits*)"
+        },
+        "note": "where they stand",
+        "owner": "`EmbershardMine01` 0B6BE6 ×5 (CC 054; the 2H one is alias `BanditBoss` of `ccBGSSSE054_Quest` 000822); `TraitorsPostExterior02` 00B493 ×3 and `Tamriel` ×1 (the wizard: alias `Bandit` of `ccBGSSSE051_Quest` 000819); `RavenscarHollow01` 0A87C5 ×1 (alias `TrappedBandit` of `dunRavenscarQST`); `DuskglowCrevice01` 015290 ×4 (the boss and SuperMortal initially disabled; aliases of `dunDuskglowQST` 05B0EA); `LostKnifeHideout01` 015251 ×2 and `LostKnifeHideout02` 01A337 ×2 (`chattyNPC` aliases of `dunLostKnifeQST` 034C90); `BleakFallsBarrow01` 0371DE ×3 (MS13 campfire); `DLC1RedwaterDen01` 005EAB:Dawnguard.esm ×1; `FortNeugradExterior04` 009883 ×4; `KnifepointRidgeExterior04` 009BE5 ×2, `KnifepointRidgeExterior01` 009BC3 ×1; `WhiteRiverWatch01` 0151F9 ×2, initially disabled (aliases `AlarmResponder01`/`02` of `dunWhiteRiverWatchQST`); `Volskygge01` 0151FC ×4 (aliases of `dunVolskyggeQST`); `FrostmereCrypt01` 0ABD31 ×1 and `Tamriel` persistent ×3 (aliases `BridgeBandit1`, `Pursuer1`–`3` of `dunFrostmereCryptQST`); Robber's Gorge `RobbersGorgeExterior02` 00944D ×1, `…Exterior03` 00944C ×1, `Tamriel` persistent ×5 (aliases `Sentry`, `EastLeverPuller` of `dunRobbersGorgeQST`); the smugglers `POITundra01` 0095BD ×1, `Tamriel` persistent ×4; `POIPineForest28` 009C36 ×3, initially disabled; CC 001 vagrant wizards `Tamriel` ×2, initially disabled (aliases `AmbushWizard1`/`2` of `ccBGSSSE001_Misc_Morthal`); `WEBandit{Melee,Missile}NoFactionAggro`: aliases `Bandit1`–`3` of `WE20` 09F813. Not placed and named by no quest: `MS07Bandit01Melee1H`, the two DLC1 Khajiit wrappers, `WE30Alchemist`, `dunPOIRaidingBandit01`/`02`, `dunRobbersGorge_LvlBanditMeleeAny`, `dunRobbersGorge_LvlBanditMeleeTank`, `dunKnifepointRidgeTowerGuard`, `WhiterunJailPrisoner`, `WEBanditWizardNoFaction`"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Blackblood Marauder",
+        "base": [
+          {
+            "edid": "MS07LvlBlackbloodMeleeTankEvenTonedM",
+            "formKey": "0DC8DB:Skyrim.esm"
+          },
+          {
+            "edid": "MS07LvlBlackbloodMeleeBerserkerCommonerM",
+            "formKey": "0DC8DA:Skyrim.esm"
+          },
+          {
+            "edid": "MS07LvlBlackbloodMissileNordM",
+            "formKey": "0DC8DC:Skyrim.esm"
+          },
+          {
+            "edid": "MS07LvlBlackbloodWizardCondescendingM",
+            "formKey": "0DC8D9:Skyrim.esm"
+          },
+          {
+            "edid": "MS07LvlBlackbloodWizardNordM",
+            "formKey": "0DC8D8:Skyrim.esm"
+          },
+          {
+            "edid": "MS07LvlBlackbloodMeleeBerserkerCommonerMAmbush",
+            "formKey": "088F0C:Skyrim.esm"
+          },
+          {
+            "edid": "MS07LvlBlackbloodWizardCondescendingMAmbush",
+            "formKey": "088F11:Skyrim.esm"
+          },
+          {
+            "edid": "MS07LvlBlackbloodMeleeTankEvenTonedMAmbush",
+            "formKey": "088F0D:Skyrim.esm"
+          },
+          {
+            "edid": "DunBrokenOarLvlBanditMissileHoldPos256LinkRef",
+            "formKey": "0F6934:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "BrokenOarGrotto01",
+              "formKey": "0BA599:Skyrim.esm"
+            },
+            "refText": "×17"
+          },
+          {
+            "cell": {
+              "edid": "Icerunner01",
+              "formKey": "01521B:Skyrim.esm"
+            },
+            "refText": "×7"
+          },
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "×4"
+          }
+        ]
+      },
+      {
+        "name": "Blood Horker",
+        "base": [
+          {
+            "edid": "dunJaphetsLvlBanditMeleeTank",
+            "formKey": "0E6D74:Skyrim.esm"
+          },
+          {
+            "edid": "dunJaphetslvlBanditMelee2H",
+            "formKey": "0E6D73:Skyrim.esm"
+          },
+          {
+            "edid": "dunJaphetslvlBanditMeleeAny",
+            "formKey": "0E6D71:Skyrim.esm"
+          },
+          {
+            "edid": "dunJaphetslvlBanditMissile",
+            "formKey": "0E6D75:Skyrim.esm"
+          },
+          {
+            "edid": "dunJaphetsLvlBanditWizard",
+            "formKey": "0E6D76:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "JaphetsFolly02",
+              "formKey": "0414DD:Skyrim.esm"
+            },
+            "refText": "×5"
+          },
+          {
+            "cell": {
+              "edid": "JaphetsFollyOrigin",
+              "formKey": "094B4E:Skyrim.esm"
+            },
+            "refText": "×3"
+          },
+          {
+            "cell": {
+              "edid": "JaphetsFollyMarkers",
+              "formKey": "094B4B:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "JaphetsFolly01",
+              "formKey": "015281:Skyrim.esm"
+            },
+            "refText": "×1"
+          }
+        ]
+      },
+      {
+        "name": "Corsair, First Mate",
+        "base": [
+          {
+            "edid": "dunDaintySloadLvlSailor",
+            "formKey": "0E5F38:Skyrim.esm"
+          },
+          {
+            "edid": "dunDaintySloadLvlSailorAmbush",
+            "formKey": "100567:Skyrim.esm"
+          },
+          {
+            "edid": "dunDaintySloadLvlSailorExterior",
+            "formKey": "05B615:Skyrim.esm"
+          },
+          {
+            "edid": "dunDaintySloadLvlSailorOutfit",
+            "formKey": "100566:Skyrim.esm"
+          },
+          {
+            "edid": "dunDaintySload_LvlSailorCaptain",
+            "formKey": "0E5F37:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DaintySload01",
+              "formKey": "07B7AB:Skyrim.esm"
+            },
+            "refText": "×5"
+          },
+          {
+            "cell": {
+              "edid": "DaintySloadExterior01",
+              "formKey": "0091F3:Skyrim.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      },
+      {
+        "name": "Barkeep, Butcher, Bouncer, Gambler",
+        "base": [
+          {
+            "edid": "dunCragslaneBartender",
+            "formKey": "0D823D:Skyrim.esm"
+          },
+          {
+            "edid": "dunCragslaneButcher",
+            "formKey": "0D823E:Skyrim.esm"
+          },
+          {
+            "edid": "dunCragslaneLvlBanditGuard",
+            "formKey": "0D55D3:Skyrim.esm"
+          },
+          {
+            "edid": "dunCragslaneOutdoorGuy",
+            "formKey": "090C87:Skyrim.esm"
+          },
+          {
+            "edid": "dunCragslaneLvlDogfightCrowd",
+            "formKey": "0D81F3:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "CragslaneCavern01",
+              "formKey": "0152A5:Skyrim.esm"
+            },
+            "refText": "×6"
+          },
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "×2"
+          }
+        ]
+      },
+      {
+        "name": "Mistwatch Bandit",
+        "base": [
+          {
+            "edid": "dunMistwatchGuard01",
+            "formKey": "0C0113:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchGuard02",
+            "formKey": "0D3BDF:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchLvlBanditMissileAggro1024",
+            "formKey": "0C0114:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchLvlBanditMeleeAnyAggro1024",
+            "formKey": "0C0115:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchLvlBanditMissile",
+            "formKey": "0C0116:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchLvlBanditMeleeBerserker",
+            "formKey": "0C0124:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchLvlBanditMeleeTank",
+            "formKey": "0C0125:Skyrim.esm"
+          },
+          {
+            "edid": "dunMIstwatchLvlBanditWizard",
+            "formKey": "0C0126:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchLvlBanditMelee1H",
+            "formKey": "0C0127:Skyrim.esm"
+          },
+          {
+            "edid": "dunMistwatchLvlBanditMeleeOrcM",
+            "formKey": "0C013C:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Mistwatch02",
+              "formKey": "042BED:Skyrim.esm"
+            },
+            "refText": "×4"
+          },
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "MistwatchExterior01",
+              "formKey": "00BAEA:Skyrim.esm"
+            },
+            "refText": "×2"
+          },
+          {
+            "cell": {
+              "edid": "Mistwatch01",
+              "formKey": "03F516:Skyrim.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      },
+      {
+        "name": "Lowlife, Vagrant",
+        "base": [
+          {
+            "edid": "dunRatwayBanditMelee",
+            "formKey": "05CBE9:Skyrim.esm"
+          },
+          {
+            "edid": "dunRatwayBanditMissile",
+            "formKey": "0A3F8E:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenRatway01",
+              "formKey": "03B698:Skyrim.esm"
+            },
+            "refText": "×7"
+          },
+          {
+            "cell": {
+              "edid": "RiftenRatway02",
+              "formKey": "0A1BFD:Skyrim.esm"
+            },
+            "refText": "×3"
+          }
+        ]
+      },
+      {
+        "name": "Poacher",
+        "base": [
+          {
+            "edid": "dunPOIPoacherLvlBanditMeleeTankAggro1024",
+            "formKey": "0D96D3:Skyrim.esm"
+          },
+          {
+            "edid": "dunPOIPoacherLvlBanditMissileAggro1024",
+            "formKey": "0D96D2:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "POITundra03",
+              "formKey": "009103:Skyrim.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      },
+      {
+        "name": "Black-Briar Mercenary",
+        "base": [
+          {
+            "edid": "MS03ChaletGuard",
+            "formKey": "046E84:Skyrim.esm"
+          },
+          {
+            "edid": "MS03ChaletGuardBow",
+            "formKey": "0AD09C:Skyrim.esm"
+          },
+          {
+            "edid": "MS03ChaletGuardExterior",
+            "formKey": "068C8A:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "BlackBriarLodge01",
+              "formKey": "0A6D8E:Skyrim.esm"
+            },
+            "refText": "×4"
+          },
+          {
+            "cell": {
+              "edid": "BlackBriarLodgeExterior",
+              "formKey": "00BCCA:Skyrim.esm"
+            },
+            "refText": "×3"
+          }
+        ]
+      },
+      {
+        "name": "Guard (Nilheim)",
+        "base": [
+          {
+            "edid": "dunNilheimLvlBanditGuard",
+            "formKey": "01BB21:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "×5"
+          }
+        ]
+      },
+      {
+        "name": "Pit Fighter, Pit Bandit (CC)",
+        "base": [
+          {
+            "edid": "ccKRTSSE001_PitFighter",
+            "formKey": "000809:cckrtsse001_altar.esl"
+          },
+          {
+            "edid": "ccKRTSSE001_WindhelmPitMelee",
+            "formKey": "000985:cckrtsse001_altar.esl"
+          },
+          {
+            "edid": "ccKRTSSE001_WindhelmPitMissile",
+            "formKey": "000C2B:cckrtsse001_altar.esl"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccKRTSSE001QPInterior02",
+              "formKey": "002FD5:Update.esm"
+            },
+            "refText": "×12"
+          }
+        ]
+      },
+      {
+        "name": "Soldier (WE17), Escaped Prisoner, Thief",
+        "base": [
+          {
+            "edid": "WE17Bandit1",
+            "formKey": "09F7EA:Skyrim.esm"
+          },
+          {
+            "edid": "WE17Bandit2",
+            "formKey": "09F7F1:Skyrim.esm"
+          },
+          {
+            "edid": "WE17Bandit3",
+            "formKey": "09F7F2:Skyrim.esm"
+          },
+          {
+            "edid": "LvlEscapedPrisoner",
+            "formKey": "071733:Skyrim.esm"
+          },
+          {
+            "edid": "WIThief",
+            "formKey": "023EE8:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "world-encounter aliases; the CC Thief `ccBGSSSE020_WIThief` has one ref, `RiftenWorld` persistent"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Mistwatch, Poacher, Corsair (but `…SailorOutfit`), Bouncer, Guard, Escaped Prisoner, CC Pit Fighter and Pit Bandits; the moved wrappers not listed below; the CC 025 wrappers",
+        "weapons": "as the drawn leaf (*Common Bandits*)",
+        "armor": "as the drawn leaf (*Common Bandits*)",
+        "skin": "race default"
+      },
+      {
+        "records": "wrappers moved 2026-10-03 with their own gear: `dunFrostmereCryptBridgeGuard` · `dunRobbersGorge_LvlBanditGuard`",
+        "weapons": "`LItemBanditWeapon1H`, Long Bow 03B562, Iron Arrow 01397D, `LootGoldChange`, lockpick · Iron Dagger, `LItemBanditWeapon1H`, `LItemBanditWeaponMissile`, `LootBanditGold`",
+        "armor": "`BanditArmorMeleeShield20Outfit` 0C0197 · `BanditArmorMeleeHeavyOutfit` 015BE6",
+        "skin": "race default"
+      },
+      {
+        "records": "`MS13BanditCampfire02` · `…03` (own)",
+        "weapons": "Iron Dagger, `LItemBanditWeaponBow` 039D2E, `LItemBanditWeaponArrows` 039D2F · Iron Dagger, Torch 01D4EC, `LItemBanditWeapon1H`, `LootBanditGold`",
+        "armor": "`BanditArmorMeleeNoShieldOutfit` 01E608",
+        "skin": "race default"
+      },
+      {
+        "records": "`dunRavenscarTrappedBandit` (own)",
+        "weapons": "Dwarven Dagger 013996",
+        "armor": "no outfit; Hide Armor 013911, Hide Boots 013910, Hide Bracers 013912 in its inventory",
+        "skin": "race default"
+      },
+      {
+        "records": "`WhiterunJailPrisoner` (own)",
+        "weapons": "none",
+        "armor": "none",
+        "skin": "race default"
+      },
+      {
+        "records": "CC `ccBGSSSE054_LvlBanditMeleeTank` · `…Melee2H` · `…Missile` (own)",
+        "weapons": "Steel Dagger, `LItemBanditWeapon1H` · Steel Dagger, `LItemBanditWeapon2HBoss` 03DEDA · Orcish Dagger, `LItemBanditWeaponBow`, `LItemArrowsAll` 068839; each `LootGoldChange25` 04F78D",
+        "armor": "`ccBGSSSE054_ArmorBladesOutfitNoHelmetMelee` 000844 · `…ArmorBladesBossOutfit` 00083B · `…ArmorBladesOutfitMissile` 000836",
+        "skin": "race default"
+      },
+      {
+        "records": "CC `ccBGSSSE001_LvlVagrantWizard` (own)",
+        "weapons": "`LItemWeaponDaggerTown`, `LootGoldChange25`, `LootBanditRandomWizard`",
+        "armor": "`ccBGSSSE001_VagrantWizardOutfit` 000E55:ccbgssse001-fish.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Blackblood Marauders (own)",
+        "weapons": "`LItemBanditWeapon1H` / `…2H` / `…Missile`, `LootGoldChange`, lockpicks; the wizards an Iron Dagger",
+        "armor": "`ArmorLeatherNoHelmetOutfit` · `ArmorLeatherSimpleOutfit` · `WarlockOutfitLeveled` (the ambush and hold-position copies: as the drawn leaf)",
+        "skin": "race default"
+      },
+      {
+        "records": "Blood Horkers (own)",
+        "weapons": "the bandit weapon lists, `LootBanditGold`, lockpicks",
+        "armor": "the bandit outfits",
+        "skin": "race default"
+      },
+      {
+        "records": "`dunDaintySloadLvlSailorOutfit` · First Mate",
+        "weapons": "Scimitar 07A91A, small coin purse · `LItemWeaponDagger` 017178, Dainty Sload Footlocker Key, large coin purse",
+        "armor": "`dunDaintySloadOutfit` · `FineClothesOutfit01`",
+        "skin": "race default"
+      },
+      {
+        "records": "Barkeep · Butcher · Gambler",
+        "weapons": "`LItemBanditWeapon1H` · `LItemBanditWeapon2HBoss` 03DEDA and `LootBanditGoldBoss` · `LootBanditGold`",
+        "armor": "`BarkeepClothes01` · `dunCraglsaneButcherOutfit` · `FarmClothesRandom`",
+        "skin": "race default"
+      },
+      {
+        "records": "Lowlife · Vagrant",
+        "weapons": "`LItemWeapon1HIronAndSteelOnly` 10EB2F and `LItemBanditShield50` · Iron Dagger and `LItemWeaponMissileLowLevelItems` 10EB34",
+        "armor": "`GutterSaintsOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Black-Briar Mercenary (own)",
+        "weapons": "`LItemBanditWeapon` 01E60A (the archer: Iron Dagger, `LItemBanditWeaponBow` 039D2E, `…Arrows` 039D2F), a torch, Black-Briar Lodge Key",
+        "armor": "`MS03ChaletGuardOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Soldier (WE17)",
+        "weapons": "Steel Battleaxe · Steel Dagger, Long Bow, Steel Arrows · Steel Warhammer",
+        "armor": "`WE17BanditOutfit1`–`3`",
+        "skin": "race default"
+      },
+      {
+        "records": "Thief",
+        "weapons": "`LItemWeaponDagger` 017178",
+        "armor": "`ThievesGuildStandardOutfit`",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "CC `ccBGSSSE054_ArmorBladesOutfitNoHelmetMelee` 000844 · `…OutfitMissile` 000836 · `…BossOutfit` 00083B (ccbgssse054-ba_orcish.esl)"
+        },
+        "rolls": "Orcish Plate Armor 000801 and Boots 000800 (melee: plus 50% gauntlets, `ccBGSSSE054_LItemArmorAllBladesGauntlets50` 000825) · the boss copy: Orcish Plate Armor, Boots, Gauntlets and Helmet 00083D · 00083C · 00083E · 00083F"
+      },
+      {
+        "list": {
+          "label": "CC `ccBGSSSE001_VagrantWizardOutfit` 000E55 (ccbgssse001-fish.esm)"
+        },
+        "rolls": "one each of `ccBGSSSE001_LItemEnchVagrant{Boots,Hood,Robes}` 04D058 · 04D05A · 04D059: Vagrant boots, hood and robes, plain or enchanted"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "the bandit armor, weapons, bows and arrows (lists on *Common Bandits*); Hide armor, boots and bracers; Scimitar; Dwarven Dagger; Torch; the leather, sailor, barkeep, farm, fine and Gutter Saints clothes",
+        "kind": "light armor, clothing and weapons",
+        "playable": true
+      },
+      {
+        "item": "CC Orcish Plate armor (ccbgssse054-ba_orcish.esl)",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "CC Vagrant boots, hood and robes (ccbgssse001-fish.esm)",
+        "kind": "clothing",
+        "playable": true
+      }
+    ]
+  }
+}

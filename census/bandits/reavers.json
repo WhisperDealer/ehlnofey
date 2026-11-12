@@ -1,0 +1,1221 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "reavers",
+  "group": "bandits",
+  "title": "Reavers",
+  "order": 6,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "rung-01",
+        "name": "Reaver",
+        "records": [
+          {
+            "edid": "DLC2EncBandit01TemplateMelee",
+            "formKey": "01E808:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncBandit01TemplateMissile",
+            "formKey": "01E815:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncBandit01TemplateMagic",
+            "formKey": "01E807:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "level: 1 sits in Weak (I); archetype-tiers.md §3.4: the Solstheim bandit mirrors the mainland ladder"
+        },
+        "note": "About 20 Dark Elf leaves (`DLC2EncBandit01{Melee1H,Missile,Magic}DarkElf0N{F,M}`) take `Stats` and `BaseData` from the rung's three templates. The three rung-01 templates take their name from `DLC2EncBandit00Template` 01E804 (\"Reaver\"); rungs 02–06 carry their own."
+      },
+      {
+        "id": "rung-02",
+        "name": "Reaver Outlaw",
+        "records": [
+          {
+            "edid": "DLC2EncBandit02TemplateMelee",
+            "formKey": "01E81E:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncBandit02TemplateMissile",
+            "formKey": "01E81F:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncBandit02TemplateMagic",
+            "formKey": "01E81D:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Reavers match the bandit rungs (Outlaw II)"
+        },
+        "note": "About 20 Dark Elf leaves (`DLC2EncBandit02{Melee1H,Missile,Magic}DarkElf0N{F,M}`) take `Stats` and `BaseData` from the rung's three templates."
+      },
+      {
+        "id": "rung-03",
+        "name": "Reaver Thug",
+        "records": [
+          {
+            "edid": "DLC2EncBandit03TemplateMelee",
+            "formKey": "01E833:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncBandit03TemplateMissile",
+            "formKey": "01E834:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncBandit03TemplateMagic",
+            "formKey": "01E832:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 9
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Reavers match the bandit rungs (Thug III)"
+        },
+        "note": "About 20 Dark Elf leaves (`DLC2EncBandit03{Melee1H,Missile,Magic}DarkElf0N{F,M}`) take `Stats` and `BaseData` from the rung's three templates."
+      },
+      {
+        "id": "rung-04",
+        "name": "Reaver Highwayman",
+        "records": [
+          {
+            "edid": "DLC2EncBandit04TemplateMelee",
+            "formKey": "01E836:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncBandit04TemplateMissile",
+            "formKey": "01E837:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncBandit04TemplateMagic",
+            "formKey": "01E835:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 14
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "level: 14 sits in Trained (III); archetype-tiers.md §3.4: the Solstheim bandit mirrors the mainland ladder"
+        },
+        "note": "About 20 Dark Elf leaves (`DLC2EncBandit04{Melee1H,Missile,Magic}DarkElf0N{F,M}`) take `Stats` and `BaseData` from the rung's three templates."
+      },
+      {
+        "id": "rung-05",
+        "name": "Reaver Plunderer",
+        "records": [
+          {
+            "edid": "DLC2EncBandit05TemplateMelee",
+            "formKey": "01E839:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncBandit05TemplateMissile",
+            "formKey": "01E83A:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncBandit05TemplateMagic",
+            "formKey": "01E838:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 19
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Reavers match the bandit rungs (Plunderer IV)"
+        },
+        "note": "About 20 Dark Elf leaves (`DLC2EncBandit05{Melee1H,Missile,Magic}DarkElf0N{F,M}`) take `Stats` and `BaseData` from the rung's three templates."
+      },
+      {
+        "id": "rung-06",
+        "name": "Reaver Marauder",
+        "records": [
+          {
+            "edid": "DLC2EncBandit06TemplateMelee",
+            "formKey": "01E83C:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncBandit06TemplateMissile",
+            "formKey": "01E83D:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncBandit06TemplateMagic",
+            "formKey": "01E83B:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 25
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "level: 25 sits in Blooded (IV); archetype-tiers.md §3.4: the Solstheim bandit mirrors the mainland ladder"
+        },
+        "note": "About 20 Dark Elf leaves (`DLC2EncBandit06{Melee1H,Missile,Magic}DarkElf0N{F,M}`) take `Stats` and `BaseData` from the rung's three templates."
+      },
+      {
+        "id": "boss-02",
+        "name": "Reaver Outlaw",
+        "records": [
+          {
+            "edid": "DLC2EncBandit02Boss",
+            "formKey": "01E8AB:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a boss one band above its rung (Reaver Outlaw 5, I). The Reaver boss list is pinned to 28 (archetype-tiers.md §3.4 mirrors §3.1.1), so after the rebuild only a record that names this leaf directly uses this level"
+        },
+        "note": "the rung-02 boss leaf; takes `BaseData` (its name) from `DLC2EncBandit02TemplateMagic` but owns its level; drawn by `DLC2LCharBanditBoss`."
+      },
+      {
+        "id": "boss-03",
+        "name": "Reaver Thug",
+        "records": [
+          {
+            "edid": "DLC2EncBandit03Boss",
+            "formKey": "01E8AE:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: a boss one band above its rung (Reaver Thug 9, II). The Reaver boss list is pinned to 28 (archetype-tiers.md §3.4 mirrors §3.1.1), so after the rebuild only a record that names this leaf directly uses this level"
+        },
+        "note": "the rung-03 boss leaf; takes `BaseData` (its name) from `DLC2EncBandit03TemplateMagic` but owns its level; drawn by `DLC2LCharBanditBoss`."
+      },
+      {
+        "id": "boss-04",
+        "name": "Reaver Highwayman",
+        "records": [
+          {
+            "edid": "DLC2EncBandit04Boss",
+            "formKey": "01E8B1:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 16
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a boss one band above its rung (Reaver Highwayman 14, III). The Reaver boss list is pinned to 28 (archetype-tiers.md §3.4 mirrors §3.1.1), so after the rebuild only a record that names this leaf directly uses this level"
+        },
+        "note": "the rung-04 boss leaf; takes `BaseData` (its name) from `DLC2EncBandit04TemplateMagic` but owns its level; drawn by `DLC2LCharBanditBoss`."
+      },
+      {
+        "id": "boss-05",
+        "name": "Reaver Plunderer",
+        "records": [
+          {
+            "edid": "DLC2EncBandit05Boss",
+            "formKey": "01E8B2:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 21
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a boss one band above its rung (Reaver Plunderer 19, III). The Reaver boss list is pinned to 28 (archetype-tiers.md §3.4 mirrors §3.1.1), so after the rebuild only a record that names this leaf directly uses this level"
+        },
+        "note": "the rung-05 boss leaf; takes `BaseData` (its name) from `DLC2EncBandit05TemplateMagic` but owns its level; drawn by `DLC2LCharBanditBoss`."
+      },
+      {
+        "id": "boss-06",
+        "name": "Reaver Marauder",
+        "records": [
+          {
+            "edid": "DLC2EncBandit06Boss",
+            "formKey": "01E8B3:Dragonborn.esm"
+          },
+          {
+            "edid": "ccBGSSSE057_DLC2EncBandit06Boss",
+            "formKey": "000840:ccbgssse057-ba_stalhrim.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 28
+        },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 (user): the Solstheim bandit mirrors §3.1, chief 28; §3.1.1 pins the bandit chief to 28"
+        },
+        "note": "the rung-06 boss leaf; takes `BaseData` from `DLC2EncBandit06TemplateMagic` but owns its level. The CC Stalhrim copy (Stalhrim Fur armor) is not placed: `ccBGSSSE057_Quest` 00081A adds it to `DLC2LCharBanditBoss` at runtime `[unverified]`."
+      },
+      {
+        "id": "reaver-lord",
+        "name": "Reaver Lord",
+        "records": [
+          {
+            "edid": "DLC2LvlBanditBoss",
+            "formKey": "01AA2C:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2dunHaknirShoal_LvlBanditBossMaleDarkElf",
+            "formKey": "0325FE:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "DLC2LCharBanditBoss",
+            "formKey": "01E8B4:Dragonborn.esm"
+          },
+          "rungs": [
+            6,
+            10,
+            16,
+            21,
+            28
+          ]
+        },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 (user): the Solstheim bandit mirrors §3.1, chief 28; §3.1.1 pins the bandit chief to 28"
+        },
+        "note": "boss wrappers without the `BaseData` flag, so they keep their own name \"Reaver Lord\"; `Stats` from the list. The Haknir's Shoal copy stands at Haknir's treasure."
+      },
+      {
+        "id": "boss-wrappers",
+        "name": "the drawn rung's name",
+        "records": [
+          {
+            "edid": "DLC2dunBrodirGroveBanditBoss",
+            "formKey": "026B0C:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2dunNchardakBanditBoss01",
+            "formKey": "01B5BB:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2KagrumezBanditBoss",
+            "formKey": "02662F:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2WE12BanditBoss",
+            "formKey": "03923E:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "DLC2LCharBanditBoss",
+            "formKey": "01E8B4:Dragonborn.esm"
+          },
+          "rungs": [
+            6,
+            10,
+            16,
+            21,
+            28
+          ]
+        },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 (user): the Solstheim bandit mirrors §3.1, chief 28; §3.1.1 pins the bandit chief to 28"
+        },
+        "note": "boss wrappers with the `BaseData` flag, so they show the drawn boss leaf's name (Reaver Outlaw … Reaver Marauder; the name rule is not yet confirmed in game). The Kagrumez boss is spawned by `DLC2KagrumezQST` (alias BanditBoss), the `DLC2WE12` one by its world encounter."
+      },
+      {
+        "id": "wrappers",
+        "name": "the drawn rung's name",
+        "records": [
+          {
+            "edid": "DLC2LvlBanditMelee1H",
+            "formKey": "01AA2D:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2LvlBanditMelee1HGuard",
+            "formKey": "037510:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2LvlBanditMeleeTank",
+            "formKey": "01B3AA:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2LvlBanditMeleeTankAggro1024",
+            "formKey": "03535F:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2LvlBanditMissile",
+            "formKey": "01AA2E:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2LvlBanditMissileAggro1024",
+            "formKey": "035360:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2LvlBanditMissileHoldPositionCurrentLoc256",
+            "formKey": "03750F:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2LvlBanditMissileHoldPositionLinkCustom02256",
+            "formKey": "01B3A8:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2LvlBanditWizard",
+            "formKey": "01AA2F:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2LvlBanditWizardHoldPositionLinkCustom02512",
+            "formKey": "01B3C4:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2dunNchardakExteriorMissileGuard",
+            "formKey": "034B7E:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2KagrumezLvlBanditWizard_FemaleDarkElf",
+            "formKey": "0374D2:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2LvlBanditMelee1HDarkElfMCommoner",
+            "formKey": "0374BF:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2LvlBanditMelee1HDarkElfMCynical",
+            "formKey": "0374BD:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "the Reaver lists (Lists below)"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "unnamed wrappers with `Traits`, `Stats` and `BaseData` from a Reaver list (some through another wrapper: `…Melee1HGuard` and `…HoldPositionCurrentLoc256` draw `DLC2LvlBanditMelee1H` / `DLC2LvlBanditMissile`). The Kagrumez wizard is spawned by `DLC2KagrumezQST` (alias sceneBandit)."
+      },
+      {
+        "id": "haknirs-shoal",
+        "name": "Pirate · Pirate Mage · Reaver",
+        "encounter": "Haknir's Shoal",
+        "records": [
+          {
+            "edid": "DLC2dunHaknirShoal_LvlBanditMissileFemaleDarkElfCommoner",
+            "formKey": "02400B:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2dunHaknirShoal_LvlBanditWizard",
+            "formKey": "0377D5:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2dunHaknirShoal_LvlBanditMissileWoodElfF",
+            "formKey": "032600:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2WE13dunHaknirShoal_LvlBanditMissileFemaleDarkElfCommoner",
+            "formKey": "039722:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2WE13dunHaknirShoal_LvlBanditWizardMaleDarkElfCynical",
+            "formKey": "039723:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "`DLC2LCharBanditMissile` · `DLC2LCharBanditMagic`, through `DLC2LvlBanditMissile` / `DLC2LvlBanditWizard`"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "own names (no `BaseData` flag), except the `WE13` mage, which takes \"Pirate Mage\" from `…LvlBanditWizard`. The two `DLC2WE13` copies are spawned by the `DLC2WE13` world encounter."
+      },
+      {
+        "id": "pirate-captain",
+        "name": "Pirate Captain",
+        "encounter": "Haknir's Shoal",
+        "records": [
+          {
+            "edid": "DLC2dunHaknirShoal_LvlBanditBossMaleNord",
+            "formKey": "02400A:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditBossNordM2HOnly",
+            "formKey": "0E1645:Skyrim.esm"
+          },
+          "rungs": [
+            6,
+            10,
+            16,
+            21,
+            28
+          ]
+        },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1.1 (user): the bandit chief pinned to 28"
+        },
+        "note": "through `LvlBanditBossMelee2HNordM` 0E1646:Skyrim.esm: the mainland Nord two-handed boss list (*Bandit Chiefs*), not a Reaver list."
+      },
+      {
+        "id": "workers-reaver",
+        "name": "Reaver",
+        "encounter": "Temple of Miraak and the Stone of the Sun",
+        "records": [
+          {
+            "edid": "DLC2TempleWorkerBandit01",
+            "formKey": "031647:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2TempleWorkerBandit02",
+            "formKey": "031648:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2TempleWorkerBandit03",
+            "formKey": "031660:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2PillarWorkerBandit01",
+            "formKey": "03CA26:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2PillarWorkerBandit02",
+            "formKey": "03CA27:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 1,
+          "from": {
+            "edid": "DLC2EncBandit01Melee1HDarkElf01M",
+            "formKey": "01E80F:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "level: 1 sits in Weak (I), rung 01"
+        },
+        "note": "Miraak's enthralled workers; each takes `Stats` from a rung-01 leaf (`…01Melee1HDarkElf01F` 01E813 · `…01M` 01E80F · `…03F` 01E811); the Pillar workers through the Temple ones."
+      },
+      {
+        "id": "workers-outlaw",
+        "name": "Reaver Outlaw",
+        "encounter": "Temple of Miraak and the Stone of the Sun",
+        "records": [
+          {
+            "edid": "DLC2TempleWorkerBandit04",
+            "formKey": "031661:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2PillarWorkerBandit03",
+            "formKey": "03CA28:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 5,
+          "from": {
+            "edid": "DLC2EncBandit02MagicDarkElf01M",
+            "formKey": "01E824:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Reavers match the bandit rungs (Outlaw II)"
+        },
+        "note": "the Pillar worker through `DLC2TempleWorkerBandit04`."
+      },
+      {
+        "id": "cc-reaver-melee",
+        "name": "Reaver",
+        "records": [
+          {
+            "edid": "ccEDHSSE001_LvlBanditMelee1H",
+            "formKey": "000823:ccedhsse001-norjewel.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.9,
+          "min": 1,
+          "max": 25
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Reaver mooks banded with the wrappers (III)"
+        },
+        "note": "CC Nordic Jewelry: owns its level (no `Stats`); `Traits` from `ccEDHSSE001_LCharBanditMelee1H`. Carries the pack's Nordic amulet, ring and circlet lists."
+      },
+      {
+        "id": "cc-reaver-missile",
+        "name": "Reaver",
+        "records": [
+          {
+            "edid": "ccEDHSSE001_LvlBanditMissile",
+            "formKey": "000824:ccedhsse001-norjewel.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.6,
+          "min": 1,
+          "max": 25
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Reaver mooks banded with the wrappers (III)"
+        },
+        "note": "CC Nordic Jewelry: owns its level (no `Stats`); `Traits` from `ccEDHSSE001_LCharBanditMissile`."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `DLC2EncBandit0NTemplateMagic` (02–06) also needs that rung's boss leaf `DLC2EncBandit0NBoss` (6 · 10 · 16 · 21 · 28, its own rows), which uses it as its template but not for `Stats`; `DLC2EncBandit06TemplateMagic` likewise for CC `ccBGSSSE057_DLC2EncBandit06Boss` (28).",
+      "Changing `DLC2EncBandit01TemplateMelee` 01E808 also needs `ccASVSSE001_EncAshZombie` 0A840A:ccasvsse001-almsivi.esm (PC×1 [6–50], on Undead → Ash → *Ash Zombie (CC)*): it uses 01E808 as its template but not for `Stats`.",
+      "Changing `DLC2EncBandit02TemplateMagic` 01E81D also needs `ccASVSSE001_Priest01` 000E72 and `ccASVSSE001_Sculptor` 0EF2B4 (ccasvsse001-almsivi.esm, 1, on *Ghosts of the Tribunal*): they use its leaf `DLC2EncBandit02MagicDarkElf03M` as their template but not for `Stats`.",
+      "Changing `DLC2EncBandit04TemplateMagic` 01E835 also needs six Ghosts of the Tribunal records through its leaf `DLC2EncBandit04MagicDarkElf02M`: the Ordinators `ccASVSSE001_OrdinatorGuard` 000843 and `…OrdinatorGuardMale` 001024 (1), `…OrdinatorGuardBarracks` 0008F3 and `…Blacksmith` 001175 (PC×1), `…HandHlan` 000842 (PC×1 [15–60]), `…HandTherethi` 00083D (PC×1.2 [15–100]); all ccasvsse001-almsivi.esm, same pattern.",
+      "Changing `DLC2EncBandit04TemplateMissile` 01E837 also needs `ccASVSSE001_HandVesparth` 000841 (PC×1.2 [20–100], through leaf `…04MissileDarkElf03F`) and `…OrdinatorGuardFemale` 000833 (1, `…04MissileDarkElf01F`); changing `DLC2EncBandit05TemplateMissile` 01E83A also needs `ccASVSSE001_HandIndobar` 00083E (PC×1.2 [20–100], `…05MissileDarkElf04M`) and `…OrdinatorGuardPatrolFemale` 001018 (1, `…05MissileDarkElf03F`); all ccasvsse001-almsivi.esm, on *Ghosts of the Tribunal*, same pattern.",
+      "Records filed elsewhere that do carry `Stats` from a rung-01 leaf, so they move with rung 01: the Haknir's Shoal Treasure Hunters `DLC2dunHakinrsShoal_TreasureHunter01` 0377DB · `…02` 0377DC (World → Solstheim → *Solstheim Countryside*), and the `StartsDead` corpses `DLC2TreasCorpseBandit*` (21), `DLC2RieklingCampBanditCorpse` 03A1F0 and CC `ccKRTSSE001_DLC2Corpse01` 000875:cckrtsse001_altar.esl (not enemies).",
+      "The other rows: no other record keeps its own level. Every other Reaver record (the Dark Elf leaves, the `DLC2LvlBandit*` and boss wrappers, the Haknir's Shoal crew, the Temple and Pillar workers) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC2LCharBanditMelee1H",
+          "formKey": "01E8A9:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DLC2SubCharBandit01Melee`"
+          },
+          {
+            "at": 5,
+            "label": "`DLC2SubCharBandit02Melee`"
+          },
+          {
+            "at": 9,
+            "label": "`DLC2SubCharBandit03Melee`"
+          },
+          {
+            "at": 14,
+            "label": "`DLC2SubCharBandit04Melee`"
+          },
+          {
+            "at": 19,
+            "label": "`DLC2SubCharBandit05Melee`"
+          },
+          {
+            "at": 25,
+            "label": "`DLC2SubCharBandit06Melee`"
+          }
+        ],
+        "note": "each melee sublist holds its rung's 11 Dark Elf one-handed leaves",
+        "owner": "`DLC2LvlBanditMelee1H` ×6, `…MeleeTank` ×4, `…MeleeTankAggro1024` ×3, `…Melee1HGuard` ×2 (×15)",
+        "drawnBy": [
+          {
+            "name": "Morag Tong Assassins",
+            "records": [
+              {
+                "edid": "DLC2LvlMoragTongMelee1H",
+                "formKey": "0271C3:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Minor Factions → *Morag Tong*",
+            "note": "takes `Stats` and `Traits`; placed ×6 at Ashfallow Citadel"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharBanditMelee1HDarkElfMCommoner",
+          "formKey": "0374C0:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DLC2EncBandit01Melee1HDarkElf01M`"
+          },
+          {
+            "at": 5,
+            "label": "`DLC2EncBandit02Melee1HDarkElf01M`"
+          },
+          {
+            "at": 9,
+            "label": "`DLC2EncBandit03Melee1HDarkElf01M`"
+          },
+          {
+            "at": 14,
+            "label": "`DLC2EncBandit04Melee1HDarkElf01M`"
+          },
+          {
+            "at": 19,
+            "label": "`DLC2EncBandit05Melee1HDarkElf01M`"
+          },
+          {
+            "at": 25,
+            "label": "`DLC2EncBandit06Melee1HDarkElf01M`"
+          }
+        ],
+        "note": "one voice's leaf from each rung",
+        "owner": "`DLC2LvlBanditMelee1HDarkElfMCommoner` 0374BF ×2: `DLC2DamphallMine01` ×1, `DLC2HrodulfsHouse` ×1"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharBanditMelee1HDarkElfMCynical",
+          "formKey": "0374BE:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DLC2EncBandit01Melee1HDarkElf03M`"
+          },
+          {
+            "at": 5,
+            "label": "`DLC2EncBandit02Melee1HDarkElf03M`"
+          },
+          {
+            "at": 9,
+            "label": "`DLC2EncBandit03Melee1HDarkElf03M`"
+          },
+          {
+            "at": 14,
+            "label": "`DLC2EncBandit04Melee1HDarkElf03M`"
+          },
+          {
+            "at": 19,
+            "label": "`DLC2EncBandit05Melee1HDarkElf03M`"
+          },
+          {
+            "at": 25,
+            "label": "`DLC2EncBandit06Melee1HDarkElf03M`"
+          }
+        ],
+        "note": "one voice's leaf from each rung",
+        "owner": "`DLC2LvlBanditMelee1HDarkElfMCynical` 0374BD ×2: `DLC2DamphallMine01` ×1, `DLC2HrodulfsHouse` ×1"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharBanditMissile",
+          "formKey": "01E8AA:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DLC2SubCharBandit01Missile`"
+          },
+          {
+            "at": 5,
+            "label": "`DLC2SubCharBandit02Missile`"
+          },
+          {
+            "at": 9,
+            "label": "`DLC2SubCharBandit03Missile`"
+          },
+          {
+            "at": 14,
+            "label": "`DLC2SubCharBandit04Missile`"
+          },
+          {
+            "at": 19,
+            "label": "`DLC2SubCharBandit05Missile`"
+          },
+          {
+            "at": 25,
+            "label": "`DLC2SubCharBandit06Missile`"
+          }
+        ],
+        "note": "each missile sublist holds its rung's 11 Dark Elf archers",
+        "owner": "`…HoldPositionCurrentLoc256` ×6, `DLC2LvlBanditMissile` ×4, `…MissileAggro1024` ×4, `…HoldPositionLinkCustom02256` ×3, Nchardak guard ×3, Haknir's Shoal ×2 (×22); the `DLC2WE13` Pirate (spawned)",
+        "drawnBy": [
+          {
+            "name": "Morag Tong Assassins",
+            "records": [
+              {
+                "edid": "DLC2LvlMoragTongMissile",
+                "formKey": "0271C4:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Minor Factions → *Morag Tong*",
+            "note": "takes `Stats` and `Traits`; placed ×4 at Ashfallow Citadel"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharBanditMagic",
+          "formKey": "01E8A8:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DLC2SubCharBandit01Magic`"
+          },
+          {
+            "at": 5,
+            "label": "`DLC2SubCharBandit02Magic`"
+          },
+          {
+            "at": 9,
+            "label": "`DLC2SubCharBandit03Magic`"
+          },
+          {
+            "at": 14,
+            "label": "`DLC2SubCharBandit04Magic`"
+          },
+          {
+            "at": 19,
+            "label": "`DLC2SubCharBandit05Magic`"
+          },
+          {
+            "at": 25,
+            "label": "`DLC2SubCharBandit06Magic`"
+          }
+        ],
+        "note": "each magic sublist holds its rung's 6–7 Dark Elf mages",
+        "owner": "`DLC2LvlBanditWizard` ×2, `…WizardHoldPositionLinkCustom02512` ×2, Haknir's Shoal ×1 (×5); the Kagrumez wizard and the `DLC2WE13` Pirate Mage (spawned)"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharBanditBoss",
+          "formKey": "01E8B4:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DLC2EncBandit02Boss` (6)"
+          },
+          {
+            "at": 14,
+            "label": "`DLC2EncBandit03Boss` (10)"
+          },
+          {
+            "at": 19,
+            "label": "`DLC2EncBandit04Boss` (16)"
+          },
+          {
+            "at": 25,
+            "label": "`DLC2EncBandit05Boss` (21)"
+          },
+          {
+            "at": 29,
+            "label": "`DLC2EncBandit06Boss` (28)"
+          }
+        ],
+        "note": "CC `ccBGSSSE057_Quest` 00081A adds its Reaver Marauder at runtime (gate set in the script `[unverified]`)",
+        "owner": "`DLC2LvlBanditBoss` ×3, Brodir Grove ×1, Nchardak ×1, Haknir's Shoal ×1 (×6); the Kagrumez and `DLC2WE12` bosses (spawned)"
+      },
+      {
+        "list": {
+          "edid": "ccEDHSSE001_LCharBanditMelee1H",
+          "formKey": "000825:ccedhsse001-norjewel.esl"
+        },
+        "gate": "highest gate ≤ player only",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DLC2SubCharBandit01Melee`"
+          },
+          {
+            "at": 5,
+            "label": "`DLC2SubCharBandit02Melee`"
+          },
+          {
+            "at": 9,
+            "label": "`DLC2SubCharBandit03Melee`"
+          },
+          {
+            "at": 14,
+            "label": "`DLC2SubCharBandit04Melee`"
+          },
+          {
+            "at": 19,
+            "label": "`DLC2SubCharBandit05Melee`"
+          },
+          {
+            "at": 25,
+            "label": "`DLC2SubCharBandit06Melee`"
+          }
+        ],
+        "note": "CC Nordic Jewelry; the wrapper owns its level, so the list lends only `Traits`",
+        "owner": "`ccEDHSSE001_LvlBanditMelee1H` ×1"
+      },
+      {
+        "list": {
+          "edid": "ccEDHSSE001_LCharBanditMissile",
+          "formKey": "000826:ccedhsse001-norjewel.esl"
+        },
+        "gate": "highest gate ≤ player only",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DLC2SubCharBandit01Missile`"
+          },
+          {
+            "at": 5,
+            "label": "`DLC2SubCharBandit02Missile`"
+          },
+          {
+            "at": 9,
+            "label": "`DLC2SubCharBandit03Missile`"
+          },
+          {
+            "at": 14,
+            "label": "`DLC2SubCharBandit04Missile`"
+          },
+          {
+            "at": 19,
+            "label": "`DLC2SubCharBandit05Missile`"
+          },
+          {
+            "at": 25,
+            "label": "`DLC2SubCharBandit06Missile`"
+          }
+        ],
+        "note": "CC Nordic Jewelry; the wrapper owns its level, so the list lends only `Traits`",
+        "owner": "`ccEDHSSE001_LvlBanditMissile` ×1"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Reaver, Reaver Outlaw (Temple of Miraak workers)",
+        "base": [
+          {
+            "edid": "DLC2TempleWorkerBandit01",
+            "formKey": "031647:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2TempleWorkerBandit02",
+            "formKey": "031648:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2TempleWorkerBandit03",
+            "formKey": "031660:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2TempleWorkerBandit04",
+            "formKey": "031661:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2TempleofMiraakExterior01",
+              "formKey": "00EE0A:Dragonborn.esm"
+            },
+            "note": "×3"
+          },
+          {
+            "cell": {
+              "edid": "DLC2TempleofMiraakExterior04",
+              "formKey": "00EE2B:Dragonborn.esm"
+            },
+            "note": "×2"
+          }
+        ]
+      },
+      {
+        "name": "Reaver, Reaver Outlaw (Pillar workers)",
+        "base": [
+          {
+            "edid": "DLC2PillarWorkerBandit01",
+            "formKey": "03CA26:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2PillarWorkerBandit02",
+            "formKey": "03CA27:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2PillarWorkerBandit03",
+            "formKey": "03CA28:Dragonborn.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2StoneSun",
+              "formKey": "00EECC:Dragonborn.esm"
+            },
+            "note": "×6"
+          }
+        ]
+      },
+      {
+        "name": "Reaver (CC)",
+        "base": [
+          {
+            "edid": "ccEDHSSE001_LvlBanditMelee1H",
+            "formKey": "000823:ccedhsse001-norjewel.esl"
+          },
+          {
+            "edid": "ccEDHSSE001_LvlBanditMissile",
+            "formKey": "000824:ccedhsse001-norjewel.esl"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2SolstheimWorld",
+              "formKey": "000800:Dragonborn.esm"
+            },
+            "persistent": true,
+            "note": "×2"
+          }
+        ]
+      },
+      {
+        "name": "the Kagrumez boss and wizard",
+        "base": [
+          {
+            "edid": "DLC2KagrumezBanditBoss",
+            "formKey": "02662F:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2KagrumezLvlBanditWizard_FemaleDarkElf",
+            "formKey": "0374D2:Dragonborn.esm"
+          }
+        ],
+        "notPlaced": true,
+        "quest": "`DLC2KagrumezQST` 03166D (aliases BanditBoss, sceneBandit)"
+      },
+      {
+        "name": "the world-encounter Reavers",
+        "base": [
+          {
+            "edid": "DLC2WE12BanditBoss",
+            "formKey": "03923E:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2WE13dunHaknirShoal_LvlBanditMissileFemaleDarkElfCommoner",
+            "formKey": "039722:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2WE13dunHaknirShoal_LvlBanditWizardMaleDarkElfCynical",
+            "formKey": "039723:Dragonborn.esm"
+          }
+        ],
+        "notPlaced": true,
+        "quest": "`DLC2WE12` 03923B · `DLC2WE13` 03971F (alias Actor1/Actor2)"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "melee templates and the leaves that take `Inventory`",
+        "weapons": "`LItemBanditWeapon1H` 037C1B, `DLC2LootBanditRandom` 03183B ×2, gold (05–06: `LootBanditGold`, lockpick)",
+        "armor": "`BanditArmorMeleeShield20Outfit` 0C0197",
+        "skin": "race default"
+      },
+      {
+        "records": "melee leaves with their own gear",
+        "weapons": "`LItemBanditWeapon1H`, `DLC2LootBanditRandom`, gold",
+        "armor": "`DLC2BanditArmorMeleeShield20Outfit` 026B46",
+        "skin": "race default"
+      },
+      {
+        "records": "archer templates and the leaves that take `Inventory`",
+        "weapons": "`LItemWeaponDaggerTown` 017177, `LItemBanditWeaponMissile` 037BFD, `LootBanditArrows15` 08777F, `DLC2LootBanditRandom`, gold",
+        "armor": "`BanditArmorMeleeNoShieldOutfit` 01E608",
+        "skin": "race default"
+      },
+      {
+        "records": "archer leaves with their own gear",
+        "weapons": "the same",
+        "armor": "`DLC2BanditArmorNoShieldOutfit` 026B5B",
+        "skin": "race default"
+      },
+      {
+        "records": "wizard templates and leaves",
+        "weapons": "Iron Dagger (01–02), Steel Dagger (03), `LItemWeaponDaggerTown` (04–06), `LootBanditRandomWizard` 10E0E5, gold",
+        "armor": "`BanditMageOutfit` 06E26F",
+        "skin": "race default"
+      },
+      {
+        "records": "`DLC2EncBandit0NBoss`",
+        "weapons": "`LItemBanditBossWeapon1H` 03DF1C, `LootBanditGoldBoss`, `DLC2LootBanditRandom`; Steel Dagger (02–03), Orcish (04), Elven (05–06)",
+        "armor": "`DLC2BanditArmorBoss` 026B60",
+        "skin": "race default"
+      },
+      {
+        "records": "CC 057 Reaver Marauder",
+        "weapons": "as `DLC2EncBandit06Boss`",
+        "armor": "`ccBGSSSE057_ArmorBladesOutfitNoHelmet` 000811 (Stalhrim Fur)",
+        "skin": "race default"
+      },
+      {
+        "records": "`DLC2dunBrodirGroveBanditBoss`",
+        "weapons": "Stormfang 026B0B, `LootBanditGoldBoss`",
+        "armor": "`BanditArmorHeavyBossNoShieldOutfit` 0A95F8",
+        "skin": "race default"
+      },
+      {
+        "records": "`DLC2KagrumezBanditBoss`",
+        "weapons": "`DLC2LItemWeaponMaceDremora` 01FF0F (Steel to Ebony mace), Raleth's journal",
+        "armor": "`DLC2BanditArmorBoss`",
+        "skin": "race default"
+      },
+      {
+        "records": "CC Reavers",
+        "weapons": "as rung 01's melee and archer template, plus the Nordic amulet, ring and circlet lists (melee)",
+        "armor": "as rung 01",
+        "skin": "race default"
+      },
+      {
+        "records": "the wrappers, workers and Haknir's Shoal crew",
+        "weapons": "as the drawn leaf or template",
+        "armor": "as the drawn leaf or template",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC2BanditArmorMeleeShield20Outfit",
+          "formKey": "026B46:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Bonemold, Fur, Hide, Iron, Studded 1 · Leather, Steel gauntlets 6 · Chitin, Elven shield 12 · Steel Plate gauntlets 15 · Chitin Heavy 16 · Scaled, Scaled Horn 19 (pieces and a shield)"
+      },
+      {
+        "list": {
+          "edid": "DLC2BanditArmorNoShieldOutfit",
+          "formKey": "026B5B:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Bonemold, Fur, Hide, Studded 1 · Leather 6 · Chitin 12 · Scaled, Scaled Horn 19"
+      },
+      {
+        "list": {
+          "edid": "DLC2BanditArmorBoss",
+          "formKey": "026B60:Dragonborn.esm"
+        },
+        "gate": "highest gate ≤ player only",
+        "rolls": "Bonemold 1 · Chitin Heavy 18 · Nordic 25 · Stalhrim, Stalhrim Light or Nordic 40 (a full set each)"
+      },
+      {
+        "list": {
+          "edid": "DLC2LootBanditRandom",
+          "formKey": "03183B:Dragonborn.esm"
+        },
+        "rolls": "25% none; all of: lockpick, food, gems, ingots, jewelry, drink, tools"
+      },
+      {
+        "list": {
+          "label": "the mainland weapon, archer and boss lists"
+        },
+        "rolls": "as on *Common Bandits* and *Bandit Chiefs*"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Fur, Hide, Studded, Leather, Chitin, Elven, Scaled, Scaled Horn, Stalhrim Light armor",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Bonemold, Iron, Steel, Steel Plate, Chitin Heavy, Nordic, Stalhrim, Stalhrim Fur (CC) armor and shields",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Stormfang and the other weapons",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

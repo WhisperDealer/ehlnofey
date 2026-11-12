@@ -1,0 +1,2122 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "bandit-chiefs",
+  "group": "bandits",
+  "title": "Bandit Chiefs",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "boss-rung-02",
+        "name": "Bandit Outlaw",
+        "records": [
+          {
+            "edid": "EncBandit02Boss1HImperialF",
+            "formKey": "03DEDE:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit02Boss1HImperialM",
+            "formKey": "03DEDF:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit02Boss1HNordF",
+            "formKey": "03DEE0:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit02Boss1HNordM",
+            "formKey": "03DEE1:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit02Boss1HRedguardF",
+            "formKey": "03DEE2:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit02Boss1HRedguardM",
+            "formKey": "03DEE3:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit02Boss2HImperialM",
+            "formKey": "03DEF0:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit02Boss2HNordM",
+            "formKey": "03DEE4:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit02Boss2HOrcM",
+            "formKey": "03DEE5:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit02Boss2HRedguardM",
+            "formKey": "03DEE6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: a boss one band above its rung (Bandit Outlaw 5, I). Under the pin no vanilla list draws this rung after the rebuild (only the CC sublists below still hold it), so the band matters only if the user unpins the chief.; user, 2026-11-12: kept as documented, but the rebuilt lists spawn Bandit Chiefs only at 28"
+        },
+        "note": "the rung-02 boss leaves: `EncBandit02Boss{1H,2H}<Race><Sex>` (1H Imperial, Nord and Redguard, F and M; 2H Imperial, Nord, Orc and Redguard M). Each owns its level and takes `BaseData` (its name) from the common leaf of the same race and sex (`EncBandit02Melee1H<Race><Sex>`; the 2H leaves too); none has a name of its own."
+      },
+      {
+        "id": "boss-rung-03",
+        "name": "Bandit Thug",
+        "records": [
+          {
+            "edid": "EncBandit03Boss1HImperialF",
+            "formKey": "03DEE7:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit03Boss1HImperialM",
+            "formKey": "03DEE8:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit03Boss1HNordF",
+            "formKey": "03DEE9:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit03Boss1HNordM",
+            "formKey": "03DEEA:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit03Boss1HRedguardF",
+            "formKey": "03DEEB:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit03Boss1HRedguardM",
+            "formKey": "03DEEC:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit03Boss2HImperialM",
+            "formKey": "03DEF1:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit03Boss2HNordM",
+            "formKey": "03DEED:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit03Boss2HOrcM",
+            "formKey": "03DEEE:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit03Boss2HRedguardM",
+            "formKey": "03DEEF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: a boss one band above its rung (Bandit Thug 9, II). Under the pin no vanilla list draws this rung after the rebuild (only the CC sublists below still hold it), so the band matters only if the user unpins the chief.; user, 2026-11-12: kept as documented, but the rebuilt lists spawn Bandit Chiefs only at 28"
+        },
+        "note": "the rung-03 boss leaves: `EncBandit03Boss{1H,2H}<Race><Sex>` (1H Imperial, Nord and Redguard, F and M; 2H Imperial, Nord, Orc and Redguard M). Each owns its level and takes `BaseData` (its name) from the common leaf of the same race and sex; `EncBandit03Boss1HNordM` takes it from `EncBandit03TemplateMelee` 01BCDA; none has a name of its own."
+      },
+      {
+        "id": "boss-rung-04",
+        "name": "Bandit Highwayman",
+        "records": [
+          {
+            "edid": "EncBandit04Boss1HImperialF",
+            "formKey": "03DEF2:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit04Boss1HImperialM",
+            "formKey": "03DEF3:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit04Boss1HNordF",
+            "formKey": "03DEF4:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit04Boss1HNordM",
+            "formKey": "03DEF5:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit04Boss1HRedguardF",
+            "formKey": "03DEF6:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit04Boss1HRedguardM",
+            "formKey": "03DEF7:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit04Boss2HImperialM",
+            "formKey": "03DEFB:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit04Boss2HNordM",
+            "formKey": "03DEF8:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit04Boss2HOrcM",
+            "formKey": "03DEF9:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit04Boss2HRedguardM",
+            "formKey": "03DEFA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 16
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: a boss one band above its rung (Bandit Highwayman 14, III). Under the pin no vanilla list draws this rung after the rebuild (only the CC sublists below still hold it), so the band matters only if the user unpins the chief.; user, 2026-11-12: kept as documented, but the rebuilt lists spawn Bandit Chiefs only at 28"
+        },
+        "note": "the rung-04 boss leaves: `EncBandit04Boss{1H,2H}<Race><Sex>` (1H Imperial, Nord and Redguard, F and M; 2H Imperial, Nord, Orc and Redguard M). Each owns its level and takes `BaseData` (its name) from the common leaf of the same race and sex; none has a name of its own."
+      },
+      {
+        "id": "boss-rung-05",
+        "name": "Bandit Plunderer",
+        "records": [
+          {
+            "edid": "EncBandit05Boss1HImperialF",
+            "formKey": "03DEFC:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit05Boss1HImperialM",
+            "formKey": "03DEFD:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit05Boss1HNordF",
+            "formKey": "03DEFE:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit05Boss1HNordM",
+            "formKey": "03DEFF:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit05Boss1HRedguardF",
+            "formKey": "03DF00:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit05Boss1HRedguardM",
+            "formKey": "03DF01:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit05Boss2HImperialM",
+            "formKey": "03DF05:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit05Boss2HNordM",
+            "formKey": "03DF02:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit05Boss2HOrcM",
+            "formKey": "03DF03:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit05Boss2HRedguardM",
+            "formKey": "03DF04:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 21
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "level: 21 sits in Blooded (IV), one band above its rung (Bandit Plunderer 19, III). Under the pin no vanilla list draws this rung after the rebuild (only the CC sublists below still hold it), so the band matters only if the user unpins the chief.; user, 2026-11-12: kept as documented, but the rebuilt lists spawn Bandit Chiefs only at 28"
+        },
+        "note": "the rung-05 boss leaves: `EncBandit05Boss{1H,2H}<Race><Sex>` (1H Imperial, Nord and Redguard, F and M; 2H Imperial, Nord, Orc and Redguard M). Each owns its level and takes `BaseData` (its name) from the common leaf of the same race and sex; none has a name of its own."
+      },
+      {
+        "id": "boss-rung-06",
+        "name": "Bandit Marauder",
+        "records": [
+          {
+            "edid": "EncBandit06Boss1HImperialF",
+            "formKey": "03DF06:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit06Boss1HImperialM",
+            "formKey": "03DF07:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit06Boss1HNordF",
+            "formKey": "03DF08:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit06Boss1HNordM",
+            "formKey": "03DF09:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit06Boss1HRedguardF",
+            "formKey": "03DF0A:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit06Boss1HRedguardM",
+            "formKey": "03DF0B:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit06Boss2HImperialM",
+            "formKey": "03DF0F:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit06Boss2HNordM",
+            "formKey": "03DF0C:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit06Boss2HOrcM",
+            "formKey": "03DF0D:Skyrim.esm"
+          },
+          {
+            "edid": "EncBandit06Boss2HRedguardM",
+            "formKey": "03DF0E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 28
+        },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 and §3.1.1 (user, decided 2026-07-30, kept by WD-42): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere"
+        },
+        "note": "the rung-06 boss leaves: `EncBandit06Boss{1H,2H}<Race><Sex>` (1H Imperial, Nord and Redguard, F and M; 2H Imperial, Nord, Orc and Redguard M). Each owns its level and takes `BaseData` (its name) from the common leaf of the same race and sex; none has a name of its own. The rung the chief is pinned to."
+      },
+      {
+        "id": "cc-rung-02",
+        "name": "Bandit Outlaw",
+        "records": [
+          {
+            "edid": "ccBGSSSE052_EncBandit02Boss1HImperialF",
+            "formKey": "00083B:ccbgssse052-ba_iron.esl"
+          },
+          {
+            "edid": "ccBGSSSE052_EncBandit02Boss1HImperialM",
+            "formKey": "00083C:ccbgssse052-ba_iron.esl"
+          },
+          {
+            "edid": "ccBGSSSE052_EncBandit02Boss1HNordF",
+            "formKey": "00083D:ccbgssse052-ba_iron.esl"
+          },
+          {
+            "edid": "ccBGSSSE052_EncBandit02Boss1HNordM",
+            "formKey": "00083E:ccbgssse052-ba_iron.esl"
+          },
+          {
+            "edid": "ccBGSSSE052_EncBandit02Boss1HRedguardF",
+            "formKey": "00083F:ccbgssse052-ba_iron.esl"
+          },
+          {
+            "edid": "ccBGSSSE052_EncBandit02Boss1HRedguardM",
+            "formKey": "000840:ccbgssse052-ba_iron.esl"
+          },
+          {
+            "edid": "ccBGSSSE052_EncBandit02Boss2HImperialM",
+            "formKey": "000841:ccbgssse052-ba_iron.esl"
+          },
+          {
+            "edid": "ccBGSSSE052_EncBandit02Boss2HNordM",
+            "formKey": "000842:ccbgssse052-ba_iron.esl"
+          },
+          {
+            "edid": "ccBGSSSE052_EncBandit02Boss2HOrcM",
+            "formKey": "000843:ccbgssse052-ba_iron.esl"
+          },
+          {
+            "edid": "ccBGSSSE052_EncBandit02Boss2HRedguardM",
+            "formKey": "000844:ccbgssse052-ba_iron.esl"
+          },
+          {
+            "edid": "ccBGSSSE053_EncBandit02Boss1HImperialF",
+            "formKey": "000833:ccbgssse053-ba_leather.esl"
+          },
+          {
+            "edid": "ccBGSSSE053_EncBandit02Boss1HImperialM",
+            "formKey": "000834:ccbgssse053-ba_leather.esl"
+          },
+          {
+            "edid": "ccBGSSSE053_EncBandit02Boss1HNordF",
+            "formKey": "000835:ccbgssse053-ba_leather.esl"
+          },
+          {
+            "edid": "ccBGSSSE053_EncBandit02Boss1HNordM",
+            "formKey": "000836:ccbgssse053-ba_leather.esl"
+          },
+          {
+            "edid": "ccBGSSSE053_EncBandit02Boss1HRedguardF",
+            "formKey": "000837:ccbgssse053-ba_leather.esl"
+          },
+          {
+            "edid": "ccBGSSSE053_EncBandit02Boss1HRedguardM",
+            "formKey": "000838:ccbgssse053-ba_leather.esl"
+          },
+          {
+            "edid": "ccBGSSSE053_EncBandit02Boss2HImperialM",
+            "formKey": "000839:ccbgssse053-ba_leather.esl"
+          },
+          {
+            "edid": "ccBGSSSE053_EncBandit02Boss2HNordM",
+            "formKey": "00083A:ccbgssse053-ba_leather.esl"
+          },
+          {
+            "edid": "ccBGSSSE053_EncBandit02Boss2HOrcM",
+            "formKey": "00083B:ccbgssse053-ba_leather.esl"
+          },
+          {
+            "edid": "ccBGSSSE053_EncBandit02Boss2HRedguardM",
+            "formKey": "00083C:ccbgssse053-ba_leather.esl"
+          },
+          {
+            "edid": "ccBGSSSE056_EncBandit02Boss1HImperialF",
+            "formKey": "00082E:ccbgssse056-ba_silver.esl"
+          },
+          {
+            "edid": "ccBGSSSE056_EncBandit02Boss1HImperialM",
+            "formKey": "00082D:ccbgssse056-ba_silver.esl"
+          },
+          {
+            "edid": "ccBGSSSE056_EncBandit02Boss1HNordF",
+            "formKey": "00082C:ccbgssse056-ba_silver.esl"
+          },
+          {
+            "edid": "ccBGSSSE056_EncBandit02Boss1HNordM",
+            "formKey": "00082B:ccbgssse056-ba_silver.esl"
+          },
+          {
+            "edid": "ccBGSSSE056_EncBandit02Boss1HRedguardF",
+            "formKey": "00082A:ccbgssse056-ba_silver.esl"
+          },
+          {
+            "edid": "ccBGSSSE056_EncBandit02Boss1HRedguardM",
+            "formKey": "000829:ccbgssse056-ba_silver.esl"
+          },
+          {
+            "edid": "ccBGSSSE056_EncBandit02Boss2HImperialM",
+            "formKey": "000828:ccbgssse056-ba_silver.esl"
+          },
+          {
+            "edid": "ccBGSSSE056_EncBandit02Boss2HNordM",
+            "formKey": "000827:ccbgssse056-ba_silver.esl"
+          },
+          {
+            "edid": "ccBGSSSE056_EncBandit02Boss2HOrcM",
+            "formKey": "000826:ccbgssse056-ba_silver.esl"
+          },
+          {
+            "edid": "ccBGSSSE056_EncBandit02Boss2HRedguardM",
+            "formKey": "000825:ccbgssse056-ba_silver.esl"
+          },
+          {
+            "edid": "ccBGSSSE058_EncBandit02Boss1HImperialF",
+            "formKey": "000838:ccbgssse058-ba_steel.esl"
+          },
+          {
+            "edid": "ccBGSSSE058_EncBandit02Boss1HImperialM",
+            "formKey": "000837:ccbgssse058-ba_steel.esl"
+          },
+          {
+            "edid": "ccBGSSSE058_EncBandit02Boss1HNordF",
+            "formKey": "000836:ccbgssse058-ba_steel.esl"
+          },
+          {
+            "edid": "ccBGSSSE058_EncBandit02Boss1HNordM",
+            "formKey": "000835:ccbgssse058-ba_steel.esl"
+          },
+          {
+            "edid": "ccBGSSSE058_EncBandit02Boss1HRedguardF",
+            "formKey": "000834:ccbgssse058-ba_steel.esl"
+          },
+          {
+            "edid": "ccBGSSSE058_EncBandit02Boss1HRedguardM",
+            "formKey": "000833:ccbgssse058-ba_steel.esl"
+          },
+          {
+            "edid": "ccBGSSSE058_EncBandit02Boss2HImperialM",
+            "formKey": "00082F:ccbgssse058-ba_steel.esl"
+          },
+          {
+            "edid": "ccBGSSSE058_EncBandit02Boss2HNordM",
+            "formKey": "000832:ccbgssse058-ba_steel.esl"
+          },
+          {
+            "edid": "ccBGSSSE058_EncBandit02Boss2HOrcM",
+            "formKey": "000831:ccbgssse058-ba_steel.esl"
+          },
+          {
+            "edid": "ccBGSSSE058_EncBandit02Boss2HRedguardM",
+            "formKey": "000830:ccbgssse058-ba_steel.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "role: as the vanilla rung-02 boss leaves (6), one band above Bandit Outlaw 5 (I). Open: see the CC injector note under *Lists*; user, 2026-11-12: kept as documented, but the rebuilt lists spawn Bandit Chiefs only at 28"
+        },
+        "note": "CC Bandit Armor 052 (Iron Plate, ccbgssse052-ba_iron.esl) · 053 (Leather Scout, ccbgssse053-ba_leather.esl) · 056 (Silver, ccbgssse056-ba_silver.esl) · 058 (Steel Soldier, ccbgssse058-ba_steel.esl): 10 boss leaves per pack, `ccBGSSSENNN_EncBandit02Boss{1H,2H}<Race><Sex>`, copies of the vanilla rung-02 leaves (same races, `BaseData` from the same common leaf, so the same name) in the pack's armour. Drawn only through the pack's sublist, which the pack's quest adds to `LCharBanditBoss` at runtime (*Lists*, below). The Silver pack (056) puts a no-shield outfit on all ten."
+      },
+      {
+        "id": "cc-064",
+        "name": "Bandit Outlaw",
+        "records": [
+          {
+            "edid": "ccBGSSSE064_EncBandit02Boss1HImperialF",
+            "formKey": "00082A:ccbgssse064-ba_elven.esl"
+          },
+          {
+            "edid": "ccBGSSSE064_EncBandit02Boss1HImperialM",
+            "formKey": "00082B:ccbgssse064-ba_elven.esl"
+          },
+          {
+            "edid": "ccBGSSSE064_EncBandit02Boss1HNordF",
+            "formKey": "00082C:ccbgssse064-ba_elven.esl"
+          },
+          {
+            "edid": "ccBGSSSE064_EncBandit02Boss1HNordM",
+            "formKey": "00082D:ccbgssse064-ba_elven.esl"
+          },
+          {
+            "edid": "ccBGSSSE064_EncBandit02Boss1HRedguardF",
+            "formKey": "00082E:ccbgssse064-ba_elven.esl"
+          },
+          {
+            "edid": "ccBGSSSE064_EncBandit02Boss1HRedguardM",
+            "formKey": "00082F:ccbgssse064-ba_elven.esl"
+          },
+          {
+            "edid": "ccBGSSSE064_EncBandit02Boss2HImperialM",
+            "formKey": "000830:ccbgssse064-ba_elven.esl"
+          },
+          {
+            "edid": "ccBGSSSE064_EncBandit02Boss2HNordM",
+            "formKey": "000831:ccbgssse064-ba_elven.esl"
+          },
+          {
+            "edid": "ccBGSSSE064_EncBandit02Boss2HOrcM",
+            "formKey": "000832:ccbgssse064-ba_elven.esl"
+          },
+          {
+            "edid": "ccBGSSSE064_EncBandit02Boss2HRedguardM",
+            "formKey": "000833:ccbgssse064-ba_elven.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "level: 12 sits in Common (II), one band above Bandit Outlaw 5 (I). Open: see the CC injector note under *Lists*; user, 2026-11-12: kept as documented, but the rebuilt lists spawn Bandit Chiefs only at 28"
+        },
+        "note": "CC Bandit Armor 064 (Elven Hunter, ccbgssse064-ba_elven.esl): 10 boss leaves per pack, `ccBGSSSE064_EncBandit02Boss{1H,2H}<Race><Sex>`, copies of the vanilla rung-02 leaves (same races, `BaseData` from the same common leaf, so the same name) in the pack's armour. Drawn only through the pack's sublist, which the pack's quest adds to `LCharBanditBoss` at runtime (*Lists*, below). The Elven Hunter leaves own 12, not the vanilla rung's 6."
+      },
+      {
+        "id": "cc-061",
+        "name": "Bandit Thug",
+        "records": [
+          {
+            "edid": "ccBGSSSE061_EncBandit03Boss1HImperialF",
+            "formKey": "00082E:ccbgssse061-ba_dwarven.esl"
+          },
+          {
+            "edid": "ccBGSSSE061_EncBandit03Boss1HImperialM",
+            "formKey": "00082F:ccbgssse061-ba_dwarven.esl"
+          },
+          {
+            "edid": "ccBGSSSE061_EncBandit03Boss1HNordF",
+            "formKey": "000830:ccbgssse061-ba_dwarven.esl"
+          },
+          {
+            "edid": "ccBGSSSE061_EncBandit03Boss1HNordM",
+            "formKey": "000831:ccbgssse061-ba_dwarven.esl"
+          },
+          {
+            "edid": "ccBGSSSE061_EncBandit03Boss1HRedguardF",
+            "formKey": "000832:ccbgssse061-ba_dwarven.esl"
+          },
+          {
+            "edid": "ccBGSSSE061_EncBandit03Boss1HRedguardM",
+            "formKey": "000833:ccbgssse061-ba_dwarven.esl"
+          },
+          {
+            "edid": "ccBGSSSE061_EncBandit03Boss2HImperialM",
+            "formKey": "000834:ccbgssse061-ba_dwarven.esl"
+          },
+          {
+            "edid": "ccBGSSSE061_EncBandit03Boss2HNordM",
+            "formKey": "000835:ccbgssse061-ba_dwarven.esl"
+          },
+          {
+            "edid": "ccBGSSSE061_EncBandit03Boss2HOrcM",
+            "formKey": "000836:ccbgssse061-ba_dwarven.esl"
+          },
+          {
+            "edid": "ccBGSSSE061_EncBandit03Boss2HRedguardM",
+            "formKey": "000837:ccbgssse061-ba_dwarven.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "role: as the vanilla rung-03 boss leaves (10), one band above Bandit Thug 9 (II). Open: see the CC injector note under *Lists*; user, 2026-11-12: kept as documented, but the rebuilt lists spawn Bandit Chiefs only at 28"
+        },
+        "note": "CC Bandit Armor 061 (Dwarven Plate, ccbgssse061-ba_dwarven.esl): 10 boss leaves per pack, `ccBGSSSE061_EncBandit03Boss{1H,2H}<Race><Sex>`, copies of the vanilla rung-03 leaves (same races, `BaseData` from the same common leaf, so the same name) in the pack's armour. Drawn only through the pack's sublist, which the pack's quest adds to `LCharBanditBoss` at runtime (*Lists*, below)."
+      },
+      {
+        "id": "cc-062",
+        "name": "Bandit Thug",
+        "records": [
+          {
+            "edid": "ccBGSSSE062_EncBandit03Boss1HImperialF",
+            "formKey": "000825:ccbgssse062-ba_dwarvenmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE062_EncBandit03Boss1HImperialM",
+            "formKey": "000826:ccbgssse062-ba_dwarvenmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE062_EncBandit03Boss1HNordF",
+            "formKey": "000827:ccbgssse062-ba_dwarvenmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE062_EncBandit03Boss1HNordM",
+            "formKey": "000828:ccbgssse062-ba_dwarvenmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE062_EncBandit03Boss1HRedguardF",
+            "formKey": "000829:ccbgssse062-ba_dwarvenmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE062_EncBandit03Boss1HRedguardM",
+            "formKey": "00082A:ccbgssse062-ba_dwarvenmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE062_EncBandit03Boss2HImperialM",
+            "formKey": "00082B:ccbgssse062-ba_dwarvenmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE062_EncBandit03Boss2HNordM",
+            "formKey": "00082C:ccbgssse062-ba_dwarvenmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE062_EncBandit03Boss2HOrcM",
+            "formKey": "00082D:ccbgssse062-ba_dwarvenmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE062_EncBandit03Boss2HRedguardM",
+            "formKey": "00082E:ccbgssse062-ba_dwarvenmail.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 15
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "level: 15 sits in Trained (III), one band above Bandit Thug 9 (II). Open: see the CC injector note under *Lists*; user, 2026-11-12: kept as documented, but the rebuilt lists spawn Bandit Chiefs only at 28"
+        },
+        "note": "CC Bandit Armor 062 (Dwarven Mail, ccbgssse062-ba_dwarvenmail.esl): 10 boss leaves per pack, `ccBGSSSE062_EncBandit03Boss{1H,2H}<Race><Sex>`, copies of the vanilla rung-03 leaves (same races, `BaseData` from the same common leaf, so the same name) in the pack's armour. Drawn only through the pack's sublist, which the pack's quest adds to `LCharBanditBoss` at runtime (*Lists*, below). The Dwarven Mail leaves own 15, not the vanilla rung's 10."
+      },
+      {
+        "id": "cc-rung-05",
+        "name": "Bandit Plunderer",
+        "records": [
+          {
+            "edid": "ccBGSSSE054_EncBandit05Boss1HImperialF",
+            "formKey": "000827:ccbgssse054-ba_orcish.esl"
+          },
+          {
+            "edid": "ccBGSSSE054_EncBandit05Boss1HImperialM",
+            "formKey": "000828:ccbgssse054-ba_orcish.esl"
+          },
+          {
+            "edid": "ccBGSSSE054_EncBandit05Boss1HNordF",
+            "formKey": "000829:ccbgssse054-ba_orcish.esl"
+          },
+          {
+            "edid": "ccBGSSSE054_EncBandit05Boss1HNordM",
+            "formKey": "00082A:ccbgssse054-ba_orcish.esl"
+          },
+          {
+            "edid": "ccBGSSSE054_EncBandit05Boss1HRedguardF",
+            "formKey": "00082B:ccbgssse054-ba_orcish.esl"
+          },
+          {
+            "edid": "ccBGSSSE054_EncBandit05Boss1HRedguardM",
+            "formKey": "00082C:ccbgssse054-ba_orcish.esl"
+          },
+          {
+            "edid": "ccBGSSSE054_EncBandit05Boss2HImperialM",
+            "formKey": "00082D:ccbgssse054-ba_orcish.esl"
+          },
+          {
+            "edid": "ccBGSSSE054_EncBandit05Boss2HNordM",
+            "formKey": "00082E:ccbgssse054-ba_orcish.esl"
+          },
+          {
+            "edid": "ccBGSSSE054_EncBandit05Boss2HOrcM",
+            "formKey": "00082F:ccbgssse054-ba_orcish.esl"
+          },
+          {
+            "edid": "ccBGSSSE054_EncBandit05Boss2HRedguardM",
+            "formKey": "000830:ccbgssse054-ba_orcish.esl"
+          },
+          {
+            "edid": "ccBGSSSE055_EncBandit05Boss1HImperialF",
+            "formKey": "00083E:ccbgssse055-ba_orcishscaled.esl"
+          },
+          {
+            "edid": "ccBGSSSE055_EncBandit05Boss1HImperialM",
+            "formKey": "00083F:ccbgssse055-ba_orcishscaled.esl"
+          },
+          {
+            "edid": "ccBGSSSE055_EncBandit05Boss1HNordF",
+            "formKey": "000840:ccbgssse055-ba_orcishscaled.esl"
+          },
+          {
+            "edid": "ccBGSSSE055_EncBandit05Boss1HNordM",
+            "formKey": "000841:ccbgssse055-ba_orcishscaled.esl"
+          },
+          {
+            "edid": "ccBGSSSE055_EncBandit05Boss1HRedguardF",
+            "formKey": "000842:ccbgssse055-ba_orcishscaled.esl"
+          },
+          {
+            "edid": "ccBGSSSE055_EncBandit05Boss1HRedguardM",
+            "formKey": "000843:ccbgssse055-ba_orcishscaled.esl"
+          },
+          {
+            "edid": "ccBGSSSE055_EncBandit05Boss2HImperialM",
+            "formKey": "000844:ccbgssse055-ba_orcishscaled.esl"
+          },
+          {
+            "edid": "ccBGSSSE055_EncBandit05Boss2HNordM",
+            "formKey": "000845:ccbgssse055-ba_orcishscaled.esl"
+          },
+          {
+            "edid": "ccBGSSSE055_EncBandit05Boss2HOrcM",
+            "formKey": "000846:ccbgssse055-ba_orcishscaled.esl"
+          },
+          {
+            "edid": "ccBGSSSE055_EncBandit05Boss2HRedguardM",
+            "formKey": "000847:ccbgssse055-ba_orcishscaled.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 21
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "role: as the vanilla rung-05 boss leaves (21, IV). Open: see the CC injector note under *Lists*; user, 2026-11-12: kept as documented, but the rebuilt lists spawn Bandit Chiefs only at 28"
+        },
+        "note": "CC Bandit Armor 054 (Orcish Plate, ccbgssse054-ba_orcish.esl) · 055 (Orcish Scaled, ccbgssse055-ba_orcishscaled.esl): 10 boss leaves per pack, `ccBGSSSENNN_EncBandit05Boss{1H,2H}<Race><Sex>`, copies of the vanilla rung-05 leaves (same races, `BaseData` from the same common leaf, so the same name) in the pack's armour. Drawn only through the pack's sublist, which the pack's quest adds to `LCharBanditBoss` at runtime (*Lists*, below)."
+      },
+      {
+        "id": "cc-rung-06",
+        "name": "Bandit Marauder",
+        "records": [
+          {
+            "edid": "ccBGSSSE050_EncBandit06Boss1HImperialF",
+            "formKey": "000839:ccbgssse050-ba_daedric.esl"
+          },
+          {
+            "edid": "ccBGSSSE050_EncBandit06Boss1HImperialM",
+            "formKey": "000838:ccbgssse050-ba_daedric.esl"
+          },
+          {
+            "edid": "ccBGSSSE050_EncBandit06Boss1HNordF",
+            "formKey": "000837:ccbgssse050-ba_daedric.esl"
+          },
+          {
+            "edid": "ccBGSSSE050_EncBandit06Boss1HNordM",
+            "formKey": "000836:ccbgssse050-ba_daedric.esl"
+          },
+          {
+            "edid": "ccBGSSSE050_EncBandit06Boss1HRedguardF",
+            "formKey": "000835:ccbgssse050-ba_daedric.esl"
+          },
+          {
+            "edid": "ccBGSSSE050_EncBandit06Boss1HRedguardM",
+            "formKey": "000834:ccbgssse050-ba_daedric.esl"
+          },
+          {
+            "edid": "ccBGSSSE050_EncBandit06Boss2HImperialM",
+            "formKey": "000830:ccbgssse050-ba_daedric.esl"
+          },
+          {
+            "edid": "ccBGSSSE050_EncBandit06Boss2HNordM",
+            "formKey": "000833:ccbgssse050-ba_daedric.esl"
+          },
+          {
+            "edid": "ccBGSSSE050_EncBandit06Boss2HOrcM",
+            "formKey": "000832:ccbgssse050-ba_daedric.esl"
+          },
+          {
+            "edid": "ccBGSSSE050_EncBandit06Boss2HRedguardM",
+            "formKey": "000831:ccbgssse050-ba_daedric.esl"
+          },
+          {
+            "edid": "ccBGSSSE059_EncBandit06Boss1HImperialF",
+            "formKey": "00082D:ccbgssse059-ba_dragonplate.esl"
+          },
+          {
+            "edid": "ccBGSSSE059_EncBandit06Boss1HImperialM",
+            "formKey": "00082E:ccbgssse059-ba_dragonplate.esl"
+          },
+          {
+            "edid": "ccBGSSSE059_EncBandit06Boss1HNordF",
+            "formKey": "00082F:ccbgssse059-ba_dragonplate.esl"
+          },
+          {
+            "edid": "ccBGSSSE059_EncBandit06Boss1HNordM",
+            "formKey": "000830:ccbgssse059-ba_dragonplate.esl"
+          },
+          {
+            "edid": "ccBGSSSE059_EncBandit06Boss1HRedguardF",
+            "formKey": "000831:ccbgssse059-ba_dragonplate.esl"
+          },
+          {
+            "edid": "ccBGSSSE059_EncBandit06Boss1HRedguardM",
+            "formKey": "000832:ccbgssse059-ba_dragonplate.esl"
+          },
+          {
+            "edid": "ccBGSSSE059_EncBandit06Boss2HImperialM",
+            "formKey": "000833:ccbgssse059-ba_dragonplate.esl"
+          },
+          {
+            "edid": "ccBGSSSE059_EncBandit06Boss2HNordM",
+            "formKey": "000834:ccbgssse059-ba_dragonplate.esl"
+          },
+          {
+            "edid": "ccBGSSSE059_EncBandit06Boss2HOrcM",
+            "formKey": "000835:ccbgssse059-ba_dragonplate.esl"
+          },
+          {
+            "edid": "ccBGSSSE059_EncBandit06Boss2HRedguardM",
+            "formKey": "000836:ccbgssse059-ba_dragonplate.esl"
+          },
+          {
+            "edid": "ccBGSSSE063_EncBandit06Boss1HImperialF",
+            "formKey": "00085F:ccbgssse063-ba_ebony.esl"
+          },
+          {
+            "edid": "ccBGSSSE063_EncBandit06Boss1HImperialM",
+            "formKey": "000860:ccbgssse063-ba_ebony.esl"
+          },
+          {
+            "edid": "ccBGSSSE063_EncBandit06Boss1HNordF",
+            "formKey": "000861:ccbgssse063-ba_ebony.esl"
+          },
+          {
+            "edid": "ccBGSSSE063_EncBandit06Boss1HNordM",
+            "formKey": "000862:ccbgssse063-ba_ebony.esl"
+          },
+          {
+            "edid": "ccBGSSSE063_EncBandit06Boss1HRedguardF",
+            "formKey": "000863:ccbgssse063-ba_ebony.esl"
+          },
+          {
+            "edid": "ccBGSSSE063_EncBandit06Boss1HRedguardM",
+            "formKey": "000864:ccbgssse063-ba_ebony.esl"
+          },
+          {
+            "edid": "ccBGSSSE063_EncBandit06Boss2HImperialM",
+            "formKey": "000865:ccbgssse063-ba_ebony.esl"
+          },
+          {
+            "edid": "ccBGSSSE063_EncBandit06Boss2HNordM",
+            "formKey": "000866:ccbgssse063-ba_ebony.esl"
+          },
+          {
+            "edid": "ccBGSSSE063_EncBandit06Boss2HOrcM",
+            "formKey": "000867:ccbgssse063-ba_ebony.esl"
+          },
+          {
+            "edid": "ccBGSSSE063_EncBandit06Boss2HRedguardM",
+            "formKey": "000868:ccbgssse063-ba_ebony.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 28
+        },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 and §3.1.1 (user, decided 2026-07-30, kept by WD-42): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere; the pack leaves sit on the pinned rung"
+        },
+        "note": "CC Bandit Armor 050 (Daedric Plate, ccbgssse050-ba_daedric.esl) · 059 (Dragonplate Insulated, ccbgssse059-ba_dragonplate.esl) · 063 (Ebony Plate, ccbgssse063-ba_ebony.esl): 10 boss leaves per pack, `ccBGSSSENNN_EncBandit06Boss{1H,2H}<Race><Sex>`, copies of the vanilla rung-06 leaves (same races, `BaseData` from the same common leaf, so the same name) in the pack's armour. Drawn only through the pack's sublist, which the pack's quest adds to `LCharBanditBoss` at runtime (*Lists*, below)."
+      },
+      {
+        "id": "cc-060",
+        "name": "Bandit Marauder",
+        "records": [
+          {
+            "edid": "ccBGSSSE060_EncBandit06Boss1HImperialF",
+            "formKey": "000832:ccbgssse060-ba_dragonscale.esl"
+          },
+          {
+            "edid": "ccBGSSSE060_EncBandit06Boss1HImperialM",
+            "formKey": "000831:ccbgssse060-ba_dragonscale.esl"
+          },
+          {
+            "edid": "ccBGSSSE060_EncBandit06Boss1HNordF",
+            "formKey": "000830:ccbgssse060-ba_dragonscale.esl"
+          },
+          {
+            "edid": "ccBGSSSE060_EncBandit06Boss1HNordM",
+            "formKey": "00082F:ccbgssse060-ba_dragonscale.esl"
+          },
+          {
+            "edid": "ccBGSSSE060_EncBandit06Boss1HRedguardF",
+            "formKey": "00082E:ccbgssse060-ba_dragonscale.esl"
+          },
+          {
+            "edid": "ccBGSSSE060_EncBandit06Boss1HRedguardM",
+            "formKey": "00082D:ccbgssse060-ba_dragonscale.esl"
+          },
+          {
+            "edid": "ccBGSSSE060_EncBandit06Boss2HImperialM",
+            "formKey": "000829:ccbgssse060-ba_dragonscale.esl"
+          },
+          {
+            "edid": "ccBGSSSE060_EncBandit06Boss2HNordM",
+            "formKey": "00082C:ccbgssse060-ba_dragonscale.esl"
+          },
+          {
+            "edid": "ccBGSSSE060_EncBandit06Boss2HOrcM",
+            "formKey": "00082B:ccbgssse060-ba_dragonscale.esl"
+          },
+          {
+            "edid": "ccBGSSSE060_EncBandit06Boss2HRedguardM",
+            "formKey": "00082A:ccbgssse060-ba_dragonscale.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 44
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "level: 44 sits in Powerful (VII). Open: the chief pin (28) and this leaf's own 44 disagree; see the CC injector note under *Lists*; user, 2026-11-12: kept as documented, but the rebuilt lists spawn Bandit Chiefs only at 28"
+        },
+        "note": "CC Bandit Armor 060 (Studded Dragonscale, ccbgssse060-ba_dragonscale.esl): 10 boss leaves per pack, `ccBGSSSE060_EncBandit06Boss{1H,2H}<Race><Sex>`, copies of the vanilla rung-06 leaves (same races, `BaseData` from the same common leaf, so the same name) in the pack's armour. Drawn only through the pack's sublist, which the pack's quest adds to `LCharBanditBoss` at runtime (*Lists*, below). The Studded Dragonscale leaves own 44, not the vanilla rung's 28."
+      },
+      {
+        "id": "cc-051",
+        "name": "Bandit Marauder",
+        "records": [
+          {
+            "edid": "ccBGSSSE051_EncBandit06Boss1HImperialF",
+            "formKey": "000850:ccbgssse051-ba_daedricmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE051_EncBandit06Boss1HImperialM",
+            "formKey": "00084F:ccbgssse051-ba_daedricmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE051_EncBandit06Boss1HNordF",
+            "formKey": "00084E:ccbgssse051-ba_daedricmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE051_EncBandit06Boss1HNordM",
+            "formKey": "00084D:ccbgssse051-ba_daedricmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE051_EncBandit06Boss1HRedguardF",
+            "formKey": "00084C:ccbgssse051-ba_daedricmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE051_EncBandit06Boss1HRedguardM",
+            "formKey": "00084B:ccbgssse051-ba_daedricmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE051_EncBandit06Boss2HImperialM",
+            "formKey": "000845:ccbgssse051-ba_daedricmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE051_EncBandit06Boss2HNordM",
+            "formKey": "00084A:ccbgssse051-ba_daedricmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE051_EncBandit06Boss2HOrcM",
+            "formKey": "000849:ccbgssse051-ba_daedricmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE051_EncBandit06Boss2HRedguardM",
+            "formKey": "000846:ccbgssse051-ba_daedricmail.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 48
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "level: 48 sits in Powerful (VII). Open: the chief pin (28) and this leaf's own 48 disagree; see the CC injector note under *Lists*; user, 2026-11-12: kept as documented, but the rebuilt lists spawn Bandit Chiefs only at 28"
+        },
+        "note": "CC Bandit Armor 051 (Daedric Mail, ccbgssse051-ba_daedricmail.esl): 10 boss leaves per pack, `ccBGSSSE051_EncBandit06Boss{1H,2H}<Race><Sex>`, copies of the vanilla rung-06 leaves (same races, `BaseData` from the same common leaf, so the same name) in the pack's armour. Drawn only through the pack's sublist, which the pack's quest adds to `LCharBanditBoss` at runtime (*Lists*, below). The Daedric Mail leaves own 48, not the vanilla rung's 28; the Orc 2H leaf wears the helmeted `ccBGSSSE051_ArmorBladesOutfit` 000810."
+      },
+      {
+        "id": "chief-wrappers",
+        "name": "Bandit Chief",
+        "records": [
+          {
+            "edid": "LvlBanditBoss",
+            "formKey": "03DF17:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditBossAmbush",
+            "formKey": "0F31E2:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditBossCommonerF",
+            "formKey": "01B0D8:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditBossCommonerM",
+            "formKey": "01B0DB:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditBossEvenTonedF",
+            "formKey": "01B0DC:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditBossEvenTonedM",
+            "formKey": "01B0DD:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditBossEvenTonedMAggro1024",
+            "formKey": "0C0037:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditBossNordF",
+            "formKey": "01B0DE:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditBossNordM",
+            "formKey": "01B0E1:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditBossOrcM",
+            "formKey": "01B0EB:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditBossOrcMAmbush",
+            "formKey": "0E8B1F:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditBossMelee2HNordM",
+            "formKey": "0E1646:Skyrim.esm"
+          },
+          {
+            "edid": "dunRobbersGorge_LvlBanditBoss",
+            "formKey": "078C13:Skyrim.esm"
+          },
+          {
+            "edid": "dunFortNeugrad_LvlBanditBossAmbush",
+            "formKey": "0CC59B:Skyrim.esm"
+          },
+          {
+            "edid": "dunWhiteRiverWatchLvlBanditBoss",
+            "formKey": "0E1F81:Skyrim.esm"
+          },
+          {
+            "edid": "ccBGSSSE004_LvlRuinsEdgeBoss",
+            "formKey": "000813:ccbgssse004-ruinsedge.esl"
+          },
+          {
+            "edid": "ccBGSSSE061_LvlBanditBossOrcM",
+            "formKey": "000803:ccbgssse061-ba_dwarven.esl"
+          },
+          {
+            "edid": "ccBGSSSE068_LvlBanditBossOrcM",
+            "formKey": "000805:ccbgssse068-bloodfall.esl"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditBoss",
+            "formKey": "03DF16:Skyrim.esm"
+          },
+          "rungs": [
+            6,
+            10,
+            16,
+            21,
+            28
+          ]
+        },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 and §3.1.1 (user, decided 2026-07-30, kept by WD-42): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere"
+        },
+        "note": "the placed chief wrappers, named \"Bandit Chief\". Each takes `Stats`, `Traits` and (most) `Inventory` from `LCharBanditBoss` or a race list (below): `LvlBanditBoss{CommonerF,CommonerM,EvenTonedF,EvenTonedM,NordF,NordM,OrcM}` and `…EvenTonedMAggro1024` their race list, `LvlBanditBossMelee2HNordM` `LCharBanditBossNordM2HOnly`, the CC 061 and 068 chiefs `LCharBanditBossOrcM`, the CC Ruin's Edge chief `LCharBanditBoss` itself. `LvlBanditBossAmbush`, Robber's Gorge and Fort Neugrad go through `LvlBanditBoss`, `LvlBanditBossOrcMAmbush` through `LvlBanditBossOrcM`, White River Watch through `LvlBanditBossMelee2HNordM`; these also take `BaseData` from that wrapper, so they are named \"Bandit Chief\" too. The CC Bloodfall chief (068) is Ghunzul's replacement at Lost Knife Hideout; the CC Ruin's Edge chief is at Stony Creek Cave."
+      },
+      {
+        "id": "traitors-post-boss",
+        "name": "the drawn rung's name (Bandit Outlaw … Bandit Marauder)",
+        "records": [
+          {
+            "edid": "dunPOITraitorsPostBoss",
+            "formKey": "07F8A0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditBossEvenTonedM",
+            "formKey": "01A33F:Skyrim.esm"
+          },
+          "rungs": [
+            6,
+            10,
+            16,
+            21,
+            28
+          ]
+        },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0 (WD-62, user 2026-09-27): \"Ghunzul · the Traitor's Post boss: bandit chief, 28, unchanged\""
+        },
+        "note": "the Traitor's Post boss: takes `Stats`, `BaseData` and `Traits` from `LCharBanditBossEvenTonedM` 01A33F, so it shows the drawn leaf's name, not \"Bandit Chief\" (the `BaseData` gotcha, `[unverified]` in game). Its inventory and outfit are its own. Moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03)."
+      },
+      {
+        "id": "arena-opponent",
+        "name": "the drawn rung's name; Pit Fighter (`ArenaCombatantName` 096E6F) where an Arena alias names it",
+        "records": [
+          {
+            "edid": "LvlNPCArenaOpponent",
+            "formKey": "090CFA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditBoss",
+            "formKey": "03DF16:Skyrim.esm"
+          },
+          "rungs": [
+            6,
+            10,
+            16,
+            21,
+            28
+          ]
+        },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 and §3.1.1 (user, decided 2026-07-30, kept by WD-42): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere; this wrapper draws `LCharBanditBoss` itself"
+        },
+        "note": "the Pit arena opponent: takes `Stats`, `BaseData`, `Traits` and `Inventory` from `LCharBanditBoss`. Not placed; created by aliases `Combatant1`–`3` of `ArenaCombatQuest04NPCsPlusTwo` 092A4B, `…09NPCsPlusFive` 092A50, `…11NPCsPlusSeven` 0967DA, `…13NPCsPlusNine` 0967DB and `Fighter` of `ArenaWagerFighterQuest` 0DC9DF. Cut content: no story node, quest, package or placed reference in the masters names any of those five quests. Moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03)."
+      },
+      {
+        "id": "lost-knife-boss",
+        "name": "the drawn rung's name (Bandit … Bandit Marauder)",
+        "records": [
+          {
+            "edid": "DunLostKnifeBanditBoss",
+            "formKey": "01C902:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee2H",
+            "formKey": "03DEC8:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0 (WD-62, user 2026-09-27): \"Captain Hargar · the Lost Knife boss · the Cragslane Butcher: bandit mooks 5 / 9 / 14 → 28, bandit chief\""
+        },
+        "note": "the Lost Knife Hideout boss borrows its level from the common bandits: it takes only `Stats`, `BaseData` and `Inventory` from `LCharBanditMelee2H` 03DEC8 (*Common Bandits*), so it rolls 1 · 5 · 9 · 14 · 19 · 25 (every gate at or below the player). Changing that ladder changes it. Alias `drunkBoss` of `dunLostKnifeQST` 034C90. Moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing any vanilla boss leaf also needs `ccBGSSSE050_BountyHunter` 000823:ccbgssse050-ba_daedric.esl (Bounty Hunter, PC×1.5 [10–50], on World → *Falkreath Countryside*): its template is `LvlBanditBoss` 03DF17, which draws them, with no template flags at all.",
+      "Changing the Nord male leaves (`EncBandit0{2–6}Boss{1H,2H}NordM`) also needs `dunFrostmereCrypt_Kyr` 0D37D1 (Kyr, 1, on *Named Bandits*): its template is `LvlBanditBossNordM` 01B0E1, which draws them, with no template flags.",
+      "Changing the Nord female leaves (`EncBandit0{2–6}Boss1HNordF`) also needs `dunMistwatchFjola` 090739 (Bandit Leader, PC×1.1 [5+], on *Named Bandits*): she takes `Traits` and `Inventory` from `LCharBanditBossNordF` 01A340, not `Stats`.",
+      "Changing the Orc leaves (`EncBandit0{2–6}Boss2HOrcM`) also needs `WEDL05Thug` 0B91B0 (Thug, PC×1.15 [5+], on World Encounters → *Random Encounter NPCs*): it takes `Traits` and `Inventory` from `LCharBanditBossOrcM` 01B0EA, not `Stats`.",
+      "Changing `EncBandit02Boss1HRedguardF` 03DEE2 also needs `dunIronbindSalma` 06CD5A (Salma, PC×1 [3–26], on Uncategorised → *Unfiled NPCs*); changing `EncBandit06Boss1HNordM` 03DF09 also needs `ccBGSSSE016_UmbraBoss` 000801:ccbgssse016-umbra.esm (Umbra, PC×1.25 [26–100], on World → *Whiterun Countryside*): each uses the leaf as its template with no template flags.",
+      "The Lost Knife Hideout boss follows the common bandit ladder; the records that keep their own level beside it are listed on *Common Bandits*.",
+      "The other rows (the CC armour-pack leaves, the chief wrappers, the Traitor's Post boss, `LvlNPCArenaOpponent`): no other record keeps its own level.",
+      "Every other record that draws a boss list or wrapper carries `Stats` and follows it: the chief wrappers above, the Hired Thugs (*Hired Thugs*), Eisa Blackthorn, Ghunzul and Viparth (*Named Bandits*), the Haknir's Shoal Pirate Captain (*Reavers*), the Silver Hand boss, Sarthis Idren, Stalleo's Bodyguard, the WE36 Bounty Hunter and the Bounty Collector, the Dawnguard Hunter, the Lost Paladin ghost, Valdar's ghost, the `WE17` Soldier, the Pit's Fellow Prisoner, the dead Eigorn and Makhel Abbas: each list row below names them under *Drawn elsewhere*."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharBanditBoss",
+          "formKey": "03DF16:Skyrim.esm"
+        },
+        "gate": "no \"all levels\" flag: only the highest gate at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`SubCharBandit02Boss` 03DF11 (6)"
+          },
+          {
+            "at": 5,
+            "label": "`SubCharBandit02Boss`"
+          },
+          {
+            "at": 9,
+            "label": "`SubCharBandit02Boss`"
+          },
+          {
+            "at": 14,
+            "label": "`SubCharBandit03Boss` 03DF12 (10)"
+          },
+          {
+            "at": 19,
+            "label": "`SubCharBandit04Boss` 03DF13 (16)"
+          },
+          {
+            "at": 25,
+            "label": "`SubCharBandit05Boss` 03DF14 (21)"
+          },
+          {
+            "at": 29,
+            "label": "`SubCharBandit06Boss` 03DF15 (28)"
+          }
+        ],
+        "note": "each `SubCharBandit0NBoss` holds its rung's 10 leaves at level 1 (every gate ≤ player, so one at random). The 14 CC Bandit Armor quests add their own sublists to this list at runtime (next row).",
+        "owner": "`LvlBanditBoss` ×17, `…Ambush` ×1, Robber's Gorge ×1, Fort Neugrad ×1, CC Ruin's Edge ×1; `LvlNPCArenaOpponent` (not placed)",
+        "drawnBy": [
+          {
+            "name": "Hired Thug",
+            "records": [
+              {
+                "edid": "WIThug",
+                "formKey": "035B5E:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/hired-thugs",
+            "note": "through the wrapper `LvlBanditBoss` 03DF17, its template; takes `Stats`, `Traits` and `Inventory`"
+          },
+          {
+            "name": "Viparth",
+            "records": [
+              {
+                "edid": "ccMTYSSE001_LvlBanditBoss03",
+                "formKey": "000843:ccmtysse001-knightsofthenine.esl"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/named-bandits",
+            "note": "takes `Stats` and `Traits`"
+          },
+          {
+            "name": "Soldier (`WE17` ambush)",
+            "records": [
+              {
+                "edid": "WE17Bandit1",
+                "formKey": "09F7EA:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/bandit-gangs",
+            "note": "through the wrapper `LvlBanditBoss` 03DF17, its template; takes only `Stats`"
+          },
+          {
+            "name": "Silver Hand (boss; Krev the Skinner by alias)",
+            "records": [
+              {
+                "edid": "LvlSilverhandBoss",
+                "formKey": "0A9548:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Silver Hand → *Silver Hand Leaders*",
+            "note": "through the wrapper `LvlBanditBoss` 03DF17, its template; takes `Stats`, `Traits` and `Inventory`"
+          },
+          {
+            "name": "Sarthis Idren",
+            "records": [
+              {
+                "edid": "SarthisIdren",
+                "formKey": "085D41:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → The Rift → *Riften*",
+            "note": "through the wrapper `LvlBanditBoss` 03DF17, its template; takes `Stats` and `Inventory`"
+          },
+          {
+            "name": "Bounty Hunter (`WE36`)",
+            "records": [
+              {
+                "edid": "WEBountyHunterBoss",
+                "formKey": "0BC09F:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → World Encounters → *Bounty Hunters*",
+            "note": "through the wrapper `LvlBanditBoss` 03DF17, its template; takes `Stats`, `Traits` and `Inventory`"
+          },
+          {
+            "name": "Bounty Hunter (CC Daedric Plate)",
+            "records": [
+              {
+                "edid": "ccBGSSSE050_BountyHunter",
+                "formKey": "000823:ccbgssse050-ba_daedric.esl"
+              }
+            ],
+            "how": "template",
+            "where": "World → Falkreath Hold → *Falkreath Countryside*",
+            "note": "through the wrapper `LvlBanditBoss` 03DF17, its template with no template flags: keeps its own level (PC×1.5 [10–50]), look and gear"
+          },
+          {
+            "name": "Valdar",
+            "records": [
+              {
+                "edid": "DunValthumeGhostValdar",
+                "formKey": "02C18D:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "not an enemy: a friendly ghost (Ghosts group page, *Never met as enemies*)",
+            "note": "through the wrapper `LvlBanditBoss` 03DF17, its template; takes only `Stats`"
+          },
+          {
+            "name": "Fellow Prisoner",
+            "records": [
+              {
+                "edid": "LvlArenaPrisoner",
+                "formKey": "0967DE:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "not in the census: cut Pit arena content, created only by `ArenaCombatQuest00JailFight` 0967DD, which nothing starts",
+            "note": "takes `Stats` and `Traits`"
+          }
+        ]
+      },
+      {
+        "list": {
+          "label": "CC `ccBGSSSE0NN_SubCharBandit0NBoss` (14 lists, one per Bandit Armor pack)"
+        },
+        "gate": "every gate ≤ player: all 20 entries at 1",
+        "note": "each holds its pack's 10 boss leaves and the vanilla rung's 10 (so half its draws are vanilla leaves). Each pack's quest fragment adds its list to `LCharBanditBoss` with `AddForm` at a gate of its own (read from the decompiled fragments): 052 Iron Plate (rung 02) at 2, 053 Leather Scout (rung 02) at 3, 058 Steel Soldier (rung 02) at 6, 056 Silver (rung 02) at 10, 064 Elven Hunter (rung 02) at 12, 061 Dwarven Plate (rung 03) at 15, 062 Dwarven Mail (rung 03) at 15, 055 Orcish Scaled (rung 05) at 23, 054 Orcish Plate (rung 05) at 26, 063 Ebony Plate (rung 06) at 32, 059 Dragonplate Insulated (rung 06) at 40, 060 Studded Dragonscale (rung 06) at 44, 050 Daedric Plate (rung 06) at 48, 051 Daedric Mail (rung 06) at 48. The vanilla gate 29 still wins above 29 unless a pack gate is higher, so the 059, 060, 050 and 051 leaves replace the rung-06 draw from player level 40, 44 and 48. Open for the rebuild: neutralise the injectors (the proof of concept overrode them) and decide whether the pack leaves join the pinned rung at 28 or keep their own levels (12, 15, 44, 48).",
+        "owner": "added to `LCharBanditBoss` at runtime, stored in the save: after chargen by each pack's `ccBGSSSE0NN_MiscQuest` (`ccstartafterchargenscript`; 063 only once the player is level 32: `optionalRequiredPlayerLevel` 32) for 050, 052–056, 058, 059, 061 and 063; at stage 100 of `ccBGSSSE0NN_Quest` (when the pack's quest is finished; 060, 062 and 064 when its armour pieces are all picked up) for 051, 060, 062 and 064"
+      },
+      {
+        "list": {
+          "label": "`LCharBanditBoss{CommonerF,EvenTonedF,NordF}` 01A32F · 01A33B · 01A340"
+        },
+        "gate": "no \"all levels\" flag: only the highest gate at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`EncBandit02Boss1H<Race>F` (6)"
+          },
+          {
+            "at": 5,
+            "label": "`EncBandit02Boss1H<Race>F` (6)"
+          },
+          {
+            "at": 9,
+            "label": "`EncBandit02Boss1H<Race>F` (6)"
+          },
+          {
+            "at": 14,
+            "label": "`EncBandit03Boss1H<Race>F` (10)"
+          },
+          {
+            "at": 19,
+            "label": "`EncBandit04Boss1H<Race>F` (16)"
+          },
+          {
+            "at": 25,
+            "label": "`EncBandit05Boss1H<Race>F` (21)"
+          },
+          {
+            "at": 29,
+            "label": "`EncBandit06Boss1H<Race>F` (28)"
+          }
+        ],
+        "note": "that race's 1H female leaf at each gate (Commoner = Imperial, EvenToned = Redguard)",
+        "owner": "`LvlBanditBossNordF` ×2 (Liar's Retreat initially disabled), `LvlBanditBossCommonerF` ×1, `LvlBanditBossEvenTonedF` ×1",
+        "drawnBy": [
+          {
+            "name": "Eisa Blackthorn · Bandit Leader (Fjola)",
+            "records": [
+              {
+                "edid": "dunFrostmereCryptEisa",
+                "formKey": "0D001A:Skyrim.esm"
+              },
+              {
+                "edid": "dunMistwatchFjola",
+                "formKey": "090739:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/named-bandits",
+            "note": "from `LCharBanditBossNordF` 01A340: Eisa takes only `Stats`; Fjola takes `Traits` and `Inventory` but not `Stats` (keeps PC×1.1 [5+])"
+          },
+          {
+            "name": "Stalleo's Bodyguard",
+            "records": [
+              {
+                "edid": "dunTrevasWatchStalleosVanguardFemale",
+                "formKey": "093A76:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → The Rift → *The Rift Countryside*",
+            "note": "through the wrapper `LvlBanditBossNordF` 01B0DE, its template; takes `Stats`, `Traits` and `Inventory`"
+          }
+        ]
+      },
+      {
+        "list": {
+          "label": "`LCharBanditBoss{CommonerM,EvenTonedM,NordM}` 01A33A · 01A33F · 01A341"
+        },
+        "gate": "no \"all levels\" flag: only the highest gate at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`EncBandit02Boss{1H,2H}<Race>M` (6)"
+          },
+          {
+            "at": 5,
+            "label": "`EncBandit02Boss{1H,2H}<Race>M` (6)"
+          },
+          {
+            "at": 9,
+            "label": "`EncBandit02Boss{1H,2H}<Race>M` (6)"
+          },
+          {
+            "at": 14,
+            "label": "`EncBandit03Boss{1H,2H}<Race>M` (10)"
+          },
+          {
+            "at": 19,
+            "label": "`EncBandit04Boss{1H,2H}<Race>M` (16)"
+          },
+          {
+            "at": 25,
+            "label": "`EncBandit05Boss{1H,2H}<Race>M` (21)"
+          },
+          {
+            "at": 29,
+            "label": "`EncBandit06Boss{1H,2H}<Race>M` (28)"
+          }
+        ],
+        "note": "that race's 1H and 2H male leaves at each gate (one at random)",
+        "owner": "`LvlBanditBossNordM` ×1, `LvlBanditBossEvenTonedM` ×1 (Faldar's Tooth) and `dunPOITraitorsPostBoss` ×1; `LvlBanditBossCommonerM` and `…EvenTonedMAggro1024`: not placed",
+        "drawnBy": [
+          {
+            "name": "Hired Thug",
+            "records": [
+              {
+                "edid": "WIThugNordM",
+                "formKey": "0D783B:Skyrim.esm"
+              },
+              {
+                "edid": "WIThugCommonerM",
+                "formKey": "0D783C:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/hired-thugs",
+            "note": "through the wrappers `LvlBanditBossNordM` 01B0E1 and `LvlBanditBossCommonerM` 01B0DB; take `Stats`, `Traits` and `Inventory`"
+          },
+          {
+            "name": "Kyr",
+            "records": [
+              {
+                "edid": "dunFrostmereCrypt_Kyr",
+                "formKey": "0D37D1:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/named-bandits",
+            "note": "through the wrapper `LvlBanditBossNordM` 01B0E1, its template with no template flags: keeps his own level (1)"
+          },
+          {
+            "name": "Bounty Collector",
+            "records": [
+              {
+                "edid": "WEBountyCollectorMaleNord",
+                "formKey": "0F812A:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → World Encounters → *Bounty Hunters*",
+            "note": "through the wrapper `LvlBanditBossNordM` 01B0E1, its template; takes `Stats`, `Traits` and `Inventory`"
+          },
+          {
+            "name": "Lost Paladin",
+            "records": [
+              {
+                "edid": "ccBGSSSE007_LvlGhostPaladin",
+                "formKey": "000807:ccbgssse007-chrysamere.esl"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/ghost-bosses",
+            "note": "through the wrapper `LvlBanditBossNordM` 01B0E1, its template; takes only `Stats`"
+          },
+          {
+            "name": "Dawnguard Hunter",
+            "records": [
+              {
+                "edid": "DLC1WELvlDawnGuardHunter",
+                "formKey": "00F7EF:Dawnguard.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Dawnguard → *Common Dawnguard*",
+            "note": "from `LCharBanditBossNordM` 01A341; takes `Stats` and `Traits`"
+          },
+          {
+            "name": "Eigorn",
+            "records": [
+              {
+                "edid": "ccMTYSSE001_LvlBanditBoss02",
+                "formKey": "000825:ccmtysse001-knightsofthenine.esl"
+              }
+            ],
+            "how": "template",
+            "where": "not an enemy: a corpse (Bandits group page, *Never met as enemies*)",
+            "note": "from `LCharBanditBossNordM` 01A341; takes `Stats` and `Traits`"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharBanditBossOrcM",
+          "formKey": "01B0EA:Skyrim.esm"
+        },
+        "gate": "no \"all levels\" flag: only the highest gate at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`EncBandit02Boss2HOrcM` (6)"
+          },
+          {
+            "at": 5,
+            "label": "`EncBandit02Boss2HOrcM` (6)"
+          },
+          {
+            "at": 9,
+            "label": "`EncBandit02Boss2HOrcM` (6)"
+          },
+          {
+            "at": 14,
+            "label": "`EncBandit03Boss2HOrcM` (10)"
+          },
+          {
+            "at": 19,
+            "label": "`EncBandit04Boss2HOrcM` (16)"
+          },
+          {
+            "at": 25,
+            "label": "`EncBandit05Boss2HOrcM` (21)"
+          },
+          {
+            "at": 29,
+            "label": "`EncBandit06Boss2HOrcM` (28)"
+          }
+        ],
+        "owner": "`LvlBanditBossOrcM` ×3, CC 061 ×1, CC 068 ×1 (initially disabled); `LvlBanditBossOrcMAmbush`: not placed",
+        "drawnBy": [
+          {
+            "name": "Ghunzul",
+            "records": [
+              {
+                "edid": "dunCrackedTuskGhunzul",
+                "formKey": "013679:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/named-bandits",
+            "note": "through the wrappers `LvlBanditBossOrcMAmbush` 0E8B1F and `LvlBanditBossOrcM` 01B0EB; takes `Stats`, `Traits` and `Inventory`"
+          },
+          {
+            "name": "Thug (`WEDL05`)",
+            "records": [
+              {
+                "edid": "WEDL05Thug",
+                "formKey": "0B91B0:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → World Encounters → *Random Encounter NPCs*",
+            "note": "takes `Traits` and `Inventory` but not `Stats`: keeps its own level (PC×1.15 [5+])"
+          },
+          {
+            "name": "Makhel Abbas",
+            "records": [
+              {
+                "edid": "CWMission11Orc",
+                "formKey": "08F35A:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "not in the census: unused, dropped by the user (2026-10-04; Bandits group page)",
+            "note": "through the wrapper `LvlBanditBossOrcM` 01B0EB, its template; takes `Stats` and `Inventory`"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharBanditBossNordM2HOnly",
+          "formKey": "0E1645:Skyrim.esm"
+        },
+        "gate": "no \"all levels\" flag: only the highest gate at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`EncBandit02Boss2HNordM` (6)"
+          },
+          {
+            "at": 5,
+            "label": "`EncBandit02Boss2HNordM` (6)"
+          },
+          {
+            "at": 9,
+            "label": "`EncBandit02Boss2HNordM` (6)"
+          },
+          {
+            "at": 14,
+            "label": "`EncBandit03Boss2HNordM` (10)"
+          },
+          {
+            "at": 19,
+            "label": "`EncBandit04Boss2HNordM` (16)"
+          },
+          {
+            "at": 25,
+            "label": "`EncBandit05Boss2HNordM` (21)"
+          },
+          {
+            "at": 29,
+            "label": "`EncBandit06Boss2HNordM` (28)"
+          }
+        ],
+        "owner": "White River Watch ×2 (through `LvlBanditBossMelee2HNordM`); `LvlBanditBossMelee2HNordM` itself: not placed",
+        "drawnBy": [
+          {
+            "name": "Pirate Captain (Haknir's Shoal)",
+            "records": [
+              {
+                "edid": "DLC2dunHaknirShoal_LvlBanditBossMaleNord",
+                "formKey": "02400A:Dragonborn.esm"
+              }
+            ],
+            "how": "template",
+            "page": "bandits/reavers",
+            "note": "through the wrapper `LvlBanditBossMelee2HNordM` 0E1646, its template; takes `Stats` and `Inventory`"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMelee2H",
+          "formKey": "03DEC8:Skyrim.esm"
+        },
+        "seeFamily": "common-bandits",
+        "note": "the common 2H rungs at 1 · 5 · 9 · 14 · 19 · 25 (every gate ≤ player)",
+        "owner": "`DunLostKnifeBanditBoss` ×1 (`LostKnifeHideout02` 01A337, ref 01AE9B); the rest on *Common Bandits*"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Bandit Chief (the wrappers)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "SwindlersDen01",
+              "formKey": "041777:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBoss` (ref 042469)"
+          },
+          {
+            "cell": {
+              "edid": "BrokenHelmHollow01",
+              "formKey": "0152B0:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBoss`"
+          },
+          {
+            "cell": {
+              "edid": "RedoransRetreat01",
+              "formKey": "015224:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBoss`"
+          },
+          {
+            "cell": {
+              "edid": "KnifepointRidge01",
+              "formKey": "079F9F:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBoss`"
+          },
+          {
+            "cell": {
+              "edid": "TrevasWatch01",
+              "formKey": "015200:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBoss` ×2"
+          },
+          {
+            "cell": {
+              "edid": "UtteringHillsCave01",
+              "formKey": "07BC27:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBoss`"
+          },
+          {
+            "cell": {
+              "edid": "BluePalaceWingWorld",
+              "formKey": "034240:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBoss` (ref 09F832)",
+            "disabled": true,
+            "note": "enabled by `dunBluePalaceQST` 09B285"
+          },
+          {
+            "cell": {
+              "label": "Tamriel exteriors"
+            },
+            "refText": "`LvlBanditBoss` ×9: `IronbackHideoutExterior01` 00923F, `FortHraggstadExterior04` 009223, `DragonLair04Exterior05` 0098B5, `KorvanjundExterior01` 0090DD, `SnowpointBeaconExterior01` 008FA7, `IrkngthandExterior03` 0090F7, `ValtheimKeepExterior02` 0095B0, `PrideofTelVosExterior03` 00B267, `WinterWarExterior03` 00B3A9"
+          },
+          {
+            "cell": {
+              "edid": "Orotheim01",
+              "formKey": "015233:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBossAmbush`"
+          },
+          {
+            "cell": {
+              "edid": "HelgenKeep01",
+              "formKey": "05DE24:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBossCommonerF`"
+          },
+          {
+            "cell": {
+              "edid": "Pinewatch02",
+              "formKey": "01F359:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBossNordF`"
+          },
+          {
+            "cell": {
+              "edid": "LiarsRetreat01",
+              "formKey": "0AA20C:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBossNordF` (ref 0ABDD8)",
+            "disabled": true,
+            "note": "enabled by `dunLiarsRetreatQST` 0AA5D6"
+          },
+          {
+            "cell": {
+              "edid": "FortGreenwallExterior01",
+              "formKey": "00BC0B:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBossEvenTonedF`"
+          },
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "`LvlBanditBossEvenTonedM` (ref 043A8A, Faldar's Tooth); `dunRobbersGorge_LvlBanditBoss` (ref 078AF7); `dunFortNeugrad_LvlBanditBossAmbush` (ref 0CC59A); `dunWhiteRiverWatchLvlBanditBoss` (ref 080B20)"
+          },
+          {
+            "cell": {
+              "edid": "FortDunstadExterior01",
+              "formKey": "008FEB:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBossNordM`"
+          },
+          {
+            "cell": {
+              "edid": "FortFellhammer01",
+              "formKey": "015284:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBossOrcM`"
+          },
+          {
+            "cell": {
+              "edid": "HaltedStreamCamp01",
+              "formKey": "043FAB:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBossOrcM`"
+          },
+          {
+            "cell": {
+              "edid": "BilegulchMine",
+              "formKey": "01B147:Skyrim.esm"
+            },
+            "refText": "`LvlBanditBossOrcM`"
+          },
+          {
+            "cell": {
+              "edid": "WhiteRiverWatchExterior03",
+              "formKey": "009653:Skyrim.esm"
+            },
+            "refText": "`dunWhiteRiverWatchLvlBanditBoss` (ref 0F90B3)"
+          },
+          {
+            "cell": {
+              "edid": "StonyCreekCave01",
+              "formKey": "04B8FB:Skyrim.esm"
+            },
+            "refText": "CC `ccBGSSSE004_LvlRuinsEdgeBoss` (ref 000815:ccbgssse004-ruinsedge.esl)"
+          },
+          {
+            "cell": {
+              "edid": "ReachwindEyrie01",
+              "formKey": "0399D1:Skyrim.esm"
+            },
+            "refText": "CC `ccBGSSSE061_LvlBanditBossOrcM` (ref 000825:ccbgssse061-ba_dwarven.esl)"
+          },
+          {
+            "cell": {
+              "edid": "LostKnifeHideout02",
+              "formKey": "01A337:Skyrim.esm"
+            },
+            "refText": "CC `ccBGSSSE068_LvlBanditBossOrcM` (ref 000807:ccbgssse068-bloodfall.esl)",
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "the Traitor's Post boss",
+        "base": [
+          {
+            "edid": "dunPOITraitorsPostBoss",
+            "formKey": "07F8A0:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "TraitorsPostExterior02",
+              "formKey": "00B493:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "073B14:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "the Lost Knife Hideout boss",
+        "base": [
+          {
+            "edid": "DunLostKnifeBanditBoss",
+            "formKey": "01C902:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "LostKnifeHideout02",
+              "formKey": "01A337:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "01AE9B:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`dunLostKnifeQST` 034C90, alias `drunkBoss`"
+      },
+      {
+        "name": "Pit arena opponent",
+        "base": [
+          {
+            "edid": "LvlNPCArenaOpponent",
+            "formKey": "090CFA:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "created only by the cut Pit arena quests (row note)"
+      },
+      {
+        "name": "Bandit Chief (unplaced wrappers)",
+        "base": [
+          {
+            "edid": "LvlBanditBossCommonerM",
+            "formKey": "01B0DB:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditBossEvenTonedMAggro1024",
+            "formKey": "0C0037:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditBossMelee2HNordM",
+            "formKey": "0E1646:Skyrim.esm"
+          },
+          {
+            "edid": "LvlBanditBossOrcMAmbush",
+            "formKey": "0E8B1F:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "each is the template of a placed or quest record: the Hired Thug (CommonerM), White River Watch and the Haknir's Shoal Pirate Captain (Melee2HNordM), Ghunzul (OrcMAmbush); the Aggro1024 copy is used by nothing else"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "boss 1H leaves (vanilla rungs 02–06)",
+        "weapons": "`LItemBanditBossWeapon1H` 03DF1C, `LItemBanditBossShield` 03DF22, `LootBanditGoldBoss` 03DED1, death item `DeathItemBandit` 0C3C9B; a Steel Dagger (02–03), Orcish Dagger (04; 06 Imperial M), Elven Dagger (05–06). `EncBandit04Boss1HImperial{F,M}` carry `LItemBanditWeapon2HBoss` 03DEDA instead of the 1H list",
+        "armor": "`BanditArmorHeavyBossOutfit` 03DED3",
+        "skin": "race default"
+      },
+      {
+        "records": "boss 2H leaves",
+        "weapons": "`LItemBanditWeapon2HBoss` 03DEDA, `LootBanditGoldBoss`, `DeathItemBandit`, the rung's dagger",
+        "armor": "`BanditArmorHeavyBossOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "the CC armour-pack leaves",
+        "weapons": "as the vanilla leaf of the same rung and role (1H leaves keep `LItemBanditBossShield`)",
+        "armor": "the pack's `ccBGSSSE0NN_ArmorBladesOutfitNoHelmet` 000811 (056: `…NoShield`; the 051 Orc 2H leaf: `ccBGSSSE051_ArmorBladesOutfit` 000810, with helmet)",
+        "skin": "race default"
+      },
+      {
+        "records": "the chief wrappers, `LvlNPCArenaOpponent`",
+        "weapons": "as the drawn leaf",
+        "armor": "as the drawn leaf",
+        "skin": "race default"
+      },
+      {
+        "records": "`DunLostKnifeBanditBoss`",
+        "weapons": "as the drawn common 2H bandit (*Common Bandits*)",
+        "armor": "as the drawn common 2H bandit",
+        "skin": "race default"
+      },
+      {
+        "records": "`dunPOITraitorsPostBoss` (own)",
+        "weapons": "`LItemBanditBossSword` 03DF1D, Iron Dagger 01397E, `LItemBanditWeaponMissile` 037BFD, `LootBanditGoldBoss`",
+        "armor": "`BanditArmorHeavyBossOutfit` 03DED3",
+        "skin": "race default"
+      },
+      {
+        "records": "`dunFortNeugrad_LvlBanditBossAmbush` (own)",
+        "weapons": "`LItemBanditWeapon2HBoss`, `LootBanditGoldBoss`, `LItemPotionRestoreStamina` 03A173, the Fort Neugrad Library Key 0CC59C",
+        "armor": "`BanditArmorMeleeHeavyNoShieldOutfit` 0A95F7",
+        "skin": "race default"
+      },
+      {
+        "records": "`dunWhiteRiverWatchLvlBanditBoss` (own)",
+        "weapons": "`LItemBanditWeapon2HBoss`, Hunting Bow 013985, `LItemBanditWeaponArrows` 039D2F, `LootBanditGoldBoss`",
+        "armor": "`BanditArmorHeavyBossNoShieldOutfit` 0A95F8",
+        "skin": "race default"
+      },
+      {
+        "records": "CC Ruin's Edge chief (own; no weapon)",
+        "weapons": "`LItemArrowsAllBest` 10FAF5, `LootBanditGoldBoss`, `LitemJunk` 10C734, `LootFalmerOre100` 01ED29, `ccBGSSSE004_LItemCheeseForEveryone` 000814",
+        "armor": "`ArmorIronandHideMixed` 0ABDA1 (Iron Armor, Hide Boots, Hide Bracers)",
+        "skin": "race default"
+      },
+      {
+        "records": "CC 068 chief (own)",
+        "weapons": "`LItemOrcStrongholdWaraxe` 08CA42, `LootGoldChange25` 04F78D",
+        "armor": "`ArmorOrcishAllOutfit` 0579A5",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "`LItemBanditBossWeapon1H` 03DF1C (Mace, Sword, War Axe) · `LItemBanditWeapon2HBoss` 03DEDA (Battleaxe, Greatsword, Warhammer)"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "one weapon-type sublist, then every gate ≤ player: Steel 1 · enchanted Iron 6 · Orcish 6 · enchanted Steel 9 · Dwarven 12 · enchanted Orcish 12 · Elven 19 · enchanted Dwarven 19 · Glass 27 · enchanted Elven 27 · Ebony 36 · enchanted Glass 36",
+        "levels": [
+          1,
+          6,
+          9,
+          12,
+          19,
+          27,
+          36
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemBanditBossSword",
+          "formKey": "03DF1D:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "swords only, the same tiers: Steel 1 · enchanted Iron 6 · Orcish 6 · enchanted Steel 9 · Dwarven 12 · enchanted Orcish 12 · Elven 19 · enchanted Dwarven 19 · Glass 27 · enchanted Elven 27 · Ebony 36 · enchanted Glass 36",
+        "levels": [
+          1,
+          6,
+          9,
+          12,
+          19,
+          27,
+          36
+        ]
+      },
+      {
+        "list": {
+          "edid": "BanditArmorHeavyBossOutfit",
+          "formKey": "03DED3:Skyrim.esm"
+        },
+        "rolls": "cuirass and boots, 50% helmet, 50% gauntlets (`LItemBanditBoss{Cuirass,Boots,Helmet50,Gauntlets50}`, highest gate only): Iron or Banded Iron 1 · Steel 6 · Steel Plate 18; and `LItemBanditBossShield`",
+        "levels": [
+          1,
+          6,
+          18
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemBanditBossShield",
+          "formKey": "03DF22:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "50% none; Iron, Banded Iron 1 · Steel 6 · Dwarven 12 · Orcish 25 · Ebony 32",
+        "levels": [
+          1,
+          6,
+          12,
+          25,
+          32
+        ]
+      },
+      {
+        "list": {
+          "edid": "BanditArmorHeavyBossNoShieldOutfit",
+          "formKey": "0A95F8:Skyrim.esm"
+        },
+        "rolls": "the same pieces, no shield",
+        "levels": [
+          1,
+          6,
+          18
+        ]
+      },
+      {
+        "list": {
+          "edid": "BanditArmorMeleeHeavyNoShieldOutfit",
+          "formKey": "0A95F7:Skyrim.esm"
+        },
+        "rolls": "the common bandit heavy pieces (`LItemBanditHeavy{Boots,Cuirass,Gauntlets50,Helmet}`): as on *Common Bandits*"
+      },
+      {
+        "list": {
+          "label": "`LItemBanditWeaponMissile` 037BFD · `LItemBanditWeaponArrows` 039D2F"
+        },
+        "rolls": "as on *Common Bandits*"
+      },
+      {
+        "list": {
+          "edid": "LootBanditGoldBoss",
+          "formKey": "03DED1:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "rolls": "gold 50 at 1 · 100 at 6 · 150 at 11 · 200 at 16 · 250 at 21",
+        "levels": [
+          1,
+          6,
+          11,
+          16,
+          21
+        ]
+      },
+      {
+        "list": {
+          "edid": "DeathItemBandit",
+          "formKey": "0C3C9B:Skyrim.esm"
+        },
+        "rolls": "use all: `LootPerkGoldenTouchChange` and `LootImperialLuck` (perk-gated extra gold)"
+      },
+      {
+        "list": {
+          "label": "`ccBGSSSE0NN_ArmorBladesOutfitNoHelmet` 000811 (in each pack)"
+        },
+        "rolls": "the pack's cuirass and boots, 50% helmet, 50% gauntlets: Iron Plate (052), Leather Scout (053), Silver (056), Steel Soldier (058), Elven Hunter (064), Dwarven Plate (061), Dwarven Mail (062), Orcish Plate (054), Orcish Scaled (055), Daedric Plate (050: Daedric boots and gauntlets, always), Dragonplate Insulated (059), Ebony Plate (063), Studded Dragonscale (060: gauntlets always, plus the 50% list), Daedric Mail (051)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Iron, Banded Iron, Steel, Steel Plate, Dwarven, Orcish, Ebony armour and shields",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "the CC armour-pack sets",
+        "kind": "the pack's armour",
+        "playable": true
+      },
+      {
+        "item": "the boss weapons, plain and enchanted",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

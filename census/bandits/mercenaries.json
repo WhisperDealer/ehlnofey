@@ -1,0 +1,466 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "mercenaries",
+  "group": "bandits",
+  "title": "Mercenaries",
+  "order": 5,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "taron-guard-01",
+        "name": "Mercenary",
+        "records": [
+          {
+            "edid": "DLC1_WESC09TaronGuard01",
+            "formKey": "014BFC:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Mercenaries up to Blooded"
+        },
+        "note": "one of Taron Dreth's three escorts (Taron is on Warlocks → *Named Warlocks*). It has no template, so its `Stats` flag is inert and it owns level 1."
+      },
+      {
+        "id": "taron-guard-02",
+        "name": "Mercenary",
+        "records": [
+          {
+            "edid": "DLC1_WESC09TaronGuard02",
+            "formKey": "014BFD:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlBanditMissile",
+            "formKey": "01E79E:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Mercenaries up to Blooded"
+        },
+        "note": "takes only `Stats` from `LvlBanditMissile` 01E79E, which takes it from `LCharBanditMissile` 01E770 (every gate ≤ player); its name, inventory and outfit are its own."
+      },
+      {
+        "id": "taron-guard-03",
+        "name": "Mercenary",
+        "records": [
+          {
+            "edid": "DLC1_WESC09TaronGuard03",
+            "formKey": "014BFE:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlBanditMelee2H",
+            "formKey": "01E79D:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Mercenaries up to Blooded"
+        },
+        "note": "takes only `Stats` from `LvlBanditMelee2H` 01E79D, which takes it from `LCharBanditMelee2H` 03DEC8 (every gate ≤ player); its name, inventory and outfit are its own."
+      },
+      {
+        "id": "silver-blood-mercenary",
+        "name": "Silver-Blood Mercenary",
+        "records": [
+          {
+            "edid": "KarthwastenSilverBloodGuard",
+            "formKey": "0622E1:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlBanditMeleeEvenTonedM",
+            "formKey": "01B060:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Mercenaries up to Blooded"
+        },
+        "note": "takes `Stats`, `Traits` and `Inventory` from `LvlBanditMeleeEvenTonedM` 01B060 (its race list `LCharBanditMeleeEvenTonedM`), so a Redguard bandit's level, race and gear; its name is its own."
+      },
+      {
+        "id": "cc-mercenary-archer",
+        "name": "Mercenary Archer",
+        "records": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_LvlMercMissile",
+            "formKey": "0008FC:cctwbsse001-puzzledungeon.esm"
+          },
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_LvlMercMisHoldPos",
+            "formKey": "000902:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMissile",
+            "formKey": "01E770:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Mercenaries up to Blooded"
+        },
+        "note": "CC puzzle dungeon (cctwbsse001-puzzledungeon.esm): takes `Stats`, `Traits` and `Inventory` from `LCharBanditMissile` 01E770 (every gate ≤ player)."
+      },
+      {
+        "id": "cc-mercenary-warrior",
+        "name": "Mercenary Warrior",
+        "records": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_LvlMercMelee",
+            "formKey": "000900:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMeleeAny",
+            "formKey": "03DECD:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Mercenaries up to Blooded"
+        },
+        "note": "CC puzzle dungeon: takes `Stats`, `Traits` and `Inventory` from `LCharBanditMeleeAny` 03DECD (`LCharBanditMelee1H` or `…Melee2H`)."
+      },
+      {
+        "id": "cc-mercenary-wizard",
+        "name": "Mercenary Wizard",
+        "records": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_LvlMercWizard",
+            "formKey": "0008FE:cctwbsse001-puzzledungeon.esm"
+          },
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_LvlMercWizHoldPos",
+            "formKey": "0008ED:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditWizard",
+            "formKey": "01E771:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Mercenaries up to Blooded"
+        },
+        "note": "CC puzzle dungeon: takes `Stats`, `Traits` and `Inventory` from `LCharBanditWizard` 01E771 (0008ED through `LvlBanditWizard` 01E79F). That list has no \"all levels\" flag and gates its top rung at 24, so it rolls only the highest of 1 · 5 · 9 · 14 · 19 · 24."
+      },
+      {
+        "id": "cc-mercenary-camp",
+        "name": "Mercenary",
+        "records": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_LvlMercCamp",
+            "formKey": "195D53:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Mercenaries up to Blooded"
+        },
+        "note": "CC puzzle dungeon: no template; owns level 1, its gear is its own."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no record uses it as its template, so no other record keeps its own level beside it.",
+      "`DLC1_WESC09TaronGuard01` and `…LvlMercCamp` own their level (1); each must be changed on its own.",
+      "The other rows carry `Stats` and follow a bandit list; the records that keep their own level beside those lists are on *Common Bandits*.",
+      "Other mercenaries are filed with their employers: the Goldenglow mercenaries on Factions → Thieves Guild → *Thieves Guild Foes*, the East Empire Mercenaries on Guards → *Other Guards*; the CC puzzle dungeon's four named season mercenaries (`DLCDwarvenPuzzleDungeonMercenary{Spring,Summer,Autumn,Winter}`) take `Stats` from `TG02Mercenary01` and are listed beside it on *Thieves Guild Foes*; `DLCDwarvenPuzzleDungeonDeadMercenary` 0008FB:cctwbsse001-puzzledungeon.esm is a corpse (11 placed refs)."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "none"
+        },
+        "owner": "—",
+        "note": "every row is placed or created by a quest alias; the bandit lists above only lend the level (*Common Bandits*)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Mercenary (Dawnguard, ×3)",
+        "base": [
+          {
+            "edid": "DLC1_WESC09TaronGuard01",
+            "formKey": "014BFC:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_WESC09TaronGuard02",
+            "formKey": "014BFD:Dawnguard.esm"
+          },
+          {
+            "edid": "DLC1_WESC09TaronGuard03",
+            "formKey": "014BFE:Dawnguard.esm"
+          }
+        ],
+        "notPlaced": true,
+        "quest": "`DLC1_WESC09` 014BF1:Dawnguard.esm (the Taron Dreth encounter), aliases `Guard01`–`Guard03`"
+      },
+      {
+        "name": "Silver-Blood Mercenary",
+        "base": [
+          {
+            "edid": "KarthwastenSilverBloodGuard",
+            "formKey": "0622E1:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "KarthwastenSanuarachMine",
+              "formKey": "013909:Skyrim.esm"
+            },
+            "refText": "×3 (refs 0622E2 · 0622E3 · 0622E4)"
+          }
+        ]
+      },
+      {
+        "name": "Mercenary Archer (CC)",
+        "base": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_LvlMercMissile",
+            "formKey": "0008FC:cctwbsse001-puzzledungeon.esm"
+          },
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_LvlMercMisHoldPos",
+            "formKey": "000902:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeon01",
+              "formKey": "000A98:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×2 (one HoldPos)"
+          },
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeon02",
+              "formKey": "001703:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×1"
+          }
+        ]
+      },
+      {
+        "name": "Mercenary Warrior (CC)",
+        "base": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_LvlMercMelee",
+            "formKey": "000900:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeon01",
+              "formKey": "000A98:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×6"
+          },
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeon02",
+              "formKey": "001703:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×1"
+          }
+        ]
+      },
+      {
+        "name": "Mercenary Wizard (CC)",
+        "base": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_LvlMercWizard",
+            "formKey": "0008FE:cctwbsse001-puzzledungeon.esm"
+          },
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_LvlMercWizHoldPos",
+            "formKey": "0008ED:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeon01",
+              "formKey": "000A98:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×3 (two HoldPos)"
+          },
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeon02",
+              "formKey": "001703:cctwbsse001-puzzledungeon.esm"
+            },
+            "refText": "×2"
+          }
+        ]
+      },
+      {
+        "name": "Mercenary (CC camp)",
+        "base": [
+          {
+            "edid": "DLCDwarvenPuzzleDungeon_LvlMercCamp",
+            "formKey": "195D53:cctwbsse001-puzzledungeon.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccTWBSSE001DwarvenPuzzleDungeon01",
+              "formKey": "000A98:cctwbsse001-puzzledungeon.esm"
+            },
+            "ref": {
+              "formKey": "195D62:cctwbsse001-puzzledungeon.esm"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "`DLC1_WESC09TaronGuard01` · `…02` (own)",
+        "weapons": "Iron Dagger 01397E · `LItemBanditWeapon1H` 037C1B · `LItemBanditWeaponMissile` 037BFD · `LootBanditGold` 037C27",
+        "armor": "`DLC1_WESC09TaronGuardOutfit01` 014BFF (with shield) · `…Outfit02` 014C00: `LItemBanditHeavyCuirass` 015BE3, `…HeavyBoots` 015BE1, `…HeavyGauntlets50` 015BE2; outfit 01 also `LItemBanditShield` 039D2D",
+        "skin": "race default"
+      },
+      {
+        "records": "`DLC1_WESC09TaronGuard03` (own)",
+        "weapons": "Iron Dagger · `LItemBanditWeapon2H` 037C21 · `LItemBanditWeaponMissile` · `LootBanditGold` · `LItemBanditShield`",
+        "armor": "`DLC1_WESC09TaronGuardOutfit03` 014C01: the same heavy pieces and `LItemBanditShield`",
+        "skin": "race default"
+      },
+      {
+        "records": "Silver-Blood Mercenary, the CC Archer, Warrior and Wizard (`Inventory` from the bandit wrapper or list)",
+        "weapons": "as the drawn bandit leaf (*Common Bandits* → Gear)",
+        "armor": "as the drawn bandit leaf",
+        "skin": "race default"
+      },
+      {
+        "records": "CC camp Mercenary (own)",
+        "weapons": "Iron War Axe 013790",
+        "armor": "`HunterOutfit01Hooded` 10698C (Leather Boots, Executioner's Gloves, a farm hat, `LItemBanditCuirassVariants` 106D0C)",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "`LItemBanditWeapon1H` · `…2H` · `…Missile` · `LootBanditGold` · `LItemBanditHeavy*` · `LItemBanditShield`"
+        },
+        "rolls": "as on *Common Bandits* → Gear lists"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "the bandit weapons and heavy armour pieces, the hunter outfit, Iron War Axe",
+        "kind": "weapons, armour, clothing",
+        "playable": true
+      }
+    ]
+  }
+}
