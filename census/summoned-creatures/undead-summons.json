@@ -690,7 +690,7 @@
       {
         "name": "Boneman · Mistman · Wrathman (necrohouse copies)",
         "spell": "effect `ccRMSSSE001_GhostEffect` 000CE2 (Boneman, no spell); the activator `ccRMSSSE001_NecroSummonerTrigger` 000815 names all three as script properties",
-        "player": "the Gray Cowl Nocturnal player home (ccrmssse001-necrohouse), by script `[unverified]`",
+        "player": "the Gallows Hall player home (ccrmssse001-necrohouse), by script `[unverified]`",
         "npcs": "none"
       },
       {

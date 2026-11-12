@@ -1,0 +1,491 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "electromancers",
+  "group": "warlocks",
+  "title": "Electromancers",
+  "order": 4,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "novice-storm-mage",
+        "name": "Novice Storm Mage",
+        "records": [
+          {
+            "edid": "EncWarlock01TemplateStorm",
+            "formKey": "044CD9:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "bands-of-power.md: novice mages"
+        },
+        "note": "eight leaves per rung (`EncWarlockStorm0N<Race><Sex>`), two at rung 07; every leaf takes `Stats`, `BaseData` and `Inventory` from its rung's template."
+      },
+      {
+        "id": "apprentice-storm-mage",
+        "name": "Apprentice Storm Mage",
+        "records": [
+          {
+            "edid": "EncWarlock02TemplateStorm",
+            "formKey": "045C61:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: apprentice mages"
+        }
+      },
+      {
+        "id": "storm-mage-adept",
+        "name": "Storm Mage Adept",
+        "records": [
+          {
+            "edid": "EncWarlock03TemplateStorm",
+            "formKey": "045C7C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: adept mages"
+        }
+      },
+      {
+        "id": "storm-mage",
+        "name": "Storm Mage",
+        "records": [
+          {
+            "edid": "EncWarlock04TemplateStorm",
+            "formKey": "045CA2:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 19
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: the middle rung (19), between the adept and the expert mages"
+        }
+      },
+      {
+        "id": "storm-wizard",
+        "name": "Storm Wizard",
+        "records": [
+          {
+            "edid": "EncWarlock05TemplateStorm",
+            "formKey": "045CBD:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 27
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: expert mages"
+        }
+      },
+      {
+        "id": "electromancer",
+        "name": "Electromancer",
+        "records": [
+          {
+            "edid": "EncWarlock06TemplateStorm",
+            "formKey": "045CC0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 36
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: expert mages (36 sits in Elite)"
+        }
+      },
+      {
+        "id": "arch-electromancer",
+        "name": "Arch Electromancer",
+        "records": [
+          {
+            "edid": "EncWarlock07TemplateStorm",
+            "formKey": "1091AC:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 46
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: 46 sits in Powerful; the Arch rung is the top of the ladder (archetype-tiers.md Rule 4)"
+        }
+      },
+      {
+        "id": "wrappers",
+        "name": "the drawn rung's name",
+        "records": [
+          {
+            "edid": "LvlWarlockShock",
+            "formKey": "01E7CF:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockShockElfHaughtyM",
+            "formKey": "081F05:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "`LCharWarlockStorm` or a voice list (Lists below)"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md (WD-46) rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
+        },
+        "note": "unnamed wrappers that take `Stats` and `BaseData` from a list (Lists below), so each shows the rung it draws. Placed: `LvlWarlockShock` 01E7CF ×2 · `LvlWarlockShockElfHaughtyM` 081F05 ×1 (voice list `…ElfHaughtyM`) (3 in all). `LvlWarlockShockElfHaughtyM` (`Ansilvund01`) moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03); it draws 1–36 (no rung 07)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing a rung template `EncWarlock0{2–7}TemplateStorm` also needs that rung's boss template `EncWarlock0NTemplateBossStorm` (7 · 14 · 21 · 30 · 40 · 50, on *Warlock Bosses*), which uses it as its template but not for `Stats`.",
+      "Changing `EncWarlock00Template` 044CCC (the shared base of every rung template, which uses it without `Stats`) also needs `WIChangeLocation04Student` 06F214 (1, left out as not an enemy on the *Warlocks* group page): same pattern.",
+      "The Storm rungs are also drawn through `LCharWarlockElemental`: the records that keep their own level beside its wrapper are on *Elemental Mages*.",
+      "Every other record here (the rung leaves and every Storm wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharWarlockStorm",
+          "formKey": "01E7D3:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWarlock01Storm` 045C9D"
+          },
+          {
+            "at": 6,
+            "label": "`LCharWarlock02Storm` 045C9F"
+          },
+          {
+            "at": 12,
+            "label": "`LCharWarlock03Storm` 045C9E"
+          },
+          {
+            "at": 19,
+            "label": "`LCharWarlock04Storm` 045CF3"
+          },
+          {
+            "at": 27,
+            "label": "`LCharWarlock05Storm` 045CF6"
+          },
+          {
+            "at": 36,
+            "label": "`LCharWarlock06Storm` 045CF9"
+          },
+          {
+            "at": 46,
+            "label": "`LCharWarlock07Storm` 1091CA (2 leaves)"
+          }
+        ],
+        "note": "each rung list holds its 8 leaves with the High Elf pair twice (10 entries); rung 07 2 leaves",
+        "owner": "`LvlWarlockShock` 01E7CF ×2",
+        "drawnBy": [
+          {
+            "name": "Vaermina Devotees",
+            "records": [
+              {
+                "edid": "DA16LvlVaerminaDevotee",
+                "formKey": "09DDCD:Skyrim.esm"
+              },
+              {
+                "edid": "DA16LvlVaerminaDevoteeAmbush",
+                "formKey": "09DDD2:Skyrim.esm"
+              },
+              {
+                "edid": "DA16LvlVaerminaDevoteeAmbushFemaleCon",
+                "formKey": "0E36DA:Skyrim.esm"
+              },
+              {
+                "edid": "DA16LvlVaerminaDevoteeAmbushMaleSly",
+                "formKey": "0E36D9:Skyrim.esm"
+              },
+              {
+                "edid": "DA16LvlVaerminaDevoteeAmbushMaleWarlock",
+                "formKey": "0E36D8:Skyrim.esm"
+              },
+              {
+                "edid": "DA16LvlVaerminaDevoteeBarrier",
+                "formKey": "0B91A3:Skyrim.esm"
+              },
+              {
+                "edid": "DA16LvlVaerminaDevoteeDream",
+                "formKey": "07AD00:Skyrim.esm"
+              },
+              {
+                "edid": "DA16LvlVaerminaDevoteeDreamMaleCon",
+                "formKey": "0E16D4:Skyrim.esm"
+              },
+              {
+                "edid": "DA16LvlVaerminaDevoteeDreamMaleSly",
+                "formKey": "0E16D2:Skyrim.esm"
+              },
+              {
+                "edid": "DA16LvlVaerminaDevoteeDreamMaleWarlock",
+                "formKey": "0E16D3:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "daedra/vaermina-devotees",
+            "note": "through `LvlWarlockShock` 01E7CF (the voice copies through `DA16LvlVaerminaDevotee`, `…Ambush` or `…Dream`); `Stats` taken; 31 placed, all in `NightcallerTemple01`"
+          },
+          {
+            "name": "Elemental mages",
+            "records": [
+              {
+                "edid": "LCharWarlockElemental",
+                "formKey": "01E779:Skyrim.esm"
+              }
+            ],
+            "how": "entry",
+            "page": "warlocks/elemental-mages",
+            "note": "`LCharWarlockElemental` holds this list at 1, beside the other two elemental schools; its users: `LvlWarlockElemental` 01E7CB and its copies (Elemental Mages), Drelas, Faldrus and Ardwen (Named Warlocks), the Ghosts of the Tribunal temple staff and the CC Guardian (no `Stats`)"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockStormOmit01",
+          "formKey": "0D5C47:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWarlock02Storm` (Apprentice)"
+          },
+          {
+            "at": 12,
+            "label": "`LCharWarlock03Storm`"
+          },
+          {
+            "at": 19,
+            "label": "`LCharWarlock04Storm`"
+          },
+          {
+            "at": 27,
+            "label": "`LCharWarlock05Storm`"
+          },
+          {
+            "at": 36,
+            "label": "`LCharWarlock06Storm`"
+          },
+          {
+            "at": 46,
+            "label": "`LCharWarlock07Storm`"
+          }
+        ],
+        "note": "the school ladder without the Novice rung, through the same rung lists",
+        "owner": "no record draws it"
+      },
+      {
+        "list": {
+          "label": "the voice lists `LCharWarlockStorm{CondescendingM, DarkElfF, DarkElfM, ElfHaughtyF, ElfHaughtyM}` 081EFB · 081EFC · 081EFD · 081EFE · 081EFF"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "rung 01"
+          },
+          {
+            "at": 6,
+            "label": "rung 02"
+          },
+          {
+            "at": 12,
+            "label": "rung 03"
+          },
+          {
+            "at": 19,
+            "label": "rung 04"
+          },
+          {
+            "at": 27,
+            "label": "rung 05"
+          },
+          {
+            "at": 36,
+            "label": "rung 06"
+          }
+        ],
+        "note": "that race and sex's leaf from rungs 01–06, no rung 07 (Condescending: the Breton and Imperial leaves); `LCharWarlockStormElfHaughtyF` 081EFE gates its rung-04 leaf at 18",
+        "owner": "`LvlWarlockShockElfHaughtyM` 081F05 ×1 (`…ElfHaughtyM`); `…CondescendingM`, `…ElfHaughtyF` and `…ElfHaughtyM` are also entries of the Elemental voice lists; no record draws the DarkElf lists",
+        "drawnBy": [
+          {
+            "name": "Elemental mages (voice lists)",
+            "records": [
+              {
+                "edid": "LCharWarlockElementalCondescendingM",
+                "formKey": "081F07:Skyrim.esm"
+              },
+              {
+                "edid": "LCharWarlockElementalElfHaughtyF",
+                "formKey": "081F08:Skyrim.esm"
+              },
+              {
+                "edid": "LCharWarlockElementalElfHaughtyM",
+                "formKey": "081F09:Skyrim.esm"
+              }
+            ],
+            "how": "entry",
+            "page": "warlocks/elemental-mages",
+            "note": "they hold the Storm `CondescendingM`, `ElfHaughtyF` and `ElfHaughtyM` lists at 1; only `…ElfHaughtyM` is used, by `LvlWarlockElementalElfHaughtyM` 081F0D ×1"
+          }
+        ]
+      },
+      {
+        "list": {
+          "label": "the rung lists `LCharWarlock0{1–7}Storm` 045C9D · 045C9F · 045C9E · 045CF3 · 045CF6 · 045CF9 · 1091CA"
+        },
+        "gate": "every gate ≤ player; every leaf at 1",
+        "note": "each rung list holds its 8 leaves with the High Elf pair twice (10 entries); rung 07 2 leaves",
+        "owner": "`LCharWarlockStorm`, `LCharWarlockStormOmit01`"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Electromancer rungs 01–05 (`Inventory` from `EncWarlock00Template` 044CCC)",
+        "weapons": "`LItemWarlockDagger` 044CD6, `LootStaffsWeaponWarlock` 10FAD1, `LootWarlockRandom` 10FACD, the Atronach Forge recipe lists `AtrFrgRecipeList` 10F8B4 · `AtrFrgDaedricRecipeList` 10F8B5; death item `DeathItemWarlock` 08601A",
+        "armor": "`WarlockOutfitLeveled` 044CD5",
+        "skin": "race default"
+      },
+      {
+        "records": "Electromancer rungs 06–07 (own inventory)",
+        "weapons": "`LItemWarlockDagger`, `LootWarlockRandom`, `LItemStaffChainLightning50` 0E0FE3; death item `DeathItemWarlock`",
+        "armor": "`WarlockOutfitLeveled`",
+        "skin": "race default"
+      },
+      {
+        "records": "the wrappers",
+        "weapons": "as the drawn leaf",
+        "armor": "as the drawn leaf",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "WarlockOutfitLeveled",
+          "formKey": "044CD5:Skyrim.esm"
+        },
+        "rolls": "boots (`ClothesWarlockBoots` 0C5D12) and `LITemWarlockRobes` 105EF9: Black Mage Robes 1 · Hooded Black Mage Robes, Robes of (Minor) Alteration/Destruction/Restoration 8 · Quickening 10 · Major 16 · Recharging 20 · Eminent 24 · Replenishing 30 · Extreme 32 · Peerless, Resurgence 40"
+      },
+      {
+        "list": {
+          "edid": "LItemWarlockDagger",
+          "formKey": "044CD6:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron 1 · Steel 4 · Orcish 7 · Dwarven 10 · Elven 14 · enchanted Iron, Steel, Orcish, Dwarven 15 · Glass 18 · enchanted Elven 20 · enchanted Glass 28 · enchanted Ebony 37 · enchanted Daedric 47 (each enchanted tier climbs to 53)"
+      },
+      {
+        "list": {
+          "edid": "LootStaffsWeaponWarlock",
+          "formKey": "10FAD1:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "90% none; Flames, Frostbite, Sparks, Zombies, Familiar 1 · Firebolts, Ice Spikes, Lightning Bolts, Reanimation, Flame Atronach 10 · Banishing, Chain Lightning, Fireballs, Ice Storms, Revenants, Frost Atronach 22 · Daedric Command, Dread Zombies, Expulsion, Icy Spear, Incineration, Thunderbolts, the three walls, Storm Atronach 34"
+      },
+      {
+        "list": {
+          "edid": "LItemStaffChainLightning50",
+          "formKey": "0E0FE3:Skyrim.esm"
+        },
+        "rolls": "50% none; Staff of Chain Lightning"
+      },
+      {
+        "list": {
+          "edid": "LootWarlockRandom",
+          "formKey": "10FACD:Skyrim.esm"
+        },
+        "rolls": "all of: gold, ingredients, potions, recipes, soul gems, spell tomes (Novice tomes 1, Apprentice 10)"
+      },
+      {
+        "list": {
+          "edid": "DeathItemWarlock",
+          "formKey": "08601A:Skyrim.esm"
+        },
+        "rolls": "all of: `LootWarlockScrolls05` (95% none: one high-level scroll, e.g. Fire Storm, Blizzard, Mayhem, Dread Zombie) and `LootWarlockPotions10` (90% none: a fortify-magic-skill, magicka, resistance or warlock-chest potion, tiers 1 · 10 · 20 · 30)"
+      },
+      {
+        "list": {
+          "label": "`AtrFrgRecipeList` 10F8B4 · `AtrFrgDaedricRecipeList` 10F8B5"
+        },
+        "rolls": "one Atronach Forge recipe; chance none from the globals `AtrFrgRecipeChance` 10F8B2 · `AtrFrgDaedricRecipeChance` 10F8B3 (record default 100% none)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "the mage robes, hoods and boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "the daggers and staves",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

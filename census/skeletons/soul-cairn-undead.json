@@ -265,7 +265,7 @@
     "items": [
       "Changing `DLC1LvlSoulCairnBonemanMissile` 0071AA also needs `DLC1SoulCairnBonemanSummon` 0045B9:Dawnguard.esm and `ccRMSSSE001_BonemanSummon` 000863:ccrmssse001-necrohouse.esl (summons, level 6; on *Undead Summons*): they use 0071AA as their template but not for `Stats`. `DLC1LvlSoulCairnMistman` 0071AF likewise has `DLC1SoulCairnMistmanSummon` 0045B7 and `ccRMSSSE001_MistmanSummon` 000852 (level 13), and `DLC1LvlSoulCairnWrathman` 0071AD has `DLC1SoulCairnWrathmanSummon` 0045B4 and `ccRMSSSE001_WrathmanSummon` 000843 (level 30).",
       "The Keepers use the Common Skeleton records as their templates (BowArrow `EncSkeleton01Melee1H` 02D1DE, Shield `…Melee1Hshield` 02D1FD, 2H `…Melee2H` 02D1E0) but not for `Stats`, so they keep their own levels.",
-      "Every Soul carries `Stats`; the records that keep their own level beside the bandit and warlock ladders are on *Common Bandits* and *Common Warlocks*.",
+      "Every Soul carries `Stats`; the records that keep their own level beside the bandit and warlock ladders are on *Common Bandits* and Warlocks → *Necromancers*.",
       "The same-race records with no template are filed elsewhere: the four `EncSkeleton01*` skeletons on *Common Skeletons*; the CC necromancy skeletons on *Undead Summons*; the unused `DLC1SoulCairnEnc*` records on the *Skeletons* group page.",
       "The other rows: no other record keeps its own level."
     ]
@@ -318,7 +318,7 @@
           "edid": "LCharWarlockNecromancer",
           "formKey": "01E777:Skyrim.esm"
         },
-        "note": "via `LvlWarlockNecromancerFemaleHighElf` 0713DD · `LvlWarlockNecromancerMaleDarkElf` 0235FD: 1 · 6 · 12 · 19 · 27 · 36 · 46; on *Common Warlocks*.",
+        "note": "via `LvlWarlockNecromancerFemaleHighElf` 0713DD · `LvlWarlockNecromancerMaleDarkElf` 0235FD: 1 · 6 · 12 · 19 · 27 · 36 · 46; on Warlocks → *Necromancers*.",
         "owner": "the necromancer and mage Souls"
       }
     ]
@@ -422,7 +422,7 @@
       },
       {
         "records": "Soul 00A906 · 004759 · 0150B1 · 0150B5 · 0150B4 · 0150B6 · 0150B3 · 0150B2",
-        "weapons": "from their bandit or warlock list's leaves (`Inventory` flag), as on *Common Bandits* and *Common Warlocks*",
+        "weapons": "from their bandit or warlock list's leaves (`Inventory` flag), as on *Common Bandits* and Warlocks → *Necromancers*",
         "armor": "as the list",
         "skin": "as the list"
       },

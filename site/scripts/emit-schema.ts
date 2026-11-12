@@ -1,6 +1,6 @@
 // Writes census/schema/*.schema.json from src/schema.ts, then validates every census JSON file
 // against the Zod schema. Run after changing src/schema.ts: `npm run schema`.
-import { readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { join, relative, sep } from 'node:path';
 import { z } from 'zod';
 import { Bands, Family, Group } from '../src/schema.ts';
@@ -27,7 +27,16 @@ for (const group of readdirSync(census)) {
     const schema = file === 'group.json' ? Group : Family;
     const result = schema.safeParse(JSON.parse(readFileSync(path, 'utf8')));
     const rel = relative(join(census, '..'), path).split(sep).join('/');
-    if (result.success) console.log(`ok    ${rel}`);
+    // Cross-page links must name a family file that exists.
+    const missing: string[] = [];
+    if (result.success && file !== 'group.json')
+      for (const l of (result.data as z.infer<typeof Family>).lists?.rows ?? [])
+        for (const d of l.drawnBy ?? [])
+          if (d.page && !existsSync(join(census, `${d.page}.json`))) missing.push(`drawnBy page "${d.page}" has no census/${d.page}.json`);
+    if (missing.length) {
+      failed++;
+      console.log(`FAIL  ${rel}\n${missing.map((m) => `✖ ${m}`).join('\n')}`);
+    } else if (result.success) console.log(`ok    ${rel}`);
     else {
       failed++;
       console.log(`FAIL  ${rel}\n${z.prettifyError(result.error)}`);

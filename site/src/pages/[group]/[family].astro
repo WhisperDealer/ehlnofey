@@ -13,6 +13,16 @@ export async function getStaticPaths() {
 }
 
 const { group, family: f } = Astro.props;
+
+// Records on other pages that draw this page's lists, each linked to its page when it is migrated.
+const drawn = (f.lists?.rows ?? []).flatMap((l) => (l.drawnBy ?? []).map((d) => ({ l, d })));
+const census = drawn.some(({ d }) => d.page) ? await loadCensus() : [];
+const pageOf = (path: string) => {
+  const [gid, fid] = path.split('/');
+  const g = census.find((x) => x.id === gid);
+  const fam = g?.familyPages.find((x) => x.id === fid);
+  return g && fam ? { group: g.title, title: fam.title, url: href(`${gid}/${fid}/`) } : undefined;
+};
 const PLACED_FOLD = 4; // more locations than this collapse behind a summary
 ---
 
@@ -186,6 +196,35 @@ const PLACED_FOLD = 4; // more locations than this collapse behind a summary
                 <td set:html={md(l.owner)} />
               </tr>
             ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  {drawn.length > 0 && (
+    <>
+      <h2>Drawn elsewhere <span class:list={['conf', f.lists!.confidence]}>{f.lists!.confidence}</span></h2>
+      <p class="lede">Records filed on other pages that draw these lists, by naming one as their template or holding it as an entry.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>List</th><th>Drawn by</th><th>How</th><th>Filed on</th></tr></thead>
+          <tbody>
+            {drawn.map(({ l, d }) => {
+              const p = d.page ? pageOf(d.page) : undefined;
+              return (
+                <tr>
+                  <td set:html={ref(l.list)} />
+                  <td>
+                    <div>{d.name}</div>
+                    <div class="sub" set:html={refs(d.records)} />
+                    {d.note && <div class="sub" set:html={md(d.note)} />}
+                  </td>
+                  <td>{d.how === 'template' ? 'its template' : 'an entry'}</td>
+                  <td>{p ? <a href={p.url}>{p.group} → {p.title}</a> : d.where && <span set:html={md(d.where)} />}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>

@@ -1,0 +1,489 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "pyromancers",
+  "group": "warlocks",
+  "title": "Pyromancers",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "novice-fire-mage",
+        "name": "Novice Fire Mage",
+        "records": [
+          {
+            "edid": "EncWarlock01TemplateFire",
+            "formKey": "044CD7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "bands-of-power.md: novice mages"
+        },
+        "note": "eight leaves per rung (`EncWarlockFire0N<Race><Sex>`), two at rung 07; every leaf takes `Stats`, `BaseData` and `Inventory` from its rung's template."
+      },
+      {
+        "id": "apprentice-fire-mage",
+        "name": "Apprentice Fire Mage",
+        "records": [
+          {
+            "edid": "EncWarlock02TemplateFire",
+            "formKey": "045C5F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: apprentice mages"
+        }
+      },
+      {
+        "id": "fire-mage-adept",
+        "name": "Fire Mage Adept",
+        "records": [
+          {
+            "edid": "EncWarlock03TemplateFire",
+            "formKey": "045C7A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: adept mages"
+        }
+      },
+      {
+        "id": "fire-mage",
+        "name": "Fire Mage",
+        "records": [
+          {
+            "edid": "EncWarlock04TemplateFire",
+            "formKey": "045CA0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 19
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: the middle rung (19), between the adept and the expert mages"
+        }
+      },
+      {
+        "id": "fire-wizard",
+        "name": "Fire Wizard",
+        "records": [
+          {
+            "edid": "EncWarlock05TemplateFire",
+            "formKey": "045CBB:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 27
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: expert mages"
+        }
+      },
+      {
+        "id": "pyromancer",
+        "name": "Pyromancer",
+        "records": [
+          {
+            "edid": "EncWarlock06TemplateFire",
+            "formKey": "045CBE:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlockAtro06ImperialM",
+            "formKey": "06D262:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 36
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: expert mages (36 sits in Elite)"
+        },
+        "note": "a Conjurer leaf, `EncWarlockAtro06ImperialM` 06D262, is drawn by `LCharWarlock06Conjurer` (on *Conjurers*) but takes `Stats`, `BaseData` and `Inventory` from the Fire template, so it is a Pyromancer."
+      },
+      {
+        "id": "arch-pyromancer",
+        "name": "Arch Pyromancer",
+        "records": [
+          {
+            "edid": "EncWarlock07TemplateFire",
+            "formKey": "1091A9:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 46
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: 46 sits in Powerful; the Arch rung is the top of the ladder (archetype-tiers.md Rule 4)"
+        }
+      },
+      {
+        "id": "wrappers",
+        "name": "the drawn rung's name",
+        "records": [
+          {
+            "edid": "LvlWarlockFire",
+            "formKey": "01E7CD:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockFireHoldPos256",
+            "formKey": "0F85F5:Skyrim.esm"
+          },
+          {
+            "edid": "WEJS25_LvlWarlockFire",
+            "formKey": "0E8945:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockFireOmit01",
+            "formKey": "0F8B0F:Skyrim.esm"
+          },
+          {
+            "edid": "dunFellglowLvlWarlockFireSentry",
+            "formKey": "0C9DB8:Skyrim.esm"
+          },
+          {
+            "edid": "dunFellglowLvlWarlockFiringRange",
+            "formKey": "0CAB9A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "`LCharWarlockFire` or `LCharWarlockFireOmit01` (Lists below)"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md (WD-46) rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
+        },
+        "note": "unnamed wrappers that take `Stats` and `BaseData` from a list (Lists below), so each shows the rung it draws. Placed: `LvlWarlockFire` 01E7CD ×3 · `LvlWarlockFireHoldPos256` 0F85F5 ×1 · `WEJS25_LvlWarlockFire` 0E8945 (not placed; spawned by the `WEJS25` world-encounter quest) · `LvlWarlockFireOmit01` 0F8B0F ×1 (`Omit01`) · `dunFellglowLvlWarlockFireSentry` 0C9DB8 ×1 (`Omit01`) · `dunFellglowLvlWarlockFiringRange` 0CAB9A ×2 (`Omit01`) (8 in all). `LvlWarlockFireHoldPos256` (`SunderstoneGorge01`) and `LvlWarlockFireOmit01` moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03). The `Omit01` wrappers draw rung 02 at 1, then 12–46."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing a rung template `EncWarlock0{2–7}TemplateFire` also needs that rung's boss template `EncWarlock0NTemplateBossFire` (7 · 14 · 21 · 30 · 40 · 50, on *Warlock Bosses*), which uses it as its template but not for `Stats`.",
+      "Changing `EncWarlock00Template` 044CCC (the shared base of every rung template, which uses it without `Stats`) also needs `WIChangeLocation04Student` 06F214 (1, left out as not an enemy on the *Warlocks* group page): same pattern.",
+      "Records filed elsewhere that do carry `Stats` from a Fire rung template, so they move with it: `CWSiegeImperialWizard` 04622A (from `EncWarlock02TemplateFire`, level 6, on Factions → *Common Legion*) and CC `ccBGSSSE067_MythicDawnJanus` 0B8A14:ccbgssse067-daedinv.esm (from `EncWarlock01TemplateFire`, a corpse, on Daedra → *Mythic Dawn (CC)*).",
+      "The Fire rungs are also drawn through `LCharWarlockElemental`: the records that keep their own level beside its wrapper are on *Elemental Mages*.",
+      "Every other record here (the rung leaves, the Conjurer leaf 06D262 and every Fire wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharWarlockFire",
+          "formKey": "01E7D1:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWarlock01Fire` 045C97"
+          },
+          {
+            "at": 6,
+            "label": "`LCharWarlock02Fire` 045C98"
+          },
+          {
+            "at": 12,
+            "label": "`LCharWarlock03Fire` 045C99"
+          },
+          {
+            "at": 19,
+            "label": "`LCharWarlock04Fire` 045CF1"
+          },
+          {
+            "at": 27,
+            "label": "`LCharWarlock05Fire` 045CF4"
+          },
+          {
+            "at": 36,
+            "label": "`LCharWarlock06Fire` 045CF7"
+          },
+          {
+            "at": 46,
+            "label": "`LCharWarlock07Fire` 1091C7 (2 leaves)"
+          }
+        ],
+        "note": "each rung list holds its 8 leaves with the Dark Elf pair twice (10 entries); rung 07 2 leaves",
+        "owner": "`LvlWarlockFire` 01E7CD ×3 · `LvlWarlockFireHoldPos256` 0F85F5 ×1 · `WEJS25_LvlWarlockFire` 0E8945 (not placed; spawned by the `WEJS25` world-encounter quest)",
+        "drawnBy": [
+          {
+            "name": "Taron Dreth",
+            "records": [
+              {
+                "edid": "DLC1_WESC09TaronDreth",
+                "formKey": "014BFB:Dawnguard.esm"
+              }
+            ],
+            "how": "template",
+            "page": "warlocks/named-warlocks",
+            "note": "through `LvlWarlockFire` 01E7CD; takes `Stats`; spawned by his world-encounter quest"
+          },
+          {
+            "name": "Elemental mages",
+            "records": [
+              {
+                "edid": "LCharWarlockElemental",
+                "formKey": "01E779:Skyrim.esm"
+              }
+            ],
+            "how": "entry",
+            "page": "warlocks/elemental-mages",
+            "note": "`LCharWarlockElemental` holds this list at 1, beside the other two elemental schools; its users: `LvlWarlockElemental` 01E7CB and its copies (Elemental Mages), Drelas, Faldrus and Ardwen (Named Warlocks), the Ghosts of the Tribunal temple staff and the CC Guardian (no `Stats`)"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockFireOmit01",
+          "formKey": "0CAB99:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWarlock02Fire` (Apprentice)"
+          },
+          {
+            "at": 12,
+            "label": "`LCharWarlock03Fire`"
+          },
+          {
+            "at": 19,
+            "label": "`LCharWarlock04Fire`"
+          },
+          {
+            "at": 27,
+            "label": "`LCharWarlock05Fire`"
+          },
+          {
+            "at": 36,
+            "label": "`LCharWarlock06Fire`"
+          },
+          {
+            "at": 46,
+            "label": "`LCharWarlock07Fire`"
+          }
+        ],
+        "note": "the school ladder without the Novice rung, through the same rung lists",
+        "owner": "`LvlWarlockFireOmit01` 0F8B0F ×1 (`Omit01`) · `dunFellglowLvlWarlockFireSentry` 0C9DB8 ×1 (`Omit01`) · `dunFellglowLvlWarlockFiringRange` 0CAB9A ×2 (`Omit01`)"
+      },
+      {
+        "list": {
+          "label": "the voice lists `LCharWarlockFire{CondescendingM, DarkElfF, DarkElfM, ElfHaughtyF, ElfHaughtyM}` 081ED8 · 081ED9 · 081EDA · 081EDB · 081EDC"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "rung 01"
+          },
+          {
+            "at": 6,
+            "label": "rung 02"
+          },
+          {
+            "at": 12,
+            "label": "rung 03"
+          },
+          {
+            "at": 19,
+            "label": "rung 04"
+          },
+          {
+            "at": 27,
+            "label": "rung 05"
+          },
+          {
+            "at": 36,
+            "label": "rung 06"
+          }
+        ],
+        "note": "that race and sex's leaf from rungs 01–06, no rung 07 (Condescending: the Breton and Imperial leaves)",
+        "owner": "no wrapper on this page; `…CondescendingM`, `…ElfHaughtyF` and `…ElfHaughtyM` are entries of the Elemental voice lists; no record draws the DarkElf lists",
+        "drawnBy": [
+          {
+            "name": "Naris the Wicked",
+            "records": [
+              {
+                "edid": "dunMorvunskarNaris",
+                "formKey": "0427A6:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "warlocks/named-warlocks",
+            "note": "directly on `LCharWarlockFireElfHaughtyM` 081EDC; `Stats` taken"
+          },
+          {
+            "name": "Elemental mages (voice lists)",
+            "records": [
+              {
+                "edid": "LCharWarlockElementalCondescendingM",
+                "formKey": "081F07:Skyrim.esm"
+              },
+              {
+                "edid": "LCharWarlockElementalElfHaughtyF",
+                "formKey": "081F08:Skyrim.esm"
+              },
+              {
+                "edid": "LCharWarlockElementalElfHaughtyM",
+                "formKey": "081F09:Skyrim.esm"
+              }
+            ],
+            "how": "entry",
+            "page": "warlocks/elemental-mages",
+            "note": "they hold the Fire `CondescendingM`, `ElfHaughtyF` and `ElfHaughtyM` lists at 1; only `…ElfHaughtyM` is used, by `LvlWarlockElementalElfHaughtyM` 081F0D ×1"
+          }
+        ]
+      },
+      {
+        "list": {
+          "label": "the rung lists `LCharWarlock0{1–7}Fire` 045C97 · 045C98 · 045C99 · 045CF1 · 045CF4 · 045CF7 · 1091C7"
+        },
+        "gate": "every gate ≤ player; every leaf at 1",
+        "note": "each rung list holds its 8 leaves with the Dark Elf pair twice (10 entries); rung 07 2 leaves",
+        "owner": "`LCharWarlockFire`, `LCharWarlockFireOmit01`"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Pyromancer rungs 01–05 (`Inventory` from `EncWarlock00Template` 044CCC)",
+        "weapons": "`LItemWarlockDagger` 044CD6, `LootStaffsWeaponWarlock` 10FAD1, `LootWarlockRandom` 10FACD, the Atronach Forge recipe lists `AtrFrgRecipeList` 10F8B4 · `AtrFrgDaedricRecipeList` 10F8B5; death item `DeathItemWarlock` 08601A",
+        "armor": "`WarlockOutfitLeveled` 044CD5",
+        "skin": "race default"
+      },
+      {
+        "records": "Pyromancer rungs 06–07 (own inventory)",
+        "weapons": "`LItemWarlockDagger`, `LootWarlockRandom`, `LItemStaffFireball50` 0E0FE1; death item `DeathItemWarlock`",
+        "armor": "`WarlockOutfitLeveled`",
+        "skin": "race default"
+      },
+      {
+        "records": "the wrappers",
+        "weapons": "as the drawn leaf",
+        "armor": "as the drawn leaf",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "WarlockOutfitLeveled",
+          "formKey": "044CD5:Skyrim.esm"
+        },
+        "rolls": "boots (`ClothesWarlockBoots` 0C5D12) and `LITemWarlockRobes` 105EF9: Black Mage Robes 1 · Hooded Black Mage Robes, Robes of (Minor) Alteration/Destruction/Restoration 8 · Quickening 10 · Major 16 · Recharging 20 · Eminent 24 · Replenishing 30 · Extreme 32 · Peerless, Resurgence 40"
+      },
+      {
+        "list": {
+          "edid": "LItemWarlockDagger",
+          "formKey": "044CD6:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron 1 · Steel 4 · Orcish 7 · Dwarven 10 · Elven 14 · enchanted Iron, Steel, Orcish, Dwarven 15 · Glass 18 · enchanted Elven 20 · enchanted Glass 28 · enchanted Ebony 37 · enchanted Daedric 47 (each enchanted tier climbs to 53)"
+      },
+      {
+        "list": {
+          "edid": "LootStaffsWeaponWarlock",
+          "formKey": "10FAD1:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "90% none; Flames, Frostbite, Sparks, Zombies, Familiar 1 · Firebolts, Ice Spikes, Lightning Bolts, Reanimation, Flame Atronach 10 · Banishing, Chain Lightning, Fireballs, Ice Storms, Revenants, Frost Atronach 22 · Daedric Command, Dread Zombies, Expulsion, Icy Spear, Incineration, Thunderbolts, the three walls, Storm Atronach 34"
+      },
+      {
+        "list": {
+          "edid": "LItemStaffFireball50",
+          "formKey": "0E0FE1:Skyrim.esm"
+        },
+        "rolls": "50% none; Staff of Fireballs"
+      },
+      {
+        "list": {
+          "edid": "LootWarlockRandom",
+          "formKey": "10FACD:Skyrim.esm"
+        },
+        "rolls": "all of: gold, ingredients, potions, recipes, soul gems, spell tomes (Novice tomes 1, Apprentice 10)"
+      },
+      {
+        "list": {
+          "edid": "DeathItemWarlock",
+          "formKey": "08601A:Skyrim.esm"
+        },
+        "rolls": "all of: `LootWarlockScrolls05` (95% none: one high-level scroll, e.g. Fire Storm, Blizzard, Mayhem, Dread Zombie) and `LootWarlockPotions10` (90% none: a fortify-magic-skill, magicka, resistance or warlock-chest potion, tiers 1 · 10 · 20 · 30)"
+      },
+      {
+        "list": {
+          "label": "`AtrFrgRecipeList` 10F8B4 · `AtrFrgDaedricRecipeList` 10F8B5"
+        },
+        "rolls": "one Atronach Forge recipe; chance none from the globals `AtrFrgRecipeChance` 10F8B2 · `AtrFrgDaedricRecipeChance` 10F8B3 (record default 100% none)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "the mage robes, hoods and boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "the daggers and staves",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

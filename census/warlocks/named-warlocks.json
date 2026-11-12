@@ -1,0 +1,1004 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "named-warlocks",
+  "group": "warlocks",
+  "title": "Named Warlocks",
+  "order": 4,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "minorne",
+        "name": "Minorne",
+        "records": [
+          {
+            "edid": "DLC1RuunvaldWarlockBoss",
+            "formKey": "013823:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockBossConjurer",
+            "formKey": "0E0FFD:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            14,
+            21,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "level": 50,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0 (WD-62, user): a named boss sits at the top rung of its type; the warlock boss pin is 50"
+        },
+        "note": "through the wrapper `LvlWarlockConjurerBoss` 0E0FFE, its template."
+      },
+      {
+        "id": "sild",
+        "name": "Sild the Warlock",
+        "records": [
+          {
+            "edid": "dunRannLvlWarlockBoss",
+            "formKey": "05197F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockBossFire",
+            "formKey": "0E1018:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            14,
+            21,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12"
+        }
+      },
+      {
+        "id": "haldyn",
+        "name": "Haldyn",
+        "records": [
+          {
+            "edid": "MS10Haldyn",
+            "formKey": "01DC04:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockBossStorm",
+            "formKey": "0E106A:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            14,
+            21,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "level": 50,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0 (WD-62, user): a named boss sits at the top rung of its type; the warlock boss pin is 50"
+        },
+        "note": "through `LvlWarlockShockBossAmbush` 108CD5 → `LvlWarlockShockBoss` 0E106B."
+      },
+      {
+        "id": "vals-veran",
+        "name": "Vals Veran",
+        "records": [
+          {
+            "edid": "ValsVeran",
+            "formKey": "019FE6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockBossNecroMaleCondescending",
+            "formKey": "0E106D:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            14,
+            21,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12"
+        },
+        "note": "through the wrapper `LvlWarlockNecroBossMaleCondescending` 081EF5, which Malkoran (Daedra → *Daedric Quest Foes*) shares."
+      },
+      {
+        "id": "kornalus",
+        "name": "Kornalus",
+        "records": [
+          {
+            "edid": "dunHarmugstahlWarlock",
+            "formKey": "039BB7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockBossStormMaleElfHaughy",
+            "formKey": "0E106C:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            14,
+            21,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12"
+        }
+      },
+      {
+        "id": "arondil",
+        "name": "Arondil",
+        "records": [
+          {
+            "edid": "dunYngvildWarlock",
+            "formKey": "037D80:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockNecroBossMaleElfHaughty",
+            "formKey": "081EF3:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            14,
+            21,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12"
+        },
+        "note": "every gate ≤ player; through the wrapper `LvlWarlockNecroBossMaleElfHaughty` 081EF9."
+      },
+      {
+        "id": "the-caller",
+        "name": "The Caller",
+        "records": [
+          {
+            "edid": "MG03Caller",
+            "formKey": "04D246:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockElementalBossFemaleElfHaughty",
+            "formKey": "081F06:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            14,
+            21,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "level": 40,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-46, user): voice boss lists with no level-50 leaf pinned to 40; her list draws the three High Elf F boss lists"
+        },
+        "note": "through the wrapper `LvlWarlockElementalBossFemaleElfHaughty` 081F0A; the list picks one school's High Elf F boss list, every gate ≤ player."
+      },
+      {
+        "id": "naris",
+        "name": "Naris the Wicked",
+        "records": [
+          {
+            "edid": "dunMorvunskarNaris",
+            "formKey": "0427A6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockFireElfHaughtyM",
+            "formKey": "081EDC:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12"
+        },
+        "note": "every gate ≤ player."
+      },
+      {
+        "id": "anise",
+        "name": "Anise",
+        "records": [
+          {
+            "edid": "dunPOIWitchAnise",
+            "formKey": "0DDF86:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockConjurerCondescendingF",
+            "formKey": "081ECF:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: adept mages (a lone hostile mage in her cabin, not a dungeon boss)"
+        },
+        "note": "through the wrapper `LvlWarlockConjurerFemaleCondescending` 081ED6; every gate ≤ player."
+      },
+      {
+        "id": "drelas-faldrus-ardwen",
+        "name": "Drelas · Faldrus · Ardwen",
+        "records": [
+          {
+            "edid": "dunDrelas_LvlWarlockElementalAggro1024",
+            "formKey": "0E76C9:Skyrim.esm"
+          },
+          {
+            "edid": "WEJS10Faldrus",
+            "formKey": "0B85B9:Skyrim.esm"
+          },
+          {
+            "edid": "WEJS13Ardwen",
+            "formKey": "0BED8A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockElemental",
+            "formKey": "01E779:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12"
+        },
+        "note": "Drelas names the list directly; Faldrus and Ardwen draw it through the wrapper `LvlWarlockElemental` 01E7CB."
+      },
+      {
+        "id": "taron-dreth",
+        "name": "Taron Dreth",
+        "records": [
+          {
+            "edid": "DLC1_WESC09TaronDreth",
+            "formKey": "014BFB:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockFire",
+            "formKey": "01E7D1:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12"
+        },
+        "note": "through the wrapper `LvlWarlockFire` 01E7CD."
+      },
+      {
+        "id": "selveni-nethri",
+        "name": "Selveni Nethri",
+        "records": [
+          {
+            "edid": "dunSouthfringeSelveniNethri",
+            "formKey": "03A745:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockNecromancer",
+            "formKey": "01E777:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12"
+        },
+        "note": "through the wrapper `LvlWarlockNecromancer` 01E7CA."
+      },
+      {
+        "id": "ritual-master",
+        "name": "Ritual Master",
+        "records": [
+          {
+            "edid": "MS06NecromancerLeader",
+            "formKey": "0284F2:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 20
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12"
+        }
+      },
+      {
+        "id": "luah-al-skaven",
+        "name": "Lu'ah Al-Skaven",
+        "records": [
+          {
+            "edid": "dunAnsilvundLuahAlSkaven",
+            "formKey": "02333A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 8,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "level": 50,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0 (WD-62, user): Lu'ah Al-Skaven at 50, the warlock boss"
+        },
+        "note": "takes her look from the boss leaf `EncWarlockNecro06BossHighElfF` 0E1047 but owns her level."
+      },
+      {
+        "id": "thoron",
+        "name": "Thoron",
+        "records": [
+          {
+            "edid": "ccBGSSSE025_EncWarlockAtro06BossBretonM",
+            "formKey": "000A84:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.25,
+          "min": 26,
+          "max": 100
+        },
+        "target": {
+          "band": "VIII",
+          "status": "proposed",
+          "source": "user, 2026-11-12"
+        },
+        "note": "CC; takes his look from `EncWarlock06TemplateBossConjurer` 0E0FD3 but owns his level."
+      },
+      {
+        "id": "cc-bone-wolf-necromancer",
+        "name": "Necromancer",
+        "records": [
+          {
+            "edid": "ccBGSSSE036_Necromancer",
+            "formKey": "00080B:ccbgssse036-petbwolf.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 12,
+          "max": 70
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (user): the Bone Wolf pack's Necromancer fixed at 36, the Master rung"
+        },
+        "note": "CC (Bone Wolf); his Thrall Wolves and the Bonewolf are on Undead → Skeletons → *Bone Wolves (CC)*."
+      },
+      {
+        "id": "ivara",
+        "name": "Ivara of Olenveld",
+        "records": [
+          {
+            "edid": "ccBGSSSE045_IvaraofOlenveld",
+            "formKey": "000832:ccbgssse045-hasedoki.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.25,
+          "min": 15,
+          "max": 40
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12"
+        },
+        "note": "CC (Hasedoki Castle); takes her look from `EncWarlock07TemplateNecro` 1091AB but owns her level."
+      },
+      {
+        "id": "lushak",
+        "name": "Lushak gra-Ragdam",
+        "records": [
+          {
+            "edid": "ccBGSSSE045_LushakgraRagdam",
+            "formKey": "000835:ccbgssse045-hasedoki.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.25,
+          "min": 10,
+          "max": 20
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12"
+        },
+        "note": "CC (Hasedoki Castle); takes his look from `EncWarlock04TemplateNecro` 0551AD but owns his level."
+      },
+      {
+        "id": "modig",
+        "name": "Modig Gilgar",
+        "records": [
+          {
+            "edid": "ccBGSSSE045_ModigGilgar",
+            "formKey": "00082D:ccbgssse045-hasedoki.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 30
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12"
+        },
+        "note": "CC (Hasedoki Castle); takes his look from `EncWarlock05TemplateBossNecro` 0E0FD0 but owns his level."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record uses it as its template, so no other record keeps its own level beside it.",
+      "Lu'ah Al-Skaven, Thoron, Ivara, Lushak and Modig keep their own levels while they take their look from a warlock template; they are listed beside those templates on *Necromancers* (Ivara, Lushak) and *Warlock Bosses*.",
+      "Nimphaneth and Sanyon (`DA11`, Namira's cannibals) moved to Daedra → *Daedric Quest Foes* (user, 2026-10-02); Sebastian Lort (`DA03Wizard` 01C4E5) and Malkoran (`dunKilkreathWarlock` 09CB66) moved there too (user, 2026-10-05)."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "none"
+        },
+        "note": "each is a placed record; the warlock lists in the Level column only lend the level",
+        "owner": "—"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Minorne",
+        "base": [
+          {
+            "edid": "DLC1RuunvaldWarlockBoss",
+            "formKey": "013823:Dawnguard.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1Ruunvald02",
+              "formKey": "007066:Dawnguard.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sild the Warlock",
+        "base": [
+          {
+            "edid": "dunRannLvlWarlockBoss",
+            "formKey": "05197F:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "RannveigsFast01",
+              "formKey": "015229:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Haldyn",
+        "base": [
+          {
+            "edid": "MS10Haldyn",
+            "formKey": "01DC04:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "JaphetsFolly02",
+              "formKey": "0414DD:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Vals Veran",
+        "base": [
+          {
+            "edid": "ValsVeran",
+            "formKey": "019FE6:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "HillgrundsTomb01",
+              "formKey": "015261:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Kornalus",
+        "base": [
+          {
+            "edid": "dunHarmugstahlWarlock",
+            "formKey": "039BB7:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Harmugstahl01",
+              "formKey": "05F536:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Arondil",
+        "base": [
+          {
+            "edid": "dunYngvildWarlock",
+            "formKey": "037D80:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Yngvild02",
+              "formKey": "0227B9:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "The Caller",
+        "base": [
+          {
+            "edid": "MG03Caller",
+            "formKey": "04D246:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "FellglowKeep03",
+              "formKey": "0C9DAB:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Naris the Wicked",
+        "base": [
+          {
+            "edid": "dunMorvunskarNaris",
+            "formKey": "0427A6:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Morvunskar01",
+              "formKey": "015239:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Anise",
+        "base": [
+          {
+            "edid": "dunPOIWitchAnise",
+            "formKey": "0DDF86:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "Drelas",
+        "base": [
+          {
+            "edid": "dunDrelas_LvlWarlockElementalAggro1024",
+            "formKey": "0E76C9:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DrelasCottage01",
+              "formKey": "0DEBCD:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Selveni Nethri",
+        "base": [
+          {
+            "edid": "dunSouthfringeSelveniNethri",
+            "formKey": "03A745:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "SouthfringeWorld",
+              "formKey": "020BFE:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Ritual Master",
+        "base": [
+          {
+            "edid": "MS06NecromancerLeader",
+            "formKey": "0284F2:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "WolfSkullCave02",
+              "formKey": "0AC5D2:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Lu'ah Al-Skaven",
+        "base": [
+          {
+            "edid": "dunAnsilvundLuahAlSkaven",
+            "formKey": "02333A:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Ansilvund02",
+              "formKey": "01F358:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Thoron (CC)",
+        "base": [
+          {
+            "edid": "ccBGSSSE025_EncWarlockAtro06BossBretonM",
+            "formKey": "000A84:ccbgssse025-advdsgs.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE025RootDungeon",
+              "formKey": "00083C:ccbgssse025-advdsgs.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Necromancer (CC), Modig Gilgar (CC)",
+        "base": [
+          {
+            "edid": "ccBGSSSE036_Necromancer",
+            "formKey": "00080B:ccbgssse036-petbwolf.esl"
+          },
+          {
+            "edid": "ccBGSSSE045_ModigGilgar",
+            "formKey": "00082D:ccbgssse045-hasedoki.esl"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "note": "the Necromancer at (-14, 23), ref `ccBGSSSE036_NecromancerREF` 000815:ccbgssse036-petbwolf.esl"
+          }
+        ]
+      },
+      {
+        "name": "Ivara of Olenveld, Lushak gra-Ragdam (CC)",
+        "base": [
+          {
+            "edid": "ccBGSSSE045_IvaraofOlenveld",
+            "formKey": "000832:ccbgssse045-hasedoki.esl"
+          },
+          {
+            "edid": "ccBGSSSE045_LushakgraRagdam",
+            "formKey": "000835:ccbgssse045-hasedoki.esl"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "BrittleShinPass01",
+              "formKey": "081DEC:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Faldrus, Ardwen, Taron Dreth",
+        "base": [
+          {
+            "edid": "WEJS10Faldrus",
+            "formKey": "0B85B9:Skyrim.esm"
+          },
+          {
+            "edid": "WEJS13Ardwen",
+            "formKey": "0BED8A:Skyrim.esm"
+          },
+          {
+            "edid": "DLC1_WESC09TaronDreth",
+            "formKey": "014BFB:Dawnguard.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "spawned by their world-encounter quests"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Sild, Vals Veran, Kornalus, Arondil, Naris, Drelas, Faldrus, Selveni (`Inventory` from the drawn leaf)",
+        "weapons": "as the drawn leaf (*Pyromancers*, *Necromancers*, *Elemental Mages*, *Warlock Bosses*)",
+        "armor": "as the drawn leaf",
+        "skin": "race default"
+      },
+      {
+        "records": "Minorne",
+        "weapons": "Staff of Ruunvald, `LootWarlockRandom`",
+        "armor": "`WarlockOutfitLeveled` 044CD5",
+        "skin": "race default"
+      },
+      {
+        "records": "Haldyn",
+        "weapons": "none in the record",
+        "armor": "`MS10HaldynOutfit` (bandit boss cuirass, boots, 50% gauntlets)",
+        "skin": "race default"
+      },
+      {
+        "records": "The Caller · Ardwen",
+        "weapons": "none in the record",
+        "armor": "`CourtWizardOutfit` (Blue Mage Robes, boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Anise",
+        "weapons": "`LItemWeaponDaggerBest`, restore-magicka potion",
+        "armor": "`ClothesMageRobesOutfitNoHood` (Blue Mage Robes, boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Taron Dreth",
+        "weapons": "`LItemWarlockDagger`, `LootStaffsWeaponWarlock`, `LootWarlockRandom`, Dwarven scrap",
+        "armor": "`DLC1_WESC09TaronOutfit` (Taron Dreth's Robes, boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Ritual Master",
+        "weapons": "none in the record",
+        "armor": "`WarlockOutfitLeveled`",
+        "skin": "race default"
+      },
+      {
+        "records": "Lu'ah Al-Skaven",
+        "weapons": "`LItemStaffConjuration00NPC`",
+        "armor": "`WarlockOutfitLeveled`",
+        "skin": "race default"
+      },
+      {
+        "records": "Thoron (CC)",
+        "weapons": "`LItemWarlockDagger`, `LItemStaffDestruction50NPC50`, `LootWarlockRandom`, four Golden Saint and Dark Seducer spell tomes, his two journals, rare ingredients",
+        "armor": "`ccBGSSSE025_WarlockOutfitLeveledBoss` 000CCF (Madness Helmet of Recovery 16075E, Ring of Disrobing, boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Necromancer (CC)",
+        "weapons": "`LItemWeaponDagger`, Necromancer's Journal, Key to Wolf Cage",
+        "armor": "`WarlockOutfitLeveled`",
+        "skin": "race default"
+      },
+      {
+        "records": "Ivara of Olenveld (CC)",
+        "weapons": "`LItemWarlockDagger`, `LootWarlockRandom`, her notes, two books",
+        "armor": "`NecromancerOutfitHood50` 105255",
+        "skin": "race default"
+      },
+      {
+        "records": "Lushak gra-Ragdam (CC)",
+        "weapons": "`LItemWarlockDagger`, `LootWarlockRandom`, soul gems, two books",
+        "armor": "`NecromancerOutfitNoHood`",
+        "skin": "race default"
+      },
+      {
+        "records": "Modig Gilgar (CC)",
+        "weapons": "`LItemWarlockDagger`, `LItemStaffDestruction50NPC50`, `LootWarlockRandom`, soul gems",
+        "armor": "`ccBGSSSE045_ModigGilgarOutfit` (Leather Armor, Boots, Bracers, Mage Hood)",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "the warlock robe, dagger, staff and loot lists"
+        },
+        "rolls": "as on the school pages (*Conjurers*, *Pyromancers*, *Cryomancers*, *Electromancers*, *Necromancers*) and *Warlock Bosses*"
+      },
+      {
+        "list": {
+          "label": "`MS10HaldynOutfit`"
+        },
+        "rolls": "`LItemBanditBossCuirass`, `…Boots`, `…Gauntlets50`: Iron or Banded Iron 1 · Steel 6 (Bandits → *Bandit Chiefs*)",
+        "levels": [
+          1,
+          6
+        ]
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "the robes, hoods and boots; Taron Dreth's Robes; Ring of Disrobing",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Madness Helmet of Recovery (CC); Iron, Banded Iron, Steel pieces (Haldyn)",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Leather Armor, Boots, Bracers (Modig)",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Staff of Ruunvald and the other staves and daggers",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

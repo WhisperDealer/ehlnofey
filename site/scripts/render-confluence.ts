@@ -45,6 +45,13 @@ const banner = (path: string) =>
   `> Generated from \`census/${path}.json\` in the repo, which is the source of truth: edit the JSON, not this page. ` +
   `The site renders it at https://whisperdealer.github.io/ehlnofey/${path.replace(/\/group$/, '')}/`;
 
+// "Group → *Family*" for a census page path <group>/<family>.
+function pageLabel(path: string): string {
+  const [g, id] = path.split('/');
+  const title = (file: string) => (JSON.parse(readFileSync(join(census, g, file), 'utf8')) as { title: string }).title;
+  return `${title('group.json')} → *${title(`${id}.json`)}*`;
+}
+
 export function renderFamily(f: FamilyData, titles: Record<string, string> = {}): string {
   const out: string[] = [banner(`${f.group}/${f.id}`), ''];
 
@@ -114,6 +121,22 @@ export function renderFamily(f: FamilyData, titles: Record<string, string> = {})
                 .map((e) => `${e.label}${e.count && e.count > 1 && !e.label.includes(' + ') ? ` ×${e.count}` : ''} @${e.at}`).join(' · ') + (l.note ? ` (${l.note})` : '');
           return [ref(l.list) + (qual ? ` (${qual})` : ''), draws, l.owner];
         }),
+      ),
+    );
+  }
+
+  const drawn = (f.lists?.rows ?? []).flatMap((l) => (l.drawnBy ?? []).map((d) => ({ l, d })));
+  if (drawn.length) {
+    out.push('', `## Drawn elsewhere ${conf(f.lists!.confidence)}`, '');
+    out.push(
+      table(
+        ['List', 'Drawn by', 'How', 'Filed on'],
+        drawn.map(({ l, d }) => [
+          ref(l.list),
+          `${d.name}: ${refs(d.records)}${d.note ? ` (${d.note})` : ''}`,
+          d.how === 'template' ? 'its template' : 'an entry',
+          d.page ? pageLabel(d.page) : (d.where ?? ''),
+        ]),
       ),
     );
   }

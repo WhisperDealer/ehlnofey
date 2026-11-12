@@ -203,7 +203,7 @@
           "edid": "LCharWarlock01Necro",
           "formKey": "0551E0:Skyrim.esm"
         },
-        "note": "the rung-01 necromancer leaves, on *Common Warlocks*; `Stats` and `Inventory` are taken",
+        "note": "the rung-01 necromancer leaves, on Warlocks → *Necromancers*; `Stats` and `Inventory` are taken",
         "owner": "Nimphaneth, Sanyon"
       },
       {
@@ -401,7 +401,7 @@
         "list": {
           "label": "`LItemWarlockDagger`, `NecromancerOutfitHood50`, `LootWarlockRandom`, and the boss warlock leaves' gear"
         },
-        "rolls": "as on *Common Warlocks*"
+        "rolls": "as on Warlocks → *Necromancers*"
       },
       {
         "list": {

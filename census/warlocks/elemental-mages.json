@@ -1,0 +1,284 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "elemental-mages",
+  "group": "warlocks",
+  "title": "Elemental Mages",
+  "order": 6,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "wrappers",
+        "name": "the drawn rung's name",
+        "records": [
+          {
+            "edid": "LvlWarlockElemental",
+            "formKey": "01E7CB:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockElementalAggro1024",
+            "formKey": "0CDE3B:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockElementalAmbush",
+            "formKey": "0CA44E:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockElementalAmbushCondescendingF",
+            "formKey": "0CA449:Skyrim.esm"
+          },
+          {
+            "edid": "DunPOITundraMarshWarlock",
+            "formKey": "0DCFF4:Skyrim.esm"
+          },
+          {
+            "edid": "dunFellglowJailor",
+            "formKey": "0CABB4:Skyrim.esm"
+          },
+          {
+            "edid": "dunFellglow_LvlWarlockElementalAmbushHoldPosition",
+            "formKey": "0CA447:Skyrim.esm"
+          },
+          {
+            "edid": "dunFellglow_LvlWarlockElementalAmbushCondescendingFHoldPosition",
+            "formKey": "0CA44F:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockElementalElfHaughtyM",
+            "formKey": "081F0D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "`LCharWarlockElemental` and its voice lists (Lists below)"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md (WD-46) rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
+        },
+        "note": "unnamed wrappers that take `Stats` and `BaseData` from `LCharWarlockElemental` or an Elemental voice list. The list rolls one school at random, Fire, Ice or Storm, then that school's ladder 1–46 (the rungs on *Pyromancers*, *Cryomancers* and *Electromancers*); the voice copy draws 1–36. Placed: `LvlWarlockElemental` 01E7CB ×14 · `LvlWarlockElementalAggro1024` 0CDE3B ×5 · `LvlWarlockElementalAmbush` 0CA44E ×2 (through `LvlWarlockElemental`) · `LvlWarlockElementalAmbushCondescendingF` 0CA449 (not placed; through `LvlWarlockElementalAmbush`) · `DunPOITundraMarshWarlock` 0DCFF4 ×1 (through `…Aggro1024`; Tundra Marsh) · `dunFellglowJailor` 0CABB4 ×1 (through `LvlWarlockElementalAmbush`) · `dunFellglow_LvlWarlockElementalAmbushHoldPosition` 0CA447 ×1 (through `LvlWarlockElemental`) · `dunFellglow_LvlWarlockElementalAmbushCondescendingFHoldPosition` 0CA44F ×1 (through `…AmbushCondescendingF`) · `LvlWarlockElementalElfHaughtyM` 081F0D ×1 (voice list `LCharWarlockElementalElfHaughtyM`) (26 in all). `LvlWarlockElementalElfHaughtyM` (`FellglowKeep01`) moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing the Fire, Ice or Storm rungs (on *Pyromancers*, *Cryomancers*, *Electromancers*), which `LCharWarlockElemental` draws, also needs six records that take their template from `LvlWarlockElemental` 01E7CB without `Stats`: the Ghosts of the Tribunal temple staff `ccASVSSE001_CaretakerIneril` 001017, `…Priest02` 000E77, `…Priest03` 001025, `…PriestDrureth` 000F12 (1) and `…ElderDrevlan` 000840 (PC×1 [4–100]), all ccasvsse001-almsivi.esm, on Factions → Minor Factions → *Ghosts of the Tribunal*; and `ccBGSSSE013_GreenGuardian` 000845:ccbgssse013-dawnfang.esl (PC×1 [10–70], on Undead → Ghosts → *Ghost Bosses*). They keep their own levels and take only spells (or look and AI) from the wrapper.",
+      "The rung templates themselves and their own-level records are on *Pyromancers*, *Cryomancers* and *Electromancers*.",
+      "Every other record here (every Elemental wrapper) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharWarlockElemental",
+          "formKey": "01E779:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player; all three at 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWarlockFire` 01E7D1 (*Pyromancers*)"
+          },
+          {
+            "at": 1,
+            "label": "`LCharWarlockIce` 01E7D2 (*Cryomancers*)"
+          },
+          {
+            "at": 1,
+            "label": "`LCharWarlockStorm` 01E7D3 (*Electromancers*)"
+          }
+        ],
+        "note": "one school at random, then its ladder: Novice 1 · Apprentice 6 · Adept 12 · Mage 19 · Wizard 27 · -mancer 36 · Arch 46",
+        "owner": "`LvlWarlockElemental` 01E7CB ×14 · `LvlWarlockElementalAggro1024` 0CDE3B ×5 · `LvlWarlockElementalAmbush` 0CA44E ×2 (through `LvlWarlockElemental`) · `LvlWarlockElementalAmbushCondescendingF` 0CA449 (not placed; through `LvlWarlockElementalAmbush`) · `DunPOITundraMarshWarlock` 0DCFF4 ×1 (through `…Aggro1024`; Tundra Marsh) · `dunFellglowJailor` 0CABB4 ×1 (through `LvlWarlockElementalAmbush`) · `dunFellglow_LvlWarlockElementalAmbushHoldPosition` 0CA447 ×1 (through `LvlWarlockElemental`) · `dunFellglow_LvlWarlockElementalAmbushCondescendingFHoldPosition` 0CA44F ×1 (through `…AmbushCondescendingF`)",
+        "drawnBy": [
+          {
+            "name": "Drelas, Faldrus, Ardwen",
+            "records": [
+              {
+                "edid": "dunDrelas_LvlWarlockElementalAggro1024",
+                "formKey": "0E76C9:Skyrim.esm"
+              },
+              {
+                "edid": "WEJS10Faldrus",
+                "formKey": "0B85B9:Skyrim.esm"
+              },
+              {
+                "edid": "WEJS13Ardwen",
+                "formKey": "0BED8A:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "warlocks/named-warlocks",
+            "note": "Drelas directly, Faldrus and Ardwen through `LvlWarlockElemental` 01E7CB; `Stats` taken"
+          },
+          {
+            "name": "Ghosts of the Tribunal temple staff",
+            "records": [
+              {
+                "edid": "ccASVSSE001_CaretakerIneril",
+                "formKey": "001017:ccasvsse001-almsivi.esm"
+              },
+              {
+                "edid": "ccASVSSE001_ElderDrevlan",
+                "formKey": "000840:ccasvsse001-almsivi.esm"
+              },
+              {
+                "edid": "ccASVSSE001_Priest02",
+                "formKey": "000E77:ccasvsse001-almsivi.esm"
+              },
+              {
+                "edid": "ccASVSSE001_Priest03",
+                "formKey": "001025:ccasvsse001-almsivi.esm"
+              },
+              {
+                "edid": "ccASVSSE001_PriestDrureth",
+                "formKey": "000F12:ccasvsse001-almsivi.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Minor Factions → *Ghosts of the Tribunal*",
+            "note": "through `LvlWarlockElemental` 01E7CB, spells only: no `Stats`, so they keep their own levels (Also owns its level)"
+          },
+          {
+            "name": "The Guardian (Dawnfang, CC)",
+            "records": [
+              {
+                "edid": "ccBGSSSE013_GreenGuardian",
+                "formKey": "000845:ccbgssse013-dawnfang.esl"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/ghost-bosses",
+            "note": "through `LvlWarlockElemental` 01E7CB, no `Stats`: keeps its own level (PC×1 [10–70])"
+          }
+        ]
+      },
+      {
+        "list": {
+          "label": "`LCharWarlockElemental{CondescendingM, ElfHaughtyF, ElfHaughtyM}` 081F07 · 081F08 · 081F09"
+        },
+        "gate": "every gate ≤ player; all three at 1",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the Fire voice list"
+          },
+          {
+            "at": 1,
+            "label": "the Ice voice list"
+          },
+          {
+            "at": 1,
+            "label": "the Storm voice list"
+          }
+        ],
+        "note": "each picks one school's list of the same voice (e.g. `…ElfHaughtyM` → `LCharWarlock{Fire,Ice,Storm}ElfHaughtyM`), 1–36; those lists are on the school pages",
+        "owner": "`LvlWarlockElementalElfHaughtyM` 081F0D ×1 (`…ElfHaughtyM`); no record draws the other two"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "the wrappers draw a Fire, Ice or Storm leaf; rungs 01–05 (`Inventory` from `EncWarlock00Template` 044CCC)",
+        "weapons": "`LItemWarlockDagger` 044CD6, `LootStaffsWeaponWarlock` 10FAD1, `LootWarlockRandom` 10FACD, the Atronach Forge recipe lists `AtrFrgRecipeList` 10F8B4 · `AtrFrgDaedricRecipeList` 10F8B5; death item `DeathItemWarlock` 08601A",
+        "armor": "`WarlockOutfitLeveled` 044CD5",
+        "skin": "race default"
+      },
+      {
+        "records": "rungs 06–07 (the school template's own inventory)",
+        "weapons": "`LItemWarlockDagger`, `LootWarlockRandom`; Fire `LItemStaffFireball50` 0E0FE1, Ice `LItemStaffIceStorm50` 0E0FE2, Storm `LItemStaffChainLightning50` 0E0FE3; death item `DeathItemWarlock`",
+        "armor": "`WarlockOutfitLeveled`",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "WarlockOutfitLeveled",
+          "formKey": "044CD5:Skyrim.esm"
+        },
+        "rolls": "boots (`ClothesWarlockBoots` 0C5D12) and `LITemWarlockRobes` 105EF9: Black Mage Robes 1 · Hooded Black Mage Robes, Robes of (Minor) Alteration/Destruction/Restoration 8 · Quickening 10 · Major 16 · Recharging 20 · Eminent 24 · Replenishing 30 · Extreme 32 · Peerless, Resurgence 40"
+      },
+      {
+        "list": {
+          "edid": "LItemWarlockDagger",
+          "formKey": "044CD6:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron 1 · Steel 4 · Orcish 7 · Dwarven 10 · Elven 14 · enchanted Iron, Steel, Orcish, Dwarven 15 · Glass 18 · enchanted Elven 20 · enchanted Glass 28 · enchanted Ebony 37 · enchanted Daedric 47 (each enchanted tier climbs to 53)"
+      },
+      {
+        "list": {
+          "edid": "LootStaffsWeaponWarlock",
+          "formKey": "10FAD1:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "90% none; Flames, Frostbite, Sparks, Zombies, Familiar 1 · Firebolts, Ice Spikes, Lightning Bolts, Reanimation, Flame Atronach 10 · Banishing, Chain Lightning, Fireballs, Ice Storms, Revenants, Frost Atronach 22 · Daedric Command, Dread Zombies, Expulsion, Icy Spear, Incineration, Thunderbolts, the three walls, Storm Atronach 34"
+      },
+      {
+        "list": {
+          "label": "`LItemStaff{Fireball50,IceStorm50,ChainLightning50}` 0E0FE1 · 0E0FE2 · 0E0FE3"
+        },
+        "rolls": "50% none; Staff of Fireballs / Ice Storms / Chain Lightning"
+      },
+      {
+        "list": {
+          "edid": "LootWarlockRandom",
+          "formKey": "10FACD:Skyrim.esm"
+        },
+        "rolls": "all of: gold, ingredients, potions, recipes, soul gems, spell tomes (Novice tomes 1, Apprentice 10)"
+      },
+      {
+        "list": {
+          "edid": "DeathItemWarlock",
+          "formKey": "08601A:Skyrim.esm"
+        },
+        "rolls": "all of: `LootWarlockScrolls05` (95% none: one high-level scroll, e.g. Fire Storm, Blizzard, Mayhem, Dread Zombie) and `LootWarlockPotions10` (90% none: a fortify-magic-skill, magicka, resistance or warlock-chest potion, tiers 1 · 10 · 20 · 30)"
+      },
+      {
+        "list": {
+          "label": "`AtrFrgRecipeList` 10F8B4 · `AtrFrgDaedricRecipeList` 10F8B5"
+        },
+        "rolls": "one Atronach Forge recipe; chance none from the globals `AtrFrgRecipeChance` 10F8B2 · `AtrFrgDaedricRecipeChance` 10F8B3 (record default 100% none)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "the mage robes, hoods and boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "the daggers and staves",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

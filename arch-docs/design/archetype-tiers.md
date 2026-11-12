@@ -1010,12 +1010,13 @@ the list.
 | Ghunzul · the Traitor's Post boss | bandit chief | **28** | unchanged |
 | Sinding | werewolf-boss list, all rungs 7–42 | **42** | `LCharWerewolfBoss` pinned to the Vargr boss |
 | The Southfringe boss | necromancer mooks 19 / 27 / 36 | **50** | Arch Necromancer boss |
-| Vals Veran | 40 (voice list with no level-50 leaf) | **50** | Arch Necromancer boss |
-| Malkoran · Arondil · Sild · Kornalus · the Northwatch Interrogator | warlock / Thalmor boss pin | **50** | unchanged |
+| Vals Veran | 40 (voice list with no level-50 leaf) | ~~50~~ **VI Elite** (user, 2026-11-12) | Arch Necromancer boss |
+| Malkoran · Arondil · Sild · Kornalus · the Northwatch Interrogator | warlock / Thalmor boss pin | **50** | unchanged; ~~50~~ Sild and Kornalus **VI Elite**, Arondil **V Experienced** (user, 2026-11-12) |
 | Movarth · the Bloodlet Throne boss | vampire boss pin | **65** | unchanged |
 
 **Villains and leaders that were still scaling:**
-- Lu'ah Al-Skaven and the Ritual Master: **50**, the warlock boss.
+- Lu'ah Al-Skaven and the Ritual Master: **50**, the warlock boss. ~~50~~ the Ritual Master **V Experienced** (user, 2026-11-12).
+- **Named Warlocks** (user, 2026-11-12): Thoron (CC) **VIII Fabled**; Naris the Wicked, Drelas, Faldrus, Ardwen, Ivara of Olenveld, Lushak gra-Ragdam and Modig Gilgar (CC) **V Experienced**; Selveni Nethri **IV Blooded** (the 50 pin is `dunSouthfringeBoss`'s, not hers); Taron Dreth **III Trained**. Sild's Assistant is dead when found and left out.
 - Rulindil and Estormo: **44**, the Thalmor wizard.
 - **The Volkihar court: 53**, the Volkihar Master Vampire. Orthjolf, Vingalmo, Malkus, Hestla, Rargal and Feran take
   `Stats` from `DLC1EncVampireTemplate` and its magic and missile variants.

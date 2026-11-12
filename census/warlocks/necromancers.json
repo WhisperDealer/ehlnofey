@@ -1,0 +1,751 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "necromancers",
+  "group": "warlocks",
+  "title": "Necromancers",
+  "order": 5,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "novice-necromancer",
+        "name": "Novice Necromancer",
+        "records": [
+          {
+            "edid": "EncWarlock01TemplateNecro",
+            "formKey": "0548FE:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "bands-of-power.md: novice mages"
+        },
+        "note": "eight leaves per rung (`EncWarlockNecro0N<Race><Sex>`), two at rung 07; every leaf takes `Stats`, `BaseData` and `Inventory` from its rung's template."
+      },
+      {
+        "id": "apprentice-necromancer",
+        "name": "Apprentice Necromancer",
+        "records": [
+          {
+            "edid": "EncWarlock02TemplateNecro",
+            "formKey": "0548FF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: apprentice mages"
+        }
+      },
+      {
+        "id": "necromancer-adept",
+        "name": "Necromancer Adept",
+        "records": [
+          {
+            "edid": "EncWarlock03TemplateNecro",
+            "formKey": "0551AC:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: adept mages"
+        }
+      },
+      {
+        "id": "necromage",
+        "name": "Necromage",
+        "records": [
+          {
+            "edid": "EncWarlock04TemplateNecro",
+            "formKey": "0551AD:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 19
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: the middle rung (19), between the adept and the expert mages"
+        }
+      },
+      {
+        "id": "ascendant-necromancer",
+        "name": "Ascendant Necromancer",
+        "records": [
+          {
+            "edid": "EncWarlock05TemplateNecro",
+            "formKey": "0551AE:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 27
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: expert mages"
+        }
+      },
+      {
+        "id": "master-necromancer",
+        "name": "Master Necromancer",
+        "records": [
+          {
+            "edid": "EncWarlock06TemplateNecro",
+            "formKey": "0551AF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 36
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: expert mages (36 sits in Elite)"
+        }
+      },
+      {
+        "id": "arch-necromancer",
+        "name": "Arch Necromancer",
+        "records": [
+          {
+            "edid": "EncWarlock07TemplateNecro",
+            "formKey": "1091AB:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 46
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: 46 sits in Powerful; the Arch rung is the top of the ladder (archetype-tiers.md Rule 4)"
+        },
+        "note": "CC Necromantic Grimoire: `ccVSVSSE003_MainQuest` adds two more Arch Necromancer leaves to `LCharWarlock07Necro` at runtime, `ccVSVSSE003_EncWarlockNecro07BretonF` 000927 and `…07HighElfM` 000928; they take `Stats` from their own CC template `ccVSVSSE003_EncWarlock07TemplateNecro` 000918 (46), not from 1091AB, and are filed with the CC boss leaves on *Warlock Bosses*."
+      },
+      {
+        "id": "chicken-necromancer",
+        "name": "Novice Necromancer",
+        "records": [
+          {
+            "edid": "dunPOIChickenNecromander",
+            "formKey": "1092F5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 1,
+          "from": {
+            "edid": "EncWarlock01TemplateNecro",
+            "formKey": "0548FE:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "bands-of-power.md: novice mages"
+        },
+        "note": "rung 01, with its own race; placed once (Placed only)."
+      },
+      {
+        "id": "wrappers",
+        "name": "the drawn rung's name",
+        "records": [
+          {
+            "edid": "LvlWarlockNecromancer",
+            "formKey": "01E7CA:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockNecromancerAggro1024",
+            "formKey": "099544:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockNecromancerAggro2048",
+            "formKey": "10E05D:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockNecromancerHoldPos256",
+            "formKey": "0F85FB:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockNecromancerFemaleHighElf",
+            "formKey": "0713DD:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockNecromancerMaleDarkElf",
+            "formKey": "0235FD:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockNecroAmbush",
+            "formKey": "0CAEEA:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockNecroAmbushDarkElfM",
+            "formKey": "0CAEF5:Skyrim.esm"
+          },
+          {
+            "edid": "dunFortSnowhawkLvlWarlockNecromancerAmbush",
+            "formKey": "0D5C7A:Skyrim.esm"
+          },
+          {
+            "edid": "dunFortSnowhawkLvlWarlockNecromancerTraining",
+            "formKey": "0D5C63:Skyrim.esm"
+          },
+          {
+            "edid": "dunFortSnowhawkLvlWarlockNecromancerOmit01Ambush",
+            "formKey": "0D779C:Skyrim.esm"
+          },
+          {
+            "edid": "dunFortSnowhawkLvlWarlockNecromancerOmit01AmbushHPLC02",
+            "formKey": "0D77B0:Skyrim.esm"
+          },
+          {
+            "edid": "dunFortSnowhawkLvlWarlockNecroAggro2048HP256UntilReleased",
+            "formKey": "0D5C4A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "`LCharWarlockNecromancer` or `LCharWarlockNecroOmit01` (Lists below)"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md (WD-46) rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
+        },
+        "note": "unnamed wrappers that take `Stats` and `BaseData` from a list (Lists below), so each shows the rung it draws. Placed: `LvlWarlockNecromancer` 01E7CA ×30 · `LvlWarlockNecromancerAggro1024` 099544 ×2 · `LvlWarlockNecromancerAggro2048` 10E05D ×1 · `LvlWarlockNecromancerHoldPos256` 0F85FB ×1 · `LvlWarlockNecromancerFemaleHighElf` 0713DD ×3 · `LvlWarlockNecromancerMaleDarkElf` 0235FD ×3 · `LvlWarlockNecroAmbush` 0CAEEA ×3 (through `LvlWarlockNecromancer`) · `LvlWarlockNecroAmbushDarkElfM` 0CAEF5 ×2 (through `LvlWarlockNecromancer`) · `dunFortSnowhawkLvlWarlockNecromancerAmbush` 0D5C7A ×8 (through `LvlWarlockNecromancer`) · `dunFortSnowhawkLvlWarlockNecromancerTraining` 0D5C63 ×1 · `dunFortSnowhawkLvlWarlockNecromancerOmit01Ambush` 0D779C ×1 (`Omit01`) · `dunFortSnowhawkLvlWarlockNecromancerOmit01AmbushHPLC02` 0D77B0 ×1 (`Omit01`) · `dunFortSnowhawkLvlWarlockNecroAggro2048HP256UntilReleased` 0D5C4A ×1 (`Omit01`) (57 in all). the copies moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03) include `LvlWarlockNecromancerHoldPos256` (`SunderstoneGorge01`), `…Aggro2048` (`BoulderfallCaveExterior01`), `…FemaleHighElf` and `…MaleDarkElf` (`IlinaltasDeep02`, `Ustengrav01` or `SunderstoneGorge01`, and an initially disabled `Tamriel` persistent ref each) and `LvlWarlockNecroAmbushDarkElfM` (`FellglowKeep01`). The `Omit01` wrappers draw rung 02 at 1, then 12–46."
+      },
+      {
+        "id": "southfringe-boss",
+        "name": "the drawn rung's name (Southfringe boss)",
+        "records": [
+          {
+            "edid": "dunSouthfringeBoss",
+            "formKey": "0A33EA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockNecromancer",
+            "formKey": "01E777:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "level": 50,
+          "status": "proposed",
+          "source": "archetype-tiers.md, bosses that were scaling: the Southfringe boss pinned to 50, the Arch Necromancer boss (user)"
+        },
+        "note": "the location boss (its ref 02B99D carries the Boss ref type): takes `Stats` and `BaseData` from `LvlWarlockNecromancerMaleDarkElf` 0235FD, so from `LCharWarlockNecromancer`; its inventory and outfit are its own (Gear)."
+      },
+      {
+        "id": "ms06-necromancers",
+        "name": "Necromancer",
+        "records": [
+          {
+            "edid": "MS06NecromancerCultist1",
+            "formKey": "028502:Skyrim.esm"
+          },
+          {
+            "edid": "MS06NecromancerCultist2",
+            "formKey": "028503:Skyrim.esm"
+          },
+          {
+            "edid": "MS06NecromancerCultist3",
+            "formKey": "096559:Skyrim.esm"
+          },
+          {
+            "edid": "MS06NecromancerCultist4",
+            "formKey": "09655B:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockNecromancer",
+            "formKey": "01E777:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md (WD-46) rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
+        },
+        "note": "the Ritual Master's cultists (MS06): `Cultist1` takes `Stats` from `LvlWarlockNecromancer` 01E7CA, the other three take `Stats` and `BaseData` from `Cultist1`."
+      },
+      {
+        "id": "southfringe-spellsword",
+        "name": "Spellsword",
+        "records": [
+          {
+            "edid": "dunSouthfringeSpellsword",
+            "formKey": "0B11EF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharWarlockNecromancer",
+            "formKey": "01E777:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md (WD-46) rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
+        },
+        "note": "takes `Stats` and `Traits` from `LCharWarlockNecromancer` directly; its name, inventory and outfit are its own (Gear)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing a rung template `EncWarlock0{2–7}TemplateNecro` also needs that rung's boss template `EncWarlock0NTemplateBossNecro` (7 · 14 · 21 · 30 · 40 · 50, on *Warlock Bosses*), which uses it as its template but not for `Stats`. The CC rung templates `ccVSVSSE003_EncWarlock0{2–6}TemplateNecro` 00091D · 00091C · 00091B · 00091A · 000919 (6 · 12 · 19 · 27 · 36, ccvsvsse003-necroarts.esl; templates of nothing else, so not rows) carry the CC boss templates `…0{2–6}TemplateBossNecro` 000922 · 000921 · 000920 · 00091F · 00091E (on *Warlock Bosses*) the same way.",
+      "Changing `EncWarlock04TemplateNecro` 0551AD also needs `ccBGSSSE045_LushakgraRagdam` 000835:ccbgssse045-hasedoki.esl (PC×1.25 [10–20]); `EncWarlock07TemplateNecro` 1091AB also needs `ccBGSSSE045_IvaraofOlenveld` 000832:ccbgssse045-hasedoki.esl (PC×1.25 [15–40]); both on *Named Warlocks*: same pattern.",
+      "Changing `EncWarlock00Template` 044CCC (the shared base of every rung template, which uses it without `Stats`) also needs `WIChangeLocation04Student` 06F214 (1, left out as not an enemy on the *Warlocks* group page): same pattern.",
+      "Every other record here (the rung leaves, every Necromancer wrapper, Fort Snowhawk, the Southfringe boss and Spellswords, the MS06 cultists and `dunPOIChickenNecromander`) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharWarlockNecromancer",
+          "formKey": "01E777:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWarlock01Necro` 0551E0"
+          },
+          {
+            "at": 6,
+            "label": "`LCharWarlock02Necro` 0551E1"
+          },
+          {
+            "at": 12,
+            "label": "`LCharWarlock03Necro` 0551E2"
+          },
+          {
+            "at": 19,
+            "label": "`LCharWarlock04Necro` 0551E3"
+          },
+          {
+            "at": 27,
+            "label": "`LCharWarlock05Necro` 0551E4"
+          },
+          {
+            "at": 36,
+            "label": "`LCharWarlock06Necro` 0551E5"
+          },
+          {
+            "at": 46,
+            "label": "`LCharWarlock07Necro` 1091C9 (2 leaves)"
+          }
+        ],
+        "note": "each rung list holds its 8 leaves with the Breton pair twice (10 entries); rung 07 2 leaves, plus the two CC Arch Necromancer leaves at runtime",
+        "owner": "`LvlWarlockNecromancer` 01E7CA ×30 · `LvlWarlockNecromancerAggro1024` 099544 ×2 · `LvlWarlockNecromancerAggro2048` 10E05D ×1 · `LvlWarlockNecromancerHoldPos256` 0F85FB ×1 · `LvlWarlockNecromancerFemaleHighElf` 0713DD ×3 · `LvlWarlockNecromancerMaleDarkElf` 0235FD ×3 · `LvlWarlockNecroAmbush` 0CAEEA ×3 (through `LvlWarlockNecromancer`) · `LvlWarlockNecroAmbushDarkElfM` 0CAEF5 ×2 (through `LvlWarlockNecromancer`) · `dunFortSnowhawkLvlWarlockNecromancerAmbush` 0D5C7A ×8 (through `LvlWarlockNecromancer`) · `dunFortSnowhawkLvlWarlockNecromancerTraining` 0D5C63 ×1; the Southfringe boss ×1 (through `LvlWarlockNecromancerMaleDarkElf`) and Spellswords ×7; the MS06 cultists ×4 (through `LvlWarlockNecromancer`)",
+        "drawnBy": [
+          {
+            "name": "Selveni Nethri",
+            "records": [
+              {
+                "edid": "dunSouthfringeSelveniNethri",
+                "formKey": "03A745:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "warlocks/named-warlocks",
+            "note": "through `LvlWarlockNecromancer` 01E7CA; `Stats` and `Inventory` taken; Southfringe Sanctum"
+          },
+          {
+            "name": "Soul Cairn mage and necromancer souls",
+            "records": [
+              {
+                "edid": "DLC01SoulCairnSoulMageFemale",
+                "formKey": "01A4F8:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulMageFemale02",
+                "formKey": "01A504:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulMageFemale03",
+                "formKey": "01A505:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulNecromancerFemale",
+                "formKey": "0150B3:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulMageMale",
+                "formKey": "01A4F7:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulMageMale02",
+                "formKey": "01A4F9:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulMageMale03",
+                "formKey": "01A503:Dawnguard.esm"
+              },
+              {
+                "edid": "DLC01SoulCairnSoulNecromancerMale",
+                "formKey": "0150B2:Dawnguard.esm"
+              }
+            ],
+            "how": "template",
+            "page": "skeletons/soul-cairn-undead",
+            "note": "the female souls through `LvlWarlockNecromancerFemaleHighElf` 0713DD, the male through `LvlWarlockNecromancerMaleDarkElf` 0235FD; `Stats` and spells taken; 10 placed"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockNecroOmit01",
+          "formKey": "0D5C49:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWarlock02Necro` (Apprentice)"
+          },
+          {
+            "at": 12,
+            "label": "`LCharWarlock03Necro`"
+          },
+          {
+            "at": 19,
+            "label": "`LCharWarlock04Necro`"
+          },
+          {
+            "at": 27,
+            "label": "`LCharWarlock05Necro`"
+          },
+          {
+            "at": 36,
+            "label": "`LCharWarlock06Necro`"
+          },
+          {
+            "at": 46,
+            "label": "`LCharWarlock07Necro`"
+          }
+        ],
+        "note": "the school ladder without the Novice rung, through the same rung lists",
+        "owner": "`dunFortSnowhawkLvlWarlockNecromancerOmit01Ambush` 0D779C ×1 (`Omit01`) · `dunFortSnowhawkLvlWarlockNecromancerOmit01AmbushHPLC02` 0D77B0 ×1 (`Omit01`) · `dunFortSnowhawkLvlWarlockNecroAggro2048HP256UntilReleased` 0D5C4A ×1 (`Omit01`)"
+      },
+      {
+        "list": {
+          "label": "the voice lists `LCharWarlockNecro{DarkElfF, DarkElfM, ElfHaughtyF}` 081EF0 · 081EF1 · 081EF2"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "rung 01"
+          },
+          {
+            "at": 6,
+            "label": "rung 02"
+          },
+          {
+            "at": 12,
+            "label": "rung 03"
+          },
+          {
+            "at": 19,
+            "label": "rung 04"
+          },
+          {
+            "at": 27,
+            "label": "rung 05"
+          },
+          {
+            "at": 36,
+            "label": "rung 06"
+          }
+        ],
+        "note": "that race and sex's leaf from rungs 01–06, no rung 07 (Condescending: the Breton and Imperial leaves)",
+        "owner": "no record draws them"
+      },
+      {
+        "list": {
+          "label": "the rung lists `LCharWarlock0{1–7}Necro` 0551E0 · 0551E1 · 0551E2 · 0551E3 · 0551E4 · 0551E5 · 1091C9"
+        },
+        "gate": "every gate ≤ player; every leaf at 1",
+        "note": "each rung list holds its 8 leaves with the Breton pair twice (10 entries); rung 07 2 leaves, plus the two CC Arch Necromancer leaves at runtime",
+        "owner": "`LCharWarlockNecromancer`, `LCharWarlockNecroOmit01`; `LCharWarlock07Necro` also gets the CC leaves (below)",
+        "drawnBy": [
+          {
+            "name": "Nimphaneth, Sanyon",
+            "records": [
+              {
+                "edid": "DA11Nimphaneth",
+                "formKey": "09BB45:Skyrim.esm"
+              },
+              {
+                "edid": "DA11Sanyon",
+                "formKey": "09BB47:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "daedra/daedric-quest-foes",
+            "note": "on `LCharWarlock01Necro` 0551E0 (Novice Necromancer); `Stats` and `Inventory` taken; Reachcliff Cave"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "ccVSVSSE003_MainQuest",
+          "formKey": "0008B7:ccvsvsse003-necroarts.esl"
+        },
+        "note": "a start-up quest, not a list: its script adds `ccVSVSSE003_EncWarlockNecro07BretonF` 000927 and `…07HighElfM` 000928 to `LCharWarlock07Necro` 1091C9 at 1, so they roll with the vanilla rung-07 leaves; its other `AddForm` calls touch only the boss lists (*Warlock Bosses*). `LCharWarlock0{3–6}Necro` are script properties but nothing is added to them",
+        "owner": "Necromantic Grimoire (ccvsvsse003-necroarts.esl)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Necromancer (MS06)",
+        "base": [
+          {
+            "edid": "MS06NecromancerCultist1",
+            "formKey": "028502:Skyrim.esm"
+          }
+        ],
+        "baseNote": "and Cultist2–4, one each",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WolfSkullCave02",
+              "formKey": "0AC5D2:Skyrim.esm"
+            },
+            "refText": "×4"
+          }
+        ]
+      },
+      {
+        "name": "Spellsword",
+        "base": [
+          {
+            "edid": "dunSouthfringeSpellsword",
+            "formKey": "0B11EF:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "SouthfringeWorld",
+              "formKey": "020BFE:Skyrim.esm"
+            },
+            "refText": "×7",
+            "note": "Southfringe Sanctum"
+          }
+        ]
+      },
+      {
+        "name": "the Southfringe boss",
+        "base": [
+          {
+            "edid": "dunSouthfringeBoss",
+            "formKey": "0A33EA:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "SouthfringeWorld",
+              "formKey": "020BFE:Skyrim.esm"
+            },
+            "refText": "×1",
+            "note": "Southfringe Sanctum"
+          }
+        ]
+      },
+      {
+        "name": "Novice Necromancer",
+        "base": [
+          {
+            "edid": "dunPOIChickenNecromander",
+            "formKey": "1092F5:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "POIFallForest24",
+              "formKey": "0097F9:Skyrim.esm"
+            },
+            "refText": "×1"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Necromancer rungs 01–07 (own inventory; the leaves take it)",
+        "weapons": "`LItemWarlockDagger` 044CD6, `LootWarlockRandom` 10FACD, `LootWarlockSoulGemsNecroBonus` 10FAD3 (02–06); rungs 06–07 `LItemStaffDestruction50NPC50` 0E0FDD; death item `DeathItemWarlock` 08601A",
+        "armor": "`NecromancerOutfitHood50` 105255",
+        "skin": "race default"
+      },
+      {
+        "records": "the wrappers, MS06 cultists, `dunPOIChickenNecromander`",
+        "weapons": "as the drawn leaf or template",
+        "armor": "as the drawn leaf or template",
+        "skin": "race default"
+      },
+      {
+        "records": "Spellsword (own)",
+        "weapons": "`LItemBanditWeapon1H` 037C1B, `LootStaffsAll25` 104ABC, `LootBanditGems25`, `LootHagravenChestPotions25`, `LootGoldChange25`",
+        "armor": "`BanditArmorMeleeNoShieldOutfit` 01E608 (bandit cuirass, boots, 50% gauntlets)",
+        "skin": "race default"
+      },
+      {
+        "records": "`dunSouthfringeBoss` (own)",
+        "weapons": "`LItemStaffsAll` 035320, `LItemBanditMace` 037C18, `LItemGems`, `LootGoldChange`",
+        "armor": "`dunSouthfringeBossOutfit` 0B1213 (Ancient Nord Armor, `LItemEnchArmorHeavyGauntlets`, `LItemBanditHeavyBoots`, a necklace and a ring)",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "NecromancerOutfitHood50",
+          "formKey": "105255:Skyrim.esm"
+        },
+        "rolls": "boots (`ClothesNecromancerBoots` 0C36E8) and `LItemEnchNecromancerRobes` 105251: Necromancer Robes, Robes of Minor Conjuration/Destruction/Restoration 1 · Hooded Necromancer Robes, Robes of Conjuration … 8 · Quickening 10 · Major 16 · Recharging 20 · Eminent 24 · Replenishing 30 · Extreme 32 · Peerless, Resurgence 40"
+      },
+      {
+        "list": {
+          "edid": "LItemWarlockDagger",
+          "formKey": "044CD6:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron 1 · Steel 4 · Orcish 7 · Dwarven 10 · Elven 14 · enchanted Iron, Steel, Orcish, Dwarven 15 · Glass 18 · enchanted Elven 20 · enchanted Glass 28 · enchanted Ebony 37 · enchanted Daedric 47 (each enchanted tier climbs to 53)"
+      },
+      {
+        "list": {
+          "edid": "LItemStaffDestruction50NPC50",
+          "formKey": "0E0FDD:Skyrim.esm"
+        },
+        "rolls": "50% none; Staff of Fireballs, Ice Storms or Chain Lightning"
+      },
+      {
+        "list": {
+          "edid": "LootWarlockSoulGemsNecroBonus",
+          "formKey": "10FAD3:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "75% none: Petty 1 · Lesser 8 · Common 16 · Black 20 · Greater 24 · Grand 30 (empty or filled)"
+      },
+      {
+        "list": {
+          "edid": "LootWarlockRandom",
+          "formKey": "10FACD:Skyrim.esm"
+        },
+        "rolls": "all of: gold, ingredients, potions, recipes, soul gems, spell tomes (Novice tomes 1, Apprentice 10)"
+      },
+      {
+        "list": {
+          "edid": "DeathItemWarlock",
+          "formKey": "08601A:Skyrim.esm"
+        },
+        "rolls": "all of: `LootWarlockScrolls05` (95% none: one high-level scroll, e.g. Fire Storm, Blizzard, Mayhem, Dread Zombie) and `LootWarlockPotions10` (90% none: a fortify-magic-skill, magicka, resistance or warlock-chest potion, tiers 1 · 10 · 20 · 30)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "the necromancer robes, hoods and boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Ancient Nord Armor, the heavy gauntlets and boots (Southfringe boss); the bandit light pieces (Spellswords)",
+        "kind": "heavy · light",
+        "playable": true
+      },
+      {
+        "item": "the daggers, maces and staves",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

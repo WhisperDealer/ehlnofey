@@ -1,0 +1,158 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "warlocks",
+  "title": "Warlocks",
+  "order": 9,
+  "meta": {
+    "spec": "archetype-tiers.md, Warlocks",
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The warlocks are the hostile mages: the five-school ladder, the bosses, the witches and the named mages, vanilla, DLC and CC. Their lists are borrowed by records filed elsewhere (the Vaermina Devotees, the Soul Cairn mage souls, Nimphaneth and Sanyon, the CW siege mages and more): each list row on a family page links to every record that draws it, under *Drawn elsewhere*. One runtime injector touches the necromancer lists: `ccVSVSSE003_MainQuest` (Necromantic Grimoire, ccvsvsse003-necroarts.esl) holds its 22 boss leaves `ccVSVSSE003_EncWarlockNecro0{2–6}Boss{Breton,HighElf}{F,M}` and `…Necro07{BretonF,HighElfM}`, the lists `LCharWarlock0{2–6}BossNecro`, `LCharWarlock0{3–6}Necro`, `LCharWarlock07Necro`, `LCharWarlockBossNecro{Female,Male}Condescending` and `LCharWarlockNecroBossMaleElfHaughty`, and its robe and spell-tome lists, and adds its leaves to the necromancer lists at runtime; which leaf goes into which list is in the script `[unverified]`.",
+  "families": [
+    {
+      "id": "conjurers",
+      "holds": "the `LCharWarlockConjurer` ladder: Novice Conjurer 1 · Apprentice 6 · Adept 12 · Conjurer 19 · Ascendant 27 · Master 36 · Arch 46, its `Omit01`, voice and rung lists, and its wrappers (Fellglow included)"
+    },
+    {
+      "id": "pyromancers",
+      "holds": "the `LCharWarlockFire` ladder: Novice Fire Mage 1 → Pyromancer 36 → Arch Pyromancer 46, its `Omit01`, voice and rung lists, and its wrappers (the Fellglow sentries included)"
+    },
+    {
+      "id": "cryomancers",
+      "holds": "the `LCharWarlockIce` ladder: Novice Ice Mage 1 → Cryomancer 36 → Arch Cryomancer 46, its `Omit01`, voice and rung lists, its wrappers and the Fellglow pet-scene mage"
+    },
+    {
+      "id": "electromancers",
+      "holds": "the `LCharWarlockStorm` ladder: Novice Storm Mage 1 → Electromancer 36 → Arch Electromancer 46, its `Omit01`, voice and rung lists, and its wrappers"
+    },
+    {
+      "id": "necromancers",
+      "holds": "the `LCharWarlockNecromancer` ladder: Novice Necromancer 1 → Necromage 19 → Arch Necromancer 46, its `Omit01`, voice and rung lists, its wrappers (Fort Snowhawk included), the MS06 cultists, the Southfringe boss and Spellsword, the CC Necromantic Grimoire injector"
+    },
+    {
+      "id": "elemental-mages",
+      "holds": "`LCharWarlockElemental` (one school of Fire, Ice or Storm at random, then its ladder 1–46), its voice lists and its wrappers (Tundra Marsh, the Fellglow jailors)"
+    },
+    {
+      "id": "warlock-bosses",
+      "holds": "`LCharWarlockBoss*` (7 · 14 · 21 · 30 · 40), the `07Boss` rung (50) no list reaches, the voice boss lists, the CC Necromantic Grimoire boss leaves"
+    },
+    {
+      "id": "witches",
+      "holds": "`LCharWitch*`: Witch 4 · Hag 8"
+    },
+    {
+      "id": "named-warlocks",
+      "holds": "the named mages, vanilla, Dawnguard and CC"
+    }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-10-02)",
+    "confidence": "verified",
+    "text": "Every `LVLN` whose EditorID starts `LCharWarlock`, `LCharWitch` or `SubCharWarlock`, plus `WEAdventurerRangedConjurerSubChar` and `dunFellglow_LCharWarlockPetForScene` (129), and everything they draw; every NPC in `WarlockFaction` 026724, `NecromancerFaction` 034B74 or `WE20WarlockFaction` 09F816, or whose EditorID holds Warlock, Necro, Conjurer or Witch (draugr, Dremora and skeleton records excluded); every record that takes a template from any of them (694 records); every placed reference in the 189 cells and worldspaces that place one. No plugin overrides a warlock `LVLN`. Everything found is on a family page except the following."
+  },
+  "filedElsewhere": [
+    {
+      "record": "`CWSiegeImperialWizard`, `CWSiegeSonsWizard*`",
+      "what": "the Civil War siege mages",
+      "where": "Factions → Imperial Legion → *Common Legion* · Factions → Stormcloaks → *Common Stormcloaks*"
+    },
+    {
+      "record": "`LvlVampireThrallConjurer`",
+      "what": "the vampire thrall conjurer",
+      "where": "Undead → Vampires → *Vampire's Thrall*"
+    },
+    {
+      "record": "the Glenmoril Witches",
+      "what": "hagravens",
+      "where": "World Creatures → Sentient → *Hagraven*"
+    },
+    {
+      "record": "the warlock pets: frostbite spiders, skeevers, wolves, the Southfringe fox; the Thrall Wolves and Bonewolf (CC)",
+      "what": "creatures that keep a warlock company",
+      "where": "World Creatures; Undead → Skeletons → *Bone Wolves (CC)*"
+    },
+    {
+      "record": "`LvlWarlockAtronachCompanion*`, the Fellglow atronach lists",
+      "what": "the atronach companions",
+      "where": "out of the census: atronachs are not censused (user, 2026-10-02)"
+    },
+    {
+      "record": "the CC Necromantic Grimoire undead (liches, colossi, wraiths, shades)",
+      "what": "undead",
+      "where": "Undead"
+    },
+    {
+      "record": "the CC Daedric Incursion Ayleid wights · the CC Arms of Chaos Dremora · the Ash Guardian",
+      "what": "non-mages in `WarlockFaction`",
+      "where": "Undead → *Ayleid Undead (CC)* · Daedra → *Dremora* · Undead → Ash → *Ash Guardian*"
+    },
+    {
+      "record": "Ehlhiel (CC) · the Vigilant Enforcer (CC) · Erwan (CC)",
+      "what": "named NPCs",
+      "where": "World → Falkreath Hold → *Falkreath Countryside* · Factions → Vigilants → *Named Vigilants* · Bandits → *Named Bandits*"
+    },
+    {
+      "record": "`ccBGSSSE013_*Guardian`, `…LASTSTAND`",
+      "what": "the CC Dawnfang Guardians, in `WarlockFaction`",
+      "where": "Undead → Ghosts → *Ghost Bosses* (The Guardian)"
+    },
+    {
+      "record": "the `ccASVSSE001_*` priests, Caretaker Ineril, Matriarch Drevlan",
+      "what": "the CC Ghosts of the Tribunal temple staff",
+      "where": "Factions → Minor Factions → *Ghosts of the Tribunal*"
+    },
+    {
+      "record": "`DA16LvlVaerminaDevotee*`",
+      "what": "the Vaermina Devotees (the Storm ladder)",
+      "where": "Daedra → *Vaermina Devotees* (user, 2026-10-02)"
+    },
+    {
+      "record": "Nimphaneth, Sanyon (`DA11`)",
+      "what": "rung-01 necromancers",
+      "where": "Daedra → *Daedric Quest Foes*"
+    },
+    {
+      "record": "the CC Mythic Dawn (The Cause), Janus's corpse included",
+      "what": "cultist mages",
+      "where": "Daedra → *Mythic Dawn (CC)*"
+    },
+    {
+      "record": "`WEAdventurerRangedConjurer*`, `LvlWEAdventurerRangedConjurer`",
+      "what": "the world-encounter adventurer conjurers, PC×1.1 \\[6–∞\\], not placed",
+      "where": "World → World Encounters → *Adventurers*"
+    }
+  ],
+  "neverMet": [
+    {
+      "record": "`TreasCorpseWarlock*` (9 records, 15 placed; `…ImperialFemale` and `…DarkElfMaleCOPY0000` not placed), `TreasCorpseAlchemist` (×9), `dunClearpinePondAlchemist`, `DLC1LD_BookCorpse1`, `DLC2KagrumezCorpse` (Raleth Eldri), the Nchuand-Zel dead (Erj, Krag, Staubin, Stromm), `dunFolgunthurDaynas` (Daynas Valen), CC `ccRMSSSE001_Necromancer` (Naara)",
+      "what": "corpses",
+      "why": "every placement `StartsDead`"
+    },
+    {
+      "record": "`dunRannLvlWarlockAssistant` 05198C",
+      "what": "Sild's Assistant, Rannveig's Fast",
+      "why": "dead when the player finds her (user, 2026-11-12)"
+    },
+    {
+      "record": "`dunChillwindFalmerPrisoner05`",
+      "what": "a prisoner",
+      "why": "not placed"
+    },
+    {
+      "record": "`dunReachwaterRockGauldur`",
+      "what": "an invulnerable ghost",
+      "why": "not an enemy"
+    },
+    {
+      "record": "`dunDarklightIllia`",
+      "what": "Illia",
+      "why": "an ally"
+    },
+    {
+      "record": "`WIChangeLocation04Student` · `AudioTemplateWitchlight`",
+      "what": "a student · an audio template",
+      "why": "not enemies"
+    }
+  ]
+}

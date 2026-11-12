@@ -115,7 +115,8 @@ rules).
   page) plus one `<family>.json` per family page; `census/bands.json` is the home page. The schema is
   `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
   everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons, Daedra** (all 13 pages, the
-  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05), Dragon Priests (one page, a family of `census/undead/`, 2026-11-12), Draugr (all 4 pages, `census/draugr/`), Skeletons (all 5 pages, `census/skeletons/`), Ghosts (all 4 pages, `census/ghosts/`) and Ash (all 4 pages, `census/ash/`), sub-groups of Undead, and the CC Zombies and Ayleid Undead (families of `census/undead/`): **Undead is fully migrated** (2026-11-12). Falmer (all 5 pages, `census/falmer/`, 2026-11-12). Automatons (all 6 pages, `census/automatons/`, 2026-11-12). Conjured (all 10 pages, 2026-11-12): `census/conjured/` is a parent with no families of its own, over the sub-groups `census/summoned-creatures/` and `census/summoned-npcs/`; its family pages carry a `summonedBy` table (spell, player source, NPC casters). World Creatures (all pages, 2026-11-12): `census/world-creatures/` is a parent with no families of its own, over seven sub-groups `census/{animals,aquatic,beasts,insectoids,sentient,monsters,mounts}/`.
+  Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05), Dragon Priests (one page, a family of `census/undead/`, 2026-11-12), Draugr (all 4 pages, `census/draugr/`), Skeletons (all 5 pages, `census/skeletons/`), Ghosts (all 4 pages, `census/ghosts/`) and Ash (all 4 pages, `census/ash/`), sub-groups of Undead, and the CC Zombies and Ayleid Undead (families of `census/undead/`): **Undead is fully migrated** (2026-11-12). Falmer (all 5 pages, `census/falmer/`, 2026-11-12). Automatons (all 6 pages, `census/automatons/`, 2026-11-12). Conjured (all 10 pages, 2026-11-12): `census/conjured/` is a parent with no families of its own, over the sub-groups `census/summoned-creatures/` and `census/summoned-npcs/`; its family pages carry a `summonedBy` table (spell, player source, NPC casters). World Creatures (all pages, 2026-11-12): `census/world-creatures/` is a parent with no families of its own, over seven sub-groups `census/{animals,aquatic,beasts,insectoids,sentient,monsters,mounts}/`. Warlocks (all 9 pages, `census/warlocks/`, 2026-11-12).
+- **Lists borrowed across pages** (user, 2026-11-12): a list row's `drawnBy` names every record filed on another page that draws the list (as its template, or an `LVLN` holding it as an entry), with `page` (`<group>/<family>`, a migrated page, linked on the site and checked by `npm run schema`) or `where` (a Confluence-only page, as text). Warlocks and Bandits lend their lists widely (the Vaermina Devotees draw `LCharWarlockStorm`); find drawers in the game files across all masters and CC plugins, not only in the census.
   Every other group stays Confluence-first until it is migrated.
 - **A sub-group is its own census folder with `parent`** in its `group.json` (`census/vampires/` has
   `"parent": "undead"`); URLs stay flat (`/vampires/common-vampires/`), the parent's page lists its
@@ -210,8 +211,11 @@ rules).
   `WEAssassinSubChar` PC×1.1 [6–45], the Hag's End assassin, the CC Bow of Shadows and Daedric-armor
   assassins) and *Dark Brotherhood Targets* (the `DB01`–`DB11`, side-contract and `DBrecurring` victims,
   Agnis and Maluril included; the Maros stay on Penitus Oculatus, Helvard on Jarls, Hern on *Unique Vampires*)), Warlocks
-  (WD-87, top-level, the hostile mages: *Common Warlocks* (five schools × seven rungs, 1–46, every
-  wrapper, MS06 cultists, Southfringe crew), *Warlock Bosses* (7–40; the 50
+  (WD-87, top-level, the hostile mages, **migrated to `census/warlocks/`, so edit the JSON, not Confluence**:
+  one page per school (user, 2026-11-12), *Conjurers*, *Pyromancers*, *Cryomancers*, *Electromancers*,
+  *Necromancers* (seven rungs each, 1–46, with their wrappers; MS06 cultists and Southfringe crew on
+  Necromancers) and *Elemental Mages* (`LCharWarlockElemental`, a random Fire/Ice/Storm school); every
+  list row carries `drawnBy`, the records on other pages that draw it; *Warlock Bosses* (7–40; the 50
   rung is in no list; CC Necromantic Grimoire injects boss leaves), *Witches* (Witch 4, Hag 8),
   *Named Warlocks* (Sebastian Lort and Malkoran moved to Daedra → *Daedric Quest Foes*); the Soul Cairn mage
   souls are on Undead → *Soul Cairn Undead*; the CC Dawnfang Guardians are ghosts, on

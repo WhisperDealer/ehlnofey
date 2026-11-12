@@ -1,0 +1,1252 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "warlock-bosses",
+  "group": "warlocks",
+  "title": "Warlock Bosses",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "boss-rung-02",
+        "name": "Apprentice Conjurer · Apprentice Fire Mage · Apprentice Ice Mage · Apprentice Storm Mage · Apprentice Necromancer",
+        "records": [
+          {
+            "edid": "EncWarlock02TemplateBossConjurer",
+            "formKey": "0E0FBE:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock02TemplateBossFire",
+            "formKey": "0E0FBF:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock02TemplateBossIce",
+            "formKey": "0E0FC0:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock02TemplateBossStorm",
+            "formKey": "0E0FC2:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock02TemplateBossNecro",
+            "formKey": "0E0FC1:Skyrim.esm"
+          },
+          {
+            "edid": "ccVSVSSE003_EncWarlock02TemplateBossNecro",
+            "formKey": "000922:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 7
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: a boss one band above its rung (Apprentice 6, IV on the school pages). The boss lists are pinned to the 07 rung (archetype-tiers.md §3.1, WD-46), so after the rebuild only the own-level records under *Also owns its level* use this template"
+        },
+        "note": "the rung-02 boss template of each school; each has four leaves (`EncWarlock<School>02Boss<Race><Sex>`: Breton and High Elf, F and M; Fire Dark Elf and High Elf; Ice High Elf and Nord) that take `Stats`, `BaseData` and `Inventory` from it. The CC Necromantic Grimoire template `ccVSVSSE003_EncWarlock02TemplateBossNecro` has four leaves of its own (000935–000938:ccvsvsse003-necroarts.esl), added to the necromancer lists at runtime `[unverified]`."
+      },
+      {
+        "id": "boss-rung-03",
+        "name": "Conjurer Adept · Fire Mage Adept · Ice Mage Adept · Storm Mage Adept · Necromancer Adept",
+        "records": [
+          {
+            "edid": "EncWarlock03TemplateBossConjurer",
+            "formKey": "0E0FC3:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock03TemplateBossFire",
+            "formKey": "0E0FC4:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock03TemplateBossIce",
+            "formKey": "0E0FC5:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock03TemplateBossStorm",
+            "formKey": "0E0FC7:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock03TemplateBossNecro",
+            "formKey": "0E0FC6:Skyrim.esm"
+          },
+          {
+            "edid": "ccVSVSSE003_EncWarlock03TemplateBossNecro",
+            "formKey": "000921:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 14
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a boss one band above its rung (Adept 12, V on the school pages). The boss lists are pinned to the 07 rung (archetype-tiers.md §3.1, WD-46), so after the rebuild only the own-level records under *Also owns its level* use this template"
+        },
+        "note": "the rung-03 boss template of each school; each has four leaves (`EncWarlock<School>03Boss<Race><Sex>`: Breton and High Elf, F and M; Fire Dark Elf and High Elf; Ice High Elf and Nord) that take `Stats`, `BaseData` and `Inventory` from it. The CC Necromantic Grimoire template `ccVSVSSE003_EncWarlock03TemplateBossNecro` has four leaves of its own (000931–000934:ccvsvsse003-necroarts.esl), added to the necromancer lists at runtime `[unverified]`."
+      },
+      {
+        "id": "boss-rung-04",
+        "name": "Conjurer · Fire Mage · Ice Mage · Storm Mage · Necromage",
+        "records": [
+          {
+            "edid": "EncWarlock04TemplateBossConjurer",
+            "formKey": "0E0FC8:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock04TemplateBossFire",
+            "formKey": "0E0FC9:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock04TemplateBossIce",
+            "formKey": "0E0FCA:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock04TemplateBossStorm",
+            "formKey": "0E0FCC:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock04TemplateBossNecro",
+            "formKey": "0E0FCB:Skyrim.esm"
+          },
+          {
+            "edid": "ccVSVSSE003_EncWarlock04TemplateBossNecro",
+            "formKey": "000920:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 21
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "role: a boss one band above its rung (Conjurer/Mage/Necromage 19, V on the school pages). The boss lists are pinned to the 07 rung (archetype-tiers.md §3.1, WD-46), so after the rebuild only the own-level records under *Also owns its level* use this template"
+        },
+        "note": "the rung-04 boss template of each school; each has four leaves (`EncWarlock<School>04Boss<Race><Sex>`: Breton and High Elf, F and M; Fire Dark Elf and High Elf; Ice High Elf and Nord) that take `Stats`, `BaseData` and `Inventory` from it. The CC Necromantic Grimoire template `ccVSVSSE003_EncWarlock04TemplateBossNecro` has four leaves of its own (00092D–000930:ccvsvsse003-necroarts.esl), added to the necromancer lists at runtime `[unverified]`."
+      },
+      {
+        "id": "boss-rung-05",
+        "name": "Ascendant Conjurer · Fire Wizard · Ice Wizard · Storm Wizard · Ascendant Necromancer",
+        "records": [
+          {
+            "edid": "EncWarlock05TemplateBossConjurer",
+            "formKey": "0E0FCD:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock05TemplateBossFire",
+            "formKey": "0E0FCE:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock05TemplateBossIce",
+            "formKey": "0E0FCF:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock05TemplateBossStorm",
+            "formKey": "0E0FD1:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock05TemplateBossNecro",
+            "formKey": "0E0FD0:Skyrim.esm"
+          },
+          {
+            "edid": "ccVSVSSE003_EncWarlock05TemplateBossNecro",
+            "formKey": "00091F:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 30
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a boss one band above its rung (Ascendant/Wizard 27, VI on the school pages). The boss lists are pinned to the 07 rung (archetype-tiers.md §3.1, WD-46), so after the rebuild only the own-level records under *Also owns its level* use this template"
+        },
+        "note": "the rung-05 boss template of each school; each has four leaves (`EncWarlock<School>05Boss<Race><Sex>`: Breton and High Elf, F and M; Fire Dark Elf and High Elf; Ice High Elf and Nord) that take `Stats`, `BaseData` and `Inventory` from it. The CC Necromantic Grimoire template `ccVSVSSE003_EncWarlock05TemplateBossNecro` has four leaves of its own (000929–00092C:ccvsvsse003-necroarts.esl), added to the necromancer lists at runtime `[unverified]`."
+      },
+      {
+        "id": "boss-rung-06",
+        "name": "Master Conjurer · Pyromancer · Cryomancer · Electromancer · Master Necromancer",
+        "records": [
+          {
+            "edid": "EncWarlock06TemplateBossConjurer",
+            "formKey": "0E0FD3:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock06TemplateBossFire",
+            "formKey": "0E0FD2:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock06TemplateBossIce",
+            "formKey": "0E0FD4:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock06TemplateBossStorm",
+            "formKey": "0E0FD6:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock06TemplateBossNecro",
+            "formKey": "0E0FD5:Skyrim.esm"
+          },
+          {
+            "edid": "ccVSVSSE003_EncWarlock06TemplateBossNecro",
+            "formKey": "00091E:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 40
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: a boss one band above its rung (Master/-mancer 36, VI on the school pages). The boss lists are pinned to the 07 rung (archetype-tiers.md §3.1, WD-46), so after the rebuild only the own-level records under *Also owns its level* use this template"
+        },
+        "note": "the rung-06 boss template of each school; each has four leaves (`EncWarlock<School>06Boss<Race><Sex>`: Breton and High Elf, F and M; Fire Dark Elf and High Elf; Ice High Elf and Nord) that take `Stats`, `BaseData` and `Inventory` from it. The CC Necromantic Grimoire template `ccVSVSSE003_EncWarlock06TemplateBossNecro` has four leaves of its own (000923–000926:ccvsvsse003-necroarts.esl), added to the necromancer lists at runtime `[unverified]`."
+      },
+      {
+        "id": "boss-rung-07",
+        "name": "Arch Conjurer · Arch Pyromancer · Arch Cryomancer · Arch Electromancer · Arch Necromancer",
+        "records": [
+          {
+            "edid": "EncWarlock07TemplateBossConjurer",
+            "formKey": "1091AD:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock07TemplateBossFire",
+            "formKey": "1091AE:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock07TemplateBossIce",
+            "formKey": "1091AF:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock07TemplateBossStorm",
+            "formKey": "1091B1:Skyrim.esm"
+          },
+          {
+            "edid": "EncWarlock07TemplateBossNecro",
+            "formKey": "1091B0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 50
+        },
+        "target": {
+          "band": "VII",
+          "level": 50,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-46, user): warlock boss lists pinned to 50, the Arch rung"
+        },
+        "note": "the Arch boss rung: two leaves per school (`EncWarlockAtro07Boss{BretonF,HighElfM}` 1091B7 · 1091BD, `…Fire07Boss{DarkElfF,HighElfM}`, `…Ice07Boss{NordF,HighElfM}`, `…Storm07Boss{BretonF,HighElfM}`, `…Necro07Boss{BretonF,HighElfM}`). Vanilla never draws them: no list reaches the `LCharWarlock07Boss*` lists and there is no `07BossNecro` list. The rebuild pins every boss list to this rung."
+      },
+      {
+        "id": "cc-arch-necromancer",
+        "name": "Arch Necromancer",
+        "records": [
+          {
+            "edid": "ccVSVSSE003_EncWarlockNecro07BretonF",
+            "formKey": "000927:ccvsvsse003-necroarts.esl"
+          },
+          {
+            "edid": "ccVSVSSE003_EncWarlockNecro07HighElfM",
+            "formKey": "000928:ccvsvsse003-necroarts.esl"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 46,
+          "from": {
+            "edid": "ccVSVSSE003_EncWarlock07TemplateNecro",
+            "formKey": "000918:ccvsvsse003-necroarts.esl"
+          }
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "level: 46 sits in Powerful (VII), with the Arch rung"
+        },
+        "note": "the CC Necromantic Grimoire's rung-07 leaves; not bosses (their template is the common `…07TemplateNecro`), filed here with the pack's boss leaves. Added to `LCharWarlock07Necro` at runtime `[unverified]`."
+      },
+      {
+        "id": "boss-wrappers",
+        "name": "the drawn rung's name",
+        "records": [
+          {
+            "edid": "LvlWarlockConjurerBoss",
+            "formKey": "0E0FFE:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockConjurerBossAmbush",
+            "formKey": "0E221B:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockFireBoss",
+            "formKey": "0E1033:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockFireBossHoldPos256",
+            "formKey": "0F85F4:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockFrostBoss",
+            "formKey": "0E1034:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockShockBoss",
+            "formKey": "0E106B:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockShockBossAmbush",
+            "formKey": "108CD5:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockNecroBoss",
+            "formKey": "0E1050:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockNecroBossFemaleCondescending",
+            "formKey": "081EF4:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockNecroBossMaleElfHaughty",
+            "formKey": "081EF9:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "the boss lists (below)"
+          },
+          "rungs": [
+            7,
+            14,
+            21,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "level": 50,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-46, user): warlock boss lists pinned to 50, the Arch rung"
+        },
+        "note": "the placed boss wrappers whose list has a level-50 leaf of its race and sex; each takes `Stats`, `BaseData` and `Inventory` from its list (`LvlWarlockShockBossAmbush` through `LvlWarlockShockBoss`)."
+      },
+      {
+        "id": "boss-wrappers-voice-40",
+        "name": "the drawn rung's name",
+        "records": [
+          {
+            "edid": "LvlWarlockNecroBossMaleCondescending",
+            "formKey": "081EF5:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockFireCondescendingF",
+            "formKey": "081EE2:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockShockCondescendingF",
+            "formKey": "081F00:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockElementalBossFemaleElfHaughty",
+            "formKey": "081F0A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "the voice boss lists (below)"
+          },
+          "rungs": [
+            7,
+            14,
+            21,
+            30,
+            40
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "level": 40,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-46, user): voice boss lists with no level-50 leaf pinned to 40"
+        },
+        "note": "the voice wrappers whose list has no level-50 leaf of its race and sex (Breton M Necro; High Elf F Fire, Ice and Storm), so the rebuild keeps them at the 40 rung."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncWarlock05TemplateBossNecro` 0E0FD0 also needs `ccBGSSSE045_ModigGilgar` 00082D:ccbgssse045-hasedoki.esl (PC×1 [10–30], on *Named Warlocks*): it uses 0E0FD0 as its template but not for `Stats`.",
+      "Changing `EncWarlock06TemplateBossConjurer` 0E0FD3 also needs `ccBGSSSE025_EncWarlockAtro06BossBretonM` 000A84:ccbgssse025-advdsgs.esm (Thoron, PC×1.25 [26–100], on *Named Warlocks*); `EncWarlock06TemplateBossIce` 0E0FD4 also needs `ccBGSSSE051_Erwan` 00081C:ccbgssse051-ba_daedricmail.esl (PC×1 [15–60], on Bandits → *Named Bandits*); `EncWarlock06TemplateBossNecro` 0E0FD5 also needs `dunAnsilvundLuahAlSkaven` 02333A (Lu'ah Al-Skaven, PC×1 [8–50], on *Named Warlocks*), through its leaf `EncWarlockNecro06BossHighElfF` 0E1047: same pattern.",
+      "The other rows: no other record keeps its own level. Each boss template keeps its own level while it takes its look from its rung's common template (on *Conjurers*, *Pyromancers*, *Cryomancers*, *Electromancers* or *Necromancers*).",
+      "Every other boss record (the boss leaves, the boss wrappers, and the named bosses that draw a boss list on *Named Warlocks*) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharWarlockBossConjurer",
+          "formKey": "0E0FFD:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWarlock02BossConjurer` (7)"
+          },
+          {
+            "at": 6,
+            "label": "`LCharWarlock02BossConjurer`"
+          },
+          {
+            "at": 12,
+            "label": "`LCharWarlock02BossConjurer`"
+          },
+          {
+            "at": 19,
+            "label": "`LCharWarlock03BossConjurer` (14)"
+          },
+          {
+            "at": 27,
+            "label": "`LCharWarlock04BossConjurer` (21)"
+          },
+          {
+            "at": 36,
+            "label": "`LCharWarlock05BossConjurer` (30)"
+          },
+          {
+            "at": 46,
+            "label": "`LCharWarlock06BossConjurer` (40)"
+          }
+        ],
+        "note": "each rung list holds its four leaves (every gate ≤ player)",
+        "owner": "`LvlWarlockConjurerBoss` ×2, `…Ambush` ×1, Sebastian Lort ×1, Minorne ×1",
+        "drawnBy": [
+          {
+            "name": "Sebastian Lort",
+            "records": [
+              {
+                "edid": "DA03Wizard",
+                "formKey": "01C4E5:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "daedra/daedric-quest-foes",
+            "note": "takes `Stats`, `BaseData` and `Inventory`; the `DA03` alias names him"
+          },
+          {
+            "name": "Minorne",
+            "records": [
+              {
+                "edid": "DLC1RuunvaldWarlockBoss",
+                "formKey": "013823:Dawnguard.esm"
+              }
+            ],
+            "how": "template",
+            "page": "warlocks/named-warlocks",
+            "note": "through the wrapper `LvlWarlockConjurerBoss` 0E0FFE, its template; takes `Stats`"
+          },
+          {
+            "name": "Vonos",
+            "records": [
+              {
+                "edid": "ccBGSSSE067_LCharVonosBoss",
+                "formKey": "039273:ccbgssse067-daedinv.esm"
+              }
+            ],
+            "how": "entry",
+            "page": "daedra/mythic-dawn",
+            "note": "holds the rung lists `LCharWarlock0{3–6}BossConjurer` (14 · 21 · 30 · 40) at 1 · 27 · 36 · 46, not this list itself; drawn by `ccBGSSSE067_LvlMythicDawnBossVonos` 039270:ccbgssse067-daedinv.esm"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockBossFire",
+          "formKey": "0E1018:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWarlock02BossFire` (7)"
+          },
+          {
+            "at": 6,
+            "label": "`LCharWarlock02BossFire`"
+          },
+          {
+            "at": 12,
+            "label": "`LCharWarlock02BossFire`"
+          },
+          {
+            "at": 19,
+            "label": "`LCharWarlock03BossFire` (14)"
+          },
+          {
+            "at": 27,
+            "label": "`LCharWarlock04BossFire` (21)"
+          },
+          {
+            "at": 36,
+            "label": "`LCharWarlock05BossFire` (30)"
+          },
+          {
+            "at": 46,
+            "label": "`LCharWarlock06BossFire` (40)"
+          }
+        ],
+        "note": "the Fire rung lists carry no flags, but all four leaves sit at level 1",
+        "owner": "`LvlWarlockFireBoss` ×1, `…HoldPos256` ×1, Sild ×1",
+        "drawnBy": [
+          {
+            "name": "Sild the Warlock",
+            "records": [
+              {
+                "edid": "dunRannLvlWarlockBoss",
+                "formKey": "05197F:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "warlocks/named-warlocks",
+            "note": "takes `Stats` and `Inventory`"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockBossIce",
+          "formKey": "0E1032:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWarlock02BossIce` (7)"
+          },
+          {
+            "at": 6,
+            "label": "`LCharWarlock02BossIce`"
+          },
+          {
+            "at": 12,
+            "label": "`LCharWarlock02BossIce`"
+          },
+          {
+            "at": 19,
+            "label": "`LCharWarlock03BossIce` (14)"
+          },
+          {
+            "at": 27,
+            "label": "`LCharWarlock04BossIce` (21)"
+          },
+          {
+            "at": 36,
+            "label": "`LCharWarlock05BossIce` (30)"
+          },
+          {
+            "at": 46,
+            "label": "`LCharWarlock06BossIce` (40)"
+          }
+        ],
+        "owner": "`LvlWarlockFrostBoss`, not placed",
+        "drawnBy": [
+          {
+            "name": "Illia",
+            "records": [
+              {
+                "edid": "dunDarklightIllia",
+                "formKey": "048C2F:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "not an enemy: an ally (*Warlocks* group page, Never met as enemies)",
+            "note": "through the wrapper `LvlWarlockFrostBoss` 0E1034, without `Stats`: keeps her own level (PC×1 [10–40])"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockBossStorm",
+          "formKey": "0E106A:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWarlock02BossStorm` (7)"
+          },
+          {
+            "at": 6,
+            "label": "`LCharWarlock02BossStorm`"
+          },
+          {
+            "at": 12,
+            "label": "`LCharWarlock02BossStorm`"
+          },
+          {
+            "at": 19,
+            "label": "`LCharWarlock03BossStorm` (14)"
+          },
+          {
+            "at": 27,
+            "label": "`LCharWarlock04BossStorm` (21)"
+          },
+          {
+            "at": 36,
+            "label": "`LCharWarlock05BossStorm` (30)"
+          },
+          {
+            "at": 46,
+            "label": "`LCharWarlock06BossStorm` (40)"
+          }
+        ],
+        "owner": "Haldyn ×1; the generic wrappers `LvlWarlockShockBoss` and `…Ambush` not placed",
+        "drawnBy": [
+          {
+            "name": "Haldyn",
+            "records": [
+              {
+                "edid": "MS10Haldyn",
+                "formKey": "01DC04:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "warlocks/named-warlocks",
+            "note": "through `LvlWarlockShockBossAmbush` 108CD5 → `LvlWarlockShockBoss` 0E106B; takes `Stats`"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockBossNecro",
+          "formKey": "0E104F:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWarlock02BossNecro` (7)"
+          },
+          {
+            "at": 6,
+            "label": "`LCharWarlock02BossNecro`"
+          },
+          {
+            "at": 12,
+            "label": "`LCharWarlock02BossNecro`"
+          },
+          {
+            "at": 19,
+            "label": "`LCharWarlock03BossNecro` (14)"
+          },
+          {
+            "at": 27,
+            "label": "`LCharWarlock04BossNecro` (21)"
+          },
+          {
+            "at": 36,
+            "label": "`LCharWarlock05BossNecro` (30)"
+          },
+          {
+            "at": 46,
+            "label": "`LCharWarlock06BossNecro` (40)"
+          }
+        ],
+        "owner": "`LvlWarlockNecroBoss` ×3",
+        "drawnBy": [
+          {
+            "name": "Ehlhiel (CC)",
+            "records": [
+              {
+                "edid": "ccBGSSSE053_Ehlhiel",
+                "formKey": "00081D:ccbgssse053-ba_leather.esl"
+              }
+            ],
+            "how": "template",
+            "where": "World → Falkreath Hold → *Falkreath Countryside*",
+            "note": "through the wrapper `LvlWarlockNecroBoss` 0E1050, without `Stats`: keeps its own level (PC×1.4 [10–45])"
+          }
+        ]
+      },
+      {
+        "list": {
+          "label": "`LCharWarlock07Boss{Conjurer,Fire,Ice,Storm}` 1091CB · 1091CC · 1091CD · 1091CE"
+        },
+        "gate": "every gate ≤ player",
+        "note": "the two rung-07 leaves (50) at level 1; there is no `07BossNecro`",
+        "owner": "no list and no wrapper draws them"
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockBossNecroFemaleCondescending",
+          "formKey": "0E2217:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`EncWarlockNecro02BossBretonF` (7)"
+          },
+          {
+            "at": 6,
+            "label": "`EncWarlockNecro02BossBretonF`"
+          },
+          {
+            "at": 12,
+            "label": "`EncWarlockNecro02BossBretonF`"
+          },
+          {
+            "at": 19,
+            "label": "`EncWarlockNecro03BossBretonF` (14)"
+          },
+          {
+            "at": 27,
+            "label": "`EncWarlockNecro04BossBretonF` (21)"
+          },
+          {
+            "at": 36,
+            "label": "`EncWarlockNecro05BossBretonF` (30)"
+          },
+          {
+            "at": 46,
+            "label": "`EncWarlockNecro06BossBretonF` (40)"
+          }
+        ],
+        "owner": "`LvlWarlockNecroBossFemaleCondescending` ×1 (Hob's Fall)"
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockBossNecroMaleCondescending",
+          "formKey": "0E106D:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`EncWarlockNecro02BossBretonM` (7)"
+          },
+          {
+            "at": 6,
+            "label": "`EncWarlockNecro02BossBretonM`"
+          },
+          {
+            "at": 12,
+            "label": "`EncWarlockNecro02BossBretonM`"
+          },
+          {
+            "at": 19,
+            "label": "`EncWarlockNecro03BossBretonM` (14)"
+          },
+          {
+            "at": 27,
+            "label": "`EncWarlockNecro04BossBretonM` (21)"
+          },
+          {
+            "at": 36,
+            "label": "`EncWarlockNecro05BossBretonM` (30)"
+          },
+          {
+            "at": 46,
+            "label": "`EncWarlockNecro06BossBretonM` (40)"
+          }
+        ],
+        "owner": "`LvlWarlockNecroBossMaleCondescending` ×4, Malkoran ×1, Vals Veran ×1",
+        "drawnBy": [
+          {
+            "name": "Vals Veran",
+            "records": [
+              {
+                "edid": "ValsVeran",
+                "formKey": "019FE6:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "warlocks/named-warlocks",
+            "note": "through the wrapper `LvlWarlockNecroBossMaleCondescending` 081EF5; takes `Stats` and `Inventory`"
+          },
+          {
+            "name": "Malkoran",
+            "records": [
+              {
+                "edid": "dunKilkreathWarlock",
+                "formKey": "09CB66:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "daedra/daedric-quest-foes",
+            "note": "through the wrapper `LvlWarlockNecroBossMaleCondescending` 081EF5; takes `Stats` and `Inventory`"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockBossStormMaleElfHaughy",
+          "formKey": "0E106C:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`EncWarlockStorm02BossHighElfM` (7)"
+          },
+          {
+            "at": 6,
+            "label": "`EncWarlockStorm02BossHighElfM`"
+          },
+          {
+            "at": 12,
+            "label": "`EncWarlockStorm02BossHighElfM`"
+          },
+          {
+            "at": 19,
+            "label": "`EncWarlockStorm03BossHighElfM` (14)"
+          },
+          {
+            "at": 27,
+            "label": "`EncWarlockStorm04BossHighElfM` (21)"
+          },
+          {
+            "at": 36,
+            "label": "`EncWarlockStorm05BossHighElfM` (30)"
+          },
+          {
+            "at": 46,
+            "label": "`EncWarlockStorm06BossHighElfM` (40)"
+          }
+        ],
+        "owner": "Kornalus ×1",
+        "drawnBy": [
+          {
+            "name": "Kornalus",
+            "records": [
+              {
+                "edid": "dunHarmugstahlWarlock",
+                "formKey": "039BB7:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "warlocks/named-warlocks",
+            "note": "takes `Stats` and `Inventory`"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockNecroBossMaleElfHaughty",
+          "formKey": "081EF3:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`EncWarlockNecro02BossHighElfM` (7)"
+          },
+          {
+            "at": 6,
+            "label": "`EncWarlockNecro02BossHighElfM`"
+          },
+          {
+            "at": 12,
+            "label": "`EncWarlockNecro02BossHighElfM`"
+          },
+          {
+            "at": 19,
+            "label": "`EncWarlockNecro03BossHighElfM` (14)"
+          },
+          {
+            "at": 27,
+            "label": "`EncWarlockNecro04BossHighElfM` (21)"
+          },
+          {
+            "at": 36,
+            "label": "`EncWarlockNecro05BossHighElfM` (30)"
+          },
+          {
+            "at": 46,
+            "label": "`EncWarlockNecro06BossHighElfM` (40)"
+          }
+        ],
+        "owner": "`LvlWarlockNecroBossMaleElfHaughty` ×1 (Brittleshin Pass), Arondil ×1",
+        "drawnBy": [
+          {
+            "name": "Arondil",
+            "records": [
+              {
+                "edid": "dunYngvildWarlock",
+                "formKey": "037D80:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "warlocks/named-warlocks",
+            "note": "through the wrapper `LvlWarlockNecroBossMaleElfHaughty` 081EF9; takes `Stats` and `Inventory`"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockFireBossFemaleElfHaughty",
+          "formKey": "081ED7:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`EncWarlockFire02BossHighElfF` (7)"
+          },
+          {
+            "at": 6,
+            "label": "`EncWarlockFire02BossHighElfF`"
+          },
+          {
+            "at": 12,
+            "label": "`EncWarlockFire02BossHighElfF`"
+          },
+          {
+            "at": 19,
+            "label": "`EncWarlockFire03BossHighElfF` (14)"
+          },
+          {
+            "at": 27,
+            "label": "`EncWarlockFire04BossHighElfF` (21)"
+          },
+          {
+            "at": 36,
+            "label": "`EncWarlockFire05BossHighElfF` (30)"
+          },
+          {
+            "at": 46,
+            "label": "`EncWarlockFire06BossHighElfF` (40)"
+          }
+        ],
+        "owner": "`LvlWarlockFireCondescendingF` ×1; `LCharWarlockElementalBossFemaleElfHaughty`"
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockIceBossFemaleElfHaughty",
+          "formKey": "081EE8:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`EncWarlockIce02BossHighElfF` (7)"
+          },
+          {
+            "at": 6,
+            "label": "`EncWarlockIce02BossHighElfF`"
+          },
+          {
+            "at": 12,
+            "label": "`EncWarlockIce02BossHighElfF`"
+          },
+          {
+            "at": 19,
+            "label": "`EncWarlockIce03BossHighElfF` (14)"
+          },
+          {
+            "at": 27,
+            "label": "`EncWarlockIce04BossHighElfF` (21)"
+          },
+          {
+            "at": 36,
+            "label": "`EncWarlockIce05BossHighElfF` (30)"
+          },
+          {
+            "at": 46,
+            "label": "`EncWarlockIce06BossHighElfF` (40)"
+          }
+        ],
+        "owner": "`LCharWarlockElementalBossFemaleElfHaughty` only; no wrapper"
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockStormBossFemaleElfHaughty",
+          "formKey": "081EFA:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`EncWarlockStorm02BossHighElfF` (7)"
+          },
+          {
+            "at": 6,
+            "label": "`EncWarlockStorm02BossHighElfF`"
+          },
+          {
+            "at": 12,
+            "label": "`EncWarlockStorm02BossHighElfF`"
+          },
+          {
+            "at": 19,
+            "label": "`EncWarlockStorm03BossHighElfF` (14)"
+          },
+          {
+            "at": 27,
+            "label": "`EncWarlockStorm04BossHighElfF` (21)"
+          },
+          {
+            "at": 36,
+            "label": "`EncWarlockStorm05BossHighElfF` (30)"
+          },
+          {
+            "at": 46,
+            "label": "`EncWarlockStorm06BossHighElfF` (40)"
+          }
+        ],
+        "owner": "`LvlWarlockShockCondescendingF` ×1; `LCharWarlockElementalBossFemaleElfHaughty`"
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockElementalBossFemaleElfHaughty",
+          "formKey": "081F06:Skyrim.esm"
+        },
+        "gate": "one entry per roll, all at level 1",
+        "note": "one of the three FemaleElfHaughty boss lists above",
+        "owner": "The Caller ×1; its wrapper `LvlWarlockElementalBossFemaleElfHaughty` not placed",
+        "drawnBy": [
+          {
+            "name": "The Caller",
+            "records": [
+              {
+                "edid": "MG03Caller",
+                "formKey": "04D246:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "warlocks/named-warlocks",
+            "note": "through the wrapper `LvlWarlockElementalBossFemaleElfHaughty` 081F0A; takes `Stats`"
+          }
+        ]
+      },
+      {
+        "list": {
+          "label": "CC `ccVSVSSE003_MainQuest` (runtime injector)"
+        },
+        "note": "adds the CC boss leaves to `LCharWarlock0{2–6}BossNecro`, `LCharWarlock07Necro` and the three Necro voice boss lists at runtime (group page) `[unverified]`",
+        "owner": "—"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "the boss wrappers ×17",
+        "locations": [
+          {
+            "cell": {
+              "edid": "HobsFallCave01",
+              "formKey": "01525F:Skyrim.esm"
+            },
+            "refText": "×3 (`…NecroBossFemaleCondescending` ×1, `…NecroBossMaleCondescending` ×2)"
+          },
+          {
+            "cell": {
+              "edid": "SunderstoneGorge01",
+              "formKey": "08B84D:Skyrim.esm"
+            },
+            "refText": "×2 (`LvlWarlockFireBossHoldPos256`, `LvlWarlockFireCondescendingF`)"
+          },
+          {
+            "cell": {
+              "edid": "Ansilvund01",
+              "formKey": "0152C0:Skyrim.esm"
+            },
+            "refText": "×2 (`…NecroBossMaleCondescending`, `LvlWarlockShockCondescendingF`)"
+          },
+          {
+            "cell": {
+              "edid": "Ansilvund02",
+              "formKey": "01F358:Skyrim.esm"
+            },
+            "refText": "`LvlWarlockNecroBoss`"
+          },
+          {
+            "cell": {
+              "edid": "IlinaltasDeep02",
+              "formKey": "03FC8F:Skyrim.esm"
+            },
+            "refText": "`…NecroBossMaleCondescending`"
+          },
+          {
+            "cell": {
+              "edid": "FellglowKeep02",
+              "formKey": "03FF10:Skyrim.esm"
+            },
+            "refText": "`LvlWarlockConjurerBossAmbush`"
+          },
+          {
+            "cell": {
+              "edid": "BrittleShinPass01",
+              "formKey": "081DEC:Skyrim.esm"
+            },
+            "refText": "`LvlWarlockNecroBossMaleElfHaughty` (ref 08226D, made persistent by the CC Hasedoki Castle pack)"
+          },
+          {
+            "cell": {
+              "edid": "WolfskullCave01",
+              "formKey": "0151F6:Skyrim.esm"
+            },
+            "refText": "`LvlWarlockNecroBoss`"
+          },
+          {
+            "cell": {
+              "edid": "BoulderfallCave01",
+              "formKey": "0681DD:Skyrim.esm"
+            },
+            "refText": "`LvlWarlockNecroBoss`"
+          },
+          {
+            "cell": {
+              "edid": "CragwallowSlope01",
+              "formKey": "0152A8:Skyrim.esm"
+            },
+            "refText": "`LvlWarlockConjurerBoss`"
+          },
+          {
+            "cell": {
+              "edid": "MountAnthorExterior02",
+              "formKey": "008FDB:Skyrim.esm"
+            },
+            "refText": "`LvlWarlockConjurerBoss`"
+          },
+          {
+            "cell": {
+              "edid": "FortAmolExterior",
+              "formKey": "009664:Skyrim.esm"
+            },
+            "refText": "`LvlWarlockFireBoss`"
+          }
+        ]
+      },
+      {
+        "name": "the rung-07 bosses, the Ice boss list, the Storm and Elemental boss wrappers",
+        "notPlaced": true
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Conjurer, Fire, Ice and Storm boss rung 02 (`Inventory` from `EncWarlock00Template` 044CCC)",
+        "weapons": "`LItemWarlockDagger` 044CD6, `LootStaffsWeaponWarlock` 10FAD1, `LootWarlockRandom` 10FACD, the Atronach Forge recipe lists",
+        "armor": "`WarlockOutfitLeveled` 044CD5",
+        "skin": "race default"
+      },
+      {
+        "records": "boss rungs 03–04",
+        "weapons": "dagger, `LootWarlockRandom`; Conjurer `LItemStaffDestruction25NPC50` 0E0FD7, Fire `LItemStaffFirebolt50` 0E0FDE, Ice `LItemStaffIceSpike50` 0E0FDF, Storm `LItemStaffLightningBolt50` 0E0FE0",
+        "armor": "`WarlockOutfitLeveled`; Ice 04: `MageCommonDestructionOutfitNoHood` 0B7A3F",
+        "skin": "race default"
+      },
+      {
+        "records": "boss rungs 05–07",
+        "weapons": "dagger, `LootWarlockRandom`; Conjurer `LItemStaffDestruction50NPC50` 0E0FDD, Fire `LItemStaffFireball50` 0E0FE1, Ice `LItemStaffIceStorm50` 0E0FE2, Storm `LItemStaffChainLightning50` 0E0FE3",
+        "armor": "`WarlockOutfitLeveled`",
+        "skin": "race default"
+      },
+      {
+        "records": "Necromancer bosses 02–07",
+        "weapons": "dagger, `LootWarlockRandom`, `LootWarlockSoulGemsNecroBonus` 10FAD3; 03–04 `LItemStaffDestruction25NPC50`, 05–07 `…50NPC50`",
+        "armor": "`NecromancerOutfit` 09EF86",
+        "skin": "race default"
+      },
+      {
+        "records": "CC Necromantic Grimoire bosses",
+        "weapons": "as the vanilla Necromancer boss of the same rung",
+        "armor": "`ccVSVSSE003_OUT_HoodedNecroRobes` 000964",
+        "skin": "race default"
+      },
+      {
+        "records": "the boss wrappers",
+        "weapons": "as the drawn leaf",
+        "armor": "as the drawn leaf",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "`WarlockOutfitLeveled`, `LItemWarlockDagger`, `LootStaffsWeaponWarlock`, `LootWarlockRandom`, `LootWarlockSoulGemsNecroBonus`"
+        },
+        "rolls": "as on the school pages (e.g. *Conjurers*; the soul-gem bonus on *Necromancers*)"
+      },
+      {
+        "list": {
+          "edid": "NecromancerOutfit",
+          "formKey": "09EF86:Skyrim.esm"
+        },
+        "rolls": "as `NecromancerOutfitHood50` (*Necromancers*)"
+      },
+      {
+        "list": {
+          "edid": "MageCommonDestructionOutfitNoHood",
+          "formKey": "0B7A3F:Skyrim.esm"
+        },
+        "rolls": "Blue Mage Robes, boots"
+      },
+      {
+        "list": {
+          "label": "`LItemStaff{Destruction25NPC50,Firebolt50,IceSpike50,LightningBolt50}`"
+        },
+        "rolls": "50% none: Staff of Firebolts / Ice Spikes / Lightning Bolts (the Destruction list any of the three)"
+      },
+      {
+        "list": {
+          "label": "`LItemStaff{Destruction50NPC50,Fireball50,IceStorm50,ChainLightning50}`"
+        },
+        "rolls": "50% none: Staff of Fireballs / Ice Storms / Chain Lightning"
+      },
+      {
+        "list": {
+          "label": "`ccVSVSSE003_OUT_HoodedNecroRobes` 000964 · `…OUT_NecroRobes` 000901"
+        },
+        "rolls": "boots, Necromancer Hood and Robes 1 · of Magicka / Quickening 8 · Major Magicka / Recharging 16 · Eminent Magicka / Replenishing 24 · Elite, Extreme Magicka, Resurgence 32 · Ascendant 40",
+        "levels": [
+          1,
+          8,
+          16,
+          24,
+          32,
+          40
+        ]
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "the mage and necromancer robes, hoods, boots (vanilla and CC)",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "the daggers and staves",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

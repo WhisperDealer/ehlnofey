@@ -1,0 +1,559 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "witches",
+  "group": "warlocks",
+  "title": "Witches",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "witch",
+        "name": "Witch",
+        "records": [
+          {
+            "edid": "EncWitch01TemplateFire",
+            "formKey": "074F74:Skyrim.esm"
+          },
+          {
+            "edid": "EncWitch01TemplateIce",
+            "formKey": "074F75:Skyrim.esm"
+          },
+          {
+            "edid": "EncWitch01TemplateStorm",
+            "formKey": "074F76:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Witch IV, Hag V"
+        },
+        "note": "each template has four female leaves (`EncWitch<School>01<Race>F`: Breton, Dark Elf, High Elf, Imperial; Ice has Nord in place of Dark Elf; 074F77–074F82) that take `Stats`, `BaseData` and `Inventory` from it."
+      },
+      {
+        "id": "hag",
+        "name": "Hag",
+        "records": [
+          {
+            "edid": "EncWitch02TemplateFire",
+            "formKey": "074F83:Skyrim.esm"
+          },
+          {
+            "edid": "EncWitch02TemplateIce",
+            "formKey": "074F84:Skyrim.esm"
+          },
+          {
+            "edid": "EncWitch02TemplateStorm",
+            "formKey": "074F85:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 8
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Witch IV, Hag V"
+        },
+        "note": "four female leaves each (074F86–074F91), as the Witch."
+      },
+      {
+        "id": "witch-wrappers",
+        "name": "the drawn template's name",
+        "records": [
+          {
+            "edid": "LvlWitchAny",
+            "formKey": "074F9E:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWitchFire",
+            "formKey": "074F9F:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWitchIce",
+            "formKey": "074FA0:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWitchStorm",
+            "formKey": "074FA1:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWitchAnyAmbush",
+            "formKey": "0A6C69:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWitchFireAmbush",
+            "formKey": "0A6C6A:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWitchIceAmbush",
+            "formKey": "0A6C68:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWitchStormAmbush",
+            "formKey": "0A6C6B:Skyrim.esm"
+          },
+          {
+            "edid": "dunDarklight_LvlWitchAny",
+            "formKey": "0B82FB:Skyrim.esm"
+          },
+          {
+            "edid": "dunDarklight_LvlWitchCondescending",
+            "formKey": "0B82FC:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "the witch lists (below)"
+          },
+          "rungs": [
+            4,
+            8
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Witch IV, Hag V; the wrappers roll Witch ×2 · Hag ×3, banded with the Hag, the likelier roll"
+        },
+        "note": "each takes `Stats`, `BaseData` and `Inventory` from its list; the four `…Ambush` wrappers all name `LvlWitchIce` as their template, so they draw the Ice list whatever their name says."
+      },
+      {
+        "id": "hags-end-sacrifice",
+        "name": "Witch",
+        "records": [
+          {
+            "edid": "dunHagsEndSacrifice",
+            "formKey": "0A9154:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 4,
+          "from": {
+            "edid": "EncWitch01TemplateFire",
+            "formKey": "074F74:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Witch IV, Hag V"
+        },
+        "note": "takes `Stats` and `BaseData` from the Fire Witch template."
+      },
+      {
+        "id": "darklight-dead-witch",
+        "name": "Witch",
+        "records": [
+          {
+            "edid": "dunDarklightDeadWitch",
+            "formKey": "04F4DA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Witch IV, Hag V"
+        },
+        "note": "takes `BaseData` and `Inventory` from the leaf `EncWitchFire01DarkElfF` 074F78 but owns her level: PC×1, no minimum and no cap. Placed alive despite the EditorID."
+      },
+      {
+        "id": "silvia",
+        "name": "Silvia",
+        "records": [
+          {
+            "edid": "dunDarklightSilvia",
+            "formKey": "04B0AE:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharForswornBossShaman",
+            "formKey": "0442FD:Skyrim.esm"
+          },
+          "rungs": [
+            7,
+            16,
+            27,
+            38,
+            51
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-43, user): Forsworn Briarhearts pinned to 38; she borrows their shaman list"
+        },
+        "note": "borrows her level from the Forsworn: she takes only `Stats` from the wrapper `LvlForswornBossShaman` 0442D3 (through `LCharForswornBossShaman`), so she rolls the Briarheart shaman rungs, highest gate only. Changing that Forsworn ladder changes her. Moved here from Uncategorised → *Forsworn Level Borrowers* (user, 2026-10-03)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncWitch01TemplateFire` 074F74 does not move `dunDarklightDeadWitch` 04F4DA (a row, PC×1): she uses its leaf `EncWitchFire01DarkElfF` as her template but not for `Stats`.",
+      "Silvia carries `Stats` and follows the Forsworn wrapper; the records that keep their own level beside it are on the Forsworn pages.",
+      "The other rows: no other record keeps its own level.",
+      "Every other witch record (the 24 leaves, every `LvlWitch*` and Darklight wrapper, `dunHagsEndSacrifice`) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharWitchFire",
+          "formKey": "074F9A:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWitch01Fire` 074F92 (Witch, 4)"
+          },
+          {
+            "at": 16,
+            "label": "`LCharWitch02Fire` 074F96 (Hag, 8)"
+          }
+        ],
+        "note": "each rung list picks one of its four leaves",
+        "owner": "`LvlWitchFire` ×5"
+      },
+      {
+        "list": {
+          "edid": "LCharWitchIce",
+          "formKey": "074F9B:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWitch01Ice` 074F93 (Witch, 4)"
+          },
+          {
+            "at": 16,
+            "label": "`LCharWitch02Ice` 074F97 (Hag, 8)"
+          }
+        ],
+        "owner": "`LvlWitchIce` ×2 and, through it, `LvlWitchIceAmbush` ×2; the Fire, Storm and Any ambush wrappers also draw it (not placed)"
+      },
+      {
+        "list": {
+          "edid": "LCharWitchStorm",
+          "formKey": "074F9C:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWitch01Storm` 074F94 (Witch, 4)"
+          },
+          {
+            "at": 16,
+            "label": "`LCharWitch02Storm` 074F98 (Hag, 8)"
+          }
+        ],
+        "owner": "`LvlWitchStorm` ×4"
+      },
+      {
+        "list": {
+          "edid": "LCharWitchAny",
+          "formKey": "074F9D:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWitch01Any` 074F95 (Witch, one school)"
+          },
+          {
+            "at": 16,
+            "label": "`LCharWitch02Any` 074F99 (Hag, one school)"
+          }
+        ],
+        "owner": "`LvlWitchAny` ×18, `dunDarklight_LvlWitchAny` ×6; `…Condescending` not placed"
+      },
+      {
+        "list": {
+          "edid": "LCharForswornBossShaman",
+          "formKey": "0442FD:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Briarheart shaman (7)"
+          },
+          {
+            "at": 24,
+            "label": "Briarheart shaman (16)"
+          },
+          {
+            "at": 34,
+            "label": "Briarheart shaman (27)"
+          },
+          {
+            "at": 46,
+            "label": "Briarheart shaman (38)"
+          },
+          {
+            "at": 58,
+            "label": "Briarheart shaman (51)"
+          }
+        ],
+        "note": "the Forsworn list, here for Silvia; only `Stats` is taken. Gates 1, 6 and 14 all hold the rung-02 shaman (7).",
+        "owner": "Silvia, through `LvlForswornBossShaman`",
+        "drawnBy": [
+          {
+            "name": "Forsworn Briarheart shamans",
+            "records": [
+              {
+                "edid": "LvlForswornBossShaman",
+                "formKey": "0442D3:Skyrim.esm"
+              },
+              {
+                "edid": "dunDruadachRedoubt_LvlForswornBoss",
+                "formKey": "083F78:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Forsworn → *Forsworn Briarheart*",
+            "note": "the list's own users: `LvlForswornBossShaman` is also Silvia's template"
+          }
+        ]
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "the witch wrappers ×37",
+        "locations": [
+          {
+            "cell": {
+              "edid": "HagsEnd01",
+              "formKey": "059398:Skyrim.esm"
+            },
+            "refText": "×8 (Fire ×3, Storm ×2, Ice ×1, `LvlWitchIceAmbush` ×2)"
+          },
+          {
+            "cell": {
+              "edid": "DarklightTower02",
+              "formKey": "03CBCB:Skyrim.esm"
+            },
+            "refText": "×5 (`dunDarklight_LvlWitchAny` ×4, `LvlWitchAny` ×1)"
+          },
+          {
+            "cell": {
+              "edid": "GlenmorilCoven01",
+              "formKey": "01526E:Skyrim.esm"
+            },
+            "refText": "×5 (Any ×2, Fire, Ice, Storm)"
+          },
+          {
+            "cell": {
+              "edid": "SnaplegCave01",
+              "formKey": "067F2A:Skyrim.esm"
+            },
+            "refText": "×4 (Any)"
+          },
+          {
+            "cell": {
+              "label": "Tamriel"
+            },
+            "persistent": true,
+            "refText": "×3 (Any)"
+          },
+          {
+            "cell": {
+              "edid": "RkundExterior01",
+              "formKey": "00BDD7:Skyrim.esm"
+            },
+            "refText": "×2 (Any)"
+          },
+          {
+            "cell": {
+              "edid": "DarklightTower01",
+              "formKey": "01529F:Skyrim.esm"
+            },
+            "refText": "×2 (`dunDarklight_LvlWitchAny`)"
+          },
+          {
+            "cell": {
+              "label": "`OrphanRockExterior01`–`03` 0097C9 · 0097C8 · 0097E8"
+            },
+            "refText": "×4 (Any ×2; Fire, Storm in 02)"
+          },
+          {
+            "cell": {
+              "edid": "WitchmistGroveExterior",
+              "formKey": "00B9E3:Skyrim.esm"
+            },
+            "refText": "Any"
+          },
+          {
+            "cell": {
+              "edid": "WidowsWatchRuinsExterior02",
+              "formKey": "009200:Skyrim.esm"
+            },
+            "refText": "Any"
+          },
+          {
+            "cell": {
+              "edid": "GlenmorilCovenExterior",
+              "formKey": "009B84:Skyrim.esm"
+            },
+            "refText": "Any"
+          },
+          {
+            "cell": {
+              "label": "a Tamriel exterior cell 00BD9F"
+            },
+            "refText": "Any"
+          }
+        ]
+      },
+      {
+        "name": "Witch (Hag's End)",
+        "base": [
+          {
+            "edid": "dunHagsEndSacrifice",
+            "formKey": "0A9154:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "HagsEndOrigin",
+              "formKey": "09829C:Skyrim.esm"
+            },
+            "note": "in `DeepwoodRedoubtWorld`"
+          }
+        ]
+      },
+      {
+        "name": "Witch (Darklight Tower)",
+        "base": [
+          {
+            "edid": "dunDarklightDeadWitch",
+            "formKey": "04F4DA:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "DarklightTower01",
+              "formKey": "01529F:Skyrim.esm"
+            },
+            "note": "placed alive"
+          }
+        ]
+      },
+      {
+        "name": "Silvia",
+        "base": [
+          {
+            "edid": "dunDarklightSilvia",
+            "formKey": "04B0AE:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "ref": {
+              "edid": "SilviaRef",
+              "formKey": "04B47C:Skyrim.esm"
+            },
+            "disabled": true,
+            "note": "VeryHard"
+          }
+        ],
+        "quest": "alias `Silvia` of `dunDarklightQST` 03FA89"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "the six templates and their leaves; `dunHagsEndSacrifice`, `dunDarklightDeadWitch`",
+        "weapons": "`LItemWarlockDagger` 044CD6",
+        "armor": "`WarlockOutfitLeveled` 044CD5",
+        "skin": "race default"
+      },
+      {
+        "records": "the wrappers",
+        "weapons": "as the drawn leaf",
+        "armor": "as the drawn leaf",
+        "skin": "race default"
+      },
+      {
+        "records": "Silvia",
+        "weapons": "`LItemWarlockDagger` 044CD6",
+        "armor": "`dunDarklightSilviaOutfit` 04F4D8",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "`WarlockOutfitLeveled`, `LItemWarlockDagger`"
+        },
+        "rolls": "as on *Conjurers* (every non-necromancer school page)"
+      },
+      {
+        "list": {
+          "edid": "dunDarklightSilviaOutfit",
+          "formKey": "04F4D8:Skyrim.esm"
+        },
+        "rolls": "Necromancer Robes 0C36EA · Boots 0C36E8"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "the robes and boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Necromancer Robes 0C36EA",
+        "kind": "clothing, enchanted",
+        "playable": true
+      },
+      {
+        "item": "the daggers",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

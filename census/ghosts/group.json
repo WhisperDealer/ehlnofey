@@ -74,7 +74,7 @@
       "where": "Daedra"
     },
     {
-      "record": "`SummonPhantom`, `SummonFlamingThrall`, `MQ105PhantomFormActor`, `MGArnielSummon`, `DBSpectralAssassin` 0A0E49, `dlc2SpectralDragonSummon`, `ccBGSSSE066_SummonDraugr*` (Ancestor Ghosts), the `ccVSVSSE003_*` necromancy ghosts, `ccRMSSSE001_Ghost`",
+      "record": "`SummonPhantom`, `SummonFlamingThrall`, `MQ105PhantomFormActor`, `MGArnielSummon`, `DBSpectralAssassin` 0A0E49, `dlc2SpectralDragonSummon`, `ccBGSSSE066_SummonDraugr*` (Ancestor Ghosts), the `ccVSVSSE003_*` necromancy ghosts",
       "what": "summons",
       "where": "Conjured"
     }

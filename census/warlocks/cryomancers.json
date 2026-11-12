@@ -1,0 +1,504 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "cryomancers",
+  "group": "warlocks",
+  "title": "Cryomancers",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "novice-ice-mage",
+        "name": "Novice Ice Mage",
+        "records": [
+          {
+            "edid": "EncWarlock01TemplateIce",
+            "formKey": "044CD8:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "bands-of-power.md: novice mages"
+        },
+        "note": "eight leaves per rung (`EncWarlockIce0N<Race><Sex>`), two at rung 07; every leaf takes `Stats`, `BaseData` and `Inventory` from its rung's template."
+      },
+      {
+        "id": "apprentice-ice-mage",
+        "name": "Apprentice Ice Mage",
+        "records": [
+          {
+            "edid": "EncWarlock02TemplateIce",
+            "formKey": "045C60:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: apprentice mages"
+        }
+      },
+      {
+        "id": "ice-mage-adept",
+        "name": "Ice Mage Adept",
+        "records": [
+          {
+            "edid": "EncWarlock03TemplateIce",
+            "formKey": "045C7B:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: adept mages"
+        }
+      },
+      {
+        "id": "ice-mage",
+        "name": "Ice Mage",
+        "records": [
+          {
+            "edid": "EncWarlock04TemplateIce",
+            "formKey": "045CA1:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 19
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "role: the middle rung (19), between the adept and the expert mages"
+        }
+      },
+      {
+        "id": "ice-wizard",
+        "name": "Ice Wizard",
+        "records": [
+          {
+            "edid": "EncWarlock05TemplateIce",
+            "formKey": "045CBC:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 27
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: expert mages"
+        }
+      },
+      {
+        "id": "cryomancer",
+        "name": "Cryomancer",
+        "records": [
+          {
+            "edid": "EncWarlock06TemplateIce",
+            "formKey": "045CBF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 36
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: expert mages (36 sits in Elite)"
+        }
+      },
+      {
+        "id": "arch-cryomancer",
+        "name": "Arch Cryomancer",
+        "records": [
+          {
+            "edid": "EncWarlock07TemplateIce",
+            "formKey": "1091AA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 46
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "role: 46 sits in Powerful; the Arch rung is the top of the ladder (archetype-tiers.md Rule 4)"
+        }
+      },
+      {
+        "id": "fellglow-pet-scene",
+        "name": "Apprentice Ice Mage",
+        "records": [
+          {
+            "edid": "dunFellglowPetSceneWarlock",
+            "formKey": "0CA346:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 6,
+          "from": {
+            "edid": "EncWarlockIce02ImperialM",
+            "formKey": "045C6F:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: apprentice mages"
+        },
+        "note": "takes everything from the rung-02 Ice leaf; Fellglow Keep."
+      },
+      {
+        "id": "wrappers",
+        "name": "the drawn rung's name",
+        "records": [
+          {
+            "edid": "LvlWarlockFrost",
+            "formKey": "01E7CE:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockFrostAmbush",
+            "formKey": "0CAEEB:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWarlockIceAggro1024",
+            "formKey": "0E0F61:Skyrim.esm"
+          },
+          {
+            "edid": "WEJS25_LvlWarlockFrost",
+            "formKey": "0E8944:Skyrim.esm"
+          },
+          {
+            "edid": "dunFellglow_LvlWarlockIceHoldPosition",
+            "formKey": "0CAF90:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "`LCharWarlockIce` or `LCharWarlockIceOmit01` (Lists below)"
+          },
+          "rungs": [
+            1,
+            6,
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md (WD-46) rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
+        },
+        "note": "unnamed wrappers that take `Stats` and `BaseData` from a list (Lists below), so each shows the rung it draws. Placed: `LvlWarlockFrost` 01E7CE ×3 · `LvlWarlockFrostAmbush` 0CAEEB ×1 (through `LvlWarlockFrost`) · `LvlWarlockIceAggro1024` 0E0F61 (not placed; through `LvlWarlockFrost`) · `WEJS25_LvlWarlockFrost` 0E8944 (not placed; spawned by the `WEJS25` world-encounter quest) · `dunFellglow_LvlWarlockIceHoldPosition` 0CAF90 ×1 (`Omit01`) (5 in all). `LvlWarlockIceAggro1024` moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03). The `Omit01` wrapper draws rung 02 at 1, then 12–46."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing a rung template `EncWarlock0{2–7}TemplateIce` also needs that rung's boss template `EncWarlock0NTemplateBossIce` (7 · 14 · 21 · 30 · 40 · 50, on *Warlock Bosses*), which uses it as its template but not for `Stats`.",
+      "Changing `EncWarlock00Template` 044CCC (the shared base of every rung template, which uses it without `Stats`) also needs `WIChangeLocation04Student` 06F214 (1, left out as not an enemy on the *Warlocks* group page): same pattern.",
+      "Records filed elsewhere that do carry `Stats` from an Ice rung template, so they move with it: `CWSiegeSonsWizard` 04622B and `CWSiegeSonsWizardInvul` 02FFA6 (from `EncWarlock02TemplateIce`, level 6, on Factions → *Common Stormcloaks*).",
+      "The Ice rungs are also drawn through `LCharWarlockElemental`: the records that keep their own level beside its wrapper are on *Elemental Mages*.",
+      "Every other record here (the rung leaves, every Ice wrapper and `dunFellglowPetSceneWarlock`) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharWarlockIce",
+          "formKey": "01E7D2:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWarlock01Ice` 045C9A"
+          },
+          {
+            "at": 6,
+            "label": "`LCharWarlock02Ice` 045C9B"
+          },
+          {
+            "at": 12,
+            "label": "`LCharWarlock03Ice` 045C9C"
+          },
+          {
+            "at": 19,
+            "label": "`LCharWarlock04Ice` 045CF2"
+          },
+          {
+            "at": 27,
+            "label": "`LCharWarlock05Ice` 045CF5"
+          },
+          {
+            "at": 36,
+            "label": "`LCharWarlock06Ice` 045CF8"
+          },
+          {
+            "at": 46,
+            "label": "`LCharWarlock07Ice` 1091C8 (2 leaves)"
+          }
+        ],
+        "note": "each rung list holds its 8 leaves (Nord in place of Dark Elf) with the Nord pair twice (10 entries); rung 07 2 leaves",
+        "owner": "`LvlWarlockFrost` 01E7CE ×3 · `LvlWarlockFrostAmbush` 0CAEEB ×1 (through `LvlWarlockFrost`) · `LvlWarlockIceAggro1024` 0E0F61 (not placed; through `LvlWarlockFrost`) · `WEJS25_LvlWarlockFrost` 0E8944 (not placed; spawned by the `WEJS25` world-encounter quest)",
+        "drawnBy": [
+          {
+            "name": "Elemental mages",
+            "records": [
+              {
+                "edid": "LCharWarlockElemental",
+                "formKey": "01E779:Skyrim.esm"
+              }
+            ],
+            "how": "entry",
+            "page": "warlocks/elemental-mages",
+            "note": "`LCharWarlockElemental` holds this list at 1, beside the other two elemental schools; its users: `LvlWarlockElemental` 01E7CB and its copies (Elemental Mages), Drelas, Faldrus and Ardwen (Named Warlocks), the Ghosts of the Tribunal temple staff and the CC Guardian (no `Stats`)"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharWarlockIceOmit01",
+          "formKey": "0CABA2:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`LCharWarlock02Ice` (Apprentice)"
+          },
+          {
+            "at": 12,
+            "label": "`LCharWarlock03Ice`"
+          },
+          {
+            "at": 19,
+            "label": "`LCharWarlock04Ice`"
+          },
+          {
+            "at": 27,
+            "label": "`LCharWarlock05Ice`"
+          },
+          {
+            "at": 36,
+            "label": "`LCharWarlock06Ice`"
+          },
+          {
+            "at": 46,
+            "label": "`LCharWarlock07Ice`"
+          }
+        ],
+        "note": "the school ladder without the Novice rung, through the same rung lists",
+        "owner": "`dunFellglow_LvlWarlockIceHoldPosition` 0CAF90 ×1 (`Omit01`)"
+      },
+      {
+        "list": {
+          "label": "the voice lists `LCharWarlockIce{CondescendingM, ElfHaughtyF, ElfHaughtyM, NordF, NordM}` 081EE9 · 081EEA · 081EEB · 081EEC · 081EED"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "rung 01"
+          },
+          {
+            "at": 6,
+            "label": "rung 02"
+          },
+          {
+            "at": 12,
+            "label": "rung 03"
+          },
+          {
+            "at": 19,
+            "label": "rung 04"
+          },
+          {
+            "at": 27,
+            "label": "rung 05"
+          },
+          {
+            "at": 36,
+            "label": "rung 06"
+          }
+        ],
+        "note": "that race and sex's leaf from rungs 01–06, no rung 07 (Condescending: the Breton and Imperial leaves)",
+        "owner": "no wrapper on this page; `…CondescendingM`, `…ElfHaughtyF` and `…ElfHaughtyM` are entries of the Elemental voice lists; no record draws the Nord lists",
+        "drawnBy": [
+          {
+            "name": "Elemental mages (voice lists)",
+            "records": [
+              {
+                "edid": "LCharWarlockElementalCondescendingM",
+                "formKey": "081F07:Skyrim.esm"
+              },
+              {
+                "edid": "LCharWarlockElementalElfHaughtyF",
+                "formKey": "081F08:Skyrim.esm"
+              },
+              {
+                "edid": "LCharWarlockElementalElfHaughtyM",
+                "formKey": "081F09:Skyrim.esm"
+              }
+            ],
+            "how": "entry",
+            "page": "warlocks/elemental-mages",
+            "note": "they hold the Ice `CondescendingM`, `ElfHaughtyF` and `ElfHaughtyM` lists at 1; only `…ElfHaughtyM` is used, by `LvlWarlockElementalElfHaughtyM` 081F0D ×1"
+          }
+        ]
+      },
+      {
+        "list": {
+          "label": "the rung lists `LCharWarlock0{1–7}Ice` 045C9A · 045C9B · 045C9C · 045CF2 · 045CF5 · 045CF8 · 1091C8"
+        },
+        "gate": "every gate ≤ player; every leaf at 1",
+        "note": "each rung list holds its 8 leaves (Nord in place of Dark Elf) with the Nord pair twice (10 entries); rung 07 2 leaves",
+        "owner": "`LCharWarlockIce`, `LCharWarlockIceOmit01`"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Apprentice Ice Mage",
+        "base": [
+          {
+            "edid": "dunFellglowPetSceneWarlock",
+            "formKey": "0CA346:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "FellglowKeep01",
+              "formKey": "015283:Skyrim.esm"
+            },
+            "refText": "×1"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Cryomancer rungs 01–05 (`Inventory` from `EncWarlock00Template` 044CCC)",
+        "weapons": "`LItemWarlockDagger` 044CD6, `LootStaffsWeaponWarlock` 10FAD1, `LootWarlockRandom` 10FACD, the Atronach Forge recipe lists `AtrFrgRecipeList` 10F8B4 · `AtrFrgDaedricRecipeList` 10F8B5; death item `DeathItemWarlock` 08601A",
+        "armor": "`WarlockOutfitLeveled` 044CD5",
+        "skin": "race default"
+      },
+      {
+        "records": "Cryomancer rungs 06–07 (own inventory)",
+        "weapons": "`LItemWarlockDagger`, `LootWarlockRandom`, `LItemStaffIceStorm50` 0E0FE2; death item `DeathItemWarlock`",
+        "armor": "`WarlockOutfitLeveled`",
+        "skin": "race default"
+      },
+      {
+        "records": "the wrappers, `dunFellglowPetSceneWarlock`",
+        "weapons": "as the drawn leaf",
+        "armor": "as the drawn leaf",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "WarlockOutfitLeveled",
+          "formKey": "044CD5:Skyrim.esm"
+        },
+        "rolls": "boots (`ClothesWarlockBoots` 0C5D12) and `LITemWarlockRobes` 105EF9: Black Mage Robes 1 · Hooded Black Mage Robes, Robes of (Minor) Alteration/Destruction/Restoration 8 · Quickening 10 · Major 16 · Recharging 20 · Eminent 24 · Replenishing 30 · Extreme 32 · Peerless, Resurgence 40"
+      },
+      {
+        "list": {
+          "edid": "LItemWarlockDagger",
+          "formKey": "044CD6:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron 1 · Steel 4 · Orcish 7 · Dwarven 10 · Elven 14 · enchanted Iron, Steel, Orcish, Dwarven 15 · Glass 18 · enchanted Elven 20 · enchanted Glass 28 · enchanted Ebony 37 · enchanted Daedric 47 (each enchanted tier climbs to 53)"
+      },
+      {
+        "list": {
+          "edid": "LootStaffsWeaponWarlock",
+          "formKey": "10FAD1:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "90% none; Flames, Frostbite, Sparks, Zombies, Familiar 1 · Firebolts, Ice Spikes, Lightning Bolts, Reanimation, Flame Atronach 10 · Banishing, Chain Lightning, Fireballs, Ice Storms, Revenants, Frost Atronach 22 · Daedric Command, Dread Zombies, Expulsion, Icy Spear, Incineration, Thunderbolts, the three walls, Storm Atronach 34"
+      },
+      {
+        "list": {
+          "edid": "LItemStaffIceStorm50",
+          "formKey": "0E0FE2:Skyrim.esm"
+        },
+        "rolls": "50% none; Staff of Ice Storms"
+      },
+      {
+        "list": {
+          "edid": "LootWarlockRandom",
+          "formKey": "10FACD:Skyrim.esm"
+        },
+        "rolls": "all of: gold, ingredients, potions, recipes, soul gems, spell tomes (Novice tomes 1, Apprentice 10)"
+      },
+      {
+        "list": {
+          "edid": "DeathItemWarlock",
+          "formKey": "08601A:Skyrim.esm"
+        },
+        "rolls": "all of: `LootWarlockScrolls05` (95% none: one high-level scroll, e.g. Fire Storm, Blizzard, Mayhem, Dread Zombie) and `LootWarlockPotions10` (90% none: a fortify-magic-skill, magicka, resistance or warlock-chest potion, tiers 1 · 10 · 20 · 30)"
+      },
+      {
+        "list": {
+          "label": "`AtrFrgRecipeList` 10F8B4 · `AtrFrgDaedricRecipeList` 10F8B5"
+        },
+        "rolls": "one Atronach Forge recipe; chance none from the globals `AtrFrgRecipeChance` 10F8B2 · `AtrFrgDaedricRecipeChance` 10F8B3 (record default 100% none)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "the mage robes, hoods and boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "the daggers and staves",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

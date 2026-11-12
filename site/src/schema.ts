@@ -85,6 +85,21 @@ const ListEntry = z.strictObject({
   count: z.number().int().min(1).optional(),
 });
 
+// A migrated family page, `<group>/<family>` (the folder and file under census/). emit-schema.ts
+// checks that the file exists.
+export const PagePath = z.string().regex(/^[a-z0-9-]+\/[a-z0-9-]+$/, 'page is <group>/<family>, a census family file');
+
+// Records filed on another page that draw this list (user, 2026-11-12: Warlocks and Bandits lend their
+// lists to other families, e.g. the Vaermina Devotees take Stats from LCharWarlockStorm).
+const DrawnBy = z.strictObject({
+  name: z.string().min(1), // what they are, e.g. "Vaermina Devotees"
+  records: z.array(Ref).min(1),
+  how: z.enum(['template', 'entry']), // template: the records name the list as their template; entry: lists that hold it
+  page: PagePath.optional(), // the migrated page they are filed on
+  where: z.string().optional(), // a page not migrated yet, as text: "Factions → *Silver Hand*"
+  note: z.string().optional(),
+});
+
 const ListRow = z.strictObject({
   list: Ref,
   override: z.string().optional(),
@@ -93,6 +108,7 @@ const ListRow = z.strictObject({
   seeFamily: z.string().regex(/^[a-z0-9-]+$/, 'seeFamily is a family id in the same group').optional(), // the list is documented in full on that family's page
   note: z.string().optional(),
   owner: z.string().min(1),
+  drawnBy: z.array(DrawnBy).optional(),
 });
 
 const Location = z.strictObject({
