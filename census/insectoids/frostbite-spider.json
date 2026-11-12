@@ -12,7 +12,7 @@
     "rows": [
       {
         "id": "frostbite-spider",
-        "name": "Frostbite Spider",
+        "name": "Frostbite Spider (small)",
         "records": [
           {
             "edid": "EncFrostbiteSpider",
@@ -31,11 +31,12 @@
           "band": "I",
           "status": "proposed",
           "source": "role: vermin (the companion lists pair it with the skeever), banded at its vanilla level (1)"
-        }
+        },
+        "note": "In game it shows just \"Frostbite Spider\"; the small spider (`FrostbiteSpiderRace`) in the race's own skin."
       },
       {
         "id": "frostbite-spider-large",
-        "name": "Frostbite Spider",
+        "name": "Frostbite Spider (large)",
         "records": [
           {
             "edid": "EncFrostbiteSpiderLarge",
@@ -55,7 +56,7 @@
           "status": "proposed",
           "source": "user, 2026-11-12: wildlife banded at its vanilla level (6)"
         },
-        "note": "the large spider; it shows the same name as the small one."
+        "note": "In game it shows just \"Frostbite Spider\"; the same spider at the larger size (`FrostbiteSpiderRaceLarge`), between the small one and the Giant."
       },
       {
         "id": "giant-frostbite-spider",
@@ -82,7 +83,7 @@
       },
       {
         "id": "frostbite-spider-snow",
-        "name": "Frostbite Spider",
+        "name": "Frostbite Spider (snow)",
         "records": [
           {
             "edid": "EncFrostbiteSpiderSnow",
@@ -102,11 +103,11 @@
           "status": "proposed",
           "source": "role: vermin, banded with the Frostbite Spider (I)"
         },
-        "note": "the snow spider; it uses `EncFrostbiteSpider` as its template but not for `Stats`."
+        "note": "In game it shows just \"Frostbite Spider\"; the small spider in the pale snow skin `SkinFrostbiteSpiderCold` 048C0E, drawn by the snow lists; it uses `EncFrostbiteSpider` as its template but not for `Stats`."
       },
       {
         "id": "frostbite-spider-snow-large",
-        "name": "Frostbite Spider",
+        "name": "Frostbite Spider (snow, large)",
         "records": [
           {
             "edid": "EncFrostbiteSpiderSnowLarge",
@@ -126,11 +127,11 @@
           "status": "proposed",
           "source": "bands-of-power.md: most wildlife"
         },
-        "note": "the large snow spider; template `EncFrostbiteSpiderLarge` without `Stats`."
+        "note": "In game it shows just \"Frostbite Spider\"; the large spider in the pale snow skin `SkinFrostbiteSpiderCold` 048C0E, drawn by the snow lists; template `EncFrostbiteSpiderLarge` without `Stats`."
       },
       {
         "id": "giant-frostbite-spider-snow",
-        "name": "Giant Frostbite Spider",
+        "name": "Giant Frostbite Spider (snow)",
         "records": [
           {
             "edid": "EncFrostbiteSpiderSnowGiant",
@@ -150,7 +151,7 @@
           "status": "proposed",
           "source": "role: the largest spider, banded at its vanilla level (17)"
         },
-        "note": "the giant snow spider; template `EncFrostbiteSpiderGiant` without `Stats`."
+        "note": "In game it shows just \"Giant Frostbite Spider\"; the giant spider in the pale snow skin `SkinFrostbiteSpiderCold` 048C0E, drawn by the snow lists; template `EncFrostbiteSpiderGiant` without `Stats`."
       },
       {
         "id": "wounded-frostbite-spider-bleak-falls",
@@ -280,7 +281,7 @@
         "entries": [
           {
             "at": 1,
-            "label": "Frostbite Spider"
+            "label": "Frostbite Spider (small)"
           },
           {
             "at": 6,
@@ -302,7 +303,7 @@
         "entries": [
           {
             "at": 1,
-            "label": "Frostbite Spider"
+            "label": "Frostbite Spider (small)"
           },
           {
             "at": 6,
@@ -387,11 +388,11 @@
         "entries": [
           {
             "at": 1,
-            "label": "Frostbite Spider"
+            "label": "Frostbite Spider (small)"
           },
           {
             "at": 1,
-            "label": "Frostbite Spider"
+            "label": "Frostbite Spider (small)"
           },
           {
             "at": 5,
@@ -445,7 +446,7 @@
         "entries": [
           {
             "at": 1,
-            "label": "Frostbite Spider"
+            "label": "Frostbite Spider (small)"
           },
           {
             "at": 1,
@@ -463,7 +464,7 @@
         "entries": [
           {
             "at": 1,
-            "label": "Frostbite Spider"
+            "label": "Frostbite Spider (small)"
           },
           {
             "at": 1,
@@ -515,7 +516,7 @@
         "entries": [
           {
             "at": 1,
-            "label": "Frostbite Spider"
+            "label": "Frostbite Spider (small)"
           },
           {
             "at": 1,
@@ -611,7 +612,7 @@
         "entries": [
           {
             "at": 1,
-            "label": "Frostbite Spider"
+            "label": "Frostbite Spider (small)"
           },
           {
             "at": 3,
@@ -635,7 +636,7 @@
         "entries": [
           {
             "at": 1,
-            "label": "Frostbite Spider"
+            "label": "Frostbite Spider (small)"
           },
           {
             "at": 3,
@@ -658,7 +659,7 @@
         "entries": [
           {
             "at": 1,
-            "label": "Frostbite Spider"
+            "label": "Frostbite Spider (small)"
           },
           {
             "at": 6,
@@ -704,7 +705,7 @@
         "entries": [
           {
             "at": 1,
-            "label": "Frostbite Spider"
+            "label": "Frostbite Spider (small)"
           }
         ],
         "note": "the other entry is a chaurus (10, on *Chaurus*)",
