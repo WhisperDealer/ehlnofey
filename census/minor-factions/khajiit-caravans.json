@@ -75,10 +75,9 @@
           "Protected"
         ],
         "target": {
-          "band": "II",
-          "level": 10,
+          "band": "V",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: the caravan guards Khayla, Ra’zhinda and Dro’marash Experienced"
         },
         "note": "guard, caravan A."
       },
@@ -147,10 +146,9 @@
           "Protected"
         ],
         "target": {
-          "band": "II",
-          "level": 10,
+          "band": "V",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: the caravan guards Khayla, Ra’zhinda and Dro’marash Experienced"
         },
         "note": "guard, caravan B."
       },
@@ -219,10 +217,9 @@
           "Protected"
         ],
         "target": {
-          "band": "II",
-          "level": 10,
+          "band": "V",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: the caravan guards Khayla, Ra’zhinda and Dro’marash Experienced"
         },
         "note": "guard, caravan C."
       },
