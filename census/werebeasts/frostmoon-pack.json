@@ -1,0 +1,164 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "frostmoon-pack",
+  "group": "werebeasts",
+  "title": "Frostmoon Pack",
+  "order": 5,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "majni",
+        "name": "Majni",
+        "records": [
+          {
+            "edid": "DLC2dunFrostmoonMajni",
+            "formKey": "01DC67:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-11-13: the Frostmoon werewolves Powerful (bands-of-power.md: werewolves); moved here from World → *Quest Foes*"
+        },
+        "note": "Solstheim, Frostmoon Crag: the quest makes `DLC2dunFrostmoonWerewolvesFaction` an enemy of `PlayerFaction`, clears `Protected` and starts combat for the whole pack."
+      },
+      {
+        "id": "akar",
+        "name": "Akar",
+        "records": [
+          {
+            "edid": "DLC2dunFrostmoonAkar",
+            "formKey": "01F9C3:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.75,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-11-13: the Frostmoon werewolves Powerful (bands-of-power.md: werewolves); moved here from World → *Quest Foes*"
+        },
+        "note": "Solstheim, Frostmoon Crag: as Majni."
+      },
+      {
+        "id": "hjordis",
+        "name": "Hjordis",
+        "records": [
+          {
+            "edid": "DLC2dunFrostmoonHjordis",
+            "formKey": "01F9C4:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.5,
+          "min": 10,
+          "max": 30
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-11-13: the Frostmoon werewolves Powerful (bands-of-power.md: werewolves); moved here from World → *Quest Foes*"
+        },
+        "note": "Solstheim, Frostmoon Crag: as Majni; transforms in combat."
+      },
+      {
+        "id": "rakel",
+        "name": "Rakel",
+        "records": [
+          {
+            "edid": "DLC2dunFrostmoonRakel",
+            "formKey": "01F9C5:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.4,
+          "min": 10,
+          "max": 30
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-11-13: the Frostmoon werewolves Powerful (bands-of-power.md: werewolves); moved here from World → *Quest Foes*"
+        },
+        "note": "Solstheim, Frostmoon Crag: as Majni; warns the player, then the camp attacks."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "All four own their level (`PcLevelMult`, no `Stats` template); no other record uses any of them as a template, and no leveled list draws them."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Majni · Akar · Hjordis · Rakel",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2FrostmoonCragExterior01",
+              "formKey": "00EE2E:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "01F9C2:Dragonborn.esm"
+            },
+            "note": "Majni, Easy"
+          },
+          {
+            "cell": {
+              "edid": "DLC2FrostmoonCragExterior01",
+              "formKey": "00EE2E:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "01F9CA:Dragonborn.esm"
+            },
+            "note": "Akar"
+          },
+          {
+            "cell": {
+              "edid": "DLC2FrostmoonCragExterior01",
+              "formKey": "00EE2E:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "01F9CB:Dragonborn.esm"
+            },
+            "note": "Hjordis"
+          },
+          {
+            "cell": {
+              "edid": "DLC2FrostmoonCragExterior01",
+              "formKey": "00EE2E:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "01F9C9:Dragonborn.esm"
+            },
+            "note": "Rakel"
+          }
+        ],
+        "quest": "alias `Majni` of `DLC2dunFrostmoonQST` 01F9E6:Dragonborn.esm"
+      }
+    ]
+  }
+}

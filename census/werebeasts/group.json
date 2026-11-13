@@ -5,7 +5,7 @@
   "order": 3,
   "meta": {
     "spec": "archetype-tiers.md §3.1",
-    "updated": "2026-10-05"
+    "updated": "2026-11-13"
   },
   "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. No Creation Club pack adds a werewolf or werebear. The Companions' werewolf forms are scripted race changes with no record of their own, and summoned werebeasts are under Conjured.",
   "families": [
@@ -24,6 +24,10 @@
     {
       "id": "wolf-spirits",
       "holds": "Kodlak's and the Companions' wolf spirits in Ysgramor's Tomb"
+    },
+    {
+      "id": "frostmoon-pack",
+      "holds": "the Frostmoon Crag werewolves Majni, Akar, Hjordis and Rakel (`DLC2dunFrostmoonQST`)"
     }
   ],
   "filedElsewhere": [

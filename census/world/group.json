@@ -61,6 +61,16 @@
       "record": "refs 0622E2 · 0622E3 · 0622E4 (aliases `Mercenary01`–`03` of `FreeformKarthwastenA`)",
       "what": "Atar's three Silver-Blood mercenaries",
       "where": "Bandits → *Mercenaries*"
+    },
+    {
+      "record": "`DLC2dunFrostmoonMajni` · `…Akar` · `…Hjordis` · `…Rakel` (Dragonborn.esm)",
+      "what": "the Frostmoon werewolves",
+      "where": "Werebeasts → *Frostmoon Pack*"
+    },
+    {
+      "record": "`Linwe` 07D679",
+      "what": "Linwe, leader of the Summerset Shadows",
+      "where": "Factions → Thieves Guild → *Thieves Guild Foes*"
     }
   ],
   "neverMet": [

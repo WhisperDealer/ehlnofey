@@ -38,9 +38,9 @@
           "Essential"
         ],
         "target": {
-          "band": "III",
+          "band": "IV",
           "status": "proposed",
-          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+          "source": "user, 2026-11-13: Brutius Blooded; it takes `Stats` from a bandit list, so it needs a level of its own"
         },
         "note": "Morthal, the CC fishing pack's *No Contest*: a wizard posing as a fisherman, he springs the ambush at the fishing contest with two `ccBGSSSE001_LvlVagrantWizard` wizards (on Bandits → *Bandit Gangs*). `Stats` from `LCharBanditWizardNordM`."
       },
@@ -87,10 +87,10 @@
           "max": 30
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "V",
+          "level": 30,
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1 = 25, clamped to 10–30: 25)"
+          "source": "user, 2026-11-13: Sulla Trebatius and Umana 30"
         },
         "note": "Winterhold Hold, Alftand: the surviving expedition members turn on the player (`dunAlftandQST` sets Aggression 2 and makes their factions enemies of `PlayerFaction`)."
       },
@@ -139,33 +139,11 @@
           "value": 8
         },
         "target": {
-          "band": "V",
+          "band": "IV",
           "status": "proposed",
-          "source": "user, 2026-11-13: Calixto Experienced"
+          "source": "user, 2026-11-13: Calixto Blooded"
         },
         "note": "Windhelm, *Blood on the Ice* (`MS11`): unmasked as the Butcher, he leaves his town factions and is fought."
-      },
-      {
-        "id": "linwe",
-        "name": "Linwe",
-        "records": [
-          {
-            "edid": "Linwe",
-            "formKey": "07D679:Skyrim.esm"
-          }
-        ],
-        "level": {
-          "kind": "pcMult",
-          "mult": 1,
-          "min": 10,
-          "max": 50
-        },
-        "target": {
-          "band": "VI",
-          "status": "proposed",
-          "source": "user, 2026-11-13: accepted"
-        },
-        "note": "Eastmarch, Uttering Hills Cave: leader of the Summerset Shadows (`TGTQ04`); `VeryAggressive`, `dunLinweFaction` allied to the bandits."
       },
       {
         "id": "drunk-cultist",
@@ -307,9 +285,9 @@
           ]
         },
         "target": {
-          "band": "III",
+          "band": "IV",
           "status": "proposed",
-          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+          "source": "user, 2026-11-13: Orini Dral Blooded; it takes `Stats` from a bandit list, so it needs a level of its own"
         },
         "note": "Riften, the Warehouse, *The Raid* (`FreeformRiften20`): a skooma dealer in `RiftenSkoomaDealerFactionEnemy`, an enemy of `PlayerFaction`. `Stats` from `LvlBanditMelee1H` 03DECB."
       },
@@ -395,9 +373,9 @@
           ]
         },
         "target": {
-          "band": "III",
+          "band": "IV",
           "status": "proposed",
-          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+          "source": "user, 2026-11-13: Telrav Blooded; it takes `Stats` from a bandit list, so it needs a level of its own"
         },
         "note": "The Rift, *Telrav's Request* (`dunNilheimQST`): he leads the player into the Nilheim ambush, joins `BanditFaction` and attacks. `Stats` from `LvlBanditMissileCommonerM` 01B0BE."
       },
@@ -426,9 +404,9 @@
           ]
         },
         "target": {
-          "band": "III",
+          "band": "IV",
           "status": "proposed",
-          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+          "source": "user, 2026-11-13: Wyndelius Gatharian Blooded; it takes `Stats` from a bandit list, so it needs a level of its own"
         },
         "note": "The Rift, Shroud Hearth Barrow: starts as an ally; a scene fragment sets Aggression 2 and moves him to `dunPlayerEnemyFaction`. `Stats` from `LvlBanditWizardNordM` 01B1E1."
       },
@@ -481,9 +459,9 @@
           ]
         },
         "target": {
-          "band": "III",
+          "band": "V",
           "status": "proposed",
-          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+          "source": "user, 2026-11-13: Hamelyn Experienced; it takes `Stats` from a bandit list, so it needs a level of its own"
         },
         "note": "Whiterun Hold, the Honningbrew Meadery basement (*Dampened Spirits*): takes `AIData` and `Traits` from the bandit wizard, so `VeryAggressive`. `Stats` from `LvlBanditWizardCommonerM` 01B102."
       },
@@ -503,9 +481,9 @@
           "max": 100
         },
         "target": {
-          "band": "VII",
+          "band": "VIII",
           "status": "proposed",
-          "source": "user, 2026-11-13: accepted"
+          "source": "user, 2026-11-13: Umbra Fabled"
         },
         "note": "Whiterun Hold, Champion's Rest: the boss of the Umbra pack, `VeryAggressive` in `ccBGSSSE016_UmbraBossPlayerEnemyFaction`. Template `EncBandit06Boss1HNordM` 03DF09 without `Stats`: keeps its own level."
       },
@@ -683,10 +661,9 @@
           "Essential"
         ],
         "target": {
-          "band": "V",
-          "level": 30,
+          "band": "II",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: Mogrul Common"
         },
         "note": "Raven Rock, *A New Debt* (`DLC2TT1b`): \"Pay or kill Mogrul\"; the quest clears his `Essential` flag."
       },
@@ -718,9 +695,10 @@
           "Protected"
         ],
         "target": {
-          "band": "III",
+          "band": "IV",
+          "level": 27,
           "status": "proposed",
-          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+          "source": "user, 2026-11-13: Slitter 27; it takes `Stats` from a bandit list, so it needs a level of its own"
         },
         "note": "Raven Rock, *A New Debt*: Mogrul's thug; his death sets `DLC2TT1b` stage 50. `Stats` from `LvlBanditMelee2H` 01E79D. [unverified]: that he is the thug who attacks rests on his script and the quest log."
       },
@@ -764,10 +742,9 @@
           "min": 25
         },
         "target": {
-          "band": "VI",
-          "level": 37,
+          "band": "VII",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.5 = 37.5, clamped to 25–∞: 37)"
+          "source": "user, 2026-11-13: General Falx Carius Powerful"
         },
         "note": "Solstheim, Fort Frostmoth, *March of the Dead* (`DLC2RR01`): `VeryAggressive`; his fight script summons ash spawn."
       },
@@ -798,97 +775,6 @@
         "note": "Solstheim, Kolbjorn Barrow, *Unearthed*: at the finale the quest clears `Essential`, sets Aggression 2 and starts combat (\"Kill Ralis\")."
       },
       {
-        "id": "majni",
-        "name": "Majni",
-        "records": [
-          {
-            "edid": "DLC2dunFrostmoonMajni",
-            "formKey": "01DC67:Dragonborn.esm"
-          }
-        ],
-        "level": {
-          "kind": "pcMult",
-          "mult": 1,
-          "min": 10,
-          "max": 50
-        },
-        "flags": [
-          "Protected"
-        ],
-        "target": {
-          "band": "VII",
-          "status": "proposed",
-          "source": "user, 2026-11-13: the Frostmoon werewolves Powerful (bands-of-power.md: werewolves)"
-        },
-        "note": "Solstheim, Frostmoon Crag: the quest makes `DLC2dunFrostmoonWerewolvesFaction` an enemy of `PlayerFaction`, clears `Protected` and starts combat for the whole pack."
-      },
-      {
-        "id": "akar",
-        "name": "Akar",
-        "records": [
-          {
-            "edid": "DLC2dunFrostmoonAkar",
-            "formKey": "01F9C3:Dragonborn.esm"
-          }
-        ],
-        "level": {
-          "kind": "pcMult",
-          "mult": 0.75,
-          "min": 10,
-          "max": 50
-        },
-        "target": {
-          "band": "VII",
-          "status": "proposed",
-          "source": "user, 2026-11-13: the Frostmoon werewolves Powerful (bands-of-power.md: werewolves)"
-        },
-        "note": "Solstheim, Frostmoon Crag: as Majni."
-      },
-      {
-        "id": "hjordis",
-        "name": "Hjordis",
-        "records": [
-          {
-            "edid": "DLC2dunFrostmoonHjordis",
-            "formKey": "01F9C4:Dragonborn.esm"
-          }
-        ],
-        "level": {
-          "kind": "pcMult",
-          "mult": 0.5,
-          "min": 10,
-          "max": 30
-        },
-        "target": {
-          "band": "VII",
-          "status": "proposed",
-          "source": "user, 2026-11-13: the Frostmoon werewolves Powerful (bands-of-power.md: werewolves)"
-        },
-        "note": "Solstheim, Frostmoon Crag: as Majni; transforms in combat."
-      },
-      {
-        "id": "rakel",
-        "name": "Rakel",
-        "records": [
-          {
-            "edid": "DLC2dunFrostmoonRakel",
-            "formKey": "01F9C5:Dragonborn.esm"
-          }
-        ],
-        "level": {
-          "kind": "pcMult",
-          "mult": 0.4,
-          "min": 10,
-          "max": 30
-        },
-        "target": {
-          "band": "VII",
-          "status": "proposed",
-          "source": "user, 2026-11-13: the Frostmoon werewolves Powerful (bands-of-power.md: werewolves)"
-        },
-        "note": "Solstheim, Frostmoon Crag: as Majni; warns the player, then the camp attacks."
-      },
-      {
         "id": "merilar-rendas",
         "name": "Merilar Rendas",
         "records": [
@@ -903,10 +789,9 @@
           "min": 0
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "V",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1 = 25, clamped to 0–∞: 25)"
+          "source": "user, 2026-11-13: Merilar Rendas Experienced"
         },
         "note": "Solstheim, White Ridge Barrow: the spider-maker, `VeryAggressive` in `DLC2ExpSpiderEnemyFaction`."
       },
@@ -926,10 +811,9 @@
           "max": 50
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "V",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1 = 25, clamped to 20–50: 25)"
+          "source": "user, 2026-11-13: Skjol the Tongueless Experienced"
         },
         "note": "Solstheim, the CC Stalhrim armour quest: \"Kill Skjol\"; `VeryAggressive`. Template `EncBandit01Melee1HNordM` 01BCD8 without `Stats`: keeps its own level."
       },
@@ -1129,21 +1013,6 @@
           }
         ],
         "quest": "alias `Calixto` of `MS11` 01F7A3"
-      },
-      {
-        "name": "Linwe",
-        "locations": [
-          {
-            "cell": {
-              "edid": "UtteringHillsCave01",
-              "formKey": "07BC27:Skyrim.esm"
-            },
-            "ref": {
-              "formKey": "07D67A:Skyrim.esm"
-            }
-          }
-        ],
-        "quest": "alias `TGTQ04LinweAlias` of `TGTQ04` 0799E2"
       },
       {
         "name": "Drunk Cultist",
@@ -1503,52 +1372,6 @@
           }
         ],
         "quest": "alias `Ralis` of `DLC2dunKolbjornQST` 01810B:Dragonborn.esm"
-      },
-      {
-        "name": "Majni · Akar · Hjordis · Rakel",
-        "locations": [
-          {
-            "cell": {
-              "edid": "DLC2FrostmoonCragExterior01",
-              "formKey": "00EE2E:Dragonborn.esm"
-            },
-            "ref": {
-              "formKey": "01F9C2:Dragonborn.esm"
-            },
-            "note": "Majni, Easy"
-          },
-          {
-            "cell": {
-              "edid": "DLC2FrostmoonCragExterior01",
-              "formKey": "00EE2E:Dragonborn.esm"
-            },
-            "ref": {
-              "formKey": "01F9CA:Dragonborn.esm"
-            },
-            "note": "Akar"
-          },
-          {
-            "cell": {
-              "edid": "DLC2FrostmoonCragExterior01",
-              "formKey": "00EE2E:Dragonborn.esm"
-            },
-            "ref": {
-              "formKey": "01F9CB:Dragonborn.esm"
-            },
-            "note": "Hjordis"
-          },
-          {
-            "cell": {
-              "edid": "DLC2FrostmoonCragExterior01",
-              "formKey": "00EE2E:Dragonborn.esm"
-            },
-            "ref": {
-              "formKey": "01F9C9:Dragonborn.esm"
-            },
-            "note": "Rakel"
-          }
-        ],
-        "quest": "alias `Majni` of `DLC2dunFrostmoonQST` 01F9E6:Dragonborn.esm"
       },
       {
         "name": "Merilar Rendas",

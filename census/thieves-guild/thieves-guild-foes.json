@@ -291,6 +291,28 @@
           "source": "user, 2026-11-13: the Summerset Shadows Experienced"
         },
         "note": "its own level; its template `EncTGSummersetTemplate` 0C5676 is PC×1 [10–25]."
+      },
+      {
+        "id": "linwe",
+        "name": "Linwe",
+        "records": [
+          {
+            "edid": "Linwe",
+            "formKey": "07D679:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-13: Linwe Elite, accepted; moved here from World → *Quest Foes*, beside the Summerset Shadows he leads"
+        },
+        "note": "Eastmarch, Uttering Hills Cave: leader of the Summerset Shadows (`TGTQ04`); `VeryAggressive`, `dunLinweFaction` allied to the bandits."
       }
     ]
   },
@@ -488,6 +510,21 @@
       {
         "name": "the templates and leaves",
         "notPlaced": true
+      },
+      {
+        "name": "Linwe",
+        "locations": [
+          {
+            "cell": {
+              "edid": "UtteringHillsCave01",
+              "formKey": "07BC27:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "07D67A:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "alias `TGTQ04LinweAlias` of `TGTQ04` 0799E2"
       }
     ]
   },
