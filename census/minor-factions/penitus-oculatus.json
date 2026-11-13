@@ -267,9 +267,9 @@
         },
         "target": {
           "band": "VI",
-          "level": 36,
+          "level": 40,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+          "source": "user, 2026-11-13: Arcturus 40; he takes `Stats` from `LCharPenitusOculatus`, pinned at 36, so he needs a level of his own"
         },
         "note": "via `DB10LvlPenitusOculatusBattlemage` 04C16D → 07D9A0."
       },
@@ -298,10 +298,10 @@
           ]
         },
         "target": {
-          "band": "VI",
-          "level": 36,
+          "band": "VII",
+          "level": 42,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+          "source": "user, 2026-11-13: Lieutenant Salvarus 42; he takes `Stats` from `LCharPenitusOculatus`, pinned at 36, so he needs a level of his own"
         },
         "note": "via 06FC41 → 04C16B → 07D9A0."
       },
@@ -357,8 +357,9 @@
         ],
         "target": {
           "band": "VII",
+          "level": 48,
           "status": "proposed",
-          "source": "user, 2026-11-13: the Maros Powerful"
+          "source": "user, 2026-11-13: Commander Maro 48"
         }
       },
       {
@@ -377,9 +378,9 @@
           "max": 100
         },
         "target": {
-          "band": "VII",
+          "band": "VI",
           "status": "proposed",
-          "source": "user, 2026-11-13: the Maros Powerful"
+          "source": "user, 2026-11-13: Gaius Maro Elite"
         }
       },
       {
