@@ -26,10 +26,9 @@
           "max": 100
         },
         "target": {
-          "band": "V",
-          "level": 30,
+          "band": "IX",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.2, clamped to 10–100)"
+          "source": "user, 2026-11-13"
         },
         "flags": [
           "Essential",
@@ -75,10 +74,9 @@
           "max": 10
         },
         "target": {
-          "band": "II",
-          "level": 10,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 5–10)"
+          "source": "user, 2026-11-13"
         },
         "flags": [
           "Essential"
@@ -98,10 +96,9 @@
           "value": 50
         },
         "target": {
-          "band": "VII",
-          "level": 50,
+          "band": "VIII",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13"
         },
         "flags": [
           "Essential"
@@ -196,10 +193,9 @@
           "Essential"
         ],
         "target": {
-          "band": "V",
-          "level": 30,
+          "band": "VIII",
           "status": "proposed",
-          "source": "follows `MQ305SovngardeHeroMale`, whose fixed vanilla level is kept (CLAUDE.md, decisions carried over)"
+          "source": "user, 2026-11-13: the named heroes leave the generic Hero of Sovngarde (V 30), whose template they follow, so each takes its own level"
         }
       }
     ]
