@@ -1,0 +1,44 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "thieves-guild",
+  "title": "Thieves Guild",
+  "order": 13,
+  "parent": "factions",
+  "meta": {
+    "spec": "archetype-tiers.md §6, §7.0",
+    "updated": "2026-11-13"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The Thieves Guild: its members and the foes its questline sends the player against, vanilla, DLC and CC.",
+  "families": [
+    {
+      "id": "named-thieves-guild",
+      "holds": "the `ThievesGuildFaction` members: Mercer Frey, Brynjolf, Karliah, Delvin, Vex, the Ragged Flagon and Cistern regulars, the four fences, Galathil (Dawnguard); and Gallus"
+    },
+    {
+      "id": "thieves-guild-foes",
+      "holds": "the Goldenglow mercenaries and Aringoth (`TG02`), Vald, the Nightingale Sentinels of the Twilight Sepulcher, the `WERJ02` holdup thieves (`WEThiefSubChar`, PC×1.1 [6–45]), the Summerset Shadows and the `TG07` trio"
+    }
+  ],
+  "filedElsewhere": [
+    {
+      "record": "`WIThief` 023EE8",
+      "what": "the `WIThief` thieves",
+      "where": "Bandits → *Common Bandits*"
+    },
+    {
+      "record": "the East Empire Wardens",
+      "what": "East Empire Company guards",
+      "where": "Factions → Guards → *Other Guards*"
+    },
+    {
+      "record": "`TGCrownGhost*`",
+      "what": "the Dunmer ghosts of the Crown",
+      "where": "Undead → Ghosts → *Common Ghosts*"
+    },
+    {
+      "record": "the Irkngthand Falmer",
+      "what": "Falmer",
+      "where": "Falmer"
+    }
+  ]
+}

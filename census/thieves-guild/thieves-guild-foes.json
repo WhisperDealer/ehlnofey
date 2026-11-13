@@ -1,0 +1,685 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "thieves-guild-foes",
+  "group": "thieves-guild",
+  "title": "Thieves Guild Foes",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "goldenglow-mercenary",
+        "name": "Mercenary",
+        "records": [
+          {
+            "edid": "TG02EncMercenaryTemplate",
+            "formKey": "07EB38:Skyrim.esm"
+          },
+          {
+            "edid": "TG02Mercenary01",
+            "formKey": "07EB39:Skyrim.esm"
+          },
+          {
+            "edid": "TG02Mercenary02",
+            "formKey": "07EB3A:Skyrim.esm"
+          },
+          {
+            "edid": "TG02Mercenary01BeeHiveMerc",
+            "formKey": "0A7C8B:Skyrim.esm"
+          },
+          {
+            "edid": "TG02Mercenary02BeeHiveMerc",
+            "formKey": "0A7C8C:Skyrim.esm"
+          },
+          {
+            "edid": "TG02Mercenary01ChoppingWood",
+            "formKey": "0B5545:Skyrim.esm"
+          },
+          {
+            "edid": "TG02Mercenary02CarryWood",
+            "formKey": "0A7CE3:Skyrim.esm"
+          },
+          {
+            "edid": "TG02Mercenary01Reinforcement",
+            "formKey": "0A4687:Skyrim.esm"
+          },
+          {
+            "edid": "TG02Mercenary02Reinforcement",
+            "formKey": "0A4A03:Skyrim.esm"
+          },
+          {
+            "edid": "TG02MercenaryBasement01",
+            "formKey": "061AEF:Skyrim.esm"
+          },
+          {
+            "edid": "TG02MercenaryBasement02",
+            "formKey": "061AF9:Skyrim.esm"
+          },
+          {
+            "edid": "TG02MercenaryGateGuard01",
+            "formKey": "0B643A:Skyrim.esm"
+          },
+          {
+            "edid": "TG02GoldenglowGateGuard",
+            "formKey": "0B6313:Skyrim.esm"
+          },
+          {
+            "edid": "TG02MercenaryGuard01",
+            "formKey": "0B552D:Skyrim.esm"
+          },
+          {
+            "edid": "TG02MercenaryGuard02",
+            "formKey": "0B552E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "proposed, awaiting the user (archetype-tiers.md §7.0: the level a level-25 player meets, 25 × 1, no cap; the band of the user's Mercenaries, user 2026-11-12: Mercenaries up to Blooded)"
+        },
+        "note": "the template and its copies; every copy takes `Stats` from the template."
+      },
+      {
+        "id": "aringoth",
+        "name": "Aringoth",
+        "records": [
+          {
+            "edid": "Aringoth",
+            "formKey": "01334A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 8,
+          "max": 20
+        },
+        "target": {
+          "band": "III",
+          "level": 20,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 8–20)"
+        }
+      },
+      {
+        "id": "vald",
+        "name": "Vald",
+        "records": [
+          {
+            "edid": "Vald",
+            "formKey": "072B04:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 8,
+          "max": 42
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.2, clamped to 8–42)"
+        },
+        "note": "uses the bandit leaf `EncBandit01Melee1HNordM` 01BCD8 as template but not for `Stats`."
+      },
+      {
+        "id": "nightingale-sentinel",
+        "name": "Nightingale Sentinel",
+        "records": [
+          {
+            "edid": "EncNightingaleTemplateMale",
+            "formKey": "0E0CDD:Skyrim.esm"
+          },
+          {
+            "edid": "EncNightingaleTemplateFemale",
+            "formKey": "0DEEDF:Skyrim.esm"
+          },
+          {
+            "edid": "EncNightingaleMeleeMale01",
+            "formKey": "0E0CDE:Skyrim.esm"
+          },
+          {
+            "edid": "EncNightingaleMeleeFemale01",
+            "formKey": "0E0CDF:Skyrim.esm"
+          },
+          {
+            "edid": "EncNightingaleMissileMale01",
+            "formKey": "0E0CE1:Skyrim.esm"
+          },
+          {
+            "edid": "EncNightingaleMissileFemale01",
+            "formKey": "0E0CE0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 15,
+          "max": 45
+        },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the Nightingales, 45 (late Thieves Guild, below Mercer 50)"
+        },
+        "note": "the two templates and their four leaves."
+      },
+      {
+        "id": "nightingale-wrappers",
+        "name": "Nightingale Sentinel",
+        "records": [
+          {
+            "edid": "LvlNightingaleMelee",
+            "formKey": "03B50E:Skyrim.esm"
+          },
+          {
+            "edid": "LvlNightingaleMissile",
+            "formKey": "03B529:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 15,
+          "max": 45,
+          "from": {
+            "edid": "LCharNightingaleMelee",
+            "formKey": "0E0CE2:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the Nightingales, 45 (late Thieves Guild, below Mercer 50)"
+        },
+        "note": "from `LCharNightingaleMelee` · `LCharNightingaleMissle` 0DEEDE."
+      },
+      {
+        "id": "thief",
+        "name": "Thief",
+        "records": [
+          {
+            "edid": "WEThiefTemplate",
+            "formKey": "103510:Skyrim.esm"
+          },
+          {
+            "edid": "WEThiefArgonianM",
+            "formKey": "103512:Skyrim.esm"
+          },
+          {
+            "edid": "WEThiefDarkElfF",
+            "formKey": "103514:Skyrim.esm"
+          },
+          {
+            "edid": "WEThiefDarkElfM",
+            "formKey": "103513:Skyrim.esm"
+          },
+          {
+            "edid": "WEThiefKhajiitM",
+            "formKey": "103515:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 6,
+          "max": 45
+        },
+        "target": {
+          "band": "III",
+          "level": 19,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): `WEThiefTemplate`, 19"
+        },
+        "note": "the template and its four leaves."
+      },
+      {
+        "id": "thief-wrappers",
+        "name": "Thief",
+        "records": [
+          {
+            "edid": "LvlWEThief",
+            "formKey": "1034E7:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWEThiefRanged",
+            "formKey": "1051F1:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 6,
+          "max": 45,
+          "from": {
+            "edid": "WEThiefSubChar",
+            "formKey": "104DC9:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "III",
+          "level": 19,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): `WEThiefTemplate`, 19"
+        }
+      },
+      {
+        "id": "summerset-shadow",
+        "name": "Summerset Shadow",
+        "records": [
+          {
+            "edid": "EncTGSummerset01Melee1HHighElfM",
+            "formKey": "0C5677:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "its own level; its template `EncTGSummersetTemplate` 0C5676 is PC×1 [10–25]."
+      },
+      {
+        "id": "tg07-trio",
+        "name": "Hrolmir · Skeggr · Reves",
+        "records": [
+          {
+            "edid": "TG07Hrolmir",
+            "formKey": "0F84A2:Skyrim.esm"
+          },
+          {
+            "edid": "TG07Skeggr",
+            "formKey": "0F84A3:Skyrim.esm"
+          },
+          {
+            "edid": "TG07Reves",
+            "formKey": "0F84A4:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Moved here from Uncategorised → *Unfiled NPCs* (user, 2026-10-03)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The rows: no other record keeps its own level. `Vald` uses the bandit leaf `EncBandit01Melee1HNordM` 01BCD8 (*Common Bandits*) as template but not for `Stats`, so he keeps his own level when the bandit rung changes.",
+      "The Summerset Shadow takes only `BaseData` and `Inventory` from `EncTGSummersetTemplate` 0C5676 (PC×1 [10–25], not placed, no other record uses it), not `Stats`, so changing the template does not move it. Moved here from Uncategorised → *Unfiled NPCs* (user, 2026-10-03).",
+      "`TG07Hrolmir`, `TG07Skeggr` and `TG07Reves` have no template; no other record uses them.",
+      "Every other record that looks like a row (the mercenary copies, `DLCDwarvenPuzzleDungeonMercenary{Spring,Summer,Autumn,Winter}`, the Nightingale and thief leaves and their `Lvl*` wrappers) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharNightingaleMelee",
+          "formKey": "0E0CE2:Skyrim.esm"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "`EncNightingaleMeleeFemale01`"
+          },
+          {
+            "at": 1,
+            "label": "`EncNightingaleMeleeMale01`"
+          }
+        ],
+        "owner": "`LvlNightingaleMelee`"
+      },
+      {
+        "list": {
+          "edid": "LCharNightingaleMissle",
+          "formKey": "0DEEDE:Skyrim.esm"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "`EncNightingaleMissileMale01`"
+          },
+          {
+            "at": 1,
+            "label": "`EncNightingaleMissileFemale01`"
+          }
+        ],
+        "owner": "`LvlNightingaleMissile`"
+      },
+      {
+        "list": {
+          "edid": "WEThiefSubChar",
+          "formKey": "104DC9:Skyrim.esm"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "`WEThiefArgonianM`"
+          },
+          {
+            "at": 1,
+            "label": "`WEThiefDarkElfF`"
+          },
+          {
+            "at": 1,
+            "label": "`WEThiefKhajiitM`"
+          },
+          {
+            "at": 1,
+            "label": "`WEThiefDarkElfM`"
+          }
+        ],
+        "owner": "`LvlWEThief`, `LvlWEThiefRanged`"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Mercenary",
+        "locations": [
+          {
+            "cell": {
+              "edid": "GoldenglowEstate01",
+              "formKey": "0161FF:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "GoldenglowEstate02",
+              "formKey": "02D3E8:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "GoldenglowEstate03",
+              "formKey": "02D3E7:Skyrim.esm"
+            },
+            "note": "cellar"
+          },
+          {
+            "cell": {
+              "edid": "GoldenglowEstateExterior03",
+              "formKey": "00BCF5:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "GoldenglowEstateExterior04",
+              "formKey": "00BCD4:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "GoldenglowEstateExterior05",
+              "formKey": "00BCD5:Skyrim.esm"
+            }
+          },
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ],
+        "note": "32 refs; the `…Reinforcement` copies and some others initially disabled"
+      },
+      {
+        "name": "Aringoth",
+        "locations": [
+          {
+            "cell": {
+              "edid": "GoldenglowEstate02",
+              "formKey": "02D3E8:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Vald",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenCityEast",
+              "formKey": "042242:Skyrim.esm"
+            },
+            "disabled": true,
+            "note": "in `RiftenWorld` 016BB4"
+          }
+        ]
+      },
+      {
+        "name": "Nightingale Sentinel (`LvlNightingaleMissile`)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "TwilightSepulcher01",
+              "formKey": "05B91B:Skyrim.esm"
+            },
+            "refText": "×5"
+          }
+        ]
+      },
+      {
+        "name": "`LvlNightingaleMelee`",
+        "notPlaced": true
+      },
+      {
+        "name": "Thief (`LvlWEThief`)",
+        "notPlaced": true,
+        "quest": "created by `WERJ02` 0B8169 \"Thieve's Guild Holdup\", alias Thief"
+      },
+      {
+        "name": "`LvlWEThiefRanged`",
+        "notPlaced": true,
+        "note": "used by no quest"
+      },
+      {
+        "name": "Summerset Shadow",
+        "locations": [
+          {
+            "cell": {
+              "edid": "UtteringHillsCave01",
+              "formKey": "07BC27:Skyrim.esm"
+            },
+            "refText": "×8"
+          },
+          {
+            "cell": {
+              "edid": "UtteringHillsCaveExterior01",
+              "formKey": "00912E:Skyrim.esm"
+            },
+            "refText": "×2"
+          }
+        ],
+        "note": "no quest alias names the refs"
+      },
+      {
+        "name": "Hrolmir · Skeggr · Reves",
+        "notPlaced": true,
+        "note": "no quest (`TG07` 021553 included), alias, list or ref names them"
+      },
+      {
+        "name": "the templates and leaves",
+        "notPlaced": true
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Mercenary (template and most copies)",
+        "weapons": "`TG02MercLItemWeapon1H` 10FE61; the cellar copies a Goldenglow Cellar Key, the wood-chopper a Woodcutter's Axe",
+        "armor": "`BanditArmorMeleeNoShieldOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Mercenary (gate and guard copies, own `Inventory`)",
+        "weapons": "`TG02MercLItemWeaponMissile` 10FE62 (`TG02GoldenglowGateGuard`: `LItemBanditWeaponMissile`); one a Goldenglow Gate Key",
+        "armor": "`BanditArmorMeleeNoShieldOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Aringoth",
+        "weapons": "`LItemWeaponBowBest`, `LItemWeaponDaggerBest`, `LItemArrowsAll`, Goldenglow Cellar Key",
+        "armor": "`FineClothesOutfit01`",
+        "skin": "race default"
+      },
+      {
+        "records": "Vald",
+        "weapons": "Iron Dagger, `LItemBanditWeapon1H`, Mercer's House Key",
+        "armor": "`BanditArmorMeleeNoShieldOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Nightingale Sentinel (melee · archer leaves)",
+        "weapons": "Nightingale Blade 0DEED7 (NPC copy) · plus Karliah's Bow 0DEED8 (NPC copy), Elven Arrows",
+        "armor": "`NightingaleOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Thief (template, leaves, `LvlWEThief`)",
+        "weapons": "`LItemWeaponDagger`, gold, gems, lockpicks",
+        "armor": "`WEThiefOutfit` (`LItemWEThief{Hood,Gauntlets50,Boots,Cuirass}`)",
+        "skin": "race default"
+      },
+      {
+        "records": "`LvlWEThiefRanged` (own `Inventory`)",
+        "weapons": "`LItemWeaponBow`, `LItemArrowsAll`, `LItemWeaponDagger`, gold, gems, lockpicks",
+        "armor": "`WEThiefOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Summerset Shadow (from its template)",
+        "weapons": "`LItemBanditWeapon1H` 037C1B, `LootGoldChange25` 04F78D, `LItemLockPick25` 08FFFB",
+        "armor": "`ArmorSummersetShadowsStandard` 10854D",
+        "skin": "race default"
+      },
+      {
+        "records": "Hrolmir · Skeggr · Reves",
+        "weapons": "none",
+        "armor": "none",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "TG02MercLItemWeapon1H",
+          "formKey": "10FE61:Skyrim.esm"
+        },
+        "gate": "all levels ≤ player",
+        "rolls": "Iron and Steel mace, sword, war axe, all @1"
+      },
+      {
+        "list": {
+          "edid": "TG02MercLItemWeaponMissile",
+          "formKey": "10FE62:Skyrim.esm"
+        },
+        "gate": "highest ≤ player, use all",
+        "rolls": "a bow (Hunting, Long 1 · Imperial 4) and arrows (Iron 1 · Steel 5)"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponBowBest",
+          "formKey": "05719E:Skyrim.esm"
+        },
+        "gate": "highest ≤ player",
+        "rolls": "with `LItemWeaponDaggerBest` 0571A1: Steel dagger, Hunting bow 1 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46"
+      },
+      {
+        "list": {
+          "edid": "WEThiefOutfit",
+          "formKey": "10350B:Skyrim.esm"
+        },
+        "rolls": "the `LItemWEThief*` lists, `LItemWeaponDagger`, `LItemWeaponBow`: as on *Dark Brotherhood Assassins*"
+      },
+      {
+        "list": {
+          "edid": "BanditArmorMeleeNoShieldOutfit",
+          "formKey": "01E608:Skyrim.esm"
+        },
+        "rolls": "with `LItemBanditWeapon1H`, `LItemBanditWeaponMissile`: as on *Common Bandits*"
+      },
+      {
+        "list": {
+          "edid": "ArmorSummersetShadowsStandard",
+          "formKey": "10854D:Skyrim.esm"
+        },
+        "gate": "use all",
+        "rolls": "→ `LItemSummersetShadowsArmor` 10853E: Summerset Shadows Armor 108540, Boots 10853F, Gloves 108541, all @1; the hood `ArmorSummersetShadowsGuildHelmet` 108542 at 50% (`LItemSummersetShadowsArmorHelmet` 10854C)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Nightingale Hood, Armor, Gloves, Boots (NPC copies 0487D8 · 0483C2 · …)",
+        "kind": "light",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Summerset Shadows Armor, Boots, Gloves, hood",
+        "kind": "light",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Nightingale Blade 0DEED7, Karliah's Bow 0DEED8 (NPC copies)",
+        "kind": "weapons",
+        "playable": false,
+        "note": "`NonPlayable`, `CantDrop`"
+      },
+      {
+        "item": "the bandit and thief-list armor",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Fine Clothes, Fine Boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "the listed weapons",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

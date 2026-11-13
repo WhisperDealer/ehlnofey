@@ -1,0 +1,93 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "minor-factions",
+  "title": "Minor Factions",
+  "order": 11,
+  "parent": "factions",
+  "meta": {
+    "spec": "archetype-tiers.md §3.1, §3.4, §6",
+    "updated": "2026-11-13"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The smaller factions the player fights or meets, one family page each; the Silver Hand is its own group under Factions.",
+  "families": [
+    {
+      "id": "alikr",
+      "holds": "Kematu and his warriors (`MS08`, `WERJ03`), the unused `LCharAlikr*` ladder (1 · 6 · 14 · 24 · 34 · 44), the Lord's Mail CC Alik'r, and the Redguard Elite Armaments CC Remnant Warriors (allies, by the user's call), Rakeed, Ismal and Azadi"
+    },
+    {
+      "id": "penitus-oculatus",
+      "holds": "the agents (ladder 1 · 4 · 8 · 13 · 18 · 23) of the Dark Brotherhood questline, Arcturus, the Katariah officers, Commander and Gaius Maro"
+    },
+    {
+      "id": "morag-tong",
+      "holds": "the Dragonborn assassins (the Reaver ladder 1 · 5 · 9 · 14 · 19 · 25) and the Severins"
+    },
+    {
+      "id": "ghosts-of-the-tribunal",
+      "holds": "the CC pack's Temple of the Tribunal (Ordinators, Her Hands, priests) and the Temple's enemies (the Reclamation Priest); its Sixth House foes are on their own pages"
+    },
+    {
+      "id": "miraak-cultists",
+      "holds": "the Dragonborn cultist ladder (Cultist 12 · Cultist Adept 19 · Ascendant 27 · Master 36 · Arch 46, plus summoner copies), its wrappers and ambushes"
+    },
+    {
+      "id": "blades",
+      "holds": "Delphine (PC×0.9 [10–30]) and Esbern (PC×0.75 [10–30]); the recruits are followers with no record of their own"
+    },
+    {
+      "id": "greybeards",
+      "holds": "Arngeir 150, Borri 100, Wulfgar 100, Einarth 90"
+    },
+    {
+      "id": "khajiit-caravans",
+      "holds": "the three caravans' merchants and guards (Ri'saad, Ma'dran, Ahkari and their crews, 4–10, Kharjo PC×1 [6–30]) and the unplaced Grushnag"
+    }
+  ],
+  "filedElsewhere": [
+    {
+      "record": "`DLC2Miraak` 017F7D:Dragonborn.esm and his fight copies",
+      "what": "Miraak himself",
+      "where": "Dragons → *Miraak*"
+    },
+    {
+      "record": "his dragons",
+      "what": "Miraak's dragons",
+      "where": "Dragons → *Unique Dragons*"
+    },
+    {
+      "record": "`Paarthurnax` 03C57C",
+      "what": "the Greybeards' master",
+      "where": "Dragons → *Unique Dragons*"
+    },
+    {
+      "record": "`Marandrujo` 01B1D7",
+      "what": "Ma'randru-jo, caravan A merchant, 4",
+      "where": "Dark Brotherhood → *Dark Brotherhood Targets*"
+    },
+    {
+      "record": "`ccASVSSE001_RedoranGuardPriestFaction` 1EC607:ccasvsse001-almsivi.esm",
+      "what": "Redoran Guard, the Ghosts of the Tribunal Temple's enemies",
+      "where": "Guards → *Redoran Guards*"
+    },
+    {
+      "record": "`ccASVSSE001_DagothPriest` 0C1928:ccasvsse001-almsivi.esm",
+      "what": "Erden Relvel, the Sixth House priest (PC×2 [10–100])",
+      "where": "World → Solstheim → *Solstheim Countryside*"
+    },
+    {
+      "record": "`ccASVSSE001_EncAshZombie*`, `ccASVSSE001_LvlAshZombie` 1CDFD1:ccasvsse001-almsivi.esm",
+      "what": "the Sixth House Ash Zombies",
+      "where": "Ash → *Ash Zombie (CC)*"
+    },
+    {
+      "record": "`ccASVSSE001_DwarvenSpectre` 00083C:ccasvsse001-almsivi.esm",
+      "what": "the Ghosts of the Tribunal ghost (in `BanditFaction`)",
+      "where": "Undead → Ghosts → *Common Ghosts*"
+    },
+    {
+      "record": "`ccBGSSSE031_LvlAlikrMelee1H_Female` 00080F:ccbgssse031-advcyrus.esm",
+      "what": "Ghost Sailor, drawn from `LCharAlikrMelee1H`",
+      "where": "Undead → Ghosts → *Common Ghosts*"
+    }
+  ]
+}

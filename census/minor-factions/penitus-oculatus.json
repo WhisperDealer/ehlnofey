@@ -1,0 +1,666 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "penitus-oculatus",
+  "group": "minor-factions",
+  "title": "Penitus Oculatus",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "penitus-rung-01",
+        "name": "Penitus Oculatus Agent",
+        "records": [
+          {
+            "edid": "EncPenitus01Fire",
+            "formKey": "07D990:Skyrim.esm"
+          },
+          {
+            "edid": "EncPenitus01Shock",
+            "formKey": "07D998:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 1,
+          "from": {
+            "edid": "EncPenitus00Template",
+            "formKey": "07D98C:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+        },
+        "note": "the name comes via `BaseData` from `EncPenitus00Template` 07D98C; rung 01 also takes `Stats` from it."
+      },
+      {
+        "id": "penitus-rung-02",
+        "name": "Penitus Oculatus Agent",
+        "records": [
+          {
+            "edid": "EncPenitus02Fire",
+            "formKey": "07D991:Skyrim.esm"
+          },
+          {
+            "edid": "EncPenitus02Shock",
+            "formKey": "07D999:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+        }
+      },
+      {
+        "id": "penitus-rung-03",
+        "name": "Penitus Oculatus Agent",
+        "records": [
+          {
+            "edid": "EncPenitus03Fire",
+            "formKey": "07D992:Skyrim.esm"
+          },
+          {
+            "edid": "EncPenitus03Shock",
+            "formKey": "07D99A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 8
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+        }
+      },
+      {
+        "id": "penitus-rung-04",
+        "name": "Penitus Oculatus Agent",
+        "records": [
+          {
+            "edid": "EncPenitus04Fire",
+            "formKey": "07D993:Skyrim.esm"
+          },
+          {
+            "edid": "EncPenitus04Shock",
+            "formKey": "07D99B:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 13
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+        }
+      },
+      {
+        "id": "penitus-rung-05",
+        "name": "Penitus Oculatus Agent",
+        "records": [
+          {
+            "edid": "EncPenitus05Fire",
+            "formKey": "07D994:Skyrim.esm"
+          },
+          {
+            "edid": "EncPenitus05Shock",
+            "formKey": "07D99D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 18
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+        }
+      },
+      {
+        "id": "penitus-rung-06",
+        "name": "Penitus Oculatus Agent",
+        "records": [
+          {
+            "edid": "EncPenitus06Fire",
+            "formKey": "07D995:Skyrim.esm"
+          },
+          {
+            "edid": "EncPenitus06Shock",
+            "formKey": "07D99E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 23
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+        }
+      },
+      {
+        "id": "penitus-wrappers",
+        "name": "Penitus Oculatus Agent",
+        "records": [
+          {
+            "edid": "LvlPenitusOculatusBattlemage",
+            "formKey": "07D9A0:Skyrim.esm"
+          },
+          {
+            "edid": "LvlPenitusOculatusMelee1H",
+            "formKey": "04C16A:Skyrim.esm"
+          },
+          {
+            "edid": "LvlPenitusOculatusMissile",
+            "formKey": "04C169:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharPenitusOculatus",
+            "formKey": "07D99F:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            4,
+            8,
+            13,
+            18,
+            23
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+        },
+        "note": "`Stats` from `LCharPenitusOculatus`; every other Penitus wrapper follows these (see Also owns its level)."
+      },
+      {
+        "id": "katariah-archers",
+        "name": "Penitus Oculatus Agent",
+        "records": [
+          {
+            "edid": "LvlPenitusOculatusMissileAmbush",
+            "formKey": "04C16C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite; the Katariah archers lacked `Stats` (level 1, a vanilla bug), fixed to 36"
+        },
+        "note": "the Katariah archers: lacks the `Stats` flag, so level 1 (skills 5)."
+      },
+      {
+        "id": "arnbjorn-fighter",
+        "name": "Penitus Oculatus Agent",
+        "records": [
+          {
+            "edid": "DB10_LvlPenitusOculatusBattlemageArnbjornFighter",
+            "formKey": "101BFC:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite; this record lacks `Stats` like the Katariah archers"
+        },
+        "note": "lacks the `Stats` flag, so level 1 (skills 5); `IsGhost`. Fights Arnbjorn in the Sanctuary assault."
+      },
+      {
+        "id": "arcturus",
+        "name": "Arcturus",
+        "records": [
+          {
+            "edid": "DB10_LvlPenitusOculatus_NazirFighter",
+            "formKey": "04D6CA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharPenitusOculatus",
+            "formKey": "07D99F:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            4,
+            8,
+            13,
+            18,
+            23
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+        },
+        "note": "via `DB10LvlPenitusOculatusBattlemage` 04C16D → 07D9A0."
+      },
+      {
+        "id": "lieutenant-salvarus",
+        "name": "Lieutenant Salvarus",
+        "records": [
+          {
+            "edid": "dunKatariahLvlPenitusOculatusLieutenant",
+            "formKey": "0C44FF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharPenitusOculatus",
+            "formKey": "07D99F:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            4,
+            8,
+            13,
+            18,
+            23
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+        },
+        "note": "via 06FC41 → 04C16B → 07D9A0."
+      },
+      {
+        "id": "captain-avidius",
+        "name": "Captain Avidius",
+        "records": [
+          {
+            "edid": "dunKatariahCaptain",
+            "formKey": "0C603D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharPenitusOculatus",
+            "formKey": "07D99F:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            4,
+            8,
+            13,
+            18,
+            23
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+        },
+        "note": "via 06FC42 → 0C6030 → 04C16A → 07D9A0."
+      },
+      {
+        "id": "commander-maro",
+        "name": "Commander Maro",
+        "records": [
+          {
+            "edid": "CommanderMaro",
+            "formKey": "01D4B5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 30
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–30)"
+        }
+      },
+      {
+        "id": "gaius-maro",
+        "name": "Gaius Maro",
+        "records": [
+          {
+            "edid": "GaiusMaro",
+            "formKey": "044050:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 100
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 6–100)"
+        }
+      },
+      {
+        "id": "corrupt-agent",
+        "name": "Corrupt Agent",
+        "records": [
+          {
+            "edid": "DBRecurringContact3DragonBridge",
+            "formKey": "087B8C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "not in `PenitusOculatusFaction`; crime faction 0EDDDC."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no record outside the table keeps its own level. The two that do, `LvlPenitusOculatusMissileAmbush` 04C16C and `DB10_LvlPenitusOculatusBattlemageArnbjornFighter` 101BFC (level 1, no `Stats`), are already rows.",
+      "Rung 01 (`EncPenitus01Fire` 07D990 · `…Shock` 07D998) carries `Stats` from `EncPenitus00Template` 07D98C, so its level 1 belongs to that template; rungs 02–06 keep their own.",
+      "These inherit `Stats` and `BaseData` from 07D9A0 (via 04C16A, 04C169, 04C16B, 04C16D, 0C6030, 04C16F): `LvlPenitusOculatusBattlemageAmbush` 04C16B · `…Melee1HAmbush` 0C6030 · `DB05PenitusBodyguard` 0A7045 · `DB09LvlPenitusOculatusMelee1H` 07DE97 · `DB10LvlPenitusOculatusBattlemage` 04C16D · `…BattlemageAmbush` 0B2E0E · `…Melee1H` 04C16E · `…Melee1HNoShield` 0FDABE · `…Missile` 04C16F · `…Missile_CarryFirewood` 0B0899 · `DB10_…MissileArnbjornFighter` 101BFD · `DB11LvlPenitusOculatus_Docks` 07DE98 · `DBPenitusOutpostGuard` 0D13E2 · `dunKatariah…BattlemageAmbush` 06FC41 · `…Melee1HAmbush` 06FC42 · `…Middeck1` 0978B1.",
+      "These inherit level 1 from 04C16C: `dunKatariah…MissileAmbush` 06FF36 · `…MissileAmbushDeck` 0978F4 · `…Middeck2` 0978D8."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharPenitusOculatus",
+          "formKey": "07D99F:Skyrim.esm"
+        },
+        "gate": "gated at 1 · 8 · 16 · 26 · 36 · 46; only `Stats` is taken",
+        "entries": [
+          {
+            "at": 1,
+            "label": "rung 01, Fire and Shock (level 1)"
+          },
+          {
+            "at": 8,
+            "label": "rung 02, Fire and Shock (level 4)"
+          },
+          {
+            "at": 16,
+            "label": "rung 03, Fire and Shock (level 8)"
+          },
+          {
+            "at": 26,
+            "label": "rung 04, Fire and Shock (level 13)"
+          },
+          {
+            "at": 36,
+            "label": "rung 05, Fire and Shock (level 18)"
+          },
+          {
+            "at": 46,
+            "label": "rung 06, Fire and Shock (level 23)"
+          }
+        ],
+        "owner": "`LvlPenitusOculatusBattlemage` 07D9A0 (and every record templating it) · 101BFC (takes no `Stats`)"
+      },
+      {
+        "list": {
+          "edid": "LCharImperialJusticiar",
+          "formKey": "0B79AA:Skyrim.esm"
+        },
+        "gate": "the same twelve entries at the same gates",
+        "owner": "none"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Penitus Oculatus Agent (Bound Until Death)",
+        "note": "`SolitudeWorld` 037EDF: 0A7045 ref 0A7046; alias `PenitusAlias` on `DB05` 01EA54"
+      },
+      {
+        "name": "Penitus Oculatus Agent (Emperor's Tower)",
+        "note": "`SolitudeWorld` 037EDF: 07D9A0 · 04C16A · 04C169 ×1 each (aliases `DB09AmbushGuard1`–`3Alias`), 07DE97 ×2 (`SolPenitusOutside1/2Alias`); `SolitudeCastleDourEmperorsTower` 019454: 07DE97 ×2 (`SolPenitusEmpGuard1/2Alias`); quest `DB09` 01EA58"
+      },
+      {
+        "name": "Penitus Oculatus Agent (Sanctuary assault)",
+        "note": "`DarkBrotherhoodSanctuary` 0AD5A1: 04C16E ×2, 0FDABE ×1, 04C16F ×3 (one Medium), 0B2E0E ×1 VeryHard (alias `PenitusBoss`), 101BFC · 101BFD ×1 each; Tamriel 00003C (outside): 04C16E · 04C16F · 0B0899 ×1 each, 04C16D ×1 Medium; quest `DB10` 03CEDA (outside refs also `DB09`)"
+      },
+      {
+        "name": "Arcturus",
+        "note": "`DarkBrotherhoodSanctuary` 0AD5A1, ref 04D6CF, VeryHard; alias `PenitusSoldier5Alias` on `DB10`"
+      },
+      {
+        "name": "Penitus Oculatus Agent (Katariah)",
+        "note": "`Katariah01` 0BBB2F: 0978B1 ×2 Medium, 0978D8 ×1, 06FC41 ×2 (one Medium), 06FC42 ×1, 06FF36 ×1 (aliases `Guard01` · `Guard02` on `DB11_dunKatariahQST` 0C6020); `KatariahExterior01` 009256: 06FC41 ×1 Medium; `KatariahExterior02` 009255: 06FC42 · 06FF36 ×1 each, 0978F4 ×1 Medium; `KatariahExterior04` 009277: 0978F4 ×1"
+      },
+      {
+        "name": "Lieutenant Salvarus",
+        "note": "`Katariah01` 0BBB2F, ref 0BBB44, Hard"
+      },
+      {
+        "name": "Captain Avidius",
+        "note": "`Katariah01` 0BBB2F, ref 0C603C, Hard"
+      },
+      {
+        "name": "Penitus Oculatus Agent (Solitude docks)",
+        "note": "Tamriel 00003C: 07DE98 ref 072774; alias `PenitusDocksAlias` on `DB11` 01EA59"
+      },
+      {
+        "name": "Penitus Oculatus Agent (Dragon Bridge outpost)",
+        "note": "`DragonBridgePenitusOculatusOutpost` 013A7B: 0D13E2 ref 0D13E3"
+      },
+      {
+        "name": "Commander Maro",
+        "note": "`DragonBridgePenitusOculatusOutpost` 013A7B, ref 04BCC5; alias `CommanderMaroAlias` on `DB06` 01EA55 (also `DB09`, `DB11`, `DBDestroy` 0934FB)"
+      },
+      {
+        "name": "Gaius Maro",
+        "note": "`DragonBridgePenitusOculatusOutpost` 013A7B, ref 044051; alias `GaiusMaroAlias` on `DB06` and `DB07`"
+      },
+      {
+        "name": "Corrupt Agent",
+        "note": "`DragonBridgePenitusOculatusOutpost` 013A7B, ref 0A030F, initially disabled; alias `Contact3Alias` on `DBrecurring` 01EA5A (The Dark Brotherhood Forever)"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "the rungs · Battlemage and its line (Arcturus, Salvarus) · 101BFC",
+        "weapons": "`PenitusGear` 10FF09",
+        "armor": "`PenitusOculatusOutfit` 0D5EB4",
+        "skin": "race default"
+      },
+      {
+        "records": "Melee1H and its line · 04C16E",
+        "weapons": "10FF09 · Imperial Shield 0135BA",
+        "armor": "0D5EB4",
+        "skin": "race default"
+      },
+      {
+        "records": "0FDABE (no shield)",
+        "weapons": "10FF09 · Torch 01D4EC",
+        "armor": "0D5EB4",
+        "skin": "race default"
+      },
+      {
+        "records": "Missile and its line (Katariah archers included) · 101BFD",
+        "weapons": "`PenitusGearWithBow` 10FF0A",
+        "armor": "`PenitusOculatusOutfitNoHelm` 0D5EB5",
+        "skin": "race default"
+      },
+      {
+        "records": "04C16F · 0B0899",
+        "weapons": "10FF0A · `LItemPenitusWeapon1H` 07D98E · `DB10PenitusTorch75` 0B089E ×2",
+        "armor": "0D5EB5",
+        "skin": "race default"
+      },
+      {
+        "records": "Captain Avidius",
+        "weapons": "Imperial Sword 0135B8",
+        "armor": "`MerchantClothesOutfit02NoHat` 09593C",
+        "skin": "race default"
+      },
+      {
+        "records": "Commander Maro",
+        "weapons": "Steel Greatsword 013987",
+        "armor": "0D5EB5",
+        "skin": "race default"
+      },
+      {
+        "records": "Gaius Maro",
+        "weapons": "Imperial Sword · Torch",
+        "armor": "0D5EB4",
+        "skin": "race default"
+      },
+      {
+        "records": "Corrupt Agent",
+        "weapons": "Imperial Sword",
+        "armor": "0D5EB4",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "PenitusOculatusOutfit",
+          "formKey": "0D5EB4:Skyrim.esm"
+        },
+        "rolls": "Penitus Oculatus Boots 0D3EA7 · Armor 0D3EA0 · Bracers 0D3EAB · Helmet 0D3EAA"
+      },
+      {
+        "list": {
+          "edid": "PenitusOculatusOutfitNoHelm",
+          "formKey": "0D5EB5:Skyrim.esm"
+        },
+        "rolls": "boots, armor, bracers"
+      },
+      {
+        "list": {
+          "edid": "MerchantClothesOutfit02NoHat",
+          "formKey": "09593C:Skyrim.esm"
+        },
+        "rolls": "Merchant Boots 04223D · Merchant Clothes 06FF45"
+      },
+      {
+        "list": {
+          "edid": "PenitusGear",
+          "formKey": "10FF09:Skyrim.esm"
+        },
+        "rolls": "all of: Imperial Sword 0135B8 · Steel Dagger 013986 · 50% Torch (`LItemTorch50` 10FAF9), plus food, drink, gold and a 10% Imperial symbol"
+      },
+      {
+        "list": {
+          "edid": "PenitusGearWithBow",
+          "formKey": "10FF0A:Skyrim.esm"
+        },
+        "rolls": "all of: Imperial Bow 013841 · Steel Dagger · ×20 arrows, each 75% (`LItemBanditWeaponArrows` 039D2F: Iron 1 · Steel 5 · Orcish 9 · Dwarven 14 · Elven 20), plus the same food, drink, gold and symbol"
+      },
+      {
+        "list": {
+          "edid": "LItemPenitusWeapon1H",
+          "formKey": "07D98E:Skyrim.esm"
+        },
+        "rolls": "Imperial Sword 1"
+      },
+      {
+        "list": {
+          "edid": "DB10PenitusTorch75",
+          "formKey": "0B089E:Skyrim.esm"
+        },
+        "rolls": "75% Torch"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Penitus Oculatus Armor, Boots, Bracers, Helmet",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Imperial Shield 0135BA",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Imperial Sword · Steel Dagger · Steel Greatsword",
+        "kind": "one-handed · two-handed",
+        "playable": true
+      },
+      {
+        "item": "Imperial Bow and the bandit arrows",
+        "kind": "bow",
+        "playable": true
+      },
+      {
+        "item": "Merchant Boots and Clothes",
+        "kind": "clothing",
+        "playable": true
+      }
+    ]
+  }
+}

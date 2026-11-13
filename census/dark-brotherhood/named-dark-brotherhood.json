@@ -1,0 +1,589 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "named-dark-brotherhood",
+  "group": "dark-brotherhood",
+  "title": "Named Dark Brotherhood",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "astrid",
+        "name": "Astrid",
+        "records": [
+          {
+            "edid": "Astrid",
+            "formKey": "01BDB4:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5
+        },
+        "target": {
+          "band": "VII",
+          "level": 50,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0 (user, 2026-09-27): Mercer and Astrid, the questline finals, 50"
+        }
+      },
+      {
+        "id": "astrid-end",
+        "name": "Astrid",
+        "records": [
+          {
+            "edid": "AstridEnd",
+            "formKey": "04D6D0:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "NordRaceAstrid",
+          "formKey": "07EAF3:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "burned, in her own race."
+      },
+      {
+        "id": "arnbjorn",
+        "name": "Arnbjorn",
+        "records": [
+          {
+            "edid": "Arnbjorn",
+            "formKey": "01BDB0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the Sanctuary family, 45–50"
+        }
+      },
+      {
+        "id": "babette",
+        "name": "Babette",
+        "records": [
+          {
+            "edid": "Babette",
+            "formKey": "01D4B7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "cicero",
+        "name": "Cicero",
+        "records": [
+          {
+            "edid": "Cicero",
+            "formKey": "01BDB1:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 40
+        },
+        "target": {
+          "band": "VI",
+          "level": 40,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept; archetype-tiers.md §6.1: Cicero 40"
+        }
+      },
+      {
+        "id": "cicero-dawnstar",
+        "name": "Cicero",
+        "records": [
+          {
+            "edid": "CiceroDawnstar",
+            "formKey": "09BCAF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 15,
+          "max": 50
+        },
+        "target": {
+          "band": "VI",
+          "level": 40,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (user, 2026-09-27): the follower Cicero, 40"
+        },
+        "note": "the follower, at the Dawnstar Sanctuary."
+      },
+      {
+        "id": "cicero-road",
+        "name": "Cicero",
+        "records": [
+          {
+            "edid": "CiceroRoad",
+            "formKey": "0550F0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "on the road."
+      },
+      {
+        "id": "festus-krex",
+        "name": "Festus Krex",
+        "records": [
+          {
+            "edid": "FestusKrex",
+            "formKey": "01BDB2:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the Sanctuary family, 45–50"
+        }
+      },
+      {
+        "id": "festus-krex-dead",
+        "name": "Festus Krex",
+        "records": [
+          {
+            "edid": "FestusKrexDead",
+            "formKey": "0E0D6F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "not placed."
+      },
+      {
+        "id": "gabriella",
+        "name": "Gabriella",
+        "records": [
+          {
+            "edid": "Gabriella",
+            "formKey": "01BDB8:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the Sanctuary family, 45–50"
+        }
+      },
+      {
+        "id": "gabriella-dead",
+        "name": "Gabriella",
+        "records": [
+          {
+            "edid": "GabriellaDead",
+            "formKey": "02FB1A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "nazir",
+        "name": "Nazir",
+        "records": [
+          {
+            "edid": "Nazir",
+            "formKey": "01C3AB:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the Sanctuary family, 45–50"
+        }
+      },
+      {
+        "id": "nazir-sanc-attack",
+        "name": "Nazir",
+        "records": [
+          {
+            "edid": "NazirSancAttack",
+            "formKey": "04DDA0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "the Sanctuary attack copy."
+      },
+      {
+        "id": "veezara",
+        "name": "Veezara",
+        "records": [
+          {
+            "edid": "Veezara",
+            "formKey": "01C3AA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the Sanctuary family, 45–50"
+        }
+      },
+      {
+        "id": "veezara-dead",
+        "name": "Veezara",
+        "records": [
+          {
+            "edid": "VeezaraDead",
+            "formKey": "02E447:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "lis",
+        "name": "Lis",
+        "records": [
+          {
+            "edid": "DBLis",
+            "formKey": "0A19FE:Skyrim.esm"
+          },
+          {
+            "edid": "DBLisDead",
+            "formKey": "0A19FF:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "FrostbiteSpiderRace",
+          "formKey": "0131F8:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "a frostbite spider."
+      },
+      {
+        "id": "initiate",
+        "name": "Dark Brotherhood Initiate",
+        "records": [
+          {
+            "edid": "DBInitiate1",
+            "formKey": "015CFA:Skyrim.esm"
+          },
+          {
+            "edid": "DBInitiate2",
+            "formKey": "015CFE:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 100
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the Initiates, 25"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The rows: no other record keeps its own level; no record uses any of them as a template. Each quest or dead copy (`AstridEnd`, `CiceroDawnstar`, `CiceroRoad`, `FestusKrexDead`, `GabriellaDead`, `NazirSancAttack`, `VeezaraDead`, `DBLisDead`) is a separate record with no template and its own level, already a row.",
+      "Lis shares the Frostbite Spider race 0131F8 with `EncFrostbiteSpider` 023AAA (no template, level 1; on *Frostbite Spider*); neither uses the other as a template.",
+      "No leveled list draws them: every record is placed."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Arnbjorn, Babette, Festus Krex, Gabriella, Nazir, Veezara, Lis",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DarkBrotherhoodSanctuary",
+              "formKey": "0AD5A1:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Cicero (`Cicero`), Astrid (`AstridEnd`), Nazir (`NazirSancAttack`), Veezara (`VeezaraDead`), Lis (`DBLisDead`)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DarkBrotherhoodSanctuary",
+              "formKey": "0AD5A1:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Gabriella (`GabriellaDead`)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DarkBrotherhoodSanctuary",
+              "formKey": "0AD5A1:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Astrid",
+        "locations": [
+          {
+            "cell": {
+              "edid": "AbandonedShackInterior",
+              "formKey": "050F1E:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Cicero (`CiceroRoad`)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "Cicero (`CiceroDawnstar`)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Dark Brotherhood Initiates",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DawnstarSanctuary",
+              "formKey": "0193EE:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Festus Krex (`FestusKrexDead`)",
+        "notPlaced": true
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Astrid",
+        "weapons": "Blade of Woe 0964C9",
+        "armor": "`DBArmorWithHood` (Shrouded Cowl, Armor, Gloves, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Arnbjorn",
+        "weapons": "Iron Battleaxe of Chills 0896BA",
+        "armor": "`DBArmorArnbjorn` (Shrouded Armor 05ABC3, short-sleeved)",
+        "skin": "race default"
+      },
+      {
+        "records": "Veezara · `VeezaraDead`",
+        "weapons": "Steel Sword · none",
+        "armor": "`DBArmorNoHood` (Shrouded Armor, Gloves, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Dark Brotherhood Initiates",
+        "weapons": "Ebony Dagger",
+        "armor": "`DBArmorWithHood`",
+        "skin": "race default"
+      },
+      {
+        "records": "Gabriella",
+        "weapons": "Steel Dagger, Iron Arrows",
+        "armor": "`DBRobesHood` (Shrouded Hood, Robes, Hand Wraps, Shoes)",
+        "skin": "race default"
+      },
+      {
+        "records": "Festus Krex · `FestusKrexDead` · `GabriellaDead`",
+        "weapons": "Iron Dagger · Iron Dagger · none",
+        "armor": "`DBRobesNoHood` (Shrouded Robes, Hand Wraps, Shoes)",
+        "skin": "race default"
+      },
+      {
+        "records": "Nazir · `NazirSancAttack`",
+        "weapons": "Scimitar · Steel Sword",
+        "armor": "`RedguardClothesOutfitDB01` (Redguard Hood, Clothes, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Cicero · `CiceroDawnstar` · `CiceroRoad`",
+        "weapons": "Ebony Dagger, gold · Ebony Dagger · Iron Dagger",
+        "armor": "`DBJesterOutfitCicero` (Cicero's Hat, Clothes, Gloves, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Babette",
+        "weapons": "none",
+        "armor": "`ChildOutfit01` (Child's Clothes, Shoes)",
+        "skin": "race default"
+      },
+      {
+        "records": "Lis",
+        "weapons": "none",
+        "armor": "`SpiderSpitOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "`AstridEnd`",
+        "weapons": "none",
+        "armor": "none",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Shrouded Armor 0D2844, Cowl 0D2842, Gloves 0D2843, Boots 0D2845",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Shrouded Armor 05ABC3 (Arnbjorn's)",
+        "kind": "heavy",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Shrouded Robes, Hood, Hand Wraps, Shoes; Redguard Hood, Clothes, Boots; Cicero's Hat, Clothes, Gloves, Boots; Shoes",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Child's Clothes 06D92C",
+        "kind": "clothing",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`MAGArmorSpiderSpit01` 025D69",
+        "kind": "clothing (skin)",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Blade of Woe 0964C9, the battleaxe, swords, daggers, Scimitar",
+        "kind": "weapons",
+        "playable": true,
+        "note": "the Blade of Woe is `CantDrop`"
+      }
+    ]
+  }
+}

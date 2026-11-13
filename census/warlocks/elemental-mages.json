@@ -154,7 +154,7 @@
               }
             ],
             "how": "template",
-            "where": "Factions → Minor Factions → *Ghosts of the Tribunal*",
+            "page": "minor-factions/ghosts-of-the-tribunal",
             "note": "through `LvlWarlockElemental` 01E7CB, spells only: no `Stats`, so they keep their own levels (Also owns its level)"
           },
           {

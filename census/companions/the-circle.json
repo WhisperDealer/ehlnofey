@@ -1,0 +1,308 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "the-circle",
+  "group": "companions",
+  "title": "The Circle",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "kodlak-whitemane",
+        "name": "Kodlak Whitemane",
+        "records": [
+          {
+            "edid": "KodlakWhitemane",
+            "formKey": "01A68E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "IV",
+          "level": 27,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.1, clamped to 10–50)"
+        },
+        "note": "Kodlak's four quest copies (`C04DeadKodlak` 0AD3A5, `C06DeadKodlak` 0DCCC0, `C06KodlaksGhost` 01720B, `MQ304Kodlak` 09700E) take his level and name through `Stats` and `BaseData`."
+      },
+      {
+        "id": "skjor",
+        "name": "Skjor",
+        "records": [
+          {
+            "edid": "Skjor",
+            "formKey": "01A690:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–50)"
+        }
+      },
+      {
+        "id": "aela-the-huntress",
+        "name": "Aela the Huntress",
+        "records": [
+          {
+            "edid": "AelaTheHuntress",
+            "formKey": "01A696:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 8,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (WD-61, user): Senior Companions 45"
+        }
+      },
+      {
+        "id": "farkas",
+        "name": "Farkas",
+        "records": [
+          {
+            "edid": "Farkas",
+            "formKey": "01A692:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 8,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (WD-61, user): Senior Companions 45"
+        }
+      },
+      {
+        "id": "vilkas",
+        "name": "Vilkas",
+        "records": [
+          {
+            "edid": "Vilkas",
+            "formKey": "01A694:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 8,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (WD-61, user): Senior Companions 45"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`KodlakWhitemane`, `Skjor`, `AelaTheHuntress`, `Farkas`, `Vilkas`: no other record keeps its own level.",
+      "Kodlak's four quest copies carry `Stats` and follow him."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Kodlak Whitemane",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WhiterunJorrvaskrBasement",
+              "formKey": "07947A:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "01A68F:Skyrim.esm"
+            },
+            "note": "Jorrvaskr living quarters"
+          },
+          {
+            "cell": {
+              "edid": "WhiterunJorrvaskr",
+              "formKey": "0165B5:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0AD3A6:Skyrim.esm"
+            },
+            "note": "copy: dead in Jorrvaskr"
+          },
+          {
+            "cell": {
+              "edid": "WhiterunWorld",
+              "formKey": "01A26F:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0DCCC1:Skyrim.esm"
+            },
+            "note": "copy: on the Skyforge pyre"
+          },
+          {
+            "cell": {
+              "edid": "YsgramorsTomb01",
+              "formKey": "015254:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "058300:Skyrim.esm"
+            },
+            "disabled": true,
+            "note": "copy: his ghost in Ysgramor's Tomb"
+          },
+          {
+            "cell": {
+              "edid": "SovngardeFogTest",
+              "formKey": "0307D2:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "098BD4:Skyrim.esm"
+            },
+            "note": "copy: Sovngarde"
+          }
+        ]
+      },
+      {
+        "name": "Skjor · Aela the Huntress · Farkas · Vilkas",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WhiterunJorrvaskrBasement",
+              "formKey": "07947A:Skyrim.esm"
+            },
+            "persistent": true,
+            "refText": "refs 01A691 · 01A697 · 01A693 · 01A695",
+            "note": "Update.esm also edits Aela's ref"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Kodlak Whitemane (and his copies)",
+        "weapons": "none in the record",
+        "armor": "`ArmorCompanionsOutfitNoHelmet` 0B3E8D",
+        "skin": "race default"
+      },
+      {
+        "records": "Skjor",
+        "weapons": "Skyforge Steel Sword 09F25C · Hide Shield 013914",
+        "armor": "`ArmorCompanionsOutfitNoHelmetNoGloves` 0B3E8C",
+        "skin": "race default"
+      },
+      {
+        "records": "Aela the Huntress",
+        "weapons": "Hunting Bow 013985 + 100 Iron Arrows 01397D · Skyforge Steel Dagger 09F25D (plus Torch 01D4EC, Whiterun gate key 0D8F0C)",
+        "armor": "`DraugrArmorForNonDraugrOutfitNoHelmet` 0EA537",
+        "skin": "race default"
+      },
+      {
+        "records": "Farkas",
+        "weapons": "Skyforge Steel Greatsword 09F25E (plus Whiterun gate key)",
+        "armor": "`ArmorSteelNoHelmetOutfit` 028B44",
+        "skin": "race default"
+      },
+      {
+        "records": "Vilkas",
+        "weapons": "no weapon in the record; Banded Iron Shield 01394B only",
+        "armor": "`ArmorCompanionsOutfitNoHelmet` 0B3E8D",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ArmorCompanionsOutfitNoHelmet",
+          "formKey": "0B3E8D:Skyrim.esm"
+        },
+        "rolls": "Wolf Armor 0CAE15 · Wolf Boots 0CEE7C · Wolf Gauntlets 0CEE7E"
+      },
+      {
+        "list": {
+          "edid": "ArmorCompanionsOutfitNoHelmetNoGloves",
+          "formKey": "0B3E8C:Skyrim.esm"
+        },
+        "rolls": "Wolf Armor · Wolf Boots"
+      },
+      {
+        "list": {
+          "edid": "DraugrArmorForNonDraugrOutfitNoHelmet",
+          "formKey": "0EA537:Skyrim.esm"
+        },
+        "rolls": "Ancient Nord Armor 018388 · Ancient Nord Gauntlets 056B17 · Ancient Nord Boots 056A9D"
+      },
+      {
+        "list": {
+          "edid": "ArmorSteelNoHelmetOutfit",
+          "formKey": "028B44:Skyrim.esm"
+        },
+        "rolls": "`ArmorSteelNoHelmetSet` 028B45 (use all): Steel Cuffed Boots 013951 or Steel Shin Boots 0F6F21 · Steel Armor 013952 or 0F6F22 · Steel Nordic Gauntlets 013953 or Steel Imperial Gauntlets 0F6F23; every entry at gate 1"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Wolf Armor 0CAE15 · Wolf Boots 0CEE7C · Wolf Gauntlets 0CEE7E",
+        "kind": "heavy, AR 31 · 12 · 12",
+        "playable": true
+      },
+      {
+        "item": "Ancient Nord Armor · Gauntlets · Boots",
+        "kind": "heavy, AR 25 · 10 · 10",
+        "playable": true
+      },
+      {
+        "item": "Steel Armor · Steel boots · Steel gauntlets",
+        "kind": "heavy, AR 31 · 12 · 12",
+        "playable": true
+      },
+      {
+        "item": "Hide Shield · Banded Iron Shield",
+        "kind": "light shield, AR 15 · heavy shield, AR 22",
+        "playable": true
+      },
+      {
+        "item": "Skyforge Steel Sword · Dagger · Greatsword · Hunting Bow · Iron Arrows",
+        "kind": "one-handed · two-handed · bow",
+        "playable": true
+      }
+    ]
+  }
+}

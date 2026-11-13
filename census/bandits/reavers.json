@@ -697,7 +697,7 @@
               }
             ],
             "how": "template",
-            "where": "Factions → Minor Factions → *Morag Tong*",
+            "page": "minor-factions/morag-tong",
             "note": "takes `Stats` and `Traits`; placed ×6 at Ashfallow Citadel"
           }
         ]
@@ -816,7 +816,7 @@
               }
             ],
             "how": "template",
-            "where": "Factions → Minor Factions → *Morag Tong*",
+            "page": "minor-factions/morag-tong",
             "note": "takes `Stats` and `Traits`; placed ×4 at Ashfallow Citadel"
           }
         ]

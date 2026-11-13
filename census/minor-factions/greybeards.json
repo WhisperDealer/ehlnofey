@@ -1,0 +1,158 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "greybeards",
+  "group": "minor-factions",
+  "title": "Greybeards",
+  "order": 7,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "arngeir",
+        "name": "Arngeir",
+        "records": [
+          {
+            "edid": "Arngeir",
+            "formKey": "02C6C7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 150
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "X",
+          "level": 150,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "in `GreybeardFaction` 02C6C8, like the other three."
+      },
+      {
+        "id": "borri",
+        "name": "Borri",
+        "records": [
+          {
+            "edid": "Borri",
+            "formKey": "02C6CE:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 100
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "X",
+          "level": 100,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "wulfgar",
+        "name": "Wulfgar",
+        "records": [
+          {
+            "edid": "Wulfgar",
+            "formKey": "02C6CA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 100
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "X",
+          "level": 100,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "einarth",
+        "name": "Einarth",
+        "records": [
+          {
+            "edid": "Einarth",
+            "formKey": "02C6CC:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 90
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "X",
+          "level": 90,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`Arngeir`, `Borri`, `Wulfgar`, `Einarth`: no other record keeps its own level."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Arngeir, Borri, Wulfgar, Einarth",
+        "note": "`HighHrothgar` 087764"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Arngeir · Borri · Wulfgar · Einarth",
+        "weapons": "none",
+        "armor": "`GreybeardOutfitWithHat` 039F21 (Greybeard's Robes, Hood, Boots)",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "GreybeardOutfitWithHat",
+          "formKey": "039F21:Skyrim.esm"
+        },
+        "rolls": "Greybeard's Robes 036A44, Greybeard's Hood 036A45, Greybeard's Boots 036A46"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Greybeard's Robes, Hood, Boots",
+        "kind": "clothing",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

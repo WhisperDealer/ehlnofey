@@ -1275,7 +1275,7 @@
               }
             ],
             "how": "template",
-            "where": "Factions → Silver Hand → *Silver Hand Leaders*",
+            "page": "silver-hand/silver-hand-leaders",
             "note": "through the wrapper `LvlBanditBoss` 03DF17, its template; takes `Stats`, `Traits` and `Inventory`"
           },
           {
@@ -1515,7 +1515,7 @@
               }
             ],
             "how": "template",
-            "where": "Factions → Dawnguard → *Common Dawnguard*",
+            "page": "dawnguard/common-dawnguard",
             "note": "from `LCharBanditBossNordM` 01A341; takes `Stats` and `Traits`"
           },
           {

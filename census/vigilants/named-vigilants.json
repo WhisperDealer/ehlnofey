@@ -1,0 +1,186 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "named-vigilants",
+  "group": "vigilants",
+  "title": "Named Vigilants",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "carcette",
+        "name": "Keeper Carcette",
+        "records": [{ "edid": "VigilantCarcette", "formKey": "0BFB55:Skyrim.esm" }],
+        "level": { "kind": "pcMult", "mult": 1, "min": 15, "max": 30 },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7 (user, 2026-09-27): Carcette 45, the Hall's keeper above her 35s"
+        }
+      },
+      {
+        "id": "tyranus",
+        "name": "Vigilant Tyranus",
+        "records": [{ "edid": "Tyranus", "formKey": "0A733B:Skyrim.esm" }],
+        "level": { "kind": "pcMult", "mult": 1, "min": 6, "max": 15 },
+        "flags": ["Essential"],
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: the Vigilants' band (bands-of-power.md: Experienced); archetype-tiers.md §7.0's level-25 rule would give 15 (III)"
+        }
+      },
+      {
+        "id": "tolan",
+        "name": "Vigilant Tolan",
+        "records": [
+          { "edid": "DLC1VigilantTolan", "formKey": "00352D:Dawnguard.esm" },
+          { "edid": "DLC1VQ01VigilantTolanCorpse", "formKey": "00F4B0:Dawnguard.esm" }
+        ],
+        "level": { "kind": "pcMult", "mult": 1, "min": 15, "max": 30 },
+        "target": {
+          "band": "VI",
+          "level": 35,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7 (user, 2026-09-27): Tolan 35"
+        },
+        "note": "the corpse carries `Stats` and follows Tolan."
+      },
+      {
+        "id": "adalvald",
+        "name": "Vigilant Adalvald",
+        "records": [{ "edid": "DLC1VigilantAdalvald", "formKey": "00FB33:Dawnguard.esm" }],
+        "level": { "kind": "template", "value": 9, "from": { "edid": "EncVigilantOfStendarr02NordM02", "formKey": "10C472:Skyrim.esm" } },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: the Vigilants' band (bands-of-power.md: Experienced); he follows a rung-02 leaf (9, II), which the list pin does not move"
+        },
+        "note": "aggression None."
+      },
+      {
+        "id": "azarain",
+        "name": "Azarain",
+        "records": [{ "edid": "ccMTYSSE002_Azir", "formKey": "00095C:ccmtysse002-ve.esl" }],
+        "level": { "kind": "fixed", "value": 19 },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: the Vigilants' band (bands-of-power.md: Experienced); a kept fixed level would leave him at 19 (III)"
+        },
+        "note": "uses the rung-01 leaf `EncVigilantOfStendarr01DarkElfF` 10C44E as his template but not for `Stats`."
+      },
+      {
+        "id": "vigilant-enforcer",
+        "name": "Vigilant Enforcer",
+        "records": [{ "edid": "ccMTYSSE002_Enforcer", "formKey": "000820:ccmtysse002-ve.esl" }],
+        "level": { "kind": "fixed", "value": 25 },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: the Vigilants' band (bands-of-power.md: Experienced); a kept fixed level would leave it at 25 (IV)"
+        }
+      },
+      {
+        "id": "moric-sidrey",
+        "name": "Moric Sidrey",
+        "records": [{ "edid": "DLC1DunRuunvaldMoric", "formKey": "019582:Dawnguard.esm" }],
+        "level": { "kind": "template", "value": 7, "from": { "edid": "EncForsworn02BossMelee1HBretonM01", "formKey": "0442D7:Skyrim.esm" } },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: the Vigilants' band (bands-of-power.md: Experienced); he borrows the Forsworn Briarheart rung 02 (7), whose census target is VI 38"
+        },
+        "note": "borrows his level from the Forsworn: he takes `Stats` from the Briarheart leaf `EncForsworn02BossMelee1HBretonM01` 0442D7, which takes it from `EncForsworn02TemplateBossMelee` 04430B (level 7), so changing that Forsworn template changes him. Moved here from Uncategorised → *Forsworn Level Borrowers* (user, 2026-10-03)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level. Azarain uses the rung-01 leaf `EncVigilantOfStendarr01DarkElfF` 10C44E as his template but not for `Stats`, so changing rung 01 (on *Common Vigilants*) does not move him.",
+      "`DLC1VQ01VigilantTolanCorpse` carries `Stats` and follows Tolan; Adalvald follows `EncVigilantOfStendarr02NordM02`; Moric follows the Forsworn Briarheart template, and the records that keep their own level beside `EncForsworn02TemplateBossMelee` are on Forsworn → *Forsworn Briarheart*."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Keeper Carcette",
+        "locations": [{ "cell": { "edid": "HallOfTheVigilant01", "formKey": "0C7348:Skyrim.esm" }, "refText": "1 ref" }]
+      },
+      {
+        "name": "Vigilant Tyranus",
+        "locations": [{ "cell": { "edid": "MarkarthSilverBloodInn", "formKey": "016DFE:Skyrim.esm" }, "refText": "1 ref" }],
+        "quest": "`DA10` 022F08"
+      },
+      {
+        "name": "Vigilant Tolan",
+        "locations": [
+          { "cell": { "edid": "DLC1DawnguardHQ01", "formKey": "001DBA:Dawnguard.esm" }, "refText": "1 ref" },
+          { "cell": { "edid": "DLC1DimHollowCrypt01", "formKey": "000EB8:Dawnguard.esm" }, "refText": "1 ref", "note": "the corpse" }
+        ],
+        "quest": "`DLC1HunterBaseIntro`, `DLC1VQ01`, `DLC1VQ02`"
+      },
+      {
+        "name": "Vigilant Adalvald",
+        "locations": [{ "cell": { "edid": "DLC1DimHollowCrypt02", "formKey": "000EB7:Dawnguard.esm" }, "refText": "1 ref" }],
+        "quest": "`DLC1VQ01`"
+      },
+      {
+        "name": "Azarain",
+        "locations": [{ "cell": { "label": "Tamriel persistent" }, "refText": "1 ref", "note": "placed by ccmtysse002-ve.esl" }]
+      },
+      {
+        "name": "Vigilant Enforcer",
+        "locations": [{ "cell": { "edid": "DawnstarQuicksilverMine", "formKey": "02C779:Skyrim.esm" }, "refText": "1 ref", "note": "placed by ccmtysse002-ve.esl" }]
+      },
+      {
+        "name": "Moric Sidrey",
+        "locations": [{ "cell": { "edid": "DLC1Ruunvald02", "formKey": "007066:Dawnguard.esm" }, "ref": { "formKey": "013D16:Dawnguard.esm" }, "note": "Ruunvald; LevelModifier Easy" }]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      { "records": "Keeper Carcette · Vigilant Tolan (both records)", "weapons": "`LItemEnchWeaponWarhammer` 089931", "armor": "`VigilantCarcetteOutfit` 10BFEE, plus Amulet of Stendarr 0CC844 in inventory", "skin": "race default" },
+      { "records": "Vigilant Tyranus", "weapons": "`LItemWeaponMace` 016577", "armor": "`DA10TyranusOutfit` 0DC2A6", "skin": "race default" },
+      { "records": "Vigilant Adalvald", "weapons": "none", "armor": "`DLC1VigilantAdalvaldOutfit` 00FBF4:Dawnguard.esm", "skin": "race default" },
+      { "records": "Azarain", "weapons": "`LItemWeaponMace`", "armor": "`ccMTYSSE002_VigilantOfStendarrOutfit` 00095D:ccmtysse002-ve.esl", "skin": "race default" },
+      { "records": "Vigilant Enforcer", "weapons": "`LItemWeaponMace`", "armor": "`ccMTYSSE002_VigilantOfStendarrOutfitEnforcer` 000967:ccmtysse002-ve.esl", "skin": "race default" },
+      { "records": "Moric Sidrey", "weapons": "Pickaxe 0E3C16 · Torch 01D4EC", "armor": "`DLC1RuunvaldMoricOutfit` 019583:Dawnguard.esm", "skin": "race default" }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      { "list": { "edid": "VigilantCarcetteOutfit", "formKey": "10BFEE:Skyrim.esm" }, "rolls": "Apprentice Robes of Restoration 10D681 · Steel Plate Boots 01395B · Steel Plate Gauntlets 01395D" },
+      { "list": { "edid": "DA10TyranusOutfit", "formKey": "0DC2A6:Skyrim.esm" }, "rolls": "Apprentice Robes of Restoration · Apprentice Hood 10DD3B · Boots 06B46C · Amulet of Stendarr" },
+      { "list": { "edid": "DLC1VigilantAdalvaldOutfit", "formKey": "00FBF4:Dawnguard.esm" }, "rolls": "Amulet of Stendarr · `LItemVigilantHeavyBoots` 10BFF2 (Steel Cuffed 1 · Steel Plate 18) · Ragged Trousers 08F19A · Prisoner's Cuffs 103941" },
+      { "list": { "edid": "DLC1RuunvaldMoricOutfit", "formKey": "019583:Dawnguard.esm" }, "rolls": "Amulet of Stendarr 0CC844 · `LItemVigilantHeavyBoots` 10BFF2 · `LItemVigilantHeavyGauntlets50` 10BFF3 · `LItemVigilantRobes` 10C45F" },
+      { "list": { "edid": "LItemVigilantHeavyGauntlets50", "formKey": "10BFF3:Skyrim.esm" }, "gate": "every gate ≤ player", "rolls": "50% none; `SublistArmorSteelGauntletsVariants` 0F6F27 (Steel Nordic 013953 or Steel Imperial 0F6F23 Gauntlets) at 1, 7, 8, 9 · Steel Plate Gauntlets 01395D at 15–18, 20–23" },
+      { "list": { "edid": "LItemVigilantRobes", "formKey": "10C45F:Skyrim.esm" }, "rolls": "Novice Robes of Restoration 10D66B · Novice Robes of Alteration 10D669 (both at 1)" },
+      { "list": { "edid": "ccMTYSSE002_VigilantOfStendarrOutfit", "formKey": "00095D:ccmtysse002-ve.esl" }, "rolls": "Amulet of Stendarr · Vigil Veteran Armor 000D7B · Boots 000D7A · Gauntlets 000D7C · Open Helmet 000D7D (ccmtysse002-ve.esl)" },
+      { "list": { "edid": "ccMTYSSE002_VigilantOfStendarrOutfitEnforcer", "formKey": "000967:ccmtysse002-ve.esl" }, "rolls": "Amulet of Stendarr · Vigil Enforcer Armor 000D61 · Boots 000D63 · Gauntlets 000D62 · Helmet 000D65 (ccmtysse002-ve.esl)" },
+      { "list": { "edid": "LItemEnchWeaponWarhammer", "formKey": "089931:Skyrim.esm" }, "gate": "every gate ≤ player", "rolls": "an enchanted warhammer: Iron (1) · Steel (4) · Orcish (7) · Dwarven (13) · Elven (20) · Glass (28) · Ebony (37) · Daedric (47)", "levels": [1, 4, 7, 13, 20, 28, 37, 47] },
+      { "list": { "edid": "LItemWeaponMace", "formKey": "016577:Skyrim.esm" }, "rolls": "Iron ×3 (1) · Steel (2) · Orcish (6) · Dwarven (12) · Elven (19) · Glass (27) · Ebony (36) · Daedric (46)", "levels": [1, 2, 6, 12, 19, 27, 36, 46] }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      { "item": "Apprentice Robes of Restoration · Apprentice Hood · Boots 06B46C · Ragged Trousers · Amulet of Stendarr", "kind": "clothing (robes, hood and amulet enchanted)", "playable": true },
+      { "item": "Novice Robes of Restoration · Novice Robes of Alteration", "kind": "clothing, enchanted", "playable": true },
+      { "item": "Prisoner's Cuffs 103941", "kind": "clothing", "playable": false, "note": "`NonPlayable`" },
+      { "item": "Steel Cuffed Boots · Steel Plate Boots · Gauntlets; Steel Nordic and Steel Imperial Gauntlets", "kind": "heavy", "playable": true },
+      { "item": "Vigil Veteran Armor · Boots · Gauntlets · Open Helmet; Vigil Enforcer Armor · Boots · Gauntlets · Helmet (ccmtysse002-ve.esl)", "kind": "heavy, AR 40 · 14 · 14 · 17", "playable": true },
+      { "item": "every weapon above; Pickaxe · Torch", "kind": "one-handed, two-handed", "playable": true }
+    ]
+  }
+}

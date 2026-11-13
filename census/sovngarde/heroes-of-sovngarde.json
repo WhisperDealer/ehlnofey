@@ -1,0 +1,311 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "heroes-of-sovngarde",
+  "group": "sovngarde",
+  "title": "Heroes of Sovngarde",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "tsun",
+        "name": "Tsun",
+        "records": [
+          {
+            "edid": "Tsun",
+            "formKey": "04F828:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 10,
+          "max": 100
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.2, clamped to 10–100)"
+        },
+        "flags": [
+          "Essential",
+          "Invulnerable"
+        ]
+      },
+      {
+        "id": "torygg",
+        "name": "High King Torygg",
+        "records": [
+          {
+            "edid": "MQ304Torygg",
+            "formKey": "0EA578:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "svaknir",
+        "name": "Svaknir",
+        "records": [
+          {
+            "edid": "MQ304Svaknir",
+            "formKey": "0EA57A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 10
+        },
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 5–10)"
+        },
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "ysgramor",
+        "name": "Ysgramor",
+        "records": [
+          {
+            "edid": "MQ305Ysgramor",
+            "formKey": "098BD1:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 50
+        },
+        "target": {
+          "band": "VII",
+          "level": 50,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "hero-of-sovngarde",
+        "name": "Hero of Sovngarde",
+        "records": [
+          {
+            "edid": "MQ305SovngardeHeroMale",
+            "formKey": "096FFB:Skyrim.esm"
+          },
+          {
+            "edid": "MQ305SovngardeHeroMale3",
+            "formKey": "108432:Skyrim.esm"
+          },
+          {
+            "edid": "MQ305SovngardeHeroFemale",
+            "formKey": "0EA720:Skyrim.esm"
+          },
+          {
+            "edid": "MQ305SovngardeHeroFemale3",
+            "formKey": "108430:Skyrim.esm"
+          },
+          {
+            "edid": "MQ305SovngardeHeroFemale4",
+            "formKey": "108431:Skyrim.esm"
+          },
+          {
+            "edid": "MQ305SovngardeBard",
+            "formKey": "108421:Skyrim.esm"
+          },
+          {
+            "edid": "MQ305SovngardeBardDrummer",
+            "formKey": "1092D1:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 30
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "each its own level. The unnamed hero copies `MQ305SovngardeHeroMale2` 0EDF6C, `…Male4` 108433, `…MaleMage` 0FBA5B, `…MaleMage2` 0FBA5C (`Stats` from 096FFB) and `MQ305SovngardeHeroFemale2` 0EDF6D, `…FemaleMage` 0FBA5A (`Stats` from 0EA720) inherit their level. Moved here from Uncategorised → *Unfiled NPCs* (user, 2026-10-03).",
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "named-heroes",
+        "name": "Erlendr · Hunroor · Jurgen Windcaller · Nikulas · Olaf One-Eye · Ulfgar the Unending",
+        "records": [
+          {
+            "edid": "MQ305Erlendr",
+            "formKey": "0EA71F:Skyrim.esm"
+          },
+          {
+            "edid": "MQ305Hunroor",
+            "formKey": "0EA71D:Skyrim.esm"
+          },
+          {
+            "edid": "MQ305JurgenWindcaller",
+            "formKey": "0F1A49:Skyrim.esm"
+          },
+          {
+            "edid": "MQ305Nikulas",
+            "formKey": "0EA71E:Skyrim.esm"
+          },
+          {
+            "edid": "MQ305Olaf",
+            "formKey": "0F1A4A:Skyrim.esm"
+          },
+          {
+            "edid": "MQ305Ulfgar",
+            "formKey": "0EA71C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 30,
+          "from": {
+            "edid": "MQ305SovngardeHeroMale",
+            "formKey": "096FFB:Skyrim.esm"
+          }
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "follows `MQ305SovngardeHeroMale`, whose fixed vanilla level is kept (CLAUDE.md, decisions carried over)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`MQ304Svaknir` 0EA57A uses `MS05_dunDeadMensRespite_Svaknir` 016C87 (PC×0.75 [0–∞], on World → *Hjaalmarch Countryside*) as its template but not for `Stats`: changing either does not move the other.",
+      "`MQ305SovngardeHeroMale` 096FFB: the six named heroes and four unnamed copies take `Stats` from it, so changing it changes them; no other record keeps its own level beside it. `MQ305SovngardeHeroFemale` 0EA720: two copies follow it; likewise.",
+      "The other rows: no other record keeps its own level beside them."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Tsun",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Sovngarde",
+              "formKey": "02EE41:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "04F829:Skyrim.esm"
+            },
+            "note": "worldspace"
+          }
+        ],
+        "quest": "alias `Tsun` of `MQ304` 046EF1, `MQ305` 046EF2 and `MQ306` 046EF3"
+      },
+      {
+        "name": "High King Torygg",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Sovngarde",
+              "formKey": "02EE41:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0EA579:Skyrim.esm"
+            },
+            "note": "worldspace"
+          }
+        ]
+      },
+      {
+        "name": "Svaknir",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Sovngarde",
+              "formKey": "02EE41:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0EA57D:Skyrim.esm"
+            },
+            "disabled": true,
+            "note": "worldspace"
+          }
+        ],
+        "quest": "script property of `MQ304` 046EF1"
+      },
+      {
+        "name": "Ysgramor",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Sovngarde01",
+              "formKey": "095C44:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "098BD2:Skyrim.esm"
+            },
+            "note": "Hall of Valor"
+          }
+        ],
+        "quest": "alias `Ysgramor` of `MQ304` 046EF1"
+      },
+      {
+        "name": "Hero of Sovngarde",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Sovngarde01",
+              "formKey": "095C44:Skyrim.esm"
+            },
+            "refText": "15 refs",
+            "note": "Hall of Valor"
+          }
+        ]
+      },
+      {
+        "name": "Erlendr · Hunroor · Jurgen Windcaller · Nikulas · Olaf One-Eye · Ulfgar the Unending",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Sovngarde01",
+              "formKey": "095C44:Skyrim.esm"
+            },
+            "refText": "one ref each",
+            "note": "Hall of Valor"
+          }
+        ]
+      }
+    ]
+  }
+}

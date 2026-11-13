@@ -1,0 +1,303 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "common-dawnguard",
+  "group": "dawnguard",
+  "title": "Common Dawnguard",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "dawnguard",
+        "name": "Dawnguard",
+        "records": [
+          { "edid": "EncDawnguard01TemplateMelee", "formKey": "01421F:Dawnguard.esm" },
+          { "edid": "EncDawnguard02TemplateMelee", "formKey": "014220:Dawnguard.esm" },
+          { "edid": "EncDawnguard03TemplateMelee", "formKey": "014221:Dawnguard.esm" },
+          { "edid": "EncDawnguard04TemplateMelee", "formKey": "014222:Dawnguard.esm" },
+          { "edid": "EncDawnguard05TemplateMelee", "formKey": "014223:Dawnguard.esm" },
+          { "edid": "EncDawnguard06TemplateMelee", "formKey": "014224:Dawnguard.esm" }
+        ],
+        "level": { "kind": "fixed", "value": 1, "also": [5, 9, 14, 19, 25] },
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 and §3.4 (user, 2026-09-27): every Dawnguard list pinned to rung 06, raised 25 → 38; bands-of-power.md: the Dawnguard, Elite"
+        },
+        "note": "each rung is a template plus seven race variants (`EncDawnguard0NMelee1H` ImperialF/M, NordF/M, OrcM, RedguardF/M) that inherit its level and inventory; every wrapper that keeps the name Dawnguard (`DLC1LvlDawnguard…`, their `_NoCrime` copies, `DLC1_WESC_DawnguardNoCrime` 013805, the three `DLC1WEDB03DLVLDawnGuard…`) is a row-1 Dawnguard."
+      },
+      {
+        "id": "dawnguard-scout",
+        "name": "Dawnguard Scout",
+        "records": [{ "edid": "DLC1RadiantScoutHunter", "formKey": "0041D4:Dawnguard.esm" }],
+        "level": { "kind": "list", "from": { "edid": "DLC1LvlDawnguardMissile", "formKey": "003261:Dawnguard.esm" }, "rungs": [1, 5, 9, 14, 19, 25] },
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 and §3.4 (user, 2026-09-27): draws the Dawnguard ladder, pinned to 38"
+        }
+      },
+      {
+        "id": "dawnguard-vampire-hunter",
+        "name": "Dawnguard Vampire Hunter",
+        "records": [{ "edid": "DLC1_WESC05_DawnguardHunter", "formKey": "01993C:Dawnguard.esm" }],
+        "level": { "kind": "list", "from": { "edid": "LCharDawnguardMelee1H", "formKey": "014281:Dawnguard.esm" }, "rungs": [1, 5, 9, 14, 19, 25] },
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 and §3.4 (user, 2026-09-27): draws the Dawnguard ladder, pinned to 38"
+        }
+      },
+      {
+        "id": "hakar",
+        "name": "Dawnguard Novice Hakar",
+        "records": [{ "edid": "DLC1_WESC06_LvlDawnguardFleeing", "formKey": "003512:Dawnguard.esm" }],
+        "level": { "kind": "list", "from": { "edid": "DLC1LvlDawnguardMelee1H", "formKey": "014282:Dawnguard.esm" }, "rungs": [1, 5, 9, 14, 19, 25] },
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 and §3.4 (user, 2026-09-27): draws the Dawnguard ladder, pinned to 38"
+        }
+      },
+      {
+        "id": "saliah",
+        "name": "Saliah",
+        "records": [{ "edid": "DLC1_WESC07_Outrider", "formKey": "01993D:Dawnguard.esm" }],
+        "level": { "kind": "list", "from": { "edid": "LCharDawnguardMelee1H", "formKey": "014281:Dawnguard.esm" }, "rungs": [1, 5, 9, 14, 19, 25] },
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 and §3.4 (user, 2026-09-27): draws the Dawnguard ladder, pinned to 38"
+        }
+      },
+      {
+        "id": "lynoit",
+        "name": "Lynoit",
+        "records": [{ "edid": "DLC1_WESC08_LvlDawnguardSlain", "formKey": "01993E:Dawnguard.esm" }],
+        "level": { "kind": "list", "from": { "edid": "LCharDawnguardMelee1H", "formKey": "014281:Dawnguard.esm" }, "rungs": [1, 5, 9, 14, 19, 25] },
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 and §3.4 (user, 2026-09-27): draws the Dawnguard ladder, pinned to 38"
+        }
+      },
+      {
+        "id": "traveling-merchant",
+        "name": "Traveling Merchant",
+        "records": [{ "edid": "DLC1RadiantDisguisedHunterMerchant", "formKey": "004C24:Dawnguard.esm" }],
+        "level": { "kind": "list", "from": { "edid": "DLC1LvlDawnguardMissile", "formKey": "003261:Dawnguard.esm" }, "rungs": [1, 5, 9, 14, 19, 25] },
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 and §3.4 (user, 2026-09-27): draws the Dawnguard ladder, pinned to 38"
+        }
+      },
+      {
+        "id": "traveling-bard",
+        "name": "Traveling Bard",
+        "records": [{ "edid": "DLC1RadiantDisguisedHunterBard", "formKey": "004C25:Dawnguard.esm" }],
+        "level": { "kind": "list", "from": { "edid": "DLC1LvlDawnguardMissile", "formKey": "003261:Dawnguard.esm" }, "rungs": [1, 5, 9, 14, 19, 25] },
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 and §3.4 (user, 2026-09-27): draws the Dawnguard ladder, pinned to 38"
+        }
+      },
+      {
+        "id": "traveling-pilgrim",
+        "name": "Traveling Pilgrim",
+        "records": [{ "edid": "DLC1RadiantDisguisedHunterPilgrim", "formKey": "004C26:Dawnguard.esm" }],
+        "level": { "kind": "list", "from": { "edid": "DLC1LvlDawnguardMelee1H", "formKey": "014282:Dawnguard.esm" }, "rungs": [1, 5, 9, 14, 19, 25] },
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 and §3.4 (user, 2026-09-27): draws the Dawnguard ladder, pinned to 38"
+        }
+      },
+      {
+        "id": "dawnguard-hunter",
+        "name": "Dawnguard Hunter",
+        "records": [{ "edid": "DLC1WELvlDawnGuardHunter", "formKey": "00F7EF:Dawnguard.esm" }],
+        "level": { "kind": "list", "from": { "edid": "LCharBanditBossNordM", "formKey": "01A341:Skyrim.esm" }, "rungs": [6, 10, 16, 21, 28] },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: the Dawnguard's band (bands-of-power.md); it borrows the bandit boss ladder, which the rebuild pins to 28 (V)"
+        },
+        "note": "borrows its level from the bandit chiefs: it takes only `Stats` from `LCharBanditBossNordM` 01A341, so it rolls the bandit boss ladder 6 · 10 · 16 · 21 · 28 (gates 1 · 5 · 9 · 14 · 19 · 25 · 29). Changing that ladder changes it. Moved here from Uncategorised → *Bandit Level Borrowers* (user, 2026-10-03)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level.",
+      "The six rungs take `EncDawnguard00Template` (which follows `DLC1EncHunterTemplate` 00336F:Dawnguard.esm) as their template but not for `Stats`, so changing that template (on *Dawnguard Members*) does not move them.",
+      "The Dawnguard Hunter carries `Stats` and follows the bandit boss ladder; the records that keep their own level beside that ladder (the CC Bounty Hunter, Kyr, Fjola, the `WEDL05` Thug) are listed on Bandits → *Bandit Chiefs*.",
+      "Every other Dawnguard record (the seven race variants of each rung, every `DLC1LvlDawnguard…` wrapper and its `_NoCrime` copy, the `DLC1WEDB03DLVLDawnGuard…` three) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": { "edid": "LCharDawnguardMelee1H", "formKey": "014281:Dawnguard.esm" },
+        "gate": "every gate ≤ player",
+        "entries": [
+          { "at": 1, "label": "`SubCharDawnguard01Melee1H` 01422D" },
+          { "at": 5, "label": "`SubCharDawnguard02Melee1H` 014254" },
+          { "at": 9, "label": "`SubCharDawnguard03Melee1H` 01427D" },
+          { "at": 14, "label": "`SubCharDawnguard04Melee1H` 01427E" },
+          { "at": 19, "label": "`SubCharDawnguard05Melee1H` 01427F" },
+          { "at": 25, "label": "`SubCharDawnguard06Melee1H` 014280" }
+        ],
+        "note": "each sub-list rolls one of the rung's seven race variants",
+        "owner": "`DLC1LvlDawnguardMelee1H` 014282 (Bloodchill Cavern `ccEEJSSE005Interior01` 002FD1:Update.esm ×2, cceejsse005-cave.esm; quest `DLC1WE08`) · `…Melee1H_NoCrime` 013EC3 (`DLC1AncestorGladePortcullis` 0048D0 ×1) · `DLC1LvlDawnguardMissile` 003261 (Bloodchill Cavern ×1; quest `DLC1WE08` ×2) · `…Missile_NoCrime` 013EC7 (`DLC1ForebearsHoldout` 002F64 persistent ×1, `DLC1ForebearsHoldoutEnd` 002FB7 ×1, `DLC1AncestorGladePortcullis` ×2) · Dawnguard Scout (quest `DLC1ScoutPatrol`) · Dawnguard Vampire Hunter and `DLC1_WESC_DawnguardNoCrime` ×2 (quest `DLC1_WESC05`) · Hakar (`DLC1_WESC06`) · Saliah (`DLC1_WESC07`) · Lynoit (`DLC1_WESC08`) · `DLC1WEDB03DLVLDawnGuardNordM` 014286 · `…EvenTonedM` 01428F · `…EvenTonedF` 01428E (quest `DLC1WEDB03`) · the three travellers (quest `DLC1Radiant`)"
+      },
+      {
+        "list": { "edid": "LCharDawnguardMelee1HNordF", "formKey": "01A11B:Dawnguard.esm" },
+        "gate": "every gate ≤ player",
+        "entries": [
+          { "at": 1, "label": "`EncDawnguard01Melee1HNordF`" },
+          { "at": 5, "label": "`EncDawnguard02Melee1HNordF`" },
+          { "at": 9, "label": "`EncDawnguard03Melee1HNordF`" },
+          { "at": 14, "label": "`EncDawnguard04Melee1HNordF`" },
+          { "at": 19, "label": "`EncDawnguard05Melee1HNordF`" },
+          { "at": 25, "label": "`EncDawnguard06Melee1HNordF`" }
+        ],
+        "owner": "`DLC1LvlDawnguardMelee1HNordF` 01A11D → `…_NoCrime` 013EC4 (`DLC1ForebearsHoldout` persistent ×1, `DLC1AncestorGladePortcullis` ×1)"
+      },
+      {
+        "list": { "edid": "LCharDawnguardMelee1HRedguardM", "formKey": "01A11C:Dawnguard.esm" },
+        "gate": "every gate ≤ player",
+        "entries": [
+          { "at": 1, "label": "`EncDawnguard01Melee1HRedguardM`" },
+          { "at": 5, "label": "`EncDawnguard02Melee1HRedguardM`" },
+          { "at": 9, "label": "`EncDawnguard03Melee1HRedguardM`" },
+          { "at": 14, "label": "`EncDawnguard04Melee1HRedguardM`" },
+          { "at": 19, "label": "`EncDawnguard05Melee1HRedguardM`" },
+          { "at": 25, "label": "`EncDawnguard06Melee1HRedguardM`" }
+        ],
+        "owner": "`DLC1LvlDawnguardMelee1HRedguardM` 01A11F → `…_NoCrime` 013EC6 (`DLC1ForebearsHoldoutEnd` ×1, `DLC1AncestorGladePortcullis` ×1)"
+      },
+      {
+        "list": { "edid": "LCharDawnguardMelee1HOrcM", "formKey": "01A11A:Dawnguard.esm" },
+        "gate": "every gate ≤ player",
+        "entries": [
+          { "at": 1, "label": "`EncDawnguard01Melee1HOrcM`" },
+          { "at": 5, "label": "`EncDawnguard02Melee1HOrcM`" },
+          { "at": 9, "label": "`EncDawnguard03Melee1HOrcM`" },
+          { "at": 14, "label": "`EncDawnguard04Melee1HOrcM`" },
+          { "at": 19, "label": "`EncDawnguard05Melee1HOrcM`" },
+          { "at": 25, "label": "`EncDawnguard06Melee1HOrcM`" }
+        ],
+        "owner": "`DLC1LvlDawnguardMelee1HOrcM` 01A11E → `…_NoCrime` 013EC5; neither is placed or drawn"
+      },
+      {
+        "list": { "edid": "LCharBanditBossNordM", "formKey": "01A341:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "note": "the Nord bandit boss leaves (6 · 10 · 16 · 21 · 28); documented in full on Bandits → *Bandit Chiefs*",
+        "owner": "the Dawnguard Hunter (`Stats` only); the rest on Bandits → *Bandit Chiefs*"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Dawnguard Hunter",
+        "notPlaced": true,
+        "note": "no list or quest draws it"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Every rung, its variants and every wrapper that inherits inventory (`DLC1LvlDawnguardMelee1H` and its race and `_NoCrime` copies, Dawnguard Vampire Hunter, Saliah, Lynoit, `DLC1_WESC_DawnguardNoCrime`, the `DLC1WEDB03` three)",
+        "weapons": "`LItemDawnguardWeaponAny` 01421C",
+        "armor": "`DawnguardArmorMelee` 014218",
+        "skin": "race default"
+      },
+      {
+        "records": "`DLC1LvlDawnguardMissile` · `…_NoCrime` · Dawnguard Scout",
+        "weapons": "Crossbow 000801 + 8 Steel Bolts 000BB3 · Dawnguard War Axe 00D098",
+        "armor": "`DawnguardArmorMelee`",
+        "skin": "race default"
+      },
+      {
+        "records": "Dawnguard Novice Hakar",
+        "weapons": "Iron Dagger 01397E (plus `DLC1_WESC_DawnguardCacheKey` 0034FB)",
+        "armor": "`DLC1_WESC06_DawnguardOutfit` 00351C",
+        "skin": "race default"
+      },
+      {
+        "records": "Traveling Merchant · Traveling Bard · Traveling Pilgrim",
+        "weapons": "`DLC1LItemDisguisedHunterInventory` 011F3A",
+        "armor": "`MerchantClothesOutfit01` 045C34 · `MerchantClothesOutfit02` 095921 · `BeggarWithHatOutfit` 028B61",
+        "skin": "race default"
+      },
+      {
+        "records": "Dawnguard Hunter",
+        "weapons": "`DLC1LItemWeaponDawnguardCrossbowLoot75Gated` 00D0EC (no bolts)",
+        "armor": "`DLC1OutfitDawnguard01Heavy` 0050BE",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": { "edid": "DawnguardArmorMelee", "formKey": "014218:Dawnguard.esm" },
+        "rolls": "one cuirass (`DLC1LItemDawnguardCuirass` 01421A: Dawnguard Heavy Armor 00F3F7 · 00F3FA or Dawnguard Armor 00F3FB · 00F402 · 00F404) · one pair of boots (`DLC1LItemDawnguardBoots` 014219: Boots 00F400 or Heavy Boots 014757) · 50% gauntlets (`DLC1LItemDawnguardGauntlets` 01421B: Gauntlets 00F3FE or Heavy Gauntlets 014758) · 75% helmet (`DLC1DawnGuardHelmet75` 0126B4: Full Helmet 0050D0 or Helmet 01989E); every entry at gate 1, so light and heavy are an even roll"
+      },
+      {
+        "list": { "edid": "LItemDawnguardWeaponAny", "formKey": "01421C:Dawnguard.esm" },
+        "rolls": "Dawnguard War Axe 00D098 or Dawnguard Warhammer 00DD55 (gate 1)"
+      },
+      {
+        "list": { "edid": "DLC1_WESC06_DawnguardOutfit", "formKey": "00351C:Dawnguard.esm" },
+        "rolls": "Dawnguard Heavy Armor 00F3F7 · Dawnguard Boots 00F400 · Amulet of Stendarr 0CC844"
+      },
+      {
+        "list": { "edid": "DLC1LItemDisguisedHunterInventory", "formKey": "011F3A:Dawnguard.esm" },
+        "rolls": "use all: 3 Steel Bolts · Dawnguard War Axe · one enchanted crossbow (`DLC1LItemEnchCrossbow` 00D0EA: fire, magicka, shock, soul trap or turn undead, tiers at 1 · 5 · 7) · one enchanted ring (`LItemEnchRingAll` 100E8A)"
+      },
+      {
+        "list": { "edid": "DLC1LItemWeaponDawnguardCrossbowLoot75Gated", "formKey": "00D0EC:Dawnguard.esm" },
+        "rolls": "Crossbow (1, 7) or `DLC1LitemEnchDwarvenCrossbowGated` 00D0E4 (17, 27); that sub-list has chance none 100%, so only the plain Crossbow ever drops (it would hold enchanted Dwarven Crossbows at 20 · 22 · 25)"
+      },
+      {
+        "list": { "edid": "MerchantClothesOutfit01", "formKey": "045C34:Skyrim.esm" },
+        "rolls": "with `…02` 095921 and `BeggarWithHatOutfit` 028B61: merchant clothes 04223C or 06FF45 · Boots 04223D · Hat 04223B; Ragged Robes 013105 · Ragged Boots 013106 · Ragged Cap 013104"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      { "item": "Dawnguard Heavy Armor 00F3F7 · 00F3FA (Dawnguard.esm)", "kind": "heavy body, AR 34", "playable": true },
+      { "item": "Dawnguard Armor 00F3FB · 00F402 · 00F404 (Dawnguard.esm)", "kind": "light body, AR 29", "playable": true },
+      { "item": "Dawnguard Heavy Boots 014757 · Heavy Gauntlets 014758", "kind": "heavy, AR 13", "playable": true },
+      { "item": "Dawnguard Boots 00F400 · Gauntlets 00F3FE", "kind": "light, AR 8", "playable": true },
+      { "item": "Dawnguard Full Helmet 0050D0 · Dawnguard Helmet 01989E", "kind": "heavy head, AR 18 · light head, AR 16", "playable": true },
+      { "item": "Amulet of Stendarr 0CC844 · merchant and beggar clothes", "kind": "enchanted amulet · clothing", "playable": true },
+      { "item": "Dawnguard War Axe 00D098 · Iron Dagger · Dawnguard Warhammer 00DD55 · Crossbow 000801 and the enchanted crossbows", "kind": "one-handed · two-handed · crossbow", "playable": true }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "husky",
+  "group": "dawnguard",
+  "title": "Husky",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "husky",
+        "name": "Husky",
+        "records": [{ "edid": "DLC1EncHusky", "formKey": "018B34:Dawnguard.esm" }],
+        "level": { "kind": "fixed", "value": 2 },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: a dog, banded at its vanilla level (2), as World Creatures → *Dog*"
+        }
+      },
+      {
+        "id": "armored-husky",
+        "name": "Dog",
+        "records": [{ "edid": "DLC1EncHuskyArmored", "formKey": "018B30:Dawnguard.esm" }],
+        "level": { "kind": "fixed", "value": 2 },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: a dog, banded at its vanilla level (2), as World Creatures → *Dog*"
+        }
+      },
+      {
+        "id": "bran",
+        "name": "Bran",
+        "records": [{ "edid": "DLC1HireableHunterDog1", "formKey": "01AA74:Dawnguard.esm" }],
+        "level": { "kind": "pcMult", "mult": 1, "min": 10, "max": 25 },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: a hireable pet; archetype-tiers.md §7.0's level-25 rule gives 25 (25 × 1, within 10–25)"
+        }
+      },
+      {
+        "id": "sceolang",
+        "name": "Sceolang",
+        "records": [{ "edid": "DLC1HireableHunterDog2", "formKey": "01AA76:Dawnguard.esm" }],
+        "level": { "kind": "pcMult", "mult": 1, "min": 10, "max": 25, "from": { "edid": "DLC1HireableHunterDog1", "formKey": "01AA74:Dawnguard.esm" } },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: follows Bran"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "All four rows: no other record keeps its own level. Bran uses `DLC1EncHuskyArmored` 018B30:Dawnguard.esm as his template but not for `Stats`, so changing the armored husky does not move him.",
+      "`DLC1RuunvaldHusky` 00CEF3:Dawnguard.esm and Sceolang carry `Stats` and follow `DLC1EncHusky` and Bran."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Husky (`DLC1EncHusky`)",
+        "notPlaced": true
+      },
+      {
+        "name": "Husky (`DLC1RuunvaldHusky` 00CEF3, level and name from `DLC1EncHusky`)",
+        "locations": [{ "cell": { "edid": "DLC1Ruunvald01", "formKey": "003BF0:Dawnguard.esm" }, "refText": "3 refs" }]
+      },
+      {
+        "name": "Dog",
+        "locations": [{ "cell": { "edid": "DLC1ForebearsHoldoutEnd", "formKey": "002FB7:Dawnguard.esm" }, "refText": "2 refs", "note": "in `DLC1ForebearsHoldout` 002F64" }]
+      },
+      {
+        "name": "Bran · Sceolang",
+        "locations": [{ "cell": { "edid": "DLC1DawnguardHQ01", "formKey": "001DBA:Dawnguard.esm" }, "refText": "1 ref each" }]
+      }
+    ]
+  }
+}

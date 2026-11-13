@@ -1,0 +1,54 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "sovngarde",
+  "title": "Sovngarde",
+  "order": 15,
+  "parent": "factions",
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Everyone found in Sovngarde: every NPC placed in the Sovngarde worldspace (`Sovngarde` 02EE41) or the Hall of Valor (`Sovngarde01` 095C44), or filled into an `MQ304` / `MQ305` alias (user, 2026-10-03). Records already on another census page are listed below.",
+  "families": [
+    {
+      "id": "heroes-of-sovngarde",
+      "holds": "Tsun, High King Torygg, Svaknir, Ysgramor, the Heroes of Sovngarde and the six named heroes of the Hall of Valor"
+    }
+  ],
+  "filedElsewhere": [
+    {
+      "record": "`MQ304Alduin` 04E9BC",
+      "what": "Alduin, the Sovngarde fight",
+      "where": "Dragons → *Alduin*"
+    },
+    {
+      "record": "`MQ304Ulfric` 0EA581 · `MQ304Galmar` 0EA582",
+      "what": "Ulfric and Galmar",
+      "where": "Stormcloaks → *Named Stormcloaks*"
+    },
+    {
+      "record": "`MQ304Rikke` 0EA583",
+      "what": "Rikke",
+      "where": "Imperial Legion → *Named Legion*"
+    },
+    {
+      "record": "`MQ304Kodlak` 09700E",
+      "what": "Kodlak Whitemane",
+      "where": "Companions → *The Circle*"
+    },
+    {
+      "record": "`MQ304Froki` 0EA57E",
+      "what": "Froki",
+      "where": "World → *The Rift Countryside*"
+    },
+    {
+      "record": "`MQ304LostSoulImperial` 091AF2 · `…Imperial2` 0173C1 · `MQ304LostSoulSons` 090A47 · `…Sons2` 0173C0 · `…Sons3` 0173C2",
+      "what": "the lost souls",
+      "where": "the *Imperial Legion* and *Stormcloaks* group pages"
+    },
+    {
+      "record": "`GormlaithGoldenHilt` 044236 · `FelldirTheOld` 044237 · `HakonOneEye` 044238",
+      "what": "Gormlaith, Felldir and Hakon",
+      "where": "Conjured → Summoned NPCs → *Heroes & Spirits*"
+    }
+  ]
+}

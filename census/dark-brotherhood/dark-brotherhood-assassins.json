@@ -1,0 +1,534 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "dark-brotherhood-assassins",
+  "group": "dark-brotherhood",
+  "title": "Dark Brotherhood Assassins",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "assassin",
+        "name": "Assassin",
+        "records": [
+          {
+            "edid": "WEAssassinTemplate",
+            "formKey": "1051FB:Skyrim.esm"
+          },
+          {
+            "edid": "WEAssassinArgonianF",
+            "formKey": "103511:Skyrim.esm"
+          },
+          {
+            "edid": "WEAssassinDarkElfM",
+            "formKey": "1051F3:Skyrim.esm"
+          },
+          {
+            "edid": "WEAssassinKhajiitF",
+            "formKey": "103516:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 6,
+          "max": 45
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): `WEAssassinTemplate`, the \"marked for death\" assassin, 25"
+        },
+        "note": "the template and its three leaves."
+      },
+      {
+        "id": "assassin-wrappers",
+        "name": "Assassin",
+        "records": [
+          {
+            "edid": "LvlWEAssassin",
+            "formKey": "1051FC:Skyrim.esm"
+          },
+          {
+            "edid": "LvlWEAssassinRanged",
+            "formKey": "1051FD:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 6,
+          "max": 45,
+          "from": {
+            "edid": "WEAssassinSubChar",
+            "formKey": "1051F4:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): `WEAssassinTemplate`, the \"marked for death\" assassin, 25"
+        }
+      },
+      {
+        "id": "hags-end-assassin",
+        "name": "Dark Brotherhood Assassin",
+        "records": [
+          {
+            "edid": "dunHagsEnd_DBAssassin",
+            "formKey": "09D761:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 1,
+          "from": {
+            "edid": "EncBandit01TemplateMelee",
+            "formKey": "039CFD:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "proposed, awaiting the user (bands-of-power.md: Dark Brotherhood assassins)"
+        },
+        "note": "`Stats` from `EncBandit01Melee1HNordM` 01BCD8 → `EncBandit01TemplateMelee`: borrows its level from *Common Bandits* rung 01."
+      },
+      {
+        "id": "assassin-cc-bow-of-shadows",
+        "name": "Assassin",
+        "records": [
+          {
+            "edid": "ccBGSSSE038_AssassinDarkElf",
+            "formKey": "000808:ccbgssse038-bowofshadows.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 15,
+          "max": 60
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "proposed, awaiting the user (the band of the WE assassins, archetype-tiers.md §6, whose name it shows)"
+        },
+        "note": "CC Bow of Shadows; `BaseData` from `WEAssassinTemplate`, not `Stats`."
+      },
+      {
+        "id": "khajiit-cc-daedric",
+        "name": "Khajiit",
+        "records": [
+          {
+            "edid": "ccBGSSSE050_AssassinKhajiitF",
+            "formKey": "00082C:ccbgssse050-ba_daedric.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 6,
+          "max": 45,
+          "from": {
+            "edid": "WEAssassinTemplate",
+            "formKey": "1051FB:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): `WEAssassinTemplate`, the \"marked for death\" assassin, 25"
+        },
+        "note": "CC Daedric armor pack; `Stats` from `WEAssassinTemplate`."
+      },
+      {
+        "id": "sanctuary-guardian",
+        "name": "Sanctuary Guardian",
+        "records": [
+          {
+            "edid": "dunDawnstarSanctuary_LvlBrotherhoodSentry",
+            "formKey": "0942CC:Skyrim.esm"
+          },
+          {
+            "edid": "dunDawnstarSanctuary_LvlBrotherhoodSentryMissile",
+            "formKey": "0D5451:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LvlForswornMeleeBerserker",
+            "formKey": "03E085:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            6,
+            14,
+            24,
+            34
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts (as on Undead → Ghosts → *Common Ghosts*)"
+        },
+        "note": "borrows its level from the Forsworn: only `Stats` from the Forsworn wrappers `LvlForswornMeleeBerserker` 03E085 (melee, through `LCharForswornMelee1H` 01E792) and `LvlForswornMissile` 01E7B7 (archer, through `LCharForswornMissile` 01E794), so they roll the Forsworn rungs 1 · 6 · 14 · 24 · 34 (every gate ≤ player). Changing the Forsworn ladder changes them. Also a row on Undead → Ghosts → *Common Ghosts*. Moved here from Uncategorised → *Forsworn Level Borrowers* (user, 2026-10-03)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `WEAssassinTemplate` 1051FB leaves CC `ccBGSSSE038_AssassinDarkElf` at its own PC×1.1 [15–60]: it uses the template but not for `Stats` (it is a row of its own).",
+      "The Hag's End assassin's level 1 is owned by `EncBandit01TemplateMelee` 039CFD, rung 01 of *Common Bandits*. Changing that owner also needs 25 records that keep their own level under it (they use it, a rung-01 leaf, or a wrapper on a bandit list that draws it, as template but not for `Stats`), among them `Vald` 072B04 (PC×1.2 [8–42], on *Thieves Guild Foes*), `DLC1EncHunterTemplate` 00336F:Dawnguard.esm (PC×1 [5–25], on *Common Dawnguard*), `ccEDHSSE003_RedguardEliteF01` 00081C:ccedhsse003-redguard.esl (48), `DLC2dunHaknir` 01A373:Dragonborn.esm (PC×1.25 [40–75]) and `ccKRTSSE001_Inimoro` 000A94:cckrtsse001_altar.esl (PC×1 [60–80]); they belong with the bandit rung, not this page.",
+      "The Sanctuary Guardians carry `Stats` and follow the Forsworn wrappers; the records that keep their own level beside those wrappers are on the Forsworn pages.",
+      "The other rows: no other record keeps its own level.",
+      "Every other assassin record (the three leaves, `LvlWEAssassin`, `LvlWEAssassinRanged`, CC `ccBGSSSE050_AssassinKhajiitF`) carries `Stats` and follows `WEAssassinTemplate` or `WEAssassinSubChar`."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "WEAssassinSubChar",
+          "formKey": "1051F4:Skyrim.esm"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "`WEAssassinArgonianF`"
+          },
+          {
+            "at": 1,
+            "label": "`WEAssassinDarkElfM`"
+          },
+          {
+            "at": 1,
+            "label": "`WEAssassinKhajiitF`"
+          }
+        ],
+        "owner": "`LvlWEAssassin`, `LvlWEAssassinRanged`"
+      },
+      {
+        "list": {
+          "edid": "LCharForswornMelee1H",
+          "formKey": "01E792:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Forsworn"
+          },
+          {
+            "at": 6,
+            "label": "Forsworn Forager"
+          },
+          {
+            "at": 14,
+            "label": "Forsworn Looter"
+          },
+          {
+            "at": 24,
+            "label": "Forsworn Pillager"
+          },
+          {
+            "at": 34,
+            "label": "Forsworn Ravager"
+          }
+        ],
+        "note": "the Forsworn melee rungs; only `Stats` is taken. The list is documented on Forsworn → *Common Forsworn*.",
+        "owner": "Sanctuary Guardian 0942CC"
+      },
+      {
+        "list": {
+          "edid": "LCharForswornMissile",
+          "formKey": "01E794:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "Forsworn"
+          },
+          {
+            "at": 6,
+            "label": "Forsworn Forager"
+          },
+          {
+            "at": 14,
+            "label": "Forsworn Looter"
+          },
+          {
+            "at": 24,
+            "label": "Forsworn Pillager"
+          },
+          {
+            "at": 34,
+            "label": "Forsworn Ravager"
+          }
+        ],
+        "note": "the Forsworn archer rungs; only `Stats` is taken. The list is documented on Forsworn → *Common Forsworn*.",
+        "owner": "Sanctuary Guardian 0D5451"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "`LvlWEAssassin`",
+        "notPlaced": true,
+        "quest": "created by `WEJS28` 105D19 (alias Assassin; world encounter, runs while `DB01` is not completed and the player is level 5 or more)"
+      },
+      {
+        "name": "`LvlWEAssassinRanged`",
+        "notPlaced": true,
+        "note": "used by no quest"
+      },
+      {
+        "name": "Dark Brotherhood Assassin (Hag's End)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "HagsEnd01",
+              "formKey": "059398:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Assassin (CC Bow of Shadows)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WhiterunDragonsreach",
+              "formKey": "0165A3:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Khajiit (CC Daedric armor pack)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "the template and leaves",
+        "notPlaced": true
+      },
+      {
+        "name": "Sanctuary Guardian",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DawnstarSanctuary",
+              "formKey": "0193EE:Skyrim.esm"
+            },
+            "refText": "10 melee and 2 archer refs"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "`WEAssassinTemplate`, its leaves, `LvlWEAssassin`",
+        "weapons": "`LItemWeaponSword`, `LItemWeaponDagger`, `LItemPoisonAll`, `LItemGems`, lockpicks, gold",
+        "armor": "`DBArmorWornOutfit` (Worn Shrouded Cowl, Armor, Gloves, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "`LvlWEAssassinRanged` (own `Inventory`)",
+        "weapons": "`LItemWeaponBow`, `LItemArrowsAll`, `LItemWeaponDagger`, `LItemPoisonAll`, `LItemGems`, lockpicks, gold",
+        "armor": "`DBArmorWornOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Dark Brotherhood Assassin (Hag's End)",
+        "weapons": "none in the record",
+        "armor": "`DBAncientShroudedArmor` (Ancient Shrouded Cowl, Armor, Gloves, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Assassin (CC Bow of Shadows)",
+        "weapons": "Bow of Shadows 000807, Iron Dagger, Ebony Arrows, `LItemPoisonAll`, `LItemGems`, lockpicks, gold",
+        "armor": "`ccBGSSSE038_ArcherAssassinOutfit` (Hide Bracers, Hide Boots, Clothes, Mage Hood)",
+        "skin": "race default"
+      },
+      {
+        "records": "Khajiit (CC Daedric armor pack)",
+        "weapons": "as the template",
+        "armor": "`WEThiefOutfit` (`LItemWEThief{Hood,Gauntlets50,Boots,Cuirass}`)",
+        "skin": "race default"
+      },
+      {
+        "records": "Sanctuary Guardian 0942CC",
+        "weapons": "`LItemWeaponSwordBest` 0571AA",
+        "armor": "`DBArmorWithHood` 0D3BF8",
+        "skin": "race default"
+      },
+      {
+        "records": "Sanctuary Guardian 0D5451",
+        "weapons": "`LItemWeaponBowBest` 05719E · `LItemWeaponDaggerBest` 0571A1 · 25 × `LItemArrowsAll` 068839",
+        "armor": "`DBArmorWithHood` 0D3BF8",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemWeaponSword",
+          "formKey": "016578:Skyrim.esm"
+        },
+        "gate": "all levels ≤ player",
+        "rolls": "Iron 1 · Steel 2 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponDagger",
+          "formKey": "017178:Skyrim.esm"
+        },
+        "gate": "all levels ≤ player",
+        "rolls": "Iron 1 · Steel 2 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponBow",
+          "formKey": "017024:Skyrim.esm"
+        },
+        "gate": "all levels ≤ player",
+        "rolls": "Hunting, Long 1 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46"
+      },
+      {
+        "list": {
+          "edid": "LItemWEThiefHood",
+          "formKey": "103519:Skyrim.esm"
+        },
+        "gate": "highest ≤ player",
+        "rolls": "Mage Hood 1 · Torturer's Hood 1"
+      },
+      {
+        "list": {
+          "edid": "LItemWEThiefCuirass",
+          "formKey": "10350C:Skyrim.esm"
+        },
+        "gate": "highest ≤ player",
+        "rolls": "Studded 1 · Leather, Studded Imperial 6 · Elven 12 · Scaled, Scaled Horn 19 · Elven Gilded 27 · Glass 36"
+      },
+      {
+        "list": {
+          "edid": "LItemWEThiefBoots",
+          "formKey": "10350D:Skyrim.esm"
+        },
+        "gate": "all levels ≤ player",
+        "rolls": "Hide 1 · Leather 6 · Elven 12 · Scaled 19 · Glass 36"
+      },
+      {
+        "list": {
+          "edid": "LItemWEThiefGauntlets50",
+          "formKey": "10350F:Skyrim.esm"
+        },
+        "gate": "highest ≤ player, 50% none",
+        "rolls": "Hide 1 · Leather 6 · Elven 12 · Scaled 19 · Glass 36"
+      },
+      {
+        "list": {
+          "edid": "DBArmorWithHood",
+          "formKey": "0D3BF8:Skyrim.esm"
+        },
+        "rolls": "Shrouded Armor 0D2844 · Boots 0D2845 · Gloves 0D2843 · Cowl 0D2842"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponSwordBest",
+          "formKey": "0571AA:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "rolls": "Steel 1 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponBowBest",
+          "formKey": "05719E:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "rolls": "Hunting 1 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponDaggerBest",
+          "formKey": "0571A1:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "rolls": "Steel 1 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46"
+      },
+      {
+        "list": {
+          "edid": "LItemArrowsAll",
+          "formKey": "068839:Skyrim.esm"
+        },
+        "rolls": "12 arrows, each 75%: iron 1 · steel 3 · orcish 6 · dwarven 12 · elven 19 · glass 27 · ebony 36 · daedric 46"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Worn Shrouded Armor 105966, Cowl 105969, Gloves 105968, Boots 105967",
+        "kind": "light",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Ancient Shrouded Armor 0E1F15, Cowl 0E1F17, Gloves 0E1F16, Boots 0E1F14",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Shrouded Armor 0D2844, Boots 0D2845, Gloves 0D2843, Cowl 0D2842",
+        "kind": "light, enchanted",
+        "playable": true
+      },
+      {
+        "item": "the thief-list armor; Hide Bracers, Hide Boots",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Clothes, Mage Hood, Torturer's Hood",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Bow of Shadows and the listed weapons",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

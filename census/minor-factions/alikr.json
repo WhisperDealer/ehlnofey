@@ -1,0 +1,876 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "alikr",
+  "group": "minor-factions",
+  "title": "Alik'r",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "alikr-rung-01",
+        "name": "Alik'r Warrior",
+        "records": [
+          {
+            "edid": "EncAlikr01MagicRedguardM",
+            "formKey": "067642:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr01Melee1HRedguardM01",
+            "formKey": "067641:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr01Melee1HRedguardM02",
+            "formKey": "067645:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr01Melee2HBerserkRedguardM01",
+            "formKey": "067643:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr01Melee2HBerserkRedguardM02",
+            "formKey": "067646:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr01MissileRedguardM01",
+            "formKey": "067644:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr01MissileRedguardM02",
+            "formKey": "067647:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 1,
+          "from": {
+            "label": "`EncAlikr01TemplateMagic` 06762F · `…Melee` 067630 · `…Missile` 067631"
+          }
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1: the Alik'r ladder is left flat (the list feeds one ghost), so the rung keeps its vanilla level (Rule 1)"
+        },
+        "note": "the rung actors take `Stats` from their rung templates and `BaseData` (the name) from `EncAlikr00Template` 06762E; none is placed. Magic, Melee1H ×2, Melee2H Berserk ×2, Missile ×2 per rung."
+      },
+      {
+        "id": "alikr-rung-02",
+        "name": "Alik'r Warrior",
+        "records": [
+          {
+            "edid": "EncAlikr02MagicRedguardM",
+            "formKey": "06764B:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr02Melee1HRedguardM01",
+            "formKey": "067648:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr02Melee1HRedguardM02",
+            "formKey": "06764C:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr02Melee2HBerserkRedguardM01",
+            "formKey": "067649:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr02Melee2HBerserkRedguardM02",
+            "formKey": "06764D:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr02MissileRedguardM01",
+            "formKey": "06764A:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr02MissileRedguardM02",
+            "formKey": "06764E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 6,
+          "from": {
+            "label": "`EncAlikr02TemplateMagic` 067632 · `…Melee` 067633 · `…Missile` 067634"
+          }
+        },
+        "target": {
+          "band": "I",
+          "level": 6,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1: the Alik'r ladder is left flat (the list feeds one ghost), so the rung keeps its vanilla level (Rule 1)"
+        }
+      },
+      {
+        "id": "alikr-rung-03",
+        "name": "Alik'r Warrior",
+        "records": [
+          {
+            "edid": "EncAlikr03MagicRedguardM",
+            "formKey": "06764F:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr03Melee1HRedguardM01",
+            "formKey": "067650:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr03Melee1HRedguardM02",
+            "formKey": "067653:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr03Melee2HBerserkRedguardM01",
+            "formKey": "067651:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr03Melee2HBerserkRedguardM02",
+            "formKey": "067654:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr03MissileRedguardM01",
+            "formKey": "067652:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr03MissileRedguardM02",
+            "formKey": "067655:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 14,
+          "from": {
+            "label": "`EncAlikr03TemplateMagic` 067635 · `…Melee` 067636 · `…Missile` 067637"
+          }
+        },
+        "target": {
+          "band": "III",
+          "level": 14,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1: the Alik'r ladder is left flat (the list feeds one ghost), so the rung keeps its vanilla level (Rule 1)"
+        }
+      },
+      {
+        "id": "alikr-rung-04",
+        "name": "Alik'r Warrior",
+        "records": [
+          {
+            "edid": "EncAlikr04MagicRedguardM",
+            "formKey": "067656:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr04Melee1HRedguardM01",
+            "formKey": "067657:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr04Melee1HRedguardM02",
+            "formKey": "06765A:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr04Melee2HBerserkRedguardM01",
+            "formKey": "067658:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr04Melee2HBerserkRedguardM02",
+            "formKey": "06765B:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr04MissileRedguardM01",
+            "formKey": "067659:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr04MissileRedguardM02",
+            "formKey": "06765C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 24,
+          "from": {
+            "label": "`EncAlikr04TemplateMagic` 067638 · `…Melee` 067639 · `…Missile` 06763A"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "level": 24,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1: the Alik'r ladder is left flat (the list feeds one ghost), so the rung keeps its vanilla level (Rule 1)"
+        }
+      },
+      {
+        "id": "alikr-rung-05",
+        "name": "Alik'r Warrior",
+        "records": [
+          {
+            "edid": "EncAlikr05MagicRedguardM",
+            "formKey": "06765D:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr05Melee1HRedguardM01",
+            "formKey": "06765E:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr05Melee1HRedguardM02",
+            "formKey": "067665:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr05Melee2HBerserkRedguardM01",
+            "formKey": "06765F:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr05Melee2HBerserkRedguardM02",
+            "formKey": "067666:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr05MissileRedguardM01",
+            "formKey": "067660:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr05MissileRedguardM02",
+            "formKey": "067667:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 34,
+          "from": {
+            "label": "`EncAlikr05TemplateMagic` 06763B · `…Melee` 06763C · `…Missile` 06763D"
+          }
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1: the Alik'r ladder is left flat (the list feeds one ghost), so the rung keeps its vanilla level (Rule 1)"
+        }
+      },
+      {
+        "id": "alikr-rung-06",
+        "name": "Alik'r Warrior",
+        "records": [
+          {
+            "edid": "EncAlikr06MagicRedguardM",
+            "formKey": "067661:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr06Melee1HRedguardM01",
+            "formKey": "067662:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr06Melee1HRedguardM02",
+            "formKey": "067668:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr06Melee2HBerserkRedguardM01",
+            "formKey": "067663:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr06Melee2HBerserkRedguardM02",
+            "formKey": "067669:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr06MissileRedguardM01",
+            "formKey": "067664:Skyrim.esm"
+          },
+          {
+            "edid": "EncAlikr06MissileRedguardM02",
+            "formKey": "06766A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 44,
+          "from": {
+            "label": "`EncAlikr06TemplateMagic` 06763E · `…Melee` 06763F · `…Missile` 067640"
+          }
+        },
+        "target": {
+          "band": "VII",
+          "level": 44,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1: the Alik'r ladder is left flat (the list feeds one ghost), so the rung keeps its vanilla level (Rule 1)"
+        }
+      },
+      {
+        "id": "kematus-guards",
+        "name": "Alik'r Warrior",
+        "records": [
+          {
+            "edid": "MS08AlikrKematuGuard",
+            "formKey": "058B3F:Skyrim.esm"
+          },
+          {
+            "edid": "MS08AlikrKematuGuard02",
+            "formKey": "10F5A1:Skyrim.esm"
+          },
+          {
+            "edid": "MS08AlikrKematuGuard03",
+            "formKey": "10F5AA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.6,
+          "min": 1,
+          "max": 30
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1: the real Alik'r are quest NPCs at 30"
+        },
+        "note": "Kematu's guards at Swindler's Den."
+      },
+      {
+        "id": "whiterun-warriors",
+        "name": "Alik'r Warrior",
+        "records": [
+          {
+            "edid": "MS08AlikrWarriorWhiterun",
+            "formKey": "055FB2:Skyrim.esm"
+          },
+          {
+            "edid": "MS08AlikrWarriorWhiterun02",
+            "formKey": "108CF5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.75,
+          "min": 5
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1: the real Alik'r are quest NPCs at 30"
+        },
+        "note": "at the Whiterun gate; `CalcMaxLevel` absent, so no cap."
+      },
+      {
+        "id": "ms08-alikr-warrior",
+        "name": "Alik'r Warrior",
+        "records": [
+          {
+            "edid": "MS08AlikrWarrior",
+            "formKey": "020071:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1: the `WERJ03` encounter fixed 1 → 30"
+        },
+        "note": "`WERJ03Alikr` 0B9285 takes `Stats` and `BaseData` from it, so it owns the `WERJ03` encounter's level; not placed itself."
+      },
+      {
+        "id": "kematu",
+        "name": "Kematu",
+        "records": [
+          {
+            "edid": "MS08Kematu",
+            "formKey": "021601:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 5,
+          "max": 50
+        },
+        "target": {
+          "band": "VI",
+          "level": 35,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1: Kematu 35"
+        }
+      },
+      {
+        "id": "alikr-prisoner",
+        "name": "Alik'r Prisoner",
+        "records": [
+          {
+            "edid": "MS08AlikrPrisoner",
+            "formKey": "0215F5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "majid-the-mad",
+        "name": "Majid the Mad",
+        "records": [
+          {
+            "edid": "ccBGSSSE021_EncAlikrBoss2HM01",
+            "formKey": "00080E:ccbgssse021-lordsmail.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.95,
+          "min": 10,
+          "max": 100
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "proposed, awaiting the user (the Lord's Mail boss, beside Kematu; the §7.0 level-25 rule would give 23)"
+        },
+        "note": "Lord's Mail (CC); uses `EncAlikr06TemplateMelee` 06763F as template without `Stats`."
+      },
+      {
+        "id": "alikr-mercenary",
+        "name": "Alik'r Mercenary",
+        "records": [
+          {
+            "edid": "ccBGSSSE021_EncRedguardMercMagicM01",
+            "formKey": "00080F:ccbgssse021-lordsmail.esl"
+          },
+          {
+            "edid": "ccBGSSSE021_EncRedguardMercMissileM01",
+            "formKey": "000810:ccbgssse021-lordsmail.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.7,
+          "min": 6,
+          "max": 50
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "proposed, awaiting the user (level with the Alik'r warriors' 30; the §7.0 level-25 rule would give 17)"
+        },
+        "note": "Lord's Mail (CC), magic and missile; templates `EncAlikr03TemplateMagic` 067635 and `EncAlikr02TemplateMissile` 067634 without `Stats`."
+      },
+      {
+        "id": "remnant-warrior",
+        "name": "Remnant Warrior",
+        "records": [
+          {
+            "edid": "ccEDHSSE003_RedguardEliteM01",
+            "formKey": "00081F:ccedhsse003-redguard.esl"
+          },
+          {
+            "edid": "ccEDHSSE003_RedguardEliteM02",
+            "formKey": "00081B:ccedhsse003-redguard.esl"
+          },
+          {
+            "edid": "ccEDHSSE003_RedguardEliteF01",
+            "formKey": "00081C:ccedhsse003-redguard.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 48
+        },
+        "target": {
+          "band": "VII",
+          "level": 48,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Redguard Elite Armaments (CC). Own level; templates `EncAlikr04TemplateMelee` 067639 (M01, M02) and `EncBandit01TemplateMelee` 039CFD (F01), without `Stats`. The player's allies against the Thalmor caravan (`ccEDHSSE003_RedguardEliteFaction` 0008B9 is an enemy only of `ccEDHSSE003_CaravanFaction` 000E42); they cast Invisibility in combat."
+      },
+      {
+        "id": "rakeed",
+        "name": "Rakeed",
+        "records": [
+          {
+            "edid": "ccEDHSSE003_Rakeed",
+            "formKey": "00081D:ccedhsse003-redguard.esl"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 14,
+          "from": {
+            "edid": "EncAlikr03TemplateMelee",
+            "formKey": "067636:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "III",
+          "level": 14,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1: the Alik'r rungs keep their vanilla levels; he takes `Stats` from rung 03"
+        },
+        "note": "the Redguard Elite Armaments quest's hostage, in `ccEDHSSE003_RedguardEliteHostageFaction` 000E32."
+      },
+      {
+        "id": "ismal",
+        "name": "Ismal",
+        "records": [
+          {
+            "edid": "ccEDHSSE003_EncNobleman",
+            "formKey": "000820:ccedhsse003-redguard.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 13
+        },
+        "target": {
+          "band": "II",
+          "level": 13,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "the quest's noble (Aggressive), in `ccEDHSSE003_CaravanFaction` 000E42, the caravan the Remnant Warriors attack. Own level; template `EncAlikr05TemplateMelee` 06763C, without `Stats`."
+      },
+      {
+        "id": "azadi",
+        "name": "Azadi",
+        "records": [
+          {
+            "edid": "ccEDHSSE003_Azadi",
+            "formKey": "00081E:ccedhsse003-redguard.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0,
+          "max": 30
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "proposed, awaiting the user (a town brawler; the §7.0 level-25 rule would give 25)"
+        },
+        "note": "the quest's brawler, in `CrimeFactionRift` and `TownShorsStoneFaction` (Aggressive). Own level; template the bandit leaf `EncBandit03Melee1HRedguardM` 039D0D, without `Stats`. Rakeed, Ismal and Azadi moved here from Uncategorised → *Unfiled NPCs* (user, 2026-10-03)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncAlikr05TemplateMelee` 06763C also needs Ismal (a row, level 13): he uses 06763C as his template but not for `Stats`.",
+      "Changing `EncAlikr03TemplateMelee` 067636 changes Rakeed (a row; he takes `Stats` from it).",
+      "Azadi uses the bandit leaf `EncBandit03Melee1HRedguardM` 039D0D (Bandits → *Common Bandits*) as template but not for `Stats`, so he keeps his own level when the bandit rung changes.",
+      "Changing the Melee1H rungs drawn by `LCharAlikrMelee1H` 06766F also needs `ccBGSSSE031_LvlAlikrMelee1H_Female` 00080F:ccbgssse031-advcyrus.esm (Ghost Sailor, PC × 1.2, min 10, max 50): it takes its template from `LCharAlikrMelee1H`, which draws them, without `Stats` (on Undead → Ghosts → *Common Ghosts*).",
+      "Majid the Mad (`EncAlikr06TemplateMelee`), the two Alik'r Mercenaries (`EncAlikr03TemplateMagic`, `EncAlikr02TemplateMissile`) and the Remnant Warriors M01 · M02 (`EncAlikr04TemplateMelee`) use a rung template without `Stats`, so changing that rung does not move them.",
+      "The other rows: no other record keeps its own level.",
+      "Every other Alik'r record (`WERJ03Alikr` 0B9285, `LvlAlikrMelee1H` 067672, and the Redguard Elite Armaments' `ccEDHSSE003_Fijeh` 000821:ccedhsse003-redguard.esl) carries `Stats` and follows its template or list. The 18 rung templates (06762F–067640) only carry the rung levels. Azzadal (`dunBardsLeapSummitGhost` 0B3C81, the Bard's Leap ghost) templates `LvlAlikrMelee1H` but is Essential and not an enemy."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharAlikrMelee1H",
+          "formKey": "06766F:Skyrim.esm"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "rung 01, two actors"
+          },
+          {
+            "at": 6,
+            "label": "rung 02, two actors"
+          },
+          {
+            "at": 14,
+            "label": "rung 03, two actors"
+          },
+          {
+            "at": 24,
+            "label": "rung 04, two actors"
+          },
+          {
+            "at": 34,
+            "label": "rung 05, two actors"
+          },
+          {
+            "at": 44,
+            "label": "rung 06, two actors"
+          }
+        ],
+        "owner": "`LvlAlikrMelee1H` 067672 (never placed; templated only by Azzadal)",
+        "drawnBy": [
+          {
+            "name": "Ghost Sailor (CC)",
+            "records": [
+              {
+                "edid": "ccBGSSSE031_LvlAlikrMelee1H_Female",
+                "formKey": "00080F:ccbgssse031-advcyrus.esm"
+              }
+            ],
+            "how": "template",
+            "page": "ghosts/common-ghosts",
+            "note": "takes no `Stats`"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharAlikrMelee2H",
+          "formKey": "067670:Skyrim.esm"
+        },
+        "note": "the six Melee2H Berserk rungs, 1 · 6 · 14 · 24 · 34 · 44",
+        "owner": "none"
+      },
+      {
+        "list": {
+          "edid": "LCharAlikrMissile",
+          "formKey": "067671:Skyrim.esm"
+        },
+        "note": "the six Missile rungs, 1 · 6 · 14 · 24 · 34 · 44",
+        "owner": "none"
+      },
+      {
+        "list": {
+          "edid": "LCharAlikrMagic",
+          "formKey": "06766E:Skyrim.esm"
+        },
+        "note": "the six Magic rungs, one actor each, 1 · 6 · 14 · 24 · 34 · 44",
+        "owner": "none"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Kematu",
+        "note": "Swindler's Den (`SwindlersDen01` 041777), ref 041856, Easy; alias `Kematu` on quest `MS08` 01CF25"
+      },
+      {
+        "name": "Alik'r Warrior (Kematu's guards)",
+        "note": "`SwindlersDen01` 041777: 058B3F ×2, 10F5A1 ×2, 10F5AA ×2, all Hard; enabled by `MS08` (alias `MS08QuestActiveMarker`)"
+      },
+      {
+        "name": "Alik'r Warrior (Whiterun gate)",
+        "note": "`WhiterunWorld` 01A270: 055FB2 ref 0215CF · 108CF5 ref 055FB3, Easy, initially disabled; aliases `WhiterunWarrior01` · `WhiterunWarrior02` on `MS08`"
+      },
+      {
+        "name": "Alik'r Prisoner",
+        "note": "Dragonsreach Dungeon (`WhiterunDragonsreachBasement` 04A376), ref 0215F6, Easy; alias `AlikrPrisoner` on `MS08`"
+      },
+      {
+        "name": "Alik'r Warrior (`WERJ03Alikr`)",
+        "note": "spawned at `SceneMarker1` by quest `WERJ03` 0B85AA, aliases `Warrior01` · `Warrior02`"
+      },
+      {
+        "name": "Majid the Mad",
+        "note": "Tamriel persistent cell 000D74 (Lord's Mail override), ref 00081B; alias `BossRef` on `ccBGSSSE021_LordsMailQuest` 000813"
+      },
+      {
+        "name": "Alik'r Mercenary",
+        "note": "Tamriel 000D74: 00080F ref 000824 · 000810 ref 000825 (`ccBGSSSE021_LordsMailQuest`)"
+      },
+      {
+        "name": "Remnant Warrior",
+        "note": "Tamriel 000D74 (Redguard Elite Armaments override, cell −16, −10): M01 ref 000829 · M02 ref 000827 · F01 ref 000833, initially disabled; aliases `Spy4Woods` · `Spy5Woods` · `Spy3Woods` on `ccEDHSSE003_Quest` 00088C"
+      },
+      {
+        "name": "Rakeed",
+        "note": "`Tamriel` 00003C:Skyrim.esm (ccedhsse003-redguard.esl), ref 000854, initially disabled; alias `Hostage` on `ccEDHSSE003_Quest` 00088C"
+      },
+      {
+        "name": "Ismal",
+        "note": "`Tamriel` 00003C:Skyrim.esm (ccedhsse003-redguard.esl), ref 00082C, initially disabled; alias `Noble` on `ccEDHSSE003_Quest`"
+      },
+      {
+        "name": "Azadi",
+        "note": "`Tamriel` 00003C:Skyrim.esm (ccedhsse003-redguard.esl), ref 000837; alias `Brawler` on `ccEDHSSE003_Quest`"
+      },
+      {
+        "name": "the 42 rung actors · `MS08AlikrWarrior`",
+        "notPlaced": true
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "rung Melee1H and Melee2H Berserk",
+        "weapons": "Scimitar 07A91A (no two-hander) · Iron Dagger 01397E (rungs 01–02) · Steel Dagger 013986 (rung 03)",
+        "armor": "`RedguardClothesOutfit01` 06A15B",
+        "skin": "race default"
+      },
+      {
+        "records": "rung Missile",
+        "weapons": "`LItemBanditWeaponMissile` 037BFD · Iron Dagger (01–02) · Steel Dagger (03–06)",
+        "armor": "06A15B",
+        "skin": "race default"
+      },
+      {
+        "records": "rung Magic",
+        "weapons": "Iron Dagger",
+        "armor": "06A15B",
+        "skin": "race default"
+      },
+      {
+        "records": "Kematu · Whiterun 055FB2",
+        "weapons": "Scimitar",
+        "armor": "`RedguardClothesOutfitNoHat` 06A15C",
+        "skin": "race default"
+      },
+      {
+        "records": "Kematu's guards · Whiterun 108CF5 · `MS08AlikrWarrior` · `WERJ03Alikr`",
+        "weapons": "Scimitar",
+        "armor": "06A15B",
+        "skin": "race default"
+      },
+      {
+        "records": "Alik'r Prisoner",
+        "weapons": "none",
+        "armor": "06A15B",
+        "skin": "race default"
+      },
+      {
+        "records": "Majid the Mad",
+        "weapons": "Scimitar ×2",
+        "armor": "`ccBGSSSE021_RedguardClothesOutfitRed` 000DA2",
+        "skin": "race default"
+      },
+      {
+        "records": "Alik'r Mercenary (magic · missile)",
+        "weapons": "Iron Dagger · Iron Dagger, 037BFD",
+        "armor": "Green 000835 · Tan 000836",
+        "skin": "race default"
+      },
+      {
+        "records": "Remnant Warrior M01 · M02 · F01",
+        "weapons": "Remnant Scimitar of Fire 000E44 ×1 with Remnant Shield 000802 · ×2 · ×1",
+        "armor": "`ccEDHSSE003_RedguardEliteOutfit` 00089F",
+        "skin": "race default"
+      },
+      {
+        "records": "Rakeed",
+        "weapons": "none (`LootBanditGold` 037C27, `LItemLockPick25` 08FFFB)",
+        "armor": "`ccEDHSSE003_RedguardEliteOutfitHostage` 00089E",
+        "skin": "race default"
+      },
+      {
+        "records": "Ismal",
+        "weapons": "Boneshaver 0008D6:ccedhsse003-redguard.esl (with 037C27, 08FFFB)",
+        "armor": "`RedguardClothesOutfit01` 06A15B",
+        "skin": "race default"
+      },
+      {
+        "records": "Azadi",
+        "weapons": "none (`LootGoldChange25` 04F78D, 08FFFB)",
+        "armor": "`BeggarOutfit` 028B60",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "RedguardClothesOutfit01",
+          "formKey": "06A15B:Skyrim.esm"
+        },
+        "rolls": "Redguard Boots 07BC15 · Alik'r Hood 07BC1A · Hammerfell Garb 07BC19"
+      },
+      {
+        "list": {
+          "edid": "RedguardClothesOutfitNoHat",
+          "formKey": "06A15C:Skyrim.esm"
+        },
+        "rolls": "Redguard Boots · Hammerfell Garb"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE021_RedguardClothesOutfitRed",
+          "formKey": "000DA2:ccbgssse021-lordsmail.esl"
+        },
+        "rolls": "Redguard Hood (red) 000DA0 · `DBClothesRedguardClothes` 0E0DD0 · `DBClothesRedguardBoots` 0E0DD4"
+      },
+      {
+        "list": {
+          "label": "Lord's Mail Green 000835 · Tan 000836"
+        },
+        "rolls": "Redguard Boots · Redguard Clothes and Hood (green 00082D, 00082F · tan 00082E, 000830)"
+      },
+      {
+        "list": {
+          "edid": "ccEDHSSE003_RedguardEliteOutfit",
+          "formKey": "00089F:ccedhsse003-redguard.esl"
+        },
+        "rolls": "Remnant Armor 00080B · Boots 00080A · Gloves 00080D · Hood 00080C"
+      },
+      {
+        "list": {
+          "edid": "ccEDHSSE003_RedguardEliteOutfitHostage",
+          "formKey": "00089E:ccedhsse003-redguard.esl"
+        },
+        "rolls": "Execution Hood 05A9DF · Prisoner's Cuffs 103941 · Remnant Armor 00080B · Remnant Boots 00080A"
+      },
+      {
+        "list": {
+          "edid": "BeggarOutfit",
+          "formKey": "028B60:Skyrim.esm"
+        },
+        "rolls": "Ragged Robes 013105 · Ragged Boots 013106"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditWeaponMissile",
+          "formKey": "037BFD:Skyrim.esm"
+        },
+        "rolls": "a bow (`LItemBanditWeaponBow` 039D2E: Long Bow, Hunting Bow 1 · Imperial 4 · Orcish 10 · Dwarven 15 · Elven 20) and ×20 arrows, each 75% (`LItemBanditWeaponArrows` 039D2F: Iron 1 · Steel 5 · Orcish 9 · Dwarven 14 · Elven 20)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Scimitar 07A91A · Iron Dagger · Steel Dagger · Remnant Scimitar of Fire 000E44 · Boneshaver 0008D6",
+        "kind": "one-handed",
+        "playable": true
+      },
+      {
+        "item": "the bandit bows and arrows",
+        "kind": "bow",
+        "playable": true
+      },
+      {
+        "item": "Remnant Armor, Boots, Gloves, Hood · Remnant Shield 000802",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Redguard Boots · Alik'r Hood · Hammerfell Garb · the Lord's Mail Redguard clothes, hoods and the DB Redguard clothes · Execution Hood · Ragged Robes and Boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Prisoner's Cuffs",
+        "kind": "clothing",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
+  }
+}

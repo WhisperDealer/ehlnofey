@@ -1,0 +1,99 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "common-silver-hand",
+  "group": "silver-hand",
+  "title": "Common Silver Hand",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "silver-hand",
+        "name": "Silver Hand",
+        "records": [
+          { "edid": "LvlSilverhandMelee1H", "formKey": "02AB87:Skyrim.esm" },
+          { "edid": "LvlSilverhandMelee2H", "formKey": "02AB89:Skyrim.esm" },
+          { "edid": "LvlSilverhandMissile", "formKey": "02AB88:Skyrim.esm" },
+          { "edid": "LvlSilverHandMeleeAny", "formKey": "04499F:Skyrim.esm" },
+          { "edid": "LvlSilverHandAmbush1", "formKey": "108BBC:Skyrim.esm" },
+          { "edid": "LvlSilverHandAmbush2", "formKey": "108BBE:Skyrim.esm" },
+          { "edid": "LvlSilverHandAmbush3", "formKey": "108BBD:Skyrim.esm" },
+          { "edid": "LvlSilverHandAmbush4", "formKey": "108BBB:Skyrim.esm" },
+          { "edid": "LvlSilverHandAmbush5", "formKey": "108BBF:Skyrim.esm" }
+        ],
+        "level": { "kind": "list", "from": { "label": "the bandit lists (see *Lists that draw them*)" }, "rungs": [1, 5, 9, 14, 19, 25] },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: the Silver Hand, Experienced. Open: archetype-tiers.md §3.1 (user, 2026-09-27) built them three lists of bandit rungs, Highwayman 14 ×1 · Plunderer 19 ×3 · Marauder 25 ×1 (mean 19.2, Trained to Blooded)"
+        },
+        "note": "the bandit ladder, via `Stats`. `LvlSilverhandMelee1HAggro1024` 06466C copies Melee1H's template; `LvlSilverhandMissile_Aggro1024` 06466D, `LvlSilverhandMissile_HoldPos256` 0C7410 and `DunGallowsRock_LvlSilverHandMissileHold` 0AA08A template `LvlSilverhandMissile`; all inherit its level."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level (each takes `Stats` from a bandit list; the level belongs to the bandit rungs on Bandits → *Common Bandits*).",
+      "`LvlSilverhandMelee1HAggro1024` and the three `LvlSilverhandMissile` copies carry `Stats` and follow their template."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": { "edid": "LvlBanditMelee1H", "formKey": "03DECB:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "note": "with `LvlBanditMelee2H` 01E79D · `LCharBanditMissile` 01E770 · `LvlBanditMeleeAny` 01E79C · `LvlBanditMeleeEvenTonedF` 01AFBD · `…NordM` 01B0BC · `…OrcM` 01B0EF · `…CommonerM` 01AF77: the six bandit rungs (1 · 5 · 9 · 14 · 19 · 25); only `Stats` is taken, so the drawn bandit lends its level and nothing else. Documented in full on Bandits → *Common Bandits*.",
+        "owner": "Melee1H (+Aggro1024) · Melee2H · Missile (+its three copies) · MeleeAny · Ambush1 · 2 · 3 · 4 and 5"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Silver Hand",
+        "note": "Dustman's Cairn (`DustmansCairn01` 01528C: Melee1H ×3, Melee2H ×3, Missile\\_HoldPos256 ×4, Ambush1–5 ×1 each; `DustmansCairn02` 02A03A: Melee1H ×2, Melee2H ×3, Missile ×1) · Driftshade Sanctuary (`DriftshadeSanctuary01` 015288: Melee1H ×3, Melee2H ×1, Missile ×4, MeleeAny ×2; `DriftshadeSanctuary02` 03DD34: Melee1H ×3, Melee2H ×1, Missile ×2, MeleeAny ×2; `DriftshadeSanctuaryExterior` 008F69: both Aggro1024 ×1) · Gallows Rock (`GallowsRock01` 015273: Melee1H ×4, Melee2H ×2, Missile ×4, MeleeAny ×3, MissileHold ×2; `GallowsRockExterior` 00918C: MeleeAny ×2, MissileHold ×1)"
+      },
+      {
+        "name": "Silver Hand Warrior (corpses: `TreasCorpseSilverHandNordFemale` 0B866A · `…NordMale` 0B8669, level 1 from `EncBandit01Melee1HNord`F/M)",
+        "note": "placed dead: `WhiterunPlainsDistrict04` 01A276 ×1, `DustmansCairn01` ×1 (female); `WhiterunWorld` 01A26F ×2 (male)"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      { "records": "Melee1H (+Aggro1024)", "weapons": "Silver Sword 10AA19", "armor": "`BanditArmorMeleeShield20Outfit` 0C0197 (Aggro1024: `BanditArmorMeleeNoShieldOutfit` 01E608)", "skin": "race default" },
+      { "records": "Melee2H", "weapons": "Silver Greatsword 10C6FB", "armor": "`BanditArmorMeleeHeavyNoShieldOutfit` 0A95F7", "skin": "race default" },
+      { "records": "Missile and its three copies", "weapons": "`LItemBanditWeaponMissile` 037BFD · `LootBanditArrows15` 08777F · Silver Sword", "armor": "`BanditArmorMeleeNoShieldOutfit` 01E608", "skin": "race default" },
+      { "records": "MeleeAny · Ambush1–5 · the corpses", "weapons": "`LItemSilverHandWeapon` 017113", "armor": "`BanditArmorMeleeShield20Outfit` 0C0197", "skin": "race default" },
+      { "records": "every record above, also (loot, not gear)", "weapons": "`LootSilverHandRandom` 017110 · `LootSilverHandGold` 017114", "armor": "none", "skin": "race default" }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      { "list": { "edid": "BanditArmorMeleeShield20Outfit", "formKey": "0C0197:Skyrim.esm" }, "rolls": "boots (`LItemBanditBoots` 037C23: Fur Shoes, Hide 1 · Leather 6 · Scaled 19) · cuirass (`LItemBanditCuirass` 037C22: Studded, Hide, Fur 1 · Leather 6 · Scaled Horn, Scaled 19) · 50% bracers (`LItemBanditGauntlets50` 037C25: Fur, Hide 1 · Leather 6 · Scaled 19) · 20% shield (`LItemBanditShield20` 0C0196: Hide, Iron 1 · Elven 12)", "levels": [1, 6, 12, 19] },
+      { "list": { "edid": "BanditArmorMeleeNoShieldOutfit", "formKey": "01E608:Skyrim.esm" }, "rolls": "the same boots, cuirass and 50% bracers, no shield", "levels": [1, 6, 19] },
+      { "list": { "edid": "BanditArmorMeleeHeavyNoShieldOutfit", "formKey": "0A95F7:Skyrim.esm" }, "rolls": "boots (`LItemBanditHeavyBoots` 015BE1: Iron 1 · Steel Cuffed 6 · Steel Plate 18) · cuirass (015BE3: Iron 1 · Steel 6 · Steel Plate 18) · 50% gauntlets (015BE2: Iron 1 · Steel Nordic, Steel Imperial 6 · Steel Plate 15) · helmet (015BE0: Iron 1 · Steel, Steel Horned 6 · Steel Plate 18)", "levels": [1, 6, 15, 18] },
+      { "list": { "edid": "LItemSilverHandWeapon", "formKey": "017113:Skyrim.esm" }, "rolls": "Silver Sword, Silver Greatsword, Iron and Steel Mace, Sword and War Axe 1 · Orcish 9 · Dwarven 15 · Elven 22 (mace, sword, war axe)", "levels": [1, 9, 15, 22] },
+      { "list": { "edid": "LItemBanditWeaponMissile", "formKey": "037BFD:Skyrim.esm" }, "rolls": "Long Bow, Hunting Bow + Iron Arrows 1 · Imperial Bow 4 · Steel Arrows 5 · Orcish Arrows 9 · Orcish Bow 10 · Dwarven Arrows 14 · Dwarven Bow 15 · Elven Bow + Arrows 20", "levels": [1, 4, 5, 9, 10, 14, 15, 20] },
+      { "list": { "edid": "LootBanditArrows15", "formKey": "08777F:Skyrim.esm" }, "rolls": "85% none; Iron 1 · Steel 3 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46 arrows", "levels": [1, 3, 6, 12, 19, 27, 36, 46] }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      { "item": "Silver Sword 10AA19 · Silver Greatsword 10C6FB", "kind": "one-handed · two-handed", "playable": true },
+      { "item": "Fur, Hide, Studded, Leather, Scaled and Scaled Horn armour; Hide, Iron and Elven shields", "kind": "light", "playable": true },
+      { "item": "Iron, Steel and Steel Plate armour", "kind": "heavy", "playable": true },
+      { "item": "the bandit bows, arrows and the iron to elven weapons", "kind": "bow · one-handed", "playable": true }
+    ]
+  }
+}

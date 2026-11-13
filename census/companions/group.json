@@ -1,0 +1,38 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "companions",
+  "title": "Companions",
+  "order": 9,
+  "parent": "factions",
+  "meta": {
+    "spec": "archetype-tiers.md §6.1",
+    "updated": "2026-11-13"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The Companions: the Circle and the members of Jorrvaskr, and the Companion Ghosts of Ysgramor's Tomb. The Circle's werewolf forms are scripted race changes with no record of their own; the wolf spirits are on Werebeasts → *Wolf Spirits*. No CC pack adds a Companion.",
+  "families": [
+    {
+      "id": "the-circle",
+      "holds": "Kodlak Whitemane, Skjor, Aela the Huntress, Farkas, Vilkas, and Kodlak's quest copies"
+    },
+    {
+      "id": "companions-members",
+      "holds": "Athis, Njada Stonearm, Ria, Torvar, Eorlund Gray-Mane, Tilma the Haggard, Vignar Gray-Mane, Brill"
+    },
+    {
+      "id": "companion-ghosts",
+      "holds": "the 21 hostile Companion Ghosts of Ysgramor's Tomb (`C06`, *Glory of the Dead*), bandit levels 1–25 (moved from *Common Ghosts*)"
+    }
+  ],
+  "filedElsewhere": [
+    {
+      "record": "`EncC06WolfSpirit` 058303 · `CR13FarkasWolfSpirit` 0F6087 · `CR13VilkasWolfSpirit` 0F6089",
+      "what": "the wolf spirits of Kodlak, Farkas and Vilkas",
+      "where": "Werebeasts → *Wolf Spirits*"
+    },
+    {
+      "record": "`HowlSummonWolf` 0CF79E · `DLC1HowlSummonIceWolf` 008A6C:Dawnguard.esm · `DLC1HowlSummonWerewolf` 008A6D:Dawnguard.esm",
+      "what": "Pack Member, the werewolf howl summons (in `CompanionsFaction`)",
+      "where": "Conjured → *Familiars & Spirit Animals*, covered by its note on the werewolf howls"
+    }
+  ]
+}

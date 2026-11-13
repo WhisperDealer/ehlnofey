@@ -1,0 +1,207 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "companion-ghosts",
+  "group": "companions",
+  "title": "Companion Ghosts",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "companion-ghost-1h",
+        "name": "Companion Ghost",
+        "records": [
+          {
+            "edid": "DunYsgramorsTomb_LvlGhostMelee1HMale",
+            "formKey": "0AB102:Skyrim.esm"
+          },
+          {
+            "edid": "DunYsgramorsTomb_LvlGhostMelee1HFemale",
+            "formKey": "0DE517:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee1H",
+            "formKey": "039CFC:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts (as on *Common Ghosts*, where they were filed)"
+        },
+        "note": "one-handed; `Stats` from `LvlBanditGhostMelee1HMale` 0B1F96 · `…Female` 0D93A2 → `LCharBanditMelee1H`. Own name; no `BaseData` flag, so the template's \"Ghost\" is not shown `[unverified]` in game."
+      },
+      {
+        "id": "companion-ghost-2h",
+        "name": "Companion Ghost",
+        "records": [
+          {
+            "edid": "DunYsgramorsTomb_LvlGhostMelee2HMale",
+            "formKey": "0DE519:Skyrim.esm"
+          },
+          {
+            "edid": "DunYsgramorsTomb_LvlGhostMelee2HFemale",
+            "formKey": "0DE516:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee2H",
+            "formKey": "03DEC8:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts (as on *Common Ghosts*, where they were filed)"
+        },
+        "note": "two-handed; `Stats` from `LvlBanditGhostMelee2H*` → `LCharBanditMelee2H`"
+      },
+      {
+        "id": "companion-ghost-missile",
+        "name": "Companion Ghost",
+        "records": [
+          {
+            "edid": "DunYsgramorsTomb_LvlGhostMissileMale",
+            "formKey": "0AB104:Skyrim.esm"
+          },
+          {
+            "edid": "DunYsgramorsTomb_LvlGhostMissileFemale",
+            "formKey": "0DE518:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMissile",
+            "formKey": "01E770:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "bands-of-power.md: ghosts (as on *Common Ghosts*, where they were filed)"
+        },
+        "note": "archers; `Stats` from `LvlBanditGhostMissile*` 0B1F9A · … → `LCharBanditMissile`"
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "All six records: no other record keeps its own level (none of them is used as a template; they follow the bandit lists)."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "`LCharBanditMelee1H` 039CFC · `LCharBanditMelee2H` 03DEC8 · `LCharBanditMissile` 01E770"
+        },
+        "note": "the bandit rungs (level only)",
+        "owner": "the `LvlBanditGhost*` wrappers the Companion Ghosts template; see Bandits → *Common Bandits*"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Companion Ghost",
+        "locations": [
+          {
+            "cell": {
+              "edid": "YsgramorsTomb01",
+              "formKey": "015254:Skyrim.esm"
+            },
+            "refText": "×21 (one-handed 5 + 4, two-handed 3 + 2, archers 4 + 3; male + female)"
+          }
+        ],
+        "note": "all in `dunYsgramorsTombGhostFaction` 0BC033"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "one-handed",
+        "weapons": "`LItemDraugr02Weapon1HShield100` 02D290",
+        "armor": "`DraugrArmorForNonDraugrOutfit` 0C7B18 (Ancient Nord Armor, Gauntlets, Helmet, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "two-handed",
+        "weapons": "`LItemDraugr02Weapon2H` 024300",
+        "armor": "`DraugrArmorForNonDraugrOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "archers",
+        "weapons": "`LItemDraugr02Weapon1H` 0242FC, `LItemDraugr02WeaponBow` 024302",
+        "armor": "`DraugrArmorForNonDraugrOutfit`",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "`LItemDraugr02Weapon*`"
+        },
+        "rolls": "as on Draugr → *Common Draugr* → Gear lists"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Ancient Nord Armor, Gauntlets, Helmet, Boots",
+        "kind": "heavy",
+        "playable": true,
+        "note": "whether a ghost leaves its gear to loot is `[unverified]`"
+      },
+      {
+        "item": "the Ancient Nord weapons and bows",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

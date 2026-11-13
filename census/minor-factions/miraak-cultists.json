@@ -1,0 +1,506 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "miraak-cultists",
+  "group": "minor-factions",
+  "title": "Miraak Cultists",
+  "order": 5,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "cultist-rung-03",
+        "name": "Cultist",
+        "records": [
+          {
+            "edid": "DLC2EncCultist03Template",
+            "formKey": "030CD1:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist03DarkElfF",
+            "formKey": "034FBA:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist03DarkElfM",
+            "formKey": "034FBB:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist03NordM",
+            "formKey": "034FB9:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist03DarkElfFSummoner",
+            "formKey": "0365F4:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist03DarkElfMSummoner",
+            "formKey": "0365F3:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 12
+        },
+        "target": {
+          "band": "II",
+          "level": 12,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 (WD-59): the rung keeps its vanilla level (Rule 1); the list rolls 19 ×2 · 27 ×3 · 36 ×1"
+        },
+        "note": "the race and summoner leaves and the `…TemplateSummoner` records carry `Stats` from the rung template."
+      },
+      {
+        "id": "cultist-rung-04",
+        "name": "Cultist Adept",
+        "records": [
+          {
+            "edid": "DLC2EncCultist04Template",
+            "formKey": "030CD3:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist04TemplateSummoner",
+            "formKey": "034FCA:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist04DarkElfF",
+            "formKey": "034FBD:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist04DarkElfM",
+            "formKey": "034FBE:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist04NordM",
+            "formKey": "034FBF:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist04DarkElfFSummoner",
+            "formKey": "034FC9:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist04DarkElfMSummoner",
+            "formKey": "034FCE:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist04NordMSummoner",
+            "formKey": "034FCF:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 19
+        },
+        "target": {
+          "band": "III",
+          "level": 19,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 (WD-59): the rung keeps its vanilla level (Rule 1); the list rolls 19 ×2 · 27 ×3 · 36 ×1"
+        }
+      },
+      {
+        "id": "cultist-rung-05",
+        "name": "Ascendant Cultist",
+        "records": [
+          {
+            "edid": "DLC2EncCultist05Template",
+            "formKey": "030CD4:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist05TemplateSummoner",
+            "formKey": "034FCB:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist05DarkElfF",
+            "formKey": "034FC0:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist05DarkElfM",
+            "formKey": "034FC1:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist05NordM",
+            "formKey": "034FC2:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist05DarkElfFSummoner",
+            "formKey": "034FD0:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist05DarkElfMSummoner",
+            "formKey": "034FD1:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist05NordMSummoner",
+            "formKey": "035650:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 27
+        },
+        "target": {
+          "band": "IV",
+          "level": 27,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 (WD-59): the rung keeps its vanilla level (Rule 1); the list rolls 19 ×2 · 27 ×3 · 36 ×1"
+        }
+      },
+      {
+        "id": "cultist-rung-06",
+        "name": "Master Cultist",
+        "records": [
+          {
+            "edid": "DLC2EncCultist06Template",
+            "formKey": "030CD5:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist06TemplateSummoner",
+            "formKey": "034FCC:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist06DarkElfF",
+            "formKey": "034FC3:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist06DarkElfM",
+            "formKey": "034FC4:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist06NordM",
+            "formKey": "034FC5:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist06DarkElfFSummoner",
+            "formKey": "035651:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist06DarkElfMSummoner",
+            "formKey": "035652:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist06NordMSummoner",
+            "formKey": "035653:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 36
+        },
+        "target": {
+          "band": "VI",
+          "level": 36,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 (WD-59): the rung keeps its vanilla level (Rule 1); the list rolls 19 ×2 · 27 ×3 · 36 ×1"
+        }
+      },
+      {
+        "id": "cultist-rung-07",
+        "name": "Arch Cultist",
+        "records": [
+          {
+            "edid": "DLC2EncCultist07Template",
+            "formKey": "030CD6:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist07TemplateSummoner",
+            "formKey": "034FCD:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist07DarkElfF",
+            "formKey": "034FC6:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist07DarkElfM",
+            "formKey": "034FC7:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist07NordM",
+            "formKey": "034FC8:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist07DarkElfFSummoner",
+            "formKey": "035654:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist07DarkElfMSummoner",
+            "formKey": "035655:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2EncCultist07NordMSummoner",
+            "formKey": "035656:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 46
+        },
+        "target": {
+          "band": "VII",
+          "level": 46,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 (WD-59): the rung keeps its vanilla level (Rule 1); the list rolls 19 ×2 · 27 ×3 · 36 ×1"
+        }
+      },
+      {
+        "id": "cultist-template-00",
+        "name": "Cultist",
+        "records": [
+          {
+            "edid": "DLC2EncCultist00Template",
+            "formKey": "030CD2:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "lends `Inventory` to every rung; the five rung templates use it as template but not for `Stats`. Not placed."
+      },
+      {
+        "id": "cultist-wrappers",
+        "name": "by rung",
+        "records": [
+          {
+            "edid": "DLC2LvlCultist",
+            "formKey": "01CE00:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2LvlCultistNonHostile",
+            "formKey": "035475:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2LvlCultistPillarGuard",
+            "formKey": "03BD91:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2dunTempleofMiraakCultist01",
+            "formKey": "028973:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2dunTempleofMiraakCultist02",
+            "formKey": "028974:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "DLC2LCharCultist",
+            "formKey": "030CDC:Dragonborn.esm"
+          },
+          "rungs": [
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 (WD-59): the list rolls 19 ×2 · 27 ×3 · 36 ×1, mean 25.8"
+        }
+      },
+      {
+        "id": "cultist-summoner-wrappers",
+        "name": "by rung",
+        "records": [
+          {
+            "edid": "DLC2LvlCultistSummoner",
+            "formKey": "03564C:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2LvlCultistNonHostileSummoner",
+            "formKey": "0365F6:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "DLC2LCharCultistSummoner",
+            "formKey": "03564D:Dragonborn.esm"
+          },
+          "rungs": [
+            12,
+            19,
+            27,
+            36,
+            46
+          ]
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 (WD-59): the list rolls 19 ×2 · 27 ×3 · 36 ×1, mean 25.8"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `DLC2EncCultist05Template` 030CD4:Dragonborn.esm also needs `ccASVSSE001_HandMavandes` 00083F:ccasvsse001-almsivi.esm (Hand Ethra Mavandas, PC × 1, min 15, max 100): it uses the rung leaf `DLC2EncCultist05DarkElfF` as its template but not for `Stats` (on Minor Factions → *Ghosts of the Tribunal*).",
+      "Changing `DLC2EncCultist07Template` 030CD6:Dragonborn.esm also needs `ccASVSSE001_DagothPriest` 0C1928:ccasvsse001-almsivi.esm (Erden Relvel, PC × 2, min 10, max 100): it uses the leaf `DLC2EncCultist07DarkElfMSummoner` as its template but not for `Stats` (on World → Solstheim → *Solstheim Countryside*).",
+      "The other rows: no other record keeps its own level. The five rung templates use `DLC2EncCultist00Template` as their template but not for `Stats`, so changing it does not move them.",
+      "Every other cultist record (the race and summoner leaves, the `…TemplateSummoner` records, `DLC2LvlCultistNonHostile` and `…NonHostileSummoner`) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC2LCharCultist",
+          "formKey": "030CDC:Dragonborn.esm"
+        },
+        "gate": "all levels ≤ player, each",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DLC2LCharCultist03` 030CD7"
+          },
+          {
+            "at": 18,
+            "label": "`DLC2LCharCultist04` 030CD8"
+          },
+          {
+            "at": 19,
+            "label": "`DLC2LCharCultist04` 030CD8"
+          },
+          {
+            "at": 27,
+            "label": "`DLC2LCharCultist05` 030CD9"
+          },
+          {
+            "at": 36,
+            "label": "`DLC2LCharCultist06` 030CDA"
+          },
+          {
+            "at": 46,
+            "label": "`DLC2LCharCultist07` 030CDB"
+          }
+        ],
+        "note": "each rung list draws its three leaves @1.",
+        "owner": "`DLC2LvlCultist`, `…PillarGuard`, `DLC2dunTempleofMiraakCultist01/02`; `…NonHostile` through `DLC2LvlCultist`"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharCultistSummoner",
+          "formKey": "03564D:Dragonborn.esm"
+        },
+        "gate": "all levels ≤ player, each",
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DLC2LCharCultist03Summoner` 0365F5 (two leaves)"
+          },
+          {
+            "at": 19,
+            "label": "`…04Summoner` 03564E"
+          },
+          {
+            "at": 27,
+            "label": "`…05Summoner` 03564F"
+          },
+          {
+            "at": 36,
+            "label": "`…06Summoner` 035657"
+          },
+          {
+            "at": 46,
+            "label": "`…07Summoner` 035658"
+          }
+        ],
+        "note": "each draws its leaves @1.",
+        "owner": "`DLC2LvlCultistSummoner`; `…NonHostileSummoner` through it"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "`DLC2LvlCultist`",
+        "note": "`DLC2TempleOfMiraak01` 0142F0 ×5 · `DLC2TempleofMiraak02` 019CD7 ×1 · `DLC2SolstheimWorld` persistent ×2"
+      },
+      {
+        "name": "`DLC2LvlCultistSummoner`",
+        "note": "`DLC2TempleOfMiraak01` 0142F0 ×1 · `DLC2TempleofMiraak02` 019CD7 ×1"
+      },
+      {
+        "name": "`DLC2LvlCultistPillarGuard`",
+        "note": "`DLC2StoneBeast` 00EE08 ×1 · `DLC2StoneWater` 00EDF1 ×1"
+      },
+      {
+        "name": "`DLC2LvlCultistNonHostile`, `…NonHostileSummoner`",
+        "notPlaced": true,
+        "note": "created by `DLC2CultistAmbush` 03546D (Cultist1 summoner, Cultist2) and `DLC2WE09` 0331C0 (Actor1 summoner, Actor2, Actor3)"
+      },
+      {
+        "name": "`DLC2dunTempleofMiraakCultist01/02`",
+        "notPlaced": true,
+        "note": "only in `DLC2QANPCList03` 02A8A5"
+      },
+      {
+        "name": "the rung templates and leaves",
+        "notPlaced": true
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "every cultist (`Inventory` from `DLC2EncCultist00Template`; the wrappers from the drawn leaf)",
+        "weapons": "`LItemWarlockDagger`, `LootStaffsWeaponWarlock`, `LootWarlockRandom`, `AtrFrgRecipeList`, `AtrFrgDaedricRecipeList`",
+        "armor": "`DLC2HermaeusMoraCultistOutfit` 02BF43 (Cultist Mask, Robes, Gloves, Boots)",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "`LItemWarlockDagger`, `LootStaffsWeaponWarlock`, `LootWarlockRandom`"
+        },
+        "rolls": "as on the Warlocks pages"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Cultist Robes 037B8A, Cultist Boots 037B8E",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Cultist Gloves 037B8C",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Cultist Mask 037B88",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "the warlock daggers and staves",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

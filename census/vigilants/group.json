@@ -1,0 +1,56 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "vigilants",
+  "title": "Vigilants",
+  "order": 8,
+  "parent": "factions",
+  "meta": {
+    "spec": "archetype-tiers.md §3.1 and §7",
+    "updated": "2026-11-13"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The Vigilants of Stendarr: vanilla, Dawnguard, The Cause (`ccbgssse067-daedinv.esm`) and Vigil Enforcer (`ccmtysse002-ve.esl`). Vampiric Vigilants (`DLC1_WESC02_VigilantVampire`, Fenrik) stay under *Vampires*. bands-of-power.md puts the Vigilants in Experienced (V); archetype-tiers.md §3.1 pins every Vigilant list to rung 05, raised 25 → 35, which is Elite (VI), so the two disagree until the user settles it.",
+  "families": [
+    {
+      "id": "common-vigilants",
+      "holds": "the five-rung ladder (5 · 9 · 14 · 19 · 25, every rung named Vigilant of Stendarr), its wrappers, the Charmed Vigilants, the corpses, and The Cause's Vigilants and Vigil Enforcers"
+    },
+    {
+      "id": "named-vigilants",
+      "holds": "Keeper Carcette, Vigilant Tyranus, Vigilant Tolan, Vigilant Adalvald, the Vigil Enforcer pack's Azarain and Vigilant Enforcer, and Moric Sidrey"
+    }
+  ],
+  "filedElsewhere": [
+    {
+      "record": "`DLC1_WESC02_VigilantVampire` 0034EC · `…Leader` 0034EE (Dawnguard.esm) · `ccMTYSSE002_Fenrik` 00095F:ccmtysse002-ve.esl",
+      "what": "the vampiric Vigilants",
+      "where": "Undead → Vampires → *Common Vampires*"
+    },
+    {
+      "record": "`TrainedDog` 09A7AA",
+      "what": "\"Vigilance\"",
+      "where": "World Creatures → Animals → *Dog*"
+    }
+  ],
+  "neverMet": [
+    {
+      "record": "`LvlVigilantOfStendarrDarkElfF` 10C46E · `…NordM03` 10C46A · `…NordM04` 10C46B, `LvlVigilantOfStendarrNordM` 0034E7:Dawnguard.esm",
+      "what": "Vigilant wrappers on the race lists",
+      "why": "not placed; no list or quest draws them"
+    },
+    {
+      "record": "`SubCharVigilantOfStendarr01` 10C452",
+      "what": "a Vigilant sub-list",
+      "why": "no list or record uses it"
+    },
+    {
+      "record": "`VigilantOfStendarrOutfitHood` 10BFF4",
+      "what": "a Vigilant outfit",
+      "why": "no NPC wears it"
+    },
+    {
+      "record": "`ccMTYSSE002_VigilantOfStendarrOutfitCorrupted` 00095E · `…OutfitSilverHand` 000966 (ccmtysse002-ve.esl)",
+      "what": "Vigil Enforcer pack outfits",
+      "why": "no NPC wears them"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "dark-brotherhood",
+  "title": "Dark Brotherhood",
+  "order": 12,
+  "parent": "factions",
+  "meta": {
+    "spec": "archetype-tiers.md §6, §7.0",
+    "updated": "2026-11-13"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The Dark Brotherhood: the Falkreath Sanctuary family, the assassins sent after the player, and the contract victims, vanilla, DLC and CC.",
+  "families": [
+    {
+      "id": "named-dark-brotherhood",
+      "holds": "the Falkreath Sanctuary family (Astrid, Arnbjorn, Babette, Cicero, Festus Krex, Gabriella, Nazir, Veezara, Lis), their quest and dead copies, and the Dawnstar initiates"
+    },
+    {
+      "id": "dark-brotherhood-assassins",
+      "holds": "the assassins of `WEJS28` (`WEAssassinSubChar`, PC×1.1 [6–45]), the Hag's End assassin, the CC assassins (Bow of Shadows, Daedric armor pack) and the Dawnstar Sanctuary Guardians"
+    },
+    {
+      "id": "dark-brotherhood-targets",
+      "holds": "the contract victims: the main questline (`DB01`–`DB11`), Nazir's side contracts (`DBSideContract01`–`12`, Agnis and Maluril included) and the ten recurring targets (`DBrecurring`)"
+    }
+  ],
+  "filedElsewhere": [
+    {
+      "record": "`ArnbjornWerewolf` 032896",
+      "what": "Arnbjorn's werewolf form",
+      "where": "Werebeasts → *Werewolf Boss*"
+    },
+    {
+      "record": "`DBSpectralAssassin` 0A0E49",
+      "what": "the Spectral Assassin",
+      "where": "Conjured → Summoned NPCs → *Heroes & Spirits*"
+    },
+    {
+      "record": "`Shadowmere` 09CCD7",
+      "what": "Shadowmere",
+      "where": "World Creatures → Mounts → *Horse*"
+    },
+    {
+      "record": "`GaiusMaro` 044050 · `CommanderMaro` 01D4B5",
+      "what": "the targets Gaius Maro (`DB06`) and Commander Maro (`DB11`, optional)",
+      "where": "Factions → Minor Factions → *Penitus Oculatus*"
+    },
+    {
+      "record": "`Helvard` 013657",
+      "what": "the target Helvard (`DBSideContract11`)",
+      "where": "Factions → Housecarls → *Jarls*"
+    },
+    {
+      "record": "`Hern` 01367B",
+      "what": "the target Hern (`DBSideContract04`), a vampire",
+      "where": "Undead → Vampires → *Unique Vampires* (user, 2026-10-05)"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "blades",
+  "group": "minor-factions",
+  "title": "Blades",
+  "order": 6,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "delphine",
+        "name": "Delphine",
+        "records": [
+          {
+            "edid": "Delphine",
+            "formKey": "013478:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.9,
+          "min": 10,
+          "max": 30
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "IV",
+          "level": 22,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 0.9, clamped to 10–30)"
+        },
+        "note": "in `BladesFaction` 072834."
+      },
+      {
+        "id": "esbern",
+        "name": "Esbern",
+        "records": [
+          {
+            "edid": "Esbern",
+            "formKey": "013358:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.75,
+          "min": 10,
+          "max": 30
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "III",
+          "level": 18,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 0.75, clamped to 10–30)"
+        },
+        "note": "in `BladesFaction`."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`Delphine`, `Esbern`: no other record keeps its own level."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Delphine",
+        "note": "`RiverwoodSleepingGiantInn` 0133C6"
+      },
+      {
+        "name": "Esbern",
+        "note": "`RiftenEsbernsVault` 03B696"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Delphine",
+        "weapons": "Orcish Bow, Steel Arrows, Elven Dagger",
+        "armor": "`FarmClothesOutfit04` (Clothes, Boots); set by quest script: `MQ102DelphineOutfit` 0996E4 (`MQ103`), `MQDelphineOutfit` 0C65B2 (`MQ106`), `ArmorBladesOutfitNoHelmet` 108DBE (`MQ204`)",
+        "skin": "race default"
+      },
+      {
+        "records": "Esbern",
+        "weapons": "Ebony Dagger",
+        "armor": "`EsbernOutfit` 0A0E52 (Miner's Clothes, Boots); `EsbernSkyHavenOutfit` 109123 (Mourner's Clothes, Boots) set by `MQ204`",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "MQ102DelphineOutfit",
+          "formKey": "0996E4:Skyrim.esm"
+        },
+        "rolls": "Leather Armor, Leather Boots, Leather Bracers, Thieves Guild Hood 036585"
+      },
+      {
+        "list": {
+          "edid": "MQDelphineOutfit",
+          "formKey": "0C65B2:Skyrim.esm"
+        },
+        "rolls": "Leather Armor, Leather Boots, Leather Bracers"
+      },
+      {
+        "list": {
+          "edid": "ArmorBladesOutfitNoHelmet",
+          "formKey": "108DBE:Skyrim.esm"
+        },
+        "rolls": "Blades Armor 04B28B, Blades Boots 04B288, Blades Gauntlets 04B28D"
+      },
+      {
+        "list": {
+          "edid": "ArmorBladesOutfit",
+          "formKey": "0E3E66:Skyrim.esm"
+        },
+        "rolls": "the above plus Blades Helmet 04B28F and Blades Shield 04F912; worn by the recruits `FreeformSkyHavenTempleA`/`B` add to `BladesRecruitsFaction` (followers, no record of their own)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Blades Armor, Boots, Gauntlets, Helmet, Shield",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Leather Armor, Boots, Bracers",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Thieves Guild Hood 036585 (the NPC copy)",
+        "kind": "light",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Farm, miner's and mourner's clothes; Boots 0C5D12",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Orcish Bow, Elven Dagger, Ebony Dagger",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

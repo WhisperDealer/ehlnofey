@@ -1,0 +1,110 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "silver-hand-leaders",
+  "group": "silver-hand",
+  "title": "Silver Hand Leaders",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "silver-hand-boss",
+        "name": "Silver Hand",
+        "records": [{ "edid": "LvlSilverhandBoss", "formKey": "0A9548:Skyrim.esm" }],
+        "level": { "kind": "list", "from": { "edid": "LvlBanditBoss", "formKey": "03DF17:Skyrim.esm" }, "rungs": [6, 10, 16, 21, 28] },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (user, 2026-09-27): the Silver Hand bosses stay on the bandit chief, 28; bands-of-power.md: the Silver Hand, Experienced"
+        },
+        "note": "the bandit boss ladder, via `Stats` from `LvlBanditBoss` 03DF17."
+      },
+      {
+        "id": "krev",
+        "name": "Krev the Skinner",
+        "records": [{ "edid": "LvlSilverhandBoss", "formKey": "0A9548:Skyrim.esm" }],
+        "level": { "kind": "list", "from": { "edid": "LvlBanditBoss", "formKey": "03DF17:Skyrim.esm" }, "rungs": [6, 10, 16, 21, 28] },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (user, 2026-09-27): Krev stays on the bandit chief, 28"
+        },
+        "note": "ref 02516D of `LvlSilverhandBoss`, named by alias `KrevTheSkinner` on quest `C03` 01CEF4 (`DisplayName` `C03KrevTheSkinnerName` 0B3E07); ref LevelModifier VeryHard."
+      },
+      {
+        "id": "silver-hand-leader",
+        "name": "Silver Hand Leader",
+        "records": [{ "label": "any bandit boss at a radiant camp" }],
+        "level": { "kind": "list", "from": { "label": "the bandit boss's own" }, "rungs": [6, 10, 16, 21, 28] },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.1 (user, 2026-09-27): the Silver Hand bosses stay on the bandit chief, 28; the rebuilt boss lists spawn Bandit Chiefs only at 28 (user, 2026-11-12)"
+        },
+        "note": "alias `Boss` on `CRSilverHandNameChangerQuest` 09D6F6, `DisplayName` `SilverHandLeaderLabel` 09D6FB. The quest fills a Companions radiant camp's aliases with its bandits (`BanditFaction` 01BCC0, `ActorTypeNPC`), renames them \"Silver Hand\" (`SilverHandLabel` 087598) and its boss \"Silver Hand Leader\", and adds a Silver Sword 10AA19 and `LootSilverHand` potions, ingredients and books; their records, levels and outfits stay the bandits' (Bandits → *Bandit Chiefs*)."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "`LvlSilverhandBoss`: no other record keeps its own level (it takes `Stats` from `LvlBanditBoss`; the level belongs to the boss rungs on Bandits → *Bandit Chiefs*)."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": { "edid": "LvlBanditBoss", "formKey": "03DF17:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "note": "the bandit boss rungs (6 · 10 · 16 · 21 · 28); only `Stats` is taken. Documented in full on Bandits → *Bandit Chiefs*.",
+        "owner": "`LvlSilverhandBoss` 0A9548"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Krev the Skinner",
+        "locations": [{ "cell": { "edid": "GallowsRock01", "formKey": "015273:Skyrim.esm" }, "ref": { "formKey": "02516D:Skyrim.esm" }, "note": "Gallows Rock; VeryHard" }],
+        "quest": "`C03`"
+      },
+      {
+        "name": "Silver Hand (boss)",
+        "locations": [
+          { "cell": { "edid": "GallowsRock01", "formKey": "015273:Skyrim.esm" }, "ref": { "formKey": "0A9C66:Skyrim.esm" } },
+          { "cell": { "edid": "DriftshadeSanctuary01", "formKey": "015288:Skyrim.esm" }, "refText": "×1" }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      { "records": "`LvlSilverhandBoss` (Krev included)", "weapons": "`LItemBanditBossWeapon1H` 03DF1C · Steel Dagger 013986 (plus `LootBanditGoldBoss` 03DED1)", "armor": "`BanditArmorHeavyBossOutfit` 03DED3 · `LItemBanditBossShield` 03DF22", "skin": "race default" }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      { "list": { "edid": "BanditArmorHeavyBossOutfit", "formKey": "03DED3:Skyrim.esm" }, "rolls": "boots (03DF1A: Iron 1 · Steel Cuffed, Steel Shin 6 · Steel Plate 18) · cuirass (03DF19: Iron, Banded Iron 1 · Steel 6 · Steel Plate 18) · 50% gauntlets (03DF18: Iron 1 · Steel Nordic, Steel Imperial 6 · Steel Plate 18) · 50% helmet (03DF1B: Iron 1 · Steel, Steel Horned 6 · Steel Plate 18)", "levels": [1, 6, 18] },
+      { "list": { "edid": "LItemBanditBossShield", "formKey": "03DF22:Skyrim.esm" }, "rolls": "50% none; Iron, Banded Iron 1 · Steel 6 · Dwarven 12 · Orcish 25 · Ebony 32", "levels": [1, 6, 12, 25, 32] },
+      { "list": { "edid": "LItemBanditBossWeapon1H", "formKey": "03DF1C:Skyrim.esm" }, "rolls": "Steel Mace, Sword, War Axe 1 · enchanted Iron and plain Orcish 6 · enchanted Steel 9 · enchanted Orcish and plain Dwarven 12 · enchanted Dwarven and plain Elven 19 · enchanted Elven and plain Glass 27 · enchanted Glass and plain Ebony 36 (mace, sword, war axe)", "levels": [1, 6, 9, 12, 19, 27, 36] }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      { "item": "Iron, Banded Iron, Steel and Steel Plate armour; the boss shields", "kind": "heavy", "playable": true },
+      { "item": "Steel Dagger and the boss weapons (plain and enchanted)", "kind": "one-handed", "playable": true }
+    ]
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "companions-members",
+  "group": "companions",
+  "title": "Companions Members",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "athis",
+        "name": "Athis",
+        "records": [
+          {
+            "edid": "Athis",
+            "formKey": "01A6D5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 25
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (WD-61, user): Junior Companions 30"
+        }
+      },
+      {
+        "id": "njada-stonearm",
+        "name": "Njada Stonearm",
+        "records": [
+          {
+            "edid": "NjadaStonearm",
+            "formKey": "01A6D9:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 25
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (WD-61, user): Junior Companions 30"
+        }
+      },
+      {
+        "id": "ria",
+        "name": "Ria",
+        "records": [
+          {
+            "edid": "Ria",
+            "formKey": "01A6D7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 25
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (WD-61, user): Junior Companions 30"
+        }
+      },
+      {
+        "id": "torvar",
+        "name": "Torvar",
+        "records": [
+          {
+            "edid": "Torvar",
+            "formKey": "01A6DB:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 25
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (WD-61, user): Junior Companions 30"
+        }
+      },
+      {
+        "id": "eorlund-gray-mane",
+        "name": "Eorlund Gray-Mane",
+        "records": [
+          {
+            "edid": "EorlundGrayMane",
+            "formKey": "013B9D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "tilma-the-haggard",
+        "name": "Tilma the Haggard",
+        "records": [
+          {
+            "edid": "Tilma",
+            "formKey": "013BB6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "vignar-gray-mane",
+        "name": "Vignar Gray-Mane",
+        "records": [
+          {
+            "edid": "VignarGrayMane",
+            "formKey": "013BB5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "in `CompanionsFaction` 048362 but not in `CompanionsFactionMinusBrillAndVignar` 103AFE, which holds the other six; also on Housecarls → *Jarls*, as the other Jarl of Whiterun",
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "brill",
+        "name": "Brill",
+        "records": [
+          {
+            "edid": "Brill",
+            "formKey": "01A6A2:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "in `CompanionsFaction` 048362 but not in `CompanionsFactionMinusBrillAndVignar` 103AFE, which holds the other six"
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "All eight rows: no other record keeps its own level (none of them is used as a template)."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Athis · Njada Stonearm · Ria · Torvar · Tilma the Haggard",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WhiterunJorrvaskrBasement",
+              "formKey": "07947A:Skyrim.esm"
+            },
+            "refText": "refs 01A6D6 · 01A6DA · 01A6D8 · 01A6DC (persistent) · 03BDE9",
+            "note": "Jorrvaskr living quarters"
+          }
+        ]
+      },
+      {
+        "name": "Vignar Gray-Mane · Brill",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WhiterunJorrvaskr",
+              "formKey": "0165B5:Skyrim.esm"
+            },
+            "refText": "refs `VignartheReveredREF` 01A6A1 (persistent) · 01A6A3"
+          }
+        ]
+      },
+      {
+        "name": "Eorlund Gray-Mane",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WhiterunHouseGrayMane",
+              "formKey": "0165B2:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "01A683:Skyrim.esm"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Athis",
+        "weapons": "Skyforge Steel Sword 09F25C · Iron Shield 012EB6",
+        "armor": "`RiftenHewnonOutfit` 0AB7D5",
+        "skin": "race default"
+      },
+      {
+        "records": "Njada Stonearm",
+        "weapons": "Skyforge Steel Sword · Steel Shield 013955",
+        "armor": "`ArmorHideAllOutfit` 01B3A8",
+        "skin": "race default"
+      },
+      {
+        "records": "Ria",
+        "weapons": "Skyforge Steel Sword · Steel Shield (plus Whiterun gate key 0D8F0C)",
+        "armor": "`ArmorScaledSimpleOutfit` 037C50",
+        "skin": "race default"
+      },
+      {
+        "records": "Torvar",
+        "weapons": "Skyforge Steel Sword · Steel Shield",
+        "armor": "`ArmorLeatherSimpleOutfit` 057A34",
+        "skin": "race default"
+      },
+      {
+        "records": "Eorlund Gray-Mane",
+        "weapons": "Skyforge Steel Sword (plus House Gray-Mane key 093B0B, `LootCitizenPocketsRich` 1046D3)",
+        "armor": "`ArmorHideSimpleOutfit` 037C4F",
+        "skin": "race default"
+      },
+      {
+        "records": "Tilma the Haggard",
+        "weapons": "Skyforge Steel Dagger 09F25D",
+        "armor": "`FarmClothesOutfit01` 01DC10",
+        "skin": "race default"
+      },
+      {
+        "records": "Vignar Gray-Mane",
+        "weapons": "Skyforge Steel Sword (plus `LootCitizenPocketsRich`)",
+        "armor": "`FineClothesOutfit02` 0E40DD",
+        "skin": "race default"
+      },
+      {
+        "records": "Brill",
+        "weapons": "Skyforge Steel Dagger (plus `LootCitizenPocketsCommon` 1046D1)",
+        "armor": "`FarmClothesOutfit04Variant` 0DAB78",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "RiftenHewnonOutfit",
+          "formKey": "0AB7D5:Skyrim.esm"
+        },
+        "rolls": "Hide Armor 013911 · Boots 04223D"
+      },
+      {
+        "list": {
+          "edid": "ArmorHideAllOutfit",
+          "formKey": "01B3A8:Skyrim.esm"
+        },
+        "rolls": "Hide Armor · Hide Boots 013910 · Hide Bracers 013912 · Hide Helmet 013913"
+      },
+      {
+        "list": {
+          "edid": "ArmorScaledSimpleOutfit",
+          "formKey": "037C50:Skyrim.esm"
+        },
+        "rolls": "Scaled Armor 01B3A3 · Scaled Boots 01B39F"
+      },
+      {
+        "list": {
+          "edid": "ArmorLeatherSimpleOutfit",
+          "formKey": "057A34:Skyrim.esm"
+        },
+        "rolls": "Leather Armor 03619E · Leather Boots 013920"
+      },
+      {
+        "list": {
+          "edid": "ArmorHideSimpleOutfit",
+          "formKey": "037C4F:Skyrim.esm"
+        },
+        "rolls": "Hide Armor · Hide Boots"
+      },
+      {
+        "list": {
+          "label": "`FarmClothesOutfit01` · `FineClothesOutfit02` · `FarmClothesOutfit04Variant`"
+        },
+        "rolls": "Belted Tunic 01BE1A + Boots 01BE1B · Fine Clothes 0CEE80 + Fine Boots 0CEE82 · Clothes 06C1D8 + Boots 03452F"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Hide Armor · Boots · Bracers · Helmet",
+        "kind": "light, AR 20 · 5 · 5 · 10",
+        "playable": true
+      },
+      {
+        "item": "Scaled Armor · Scaled Boots",
+        "kind": "light, AR 32 · 9",
+        "playable": true
+      },
+      {
+        "item": "Leather Armor · Leather Boots",
+        "kind": "light, AR 26 · 7",
+        "playable": true
+      },
+      {
+        "item": "Iron Shield · Steel Shield",
+        "kind": "heavy shield, AR 20 · 24",
+        "playable": true
+      },
+      {
+        "item": "Skyforge Steel Sword · Skyforge Steel Dagger",
+        "kind": "one-handed",
+        "playable": true
+      },
+      {
+        "item": "the clothes and boots above",
+        "kind": "clothing",
+        "playable": true
+      }
+    ]
+  }
+}

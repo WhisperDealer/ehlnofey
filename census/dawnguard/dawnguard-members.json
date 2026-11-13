@@ -1,0 +1,687 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "dawnguard-members",
+  "group": "dawnguard",
+  "title": "Dawnguard Members",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "isran",
+        "name": "Isran",
+        "records": [
+          {
+            "edid": "DLC1Isran",
+            "formKey": "00336A:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 15
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: the Dawnguard's leader in its band (bands-of-power.md: the Dawnguard, Elite); archetype-tiers.md §7.0's level-25 rule would give 27 (IV)"
+        }
+      },
+      {
+        "id": "gunmar",
+        "name": "Gunmar",
+        "records": [
+          {
+            "edid": "DLC1Gunmar",
+            "formKey": "00336C:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 15
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (user, 2026-09-27): Gunmar 25"
+        }
+      },
+      {
+        "id": "vanik",
+        "name": "Vanik",
+        "records": [
+          {
+            "edid": "DLC1Vanik",
+            "formKey": "003D03:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 15
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: the Dawnguard's band (bands-of-power.md: the Dawnguard, Elite); archetype-tiers.md §7.0's level-25 rule would give 27 (IV)"
+        }
+      },
+      {
+        "id": "sorine-jurard",
+        "name": "Sorine Jurard",
+        "records": [
+          {
+            "edid": "DLC1SorineJurard",
+            "formKey": "00336B:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 30
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (user, 2026-09-27): Sorine 30"
+        }
+      },
+      {
+        "id": "florentius-baenius",
+        "name": "Florentius Baenius",
+        "records": [
+          {
+            "edid": "DLC1FlorentiusBaenius",
+            "formKey": "00336D:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 30
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (user, 2026-09-27): the Dawnguard followers take the Dawnguard pin, 38"
+        }
+      },
+      {
+        "id": "celann",
+        "name": "Celann",
+        "records": [
+          {
+            "edid": "DLC1Celann",
+            "formKey": "01541E:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10
+        },
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (user, 2026-09-27): the Dawnguard followers take the Dawnguard pin, 38"
+        }
+      },
+      {
+        "id": "durak",
+        "name": "Durak",
+        "records": [
+          {
+            "edid": "DLC1Durak",
+            "formKey": "01541D:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10
+        },
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (user, 2026-09-27): the Dawnguard followers take the Dawnguard pin, 38"
+        }
+      },
+      {
+        "id": "ingjard",
+        "name": "Ingjard",
+        "records": [
+          {
+            "edid": "DLC1Ingjard",
+            "formKey": "01541B:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10
+        },
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (user, 2026-09-27): the Dawnguard followers take the Dawnguard pin, 38"
+        }
+      },
+      {
+        "id": "agmaer",
+        "name": "Agmaer",
+        "records": [
+          {
+            "edid": "DLC1Agmaer",
+            "formKey": "00336E:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 25,
+          "from": {
+            "edid": "DLC1EncHunterTemplate",
+            "formKey": "00336F:Dawnguard.esm"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 and §6.1 (user, 2026-09-27): `DLC1EncHunterTemplate` is 38, the Dawnguard pin"
+        },
+        "note": "the templates `DLC1EncHunterTemplate` 00336F, `…Magic` 003370 and `…Missile` 003371 (\"Vampire Hunter\") are never placed."
+      },
+      {
+        "id": "beleval",
+        "name": "Beleval",
+        "records": [
+          {
+            "edid": "DLC1Beleval",
+            "formKey": "01541C:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 25,
+          "from": {
+            "edid": "DLC1EncHunterTemplate",
+            "formKey": "00336F:Dawnguard.esm"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 and §6.1 (user, 2026-09-27): `DLC1EncHunterTemplate` is 38, the Dawnguard pin"
+        }
+      },
+      {
+        "id": "tilde",
+        "name": "Tilde",
+        "records": [
+          {
+            "edid": "DLC1DawnguardExterior01",
+            "formKey": "010DE5:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 25,
+          "from": {
+            "edid": "DLC1EncHunterTemplate",
+            "formKey": "00336F:Dawnguard.esm"
+          }
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 (user, 2026-09-27): `DLC1EncHunterTemplate` owns the Fort's guards and is 38, the Dawnguard pin"
+        }
+      },
+      {
+        "id": "vori",
+        "name": "Vori",
+        "records": [
+          {
+            "edid": "DLC1DawnguardExterior02",
+            "formKey": "010DE6:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 25,
+          "from": {
+            "edid": "DLC1EncHunterTemplate",
+            "formKey": "00336F:Dawnguard.esm"
+          }
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 (user, 2026-09-27): `DLC1EncHunterTemplate` owns the Fort's guards and is 38, the Dawnguard pin"
+        }
+      },
+      {
+        "id": "ollrod",
+        "name": "Ollrod",
+        "records": [
+          {
+            "edid": "DLC1DawnguardExterior03",
+            "formKey": "010DE7:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 25,
+          "from": {
+            "edid": "DLC1EncHunterTemplate",
+            "formKey": "00336F:Dawnguard.esm"
+          }
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 (user, 2026-09-27): `DLC1EncHunterTemplate` owns the Fort's guards and is 38, the Dawnguard pin"
+        }
+      },
+      {
+        "id": "mogrul",
+        "name": "Mogrul",
+        "records": [
+          {
+            "edid": "DLC1DawnguardExterior04",
+            "formKey": "010DED:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 25,
+          "from": {
+            "edid": "DLC1EncHunterTemplate",
+            "formKey": "00336F:Dawnguard.esm"
+          }
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "VI",
+          "level": 38,
+          "status": "proposed",
+          "source": "archetype-tiers.md §3.4 (user, 2026-09-27): `DLC1EncHunterTemplate` owns the Fort's guards and is 38, the Dawnguard pin"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `DLC1EncHunterTemplate` 00336F:Dawnguard.esm also needs the six Dawnguard rungs `EncDawnguard01TemplateMelee` 01421F:Dawnguard.esm … `EncDawnguard06TemplateMelee` 014224:Dawnguard.esm (levels 1 · 5 · 9 · 14 · 19 · 25): they reach it through `EncDawnguard00Template` but not for `Stats` (on *Common Dawnguard*). Isran, Gunmar, Vanik and the `…Magic` / `…Missile` templates also keep their own level; Sorine and Florentius keep theirs from `…Missile` and `…Magic`.",
+      "The other rows: no other record keeps its own level.",
+      "Agmaer, Beleval, Tilde, Vori, Ollrod, Mogrul and `EncDawnguard00Template` carry `Stats` and follow `DLC1EncHunterTemplate`."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Isran · Gunmar · Sorine Jurard · Florentius Baenius · Celann · Durak · Ingjard · Agmaer · Beleval",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1DawnguardHQ01",
+              "formKey": "001DBA:Dawnguard.esm"
+            },
+            "refText": "1 ref each"
+          }
+        ]
+      },
+      {
+        "name": "Tilde",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1HunterWorldFort02",
+              "formKey": "001DD9:Dawnguard.esm"
+            },
+            "refText": "1 ref",
+            "note": "in `DLC1HunterHQWorld` 001DB8"
+          }
+        ]
+      },
+      {
+        "name": "Vori",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1HunterWorldFort01",
+              "formKey": "007BBF:Dawnguard.esm"
+            },
+            "refText": "1 ref",
+            "note": "in `DLC1HunterHQWorld` 001DB8"
+          }
+        ]
+      },
+      {
+        "name": "Ollrod · Mogrul",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1DawnguardGate3",
+              "formKey": "001DD3:Dawnguard.esm"
+            },
+            "refText": "1 ref each",
+            "note": "in `DLC1HunterHQWorld` 001DB8"
+          }
+        ]
+      },
+      {
+        "name": "Vanik",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC1ForebearsHoldout",
+              "formKey": "002F64:Dawnguard.esm"
+            },
+            "persistent": true,
+            "refText": "1 ref"
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Isran",
+        "weapons": "Dawnguard Warhammer 00DD55",
+        "armor": "`DLC1OutfitIsran` 0146BA",
+        "skin": "race default"
+      },
+      {
+        "records": "Gunmar",
+        "weapons": "`LItemBanditWeapon1H` 037C1B",
+        "armor": "`ArmorScaledBNoHelmetOutfit` 057A27",
+        "skin": "race default"
+      },
+      {
+        "records": "Vanik",
+        "weapons": "`LItemBanditWeapon1H`",
+        "armor": "`DLC1OutfitVanik` 003D04",
+        "skin": "race default"
+      },
+      {
+        "records": "Sorine Jurard",
+        "weapons": "`LItemBanditWeapon1H`",
+        "armor": "`ArmorLeatherSimpleOutfit` 057A34",
+        "skin": "race default"
+      },
+      {
+        "records": "Florentius Baenius",
+        "weapons": "`LItemBanditWeapon1H`",
+        "armor": "`VigilantOfStendarrOutfitNoHood` 0C7891",
+        "skin": "race default"
+      },
+      {
+        "records": "Celann",
+        "weapons": "Dawnguard War Axe 00D098",
+        "armor": "`DLC1OutfitDawnguard04` 0146B7",
+        "skin": "race default"
+      },
+      {
+        "records": "Durak",
+        "weapons": "Crossbow 000801 + 14 Steel Bolts 000BB3 · Dawnguard War Axe · Dawnguard Shield 0150B8",
+        "armor": "`DLC1OutfitDawnguard05` 0146B8",
+        "skin": "race default"
+      },
+      {
+        "records": "Ingjard",
+        "weapons": "Crossbow + 15 Steel Bolts · Dawnguard Warhammer",
+        "armor": "`DLC1OutfitDawnguard03` 0146B6",
+        "skin": "race default"
+      },
+      {
+        "records": "Beleval",
+        "weapons": "Crossbow + 15 Steel Bolts · Dawnguard War Axe",
+        "armor": "`DLC1OutfitDawnguard01Heavy` 0050BE",
+        "skin": "race default"
+      },
+      {
+        "records": "Agmaer",
+        "weapons": "Iron War Axe 013790",
+        "armor": "`FarmClothesOutfit03withHideBootsandBracers` 0B0108",
+        "skin": "race default"
+      },
+      {
+        "records": "Tilde",
+        "weapons": "Crossbow + 12 Steel Bolts · Dawnguard War Axe · Dawnguard Shield",
+        "armor": "`DLC1OutfitDawnguard02Heavy` 0146B5",
+        "skin": "race default"
+      },
+      {
+        "records": "Vori",
+        "weapons": "Crossbow + 15 Steel Bolts · Dawnguard Warhammer · Dawnguard Shield",
+        "armor": "`DLC1OutfitDawnguard01Heavy`",
+        "skin": "race default"
+      },
+      {
+        "records": "Ollrod",
+        "weapons": "Crossbow + 12 Steel Bolts · Dawnguard War Axe · Dawnguard Shield",
+        "armor": "`DLC1OutfitDawnguard03`",
+        "skin": "race default"
+      },
+      {
+        "records": "Mogrul",
+        "weapons": "Crossbow + 20 Steel Bolts · Dawnguard Warhammer",
+        "armor": "`DLC1OutfitDawnguard05`",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC1OutfitDawnguard01Heavy",
+          "formKey": "0050BE:Dawnguard.esm"
+        },
+        "rolls": "Dawnguard Heavy Armor 00F3F7 · Heavy Boots 014757 · Heavy Gauntlets 014758"
+      },
+      {
+        "list": {
+          "edid": "DLC1OutfitDawnguard02Heavy",
+          "formKey": "0146B5:Dawnguard.esm"
+        },
+        "rolls": "Dawnguard Heavy Armor 00F3FA · Heavy Boots · Heavy Gauntlets"
+      },
+      {
+        "list": {
+          "edid": "DLC1OutfitDawnguard03",
+          "formKey": "0146B6:Dawnguard.esm"
+        },
+        "rolls": "Dawnguard Armor 00F3FB · Boots 00F400 · Gauntlets 00F3FE"
+      },
+      {
+        "list": {
+          "edid": "DLC1OutfitDawnguard04",
+          "formKey": "0146B7:Dawnguard.esm"
+        },
+        "rolls": "Dawnguard Armor 00F402 · Boots · Gauntlets"
+      },
+      {
+        "list": {
+          "edid": "DLC1OutfitDawnguard05",
+          "formKey": "0146B8:Dawnguard.esm"
+        },
+        "rolls": "Dawnguard Armor 00F404 · Boots · Gauntlets"
+      },
+      {
+        "list": {
+          "edid": "DLC1OutfitIsran",
+          "formKey": "0146BA:Dawnguard.esm"
+        },
+        "rolls": "Dawnguard Armor 00F404 · Boots · Gauntlets"
+      },
+      {
+        "list": {
+          "edid": "DLC1OutfitVanik",
+          "formKey": "003D04:Dawnguard.esm"
+        },
+        "rolls": "Dawnguard Armor 00F402 · Boots · Gauntlets · Dawnguard Shield 0150B8"
+      },
+      {
+        "list": {
+          "edid": "ArmorScaledBNoHelmetOutfit",
+          "formKey": "057A27:Skyrim.esm"
+        },
+        "rolls": "Scaled Horn Armor 01B3A4 · Scaled Boots 01B39F · Scaled Bracers 01B3A0"
+      },
+      {
+        "list": {
+          "edid": "ArmorLeatherSimpleOutfit",
+          "formKey": "057A34:Skyrim.esm"
+        },
+        "rolls": "Leather Armor 03619E · Leather Boots 013920"
+      },
+      {
+        "list": {
+          "edid": "VigilantOfStendarrOutfitNoHood",
+          "formKey": "0C7891:Skyrim.esm"
+        },
+        "rolls": "Monk Robes 0BACF3 · Steel Plate Boots 01395B · Steel Plate Gauntlets 01395D · Amulet of Stendarr 0CC844"
+      },
+      {
+        "list": {
+          "edid": "FarmClothesOutfit03withHideBootsandBracers",
+          "formKey": "0B0108:Skyrim.esm"
+        },
+        "rolls": "Clothes 0261C0 · Hide Boots 013910 · Hide Bracers 013912"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditWeapon1H",
+          "formKey": "037C1B:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "mace, sword or war axe: Iron, Steel ×4 (1) · Orcish (9) · Dwarven (15) · Elven (22)",
+        "levels": [
+          1,
+          9,
+          15,
+          22
+        ]
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Dawnguard Heavy Armor 00F3F7 · 00F3FA (Dawnguard.esm)",
+        "kind": "heavy body, AR 34",
+        "playable": true
+      },
+      {
+        "item": "Dawnguard Armor 00F3FB · 00F402 · 00F404 (Dawnguard.esm)",
+        "kind": "light body, AR 29",
+        "playable": true
+      },
+      {
+        "item": "Dawnguard Heavy Boots 014757 · Heavy Gauntlets 014758",
+        "kind": "heavy, AR 13",
+        "playable": true
+      },
+      {
+        "item": "Dawnguard Boots 00F400 · Gauntlets 00F3FE",
+        "kind": "light, AR 8",
+        "playable": true
+      },
+      {
+        "item": "Dawnguard Shield 0150B8:Dawnguard.esm",
+        "kind": "heavy shield, AR 26",
+        "playable": true
+      },
+      {
+        "item": "Scaled Horn Armor · Boots · Bracers",
+        "kind": "light, AR 32 · 9 · 9",
+        "playable": true
+      },
+      {
+        "item": "Leather Armor · Boots",
+        "kind": "light, AR 26 · 7",
+        "playable": true
+      },
+      {
+        "item": "Steel Plate Boots · Gauntlets",
+        "kind": "heavy, AR 14",
+        "playable": true
+      },
+      {
+        "item": "Hide Boots · Bracers",
+        "kind": "light, AR 5",
+        "playable": true
+      },
+      {
+        "item": "Monk Robes · Clothes 0261C0 · Amulet of Stendarr",
+        "kind": "clothing · enchanted amulet",
+        "playable": true
+      },
+      {
+        "item": "Dawnguard War Axe · Iron War Axe · `LItemBanditWeapon1H` weapons · Dawnguard Warhammer · Crossbow",
+        "kind": "one-handed · two-handed · crossbow",
+        "playable": true
+      }
+    ]
+  }
+}

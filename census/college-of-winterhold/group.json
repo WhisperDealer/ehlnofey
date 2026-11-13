@@ -1,0 +1,58 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "college-of-winterhold",
+  "title": "College of Winterhold",
+  "order": 14,
+  "parent": "factions",
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The College of Winterhold, vanilla, DLC and CC. The Augur of Dunlain, Nerien and the Dremora Messenger are not enemies.",
+  "families": [
+    {
+      "id": "named-college-of-winterhold",
+      "holds": "the `CollegeofWinterholdFaction` members: Savos Aren, Tolfdir, Mirabelle Ervine, the five masters, the apprentices, Urag gro-Shub, Enthir, Nelacar, Arniel, Sergius, Nirya; and Savos Aren's ghost"
+    },
+    {
+      "id": "college-of-winterhold-foes",
+      "holds": "the Enthralled Wizards of Labyrinthian (`MG07`)"
+    }
+  ],
+  "filedElsewhere": [
+    {
+      "record": "Ancano · Estormo",
+      "what": "the Thalmor at the College",
+      "where": "Thalmor → *Named Thalmor*"
+    },
+    {
+      "record": "Jyrik Gauldurson",
+      "what": "the Saarthal boss",
+      "where": "Draugr → *Draugr Warlock*"
+    },
+    {
+      "record": "the Magic Anomalies",
+      "what": "the College questline anomalies",
+      "where": "World Creatures → Monsters → *Magic Anomaly*"
+    },
+    {
+      "record": "Morokei",
+      "what": "the Labyrinthian Dragon Priest",
+      "where": "Undead → *Dragon Priests*"
+    },
+    {
+      "record": "The Caller",
+      "what": "the Fellglow Keep warlock",
+      "where": "Warlocks → *Named Warlocks*"
+    },
+    {
+      "record": "Arniel's Shade",
+      "what": "the shade of Arniel Gane",
+      "where": "Conjured → Summoned NPCs → *Heroes & Spirits*"
+    },
+    {
+      "record": "the Labyrinthian draugr (Hallowed Dead)",
+      "what": "the `MG07` draugr",
+      "where": "Undead → Draugr"
+    }
+  ]
+}

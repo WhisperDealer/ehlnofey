@@ -1,0 +1,719 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "named-thieves-guild",
+  "group": "thieves-guild",
+  "title": "Named Thieves Guild",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "mercer-frey",
+        "name": "Mercer Frey",
+        "records": [
+          {
+            "edid": "MercerFrey",
+            "formKey": "01B07C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 10,
+          "max": 50
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VII",
+          "level": 50,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0 (user, 2026-09-27): Mercer and Astrid, the questline finals, 50"
+        }
+      },
+      {
+        "id": "brynjolf",
+        "name": "Brynjolf",
+        "records": [
+          {
+            "edid": "Brynjolf",
+            "formKey": "01B07D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "flags": [
+          "Essential",
+          "Invulnerable"
+        ],
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–50)"
+        }
+      },
+      {
+        "id": "karliah",
+        "name": "Karliah",
+        "records": [
+          {
+            "edid": "Karliah",
+            "formKey": "01B07F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–50)"
+        }
+      },
+      {
+        "id": "delvin-vex",
+        "name": "Delvin Mallory · Vex",
+        "records": [
+          {
+            "edid": "DelvinMallory",
+            "formKey": "01CB78:Skyrim.esm"
+          },
+          {
+            "edid": "Vex",
+            "formKey": "01CD90:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–50)"
+        }
+      },
+      {
+        "id": "cistern-regulars",
+        "name": "Cynric Endell · Garthar · Niruin · Ravyn Imyan · Rune · Thrynn · Vipir the Fleet",
+        "records": [
+          {
+            "edid": "CynricEndell",
+            "formKey": "0D4FD8:Skyrim.esm"
+          },
+          {
+            "edid": "Garthar",
+            "formKey": "0B03A3:Skyrim.esm"
+          },
+          {
+            "edid": "Niruin",
+            "formKey": "01CD91:Skyrim.esm"
+          },
+          {
+            "edid": "RavynImyan",
+            "formKey": "0B03A4:Skyrim.esm"
+          },
+          {
+            "edid": "Rune",
+            "formKey": "0D4FDE:Skyrim.esm"
+          },
+          {
+            "edid": "Thrynn",
+            "formKey": "0D4FDB:Skyrim.esm"
+          },
+          {
+            "edid": "VipirtheFleet",
+            "formKey": "01CD8F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 25
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–25)"
+        }
+      },
+      {
+        "id": "sapphire",
+        "name": "Sapphire",
+        "records": [
+          {
+            "edid": "Sapphire",
+            "formKey": "0C19A3:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.5,
+          "min": 10,
+          "max": 25
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.5, clamped to 10–25)"
+        }
+      },
+      {
+        "id": "etienne-rarnis",
+        "name": "Etienne Rarnis",
+        "records": [
+          {
+            "edid": "EtienneRarnis",
+            "formKey": "03A1D3:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 100
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–100)"
+        }
+      },
+      {
+        "id": "vekel",
+        "name": "Vekel the Man",
+        "records": [
+          {
+            "edid": "Vekel",
+            "formKey": "013380:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 25
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–25)"
+        }
+      },
+      {
+        "id": "tonilia",
+        "name": "Tonilia",
+        "records": [
+          {
+            "edid": "Tonilia",
+            "formKey": "0B8827:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.5,
+          "min": 0
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.5 = 37.5, no cap)"
+        }
+      },
+      {
+        "id": "dirge",
+        "name": "Dirge",
+        "records": [
+          {
+            "edid": "Dirge",
+            "formKey": "01336D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 15
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "maul",
+        "name": "Maul",
+        "records": [
+          {
+            "edid": "Maul",
+            "formKey": "0371D6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 15
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "arnskar",
+        "name": "Arnskar Ember-Master",
+        "records": [
+          {
+            "edid": "Arnskar",
+            "formKey": "029DAD:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 20
+        },
+        "target": {
+          "band": "III",
+          "level": 20,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–20)"
+        }
+      },
+      {
+        "id": "herluin-lothaire",
+        "name": "Herluin Lothaire",
+        "records": [
+          {
+            "edid": "HerluinLothaire",
+            "formKey": "029DAE:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, at least 20)"
+        }
+      },
+      {
+        "id": "syndus",
+        "name": "Syndus",
+        "records": [
+          {
+            "edid": "Syndus",
+            "formKey": "029DAA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "vanryth-gatharian",
+        "name": "Vanryth Gatharian",
+        "records": [
+          {
+            "edid": "VanrythGatharian",
+            "formKey": "029DAF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 25
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–25)"
+        }
+      },
+      {
+        "id": "galathil",
+        "name": "Galathil",
+        "records": [
+          {
+            "edid": "DLC1Surgeon",
+            "formKey": "006978:Dawnguard.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 25
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–25)"
+        }
+      },
+      {
+        "id": "gallus",
+        "name": "Nightingale Sentinel",
+        "records": [
+          {
+            "edid": "Gallus",
+            "formKey": "01BB5D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 15
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Gallus's ghost; not in `ThievesGuildFaction`."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The rows: no other record keeps its own level; none has a template and no record uses any of them as a template.",
+      "No leveled list draws them: every member is placed."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Mercer Frey, Cynric, Garthar, Niruin, Ravyn, Rune, Thrynn, Vipir",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenThievesGuildHeadquarters",
+              "formKey": "016BD0:Skyrim.esm"
+            },
+            "note": "the Cistern"
+          }
+        ]
+      },
+      {
+        "name": "Etienne Rarnis",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenThievesGuildHeadquarters",
+              "formKey": "016BD0:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Delvin, Vex, Dirge, Vekel, Tonilia, Arnskar, Herluin, Syndus, Vanryth, Galathil",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenRaggedFlagon",
+              "formKey": "016BCF:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Brynjolf, Maul",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenWorld",
+              "formKey": "016BB4:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "Sapphire",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenOrigin",
+              "formKey": "042247:Skyrim.esm"
+            },
+            "note": "in `RiftenWorld` 016BB4"
+          }
+        ]
+      },
+      {
+        "name": "Karliah",
+        "locations": [
+          {
+            "cell": {
+              "edid": "SnowVeilSanctum02",
+              "formKey": "025E24:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Gallus",
+        "locations": [
+          {
+            "cell": {
+              "edid": "TwilightSepulcher01",
+              "formKey": "05B91B:Skyrim.esm"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Mercer Frey",
+        "weapons": "Dwarven Sword of Devouring 0ACC2C, `LItemWeaponDaggerTown`, `LItemPotionRestoreHMSBest`, `LItemGems`",
+        "armor": "`ThievesGuildMercerOutfit` (Guild Master's Armor, Boots, Gloves, Mercer's copies; Amulet of Articulation, NPC copy)",
+        "skin": "race default"
+      },
+      {
+        "records": "Brynjolf",
+        "weapons": "`LItemWeaponDaggerBest` ×2, gold",
+        "armor": "`BrynjolfTG00Outfit` (Fine Clothes, Fine Boots, Amulet of Articulation, NPC copy)",
+        "skin": "race default"
+      },
+      {
+        "records": "Karliah",
+        "weapons": "Karliah's Bow 0DEED8 (NPC copy), `LItemWeaponDaggerBest`, `LItemArrowsAll`",
+        "armor": "`ThievesGuildKarliahOutfit` (Karliah's Hood, Armor, Gloves, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Delvin · Vex",
+        "weapons": "`LItemWeaponDaggerTown`, gold; Delvin `LItemPoisonAll`, Vex `LItemGems` and a lockpick",
+        "armor": "`ThievesGuildDelvinOutfit` · `ThievesGuildVexOutfit` (Guild Master's Armor, Boots, Gloves)",
+        "skin": "race default"
+      },
+      {
+        "records": "Cynric · Garthar · Ravyn · Thrynn · Vipir",
+        "weapons": "Hunting Bow, Steel Arrows, lockpick; plus Steel Dagger · `LItemWeaponDaggerTown` · `LItemWeaponDaggerTown` · `LItemWeaponSwordTown` · Steel Sword",
+        "armor": "the member's own `ThievesGuild<Name>Outfit` (Thieves Guild or Thieves Guild Variant Armor, Boots, Gloves; Cynric a hood)",
+        "skin": "race default"
+      },
+      {
+        "records": "Niruin · Rune",
+        "weapons": "Steel Dagger, `LItemWeaponBowTown`, `LItemArrowsAll`",
+        "armor": "`ThievesGuildNiruinOutfit` (with hood) · `ThievesGuildRuneOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Sapphire",
+        "weapons": "Steel Dagger, lockpick, Sapphire",
+        "armor": "`ThievesGuildSapphireOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Etienne Rarnis",
+        "weapons": "Steel Sword",
+        "armor": "`ThievesGuildEtienneOutfit` (with hood)",
+        "skin": "race default"
+      },
+      {
+        "records": "Tonilia",
+        "weapons": "`LItemWeaponDaggerTown`, `LItemPoisonAll`",
+        "armor": "`ThievesGuildToniliaOutfit` (Variant Armor, Boots, `LItemJewelryNecklace`)",
+        "skin": "race default"
+      },
+      {
+        "records": "Vekel",
+        "weapons": "`LItemWeaponWarAxeTown`, `LItemWeaponDaggerTown`, `LItemPotionRestoreHMSBest`",
+        "armor": "`BarkeepClothes02`",
+        "skin": "race default"
+      },
+      {
+        "records": "Dirge",
+        "weapons": "`LItemWeaponWarAxeTown`",
+        "armor": "`ArmorLeatherNoHelmetOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Maul",
+        "weapons": "`LItemWeaponDaggerTown`, Black-Briar Manor Key",
+        "armor": "`ArmorSteelNoHelmetOutfit` (`ArmorSteelNoHelmetSet`)",
+        "skin": "race default"
+      },
+      {
+        "records": "Arnskar · Herluin · Syndus · Vanryth",
+        "weapons": "`LItemWeaponWarAxeTown` · `LItemWeaponDaggerTown`, soul gems · `LItemWeaponBowTown`, `LItemArrowsAll` · `LItemWeaponSwordTown`",
+        "armor": "`BlacksmithOutfit02` · `MageCommonConjurationOutfitNoHood` · `MerchantClothesOutfit02NoHat` · `MerchantClothesOutfit01NoHat`",
+        "skin": "race default"
+      },
+      {
+        "records": "Galathil",
+        "weapons": "`LItemWeaponDaggerTown`",
+        "armor": "`DLC1SurgeonOutfit` (Hooded Red Robes, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Gallus",
+        "weapons": "none",
+        "armor": "`NightingaleOutfit` (Nightingale Hood, Armor, Gloves, Boots)",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemWeaponDaggerTown",
+          "formKey": "017177:Skyrim.esm"
+        },
+        "gate": "all levels ≤ player",
+        "rolls": "Iron 1 · Steel 4 · Orcish 10 · Dwarven 15 · Elven 20"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponSwordTown",
+          "formKey": "0165BC:Skyrim.esm"
+        },
+        "gate": "all levels ≤ player",
+        "rolls": "with `LItemWeaponWarAxeTown` 0165BE: Iron 1 · Steel 4 · Orcish 13 · Dwarven 18 · Elven 23"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponBowTown",
+          "formKey": "01703D:Skyrim.esm"
+        },
+        "gate": "all levels ≤ player",
+        "rolls": "Hunting, Long 1 · Imperial 4 · Orcish 13 · Dwarven 18 · Elven 23"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponDaggerBest",
+          "formKey": "0571A1:Skyrim.esm"
+        },
+        "gate": "highest ≤ player",
+        "rolls": "Steel 1 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46"
+      },
+      {
+        "list": {
+          "edid": "ArmorSteelNoHelmetSet",
+          "formKey": "028B45:Skyrim.esm"
+        },
+        "rolls": "as on *Dark Brotherhood Targets*"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Guild Master's Armor, Boots, Gloves 0E35D7 · … (Delvin's and Vex's)",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Guild Master's set (Mercer's copies 1092B5 · …), Thieves Guild and Thieves Guild Variant sets and hoods, Karliah's set, Nightingale set (NPC copies)",
+        "kind": "light",
+        "playable": false,
+        "note": "`NonPlayable`; the player gets separate `…Player` records"
+      },
+      {
+        "item": "Amulet of Articulation 0FDEAF (NPC copy)",
+        "kind": "jewelry",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Leather set",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Steel set",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Fine, merchant, barkeep, blacksmith clothes, Blue Mage Robes, Hooded Red Robes",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Karliah's Bow 0DEED8 (NPC copy)",
+        "kind": "weapon",
+        "playable": false,
+        "note": "`NonPlayable`, `CantDrop`"
+      },
+      {
+        "item": "Dwarven Sword of Devouring and the listed weapons",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

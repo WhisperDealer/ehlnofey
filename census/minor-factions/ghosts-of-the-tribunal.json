@@ -1,0 +1,516 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "ghosts-of-the-tribunal",
+  "group": "minor-factions",
+  "title": "Ghosts of the Tribunal",
+  "order": 4,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "ordinator",
+        "name": "Ordinator",
+        "records": [
+          {
+            "edid": "ccASVSSE001_OrdinatorGuard",
+            "formKey": "000843:ccasvsse001-almsivi.esm"
+          },
+          {
+            "edid": "ccASVSSE001_OrdinatorGuardMale",
+            "formKey": "001024:ccasvsse001-almsivi.esm"
+          },
+          {
+            "edid": "ccASVSSE001_OrdinatorGuardFemale",
+            "formKey": "000833:ccasvsse001-almsivi.esm"
+          },
+          {
+            "edid": "ccASVSSE001_OrdinatorGuardPatrolFemale",
+            "formKey": "001018:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "the Temple (`ccASVSSE001_TempleFaction` 000812, allied with `…SoldierFaction` 000EB7); own level."
+      },
+      {
+        "id": "ordinator-barracks",
+        "name": "Ordinator",
+        "records": [
+          {
+            "edid": "ccASVSSE001_OrdinatorGuardBarracks",
+            "formKey": "0008F3:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "proposed, awaiting the user (level with the Redoran Guards' 34; the §7.0 level-25 rule would give 25)"
+        },
+        "note": "the Temple; PC×1 with no minimum and no cap."
+      },
+      {
+        "id": "her-hands-indobar-vesparth",
+        "name": "Hand Kydren Indobar · Vesparth the Toe",
+        "records": [
+          {
+            "edid": "ccASVSSE001_HandIndobar",
+            "formKey": "00083E:ccasvsse001-almsivi.esm"
+          },
+          {
+            "edid": "ccASVSSE001_HandVesparth",
+            "formKey": "000841:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 20,
+          "max": 100
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "proposed, awaiting the user (Her Hands, the Temple's elite; the §7.0 level-25 rule would give 30)"
+        },
+        "note": "the Temple, Her Hands."
+      },
+      {
+        "id": "hand-ethra-mavandas",
+        "name": "Hand Ethra Mavandas",
+        "records": [
+          {
+            "edid": "ccASVSSE001_HandMavandes",
+            "formKey": "00083F:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 15,
+          "max": 100
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "proposed, awaiting the user (Her Hands, the Temple's elite; the §7.0 level-25 rule would give 25)"
+        },
+        "note": "the Temple, Her Hands. Template the cultist leaf `DLC2EncCultist05DarkElfF` 034FC0:Dragonborn.esm, without `Stats`."
+      },
+      {
+        "id": "watchman-sindras",
+        "name": "Watchman Sindras",
+        "records": [
+          {
+            "edid": "ccASVSSE001_HandTherethi",
+            "formKey": "00083D:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 15,
+          "max": 100
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "proposed, awaiting the user (Her Hands, the Temple's elite; the §7.0 level-25 rule would give 30)"
+        },
+        "note": "the Temple, Her Hands."
+      },
+      {
+        "id": "hand-kenro-hlan",
+        "name": "Hand Kenro Hlan",
+        "records": [
+          {
+            "edid": "ccASVSSE001_HandHlan",
+            "formKey": "000842:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 15,
+          "max": 60
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "proposed, awaiting the user (Her Hands, the Temple's elite; the §7.0 level-25 rule would give 25)"
+        },
+        "note": "no faction."
+      },
+      {
+        "id": "temple-priests",
+        "name": "Temple Priest · Temple Priestess · Priest Drureth · Sculptor Visthar",
+        "records": [
+          {
+            "edid": "ccASVSSE001_Priest01",
+            "formKey": "000E72:ccasvsse001-almsivi.esm"
+          },
+          {
+            "edid": "ccASVSSE001_Priest02",
+            "formKey": "000E77:ccasvsse001-almsivi.esm"
+          },
+          {
+            "edid": "ccASVSSE001_Priest03",
+            "formKey": "001025:ccasvsse001-almsivi.esm"
+          },
+          {
+            "edid": "ccASVSSE001_Priestess",
+            "formKey": "000E73:ccasvsse001-almsivi.esm"
+          },
+          {
+            "edid": "ccASVSSE001_PriestDrureth",
+            "formKey": "000F12:ccasvsse001-almsivi.esm"
+          },
+          {
+            "edid": "ccASVSSE001_Sculptor",
+            "formKey": "0EF2B4:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Temple priests (`…TemplePriestFaction` 0009AF); own level. The priests take spells only from `LvlWarlockElemental` 01E7CB (template without `Stats`)."
+      },
+      {
+        "id": "matriarch-drevlan",
+        "name": "Matriarch Drevlan",
+        "records": [
+          {
+            "edid": "ccASVSSE001_ElderDrevlan",
+            "formKey": "000840:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 4,
+          "max": 100
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "proposed, awaiting the user (Temple staff, not a fighter; the §7.0 level-25 rule would give 25)"
+        },
+        "note": "the Temple."
+      },
+      {
+        "id": "curate-melita",
+        "name": "Curate Melita",
+        "records": [
+          {
+            "edid": "ccASVSSE001_CurateMelita",
+            "formKey": "001153:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 1,
+          "max": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "proposed, awaiting the user (her cap of 6 keeps every level she can take in Weak)"
+        },
+        "note": "the Temple."
+      },
+      {
+        "id": "caretaker-ineril",
+        "name": "Caretaker Ineril",
+        "records": [
+          {
+            "edid": "ccASVSSE001_CaretakerIneril",
+            "formKey": "001017:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "the Temple."
+      },
+      {
+        "id": "blacksmith",
+        "name": "Blacksmith",
+        "records": [
+          {
+            "edid": "ccASVSSE001_Blacksmith",
+            "formKey": "001175:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "proposed, awaiting the user (Temple staff, not a fighter; the §7.0 level-25 rule would give 25)"
+        },
+        "note": "the Temple; PC×1 with no minimum and no cap."
+      },
+      {
+        "id": "reclamation-priest-attack",
+        "name": "Reclamation Priest",
+        "records": [
+          {
+            "edid": "ccASVSSE001_DLC2RRPriestAttack",
+            "formKey": "1EC608:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "the Temple's enemies (`…TempleFactionEnemy` 0008DE); own level."
+      },
+      {
+        "id": "reclamation-priest-inorva-velothi",
+        "name": "Reclamation Priest · Inorva Velothi",
+        "records": [
+          {
+            "edid": "ccASVSSE001_DLC2RRPriest",
+            "formKey": "1D81DF:ccasvsse001-almsivi.esm"
+          },
+          {
+            "edid": "ccASVSSE001_VelothiBackup",
+            "formKey": "000FF0:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10,
+          "also": [
+            10
+          ]
+        },
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "in the Raven Rock temple faction (Dragonborn.esm); own level."
+      },
+      {
+        "id": "buyer",
+        "name": "Buyer",
+        "records": [
+          {
+            "edid": "ccASVSSE001_MaskBuyer",
+            "formKey": "000F2E:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 4,
+          "max": 100
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "proposed, awaiting the user (a mask buyer, not a fighter; the §7.0 level-25 rule would give 25)"
+        },
+        "note": "in `…GuardBuyerFaction` 000F50."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level (none of them is used as a template).",
+      "Most rows use a vanilla record as their template (Reaver and Miraak cultist rungs, `LvlWarlockElemental`, Raven Rock NPCs, `EncBandit01TemplateMagic`) but not for `Stats`, so changing those vanilla records does not move them."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ccASVSSE001_LCharAshZombie",
+          "formKey": "1CDFD0:ccasvsse001-almsivi.esm"
+        },
+        "note": "the four Ash Zombie records, documented on Ash → *Ash Zombie (CC)*. No list draws any other record of the pack.",
+        "owner": "`ccASVSSE001_LvlAshZombie` ×19 (Ash → *Ash Zombie (CC)*)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Ordinator",
+        "note": "`ccASVSSE001Interior02` 0030E8:Update.esm ×8 (`OrdinatorGuard` ×5, `…Barracks`, `…Male`, `…PatrolFemale` ×1 each); `…OrdinatorGuardFemale` not placed"
+      },
+      {
+        "name": "Hand Kenro Hlan",
+        "note": "`ccASVSSE001Interior01` 0030E9:Update.esm"
+      },
+      {
+        "name": "Hand Kydren Indobar, Hand Ethra Mavandas, Watchman Sindras, Vesparth the Toe",
+        "note": "`ccASVSSE001Interior02`"
+      },
+      {
+        "name": "Temple Priest ×2, Temple Priestess, Priest Drureth, Sculptor Visthar, Matriarch Drevlan, Blacksmith",
+        "note": "`ccASVSSE001Interior02`; `…Priest03` not placed"
+      },
+      {
+        "name": "Caretaker Ineril",
+        "note": "`ccASVSSE001Interior02` (initially disabled)"
+      },
+      {
+        "name": "Curate Melita",
+        "note": "`StonyCreekCave01` 04B8FB (initially disabled)"
+      },
+      {
+        "name": "Reclamation Priest",
+        "note": "`…DLC2RRPriest` `DLC2RRTemple` 017EC3:Dragonborn.esm (initially disabled); `…DLC2RRPriestAttack` `ccASVSSE001Interior02` (initially disabled)"
+      },
+      {
+        "name": "Inorva Velothi",
+        "notPlaced": true
+      },
+      {
+        "name": "Buyer",
+        "note": "`ccASVSSE001Interior03` 0030E7:Update.esm"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Ordinators",
+        "weapons": "Ebony Mace (`ccASVSSE001_EbonyMace`), gold, pocket loot",
+        "armor": "`ccASVSSE001_OrdinatorOutfit`: Indoril Armor, Boots, Gauntlets, Helmet, Ordinator Shield",
+        "skin": "race default"
+      },
+      {
+        "records": "Hand Kydren Indobar · Hand Ethra Mavandas",
+        "weapons": "Ebony Scimitar (`ccASVSSE001_EbonyScimitar`); Indobar also his journal",
+        "armor": "`ccASVSSE001_HerHandsOutfitENCHANTED`: Her Hand Armor, Boots, Gauntlets, Helmet",
+        "skin": "race default"
+      },
+      {
+        "records": "Hand Kenro Hlan",
+        "weapons": "Ebony Scimitar",
+        "armor": "`ccASVSSE001_HlanOutfit`: Kenro's Robes, Kenro's Helmet, Temple Priest Boots",
+        "skin": "race default"
+      },
+      {
+        "records": "Watchman Sindras",
+        "weapons": "`LItemWeaponDagger`",
+        "armor": "`ccASVSSE001_WatcherOutfit`: Redoran Watchman's Helmet, Novice Robes of Destruction, boots",
+        "skin": "race default"
+      },
+      {
+        "records": "Vesparth the Toe",
+        "weapons": "Cleaver of St. Felms, Steel War Axe, her journal",
+        "armor": "`ccASVSSE001_VesparthOutfit`: enchanted Chitin Armor, Boots, Bracers",
+        "skin": "race default"
+      },
+      {
+        "records": "the priests, Sculptor, Curate Melita, Caretaker Ineril",
+        "weapons": "Ebony Dagger, gold, pocket loot",
+        "armor": "Common or Extravagant Robes with Temple Priest Boots; Ineril a Dunmer Outfit",
+        "skin": "race default"
+      },
+      {
+        "records": "Matriarch Drevlan · Blacksmith",
+        "weapons": "Ebony Mace",
+        "armor": "Extravagant Robes · Blacksmith's Apron",
+        "skin": "race default"
+      },
+      {
+        "records": "Reclamation Priest, Inorva Velothi",
+        "weapons": "Steel Dagger, Raven Rock Temple Key; the attacking priest also a Propaganda Letter and his journal",
+        "armor": "`DLC2DarkElfTempleOutfit`: Temple Priest Robes, Hood, Boots",
+        "skin": "race default"
+      },
+      {
+        "records": "Buyer",
+        "weapons": "Iron Dagger",
+        "armor": "`FineClothesOutfit02`",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "none"
+        },
+        "rolls": "every outfit above is a fixed set; no leveled gear"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Indoril Armor, Boots, Gauntlets, Helmet; Ordinator Shield; Her Hand Armor, Boots, Gauntlets, Helmet; Kenro's Helmet",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "enchanted Chitin Armor, Boots, Bracers (Vesparth); Redoran Watchman's Helmet (no `ArmorType`, so light)",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "the robes, Kenro's Robes, Temple Priest set, fine clothes, apron",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Ebony Mace, Ebony Scimitar, Cleaver of St. Felms, the daggers and axe",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

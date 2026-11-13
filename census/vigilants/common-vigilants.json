@@ -1,0 +1,350 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "common-vigilants",
+  "group": "vigilants",
+  "title": "Common Vigilants",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "vigilant-01",
+        "name": "Vigilant of Stendarr",
+        "records": [{ "edid": "EncVigilantOfStendarr01MeleeTemplate", "formKey": "10C44C:Skyrim.esm" }],
+        "level": { "kind": "fixed", "value": 5 },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 (user, 2026-09-27) pins every Vigilant list to rung 05 at 35, which is Elite (VI)"
+        },
+        "note": "rung 01: the template; its seven race leaves (`EncVigilantOfStendarr01DarkElfF` 10C44E, `…NordF` 10C453, `…NordM01`–`M04` 10C454 · 10C456 · 10C457 · 10C458, `…RedguardF` 10C455) carry `Stats` and follow it. Every rung and wrapper takes its inventory from `EncVigilantOfStendarr00Template` 0BFB54; every wrapper that keeps the name (`LvlVigilantOfStendarr…`, `DLC1_WESC_…NoCrime` 0034E0 · 0034E6, `DLC1_WESC02_StrippedVigilants` 0034EB) draws the ladder."
+      },
+      {
+        "id": "vigilant-02",
+        "name": "Vigilant of Stendarr",
+        "records": [
+          { "edid": "EncVigilantOfStendarr02DarkElfF", "formKey": "10C46F:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr02NordF", "formKey": "10C470:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr02NordM01", "formKey": "10C471:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr02NordM02", "formKey": "10C472:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr02NordM03", "formKey": "10C474:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr02NordM04", "formKey": "10C475:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr02RedguardF", "formKey": "10C476:Skyrim.esm" }
+        ],
+        "level": { "kind": "fixed", "value": 9 },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 (user, 2026-09-27) pins every Vigilant list to rung 05 at 35, which is Elite (VI)"
+        },
+        "note": "the race records of rungs 02–05 use the rung-01 leaves as template without `Stats`, so changing rung 01 does not move them."
+      },
+      {
+        "id": "vigilant-03",
+        "name": "Vigilant of Stendarr",
+        "records": [
+          { "edid": "EncVigilantOfStendarr03DarkElfF", "formKey": "10C477:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr03NordF", "formKey": "10C478:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr03NordM01", "formKey": "10C479:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr03NordM02", "formKey": "10C47A:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr03NordM03", "formKey": "10C473:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr03NordM04", "formKey": "10C47B:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr03RedguardF", "formKey": "10C47C:Skyrim.esm" }
+        ],
+        "level": { "kind": "fixed", "value": 14 },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 (user, 2026-09-27) pins every Vigilant list to rung 05 at 35, which is Elite (VI)"
+        }
+      },
+      {
+        "id": "vigilant-04",
+        "name": "Vigilant of Stendarr",
+        "records": [
+          { "edid": "EncVigilantOfStendarr04DarkElfF", "formKey": "10C47D:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr04NordF", "formKey": "10C47E:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr04NordM01", "formKey": "10C47F:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr04NordM02", "formKey": "10C480:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr04NordM03", "formKey": "10C481:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr04NordM04", "formKey": "10C482:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr04RedguardF", "formKey": "10C483:Skyrim.esm" }
+        ],
+        "level": { "kind": "fixed", "value": 19 },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 (user, 2026-09-27) pins every Vigilant list to rung 05 at 35, which is Elite (VI)"
+        }
+      },
+      {
+        "id": "vigilant-05",
+        "name": "Vigilant of Stendarr",
+        "records": [
+          { "edid": "EncVigilantOfStendarr05DarkElfF", "formKey": "10C48A:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr05NordF", "formKey": "10C484:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr05NordM01", "formKey": "10C485:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr05NordM02", "formKey": "10C486:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr05NordM03", "formKey": "10C487:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr05NordM04", "formKey": "10C488:Skyrim.esm" },
+          { "edid": "EncVigilantOfStendarr05RedguardF", "formKey": "10C489:Skyrim.esm" }
+        ],
+        "level": { "kind": "fixed", "value": 25 },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 (user, 2026-09-27) pins every Vigilant list to this rung, raised 25 → 35, which is Elite (VI)"
+        }
+      },
+      {
+        "id": "intro-pair",
+        "name": "Vigilant of Stendarr",
+        "encounter": "the Dawnguard intro",
+        "records": [
+          { "edid": "DLC1HunterBaseIntroVigilant1", "formKey": "01A3CD:Dawnguard.esm" },
+          { "edid": "DLC1HunterBaseIntroVigilant2", "formKey": "01A3CE:Dawnguard.esm" }
+        ],
+        "level": { "kind": "template", "value": 5, "from": { "edid": "EncVigilantOfStendarr01MeleeTemplate", "formKey": "10C44C:Skyrim.esm" } },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: the Vigilants, Experienced"
+        }
+      },
+      {
+        "id": "silverhand-vigilant",
+        "name": "Vigilant of Stendarr",
+        "encounter": "Quicksilver Mine (CC)",
+        "records": [{ "edid": "ccMTYSSE002_EncVigilantOfStendarrSilverHand", "formKey": "000965:ccmtysse002-ve.esl" }],
+        "level": { "kind": "fixed", "value": 19 },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: the Vigilants, Experienced"
+        },
+        "note": "uses `EncVigilantOfStendarr05NordM04` 10C488 as template without `Stats`, so it keeps its own 19."
+      },
+      {
+        "id": "corpses",
+        "name": "Vigilant of Stendarr",
+        "encounter": "placed dead",
+        "records": [
+          { "edid": "TreasCorpseVigilantOfStendarrMale", "formKey": "0DC11D:Skyrim.esm" },
+          { "edid": "TreasCorpseVigilantOfStendarrFemale", "formKey": "019FFA:Dawnguard.esm" },
+          { "edid": "TreasCorpseVigilantOfStendarrMale02", "formKey": "019FFC:Dawnguard.esm" },
+          { "edid": "TreasCorpseVigilantOfStendarrFemale02", "formKey": "019FFF:Dawnguard.esm" }
+        ],
+        "level": { "kind": "fixed", "value": 1, "also": [5, 5, 5] },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: the Vigilants, Experienced"
+        },
+        "note": "`Stats` from `EncVigilantOfStendarr00Template` 0BFB54 (1) and the rung-01 leaves (5)."
+      },
+      {
+        "id": "dimhollow-corpse",
+        "name": "Vigilant of Stendarr",
+        "encounter": "placed dead (Tamriel persistent)",
+        "records": [{ "edid": "DLC1VQ01LvlVigilantOfStendarrCorpse", "formKey": "01199C:Dawnguard.esm" }],
+        "level": { "kind": "list", "from": { "edid": "LCharVigilantOfStendarr", "formKey": "0BFB53:Skyrim.esm" }, "rungs": [5, 9, 14, 19, 25] },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: the Vigilants, Experienced"
+        },
+        "note": "takes `Stats` from `LCharVigilantOfStendarr`, so it rolls the ladder, unlike the other corpses (checked against the record, 2026-11-13)."
+      },
+      {
+        "id": "charmed-vigilant",
+        "name": "Charmed Vigilant",
+        "records": [
+          { "edid": "DLC1DunRuunvaldVigMelee", "formKey": "0135BC:Dawnguard.esm" },
+          { "edid": "DLC1DunRuunvaldVigCrossbow", "formKey": "0135BF:Dawnguard.esm" }
+        ],
+        "level": { "kind": "list", "from": { "edid": "LvlVigilantOfStendarr", "formKey": "0B3291:Skyrim.esm" }, "rungs": [5, 9, 14, 19, 25] },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 (user, 2026-09-27) pins the ladder to 35, Elite (VI)"
+        }
+      },
+      {
+        "id": "cause-vigilant",
+        "name": "Vigilant of Stendarr",
+        "encounter": "The Cause (CC)",
+        "records": [{ "edid": "ccBGSSSE067_LvlVigilantOfStendarr", "formKey": "00B660:ccbgssse067-daedinv.esm" }],
+        "level": { "kind": "list", "from": { "edid": "ccBGSSSE067_LCharVigilantOfStendarr", "formKey": "1B2CCD:ccbgssse067-daedinv.esm" }, "rungs": [14, 19, 25] },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 pins The Cause's list to rung 05 at 35, Elite (VI)"
+        }
+      },
+      {
+        "id": "cause-prisoners",
+        "name": "Vigilant of Stendarr",
+        "encounter": "The Cause (CC), prisoners in the Deadlands",
+        "records": [
+          { "edid": "ccBGSSSE067_NPCVigilantOfStendarrPrisoner01", "formKey": "0A94E6:ccbgssse067-daedinv.esm" },
+          { "edid": "ccBGSSSE067_NPCVigilantOfStendarrPrisoner01NonQuest", "formKey": "18A0BE:ccbgssse067-daedinv.esm" }
+        ],
+        "level": { "kind": "list", "from": { "edid": "LvlVigilantOfStendarr", "formKey": "0B3291:Skyrim.esm" }, "rungs": [5, 9, 14, 19, 25] },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 pins the vanilla ladder to 35, Elite (VI)"
+        },
+        "note": "template `LvlVigilantOfStendarr` 0B3291, so the vanilla ladder."
+      },
+      {
+        "id": "vigil-enforcer",
+        "name": "Vigil Enforcer",
+        "encounter": "The Cause (CC)",
+        "records": [{ "edid": "ccBGSSSE067_LvlVigilantEnforcer", "formKey": "06BFBF:ccbgssse067-daedinv.esm" }],
+        "level": { "kind": "list", "from": { "edid": "ccBGSSSE067_LCharVigilantOfStendarr", "formKey": "1B2CCD:ccbgssse067-daedinv.esm" }, "rungs": [14, 19, 25] },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 pins The Cause's list to rung 05 at 35, Elite (VI)"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing rung 01 (`EncVigilantOfStendarr01MeleeTemplate` 10C44C) also needs `ccMTYSSE002_Azir` 00095C:ccmtysse002-ve.esl (Azarain, level 19): it uses the rung-01 leaf `EncVigilantOfStendarr01DarkElfF` 10C44E as its template but not for `Stats` (on *Named Vigilants*). The race records of rungs 02–05 also use the rung-01 leaves without `Stats`, so changing rung 01 does not move them.",
+      "Changing `EncVigilantOfStendarr05NordM04` 10C488 also needs `ccMTYSSE002_Fenrik` 00095F:ccmtysse002-ve.esl (PC × 1, min 10, max 30): same pattern (on Vampires → *Common Vampires*). The SilverHand Vigilant 000965, a row, keeps its own 19 the same way.",
+      "The other rows: no other record keeps its own level.",
+      "Every other Vigilant record (the rung-01 race leaves, the intro pair, the corpses, every `LvlVigilantOfStendarr…` wrapper, the Charmed Vigilants, The Cause's wrappers and prisoners, `DLC1VigilantAdalvald`, `DLC1DunRuunvaldVolk`) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": { "edid": "LCharVigilantOfStendarr", "formKey": "0BFB53:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "entries": [
+          { "at": 1, "label": "`SubCharVigilantOfStendarrEvenTonedF01` 10C45B" },
+          { "at": 1, "label": "`SubCharVigilantOfStendarrEvenTonedMAccented01` 10C45C", "count": 2 }
+        ],
+        "note": "in both sub-lists, rung 01 at gate 1 · 02 at 9 · 03 at 14 · 04 at 19 · 05 at 25; every gate ≤ player",
+        "owner": "`LvlVigilantOfStendarr` 0B3291 (Tamriel persistent ×13, `DLC1RuunvaldExit` 00BB64 ×3, `StendarrsBeaconExterior02` 00BD70 ×3; quests `WEDLVigilOfStendarr01`, `03`, `DLC1WEJS01`) · Charmed Vigilants (`DLC1Ruunvald01` 003BF0:Dawnguard.esm ×12, `DLC1Ruunvald02` 007066:Dawnguard.esm ×1) · `DLC1_WESC_LvlVigilantOfStendarrNoCrime` 0034E0 ×2 (quest `DLC1_WESC01`) · `DLC1_WESC02_StrippedVigilants` 0034EB ×3 (quest `DLC1_WESC02`) · `DLC1VQ01LvlVigilantOfStendarrCorpse` (Tamriel persistent ×1) · The Cause prisoners (`ccBGSSSE067DeadlandsWorld` 0E1592, 3 refs each, all initially disabled; `…Prisoner01`'s refs 0A94EA · 0A94EB · 0A94EC are aliases `NPCVigilantPrisoner01`–`03` of `ccBGSSSE067_Quest` 06BFC1; the `…NonQuest` refs 18A0BF · 18A0C0 · 18A0C1 belong to no quest)"
+      },
+      {
+        "list": { "edid": "LCharVigilantOfStendarrEvenTonedF", "formKey": "10C45D:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "note": "the female sub-list above; `LCharVigilantOfStendarrEvenTonedMAccented` 10C45E is the male one, owned by `LvlVigilantOfStendarrMaleEvenToned` 0B3297",
+        "owner": "`LvlVigilantOfStendarrFemaleEvenToned` 0B3298 · `…MaleEvenToned` 0B3297 (`HalloftheVigilantExterior01` 008FCF, 2 refs each; quests `WEDLVigilOfStendarr02`, `04`) · `DLC1_WESC_LvlVigilantOfStendarrNoCrimeFemaleEvenToned01` 0034E6 (quest `DLC1_WESC01`)"
+      },
+      {
+        "list": { "edid": "LCharVigilantOfStendarrEvenTonedMAccented", "formKey": "10C45E:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "note": "the male sub-list above",
+        "owner": "`LvlVigilantOfStendarrMaleEvenToned` 0B3297 (see the row above)"
+      },
+      {
+        "list": { "edid": "LCharVigilantOfStendarrNordF", "formKey": "10C463:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "entries": [
+          { "at": 1, "label": "rung 01" },
+          { "at": 9, "label": "rung 02" },
+          { "at": 14, "label": "rung 03" },
+          { "at": 19, "label": "rung 04" },
+          { "at": 25, "label": "rung 05" }
+        ],
+        "note": "one race's rungs; `…NordM01` 10C464 · `…NordM02` 10C465 · `…RedguardF` 10C461 are the same, by race",
+        "owner": "their wrappers 10C46D · 10C468 · 10C469 · 10C46C (`HallOfTheVigilant01` 0C7348, 1 ref each)"
+      },
+      {
+        "list": { "edid": "LCharVigilantOfStendarrDarkElfF", "formKey": "10C462:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "note": "the same, by race; with `…NordM03` 10C466 · `…NordM04` 10C467 · `LCharVigilantOfStendarrNordM` 0034E8:Dawnguard.esm",
+        "owner": "their wrappers 10C46E · 10C46A · 10C46B · 0034E7, none placed or drawn"
+      },
+      {
+        "list": { "edid": "ccBGSSSE067_LCharVigilantOfStendarr", "formKey": "1B2CCD:ccbgssse067-daedinv.esm" },
+        "gate": "every gate ≤ player, so nothing below 14",
+        "note": "three sub-lists: 1B2CCE rung 03 only; 1B2CCF · 1B2CD0 rung 03 at 1 · 9 · 14, 04 at 19, 05 at 25",
+        "owner": "The Cause's Vigilant of Stendarr (11 refs) and Vigil Enforcer (16 refs): Tamriel persistent, `ArcwindPointExterior09` 0098D8, `ccBGSSSE067DeadlandsEntrance` 0E1593, `ccBGSSSE067Rielle01` 0030E5:Update.esm, `ccBGSSSE067MythicDawnCave01` 0030E2:Update.esm, `ccBGSSSE067MythicDawnCave02` 08FBF7; quest `ccBGSSSE067_Quest` 06BFC1"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Vigilant of Stendarr (Dawnguard intro pair)",
+        "locations": [{ "cell": { "edid": "DLC1HunterHQWorld", "formKey": "001DB8:Dawnguard.esm" }, "persistent": true, "refText": "1 ref each" }],
+        "quest": "`DLC1HunterBaseIntro` 004E24"
+      },
+      {
+        "name": "Vigilant of Stendarr (four rung records, levels 5 · 5 · 14 · 19, and the SilverHand Vigilant)",
+        "locations": [{ "cell": { "edid": "DawnstarQuicksilverMine", "formKey": "02C779:Skyrim.esm" }, "refText": "1 ref each", "note": "placed by ccmtysse002-ve.esl" }]
+      },
+      {
+        "name": "Vigilant of Stendarr (corpses)",
+        "locations": [
+          { "cell": { "edid": "HalloftheVigilantExterior01", "formKey": "008FCF:Skyrim.esm" }, "refText": "1 ref each" },
+          { "cell": { "edid": "MarasEyePond01", "formKey": "0DBF12:Skyrim.esm" }, "refText": "1 ref" }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      { "records": "Vigilant of Stendarr (all but the prisoners) · Charmed Vigilant (melee)", "weapons": "`LItemWeaponMace` 016577", "armor": "`VigilantOfStendarrOutfit` 0B3290", "skin": "race default" },
+      { "records": "Charmed Vigilant (crossbow)", "weapons": "`DLC1LItemWeaponDawnguardCrossbowLoot75Gated` 00D0EC:Dawnguard.esm + 10 Steel Bolts 000BB3", "armor": "`VigilantOfStendarrOutfit`", "skin": "race default" },
+      { "records": "Vigil Enforcer", "weapons": "`ccBGSSSE067_LItemWeaponVigilMeleeOrCrossbow` 20E806 + 2 Steel Bolts", "armor": "`ccBGSSSE067_VigilantEnforcerOutfit` 06BFBA", "skin": "race default" },
+      { "records": "The Cause prisoners", "weapons": "none", "armor": "`PrisonerNoShoesOutfit` 0A1982", "skin": "race default" }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": { "edid": "VigilantOfStendarrOutfit", "formKey": "0B3290:Skyrim.esm" },
+        "gate": "every gate ≤ player",
+        "rolls": "Amulet of Stendarr 0CC844 · robes `LItemVigilantRobes` 10C45F (Novice Robes of Restoration 10D66B or of Alteration 10D669) · boots `LItemVigilantHeavyBoots` 10BFF2 (Steel Cuffed 013951 at 1 · Steel Plate 01395B at 18) · 50% gauntlets `LItemVigilantHeavyGauntlets50` 10BFF3 (Steel Nordic 013953 or Imperial 0F6F23 at 1 · Steel Plate 01395D at 15) · 50% Novice Hood 10DD3A (`LItemVigilantHood` 10C460)",
+        "levels": [1, 15, 18]
+      },
+      {
+        "list": { "edid": "ccBGSSSE067_VigilantEnforcerOutfit", "formKey": "06BFBA:ccbgssse067-daedinv.esm" },
+        "rolls": "Amulet of Stendarr · boots 06BFBB · gauntlets 06BFBC · 50% helmet 06BFBD · torso 06BFBE. All four lists are **empty in the plugin**; `ccBGSSSE067_ContentAwareScript` (quest `ccBGSSSE067_Quest` 06BFC1) fills them on start-up and on every load. With `ccMTYSSE002-VE.esl` loaded: Vigil Enforcer Boots 000D63 · Gauntlets 000D62 · Helmet 000D65 · Armor 000D61 at 1, and Vigil Veteran Boots 000D7A · Gauntlets 000D7C · Helmet 000D64 or Open Helmet 000D7D · Armor 000D7B or Sashed Armor 000800 at 30 (ccmtysse002-ve.esl); without it, the vanilla lists 10BFF2 · 10BFF3 · 10C460 · 10C45F, re-added on every load because that branch sets no flag"
+      },
+      {
+        "list": { "edid": "ccBGSSSE067_LItemWeaponVigilMeleeOrCrossbow", "formKey": "20E806:ccbgssse067-daedinv.esm" },
+        "rolls": "a crossbow (`ccBGSSSE067_CC_LItemWeaponCrossbows` 06BFC0: an enchanted crossbow from `DLC1LItemEnchCrossbow` 00D0EA at 1 · 5 · 7; the same script adds Imperial 00080B · Nordic 00080C · Orcish 00080D at 1, Silver 00080E at 18, Stalhrim 00080F at 35 when `ccFFBSSE002-CrossbowPack.esl` is loaded) or a melee weapon (`LItemBanditWeapon1H` 037C1B or `LItemBanditWeapon2H` 037C21, Iron, Steel 1 · Orcish 9 · Dwarven 15 · Elven 22)"
+      },
+      {
+        "list": { "edid": "LItemWeaponMace", "formKey": "016577:Skyrim.esm" },
+        "rolls": "Iron ×3 (1) · Steel (2) · Orcish (6) · Dwarven (12) · Elven (19) · Glass (27) · Ebony (36) · Daedric (46)",
+        "levels": [1, 2, 6, 12, 19, 27, 36, 46]
+      },
+      {
+        "list": { "edid": "DLC1LItemWeaponDawnguardCrossbowLoot75Gated", "formKey": "00D0EC:Dawnguard.esm" },
+        "rolls": "Crossbow 000801:Dawnguard.esm; its enchanted Dwarven sub-list has chance none 100% (see Dawnguard → *Common Dawnguard*)"
+      },
+      {
+        "list": { "edid": "PrisonerNoShoesOutfit", "formKey": "0A1982:Skyrim.esm" },
+        "rolls": "Roughspun Tunic 03C9FE"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      { "item": "Novice Robes of Restoration · of Alteration · Novice Hood · Amulet of Stendarr · Roughspun Tunic", "kind": "enchanted clothing · enchanted amulet · clothing", "playable": true },
+      { "item": "Steel Cuffed Boots · Steel Nordic / Imperial Gauntlets · Steel Plate Boots · Gauntlets", "kind": "heavy, AR 12 · 12 · 14 · 14", "playable": true },
+      { "item": "Vigil Enforcer and Vigil Veteran armor (ccmtysse002-ve.esl)", "kind": "heavy, body AR 40 · boots and gauntlets 14 · helmets 17–19", "playable": true },
+      { "item": "every weapon above", "kind": "one-handed, two-handed, crossbow", "playable": true }
+    ]
+  }
+}

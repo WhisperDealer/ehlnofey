@@ -1,0 +1,309 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "khajiit-caravans",
+  "group": "minor-factions",
+  "title": "Khajiit Caravans",
+  "order": 8,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "risaad",
+        "name": "Ri'saad",
+        "records": [
+          {
+            "edid": "Risaad",
+            "formKey": "01B1DB:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "I",
+          "level": 5,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "merchant, caravan A leader."
+      },
+      {
+        "id": "atahbah",
+        "name": "Atahbah",
+        "records": [
+          {
+            "edid": "Atahba",
+            "formKey": "01B1DA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "I",
+          "level": 5,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "merchant, caravan A."
+      },
+      {
+        "id": "khayla",
+        "name": "Khayla",
+        "records": [
+          {
+            "edid": "Khayla",
+            "formKey": "01B1D9:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "guard, caravan A."
+      },
+      {
+        "id": "madran",
+        "name": "Ma'dran",
+        "records": [
+          {
+            "edid": "Madran",
+            "formKey": "01B1D1:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "merchant, caravan B leader."
+      },
+      {
+        "id": "majhad",
+        "name": "Ma'jhad",
+        "records": [
+          {
+            "edid": "Majhad",
+            "formKey": "01B1D5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "I",
+          "level": 5,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "merchant, caravan B."
+      },
+      {
+        "id": "razhinda",
+        "name": "Ra'zhinda",
+        "records": [
+          {
+            "edid": "Razhinda",
+            "formKey": "01B1D3:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "guard, caravan B."
+      },
+      {
+        "id": "ahkari",
+        "name": "Ahkari",
+        "records": [
+          {
+            "edid": "Ahkari",
+            "formKey": "01B1D6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "I",
+          "level": 5,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "merchant, caravan C leader."
+      },
+      {
+        "id": "zaynabi",
+        "name": "Zaynabi",
+        "records": [
+          {
+            "edid": "Zaynabi",
+            "formKey": "01B1D0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "I",
+          "level": 5,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "merchant, caravan C."
+      },
+      {
+        "id": "dromarash",
+        "name": "Dro'marash",
+        "records": [
+          {
+            "edid": "Dromarash",
+            "formKey": "01B1CF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "guard, caravan C."
+      },
+      {
+        "id": "kharjo",
+        "name": "Kharjo",
+        "records": [
+          {
+            "edid": "Kharjo",
+            "formKey": "01B1D2:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 30
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (WD-61): the other followers fixed individually, Kharjo 30"
+        },
+        "note": "guard, caravan C; a recruitable follower."
+      },
+      {
+        "id": "grushnag",
+        "name": "Grushnag",
+        "records": [
+          {
+            "edid": "Grushnag",
+            "formKey": "01B1CD:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "I",
+          "level": 6,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "in no caravan faction; filed here because `CaravansNPCList` 01B1CC lists him with the eleven caravan Khajiit (the list has no user among the quests). Moved here from Uncategorised → *Unfiled NPCs* (user, 2026-10-03), with the caravans."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level beside it. None has a template, and no record uses one as its template."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Ri'saad · Khayla · Atahbah",
+        "note": "Tamriel persistent cell, refs 074340 · 07433F · 074341 (grid -40, 1, beside `SalviusFarmExterior01` 007178); aliases `WhiterunCaravanActor01`–`03` of `CWSiege` 0954E1; Ri'saad also alias `RiSaad` of `ccBGSSSE001_Misc_Khajiit` 0009E2:ccbgssse001-fish.esm"
+      },
+      {
+        "name": "Ma'dran · Ma'jhad · Ra'zhinda",
+        "note": "Tamriel persistent cell, refs 074345 · 074344 · 074342 (grid 32, 5, cell 00B51E); Ma'dran also alias `Madran` of `ccBGSSSE051_Quest` 000819:ccbgssse051-ba_daedricmail.esl"
+      },
+      {
+        "name": "Ahkari · Zaynabi · Dro'marash · Kharjo",
+        "note": "Tamriel persistent cell, refs 07434A · 074348 · 074347 · 0CD92D (grid 6, 24, `DawnstarWesternMineExterior` 008ED5)"
+      },
+      {
+        "name": "Grushnag",
+        "notPlaced": true
+      }
+    ]
+  }
+}

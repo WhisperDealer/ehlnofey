@@ -1,0 +1,22 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "silver-hand",
+  "title": "Silver Hand",
+  "order": 10,
+  "parent": "factions",
+  "meta": {
+    "spec": "archetype-tiers.md §3.1",
+    "updated": "2026-11-13"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Every Silver Hand record is a wrapper in `SilverHandFaction` 0AA0A4 that takes its level (`Stats`) from a bandit list but keeps its own name, inventory and outfit. No DLC or CC pack adds one. bands-of-power.md puts the Silver Hand in Experienced (V); archetype-tiers.md §3.1 gives the mooks three new lists of bandit rungs (14 ×1 · 19 ×3 · 25 ×1, Trained to Blooded) and leaves the bosses on the bandit chief (28), so the mooks' band is open.",
+  "families": [
+    {
+      "id": "common-silver-hand",
+      "holds": "the melee, two-handed, archer and ambush wrappers (bandit ladder 1 · 5 · 9 · 14 · 19 · 25) and the placed corpses"
+    },
+    {
+      "id": "silver-hand-leaders",
+      "holds": "`LvlSilverhandBoss` (bandit boss ladder 6 · 10 · 16 · 21 · 28), Krev the Skinner, and the radiant camp leader"
+    }
+  ]
+}

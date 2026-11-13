@@ -1,0 +1,497 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "named-college-of-winterhold",
+  "group": "college-of-winterhold",
+  "title": "Named College of Winterhold",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "savos-aren",
+        "name": "Savos Aren",
+        "records": [
+          {
+            "edid": "SavosAren",
+            "formKey": "01C19F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.25,
+          "min": 15,
+          "max": 50
+        },
+        "target": {
+          "band": "V",
+          "level": 31,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.25, clamped to 15–50)"
+        },
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "savos-aren-ghost",
+        "name": "Savos Aren",
+        "records": [
+          {
+            "edid": "SavosArenGhost",
+            "formKey": "0D07DB:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "ghost",
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "tolfdir",
+        "name": "Tolfdir",
+        "records": [
+          {
+            "edid": "Tolfdir",
+            "formKey": "01C19E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–50)"
+        },
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "mirabelle-ervine",
+        "name": "Mirabelle Ervine",
+        "records": [
+          {
+            "edid": "MirabelleErvine",
+            "formKey": "01C1A0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–50)"
+        },
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "faralda",
+        "name": "Faralda",
+        "records": [
+          {
+            "edid": "Faralda",
+            "formKey": "01C197:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 15,
+          "max": 50
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 15–50)"
+        },
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "drevis-neloren",
+        "name": "Drevis Neloren",
+        "records": [
+          {
+            "edid": "DrevisNeloren",
+            "formKey": "01C198:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–50)"
+        },
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "colette-phinis",
+        "name": "Colette Marence · Phinis Gestor",
+        "records": [
+          {
+            "edid": "ColetteMarence",
+            "formKey": "01C19A:Skyrim.esm"
+          },
+          {
+            "edid": "PhinisGestor",
+            "formKey": "01C199:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 8,
+          "max": 30
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 8–30)"
+        },
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "enthir",
+        "name": "Enthir",
+        "records": [
+          {
+            "edid": "Enthir",
+            "formKey": "01C19C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 40
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–40)"
+        },
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "urag-gro-shub",
+        "name": "Urag gro-Shub",
+        "records": [
+          {
+            "edid": "UraggroShub",
+            "formKey": "01C193:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "arniel-gane",
+        "name": "Arniel Gane",
+        "records": [
+          {
+            "edid": "ArnielGane",
+            "formKey": "01C19D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 30
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "nelacar",
+        "name": "Nelacar",
+        "records": [
+          {
+            "edid": "Nelacar",
+            "formKey": "01E7D5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "level": 6,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "flags": [
+          "Essential"
+        ]
+      },
+      {
+        "id": "sergius-nirya",
+        "name": "Sergius Turrianus · Nirya",
+        "records": [
+          {
+            "edid": "SergiusTurrianus",
+            "formKey": "01C23E:Skyrim.esm"
+          },
+          {
+            "edid": "Nirya",
+            "formKey": "01C19B:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "flags": [
+          "Protected"
+        ]
+      },
+      {
+        "id": "brelyna-onmund",
+        "name": "Brelyna Maryon · Onmund",
+        "records": [
+          {
+            "edid": "BrelynaMaryon",
+            "formKey": "01C196:Skyrim.esm"
+          },
+          {
+            "edid": "Onmund",
+            "formKey": "01C194:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 30
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (WD-61, user): the other followers, Onmund and Brelyna 30"
+        }
+      },
+      {
+        "id": "jzargo",
+        "name": "J'zargo",
+        "records": [
+          {
+            "edid": "Jzargo",
+            "formKey": "01C195:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6
+        },
+        "target": {
+          "band": "III",
+          "level": 20,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1 (WD-61, user): Standard followers 20, J'zargo included"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `MirabelleErvine` 01C1A0 also needs `dunBluePalaceMareMaiden` 09F83A (in Pelagius's mind, *The Mind of Madness*, level 1; on World → *Haafingar Countryside*): it uses 01C1A0 as its template but not for `Stats`.",
+      "The other rows: no other record keeps its own level; no other record uses any of them as a template. `SavosArenGhost` is a separate record with no template."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Tolfdir, Mirabelle, Enthir, Arniel, Nirya, Brelyna, Onmund, J'zargo",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WinterholdCollegeHallofAttainment",
+              "formKey": "0CAB91:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Faralda, Drevis, Colette, Phinis, Sergius",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WinterholdCollegeHallofCountenance",
+              "formKey": "01380F:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Savos Aren",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WinterholdCollegeArchMageQuarters",
+              "formKey": "0CAB92:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Urag gro-Shub",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WinterholdCollegeArcanaeum",
+              "formKey": "013810:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Nelacar",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WinterholdTheFrozenHearth",
+              "formKey": "013814:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Savos Aren (ghost)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "LabyrinthianExterior03",
+              "formKey": "00945F:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ]
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Savos Aren · his ghost",
+        "weapons": "none (a Red Apple)",
+        "armor": "`CollegeArchmageOutfit` (Archmage's Robes, Boots) · `CourtWizardOutfit` (Blue Mage Robes, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Tolfdir · Faralda · Drevis · Colette · Phinis",
+        "weapons": "none · none · Iron Dagger · none · none",
+        "armor": "the Master Robes of Alteration · Destruction · Illusion · Restoration · Conjuration, Boots",
+        "skin": "race default"
+      },
+      {
+        "records": "Enthir · Nirya",
+        "weapons": "Iron Dagger · none",
+        "armor": "Expert Robes of Illusion · of Destruction, Boots",
+        "skin": "race default"
+      },
+      {
+        "records": "Urag · Arniel · Sergius",
+        "weapons": "Orcish Dagger · none · none",
+        "armor": "Adept Robes of Conjuration · of Alteration · of Alteration, Boots",
+        "skin": "race default"
+      },
+      {
+        "records": "Mirabelle · Nelacar · Brelyna",
+        "weapons": "none · Iron Dagger · Staff of Lightning Bolts",
+        "armor": "Apprentice Robes of Alteration · of Alteration (with hood) · of Destruction (with hood), Boots",
+        "skin": "race default"
+      },
+      {
+        "records": "Onmund · J'zargo",
+        "weapons": "none",
+        "armor": "Novice Robes of Alteration · of Conjuration, Novice Hood, Boots",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "the enchanted College robes and hoods, Archmage's Robes, Blue Mage Robes, Boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Staff of Lightning Bolts, the daggers",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

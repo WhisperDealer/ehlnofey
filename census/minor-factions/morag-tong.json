@@ -1,0 +1,372 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "morag-tong",
+  "group": "minor-factions",
+  "title": "Morag Tong",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "morag-tong-assassin",
+        "name": "Morag Tong Assassin",
+        "records": [
+          {
+            "edid": "DLC2LvlMoragTongMelee1H",
+            "formKey": "0271C3:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2LvlMoragTongMissile",
+            "formKey": "0271C4:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "`DLC2LCharBanditMelee1H` 01E8A9:Dragonborn.esm · `DLC2LCharBanditMissile` 01E8AA:Dragonborn.esm, the Reaver ladder"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Morag Tong assassins Elite (archetype-tiers.md §6's 30, WD-57, predates the ten bands)"
+        },
+        "note": "no `BaseData` flag; `Stats` from the Reaver lists, so its own class `EncClassDremoraMelee` 017008 is inert."
+      },
+      {
+        "id": "vendil-severin",
+        "name": "Vendil Severin",
+        "records": [
+          {
+            "edid": "DLC2RRVendilSeverin",
+            "formKey": "018284:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 25,
+          "max": 60
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Morag Tong assassins Elite (the Severins join the Morag Tong; the §7.0 level-25 rule would give 25)"
+        },
+        "note": "class `EncClassDremoraMelee`."
+      },
+      {
+        "id": "tilisu-severin",
+        "name": "Tilisu Severin",
+        "records": [
+          {
+            "edid": "DLC2RRTilisuSeverin",
+            "formKey": "018286:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 25,
+          "max": 60
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Morag Tong assassins Elite (the Severins join the Morag Tong; the §7.0 level-25 rule would give 25)"
+        }
+      },
+      {
+        "id": "mirri-severin",
+        "name": "Mirri Severin",
+        "records": [
+          {
+            "edid": "DLC2RRMirriSeverin",
+            "formKey": "018288:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 25,
+          "max": 50
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "bands-of-power.md: Morag Tong assassins Elite (the Severins join the Morag Tong; the §7.0 level-25 rule would give 25)"
+        },
+        "note": "the Severins join `DLC2MoragTongFaction` by script during `DLC2RR02` 018B14 (Served Cold), which clears Essential and sets Aggression 1. `DLC2Init` 016E02 makes the faction an enemy of the player."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "All five records: no other record keeps its own level (none of them is used as a template; the two assassins follow the Reaver lists)."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC2LCharBanditMelee1H",
+          "formKey": "01E8A9:Dragonborn.esm"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DLC2SubCharBandit01Melee` (Dark Elf leaves)"
+          },
+          {
+            "at": 5,
+            "label": "`DLC2SubCharBandit02Melee` (Dark Elf leaves)"
+          },
+          {
+            "at": 9,
+            "label": "`DLC2SubCharBandit03Melee` (Dark Elf leaves)"
+          },
+          {
+            "at": 14,
+            "label": "`DLC2SubCharBandit04Melee` (Dark Elf leaves)"
+          },
+          {
+            "at": 19,
+            "label": "`DLC2SubCharBandit05Melee` (Dark Elf leaves)"
+          },
+          {
+            "at": 25,
+            "label": "`DLC2SubCharBandit06Melee` (Dark Elf leaves)"
+          }
+        ],
+        "note": "the six Reaver melee rungs; only `Stats`, `Traits` and AI are taken. Documented in full on Bandits → *Reavers*.",
+        "owner": "`DLC2LvlMoragTongMelee1H` 0271C3"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharBanditMissile",
+          "formKey": "01E8AA:Dragonborn.esm"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "`DLC2SubCharBandit01Missile`"
+          },
+          {
+            "at": 5,
+            "label": "`DLC2SubCharBandit02Missile`"
+          },
+          {
+            "at": 9,
+            "label": "`DLC2SubCharBandit03Missile`"
+          },
+          {
+            "at": 14,
+            "label": "`DLC2SubCharBandit04Missile`"
+          },
+          {
+            "at": 19,
+            "label": "`DLC2SubCharBandit05Missile`"
+          },
+          {
+            "at": 25,
+            "label": "`DLC2SubCharBandit06Missile`"
+          }
+        ],
+        "note": "the six Reaver missile rungs, same levels. Documented in full on Bandits → *Reavers*.",
+        "owner": "`DLC2LvlMoragTongMissile` 0271C4"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Morag Tong Assassin",
+        "note": "Ashfallow Citadel (`DLC2AshfallowCitadel01` 01BE37): Melee1H ×5 (one Medium), Missile ×3 Medium; `DLC2AshfallowCitadelExterior01` 00EE8B: Missile ×1; `…Exterior02` 00EEAC: Melee1H ×1. Three refs are enabled by `DLC2RR02` (marker 0271CB)"
+      },
+      {
+        "name": "Morag Tong Assassin (world encounter)",
+        "note": "spawned at `TravelMarker1` by quest `DLC2WE08` 027E9D: Melee1H Hard, Missile Easy, Missile Medium (aliases `Actor1`–`3`); after `DLC2RR02` stage 200, if the player is in the Dark Brotherhood"
+      },
+      {
+        "name": "Vendil · Tilisu · Mirri Severin",
+        "note": "Severin Manor (`DLC2RRSeverinHouse` 017EBE), refs 018285 · 018287 · 018289; aliases `DLC2RR02VendilAlias` · `…TilisuAlias` · `…MirriAlias` on `DLC2RR02`, moved to `DLC2AshfallowCitadel01` by script"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Morag Tong Assassin (Melee1H)",
+        "weapons": "`LItemWeaponAny1H` 0165BA",
+        "armor": "`DLC2MoragTongOutfit` 0292AF",
+        "skin": "race default"
+      },
+      {
+        "records": "Morag Tong Assassin (Missile)",
+        "weapons": "`LItemWeaponBow` 017024 · `LItemWeaponDagger` 017178 · `LItemArrowsAll` 068839 ×7",
+        "armor": "0292AF",
+        "skin": "race default"
+      },
+      {
+        "records": "Tilisu · Mirri Severin",
+        "weapons": "`LItemWeaponDaggerBest` 0571A1",
+        "armor": "Fine Clothes 09D5E0 · `DLC2DarkElfOutfitBlue` 03CEE9; set to `DLC2MoragTongOutfit` by script",
+        "skin": "race default"
+      },
+      {
+        "records": "Vendil Severin",
+        "weapons": "`LItemWeaponDaggerBest` ×2",
+        "armor": "Fine Clothes 0F8718; set to `DLC2VendilSeverinBattleOutfit` 031C9C by script",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC2MoragTongOutfit",
+          "formKey": "0292AF:Dragonborn.esm"
+        },
+        "rolls": "Morag Tong Boots 0292AB · Armor 0292AC · Bracers 0292AD · Hood 0292AE"
+      },
+      {
+        "list": {
+          "edid": "DLC2VendilSeverinBattleOutfit",
+          "formKey": "031C9C:Dragonborn.esm"
+        },
+        "rolls": "Chitin Heavy Boots 01CD82 · Chitin Armor of the Eminent Knight 029171 · Chitin Bracers of Eminent Wielding 029180"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponAny1H",
+          "formKey": "0165BA:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "mace, sword or war axe: Iron 1 · Steel 2 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46",
+        "levels": [
+          1,
+          2,
+          6,
+          12,
+          19,
+          27,
+          36,
+          46
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponBow",
+          "formKey": "017024:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Hunting, Long Bow 1 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46",
+        "levels": [
+          1,
+          6,
+          12,
+          19,
+          27,
+          36,
+          46
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponDagger",
+          "formKey": "017178:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron 1 · Steel 2 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46",
+        "levels": [
+          1,
+          2,
+          6,
+          12,
+          19,
+          27,
+          36,
+          46
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponDaggerBest",
+          "formKey": "0571A1:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "rolls": "the best at or below the player: Steel 1 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46",
+        "levels": [
+          1,
+          6,
+          12,
+          19,
+          27,
+          36,
+          46
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemArrowsAll",
+          "formKey": "068839:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "each 75%: Iron 1 · Steel 3 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46; the CC Exotic Arrows start-up quest `ccBGSSSE002_StartUpQuest` 00081C holds it as a property (runtime injector)",
+        "levels": [
+          1,
+          3,
+          6,
+          12,
+          19,
+          27,
+          36,
+          46
+        ]
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Morag Tong Boots, Armor, Bracers, Hood",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Chitin Heavy Boots, Armor and Bracers (Vendil)",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "the ladder maces, swords, war axes, daggers",
+        "kind": "one-handed",
+        "playable": true
+      },
+      {
+        "item": "the ladder bows and arrows",
+        "kind": "bow",
+        "playable": true
+      }
+    ]
+  }
+}

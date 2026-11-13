@@ -1,0 +1,1037 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "dark-brotherhood-targets",
+  "group": "dark-brotherhood",
+  "title": "Dark Brotherhood Targets",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "grelod",
+        "name": "Grelod the Kind",
+        "records": [
+          {
+            "edid": "Grelod",
+            "formKey": "01335E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "db02-captives",
+        "name": "Fultheim the Fearless · Alea Quintus · Vasha",
+        "records": [
+          {
+            "edid": "DB02Captive1",
+            "formKey": "02E3E8:Skyrim.esm"
+          },
+          {
+            "edid": "DB02Captive2",
+            "formKey": "02E3EF:Skyrim.esm"
+          },
+          {
+            "edid": "DB02Captive3",
+            "formKey": "02E3F0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the Dark Brotherhood torture victims, 1"
+        }
+      },
+      {
+        "id": "alain-dufont",
+        "name": "Alain Dufont",
+        "records": [
+          {
+            "edid": "AlainDufont",
+            "formKey": "01B074:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "nilsine",
+        "name": "Nilsine Shatter-Shield",
+        "records": [
+          {
+            "edid": "Nilsine",
+            "formKey": "01412C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "vittoria-vici",
+        "name": "Vittoria Vici",
+        "records": [
+          {
+            "edid": "VittoriaVici",
+            "formKey": "01327A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "anton-virane",
+        "name": "Anton Virane",
+        "records": [
+          {
+            "edid": "Anton",
+            "formKey": "013387:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "balagog",
+        "name": "Balagog gro-Nolob",
+        "records": [
+          {
+            "edid": "BalagogGroNolob",
+            "formKey": "038C6E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "titus-mede",
+        "name": "Emperor Titus Mede II",
+        "records": [
+          {
+            "edid": "TitusMedeIIDecoy",
+            "formKey": "01D4BA:Skyrim.esm"
+          },
+          {
+            "edid": "TitusMedeII",
+            "formKey": "01D4B9:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0 (user, 2026-09-27): Titus Mede owns a fixed 1, as in vanilla, and is left"
+        },
+        "note": "the decoy and the real Emperor: two records, no template, each its own level."
+      },
+      {
+        "id": "amaund-motierre",
+        "name": "Amaund Motierre",
+        "records": [
+          {
+            "edid": "AmaundMotierreEnd",
+            "formKey": "04E64F:Skyrim.esm"
+          },
+          {
+            "edid": "AmaundMotierre",
+            "formKey": "03B43A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "with the client copy `AmaundMotierre`; two records, no template."
+      },
+      {
+        "id": "narfi",
+        "name": "Narfi",
+        "records": [
+          {
+            "edid": "Narfi",
+            "formKey": "0136C0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "ennodius-papius",
+        "name": "Ennodius Papius",
+        "records": [
+          {
+            "edid": "EnnodiusPapius",
+            "formKey": "01360C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "beitild",
+        "name": "Beitild",
+        "records": [
+          {
+            "edid": "Beitild",
+            "formKey": "013612:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "lurbuk",
+        "name": "Lurbuk",
+        "records": [
+          {
+            "edid": "Lurbuk",
+            "formKey": "01AA63:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "deekus",
+        "name": "Deekus",
+        "records": [
+          {
+            "edid": "Deekus",
+            "formKey": "020040:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "marandrujo",
+        "name": "Ma'randru-jo",
+        "records": [
+          {
+            "edid": "Marandrujo",
+            "formKey": "01B1D7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "anoriath",
+        "name": "Anoriath",
+        "records": [
+          {
+            "edid": "Anoriath",
+            "formKey": "013B97:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "agnis",
+        "name": "Agnis",
+        "records": [
+          {
+            "edid": "Agnis",
+            "formKey": "020044:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "in `DarkBrotherhoodFaction`."
+      },
+      {
+        "id": "maluril",
+        "name": "Maluril",
+        "records": [
+          {
+            "edid": "DBContractMaluril",
+            "formKey": "020046:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "in `DarkBrotherhoodFaction`."
+      },
+      {
+        "id": "safia",
+        "name": "Safia",
+        "records": [
+          {
+            "edid": "Safia",
+            "formKey": "013267:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 2,
+          "min": 15,
+          "max": 35
+        },
+        "target": {
+          "band": "VI",
+          "level": 35,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 2, clamped to 15–35)"
+        }
+      },
+      {
+        "id": "recurring-targets",
+        "name": "Visiting Noble · Big Laborer · Itinerant Lumberjack · Reckless Mage · Seasoned Hunter · Poor Fishwife · Grim Shieldmaiden · Traveling Dignitary · Coldhearted Gravedigger · Beautiful Barbarian",
+        "records": [
+          {
+            "edid": "DBRecurringTarget1Whiterun",
+            "formKey": "087B95:Skyrim.esm"
+          },
+          {
+            "edid": "DBRecurringTarget2KatlasFarm",
+            "formKey": "087B96:Skyrim.esm"
+          },
+          {
+            "edid": "DBRecurringTarget3Kynesgrove",
+            "formKey": "087B97:Skyrim.esm"
+          },
+          {
+            "edid": "DBRecurringTarget4Winterhold",
+            "formKey": "087B98:Skyrim.esm"
+          },
+          {
+            "edid": "DBRecurringTarget5Falkreath",
+            "formKey": "087B99:Skyrim.esm"
+          },
+          {
+            "edid": "DBRecurringTarget6Riften",
+            "formKey": "087B9A:Skyrim.esm"
+          },
+          {
+            "edid": "DBRecurringTarget7Markarth",
+            "formKey": "087B9B:Skyrim.esm"
+          },
+          {
+            "edid": "DBRecurringTarget8Solitude",
+            "formKey": "087B9C:Skyrim.esm"
+          },
+          {
+            "edid": "DBRecurringTarget9Windhelm",
+            "formKey": "087B9D:Skyrim.esm"
+          },
+          {
+            "edid": "DBRecurringTarget10GraniteHill",
+            "formKey": "087B9E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "the ten recurring targets, one name per record in order."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The rows: no other record keeps its own level; no record uses any of them as a template. The paired records (the Emperor and his decoy, the two Amaund Motierre records) are separate records with no template, each with its own level.",
+      "No leveled list draws them: every target is placed."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Grelod the Kind",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenHonorhallOrphanage",
+              "formKey": "016BD3:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DB01` 01EA50 alias GrelodTheKindAlias"
+      },
+      {
+        "name": "Fultheim, Alea Quintus, Vasha",
+        "locations": [
+          {
+            "cell": {
+              "edid": "AbandonedShackInterior",
+              "formKey": "050F1E:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DB02` 01EA51 aliases DB02Captive1–3Alias (kill one)"
+      },
+      {
+        "name": "Alain Dufont",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Raldbthar01",
+              "formKey": "015257:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DB03` 01EA52 alias AlainDufontAlias"
+      },
+      {
+        "name": "Nilsine Shatter-Shield",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WindhelmHouseofClanShatterShield",
+              "formKey": "01677E:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DB03` alias NilsineAlias (optional)"
+      },
+      {
+        "name": "Vittoria Vici",
+        "locations": [
+          {
+            "cell": {
+              "edid": "SolitudeVittoriaVicisHouse",
+              "formKey": "016A07:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DB05` 01EA54 alias VittoriaViciAlias"
+      },
+      {
+        "name": "Anton Virane",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MarkarthUnderStoneKeep",
+              "formKey": "016DF2:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DB08` 01EA57 alias AntonViraneAlias"
+      },
+      {
+        "name": "Balagog gro-Nolob",
+        "locations": [
+          {
+            "cell": {
+              "edid": "NightgateInnCellar",
+              "formKey": "027552:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DB08` alias BalagogGroNolobAlias"
+      },
+      {
+        "name": "Emperor (decoy)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "SolitudeCastleDourEmperorsTower",
+              "formKey": "019454:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "`DB09` 01EA58 alias EmperorDecoyAlias"
+      },
+      {
+        "name": "Emperor",
+        "locations": [
+          {
+            "cell": {
+              "edid": "KatariahWorld",
+              "formKey": "0C350D:Skyrim.esm"
+            },
+            "disabled": true,
+            "persistent": true
+          }
+        ],
+        "quest": "`DB11` 01EA59 alias EmperorAlias"
+      },
+      {
+        "name": "Amaund Motierre",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WhiterunBanneredMare",
+              "formKey": "01605E:Skyrim.esm"
+            },
+            "disabled": true,
+            "note": "`…End`"
+          },
+          {
+            "cell": {
+              "edid": "Volunruud01",
+              "formKey": "0151FB:Skyrim.esm"
+            },
+            "disabled": true,
+            "note": "the client copy"
+          }
+        ],
+        "quest": "`DB11` alias AmaundMotierreAlias (optional)"
+      },
+      {
+        "name": "Narfi",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ],
+        "quest": "`DBSideContract01` 01EA5B"
+      },
+      {
+        "name": "Ennodius Papius",
+        "locations": [
+          {
+            "cell": {
+              "edid": "AngasMillEnnodiusExterior02",
+              "formKey": "0090D1:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "`DBSideContract02` 01EA5E"
+      },
+      {
+        "name": "Beitild",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DawnstarBeitildsHouse",
+              "formKey": "013A88:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DBSideContract03` 01EA5F"
+      },
+      {
+        "name": "Lurbuk",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MorthalMoorsideInn",
+              "formKey": "0138CE:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DBSideContract05` 01EA61"
+      },
+      {
+        "name": "Deekus",
+        "locations": [
+          {
+            "cell": {
+              "edid": "HelasFollyExterior02",
+              "formKey": "008E34:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DBSideContract06` 01EA62"
+      },
+      {
+        "name": "Ma'randru-jo",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ],
+        "quest": "`DBSideContract07` 01EA63"
+      },
+      {
+        "name": "Anoriath",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WhiterunDrunkenHuntsman",
+              "formKey": "0165B7:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DBSideContract08` 01EA64"
+      },
+      {
+        "name": "Agnis",
+        "locations": [
+          {
+            "cell": {
+              "edid": "FortGreymoor01",
+              "formKey": "01527C:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DBSideContract09` 01EA65"
+      },
+      {
+        "name": "Maluril",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Mzinchaleft01",
+              "formKey": "01523D:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "`DBSideContract10` 01EA66"
+      },
+      {
+        "name": "Safia",
+        "locations": [
+          {
+            "cell": {
+              "edid": "SolitudeRedWave",
+              "formKey": "0A1793:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DBSideContract12` 01EA68"
+      },
+      {
+        "name": "the ten recurring targets",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WhiterunDragonsreach",
+              "formKey": "0165A3:Skyrim.esm"
+            },
+            "disabled": true
+          },
+          {
+            "cell": {
+              "edid": "KatlasFarmExterior",
+              "formKey": "0092BF:Skyrim.esm"
+            },
+            "disabled": true
+          },
+          {
+            "cell": {
+              "edid": "MorthalExterior05",
+              "formKey": "00937C:Skyrim.esm"
+            },
+            "disabled": true
+          },
+          {
+            "cell": {
+              "edid": "WinterholdTheFrozenHearth",
+              "formKey": "013814:Skyrim.esm"
+            },
+            "disabled": true
+          },
+          {
+            "cell": {
+              "edid": "FalkreathExterior05",
+              "formKey": "009C81:Skyrim.esm"
+            },
+            "disabled": true
+          },
+          {
+            "cell": {
+              "edid": "RiftenPlankside01",
+              "formKey": "00BCD1:Skyrim.esm"
+            },
+            "disabled": true
+          },
+          {
+            "cell": {
+              "label": "MarkarthWorld cell",
+              "formKey": "020EEB:Skyrim.esm"
+            },
+            "disabled": true
+          },
+          {
+            "cell": {
+              "edid": "SolitudeRow",
+              "formKey": "037EF0:Skyrim.esm"
+            },
+            "disabled": true
+          },
+          {
+            "cell": {
+              "edid": "WindhelmHalloftheDead",
+              "formKey": "016786:Skyrim.esm"
+            },
+            "disabled": true
+          },
+          {
+            "cell": {
+              "edid": "IvarsteadExterior01",
+              "formKey": "0097A0:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "`DBrecurring` 01EA5A aliases Target1–10Alias",
+        "note": "one each, in target order"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Grelod",
+        "weapons": "none (gold, *The Pig Children*)",
+        "armor": "`FarmClothesOutfit03`",
+        "skin": "race default"
+      },
+      {
+        "records": "Fultheim · Alea Quintus · Vasha",
+        "weapons": "none",
+        "armor": "`DBCaptive1Outfit` (Scaled Armor, Boots, Bracers, Execution Hood) · `DBCaptive2Outfit` (Belted Tunic, Boots, Execution Hood) · `DBCaptive3Outfit` (Fine Clothes, Fine Boots, Execution Hood)",
+        "skin": "race default"
+      },
+      {
+        "records": "Alain Dufont",
+        "weapons": "Aegisbane 0D2AFE",
+        "armor": "`FineClothesOutfit02`",
+        "skin": "race default"
+      },
+      {
+        "records": "Nilsine",
+        "weapons": "Iron Dagger",
+        "armor": "`FarmClothesOutfit03`",
+        "skin": "race default"
+      },
+      {
+        "records": "Vittoria Vici",
+        "weapons": "Steel Dagger",
+        "armor": "`FineClothesOutfit01`",
+        "skin": "race default"
+      },
+      {
+        "records": "Anton Virane",
+        "weapons": "Iron Dagger",
+        "armor": "`ChefOutfit` (Chef's Tunic, Hat, Shoes)",
+        "skin": "race default"
+      },
+      {
+        "records": "Balagog gro-Nolob",
+        "weapons": "Iron Dagger, gold",
+        "armor": "`FineClothesOutfit01`",
+        "skin": "race default"
+      },
+      {
+        "records": "Emperor (decoy · real)",
+        "weapons": "none · none (Katariah Master Key)",
+        "armor": "`DBEmperorOutfit` (Emperor's Robes, Fine Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Amaund Motierre (`…End`)",
+        "weapons": "none (five gems)",
+        "armor": "`FineClothesOutfit02`",
+        "skin": "race default"
+      },
+      {
+        "records": "Narfi · Ennodius Papius",
+        "weapons": "Iron Dagger",
+        "armor": "`BeggarNoShoesOutfit` (Ragged Robes) · `FarmClothesOutfit03`",
+        "skin": "race default"
+      },
+      {
+        "records": "Beitild",
+        "weapons": "Pickaxe",
+        "armor": "`MinerClothesOutfit02`",
+        "skin": "race default"
+      },
+      {
+        "records": "Lurbuk",
+        "weapons": "Iron Mace",
+        "armor": "`FarmClothesOutfit02`",
+        "skin": "race default"
+      },
+      {
+        "records": "Deekus",
+        "weapons": "Iron Dagger",
+        "armor": "`ArmorHideSimpleOutfit` (Hide Armor, Hide Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Ma'randru-jo",
+        "weapons": "Elven Sword",
+        "armor": "`FarmClothesOutfit04`",
+        "skin": "race default"
+      },
+      {
+        "records": "Anoriath",
+        "weapons": "Hunting Bow, Iron Arrows, Iron Dagger",
+        "armor": "`FarmClothesOutfit03withHideBootsandBracers`",
+        "skin": "race default"
+      },
+      {
+        "records": "Agnis",
+        "weapons": "Steel Dagger",
+        "armor": "`FarmClothesOutfit03withextras`",
+        "skin": "race default"
+      },
+      {
+        "records": "Maluril",
+        "weapons": "Steel Sword, Staff of Firebolts",
+        "armor": "`CourtWizardOutfit` (Blue Mage Robes, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Safia",
+        "weapons": "`LItemEnchWeaponSword`, `LItemPotionAll`, bandit-boss gold and gems",
+        "armor": "`ArmorScaledNoHelmetOutfit` (Scaled Armor, Boots, Bracers)",
+        "skin": "race default"
+      },
+      {
+        "records": "Visiting Noble",
+        "weapons": "`LItemWeaponDagger`",
+        "armor": "`MerchantClothesOutfit01NoHat`",
+        "skin": "race default"
+      },
+      {
+        "records": "Big Laborer · Coldhearted Gravedigger",
+        "weapons": "none · Iron Dagger",
+        "armor": "`FarmClothesOutfit03withextras`",
+        "skin": "race default"
+      },
+      {
+        "records": "Itinerant Lumberjack",
+        "weapons": "Iron War Axe",
+        "armor": "`MinerClothesOutfit01`",
+        "skin": "race default"
+      },
+      {
+        "records": "Reckless Mage",
+        "weapons": "Iron Dagger",
+        "armor": "`BanditMageOutfit` (`LItemBanditBoots`, `LItemBanditCuirassVariants`)",
+        "skin": "race default"
+      },
+      {
+        "records": "Seasoned Hunter",
+        "weapons": "Ancient Nord Bow, Iron Arrows",
+        "armor": "`ArmorHideAllOutfit` (Hide Helmet, Armor, Bracers, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Poor Fishwife · Traveling Dignitary",
+        "weapons": "Iron Dagger",
+        "armor": "`BeggarNoShoesOutfit` · `FineClothesOutfit01`",
+        "skin": "race default"
+      },
+      {
+        "records": "Grim Shieldmaiden",
+        "weapons": "Steel Sword, Imperial Shield",
+        "armor": "`ArmorSteelNoHelmetOutfit` (`ArmorSteelNoHelmetSet`)",
+        "skin": "race default"
+      },
+      {
+        "records": "Beautiful Barbarian",
+        "weapons": "Steel Greatsword",
+        "armor": "`SonsOfSkyrimCommanderOutfit` (Stormcloak Officer Helmet, Armor, Bracers, Boots)",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ArmorSteelNoHelmetSet",
+          "formKey": "028B45:Skyrim.esm"
+        },
+        "gate": "use all",
+        "rolls": "one each of Steel Armor (two variants), Steel Cuffed or Shin Boots, Steel Nordic or Imperial Gauntlets, all @1"
+      },
+      {
+        "list": {
+          "edid": "LItemEnchWeaponSword",
+          "formKey": "04B586:Skyrim.esm"
+        },
+        "gate": "all levels ≤ player",
+        "rolls": "enchanted swords, first of each material: Iron 1 · Orcish 7 · Dwarven 13 · Elven 20 · Glass 28 · Ebony 37 · Daedric 47 (stronger enchantments up to 53)"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponDagger",
+          "formKey": "017178:Skyrim.esm"
+        },
+        "rolls": "as on *Dark Brotherhood Assassins*"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditBoots",
+          "formKey": "037C23:Skyrim.esm"
+        },
+        "rolls": "with `LItemBanditCuirassVariants` 106D0C: as on *Common Bandits*"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Scaled Armor, Scaled Horn Armor, Scaled Boots, Bracers; Hide set; Stormcloak Officer set (`ArmorLight`)",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Steel set; Imperial Shield",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Execution Hood 05A9E3, Emperor's Robes 015516, Chef's Tunic, Ragged Robes, farm, fine, miner and merchant clothes, Blue Mage Robes",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Aegisbane, Staff of Firebolts and the other weapons",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}
