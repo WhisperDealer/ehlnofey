@@ -26,10 +26,10 @@
           "max": 30
         },
         "target": {
-          "band": "III",
-          "level": 20,
+          "band": "V",
+          "level": 30,
           "status": "proposed",
-          "source": "archetype-tiers.md §6.1: the standard followers 20"
+          "source": "user, 2026-11-13: Benor Experienced, 30 (supersedes the §6.1 follower level 20)"
         },
         "note": "Morthal: `Favor017` (*Fight! Fight!*) brawl bet, giver faction `Favor017QuestGiverFaction` 0CA213; beaten, he becomes a follower."
       },
@@ -96,10 +96,10 @@
           "max": 30
         },
         "target": {
-          "band": "III",
-          "level": 20,
+          "band": "IV",
+          "level": 22,
           "status": "proposed",
-          "source": "archetype-tiers.md §6.1: the standard followers 20"
+          "source": "user, 2026-11-13: Cosnach 22 (supersedes the §6.1 follower level 20)"
         },
         "note": "Markarth: `Favor017` (*Fight! Fight!*) brawl bet, giver faction `Favor017QuestGiverFaction` 0CA213; beaten, he becomes a follower."
       },
@@ -190,9 +190,9 @@
         },
         "target": {
           "band": "II",
-          "level": 8,
+          "level": 13,
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: Hofgrir Horse-Crusher 13"
         },
         "note": "Riften stables, *Bloody Nose* (`FreeformRiften19`): \"Defeat Hofgrir in an unarmed brawl\", with a rematch."
       },
@@ -212,10 +212,10 @@
           "max": 25
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "III",
+          "level": 15,
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1 = 25, clamped to 5–25: 25)"
+          "source": "user, 2026-11-13: Mikael 15"
         },
         "note": "Whiterun, Carlotta's *A Few Words with You* (`Favor013`): the brawl option of the persuade / intimidate / brawl choice."
       },
@@ -233,10 +233,10 @@
           "value": 6
         },
         "target": {
-          "band": "I",
-          "level": 6,
+          "band": "III",
+          "level": 20,
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: Mulush gro-Shugurz 20"
         },
         "note": "Markarth, Omluag's *A Few Words with You* (`Favor013`): the brawl option."
       },
@@ -298,10 +298,10 @@
           "value": 1
         },
         "target": {
-          "band": "I",
-          "level": 1,
+          "band": "V",
+          "level": 32,
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: Stig Salt-Plank 32"
         },
         "note": "Dawnstar, *Rise in the East* (`MS10`): fought to make him talk, non-lethal (his script stops combat below 1 health); persuasion is the other branch."
       },
@@ -410,10 +410,10 @@
           "max": 60
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VI",
+          "level": 40,
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1 = 25, clamped to 6–60: 25)"
+          "source": "user, 2026-11-13: Eydvina Shield-Hearth 40"
         },
         "note": "Falkreath Hold, the CC Hendraheim home quest: a lethal single-combat challenge for the hall (\"Defeat the warrior\")."
       }
