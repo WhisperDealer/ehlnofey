@@ -28,9 +28,9 @@
           "Essential"
         ],
         "target": {
-          "band": "VII",
+          "band": "VIII",
           "status": "proposed",
-          "source": "user, 2026-11-13: Isran Powerful, above the Dawnguard's Elite"
+          "source": "user, 2026-11-13: Isran Fabled"
         }
       },
       {
@@ -51,10 +51,9 @@
           "Essential"
         ],
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VII",
           "status": "proposed",
-          "source": "archetype-tiers.md §6.1 (user, 2026-09-27): Gunmar 25"
+          "source": "user, 2026-11-13: the Dawnguard Members Powerful"
         }
       },
       {
@@ -72,9 +71,9 @@
           "min": 15
         },
         "target": {
-          "band": "VI",
+          "band": "VII",
           "status": "proposed",
-          "source": "user, 2026-11-13: accepted; the Dawnguard's band (bands-of-power.md: the Dawnguard, Elite); archetype-tiers.md §7.0's level-25 rule would give 27 (IV)"
+          "source": "user, 2026-11-13: the Dawnguard Members Powerful"
         }
       },
       {
@@ -96,10 +95,9 @@
           "Essential"
         ],
         "target": {
-          "band": "V",
-          "level": 30,
+          "band": "VII",
           "status": "proposed",
-          "source": "archetype-tiers.md §6.1 (user, 2026-09-27): Sorine 30"
+          "source": "user, 2026-11-13: the Dawnguard Members Powerful"
         }
       },
       {
@@ -121,10 +119,9 @@
           "Essential"
         ],
         "target": {
-          "band": "VI",
-          "level": 38,
+          "band": "VII",
           "status": "proposed",
-          "source": "archetype-tiers.md §6.1 (user, 2026-09-27): the Dawnguard followers take the Dawnguard pin, 38"
+          "source": "user, 2026-11-13: the Dawnguard Members Powerful"
         }
       },
       {
@@ -142,10 +139,9 @@
           "min": 10
         },
         "target": {
-          "band": "VI",
-          "level": 38,
+          "band": "VII",
           "status": "proposed",
-          "source": "archetype-tiers.md §6.1 (user, 2026-09-27): the Dawnguard followers take the Dawnguard pin, 38"
+          "source": "user, 2026-11-13: the Dawnguard Members Powerful"
         }
       },
       {
@@ -163,10 +159,9 @@
           "min": 10
         },
         "target": {
-          "band": "VI",
-          "level": 38,
+          "band": "VII",
           "status": "proposed",
-          "source": "archetype-tiers.md §6.1 (user, 2026-09-27): the Dawnguard followers take the Dawnguard pin, 38"
+          "source": "user, 2026-11-13: the Dawnguard Members Powerful"
         }
       },
       {
@@ -184,10 +179,9 @@
           "min": 10
         },
         "target": {
-          "band": "VI",
-          "level": 38,
+          "band": "VII",
           "status": "proposed",
-          "source": "archetype-tiers.md §6.1 (user, 2026-09-27): the Dawnguard followers take the Dawnguard pin, 38"
+          "source": "user, 2026-11-13: the Dawnguard Members Powerful"
         }
       },
       {
@@ -210,10 +204,9 @@
           }
         },
         "target": {
-          "band": "VI",
-          "level": 38,
+          "band": "IV",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.4 and §6.1 (user, 2026-09-27): `DLC1EncHunterTemplate` is 38, the Dawnguard pin"
+          "source": "user, 2026-11-13: Agmaer Blooded; he takes `Stats` from `DLC1EncHunterTemplate`, which goes to VII with the rest of the page, so he needs a level of his own"
         },
         "note": "the templates `DLC1EncHunterTemplate` 00336F, `…Magic` 003370 and `…Missile` 003371 (\"Vampire Hunter\") are never placed."
       },
@@ -237,10 +230,9 @@
           }
         },
         "target": {
-          "band": "VI",
-          "level": 38,
+          "band": "VII",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.4 and §6.1 (user, 2026-09-27): `DLC1EncHunterTemplate` is 38, the Dawnguard pin"
+          "source": "user, 2026-11-13: the Dawnguard Members Powerful; `DLC1EncHunterTemplate` owns the level"
         }
       },
       {
@@ -266,10 +258,9 @@
           "Protected"
         ],
         "target": {
-          "band": "VI",
-          "level": 38,
+          "band": "VII",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.4 (user, 2026-09-27): `DLC1EncHunterTemplate` owns the Fort's guards and is 38, the Dawnguard pin"
+          "source": "user, 2026-11-13: the Dawnguard Members Powerful; `DLC1EncHunterTemplate` owns the level"
         }
       },
       {
@@ -295,10 +286,9 @@
           "Protected"
         ],
         "target": {
-          "band": "VI",
-          "level": 38,
+          "band": "VII",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.4 (user, 2026-09-27): `DLC1EncHunterTemplate` owns the Fort's guards and is 38, the Dawnguard pin"
+          "source": "user, 2026-11-13: the Dawnguard Members Powerful; `DLC1EncHunterTemplate` owns the level"
         }
       },
       {
@@ -324,10 +314,9 @@
           "Protected"
         ],
         "target": {
-          "band": "VI",
-          "level": 38,
+          "band": "VII",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.4 (user, 2026-09-27): `DLC1EncHunterTemplate` owns the Fort's guards and is 38, the Dawnguard pin"
+          "source": "user, 2026-11-13: the Dawnguard Members Powerful; `DLC1EncHunterTemplate` owns the level"
         }
       },
       {
@@ -353,10 +342,9 @@
           "Protected"
         ],
         "target": {
-          "band": "VI",
-          "level": 38,
+          "band": "VII",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.4 (user, 2026-09-27): `DLC1EncHunterTemplate` owns the Fort's guards and is 38, the Dawnguard pin"
+          "source": "user, 2026-11-13: the Dawnguard Members Powerful; `DLC1EncHunterTemplate` owns the level"
         }
       }
     ]
