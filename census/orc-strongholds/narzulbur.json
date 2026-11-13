@@ -44,19 +44,34 @@
           "value": 10
         },
         "target": {
-          "band": "IV",
+          "band": "V",
           "status": "proposed",
-          "source": "user, 2026-11-13: every other stronghold Orc Blooded"
+          "source": "user, 2026-11-13: Bolar Experienced"
         }
       },
       {
-        "id": "longhouse",
-        "name": "Yatul · Urog · Dushnamub",
+        "id": "yatul",
+        "name": "Yatul",
         "records": [
           {
             "edid": "Yatul",
             "formKey": "01B077:Skyrim.esm"
-          },
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-13: Yatul Experienced"
+        }
+      },
+      {
+        "id": "urog-dushnamub",
+        "name": "Urog · Dushnamub",
+        "records": [
           {
             "edid": "Urog",
             "formKey": "01B078:Skyrim.esm"
@@ -96,17 +111,47 @@
         }
       },
       {
-        "id": "mine",
-        "name": "Gadba gro-Largash · Mul gro-Largash · Mogdurz · Bor",
+        "id": "gadba-gro-largash",
+        "name": "Gadba gro-Largash",
         "records": [
           {
             "edid": "GadbaGroLargash",
             "formKey": "01B09A:Skyrim.esm"
-          },
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-13: Gadba gro-Largash and Mul gro-Largash Experienced"
+        }
+      },
+      {
+        "id": "mul-gro-largash",
+        "name": "Mul gro-Largash",
+        "records": [
           {
             "edid": "MulGroLargash",
             "formKey": "01B07A:Skyrim.esm"
-          },
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-13: Gadba gro-Largash and Mul gro-Largash Experienced"
+        }
+      },
+      {
+        "id": "mogdurz-bor",
+        "name": "Mogdurz · Bor",
+        "records": [
           {
             "edid": "Mogdurz",
             "formKey": "0C78DF:Skyrim.esm"

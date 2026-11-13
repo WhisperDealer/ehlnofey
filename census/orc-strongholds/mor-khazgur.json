@@ -24,9 +24,9 @@
           "value": 15
         },
         "target": {
-          "band": "VI",
+          "band": "VII",
           "status": "proposed",
-          "source": "user, 2026-11-13: the stronghold chiefs Elite"
+          "source": "user, 2026-11-13: Chief Larak Powerful"
         },
         "note": "The player can brawl him: he gives the *Fight! Fight!* favour (`Favor017` 0CA210; in `Favor017QuestGiverFaction` 0CA213)."
       },
@@ -65,20 +65,35 @@
           "max": 30
         },
         "target": {
-          "band": "V",
+          "band": "VI",
           "status": "proposed",
-          "source": "user, 2026-11-13: the stronghold warriors Experienced"
+          "source": "user, 2026-11-13: Borgakh the Steel Heart Elite"
         },
         "note": "The player can brawl her: her recruitment brawl, optional (user, 2026-11-13: brawl opponents are in the census even when the brawl is optional)."
       },
       {
-        "id": "longhouse",
-        "name": "Olur · Shuftharz · Bagrak",
+        "id": "olur",
+        "name": "Olur",
         "records": [
           {
             "edid": "Olur",
             "formKey": "01995B:Skyrim.esm"
-          },
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-13: Olur Experienced"
+        }
+      },
+      {
+        "id": "shuftharz-bagrak",
+        "name": "Shuftharz · Bagrak",
+        "records": [
           {
             "edid": "Shuftharz",
             "formKey": "019957:Skyrim.esm"

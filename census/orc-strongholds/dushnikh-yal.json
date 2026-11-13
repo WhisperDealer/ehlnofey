@@ -44,9 +44,9 @@
           "value": 10
         },
         "target": {
-          "band": "IV",
+          "band": "V",
           "status": "proposed",
-          "source": "user, 2026-11-13: every other stronghold Orc Blooded"
+          "source": "user, 2026-11-13: Murbul Experienced"
         }
       },
       {
@@ -65,35 +65,80 @@
           "max": 30
         },
         "target": {
-          "band": "V",
+          "band": "VI",
           "status": "proposed",
-          "source": "user, 2026-11-13: the stronghold warriors Experienced"
+          "source": "user, 2026-11-13: Ghorbash the Iron Hand Elite, level with Chief Burguk"
         },
         "note": "The player can brawl him: his recruitment brawl, optional (user, 2026-11-13: brawl opponents are in the census even when the brawl is optional)."
       },
       {
-        "id": "longhouse",
-        "name": "Arob · Gharol · Shel · Umurn · Nagrub",
+        "id": "arob",
+        "name": "Arob",
         "records": [
           {
             "edid": "Arob",
             "formKey": "013B7B:Skyrim.esm"
-          },
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-13: Arob, Shel and Nagrub Experienced"
+        }
+      },
+      {
+        "id": "shel",
+        "name": "Shel",
+        "records": [
+          {
+            "edid": "Shel",
+            "formKey": "013B7D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-13: Arob, Shel and Nagrub Experienced"
+        }
+      },
+      {
+        "id": "nagrub",
+        "name": "Nagrub",
+        "records": [
+          {
+            "edid": "Nagrub",
+            "formKey": "013B7F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-13: Arob, Shel and Nagrub Experienced"
+        }
+      },
+      {
+        "id": "gharol-umurn",
+        "name": "Gharol · Umurn",
+        "records": [
           {
             "edid": "Gharol",
             "formKey": "013B7C:Skyrim.esm"
           },
           {
-            "edid": "Shel",
-            "formKey": "013B7D:Skyrim.esm"
-          },
-          {
             "edid": "Umurn",
             "formKey": "013B7E:Skyrim.esm"
-          },
-          {
-            "edid": "Nagrub",
-            "formKey": "013B7F:Skyrim.esm"
           }
         ],
         "level": {

@@ -29,9 +29,10 @@
           "Essential"
         ],
         "target": {
-          "band": "VI",
+          "band": "III",
+          "level": 20,
           "status": "proposed",
-          "source": "user, 2026-11-13: the stronghold chiefs Elite"
+          "source": "user, 2026-11-13: Chief Yamarz 20; chief, but cowardly"
         },
         "note": "The chief of *The Cursed Tribe* (`DA06` 03B681), Malacath's quest."
       },
@@ -54,9 +55,9 @@
           "Protected"
         ],
         "target": {
-          "band": "V",
+          "band": "VI",
           "status": "proposed",
-          "source": "user, 2026-11-13: the stronghold warriors Experienced"
+          "source": "user, 2026-11-13: Atub Elite"
         }
       },
       {
@@ -106,16 +107,32 @@
         }
       },
       {
-        "id": "garakh-gularzob",
-        "name": "Garakh · Gularzob",
+        "id": "gularzob",
+        "name": "Gularzob",
+        "records": [
+          {
+            "edid": "Gularzob",
+            "formKey": "019E20:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-13: Gularzob 34, just under Elite: he takes over as chief after *The Cursed Tribe*"
+        }
+      },
+      {
+        "id": "garakh",
+        "name": "Garakh",
         "records": [
           {
             "edid": "Garakh",
             "formKey": "019E1C:Skyrim.esm"
-          },
-          {
-            "edid": "Gularzob",
-            "formKey": "019E20:Skyrim.esm"
           }
         ],
         "level": {
