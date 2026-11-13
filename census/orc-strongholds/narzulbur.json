@@ -24,10 +24,9 @@
           "value": 15
         },
         "target": {
-          "band": "III",
-          "level": 15,
+          "band": "VI",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: the stronghold chiefs Elite"
         },
         "note": "The player can brawl him: he gives the *Fight! Fight!* favour (`Favor017` 0CA210; in `Favor017QuestGiverFaction` 0CA213)."
       },
@@ -45,10 +44,9 @@
           "value": 10
         },
         "target": {
-          "band": "II",
-          "level": 10,
+          "band": "IV",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: every other stronghold Orc Blooded"
         }
       },
       {
@@ -73,10 +71,9 @@
           "value": 6
         },
         "target": {
-          "band": "I",
-          "level": 6,
+          "band": "IV",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: every other stronghold Orc Blooded"
         }
       },
       {
@@ -93,10 +90,9 @@
           "value": 4
         },
         "target": {
-          "band": "I",
-          "level": 4,
+          "band": "IV",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: every other stronghold Orc Blooded"
         }
       },
       {
@@ -125,10 +121,9 @@
           "value": 6
         },
         "target": {
-          "band": "I",
-          "level": 6,
+          "band": "IV",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: every other stronghold Orc Blooded"
         }
       }
     ]

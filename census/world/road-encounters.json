@@ -26,7 +26,13 @@
             "edid": "LCharBanditBoss",
             "formKey": "03DF16:Skyrim.esm"
           },
-          "rungs": [6, 10, 16, 21, 28]
+          "rungs": [
+            6,
+            10,
+            16,
+            21,
+            28
+          ]
         },
         "target": {
           "band": "V",
@@ -51,7 +57,14 @@
             "edid": "LCharBanditMissile",
             "formKey": "01E770:Skyrim.esm"
           },
-          "rungs": [1, 5, 9, 14, 19, 25]
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
         },
         "target": {
           "band": "III",
@@ -75,7 +88,14 @@
             "edid": "LCharBanditWizard",
             "formKey": "01E771:Skyrim.esm"
           },
-          "rungs": [1, 5, 9, 14, 19, 25]
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
         },
         "target": {
           "band": "III",
@@ -99,7 +119,13 @@
             "edid": "LCharBanditBossNordM",
             "formKey": "01A341:Skyrim.esm"
           },
-          "rungs": [6, 10, 16, 21, 28]
+          "rungs": [
+            6,
+            10,
+            16,
+            21,
+            28
+          ]
         },
         "target": {
           "band": "V",
@@ -252,7 +278,14 @@
             "edid": "LCharBanditMeleeAny",
             "formKey": "03DECD:Skyrim.esm"
           },
-          "rungs": [1, 5, 9, 14, 19, 25]
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
         },
         "target": {
           "band": "III",
@@ -356,7 +389,14 @@
             "edid": "LCharBanditWizardCommonerM",
             "formKey": "01B0F3:Skyrim.esm"
           },
-          "rungs": [1, 5, 9, 14, 19, 25]
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
         },
         "target": {
           "band": "III",
@@ -380,7 +420,14 @@
             "edid": "LCharOrcMelee",
             "formKey": "01E780:Skyrim.esm"
           },
-          "rungs": [1, 5, 9, 14, 19, 25]
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
         },
         "target": {
           "band": "III",
@@ -442,10 +489,9 @@
           }
         },
         "target": {
-          "band": "I",
-          "level": 1,
+          "band": "IV",
           "status": "proposed",
-          "source": "proposed, awaiting the user: the standing rule keeps the fixed 1 (CLAUDE.md, decisions carried over: a fixed vanilla level is kept), but they fight beside the Katariah Penitus Oculatus agents pinned at 36"
+          "source": "user, 2026-11-13: the Katariah crew Blooded"
         },
         "note": "the Katariah crew of *Hail Sithis!* (`DB11`): `DB11KatariahCrewFaction` 0C6019 is an enemy of the player; 0C6017 carries it, the other three take `Factions` from it. `Stats` from `LCharSailor` 0C6013."
       }
@@ -500,12 +546,30 @@
         },
         "gate": "every gate ≤ player",
         "entries": [
-          { "at": 1, "label": "`EncBandit01MagicBretonM` 039D33 (1)" },
-          { "at": 5, "label": "`EncBandit02MagicBretonM` 039D3A (5)" },
-          { "at": 9, "label": "`EncBandit03MagicBretonM` 039D45 (9)" },
-          { "at": 14, "label": "`EncBandit04MagicBretonM` 039D4C (14)" },
-          { "at": 19, "label": "`EncBandit05MagicBretonM` 039D53 (19)" },
-          { "at": 25, "label": "`EncBandit06MagicBretonM` 039D5A (25)" }
+          {
+            "at": 1,
+            "label": "`EncBandit01MagicBretonM` 039D33 (1)"
+          },
+          {
+            "at": 5,
+            "label": "`EncBandit02MagicBretonM` 039D3A (5)"
+          },
+          {
+            "at": 9,
+            "label": "`EncBandit03MagicBretonM` 039D45 (9)"
+          },
+          {
+            "at": 14,
+            "label": "`EncBandit04MagicBretonM` 039D4C (14)"
+          },
+          {
+            "at": 19,
+            "label": "`EncBandit05MagicBretonM` 039D53 (19)"
+          },
+          {
+            "at": 25,
+            "label": "`EncBandit06MagicBretonM` 039D5A (25)"
+          }
         ],
         "note": "a race and voice sublist of the bandit wizards, documented on Bandits → *Common Bandits*.",
         "owner": "`WIChangeLocation03Wizard` (only `Stats` taken from the list)"
@@ -517,12 +581,30 @@
         },
         "gate": "every gate ≤ player",
         "entries": [
-          { "at": 1, "label": "`EncBandit01Melee1HOrcM` 039CFA (1)" },
-          { "at": 5, "label": "`EncBandit02Melee1HOrcM` 039D03 (5)" },
-          { "at": 9, "label": "`EncBandit03Melee1HOrcM` 039D0B (9)" },
-          { "at": 14, "label": "`EncBandit04Melee1HOrcM` 039D13 (14)" },
-          { "at": 19, "label": "`EncBandit05Melee1HOrcM` 039D1B (19)" },
-          { "at": 25, "label": "`EncBandit06Melee1HOrcM` 039D23 (25)" }
+          {
+            "at": 1,
+            "label": "`EncBandit01Melee1HOrcM` 039CFA (1)"
+          },
+          {
+            "at": 5,
+            "label": "`EncBandit02Melee1HOrcM` 039D03 (5)"
+          },
+          {
+            "at": 9,
+            "label": "`EncBandit03Melee1HOrcM` 039D0B (9)"
+          },
+          {
+            "at": 14,
+            "label": "`EncBandit04Melee1HOrcM` 039D13 (14)"
+          },
+          {
+            "at": 19,
+            "label": "`EncBandit05Melee1HOrcM` 039D1B (19)"
+          },
+          {
+            "at": 25,
+            "label": "`EncBandit06Melee1HOrcM` 039D23 (25)"
+          }
         ],
         "note": "the bandit ladder's Orc one-handed leaves, held directly (Bandits → *Common Bandits* names it, with no row of its own).",
         "owner": "`WE24Orc` (only `Stats` taken from the list)"

@@ -390,7 +390,7 @@
         "target": {
           "band": "III",
           "status": "proposed",
-          "source": "proposed, awaiting the user: the fixed 6 leaves the culprit of the Vigil Enforcer quest Weak (I); III Trained proposed"
+          "source": "user, 2026-11-13: accepted"
         },
         "note": "Dawnstar, Quicksilver Mine, the CC Vigil Enforcer quest: the hostile copy of Harald (`WIPlayerEnemyFaction`); the quest then has the player search his body. The peaceful `ccMTYSSE002_Harald` 00092B (also 6) is not fought. [unverified]: that the hostile copy is the one fought rests on its faction."
       },

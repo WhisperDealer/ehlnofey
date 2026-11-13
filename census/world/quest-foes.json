@@ -139,9 +139,9 @@
           "value": 8
         },
         "target": {
-          "band": "III",
+          "band": "V",
           "status": "proposed",
-          "source": "proposed, awaiting the user: the fixed 8 keeps him Common (II), low for the Butcher, the finale of *Blood on the Ice*; III Trained proposed"
+          "source": "user, 2026-11-13: Calixto Experienced"
         },
         "note": "Windhelm, *Blood on the Ice* (`MS11`): unmasked as the Butcher, he leaves his town factions and is fought."
       },
@@ -163,7 +163,7 @@
         "target": {
           "band": "VI",
           "status": "proposed",
-          "source": "proposed, awaiting the user: the level-25 rule gives 25 (IV), below the Summerset Shadows he leads (V, user 2026-11-13, on Thieves Guild → *Thieves Guild Foes*); VI Elite proposed, one band above them"
+          "source": "user, 2026-11-13: accepted"
         },
         "note": "Eastmarch, Uttering Hills Cave: leader of the Summerset Shadows (`TGTQ04`); `VeryAggressive`, `dunLinweFaction` allied to the bandits."
       },
@@ -505,7 +505,7 @@
         "target": {
           "band": "VII",
           "status": "proposed",
-          "source": "proposed, awaiting the user: the level-25 rule gives 31 (V), low for the pack's final boss; VII Powerful proposed (bands-of-power.md: most lesser named bosses)"
+          "source": "user, 2026-11-13: accepted"
         },
         "note": "Whiterun Hold, Champion's Rest: the boss of the Umbra pack, `VeryAggressive` in `ccBGSSSE016_UmbraBossPlayerEnemyFaction`. Template `EncBandit06Boss1HNordM` 03DF09 without `Stats`: keeps its own level."
       },
@@ -525,7 +525,7 @@
         "target": {
           "band": "II",
           "status": "proposed",
-          "source": "proposed, awaiting the user: the fixed 1 leaves him Weak (I) though he fights the player in Bleak Falls Barrow; II Common proposed"
+          "source": "user, 2026-11-13: accepted"
         },
         "note": "Bleak Falls Barrow (`MS13`): cut from the web, he sets Aggression 3, flees and fights; in `BanditAllyFaction`."
       },
@@ -746,7 +746,7 @@
         "target": {
           "band": "VII",
           "status": "proposed",
-          "source": "proposed, awaiting the user: the level-25 rule gives 25 (IV), low for the boss of *Old Friends*; VII Powerful proposed (bands-of-power.md: most lesser named bosses)"
+          "source": "user, 2026-11-13: accepted"
         },
         "note": "Solstheim, Highpoint Tower, *Old Friends* (`DLC2TT2`): \"Kill Ildari\"; `VeryAggressive`, `WarlockFaction` with the ash creatures."
       },
@@ -819,7 +819,7 @@
         "target": {
           "band": "VII",
           "status": "proposed",
-          "source": "proposed, awaiting the user: werewolves sit in Powerful (bands-of-power.md), but the level-25 rule leaves the Frostmoon pack at 25 / 18 / 12 / 10 (Majni, Akar, Hjordis, Rakel: IV to II); VII Powerful proposed for all four"
+          "source": "user, 2026-11-13: the Frostmoon werewolves Powerful (bands-of-power.md: werewolves)"
         },
         "note": "Solstheim, Frostmoon Crag: the quest makes `DLC2dunFrostmoonWerewolvesFaction` an enemy of `PlayerFaction`, clears `Protected` and starts combat for the whole pack."
       },
@@ -841,7 +841,7 @@
         "target": {
           "band": "VII",
           "status": "proposed",
-          "source": "proposed, awaiting the user: werewolves sit in Powerful (bands-of-power.md), but the level-25 rule leaves the Frostmoon pack at 25 / 18 / 12 / 10 (Majni, Akar, Hjordis, Rakel: IV to II); VII Powerful proposed, as Majni"
+          "source": "user, 2026-11-13: the Frostmoon werewolves Powerful (bands-of-power.md: werewolves)"
         },
         "note": "Solstheim, Frostmoon Crag: as Majni."
       },
@@ -863,7 +863,7 @@
         "target": {
           "band": "VII",
           "status": "proposed",
-          "source": "proposed, awaiting the user: werewolves sit in Powerful (bands-of-power.md), but the level-25 rule leaves the Frostmoon pack at 25 / 18 / 12 / 10 (Majni, Akar, Hjordis, Rakel: IV to II); VII Powerful proposed, as Majni"
+          "source": "user, 2026-11-13: the Frostmoon werewolves Powerful (bands-of-power.md: werewolves)"
         },
         "note": "Solstheim, Frostmoon Crag: as Majni; transforms in combat."
       },
@@ -885,7 +885,7 @@
         "target": {
           "band": "VII",
           "status": "proposed",
-          "source": "proposed, awaiting the user: werewolves sit in Powerful (bands-of-power.md), but the level-25 rule leaves the Frostmoon pack at 25 / 18 / 12 / 10 (Majni, Akar, Hjordis, Rakel: IV to II); VII Powerful proposed, as Majni"
+          "source": "user, 2026-11-13: the Frostmoon werewolves Powerful (bands-of-power.md: werewolves)"
         },
         "note": "Solstheim, Frostmoon Crag: as Majni; warns the player, then the camp attacks."
       },
