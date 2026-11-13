@@ -1,0 +1,182 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "dushnikh-yal",
+  "group": "orc-strongholds",
+  "title": "Dushnikh Yal",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "burguk",
+        "name": "Chief Burguk",
+        "records": [
+          {
+            "edid": "Burguk",
+            "formKey": "013B79:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 15
+        },
+        "target": {
+          "band": "III",
+          "level": 15,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "The player can brawl him: he gives the *Fight! Fight!* favour (`Favor017` 0CA210; in `Favor017QuestGiverFaction` 0CA213)."
+      },
+      {
+        "id": "murbul",
+        "name": "Murbul",
+        "records": [
+          {
+            "edid": "Murbul",
+            "formKey": "013B7A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "ghorbash",
+        "name": "Ghorbash the Iron Hand",
+        "records": [
+          {
+            "edid": "Ghorbash",
+            "formKey": "013B81:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 30
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–30)"
+        },
+        "note": "The player can brawl him: his recruitment brawl, optional (user, 2026-11-13: brawl opponents are in the census even when the brawl is optional)."
+      },
+      {
+        "id": "longhouse",
+        "name": "Arob · Gharol · Shel · Umurn · Nagrub",
+        "records": [
+          {
+            "edid": "Arob",
+            "formKey": "013B7B:Skyrim.esm"
+          },
+          {
+            "edid": "Gharol",
+            "formKey": "013B7C:Skyrim.esm"
+          },
+          {
+            "edid": "Shel",
+            "formKey": "013B7D:Skyrim.esm"
+          },
+          {
+            "edid": "Umurn",
+            "formKey": "013B7E:Skyrim.esm"
+          },
+          {
+            "edid": "Nagrub",
+            "formKey": "013B7F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "level": 6,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "mine",
+        "name": "Oglub · Mahk · Dulug · Ghak",
+        "records": [
+          {
+            "edid": "Oglub",
+            "formKey": "013B80:Skyrim.esm"
+          },
+          {
+            "edid": "Mahk",
+            "formKey": "0C78BE:Skyrim.esm"
+          },
+          {
+            "edid": "Dulug",
+            "formKey": "0C78C0:Skyrim.esm"
+          },
+          {
+            "edid": "Ghak",
+            "formKey": "0C78C2:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "level": 6,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level, and no other record uses a row as its template.",
+      "No leveled list draws any of them: every one is placed."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Burguk, Murbul, Ghorbash, Arob, Gharol, Shel, Umurn, Nagrub",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DushnikhYalLonghouse",
+              "formKey": "0198E2:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Oglub, Mahk, Dulug, Ghak",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DushnikhYalMine",
+              "formKey": "01528A:Skyrim.esm"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

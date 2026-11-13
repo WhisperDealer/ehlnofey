@@ -678,7 +678,7 @@
               }
             ],
             "how": "template",
-            "where": "World → Falkreath Hold → *Falkreath Countryside*",
+            "page": "world/quest-foes",
             "note": "through the wrapper `LvlWarlockNecroBoss` 0E1050, without `Stats`: keeps its own level (PC×1.4 [10–45])"
           }
         ]

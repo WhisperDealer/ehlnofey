@@ -1,0 +1,183 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "narzulbur",
+  "group": "orc-strongholds",
+  "title": "Narzulbur",
+  "order": 4,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "mauhulakh",
+        "name": "Chief Mauhulakh",
+        "records": [
+          {
+            "edid": "Mauhulakh",
+            "formKey": "01B075:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 15
+        },
+        "target": {
+          "band": "III",
+          "level": 15,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "The player can brawl him: he gives the *Fight! Fight!* favour (`Favor017` 0CA210; in `Favor017QuestGiverFaction` 0CA213)."
+      },
+      {
+        "id": "bolar",
+        "name": "Bolar",
+        "records": [
+          {
+            "edid": "Bolar",
+            "formKey": "01B076:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "longhouse",
+        "name": "Yatul · Urog · Dushnamub",
+        "records": [
+          {
+            "edid": "Yatul",
+            "formKey": "01B077:Skyrim.esm"
+          },
+          {
+            "edid": "Urog",
+            "formKey": "01B078:Skyrim.esm"
+          },
+          {
+            "edid": "Dushnamub",
+            "formKey": "01B079:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "level": 6,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "uglarz",
+        "name": "Uglarz",
+        "records": [
+          {
+            "edid": "Uglarz",
+            "formKey": "0E316F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "mine",
+        "name": "Gadba gro-Largash · Mul gro-Largash · Mogdurz · Bor",
+        "records": [
+          {
+            "edid": "GadbaGroLargash",
+            "formKey": "01B09A:Skyrim.esm"
+          },
+          {
+            "edid": "MulGroLargash",
+            "formKey": "01B07A:Skyrim.esm"
+          },
+          {
+            "edid": "Mogdurz",
+            "formKey": "0C78DF:Skyrim.esm"
+          },
+          {
+            "edid": "Bor",
+            "formKey": "0C78E1:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "level": 6,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level, and no other record uses a row as its template.",
+      "No leveled list draws any of them: every one is placed."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Mauhulakh, Bolar, Yatul, Urog, Dushnamub",
+        "locations": [
+          {
+            "cell": {
+              "edid": "NarzulburMauhulakhsLonghouse",
+              "formKey": "015238:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Uglarz",
+        "locations": [
+          {
+            "cell": {
+              "edid": "NarzulburMauhulakhsLonghouse",
+              "formKey": "015238:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Gadba, Mul, Mogdurz, Bor",
+        "locations": [
+          {
+            "cell": {
+              "edid": "GloomboundMine01",
+              "formKey": "016200:Skyrim.esm"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

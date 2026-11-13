@@ -1,0 +1,29 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "orc-strongholds",
+  "title": "Orc Strongholds",
+  "order": 1,
+  "parent": "world",
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The four strongholds, each with its own page (user, 2026-10-03). Their residents are not on the hold pages. No leveled list draws a stronghold Orc; every one is placed.",
+  "families": [
+    {
+      "id": "largashbur",
+      "holds": "The Rift, `LargashburLocation` 019263: Chief Yamarz and the cursed tribe"
+    },
+    {
+      "id": "dushnikh-yal",
+      "holds": "The Reach, `DushnikhYalLocation` 019171: Chief Burguk, Ghorbash the Iron Hand, the longhouse and the mine"
+    },
+    {
+      "id": "mor-khazgur",
+      "holds": "The Reach, `MorKhazgurLocation` 01927C: Chief Larak, Borgakh the Steel Heart, the longhouse and the mine"
+    },
+    {
+      "id": "narzulbur",
+      "holds": "Eastmarch, `NarzulburLocation` 019282: Chief Mauhulakh, the longhouse and Gloombound Mine"
+    }
+  ]
+}

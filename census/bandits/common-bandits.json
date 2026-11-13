@@ -516,7 +516,7 @@
       "Changing `EncBandit03TemplateMelee` 01BCDA also needs `ccBGSSSE016_UmbraImageBase` 000BFD:ccbgssse016-umbra.esm (PC×0.75 [12–40], on *Unfiled NPCs*, with its three Umbra images), `ccEDHSSE003_Azadi` 00081E:ccedhsse003-redguard.esl (PC×1 [–30], on *Alik'r*) and `dunSkybornAltarAdventurer` 0E4D2D (10, on *Hjaalmarch Countryside*; `dunGeirmundsHallAdventurer` 104750 takes `Stats` from it): same pattern.",
       "Changing `EncBandit04TemplateMagic` 039D4A also needs `DLC2NB01CorpseFall2` 027168:Dragonborn.esm (Castor's corpse, 9, on *Unfiled NPCs*); `EncBandit05TemplateMissile` 037C3C, `E3demoThief` 0E93D3 (19, never met: the E3 demo); `EncBandit06TemplateMelee` 01E611, `ccBGSSSE062_OrcM` 00081F:ccbgssse062-ba_dwarvenmail.esl (Urgnok, PC×1 [15–40], on *Named Bandits*): same pattern.",
       "Changing `EncBandit00Template` 039CF4 (the name source) also needs `EncOrcHunterTemplate` 0D9447 (the Orc Hunter template, 1, on World Encounters → *Hunters*, with its leaves): same pattern.",
-      "Changing the rung leaves (through the lists that draw them) also needs the records that take their template from a bandit wrapper or list without `Stats`: on World Encounters → *Random Encounter NPCs* the Revelers `WERJ06Drunk01`–`03` 0BD15A · 0BD15B · 0E842F (1, through `LvlBanditMeleeNordM`); on *Unfiled NPCs* `ccKRTSSE001_Inimoro` 000A94:cckrtsse001_altar.esl (PC×1 [60–80], through `LvlBanditMelee2H`); rows of this page, `dunDuskglowBanditSuperMortal` 0A638E and `DLC1dunRedwaterDenKhajiitM` 008D21:Dawnguard.esm (1); on *Bandit Gangs* `MS07LvlBlackbloodMeleeTankEvenTonedMAmbush` 088F0D (1), the CC pit bandits `ccKRTSSE001_WindhelmPitMelee` (1) and `…WindhelmPitMissile` (PC×1), and through `dunRatwayBanditMelee` `dunRatwayGian` 10A062 (Gian the Fist, PC×0.8 [–30], on *Riften*); on *Hunters of Hircine* `DA05Hunter01_JKier` 02ABC3 (1) and `DA05Hunter09_03Missile_Viding` 0CE085 (PC×0.75); on *Ghost Bosses* `DLC2dunHaknir` 01A373:Dragonborn.esm (Haknir Death-Brand, PC×1.25 [40–75]); on *Common Ghosts* `ccBGSSSE031_LvlAlikrMelee2H` 000AA4 · `…LvlAlikrMissileF` 000814 · `…LvlAlikrMissileM` 000974 (ccbgssse031-advcyrus.esm, through the bandit ghost wrappers or `LCharBanditMissile`); on *The Pale Countryside* `dunFrostmereCrypt_Rajirr` 0D37CF (1, `LvlBanditMelee1H`); on *Hjaalmarch Countryside* `MS05_dunDeadMensRespite_Svaknir` 016C87 (PC×0.75, `LvlBanditMelee1H`), whose Sovngarde copy `MQ304Svaknir` 0EA57A (PC×1 [5–10], on Factions → *Sovngarde*) takes `Stats` from it.",
+      "Changing the rung leaves (through the lists that draw them) also needs the records that take their template from a bandit wrapper or list without `Stats`: on World Encounters → *Random Encounter NPCs* the Revelers `WERJ06Drunk01`–`03` 0BD15A · 0BD15B · 0E842F (1, through `LvlBanditMeleeNordM`); on *Unfiled NPCs* `ccKRTSSE001_Inimoro` 000A94:cckrtsse001_altar.esl (PC×1 [60–80], through `LvlBanditMelee2H`); rows of this page, `dunDuskglowBanditSuperMortal` 0A638E and `DLC1dunRedwaterDenKhajiitM` 008D21:Dawnguard.esm (1); on *Bandit Gangs* `MS07LvlBlackbloodMeleeTankEvenTonedMAmbush` 088F0D (1), the CC pit bandits `ccKRTSSE001_WindhelmPitMelee` (1) and `…WindhelmPitMissile` (PC×1), and through `dunRatwayBanditMelee` `dunRatwayGian` 10A062 (Gian the Fist, PC×0.8 [–30], on World → *Quest Foes*); on *Hunters of Hircine* `DA05Hunter01_JKier` 02ABC3 (1) and `DA05Hunter09_03Missile_Viding` 0CE085 (PC×0.75); on *Ghost Bosses* `DLC2dunHaknir` 01A373:Dragonborn.esm (Haknir Death-Brand, PC×1.25 [40–75]); on *Common Ghosts* `ccBGSSSE031_LvlAlikrMelee2H` 000AA4 · `…LvlAlikrMissileF` 000814 · `…LvlAlikrMissileM` 000974 (ccbgssse031-advcyrus.esm, through the bandit ghost wrappers or `LCharBanditMissile`); on *The Pale Countryside* `dunFrostmereCrypt_Rajirr` 0D37CF (1, `LvlBanditMelee1H`); on *Hjaalmarch Countryside* `MS05_dunDeadMensRespite_Svaknir` 016C87 (PC×0.75, `LvlBanditMelee1H`), whose Sovngarde copy `MQ304Svaknir` 0EA57A (PC×1 [5–10], on Factions → *Sovngarde*) takes `Stats` from it.",
       "Every other bandit record (the 246 rung leaves, the 34 CC Saints and Seducers leaves, every `LvlBandit*` wrapper) carries `Stats` and follows its template or list. `DunLostKnifeBanditBoss` 01C902 (on *Bandit Chiefs*) also takes `Stats` from `LCharBanditMelee2H`."
     ]
   },
@@ -871,7 +871,7 @@
               }
             ],
             "how": "template",
-            "where": "World → The Rift → *Riften*",
+            "page": "world/quest-foes",
             "note": "`Stats` taken. `OriniDral`: through `LvlBanditMelee1H`, not placed"
           },
           {
@@ -1281,7 +1281,7 @@
               }
             ],
             "how": "template",
-            "where": "World → Solstheim → *Raven Rock*",
+            "page": "world/quest-foes",
             "note": "`Stats` taken. `DLC2MogrulThugTT1b`: through `LvlBanditMelee2H`"
           },
           {
@@ -1450,7 +1450,7 @@
               }
             ],
             "how": "template",
-            "where": "World → Winterhold Hold → *Winterhold Countryside*",
+            "page": "world/quest-foes",
             "note": "`Stats` taken. `dunAlftandJdarr`: through `LvlBanditMeleeBerserker`"
           },
           {
@@ -1599,7 +1599,7 @@
               }
             ],
             "how": "template",
-            "where": "World → The Rift → *Riften*",
+            "page": "world/quest-foes",
             "note": "`Stats` taken except where said. `dunRatwayGian`: through `dunRatwayBanditMelee` → `LvlBanditMeleeAny`, keeps its own level, PC×0.8 [0–30]"
           },
           {
@@ -1642,16 +1642,24 @@
             "name": "Adventurers",
             "records": [
               {
-                "edid": "WE23Scavenger",
-                "formKey": "062105:Skyrim.esm"
-              },
-              {
                 "edid": "WETreasureHunterActor",
                 "formKey": "0A17AF:Skyrim.esm"
               }
             ],
             "how": "template",
             "where": "World → World Encounters → *Adventurers*",
+            "note": "`Stats` taken. `WE23Scavenger`: through `LvlBanditMeleeAny`, not placed; `WETreasureHunterActor`: through `LvlBanditMeleeAny`, not placed"
+          },
+          {
+            "name": "Adventurers",
+            "records": [
+              {
+                "edid": "WE23Scavenger",
+                "formKey": "062105:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "world/road-encounters",
             "note": "`Stats` taken. `WE23Scavenger`: through `LvlBanditMeleeAny`, not placed; `WETreasureHunterActor`: through `LvlBanditMeleeAny`, not placed"
           },
           {
@@ -1968,7 +1976,7 @@
               }
             ],
             "how": "template",
-            "where": "World → World Encounters → *Bounty Hunters*",
+            "page": "world/road-encounters",
             "note": "`Stats` taken. `WEBountyHunterMissile`: through `LvlBanditMissile`, not placed"
           },
           {
@@ -2225,7 +2233,7 @@
               }
             ],
             "how": "template",
-            "where": "World → World Encounters → *Bounty Hunters*",
+            "page": "world/road-encounters",
             "note": "`Stats` taken. `WEBountyHunterWizard`: through `LvlBanditWizard`, not placed"
           },
           {
@@ -2549,14 +2557,22 @@
               {
                 "edid": "WERJ06Drunk03",
                 "formKey": "0E842F:Skyrim.esm"
-              },
+              }
+            ],
+            "how": "template",
+            "where": "World → World Encounters → *Random Encounter NPCs*",
+            "note": "`Stats` taken except where said. `WE25Fugitive`: `LCharBanditMeleeCommonerM`, not placed; `WEJS02Balbus`: `LCharBanditMeleeNordM`, through `LvlBanditAmbushMeleeNordM` → `LvlBanditMeleeNordM`, not placed; `WERJ06Drunk01`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`, keeps its own level, 1, not placed; `WERJ06Drunk02`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`, keeps its own level, 1, not placed; `WERJ06Drunk03`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`, keeps its own level, 1, not placed; `WIChangeLocation03Wizard`: `LCharBanditWizardCommonerM`, not placed"
+          },
+          {
+            "name": "Random Encounter NPCs",
+            "records": [
               {
                 "edid": "WIChangeLocation03Wizard",
                 "formKey": "06E02C:Skyrim.esm"
               }
             ],
             "how": "template",
-            "where": "World → World Encounters → *Random Encounter NPCs*",
+            "page": "world/road-encounters",
             "note": "`Stats` taken except where said. `WE25Fugitive`: `LCharBanditMeleeCommonerM`, not placed; `WEJS02Balbus`: `LCharBanditMeleeNordM`, through `LvlBanditAmbushMeleeNordM` → `LvlBanditMeleeNordM`, not placed; `WERJ06Drunk01`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`, keeps its own level, 1, not placed; `WERJ06Drunk02`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`, keeps its own level, 1, not placed; `WERJ06Drunk03`: `LCharBanditMeleeNordM`, through `LvlBanditMeleeNordM`, keeps its own level, 1, not placed; `WIChangeLocation03Wizard`: `LCharBanditWizardCommonerM`, not placed"
           },
           {
@@ -2755,16 +2771,24 @@
             "name": "Rift Countryside residents",
             "records": [
               {
-                "edid": "Telrav",
-                "formKey": "01BA08:Skyrim.esm"
-              },
-              {
                 "edid": "dunTrevasWatchStalleosVanguardMale",
                 "formKey": "04B4B1:Skyrim.esm"
               },
               {
                 "edid": "stalleo",
                 "formKey": "04B4AF:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "World → The Rift → *The Rift Countryside*",
+            "note": "`Stats` taken. `Telrav`: `LCharBanditMissileCommonerM`, through `LvlBanditMissileCommonerM`; `dunTrevasWatchStalleosVanguardMale`: `LCharBanditMissileNordM`, through `LvlBanditMissileNordM`; `stalleo`: `LCharBanditWizardNordM`; `WyndeliusGatharian`: `LCharBanditWizardNordM`, through `LvlBanditWizardNordM`"
+          },
+          {
+            "name": "Rift Countryside residents",
+            "records": [
+              {
+                "edid": "Telrav",
+                "formKey": "01BA08:Skyrim.esm"
               },
               {
                 "edid": "WyndeliusGatharian",
@@ -2772,7 +2796,7 @@
               }
             ],
             "how": "template",
-            "where": "World → The Rift → *The Rift Countryside*",
+            "page": "world/quest-foes",
             "note": "`Stats` taken. `Telrav`: `LCharBanditMissileCommonerM`, through `LvlBanditMissileCommonerM`; `dunTrevasWatchStalleosVanguardMale`: `LCharBanditMissileNordM`, through `LvlBanditMissileNordM`; `stalleo`: `LCharBanditWizardNordM`; `WyndeliusGatharian`: `LCharBanditWizardNordM`, through `LvlBanditWizardNordM`"
           },
           {
@@ -2796,7 +2820,7 @@
               }
             ],
             "how": "template",
-            "where": "World → Whiterun Hold → *Whiterun* (search hit, not confirmed)",
+            "page": "world/quest-foes",
             "note": "`Stats` taken. `dunHonningbrewRatGuy`: `LCharBanditWizardCommonerM`, through `LvlBanditWizardCommonerM`"
           },
           {
@@ -2832,7 +2856,7 @@
               }
             ],
             "how": "template",
-            "where": "World → Hjaalmarch → *Morthal* (search hit, not confirmed)",
+            "page": "world/quest-foes",
             "note": "`Stats` taken. `ccBGSSSE001_MiscMorthal_LvlBanditWizardImperialM`: `LCharBanditWizardNordM`"
           },
           {

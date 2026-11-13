@@ -1,0 +1,162 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "largashbur",
+  "group": "orc-strongholds",
+  "title": "Largashbur",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "yamarz",
+        "name": "Chief Yamarz",
+        "records": [
+          {
+            "edid": "Yamarz",
+            "formKey": "03BC26:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 20
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "III",
+          "level": 20,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 6–20)"
+        },
+        "note": "The chief of *The Cursed Tribe* (`DA06` 03B681), Malacath's quest."
+      },
+      {
+        "id": "atub",
+        "name": "Atub",
+        "records": [
+          {
+            "edid": "Atub",
+            "formKey": "019E18:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 30
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–30)"
+        }
+      },
+      {
+        "id": "lob-ogol",
+        "name": "Lob · Ogol",
+        "records": [
+          {
+            "edid": "Lob",
+            "formKey": "019E1E:Skyrim.esm"
+          },
+          {
+            "edid": "Ogol",
+            "formKey": "019E22:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 30
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–30)"
+        }
+      },
+      {
+        "id": "ugor",
+        "name": "Ugor",
+        "records": [
+          {
+            "edid": "Ugor",
+            "formKey": "019E1A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 30
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 6–30)"
+        }
+      },
+      {
+        "id": "garakh-gularzob",
+        "name": "Garakh · Gularzob",
+        "records": [
+          {
+            "edid": "Garakh",
+            "formKey": "019E1C:Skyrim.esm"
+          },
+          {
+            "edid": "Gularzob",
+            "formKey": "019E20:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "level": 6,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row: no other record keeps its own level, and no other record uses a row as its template.",
+      "No leveled list draws any of them: every one is placed."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Yamarz, Atub, Lob, Ogol, Ugor, Garakh, Gularzob",
+        "locations": [
+          {
+            "cell": {
+              "edid": "LargashburShagrolsLonghouse",
+              "formKey": "01525C:Skyrim.esm"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

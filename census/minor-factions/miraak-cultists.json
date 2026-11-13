@@ -342,7 +342,7 @@
     "confidence": "verified",
     "items": [
       "Changing `DLC2EncCultist05Template` 030CD4:Dragonborn.esm also needs `ccASVSSE001_HandMavandes` 00083F:ccasvsse001-almsivi.esm (Hand Ethra Mavandas, PC × 1, min 15, max 100): it uses the rung leaf `DLC2EncCultist05DarkElfF` as its template but not for `Stats` (on Minor Factions → *Ghosts of the Tribunal*).",
-      "Changing `DLC2EncCultist07Template` 030CD6:Dragonborn.esm also needs `ccASVSSE001_DagothPriest` 0C1928:ccasvsse001-almsivi.esm (Erden Relvel, PC × 2, min 10, max 100): it uses the leaf `DLC2EncCultist07DarkElfMSummoner` as its template but not for `Stats` (on World → Solstheim → *Solstheim Countryside*).",
+      "Changing `DLC2EncCultist07Template` 030CD6:Dragonborn.esm also needs `ccASVSSE001_DagothPriest` 0C1928:ccasvsse001-almsivi.esm (Erden Relvel, PC × 2, min 10, max 100): it uses the leaf `DLC2EncCultist07DarkElfMSummoner` as its template but not for `Stats` (on World → *Quest Foes*).",
       "The other rows: no other record keeps its own level. The five rung templates use `DLC2EncCultist00Template` as their template but not for `Stats`, so changing it does not move them.",
       "Every other cultist record (the race and summoner leaves, the `…TemplateSummoner` records, `DLC2LvlCultistNonHostile` and `…NonHostileSummoner`) carries `Stats` and follows its template or list."
     ]

@@ -1,0 +1,706 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "road-encounters",
+  "group": "world",
+  "title": "Road Encounters",
+  "order": 3,
+  "meta": {
+    "spec": "archetype-tiers.md §6",
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "bounty-hunter-boss",
+        "name": "Bounty Hunter",
+        "records": [
+          {
+            "edid": "WEBountyHunterBoss",
+            "formKey": "0BC09F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditBoss",
+            "formKey": "03DF16:Skyrim.esm"
+          },
+          "rungs": [6, 10, 16, 21, 28]
+        },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "Bandits → *Bandit Chiefs* (archetype-tiers.md §3.1 and §3.1.1, user): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere"
+        },
+        "note": "`WE36` (Bounty hunters vs Player): the alias `BountyHunter1` puts him in `WEEnemiesFactionA` 0BA0B8 and the player in `WEEnemiesFactionB` 0BA0B9, mutual enemies, so the party attacks on sight. `Stats` from `LvlBanditBoss` 03DF17."
+      },
+      {
+        "id": "bounty-hunter-archer",
+        "name": "Bounty Hunter",
+        "records": [
+          {
+            "edid": "WEBountyHunterMissile",
+            "formKey": "0BC0A0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMissile",
+            "formKey": "01E770:Skyrim.esm"
+          },
+          "rungs": [1, 5, 9, 14, 19, 25]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "`WE36`: alias `BountyHunter2`, the same hostile faction as the boss. `Stats` from `LvlBanditMissile` 01E79E."
+      },
+      {
+        "id": "bounty-hunter-mage",
+        "name": "Bounty Hunter",
+        "records": [
+          {
+            "edid": "WEBountyHunterWizard",
+            "formKey": "0BC0A1:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditWizard",
+            "formKey": "01E771:Skyrim.esm"
+          },
+          "rungs": [1, 5, 9, 14, 19, 25]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "`WE36`: alias `BountyHunter3`, the same hostile faction. `Stats` from `LvlBanditWizard` 01E79F."
+      },
+      {
+        "id": "bounty-collector",
+        "name": "Bounty Collector",
+        "records": [
+          {
+            "edid": "WEBountyCollectorMaleNord",
+            "formKey": "0F812A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditBossNordM",
+            "formKey": "01A341:Skyrim.esm"
+          },
+          "rungs": [6, 10, 16, 21, 28]
+        },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "Bandits → *Bandit Chiefs* (archetype-tiers.md §3.1 and §3.1.1, user): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere"
+        },
+        "note": "`WEBountyCollectorQST` 0F8A80: he demands the player's bounty; \"I don't have the gold.\" sets stage 95, which adds him to `WEPlayerEnemy` and starts combat. Paying clears the bounty. `Stats` from `LvlBanditBossNordM` 01B0E1."
+      },
+      {
+        "id": "aggressive-adventurer",
+        "name": "the drawn adventurer's race name (Nord, Breton, Khajiit, …)",
+        "records": [
+          {
+            "edid": "LvlWEAdventurer",
+            "formKey": "10553E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 6,
+          "from": {
+            "label": "the nine `WEAdventurer*` class templates, through `WEAdventurerSubChar` 1050F8"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the `WE*` adventurers (9 templates) 25"
+        },
+        "note": "`WEJS26` (Aggressive Adventurer): the alias `Adventurer` adds `WEAggressiveAdventurerFaction` 105D13, an enemy of the player, so he attacks on sight. The name comes via `BaseData` from the drawn race leaf (named by race). The same record is the corpse alias `DeadBody` of `DLC1WEJS04` 010AEB:Dawnguard.esm."
+      },
+      {
+        "id": "adventurer-horse-rider",
+        "name": "the drawn adventurer's race name (Nord, Breton, Khajiit, …)",
+        "records": [
+          {
+            "edid": "LvlWEAdventurerHorseRider",
+            "formKey": "10F13B:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 6,
+          "from": {
+            "label": "the nine `WEAdventurer*` class templates, through `WEAdventurerSubChar` 1050F8"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the `WE*` adventurers (9 templates) 25"
+        },
+        "note": "no quest: his own faction `WEAdventurerHorseRiderFaction` 10F13C is an enemy of the player (the template flags leave out `Factions`), so he attacks on sight."
+      },
+      {
+        "id": "mercenary",
+        "name": "Mercenary",
+        "records": [
+          {
+            "edid": "LvlWEAdventurerSpellsword",
+            "formKey": "105D41:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 6,
+          "from": {
+            "edid": "WEAdventurerSpellsword",
+            "formKey": "105540:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the `WE*` adventurers (9 templates) 25"
+        },
+        "note": "`WERoad06` (Adventurer on the Way to Nearby Dungeon): named by the alias `DisplayName` `WEMercenaryMessage` 106019; unaggressive (`WEUnaggressiveAdventurerFaction` 105D14) until a failed intimidation sets stage 95, which starts combat. Through `WEAdventurerSpellswordSubChar` 10555A."
+      },
+      {
+        "id": "taunting-adventurer",
+        "name": "the drawn adventurer's race name (Nord, Orc, Redguard)",
+        "records": [
+          {
+            "edid": "LvlWEAdventurerWarrior",
+            "formKey": "105D3C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 6,
+          "from": {
+            "edid": "WEAdventurerWarrior",
+            "formKey": "105541:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the `WE*` adventurers (9 templates) 25"
+        },
+        "note": "`WERoad07` (Taunting Adventurer): he provokes the player (\"What's a milk drinker like you doing out here?\"); a failed intimidation or persuasion sets stage 95, which starts combat. Through `WEAdventurerWarriorSubChar` 10555B."
+      },
+      {
+        "id": "skooma-dealer",
+        "name": "the drawn adventurer's race name (Wood Elf, Argonian, Orc, Khajiit)",
+        "records": [
+          {
+            "edid": "WERoad09_LvlWEAdventurerBrawler",
+            "formKey": "10663E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 6,
+          "from": {
+            "edid": "WEAdventurerBrawler",
+            "formKey": "10555E:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the `WE*` adventurers (9 templates) 25"
+        },
+        "note": "`WERoad09` (Skooma Dealer): \"This doesn't seem legal.\" or a failed intimidation sets stage 100, whose fragment calls `Dealer.StartCombat(player)`. Through `WEAdventurerBrawlerSubChar` 105563."
+      },
+      {
+        "id": "scavenger",
+        "name": "Scavenger",
+        "records": [
+          {
+            "edid": "WE23Scavenger",
+            "formKey": "062105:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMeleeAny",
+            "formKey": "03DECD:Skyrim.esm"
+          },
+          "rungs": [1, 5, 9, 14, 19, 25]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "`WE23` (Scavenger): he guards the battlefield loot with his own aggro radius (Aggressive, warn 1024 · attack 512) and the alias package `WE23ScavengerPackage` 062118 (\"This is my treasure!\"), so he attacks a player who comes close. `Stats` from `LvlBanditMeleeAny` 01E79C."
+      },
+      {
+        "id": "trapper",
+        "name": "Trapper",
+        "records": [
+          {
+            "edid": "POILvlTrapperHostile01",
+            "formKey": "0D1686:Skyrim.esm"
+          },
+          {
+            "edid": "POILvlTrapperHostile02",
+            "formKey": "0D1685:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.5,
+          "min": 5,
+          "max": 15,
+          "from": {
+            "edid": "EncHunter00Template",
+            "formKey": "073FBE:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the hunters (`EncHunter00Template`, trappers included) 10"
+        },
+        "note": "no quest: their own factions `WEPlayerEnemy` 01DD0F (an enemy of the player) and `HunterFaction` 04E509 apply (the template flags leave out `Factions`). `Stats` from `LvlHunter` 04E50A → `LCharHunter`."
+      },
+      {
+        "id": "thug",
+        "name": "Thug",
+        "records": [
+          {
+            "edid": "WEDL05Thug",
+            "formKey": "0B91B0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.15,
+          "min": 5
+        },
+        "target": {
+          "band": "III",
+          "level": 14,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): `WEDL05Thug` 14"
+        },
+        "note": "`WEDL05` (Thug sent by Louis Letrush): he forcegreets the player (\"This is for double crossing him.\") and stage 100 makes `WEDL05Faction` an enemy of the player and starts combat, unconditionally. In `WEDL06` the same record fights Louis Letrush instead."
+      },
+      {
+        "id": "madman",
+        "name": "Madman",
+        "records": [
+          {
+            "edid": "DLC2WE06Madman",
+            "formKey": "027A15:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.5,
+          "min": 5,
+          "max": 15,
+          "from": {
+            "edid": "EncHunter00Template",
+            "formKey": "073FBE:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): the hunters (`EncHunter00Template`) 10"
+        },
+        "note": "`DLC2WE06` (Black Book): the alias package `DLC2WE06Forcegreet` 027A22 starts the talk, and every exit of it (\"Bye.\" included) sets stage 100, which adds him to `WEPlayerEnemy`. `Stats` from `DLC2LCharHunter` 01F97D:Dragonborn.esm."
+      },
+      {
+        "id": "challenger",
+        "name": "Challenger",
+        "records": [
+          {
+            "edid": "WIChangeLocation03Wizard",
+            "formKey": "06E02C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditWizardCommonerM",
+            "formKey": "01B0F3:Skyrim.esm"
+          },
+          "rungs": [1, 5, 9, 14, 19, 25]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "`WIChangeLocation03` (Wizard Duel): he forces a magic duel on the player (\"You call yourself a wizard? I challenge you to a duel!\"); accepting (stage 101) and refusing (stage 100) both add him to a player-enemy faction, so he fights either way."
+      },
+      {
+        "id": "old-orc",
+        "name": "Old Orc",
+        "records": [
+          {
+            "edid": "WE24Orc",
+            "formKey": "062128:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharOrcMelee",
+            "formKey": "01E780:Skyrim.esm"
+          },
+          "rungs": [1, 5, 9, 14, 19, 25]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III (`LCharOrcMelee` holds that ladder's Orc leaves)"
+        },
+        "note": "`WE24` (A Good Death): an old Orc asks for an honourable death; \"Yes, I am sure. I will give you a good death.\" makes him start combat. Opt-in: the player can decline."
+      },
+      {
+        "id": "deep-in-his-cups",
+        "name": "Deep-In-His-Cups",
+        "records": [
+          {
+            "edid": "WEDL08DeepInHisCups",
+            "formKey": "0BBDA0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.9,
+          "min": 12,
+          "max": 12
+        },
+        "target": {
+          "band": "II",
+          "level": 12,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6 (user, 2026-09-27): `WEDL08DeepInHisCups` 12, his vanilla level (PC×0.9 clamped to 12–12)"
+        },
+        "note": "`WEDL08` (The drunken dare): he collects a debt from *A Night to Remember*; refusing to pay or walking away sets stage 100, which starts combat. Only paying (after an intimidation or persuasion, if wished) avoids it."
+      },
+      {
+        "id": "katariah-sailors",
+        "name": "Sailor",
+        "records": [
+          {
+            "edid": "dunKatariahLvlSailor",
+            "formKey": "0C6017:Skyrim.esm"
+          },
+          {
+            "edid": "dunKatariahLvlSailorAmbush",
+            "formKey": "0C602E:Skyrim.esm"
+          },
+          {
+            "edid": "dunKatariahSceneSailor",
+            "formKey": "0C6029:Skyrim.esm"
+          },
+          {
+            "edid": "dunKatariahLvlSailorFlutePlayer",
+            "formKey": "0978E4:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 1,
+          "from": {
+            "edid": "EncSailor00Template",
+            "formKey": "0C6011:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "proposed, awaiting the user: the standing rule keeps the fixed 1 (CLAUDE.md, decisions carried over: a fixed vanilla level is kept), but they fight beside the Katariah Penitus Oculatus agents pinned at 36"
+        },
+        "note": "the Katariah crew of *Hail Sithis!* (`DB11`): `DB11KatariahCrewFaction` 0C6019 is an enemy of the player; 0C6017 carries it, the other three take `Factions` from it. `Stats` from `LCharSailor` 0C6013."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Bounty Hunters, Bounty Collector, Scavenger, Challenger, Old Orc: no level of their own. Each carries `Stats` from a bandit list, so the level belongs to the drawn bandit leaf, on Bandits → *Common Bandits* and *Bandit Chiefs*.",
+      "Thug: `WEDL05Thug` 0B91B0 keeps its own PC×1.15 [5–∞]. Its template `LCharBanditBossOrcM` 01B0EA lends `Traits` and `Inventory`, not `Stats`.",
+      "Deep-In-His-Cups: no template, his own PC×0.9 [12–12].",
+      "Adventurers: the nine class templates own PC×1.1 [6–∞]: `WEAdventurerBattlemage` 1034EA · `…Berserker` 105547 · `…Brawler` 10555E · `…DualPoisoner` 105549 · `…MageShieldStaff` 106113 · `…RangedConjurer` 10554B · `…Spellsword` 105540 · `…Warrior` 105541 · `…WarriorDual` 105545. The race leaves (e.g. `WEAdventurerWarriorNordF` 103503) and their Fire, Ice and Storm copies carry `Stats` from them, and every `LvlWEAdventurer*` wrapper carries `Stats` through a class sublist. `WEAdventurerTemplate` 10553F (PC×1.1 [6–45]) lends the class templates their traits and name, not `Stats`.",
+      "Trappers and the Madman: `EncHunter00Template` 073FBE owns PC×0.5 [5–15]. The `LCharHunter` and `DLC2LCharHunter` leaves carry `Stats` from it (`DLC2EncHunterNordM4` 01F97F:Dragonborn.esm through `DLC2EncHunterNordF1` 01F978). The generic hunters it also serves are not enemies (World Encounters → *Hunters*).",
+      "Sailors: `EncSailor00Template` 0C6011 owns level 1; the three `LCharSailor` leaves (`EncSailorImperialM` 0C6012 · `EncSailorRedguardM` 0C6016 · `EncSailorNordM` 088E0F) carry `Stats` from it. `LvlSailor` 0C6014 (only `SailorFaction`) is not an enemy.",
+      "The rest carry `Stats` and follow their template."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharBanditBoss",
+          "formKey": "03DF16:Skyrim.esm"
+        },
+        "gate": "highest gate ≤ player only (no flags): rung 02 boss (6) at 1 · 5 · 9, then 10 at 14, 16 at 19, 21 at 25, 28 at 29; only `Stats` is taken",
+        "note": "Documented in full on Bandits → *Bandit Chiefs*.",
+        "owner": "`WEBountyHunterBoss` (through `LvlBanditBoss` 03DF17)"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditBossNordM",
+          "formKey": "01A341:Skyrim.esm"
+        },
+        "gate": "highest gate ≤ player only (no flags): the Nord 1H and 2H boss leaves, 6 at 1 · 5 · 9, then 10 at 14, 16 at 19, 21 at 25, 28 at 29",
+        "note": "Documented in full on Bandits → *Bandit Chiefs*.",
+        "owner": "`WEBountyCollectorMaleNord` (through `LvlBanditBossNordM` 01B0E1)"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMissile",
+          "formKey": "01E770:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player: the six archer rungs 1 · 5 · 9 · 14 · 19 · 25",
+        "note": "with `LCharBanditWizard` 01E771 (highest gate ≤ player only, gates 1 · 5 · 9 · 14 · 19 · 24) and `LCharBanditMeleeAny` 03DECD (every gate ≤ player, the 1H and 2H ladders): only `Stats` is taken. Documented in full on Bandits → *Common Bandits*.",
+        "owner": "`WEBountyHunterMissile` (through `LvlBanditMissile` 01E79E) · `WEBountyHunterWizard` (through `LvlBanditWizard` 01E79F) · `WE23Scavenger` (through `LvlBanditMeleeAny` 01E79C)"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditWizardCommonerM",
+          "formKey": "01B0F3:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          { "at": 1, "label": "`EncBandit01MagicBretonM` 039D33 (1)" },
+          { "at": 5, "label": "`EncBandit02MagicBretonM` 039D3A (5)" },
+          { "at": 9, "label": "`EncBandit03MagicBretonM` 039D45 (9)" },
+          { "at": 14, "label": "`EncBandit04MagicBretonM` 039D4C (14)" },
+          { "at": 19, "label": "`EncBandit05MagicBretonM` 039D53 (19)" },
+          { "at": 25, "label": "`EncBandit06MagicBretonM` 039D5A (25)" }
+        ],
+        "note": "a race and voice sublist of the bandit wizards, documented on Bandits → *Common Bandits*.",
+        "owner": "`WIChangeLocation03Wizard` (only `Stats` taken from the list)"
+      },
+      {
+        "list": {
+          "edid": "LCharOrcMelee",
+          "formKey": "01E780:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          { "at": 1, "label": "`EncBandit01Melee1HOrcM` 039CFA (1)" },
+          { "at": 5, "label": "`EncBandit02Melee1HOrcM` 039D03 (5)" },
+          { "at": 9, "label": "`EncBandit03Melee1HOrcM` 039D0B (9)" },
+          { "at": 14, "label": "`EncBandit04Melee1HOrcM` 039D13 (14)" },
+          { "at": 19, "label": "`EncBandit05Melee1HOrcM` 039D1B (19)" },
+          { "at": 25, "label": "`EncBandit06Melee1HOrcM` 039D23 (25)" }
+        ],
+        "note": "the bandit ladder's Orc one-handed leaves, held directly (Bandits → *Common Bandits* names it, with no row of its own).",
+        "owner": "`WE24Orc` (only `Stats` taken from the list)"
+      },
+      {
+        "list": {
+          "edid": "LCharHunter",
+          "formKey": "073FC2:Skyrim.esm"
+        },
+        "gate": "every leaf at 1",
+        "note": "eight `EncHunter*` leaves (Imperial, Nord, Redguard and Wood Elf, male and female), all carrying `Stats` from `EncHunter00Template`, so PC×0.5 [5–15] whichever is drawn.",
+        "owner": "the trappers (through `LvlHunter` 04E50A); the other users are the non-hostile hunters"
+      },
+      {
+        "list": {
+          "edid": "DLC2LCharHunter",
+          "formKey": "01F97D:Dragonborn.esm"
+        },
+        "gate": "every leaf at 1",
+        "note": "six `DLC2EncHunterNord*` leaves 01F978 · 01F97A · 01F979 · 01F97B · 01F97C · 01F97F, all PC×0.5 [5–15] from `EncHunter00Template`.",
+        "owner": "`DLC2WE06Madman`"
+      },
+      {
+        "list": {
+          "edid": "WEAdventurerSubChar",
+          "formKey": "1050F8:Skyrim.esm"
+        },
+        "gate": "every entry at 1",
+        "note": "the nine class sublists at 1: `WEAdventurerBerserkerSubChar` 105557 · `…DualPoisonerSubChar` 105558 · `…RangedConjurerSubChar` 105559 · `…WarriorDualSubChar` 10555C · `…WarriorSubChar` 10555B · `…SpellswordSubChar` 10555A · `…BrawlerSubChar` 105563 · `…BattlemageAllSubChar` 10612A · `…MageShieldStaffAllSubChar` 106115; each holds its class's race leaves at 1, so one at random, PC×1.1 [6–∞].",
+        "owner": "`LvlWEAdventurer` · `LvlWEAdventurerHorseRider`"
+      },
+      {
+        "list": {
+          "label": "the class sublists `WEAdventurerSpellswordSubChar` 10555A · `WEAdventurerWarriorSubChar` 10555B · `WEAdventurerBrawlerSubChar` 105563"
+        },
+        "gate": "every entry at 1",
+        "note": "Spellsword: Breton F and M, Dark Elf F, Redguard F; Warrior: Nord F, Orc F and M, Redguard M; Brawler: Wood Elf M, Argonian M, Orc F and M, Khajiit M.",
+        "owner": "`LvlWEAdventurerSpellsword` (`WERoad06`) · `LvlWEAdventurerWarrior` (`WERoad07`) · `WERoad09_LvlWEAdventurerBrawler`"
+      },
+      {
+        "list": {
+          "edid": "LCharSailor",
+          "formKey": "0C6013:Skyrim.esm"
+        },
+        "gate": "every leaf at 1",
+        "note": "`EncSailorImperialM` 0C6012 · `EncSailorRedguardM` 0C6016 · `EncSailorNordM` 088E0F, all level 1 from `EncSailor00Template`.",
+        "owner": "`dunKatariahLvlSailor` and the three that template it"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Bounty Hunter",
+        "quest": "`WE36` 0BC09D",
+        "note": "spawned by the `WE36` aliases `BountyHunter1`–`3` (created VeryHard), not placed"
+      },
+      {
+        "name": "Bounty Collector",
+        "quest": "`WEBountyCollectorQST` 0F8A80",
+        "note": "spawned by the alias `BountyCollector` (created VeryHard), not placed"
+      },
+      {
+        "name": "Adventurer (`WEJS26`)",
+        "quest": "`WEJS26` 105D12",
+        "note": "spawned by the `WEJS26` alias `Adventurer`, not placed"
+      },
+      {
+        "name": "Adventurer (horse rider)",
+        "locations": [
+          {
+            "cell": {
+              "label": "Tamriel cell (50, −28)",
+              "formKey": "00BD4C:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "10F137:Skyrim.esm"
+            },
+            "note": "Medium"
+          }
+        ]
+      },
+      {
+        "name": "Mercenary",
+        "quest": "`WERoad06` 105D1D",
+        "note": "spawned by the `WERoad06` alias `Adventurer` (created Medium), not placed"
+      },
+      {
+        "name": "Taunting adventurer",
+        "quest": "`WERoad07` 105D15",
+        "note": "spawned by the `WERoad07` alias `Adventurer` (created Medium), not placed"
+      },
+      {
+        "name": "Skooma dealer",
+        "quest": "`WERoad09` 1065FA",
+        "note": "spawned by the `WERoad09` alias `Dealer` (created Medium), not placed"
+      },
+      {
+        "name": "Scavenger",
+        "quest": "`WE23` 062103",
+        "note": "spawned by the `WE23` alias `Scavenger` (created Hard, alias flagged Protected), not placed"
+      },
+      {
+        "name": "Trapper",
+        "locations": [
+          {
+            "cell": {
+              "edid": "POIFallForest18",
+              "formKey": "00BBE8:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0D167D:Skyrim.esm"
+            },
+            "note": "`POILvlTrapperHostile01`, Medium"
+          },
+          {
+            "cell": {
+              "label": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "ref": {
+              "formKey": "0D1679:Skyrim.esm"
+            },
+            "note": "`POILvlTrapperHostile02`, Medium"
+          }
+        ],
+        "note": "both enabled by the initially disabled marker 0D1683, beside the trapped wolf `dunPOITrappedWolf` 0D1684"
+      },
+      {
+        "name": "Thug",
+        "quest": "`WEDL05` 0B91AE · `WEDL06` 0B91C1",
+        "note": "spawned by the alias `Thug` of each (created VeryHard in `WEDL05`), not placed"
+      },
+      {
+        "name": "Madman",
+        "quest": "`DLC2WE06` 027A14:Dragonborn.esm",
+        "note": "spawned by the `DLC2WE06` alias `Actor1` (alias flagged Protected), not placed"
+      },
+      {
+        "name": "Challenger",
+        "quest": "`WIChangeLocation03` 06E028",
+        "note": "spawned by the `WIChangeLocation03` alias `Challenger` (created Hard), not placed"
+      },
+      {
+        "name": "Old Orc",
+        "quest": "`WE24` 062119",
+        "note": "spawned by the `WE24` alias `Orc` (created VeryHard), not placed"
+      },
+      {
+        "name": "Deep-In-His-Cups",
+        "quest": "`WEDL08` 0BBD9D",
+        "note": "spawned by the `WEDL08` alias `DeepInHisCups` (created VeryHard), not placed"
+      },
+      {
+        "name": "Sailor (Katariah)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Katariah01",
+              "formKey": "0BBB2F:Skyrim.esm"
+            },
+            "refText": "0C601B (`dunKatariahLvlSailor`) · 0C6045 (`…Ambush`) · 0C601A and 0C601C (`dunKatariahSceneSailor`, aliases `HoldSailor` and `HoldSailorFriend` of `DB11_dunKatariahQST` 0C6020) · 0C601D (`…FlutePlayer`)"
+          },
+          {
+            "cell": {
+              "edid": "KatariahExterior02",
+              "formKey": "009255:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0C60C6:Skyrim.esm"
+            },
+            "note": "`dunKatariahLvlSailor`, enable parent 07265C"
+          }
+        ]
+      }
+    ]
+  }
+}

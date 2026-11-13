@@ -1,0 +1,83 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "world",
+  "title": "World",
+  "order": 12,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The named people of Skyrim the player can fight who belong to no other census group (user, 2026-11-13): quest foes, brawl opponents and duellists (a brawl counts even when it is optional), and road encounters; the Orc Strongholds are a sub-group. Corpses (refs placed `StartsDead`) are left out. The rest of the World pages, the townsfolk hold by hold, are not in the census.",
+  "families": [
+    {
+      "id": "quest-foes",
+      "holds": "everyone fought through a quest, a story event or a scripted turn, and the named hostiles of the holds: Calixto, Silus, the Alftand three, Linwe, the Ratway thugs, the Riften skooma dealers, Telrav, Wyndelius, the Ebony Warrior, Arvel, Atar, Mogrul, Ildari, Falx Carius, Ralis, the Frostmoon werewolves, Merilar Rendas, and the CC quest foes (Brutius, Umbra, Ehlhiel, Zaharia, the Bounty Hunter, Aesrael, Ernanthil, Skjol, Erden Relvel)"
+    },
+    {
+      "id": "brawlers-duellists",
+      "holds": "the brawl opponents (the `Favor017` bets, the Thieves Guild debtors, the quest brawls) and the set-piece duellists of the CC armour and home quests (Peladius, Tyra Blood-Fire, Harald, Eydvina)"
+    },
+    {
+      "id": "road-encounters",
+      "holds": "the people met on the road"
+    }
+  ],
+  "filedElsewhere": [
+    {
+      "record": "`DLC1DunRuunvaldVolk` 019580:Dawnguard.esm",
+      "what": "Volk",
+      "where": "Vigilants → *Named Vigilants*"
+    },
+    {
+      "record": "`ccVSVSSE004_GhostWife` 000856 · `ccVSVSSE004_GhostHusband` 000857 (ccvsvsse004-beafarmer.esl)",
+      "what": "the ghosts of Jonquil and Urval; their peaceful living selves `ccVSVSSE004_Wife` 00085A and `…Husband` 000859 own the level",
+      "where": "Ghosts → *Ghost Bosses*"
+    },
+    {
+      "record": "`ccEDHSSE002_SpellKnight03` 00087B:ccedhsse002-splkntset.esl",
+      "what": "Simon Rodayne",
+      "where": "Ghosts → *Ghost Bosses*"
+    },
+    {
+      "record": "`DA05SindingHuman` 06C1B7",
+      "what": "Sinding (the hunt is against his werewolf form)",
+      "where": "Werebeasts → *Werewolf Boss*"
+    },
+    {
+      "record": "`ccEEJSSE005_DLC1LvlCastleThrall` 0EA5DB:cceejsse005-cave.esm",
+      "what": "Parven, the feast's vampire thrall",
+      "where": "Vampires (a drawer of `DLC1LCharCastleThrall`)"
+    },
+    {
+      "record": "`Burguk` 013B79 · `Larak` 019951 · `Mauhulakh` 01B075 · `Borgakh` 019959 · `Ghorbash` 013B81 · `Yamarz` 03BC26",
+      "what": "the stronghold chiefs' and recruits' brawls",
+      "where": "World → *Orc Strongholds*"
+    },
+    {
+      "record": "`ccBGSSSE001_LvlVagrantWizard` 000E54:ccbgssse001-fish.esm",
+      "what": "the two ambush wizards beside Brutius",
+      "where": "Bandits → *Bandit Gangs*"
+    },
+    {
+      "record": "refs 0622E2 · 0622E3 · 0622E4 (aliases `Mercenary01`–`03` of `FreeformKarthwastenA`)",
+      "what": "Atar's three Silver-Blood mercenaries",
+      "where": "Bandits → *Mercenaries*"
+    }
+  ],
+  "neverMet": [
+    {
+      "record": "`ccEDHSSE002_SpellKnightIron` 000897 · `…SpellKnightSteel` 000898 (ccedhsse002-splkntset.esl)",
+      "what": "Knight of the Crypt ×2",
+      "why": "corpses: both refs (000899, 00089A) are placed `StartsDead`"
+    },
+    {
+      "record": "`Hroggar` 0135F0 · `Salvianus` 094012 · `Rhorlak` 0799E4 · `dunBluePalaceBully` 09F851 (Anger)",
+      "what": "hostile-looking townsfolk",
+      "why": "nothing makes them hostile to the player: Hroggar's faction is allied only to itself, Salvianus is an enemy only of the Thalmor, Rhorlak is a target who never attacks, Anger is allied to the player"
+    },
+    {
+      "record": "`MS10Pirate1` 052268 · `MS10Pirate2` 052267 · `MS10Pirate3` 052269",
+      "what": "Alding, Irlof and Gjuk, the Blood Horker pirates with Stig",
+      "why": "in `MS10BloodHorkerFaction`, allied only to itself; no script sets them on the player `[unverified]`"
+    }
+  ]
+}

@@ -808,7 +808,7 @@
     "confidence": "verified",
     "items": [
       "The rung templates `EncBandit0{1–6}Template{Melee,Missile,Magic}` that set every gang's level are on *Common Bandits*; changing them also needs the records listed there.",
-      "Changing `dunRatwayBanditMelee` 05CBE9 also needs `dunRatwayGian` 10A062 (Gian the Fist, PC×0.8 [–30], on *Riften*): it uses 05CBE9 as its template but not for `Stats`.",
+      "Changing `dunRatwayBanditMelee` 05CBE9 also needs `dunRatwayGian` 10A062 (Gian the Fist, PC×0.8 [–30], on World → *Quest Foes*): it uses 05CBE9 as its template but not for `Stats`.",
       "Changing the CC `ccBGSSSE025_EncBanditTemplateMelee{Golden,Seducer}` 0009B7 · 0009BF also needs their boss leaves `ccBGSSSE025_EncGoldenBanditBoss2HRedguardM` 0009AE · `…EncSeducerBanditBoss2HNordM` 0009B0 (PC×1.25 [1–25], on *Named Bandits*): they use the templates' one-handed leaves as their template but not for `Stats`.",
       "Rows of this page that keep their own level: `MS07LvlBlackbloodMeleeTankEvenTonedMAmbush` 088F0D (1; its template `MS07LvlBlackbloodMeleeTankEvenTonedM` without `Stats`), `ccKRTSSE001_WindhelmPitMelee` 000985 (1, no `Stats` from `LCharBanditMeleeAny`) and `ccKRTSSE001_WindhelmPitMissile` 000C2B (PC×1, no `Stats` from `LCharBanditMissile`).",
       "Every other record here (the moved wrappers, the gang records, the 34 CC Saints and Seducers leaves) carries `Stats` and follows its template or list."

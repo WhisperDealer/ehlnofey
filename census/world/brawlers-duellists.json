@@ -1,0 +1,701 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "brawlers-duellists",
+  "group": "world",
+  "title": "Brawlers & Duellists",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "benor",
+        "name": "Benor",
+        "records": [
+          {
+            "edid": "Benor",
+            "formKey": "0135E8:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 30
+        },
+        "target": {
+          "band": "III",
+          "level": 20,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1: the standard followers 20"
+        },
+        "note": "Morthal: `Favor017` (*Fight! Fight!*) brawl bet, giver faction `Favor017QuestGiverFaction` 0CA213; beaten, he becomes a follower."
+      },
+      {
+        "id": "rolff",
+        "name": "Rolff Stone-Fist",
+        "records": [
+          {
+            "edid": "Rolff",
+            "formKey": "03EFE9:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Windhelm: `Favor017` (*Fight! Fight!*) brawl bet, giver faction `Favor017QuestGiverFaction` 0CA213."
+      },
+      {
+        "id": "uthgerd",
+        "name": "Uthgerd the Unbroken",
+        "records": [
+          {
+            "edid": "Uthgerd",
+            "formKey": "0918E2:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 30
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1: Uthgerd 30, among the followers fixed individually"
+        },
+        "note": "Whiterun: `Favor017` (*Fight! Fight!*) brawl bet, giver faction `Favor017QuestGiverFaction` 0CA213; beaten, she becomes a follower."
+      },
+      {
+        "id": "cosnach",
+        "name": "Cosnach",
+        "records": [
+          {
+            "edid": "Cosnach",
+            "formKey": "013390:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 30
+        },
+        "target": {
+          "band": "III",
+          "level": 20,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1: the standard followers 20"
+        },
+        "note": "Markarth: `Favor017` (*Fight! Fight!*) brawl bet, giver faction `Favor017QuestGiverFaction` 0CA213; beaten, he becomes a follower."
+      },
+      {
+        "id": "bersi",
+        "name": "Bersi Honey-Hand",
+        "records": [
+          {
+            "edid": "Bersi",
+            "formKey": "01334D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 8
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "II",
+          "level": 8,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Riften, *A Chance Arrangement* (`TG01`) debt collection: a `TG01` topic info calls `DialogueFavorGeneric.Brawl()`."
+      },
+      {
+        "id": "keerava",
+        "name": "Keerava",
+        "records": [
+          {
+            "edid": "Keerava",
+            "formKey": "013365:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Riften, *A Chance Arrangement* (`TG01`) debt collection: a `TG01` topic info calls `DialogueFavorGeneric.Brawl()`."
+      },
+      {
+        "id": "haelga",
+        "name": "Haelga",
+        "records": [
+          {
+            "edid": "Haelga",
+            "formKey": "01335F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 8
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "II",
+          "level": 8,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Riften, *A Chance Arrangement* (`TG01`) debt collection: a `TG01` topic info calls `DialogueFavorGeneric.Brawl()`."
+      },
+      {
+        "id": "hofgrir",
+        "name": "Hofgrir Horse-Crusher",
+        "records": [
+          {
+            "edid": "Hofgrir",
+            "formKey": "013351:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 8
+        },
+        "target": {
+          "band": "II",
+          "level": 8,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Riften stables, *Bloody Nose* (`FreeformRiften19`): \"Defeat Hofgrir in an unarmed brawl\", with a rematch."
+      },
+      {
+        "id": "mikael",
+        "name": "Mikael",
+        "records": [
+          {
+            "edid": "Mikael",
+            "formKey": "01A670:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 25
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1 = 25, clamped to 5–25: 25)"
+        },
+        "note": "Whiterun, Carlotta's *A Few Words with You* (`Favor013`): the brawl option of the persuade / intimidate / brawl choice."
+      },
+      {
+        "id": "mulush",
+        "name": "Mulush gro-Shugurz",
+        "records": [
+          {
+            "edid": "MulushGroShugurz",
+            "formKey": "0133A9:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "level": 6,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Markarth, Omluag's *A Few Words with You* (`Favor013`): the brawl option."
+      },
+      {
+        "id": "dryston",
+        "name": "Dryston",
+        "records": [
+          {
+            "edid": "Dryston",
+            "formKey": "0D6711:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 25
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1 = 25, clamped to 5–25: 25)"
+        },
+        "note": "Markarth, *The Forsworn Conspiracy* (`MS01`): the thug sent to \"teach you a lesson\"; his topic info calls `Brawl()`."
+      },
+      {
+        "id": "ainethach",
+        "name": "Ainethach",
+        "records": [
+          {
+            "edid": "Ainethach",
+            "formKey": "013B69:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "target": {
+          "band": "I",
+          "level": 6,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "The Reach, Karthwasten, *Sanuarach Mine* (`FreeformKarthwastenA`): the brawl option (\"You do or you get hurt\")."
+      },
+      {
+        "id": "stig",
+        "name": "Stig Salt-Plank",
+        "records": [
+          {
+            "edid": "MS10Stig",
+            "formKey": "01DC00:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Dawnstar, *Rise in the East* (`MS10`): fought to make him talk, non-lethal (his script stops combat below 1 health); persuasion is the other branch."
+      },
+      {
+        "id": "peladius",
+        "name": "Peladius (CC)",
+        "records": [
+          {
+            "edid": "ccBGSSSE058_Blade",
+            "formKey": "00081D:ccbgssse058-ba_steel.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.6,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "VI",
+          "level": 40,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.6 = 40, clamped to 10–50: 40)"
+        },
+        "note": "Haafingar, the CC Steel armour quest: the traitor guard asks for \"a warrior's death\" (\"Defeat Peladius\"); `WIPlayerEnemyFaction`."
+      },
+      {
+        "id": "tyra-blood-fire",
+        "name": "Tyra Blood-Fire (CC)",
+        "records": [
+          {
+            "edid": "ccBGSSSE063_Drathea",
+            "formKey": "000824:ccbgssse063-ba_ebony.esl"
+          },
+          {
+            "edid": "ccBGSSSE063_DratheaBreadNPC",
+            "formKey": "000825:ccbgssse063-ba_ebony.esl"
+          },
+          {
+            "edid": "ccBGSSSE063_DratheaGold001NPC",
+            "formKey": "000820:ccbgssse063-ba_ebony.esl"
+          },
+          {
+            "edid": "ccBGSSSE063_DratheaGold100NPC",
+            "formKey": "000821:ccbgssse063-ba_ebony.esl"
+          },
+          {
+            "edid": "ccBGSSSE063_DratheaPrayerNPC",
+            "formKey": "000822:ccbgssse063-ba_ebony.esl"
+          },
+          {
+            "edid": "ccBGSSSE063_DratheaWineNPC",
+            "formKey": "00081F:ccbgssse063-ba_ebony.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.7,
+          "min": 10,
+          "max": 70
+        },
+        "target": {
+          "band": "VII",
+          "level": 42,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.7 = 42.5, clamped to 10–70: 42)"
+        },
+        "note": "Eastmarch, the CC Ebony armour quest *Heart of Crimson*: single combat for her armour; all six carry `WIPlayerEnemyFaction`. The five placed variants take `Stats` from `ccBGSSSE063_Drathea` 000824, which owns the level and is not placed."
+      },
+      {
+        "id": "harald",
+        "name": "Harald (CC)",
+        "records": [
+          {
+            "edid": "ccMTYSSE002_HaraldAggroREF",
+            "formKey": "00093F:ccmtysse002-ve.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 6
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: the fixed 6 leaves the culprit of the Vigil Enforcer quest Weak (I); III Trained proposed"
+        },
+        "note": "Dawnstar, Quicksilver Mine, the CC Vigil Enforcer quest: the hostile copy of Harald (`WIPlayerEnemyFaction`); the quest then has the player search his body. The peaceful `ccMTYSSE002_Harald` 00092B (also 6) is not fought. [unverified]: that the hostile copy is the one fought rests on its faction."
+      },
+      {
+        "id": "eydvina",
+        "name": "Eydvina Shield-Hearth (CC)",
+        "records": [
+          {
+            "edid": "ccEEJSSE004_Warrior",
+            "formKey": "000C55:cceejsse004-hall.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 60
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1 = 25, clamped to 6–60: 25)"
+        },
+        "note": "Falkreath Hold, the CC Hendraheim home quest: a lethal single-combat challenge for the hall (\"Defeat the warrior\")."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Every row owns its level. Tyra Blood-Fire's five placed variants carry `Stats` from `ccBGSSSE063_Drathea` 000824, which owns it.",
+      "No other record names any row here as its template (checked across the masters and the CC plugins)."
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Benor",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MorthalGuardhouse",
+              "formKey": "0138CD:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "01AA65:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Rolff Stone-Fist",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WindhelmCandlehearthHall",
+              "formKey": "016789:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "03EFED:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "Uthgerd the Unbroken",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WhiterunUthgerdTheUnbrokensHouse",
+              "formKey": "0918D3:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "091918:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "Cosnach",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MarkarthWarrens",
+              "formKey": "016D72:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0198FA:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "Bersi Honey-Hand",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenPawnedPrawn",
+              "formKey": "016BD9:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "019DD0:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ],
+        "quest": "alias `BersiAlias` of `TG01` 01F326"
+      },
+      {
+        "name": "Keerava",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenBeeandBarb",
+              "formKey": "016BDF:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "019DC8:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ],
+        "quest": "alias `KeeravaAlias` of `TG01` 01F326"
+      },
+      {
+        "name": "Haelga",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenHaelgasBunkhouse",
+              "formKey": "016BD4:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "019DDA:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "alias `HaelgaAlias` of `TG01` 01F326"
+      },
+      {
+        "name": "Hofgrir Horse-Crusher",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenStables",
+              "formKey": "018BE0:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "019DFE:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ],
+        "quest": "alias `FFRiften19HofgrirAlias` of `FreeformRiften19` 065C30"
+      },
+      {
+        "name": "Mikael",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WhiterunBanneredMare",
+              "formKey": "01605E:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "01A671:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "Mulush gro-Shugurz",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MarkarthSmelterOverseersHouse",
+              "formKey": "016DF5:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0198FF:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ]
+      },
+      {
+        "name": "Dryston",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MarkarthWarrens",
+              "formKey": "016D72:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0D6713:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias `Dryston` of `MS01` 018B4B and `MS01ForswornThreatenScene` 0D6710"
+      },
+      {
+        "name": "Ainethach",
+        "locations": [
+          {
+            "cell": {
+              "edid": "KarthwastenHall",
+              "formKey": "0139D1:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "019931:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ],
+        "quest": "alias `Ainethach` of `FreeformKarthwastenA` 0622E8"
+      },
+      {
+        "name": "Stig Salt-Plank",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DawnstarWindpeakInn",
+              "formKey": "013A7F:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "01DC01:Skyrim.esm"
+            },
+            "persistent": true,
+            "disabled": true
+          }
+        ],
+        "quest": "alias `Stig` of `MS10` 01DBFC"
+      },
+      {
+        "name": "Peladius (CC)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "000821:ccbgssse058-ba_steel.esl"
+            },
+            "persistent": true,
+            "disabled": true
+          }
+        ],
+        "quest": "alias `Blade` of `ccBGSSSE058_Quest` 000823:ccbgssse058-ba_steel.esl"
+      },
+      {
+        "name": "Tyra Blood-Fire (CC)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "disabled": true,
+            "refText": "one ref per variant: Bread 00082A · Gold001 00082C · Gold100 000829 · Prayer 000828 · Wine 00083E (ccbgssse063-ba_ebony.esl)"
+          }
+        ],
+        "quest": "aliases `BreadNPC`, `Gold001`, `Gold100`, `Prayer` and `Wine` of `ccBGSSSE063_Quest` 000840:ccbgssse063-ba_ebony.esl"
+      },
+      {
+        "name": "Harald (CC)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DawnstarQuicksilverMine",
+              "formKey": "02C779:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "000940:ccmtysse002-ve.esl"
+            },
+            "persistent": true,
+            "disabled": true
+          }
+        ],
+        "quest": "alias `HaraldAggro` of `ccMTYSSE002_Quest` 000926:ccmtysse002-ve.esl"
+      },
+      {
+        "name": "Eydvina Shield-Hearth (CC)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "000C88:cceejsse004-hall.esl"
+            },
+            "persistent": true
+          }
+        ],
+        "quest": "alias `Warrior` of `ccEEJSSE004_Quest` 000C4F:cceejsse004-hall.esl"
+      }
+    ]
+  }
+}

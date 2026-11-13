@@ -1,0 +1,1606 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "quest-foes",
+  "group": "world",
+  "title": "Quest Foes",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-13"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "brutius",
+        "name": "Brutius (CC)",
+        "records": [
+          {
+            "edid": "ccBGSSSE001_MiscMorthal_LvlBanditWizardImperialM",
+            "formKey": "000B30:ccbgssse001-fish.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditWizardNordM",
+            "formKey": "01B0FB:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "Morthal, the CC fishing pack's *No Contest*: a wizard posing as a fisherman, he springs the ambush at the fishing contest with two `ccBGSSSE001_LvlVagrantWizard` wizards (on Bandits → *Bandit Gangs*). `Stats` from `LCharBanditWizardNordM`."
+      },
+      {
+        "id": "silus-vesuius",
+        "name": "Silus Vesuius",
+        "records": [
+          {
+            "edid": "SilusVesuius",
+            "formKey": "0240CC:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.75,
+          "min": 20,
+          "max": 30
+        },
+        "target": {
+          "band": "III",
+          "level": 20,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 0.75 = 18.75, clamped to 20–30: 20)"
+        },
+        "note": "Dawnstar, *Pieces of the Past* (`DA07`): on the kill branch the quest fragment puts him in `DA07PlayerEnemyFaction`, sets Aggression 1 and starts combat with the player."
+      },
+      {
+        "id": "sulla-umana",
+        "name": "Sulla Trebatius · Umana",
+        "records": [
+          {
+            "edid": "dunAlftandSullaTrebatius",
+            "formKey": "03B0E2:Skyrim.esm"
+          },
+          {
+            "edid": "dunAlftandUmana",
+            "formKey": "03B0E3:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 30
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1 = 25, clamped to 10–30: 25)"
+        },
+        "note": "Winterhold Hold, Alftand: the surviving expedition members turn on the player (`dunAlftandQST` sets Aggression 2 and makes their factions enemies of `PlayerFaction`)."
+      },
+      {
+        "id": "jdarr",
+        "name": "J'darr",
+        "records": [
+          {
+            "edid": "dunAlftandJdarr",
+            "formKey": "03B0E7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee2HBerserk",
+            "formKey": "03DECA:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "Winterhold Hold, Alftand: the skooma-mad Khajiit; `dunAlftandQST` adds him to `BanditFaction` and sets Aggression 2. `Stats` from `LvlBanditMeleeBerserker` 03DECC."
+      },
+      {
+        "id": "calixto",
+        "name": "Calixto Corrium",
+        "records": [
+          {
+            "edid": "Calixto",
+            "formKey": "01414A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 8
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: the fixed 8 keeps him Common (II), low for the Butcher, the finale of *Blood on the Ice*; III Trained proposed"
+        },
+        "note": "Windhelm, *Blood on the Ice* (`MS11`): unmasked as the Butcher, he leaves his town factions and is fought."
+      },
+      {
+        "id": "linwe",
+        "name": "Linwe",
+        "records": [
+          {
+            "edid": "Linwe",
+            "formKey": "07D679:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: the level-25 rule gives 25 (IV), below the Summerset Shadows he leads (V, user 2026-11-13, on Thieves Guild → *Thieves Guild Foes*); VI Elite proposed, one band above them"
+        },
+        "note": "Eastmarch, Uttering Hills Cave: leader of the Summerset Shadows (`TGTQ04`); `VeryAggressive`, `dunLinweFaction` allied to the bandits."
+      },
+      {
+        "id": "drunk-cultist",
+        "name": "Drunk Cultist",
+        "records": [
+          {
+            "edid": "DA14Cultist",
+            "formKey": "01CB2E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 12,
+          "max": 22
+        },
+        "target": {
+          "band": "IV",
+          "level": 22,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1 = 25, clamped to 12–22: 22)"
+        },
+        "note": "Eastmarch, Morvunskar, *A Night to Remember* (`DA14`): `DA14CultistFaction` is an enemy of `PlayerFaction`; enabled through his enable parent."
+      },
+      {
+        "id": "knjakr",
+        "name": "Knjakr",
+        "records": [
+          {
+            "edid": "Knjakr",
+            "formKey": "094000:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.5,
+          "min": 5,
+          "max": 15
+        },
+        "target": {
+          "band": "II",
+          "level": 12,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 0.5 = 12.5, clamped to 5–15: 12)"
+        },
+        "note": "Riften, the Ratway Warrens: an old man who attacks anyone who comes close (`Aggressive` with an aggro radius, Attack 250); no enemy faction."
+      },
+      {
+        "id": "drahff",
+        "name": "Drahff",
+        "records": [
+          {
+            "edid": "Drahff",
+            "formKey": "095F7E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.5,
+          "min": 6,
+          "max": 25
+        },
+        "target": {
+          "band": "II",
+          "level": 12,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 0.5 = 12.5, clamped to 6–25: 12)"
+        },
+        "note": "Riften, the Ratway: a thug in `RiftenRatwayFactionEnemy`, an enemy of `PlayerFaction`."
+      },
+      {
+        "id": "hewnon",
+        "name": "Hewnon Black-Skeever",
+        "records": [
+          {
+            "edid": "Hewnon",
+            "formKey": "095FD5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.75,
+          "min": 8,
+          "max": 30
+        },
+        "target": {
+          "band": "III",
+          "level": 18,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 0.75 = 18.75, clamped to 8–30: 18)"
+        },
+        "note": "Riften, the Ratway: a thug in `RiftenRatwayFactionEnemy`, as Drahff."
+      },
+      {
+        "id": "gian",
+        "name": "Gian the Fist",
+        "records": [
+          {
+            "edid": "dunRatwayGian",
+            "formKey": "10A062:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.8,
+          "min": 0,
+          "max": 30
+        },
+        "target": {
+          "band": "III",
+          "level": 20,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 0.8 = 20, clamped to 0–30: 20)"
+        },
+        "note": "Riften, the Ratway: `VeryAggressive`; takes factions from `dunRatwayBanditMelee` 05CBE9 (on Bandits → *Bandit Gangs*), not `Stats`."
+      },
+      {
+        "id": "orini-dral",
+        "name": "Orini Dral",
+        "records": [
+          {
+            "edid": "OriniDral",
+            "formKey": "085D44:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee1H",
+            "formKey": "039CFC:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "Riften, the Warehouse, *The Raid* (`FreeformRiften20`): a skooma dealer in `RiftenSkoomaDealerFactionEnemy`, an enemy of `PlayerFaction`. `Stats` from `LvlBanditMelee1H` 03DECB."
+      },
+      {
+        "id": "sarthis-idren",
+        "name": "Sarthis Idren",
+        "records": [
+          {
+            "edid": "SarthisIdren",
+            "formKey": "085D41:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditBoss",
+            "formKey": "03DF16:Skyrim.esm"
+          },
+          "rungs": [
+            6,
+            10,
+            16,
+            21,
+            28
+          ]
+        },
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "Bandits → *Bandit Chiefs* (archetype-tiers.md §3.1 and §3.1.1, user): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere"
+        },
+        "note": "Riften, the Warehouse, *The Raid*: the skooma dealer the quest sends you to kill (\"Eliminate Sarthis Idren\"). `Stats` from `LvlBanditBoss` 03DF17."
+      },
+      {
+        "id": "louis-letrush",
+        "name": "Louis Letrush",
+        "records": [
+          {
+            "edid": "LouisLetrush",
+            "formKey": "013368:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 4,
+          "max": 30
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1 = 25, clamped to 4–30: 25)"
+        },
+        "note": "Riften: *Promises to Keep* (`MS03`) and the `WEDL06` encounter, which makes his faction an enemy of the player (user, 2026-11-13: included)."
+      },
+      {
+        "id": "telrav",
+        "name": "Telrav",
+        "records": [
+          {
+            "edid": "Telrav",
+            "formKey": "01BA08:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMissileCommonerM",
+            "formKey": "01A343:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "The Rift, *Telrav's Request* (`dunNilheimQST`): he leads the player into the Nilheim ambush, joins `BanditFaction` and attacks. `Stats` from `LvlBanditMissileCommonerM` 01B0BE."
+      },
+      {
+        "id": "wyndelius",
+        "name": "Wyndelius Gatharian",
+        "records": [
+          {
+            "edid": "WyndeliusGatharian",
+            "formKey": "05FFDF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditWizardNordM",
+            "formKey": "01B0FB:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "The Rift, Shroud Hearth Barrow: starts as an ally; a scene fragment sets Aggression 2 and moves him to `dunPlayerEnemyFaction`. `Stats` from `LvlBanditWizardNordM` 01B1E1."
+      },
+      {
+        "id": "ebony-warrior",
+        "name": "Ebony Warrior",
+        "records": [
+          {
+            "edid": "DLC2EbonyWarrior",
+            "formKey": "0285C3:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 80
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "IX",
+          "level": 80,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7: the Ebony Warrior 80 kept, a documented exception; bands-of-power.md: the Ebony Warrior (Mythic)"
+        },
+        "note": "*The Ebony Warrior* (Dragonborn): appears once the player is high enough and seeks a duel to the death at the Last Vigil, The Rift."
+      },
+      {
+        "id": "hamelyn",
+        "name": "Hamelyn",
+        "records": [
+          {
+            "edid": "dunHonningbrewRatGuy",
+            "formKey": "10A04C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditWizardCommonerM",
+            "formKey": "01B0F3:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "Whiterun Hold, the Honningbrew Meadery basement (*Dampened Spirits*): takes `AIData` and `Traits` from the bandit wizard, so `VeryAggressive`. `Stats` from `LvlBanditWizardCommonerM` 01B102."
+      },
+      {
+        "id": "umbra",
+        "name": "Umbra (CC)",
+        "records": [
+          {
+            "edid": "ccBGSSSE016_UmbraBoss",
+            "formKey": "000801:ccbgssse016-umbra.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.25,
+          "min": 26,
+          "max": 100
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: the level-25 rule gives 31 (V), low for the pack's final boss; VII Powerful proposed (bands-of-power.md: most lesser named bosses)"
+        },
+        "note": "Whiterun Hold, Champion's Rest: the boss of the Umbra pack, `VeryAggressive` in `ccBGSSSE016_UmbraBossPlayerEnemyFaction`. Template `EncBandit06Boss1HNordM` 03DF09 without `Stats`: keeps its own level."
+      },
+      {
+        "id": "arvel",
+        "name": "Arvel the Swift",
+        "records": [
+          {
+            "edid": "MS13Arvel",
+            "formKey": "039646:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "II",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: the fixed 1 leaves him Weak (I) though he fights the player in Bleak Falls Barrow; II Common proposed"
+        },
+        "note": "Bleak Falls Barrow (`MS13`): cut from the web, he sets Aggression 3, flees and fights; in `BanditAllyFaction`."
+      },
+      {
+        "id": "ehlhiel",
+        "name": "Ehlhiel (CC)",
+        "records": [
+          {
+            "edid": "ccBGSSSE053_Ehlhiel",
+            "formKey": "00081D:ccbgssse053-ba_leather.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.4,
+          "min": 10,
+          "max": 45
+        },
+        "target": {
+          "band": "VI",
+          "level": 35,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.4 = 35, clamped to 10–45: 35)"
+        },
+        "note": "Falkreath Hold, Lost Echo Cave, the CC Leather armour quest *Double-Edged*: `WIPlayerEnemyFaction`. Template `LvlWarlockNecroBoss` 0E1050 for spells only."
+      },
+      {
+        "id": "zaharia",
+        "name": "Zaharia (CC)",
+        "records": [
+          {
+            "edid": "ccBGSSSE053_ZahariaALIVE",
+            "formKey": "00081E:ccbgssse053-ba_leather.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.5,
+          "min": 10,
+          "max": 60
+        },
+        "target": {
+          "band": "VI",
+          "level": 37,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.5 = 37.5, clamped to 10–60: 37)"
+        },
+        "note": "Falkreath Hold, Lost Echo Cave, *Double-Edged*: `WIPlayerEnemyFaction`; the factionless `ccBGSSSE053_Zaharia` 00081F is the other, peaceful copy."
+      },
+      {
+        "id": "cc-bounty-hunter",
+        "name": "Bounty Hunter (CC)",
+        "records": [
+          {
+            "edid": "ccBGSSSE050_BountyHunter",
+            "formKey": "000823:ccbgssse050-ba_daedric.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.5,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "VI",
+          "level": 37,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.5 = 37.5, clamped to 10–50: 37)"
+        },
+        "note": "Falkreath Hold, Knifepoint Ridge, the CC Daedric armour quest *Beyond the Grave*: the warrior in Daedric plate who ambushes the player. Template `LvlBanditBoss` 03DF17 for factions and AI, not `Stats`: keeps its own level."
+      },
+      {
+        "id": "aesrael",
+        "name": "Aesrael (CC)",
+        "records": [
+          {
+            "edid": "ccBGSSSE064_Aesrael",
+            "formKey": "000821:ccbgssse064-ba_elven.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 15,
+          "max": 50
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1 = 25, clamped to 15–50: 25)"
+        },
+        "note": "Falkreath Hold, the CC Elven armour quest *Once a Hunter*: \"Kill Aesrael\"; `WIPlayerEnemyFaction`."
+      },
+      {
+        "id": "ernanthil",
+        "name": "Ernanthil (CC)",
+        "records": [
+          {
+            "edid": "ccKRTSSE001_Ernanthil",
+            "formKey": "000AB9:cckrtsse001_altar.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 25
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1 = 25, clamped to 5–25: 25)"
+        },
+        "note": "Markarth, the CC quest *Fortunate Son*: the kill target on one branch (\"Kill Ernanthil at the Shrine of Stendarr\")."
+      },
+      {
+        "id": "atar",
+        "name": "Atar",
+        "records": [
+          {
+            "edid": "Atar",
+            "formKey": "0622E5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.25,
+          "min": 10,
+          "max": 25
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.25 = 31.25, clamped to 10–25: 25)"
+        },
+        "note": "The Reach, Sanuarach Mine (`FreeformKarthwastenA`): the Silver-Blood mercenary; the quest puts him and his three mercenaries (on Bandits → *Mercenaries*) in `KarthwastenPlayerEnemyFaction`."
+      },
+      {
+        "id": "mogrul",
+        "name": "Mogrul",
+        "records": [
+          {
+            "edid": "DLC2Mogrul",
+            "formKey": "01959A:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 30
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Raven Rock, *A New Debt* (`DLC2TT1b`): \"Pay or kill Mogrul\"; the quest clears his `Essential` flag."
+      },
+      {
+        "id": "slitter",
+        "name": "Slitter",
+        "records": [
+          {
+            "edid": "DLC2MogrulThugTT1b",
+            "formKey": "019596:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee2H",
+            "formKey": "03DEC8:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+        },
+        "note": "Raven Rock, *A New Debt*: Mogrul's thug; his death sets `DLC2TT1b` stage 50. `Stats` from `LvlBanditMelee2H` 01E79D. [unverified]: that he is the thug who attacks rests on his script and the quest log."
+      },
+      {
+        "id": "ildari",
+        "name": "Ildari Sarothril",
+        "records": [
+          {
+            "edid": "DLC2Ildari",
+            "formKey": "01773B:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 13,
+          "max": 70
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: the level-25 rule gives 25 (IV), low for the boss of *Old Friends*; VII Powerful proposed (bands-of-power.md: most lesser named bosses)"
+        },
+        "note": "Solstheim, Highpoint Tower, *Old Friends* (`DLC2TT2`): \"Kill Ildari\"; `VeryAggressive`, `WarlockFaction` with the ash creatures."
+      },
+      {
+        "id": "falx-carius",
+        "name": "General Falx Carius",
+        "records": [
+          {
+            "edid": "DLC2GeneralCarius",
+            "formKey": "01A564:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.5,
+          "min": 25
+        },
+        "target": {
+          "band": "VI",
+          "level": 37,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.5 = 37.5, clamped to 25–∞: 37)"
+        },
+        "note": "Solstheim, Fort Frostmoth, *March of the Dead* (`DLC2RR01`): `VeryAggressive`; his fight script summons ash spawn."
+      },
+      {
+        "id": "ralis",
+        "name": "Ralis Sedarys",
+        "records": [
+          {
+            "edid": "DLC2dunKolbjornRalis",
+            "formKey": "0179C7:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 15,
+          "max": 60
+        },
+        "flags": [
+          "Essential"
+        ],
+        "target": {
+          "band": "V",
+          "level": 28,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1: Ralis 28, among the followers fixed individually"
+        },
+        "note": "Solstheim, Kolbjorn Barrow, *Unearthed*: at the finale the quest clears `Essential`, sets Aggression 2 and starts combat (\"Kill Ralis\")."
+      },
+      {
+        "id": "majni",
+        "name": "Majni",
+        "records": [
+          {
+            "edid": "DLC2dunFrostmoonMajni",
+            "formKey": "01DC67:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "flags": [
+          "Protected"
+        ],
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: werewolves sit in Powerful (bands-of-power.md), but the level-25 rule leaves the Frostmoon pack at 25 / 18 / 12 / 10 (Majni, Akar, Hjordis, Rakel: IV to II); VII Powerful proposed for all four"
+        },
+        "note": "Solstheim, Frostmoon Crag: the quest makes `DLC2dunFrostmoonWerewolvesFaction` an enemy of `PlayerFaction`, clears `Protected` and starts combat for the whole pack."
+      },
+      {
+        "id": "akar",
+        "name": "Akar",
+        "records": [
+          {
+            "edid": "DLC2dunFrostmoonAkar",
+            "formKey": "01F9C3:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.75,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: werewolves sit in Powerful (bands-of-power.md), but the level-25 rule leaves the Frostmoon pack at 25 / 18 / 12 / 10 (Majni, Akar, Hjordis, Rakel: IV to II); VII Powerful proposed, as Majni"
+        },
+        "note": "Solstheim, Frostmoon Crag: as Majni."
+      },
+      {
+        "id": "hjordis",
+        "name": "Hjordis",
+        "records": [
+          {
+            "edid": "DLC2dunFrostmoonHjordis",
+            "formKey": "01F9C4:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.5,
+          "min": 10,
+          "max": 30
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: werewolves sit in Powerful (bands-of-power.md), but the level-25 rule leaves the Frostmoon pack at 25 / 18 / 12 / 10 (Majni, Akar, Hjordis, Rakel: IV to II); VII Powerful proposed, as Majni"
+        },
+        "note": "Solstheim, Frostmoon Crag: as Majni; transforms in combat."
+      },
+      {
+        "id": "rakel",
+        "name": "Rakel",
+        "records": [
+          {
+            "edid": "DLC2dunFrostmoonRakel",
+            "formKey": "01F9C5:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.4,
+          "min": 10,
+          "max": 30
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "proposed, awaiting the user: werewolves sit in Powerful (bands-of-power.md), but the level-25 rule leaves the Frostmoon pack at 25 / 18 / 12 / 10 (Majni, Akar, Hjordis, Rakel: IV to II); VII Powerful proposed, as Majni"
+        },
+        "note": "Solstheim, Frostmoon Crag: as Majni; warns the player, then the camp attacks."
+      },
+      {
+        "id": "merilar-rendas",
+        "name": "Merilar Rendas",
+        "records": [
+          {
+            "edid": "DLC2MerilarRendas",
+            "formKey": "01CAA8:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1 = 25, clamped to 0–∞: 25)"
+        },
+        "note": "Solstheim, White Ridge Barrow: the spider-maker, `VeryAggressive` in `DLC2ExpSpiderEnemyFaction`."
+      },
+      {
+        "id": "skjol",
+        "name": "Skjol the Tongueless (CC)",
+        "records": [
+          {
+            "edid": "ccBGSSSE057_Skjol",
+            "formKey": "000828:ccbgssse057-ba_stalhrim.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20,
+          "max": 50
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1 = 25, clamped to 20–50: 25)"
+        },
+        "note": "Solstheim, the CC Stalhrim armour quest: \"Kill Skjol\"; `VeryAggressive`. Template `EncBandit01Melee1HNordM` 01BCD8 without `Stats`: keeps its own level."
+      },
+      {
+        "id": "erden-relvel",
+        "name": "Erden Relvel (CC)",
+        "records": [
+          {
+            "edid": "ccASVSSE001_DagothPriest",
+            "formKey": "0C1928:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 2,
+          "min": 10,
+          "max": 100
+        },
+        "target": {
+          "band": "VII",
+          "level": 50,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 2 = 50, clamped to 10–100: 50)"
+        },
+        "note": "Solstheim, the Ghosts of the Tribunal Sixth House priest: `VeryAggressive`, with the ash zombies and ash spawn. Template `DLC2EncCultist07DarkElfMSummoner` 035655:Dragonborn.esm for spells only."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "J'darr, Orini Dral, Sarthis Idren, Telrav, Wyndelius, Hamelyn, Slitter and Brutius carry `Stats` from a bandit wrapper, so their level is the bandit list's (Lists below); giving any of them a band of its own needs a level of its own.",
+      "These use a template without `Stats` and keep their own level: Gian the Fist (`dunRatwayBanditMelee` 05CBE9), Umbra (`EncBandit06Boss1HNordM` 03DF09), the CC Bounty Hunter (`LvlBanditBoss` 03DF17), Ehlhiel (`LvlWarlockNecroBoss` 0E1050), Skjol (`EncBandit01Melee1HNordM` 01BCD8) and Erden Relvel (`DLC2EncCultist07DarkElfMSummoner` 035655:Dragonborn.esm).",
+      "No other record names any row here as its template (checked across the masters and the CC plugins)."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharBanditMelee1H",
+          "formKey": "039CFC:Skyrim.esm"
+        },
+        "gate": "gated at 1 · 5 · 9 · 14 · 19 · 25; only `Stats` reaches these records",
+        "note": "the bandit mook ladder; documented in full on Bandits → *Common Bandits*",
+        "owner": "Orini Dral, through `LvlBanditMelee1H` 03DECB"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMelee2H",
+          "formKey": "03DEC8:Skyrim.esm"
+        },
+        "gate": "gated at 1 · 5 · 9 · 14 · 19 · 25; only `Stats` reaches these records",
+        "note": "documented on Bandits → *Common Bandits*",
+        "owner": "Slitter, through `LvlBanditMelee2H` 01E79D"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMelee2HBerserk",
+          "formKey": "03DECA:Skyrim.esm"
+        },
+        "gate": "gated at 1 · 5 · 9 · 14 · 19 · 25; only `Stats` reaches these records",
+        "note": "documented on Bandits → *Common Bandits*",
+        "owner": "J'darr, through `LvlBanditMeleeBerserker` 03DECC"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditMissileCommonerM",
+          "formKey": "01A343:Skyrim.esm"
+        },
+        "gate": "gated at 1 · 5 · 9 · 14 · 19 · 25; only `Stats` reaches these records",
+        "note": "documented on Bandits → *Common Bandits*",
+        "owner": "Telrav, through `LvlBanditMissileCommonerM` 01B0BE"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditWizardNordM",
+          "formKey": "01B0FB:Skyrim.esm"
+        },
+        "gate": "gated at 1 · 5 · 9 · 14 · 19 · 25; only `Stats` reaches these records",
+        "note": "documented on Bandits → *Common Bandits*",
+        "owner": "Wyndelius, through `LvlBanditWizardNordM` 01B1E1; Brutius (CC), directly"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditWizardCommonerM",
+          "formKey": "01B0F3:Skyrim.esm"
+        },
+        "gate": "gated at 1 · 5 · 9 · 14 · 19 · 25; only `Stats` reaches these records",
+        "note": "documented on Bandits → *Common Bandits*",
+        "owner": "Hamelyn, through `LvlBanditWizardCommonerM` 01B102"
+      },
+      {
+        "list": {
+          "edid": "LCharBanditBoss",
+          "formKey": "03DF16:Skyrim.esm"
+        },
+        "gate": "gated at 6 · 10 · 16 · 21 · 28; only `Stats` reaches these records",
+        "note": "the chief ladder; documented on Bandits → *Bandit Chiefs*",
+        "owner": "Sarthis Idren, through `LvlBanditBoss` 03DF17 (the CC Bounty Hunter templates the same wrapper without `Stats`)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Brutius (CC)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "000B33:ccbgssse001-fish.esm"
+            },
+            "persistent": true
+          }
+        ],
+        "quest": "alias `OldMan` of `ccBGSSSE001_Misc_Morthal` 0009E4:ccbgssse001-fish.esm"
+      },
+      {
+        "name": "Silus Vesuius",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DawnstarSilussHouse",
+              "formKey": "0240B7:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0240CE:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias `Silus` of `DA07` 0240B8"
+      },
+      {
+        "name": "Sulla Trebatius · Umana",
+        "locations": [
+          {
+            "cell": {
+              "edid": "AlftandWorld",
+              "formKey": "069857:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "03B0FA:Skyrim.esm"
+            },
+            "persistent": true,
+            "note": "Sulla"
+          },
+          {
+            "cell": {
+              "edid": "AlftandWorld",
+              "formKey": "069857:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "03B0F9:Skyrim.esm"
+            },
+            "persistent": true,
+            "note": "Umana"
+          }
+        ],
+        "quest": "aliases `Sulla` and `Umana` of `dunAlftandQST` 03B0FB"
+      },
+      {
+        "name": "J'darr",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Alftand01",
+              "formKey": "0152C3:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0A9F99:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ],
+        "quest": "alias `Jdarr` of `dunAlftandQST` 03B0FB"
+      },
+      {
+        "name": "Calixto Corrium",
+        "locations": [
+          {
+            "cell": {
+              "edid": "WindhelmCalixtosHouseofCuriosities",
+              "formKey": "016787:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "01B11D:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ],
+        "quest": "alias `Calixto` of `MS11` 01F7A3"
+      },
+      {
+        "name": "Linwe",
+        "locations": [
+          {
+            "cell": {
+              "edid": "UtteringHillsCave01",
+              "formKey": "07BC27:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "07D67A:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "alias `TGTQ04LinweAlias` of `TGTQ04` 0799E2"
+      },
+      {
+        "name": "Drunk Cultist",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Morvunskar01",
+              "formKey": "015239:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "01CB2F:Skyrim.esm"
+            },
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "name": "Knjakr",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenEsbernsVault",
+              "formKey": "03B696:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "094002:Skyrim.esm"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Drahff · Hewnon Black-Skeever · Gian the Fist",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenRatway01",
+              "formKey": "03B698:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "095FDE:Skyrim.esm"
+            },
+            "note": "Drahff"
+          },
+          {
+            "cell": {
+              "edid": "RiftenRatway01",
+              "formKey": "03B698:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "096002:Skyrim.esm"
+            },
+            "note": "Hewnon"
+          },
+          {
+            "cell": {
+              "edid": "RiftenRatway01",
+              "formKey": "03B698:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "10A063:Skyrim.esm"
+            },
+            "note": "Gian, Hard"
+          }
+        ]
+      },
+      {
+        "name": "Orini Dral · Sarthis Idren",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenWarehouse",
+              "formKey": "016BDA:Skyrim.esm"
+            },
+            "refText": "no placed ref: the quest creates each at its spawn marker (Sarthis 085D46, Orini 085D48)"
+          }
+        ],
+        "quest": "aliases `FFRiften20SarthisAlias` and `FFRiften20OriniAlias` (create reference) of `FreeformRiften20` 085D40"
+      },
+      {
+        "name": "Louis Letrush",
+        "locations": [
+          {
+            "cell": {
+              "edid": "RiftenBeeandBarb",
+              "formKey": "016BDF:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "019DCA:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "alias `LouisLetrush` of `MS03` 01DA3C and `WEDL06` 0B91C1"
+      },
+      {
+        "name": "Telrav",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "01BA06:Skyrim.esm"
+            },
+            "persistent": true,
+            "note": "near Nilheim, Hard"
+          }
+        ],
+        "quest": "alias `Telrav` of `dunNilheimQST` 01BAEC"
+      },
+      {
+        "name": "Wyndelius Gatharian",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ShroudHearthBarrow01",
+              "formKey": "06CCBB:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0721DF:Skyrim.esm"
+            },
+            "persistent": true,
+            "note": "Hard"
+          }
+        ],
+        "quest": "alias `Wyndelius` of `dunShroudHearthBarrowQST` 072206"
+      },
+      {
+        "name": "Ebony Warrior",
+        "locations": [
+          {
+            "cell": {
+              "edid": "POIFallForest28",
+              "formKey": "00BC26:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "030CC9:Dragonborn.esm"
+            },
+            "disabled": true
+          }
+        ],
+        "quest": "alias `EbonyWarrior` of `DLC2EbonyWarriorQuest` 02C49E:Dragonborn.esm"
+      },
+      {
+        "name": "Hamelyn",
+        "locations": [
+          {
+            "cell": {
+              "edid": "HonningbrewMeadery02",
+              "formKey": "03D35A:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "10A050:Skyrim.esm"
+            },
+            "note": "Hard"
+          }
+        ]
+      },
+      {
+        "name": "Umbra (CC)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "ccBGSSSE016Interior02",
+              "formKey": "002F9A:Update.esm"
+            },
+            "ref": {
+              "formKey": "000824:ccbgssse016-umbra.esm"
+            },
+            "persistent": true
+          }
+        ],
+        "quest": "alias `UmbraBoss` of `ccBGSSSE016_UmbraBossQuest` 000BFC and `ccBGSSSE016_UmbraMainQuest` 0021B6 (ccbgssse016-umbra.esm)"
+      },
+      {
+        "name": "Arvel the Swift",
+        "locations": [
+          {
+            "cell": {
+              "edid": "BleakFallsBarrow01",
+              "formKey": "0371DE:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "039655:Skyrim.esm"
+            },
+            "persistent": true
+          }
+        ],
+        "quest": "alias `Arvel` of `MS13` 039645"
+      },
+      {
+        "name": "Ehlhiel · Zaharia (CC)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "LostEchoCave01",
+              "formKey": "015253:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "000820:ccbgssse053-ba_leather.esl"
+            },
+            "persistent": true,
+            "disabled": true,
+            "note": "Ehlhiel"
+          },
+          {
+            "cell": {
+              "edid": "LostEchoCave01",
+              "formKey": "015253:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "000821:ccbgssse053-ba_leather.esl"
+            },
+            "persistent": true,
+            "disabled": true,
+            "note": "Zaharia"
+          }
+        ],
+        "quest": "aliases `Ehlhiel` and `Zaharia` of `ccBGSSSE053_Quest` 000826:ccbgssse053-ba_leather.esl"
+      },
+      {
+        "name": "Bounty Hunter (CC)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "000827:ccbgssse050-ba_daedric.esl"
+            },
+            "persistent": true,
+            "disabled": true
+          }
+        ],
+        "quest": "alias `Blade` of `ccBGSSSE050_Quest` 000822:ccbgssse050-ba_daedric.esl"
+      },
+      {
+        "name": "Aesrael (CC)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "000822:ccbgssse064-ba_elven.esl"
+            },
+            "persistent": true,
+            "disabled": true
+          }
+        ],
+        "quest": "alias `Aesrael` of `ccBGSSSE064_Quest` 000819:ccbgssse064-ba_elven.esl"
+      },
+      {
+        "name": "Ernanthil (CC)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "MarkarthWarrens",
+              "formKey": "016D72:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "000AC2:cckrtsse001_altar.esl"
+            },
+            "persistent": true,
+            "disabled": true
+          }
+        ],
+        "quest": "alias `Ernanthil` of `ccKRTSSE001_QuestFortune` 000A90:cckrtsse001_altar.esl"
+      },
+      {
+        "name": "Atar",
+        "locations": [
+          {
+            "cell": {
+              "edid": "KarthwastenSanuarachMine",
+              "formKey": "013909:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0622E7:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "alias `Atar` of `FreeformKarthwastenA` 0622E8"
+      },
+      {
+        "name": "Mogrul · Slitter",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2RRTheRetchingNetch",
+              "formKey": "017EC0:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "01959B:Dragonborn.esm"
+            },
+            "persistent": true,
+            "note": "Mogrul"
+          },
+          {
+            "cell": {
+              "edid": "DLC2RRTheRetchingNetch",
+              "formKey": "017EC0:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "019598:Dragonborn.esm"
+            },
+            "persistent": true,
+            "note": "Slitter"
+          }
+        ],
+        "quest": "alias `Mogrul` of `DLC2TT1b` 01844E:Dragonborn.esm"
+      },
+      {
+        "name": "Ildari Sarothril",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2HighpointTower01",
+              "formKey": "0184F0:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "019B87:Dragonborn.esm"
+            }
+          }
+        ],
+        "quest": "alias `Ildari` of `DLC2TT2` 0195A1:Dragonborn.esm"
+      },
+      {
+        "name": "General Falx Carius",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2FortFrostmoth01",
+              "formKey": "0142F8:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "01A57A:Dragonborn.esm"
+            }
+          }
+        ],
+        "quest": "alias `DLC2RR01CariusAlias` of `DLC2RR01` 018B13:Dragonborn.esm"
+      },
+      {
+        "name": "Ralis Sedarys",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2SolstheimWorld",
+              "formKey": "000800:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "018109:Dragonborn.esm"
+            },
+            "persistent": true
+          }
+        ],
+        "quest": "alias `Ralis` of `DLC2dunKolbjornQST` 01810B:Dragonborn.esm"
+      },
+      {
+        "name": "Majni · Akar · Hjordis · Rakel",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2FrostmoonCragExterior01",
+              "formKey": "00EE2E:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "01F9C2:Dragonborn.esm"
+            },
+            "note": "Majni, Easy"
+          },
+          {
+            "cell": {
+              "edid": "DLC2FrostmoonCragExterior01",
+              "formKey": "00EE2E:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "01F9CA:Dragonborn.esm"
+            },
+            "note": "Akar"
+          },
+          {
+            "cell": {
+              "edid": "DLC2FrostmoonCragExterior01",
+              "formKey": "00EE2E:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "01F9CB:Dragonborn.esm"
+            },
+            "note": "Hjordis"
+          },
+          {
+            "cell": {
+              "edid": "DLC2FrostmoonCragExterior01",
+              "formKey": "00EE2E:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "01F9C9:Dragonborn.esm"
+            },
+            "note": "Rakel"
+          }
+        ],
+        "quest": "alias `Majni` of `DLC2dunFrostmoonQST` 01F9E6:Dragonborn.esm"
+      },
+      {
+        "name": "Merilar Rendas",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2WhiteRidgeBarrow02",
+              "formKey": "03C7F5:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "0285C7:Dragonborn.esm"
+            },
+            "persistent": true,
+            "note": "VeryHard"
+          }
+        ],
+        "quest": "alias `Merilar` of `DLC2ExpSpiderQuest` 017962:Dragonborn.esm"
+      },
+      {
+        "name": "Skjol the Tongueless (CC)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2SolstheimWorld",
+              "formKey": "000800:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "000830:ccbgssse057-ba_stalhrim.esl"
+            },
+            "persistent": true
+          }
+        ],
+        "quest": "alias `Skjol` of `ccBGSSSE057_Quest` 00081A:ccbgssse057-ba_stalhrim.esl"
+      },
+      {
+        "name": "Erden Relvel (CC)",
+        "locations": [
+          {
+            "cell": {
+              "edid": "DLC2SolstheimWorld",
+              "formKey": "000800:Dragonborn.esm"
+            },
+            "ref": {
+              "formKey": "0CBB31:ccasvsse001-almsivi.esm"
+            },
+            "persistent": true,
+            "disabled": true
+          }
+        ],
+        "quest": "alias `DagothPriest` of `ccASVSSE001_QuestD` 00117A and `Erden` of `ccASVSSE001_QuestE` 0990EF (ccasvsse001-almsivi.esm)"
+      }
+    ]
+  }
+}
