@@ -591,10 +591,9 @@
           "max": 50
         },
         "target": {
-          "band": "VI",
-          "level": 37,
+          "band": "V",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.5 = 37.5, clamped to 10–50: 37)"
+          "source": "user, 2026-11-13: every bounty hunter Experienced"
         },
         "note": "Falkreath Hold, Knifepoint Ridge, the CC Daedric armour quest *Beyond the Grave*: the warrior in Daedric plate who ambushes the player. Template `LvlBanditBoss` 03DF17 for factions and AI, not `Stats`: keeps its own level."
       },

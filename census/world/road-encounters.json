@@ -38,7 +38,7 @@
           "band": "V",
           "level": 28,
           "status": "proposed",
-          "source": "Bandits → *Bandit Chiefs* (archetype-tiers.md §3.1 and §3.1.1, user): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere"
+          "source": "user, 2026-11-13: every bounty hunter Experienced (the bandit chief pin, 28, already is)"
         },
         "note": "`WE36` (Bounty hunters vs Player): the alias `BountyHunter1` puts him in `WEEnemiesFactionA` 0BA0B8 and the player in `WEEnemiesFactionB` 0BA0B9, mutual enemies, so the party attacks on sight. `Stats` from `LvlBanditBoss` 03DF17."
       },
@@ -67,9 +67,9 @@
           ]
         },
         "target": {
-          "band": "III",
+          "band": "V",
           "status": "proposed",
-          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+          "source": "user, 2026-11-13: every bounty hunter Experienced; it takes `Stats` from a bandit list, so it needs a level of its own"
         },
         "note": "`WE36`: alias `BountyHunter2`, the same hostile faction as the boss. `Stats` from `LvlBanditMissile` 01E79E."
       },
@@ -98,9 +98,9 @@
           ]
         },
         "target": {
-          "band": "III",
+          "band": "V",
           "status": "proposed",
-          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III"
+          "source": "user, 2026-11-13: every bounty hunter Experienced; it takes `Stats` from a bandit list, so it needs a level of its own"
         },
         "note": "`WE36`: alias `BountyHunter3`, the same hostile faction. `Stats` from `LvlBanditWizard` 01E79F."
       },
@@ -131,7 +131,7 @@
           "band": "V",
           "level": 28,
           "status": "proposed",
-          "source": "Bandits → *Bandit Chiefs* (archetype-tiers.md §3.1 and §3.1.1, user): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere"
+          "source": "user, 2026-11-13: every bounty hunter Experienced (the bandit chief pin, 28, already is)"
         },
         "note": "`WEBountyCollectorQST` 0F8A80: he demands the player's bounty; \"I don't have the gold.\" sets stage 95, which adds him to `WEPlayerEnemy` and starts combat. Paying clears the bounty. `Stats` from `LvlBanditBossNordM` 01B0E1."
       },
@@ -430,9 +430,9 @@
           ]
         },
         "target": {
-          "band": "III",
+          "band": "V",
           "status": "proposed",
-          "source": "Bandits → *Common Bandits* (user, 2026-11-12): the wrappers that draw the 1–25 mook ladder are III (`LCharOrcMelee` holds that ladder's Orc leaves)"
+          "source": "user, 2026-11-13: the Old Orc Experienced; he takes `Stats` from `LCharOrcMelee`, so he needs a level of his own"
         },
         "note": "`WE24` (A Good Death): an old Orc asks for an honourable death; \"Yes, I am sure. I will give you a good death.\" makes him start combat. Opt-in: the player can decline."
       },
