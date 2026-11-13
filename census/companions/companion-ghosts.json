@@ -39,9 +39,9 @@
           ]
         },
         "target": {
-          "band": "IV",
+          "band": "VIII",
           "status": "proposed",
-          "source": "bands-of-power.md: ghosts (as on *Common Ghosts*, where they were filed)"
+          "source": "user, 2026-11-13: the Companion Ghosts Fabled; they take `Stats` from the bandit lists, so they need levels of their own"
         },
         "note": "one-handed; `Stats` from `LvlBanditGhostMelee1HMale` 0B1F96 · `…Female` 0D93A2 → `LCharBanditMelee1H`. Own name; no `BaseData` flag, so the template's \"Ghost\" is not shown `[unverified]` in game."
       },
@@ -74,9 +74,9 @@
           ]
         },
         "target": {
-          "band": "IV",
+          "band": "VIII",
           "status": "proposed",
-          "source": "bands-of-power.md: ghosts (as on *Common Ghosts*, where they were filed)"
+          "source": "user, 2026-11-13: the Companion Ghosts Fabled; they take `Stats` from the bandit lists, so they need levels of their own"
         },
         "note": "two-handed; `Stats` from `LvlBanditGhostMelee2H*` → `LCharBanditMelee2H`"
       },
@@ -109,9 +109,9 @@
           ]
         },
         "target": {
-          "band": "IV",
+          "band": "VIII",
           "status": "proposed",
-          "source": "bands-of-power.md: ghosts (as on *Common Ghosts*, where they were filed)"
+          "source": "user, 2026-11-13: the Companion Ghosts Fabled; they take `Stats` from the bandit lists, so they need levels of their own"
         },
         "note": "archers; `Stats` from `LvlBanditGhostMissile*` 0B1F9A · … → `LCharBanditMissile`"
       }

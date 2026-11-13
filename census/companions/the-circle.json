@@ -26,9 +26,9 @@
           "max": 50
         },
         "target": {
-          "band": "VII",
+          "band": "V",
           "status": "proposed",
-          "source": "user, 2026-11-13: Kodlak Powerful"
+          "source": "user, 2026-11-13: Kodlak Experienced; older and frail, but experienced"
         },
         "note": "Kodlak's four quest copies (`C04DeadKodlak` 0AD3A5, `C06DeadKodlak` 0DCCC0, `C06KodlaksGhost` 01720B, `MQ304Kodlak` 09700E) take his level and name through `Stats` and `BaseData`."
       },
