@@ -186,9 +186,9 @@
           "value": 36
         },
         "target": {
-          "band": "VI",
+          "band": "VII",
           "status": "proposed",
-          "source": "user, 2026-11-13: the Miraak Cultists pinned to one band, Elite"
+          "source": "user, 2026-11-13: Master and Arch Cultists Powerful; the lower rungs stay Elite"
         }
       },
       {
@@ -233,9 +233,9 @@
           "value": 46
         },
         "target": {
-          "band": "VI",
+          "band": "VII",
           "status": "proposed",
-          "source": "user, 2026-11-13: the Miraak Cultists pinned to one band, Elite"
+          "source": "user, 2026-11-13: Master and Arch Cultists Powerful; the lower rungs stay Elite"
         }
       },
       {
@@ -300,7 +300,7 @@
         "target": {
           "band": "VI",
           "status": "proposed",
-          "source": "user, 2026-11-13: the Miraak Cultists pinned to one band, Elite"
+          "source": "user, 2026-11-13: the Miraak Cultists Elite, the Master and Arch Cultist rungs Powerful (the wrappers draw both)"
         }
       },
       {
@@ -333,7 +333,7 @@
         "target": {
           "band": "VI",
           "status": "proposed",
-          "source": "user, 2026-11-13: the Miraak Cultists pinned to one band, Elite"
+          "source": "user, 2026-11-13: the Miraak Cultists Elite, the Master and Arch Cultist rungs Powerful (the wrappers draw both)"
         }
       }
     ]

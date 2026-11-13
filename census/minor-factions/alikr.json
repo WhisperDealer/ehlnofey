@@ -51,10 +51,9 @@
           }
         },
         "target": {
-          "band": "I",
-          "level": 1,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1: the Alik'r ladder is left flat (the list feeds one ghost), so the rung keeps its vanilla level (Rule 1)"
+          "source": "user, 2026-11-13: the Alik’r Elite"
         },
         "note": "the rung actors take `Stats` from their rung templates and `BaseData` (the name) from `EncAlikr00Template` 06762E; none is placed. Magic, Melee1H ×2, Melee2H Berserk ×2, Missile ×2 per rung."
       },
@@ -99,10 +98,9 @@
           }
         },
         "target": {
-          "band": "I",
-          "level": 6,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1: the Alik'r ladder is left flat (the list feeds one ghost), so the rung keeps its vanilla level (Rule 1)"
+          "source": "user, 2026-11-13: the Alik’r Elite"
         }
       },
       {
@@ -146,10 +144,9 @@
           }
         },
         "target": {
-          "band": "III",
-          "level": 14,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1: the Alik'r ladder is left flat (the list feeds one ghost), so the rung keeps its vanilla level (Rule 1)"
+          "source": "user, 2026-11-13: the Alik’r Elite"
         }
       },
       {
@@ -193,10 +190,9 @@
           }
         },
         "target": {
-          "band": "IV",
-          "level": 24,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1: the Alik'r ladder is left flat (the list feeds one ghost), so the rung keeps its vanilla level (Rule 1)"
+          "source": "user, 2026-11-13: the Alik’r Elite"
         }
       },
       {
@@ -240,10 +236,9 @@
           }
         },
         "target": {
-          "band": "V",
-          "level": 34,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1: the Alik'r ladder is left flat (the list feeds one ghost), so the rung keeps its vanilla level (Rule 1)"
+          "source": "user, 2026-11-13: the Alik’r Elite"
         }
       },
       {
@@ -287,10 +282,9 @@
           }
         },
         "target": {
-          "band": "VII",
-          "level": 44,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1: the Alik'r ladder is left flat (the list feeds one ghost), so the rung keeps its vanilla level (Rule 1)"
+          "source": "user, 2026-11-13: the Alik’r Elite"
         }
       },
       {
@@ -317,10 +311,9 @@
           "max": 30
         },
         "target": {
-          "band": "V",
-          "level": 30,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1: the real Alik'r are quest NPCs at 30"
+          "source": "user, 2026-11-13: the Alik’r Elite"
         },
         "note": "Kematu's guards at Swindler's Den."
       },
@@ -343,10 +336,9 @@
           "min": 5
         },
         "target": {
-          "band": "V",
-          "level": 30,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1: the real Alik'r are quest NPCs at 30"
+          "source": "user, 2026-11-13: the Alik’r Elite"
         },
         "note": "at the Whiterun gate; `CalcMaxLevel` absent, so no cap."
       },
@@ -364,10 +356,9 @@
           "value": 1
         },
         "target": {
-          "band": "V",
-          "level": 30,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1: the `WERJ03` encounter fixed 1 → 30"
+          "source": "user, 2026-11-13: the Alik’r Elite"
         },
         "note": "`WERJ03Alikr` 0B9285 takes `Stats` and `BaseData` from it, so it owns the `WERJ03` encounter's level; not placed itself."
       },
@@ -387,10 +378,10 @@
           "max": 50
         },
         "target": {
-          "band": "VI",
-          "level": 35,
+          "band": "VII",
+          "level": 43,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1: Kematu 35"
+          "source": "user, 2026-11-13: Kematu Powerful, 43"
         }
       },
       {
@@ -458,9 +449,9 @@
           "max": 50
         },
         "target": {
-          "band": "V",
+          "band": "VI",
           "status": "proposed",
-          "source": "user, 2026-11-13: accepted; level with the Alik'r warriors' 30; the §7.0 level-25 rule would give 17"
+          "source": "user, 2026-11-13: the Alik’r Elite"
         },
         "note": "Lord's Mail (CC), magic and missile; templates `EncAlikr03TemplateMagic` 067635 and `EncAlikr02TemplateMissile` 067634 without `Stats`."
       },
