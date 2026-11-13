@@ -179,7 +179,7 @@
           "band": "I",
           "level": 1,
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0 (WD-62): Kyr owns a fixed 1, as in vanilla, and is left"
+          "source": "archetype-tiers.md §7.0: Kyr owns a fixed 1, as in vanilla, and is left"
         },
         "note": "templated on `LvlBanditBossNordM` 01B0E1 without `Stats` or `Traits`: it takes only spells, animations, script, packages and attack data."
       },
@@ -230,7 +230,7 @@
           "band": "V",
           "level": 28,
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0 (WD-62, user): a named bandit leader is a chief; §3.1.1 pins the bandit chief to 28 (applied to the CC Saints & Seducers bosses)"
+          "source": "archetype-tiers.md §7.0 (user): a named bandit leader is a chief; §3.1.1 pins the bandit chief to 28 (applied to the CC Saints & Seducers bosses)"
         },
         "note": "CC Saints & Seducers; each list holds one boss leaf (`ccBGSSSE025_EncGoldenBanditBoss2HRedguardM` 0009AE · `…EncSeducerBanditBoss2HNordM` 0009B0), which owns PC×1.25 [1–25]."
       },

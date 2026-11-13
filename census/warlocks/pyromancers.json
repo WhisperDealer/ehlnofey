@@ -196,7 +196,7 @@
         "target": {
           "band": "V",
           "status": "proposed",
-          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md (WD-46) rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
+          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
         },
         "note": "unnamed wrappers that take `Stats` and `BaseData` from a list (Lists below), so each shows the rung it draws. Placed: `LvlWarlockFire` 01E7CD ×3 · `LvlWarlockFireHoldPos256` 0F85F5 ×1 · `WEJS25_LvlWarlockFire` 0E8945 (not placed; spawned by the `WEJS25` world-encounter quest) · `LvlWarlockFireOmit01` 0F8B0F ×1 (`Omit01`) · `dunFellglowLvlWarlockFireSentry` 0C9DB8 ×1 (`Omit01`) · `dunFellglowLvlWarlockFiringRange` 0CAB9A ×2 (`Omit01`) (8 in all). `LvlWarlockFireHoldPos256` (`SunderstoneGorge01`) and `LvlWarlockFireOmit01` moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03). The `Omit01` wrappers draw rung 02 at 1, then 12–46."
       }

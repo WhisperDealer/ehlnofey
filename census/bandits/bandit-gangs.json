@@ -462,7 +462,7 @@
           "status": "proposed",
           "source": "user, 2026-11-12: the wrappers that draw the 1–25 mook ladder are III"
         },
-        "note": "records from Update.esm overrides of Skyrim.esm; the Butcher (`dunCragslaneButcher`) is set by archetype-tiers.md §7.0 (WD-62) to the bandit chief, 28; for the census he stays with the gang."
+        "note": "records from Update.esm overrides of Skyrim.esm; the Butcher (`dunCragslaneButcher`) is set by archetype-tiers.md §7.0 to the bandit chief, 28; for the census he stays with the gang."
       },
       {
         "id": "mistwatch",

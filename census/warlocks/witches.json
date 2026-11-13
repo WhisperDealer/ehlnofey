@@ -200,7 +200,7 @@
           "band": "VI",
           "level": 38,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-43, user): Forsworn Briarhearts pinned to 38; she borrows their shaman list"
+          "source": "archetype-tiers.md §3.1 (user): Forsworn Briarhearts pinned to 38; she borrows their shaman list"
         },
         "note": "borrows her level from the Forsworn: she takes only `Stats` from the wrapper `LvlForswornBossShaman` 0442D3 (through `LCharForswornBossShaman`), so she rolls the Briarheart shaman rungs, highest gate only. Changing that Forsworn ladder changes her. Moved here from Uncategorised → *Forsworn Level Borrowers* (user, 2026-10-03)."
       }

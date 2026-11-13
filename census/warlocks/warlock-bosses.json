@@ -46,7 +46,7 @@
         "target": {
           "band": "V",
           "status": "proposed",
-          "source": "role: a boss one band above its rung (Apprentice 6, IV on the school pages). The boss lists are pinned to the 07 rung (archetype-tiers.md §3.1, WD-46), so after the rebuild only the own-level records under *Also owns its level* use this template"
+          "source": "role: a boss one band above its rung (Apprentice 6, IV on the school pages). The boss lists are pinned to the 07 rung (archetype-tiers.md §3.1), so after the rebuild only the own-level records under *Also owns its level* use this template"
         },
         "note": "the rung-02 boss template of each school; each has four leaves (`EncWarlock<School>02Boss<Race><Sex>`: Breton and High Elf, F and M; Fire Dark Elf and High Elf; Ice High Elf and Nord) that take `Stats`, `BaseData` and `Inventory` from it. The CC Necromantic Grimoire template `ccVSVSSE003_EncWarlock02TemplateBossNecro` has four leaves of its own (000935–000938:ccvsvsse003-necroarts.esl), added to the necromancer lists at runtime `[unverified]`."
       },
@@ -86,7 +86,7 @@
         "target": {
           "band": "VI",
           "status": "proposed",
-          "source": "role: a boss one band above its rung (Adept 12, V on the school pages). The boss lists are pinned to the 07 rung (archetype-tiers.md §3.1, WD-46), so after the rebuild only the own-level records under *Also owns its level* use this template"
+          "source": "role: a boss one band above its rung (Adept 12, V on the school pages). The boss lists are pinned to the 07 rung (archetype-tiers.md §3.1), so after the rebuild only the own-level records under *Also owns its level* use this template"
         },
         "note": "the rung-03 boss template of each school; each has four leaves (`EncWarlock<School>03Boss<Race><Sex>`: Breton and High Elf, F and M; Fire Dark Elf and High Elf; Ice High Elf and Nord) that take `Stats`, `BaseData` and `Inventory` from it. The CC Necromantic Grimoire template `ccVSVSSE003_EncWarlock03TemplateBossNecro` has four leaves of its own (000931–000934:ccvsvsse003-necroarts.esl), added to the necromancer lists at runtime `[unverified]`."
       },
@@ -126,7 +126,7 @@
         "target": {
           "band": "VI",
           "status": "proposed",
-          "source": "role: a boss one band above its rung (Conjurer/Mage/Necromage 19, V on the school pages). The boss lists are pinned to the 07 rung (archetype-tiers.md §3.1, WD-46), so after the rebuild only the own-level records under *Also owns its level* use this template"
+          "source": "role: a boss one band above its rung (Conjurer/Mage/Necromage 19, V on the school pages). The boss lists are pinned to the 07 rung (archetype-tiers.md §3.1), so after the rebuild only the own-level records under *Also owns its level* use this template"
         },
         "note": "the rung-04 boss template of each school; each has four leaves (`EncWarlock<School>04Boss<Race><Sex>`: Breton and High Elf, F and M; Fire Dark Elf and High Elf; Ice High Elf and Nord) that take `Stats`, `BaseData` and `Inventory` from it. The CC Necromantic Grimoire template `ccVSVSSE003_EncWarlock04TemplateBossNecro` has four leaves of its own (00092D–000930:ccvsvsse003-necroarts.esl), added to the necromancer lists at runtime `[unverified]`."
       },
@@ -166,7 +166,7 @@
         "target": {
           "band": "VII",
           "status": "proposed",
-          "source": "role: a boss one band above its rung (Ascendant/Wizard 27, VI on the school pages). The boss lists are pinned to the 07 rung (archetype-tiers.md §3.1, WD-46), so after the rebuild only the own-level records under *Also owns its level* use this template"
+          "source": "role: a boss one band above its rung (Ascendant/Wizard 27, VI on the school pages). The boss lists are pinned to the 07 rung (archetype-tiers.md §3.1), so after the rebuild only the own-level records under *Also owns its level* use this template"
         },
         "note": "the rung-05 boss template of each school; each has four leaves (`EncWarlock<School>05Boss<Race><Sex>`: Breton and High Elf, F and M; Fire Dark Elf and High Elf; Ice High Elf and Nord) that take `Stats`, `BaseData` and `Inventory` from it. The CC Necromantic Grimoire template `ccVSVSSE003_EncWarlock05TemplateBossNecro` has four leaves of its own (000929–00092C:ccvsvsse003-necroarts.esl), added to the necromancer lists at runtime `[unverified]`."
       },
@@ -206,7 +206,7 @@
         "target": {
           "band": "VII",
           "status": "proposed",
-          "source": "role: a boss one band above its rung (Master/-mancer 36, VI on the school pages). The boss lists are pinned to the 07 rung (archetype-tiers.md §3.1, WD-46), so after the rebuild only the own-level records under *Also owns its level* use this template"
+          "source": "role: a boss one band above its rung (Master/-mancer 36, VI on the school pages). The boss lists are pinned to the 07 rung (archetype-tiers.md §3.1), so after the rebuild only the own-level records under *Also owns its level* use this template"
         },
         "note": "the rung-06 boss template of each school; each has four leaves (`EncWarlock<School>06Boss<Race><Sex>`: Breton and High Elf, F and M; Fire Dark Elf and High Elf; Ice High Elf and Nord) that take `Stats`, `BaseData` and `Inventory` from it. The CC Necromantic Grimoire template `ccVSVSSE003_EncWarlock06TemplateBossNecro` has four leaves of its own (000923–000926:ccvsvsse003-necroarts.esl), added to the necromancer lists at runtime `[unverified]`."
       },
@@ -243,7 +243,7 @@
           "band": "VII",
           "level": 50,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-46, user): warlock boss lists pinned to 50, the Arch rung"
+          "source": "archetype-tiers.md §3.1 (user): warlock boss lists pinned to 50, the Arch rung"
         },
         "note": "the Arch boss rung: two leaves per school (`EncWarlockAtro07Boss{BretonF,HighElfM}` 1091B7 · 1091BD, `…Fire07Boss{DarkElfF,HighElfM}`, `…Ice07Boss{NordF,HighElfM}`, `…Storm07Boss{BretonF,HighElfM}`, `…Necro07Boss{BretonF,HighElfM}`). Vanilla never draws them: no list reaches the `LCharWarlock07Boss*` lists and there is no `07BossNecro` list. The rebuild pins every boss list to this rung."
       },
@@ -337,7 +337,7 @@
           "band": "VII",
           "level": 50,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-46, user): warlock boss lists pinned to 50, the Arch rung"
+          "source": "archetype-tiers.md §3.1 (user): warlock boss lists pinned to 50, the Arch rung"
         },
         "note": "the placed boss wrappers whose list has a level-50 leaf of its race and sex; each takes `Stats`, `BaseData` and `Inventory` from its list (`LvlWarlockShockBossAmbush` through `LvlWarlockShockBoss`)."
       },
@@ -379,7 +379,7 @@
           "band": "VI",
           "level": 40,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-46, user): voice boss lists with no level-50 leaf pinned to 40"
+          "source": "archetype-tiers.md §3.1 (user): voice boss lists with no level-50 leaf pinned to 40"
         },
         "note": "the voice wrappers whose list has no level-50 leaf of its race and sex (Breton M Necro; High Elf F Fire, Ice and Storm), so the rebuild keeps them at the 40 rung."
       }

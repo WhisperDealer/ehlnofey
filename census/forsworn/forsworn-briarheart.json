@@ -19,7 +19,7 @@
         ],
         "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
         "level": { "kind": "fixed", "value": 7 },
-        "target": { "band": "VI", "level": 38, "status": "proposed", "source": "archetype-tiers.md §3.1.1 (WD-43, user): one name, one level; every Briarheart rung pinned to 38" }
+        "target": { "band": "VI", "level": 38, "status": "proposed", "source": "archetype-tiers.md §3.1.1 (user): one name, one level; every Briarheart rung pinned to 38" }
       },
       {
         "id": "briarheart-03",
@@ -30,7 +30,7 @@
         ],
         "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
         "level": { "kind": "fixed", "value": 16 },
-        "target": { "band": "VI", "level": 38, "status": "proposed", "source": "archetype-tiers.md §3.1.1 (WD-43, user): one name, one level; every Briarheart rung pinned to 38" }
+        "target": { "band": "VI", "level": 38, "status": "proposed", "source": "archetype-tiers.md §3.1.1 (user): one name, one level; every Briarheart rung pinned to 38" }
       },
       {
         "id": "briarheart-04",
@@ -41,7 +41,7 @@
         ],
         "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
         "level": { "kind": "fixed", "value": 27 },
-        "target": { "band": "VI", "level": 38, "status": "proposed", "source": "archetype-tiers.md §3.1.1 (WD-43, user): one name, one level; every Briarheart rung pinned to 38" }
+        "target": { "band": "VI", "level": 38, "status": "proposed", "source": "archetype-tiers.md §3.1.1 (user): one name, one level; every Briarheart rung pinned to 38" }
       },
       {
         "id": "briarheart-05",
@@ -52,7 +52,7 @@
         ],
         "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
         "level": { "kind": "fixed", "value": 38 },
-        "target": { "band": "VI", "level": 38, "status": "proposed", "source": "archetype-tiers.md §3.1.1 (WD-43, user): one name, one level; every Briarheart rung pinned to 38" }
+        "target": { "band": "VI", "level": 38, "status": "proposed", "source": "archetype-tiers.md §3.1.1 (user): one name, one level; every Briarheart rung pinned to 38" }
       },
       {
         "id": "briarheart-06",
@@ -63,7 +63,7 @@
         ],
         "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
         "level": { "kind": "fixed", "value": 51 },
-        "target": { "band": "VI", "level": 38, "status": "proposed", "source": "archetype-tiers.md §3.1.1 (WD-43, user): one name, one level; every Briarheart rung pinned to 38" }
+        "target": { "band": "VI", "level": 38, "status": "proposed", "source": "archetype-tiers.md §3.1.1 (user): one name, one level; every Briarheart rung pinned to 38" }
       }
     ]
   },

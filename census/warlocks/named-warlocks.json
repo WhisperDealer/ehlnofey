@@ -37,7 +37,7 @@
           "band": "VII",
           "level": 50,
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0 (WD-62, user): a named boss sits at the top rung of its type; the warlock boss pin is 50"
+          "source": "archetype-tiers.md §7.0 (user): a named boss sits at the top rung of its type; the warlock boss pin is 50"
         },
         "note": "through the wrapper `LvlWarlockConjurerBoss` 0E0FFE, its template."
       },
@@ -97,7 +97,7 @@
           "band": "VII",
           "level": 50,
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0 (WD-62, user): a named boss sits at the top rung of its type; the warlock boss pin is 50"
+          "source": "archetype-tiers.md §7.0 (user): a named boss sits at the top rung of its type; the warlock boss pin is 50"
         },
         "note": "through `LvlWarlockShockBossAmbush` 108CD5 → `LvlWarlockShockBoss` 0E106B."
       },
@@ -217,7 +217,7 @@
           "band": "VI",
           "level": 40,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-46, user): voice boss lists with no level-50 leaf pinned to 40; her list draws the three High Elf F boss lists"
+          "source": "archetype-tiers.md §3.1 (user): voice boss lists with no level-50 leaf pinned to 40; her list draws the three High Elf F boss lists"
         },
         "note": "through the wrapper `LvlWarlockElementalBossFemaleElfHaughty` 081F0A; the list picks one school's High Elf F boss list, every gate ≤ player."
       },
@@ -427,7 +427,7 @@
           "band": "VII",
           "level": 50,
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0 (WD-62, user): Lu'ah Al-Skaven at 50, the warlock boss"
+          "source": "archetype-tiers.md §7.0 (user): Lu'ah Al-Skaven at 50, the warlock boss"
         },
         "note": "takes her look from the boss leaf `EncWarlockNecro06BossHighElfF` 0E1047 but owns her level."
       },

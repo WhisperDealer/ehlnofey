@@ -35,7 +35,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+          "source": "archetype-tiers.md §3.1 (user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
         },
         "note": "the name comes via `BaseData` from `EncPenitus00Template` 07D98C; rung 01 also takes `Stats` from it."
       },
@@ -60,7 +60,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+          "source": "archetype-tiers.md §3.1 (user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
         }
       },
       {
@@ -84,7 +84,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+          "source": "archetype-tiers.md §3.1 (user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
         }
       },
       {
@@ -108,7 +108,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+          "source": "archetype-tiers.md §3.1 (user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
         }
       },
       {
@@ -132,7 +132,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+          "source": "archetype-tiers.md §3.1 (user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
         }
       },
       {
@@ -156,7 +156,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+          "source": "archetype-tiers.md §3.1 (user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
         }
       },
       {
@@ -195,7 +195,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+          "source": "archetype-tiers.md §3.1 (user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
         },
         "note": "`Stats` from `LCharPenitusOculatus`; every other Penitus wrapper follows these (see Also owns its level)."
       },
@@ -216,7 +216,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite; the Katariah archers lacked `Stats` (level 1, a vanilla bug), fixed to 36"
+          "source": "archetype-tiers.md §3.1 (user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite; the Katariah archers lacked `Stats` (level 1, a vanilla bug), fixed to 36"
         },
         "note": "the Katariah archers: lacks the `Stats` flag, so level 1 (skills 5)."
       },
@@ -237,7 +237,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite; this record lacks `Stats` like the Katariah archers"
+          "source": "archetype-tiers.md §3.1 (user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite; this record lacks `Stats` like the Katariah archers"
         },
         "note": "lacks the `Stats` flag, so level 1 (skills 5); `IsGhost`. Fights Arnbjorn in the Sanctuary assault."
       },
@@ -333,7 +333,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-56, user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
+          "source": "archetype-tiers.md §3.1 (user): Penitus Oculatus pinned to 36 (rung 06 raised 23 → 36); bands-of-power.md: Penitus Oculatus Elite"
         },
         "note": "via 06FC42 → 0C6030 → 04C16A → 07D9A0."
       },

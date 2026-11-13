@@ -77,7 +77,7 @@
           "band": "IV",
           "level": 26,
           "status": "proposed",
-          "source": "archetype-tiers.md: rung raised to 26 (WD-58, user)"
+          "source": "archetype-tiers.md: rung raised to 26 (user)"
         },
         "note": "uses `EncTroll` as its template, but not for `Stats`."
       },
@@ -106,7 +106,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md: rung raised to 36 (WD-58, user)"
+          "source": "archetype-tiers.md: rung raised to 36 (user)"
         }
       },
       {

@@ -287,7 +287,7 @@
           "band": "V",
           "level": 28,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 and §3.1.1 (user, decided 2026-07-30, kept by WD-42): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere"
+          "source": "archetype-tiers.md §3.1 and §3.1.1 (user, decided 2026-07-30, kept in the rebuild plan): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere"
         },
         "note": "the rung-06 boss leaves: `EncBandit06Boss{1H,2H}<Race><Sex>` (1H Imperial, Nord and Redguard, F and M; 2H Imperial, Nord, Orc and Redguard M). Each owns its level and takes `BaseData` (its name) from the common leaf of the same race and sex; none has a name of its own. The rung the chief is pinned to."
       },
@@ -864,7 +864,7 @@
           "band": "V",
           "level": 28,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 and §3.1.1 (user, decided 2026-07-30, kept by WD-42): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere; the pack leaves sit on the pinned rung"
+          "source": "archetype-tiers.md §3.1 and §3.1.1 (user, decided 2026-07-30, kept in the rebuild plan): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere; the pack leaves sit on the pinned rung"
         },
         "note": "CC Bandit Armor 050 (Daedric Plate, ccbgssse050-ba_daedric.esl) · 059 (Dragonplate Insulated, ccbgssse059-ba_dragonplate.esl) · 063 (Ebony Plate, ccbgssse063-ba_ebony.esl): 10 boss leaves per pack, `ccBGSSSENNN_EncBandit06Boss{1H,2H}<Race><Sex>`, copies of the vanilla rung-06 leaves (same races, `BaseData` from the same common leaf, so the same name) in the pack's armour. Drawn only through the pack's sublist, which the pack's quest adds to `LCharBanditBoss` at runtime (*Lists*, below)."
       },
@@ -1075,7 +1075,7 @@
           "band": "V",
           "level": 28,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 and §3.1.1 (user, decided 2026-07-30, kept by WD-42): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere"
+          "source": "archetype-tiers.md §3.1 and §3.1.1 (user, decided 2026-07-30, kept in the rebuild plan): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere"
         },
         "note": "the placed chief wrappers, named \"Bandit Chief\". Each takes `Stats`, `Traits` and (most) `Inventory` from `LCharBanditBoss` or a race list (below): `LvlBanditBoss{CommonerF,CommonerM,EvenTonedF,EvenTonedM,NordF,NordM,OrcM}` and `…EvenTonedMAggro1024` their race list, `LvlBanditBossMelee2HNordM` `LCharBanditBossNordM2HOnly`, the CC 061 and 068 chiefs `LCharBanditBossOrcM`, the CC Ruin's Edge chief `LCharBanditBoss` itself. `LvlBanditBossAmbush`, Robber's Gorge and Fort Neugrad go through `LvlBanditBoss`, `LvlBanditBossOrcMAmbush` through `LvlBanditBossOrcM`, White River Watch through `LvlBanditBossMelee2HNordM`; these also take `BaseData` from that wrapper, so they are named \"Bandit Chief\" too. The CC Bloodfall chief (068) is Ghunzul's replacement at Lost Knife Hideout; the CC Ruin's Edge chief is at Stony Creek Cave."
       },
@@ -1106,7 +1106,7 @@
           "band": "V",
           "level": 28,
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0 (WD-62, user 2026-09-27): \"Ghunzul · the Traitor's Post boss: bandit chief, 28, unchanged\""
+          "source": "archetype-tiers.md §7.0 (user 2026-09-27): \"Ghunzul · the Traitor's Post boss: bandit chief, 28, unchanged\""
         },
         "note": "the Traitor's Post boss: takes `Stats`, `BaseData` and `Traits` from `LCharBanditBossEvenTonedM` 01A33F, so it shows the drawn leaf's name, not \"Bandit Chief\" (the `BaseData` gotcha, `[unverified]` in game). Its inventory and outfit are its own. Moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03)."
       },
@@ -1137,7 +1137,7 @@
           "band": "V",
           "level": 28,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 and §3.1.1 (user, decided 2026-07-30, kept by WD-42): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere; this wrapper draws `LCharBanditBoss` itself"
+          "source": "archetype-tiers.md §3.1 and §3.1.1 (user, decided 2026-07-30, kept in the rebuild plan): `LCharBanditBoss` and its race lists pinned to the 28 rung, so a Bandit Chief is one level everywhere; this wrapper draws `LCharBanditBoss` itself"
         },
         "note": "the Pit arena opponent: takes `Stats`, `BaseData`, `Traits` and `Inventory` from `LCharBanditBoss`. Not placed; created by aliases `Combatant1`–`3` of `ArenaCombatQuest04NPCsPlusTwo` 092A4B, `…09NPCsPlusFive` 092A50, `…11NPCsPlusSeven` 0967DA, `…13NPCsPlusNine` 0967DB and `Fighter` of `ArenaWagerFighterQuest` 0DC9DF. Cut content: no story node, quest, package or placed reference in the masters names any of those five quests. Moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03)."
       },
@@ -1169,7 +1169,7 @@
           "band": "V",
           "level": 28,
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0 (WD-62, user 2026-09-27): \"Captain Hargar · the Lost Knife boss · the Cragslane Butcher: bandit mooks 5 / 9 / 14 → 28, bandit chief\""
+          "source": "archetype-tiers.md §7.0 (user 2026-09-27): \"Captain Hargar · the Lost Knife boss · the Cragslane Butcher: bandit mooks 5 / 9 / 14 → 28, bandit chief\""
         },
         "note": "the Lost Knife Hideout boss borrows its level from the common bandits: it takes only `Stats`, `BaseData` and `Inventory` from `LCharBanditMelee2H` 03DEC8 (*Common Bandits*), so it rolls 1 · 5 · 9 · 14 · 19 · 25 (every gate at or below the player). Changing that ladder changes it. Alias `drunkBoss` of `dunLostKnifeQST` 034C90. Moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03)."
       }

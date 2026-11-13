@@ -199,7 +199,7 @@
         "target": {
           "band": "V",
           "status": "proposed",
-          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md (WD-46) rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
+          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
         },
         "note": "unnamed wrappers that take `Stats` and `BaseData` from a list (Lists below), so each shows the rung it draws. Placed: `LvlWarlockConjurer` 01E7C9 ×18 · `LvlWarlockConjurerAggro1024` 0BFFE9 ×4 · `LvlWarlockConjurerAmbush` 0CA448 ×1 (through `LvlWarlockConjurer`) · `LvlWarlockConjurerHoldPos256` 0F85F6 ×1 · `dunFellglowVampireJailor` 0CAF8B ×1 (through `LvlWarlockConjurer`) · `dunFellglow_LvlWarlockConjurerAmbushHoldPosition` 0CA44D ×1 (through `LvlWarlockConjurer`) · `LvlWarlockConjurerFemaleCondescending` 081ED6 ×1 (voice list `…CondescendingF`) · `LvlWarlockConjurerMaleCondescending` 081EDD ×2 (voice list `…CondescendingM`) (29 in all). the copies moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03) include `LvlWarlockConjurerHoldPos256` (`SunderstoneGorge01`), `…FemaleCondescending` (`Morvunskar01`) and `…MaleCondescending` (`Ustengrav01`, `Morvunskar01`). The voice copies draw 1–36 (no rung 07)."
       }

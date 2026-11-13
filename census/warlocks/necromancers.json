@@ -244,7 +244,7 @@
         "target": {
           "band": "V",
           "status": "proposed",
-          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md (WD-46) rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
+          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
         },
         "note": "unnamed wrappers that take `Stats` and `BaseData` from a list (Lists below), so each shows the rung it draws. Placed: `LvlWarlockNecromancer` 01E7CA ×30 · `LvlWarlockNecromancerAggro1024` 099544 ×2 · `LvlWarlockNecromancerAggro2048` 10E05D ×1 · `LvlWarlockNecromancerHoldPos256` 0F85FB ×1 · `LvlWarlockNecromancerFemaleHighElf` 0713DD ×3 · `LvlWarlockNecromancerMaleDarkElf` 0235FD ×3 · `LvlWarlockNecroAmbush` 0CAEEA ×3 (through `LvlWarlockNecromancer`) · `LvlWarlockNecroAmbushDarkElfM` 0CAEF5 ×2 (through `LvlWarlockNecromancer`) · `dunFortSnowhawkLvlWarlockNecromancerAmbush` 0D5C7A ×8 (through `LvlWarlockNecromancer`) · `dunFortSnowhawkLvlWarlockNecromancerTraining` 0D5C63 ×1 · `dunFortSnowhawkLvlWarlockNecromancerOmit01Ambush` 0D779C ×1 (`Omit01`) · `dunFortSnowhawkLvlWarlockNecromancerOmit01AmbushHPLC02` 0D77B0 ×1 (`Omit01`) · `dunFortSnowhawkLvlWarlockNecroAggro2048HP256UntilReleased` 0D5C4A ×1 (`Omit01`) (57 in all). the copies moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03) include `LvlWarlockNecromancerHoldPos256` (`SunderstoneGorge01`), `…Aggro2048` (`BoulderfallCaveExterior01`), `…FemaleHighElf` and `…MaleDarkElf` (`IlinaltasDeep02`, `Ustengrav01` or `SunderstoneGorge01`, and an initially disabled `Tamriel` persistent ref each) and `LvlWarlockNecroAmbushDarkElfM` (`FellglowKeep01`). The `Omit01` wrappers draw rung 02 at 1, then 12–46."
       },
@@ -321,7 +321,7 @@
         "target": {
           "band": "V",
           "status": "proposed",
-          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md (WD-46) rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
+          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
         },
         "note": "the Ritual Master's cultists (MS06): `Cultist1` takes `Stats` from `LvlWarlockNecromancer` 01E7CA, the other three take `Stats` and `BaseData` from `Cultist1`."
       },
@@ -353,7 +353,7 @@
         "target": {
           "band": "V",
           "status": "proposed",
-          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md (WD-46) rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
+          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
         },
         "note": "takes `Stats` and `Traits` from `LCharWarlockNecromancer` directly; its name, inventory and outfit are its own (Gear)."
       }

@@ -20,7 +20,7 @@
         "race": { "edid": "BretonRace", "formKey": "013741:Skyrim.esm" },
         "level": { "kind": "fixed", "value": 1 },
         "target": { "band": "IV", "status": "proposed", "source": "bands-of-power.md: low-level Forsworn" },
-        "note": "name from `EncForsworn00Template` 043BDC. archetype-tiers.md §3.1 (WD-43) drops the plain level-1 Forsworn from the rebuilt lists, as the level-1 bandit was."
+        "note": "name from `EncForsworn00Template` 043BDC. archetype-tiers.md §3.1 drops the plain level-1 Forsworn from the rebuilt lists, as the level-1 bandit was."
       },
       {
         "id": "forsworn-shaman",

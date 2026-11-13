@@ -51,7 +51,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
         },
         "note": "melee (plain and dual) and archer; rung 01 has no shield soldier. The name comes from `EncThalmor00MeleeTemplate` 02B124 and `…MissileTemplate` 0728AC (`Traits`)."
       },
@@ -104,7 +104,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
         },
         "note": "the three female melee records (07297A · 0F95F2 · 0F960E) are 4, not 12: they take `Stats` from `EncThalmor01Melee1HM` 02B126."
       },
@@ -157,7 +157,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
         }
       },
       {
@@ -209,7 +209,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
         }
       },
       {
@@ -261,7 +261,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
         }
       },
       {
@@ -294,7 +294,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
         },
         "note": "`Stats` from rung 03 (`MQ201PartyGuard2` from `EncThalmor03Melee1HM` 07D962). archetype-tiers.md §3.1 moves them to the same sex's rung-05 leaf."
       },
@@ -327,7 +327,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): the CC Redguard pack's Thalmor raised from 18 to 36"
+          "source": "archetype-tiers.md §3.1 (user): the CC Redguard pack's Thalmor raised from 18 to 36"
         },
         "note": "the Redguard Elite Armaments pack's own soldiers."
       },
@@ -356,7 +356,7 @@
           "band": "VII",
           "level": 44,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor wizard pinned to 44 (rung 06)"
         },
         "note": "the name comes from `EncThalmor00WizardTemplate` 0728AD (`Traits`)."
       },
@@ -385,7 +385,7 @@
           "band": "VII",
           "level": 44,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor wizard pinned to 44 (rung 06)"
         }
       },
       {
@@ -413,7 +413,7 @@
           "band": "VII",
           "level": 44,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor wizard pinned to 44 (rung 06)"
         }
       },
       {
@@ -441,7 +441,7 @@
           "band": "VII",
           "level": 44,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor wizard pinned to 44 (rung 06)"
         }
       },
       {
@@ -469,7 +469,7 @@
           "band": "VII",
           "level": 44,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor wizard pinned to 44 (rung 06)"
         }
       },
       {
@@ -497,7 +497,7 @@
           "band": "VII",
           "level": 44,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor wizard pinned to 44 (rung 06)"
         }
       },
       {
@@ -531,7 +531,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "bands-of-power.md: Thalmor Justiciars; archetype-tiers.md §3.1 (WD-48): the soldier pin, 36"
+          "source": "bands-of-power.md: Thalmor Justiciars; archetype-tiers.md §3.1: the soldier pin, 36"
         },
         "note": "the road patrols of `WE32`, `WE33`, `WE34` and `WERoad03`."
       },
@@ -563,7 +563,7 @@
           "band": "VII",
           "level": 44,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor wizard pinned to 44 (rung 06)"
         },
         "note": "the patrols' mage (`WE32`, `WE34`, `WERoad03`)."
       },
@@ -598,7 +598,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
         }
       },
       {
@@ -628,7 +628,7 @@
           "band": "VI",
           "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor soldier, melee and archer, pinned to 36 (rung 05)"
         }
       },
       {
@@ -659,7 +659,7 @@
           "band": "VII",
           "level": 44,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.1 (WD-48, user): every Thalmor wizard pinned to 44 (rung 06)"
+          "source": "archetype-tiers.md §3.1 (user): every Thalmor wizard pinned to 44 (rung 06)"
         }
       }
     ]

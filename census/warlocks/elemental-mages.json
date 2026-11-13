@@ -69,7 +69,7 @@
         "target": {
           "band": "V",
           "status": "proposed",
-          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md (WD-46) rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
+          "source": "user, 2026-10-05: the Vaermina Devotees, who draw `LCharWarlockStorm`, are V; archetype-tiers.md rolls the warlock mooks Mage ×2 · Wizard ×3 · Master ×1"
         },
         "note": "unnamed wrappers that take `Stats` and `BaseData` from `LCharWarlockElemental` or an Elemental voice list. The list rolls one school at random, Fire, Ice or Storm, then that school's ladder 1–46 (the rungs on *Pyromancers*, *Cryomancers* and *Electromancers*); the voice copy draws 1–36. Placed: `LvlWarlockElemental` 01E7CB ×14 · `LvlWarlockElementalAggro1024` 0CDE3B ×5 · `LvlWarlockElementalAmbush` 0CA44E ×2 (through `LvlWarlockElemental`) · `LvlWarlockElementalAmbushCondescendingF` 0CA449 (not placed; through `LvlWarlockElementalAmbush`) · `DunPOITundraMarshWarlock` 0DCFF4 ×1 (through `…Aggro1024`; Tundra Marsh) · `dunFellglowJailor` 0CABB4 ×1 (through `LvlWarlockElementalAmbush`) · `dunFellglow_LvlWarlockElementalAmbushHoldPosition` 0CA447 ×1 (through `LvlWarlockElemental`) · `dunFellglow_LvlWarlockElementalAmbushCondescendingFHoldPosition` 0CA44F ×1 (through `…AmbushCondescendingF`) · `LvlWarlockElementalElfHaughtyM` 081F0D ×1 (voice list `LCharWarlockElementalElfHaughtyM`) (26 in all). `LvlWarlockElementalElfHaughtyM` (`FellglowKeep01`) moved here from Uncategorised → *Unfiled Leveled Wrappers* (user, 2026-10-03)."
       }
