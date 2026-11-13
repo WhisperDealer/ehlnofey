@@ -36,10 +36,9 @@
           "value": 1
         },
         "target": {
-          "band": "I",
-          "level": 1,
+          "band": "VI",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: the Ordinators Elite"
         },
         "note": "the Temple (`ccASVSSE001_TempleFaction` 000812, allied with `…SoldierFaction` 000EB7); own level."
       },
@@ -58,9 +57,9 @@
           "min": 0
         },
         "target": {
-          "band": "V",
+          "band": "VI",
           "status": "proposed",
-          "source": "proposed, awaiting the user (level with the Redoran Guards' 34; the §7.0 level-25 rule would give 25)"
+          "source": "user, 2026-11-13: the Ordinators Elite"
         },
         "note": "the Temple; PC×1 with no minimum and no cap."
       },
@@ -84,9 +83,9 @@
           "max": 100
         },
         "target": {
-          "band": "VI",
+          "band": "VII",
           "status": "proposed",
-          "source": "proposed, awaiting the user (Her Hands, the Temple's elite; the §7.0 level-25 rule would give 30)"
+          "source": "user, 2026-11-13: Her Hands Powerful"
         },
         "note": "the Temple, Her Hands."
       },
@@ -106,9 +105,9 @@
           "max": 100
         },
         "target": {
-          "band": "VI",
+          "band": "VII",
           "status": "proposed",
-          "source": "proposed, awaiting the user (Her Hands, the Temple's elite; the §7.0 level-25 rule would give 25)"
+          "source": "user, 2026-11-13: Her Hands Powerful"
         },
         "note": "the Temple, Her Hands. Template the cultist leaf `DLC2EncCultist05DarkElfF` 034FC0:Dragonborn.esm, without `Stats`."
       },
@@ -128,9 +127,9 @@
           "max": 100
         },
         "target": {
-          "band": "VI",
+          "band": "VII",
           "status": "proposed",
-          "source": "proposed, awaiting the user (Her Hands, the Temple's elite; the §7.0 level-25 rule would give 30)"
+          "source": "user, 2026-11-13: Her Hands Powerful"
         },
         "note": "the Temple, Her Hands."
       },
@@ -150,9 +149,9 @@
           "max": 60
         },
         "target": {
-          "band": "VI",
+          "band": "VII",
           "status": "proposed",
-          "source": "proposed, awaiting the user (Her Hands, the Temple's elite; the §7.0 level-25 rule would give 25)"
+          "source": "user, 2026-11-13: Her Hands Powerful"
         },
         "note": "no faction."
       },
@@ -215,7 +214,7 @@
         "target": {
           "band": "II",
           "status": "proposed",
-          "source": "proposed, awaiting the user (Temple staff, not a fighter; the §7.0 level-25 rule would give 25)"
+          "source": "user, 2026-11-13: accepted (Temple staff, not a fighter; the §7.0 level-25 rule would give 25)"
         },
         "note": "the Temple."
       },
@@ -237,7 +236,7 @@
         "target": {
           "band": "I",
           "status": "proposed",
-          "source": "proposed, awaiting the user (her cap of 6 keeps every level she can take in Weak)"
+          "source": "user, 2026-11-13: accepted (her cap of 6 keeps every level she can take in Weak)"
         },
         "note": "the Temple."
       },
@@ -279,7 +278,7 @@
         "target": {
           "band": "II",
           "status": "proposed",
-          "source": "proposed, awaiting the user (Temple staff, not a fighter; the §7.0 level-25 rule would give 25)"
+          "source": "user, 2026-11-13: accepted (Temple staff, not a fighter; the §7.0 level-25 rule would give 25)"
         },
         "note": "the Temple; PC×1 with no minimum and no cap."
       },
@@ -350,7 +349,7 @@
         "target": {
           "band": "II",
           "status": "proposed",
-          "source": "proposed, awaiting the user (a mask buyer, not a fighter; the §7.0 level-25 rule would give 25)"
+          "source": "user, 2026-11-13: accepted (a mask buyer, not a fighter; the §7.0 level-25 rule would give 25)"
         },
         "note": "in `…GuardBuyerFaction` 000F50."
       }

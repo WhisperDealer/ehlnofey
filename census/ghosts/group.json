@@ -5,7 +5,7 @@
   "order": 4,
   "parent": "undead",
   "meta": {
-    "updated": "2026-11-12"
+    "updated": "2026-11-13"
   },
   "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Karstaag, a ghost Frost Giant, stays on the *Giant* page (user, 2026-10-01).",
   "families": [
@@ -37,6 +37,11 @@
       "record": "`DunYsgramorsTomb_LvlGhost*` 0AB102 · 0DE517 · 0DE519 · 0DE516 · 0AB104 · 0DE518",
       "what": "the Companion Ghosts",
       "where": "Companions → Companion Ghosts (user, 2026-10-02)"
+    },
+    {
+      "record": "`dunDawnstarSanctuary_LvlBrotherhoodSentry` 0942CC · `…Missile` 0D5451",
+      "what": "the Sanctuary Guardians, Dawnstar Sanctuary",
+      "where": "Factions → Dark Brotherhood → *Dark Brotherhood Assassins*"
     },
     {
       "record": "`dunValthumeHevnoraakGhost` 03ED80",

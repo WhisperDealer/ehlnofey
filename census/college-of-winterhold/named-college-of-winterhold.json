@@ -26,10 +26,9 @@
           "max": 50
         },
         "target": {
-          "band": "V",
-          "level": 31,
+          "band": "VII",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.25, clamped to 15–50)"
+          "source": "user, 2026-11-13: the Arch-Mage Powerful"
         },
         "flags": [
           "Essential"
@@ -75,10 +74,9 @@
           "max": 50
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–50)"
+          "source": "user, 2026-11-13: the College masters Elite"
         },
         "flags": [
           "Essential"
@@ -100,10 +98,9 @@
           "max": 50
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–50)"
+          "source": "user, 2026-11-13: the College masters Elite"
         },
         "flags": [
           "Essential"
@@ -125,10 +122,9 @@
           "max": 50
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 15–50)"
+          "source": "user, 2026-11-13: the College masters Elite"
         },
         "flags": [
           "Essential"
@@ -150,10 +146,9 @@
           "max": 50
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–50)"
+          "source": "user, 2026-11-13: the College masters Elite"
         },
         "flags": [
           "Essential"
@@ -179,10 +174,9 @@
           "max": 30
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 8–30)"
+          "source": "user, 2026-11-13: the College masters Elite"
         },
         "flags": [
           "Essential"
@@ -204,10 +198,9 @@
           "max": 40
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–40)"
+          "source": "user, 2026-11-13: the College masters Elite"
         },
         "flags": [
           "Essential"

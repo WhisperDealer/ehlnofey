@@ -40,7 +40,7 @@
         "target": {
           "band": "VI",
           "status": "proposed",
-          "source": "bands-of-power.md: Morag Tong assassins Elite (archetype-tiers.md §6's 30, WD-57, predates the ten bands)"
+          "source": "user, 2026-11-13: the Morag Tong Elite; bands-of-power.md wins over archetype-tiers.md §6's 30"
         },
         "note": "no `BaseData` flag; `Stats` from the Reaver lists, so its own class `EncClassDremoraMelee` 017008 is inert."
       },
@@ -62,7 +62,7 @@
         "target": {
           "band": "VI",
           "status": "proposed",
-          "source": "bands-of-power.md: Morag Tong assassins Elite (the Severins join the Morag Tong; the §7.0 level-25 rule would give 25)"
+          "source": "user, 2026-11-13: the Morag Tong Elite; bands-of-power.md wins over archetype-tiers.md §6's 30 (the Severins join the Morag Tong)"
         },
         "note": "class `EncClassDremoraMelee`."
       },
@@ -84,7 +84,7 @@
         "target": {
           "band": "VI",
           "status": "proposed",
-          "source": "bands-of-power.md: Morag Tong assassins Elite (the Severins join the Morag Tong; the §7.0 level-25 rule would give 25)"
+          "source": "user, 2026-11-13: the Morag Tong Elite; bands-of-power.md wins over archetype-tiers.md §6's 30 (the Severins join the Morag Tong)"
         }
       },
       {
@@ -105,7 +105,7 @@
         "target": {
           "band": "VI",
           "status": "proposed",
-          "source": "bands-of-power.md: Morag Tong assassins Elite (the Severins join the Morag Tong; the §7.0 level-25 rule would give 25)"
+          "source": "user, 2026-11-13: the Morag Tong Elite; bands-of-power.md wins over archetype-tiers.md §6's 30 (the Severins join the Morag Tong)"
         },
         "note": "the Severins join `DLC2MoragTongFaction` by script during `DLC2RR02` 018B14 (Served Cold), which clears Essential and sets Aggression 1. `DLC2Init` 016E02 makes the faction an enemy of the player."
       }

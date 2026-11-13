@@ -180,26 +180,6 @@
         }
       },
       {
-        "id": "festus-krex-dead",
-        "name": "Festus Krex",
-        "records": [
-          {
-            "edid": "FestusKrexDead",
-            "formKey": "0E0D6F:Skyrim.esm"
-          }
-        ],
-        "level": {
-          "kind": "fixed",
-          "value": 4
-        },
-        "target": {
-          "band": "I",
-          "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
-        },
-        "note": "not placed."
-      },
-      {
         "id": "gabriella",
         "name": "Gabriella",
         "records": [
@@ -274,9 +254,9 @@
           "value": 1
         },
         "target": {
-          "band": "I",
+          "band": "VII",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: Nazir's Sanctuary attack copy Powerful, with the Sanctuary family"
         },
         "note": "the Sanctuary attack copy."
       },
@@ -379,7 +359,7 @@
   "ownsLevel": {
     "confidence": "verified",
     "items": [
-      "The rows: no other record keeps its own level; no record uses any of them as a template. Each quest or dead copy (`AstridEnd`, `CiceroDawnstar`, `CiceroRoad`, `FestusKrexDead`, `GabriellaDead`, `NazirSancAttack`, `VeezaraDead`, `DBLisDead`) is a separate record with no template and its own level, already a row.",
+      "The rows: no other record keeps its own level; no record uses any of them as a template. Each quest or dead copy (`AstridEnd`, `CiceroDawnstar`, `CiceroRoad`, `GabriellaDead`, `NazirSancAttack`, `VeezaraDead`, `DBLisDead`) is a separate record with no template and its own level, already a row.",
       "Lis shares the Frostbite Spider race 0131F8 with `EncFrostbiteSpider` 023AAA (no template, level 1; on *Frostbite Spider*); neither uses the other as a template.",
       "No leveled list draws them: every record is placed."
     ]
@@ -469,10 +449,6 @@
             "disabled": true
           }
         ]
-      },
-      {
-        "name": "Festus Krex (`FestusKrexDead`)",
-        "notPlaced": true
       }
     ]
   },
@@ -510,7 +486,7 @@
         "skin": "race default"
       },
       {
-        "records": "Festus Krex · `FestusKrexDead` · `GabriellaDead`",
+        "records": "Festus Krex · `GabriellaDead`",
         "weapons": "Iron Dagger · Iron Dagger · none",
         "armor": "`DBRobesNoHood` (Shrouded Robes, Hand Wraps, Shoes)",
         "skin": "race default"

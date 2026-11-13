@@ -27,10 +27,9 @@
           "Essential"
         ],
         "target": {
-          "band": "X",
-          "level": 150,
+          "band": "VIII",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: the Greybeards Fabled"
         },
         "note": "in `GreybeardFaction` 02C6C8, like the other three."
       },
@@ -51,10 +50,9 @@
           "Essential"
         ],
         "target": {
-          "band": "X",
-          "level": 100,
+          "band": "VIII",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: the Greybeards Fabled"
         }
       },
       {
@@ -74,10 +72,9 @@
           "Essential"
         ],
         "target": {
-          "band": "X",
-          "level": 100,
+          "band": "VIII",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: the Greybeards Fabled"
         }
       },
       {
@@ -97,10 +94,9 @@
           "Essential"
         ],
         "target": {
-          "band": "X",
-          "level": 90,
+          "band": "VIII",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: the Greybeards Fabled"
         }
       }
     ]

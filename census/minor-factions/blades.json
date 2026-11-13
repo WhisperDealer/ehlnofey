@@ -29,10 +29,9 @@
           "Essential"
         ],
         "target": {
-          "band": "IV",
-          "level": 22,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 0.9, clamped to 10–30)"
+          "source": "user, 2026-11-13: Delphine Elite"
         },
         "note": "in `BladesFaction` 072834."
       },
@@ -55,10 +54,9 @@
           "Essential"
         ],
         "target": {
-          "band": "III",
-          "level": 18,
+          "band": "V",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 0.75, clamped to 10–30)"
+          "source": "user, 2026-11-13: Esbern Experienced"
         },
         "note": "in `BladesFaction`."
       }

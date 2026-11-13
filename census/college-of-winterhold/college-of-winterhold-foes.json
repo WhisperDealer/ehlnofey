@@ -29,33 +29,11 @@
           "min": 0
         },
         "target": {
-          "band": "III",
-          "level": 18,
+          "band": "V",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 0.75, clamped to 0–∞)"
+          "source": "user, 2026-11-13: the Enthralled Wizards Experienced"
         },
         "note": "in `DraugrFaction`"
-      },
-      {
-        "id": "enthralled-wizard-unplaced",
-        "name": "Enthralled Wizard",
-        "records": [
-          {
-            "edid": "MG07Thrall01",
-            "formKey": "0F4926:Skyrim.esm"
-          }
-        ],
-        "level": {
-          "kind": "fixed",
-          "value": 1
-        },
-        "target": {
-          "band": "I",
-          "level": 1,
-          "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
-        },
-        "note": "in `DraugrFaction`; not placed, used by no quest"
       }
     ]
   },
@@ -80,11 +58,6 @@
             "note": "in `LabyrinthianWorld04`, one each"
           }
         ]
-      },
-      {
-        "name": "Enthralled Wizard (`MG07Thrall01`)",
-        "notPlaced": true,
-        "note": "used by no quest"
       }
     ]
   },
@@ -95,12 +68,6 @@
         "records": "`MG07LabyrinthianThrall01` · `…02`",
         "weapons": "`LItemWarlockDagger`",
         "armor": "`WarlockOutfitSimpleWithHood` (Hooded Black Mage Robes, Boots)",
-        "skin": "race default"
-      },
-      {
-        "records": "`MG07Thrall01`",
-        "weapons": "`LItemWarlockDagger`",
-        "armor": "`WarlockOutfitLeveled`",
         "skin": "race default"
       }
     ]

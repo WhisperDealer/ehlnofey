@@ -6,7 +6,7 @@
   "parent": "factions",
   "meta": {
     "spec": "archetype-tiers.md §3.1 and §4.1.5",
-    "updated": "2026-11-12"
+    "updated": "2026-11-13"
   },
   "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The Forsworn of the Reach: the rank-and-file ladder, the Briarheart boss ladder and the named Forsworn of the Cidhna Mine and Markarth questlines, vanilla and CC. Forsworn gear is weak, so the levels carry the threat (archetype-tiers.md §3.1). Enemies that only take their level from a Forsworn list stay on their own kinds' pages, linked from each list row under *Drawn elsewhere*.",
   "families": [
@@ -42,7 +42,7 @@
     {
       "record": "the Sanctuary Guardians (Dawnstar Sanctuary)",
       "what": "ghosts",
-      "where": "Undead → Ghosts → *Common Ghosts*"
+      "where": "Factions → Dark Brotherhood → *Dark Brotherhood Assassins*"
     },
     {
       "record": "the Champion of Boethiah",

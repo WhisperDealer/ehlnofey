@@ -434,7 +434,7 @@
         "target": {
           "band": "VI",
           "status": "proposed",
-          "source": "proposed, awaiting the user (the Lord's Mail boss, beside Kematu; the §7.0 level-25 rule would give 23)"
+          "source": "user, 2026-11-13: accepted; the Lord's Mail boss, beside Kematu; the §7.0 level-25 rule would give 23"
         },
         "note": "Lord's Mail (CC); uses `EncAlikr06TemplateMelee` 06763F as template without `Stats`."
       },
@@ -460,7 +460,7 @@
         "target": {
           "band": "V",
           "status": "proposed",
-          "source": "proposed, awaiting the user (level with the Alik'r warriors' 30; the §7.0 level-25 rule would give 17)"
+          "source": "user, 2026-11-13: accepted; level with the Alik'r warriors' 30; the §7.0 level-25 rule would give 17"
         },
         "note": "Lord's Mail (CC), magic and missile; templates `EncAlikr03TemplateMagic` 067635 and `EncAlikr02TemplateMissile` 067634 without `Stats`."
       },
@@ -557,7 +557,7 @@
         "target": {
           "band": "IV",
           "status": "proposed",
-          "source": "proposed, awaiting the user (a town brawler; the §7.0 level-25 rule would give 25)"
+          "source": "user, 2026-11-13: accepted; a town brawler; the §7.0 level-25 rule would give 25"
         },
         "note": "the quest's brawler, in `CrimeFactionRift` and `TownShorsStoneFaction` (Aggressive). Own level; template the bandit leaf `EncBandit03Melee1HRedguardM` 039D0D, without `Stats`. Rakeed, Ismal and Azadi moved here from Uncategorised → *Unfiled NPCs* (user, 2026-10-03)."
       }

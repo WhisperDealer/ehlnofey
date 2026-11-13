@@ -5,7 +5,7 @@
   "title": "Common Forsworn",
   "order": 1,
   "meta": {
-    "updated": "2026-11-12"
+    "updated": "2026-11-13"
   },
   "records": {
     "confidence": "verified",
@@ -155,7 +155,7 @@
               { "edid": "dunDawnstarSanctuary_LvlBrotherhoodSentry", "formKey": "0942CC:Skyrim.esm" }
             ],
             "how": "template",
-            "page": "ghosts/common-ghosts",
+            "page": "dark-brotherhood/dark-brotherhood-assassins",
             "note": "`Stats` taken, through `LvlForswornMeleeBerserker` 03E085"
           }
         ]
@@ -191,7 +191,7 @@
               { "edid": "dunDawnstarSanctuary_LvlBrotherhoodSentryMissile", "formKey": "0D5451:Skyrim.esm" }
             ],
             "how": "template",
-            "page": "ghosts/common-ghosts",
+            "page": "dark-brotherhood/dark-brotherhood-assassins",
             "note": "`Stats` taken, through `LvlForswornMissile` 01E7B7"
           }
         ]

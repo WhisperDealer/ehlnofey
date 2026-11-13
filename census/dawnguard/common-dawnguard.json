@@ -134,7 +134,7 @@
         "target": {
           "band": "VI",
           "status": "proposed",
-          "source": "proposed, awaiting the user: the Dawnguard's band (bands-of-power.md); it borrows the bandit boss ladder, which the rebuild pins to 28 (V)"
+          "source": "user, 2026-11-13: accepted; the Dawnguard's band (bands-of-power.md); it borrows the bandit boss ladder, which the rebuild pins to 28 (V)"
         },
         "note": "borrows its level from the bandit chiefs: it takes only `Stats` from `LCharBanditBossNordM` 01A341, so it rolls the bandit boss ladder 6 · 10 · 16 · 21 · 28 (gates 1 · 5 · 9 · 14 · 19 · 25 · 29). Changing that ladder changes it. Moved here from Uncategorised → *Bandit Level Borrowers* (user, 2026-10-03)."
       }

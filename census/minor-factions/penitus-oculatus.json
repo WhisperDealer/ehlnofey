@@ -356,10 +356,9 @@
           "Essential"
         ],
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VII",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–30)"
+          "source": "user, 2026-11-13: the Maros Powerful"
         }
       },
       {
@@ -378,10 +377,9 @@
           "max": 100
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VII",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 6–100)"
+          "source": "user, 2026-11-13: the Maros Powerful"
         }
       },
       {

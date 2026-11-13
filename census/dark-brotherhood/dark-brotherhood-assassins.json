@@ -38,10 +38,9 @@
           "max": 45
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §6 (user, 2026-09-27): `WEAssassinTemplate`, the \"marked for death\" assassin, 25"
+          "source": "user, 2026-11-13: the WE assassins Elite (supersedes archetype-tiers.md §6's 25)"
         },
         "note": "the template and its three leaves."
       },
@@ -52,10 +51,6 @@
           {
             "edid": "LvlWEAssassin",
             "formKey": "1051FC:Skyrim.esm"
-          },
-          {
-            "edid": "LvlWEAssassinRanged",
-            "formKey": "1051FD:Skyrim.esm"
           }
         ],
         "level": {
@@ -69,10 +64,9 @@
           }
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §6 (user, 2026-09-27): `WEAssassinTemplate`, the \"marked for death\" assassin, 25"
+          "source": "user, 2026-11-13: the WE assassins Elite (supersedes archetype-tiers.md §6's 25)"
         }
       },
       {
@@ -95,7 +89,7 @@
         "target": {
           "band": "VI",
           "status": "proposed",
-          "source": "proposed, awaiting the user (bands-of-power.md: Dark Brotherhood assassins)"
+          "source": "user, 2026-11-13: accepted (bands-of-power.md: Dark Brotherhood assassins)"
         },
         "note": "`Stats` from `EncBandit01Melee1HNordM` 01BCD8 → `EncBandit01TemplateMelee`: borrows its level from *Common Bandits* rung 01."
       },
@@ -115,9 +109,9 @@
           "max": 60
         },
         "target": {
-          "band": "IV",
+          "band": "VI",
           "status": "proposed",
-          "source": "proposed, awaiting the user (the band of the WE assassins, archetype-tiers.md §6, whose name it shows)"
+          "source": "user, 2026-11-13: the WE assassins Elite (supersedes archetype-tiers.md §6's 25)"
         },
         "note": "CC Bow of Shadows; `BaseData` from `WEAssassinTemplate`, not `Stats`."
       },
@@ -141,10 +135,9 @@
           }
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §6 (user, 2026-09-27): `WEAssassinTemplate`, the \"marked for death\" assassin, 25"
+          "source": "user, 2026-11-13: the WE assassins Elite (supersedes archetype-tiers.md §6's 25)"
         },
         "note": "CC Daedric armor pack; `Stats` from `WEAssassinTemplate`."
       },
@@ -178,9 +171,9 @@
         "target": {
           "band": "IV",
           "status": "proposed",
-          "source": "bands-of-power.md: ghosts (as on Undead → Ghosts → *Common Ghosts*)"
+          "source": "bands-of-power.md: ghosts (the band of Undead → Ghosts → *Common Ghosts*)"
         },
-        "note": "borrows its level from the Forsworn: only `Stats` from the Forsworn wrappers `LvlForswornMeleeBerserker` 03E085 (melee, through `LCharForswornMelee1H` 01E792) and `LvlForswornMissile` 01E7B7 (archer, through `LCharForswornMissile` 01E794), so they roll the Forsworn rungs 1 · 6 · 14 · 24 · 34 (every gate ≤ player). Changing the Forsworn ladder changes them. Also a row on Undead → Ghosts → *Common Ghosts*. Moved here from Uncategorised → *Forsworn Level Borrowers* (user, 2026-10-03)."
+        "note": "borrows its level from the Forsworn: only `Stats` from the Forsworn wrappers `LvlForswornMeleeBerserker` 03E085 (melee, through `LCharForswornMelee1H` 01E792) and `LvlForswornMissile` 01E7B7 (archer, through `LCharForswornMissile` 01E794), so they roll the Forsworn rungs 1 · 6 · 14 · 24 · 34 (every gate ≤ player). Changing the Forsworn ladder changes them. Moved here from Uncategorised → *Forsworn Level Borrowers* (user, 2026-10-03)."
       }
     ]
   },
@@ -191,7 +184,7 @@
       "The Hag's End assassin's level 1 is owned by `EncBandit01TemplateMelee` 039CFD, rung 01 of *Common Bandits*. Changing that owner also needs 25 records that keep their own level under it (they use it, a rung-01 leaf, or a wrapper on a bandit list that draws it, as template but not for `Stats`), among them `Vald` 072B04 (PC×1.2 [8–42], on *Thieves Guild Foes*), `DLC1EncHunterTemplate` 00336F:Dawnguard.esm (PC×1 [5–25], on *Common Dawnguard*), `ccEDHSSE003_RedguardEliteF01` 00081C:ccedhsse003-redguard.esl (48), `DLC2dunHaknir` 01A373:Dragonborn.esm (PC×1.25 [40–75]) and `ccKRTSSE001_Inimoro` 000A94:cckrtsse001_altar.esl (PC×1 [60–80]); they belong with the bandit rung, not this page.",
       "The Sanctuary Guardians carry `Stats` and follow the Forsworn wrappers; the records that keep their own level beside those wrappers are on the Forsworn pages.",
       "The other rows: no other record keeps its own level.",
-      "Every other assassin record (the three leaves, `LvlWEAssassin`, `LvlWEAssassinRanged`, CC `ccBGSSSE050_AssassinKhajiitF`) carries `Stats` and follows `WEAssassinTemplate` or `WEAssassinSubChar`."
+      "Every other assassin record (the three leaves, `LvlWEAssassin`, CC `ccBGSSSE050_AssassinKhajiitF`) carries `Stats` and follows `WEAssassinTemplate` or `WEAssassinSubChar`."
     ]
   },
   "lists": {
@@ -216,7 +209,7 @@
             "label": "`WEAssassinKhajiitF`"
           }
         ],
-        "owner": "`LvlWEAssassin`, `LvlWEAssassinRanged`"
+        "owner": "`LvlWEAssassin`"
       },
       {
         "list": {
@@ -292,11 +285,6 @@
         "quest": "created by `WEJS28` 105D19 (alias Assassin; world encounter, runs while `DB01` is not completed and the player is level 5 or more)"
       },
       {
-        "name": "`LvlWEAssassinRanged`",
-        "notPlaced": true,
-        "note": "used by no quest"
-      },
-      {
         "name": "Dark Brotherhood Assassin (Hag's End)",
         "locations": [
           {
@@ -356,12 +344,6 @@
         "records": "`WEAssassinTemplate`, its leaves, `LvlWEAssassin`",
         "weapons": "`LItemWeaponSword`, `LItemWeaponDagger`, `LItemPoisonAll`, `LItemGems`, lockpicks, gold",
         "armor": "`DBArmorWornOutfit` (Worn Shrouded Cowl, Armor, Gloves, Boots)",
-        "skin": "race default"
-      },
-      {
-        "records": "`LvlWEAssassinRanged` (own `Inventory`)",
-        "weapons": "`LItemWeaponBow`, `LItemArrowsAll`, `LItemWeaponDagger`, `LItemPoisonAll`, `LItemGems`, lockpicks, gold",
-        "armor": "`DBArmorWornOutfit`",
         "skin": "race default"
       },
       {

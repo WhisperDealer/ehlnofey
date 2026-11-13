@@ -26,9 +26,9 @@
         ],
         "level": { "kind": "list", "from": { "label": "the bandit lists (see *Lists that draw them*)" }, "rungs": [1, 5, 9, 14, 19, 25] },
         "target": {
-          "band": "V",
+          "band": "VI",
           "status": "proposed",
-          "source": "bands-of-power.md: the Silver Hand, Experienced. Open: archetype-tiers.md §3.1 (user, 2026-09-27) built them three lists of bandit rungs, Highwayman 14 ×1 · Plunderer 19 ×3 · Marauder 25 ×1 (mean 19.2, Trained to Blooded)"
+          "source": "user, 2026-11-13: the Silver Hand rank and file Elite (supersedes archetype-tiers.md §3.1's 14/19/25 roll)"
         },
         "note": "the bandit ladder, via `Stats`. `LvlSilverhandMelee1HAggro1024` 06466C copies Melee1H's template; `LvlSilverhandMissile_Aggro1024` 06466D, `LvlSilverhandMissile_HoldPos256` 0C7410 and `DunGallowsRock_LvlSilverHandMissileHold` 0AA08A template `LvlSilverhandMissile`; all inherit its level."
       }

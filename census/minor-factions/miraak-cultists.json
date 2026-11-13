@@ -44,10 +44,9 @@
           "value": 12
         },
         "target": {
-          "band": "II",
-          "level": 12,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.4 (WD-59): the rung keeps its vanilla level (Rule 1); the list rolls 19 ×2 · 27 ×3 · 36 ×1"
+          "source": "user, 2026-11-13: the Miraak Cultists pinned to one band, Elite"
         },
         "note": "the race and summoner leaves and the `…TemplateSummoner` records carry `Stats` from the rung template."
       },
@@ -93,10 +92,9 @@
           "value": 19
         },
         "target": {
-          "band": "III",
-          "level": 19,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.4 (WD-59): the rung keeps its vanilla level (Rule 1); the list rolls 19 ×2 · 27 ×3 · 36 ×1"
+          "source": "user, 2026-11-13: the Miraak Cultists pinned to one band, Elite"
         }
       },
       {
@@ -141,10 +139,9 @@
           "value": 27
         },
         "target": {
-          "band": "IV",
-          "level": 27,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.4 (WD-59): the rung keeps its vanilla level (Rule 1); the list rolls 19 ×2 · 27 ×3 · 36 ×1"
+          "source": "user, 2026-11-13: the Miraak Cultists pinned to one band, Elite"
         }
       },
       {
@@ -190,9 +187,8 @@
         },
         "target": {
           "band": "VI",
-          "level": 36,
           "status": "proposed",
-          "source": "archetype-tiers.md §3.4 (WD-59): the rung keeps its vanilla level (Rule 1); the list rolls 19 ×2 · 27 ×3 · 36 ×1"
+          "source": "user, 2026-11-13: the Miraak Cultists pinned to one band, Elite"
         }
       },
       {
@@ -237,10 +233,9 @@
           "value": 46
         },
         "target": {
-          "band": "VII",
-          "level": 46,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.4 (WD-59): the rung keeps its vanilla level (Rule 1); the list rolls 19 ×2 · 27 ×3 · 36 ×1"
+          "source": "user, 2026-11-13: the Miraak Cultists pinned to one band, Elite"
         }
       },
       {
@@ -257,10 +252,9 @@
           "value": 1
         },
         "target": {
-          "band": "I",
-          "level": 1,
+          "band": "VI",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: the Miraak Cultists pinned to one band, Elite"
         },
         "note": "lends `Inventory` to every rung; the five rung templates use it as template but not for `Stats`. Not placed."
       },
@@ -304,9 +298,9 @@
           ]
         },
         "target": {
-          "band": "IV",
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.4 (WD-59): the list rolls 19 ×2 · 27 ×3 · 36 ×1, mean 25.8"
+          "source": "user, 2026-11-13: the Miraak Cultists pinned to one band, Elite"
         }
       },
       {
@@ -337,9 +331,9 @@
           ]
         },
         "target": {
-          "band": "IV",
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §3.4 (WD-59): the list rolls 19 ×2 · 27 ×3 · 36 ×1, mean 25.8"
+          "source": "user, 2026-11-13: the Miraak Cultists pinned to one band, Elite"
         }
       }
     ]

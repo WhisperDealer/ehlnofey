@@ -55,10 +55,9 @@
           "Invulnerable"
         ],
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–50)"
+          "source": "user, 2026-11-13: the Guild's leaders Elite"
         }
       },
       {
@@ -80,10 +79,9 @@
           "Essential"
         ],
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–50)"
+          "source": "user, 2026-11-13: the Guild's leaders Elite"
         }
       },
       {
@@ -109,10 +107,9 @@
           "Essential"
         ],
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "VI",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–50)"
+          "source": "user, 2026-11-13: the Guild's leaders Elite"
         }
       },
       {
@@ -158,10 +155,9 @@
           "Protected"
         ],
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "V",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–25)"
+          "source": "user, 2026-11-13: the Guild's members Experienced"
         }
       },
       {
@@ -183,10 +179,9 @@
           "Protected"
         ],
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "V",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.5, clamped to 10–25)"
+          "source": "user, 2026-11-13: the Guild's members Experienced"
         }
       },
       {
@@ -205,10 +200,9 @@
           "max": 100
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "V",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–100)"
+          "source": "user, 2026-11-13: the Guild's members Experienced"
         }
       },
       {
@@ -230,10 +224,9 @@
           "Essential"
         ],
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "V",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–25)"
+          "source": "user, 2026-11-13: the Guild's members Experienced"
         }
       },
       {
@@ -254,9 +247,9 @@
           "Essential"
         ],
         "target": {
-          "band": "VI",
+          "band": "V",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1.5 = 37.5, no cap)"
+          "source": "user, 2026-11-13: the Guild's members Experienced"
         }
       },
       {
@@ -273,9 +266,9 @@
           "value": 15
         },
         "target": {
-          "band": "III",
+          "band": "V",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: the Guild's members Experienced"
         }
       },
       {
@@ -295,9 +288,9 @@
           "Essential"
         ],
         "target": {
-          "band": "III",
+          "band": "V",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: the Guild's members Experienced"
         }
       },
       {
@@ -316,10 +309,9 @@
           "max": 20
         },
         "target": {
-          "band": "III",
-          "level": 20,
+          "band": "V",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–20)"
+          "source": "user, 2026-11-13: the Guild's members Experienced"
         }
       },
       {
@@ -337,10 +329,9 @@
           "min": 20
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "V",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, at least 20)"
+          "source": "user, 2026-11-13: the Guild's members Experienced"
         }
       },
       {
@@ -357,9 +348,9 @@
           "value": 10
         },
         "target": {
-          "band": "II",
+          "band": "V",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: the Guild's members Experienced"
         }
       },
       {
@@ -378,10 +369,9 @@
           "max": 25
         },
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "V",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–25)"
+          "source": "user, 2026-11-13: the Guild's members Experienced"
         }
       },
       {
@@ -403,10 +393,9 @@
           "Essential"
         ],
         "target": {
-          "band": "IV",
-          "level": 25,
+          "band": "V",
           "status": "proposed",
-          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × 1, clamped to 10–25)"
+          "source": "user, 2026-11-13: the Guild's members Experienced"
         }
       },
       {
@@ -426,9 +415,10 @@
           "Essential"
         ],
         "target": {
-          "band": "III",
+          "band": "VII",
+          "level": 45,
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: Gallus 45, with the Nightingale Sentinels"
         },
         "note": "Gallus's ghost; not in `ThievesGuildFaction`."
       }

@@ -5,7 +5,7 @@
   "title": "Jarls",
   "order": 2,
   "meta": {
-    "updated": "2026-11-12"
+    "updated": "2026-11-13"
   },
   "records": {
     "confidence": "verified",
@@ -74,7 +74,7 @@
           "status": "proposed",
           "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
         },
-        "note": "the other Jarl of Whiterun"
+        "note": "the other Jarl of Whiterun; also a Companion (`CompanionsFaction` 048362), filed here only"
       },
       {
         "id": "olfina-gray-mane",

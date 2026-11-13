@@ -5,7 +5,7 @@
   "title": "Common Ghosts",
   "order": 1,
   "meta": {
-    "updated": "2026-11-12"
+    "updated": "2026-11-13"
   },
   "records": {
     "confidence": "verified",
@@ -196,40 +196,6 @@
           "source": "bands-of-power.md: ghosts"
         },
         "note": "own names Subjugated Ghost and Ghost Adventurer, not shown (`Traits` from nameless bandit leaves)."
-      },
-      {
-        "id": "sanctuary-guardian",
-        "name": "Sanctuary Guardian",
-        "records": [
-          {
-            "edid": "dunDawnstarSanctuary_LvlBrotherhoodSentry",
-            "formKey": "0942CC:Skyrim.esm"
-          },
-          {
-            "edid": "dunDawnstarSanctuary_LvlBrotherhoodSentryMissile",
-            "formKey": "0D5451:Skyrim.esm"
-          }
-        ],
-        "level": {
-          "kind": "list",
-          "from": {
-            "edid": "LvlForswornMeleeBerserker",
-            "formKey": "03E085:Skyrim.esm"
-          },
-          "rungs": [
-            1,
-            6,
-            14,
-            24,
-            34
-          ]
-        },
-        "target": {
-          "band": "IV",
-          "status": "proposed",
-          "source": "bands-of-power.md: ghosts"
-        },
-        "note": "borrows its level from the Forsworn lists (the archer from `LvlForswornMissile` 01E7B7)."
       },
       {
         "id": "labyrinthian-spirits",
@@ -437,7 +403,7 @@
     "items": [
       "Some rows keep their own level although they have a template, so each must be changed on its own: `TGCrownGhost02` 084D16 (from `TGCrownGhostBase`, both 12); the advcyrus `…Melee1H_Male` 000969 and `…Male2` 000980 (from `…Melee1H_Female`) and `…MissileM` 000974 (from `…MissileF`, at level 1 against the female's PC×1.2); the Ghost Captain 000AA4 (from `LvlBanditGhostMelee2HMale`); the Forelhost wizards (from `dunForelhostLvlGhostBase`); and the Dwarven Spectre (from `EncBandit01TemplateMagic` 039D31, level 1).",
       "The ghost wizards `encGhost01Magic`–`06Magic` carry `Stats` from the bandit magic templates `EncBandit0NTemplateMagic` (on *Common Bandits*), so changing those templates changes them.",
-      "Every other ghost record (Halldir's, Haknir's Crew, the Yngvild and Rannveig ghosts, the Sanctuary Guardians, the Forelhost melee and tank cultists, the Labyrinthian spirits, `TGCrownGhost01`/`03` and the Ysgramor's Tomb ghosts) carries `Stats` and follows its template or list."
+      "Every other ghost record (Halldir's, Haknir's Crew, the Yngvild and Rannveig ghosts, the Forelhost melee and tank cultists, the Labyrinthian spirits, `TGCrownGhost01`/`03` and the Ysgramor's Tomb ghosts) carries `Stats` and follows its template or list."
     ]
   },
   "lists": {
@@ -508,14 +474,6 @@
         },
         "note": "with `LvlBanditMeleeEvenTonedF` 01AFBD · `LvlBanditMeleeNordF` 01B083: bandit levels.",
         "owner": "Yngvild ghosts"
-      },
-      {
-        "list": {
-          "edid": "LvlForswornMeleeBerserker",
-          "formKey": "03E085:Skyrim.esm"
-        },
-        "note": "with `LvlForswornMissile` 01E7B7: Forsworn levels.",
-        "owner": "Sanctuary Guardians"
       },
       {
         "list": {
@@ -615,18 +573,6 @@
         ]
       },
       {
-        "name": "Sanctuary Guardian",
-        "locations": [
-          {
-            "cell": {
-              "edid": "DawnstarSanctuary",
-              "formKey": "0193EE:Skyrim.esm"
-            },
-            "refText": "×12"
-          }
-        ]
-      },
-      {
         "name": "Fire Spirit · Frost Spirit",
         "locations": [
           {
@@ -720,12 +666,6 @@
         "skin": "race default"
       },
       {
-        "records": "Sanctuary Guardian",
-        "weapons": "`LItemWeaponSwordBest` 0571AA · archer: `LItemWeaponBowBest` 05719E · `LItemWeaponDaggerBest` 0571A1 · `LItemArrowsAll` 068839",
-        "armor": "Shrouded Armor, Boots, Gloves and Cowl (`DBArmorWithHood` 0D3BF8)",
-        "skin": "race default"
-      },
-      {
         "records": "Fire Spirit · Frost Spirit",
         "weapons": "`LItemDraugrSword` 018EC9 · Ancient Nord War Axe 02C672",
         "armor": "non-playable Ancient Nord set (`DraugrArmorForNonDraugrOutfitUnplayable` 1019CE)",
@@ -794,7 +734,7 @@
     "confidence": "verified",
     "rows": [
       {
-        "item": "Bandit, Ancient Nord, Dwarven, Elven and Shrouded armor · all weapons · the CC sailor and captain clothes",
+        "item": "Bandit, Ancient Nord, Dwarven and Elven armor · all weapons · the CC sailor and captain clothes",
         "kind": "armor, weapons, clothing",
         "playable": true,
         "note": "whether a ghost leaves its gear to loot is `[unverified]`"

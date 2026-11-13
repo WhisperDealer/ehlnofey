@@ -16,9 +16,10 @@
         "records": [{ "edid": "EncVigilantOfStendarr01MeleeTemplate", "formKey": "10C44C:Skyrim.esm" }],
         "level": { "kind": "fixed", "value": 5 },
         "target": {
-          "band": "V",
+          "band": "VI",
+          "level": 35,
           "status": "proposed",
-          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 (user, 2026-09-27) pins every Vigilant list to rung 05 at 35, which is Elite (VI)"
+          "source": "user, 2026-11-13: Vigilants VI 35, the archetype-tiers.md §3.1 pin wins over bands-of-power.md"
         },
         "note": "rung 01: the template; its seven race leaves (`EncVigilantOfStendarr01DarkElfF` 10C44E, `…NordF` 10C453, `…NordM01`–`M04` 10C454 · 10C456 · 10C457 · 10C458, `…RedguardF` 10C455) carry `Stats` and follow it. Every rung and wrapper takes its inventory from `EncVigilantOfStendarr00Template` 0BFB54; every wrapper that keeps the name (`LvlVigilantOfStendarr…`, `DLC1_WESC_…NoCrime` 0034E0 · 0034E6, `DLC1_WESC02_StrippedVigilants` 0034EB) draws the ladder."
       },
@@ -36,9 +37,10 @@
         ],
         "level": { "kind": "fixed", "value": 9 },
         "target": {
-          "band": "V",
+          "band": "VI",
+          "level": 35,
           "status": "proposed",
-          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 (user, 2026-09-27) pins every Vigilant list to rung 05 at 35, which is Elite (VI)"
+          "source": "user, 2026-11-13: Vigilants VI 35, the archetype-tiers.md §3.1 pin wins over bands-of-power.md"
         },
         "note": "the race records of rungs 02–05 use the rung-01 leaves as template without `Stats`, so changing rung 01 does not move them."
       },
@@ -56,9 +58,10 @@
         ],
         "level": { "kind": "fixed", "value": 14 },
         "target": {
-          "band": "V",
+          "band": "VI",
+          "level": 35,
           "status": "proposed",
-          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 (user, 2026-09-27) pins every Vigilant list to rung 05 at 35, which is Elite (VI)"
+          "source": "user, 2026-11-13: Vigilants VI 35, the archetype-tiers.md §3.1 pin wins over bands-of-power.md"
         }
       },
       {
@@ -75,9 +78,10 @@
         ],
         "level": { "kind": "fixed", "value": 19 },
         "target": {
-          "band": "V",
+          "band": "VI",
+          "level": 35,
           "status": "proposed",
-          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 (user, 2026-09-27) pins every Vigilant list to rung 05 at 35, which is Elite (VI)"
+          "source": "user, 2026-11-13: Vigilants VI 35, the archetype-tiers.md §3.1 pin wins over bands-of-power.md"
         }
       },
       {
@@ -94,9 +98,10 @@
         ],
         "level": { "kind": "fixed", "value": 25 },
         "target": {
-          "band": "V",
+          "band": "VI",
+          "level": 35,
           "status": "proposed",
-          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 (user, 2026-09-27) pins every Vigilant list to this rung, raised 25 → 35, which is Elite (VI)"
+          "source": "user, 2026-11-13: Vigilants VI 35, the archetype-tiers.md §3.1 pin wins over bands-of-power.md"
         }
       },
       {
@@ -109,9 +114,10 @@
         ],
         "level": { "kind": "template", "value": 5, "from": { "edid": "EncVigilantOfStendarr01MeleeTemplate", "formKey": "10C44C:Skyrim.esm" } },
         "target": {
-          "band": "V",
+          "band": "VI",
+          "level": 35,
           "status": "proposed",
-          "source": "bands-of-power.md: the Vigilants, Experienced"
+          "source": "user, 2026-11-13: Vigilants VI 35, the archetype-tiers.md §3.1 pin wins over bands-of-power.md"
         }
       },
       {
@@ -121,9 +127,10 @@
         "records": [{ "edid": "ccMTYSSE002_EncVigilantOfStendarrSilverHand", "formKey": "000965:ccmtysse002-ve.esl" }],
         "level": { "kind": "fixed", "value": 19 },
         "target": {
-          "band": "V",
+          "band": "VI",
+          "level": 35,
           "status": "proposed",
-          "source": "bands-of-power.md: the Vigilants, Experienced"
+          "source": "user, 2026-11-13: Vigilants VI 35, the archetype-tiers.md §3.1 pin wins over bands-of-power.md"
         },
         "note": "uses `EncVigilantOfStendarr05NordM04` 10C488 as template without `Stats`, so it keeps its own 19."
       },
@@ -139,9 +146,10 @@
         ],
         "level": { "kind": "fixed", "value": 1, "also": [5, 5, 5] },
         "target": {
-          "band": "V",
+          "band": "VI",
+          "level": 35,
           "status": "proposed",
-          "source": "bands-of-power.md: the Vigilants, Experienced"
+          "source": "user, 2026-11-13: Vigilants VI 35, the archetype-tiers.md §3.1 pin wins over bands-of-power.md"
         },
         "note": "`Stats` from `EncVigilantOfStendarr00Template` 0BFB54 (1) and the rung-01 leaves (5)."
       },
@@ -152,9 +160,10 @@
         "records": [{ "edid": "DLC1VQ01LvlVigilantOfStendarrCorpse", "formKey": "01199C:Dawnguard.esm" }],
         "level": { "kind": "list", "from": { "edid": "LCharVigilantOfStendarr", "formKey": "0BFB53:Skyrim.esm" }, "rungs": [5, 9, 14, 19, 25] },
         "target": {
-          "band": "V",
+          "band": "VI",
+          "level": 35,
           "status": "proposed",
-          "source": "bands-of-power.md: the Vigilants, Experienced"
+          "source": "user, 2026-11-13: Vigilants VI 35, the archetype-tiers.md §3.1 pin wins over bands-of-power.md"
         },
         "note": "takes `Stats` from `LCharVigilantOfStendarr`, so it rolls the ladder, unlike the other corpses (checked against the record, 2026-11-13)."
       },
@@ -167,9 +176,10 @@
         ],
         "level": { "kind": "list", "from": { "edid": "LvlVigilantOfStendarr", "formKey": "0B3291:Skyrim.esm" }, "rungs": [5, 9, 14, 19, 25] },
         "target": {
-          "band": "V",
+          "band": "VI",
+          "level": 35,
           "status": "proposed",
-          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 (user, 2026-09-27) pins the ladder to 35, Elite (VI)"
+          "source": "user, 2026-11-13: Vigilants VI 35, the archetype-tiers.md §3.1 pin wins over bands-of-power.md"
         }
       },
       {
@@ -179,9 +189,10 @@
         "records": [{ "edid": "ccBGSSSE067_LvlVigilantOfStendarr", "formKey": "00B660:ccbgssse067-daedinv.esm" }],
         "level": { "kind": "list", "from": { "edid": "ccBGSSSE067_LCharVigilantOfStendarr", "formKey": "1B2CCD:ccbgssse067-daedinv.esm" }, "rungs": [14, 19, 25] },
         "target": {
-          "band": "V",
+          "band": "VI",
+          "level": 35,
           "status": "proposed",
-          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 pins The Cause's list to rung 05 at 35, Elite (VI)"
+          "source": "user, 2026-11-13: Vigilants VI 35, the archetype-tiers.md §3.1 pin wins over bands-of-power.md"
         }
       },
       {
@@ -194,9 +205,10 @@
         ],
         "level": { "kind": "list", "from": { "edid": "LvlVigilantOfStendarr", "formKey": "0B3291:Skyrim.esm" }, "rungs": [5, 9, 14, 19, 25] },
         "target": {
-          "band": "V",
+          "band": "VI",
+          "level": 35,
           "status": "proposed",
-          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 pins the vanilla ladder to 35, Elite (VI)"
+          "source": "user, 2026-11-13: Vigilants VI 35, the archetype-tiers.md §3.1 pin wins over bands-of-power.md"
         },
         "note": "template `LvlVigilantOfStendarr` 0B3291, so the vanilla ladder."
       },
@@ -207,9 +219,10 @@
         "records": [{ "edid": "ccBGSSSE067_LvlVigilantEnforcer", "formKey": "06BFBF:ccbgssse067-daedinv.esm" }],
         "level": { "kind": "list", "from": { "edid": "ccBGSSSE067_LCharVigilantOfStendarr", "formKey": "1B2CCD:ccbgssse067-daedinv.esm" }, "rungs": [14, 19, 25] },
         "target": {
-          "band": "V",
+          "band": "VI",
+          "level": 35,
           "status": "proposed",
-          "source": "bands-of-power.md: the Vigilants, Experienced. Open: archetype-tiers.md §3.1 pins The Cause's list to rung 05 at 35, Elite (VI)"
+          "source": "user, 2026-11-13: Vigilants VI 35, the archetype-tiers.md §3.1 pin wins over bands-of-power.md"
         }
       }
     ]
@@ -234,7 +247,7 @@
           { "at": 1, "label": "`SubCharVigilantOfStendarrEvenTonedMAccented01` 10C45C", "count": 2 }
         ],
         "note": "in both sub-lists, rung 01 at gate 1 · 02 at 9 · 03 at 14 · 04 at 19 · 05 at 25; every gate ≤ player",
-        "owner": "`LvlVigilantOfStendarr` 0B3291 (Tamriel persistent ×13, `DLC1RuunvaldExit` 00BB64 ×3, `StendarrsBeaconExterior02` 00BD70 ×3; quests `WEDLVigilOfStendarr01`, `03`, `DLC1WEJS01`) · Charmed Vigilants (`DLC1Ruunvald01` 003BF0:Dawnguard.esm ×12, `DLC1Ruunvald02` 007066:Dawnguard.esm ×1) · `DLC1_WESC_LvlVigilantOfStendarrNoCrime` 0034E0 ×2 (quest `DLC1_WESC01`) · `DLC1_WESC02_StrippedVigilants` 0034EB ×3 (quest `DLC1_WESC02`) · `DLC1VQ01LvlVigilantOfStendarrCorpse` (Tamriel persistent ×1) · The Cause prisoners (`ccBGSSSE067DeadlandsWorld` 0E1592, 3 refs each, all initially disabled; `…Prisoner01`'s refs 0A94EA · 0A94EB · 0A94EC are aliases `NPCVigilantPrisoner01`–`03` of `ccBGSSSE067_Quest` 06BFC1; the `…NonQuest` refs 18A0BF · 18A0C0 · 18A0C1 belong to no quest)"
+        "owner": "`LvlVigilantOfStendarr` 0B3291 (Tamriel persistent ×13, `DLC1RuunvaldExit` 00BB64 ×3, `StendarrsBeaconExterior02` 00BD70 ×3; quests `WEDLVigilOfStendarr01`, `03`, `DLC1WEJS01`) · Charmed Vigilants (`DLC1Ruunvald01` 003BF0:Dawnguard.esm ×12, `DLC1Ruunvald02` 007066:Dawnguard.esm ×1) · Volk (`DLC1DunRuunvaldVolk` 019580:Dawnguard.esm, `DLC1Ruunvald01` ×1, on *Named Vigilants*) · `DLC1_WESC_LvlVigilantOfStendarrNoCrime` 0034E0 ×2 (quest `DLC1_WESC01`) · `DLC1_WESC02_StrippedVigilants` 0034EB ×3 (quest `DLC1_WESC02`) · `DLC1VQ01LvlVigilantOfStendarrCorpse` (Tamriel persistent ×1) · The Cause prisoners (`ccBGSSSE067DeadlandsWorld` 0E1592, 3 refs each, all initially disabled; `…Prisoner01`'s refs 0A94EA · 0A94EB · 0A94EC are aliases `NPCVigilantPrisoner01`–`03` of `ccBGSSSE067_Quest` 06BFC1; the `…NonQuest` refs 18A0BF · 18A0C0 · 18A0C1 belong to no quest)"
       },
       {
         "list": { "edid": "LCharVigilantOfStendarrEvenTonedF", "formKey": "10C45D:Skyrim.esm" },

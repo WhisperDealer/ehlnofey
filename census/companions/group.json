@@ -16,7 +16,7 @@
     },
     {
       "id": "companions-members",
-      "holds": "Athis, Njada Stonearm, Ria, Torvar, Eorlund Gray-Mane, Tilma the Haggard, Vignar Gray-Mane, Brill"
+      "holds": "Athis, Njada Stonearm, Ria, Torvar, Eorlund Gray-Mane, Tilma the Haggard, Brill"
     },
     {
       "id": "companion-ghosts",
@@ -33,6 +33,11 @@
       "record": "`HowlSummonWolf` 0CF79E · `DLC1HowlSummonIceWolf` 008A6C:Dawnguard.esm · `DLC1HowlSummonWerewolf` 008A6D:Dawnguard.esm",
       "what": "Pack Member, the werewolf howl summons (in `CompanionsFaction`)",
       "where": "Conjured → *Familiars & Spirit Animals*, covered by its note on the werewolf howls"
+    },
+    {
+      "record": "`VignarGrayMane` 013BB5",
+      "what": "Vignar Gray-Mane, a Companion (`CompanionsFaction` 048362) and the other Jarl of Whiterun",
+      "where": "Factions → Housecarls → *Jarls*"
     }
   ]
 }

@@ -84,7 +84,7 @@
           "band": "IV",
           "level": 25,
           "status": "proposed",
-          "source": "proposed, awaiting the user (archetype-tiers.md §7.0: the level a level-25 player meets, 25 × 1, no cap; the band of the user's Mercenaries, user 2026-11-12: Mercenaries up to Blooded)"
+          "source": "user, 2026-11-13: accepted (archetype-tiers.md §7.0: the level a level-25 player meets, 25 × 1, no cap; the band of the user's Mercenaries, user 2026-11-12: Mercenaries up to Blooded)"
         },
         "note": "the template and its copies; every copy takes `Stats` from the template."
       },
@@ -253,10 +253,6 @@
           {
             "edid": "LvlWEThief",
             "formKey": "1034E7:Skyrim.esm"
-          },
-          {
-            "edid": "LvlWEThiefRanged",
-            "formKey": "1051F1:Skyrim.esm"
           }
         ],
         "level": {
@@ -290,39 +286,11 @@
           "value": 1
         },
         "target": {
-          "band": "I",
+          "band": "V",
           "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+          "source": "user, 2026-11-13: the Summerset Shadows Experienced"
         },
         "note": "its own level; its template `EncTGSummersetTemplate` 0C5676 is PC×1 [10–25]."
-      },
-      {
-        "id": "tg07-trio",
-        "name": "Hrolmir · Skeggr · Reves",
-        "records": [
-          {
-            "edid": "TG07Hrolmir",
-            "formKey": "0F84A2:Skyrim.esm"
-          },
-          {
-            "edid": "TG07Skeggr",
-            "formKey": "0F84A3:Skyrim.esm"
-          },
-          {
-            "edid": "TG07Reves",
-            "formKey": "0F84A4:Skyrim.esm"
-          }
-        ],
-        "level": {
-          "kind": "fixed",
-          "value": 1
-        },
-        "target": {
-          "band": "I",
-          "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
-        },
-        "note": "Moved here from Uncategorised → *Unfiled NPCs* (user, 2026-10-03)."
       }
     ]
   },
@@ -331,7 +299,6 @@
     "items": [
       "The rows: no other record keeps its own level. `Vald` uses the bandit leaf `EncBandit01Melee1HNordM` 01BCD8 (*Common Bandits*) as template but not for `Stats`, so he keeps his own level when the bandit rung changes.",
       "The Summerset Shadow takes only `BaseData` and `Inventory` from `EncTGSummersetTemplate` 0C5676 (PC×1 [10–25], not placed, no other record uses it), not `Stats`, so changing the template does not move it. Moved here from Uncategorised → *Unfiled NPCs* (user, 2026-10-03).",
-      "`TG07Hrolmir`, `TG07Skeggr` and `TG07Reves` have no template; no other record uses them.",
       "Every other record that looks like a row (the mercenary copies, `DLCDwarvenPuzzleDungeonMercenary{Spring,Summer,Autumn,Winter}`, the Nightingale and thief leaves and their `Lvl*` wrappers) carries `Stats` and follows its template or list."
     ]
   },
@@ -395,7 +362,7 @@
             "label": "`WEThiefDarkElfM`"
           }
         ],
-        "owner": "`LvlWEThief`, `LvlWEThiefRanged`"
+        "owner": "`LvlWEThief`"
       }
     ]
   },
@@ -499,11 +466,6 @@
         "quest": "created by `WERJ02` 0B8169 \"Thieve's Guild Holdup\", alias Thief"
       },
       {
-        "name": "`LvlWEThiefRanged`",
-        "notPlaced": true,
-        "note": "used by no quest"
-      },
-      {
         "name": "Summerset Shadow",
         "locations": [
           {
@@ -522,11 +484,6 @@
           }
         ],
         "note": "no quest alias names the refs"
-      },
-      {
-        "name": "Hrolmir · Skeggr · Reves",
-        "notPlaced": true,
-        "note": "no quest (`TG07` 021553 included), alias, list or ref names them"
       },
       {
         "name": "the templates and leaves",
@@ -574,21 +531,9 @@
         "skin": "race default"
       },
       {
-        "records": "`LvlWEThiefRanged` (own `Inventory`)",
-        "weapons": "`LItemWeaponBow`, `LItemArrowsAll`, `LItemWeaponDagger`, gold, gems, lockpicks",
-        "armor": "`WEThiefOutfit`",
-        "skin": "race default"
-      },
-      {
         "records": "Summerset Shadow (from its template)",
         "weapons": "`LItemBanditWeapon1H` 037C1B, `LootGoldChange25` 04F78D, `LItemLockPick25` 08FFFB",
         "armor": "`ArmorSummersetShadowsStandard` 10854D",
-        "skin": "race default"
-      },
-      {
-        "records": "Hrolmir · Skeggr · Reves",
-        "weapons": "none",
-        "armor": "none",
         "skin": "race default"
       }
     ]

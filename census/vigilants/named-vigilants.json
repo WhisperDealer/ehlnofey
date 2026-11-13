@@ -29,9 +29,9 @@
         "level": { "kind": "pcMult", "mult": 1, "min": 6, "max": 15 },
         "flags": ["Essential"],
         "target": {
-          "band": "V",
+          "band": "VI",
           "status": "proposed",
-          "source": "proposed, awaiting the user: the Vigilants' band (bands-of-power.md: Experienced); archetype-tiers.md §7.0's level-25 rule would give 15 (III)"
+          "source": "user, 2026-11-13: the named Vigilants Elite, with the Vigilant pin"
         }
       },
       {
@@ -56,9 +56,9 @@
         "records": [{ "edid": "DLC1VigilantAdalvald", "formKey": "00FB33:Dawnguard.esm" }],
         "level": { "kind": "template", "value": 9, "from": { "edid": "EncVigilantOfStendarr02NordM02", "formKey": "10C472:Skyrim.esm" } },
         "target": {
-          "band": "V",
+          "band": "VI",
           "status": "proposed",
-          "source": "proposed, awaiting the user: the Vigilants' band (bands-of-power.md: Experienced); he follows a rung-02 leaf (9, II), which the list pin does not move"
+          "source": "user, 2026-11-13: the named Vigilants Elite, with the Vigilant pin"
         },
         "note": "aggression None."
       },
@@ -68,9 +68,9 @@
         "records": [{ "edid": "ccMTYSSE002_Azir", "formKey": "00095C:ccmtysse002-ve.esl" }],
         "level": { "kind": "fixed", "value": 19 },
         "target": {
-          "band": "V",
+          "band": "VI",
           "status": "proposed",
-          "source": "proposed, awaiting the user: the Vigilants' band (bands-of-power.md: Experienced); a kept fixed level would leave him at 19 (III)"
+          "source": "user, 2026-11-13: the named Vigilants Elite, with the Vigilant pin"
         },
         "note": "uses the rung-01 leaf `EncVigilantOfStendarr01DarkElfF` 10C44E as his template but not for `Stats`."
       },
@@ -80,9 +80,9 @@
         "records": [{ "edid": "ccMTYSSE002_Enforcer", "formKey": "000820:ccmtysse002-ve.esl" }],
         "level": { "kind": "fixed", "value": 25 },
         "target": {
-          "band": "V",
+          "band": "VI",
           "status": "proposed",
-          "source": "proposed, awaiting the user: the Vigilants' band (bands-of-power.md: Experienced); a kept fixed level would leave it at 25 (IV)"
+          "source": "user, 2026-11-13: the named Vigilants Elite, with the Vigilant pin"
         }
       },
       {
@@ -91,11 +91,23 @@
         "records": [{ "edid": "DLC1DunRuunvaldMoric", "formKey": "019582:Dawnguard.esm" }],
         "level": { "kind": "template", "value": 7, "from": { "edid": "EncForsworn02BossMelee1HBretonM01", "formKey": "0442D7:Skyrim.esm" } },
         "target": {
-          "band": "V",
+          "band": "VI",
           "status": "proposed",
-          "source": "proposed, awaiting the user: the Vigilants' band (bands-of-power.md: Experienced); he borrows the Forsworn Briarheart rung 02 (7), whose census target is VI 38"
+          "source": "user, 2026-11-13: the named Vigilants Elite, with the Vigilant pin"
         },
         "note": "borrows his level from the Forsworn: he takes `Stats` from the Briarheart leaf `EncForsworn02BossMelee1HBretonM01` 0442D7, which takes it from `EncForsworn02TemplateBossMelee` 04430B (level 7), so changing that Forsworn template changes him. Moved here from Uncategorised → *Forsworn Level Borrowers* (user, 2026-10-03)."
+      },
+      {
+        "id": "volk",
+        "name": "Volk",
+        "records": [{ "edid": "DLC1DunRuunvaldVolk", "formKey": "019580:Dawnguard.esm" }],
+        "level": { "kind": "list", "from": { "edid": "LvlVigilantOfStendarr", "formKey": "0B3291:Skyrim.esm" }, "rungs": [5, 9, 14, 19, 25] },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-13: the named Vigilants Elite, with the Vigilant pin"
+        },
+        "note": "a Charmed Vigilant with a name of his own: `Stats` (and `Inventory`) from the wrapper `LvlVigilantOfStendarr` 0B3291, so he rolls the Vigilant rungs on *Common Vigilants*; his own level 1 is inert. `BaseData` is not inherited, so he shows his own name. In `DLC1RuunvaldFaction` 0135BD:Dawnguard.esm."
       }
     ]
   },
@@ -103,7 +115,7 @@
     "confidence": "verified",
     "items": [
       "Every row: no other record keeps its own level. Azarain uses the rung-01 leaf `EncVigilantOfStendarr01DarkElfF` 10C44E as his template but not for `Stats`, so changing rung 01 (on *Common Vigilants*) does not move him.",
-      "`DLC1VQ01VigilantTolanCorpse` carries `Stats` and follows Tolan; Adalvald follows `EncVigilantOfStendarr02NordM02`; Moric follows the Forsworn Briarheart template, and the records that keep their own level beside `EncForsworn02TemplateBossMelee` are on Forsworn → *Forsworn Briarheart*."
+      "`DLC1VQ01VigilantTolanCorpse` carries `Stats` and follows Tolan; Adalvald follows `EncVigilantOfStendarr02NordM02`; Moric follows the Forsworn Briarheart template, and the records that keep their own level beside `EncForsworn02TemplateBossMelee` are on Forsworn → *Forsworn Briarheart*; Volk follows `LvlVigilantOfStendarr` (on *Common Vigilants*)."
     ]
   },
   "placed": {
@@ -143,6 +155,10 @@
       {
         "name": "Moric Sidrey",
         "locations": [{ "cell": { "edid": "DLC1Ruunvald02", "formKey": "007066:Dawnguard.esm" }, "ref": { "formKey": "013D16:Dawnguard.esm" }, "note": "Ruunvald; LevelModifier Easy" }]
+      },
+      {
+        "name": "Volk",
+        "locations": [{ "cell": { "edid": "DLC1Ruunvald01", "formKey": "003BF0:Dawnguard.esm" }, "persistent": true, "ref": { "formKey": "013D14:Dawnguard.esm" }, "note": "Ruunvald; LevelModifier Hard" }]
       }
     ]
   },
@@ -154,7 +170,8 @@
       { "records": "Vigilant Adalvald", "weapons": "none", "armor": "`DLC1VigilantAdalvaldOutfit` 00FBF4:Dawnguard.esm", "skin": "race default" },
       { "records": "Azarain", "weapons": "`LItemWeaponMace`", "armor": "`ccMTYSSE002_VigilantOfStendarrOutfit` 00095D:ccmtysse002-ve.esl", "skin": "race default" },
       { "records": "Vigilant Enforcer", "weapons": "`LItemWeaponMace`", "armor": "`ccMTYSSE002_VigilantOfStendarrOutfitEnforcer` 000967:ccmtysse002-ve.esl", "skin": "race default" },
-      { "records": "Moric Sidrey", "weapons": "Pickaxe 0E3C16 · Torch 01D4EC", "armor": "`DLC1RuunvaldMoricOutfit` 019583:Dawnguard.esm", "skin": "race default" }
+      { "records": "Moric Sidrey", "weapons": "Pickaxe 0E3C16 · Torch 01D4EC", "armor": "`DLC1RuunvaldMoricOutfit` 019583:Dawnguard.esm", "skin": "race default" },
+      { "records": "Volk", "weapons": "from `LvlVigilantOfStendarr` (`Inventory` template): the Vigilant rungs' gear, on *Common Vigilants*", "armor": "the same, the Vigilant rungs' outfits", "skin": "race default" }
     ]
   },
   "gearLists": {

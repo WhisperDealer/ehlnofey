@@ -18,7 +18,7 @@
         "target": {
           "band": "I",
           "status": "proposed",
-          "source": "proposed, awaiting the user: a dog, banded at its vanilla level (2), as World Creatures → *Dog*"
+          "source": "user, 2026-11-13: accepted; a dog, banded at its vanilla level (2), as World Creatures → *Dog*"
         }
       },
       {
@@ -29,7 +29,7 @@
         "target": {
           "band": "I",
           "status": "proposed",
-          "source": "proposed, awaiting the user: a dog, banded at its vanilla level (2), as World Creatures → *Dog*"
+          "source": "user, 2026-11-13: accepted; a dog, banded at its vanilla level (2), as World Creatures → *Dog*"
         }
       },
       {
@@ -40,7 +40,7 @@
         "target": {
           "band": "IV",
           "status": "proposed",
-          "source": "proposed, awaiting the user: a hireable pet; archetype-tiers.md §7.0's level-25 rule gives 25 (25 × 1, within 10–25)"
+          "source": "user, 2026-11-13: accepted; a hireable pet; archetype-tiers.md §7.0's level-25 rule gives 25 (25 × 1, within 10–25)"
         }
       },
       {
@@ -51,7 +51,7 @@
         "target": {
           "band": "IV",
           "status": "proposed",
-          "source": "proposed, awaiting the user: follows Bran"
+          "source": "user, 2026-11-13: accepted; follows Bran"
         }
       }
     ]

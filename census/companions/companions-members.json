@@ -139,30 +139,6 @@
         }
       },
       {
-        "id": "vignar-gray-mane",
-        "name": "Vignar Gray-Mane",
-        "records": [
-          {
-            "edid": "VignarGrayMane",
-            "formKey": "013BB5:Skyrim.esm"
-          }
-        ],
-        "level": {
-          "kind": "fixed",
-          "value": 4
-        },
-        "target": {
-          "band": "I",
-          "level": 4,
-          "status": "proposed",
-          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
-        },
-        "note": "in `CompanionsFaction` 048362 but not in `CompanionsFactionMinusBrillAndVignar` 103AFE, which holds the other six; also on Housecarls → *Jarls*, as the other Jarl of Whiterun",
-        "flags": [
-          "Essential"
-        ]
-      },
-      {
         "id": "brill",
         "name": "Brill",
         "records": [
@@ -188,7 +164,7 @@
   "ownsLevel": {
     "confidence": "verified",
     "items": [
-      "All eight rows: no other record keeps its own level (none of them is used as a template)."
+      "All seven rows: no other record keeps its own level (none of them is used as a template)."
     ]
   },
   "placed": {
@@ -209,14 +185,14 @@
         ]
       },
       {
-        "name": "Vignar Gray-Mane · Brill",
+        "name": "Brill",
         "locations": [
           {
             "cell": {
               "edid": "WhiterunJorrvaskr",
               "formKey": "0165B5:Skyrim.esm"
             },
-            "refText": "refs `VignartheReveredREF` 01A6A1 (persistent) · 01A6A3"
+            "refText": "ref 01A6A3"
           }
         ]
       },
@@ -277,12 +253,6 @@
         "skin": "race default"
       },
       {
-        "records": "Vignar Gray-Mane",
-        "weapons": "Skyforge Steel Sword (plus `LootCitizenPocketsRich`)",
-        "armor": "`FineClothesOutfit02` 0E40DD",
-        "skin": "race default"
-      },
-      {
         "records": "Brill",
         "weapons": "Skyforge Steel Dagger (plus `LootCitizenPocketsCommon` 1046D1)",
         "armor": "`FarmClothesOutfit04Variant` 0DAB78",
@@ -330,9 +300,9 @@
       },
       {
         "list": {
-          "label": "`FarmClothesOutfit01` · `FineClothesOutfit02` · `FarmClothesOutfit04Variant`"
+          "label": "`FarmClothesOutfit01` · `FarmClothesOutfit04Variant`"
         },
-        "rolls": "Belted Tunic 01BE1A + Boots 01BE1B · Fine Clothes 0CEE80 + Fine Boots 0CEE82 · Clothes 06C1D8 + Boots 03452F"
+        "rolls": "Belted Tunic 01BE1A + Boots 01BE1B · Clothes 06C1D8 + Boots 03452F"
       }
     ]
   },
