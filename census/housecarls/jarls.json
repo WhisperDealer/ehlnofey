@@ -1,0 +1,1070 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "jarls",
+  "group": "housecarls",
+  "title": "Jarls",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "balgruuf",
+        "name": "Balgruuf the Greater",
+        "records": [
+          {
+            "edid": "BalgruuftheGreater",
+            "formKey": "013BBD:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.5,
+          "min": 10,
+          "max": 30
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1: the level a level-25 player meets (25 × 1.5, clamped to 10–30)"
+        },
+        "note": "Jarl of Whiterun"
+      },
+      {
+        "id": "irileth",
+        "name": "Irileth",
+        "records": [
+          {
+            "edid": "Irileth",
+            "formKey": "013BB8:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.8,
+          "min": 10,
+          "max": 30
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Irileth Elite"
+        },
+        "note": "Balgruuf's housecarl"
+      },
+      {
+        "id": "vignar-gray-mane",
+        "name": "Vignar Gray-Mane",
+        "records": [
+          {
+            "edid": "VignarGrayMane",
+            "formKey": "013BB5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "the other Jarl of Whiterun"
+      },
+      {
+        "id": "olfina-gray-mane",
+        "name": "Olfina Gray-Mane",
+        "records": [
+          {
+            "edid": "OlfinaGrayMane",
+            "formKey": "013B9B:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Vignar's housecarl"
+      },
+      {
+        "id": "avulstein-gray-mane",
+        "name": "Avulstein Gray-Mane",
+        "records": [
+          {
+            "edid": "AvulsteinGrayMane",
+            "formKey": "013B9A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 5,
+          "max": 100
+        },
+        "target": {
+          "band": "IV",
+          "level": 27,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1: the level a level-25 player meets (25 × 1.1, clamped to 5–100)"
+        },
+        "note": "Vignar's housecarl"
+      },
+      {
+        "id": "elisif",
+        "name": "Elisif the Fair",
+        "records": [
+          {
+            "edid": "ElisifTheFair",
+            "formKey": "01326A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Jarl of Haafingar"
+      },
+      {
+        "id": "bolgeir-bearclaw",
+        "name": "Bolgeir Bearclaw",
+        "records": [
+          {
+            "edid": "BolgeirBearclaw",
+            "formKey": "013264:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 18
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Bolgeir Bearclaw Elite"
+        },
+        "note": "Elisif's housecarl; in no housecarl faction"
+      },
+      {
+        "id": "igmund",
+        "name": "Igmund",
+        "records": [
+          {
+            "edid": "Igmund",
+            "formKey": "01339F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 25
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1: the level a level-25 player meets (25 × 1, clamped to 6–25)"
+        },
+        "note": "Jarl of the Reach"
+      },
+      {
+        "id": "faleen",
+        "name": "Faleen",
+        "records": [
+          {
+            "edid": "Faleen",
+            "formKey": "013397:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 25
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Jarls’ housecarls Experienced, 34"
+        },
+        "note": "Igmund's housecarl"
+      },
+      {
+        "id": "thongvor",
+        "name": "Thongvor Silver-Blood",
+        "records": [
+          {
+            "edid": "Thongvor",
+            "formKey": "0133BB:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 25
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1: the level a level-25 player meets (25 × 1, clamped to 6–25)"
+        },
+        "note": "the other Jarl of the Reach"
+      },
+      {
+        "id": "yngvar",
+        "name": "Yngvar the Singer",
+        "records": [
+          {
+            "edid": "Yngvar",
+            "formKey": "0133C1:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 25
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Jarls’ housecarls Experienced, 34"
+        },
+        "note": "Thongvor's housecarl"
+      },
+      {
+        "id": "laila",
+        "name": "Laila Law-Giver",
+        "records": [
+          {
+            "edid": "Laila",
+            "formKey": "013366:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "II",
+          "level": 10,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Jarl of the Rift"
+      },
+      {
+        "id": "unmid",
+        "name": "Unmid Snow-Shod",
+        "records": [
+          {
+            "edid": "Unmid",
+            "formKey": "0371D7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Jarls’ housecarls Experienced, 34"
+        },
+        "note": "Laila's housecarl"
+      },
+      {
+        "id": "maven",
+        "name": "Maven Black-Briar",
+        "records": [
+          {
+            "edid": "Maven",
+            "formKey": "01336A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 35
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1: the level a level-25 player meets (25 × 1, clamped to 10–35)"
+        },
+        "note": "the other Jarl of the Rift"
+      },
+      {
+        "id": "maul",
+        "name": "Maul",
+        "records": [
+          {
+            "edid": "Maul",
+            "formKey": "0371D6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 15
+        },
+        "target": {
+          "band": "III",
+          "level": 15,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Maven's housecarl"
+      },
+      {
+        "id": "brunwulf",
+        "name": "Brunwulf Free-Winter",
+        "records": [
+          {
+            "edid": "Brunwulf",
+            "formKey": "014149:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "the other Jarl of Eastmarch (no housecarl record); Ulfric and Galmar are on Stormcloaks → *Named Stormcloaks*"
+      },
+      {
+        "id": "skald",
+        "name": "Skald",
+        "records": [
+          {
+            "edid": "SkaldtheElder",
+            "formKey": "013620:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 25
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1: the level a level-25 player meets (25 × 1, clamped to 10–25)"
+        },
+        "note": "Jarl of the Pale"
+      },
+      {
+        "id": "jod",
+        "name": "Jod",
+        "records": [
+          {
+            "edid": "Jod",
+            "formKey": "013618:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 25
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Jarls’ housecarls Experienced, 34"
+        },
+        "note": "Skald's housecarl"
+      },
+      {
+        "id": "brina-merilis",
+        "name": "Brina Merilis",
+        "records": [
+          {
+            "edid": "BrinaMerilis",
+            "formKey": "01A6B7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 25
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1: the level a level-25 player meets (25 × 1, clamped to 10–25)"
+        },
+        "note": "the other Jarl of the Pale"
+      },
+      {
+        "id": "horik-halfhand",
+        "name": "Horik Halfhand",
+        "records": [
+          {
+            "edid": "HorikHalfhand",
+            "formKey": "01A6B9:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 25
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1: the level a level-25 player meets (25 × 1, clamped to 10–25)"
+        },
+        "note": "Brina's housecarl"
+      },
+      {
+        "id": "siddgeir",
+        "name": "Siddgeir",
+        "records": [
+          {
+            "edid": "Siddgeir",
+            "formKey": "013653:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Jarl of Falkreath"
+      },
+      {
+        "id": "helvard",
+        "name": "Helvard",
+        "records": [
+          {
+            "edid": "Helvard",
+            "formKey": "013657:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Jarls’ housecarls Experienced, 34"
+        },
+        "note": "Siddgeir's housecarl; a Dark Brotherhood target"
+      },
+      {
+        "id": "dengeir",
+        "name": "Dengeir of Stuhn",
+        "records": [
+          {
+            "edid": "Dengeir",
+            "formKey": "01365A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "the other Jarl of Falkreath"
+      },
+      {
+        "id": "zaria",
+        "name": "Zaria",
+        "records": [
+          {
+            "edid": "Zaria",
+            "formKey": "03A19A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "target": {
+          "band": "I",
+          "level": 5,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Dengeir's housecarl"
+      },
+      {
+        "id": "idgrod-ravencrone",
+        "name": "Idgrod Ravencrone",
+        "records": [
+          {
+            "edid": "IdgrodRavencrone",
+            "formKey": "0135EB:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Jarl of Hjaalmarch"
+      },
+      {
+        "id": "gorm",
+        "name": "Gorm",
+        "records": [
+          {
+            "edid": "Gorm",
+            "formKey": "0135EA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Jarls’ housecarls Experienced, 34"
+        },
+        "note": "Idgrod's housecarl"
+      },
+      {
+        "id": "sorli",
+        "name": "Sorli the Builder",
+        "records": [
+          {
+            "edid": "Sorli",
+            "formKey": "013606:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "the other Jarl of Hjaalmarch"
+      },
+      {
+        "id": "teeba-ei",
+        "name": "Teeba-Ei",
+        "records": [
+          {
+            "edid": "TeebaEi",
+            "formKey": "01360A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Teeba-Ei Blooded"
+        },
+        "note": "Sorli's housecarl"
+      },
+      {
+        "id": "korir",
+        "name": "Korir",
+        "records": [
+          {
+            "edid": "Korir",
+            "formKey": "01C188:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Jarl of Winterhold"
+      },
+      {
+        "id": "thaena",
+        "name": "Thaena",
+        "records": [
+          {
+            "edid": "Thaena",
+            "formKey": "01C189:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Korir's housecarl"
+      },
+      {
+        "id": "kraldar",
+        "name": "Kraldar",
+        "records": [
+          {
+            "edid": "Kraldar",
+            "formKey": "01C180:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "the other Jarl of Winterhold"
+      },
+      {
+        "id": "thonjolf",
+        "name": "Thonjolf",
+        "records": [
+          {
+            "edid": "Thonjolf",
+            "formKey": "01C181:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "I",
+          "level": 4,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "Kraldar's housecarl"
+      },
+      {
+        "id": "hrongar",
+        "name": "Hrongar",
+        "records": [
+          {
+            "edid": "Hrongar",
+            "formKey": "013BBC:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: Hrongar Experienced, 34"
+        },
+        "note": "Balgruuf's brother; in `JobJarlFaction`, holds nothing"
+      },
+      {
+        "id": "bryling",
+        "name": "Bryling",
+        "records": [
+          {
+            "edid": "Bryling",
+            "formKey": "013265:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 9
+        },
+        "target": {
+          "band": "II",
+          "level": 9,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "a Solitude thane; in `JobJarlFaction`, holds nothing"
+      },
+      {
+        "id": "erikur",
+        "name": "Erikur",
+        "records": [
+          {
+            "edid": "Erikur",
+            "formKey": "013272:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 7
+        },
+        "target": {
+          "band": "II",
+          "level": 7,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "a Solitude thane; in `JobJarlFaction`, holds nothing"
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Each hold has the Jarl placed in its court at the start and a second Jarl placed in their own house; that the civil war swaps the two is `[unverified]` (the CW scripts were not read). Every Jarl is in `JobJarlFaction` 050920; every housecarl but Bolgeir Bearclaw is in `JobHousecarlFaction` 05091F. All are `Unique`; all are `Essential` except Balgruuf, Gorm, Olfina and Helvard (Helvard is `Protected`).",
+      "The rows: no other record keeps its own level. The only records that use a Jarl as their template, `MQ304Ulfric` 0EA581 and `MQ304Galmar` 0EA582 (on Stormcloaks → *Named Stormcloaks*), carry `Stats` and follow `Ulfric` and `Galmar`. No leveled list draws a Jarl or a housecarl."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Balgruuf, Irileth, Hrongar",
+        "note": "`WhiterunDragonsreach` 0165A3"
+      },
+      {
+        "name": "Vignar Gray-Mane",
+        "note": "`WhiterunJorrvaskr` 0165B5"
+      },
+      {
+        "name": "Olfina, Avulstein",
+        "note": "`WhiterunHouseGrayMane` 0165B2"
+      },
+      {
+        "name": "Elisif, Bolgeir",
+        "note": "`SolitudeBluePalace` 016A04"
+      },
+      {
+        "name": "Bryling · Erikur",
+        "note": "`SolitudeBrylingsHouse` 016A0B · `SolitudeErikursHouse` 016A09"
+      },
+      {
+        "name": "Igmund, Faleen",
+        "note": "`MarkarthUnderStoneKeep` 016DF2"
+      },
+      {
+        "name": "Thongvor, Yngvar",
+        "note": "`MarkarthTreasuryHouse` 016E00"
+      },
+      {
+        "name": "Laila, Unmid",
+        "note": "`RiftenMistveilKeep` 016BD2"
+      },
+      {
+        "name": "Maven · Maul",
+        "note": "`RiftenBlackBriarManor` 016BD8 · `RiftenWorld` persistent"
+      },
+      {
+        "name": "Brunwulf",
+        "note": "`WindhelmBrunwulfFreeWintersHouse` 01678B"
+      },
+      {
+        "name": "Skald, Jod",
+        "note": "`DawnstarTheWhiteHall` 013A80"
+      },
+      {
+        "name": "Brina, Horik",
+        "note": "`DawnstarBrinasHouse` 013A87"
+      },
+      {
+        "name": "Siddgeir, Helvard",
+        "note": "`FalkreathJarlsLonghouse` 013A79"
+      },
+      {
+        "name": "Dengeir · Zaria",
+        "note": "`FalkreathDengeirsHall` 013A78 · `FalkreathGraveConcoctions` 03A183"
+      },
+      {
+        "name": "Idgrod, Gorm",
+        "note": "`MorthalHighmoonHall` 0138CC"
+      },
+      {
+        "name": "Sorli · Teeba-Ei",
+        "note": "`StonehillsSorlisHouse` 01382D · `StonehillsMine` 02E760"
+      },
+      {
+        "name": "Korir, Thaena",
+        "note": "`WinterholdJarlsLonghouse` 013818"
+      },
+      {
+        "name": "Kraldar, Thonjolf",
+        "note": "`WinterholdKorirshouse` 013812"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Balgruuf",
+        "weapons": "Steel Sword 013989 · `LootCitizenPocketsRich` 1046D3",
+        "armor": "`JarlClothesBalgruuf` 0FBFF8",
+        "skin": "race default"
+      },
+      {
+        "records": "Irileth",
+        "weapons": "Steel Sword of Cold 04B45D · Elven Bow 01399D · Steel Arrow 01397F",
+        "armor": "`ArmorLeatherNoHelmetOutfit` 057A2D",
+        "skin": "race default"
+      },
+      {
+        "records": "Vignar",
+        "weapons": "Skyforge Steel Sword 09F25C",
+        "armor": "`FineClothesOutfit02` 0E40DD",
+        "skin": "race default"
+      },
+      {
+        "records": "Olfina · Avulstein",
+        "weapons": "Skyforge Steel Dagger 09F25D · Skyforge Steel Battleaxe 09F25F; Key to House Gray-Mane",
+        "armor": "`BarkeepClothes01` 05FB81 · `ArmorScaledSimpleOutfit` 037C50",
+        "skin": "race default"
+      },
+      {
+        "records": "Elisif",
+        "weapons": "Gold",
+        "armor": "`JarlClothesElisif` 0DAB7B",
+        "skin": "race default"
+      },
+      {
+        "records": "Bolgeir",
+        "weapons": "Orcish Sword 013991 ×2 · Orcish Dagger 01398E",
+        "armor": "`ArmorSteelPlateNoHelmetOutfit` 0579A3",
+        "skin": "race default"
+      },
+      {
+        "records": "Igmund · Thongvor",
+        "weapons": "Steel Sword · Steel Shield 013955 (Thongvor: Key to Markarth Treasury House)",
+        "armor": "`JarlClothesIgmund` 0FBFFB · `ArmorSteelNoHelmetOutfit` 028B44",
+        "skin": "race default"
+      },
+      {
+        "records": "Faleen",
+        "weapons": "Steel Sword · Steel Shield · Long Bow 03B562 · Steel Arrow",
+        "armor": "`ArmorSteelNoHelmetOutfit` 028B44",
+        "skin": "race default"
+      },
+      {
+        "records": "Yngvar",
+        "weapons": "Steel Warhammer 01398A · treasury key",
+        "armor": "`ArmorStuddedSimpleOutfit` 037C52",
+        "skin": "race default"
+      },
+      {
+        "records": "Laila",
+        "weapons": "`LItemEnchWeaponSword` 04B586",
+        "armor": "`JarlClothesLaila` 0FBFFC",
+        "skin": "race default"
+      },
+      {
+        "records": "Unmid",
+        "weapons": "Steel Greatsword 013987",
+        "armor": "`ArmorElvenNoHelmetOutfit` 057A23",
+        "skin": "race default"
+      },
+      {
+        "records": "Maven",
+        "weapons": "`LItemWeaponDaggerBest` 0571A1 · `LItemPotionAll` 0E3E99 · Black-Briar Manor Key · Maven's Personal Key",
+        "armor": "`MavenBlackBriarOutfit` 0FDEAB",
+        "skin": "race default"
+      },
+      {
+        "records": "Maul",
+        "weapons": "`LItemWeaponDaggerTown` 017177 · Black-Briar Manor Key",
+        "armor": "`ArmorSteelNoHelmetOutfit` 028B44",
+        "skin": "race default"
+      },
+      {
+        "records": "Brunwulf",
+        "weapons": "Iron Dagger 01397E · Brunwulf's House Key",
+        "armor": "`ArmorScaledBSimpleOutfit` 037C51",
+        "skin": "race default"
+      },
+      {
+        "records": "Skald · Jod",
+        "weapons": "Steel Sword · Steel War Axe 013983",
+        "armor": "`JarlClothesSkaldTheElder` 0FBFFA · `JodOutfit` 0877C6",
+        "skin": "race default"
+      },
+      {
+        "records": "Brina · Horik",
+        "weapons": "Steel Dagger 013986 · Imperial Sword 0135B8 and Imperial Shield 0135BA; Key to Brina's House",
+        "armor": "`FineClothesOutfit02Variant` 0F8717 · `HorikOutfit` 0877C7",
+        "skin": "race default"
+      },
+      {
+        "records": "Siddgeir · Helvard",
+        "weapons": "Iron Dagger · Steel Mace of Cold 04B45A; Key to the Jarl's Longhouse",
+        "armor": "`JarlClothesSiddgeir` 0FBFF9 · `ArmorScaledBNoHelmetOutfit` 057A27",
+        "skin": "race default"
+      },
+      {
+        "records": "Dengeir · Zaria",
+        "weapons": "Iron Dagger; their house keys",
+        "armor": "`FineClothesOutfit01` 09D5E0 · `MerchantClothesOutfit01` 045C34",
+        "skin": "race default"
+      },
+      {
+        "records": "Idgrod · Gorm",
+        "weapons": "Steel Dagger · Iron Mace 013982",
+        "armor": "`JarlClothesOutfit02` 09D5DE · `ArmorStuddedSimpleOutfit` 037C52",
+        "skin": "race default"
+      },
+      {
+        "records": "Sorli · Teeba-Ei",
+        "weapons": "Iron Dagger; their house keys",
+        "armor": "`FarmClothesOutfit01` 01DC10 · `FarmClothesOutfit03Variant` 0DAB77",
+        "skin": "race default"
+      },
+      {
+        "records": "Korir · Thaena",
+        "weapons": "none · Iron Dagger",
+        "armor": "`JarlClothesKraldar` 0FBFFD · `FarmClothesOutfit02Variant` 0DAB76",
+        "skin": "race default"
+      },
+      {
+        "records": "Kraldar · Thonjolf",
+        "weapons": "Iron Dagger; Key to Kraldar's House",
+        "armor": "`FarmClothesOutfit04` 09D5DF · `FarmClothesOutfit04Variant` 0DAB78",
+        "skin": "race default"
+      },
+      {
+        "records": "Hrongar · Bryling · Erikur",
+        "weapons": "Iron Greatsword 01359D · Steel Dagger · Steel Dagger; house keys",
+        "armor": "`ArmorScaledBNoHelmetOutfit` · `JarlClothesBryling` 0FBFFE · `FineClothesOutfit01Variant` 0F8716",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "`JarlClothes*`"
+        },
+        "rolls": "Noble Clothes, Fine Raiment or Embellished Robes, boots and a circlet (each Jarl's own set)"
+      },
+      {
+        "list": {
+          "edid": "HorikOutfit",
+          "formKey": "0877C7:Skyrim.esm"
+        },
+        "rolls": "Imperial Armor, Boots, Bracers"
+      },
+      {
+        "list": {
+          "edid": "JodOutfit",
+          "formKey": "0877C6:Skyrim.esm"
+        },
+        "rolls": "Pale Guard's Armor and Shield, Fur Boots and Gauntlets"
+      },
+      {
+        "list": {
+          "edid": "ArmorSteelPlateNoHelmetOutfit",
+          "formKey": "0579A3:Skyrim.esm"
+        },
+        "rolls": "Steel Plate Armor, Boots, Gauntlets"
+      },
+      {
+        "list": {
+          "edid": "ArmorSteelNoHelmetOutfit",
+          "formKey": "028B44:Skyrim.esm"
+        },
+        "rolls": "Steel Armor, Boots, Gauntlets (one of two variants each)"
+      },
+      {
+        "list": {
+          "edid": "MavenBlackBriarOutfit",
+          "formKey": "0FDEAB:Skyrim.esm"
+        },
+        "rolls": "Fine Clothes, Fine Boots, a necklace and a ring (`LItemJewelryNecklace` 0876A4, `LItemJewelryRing` 08757E: every gate ≤ player, silver at 1 up to gold-diamond at 16)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Steel, Steel Plate and Imperial armor; Steel and Imperial Shields; Pale Guard's Shield",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Leather, Scaled, Studded and Elven armor; Pale Guard's Armor; Fur Boots and Gauntlets",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "the Jarls' clothes, circlets, fine and farm clothes",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "the swords, daggers, axes, maces, warhammer, greatswords and bows",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

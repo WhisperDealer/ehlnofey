@@ -1,0 +1,322 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "player-housecarls",
+  "group": "housecarls",
+  "title": "Player Housecarls",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "lydia",
+        "name": "Lydia",
+        "records": [
+          {
+            "edid": "HousecarlWhiterun",
+            "formKey": "0A2C8E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 6,
+          "max": 50
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the player housecarls down to Experienced, 34"
+        }
+      },
+      {
+        "id": "argis",
+        "name": "Argis the Bulwark",
+        "records": [
+          {
+            "edid": "HousecarlMarkarth",
+            "formKey": "0A2C8C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the player housecarls down to Experienced, 34"
+        }
+      },
+      {
+        "id": "calder",
+        "name": "Calder",
+        "records": [
+          {
+            "edid": "HousecarlWindhelm",
+            "formKey": "0A2C90:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the player housecarls down to Experienced, 34"
+        }
+      },
+      {
+        "id": "iona",
+        "name": "Iona",
+        "records": [
+          {
+            "edid": "HousecarlRiften",
+            "formKey": "0A2C91:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the player housecarls down to Experienced, 34"
+        }
+      },
+      {
+        "id": "jordis",
+        "name": "Jordis the Sword-Maiden",
+        "records": [
+          {
+            "edid": "HousecarlSolitude",
+            "formKey": "0A2C8F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the player housecarls down to Experienced, 34"
+        }
+      },
+      {
+        "id": "gregor",
+        "name": "Gregor",
+        "records": [
+          {
+            "edid": "BYOHHousecarlPale",
+            "formKey": "00521E:HearthFires.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the player housecarls down to Experienced, 34"
+        }
+      },
+      {
+        "id": "rayya",
+        "name": "Rayya",
+        "records": [
+          {
+            "edid": "BYOHHousecarlFalkreath",
+            "formKey": "005215:HearthFires.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the player housecarls down to Experienced, 34"
+        }
+      },
+      {
+        "id": "valdimar",
+        "name": "Valdimar",
+        "records": [
+          {
+            "edid": "BYOHHousecarlHjaalmarch",
+            "formKey": "00521B:HearthFires.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the player housecarls down to Experienced, 34"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "All eight are `Unique` and `Protected`, in `PlayerHousecarlFaction` 0A2C8D (the HearthFires three also in `BYOHHousecarlFaction` 008460:HearthFires.esm).",
+      "The rows: no other record keeps its own level; no record uses any of them as a template. No leveled list draws a housecarl."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Lydia",
+        "note": "`WhiterunBreezehome` 0165A8 (`HousecarlWhiterunRef` 0A2C94), initially disabled; the reference is overridden by Update and HearthFires (HearthFires wins)"
+      },
+      {
+        "name": "Argis the Bulwark",
+        "note": "`MarkarthVlindrelHall` 016DFA, initially disabled"
+      },
+      {
+        "name": "Calder",
+        "note": "`WindhelmHjerim` 016778, initially disabled"
+      },
+      {
+        "name": "Iona",
+        "note": "`RiftenHoneyside` 016BDD, initially disabled"
+      },
+      {
+        "name": "Jordis the Sword-Maiden",
+        "note": "`SolitudeProudspireManor` 016A06, initially disabled"
+      },
+      {
+        "name": "Gregor",
+        "note": "`DawnstarTheWhiteHall` 013A80 (`BYOHHousecarlPaleRef` 00521F), initially disabled"
+      },
+      {
+        "name": "Rayya",
+        "note": "`FalkreathJarlsLonghouse` 013A79 (`BYOHHousecarlFalkreathRef` 005216), initially disabled"
+      },
+      {
+        "name": "Valdimar",
+        "note": "`MorthalHighmoonHall` 0138CC (`BYOHHousecarlHjaalmarchRef` 00521D), initially disabled"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Lydia, Argis, Jordis",
+        "weapons": "Steel Sword 013989",
+        "armor": "`PlayerHousecarlOutfit` 0FF7E9",
+        "skin": "race default"
+      },
+      {
+        "records": "Calder, Iona",
+        "weapons": "Steel War Axe 013983",
+        "armor": "`PlayerHousecarlOutfit` 0FF7E9",
+        "skin": "race default"
+      },
+      {
+        "records": "Gregor",
+        "weapons": "Steel Greatsword 013987",
+        "armor": "`PlayerHousecarlOutfit` 0FF7E9",
+        "skin": "race default"
+      },
+      {
+        "records": "Rayya",
+        "weapons": "Scimitar 07A91A ×2",
+        "armor": "`BYOHPlayerHousecarlOutfitFalkreath` 005214:HearthFires.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Valdimar",
+        "weapons": "Steel Mace 013988",
+        "armor": "`ArmorScaledNoHelmetOutfit` 057A26",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "PlayerHousecarlOutfit",
+          "formKey": "0FF7E9:Skyrim.esm"
+        },
+        "rolls": "Steel Armor, Steel Cuffed Boots, Steel Nordic Gauntlets, Steel Shield"
+      },
+      {
+        "list": {
+          "edid": "BYOHPlayerHousecarlOutfitFalkreath",
+          "formKey": "005214:HearthFires.esm"
+        },
+        "rolls": "Steel Armor, Steel Cuffed Boots, Steel Nordic Gauntlets, Alik'r Hood"
+      },
+      {
+        "list": {
+          "edid": "ArmorScaledNoHelmetOutfit",
+          "formKey": "057A26:Skyrim.esm"
+        },
+        "rolls": "Scaled Armor, Scaled Boots, Scaled Bracers"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Steel Armor, Boots, Gauntlets, Shield",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Scaled Armor, Boots, Bracers",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Alik'r Hood",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Steel Sword, War Axe, Greatsword, Mace; Scimitar",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

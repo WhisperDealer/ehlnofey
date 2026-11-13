@@ -1040,8 +1040,8 @@
               }
             ],
             "how": "template",
-            "where": "Factions → Guards → *Other Guards*",
-            "note": "`Stats` taken"
+            "note": "`Stats` taken",
+            "page": "guards/other-guards"
           },
           {
             "name": "Haknir's Crew",
@@ -2584,8 +2584,8 @@
               }
             ],
             "how": "template",
-            "where": "Factions → Guards → *Other Guards*",
-            "note": "`Stats` taken. `dunMarkarthWizardSecurity_Melee_EvenTonedF`: `LCharBanditMeleeEvenTonedF`, through `LvlBanditMeleeEvenTonedF`; `dunMarkarthWizardSecurity_Melee_Captain`: `LCharBanditMeleeEvenTonedM`, through `dunMarkarthWizardSecurity_Melee_EvenTonedM` → `LvlBanditMeleeEvenTonedM`; `dunMarkarthWizardSecurity_Melee_EvenTonedM`: `LCharBanditMeleeEvenTonedM`, through `LvlBanditMeleeEvenTonedM`; `dunMarkarthWizardSecurity_Missile_EvenTonedF`: `LCharBanditMissileEvenTonedF`, through `LvlBanditMissileEvenTonedF`; `dunMarkarthWizardSecurity_Missile_EvenTonedM`: `LCharBanditMissileEvenTonedM`, through `LvlBanditMissileEvenTonedM`"
+            "note": "`Stats` taken. `dunMarkarthWizardSecurity_Melee_EvenTonedF`: `LCharBanditMeleeEvenTonedF`, through `LvlBanditMeleeEvenTonedF`; `dunMarkarthWizardSecurity_Melee_Captain`: `LCharBanditMeleeEvenTonedM`, through `dunMarkarthWizardSecurity_Melee_EvenTonedM` → `LvlBanditMeleeEvenTonedM`; `dunMarkarthWizardSecurity_Melee_EvenTonedM`: `LCharBanditMeleeEvenTonedM`, through `LvlBanditMeleeEvenTonedM`; `dunMarkarthWizardSecurity_Missile_EvenTonedF`: `LCharBanditMissileEvenTonedF`, through `LvlBanditMissileEvenTonedF`; `dunMarkarthWizardSecurity_Missile_EvenTonedM`: `LCharBanditMissileEvenTonedM`, through `LvlBanditMissileEvenTonedM`",
+            "page": "guards/other-guards"
           },
           {
             "name": "Mercenaries",

@@ -148,9 +148,10 @@
           }
         },
         "target": {
-          "band": "IV",
+          "band": "V",
+          "level": 30,
           "status": "proposed",
-          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+          "source": "user, 2026-11-12: the guard leaves Experienced 30, with the hold guards that draw them (Guards → *Hold Guards*)"
         },
         "note": "the nine guard leaves of `LCharGuardSons` (`EncGuardSonsF01`–`F03`, `…M01`–`M06`)."
       },
@@ -477,9 +478,10 @@
           }
         },
         "target": {
-          "band": "IV",
+          "band": "V",
+          "level": 30,
           "status": "proposed",
-          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+          "source": "user, 2026-11-12: the guard leaves move to Experienced 30 with the hold guards; every guard that draws them follows"
         },
         "note": "the Stormcloak garrison guards, in Stormcloak army armour, Whiterun hold (city, Dragonsreach, gate, watchtower, Riverwood, Rorikstead), Haafingar, the Reach, Falkreath, Hjaalmarch and Eastmarch. Also without their own row here: `GuardSolitudeSons*` (9), `GuardMarkarthSons*` (8), `GuardMorthalSons*` (5). Stormcloak Guard (Solitude, Morthal, Hjaalmarch) · Whiterun Guard (the porch patrols) · Falkreath Guard (103962, 105CA9) · Windhelm Guard (the jail); the rest have no name of their own and take the rolled soldier's, \"Stormcloak Soldier\"."
       },
@@ -918,8 +920,8 @@
               }
             ],
             "how": "template",
-            "where": "Factions → Guards → *Hold Guards*",
-            "note": "in the Pale uniform"
+            "note": "in the Pale uniform",
+            "page": "guards/hold-guards"
           }
         ]
       },
@@ -960,8 +962,8 @@
               }
             ],
             "how": "template",
-            "where": "Factions → Guards → *Hold Guards*",
-            "note": "and the hold guards' base records: 59 take `LvlGuardSons` 01FC63 as template"
+            "note": "and the hold guards' base records: 59 take `LvlGuardSons` 01FC63 as template",
+            "page": "guards/hold-guards"
           }
         ]
       },

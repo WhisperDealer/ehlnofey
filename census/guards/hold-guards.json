@@ -1,0 +1,653 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "hold-guards",
+  "group": "guards",
+  "title": "Hold Guards",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "hold-guard-imperial-held",
+        "name": "Whiterun Guard · Solitude Guard · Haafingar Guard · Markarth City Guard · Reach Hold Guard · Falkreath Guard · Morthal Guard · Hjaalmarch Guard",
+        "records": [
+          {
+            "edid": "GuardWhiterunImperialTemplate",
+            "formKey": "0EA0A2:Skyrim.esm"
+          },
+          {
+            "edid": "GuardHaafingarImperialDay",
+            "formKey": "10636E:Skyrim.esm"
+          },
+          {
+            "edid": "GuardDragonBridgeImperial",
+            "formKey": "0212BA:Skyrim.esm"
+          },
+          {
+            "edid": "GuardSalviusFarmImperial",
+            "formKey": "09E47F:Skyrim.esm"
+          },
+          {
+            "edid": "GuardKarthwastenImperial01",
+            "formKey": "02429A:Skyrim.esm"
+          },
+          {
+            "edid": "GuardKolskeggrImperial",
+            "formKey": "01FD69:Skyrim.esm"
+          },
+          {
+            "edid": "GuardLeftHandMineImperial",
+            "formKey": "09E481:Skyrim.esm"
+          },
+          {
+            "edid": "GuardSoljundsImperial",
+            "formKey": "061367:Skyrim.esm"
+          },
+          {
+            "edid": "dunMarkarthWizard_GuardImperialGallery",
+            "formKey": "0558FD:Skyrim.esm"
+          },
+          {
+            "edid": "dunMarkarthWizard_GuardImperialLab",
+            "formKey": "087137:Skyrim.esm"
+          },
+          {
+            "edid": "dunMarkarthWizard_LvlGuardImperial",
+            "formKey": "08713A:Skyrim.esm"
+          },
+          {
+            "edid": "ccBGSSSE006_MarkarthGuardGallery",
+            "formKey": "000800:ccbgssse006-stendarshammer.esl"
+          },
+          {
+            "edid": "GuardFalkreathImperial",
+            "formKey": "10107B:Skyrim.esm"
+          },
+          {
+            "edid": "GuardFalkreathImperialBarracks",
+            "formKey": "105CA3:Skyrim.esm"
+          },
+          {
+            "edid": "LvlFalkreathHoldGuardImperial",
+            "formKey": "021823:Skyrim.esm"
+          },
+          {
+            "edid": "LvlFalkreathHoldGuardImperialJail",
+            "formKey": "0FCE7C:Skyrim.esm"
+          },
+          {
+            "edid": "LvlFalkreathHoldGuardImperialVoiceTypeMaleGuard",
+            "formKey": "0EC6E7:Skyrim.esm"
+          },
+          {
+            "edid": "GuardHjaalmarchImperial",
+            "formKey": "02C81B:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20,
+          "max": 50,
+          "from": {
+            "label": "`LCharGuardImperial` 0E7B2C: every leaf PC×1 [20–50], owned by `EncGuardImperialTemplate` 0F6F37"
+          }
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the hold guards Experienced, 30; the guard leaves they draw move with them"
+        },
+        "note": "the guards in their hold's uniform where the Empire holds it: Whiterun hold (`GuardWhiterunImperialTemplate` and 31 more: city, Dragonsreach, gate, jail, watchtower, `GuardRiverwoodImperial01`–`03`, `GuardRoriksteadImperial`, `…HorsePatrol`), Haafingar (`GuardSolitudeImperial*` (11), `TG04EastEmpireSolitudeImperial`/`Posted`, Haafingar, Dragon Bridge), the Reach (`GuardMarkarthImperial*` (9), Salvius Farm, Karthwasten, Kolskeggr, Left-Hand Mine, Soljund's, Calcelmo's tower, the CC Stendarr's Hammer gallery guard), Falkreath and Hjaalmarch (`GuardMorthalImperial*` (5)). The Dragon Bridge guard and `LvlFalkreathHoldGuardImperial` have no name of their own and take the rolled soldier's, \"Imperial Soldier\"."
+      },
+      {
+        "id": "hold-guard-stormcloak-held",
+        "name": "Riften Guard · Ivarstead Guard · Shor's Stone Guard · Rift Guard · Windhelm Guard · Dawnstar Guard · Winterhold Guard · Silver-Blood Guard",
+        "records": [
+          {
+            "edid": "TG00BribedGuardStormcloak",
+            "formKey": "07494C:Skyrim.esm"
+          },
+          {
+            "edid": "GuardSnowShodSons",
+            "formKey": "0300A4:Skyrim.esm"
+          },
+          {
+            "edid": "GuardHeartwoodMillSons",
+            "formKey": "09415F:Skyrim.esm"
+          },
+          {
+            "edid": "GuardMerryfairFarmSons",
+            "formKey": "030275:Skyrim.esm"
+          },
+          {
+            "edid": "GuardSarethiFarmSons",
+            "formKey": "0303ED:Skyrim.esm"
+          },
+          {
+            "edid": "GuardRiftenSonsKeepPrison01",
+            "formKey": "0458A7:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSons",
+            "formKey": "045C31:Skyrim.esm"
+          },
+          {
+            "edid": "ccBGSSSE001_GuardDawnstarSons",
+            "formKey": "06BBC8:ccbgssse001-fish.esm"
+          },
+          {
+            "edid": "ccBGSSSE001_GuardDawnstarSonsQuestEssential",
+            "formKey": "10DF82:ccbgssse001-fish.esm"
+          },
+          {
+            "edid": "GuardWinterholdSons",
+            "formKey": "024B63:Skyrim.esm"
+          },
+          {
+            "edid": "GuardMarkarthCidhnaMine",
+            "formKey": "03680A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20,
+          "max": 50,
+          "from": {
+            "label": "`LCharGuardSons` 0E7B2D: every leaf PC×1 [20–50], owned by `EncGuardSonsTemplate` 0F6F38"
+          }
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the hold guards Experienced, 30; the guard leaves they draw move with them"
+        },
+        "note": "the guards in their hold's uniform where the Stormcloaks hold it: the Rift (`GuardRiftenSons*`, the gate starts and `TG00BribedGuardStormcloak`: 36; Snow-Shod; `GuardIvarsteadSons*` (5); `GuardShorsStoneSons*` (4); the Rift farms), Eastmarch (`GuardWindhelmSons` and 7 more: shifts, gates, war room), the Pale (`GuardDawnstarSons*` (8), the CC Fishing guards), Winterhold (`GuardWinterholdSons`, `GuardWinterholdTownSons{Patrol,Patrol2,Post}`) and Cidhna Mine (`GuardMarkarthCidhnaMine`, the Silver-Blood Guard)."
+      },
+      {
+        "id": "pale-hold-guard",
+        "name": "Pale Hold Guard",
+        "records": [
+          {
+            "edid": "GuardLoreiusFarmSons",
+            "formKey": "043D22:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSonsVoiceTypeMaleNord` 087502: the six male Stormcloak soldier leaves, owned by `EncSoldierImperialTemplate` 01FC5D"
+          }
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the hold guards Experienced, 30 (it draws the soldier leaves, so the build gives it its own level)"
+        },
+        "note": "draws the soldier ladder, not the guard one."
+      },
+      {
+        "id": "western-watchtower-guards",
+        "name": "Whiterun Guard",
+        "encounter": "the Western Watchtower",
+        "records": [
+          {
+            "edid": "MQ104Soldier01",
+            "formKey": "0A27CC:Skyrim.esm"
+          },
+          {
+            "edid": "MQ104Soldier02",
+            "formKey": "0A4A3B:Skyrim.esm"
+          },
+          {
+            "edid": "MQ104Soldier03",
+            "formKey": "101996:Skyrim.esm"
+          },
+          {
+            "edid": "MQ104Soldier04",
+            "formKey": "101997:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.5,
+          "min": 2,
+          "max": 25
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the hold guards Experienced, 30; the guard leaves they draw move with them"
+        },
+        "note": "each its own level."
+      },
+      {
+        "id": "western-watchtower-survivor",
+        "name": "Whiterun Guard",
+        "encounter": "the Western Watchtower",
+        "records": [
+          {
+            "edid": "MQ104SoldierSurvivor",
+            "formKey": "0B799D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the hold guards Experienced, 30; the guard leaves they draw move with them"
+        },
+        "note": "the guard who survives the dragon attack."
+      },
+      {
+        "id": "whiterun-messenger",
+        "name": "Whiterun Guard",
+        "records": [
+          {
+            "edid": "MQ104Messenger",
+            "formKey": "0BD05C:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20,
+          "max": 50,
+          "from": {
+            "label": "`LCharGuardImperialVoiceTypeMaleGuard` 0EA640: five of the Imperial guard leaves"
+          }
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the guard leaves move to Experienced 30 with the hold guards; every guard that draws them follows"
+        }
+      },
+      {
+        "id": "cc-dragon-bridge-guard",
+        "name": "Guard",
+        "records": [
+          {
+            "edid": "ccBGSSSE058_GuardDragonBridgeImperial",
+            "formKey": "00081F:ccbgssse058-ba_steel.esl"
+          },
+          {
+            "edid": "ccBGSSSE058_GuardDragonBridgeSons",
+            "formKey": "000820:ccbgssse058-ba_steel.esl"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the hold guards Experienced, 30; the guard leaves they draw move with them"
+        },
+        "note": "own level 1; one for each side. Aldepius, their captain, is on *Unique Guards*."
+      },
+      {
+        "id": "cc-falkreath-guard",
+        "name": "Falkreath Guard",
+        "records": [
+          {
+            "edid": "ccBGSSSE001_MiscFalkreath_Guard",
+            "formKey": "000BBD:ccbgssse001-fish.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20,
+          "max": 50,
+          "from": {
+            "label": "`LCharGuardImperial` 0E7B2C: every leaf PC×1 [20–50], owned by `EncGuardImperialTemplate` 0F6F37"
+          }
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the guard leaves move to Experienced 30 with the hold guards; every guard that draws them follows"
+        },
+        "note": "wears `GuardSonsOutfit` and carries no weapon."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing the Imperial-held Whiterun guards (`LCharGuardImperial`, through `GuardWhiterunImperialTemplate` 0EA0A2) also needs `MQ301ImperialSoldier` 046EFC (the Imperial casualty of Odahviing's capture, starts dead, PC×1.5 [3–20]; listed as never met on the *Imperial Legion* group page): it uses `GuardWhiterunImperialPatrolDay` 0267EE as its template but not for `Stats`.",
+      "`MQ104Soldier01`–`04` use the guard leaves `EncGuardImperialM03`, `M08`, `M04`, `M09` (Imperial Legion → *Common Legion*) as templates but not for `Stats`, so they keep their own level when `EncGuardImperialTemplate` changes; `MQ104SoldierSurvivor` likewise keeps its level 1 under `LvlGuardImperialSingleVoiceTypeMaleNordCommander`.",
+      "`GuardLoreiusFarmSons` (moved here from Uncategorised, user, 2026-10-03) carries `Stats` and follows the Stormcloak soldier leaves; the records that keep their own level beside that ladder are listed on *Common Stormcloaks* and *Common Legion*.",
+      "The other rows: no other record keeps its own level.",
+      "Every other hold guard record (the shift, post, patrol, gate and jail variants under each hold base record, the `Lvl*` wrappers) carries `Stats` and follows its template or `LCharGuardImperial` / `LCharGuardSons`."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharGuardImperial",
+          "formKey": "0E7B2C:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player, so a flat pool",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the nine Imperial guard leaves (Imperial Legion → *Common Legion*)"
+          }
+        ],
+        "owner": "the Imperial-held hold guards above, through their hold base records; the Imperial garrison guards (*Common Legion*)"
+      },
+      {
+        "list": {
+          "label": "`LCharGuardImperialVoiceTypeMaleGuard` 0EA640 · `…MaleNordCommander` 0EA643"
+        },
+        "gate": "highest gate only (all at 1)",
+        "entries": [
+          {
+            "at": 1,
+            "label": "five and four of those leaves"
+          }
+        ],
+        "owner": "`LvlFalkreathHoldGuardImperialVoiceTypeMaleGuard` 0EC6E7, `MQ104Messenger`, the Calcelmo's tower Imperial guards; on *Common Legion*: `GuardRiftenImperialKeepPrison01`, CC `ccBGSSSE001_GuardDawnstarImperialQuestEssential`; on *Other Guards*: `LvlEastEmpireMercenary`"
+      },
+      {
+        "list": {
+          "edid": "LCharGuardSons",
+          "formKey": "0E7B2D:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player, so a flat pool",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the nine Stormcloak guard leaves (Stormcloaks → *Common Stormcloaks*)"
+          }
+        ],
+        "owner": "the Stormcloak-held hold guards above; the Stormcloak garrison guards (*Common Stormcloaks*)"
+      },
+      {
+        "list": {
+          "label": "`LCharGuardSonsVoiceTypeFemaleNord` 0EA646 · `…MaleGuard` 0EA644 · `…MaleNordCommander` 0EA645"
+        },
+        "gate": "highest gate only (all at 1)",
+        "entries": [
+          {
+            "at": 1,
+            "label": "three of those leaves each"
+          }
+        ],
+        "owner": "`GuardRiftenSonsKeepPrison01` 0458A7, CC `ccBGSSSE001_GuardDawnstarSonsQuestEssential`; the rest on *Common Stormcloaks*"
+      },
+      {
+        "list": {
+          "edid": "LCharSoldierSonsVoiceTypeMaleNord",
+          "formKey": "087502:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the six male Stormcloak soldier leaves (*Common Stormcloaks*)"
+          }
+        ],
+        "owner": "`GuardLoreiusFarmSons` (×1, `Tamriel` 00003C persistent, ref 043D1D); the rest on *Common Stormcloaks*"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Hold Guard (Imperial-held)",
+        "note": "Whiterun 44, Riverwood 3, Rorikstead 2, Solitude 25, the TG04 East Empire guards 4, Haafingar 2, Dragon Bridge 2, Markarth 31, Salvius Farm 1, Calcelmo's tower 4, the Reach towns 5, Falkreath 11, Morthal 9, Hjaalmarch 1"
+      },
+      {
+        "name": "Hold Guard (Stormcloak-held)",
+        "note": "Riften 37, Snow-Shod 3, Ivarstead 4, Shor's Stone 3, the Rift farms 4, Windhelm 24, Dawnstar 17 (CC 7 of them), Winterhold 4, Cidhna Mine 3 (`CidhnaMine01` 016203)"
+      },
+      {
+        "name": "Whiterun Guard (`MQ104Soldier01`–`04`, `…Survivor`, `MQ104Messenger`)",
+        "notPlaced": true,
+        "quest": "aliases `Soldier1`–`6`, `Survivor` of `MQ104`"
+      },
+      {
+        "name": "Guard (CC Dragon Bridge)",
+        "note": "`Tamriel` persistent ×1 each (ccbgssse058-ba_steel.esl)"
+      },
+      {
+        "name": "Falkreath Guard (CC)",
+        "note": "`FalkreathBarracks` 0EF325 ×1, initially disabled"
+      },
+      {
+        "name": "the hold base records (`Guard*Base`, the `Guard*Template` records, the `*PatrolDay*Exterior*` set, `GuardWindhelmSonsWarroom`)",
+        "notPlaced": true,
+        "note": "templates for placed guards"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Whiterun, Riverwood, Rorikstead",
+        "weapons": "`CWSoldierImperialGear` 0A6E61 (the jail guard: Steel Sword and Whiterun Jail Key 05AEC4; `…Gate2`: `CWSoldierSonsGear` 0A6E7A and Whiterun Gate Key 0D8F0C)",
+        "armor": "`GuardWhiterunOutfit` 0D33C6",
+        "skin": "race default"
+      },
+      {
+        "records": "Solitude, Haafingar, Dragon Bridge, TG04",
+        "weapons": "0A6E61",
+        "armor": "`ArmorHaafingarAllOutfit` 0853C5",
+        "skin": "race default"
+      },
+      {
+        "records": "Markarth, Salvius Farm, Karthwasten, Kolskeggr, Soljund's",
+        "weapons": "`GuardGear` 100561 (the museum guard adds the Dwemer Museum Key 094392)",
+        "armor": "`ReachHoldGuardOutfit` 035F4E",
+        "skin": "race default"
+      },
+      {
+        "records": "Left-Hand Mine",
+        "weapons": "0A6E61",
+        "armor": "`ReachHoldGuardOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Calcelmo's tower",
+        "weapons": "Imperial Sword · Imperial Bow · Iron Arrow · Steel Dagger · Dwemer Museum Key",
+        "armor": "`ReachHoldGuardOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Falkreath",
+        "weapons": "0A6E61 (the jail guard adds Falkreath Jail Key 0FB90C)",
+        "armor": "`GuardFalkreathOutfit` 0FCE7A",
+        "skin": "race default"
+      },
+      {
+        "records": "Morthal, Hjaalmarch",
+        "weapons": "0A6E61",
+        "armor": "`GuardOutfitHjaalmarch` 047380",
+        "skin": "race default"
+      },
+      {
+        "records": "Riften, Ivarstead, Shor's Stone, the Rift farms",
+        "weapons": "0A6E7A (the prison guards add Riften Jail Key 0612B8)",
+        "armor": "`GuardOutfitRift` 047382",
+        "skin": "race default"
+      },
+      {
+        "records": "Windhelm",
+        "weapons": "0A6E7A",
+        "armor": "`GuardWindhelm` 0FF282",
+        "skin": "race default"
+      },
+      {
+        "records": "Dawnstar, the Loreius Farm guard (`GuardLoreiusFarmSons`)",
+        "weapons": "`GuardGear` 100561 (the jailer adds Key to Dawnstar Jail 09DA41)",
+        "armor": "`GuardPaleOutfit` 0874FA",
+        "skin": "race default"
+      },
+      {
+        "records": "Winterhold",
+        "weapons": "0A6E7A (`GuardWinterholdSons` adds Winterhold Guard's Shield 0214F1)",
+        "armor": "`GuardWinterholdOutfit` 0D7885",
+        "skin": "race default"
+      },
+      {
+        "records": "Silver-Blood Guard",
+        "weapons": "Hunting Bow · Steel Arrow · Steel Dagger · Steel Mace 013988 · Torch · Key to Cidhna Mine 100FA6",
+        "armor": "`CidhnaMineGuardOutfit` 10E43B",
+        "skin": "race default"
+      },
+      {
+        "records": "Whiterun Guard (MQ104)",
+        "weapons": "0A6E7A · `CWSoldierSonsGearNoTorch` 10AA4E",
+        "armor": "`GuardWhiterunOutfitNormalHelmet` 10B2EF · `GuardWhiterunOutfit` · `GuardWhiterunOutfitNoHelmet` 0DD052",
+        "skin": "race default"
+      },
+      {
+        "records": "Guard (CC Dragon Bridge)",
+        "weapons": "0A6E61 · 0A6E7A",
+        "armor": "`ArmorHaafingarAllOutfit` · `GuardSonsOutfit` 0274B1",
+        "skin": "race default"
+      },
+      {
+        "records": "Falkreath Guard (CC)",
+        "weapons": "drink, food, gold, a torch",
+        "armor": "`GuardSonsOutfit`",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "GuardGear",
+          "formKey": "100561:Skyrim.esm"
+        },
+        "rolls": "all of: Hunting Bow, one `LItemSoldierSonsGuardWeapon1H` 046054 roll (Iron mace, sword or war axe at 1, Steel from 4), Steel Dagger, Torch, 12 Steel Arrows"
+      },
+      {
+        "list": {
+          "label": "`CWSoldierImperialGear` 0A6E61 · `CWSoldierSonsGear` 0A6E7A"
+        },
+        "rolls": "as on *Common Legion* and *Common Stormcloaks*"
+      },
+      {
+        "list": {
+          "edid": "GuardWhiterunOutfit",
+          "formKey": "0D33C6:Skyrim.esm"
+        },
+        "rolls": "Whiterun Guard's Armor, Shield and Helmet, Fur Boots"
+      },
+      {
+        "list": {
+          "edid": "ArmorHaafingarAllOutfit",
+          "formKey": "0853C5:Skyrim.esm"
+        },
+        "rolls": "Solitude Guard's Armor, Shield and Helmet, Imperial Boots and Bracers"
+      },
+      {
+        "list": {
+          "edid": "ReachHoldGuardOutfit",
+          "formKey": "035F4E:Skyrim.esm"
+        },
+        "rolls": "Markarth Guard's Armor, Shield and Helmet, Fur Boots and Gauntlets"
+      },
+      {
+        "list": {
+          "edid": "GuardOutfitRift",
+          "formKey": "047382:Skyrim.esm"
+        },
+        "rolls": "Riften Guard's Armor, Shield and Helmet, Fur Boots"
+      },
+      {
+        "list": {
+          "edid": "GuardWindhelm",
+          "formKey": "0FF282:Skyrim.esm"
+        },
+        "rolls": "Stormcloak Cuirass and Helmet, Windhelm Guard's Shield, Fur Boots and Gauntlets"
+      },
+      {
+        "list": {
+          "edid": "GuardPaleOutfit",
+          "formKey": "0874FA:Skyrim.esm"
+        },
+        "rolls": "Pale Guard's Armor, Shield and Helmet, Fur Boots and Gauntlets"
+      },
+      {
+        "list": {
+          "edid": "GuardFalkreathOutfit",
+          "formKey": "0FCE7A:Skyrim.esm"
+        },
+        "rolls": "Falkreath Guard's Armor, Shield and Helmet, Fur Boots"
+      },
+      {
+        "list": {
+          "edid": "GuardOutfitHjaalmarch",
+          "formKey": "047380:Skyrim.esm"
+        },
+        "rolls": "Hjaalmarch Guard's Armor, Shield and Helmet, Fur Boots"
+      },
+      {
+        "list": {
+          "edid": "GuardWinterholdOutfit",
+          "formKey": "0D7885:Skyrim.esm"
+        },
+        "rolls": "Winterhold Guard's Armor and Helmet, Fur Boots (no shield)"
+      },
+      {
+        "list": {
+          "edid": "CidhnaMineGuardOutfit",
+          "formKey": "10E43B:Skyrim.esm"
+        },
+        "rolls": "Steel Armor, Boots and Gauntlets (one of two variants each), Steel Shield"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "the holds' Guard's Armor and Helmets; Stormcloak Cuirass and Helmet; Fur Boots and Gauntlets",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "the holds' Guard's Shields; Imperial Boots and Bracers; Steel Armor, Boots, Gauntlets and Shield",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Iron and Steel maces, swords, war axes; Hunting and Imperial Bows; Imperial Sword; Steel Dagger; iron and steel arrows",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

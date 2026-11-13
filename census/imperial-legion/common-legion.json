@@ -152,9 +152,10 @@
           }
         },
         "target": {
-          "band": "IV",
+          "band": "V",
+          "level": 30,
           "status": "proposed",
-          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+          "source": "user, 2026-11-12: the guard leaves Experienced 30, with the hold guards that draw them (Guards → *Hold Guards*)"
         },
         "note": "the nine guard leaves of `LCharGuardImperial` (`EncGuardImperialM01`–`M09`)."
       },
@@ -285,9 +286,10 @@
           }
         },
         "target": {
-          "band": "IV",
+          "band": "V",
+          "level": 30,
           "status": "proposed",
-          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+          "source": "user, 2026-11-12: the guard leaves move to Experienced 30 with the hold guards; every guard that draws them follows"
         },
         "note": "the Imperial garrison guards, in Imperial army armour. Also the families without their own row here: `GuardRiftenImperial*` (36 with the gate starts and `TG00BribedGuardImperial`), `GuardIvarsteadImperial*` (5), `GuardShorsStoneImperial*` (4), `GuardDawnstarImperial*` (8), `GuardWinterholdTownImperial{Patrol,Patrol2,Post}`. Imperial Guard (the Rift) · Imperial Guard Jailor · Solitude Guard (Castle Dour, the jail); the rest have no name of their own and take the rolled soldier's, \"Imperial Soldier\"."
       },
@@ -842,7 +844,7 @@
     "items": [
       "Changing `EncSoldierImperialTemplate` 01FC5D also needs 12 records that use it, a leaf, or `EncSoldierSonsTemplate` 027498 (which takes `Stats` from it) as template but not for `Stats`: `EncGuardSonsTemplate` 0F6F38 (PC×1 [20–50], on *Common Stormcloaks*); the CC champions `ccFFBSSE001_NPC_ImperialChampion` 00086A · `…Backup` 000956 (PC×1.1 [15–45], on *Named Legion*), `ccFFBSSE001_NPC_StormcloakChampion` 00086C · `…Backup` 000957 (PC×1 [10–35]) and `ccFFBSSE001_KlijaBaseBountyFixChampion` 00095D (PC×1.25 [20–60]), all ccffbsse001-imperialdragon.esl (on *Named Stormcloaks*); the Sovngarde lost souls `MQ304LostSoulImperial` 091AF2 · `…2` 0173C1 (on the Nord leaves M01 and M03) and `MQ304LostSoulSons` 090A47 · `…2` 0173C0 · `…3` 0173C2 (PC×1.5 [3–20]; listed as never met on the *Imperial Legion* and *Stormcloaks* group pages); `dunBluePalaceBully` 09F851 (Anger, level 1, on World → *Haafingar Countryside*). `EncGuardImperialTemplate` 0F6F37 is a row of its own.",
       "Changing the leaves (`LCharSoldierImperial`) also needs `CWFortSoldierImperialWounded` 0FD8AA (camp dressing, level 1): it takes its template from `CWSoldierImperial` 01B547, which draws them, without `Stats`; and `DLC1dunRedwaterDenAddictCWMaleCommander` 008D29:Dawnguard.esm (Imperial Deserter, level 1): it takes its template from `LCharSoldierImperialVoiceTypeMaleSoldier`, which draws the five MaleSoldier leaves, without `Stats`. Both are listed on the *Imperial Legion* group page as not enemies (on no census page).",
-      "Changing `EncGuardImperialTemplate` 0F6F37 also needs `MQ104Soldier01`–`04` 0A27CC · 0A4A3B · 101996 · 101997 (the Western Watchtower guards, PC×0.5 [2–25], on Guards → *Hold Guards*): they use the guard leaves M03, M08, M04, M09 as template but not for `Stats`; and, through `LCharGuardImperial`, `GuardWinterholdCollege` 105CBB (40, on Guards → *Other Guards*; template `LvlGuardImperial`), `MQ104SoldierSurvivor` 0B799D (1, on *Hold Guards*; template `LvlGuardImperialSingleVoiceTypeMaleNordCommander`) and `MQ301ImperialSoldier` 046EFC (PC×1.5 [3–20], starts dead; template `GuardWhiterunImperialPatrolDay`; listed as never met on *Imperial Legion*): each takes its template from a wrapper on that list without `Stats`.",
+      "Changing `EncGuardImperialTemplate` 0F6F37 also needs `MQ104Soldier01`–`04` 0A27CC · 0A4A3B · 101996 · 101997 (the Western Watchtower guards, PC×0.5 [2–25], on Guards → *Hold Guards*): they use the guard leaves M03, M08, M04, M09 as template but not for `Stats`; and, through `LCharGuardImperial`, `MQ104SoldierSurvivor` 0B799D (1, on *Hold Guards*; template `LvlGuardImperialSingleVoiceTypeMaleNordCommander`) and `MQ301ImperialSoldier` 046EFC (PC×1.5 [3–20], starts dead; template `GuardWhiterunImperialPatrolDay`; listed as never met on *Imperial Legion*): each takes its template from a wrapper on that list without `Stats`.",
       "The Imperial Wizard's level 6 is owned by `EncWarlock02TemplateFire` 045C5F (on Warlocks → *Pyromancers*). Changing it also needs `EncWarlock02TemplateBossFire` 0E0FBF (7, on *Warlock Bosses*), which uses it as template but not for `Stats`, and six CC records that take their template from `LvlWarlockElemental`, which draws it, without `Stats`: the Almsivi `ccASVSSE001_ElderDrevlan`, `…CaretakerIneril`, `…Priest02`, `…Priest03`, `…PriestDrureth` (on *Ghosts of the Tribunal*) and `ccBGSSSE013_GreenGuardian` 000845:ccbgssse013-dawnfang.esl.",
       "The other rows: no other record keeps its own level (`MQ101ImperialSoldierCartDriver` uses `MQ101ImperialSoldier01` as template without `Stats`, but shares the Helgen row at the same level).",
       "Every other record that looks like a row (the `CWFort*`, `CWSiege*`, `CWSoldierImperial*`, `MQ103` and `CW` mission wrappers, the garrison and hold guards, every `Lvl*` wrapper, and the rows moved here from Uncategorised: the Windhelm shifts, `CWPrisonerImperialB`/`C`, `GuardLoreiusFarmImperial`) carries `Stats` and follows its template or list."
@@ -976,8 +978,8 @@
               }
             ],
             "how": "template",
-            "where": "Factions → Guards → *Hold Guards*",
-            "note": "and the hold guards' base records: 41 take `LvlGuardImperial` 01FC62 as template"
+            "note": "and the hold guards' base records: 41 take `LvlGuardImperial` 01FC62 as template",
+            "page": "guards/hold-guards"
           }
         ]
       },
@@ -995,20 +997,16 @@
         "owner": "`LvlGuardImperialSingleVoiceTypeMaleGuard` 0A4A39 and `…MaleNordCommander` 0AAF94 → `GuardRiftenImperialKeepPrison01`, CC `ccBGSSSE001_GuardDawnstarImperialQuestEssential`",
         "drawnBy": [
           {
-            "name": "hold and other guards",
+            "name": "Whiterun Guard (the Western Watchtower survivor)",
             "records": [
               {
                 "edid": "MQ104SoldierSurvivor",
                 "formKey": "0B799D:Skyrim.esm"
-              },
-              {
-                "edid": "GuardWinterholdCollege",
-                "formKey": "105CBB:Skyrim.esm"
               }
             ],
             "how": "template",
-            "where": "Factions → Guards → *Hold Guards* · *Other Guards*",
-            "note": "through the `LvlGuardImperialSingleVoiceType*` and `LvlGuardImperial` wrappers"
+            "note": "through `LvlGuardImperialSingleVoiceTypeMaleNordCommander`, without `Stats`: keeps its own level 1",
+            "page": "guards/hold-guards"
           }
         ]
       }

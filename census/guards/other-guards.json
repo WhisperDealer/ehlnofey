@@ -1,0 +1,345 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "other-guards",
+  "group": "guards",
+  "title": "Other Guards",
+  "order": 3,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "east-empire-warden",
+        "name": "East Empire Warden",
+        "records": [
+          {
+            "edid": "TG04EECGuard",
+            "formKey": "0CA6D1:Skyrim.esm"
+          },
+          {
+            "edid": "ccBGSSSE056_EECGuard",
+            "formKey": "000821:ccbgssse056-ba_silver.esl"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "edid": "LCharBanditMelee1HTank",
+            "formKey": "03DEC9:Skyrim.esm"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "V",
+          "level": 32,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the East Empire Wardens 32 (the build gives them their own level off the bandit ladder)"
+        },
+        "note": "`Stats` through `LvlBanditMelee1HTank`."
+      },
+      {
+        "id": "east-empire-mercenary",
+        "name": "East Empire Mercenary",
+        "records": [
+          {
+            "edid": "LvlEastEmpireMercenary",
+            "formKey": "056AFD:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20,
+          "max": 50,
+          "from": {
+            "label": "`LCharGuardImperialVoiceTypeMaleNordCommander` 0EA643: four of the Imperial guard leaves"
+          }
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the guard leaves move to Experienced 30 with the hold guards; every guard that draws them follows"
+        }
+      },
+      {
+        "id": "wizards-guard",
+        "name": "Wizards' Guard",
+        "records": [
+          {
+            "edid": "dunMarkarthWizardSecurity_Melee_EvenTonedM",
+            "formKey": "0154C7:Skyrim.esm"
+          },
+          {
+            "edid": "dunMarkarthWizardSecurity_Melee_EvenTonedF",
+            "formKey": "0154C8:Skyrim.esm"
+          },
+          {
+            "edid": "dunMarkarthWizardSecurity_Missile_EvenTonedM",
+            "formKey": "0154C9:Skyrim.esm"
+          },
+          {
+            "edid": "dunMarkarthWizardSecurity_Missile_EvenTonedF",
+            "formKey": "0154CA:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "`LCharBanditMeleeEvenTonedM` · `…F`, `LCharBanditMissileEvenTonedM` · `…F` (through `LvlBandit{Melee,Missile}EvenToned{M,F}`)"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "VI",
+          "level": 40,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Wizards' Guards 40 (their own level off the bandit ladder)"
+        },
+        "note": "Calcelmo's hired guards in the Markarth Wizards' Quarters; two melee, two missile."
+      },
+      {
+        "id": "captain-aquilius",
+        "name": "Captain Aquilius",
+        "records": [
+          {
+            "edid": "dunMarkarthWizardSecurity_Melee_Captain",
+            "formKey": "0154E7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "list",
+          "from": {
+            "label": "`LCharBanditMeleeEvenTonedM`, through `dunMarkarthWizardSecurity_Melee_EvenTonedM` 0154C7"
+          },
+          "rungs": [
+            1,
+            5,
+            9,
+            14,
+            19,
+            25
+          ]
+        },
+        "target": {
+          "band": "VII",
+          "level": 42,
+          "status": "proposed",
+          "source": "user, 2026-11-12: Captain Aquilius 42 (his own level off the bandit ladder)"
+        }
+      },
+      {
+        "id": "kolbjorn-guard",
+        "name": "Kolbjorn Guard",
+        "records": [
+          {
+            "edid": "DLC2dunKolbjornMiner_GuardM01",
+            "formKey": "0277FC:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2dunKolbjornMiner_GuardM02",
+            "formKey": "027803:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2dunKolbjornMiner_GuardM03",
+            "formKey": "027804:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2dunKolbjornMiner_GuardM04",
+            "formKey": "027805:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "target": {
+          "band": "I",
+          "level": 5,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "each its own level 5."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The rows: no other record keeps its own level.",
+      "Every other record that looks like a row (`DLC2dunKolbjornGuard` 027807:Dragonborn.esm on `DLC2LCharKolbjornGuard`) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC2LCharKolbjornGuard",
+          "formKey": "027806:Dragonborn.esm"
+        },
+        "gate": "every gate ≤ player, so a flat pool",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the four Kolbjorn Guards"
+          }
+        ],
+        "owner": "`DLC2dunKolbjornGuard` 027807 (×6, `DLC2KolbjornBarrowExterior01` 00EF16:Dragonborn.esm, behind enable parents 026665 and 026666)"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "East Empire Warden",
+        "note": "`TG04EECGuard` ×4 `EastEmpireWarehouseInternalDocks` 04F83D (enable parent 1007F9); CC ×2, `LundsHutExterior01` 009536 and Tamriel cell 009535 (enable parent 000819:ccbgssse056-ba_silver.esl)"
+      },
+      {
+        "name": "East Empire Mercenary",
+        "note": "×3 `JaphetsFollyShip` 094B39 (enable parent 056B01, initially disabled), ×1 `Tamriel` persistent (`MS10StartAssaultMercREF` 052280, initially disabled)"
+      },
+      {
+        "name": "Wizards' Guard",
+        "note": "`MarkarthWizardsQuarters02` 036A72: melee M ×3, missile F ×3, missile M ×1; `MarkarthWizardsQuarters03` 0547F0: melee F ×1, missile F ×1, missile M ×1"
+      },
+      {
+        "name": "Captain Aquilius",
+        "note": "`MarkarthWizardsQuarters03` ×1 (persistent)"
+      },
+      {
+        "name": "Kolbjorn Guard",
+        "note": "`…GuardM01` ×1 `DLC2KolbjornBarrowExterior01`; `…GuardM02` ×3 and `…GuardM04` ×1 `DLC2KolbjornBarrow01` 0142EE; `…GuardM03` only through the list"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "East Empire Warden (both)",
+        "weapons": "`LItemWeaponMace` 016577 · Torch · `LItemPotionRestoreHealth` 03A16A · Wine · `CoinPurseGoldSmall` 0D790B",
+        "armor": "`TG04GuardOutfit` 0FF154",
+        "skin": "race default"
+      },
+      {
+        "records": "East Empire Mercenary",
+        "weapons": "`CWSoldierImperialGear` 0A6E61 (from the drawn leaf)",
+        "armor": "`GuardImperialOutfit` 0267EF (from the drawn leaf)",
+        "skin": "race default"
+      },
+      {
+        "records": "Wizards' Guard (melee), Captain Aquilius",
+        "weapons": "Iron Dagger · `LItemBanditWeapon1H` 037C1B · `dunMarkarthWizardMeleeSecurityShield` 0154E5 · `LootBanditGold` 037C27 · Calcelmo's Laboratory Key 055901 · Dwemer Museum Key 094392",
+        "armor": "`dunMarkarthWizardMeleeSecurityOutfit` 0154E0",
+        "skin": "race default"
+      },
+      {
+        "records": "Wizards' Guard (missile)",
+        "weapons": "Steel Dagger · `LItemBanditWeaponMissile` 037BFD · `LootBanditGold` · the two keys",
+        "armor": "`dunMarkarthWizardMeleeSecurityOutfit` 0154E0",
+        "skin": "race default"
+      },
+      {
+        "records": "Kolbjorn Guard",
+        "weapons": "`LItemBanditWeapon1H` 037C1B · `LootGoldChange` 037C2B",
+        "armor": "`ArmorIronandHideMixed` 0ABDA1 (M01, M02) · `ArmorIronAllOutfit` 01697C (M03, M04)",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemWeaponMace",
+          "formKey": "016577:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron 1 · Steel 2 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46"
+      },
+      {
+        "list": {
+          "edid": "dunMarkarthWizardMeleeSecurityShield",
+          "formKey": "0154E5:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "rolls": "Banded Iron Shield 1 · Steel Shield 6"
+      },
+      {
+        "list": {
+          "edid": "dunMarkarthWizardMeleeSecurityOutfit",
+          "formKey": "0154E0:Skyrim.esm"
+        },
+        "gate": "highest gate only, per slot",
+        "rolls": "Steel Armor 1 → Steel Plate Armor 18; Steel boots 1 → Steel Plate Boots 18; Steel gauntlets 1 → Steel Plate Gauntlets 15; Steel helmet 1 → Steel Plate Helmet 18"
+      },
+      {
+        "list": {
+          "edid": "TG04GuardOutfit",
+          "formKey": "0FF154:Skyrim.esm"
+        },
+        "rolls": "Steel Armor, Steel Cuffed Boots, Steel Helmet, Hide Bracers"
+      },
+      {
+        "list": {
+          "edid": "ArmorIronandHideMixed",
+          "formKey": "0ABDA1:Skyrim.esm"
+        },
+        "rolls": "Iron Armor, Hide Boots, Hide Bracers"
+      },
+      {
+        "list": {
+          "edid": "ArmorIronAllOutfit",
+          "formKey": "01697C:Skyrim.esm"
+        },
+        "rolls": "Iron Armor, Helmet, Boots, Gauntlets"
+      },
+      {
+        "list": {
+          "label": "`LItemBanditWeapon1H` 037C1B · `LItemBanditWeaponMissile` 037BFD"
+        },
+        "rolls": "the bandit weapon lists (Bandits → *Common Bandits*)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Steel and Steel Plate armor, Iron armor, Banded Iron and Steel Shields",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Hide Boots and Bracers",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Iron and Steel Daggers; the maces",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

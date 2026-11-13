@@ -1,0 +1,299 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "unique-guards",
+  "group": "guards",
+  "title": "Unique Guards",
+  "order": 4,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "commander-caius",
+        "name": "Commander Caius",
+        "records": [
+          {
+            "edid": "CommanderCaius",
+            "formKey": "038257:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 10
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Commander Caius Elite"
+        }
+      },
+      {
+        "id": "sinmir",
+        "name": "Sinmir",
+        "records": [
+          {
+            "edid": "Sinmir",
+            "formKey": "0813B5:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 4
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Sinmir Elite"
+        }
+      },
+      {
+        "id": "urzoga-gra-shugurz",
+        "name": "Urzoga gra-Shugurz",
+        "records": [
+          {
+            "edid": "UrzogaGraShugurz",
+            "formKey": "0133BE:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 20,
+          "max": 50
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Urzoga gra-Shugurz Elite"
+        }
+      },
+      {
+        "id": "captain-veleth",
+        "name": "Captain Veleth",
+        "records": [
+          {
+            "edid": "DLC2RRModynVeleth",
+            "formKey": "0182AC:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 25,
+          "max": 50
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Captain Veleth Elite"
+        }
+      },
+      {
+        "id": "aldepius",
+        "name": "Aldepius",
+        "records": [
+          {
+            "edid": "ccBGSSSE058_AldepiusImperial",
+            "formKey": "00081E:ccbgssse058-ba_steel.esl"
+          },
+          {
+            "edid": "ccBGSSSE058_AldepiusSons",
+            "formKey": "000824:ccbgssse058-ba_steel.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20,
+          "max": 50,
+          "from": {
+            "label": "`LCharGuardImperial` · `LCharGuardSons`, through `GuardDragonBridgeImperial` 0212BA · `…Sons` 0212BB"
+          }
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Aldepius Experienced (he draws the guard leaves, now 30)"
+        },
+        "note": "the CC Dragon Bridge guard captain, one for each side; both `Essential`."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The rows: no other record keeps its own level; no record uses any of them as a template."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "`LCharGuardImperial` 0E7B2C · `LCharGuardSons` 0E7B2D"
+        },
+        "entries": [
+          {
+            "at": 1,
+            "label": "the hold guard leaves (*Hold Guards*)"
+          }
+        ],
+        "owner": "Aldepius, through the Dragon Bridge guards"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Commander Caius",
+        "note": "`WhiterunGuardHouse` 036ED6 (`CommanderCaiusRef` 038258); `GuardFactionWhiterun`, `JobGuardCaptainFaction`; `Essential`"
+      },
+      {
+        "name": "Sinmir",
+        "note": "`WhiterunBanneredMare` 01605E (`SinmirRef` 0813BA); `GuardFactionWhiterun`, `JobGuardCaptainFaction`; `Essential`"
+      },
+      {
+        "name": "Urzoga gra-Shugurz",
+        "note": "`CidhnaMine01` 016203 (`UrzogaREF` 019918); `GuardFactionCidhnaMine`"
+      },
+      {
+        "name": "Captain Veleth",
+        "note": "`DLC2SolstheimWorld` persistent (`DLC2ModynRef` 0182AD); `DLC2RavenRockGuardFaction`; `Essential`"
+      },
+      {
+        "name": "Aldepius",
+        "note": "`Tamriel` persistent, ×1 each side, behind enable parents 0212AC · 0212AD"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Commander Caius",
+        "weapons": "`LItemWeaponSwordBest` 0571AA · `LootCitizenPocketsCommon` 1046D1",
+        "armor": "`GuardWhiterunOutfitNoHelmet` 0DD052",
+        "skin": "race default"
+      },
+      {
+        "records": "Sinmir",
+        "weapons": "`LItemWeaponBattleAxeBest` 05719B",
+        "armor": "`ArmorBandedIronAllOutfit` 0B1FAE",
+        "skin": "race default"
+      },
+      {
+        "records": "Urzoga gra-Shugurz",
+        "weapons": "Steel Shield 013955 · `LItemWeaponMace` 016577 · `LItemBanditWeaponMissile` 037BFD · Key to Cidhna Mine 100FA6",
+        "armor": "`ArmorSteelNoHelmetOutfit` 028B44",
+        "skin": "race default"
+      },
+      {
+        "records": "Captain Veleth",
+        "weapons": "Elven Battleaxe 01399C · `LootCitizenPocketsCommon`",
+        "armor": "`DLC2RRModynVelethOutfit` 035E41:Dragonborn.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Aldepius (Imperial · Stormcloak)",
+        "weapons": "`CWSoldierImperialGear` 0A6E61 · `CWSoldierSonsGear` 0A6E7A",
+        "armor": "`ArmorHaafingarAllOutfitNoHelmet` 0EF943 · `CWSoldierSonsSoldierOutfitNoHelmet` 0ABF56",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemWeaponSwordBest",
+          "formKey": "0571AA:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "rolls": "Steel 1 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponBattleAxeBest",
+          "formKey": "05719B:Skyrim.esm"
+        },
+        "gate": "highest gate only",
+        "rolls": "Steel 1 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponMace",
+          "formKey": "016577:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron 1 · Steel 2 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46"
+      },
+      {
+        "list": {
+          "edid": "GuardWhiterunOutfitNoHelmet",
+          "formKey": "0DD052:Skyrim.esm"
+        },
+        "rolls": "Whiterun Guard's Armor, Fur Boots"
+      },
+      {
+        "list": {
+          "edid": "ArmorBandedIronAllOutfit",
+          "formKey": "0B1FAE:Skyrim.esm"
+        },
+        "rolls": "Banded Iron Armor, Iron Helmet, Boots, Gauntlets"
+      },
+      {
+        "list": {
+          "edid": "ArmorSteelNoHelmetOutfit",
+          "formKey": "028B44:Skyrim.esm"
+        },
+        "rolls": "Steel Armor, Boots, Gauntlets (one of two variants each)"
+      },
+      {
+        "list": {
+          "edid": "DLC2RRModynVelethOutfit",
+          "formKey": "035E41:Dragonborn.esm"
+        },
+        "rolls": "Bonemold Guard Armor, Bonemold Boots, Bonemold Gauntlets"
+      },
+      {
+        "list": {
+          "edid": "ArmorHaafingarAllOutfitNoHelmet",
+          "formKey": "0EF943:Skyrim.esm"
+        },
+        "rolls": "Solitude Guard's Armor and Shield, Imperial Boots and Bracers"
+      },
+      {
+        "list": {
+          "edid": "CWSoldierSonsSoldierOutfitNoHelmet",
+          "formKey": "0ABF56:Skyrim.esm"
+        },
+        "rolls": "a Stormcloak set without helmet"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Whiterun Guard's Armor, Fur Boots, Solitude Guard's Armor, Stormcloak Cuirass",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Banded Iron, Iron, Steel and Bonemold armor; Steel and Solitude Guard's Shields; Imperial Boots and Bracers",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "the swords, battleaxes and maces; Elven Battleaxe",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

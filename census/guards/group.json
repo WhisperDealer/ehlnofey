@@ -1,0 +1,109 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "guards",
+  "title": "Guards",
+  "order": 5,
+  "parent": "factions",
+  "meta": {
+    "spec": "archetype-tiers.md §6",
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The guards: the hold guards, the Redoran guards, the other guard kinds and the unique guards, vanilla, DLC and CC. Every hold guard takes its level from the guard leaves of `LCharGuardImperial` or `LCharGuardSons`, which move to Experienced 30 with them (user, 2026-11-12), so every guard drawing them follows, the Imperial and Stormcloak garrison guards included. The soldier leaves stay Blooded.",
+  "families": [
+    {
+      "id": "hold-guards",
+      "holds": "one Hold Guard row per side: every guard in its hold's uniform, Imperial-held or Stormcloak-held (level from `LCharGuardImperial` or `LCharGuardSons`: PC×1 [20–50]); the MQ104 Whiterun guards; the CC Dragon Bridge and Falkreath guards"
+    },
+    {
+      "id": "redoran-guards",
+      "holds": "the Raven Rock guards (`DLC2RRGuardTemplate`, PC×1 [20–50]) and the CC ALMSIVI Redoran guards"
+    },
+    {
+      "id": "other-guards",
+      "holds": "East Empire Wardens and Mercenaries, the Wizards' Guards and Captain Aquilius, the Kolbjorn guards"
+    },
+    {
+      "id": "unique-guards",
+      "holds": "Commander Caius, Sinmir, Urzoga gra-Shugurz, Captain Veleth, Aldepius (CC)"
+    }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-10-02)",
+    "confidence": "verified",
+    "text": "Every NPC in Skyrim, Update, Dawnguard, HearthFires, Dragonborn and the 74 CC packs that is in `GuardDialogueFaction` 02BE3B, `IsGuardFaction` 086EEE, `JobGuardCaptainFaction` 0813B7, a `GuardFaction*` (Cidhna Mine, Dawnstar, Dragon Bridge, Falkreath, Haafingar, Karthwasten, Kolskeggr, Markarth, Riften, Solitude, Soljund's, Whiterun, Windhelm), `DragonsreachBasementGuards` 065795 or `DLC2RavenRockGuardFaction` 0195AD:Dragonborn.esm; or whose EditorID or name marks a guard; or who wears a guard outfit; every `LVLN` named `LCharGuard*` or `DLC2LCharKolbjornGuard`; then every record that takes a template from one of them, every placed reference in every cell and worldspace, and every quest that names one. No plugin overrides a guard list. The College Guard `GuardWinterholdCollege` 105CBB is out of the census (2026-11-12): not placed, and no quest, list, script or CC plugin names it."
+  },
+  "filedElsewhere": [
+    {
+      "record": "the guard-list leaves (`EncGuardImperial*`, `EncGuardSons*` and their templates) and the guards in Imperial or Stormcloak army armour (the occupying side's garrison in each hold)",
+      "what": "Imperial Soldier, Imperial Guard, Stormcloak Soldier, Stormcloak Guard",
+      "where": "Imperial Legion → *Common Legion*; Stormcloaks → *Common Stormcloaks*"
+    },
+    {
+      "record": "Captain Aldis `CaptainAldis` 041FB8",
+      "what": "Solitude's guard captain",
+      "where": "Imperial Legion → *Named Legion*"
+    },
+    {
+      "record": "the Orc stronghold members (Bolar, Murbul, Borgakh, Ghorbash, Chief Yamarz and their kin)",
+      "what": "in `IsGuardFaction` 086EEE",
+      "where": "World → Orc Strongholds"
+    },
+    {
+      "record": "Kodlak, Skjor, Aela, Farkas, Vilkas",
+      "what": "in `IsGuardFaction`",
+      "where": "Companions"
+    },
+    {
+      "record": "`MS09LvlGuard` 0C07C2 · `MS09LvlMelee1H` 027F78",
+      "what": "Northwatch Guard",
+      "where": "Thalmor → *Common Thalmor*"
+    },
+    {
+      "record": "`ccBGSSSE067_LvlMythicDawnGuard` 0856A4 · `…Patrol` 000E57 (ccbgssse067-daedinv.esm)",
+      "what": "Mythic Dawn Guard, cultists",
+      "where": "Daedra → *Mythic Dawn (CC)*"
+    },
+    {
+      "record": "`dunNilheimLvlBanditGuard` 01BB21",
+      "what": "\"Guard\", a Nilheim bandit",
+      "where": "Bandits → *Bandit Gangs*"
+    },
+    {
+      "record": "`CaptainLonelyGale` 014134",
+      "what": "Captain Lonely-Gale, in `WindhelmPalaceoftheKings`; in no guard faction, fine clothes",
+      "where": "not a guard"
+    },
+    {
+      "record": "`Rexus` 05BF2B",
+      "what": "Rexus, Imperial soldier in `Volunruud01` 0151FB (initially disabled)",
+      "where": "not a guard"
+    },
+    {
+      "record": "`MQ301ImperialSoldier` 046EFC · `MQ301SonsSoldier` 046EFD",
+      "what": "the casualties of Odahviing's capture, templated on Whiterun guard records",
+      "where": "Imperial Legion and Stormcloaks group pages"
+    }
+  ],
+  "neverMet": [
+    {
+      "record": "`TreasCorpseGuardRiften01`/`02` 0F62EF · 0F62F0 · `TreasCorpseMarkarthGuard` 05CF3F",
+      "what": "Riften and Markarth guard corpses",
+      "why": "corpses"
+    },
+    {
+      "record": "`WhiterunTempleWoundedSoldier` 0D74F5",
+      "what": "Wounded Soldier, level 1, in `WhiterunTempleofKynareth` 0165A7",
+      "why": "temple dialogue only"
+    },
+    {
+      "record": "`E3DemoSoldier01` 0D7779",
+      "what": "E3 demo Whiterun guards",
+      "why": "×3 behind enable parent 0BC06B"
+    },
+    {
+      "record": "`MS08WhiterunGuard` 0215D5",
+      "what": "Whiterun Guard, level 1, own inventory (Imperial Armor, Sword, Shield)",
+      "why": "×4 in `WhiterunPlainsDistrict03`/`04`, initially disabled (`MS08` refs)"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "housecarls",
+  "title": "Housecarls",
+  "order": 6,
+  "parent": "factions",
+  "meta": {
+    "spec": "archetype-tiers.md §6.1",
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The housecarls: the player's housecarls, the Jarls and their housecarls, vanilla, DLC and CC. Each one owns its own level; no leveled list draws any of them.",
+  "families": [
+    {
+      "id": "player-housecarls",
+      "holds": "Lydia, Argis the Bulwark, Calder, Iona, Jordis the Sword-Maiden; the HearthFires housecarls Gregor, Rayya and Valdimar"
+    },
+    {
+      "id": "jarls",
+      "holds": "the Jarls of the nine holds on both civil-war sides, and each Jarl's housecarl; Hrongar, Bryling and Erikur (in the Jarl faction, holding nothing)"
+    }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-10-02)",
+    "confidence": "verified",
+    "text": "Every NPC in Skyrim, Update, Dawnguard, HearthFires, Dragonborn and the 74 CC packs that is in `PlayerHousecarlFaction` 0A2C8D, `BYOHHousecarlFaction` 008460:HearthFires.esm, `JobHousecarlFaction` 05091F or `JobJarlFaction` 050920, plus Bolgeir Bearclaw (Elisif's housecarl, in none of them); every record that takes a template from one of them; every placed reference. No CC pack adds a jarl or a housecarl, and no leveled list draws one."
+  },
+  "filedElsewhere": [
+    {
+      "record": "`Ulfric` 01414D · `Galmar` 014128",
+      "what": "Ulfric Stormcloak, Jarl of Eastmarch, and Galmar Stone-Fist, his housecarl",
+      "where": "Stormcloaks → *Named Stormcloaks*"
+    },
+    {
+      "record": "`MQ304Ulfric` 0EA581 · `MQ304Galmar` 0EA582",
+      "what": "Ulfric and Galmar in Sovngarde",
+      "where": "Stormcloaks → *Named Stormcloaks*"
+    }
+  ]
+}

@@ -8,7 +8,7 @@
     "spec": "archetype-tiers.md §6",
     "updated": "2026-11-12"
   },
-  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The Imperial Legion: the soldier list, the siege archers and wizards, Helgen, the guard garrisons, the field legates and the named officers, vanilla, DLC and CC. Every soldier takes its level from one record, `EncSoldierImperialTemplate` 01FC5D, which also carries the Stormcloak soldiers; their bands rise with rank (user, 2026-11-12): the Courier Trained; soldiers, guards, archers, quartermasters and prisoners Blooded; officers and fort commanders Experienced; field legates and generals Elite. Superseded: archetype-tiers.md §6 gave the leaves 25 / 30 / 35 and pinned the single fixed soldiers at 30.",
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The Imperial Legion: the soldier list, the siege archers and wizards, Helgen, the guard garrisons, the field legates and the named officers, vanilla, DLC and CC. Every soldier takes its level from one record, `EncSoldierImperialTemplate` 01FC5D, which also carries the Stormcloak soldiers; their bands rise with rank (user, 2026-11-12): the Courier Trained; soldiers, archers, quartermasters and prisoners Blooded; the guard leaves and garrison guards Experienced 30, with the hold guards; officers and fort commanders Experienced; field legates and generals Elite. Superseded: archetype-tiers.md §6 gave the leaves 25 / 30 / 35 and pinned the single fixed soldiers at 30.",
   "families": [
     {
       "id": "common-legion",

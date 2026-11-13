@@ -1,0 +1,253 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "redoran-guards",
+  "group": "guards",
+  "title": "Redoran Guards",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "redoran-guard",
+        "name": "Redoran Guard",
+        "encounter": "Raven Rock",
+        "records": [
+          {
+            "edid": "DLC2RRGuardTemplate",
+            "formKey": "0195AF:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2RRGuardBarracks",
+            "formKey": "0195B7:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2RRGuardGateExterior",
+            "formKey": "0195B3:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2RRGuardJail",
+            "formKey": "0195B6:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2RRGuardMarketExterior",
+            "formKey": "0195B4:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2RRGuardMorvaynManorExterior",
+            "formKey": "0195B1:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2RRGuardMorvaynManorInterior",
+            "formKey": "0195B0:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2RRGuardPatrol",
+            "formKey": "0195B5:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2RRGuardPatrolBulwark",
+            "formKey": "033D09:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2RRGuardPatrolBulwark02",
+            "formKey": "033D0D:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2RRGuardTempleExterior",
+            "formKey": "0195B2:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2RRGuardTunnel",
+            "formKey": "033D11:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20,
+          "max": 50,
+          "from": {
+            "edid": "DLC2RRGuardTemplate",
+            "formKey": "0195AF:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Redoran Guards Experienced, 34"
+        },
+        "note": "`DLC2RRGuardTemplate` and the Raven Rock guards on it."
+      },
+      {
+        "id": "redoran-guard-earth-stone",
+        "name": "Redoran Guard",
+        "encounter": "the Earth Stone",
+        "records": [
+          {
+            "edid": "DLC2PillarRRGuardA",
+            "formKey": "03CA51:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2PillarRRGuardB",
+            "formKey": "03CA52:Dragonborn.esm"
+          },
+          {
+            "edid": "DLC2PillarRRGuardC",
+            "formKey": "03CA53:Dragonborn.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20,
+          "max": 50,
+          "from": {
+            "edid": "DLC2RRGuardTemplate",
+            "formKey": "0195AF:Dragonborn.esm"
+          }
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Redoran Guards Experienced, 34"
+        },
+        "note": "B and C take `BaseData` from A, which takes it from the template."
+      },
+      {
+        "id": "redoran-guard-cc",
+        "name": "Redoran Guard",
+        "records": [
+          {
+            "edid": "ccASVSSE001_RedoranGuard",
+            "formKey": "000F22:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20,
+          "max": 50
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Redoran Guards Experienced, 34"
+        },
+        "note": "own level; inherits only spells, AI and keywords from `DLC2RRGuardTemplate`."
+      },
+      {
+        "id": "redoran-guard-cc-temple",
+        "name": "Redoran Guard",
+        "records": [
+          {
+            "edid": "ccASVSSE001_RedoranGuardPriestFaction",
+            "formKey": "1EC607:ccasvsse001-almsivi.esm"
+          },
+          {
+            "edid": "ccASVSSE001_RedoranGuardREPLACER",
+            "formKey": "04805E:ccasvsse001-almsivi.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "target": {
+          "band": "V",
+          "level": 34,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Redoran Guards Experienced, 34"
+        },
+        "note": "own level, PC×1 with no minimum and no cap."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `DLC2RRGuardTemplate` 0195AF:Dragonborn.esm leaves CC `ccASVSSE001_RedoranGuard` 000F22:ccasvsse001-almsivi.esm at its own PC×1 [20–50]: it uses the template but not for `Stats` (it is a row of its own).",
+      "The other rows: no other record keeps its own level.",
+      "Every other Redoran guard record (the dead guards `DLC2RR01DeadGuard` 02C406 and `DLC2RR02DeadGuard` 0292A3:Dragonborn.esm) carries `Stats` and follows `DLC2RRGuardTemplate`."
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Redoran Guard (Raven Rock)",
+        "note": "`DLC2RavenRock04` 00EED6:Dragonborn.esm ×6 (`DLC2RRGuard02Ref`–`06Ref`, `…11Ref`) · `DLC2RRMorvaynManor` 017EC1 ×1 · `DLC2RRBulwark` 018276 ×1 · `DLC2RRBulwark02` 019AD8 ×1 · `DLC2SolstheimWorld` persistent ×2 (the Bulwark patrols, `DLC2RRGuard09Ref`/`10Ref`)"
+      },
+      {
+        "name": "Redoran Guard (Earth Stone)",
+        "note": "`DLC2PillarRRGuardA`–`C` ×1 each in `DLC2StoneEarth` 00EEF9:Dragonborn.esm"
+      },
+      {
+        "name": "Redoran Guard (CC)",
+        "note": "`ccASVSSE001_RedoranGuard` ×1 `DLC2SolstheimWorld` persistent, initially disabled; `…PriestFaction` ×3 `ccASVSSE001Interior02` 0030E8:Update.esm (behind enable parent 1EC609); `…REPLACER` not placed, named by `ccASVSSE001_QuestA`"
+      },
+      {
+        "name": "`DLC2RR01DeadGuard` 02C406 · `DLC2RR02DeadGuard` 0292A3",
+        "note": "dead Redoran guards: ×1 `DLC2AttiusFarmExterior01` 00EF38, ×2 `DLC2SolstheimWorld` persistent (initially disabled); all `StartsDead`"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "the Raven Rock guards and the CC guards",
+        "weapons": "Elven Sword 0139A1 · Elven Bow 01399D · Elven Arrow 0139BD · `LootGoldChange` 037C2B; the jail guard adds Raven Rock Jail Key 034F97:Dragonborn.esm; CC `…REPLACER` adds 000F37:ccasvsse001-almsivi.esm",
+        "armor": "`DLC2RRRedoranGuardOutfit` 0195AE:Dragonborn.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "the Earth Stone guards",
+        "weapons": "the same",
+        "armor": "`DLC2RRRedoranGuardOutfitNoHelmetNoShield` 03CA5B:Dragonborn.esm",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "DLC2RRRedoranGuardOutfit",
+          "formKey": "0195AE:Dragonborn.esm"
+        },
+        "rolls": "Bonemold Pauldron Armor, Bonemold Helmet, Boots, Gauntlets and Shield"
+      },
+      {
+        "list": {
+          "edid": "DLC2RRRedoranGuardOutfitNoHelmetNoShield",
+          "formKey": "03CA5B:Dragonborn.esm"
+        },
+        "rolls": "the same without helmet and shield"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Bonemold Pauldron Armor, Helmet, Boots, Gauntlets, Shield",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Elven Sword, Elven Bow, Elven Arrows",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

@@ -116,7 +116,7 @@ rules).
   `site/src/schema.ts` (Zod); `npm run schema` regenerates `census/schema/*.schema.json` and validates
   everything, `build/Test-CensusJson.ps1` is the no-Node quick check. **Migrated so far: Dragons, Daedra** (all 13 pages, the
   Princes' followers included; since 2026-10-05), Werebeasts (all 4 pages, 2026-10-05), Vampires (all 7 pages, 2026-10-05), Dragon Priests (one page, a family of `census/undead/`, 2026-11-12), Draugr (all 4 pages, `census/draugr/`), Skeletons (all 5 pages, `census/skeletons/`), Ghosts (all 4 pages, `census/ghosts/`) and Ash (all 4 pages, `census/ash/`), sub-groups of Undead, and the CC Zombies and Ayleid Undead (families of `census/undead/`): **Undead is fully migrated** (2026-11-12). Falmer (all 5 pages, `census/falmer/`, 2026-11-12). Automatons (all 6 pages, `census/automatons/`, 2026-11-12). Conjured (all 10 pages, 2026-11-12): `census/conjured/` is a parent with no families of its own, over the sub-groups `census/summoned-creatures/` and `census/summoned-npcs/`; its family pages carry a `summonedBy` table (spell, player source, NPC casters). World Creatures (all pages, 2026-11-12): `census/world-creatures/` is a parent with no families of its own, over seven sub-groups `census/{animals,aquatic,beasts,insectoids,sentient,monsters,mounts}/`. Warlocks (all 9 pages, `census/warlocks/`, 2026-11-12). Bandits (all 7 pages, `census/bandits/`, 2026-11-12; *Bandit Gangs* split from *Common Bandits* by the user).
-  Factions (2026-11-12): `census/factions/` is a parent with no families of its own, one sub-group per faction as each migrates; so far Forsworn (all 4 pages, `census/forsworn/`), Thalmor (all 4 pages, `census/thalmor/`), Imperial Legion (all 3 pages, `census/imperial-legion/`) and Stormcloaks (all 3 pages, `census/stormcloaks/`).
+  Factions (2026-11-12): `census/factions/` is a parent with no families of its own, one sub-group per faction as each migrates; so far Forsworn (all 4 pages, `census/forsworn/`), Thalmor (all 4 pages, `census/thalmor/`), Imperial Legion (all 3 pages, `census/imperial-legion/`), Stormcloaks (all 3 pages, `census/stormcloaks/`), Guards (all 5 pages, `census/guards/`) and Housecarls (all 3 pages, `census/housecarls/`).
 - **Lists borrowed across pages** (user, 2026-11-12): a list row's `drawnBy` names every record filed on another page that draws the list (as its template, or an `LVLN` holding it as an entry), with `page` (`<group>/<family>`, a migrated page, linked on the site and checked by `npm run schema`) or `where` (a Confluence-only page, as text). Warlocks and Bandits lend their lists widely (the Vaermina Devotees draw `LCharWarlockStorm`); find drawers in the game files across all masters and CC plugins, not only in the census.
   Every other group stays Confluence-first until it is migrated.
 - **A sub-group is its own census folder with `parent`** in its `group.json` (`census/vampires/` has
@@ -232,13 +232,13 @@ rules).
   out of the census; the group page holds the injector table; non-bandits that
   take `Stats` from a bandit list live on their own family's page with a "borrows its level" note;
   the undecided ones are still on Uncategorised → *Bandit Level Borrowers*), Housecarls
-  (WD-85, under Factions: *Player Housecarls* (the five hold housecarls and the three HearthFires
+  (WD-85, **migrated to `census/housecarls/`, a sub-group of `census/factions/`, so edit the JSON, not Confluence**; Ulfric and Galmar are only on *Named Stormcloaks*; under Factions: *Player Housecarls* (the five hold housecarls and the three HearthFires
   ones) and *Jarls* (both Jarls of every hold with their housecarls; Hrongar, Bryling, Erikur are in
-  the jarl faction but hold nothing)), Guards (WD-84, under
+  the jarl faction but hold nothing)), Guards (WD-84, **migrated to `census/guards/`, a sub-group of `census/factions/`, so edit the JSON, not Confluence**; one Hold Guard row per side, and the College Guard is unused and out, under
   Factions: *Hold Guards* (one combined Hold Guard row, user 2026-10-02: every guard in its hold's
   uniform, level from `LCharGuard{Imperial,Sons}`, PC×1 [20–50]; the guards in Imperial or Stormcloak
   army armour, i.e. the occupying side's garrison, and the guard-list leaves are on *Common Legion* /
-  *Common Stormcloaks*), *Redoran Guards*, *Other Guards* (College Guard, East Empire Wardens and Mercenaries,
+  *Common Stormcloaks*), *Redoran Guards*, *Other Guards* (East Empire Wardens and Mercenaries,
   Wizards' Guards, Kolbjorn guards), *Unique Guards* (Caius, Sinmir, Urzoga, Veleth, CC Aldepius);
   Captain Aldis stays on Named Legion; Orc stronghold members in `IsGuardFaction` are not guards),
   Imperial Legion (WD-82) and
