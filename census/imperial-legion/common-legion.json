@@ -1,0 +1,1407 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "common-legion",
+  "group": "imperial-legion",
+  "title": "Common Legion",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "imperial-soldier",
+        "name": "Imperial Soldier",
+        "records": [
+          {
+            "edid": "EncSoldierImperialBretonM01MaleSoldier",
+            "formKey": "017145:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierImperialBretonM02MaleYoungEager",
+            "formKey": "017146:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierImperialImperialM01MaleSoldier",
+            "formKey": "017140:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierImperialImperialM02MaleYoungEager",
+            "formKey": "017142:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierImperialNordM01MaleSoldier",
+            "formKey": "01713E:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierImperialNordM02MaleSoldier",
+            "formKey": "01713F:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierImperialNordM03MaleYoungEager",
+            "formKey": "017141:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierImperialRedguardM01MaleSoldier",
+            "formKey": "017143:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierImperialRedguardM02MaleYoungEager",
+            "formKey": "017144:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierImperialTemplate",
+            "formKey": "01FC5D:Skyrim.esm"
+          },
+          {
+            "edid": "EncSiegeImperialSoldierTemplate",
+            "formKey": "041B30:Skyrim.esm"
+          },
+          {
+            "edid": "CWSiegeImperialSoldierHold",
+            "formKey": "073FD8:Skyrim.esm"
+          },
+          {
+            "edid": "ccFFBSSE001_CWSoldierImperial01",
+            "formKey": "00086D:ccffbsse001-imperialdragon.esl"
+          },
+          {
+            "edid": "ccFFBSSE001_CWSoldierImperial02",
+            "formKey": "000872:ccffbsse001-imperialdragon.esl"
+          },
+          {
+            "edid": "ccFFBSSE001_CWSoldierImperial03",
+            "formKey": "000873:ccffbsse001-imperialdragon.esl"
+          },
+          {
+            "edid": "ccFFBSSE001_CWSoldierImperialUseWeaponArcher",
+            "formKey": "00086F:ccffbsse001-imperialdragon.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "edid": "EncSoldierImperialTemplate",
+            "formKey": "01FC5D:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+        },
+        "note": "the nine leaves of `LCharSoldierImperial` (`EncSoldierImperial{Breton,Imperial,Nord,Redguard}M0*`), the siege templates and the CC Imperial Dragon soldiers; every leaf takes `Stats` from `EncSoldierImperialTemplate` 01FC5D. The two siege templates own their level in the build (archetype-tiers.md §6), at this row's band."
+      },
+      {
+        "id": "imperial-guard-leaves",
+        "name": "Imperial Soldier",
+        "records": [
+          {
+            "edid": "EncGuardImperialM01MaleNordCommander",
+            "formKey": "0AA8D4:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardImperialM02MaleNordCommander",
+            "formKey": "0AA8D5:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardImperialM03MaleNordCommander",
+            "formKey": "0AA8D6:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardImperialM04MaleNordCommander",
+            "formKey": "0AA8D7:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardImperialM05MaleGuard",
+            "formKey": "0AA8FC:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardImperialM06MaleGuard",
+            "formKey": "0AA8FD:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardImperialM07MaleGuard",
+            "formKey": "0AA901:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardImperialM08MaleGuard",
+            "formKey": "0AA913:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardImperialM09MaleGuard",
+            "formKey": "0AA8D8:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardImperialTemplate",
+            "formKey": "0F6F37:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20,
+          "max": 50,
+          "from": {
+            "edid": "EncGuardImperialTemplate",
+            "formKey": "0F6F37:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+        },
+        "note": "the nine guard leaves of `LCharGuardImperial` (`EncGuardImperialM01`–`M09`)."
+      },
+      {
+        "id": "imperial-garrison-guards",
+        "name": "Imperial Guard · Imperial Guard Jailor · Solitude Guard",
+        "records": [
+          {
+            "edid": "TG00BribedGuardImperial",
+            "formKey": "074948:Skyrim.esm"
+          },
+          {
+            "edid": "GuardHeartwoodMillImperial",
+            "formKey": "0F18E5:Skyrim.esm"
+          },
+          {
+            "edid": "GuardMerryfairFarmImperial",
+            "formKey": "030274:Skyrim.esm"
+          },
+          {
+            "edid": "GuardSarethiFarmImperial",
+            "formKey": "0303EC:Skyrim.esm"
+          },
+          {
+            "edid": "GuardSnowShodImperial",
+            "formKey": "0300A3:Skyrim.esm"
+          },
+          {
+            "edid": "GuardRiftenImperialKeepPrison01",
+            "formKey": "04587C:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmImperial",
+            "formKey": "0FCE7F:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmImperialDayShift1",
+            "formKey": "0FF0B2:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmImperialDayShift2",
+            "formKey": "0FF0B3:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmImperialNightShift1",
+            "formKey": "0FF0B4:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmImperialNightShift2",
+            "formKey": "0FF0B5:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmImperialJail",
+            "formKey": "109E42:Skyrim.esm"
+          },
+          {
+            "edid": "GuardKynesgroveImperial",
+            "formKey": "02E70E:Skyrim.esm"
+          },
+          {
+            "edid": "GuardDarkwaterCrossingImperial",
+            "formKey": "0A852D:Skyrim.esm"
+          },
+          {
+            "edid": "ccBGSSSE001_GuardDawnstarImperial",
+            "formKey": "06BBC9:ccbgssse001-fish.esm"
+          },
+          {
+            "edid": "ccBGSSSE001_GuardDawnstarImperialQuestEssential",
+            "formKey": "10DF81:ccbgssse001-fish.esm"
+          },
+          {
+            "edid": "GuardWinterholdImperial",
+            "formKey": "024B49:Skyrim.esm"
+          },
+          {
+            "edid": "GuardSolitudeImperialCastleDour",
+            "formKey": "10C068:Skyrim.esm"
+          },
+          {
+            "edid": "GuardSolitudeImperialJail",
+            "formKey": "0BED96:Skyrim.esm"
+          },
+          {
+            "edid": "GuardSolitudeImperialWarroom",
+            "formKey": "0199F8:Skyrim.esm"
+          },
+          {
+            "edid": "GuardSolitudeImperialWarroomNight",
+            "formKey": "0461DD:Skyrim.esm"
+          },
+          {
+            "edid": "ccBGSSSE031_GuardImperial",
+            "formKey": "000813:ccbgssse031-advcyrus.esm"
+          },
+          {
+            "edid": "LvlGuardImperial",
+            "formKey": "01FC62:Skyrim.esm"
+          },
+          {
+            "edid": "LvlGuardImperialWizard",
+            "formKey": "0872A2:Skyrim.esm"
+          },
+          {
+            "edid": "LvlGuardImperialSingleVoiceTypeMaleGuard",
+            "formKey": "0A4A39:Skyrim.esm"
+          },
+          {
+            "edid": "LvlGuardImperialSingleVoiceTypeMaleNordCommander",
+            "formKey": "0AAF94:Skyrim.esm"
+          },
+          {
+            "edid": "LvlHaafingarHoldGuardImperial",
+            "formKey": "0268F3:Skyrim.esm"
+          },
+          {
+            "edid": "dunKatariahLvlSoldierImperial",
+            "formKey": "0C6018:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20,
+          "max": 50,
+          "from": {
+            "label": "`LCharGuardImperial` 0E7B2C: every leaf PC×1 [20–50], owned by `EncGuardImperialTemplate` 0F6F37"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+        },
+        "note": "the Imperial garrison guards, in Imperial army armour. Also the families without their own row here: `GuardRiftenImperial*` (36 with the gate starts and `TG00BribedGuardImperial`), `GuardIvarsteadImperial*` (5), `GuardShorsStoneImperial*` (4), `GuardDawnstarImperial*` (8), `GuardWinterholdTownImperial{Patrol,Patrol2,Post}`. Imperial Guard (the Rift) · Imperial Guard Jailor · Solitude Guard (Castle Dour, the jail); the rest have no name of their own and take the rolled soldier's, \"Imperial Soldier\"."
+      },
+      {
+        "id": "imperial-officer",
+        "name": "Imperial Officer",
+        "records": [
+          {
+            "edid": "CWSiegeImperialSoldierOfficer",
+            "formKey": "01AE44:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "edid": "EncSoldierImperialTemplate",
+            "formKey": "01FC5D:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: an officer"
+        }
+      },
+      {
+        "id": "imperial-field-legate",
+        "name": "Imperial Field Legate",
+        "records": [
+          {
+            "edid": "CWFieldCOImperial",
+            "formKey": "0205C9:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B: every leaf PC×0.25 [1–50], owned by `EncSoldierImperialTemplate` 01FC5D"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field legate"
+        },
+        "note": "the nine named legates on it are on *Named Legion*."
+      },
+      {
+        "id": "fort-commander-imperial",
+        "name": "Fort Commander",
+        "records": [
+          {
+            "edid": "CWFortSoldierCommanderImperial",
+            "formKey": "051B4B:Skyrim.esm"
+          },
+          {
+            "edid": "CWFort04SoldierCommanderImperial",
+            "formKey": "0EA329:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B: every leaf PC×0.25 [1–50], owned by `EncSoldierImperialTemplate` 01FC5D"
+          }
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a fort's commander"
+        }
+      },
+      {
+        "id": "imperial-general",
+        "name": "Imperial General",
+        "records": [
+          {
+            "edid": "CWSiegeImperialSoldierGeneral",
+            "formKey": "0559E0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B: every leaf PC×0.25 [1–50], owned by `EncSoldierImperialTemplate` 01FC5D"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the general, the top rank"
+        }
+      },
+      {
+        "id": "imperial-quartermaster",
+        "name": "Imperial Quartermaster",
+        "records": [
+          {
+            "edid": "CWQuartermasterImperial",
+            "formKey": "016973:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B: every leaf PC×0.25 [1–50], owned by `EncSoldierImperialTemplate` 01FC5D"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: camp support, rank-and-file"
+        }
+      },
+      {
+        "id": "imperial-courier",
+        "name": "Imperial Courier",
+        "records": [
+          {
+            "edid": "CWCourierImperial",
+            "formKey": "03BCC6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B: every leaf PC×0.25 [1–50], owned by `EncSoldierImperialTemplate` 01FC5D"
+          }
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the Courier, the one Trained rank"
+        }
+      },
+      {
+        "id": "imperial-prisoner",
+        "name": "Imperial Soldier",
+        "records": [
+          {
+            "edid": "CWPrisonerImperialB",
+            "formKey": "10D4B3:Skyrim.esm"
+          },
+          {
+            "edid": "CWPrisonerImperialC",
+            "formKey": "10D4B4:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B: every leaf PC×0.25 [1–50], owned by `EncSoldierImperialTemplate` 01FC5D"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a captured rank-and-file soldier"
+        },
+        "note": "no name of their own; they take the rolled soldier's."
+      },
+      {
+        "id": "roadside-guard",
+        "name": "Roadside Guard",
+        "records": [
+          {
+            "edid": "GuardLoreiusFarmImperial",
+            "formKey": "043D21:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperialVoiceTypeMaleSoldier` 087501: the five MaleSoldier leaves, PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+        }
+      },
+      {
+        "id": "imperial-bodyguard",
+        "name": "Bodyguard",
+        "records": [
+          {
+            "edid": "WEDL03ImpBodyguard",
+            "formKey": "0B91A6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B: every leaf PC×0.25 [1–50], owned by `EncSoldierImperialTemplate` 01FC5D"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+        }
+      },
+      {
+        "id": "siege-whiterun-guard-imperial",
+        "name": "Whiterun Guard",
+        "records": [
+          {
+            "edid": "CWSiegeWhiterunImperialSoldier",
+            "formKey": "063F35:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B: every leaf PC×0.25 [1–50], owned by `EncSoldierImperialTemplate` 01FC5D"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+        },
+        "note": "an Imperial soldier in Whiterun uniform at the siege of Whiterun."
+      },
+      {
+        "id": "imperial-archer",
+        "name": "Imperial Archer",
+        "records": [
+          {
+            "edid": "EncSiegeImperialArcherTemplate",
+            "formKey": "045BE0:Skyrim.esm"
+          },
+          {
+            "edid": "CWSiegeImperialArcherHold",
+            "formKey": "073FD4:Skyrim.esm"
+          },
+          {
+            "edid": "CWSiegeImperialArcher",
+            "formKey": "045BDF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 3
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+        }
+      },
+      {
+        "id": "imperial-wizard",
+        "name": "Imperial Wizard",
+        "records": [
+          {
+            "edid": "CWSiegeImperialWizard",
+            "formKey": "04622A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 6,
+          "from": {
+            "edid": "EncWarlock02TemplateFire",
+            "formKey": "045C5F:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "follows `EncWarlock02TemplateFire` 045C5F, the Apprentice Fire Mage (Warlocks → *Pyromancers*, IV)"
+        }
+      },
+      {
+        "id": "helgen-imperial-soldier",
+        "name": "Imperial Soldier",
+        "encounter": "Helgen",
+        "records": [
+          {
+            "edid": "MQ101ImperialSoldier01",
+            "formKey": "046794:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101ImperialSoldier02",
+            "formKey": "10A19F:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101ImperialSoldier03",
+            "formKey": "10A1A0:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101ImperialSoldier04",
+            "formKey": "10A1A1:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101ImperialSoldierMelee",
+            "formKey": "06E21C:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101ImperialSoldierMelee02",
+            "formKey": "10A1AB:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101ImperialSoldierOfficerMale01",
+            "formKey": "08DE5D:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101ImperialSoldierOfficerMale02",
+            "formKey": "10A1A2:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101ImperialSoldierCartDriver",
+            "formKey": "047CBA:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101ImperialSoldierUnaggressive",
+            "formKey": "0FE510:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101ImperialSoldierUnaggressive02",
+            "formKey": "10A1AA:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101ImperialArcherFemale",
+            "formKey": "106B83:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101ImperialArcherMale",
+            "formKey": "106B84:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialSoldierBaitATower",
+            "formKey": "0D67B8:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialSoldierBaitBTower",
+            "formKey": "0D7D7D:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialSoldierBaitDBridge",
+            "formKey": "0E1E95:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialArcherBaitBTower",
+            "formKey": "0D7D8E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "helgen-imperial-captain",
+        "name": "Imperial Captain",
+        "encounter": "Helgen",
+        "records": [
+          {
+            "edid": "MQ101ImperialSoldierOfficer",
+            "formKey": "0AAFAC:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "duncg-imperial-soldier",
+        "name": "Imperial Soldier",
+        "encounter": "Helgen",
+        "records": [
+          {
+            "edid": "dunCGImperialSoldierArcherA01",
+            "formKey": "0E491B:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialSoldierArcherA02",
+            "formKey": "0E4920:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialSoldierArcherA03",
+            "formKey": "0F94AE:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialSoldierArcherA04",
+            "formKey": "105EE2:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialSoldierArcherC01",
+            "formKey": "0E6D5C:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialSoldierArcherC02",
+            "formKey": "0F3E6F:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialSoldierArcherD01",
+            "formKey": "0E72BB:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialSoldierArcherD02",
+            "formKey": "0F3E6D:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialSoldierArcherD03",
+            "formKey": "0F3E6E:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialSoldierArcherD04",
+            "formKey": "0F94A9:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialSoldierFodderC01",
+            "formKey": "0E77F9:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialSoldierFodderD01",
+            "formKey": "0E77FD:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 12
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+        },
+        "note": "the `dunCGImperialSoldierArcher*` and `…Fodder*` records."
+      },
+      {
+        "id": "duncg-imperial-mage",
+        "name": "Imperial Mage",
+        "encounter": "Helgen",
+        "records": [
+          {
+            "edid": "dunCGImperialMageC01",
+            "formKey": "0F3E77:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGImperialMageD01",
+            "formKey": "0F3E76:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 12
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+        }
+      },
+      {
+        "id": "helgen-torturer",
+        "name": "Torturer",
+        "encounter": "Helgen",
+        "records": [
+          {
+            "edid": "MQ101Torturer",
+            "formKey": "0B9652:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 2
+        },
+        "target": {
+          "band": "I",
+          "level": 2,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      },
+      {
+        "id": "helgen-torturer-assistant",
+        "name": "Torturer's Assistant",
+        "encounter": "Helgen",
+        "records": [
+          {
+            "edid": "MQ101TorturerAssistant",
+            "formKey": "0B9655:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        }
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing `EncSoldierImperialTemplate` 01FC5D also needs 12 records that use it, a leaf, or `EncSoldierSonsTemplate` 027498 (which takes `Stats` from it) as template but not for `Stats`: `EncGuardSonsTemplate` 0F6F38 (PC×1 [20–50], on *Common Stormcloaks*); the CC champions `ccFFBSSE001_NPC_ImperialChampion` 00086A · `…Backup` 000956 (PC×1.1 [15–45], on *Named Legion*), `ccFFBSSE001_NPC_StormcloakChampion` 00086C · `…Backup` 000957 (PC×1 [10–35]) and `ccFFBSSE001_KlijaBaseBountyFixChampion` 00095D (PC×1.25 [20–60]), all ccffbsse001-imperialdragon.esl (on *Named Stormcloaks*); the Sovngarde lost souls `MQ304LostSoulImperial` 091AF2 · `…2` 0173C1 (on the Nord leaves M01 and M03) and `MQ304LostSoulSons` 090A47 · `…2` 0173C0 · `…3` 0173C2 (PC×1.5 [3–20]; listed as never met on the *Imperial Legion* and *Stormcloaks* group pages); `dunBluePalaceBully` 09F851 (Anger, level 1, on World → *Haafingar Countryside*). `EncGuardImperialTemplate` 0F6F37 is a row of its own.",
+      "Changing the leaves (`LCharSoldierImperial`) also needs `CWFortSoldierImperialWounded` 0FD8AA (camp dressing, level 1): it takes its template from `CWSoldierImperial` 01B547, which draws them, without `Stats`; and `DLC1dunRedwaterDenAddictCWMaleCommander` 008D29:Dawnguard.esm (Imperial Deserter, level 1): it takes its template from `LCharSoldierImperialVoiceTypeMaleSoldier`, which draws the five MaleSoldier leaves, without `Stats`. Both are listed on the *Imperial Legion* group page as not enemies (on no census page).",
+      "Changing `EncGuardImperialTemplate` 0F6F37 also needs `MQ104Soldier01`–`04` 0A27CC · 0A4A3B · 101996 · 101997 (the Western Watchtower guards, PC×0.5 [2–25], on Guards → *Hold Guards*): they use the guard leaves M03, M08, M04, M09 as template but not for `Stats`; and, through `LCharGuardImperial`, `GuardWinterholdCollege` 105CBB (40, on Guards → *Other Guards*; template `LvlGuardImperial`), `MQ104SoldierSurvivor` 0B799D (1, on *Hold Guards*; template `LvlGuardImperialSingleVoiceTypeMaleNordCommander`) and `MQ301ImperialSoldier` 046EFC (PC×1.5 [3–20], starts dead; template `GuardWhiterunImperialPatrolDay`; listed as never met on *Imperial Legion*): each takes its template from a wrapper on that list without `Stats`.",
+      "The Imperial Wizard's level 6 is owned by `EncWarlock02TemplateFire` 045C5F (on Warlocks → *Pyromancers*). Changing it also needs `EncWarlock02TemplateBossFire` 0E0FBF (7, on *Warlock Bosses*), which uses it as template but not for `Stats`, and six CC records that take their template from `LvlWarlockElemental`, which draws it, without `Stats`: the Almsivi `ccASVSSE001_ElderDrevlan`, `…CaretakerIneril`, `…Priest02`, `…Priest03`, `…PriestDrureth` (on *Ghosts of the Tribunal*) and `ccBGSSSE013_GreenGuardian` 000845:ccbgssse013-dawnfang.esl.",
+      "The other rows: no other record keeps its own level (`MQ101ImperialSoldierCartDriver` uses `MQ101ImperialSoldier01` as template without `Stats`, but shares the Helgen row at the same level).",
+      "Every other record that looks like a row (the `CWFort*`, `CWSiege*`, `CWSoldierImperial*`, `MQ103` and `CW` mission wrappers, the garrison and hold guards, every `Lvl*` wrapper, and the rows moved here from Uncategorised: the Windhelm shifts, `CWPrisonerImperialB`/`C`, `GuardLoreiusFarmImperial`) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharSoldierImperial",
+          "formKey": "01FC5B:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player, so a flat pool",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the nine leaves (Records, row 1)"
+          }
+        ],
+        "owner": "`CWSoldierImperial` 01B547 (×5: `FortKastavExterior07` 009036 ×3, `CWMessageMarkers` 0221B5 ×2; `CW` property) and the wrappers on it: `CWFortSoldierImperial` 037B66 (×139: the eight fort exteriors and the nine Imperial camps) · `CWFortSoldierCommanderImperial` (×8) · `…GatekeeperImperial` 037B68 (×8) · `…JailorImperial` 037B6F (×10) · `…PatrolExteriorImperial` 038450 (×16) · `CWFort04SoldierImperial` 0EA325 (×10) · `CWFort04Soldier{Commander,Jailor,PatrolExterior}Imperial` 0EA329 · 0EA328 · 0EA327 (×1 · 2 · 2), all in `FortNeugradExterior04` 009883 · `dunFortNeugradCWFortSoldierImperial{Melee,Ranged}Training` 0C648B · 0C648C · `dunFortSnowhawkCWFortSoldierImperialRangedTraining` 0D77D9 (×1 each) · `CWQuartermasterImperial` (×5: four camps and `CWGuardTemplates` 01FA4C) · `CWSiegeImperialSoldier` 041B2E (×80, 15 siege cells, initially disabled) · `CWSiegeImperialSoldierGeneral` (×4, initially disabled) · `CWSiegeMarkarthImperialSoldier` 063F3A (×7, `MarkarthAttackStart02` 0075A9, initially disabled) · `CWSiegeWhiterunImperialSoldier` (×4, `WhiterunExterior13` 0095FD and `…04` 0095FC, initially disabled) · `CWFieldCOImperial` and the nine legates on it · `CWCourierImperial` (alias `CourierImperial` of `WE29`; `CW` property) · `CWFinaleSoldierImperial` 054A7A (`CWFinale` property) · `CWPrisonerImperialB` · `…C` (not placed; `CW` 019E53 properties). Direct: `CWSoldierImperialNotGuard` 016942 (aliases of `WE09`, `WE22`, `WE23`, `WEJS04`, `WERoad05`; `CW` property) and `CWFortSiegeImperial` 0879ED on it (×321 in 36 cells, all initially disabled: the fort battles and the city sieges) · `CWSoldierImperialNonNPCFaction` 023A4F · `CWSoldierImperialNotGuardNonNPCFaction` 023A50 (`CW` properties) · `CWSoldierImperialScoutNotGuard` 074929 (aliases `ImperialScout1`–`3` of `WE27`) · `CWSoldierImperialUseCatapult` 0E108E (×8, siege cells and `WhiterunPlainsDistrict01` 01A278) · `CWSiegeSoldierImperialsCAMP` 0BE2C0 (×3) · `CW03ImperialScout` 0DC25D (alias `ImperialScout` of `CW03`) · `WE23SoldierImperialNaked` 06210A (alias `SoldierImperial1` of `WE23`) · `WEDL03ImpBodyguard` (alias `Bodyguard` of `WEDL03`) · CC `ccFFBSSE001_CWSoldierImperial01` (×2) · `…UseWeaponArcher` (×1), `Tamriel` persistent",
+        "drawnBy": [
+          {
+            "name": "the nine field legates",
+            "records": [
+              {
+                "edid": "CWFieldCOImperialEastmarch",
+                "formKey": "08454E:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOImperialFalkreath",
+                "formKey": "08455E:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOImperialHaafingar",
+                "formKey": "0844B1:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOImperialHjaalmarch",
+                "formKey": "0844B2:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOImperialPale",
+                "formKey": "084539:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOImperialReach",
+                "formKey": "0844D0:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOImperialRift",
+                "formKey": "08454F:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOImperialWhiterun",
+                "formKey": "0844D1:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOImperialWinterhold",
+                "formKey": "08453A:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "imperial-legion/named-legion",
+            "note": "through `CWFieldCOImperial` 0205C9 → `CWSoldierImperial` 01B547"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharSoldierImperialVoiceTypeMaleSoldier",
+          "formKey": "087501:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the five MaleSoldier leaves 017145 · 017140 · 01713E · 01713F · 017143"
+          }
+        ],
+        "owner": "`MQ103ImperialSoldier` 01BC96 (×14: `Korvanjund01` 0152A1 ×9, `Korvanjund02` 02954D ×2, `Tamriel` persistent ×3) and on it `MQ103ImperialSoldierArcher` 0A0C41 (×2) · `…Eavesdrop01a` 0A0966 (×1) · `…ExteriorDefender` 0605E9 (×4, `Tamriel` persistent); `CWSoldierImperialSingleVoiceTypeMaleSoldier` 0AAF93 (alias `Bodyguard01` of `WERoad02`) and on it `dunForelhostSoldierImperial` 062241 (×1, `Tamriel` persistent, initially disabled); `GuardLoreiusFarmImperial` (×1, `Tamriel` 00003C persistent, ref 043D20); CC `ccFFBSSE001_CWSoldierImperial03` (×1)",
+        "drawnBy": [
+          {
+            "name": "Imperial Deserter",
+            "records": [
+              {
+                "edid": "DLC1dunRedwaterDenAddictCWMaleCommander",
+                "formKey": "008D29:Dawnguard.esm"
+              }
+            ],
+            "how": "template",
+            "where": "no census page: a skooma addict, not an enemy (*Imperial Legion* group page)",
+            "note": "without `Stats`: keeps its own level 1"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharSoldierImperialVoiceTypeMaleYoungEager",
+          "formKey": "0A4A38:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the four YoungEager leaves 017146 · 017142 · 017141 · 017144"
+          }
+        ],
+        "owner": "`MQ103ImperialSoldier02` 0ABEDE (×2, `Tamriel` persistent) and on it `…Eavesdrop01b` 0A0967 (×1, `Korvanjund01`); CC `ccFFBSSE001_CWSoldierImperial02` (×1)"
+      },
+      {
+        "list": {
+          "edid": "LCharGuardImperial",
+          "formKey": "0E7B2C:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player, so a flat pool",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the nine guard leaves (Records, row 2)"
+          }
+        ],
+        "owner": "the Imperial garrison guards (Records, row 3, through their hold base records) and `LvlGuardImperial` 01FC62 (×50 in the holding cell `CWGuardTemplates` 01FA4C)",
+        "drawnBy": [
+          {
+            "name": "the Imperial-held hold guards",
+            "records": [
+              {
+                "edid": "dunMarkarthWizard_LvlGuardImperial",
+                "formKey": "08713A:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Guards → *Hold Guards*",
+            "note": "and the hold guards' base records: 41 take `LvlGuardImperial` 01FC62 as template"
+          }
+        ]
+      },
+      {
+        "list": {
+          "label": "`LCharGuardImperialVoiceTypeMaleGuard` 0EA640 · `…MaleNordCommander` 0EA643"
+        },
+        "gate": "highest gate only (all at 1)",
+        "entries": [
+          {
+            "at": 1,
+            "label": "five and four of the guard leaves"
+          }
+        ],
+        "owner": "`LvlGuardImperialSingleVoiceTypeMaleGuard` 0A4A39 and `…MaleNordCommander` 0AAF94 → `GuardRiftenImperialKeepPrison01`, CC `ccBGSSSE001_GuardDawnstarImperialQuestEssential`",
+        "drawnBy": [
+          {
+            "name": "hold and other guards",
+            "records": [
+              {
+                "edid": "MQ104SoldierSurvivor",
+                "formKey": "0B799D:Skyrim.esm"
+              },
+              {
+                "edid": "GuardWinterholdCollege",
+                "formKey": "105CBB:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Guards → *Hold Guards* · *Other Guards*",
+            "note": "through the `LvlGuardImperialSingleVoiceType*` and `LvlGuardImperial` wrappers"
+          }
+        ]
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Imperial Soldier (leaves)",
+        "note": "`EncSoldierImperialBretonM01MaleSoldier` ×2 `IcerunnerExterior02` 009252 · `…ImperialM01MaleSoldier` ×1 `Icerunner01` 01521B · `…ImperialM02MaleYoungEager` ×1 Tamriel cell 009253"
+      },
+      {
+        "name": "the Imperial garrison guards",
+        "note": "Riften 37, Ivarstead 4, Shor's Stone 3, the Rift farms 4, Snow-Shod 3, Windhelm 27, Kynesgrove 3, Darkwater Crossing 2, Dawnstar 16 (CC 7 of them), Winterhold 4, Solitude 6 (Castle Dour 2, jail 2, war room 1, CC `SolitudeJail01` 056E88 1); each spot also holds a Stormcloak guard (*Common Stormcloaks* or *Hold Guards*)"
+      },
+      {
+        "name": "Imperial Soldier (`CWSiegeImperialSoldierHold`)",
+        "note": "`WhiterunExterior13` 0095FD · `WhiterunExterior04` 0095FC, ×1 each, initially disabled"
+      },
+      {
+        "name": "Imperial Archer (`CWSiegeImperialArcherHold`)",
+        "note": "×9: `WhiterunExterior04` ×3, `SolitudeExterior01` 00927B ×2, `MarkarthExterior01` 00717A ×2, `SolitudeExterior02` 00927A ×1, `WhiterunExterior13` ×1; all initially disabled"
+      },
+      {
+        "name": "Imperial Soldier (Helgen)",
+        "note": "`MQ101ImperialSoldier01` ×3 (`HelgenKeep01` 05DE24 initially disabled, `HelgenExterior02` 00982A, `HelgenExterior` 00980B); `…02`–`04`, `…Melee02`, `…OfficerMale01`/`02` ×1 each in `HelgenKeep01`, initially disabled; `…CartDriver` ×2 `HelgenExterior02`; `MQ101ImperialArcherFemale`/`Male` ×1 each `HelgenExterior07` 00984A; `…Melee` alias `BarracksRoomSoldier02`, `…Unaggressive` aliases `TortureRoomImperialSoldier2`/`3` of `MQ101` 03372B; the `dunCG` soldiers ×1 each in `HelgenExterior02`, `HelgenExterior06` 00982B and `Tamriel` persistent, all initially disabled"
+      },
+      {
+        "name": "Imperial Captain",
+        "note": "`HelgenExterior06` 00982B"
+      },
+      {
+        "name": "Imperial Mage",
+        "note": "`HelgenExterior02` ×2, initially disabled"
+      },
+      {
+        "name": "Torturer · Torturer's Assistant",
+        "note": "`HelgenKeep01` ×1 · alias `TortureRoomImperialSoldier1` of `MQ101`"
+      },
+      {
+        "name": "Imperial Officer (`CWSiegeImperialSoldierOfficer`) · Imperial Archer (`CWSiegeImperialArcher`) · Imperial Wizard",
+        "notPlaced": true,
+        "note": "nothing names them"
+      },
+      {
+        "name": "`CWPatrolImperial` 05D15A · `CWSoldierImperialUseWeaponArcher` 0C2BE3 · `CWSoldierImperialWizardNotGuard` 0872A4 · `CWMission06DissaffectSoldierImperial1` 0770B2 · `CWMission06LoyalistLeaderImperial` 0770BA · `dunPOIRaiderLvlImperialSoldierMaleSoldier` 0317CF · `MQ101ImperialSoldierUnaggressive02` 10A1AA · `dunCGImperialSoldierArcherA04` 105EE2; `LvlGuardImperialWizard`, `LvlHaafingarHoldGuardImperial`, `dunKatariahLvlSoldierImperial`, the guard base records",
+        "notPlaced": true,
+        "note": "nothing names them, or they are templates for placed guards"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "the leaves and `EncSoldierImperialTemplate`, `EncSiegeImperialSoldierTemplate`, `CWSiegeImperialSoldierHold`, `CWSoldierImperialNotGuard` and its family (`CWFortSiegeImperial`, the NonNPCFaction and wizard variants), `MQ103ImperialSoldierExteriorDefender`, `CWMission06LoyalistLeaderImperial`, `dunPOIRaider…`, `GuardLoreiusFarmImperial`",
+        "weapons": "`CWSoldierImperialGear` 0A6E61",
+        "armor": "`GuardImperialOutfit` 0267EF",
+        "skin": "race default"
+      },
+      {
+        "records": "the guard leaves, `LvlGuardImperial` and the garrison guards of the Rift, Kynesgrove, Darkwater Crossing, Dawnstar, Winterhold and the Solitude war room",
+        "weapons": "0A6E61 (the Riften prison guards add Riften Jail Key 0612B8 and Riften Evidence Chest Key 0FF787; the Dawnstar jailer, Key to Dawnstar Jail 09DA41)",
+        "armor": "`GuardImperialOutfit` 0267EF",
+        "skin": "race default"
+      },
+      {
+        "records": "the Windhelm garrison guards",
+        "weapons": "0A6E61 (the jail guard adds Windhelm Jail Key 0FB90D)",
+        "armor": "`CWSoldierImperialSoldierOutfit` 0964DF",
+        "skin": "race default"
+      },
+      {
+        "records": "the Castle Dour and Solitude jail guards, CC `ccBGSSSE031_GuardImperial`",
+        "weapons": "0A6E61, or Imperial Sword · Imperial Bow · Steel Arrow · Steel Dagger · Torch · Castle Dour Dungeon Key 07E019",
+        "armor": "`GuardImperialOutfit` 0267EF",
+        "skin": "race default"
+      },
+      {
+        "records": "`CWSoldierImperial`, `CWSiegeImperialSoldier`, `CWSiegeSoldierImperialsCAMP`, `CWFinaleSoldierImperial`",
+        "weapons": "`CWSoldierImperialGearNoTorch` 10FAFC",
+        "armor": "`CWSoldierImperialSoldierOutfit` 0964DF",
+        "skin": "race default"
+      },
+      {
+        "records": "the fort soldiers (`CWFortSoldier*Imperial`, `CWFort04Soldier*Imperial`, the training soldiers), `MQ103ImperialSoldier02` and `…Eavesdrop01b`, `dunForelhostSoldierImperial`",
+        "weapons": "`CWSoldierImperialGearNoTorch` 10FAFC",
+        "armor": "`GuardImperialOutfit` 0267EF",
+        "skin": "race default"
+      },
+      {
+        "records": "`MQ103ImperialSoldier`, `…Archer`, `…Eavesdrop01a`; CC `ccFFBSSE001_CWSoldierImperial01`–`03`",
+        "weapons": "`CWSoldierImperialGearNoTorchNoBow` 10FAFD",
+        "armor": "`GuardImperialOutfit` 0267EF (MQ103) · `CWSoldierImperialSoldierOutfit` 0964DF (CC)",
+        "skin": "race default"
+      },
+      {
+        "records": "`CWPatrolImperial`, `CWSoldierImperialUseCatapult`, `CWSoldierImperialSingleVoiceTypeMaleSoldier`",
+        "weapons": "Imperial Sword 0135B8 · Imperial Bow 013841 · Steel Dagger 013986 · Steel Arrow 01397F · `BaseArrowSteel75` 037C0E",
+        "armor": "`CWSoldierImperialSoldierOutfit` 0964DF",
+        "skin": "race default"
+      },
+      {
+        "records": "Imperial Field Legate",
+        "weapons": "the same five",
+        "armor": "`CWSoldierImperialOfficerOutfitNoHelmet` 0ABF45",
+        "skin": "race default"
+      },
+      {
+        "records": "Imperial Courier",
+        "weapons": "the same five",
+        "armor": "`CWSoldierImperialSoldierOutfitLightNoShield` 0D29A1",
+        "skin": "race default"
+      },
+      {
+        "records": "Imperial Quartermaster",
+        "weapons": "the same five",
+        "armor": "`BlacksmithOutfit01` 057C4C",
+        "skin": "race default"
+      },
+      {
+        "records": "`CWSoldierImperialScoutNotGuard`, `CWSoldierImperialUseWeaponArcher`, CC `…UseWeaponArcher`",
+        "weapons": "the same, `BaseArrowSteel75` only on the archers",
+        "armor": "`ArmorImperialLightOutfit` 0AD23E",
+        "skin": "race default"
+      },
+      {
+        "records": "`CW03ImperialScout`",
+        "weapons": "the same five",
+        "armor": "`ArmorImperialLightOutfitNoHelmet` 0AD23F",
+        "skin": "race default"
+      },
+      {
+        "records": "Imperial General",
+        "weapons": "Imperial Light Shield 013AB2 · `CWSoldierImperialGearNoTorch` 10FAFC",
+        "armor": "`CWSoldierImperialOfficerOutfitNoHelmet` 0ABF45",
+        "skin": "race default"
+      },
+      {
+        "records": "Imperial Officer",
+        "weapons": "Imperial Sword · Steel Dagger · Imperial Light Shield",
+        "armor": "`CWSoldierImperialOfficerOutfitNoHelmet` 0ABF45",
+        "skin": "race default"
+      },
+      {
+        "records": "`CWSiegeMarkarthImperialSoldier`",
+        "weapons": "Imperial Sword · Imperial Bow · Steel Arrow · Steel Dagger",
+        "armor": "`ArmorStormcloakMarkarthOutfit` 063F3B",
+        "skin": "race default"
+      },
+      {
+        "records": "Whiterun Guard (`CWSiegeWhiterunImperialSoldier`)",
+        "weapons": "Imperial Sword · Imperial Bow · Steel Arrow · Steel Dagger",
+        "armor": "`CWSiegeArmorImperialWhiterunOutfit` 063F36",
+        "skin": "race default"
+      },
+      {
+        "records": "Bodyguard",
+        "weapons": "Imperial Sword · Imperial Light Shield · Torch 01D4EC",
+        "armor": "`GuardImperialOutfit` 0267EF",
+        "skin": "race default"
+      },
+      {
+        "records": "`CWMission06DissaffectSoldierImperial1`",
+        "weapons": "`CWSoldierImperialGear` 0A6E61",
+        "armor": "`CWMission06TurncoatGuardImperialOutfit` 0A6E7F",
+        "skin": "race default"
+      },
+      {
+        "records": "`WE23SoldierImperialNaked`",
+        "weapons": "none",
+        "armor": "none",
+        "skin": "race default"
+      },
+      {
+        "records": "`CWPrisonerImperialB`/`C`",
+        "weapons": "none",
+        "armor": "`PrisonerNoShoesOutfit` 0A1982",
+        "skin": "race default"
+      },
+      {
+        "records": "Imperial Archer",
+        "weapons": "Imperial Bow · Steel Arrow · Steel Dagger",
+        "armor": "`CWSoldierImperialSoldierOutfit` 0964DF",
+        "skin": "race default"
+      },
+      {
+        "records": "Imperial Wizard",
+        "weapons": "`LItemWarlockDagger` 044CD6",
+        "armor": "`GuardImperialOutfit` 0267EF",
+        "skin": "race default"
+      },
+      {
+        "records": "`MQ101ImperialSoldier01`–`04`, `…Unaggressive`/`02`",
+        "weapons": "Imperial Sword · Long Bow 03B562 · Iron Arrow 01397D · Iron Dagger 01397E",
+        "armor": "`ArmorImperialLightOutfit` 0AD23E",
+        "skin": "race default"
+      },
+      {
+        "records": "`MQ101ImperialSoldierCartDriver`",
+        "weapons": "the same four",
+        "armor": "`ArmorImperialStuddedOutfit` 057A28",
+        "skin": "race default"
+      },
+      {
+        "records": "`MQ101ImperialSoldierMelee`/`02`",
+        "weapons": "Imperial Sword · Iron Dagger",
+        "armor": "`ArmorImperialStuddedOutfit` 057A28",
+        "skin": "race default"
+      },
+      {
+        "records": "`MQ101ImperialSoldierOfficerMale01`/`02` · Imperial Captain",
+        "weapons": "Imperial Sword · Iron Dagger",
+        "armor": "`CWSoldierImperialOfficerOutfitNoHelmet` 0ABF45 · `CWSoldierImperialOfficerOutfit` 0ABF44",
+        "skin": "race default"
+      },
+      {
+        "records": "`MQ101ImperialArcherFemale`/`Male`, `dunCGImperialSoldierArcherA04`",
+        "weapons": "Imperial Bow · Steel Arrow (`MQ101SteelArrow` 105EE7)",
+        "armor": "`ArmorImperialLightOutfit` 0AD23E",
+        "skin": "race default"
+      },
+      {
+        "records": "the other `dunCG` soldiers",
+        "weapons": "Imperial Bow · Steel Arrow",
+        "armor": "`ArmorImperialLightOutfit` 0AD23E (`…ArcherC02`: `ArmorImperialLightOutfitNoHelmet` 0AD23F)",
+        "skin": "race default"
+      },
+      {
+        "records": "Imperial Mage",
+        "weapons": "none",
+        "armor": "`dunCGImperialMageOutfit` 0F3E7D",
+        "skin": "race default"
+      },
+      {
+        "records": "Torturer · Torturer's Assistant",
+        "weapons": "Steel Dagger · Iron Mace 013982",
+        "armor": "`MQ101TorturerOutfit` 0B9653 · `ArmorImperialLightOutfitNoHelmet` 0AD23F",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "CWSoldierImperialGear",
+          "formKey": "0A6E61:Skyrim.esm"
+        },
+        "rolls": "all of: Imperial Bow, Imperial Sword, Steel Dagger, 20 × steel arrow at 75% each, a torch at 50%, drink, food, gold, a divine amulet at 10%"
+      },
+      {
+        "list": {
+          "edid": "CWSoldierImperialGearNoTorch",
+          "formKey": "10FAFC:Skyrim.esm"
+        },
+        "rolls": "as 0A6E61 without the torch"
+      },
+      {
+        "list": {
+          "edid": "CWSoldierImperialGearNoTorchNoBow",
+          "formKey": "10FAFD:Skyrim.esm"
+        },
+        "rolls": "Imperial Sword, Steel Dagger, drink, food, gold, amulet; no bow, no arrows"
+      },
+      {
+        "list": {
+          "edid": "GuardImperialOutfit",
+          "formKey": "0267EF:Skyrim.esm"
+        },
+        "rolls": "→ `OutfitListSoldierImperial` 0ABF40: one of three, all at 1: Imperial Light set (×1) or Studded Imperial set (×2); each with Imperial Light Helmet, Boots and Bracers"
+      },
+      {
+        "list": {
+          "edid": "CWSoldierImperialSoldierOutfit",
+          "formKey": "0964DF:Skyrim.esm"
+        },
+        "rolls": "Imperial Shield 0135BA + `OutfitListSoldierImperial` 0ABF40"
+      },
+      {
+        "list": {
+          "edid": "CWSoldierImperialOfficerOutfitNoHelmet",
+          "formKey": "0ABF45:Skyrim.esm"
+        },
+        "rolls": "Imperial Armor, Boots, Bracers (heavy); no helmet"
+      },
+      {
+        "list": {
+          "edid": "CWSoldierImperialOfficerOutfit",
+          "formKey": "0ABF44:Skyrim.esm"
+        },
+        "rolls": "as 0ABF45 plus Imperial Officer's Helmet"
+      },
+      {
+        "list": {
+          "label": "`CWSoldierImperialSoldierOutfitLightNoShield` 0D29A1 · `ArmorImperialLightOutfit` 0AD23E"
+        },
+        "rolls": "Imperial Light Armor, Helmet, Boots, Bracers"
+      },
+      {
+        "list": {
+          "edid": "ArmorImperialLightOutfitNoHelmet",
+          "formKey": "0AD23F:Skyrim.esm"
+        },
+        "rolls": "Imperial Light Armor, Boots, Bracers"
+      },
+      {
+        "list": {
+          "edid": "ArmorImperialStuddedOutfit",
+          "formKey": "057A28:Skyrim.esm"
+        },
+        "rolls": "Studded Imperial Armor, Imperial Light Helmet, Boots, Bracers"
+      },
+      {
+        "list": {
+          "edid": "CWMission06TurncoatGuardImperialOutfit",
+          "formKey": "0A6E7F:Skyrim.esm"
+        },
+        "rolls": "Imperial Light set (×1) or Studded Imperial set (×2), no helmet"
+      },
+      {
+        "list": {
+          "edid": "PrisonerNoShoesOutfit",
+          "formKey": "0A1982:Skyrim.esm"
+        },
+        "rolls": "Roughspun Tunic 03C9FE"
+      },
+      {
+        "list": {
+          "edid": "ArmorStormcloakMarkarthOutfit",
+          "formKey": "063F3B:Skyrim.esm"
+        },
+        "rolls": "Markarth Guard's Armor, Markarth Guard's Shield, Hide Helmet"
+      },
+      {
+        "list": {
+          "edid": "CWSiegeArmorImperialWhiterunOutfit",
+          "formKey": "063F36:Skyrim.esm"
+        },
+        "rolls": "Whiterun Guard's Armor, Shield and Helmet, Hide Boots"
+      },
+      {
+        "list": {
+          "label": "`dunCGImperialMageOutfit` 0F3E7D · `MQ101TorturerOutfit` 0B9653"
+        },
+        "rolls": "Imperial Light Armor and Boots (+ Bracers on the Torturer), Torturer's Hood"
+      },
+      {
+        "list": {
+          "edid": "LItemWarlockDagger",
+          "formKey": "044CD6:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron 1 · Steel 4 · Orcish 7 · Dwarven 10 · Elven 14 · enchanted daggers 15"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Imperial Light, Studded Imperial armor, Imperial Light Helmet, Boots, Bracers; Imperial Light Shield",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Imperial Armor, Boots, Bracers, Officer's Helmet; Imperial Shield",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Markarth and Whiterun Guard's Armor, Whiterun Guard's Helmet, Hide Helmet and Boots, Torturer's Hood",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Markarth and Whiterun Guard's Shields",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Roughspun Tunic",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Imperial Sword, Imperial Bow, Long Bow, Steel and Iron Daggers, Iron Mace; steel and iron arrows",
+        "kind": "one-handed, bow",
+        "playable": true
+      }
+    ]
+  }
+}

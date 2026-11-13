@@ -1,0 +1,610 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "named-stormcloaks",
+  "group": "stormcloaks",
+  "title": "Named Stormcloaks",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "ulfric",
+        "name": "Ulfric Stormcloak",
+        "records": [
+          {
+            "edid": "Ulfric",
+            "formKey": "01414D:Skyrim.esm"
+          },
+          {
+            "edid": "CWBattleUlfric",
+            "formKey": "0D0575:Skyrim.esm"
+          },
+          {
+            "edid": "MQ304Ulfric",
+            "formKey": "0EA581:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1, villains and leaders: Ulfric and Tullius 45"
+        },
+        "note": "`MQ304Ulfric` (Sovngarde) takes `Stats` from `Ulfric`"
+      },
+      {
+        "id": "galmar",
+        "name": "Galmar Stone-Fist",
+        "records": [
+          {
+            "edid": "Galmar",
+            "formKey": "014128:Skyrim.esm"
+          },
+          {
+            "edid": "CWBattleGalmar",
+            "formKey": "0D0570:Skyrim.esm"
+          },
+          {
+            "edid": "MQ304Galmar",
+            "formKey": "0EA582:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 30
+        },
+        "target": {
+          "band": "VII",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Galmar to Powerful"
+        },
+        "note": "`MQ304Galmar` (Sovngarde) takes `Stats` from `Galmar`"
+      },
+      {
+        "id": "ralof",
+        "name": "Ralof",
+        "records": [
+          {
+            "edid": "Ralof",
+            "formKey": "02BF9D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 50
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1: the level a level-25 player meets (25 × its multiplier, clamped)"
+        }
+      },
+      {
+        "id": "field-commander-eastmarch",
+        "name": "Yrsarald Thrice-Pierced",
+        "records": [
+          {
+            "edid": "CWFieldCOSonsEastmarch",
+            "formKey": "084551:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSons` 01FC5C, through `CWFieldCOSons` 0205C8 and `CWSoldierSons` 01B54B: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field commander"
+        }
+      },
+      {
+        "id": "field-commander-falkreath",
+        "name": "Thorygg Sun-Killer",
+        "records": [
+          {
+            "edid": "CWFieldCOSonsFalkreath",
+            "formKey": "08455F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSons` 01FC5C, through `CWFieldCOSons` 0205C8 and `CWSoldierSons` 01B54B: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field commander"
+        }
+      },
+      {
+        "id": "field-commander-haafingar",
+        "name": "Istar Cairn-Breaker",
+        "records": [
+          {
+            "edid": "CWFieldCOSonsHaafingar",
+            "formKey": "084550:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSons` 01FC5C, through `CWFieldCOSons` 0205C8 and `CWSoldierSons` 01B54B: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field commander"
+        }
+      },
+      {
+        "id": "field-commander-hjaalmarch",
+        "name": "Arrald Frozen-Heart",
+        "records": [
+          {
+            "edid": "CWFieldCOSonsHjaalmarch",
+            "formKey": "084552:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSons` 01FC5C, through `CWFieldCOSons` 0205C8 and `CWSoldierSons` 01B54B: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field commander"
+        }
+      },
+      {
+        "id": "field-commander-pale",
+        "name": "Frorkmar Banner-Torn",
+        "records": [
+          {
+            "edid": "CWFieldCOSonsPale",
+            "formKey": "084553:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSons` 01FC5C, through `CWFieldCOSons` 0205C8 and `CWSoldierSons` 01B54B: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field commander"
+        }
+      },
+      {
+        "id": "field-commander-reach",
+        "name": "Kottir Red-Shoal",
+        "records": [
+          {
+            "edid": "CWFieldCOSonsReach",
+            "formKey": "084556:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSons` 01FC5C, through `CWFieldCOSons` 0205C8 and `CWSoldierSons` 01B54B: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field commander"
+        }
+      },
+      {
+        "id": "field-commander-rift",
+        "name": "Gonnar Oath-Giver",
+        "records": [
+          {
+            "edid": "CWFieldCOSonsRift",
+            "formKey": "08455B:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSons` 01FC5C, through `CWFieldCOSons` 0205C8 and `CWSoldierSons` 01B54B: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field commander"
+        }
+      },
+      {
+        "id": "field-commander-whiterun",
+        "name": "Hjornskar Head-Smasher",
+        "records": [
+          {
+            "edid": "CWFieldCOSonsWhiterun",
+            "formKey": "08455D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSons` 01FC5C, through `CWFieldCOSons` 0205C8 and `CWSoldierSons` 01B54B: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field commander"
+        }
+      },
+      {
+        "id": "field-commander-winterhold",
+        "name": "Kai Wet-Pommel",
+        "records": [
+          {
+            "edid": "CWFieldCOSonsWinterhold",
+            "formKey": "084568:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSons` 01FC5C, through `CWFieldCOSons` 0205C8 and `CWSoldierSons` 01B54B: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field commander"
+        }
+      },
+      {
+        "id": "stormcloak-champion",
+        "name": "Stormcloak Champion",
+        "records": [
+          {
+            "edid": "ccFFBSSE001_NPC_StormcloakChampion",
+            "formKey": "00086C:ccffbsse001-imperialdragon.esl"
+          },
+          {
+            "edid": "ccFFBSSE001_NPC_StormcloakChampionBackup",
+            "formKey": "000957:ccffbsse001-imperialdragon.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 35
+        },
+        "target": {
+          "band": "VII",
+          "level": 42,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Stormcloak Champion the same as the Imperial Champion, Powerful 42"
+        },
+        "note": "each its own level"
+      },
+      {
+        "id": "klija-champion",
+        "name": "Klija Wolf-Claw",
+        "encounter": "the battle of champions",
+        "records": [
+          {
+            "edid": "ccFFBSSE001_KlijaBaseBountyFixChampion",
+            "formKey": "00095D:ccffbsse001-imperialdragon.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.25,
+          "min": 20,
+          "max": 60
+        },
+        "target": {
+          "band": "VII",
+          "level": 42,
+          "status": "proposed",
+          "source": "user, 2026-11-12: Klija's champion version Powerful 42, the same as the Imperial and Stormcloak Champions"
+        },
+        "note": "the default Stormcloak champion (quest alias `CWSonsCaptain01` of `ccFFBSSE001_Quest` 000927) when the player fights for the Empire; the Stormcloak Champion replaces her if the player took her snow bear pelts (stage 25). Essential, in `CWSonsFactionNPC`."
+      },
+      {
+        "id": "klija-kynesgrove",
+        "name": "Klija Wolf-Claw",
+        "encounter": "Kynesgrove",
+        "records": [
+          {
+            "edid": "ccFFBSSE001_KlijaBaseBountyFix",
+            "formKey": "00095C:ccffbsse001-imperialdragon.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.25,
+          "min": 20,
+          "max": 60
+        },
+        "target": {
+          "band": "V",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Klija in Kynesgrove Experienced"
+        },
+        "note": "a warrior of Bruma holding the five snow bear pelts (quest alias `Klija`, ref 000883); the optional objective is to steal them. Not in a Stormcloak faction."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The Stormcloak Champions and `ccFFBSSE001_KlijaBaseBountyFixChampion` use `EncSoldierSonsTemplate` 027498 (*Common Stormcloaks*) as their template but not for `Stats`, so they keep their own level when the soldiers' level changes.",
+      "The rows: no other record keeps its own level. `CWBattleUlfric`, `CWBattleGalmar` and `ccFFBSSE001_KlijaBaseBountyFix` have no template; each carries its own level.",
+      "`MQ304Ulfric` and `MQ304Galmar` carry `Stats` from `Ulfric` and `Galmar`, and the nine field commanders follow `LCharSoldierSons`; no other record uses a row as its template."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharSoldierSons",
+          "formKey": "01FC5C:Skyrim.esm"
+        },
+        "seeFamily": "common-stormcloaks",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the nine Stormcloak Soldier leaves (*Common Stormcloaks*)"
+          }
+        ],
+        "owner": "the nine field commanders, through `CWFieldCOSons` 0205C8 → `CWSoldierSons` 01B54B; each commander is `Essential`"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "Ulfric Stormcloak",
+        "note": "`WindhelmPalaceoftheKings` 01677C (`UlfricREF` 01B131); `CWBattleUlfric`: `WindhelmExterior01` 00B4BB and `SolitudeExterior01` 00927B, initially disabled; `MQ304Ulfric`: `Sovngarde` persistent (`MQ304UlfricRef` 0EA584), initially disabled"
+      },
+      {
+        "name": "Galmar Stone-Fist",
+        "note": "`WindhelmPalaceoftheKings` (`GalmarREF` 01B133); `CWBattleGalmar`: `Tamriel` persistent, `RiftenAttackStart01` 00BC4C, `MarkarthAttackStart02` 0075A9, `WhiterunExterior13` 0095FD, all initially disabled; `MQ304Galmar`: `Sovngarde` persistent (`MQ304GalmarRef` 0EA585), initially disabled"
+      },
+      {
+        "name": "Ralof",
+        "note": "`Tamriel` persistent (`RalofRef` 02BF9E)"
+      },
+      {
+        "name": "the nine field commanders",
+        "note": "each at a camp and a hold capital: Eastmarch only `CWFieldCOSonsEastmarchCapital` 077E08 (`WindhelmWorld`); Falkreath `CWFieldCOSonsFalkreathCamp` 037F92 (initially disabled) · `…Capital` 077D68; Haafingar 037F93 · 077DE3 (`SolitudeWorld`); Hjaalmarch 037F95 · 077DD8; Pale 037F97 · 077D61; Reach 037FA6 · 077DD6 (`MarkarthWorld`); Rift 038047 · 077DDB (`RiftenWorld`); Whiterun 0BECEC · 0BF562 (`WhiterunWorld`); Winterhold 038049 · 077E16. The camps are in `Tamriel` persistent; the capital references sit behind enable parents"
+      },
+      {
+        "name": "Stormcloak Champion",
+        "note": "`Tamriel` persistent, ×1 each, initially disabled (ccffbsse001-imperialdragon.esl)"
+      },
+      {
+        "name": "Klija Wolf-Claw",
+        "note": "`Tamriel` persistent, ×1 each (00095D, and 00095C as ref 000883), initially disabled"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "`Ulfric`",
+        "weapons": "Steel War Axe of Cowardice 0A69D7 · Ulfric's Gag 0F9670",
+        "armor": "`UlfricPrisonerOutfit` 101AF2",
+        "skin": "race default"
+      },
+      {
+        "records": "`MQ304Ulfric`",
+        "weapons": "Steel War Axe of Cowardice · Ulfric's Gag",
+        "armor": "`UlfricOutfit` 045C33",
+        "skin": "race default"
+      },
+      {
+        "records": "`CWBattleUlfric`",
+        "weapons": "Steel Sword 013989",
+        "armor": "`UlfricOutfit` 045C33",
+        "skin": "race default"
+      },
+      {
+        "records": "Galmar Stone-Fist (all three)",
+        "weapons": "Iron Battleaxe 013980",
+        "armor": "`SonsOfSkyrimCommanderOutfit` 08CF6B",
+        "skin": "race default"
+      },
+      {
+        "records": "Ralof",
+        "weapons": "Iron War Axe 013790 · Long Bow 03B562 · Iron Arrow 01397D · Potion of Minor Healing 03EADD",
+        "armor": "`MQ101StormcloakPrisonerOutfit` 0FE535",
+        "skin": "race default"
+      },
+      {
+        "records": "the nine field commanders (own inventory)",
+        "weapons": "Hunting Bow 013985 · Steel Arrow 01397F · Steel Dagger 013986 · `LItemSoldierSonsWeaponAny` 046057",
+        "armor": "`CWSoldierSonsOfficerOutfitNoHelmet` 0ABF58",
+        "skin": "race default"
+      },
+      {
+        "records": "`ccFFBSSE001_NPC_StormcloakChampion`, `ccFFBSSE001_KlijaBaseBountyFixChampion`",
+        "weapons": "Tsun's Judgement 000850 · Storm-Bear Sword 000D61",
+        "armor": "`ccFFBSSE001_ArmorChampionSons` 000935",
+        "skin": "race default"
+      },
+      {
+        "records": "`ccFFBSSE001_KlijaBaseBountyFix`",
+        "weapons": "`CWSoldierSonsGear` 0A6E7A · `LootCitizenPocketsCommon` 1046D1",
+        "armor": "`ArmorHideSimpleOutfit` 037C4F",
+        "skin": "race default"
+      },
+      {
+        "records": "`ccFFBSSE001_NPC_StormcloakChampionBackup`",
+        "weapons": "`CWSoldierSonsGearNoTorchNoBow` 10FAFE",
+        "armor": "`CWSoldierSonsOfficerOutfit` 0ABF57",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "UlfricPrisonerOutfit",
+          "formKey": "101AF2:Skyrim.esm"
+        },
+        "rolls": "Ulfric's Clothes, Ulfric's Boots, Prisoner's Cuffs"
+      },
+      {
+        "list": {
+          "edid": "UlfricOutfit",
+          "formKey": "045C33:Skyrim.esm"
+        },
+        "rolls": "Ulfric's Clothes, Ulfric's Boots, Ulfric's Bracers"
+      },
+      {
+        "list": {
+          "label": "`SonsOfSkyrimCommanderOutfit` 08CF6B · `CWSoldierSonsOfficerOutfit` 0ABF57"
+        },
+        "rolls": "Stormcloak Officer Armor, Boots, Bracers, Helmet"
+      },
+      {
+        "list": {
+          "edid": "CWSoldierSonsOfficerOutfitNoHelmet",
+          "formKey": "0ABF58:Skyrim.esm"
+        },
+        "rolls": "Stormcloak Officer Armor, Boots, Bracers"
+      },
+      {
+        "list": {
+          "edid": "MQ101StormcloakPrisonerOutfit",
+          "formKey": "0FE535:Skyrim.esm"
+        },
+        "rolls": "Stormcloak Cuirass, Fur Boots, Prisoner's Cuffs"
+      },
+      {
+        "list": {
+          "edid": "ccFFBSSE001_ArmorChampionSons",
+          "formKey": "000935:ccffbsse001-imperialdragon.esl"
+        },
+        "rolls": "Storm-Bear Helmet, Armor, Gauntlets, Boots and Shield"
+      },
+      {
+        "list": {
+          "edid": "ArmorHideSimpleOutfit",
+          "formKey": "037C4F:Skyrim.esm"
+        },
+        "rolls": "Hide Armor, Hide Boots"
+      },
+      {
+        "list": {
+          "edid": "LItemSoldierSonsWeaponAny",
+          "formKey": "046057:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "an Iron (1) or Steel (4) one-handed weapon with a Hide (1) or Steel (4) shield, or an Iron or Steel two-handed weapon (*Common Stormcloaks*)"
+      },
+      {
+        "list": {
+          "edid": "CWSoldierSonsGear",
+          "formKey": "0A6E7A:Skyrim.esm"
+        },
+        "rolls": "all of: Hunting Bow, `LItemSoldierSonsWeaponAny`, Steel Dagger, a torch at 50%, 15 × steel arrow at 75% each, drink, food, gold, a divine amulet at 10%"
+      },
+      {
+        "list": {
+          "edid": "CWSoldierSonsGearNoTorchNoBow",
+          "formKey": "10FAFE:Skyrim.esm"
+        },
+        "rolls": "`LItemSoldierSonsWeaponAny`, Steel Dagger, drink, food, gold, a divine amulet at 10%"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Stormcloak Officer Armor, Boots, Bracers, Helmet; Stormcloak Cuirass, Fur Boots; Hide Armor and Boots; Ulfric's Bracers",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Storm-Bear armor set and shield (CC)",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Ulfric's Clothes and Boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Ulfric's Gag, Prisoner's Cuffs",
+        "kind": "clothing",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Steel War Axe of Cowardice, Steel Sword, Iron Battleaxe, Iron War Axe, Long and Hunting Bows, Steel Dagger, Tsun's Judgement, Storm-Bear Sword; iron and steel arrows",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

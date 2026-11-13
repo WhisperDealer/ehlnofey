@@ -1,0 +1,96 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "imperial-legion",
+  "title": "Imperial Legion",
+  "order": 3,
+  "parent": "factions",
+  "meta": {
+    "spec": "archetype-tiers.md §6",
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The Imperial Legion: the soldier list, the siege archers and wizards, Helgen, the guard garrisons, the field legates and the named officers, vanilla, DLC and CC. Every soldier takes its level from one record, `EncSoldierImperialTemplate` 01FC5D, which also carries the Stormcloak soldiers; their bands rise with rank (user, 2026-11-12): the Courier Trained; soldiers, guards, archers, quartermasters and prisoners Blooded; officers and fort commanders Experienced; field legates and generals Elite. Superseded: archetype-tiers.md §6 gave the leaves 25 / 30 / 35 and pinned the single fixed soldiers at 30.",
+  "families": [
+    {
+      "id": "common-legion",
+      "holds": "`LCharSoldierImperial` and its voice-type sublists (one level for all nine leaves: PC×0.25 [1–50]), every wrapper on them, the siege archers and wizards, Helgen, the CC Imperial Dragon soldiers; the guard-list leaves and the Imperial garrison guards in Imperial army armour (`LCharGuardImperial`: PC×1 [20–50])"
+    },
+    {
+      "id": "named-legion",
+      "holds": "General Tullius, Legate Rikke, Hadvar, Captain Aldis, the nine field legates, the CC Imperial Champion"
+    }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-10-02)",
+    "confidence": "verified",
+    "text": "Every NPC in Skyrim, Update, Dawnguard, HearthFires, Dragonborn and the 74 CC packs that is in `CWImperialFaction` 02BF9A, `CWImperialFactionNPC` 01C9FC, `MQ101ImperialFaction` 0BF465, `MQ103ImperialSoldierFaction` 01BC97 or `ccFFBSSE001_CWImperialEnemyFaction` 00085D:ccffbsse001-imperialdragon.esl, or whose EditorID or name holds \"Legion\", \"Tullius\", \"Imperial Soldier\", \"CWSoldier\" or \"SoldierImperial\"; every `LVLN` named `LCharSoldierImperial*`; then every record that takes a template from one of them, every placed reference in every cell and worldspace, and every quest alias or property that names one. No plugin overrides `LCharSoldierImperial`, its sublists, `CWSoldierImperialGear` or the Imperial outfit lists. The `CW` quest 019E53 holds `CWSoldierImperialGear` 0A6E61 as a script property; that its script hands the gear out and does not add to the list is `[unverified]` (the script source was not read). Re-checked 2026-11-12: no leveled list holds an Imperial soldier or guard list, and the records outside these pages that take one as their template are the ones each list row names under \"drawn by\"."
+  },
+  "filedElsewhere": [
+    {
+      "record": "the Imperial-held guards in their hold's uniform (Whiterun, Solitude, Markarth, Falkreath, Morthal and the rest), CC `ccBGSSSE058_GuardDragonBridgeImperial` 00081F:ccbgssse058-ba_steel.esl",
+      "what": "hold guards",
+      "where": "Factions → Guards → *Hold Guards*"
+    },
+    {
+      "record": "`MQ104Soldier01`–`04`, `MQ104SoldierSurvivor`",
+      "what": "\"Whiterun Guard\", the guards at the Western Watchtower",
+      "where": "Factions → Guards → *Hold Guards*"
+    },
+    {
+      "record": "`dunBluePalaceBully` 09F851",
+      "what": "\"Anger\", Pelagius's mind (*The Mind of Madness*); inherits only spells and AI from `EncSoldierImperialTemplate`",
+      "where": "World → *Haafingar Countryside*"
+    },
+    {
+      "record": "`DLC1dunRedwaterDenAddictCWMaleCommander` 008D29:Dawnguard.esm",
+      "what": "\"Imperial Deserter\", a skooma addict in `DLC1RedwaterDen01` 005EAB:Dawnguard.esm; own level 1, not aggressive",
+      "where": "not an enemy"
+    }
+  ],
+  "neverMet": [
+    {
+      "record": "`CWFortSoldierImperialWounded` 0FD8AA",
+      "what": "wounded Imperial Soldier, own level 1, in bandages",
+      "why": "camp and `CWGuardTemplates` 01FA4C set dressing, ×27"
+    },
+    {
+      "record": "`CWPrisonerImperial` 01675D, `…A` 10D4B2, `…D` 10D4B5",
+      "what": "Imperial prisoners in a roughspun tunic (`…B` and `…C` are on *Common Legion*)",
+      "why": "`CW` script properties; prisoners"
+    },
+    {
+      "record": "`dunKorvanjundImpSoldierDead` 05AF2A",
+      "what": "Imperial Soldier corpses",
+      "why": "`Korvanjund02` 02954D ×4, `Korvanjund01` 0152A1 ×1"
+    },
+    {
+      "record": "`dunCGImperialSoldierDEAD` 0F94B5",
+      "what": "Imperial Soldier corpses at Helgen",
+      "why": "`HelgenExterior06` 00982B, `HelgenExterior07` 00984A, initially disabled"
+    },
+    {
+      "record": "`MQ301ImperialSoldier` 046EFC",
+      "what": "the Imperial casualty of Odahviing's capture",
+      "why": "`Tamriel` persistent, `StartsDead`"
+    },
+    {
+      "record": "`MQ304LostSoulImperial` 091AF2 · `…2` 0173C1",
+      "what": "Imperial Soldier lost souls in Sovngarde",
+      "why": "`Sovngarde` persistent"
+    },
+    {
+      "record": "`MQ101ImperialPriest` 107572",
+      "what": "\"Priestess of Arkay\" at Helgen",
+      "why": "alias `Priest` of `MQ101` 03372B"
+    },
+    {
+      "record": "`CWVoiceTypeSoldierMaleSoldier` 06B193 · `…MaleYoungEager` 06B195 · `…MaleCommander` 06B196 · `…FemaleCommander` 06B197",
+      "what": "voice-type templates",
+      "why": "not actors in the world"
+    },
+    {
+      "record": "`E3DemoSoldier01` 0D7779 (\"Whiterun Guard\")",
+      "what": "E3 demo soldiers",
+      "why": "`Tamriel` persistent ×3, enable parent 0BC06B"
+    }
+  ]
+}

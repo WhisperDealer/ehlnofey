@@ -1,0 +1,1376 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "common-stormcloaks",
+  "group": "stormcloaks",
+  "title": "Common Stormcloaks",
+  "order": 1,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "stormcloak-soldier",
+        "name": "Stormcloak Soldier",
+        "records": [
+          {
+            "edid": "EncSoldierSonsNordF01FemaleNord",
+            "formKey": "017167:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierSonsNordF02FemaleNord",
+            "formKey": "017168:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierSonsNordF03FemaleNord",
+            "formKey": "017169:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierSonsNordM01MaleNord",
+            "formKey": "01716A:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierSonsNordM02MaleNord",
+            "formKey": "01716B:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierSonsNordM03MaleNord",
+            "formKey": "01716C:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierSonsNordM04MaleNord",
+            "formKey": "0770AF:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierSonsNordM05MaleNord",
+            "formKey": "0770B0:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierSonsNordM06MaleNord",
+            "formKey": "0770B1:Skyrim.esm"
+          },
+          {
+            "edid": "EncSoldierSonsTemplate",
+            "formKey": "027498:Skyrim.esm"
+          },
+          {
+            "edid": "EncSiegeSonsSoldierTemplate",
+            "formKey": "045BE5:Skyrim.esm"
+          },
+          {
+            "edid": "CWSiegeSonsSoldierHold",
+            "formKey": "07C4D2:Skyrim.esm"
+          },
+          {
+            "edid": "ccFFBSSE001_CWSoldierSons01",
+            "formKey": "000871:ccffbsse001-imperialdragon.esl"
+          },
+          {
+            "edid": "ccFFBSSE001_CWSoldierSons02",
+            "formKey": "000874:ccffbsse001-imperialdragon.esl"
+          },
+          {
+            "edid": "ccFFBSSE001_CWSoldierSonsUseWeaponArcher",
+            "formKey": "00086E:ccffbsse001-imperialdragon.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "edid": "EncSoldierImperialTemplate",
+            "formKey": "01FC5D:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+        },
+        "note": "the nine leaves of `LCharSoldierSons` (`EncSoldierSonsNord{F01–F03,M01–M06}*`), the siege templates and the CC Imperial Dragon soldiers; each leaf takes `Stats` from `EncSoldierSonsTemplate` 027498, which takes them from `EncSoldierImperialTemplate` 01FC5D (*Common Legion*). The two siege templates own their level in the build (archetype-tiers.md §6), at this row's band."
+      },
+      {
+        "id": "stormcloak-guard-leaves",
+        "name": "Stormcloak Soldier",
+        "records": [
+          {
+            "edid": "EncGuardSonsF01FemaleNord",
+            "formKey": "0AA922:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardSonsF02FemaleNord",
+            "formKey": "0AA924:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardSonsF03FemaleNord",
+            "formKey": "0AA931:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardSonsM01MaleNordCommander",
+            "formKey": "0AA932:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardSonsM02MaleNordCommander",
+            "formKey": "0AA933:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardSonsM03MaleNordCommander",
+            "formKey": "0AA935:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardSonsM04MaleGuard",
+            "formKey": "0AA936:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardSonsM05MaleGuard",
+            "formKey": "0AA942:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardSonsM06MaleGuard",
+            "formKey": "0AA943:Skyrim.esm"
+          },
+          {
+            "edid": "EncGuardSonsTemplate",
+            "formKey": "0F6F38:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20,
+          "max": 50,
+          "from": {
+            "edid": "EncGuardSonsTemplate",
+            "formKey": "0F6F38:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+        },
+        "note": "the nine guard leaves of `LCharGuardSons` (`EncGuardSonsF01`–`F03`, `…M01`–`M06`)."
+      },
+      {
+        "id": "stormcloak-garrison-guards",
+        "name": "Stormcloak Guard · Whiterun Guard · Falkreath Guard · Windhelm Guard",
+        "records": [
+          {
+            "edid": "GuardWhiterunSonsTemplate",
+            "formKey": "0FE2D1:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsBarracks",
+            "formKey": "10E2C5:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsDragonsreach",
+            "formKey": "0D1001:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsExteriorDUPLICATE000",
+            "formKey": "1000F3:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsGate",
+            "formKey": "0E0D77:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsGeneric",
+            "formKey": "0DC2DE:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsGuardhouseSleep",
+            "formKey": "1000F1:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsPatrolDay",
+            "formKey": "03708C:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsPatrolDay1",
+            "formKey": "0D3BCF:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsPatrolDay2",
+            "formKey": "0D3BD0:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsPatrolDayExterior",
+            "formKey": "0A941F:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsPatrolDayExterior1",
+            "formKey": "0D3BD9:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsPatrolNight1",
+            "formKey": "0D3BD1:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsPatrolNight2",
+            "formKey": "0D3BD2:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsPatrolNightExterior1",
+            "formKey": "0D3BD7:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsPatrolNightExterior2",
+            "formKey": "0D3BD8:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsPatrolWatchtowerDay",
+            "formKey": "0D907A:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsPostDay1",
+            "formKey": "0D3BD3:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsPostDay2",
+            "formKey": "0D3BD4:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsPostNight1",
+            "formKey": "0D3BD5:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsPostNight2",
+            "formKey": "0D3BD6:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsJail",
+            "formKey": "05EAB5:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunHoldSonsGeneric",
+            "formKey": "0ABE28:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsDragonsreachPorchPatrol",
+            "formKey": "108298:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWhiterunSonsDragonsreachPorchPatrolB",
+            "formKey": "108D8A:Skyrim.esm"
+          },
+          {
+            "edid": "GuardRiverwoodSonsOfSkyrim01",
+            "formKey": "0274AE:Skyrim.esm"
+          },
+          {
+            "edid": "GuardRiverwoodSonsOfSkyrim02",
+            "formKey": "0274AF:Skyrim.esm"
+          },
+          {
+            "edid": "GuardRiverwoodSonsOfSkyrim03",
+            "formKey": "0274B0:Skyrim.esm"
+          },
+          {
+            "edid": "GuardRoriksteadSons",
+            "formKey": "039FD8:Skyrim.esm"
+          },
+          {
+            "edid": "GuardRoriksteadSonsHorsePatrol",
+            "formKey": "09DA49:Skyrim.esm"
+          },
+          {
+            "edid": "GuardSolitudeSonsBluePalace",
+            "formKey": "0B0E92:Skyrim.esm"
+          },
+          {
+            "edid": "GuardSolitudeSonsBluePalaceMaleGuard",
+            "formKey": "0B3E50:Skyrim.esm"
+          },
+          {
+            "edid": "TG04EastEmpireSolitudeSons",
+            "formKey": "1007F6:Skyrim.esm"
+          },
+          {
+            "edid": "TG04EastEmpireSolitudeSonsPosted",
+            "formKey": "1007FB:Skyrim.esm"
+          },
+          {
+            "edid": "ccBGSSSE031_GuardStormcloak",
+            "formKey": "000811:ccbgssse031-advcyrus.esm"
+          },
+          {
+            "edid": "LvlHaafingarHoldGuardSons",
+            "formKey": "0268F2:Skyrim.esm"
+          },
+          {
+            "edid": "GuardDragonBridgeSons",
+            "formKey": "0212BB:Skyrim.esm"
+          },
+          {
+            "edid": "GuardSalviusFarmSons",
+            "formKey": "09E480:Skyrim.esm"
+          },
+          {
+            "edid": "GuardKarthwastenSons01",
+            "formKey": "02429B:Skyrim.esm"
+          },
+          {
+            "edid": "GuardKolskeggrSons",
+            "formKey": "01FD6A:Skyrim.esm"
+          },
+          {
+            "edid": "GuardLeftHandMineSons",
+            "formKey": "09E482:Skyrim.esm"
+          },
+          {
+            "edid": "GuardSoljundsSons",
+            "formKey": "061368:Skyrim.esm"
+          },
+          {
+            "edid": "dunMarkarthWizard_GuardSonsGallery",
+            "formKey": "0558FE:Skyrim.esm"
+          },
+          {
+            "edid": "dunMarkarthWizard_GuardSonsLab",
+            "formKey": "08710C:Skyrim.esm"
+          },
+          {
+            "edid": "dunMarkarthWizard_LvlGuardSons",
+            "formKey": "08713C:Skyrim.esm"
+          },
+          {
+            "edid": "GuardFalkreathSons",
+            "formKey": "103962:Skyrim.esm"
+          },
+          {
+            "edid": "GuardFalkreathSonsBarracks",
+            "formKey": "105CA9:Skyrim.esm"
+          },
+          {
+            "edid": "LvlFalkreathHoldGuardSons",
+            "formKey": "021825:Skyrim.esm"
+          },
+          {
+            "edid": "LvlFalkreathHoldGuardSonsJail",
+            "formKey": "0FCE7B:Skyrim.esm"
+          },
+          {
+            "edid": "LvlFalkreathHoldGuardSonsVoiceTypeMaleGuard",
+            "formKey": "0EC6E8:Skyrim.esm"
+          },
+          {
+            "edid": "GuardHjaalmarchSons",
+            "formKey": "02C81C:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsJail",
+            "formKey": "0FCE80:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsGateDocks",
+            "formKey": "03EECF:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsTemplate",
+            "formKey": "0FCE7E:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol1a",
+            "formKey": "0480C5:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol1b",
+            "formKey": "0480C7:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol1c",
+            "formKey": "0480C8:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol1d",
+            "formKey": "0480C9:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol2a",
+            "formKey": "0A24A8:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol2b",
+            "formKey": "0A24AA:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol2c",
+            "formKey": "0A24AC:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol3a",
+            "formKey": "0A24BA:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol3b",
+            "formKey": "0A24C5:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol4a",
+            "formKey": "0A24C7:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol4b",
+            "formKey": "0A24C9:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol5a",
+            "formKey": "0A24D2:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol5b",
+            "formKey": "0A24D4:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol6a",
+            "formKey": "0A24DF:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol6b",
+            "formKey": "0A24E1:Skyrim.esm"
+          },
+          {
+            "edid": "GuardWindhelmSonsPatrol6c",
+            "formKey": "0A24E3:Skyrim.esm"
+          },
+          {
+            "edid": "GuardKynesgroveSons",
+            "formKey": "02E70F:Skyrim.esm"
+          },
+          {
+            "edid": "GuardDarkwaterCrossingSons",
+            "formKey": "0A852E:Skyrim.esm"
+          },
+          {
+            "edid": "LvlGuardSons",
+            "formKey": "01FC63:Skyrim.esm"
+          },
+          {
+            "edid": "LvlGuardSonsWizard",
+            "formKey": "0872A3:Skyrim.esm"
+          },
+          {
+            "edid": "LvlGuardSonsSingleVoiceTypeFemaleNord",
+            "formKey": "05B2CC:Skyrim.esm"
+          },
+          {
+            "edid": "LvlGuardSonsSingleVoiceTypeMaleGuard",
+            "formKey": "0AAF95:Skyrim.esm"
+          },
+          {
+            "edid": "LvlGuardSonsSingleVoiceTypeMaleNordCommander",
+            "formKey": "0EA649:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 20,
+          "max": 50,
+          "from": {
+            "label": "`LCharGuardSons` 0E7B2D: every leaf PC×1 [20–50], owned by `EncGuardSonsTemplate` 0F6F38"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+        },
+        "note": "the Stormcloak garrison guards, in Stormcloak army armour, Whiterun hold (city, Dragonsreach, gate, watchtower, Riverwood, Rorikstead), Haafingar, the Reach, Falkreath, Hjaalmarch and Eastmarch. Also without their own row here: `GuardSolitudeSons*` (9), `GuardMarkarthSons*` (8), `GuardMorthalSons*` (5). Stormcloak Guard (Solitude, Morthal, Hjaalmarch) · Whiterun Guard (the porch patrols) · Falkreath Guard (103962, 105CA9) · Windhelm Guard (the jail); the rest have no name of their own and take the rolled soldier's, \"Stormcloak Soldier\"."
+      },
+      {
+        "id": "stormcloak-field-commander",
+        "name": "Stormcloak Field Commander",
+        "records": [
+          {
+            "edid": "CWFieldCOSons",
+            "formKey": "0205C8:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSons` 01FC5C: every leaf PC×0.25 [1–50], owned by `EncSoldierImperialTemplate` 01FC5D"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field commander"
+        },
+        "note": "the nine named field commanders on it are on *Named Stormcloaks*."
+      },
+      {
+        "id": "stormcloak-general",
+        "name": "Stormcloak General",
+        "records": [
+          {
+            "edid": "CWSiegeSonsSoldierGeneral",
+            "formKey": "0559DF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSons` 01FC5C: every leaf PC×0.25 [1–50], owned by `EncSoldierImperialTemplate` 01FC5D"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the general, the top rank"
+        }
+      },
+      {
+        "id": "stormcloak-quartermaster",
+        "name": "Stormcloak Quartermaster",
+        "records": [
+          {
+            "edid": "CWQuartermasterSons",
+            "formKey": "016ACE:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSons` 01FC5C: every leaf PC×0.25 [1–50], owned by `EncSoldierImperialTemplate` 01FC5D"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: camp support, rank-and-file"
+        }
+      },
+      {
+        "id": "stormcloak-courier",
+        "name": "Stormcloak Courier",
+        "records": [
+          {
+            "edid": "CWCourierSons",
+            "formKey": "03BCC7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSons` 01FC5C: every leaf PC×0.25 [1–50], owned by `EncSoldierImperialTemplate` 01FC5D"
+          }
+        },
+        "target": {
+          "band": "III",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the Courier, the one Trained rank"
+        }
+      },
+      {
+        "id": "stormcloak-prisoner",
+        "name": "Stormcloak Soldier",
+        "records": [
+          {
+            "edid": "CWPrisonerSonsB",
+            "formKey": "10D4B7:Skyrim.esm"
+          },
+          {
+            "edid": "CWPrisonerSonsC",
+            "formKey": "10D4B8:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSons` 01FC5C: every leaf PC×0.25 [1–50], owned by `EncSoldierImperialTemplate` 01FC5D"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a captured rank-and-file soldier"
+        },
+        "note": "no name of their own; they take the rolled soldier's."
+      },
+      {
+        "id": "thalmor-prisoner",
+        "name": "Thalmor Prisoner",
+        "records": [
+          {
+            "edid": "WEThalmorPrisoner",
+            "formKey": "0B80FF:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierSons` 01FC5C: every leaf PC×0.25 [1–50], owned by `EncSoldierImperialTemplate` 01FC5D"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a captured rank-and-file soldier"
+        },
+        "note": "the Justiciars' Stormcloak captive in `WE32` 0B80F3."
+      },
+      {
+        "id": "stormcloak-archer",
+        "name": "Stormcloak Archer",
+        "records": [
+          {
+            "edid": "EncSiegeSonsArcherTemplate",
+            "formKey": "045BE4:Skyrim.esm"
+          },
+          {
+            "edid": "CWSiegeSonsArcherHold",
+            "formKey": "07C4D3:Skyrim.esm"
+          },
+          {
+            "edid": "CWSiegeSonsArcher",
+            "formKey": "045BE3:Skyrim.esm"
+          },
+          {
+            "edid": "CWSiegeSonsArcherInvul",
+            "formKey": "02FFA7:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 3,
+          "max": 20
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: the rank-and-file soldier"
+        }
+      },
+      {
+        "id": "stormcloak-mage",
+        "name": "Stormcloak Mage",
+        "records": [
+          {
+            "edid": "CWSiegeSonsWizard",
+            "formKey": "04622B:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 6,
+          "from": {
+            "edid": "EncWarlock02TemplateIce",
+            "formKey": "045C60:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "follows `EncWarlock02TemplateIce` 045C60, the Apprentice Ice Mage (Warlocks → *Cryomancers*, IV)"
+        }
+      },
+      {
+        "id": "apprentice-ice-mage",
+        "name": "Apprentice Ice Mage",
+        "records": [
+          {
+            "edid": "CWSiegeSonsWizardInvul",
+            "formKey": "02FFA6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "template",
+          "value": 6,
+          "from": {
+            "edid": "EncWarlock02TemplateIce",
+            "formKey": "045C60:Skyrim.esm"
+          }
+        },
+        "target": {
+          "band": "IV",
+          "status": "proposed",
+          "source": "follows `EncWarlock02TemplateIce` 045C60, the Apprentice Ice Mage (Warlocks → *Cryomancers*, IV)"
+        }
+      },
+      {
+        "id": "helgen-stormcloak",
+        "name": "Stormcloak Soldier",
+        "encounter": "Helgen",
+        "records": [
+          {
+            "edid": "MQ101StormcloakPrisonerMale",
+            "formKey": "0467BB:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101StormcloakPrisonerMale02",
+            "formKey": "10A1A4:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101StormcloakPrisonerMale03",
+            "formKey": "10A1A5:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101StormcloakPrisonerMaleNord",
+            "formKey": "0F830A:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101StormcloakPrisonerMaleNord02",
+            "formKey": "10A1A7:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101StormcloakPrisonerFemale",
+            "formKey": "05B205:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101StormcloakPrisonerFemale02",
+            "formKey": "10A1A8:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101StormcloakPrisonerMaleUnaggressive",
+            "formKey": "0FE511:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101StormcloakPrisonerMaleUnaggressive02",
+            "formKey": "10A1A3:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101StormcloakPrisonerFemaleUnaggressive",
+            "formKey": "0FE512:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101StormcloakCageRoomPrisoner",
+            "formKey": "05B364:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101StormcloakCartMale",
+            "formKey": "0CD6BC:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101StormcloakCartMale02",
+            "formKey": "1098A1:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101StormcloakCartMaleBroder",
+            "formKey": "0F778F:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101StormcloakCartFemale",
+            "formKey": "0CD6BD:Skyrim.esm"
+          },
+          {
+            "edid": "dunCGStormcloakTowerA",
+            "formKey": "0F820F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": {
+          "band": "I",
+          "level": 1,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "the Helgen prisoners, the cart prisoners and `dunCGStormcloakTowerA` (which uses `MQ101StormcloakPrisonerMale` as template without `Stats`, at the same level)."
+      },
+      {
+        "id": "helgen-stormcloak-archer",
+        "name": "Stormcloak Soldier",
+        "encounter": "Helgen",
+        "records": [
+          {
+            "edid": "MQ101StormcloakArcher",
+            "formKey": "04D366:Skyrim.esm"
+          },
+          {
+            "edid": "MQ101StormcloakArcher02",
+            "formKey": "10A1A6:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "fixed",
+          "value": 0
+        },
+        "target": {
+          "band": "I",
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept (here 0, no `Level` field)"
+        },
+        "note": "no `Level` field, so level 0."
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "Changing the soldiers' level (`EncSoldierImperialTemplate` 01FC5D, through `EncSoldierSonsTemplate` 027498) also needs the CC `ccFFBSSE001_NPC_StormcloakChampion` 00086C · `…Backup` 000957 (PC×1 [10–35]) and `ccFFBSSE001_KlijaBaseBountyFixChampion` 00095D (PC×1.25 [20–60]), all ccffbsse001-imperialdragon.esl (on *Named Stormcloaks*): they use `EncSoldierSonsTemplate` as template but not for `Stats`; and the Sovngarde lost souls `MQ304LostSoulSons` 090A47 · `…2` 0173C0 · `…3` 0173C2 (PC×1.5 [3–20]; on the leaves M03, M01, M02 without `Stats`; listed as never met on the *Stormcloaks* group page). `EncGuardSonsTemplate` 0F6F38 also uses 027498 without `Stats`, but is a row of its own. The same owner also carries the Imperial soldiers, so the Imperial-side records that keep their own level under it are listed on *Common Legion*.",
+      "Changing `EncGuardSonsTemplate` 0F6F38 also needs `MQ301SonsSoldier` 046EFD (the Stormcloak casualty of Odahviing's capture, PC×1.5 [3–20]; listed as never met on the *Stormcloaks* group page): it takes its template from `GuardWhiterunSonsPatrolDay`, a wrapper on `LCharGuardSons`, which draws the guard leaves, without `Stats`.",
+      "The two mages' level 6 is owned by `EncWarlock02TemplateIce` 045C60 (on Warlocks → *Cryomancers*). Changing it also needs `EncWarlock02TemplateBossIce` 0E0FC0 (7, on *Warlock Bosses*), which uses it as template but not for `Stats`, and six CC records that take their template from `LvlWarlockElemental`, which draws it, without `Stats`: the Almsivi `ccASVSSE001_ElderDrevlan`, `…CaretakerIneril`, `…Priest02`, `…Priest03`, `…PriestDrureth` (on *Ghosts of the Tribunal*) and `ccBGSSSE013_GreenGuardian` 000845:ccbgssse013-dawnfang.esl.",
+      "The other rows: no other record keeps its own level (`dunCGStormcloakTowerA` uses `MQ101StormcloakPrisonerMale` as template without `Stats`, but shares the Helgen row at the same level).",
+      "Every other record that looks like a row (the `CWFort*`, `CWSiege*`, `CWSoldierSons*`, `MQ103` and `CW` mission wrappers, the garrison and hold guards, every `Lvl*` wrapper, and the records moved here from Uncategorised: `CWPrisonerSonsB`/`C`, the `GuardWhiterunSons*` and `GuardWindhelmSonsPatrol*` wrappers) carries `Stats` and follows its template or list."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharSoldierSons",
+          "formKey": "01FC5C:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player, so a flat pool",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the nine leaves (Records, row 1)"
+          }
+        ],
+        "owner": "`CWSoldierSons` 01B54B (×3, `FortNeugradExteriorEdge` 0098A4, initially disabled; `CW` property) and the wrappers on it: `CWFortSoldierSons` 037B67 (×132: the eight fort exteriors, the nine Stormcloak camps and the `CWMission07` camps) · `CWFortSoldierCommanderSons` 051B4C (×8) · `…GatekeeperSons` 037B69 (×8) · `…JailorSons` 037B6E (×12) · `…PatrolExteriorSons` 038451 (×14) · `CWFort04SoldierSons` 0EA326 (×16: `FortNeugradExterior02` 009884 ×6, `FortKastavExterior03` 009014 ×5, `FortNeugradExterior04` 009883 ×5) · `CWFort04Soldier{Commander,Jailor,PatrolExterior}Sons` 0EA32C · 0EA32B · 0EA32A (×1 · 1 · 4) · `dunFortNeugradCWFortSoldierSons{Melee,Ranged}Training` 0C6486 · 0C648D · `dunFortSnowhawkCWFortSoldierSonsRangedTraining` 0D77DA (×1 each) · `CWQuartermasterSons` (×5: four camps and `CWGuardTemplates` 01FA4C) · `CWSiegeSonsSoldier` 041B2D (×83, 16 siege cells, initially disabled) · `CWSiegeSonsSoldierGeneral` (×5, initially disabled) · `CWSiegeRiftenSonsSoldier` 063F38 (×7, `RiftenRoadNorth` 00BC6D, initially disabled) · `CWSiegeSoldierSonsCAMP` 0348B2 (×3) · `CWSoldierSonsUseCatapult` 0E2FF6 (×5, siege cells) · `CWFieldCOSons` and the nine field commanders on it · `CWCourierSons` (alias `CourierSons` of `WE29`; `CW` property) · `CWFinaleSoldierSons` 054A7D (`CWFinale` property) · `CWPrisonerSonsB` · `…C` (not placed; `CW` 019E53 properties). Direct: `CWSoldierSonsNotGuard` 016943 (aliases of `WE22`, `WE23`, `WE33`, `WERoad04`; `CW` property) and `CWFortSiegeSons` 0879EE on it (×320 in 37 cells, all initially disabled: the fort battles and the city sieges) · `CWSoldierSonsNonNPCFaction` 023A51 · `CWSoldierSonsNotGuardNonNPCFaction` 023A52 (`CW` properties) · `CWSoldierSonsScoutNotGuard` 07492D (aliases `SonsScout1`–`3` of `WE28`) · `WE23SoldierSonsNaked` 06210C (alias `SoldierSons1` of `WE23`) · `WEThalmorPrisoner` (alias `Prisoner` of `WE32`) · CC `ccFFBSSE001_CWSoldierSonsUseWeaponArcher` (×1, `Tamriel` persistent)",
+        "drawnBy": [
+          {
+            "name": "the nine field commanders",
+            "records": [
+              {
+                "edid": "CWFieldCOSonsEastmarch",
+                "formKey": "084551:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOSonsFalkreath",
+                "formKey": "08455F:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOSonsHaafingar",
+                "formKey": "084550:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOSonsHjaalmarch",
+                "formKey": "084552:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOSonsPale",
+                "formKey": "084553:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOSonsReach",
+                "formKey": "084556:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOSonsRift",
+                "formKey": "08455B:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOSonsWhiterun",
+                "formKey": "08455D:Skyrim.esm"
+              },
+              {
+                "edid": "CWFieldCOSonsWinterhold",
+                "formKey": "084568:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "page": "stormcloaks/named-stormcloaks",
+            "note": "through `CWFieldCOSons` 0205C8 → `CWSoldierSons` 01B54B"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharSoldierSonsVoiceTypeMaleNord",
+          "formKey": "087502:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the six male leaves 01716A · 01716B · 01716C · 0770AF · 0770B0 · 0770B1"
+          }
+        ],
+        "owner": "`MQ103SonsOfSkyrimSoldier` 01BC9C (×14: `Korvanjund01` 0152A1 ×9, `Korvanjund02` 02954D ×2, `Tamriel` persistent ×3) and on it `…SoldierArcher` 0A0C42 (×2) · `…Eavesdrop01a` 03A109 (×1) · `…SoldierExteriorDefender` 0605D8 (×4, `Tamriel` persistent); `CWSoldierSonsSingleVoiceTypeMaleNord` 0AAF92 and on it `dunForelhostSoldierSons` 062242 (×1, `Tamriel` persistent, initially disabled); CC `ccFFBSSE001_CWSoldierSons01` (×2)",
+        "drawnBy": [
+          {
+            "name": "Pale Hold Guard",
+            "records": [
+              {
+                "edid": "GuardLoreiusFarmSons",
+                "formKey": "043D22:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Guards → *Hold Guards*",
+            "note": "in the Pale uniform"
+          }
+        ]
+      },
+      {
+        "list": {
+          "edid": "LCharSoldierSonsVoiceTypeFemaleNord",
+          "formKey": "05B2B7:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the three female leaves 017167 · 017168 · 017169"
+          }
+        ],
+        "owner": "`MQ103SonsOfSkyrimSoldier02` 0ABEE1 (×2, `Tamriel` persistent) and on it `…Eavesdrop01b` 03A10A (×1, `Korvanjund01`); CC `ccFFBSSE001_CWSoldierSons02` (×2)"
+      },
+      {
+        "list": {
+          "edid": "LCharGuardSons",
+          "formKey": "0E7B2D:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player, so a flat pool",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the nine guard leaves (Records, row 2)"
+          }
+        ],
+        "owner": "the Stormcloak garrison guards (Records, row 3, through their hold base records) and `LvlGuardSons` 01FC63 (×50 in the holding cell `CWGuardTemplates` 01FA4C)",
+        "drawnBy": [
+          {
+            "name": "the Stormcloak-held hold guards",
+            "records": [
+              {
+                "edid": "GuardRiftenSonsKeepPrison01",
+                "formKey": "0458A7:Skyrim.esm"
+              }
+            ],
+            "how": "template",
+            "where": "Factions → Guards → *Hold Guards*",
+            "note": "and the hold guards' base records: 59 take `LvlGuardSons` 01FC63 as template"
+          }
+        ]
+      },
+      {
+        "list": {
+          "label": "`LCharGuardSonsVoiceTypeFemaleNord` 0EA646 · `…MaleGuard` 0EA644 · `…MaleNordCommander` 0EA645"
+        },
+        "gate": "highest gate only (all at 1)",
+        "entries": [
+          {
+            "at": 1,
+            "label": "three of the guard leaves each"
+          }
+        ],
+        "owner": "`LvlGuardSonsSingleVoiceType*` → `GuardSolitudeSonsBluePalaceMaleGuard` 0B3E50, `LvlFalkreathHoldGuardSonsVoiceTypeMaleGuard` 0EC6E8, the Calcelmo's tower guards; the rest on Guards → *Hold Guards*"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "the Stormcloak garrison guards",
+        "note": "Whiterun 42, Riverwood 4, Rorikstead 2, Solitude 28 (Blue Palace 4 of them), the TG04 East Empire guards 4, CC `SolitudeJail01` 056E88 1, Dragon Bridge 2, Markarth 29, Salvius Farm 1, the Reach towns 5, Calcelmo's tower 4, Falkreath 11, Morthal 9, Hjaalmarch 1, Windhelm jail 3, Kynesgrove 3, Darkwater Crossing 2; each spot also holds an Imperial guard (*Common Legion* or *Hold Guards*)"
+      },
+      {
+        "name": "Stormcloak Soldier (`CWSiegeSonsSoldierHold`)",
+        "note": "`WhiterunExterior13` 0095FD · `WhiterunExterior04` 0095FC, ×1 each, initially disabled"
+      },
+      {
+        "name": "Stormcloak Archer (`CWSiegeSonsArcherHold`)",
+        "note": "×9: `WhiterunExterior04` ×3, `SolitudeExterior01` 00927B ×2, `MarkarthExterior01` 00717A ×2, `SolitudeExterior02` 00927A ×1, `WhiterunExterior13` ×1; all initially disabled"
+      },
+      {
+        "name": "Stormcloak Soldier (Helgen)",
+        "note": "the four cart prisoners ×1 each in `HelgenExterior02` 00982A (`MQ101StormcloakPrisoner01Ref`–`04RefNEW`); in `HelgenKeep01` 05DE24, all initially disabled: `…Female02` ×1, `…Male02` ×2, `…MaleNord` ×1, `…MaleNord02` ×1, the two archers ×1 each; `…Male` aliases `HallwayStormcloak01`/`02` and `TrophyRoomPrisoner01`, `…Female` aliases `HallwayStormcloak03` and `TrophyRoomPrisoner02`, the unaggressive three aliases `TortureRoomStormcloak1`–`3` of `MQ101` 03372B; `dunCGStormcloakTowerA` ×1 `HelgenExterior07` 00984A, initially disabled"
+      },
+      {
+        "name": "`MQ101StormcloakCageRoomPrisoner` · `MQ101StormcloakPrisonerMale03`",
+        "notPlaced": true,
+        "note": "the cage-room prisoner is named only by dialogue response 0648F8, the other by nothing"
+      },
+      {
+        "name": "Stormcloak Archer (`CWSiegeSonsArcher`, `…Invul`) · Stormcloak Mage · Apprentice Ice Mage",
+        "notPlaced": true,
+        "note": "nothing names them"
+      },
+      {
+        "name": "`CWPatrolSons` 05D15B · `CWSoldierSonsUseWeaponArcher` 0E0E46 · `CWSoldierSonsWizardNotGuard` 0872A5 · `CWMission06DissaffectSoldierSons1` 0770B6 · `CWMission06LoyalistLeaderSons` 0770BB · `dunPOIRaiderLvlSoldierSonsMaleNord` 0317CD · `CWSoldierSonsSingleVoiceTypeMaleNord`; the Windhelm patrols `…Patrol1a`–`6c`, `GuardWindhelmSonsGateDocks`, `LvlGuardSonsWizard`, `LvlHaafingarHoldGuardSons`, the guard base records",
+        "notPlaced": true,
+        "note": "nothing names them, or they are templates for placed guards"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "the leaves and `EncSoldierSonsTemplate`, `EncSiegeSonsSoldierTemplate`, `CWSoldierSonsNotGuard` and its family (the NonNPCFaction, scout, single-voice and wizard variants), `MQ103SonsOfSkyrimSoldierExteriorDefender`, `CWMission06LoyalistLeaderSons`, `dunPOIRaider…`",
+        "weapons": "`CWSoldierSonsGear` 0A6E7A",
+        "armor": "`GuardSonsOutfit` 0274B1",
+        "skin": "race default"
+      },
+      {
+        "records": "the Whiterun city garrison, the Falkreath barracks and base",
+        "weapons": "0A6E7A",
+        "armor": "`CWSoldierSonsSoldierOutfit` 0ABF55",
+        "skin": "race default"
+      },
+      {
+        "records": "the Whiterun jail guard",
+        "weapons": "Steel Sword 013989 · Whiterun Jail Key 05AEC4",
+        "armor": "`GuardSonsOutfit` 0274B1",
+        "skin": "race default"
+      },
+      {
+        "records": "the guard leaves, `LvlGuardSons` and the other garrison guards (Riverwood, Rorikstead, Whiterun hold, Solitude, Blue Palace, TG04, Dragon Bridge, the Reach, Falkreath `Lvl…`, Morthal, Hjaalmarch, Windhelm, Kynesgrove, Darkwater Crossing)",
+        "weapons": "0A6E7A (the Windhelm jail guard adds Windhelm Jail Key 0FB90D)",
+        "armor": "`GuardSonsOutfit` 0274B1",
+        "skin": "race default"
+      },
+      {
+        "records": "the Solitude jail guard, CC `ccBGSSSE031_GuardStormcloak`",
+        "weapons": "Hunting Bow · Steel Arrow · Steel Dagger · Torch · `LItemSoldierSonsWeaponAny` 046057 · Castle Dour Dungeon Key 07E019",
+        "armor": "`GuardSonsOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "the Calcelmo's tower guards",
+        "weapons": "Long Bow · Iron Arrow · Steel Dagger · `LItemSoldierSonsSword` 046051 · Dwemer Museum Key 094392",
+        "armor": "`GuardSonsOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "the Falkreath jailer `LvlFalkreathHoldGuardSonsJail`",
+        "weapons": "0A6E7A · Falkreath Jail Key 0FB90C",
+        "armor": "`CWSoldierSonsOfficerOutfitNoHelmet` 0ABF58",
+        "skin": "race default"
+      },
+      {
+        "records": "`CWSoldierSons`, `CWFinaleSoldierSons`",
+        "weapons": "`CWSoldierSonsGearNoTorch` 10AA4E",
+        "armor": "`CWSoldierSonsSoldierOutfit` 0ABF55",
+        "skin": "race default"
+      },
+      {
+        "records": "the fort soldiers (`CWFortSoldier*Sons`, `CWFort04Soldier*Sons`, the training soldiers), `CWSiegeSoldierSonsCAMP`, `MQ103SonsOfSkyrimSoldier02` and `…Eavesdrop01b`, `dunForelhostSoldierSons`",
+        "weapons": "`CWSoldierSonsGearNoTorch` 10AA4E",
+        "armor": "`GuardSonsOutfit` 0274B1",
+        "skin": "race default"
+      },
+      {
+        "records": "`MQ103SonsOfSkyrimSoldier`, `…Archer`, `…Eavesdrop01a`",
+        "weapons": "`CWSoldierSonsGearNoTorchNoBow` 10FAFE",
+        "armor": "`GuardSonsOutfit` 0274B1",
+        "skin": "race default"
+      },
+      {
+        "records": "`CWFortSiegeSons`, `CWSiegeSonsSoldier`",
+        "weapons": "Steel Shield 013955 · Long Bow 03B562 · Steel Arrow 01397F · Steel Dagger 013986 · `LItemSoldierSonsWeaponAny` 046057",
+        "armor": "`CWSiegeSonsOutfit` 0F3E8A",
+        "skin": "race default"
+      },
+      {
+        "records": "Stormcloak Courier, `CWPatrolSons`",
+        "weapons": "Hunting Bow 013985 · Steel Arrow · Steel Dagger · `LItemSoldierSonsWeaponAny`",
+        "armor": "`CWSoldierSonsSoldierOutfit` 0ABF55",
+        "skin": "race default"
+      },
+      {
+        "records": "Stormcloak Field Commander",
+        "weapons": "the same four",
+        "armor": "`CWSoldierSonsOfficerOutfitNoHelmet` 0ABF58",
+        "skin": "race default"
+      },
+      {
+        "records": "Stormcloak Quartermaster",
+        "weapons": "the same four",
+        "armor": "`BlacksmithOutfit01` 057C4C",
+        "skin": "race default"
+      },
+      {
+        "records": "Stormcloak General",
+        "weapons": "Steel Shield · `CWSoldierSonsGearNoTorch` 10AA4E",
+        "armor": "`SonsOfSkyrimCommanderOutfit` 08CF6B",
+        "skin": "race default"
+      },
+      {
+        "records": "`CWSiegeSonsSoldierHold`, `CWSoldierSonsUseCatapult`",
+        "weapons": "Steel Shield · Long Bow · Steel Arrow · Steel Dagger · `LItemSoldierSonsWeapon2H` 01715C",
+        "armor": "`GuardSonsOutfit` 0274B1",
+        "skin": "race default"
+      },
+      {
+        "records": "`CWSiegeRiftenSonsSoldier`",
+        "weapons": "Long Bow · Steel Arrow · Steel Dagger · `LItemSoldierSonsWeapon2H`",
+        "armor": "`ArmorStormcloakRiftenOutfit` 063F39",
+        "skin": "race default"
+      },
+      {
+        "records": "`CWSoldierSonsUseWeaponArcher`, CC `…UseWeaponArcher`",
+        "weapons": "Hunting Bow · Steel Arrow · Steel Dagger",
+        "armor": "`ArmorHideAllOutfit` 01B3A8 · CC `ccFFBSSE001_CWSoldierSonsSoldierOutfitNoHelmet` 000936",
+        "skin": "race default"
+      },
+      {
+        "records": "`CWMission06DissaffectSoldierSons1`",
+        "weapons": "`CWSoldierSonsGear` 0A6E7A",
+        "armor": "`CWMission06TurncoatGuardSonsOutfit` 0A6E81",
+        "skin": "race default"
+      },
+      {
+        "records": "`WE23SoldierSonsNaked`",
+        "weapons": "none",
+        "armor": "none",
+        "skin": "race default"
+      },
+      {
+        "records": "Thalmor Prisoner, `CWPrisonerSonsB`/`C`",
+        "weapons": "none",
+        "armor": "`PrisonerNoShoesOutfit` 0A1982",
+        "skin": "race default"
+      },
+      {
+        "records": "Stormcloak Archer",
+        "weapons": "Long Bow · Steel Arrow · Steel Dagger",
+        "armor": "`GuardSonsOutfit` 0274B1",
+        "skin": "race default"
+      },
+      {
+        "records": "Stormcloak Mage",
+        "weapons": "`LItemWarlockDagger` 044CD6",
+        "armor": "`GuardSonsOutfit` 0274B1",
+        "skin": "race default"
+      },
+      {
+        "records": "Apprentice Ice Mage",
+        "weapons": "`LItemWarlockDagger` and the warlock loot lists",
+        "armor": "`WarlockOutfitLeveled` 044CD5",
+        "skin": "race default"
+      },
+      {
+        "records": "CC `ccFFBSSE001_CWSoldierSons01` · `…02`",
+        "weapons": "`CWSoldierSonsGearNoTorchNoBow` 10FAFE (`…02` adds a Steel Shield)",
+        "armor": "`ccFFBSSE001_CWSoldierSonsSoldierOutfitNoHelmet` 000936",
+        "skin": "race default"
+      },
+      {
+        "records": "the Helgen archers",
+        "weapons": "Long Bow · Iron Arrow 01397D · `BaseArrowIron75` 037C0D · `LItemSoldierSonsWeaponAny`",
+        "armor": "`ArmorStormcloakOutfitNoHelmet` 0AD245",
+        "skin": "race default"
+      },
+      {
+        "records": "the Helgen male prisoners (`…Male`, `…Male02`, `…Male03`, `…MaleNord`, `…MaleNord02`, the male unaggressive two)",
+        "weapons": "`LItemSoldierSonsWeapon2H` 01715C",
+        "armor": "`ArmorStormcloakOutfitNoHelmet` 0AD245",
+        "skin": "race default"
+      },
+      {
+        "records": "the Helgen female prisoners (`…Female`, `…Female02`, `…FemaleUnaggressive`)",
+        "weapons": "`LItemSoldierSonsWeaponAny`",
+        "armor": "`ArmorStormcloakOutfitNoHelmet` 0AD245",
+        "skin": "race default"
+      },
+      {
+        "records": "the cart prisoners",
+        "weapons": "`LItemSoldierSonsBattleaxe` 01715A (male) · `LItemSoldierSonsWaraxe` 046052 (female)",
+        "armor": "`MQ101StormcloakPrisonerOutfit` 0FE535",
+        "skin": "race default"
+      },
+      {
+        "records": "`dunCGStormcloakTowerA`",
+        "weapons": "`LItemSoldierSonsBattleaxe`",
+        "armor": "`ArmorStormcloakOutfitNoHelmet` 0AD245",
+        "skin": "race default"
+      },
+      {
+        "records": "`MQ101StormcloakCageRoomPrisoner`",
+        "weapons": "none",
+        "armor": "`PrisonerPantsOutfit` 0A1984",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "CWSoldierSonsGear",
+          "formKey": "0A6E7A:Skyrim.esm"
+        },
+        "rolls": "all of: Hunting Bow, one `LItemSoldierSonsWeaponAny` roll, Steel Dagger, a torch at 50%, 15 × steel arrow at 75% each, drink, food, gold, a divine amulet at 10% (`LItemSonsSymbol10`: Dibella, Kynareth, Mara, Talos ×3)"
+      },
+      {
+        "list": {
+          "edid": "CWSoldierSonsGearNoTorch",
+          "formKey": "10AA4E:Skyrim.esm"
+        },
+        "rolls": "as 0A6E7A without the torch"
+      },
+      {
+        "list": {
+          "edid": "CWSoldierSonsGearNoTorchNoBow",
+          "formKey": "10FAFE:Skyrim.esm"
+        },
+        "rolls": "`LItemSoldierSonsWeaponAny`, Steel Dagger, drink, food, gold, amulet; no bow, no arrows"
+      },
+      {
+        "list": {
+          "edid": "LItemSoldierSonsWeaponAny",
+          "formKey": "046057:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "a one-handed weapon and a shield (`LItemSoldierSonsWeaponShield` 046055) or a two-handed weapon (`LItemSoldierSonsWeapon2H` 01715C)"
+      },
+      {
+        "list": {
+          "edid": "LItemSoldierSonsGuardWeapon1H",
+          "formKey": "046054:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "mace 046053, sword 046051 or war axe 046052; each Iron 1 (×4) · Steel 4 (×8, at 4–7 and 10–13)"
+      },
+      {
+        "list": {
+          "edid": "LItemSoldierSonsShield",
+          "formKey": "045FE9:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Hide Shield 1 (×4) · Steel Shield 4 (×4)"
+      },
+      {
+        "list": {
+          "edid": "LItemSoldierSonsWeapon2H",
+          "formKey": "01715C:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "warhammer 017159, greatsword 01715B or battleaxe 01715A; each Iron 1 (×4) · Steel 4 (×8; greatsword from 5)"
+      },
+      {
+        "list": {
+          "label": "`GuardSonsOutfit` 0274B1 → `OutfitListGuardSons` 0ABF4B · `CWSoldierSonsSoldierOutfit` 0ABF55 → `OutfitListSoldierSons` 0ABF4C"
+        },
+        "rolls": "one of six, all at 1: Stormcloak Cuirass, Fur Boots and Fur Gauntlets with one of Hide, Scaled or Stormcloak Helmet (×2), or with the Stormcloak Helmet (×4)"
+      },
+      {
+        "list": {
+          "edid": "CWSiegeSonsOutfit",
+          "formKey": "0F3E8A:Skyrim.esm"
+        },
+        "rolls": "Stormcloak Cuirass, Fur Boots, Fur Gauntlets, Stormcloak Helmet"
+      },
+      {
+        "list": {
+          "edid": "CWSoldierSonsOfficerOutfitNoHelmet",
+          "formKey": "0ABF58:Skyrim.esm"
+        },
+        "rolls": "Stormcloak Officer Armor, Boots, Bracers"
+      },
+      {
+        "list": {
+          "edid": "SonsOfSkyrimCommanderOutfit",
+          "formKey": "08CF6B:Skyrim.esm"
+        },
+        "rolls": "Stormcloak Officer Armor, Boots, Bracers, Helmet"
+      },
+      {
+        "list": {
+          "label": "`ArmorStormcloakOutfitNoHelmet` 0AD245 · CC 000936"
+        },
+        "rolls": "Stormcloak Cuirass, Fur Boots, Fur Gauntlets"
+      },
+      {
+        "list": {
+          "edid": "MQ101StormcloakPrisonerOutfit",
+          "formKey": "0FE535:Skyrim.esm"
+        },
+        "rolls": "Stormcloak Cuirass, Fur Boots, Prisoner's Cuffs"
+      },
+      {
+        "list": {
+          "edid": "ArmorStormcloakRiftenOutfit",
+          "formKey": "063F39:Skyrim.esm"
+        },
+        "rolls": "Riften Guard's Armor, Riften Guard's Shield, Hide Helmet"
+      },
+      {
+        "list": {
+          "edid": "ArmorHideAllOutfit",
+          "formKey": "01B3A8:Skyrim.esm"
+        },
+        "rolls": "Hide Armor, Helmet, Boots, Bracers"
+      },
+      {
+        "list": {
+          "edid": "CWMission06TurncoatGuardSonsOutfit",
+          "formKey": "0A6E81:Skyrim.esm"
+        },
+        "rolls": "one of seven, no helmet: Hide set (×1), Studded set (×2), Stormcloak set (×4)"
+      },
+      {
+        "list": {
+          "edid": "WarlockOutfitLeveled",
+          "formKey": "044CD5:Skyrim.esm"
+        },
+        "rolls": "Boots and Black Mage Robes; enchanted robes from 8"
+      },
+      {
+        "list": {
+          "edid": "LItemWarlockDagger",
+          "formKey": "044CD6:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron 1 · Steel 4 · Orcish 7 · Dwarven 10 · Elven 14 · enchanted daggers 15"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Stormcloak Cuirass, Fur Boots, Fur Gauntlets, Stormcloak, Hide and Scaled Helmets; Stormcloak Officer Armor, Boots, Bracers, Helmet; Hide and Studded armor; Hide Shield; Riften Guard's Armor",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Steel Shield, Riften Guard's Shield",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Prisoner's Cuffs",
+        "kind": "clothing",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Roughspun Tunic, Ragged Trousers, Blacksmith's Apron, Black Mage Robes",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Iron and Steel maces, swords, war axes, warhammers, greatswords, battleaxes; Hunting and Long Bows; Steel Dagger; steel and iron arrows",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

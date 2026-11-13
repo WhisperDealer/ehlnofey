@@ -1025,8 +1025,10 @@ the list.
 - **The Volkihar court: 53**, the Volkihar Master Vampire. Orthjolf, Vingalmo, Malkus, Hestla, Rargal and Feran take
   `Stats` from `DLC1EncVampireTemplate` and its magic and missile variants.
 - Stalf, Salonia Caelia, Modhna and Namasur: **53**. Valerica: **60**.
-- The civil war: Ulfric and Tullius **45**, Galmar and Rikke **40**, Metilius **36**, all above their soldiers
+- **Civil-war soldiers by rank** (user, 2026-11-12), superseding the 25 / 30 / 35 leaf spread and the 30 pin of §6 for both sides: the band rises with rank, Trained to Elite. The Courier **III Trained**; soldiers, garrison and hold-list guards, archers, quartermasters, prisoners (the Thalmor Prisoner included), the Bodyguard, the Roadside Guard and the `dunCG` Helgen soldiers and mages **IV Blooded**; the Imperial Officer and Fort Commander **V Experienced**; the field legates and field commanders (the nine named ones included) and the generals **VI Elite**. Levels within each band are still to be set. Each rank's wrapper takes `Stats` from the soldier list today, so the build must give each one its own level. The Helgen tutorial soldiers and the siege mages are unchanged.
+- The civil war: Ulfric and Tullius **45**, ~~Galmar~~ and Rikke **40**, ~~Metilius **36**~~, all above their soldiers
   (25 / 30 / 35). The `dunCG` Imperial soldiers are **30**, the fixed-soldier pin.
+- **Named civil-war leaders (user, 2026-11-12):** Galmar **VII Powerful**; Captain Aldis **VI Elite**; the CC Imperial Champion, Stormcloak Champion and Klija Wolf-Claw's champion version (the default Stormcloak champion) **VII Powerful, 42**; Klija in Kynesgrove **V Experienced**. Captain Metilius is cut content (not placed; the `MQ103A`/`B` scripts declare an `Alias_CaptainMetilius` property and never use it), so he is out of the census.
 - Kodlak's wolf spirit: **42**, the Vargr boss. The Mistwatch "Bandit Leader": **28**.
 
 **Everyone else that still scaled: 111 records.** These are merchants, the Cidhna prisoners, the Sovngarde souls,

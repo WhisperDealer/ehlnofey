@@ -6,6 +6,6 @@
   "meta": {
     "updated": "2026-11-12"
   },
-  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Scope: the hostile human factions and the organised factions the player can fight or fight beside, one sub-group per faction (user, 2026-10-02). Migrated so far: Forsworn and Thalmor. Still to come: Dawnguard, Vigilants, Companions, Silver Hand, Minor Factions, Imperial Legion, Stormcloaks, Guards, Housecarls, Dark Brotherhood, Thieves Guild, College of Winterhold and Sovngarde (the dead of Sovngarde: Tsun, Torygg, Ysgramor and the heroes of the Hall of Valor; user, 2026-10-03).",
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Scope: the hostile human factions and the organised factions the player can fight or fight beside, one sub-group per faction (user, 2026-10-02). Migrated so far: Forsworn, Thalmor, Imperial Legion and Stormcloaks. Still to come: Dawnguard, Vigilants, Companions, Silver Hand, Minor Factions, Guards, Housecarls, Dark Brotherhood, Thieves Guild, College of Winterhold and Sovngarde (the dead of Sovngarde: Tsun, Torygg, Ysgramor and the heroes of the Hall of Valor; user, 2026-10-03).",
   "families": []
 }

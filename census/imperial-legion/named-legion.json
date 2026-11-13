@@ -1,0 +1,552 @@
+{
+  "$schema": "../schema/census-family.schema.json",
+  "id": "named-legion",
+  "group": "imperial-legion",
+  "title": "Named Legion",
+  "order": 2,
+  "meta": {
+    "updated": "2026-11-12"
+  },
+  "records": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "id": "general-tullius",
+        "name": "General Tullius",
+        "records": [
+          {
+            "edid": "GeneralTullius",
+            "formKey": "01327E:Skyrim.esm"
+          },
+          {
+            "edid": "CWBattleTullius",
+            "formKey": "0D0577:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 10,
+          "max": 50
+        },
+        "target": {
+          "band": "VII",
+          "level": 45,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1, villains and leaders: Ulfric and Tullius 45"
+        },
+        "note": "each its own level"
+      },
+      {
+        "id": "legate-rikke",
+        "name": "Legate Rikke",
+        "records": [
+          {
+            "edid": "Rikke",
+            "formKey": "0132A1:Skyrim.esm"
+          },
+          {
+            "edid": "CWBattleRikke",
+            "formKey": "0D0573:Skyrim.esm"
+          },
+          {
+            "edid": "MQ304Rikke",
+            "formKey": "0EA583:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 30
+        },
+        "target": {
+          "band": "VI",
+          "level": 40,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1, villains and leaders: Rikke 40"
+        },
+        "note": "`MQ304Rikke` (Sovngarde) takes `Stats` from `Rikke`"
+      },
+      {
+        "id": "hadvar",
+        "name": "Hadvar",
+        "records": [
+          {
+            "edid": "Hadvar",
+            "formKey": "02BF9F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 50
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §6.1: the level a level-25 player meets (25 × its multiplier, clamped)"
+        }
+      },
+      {
+        "id": "captain-aldis",
+        "name": "Captain Aldis",
+        "records": [
+          {
+            "edid": "CaptainAldis",
+            "formKey": "041FB8:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 5,
+          "max": 15
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: Captain Aldis to Elite"
+        }
+      },
+      {
+        "id": "legate-eastmarch",
+        "name": "Legate Hrollod",
+        "records": [
+          {
+            "edid": "CWFieldCOImperialEastmarch",
+            "formKey": "08454E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B, through `CWFieldCOImperial` 0205C9 and `CWSoldierImperial` 01B547: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field legate"
+        }
+      },
+      {
+        "id": "legate-falkreath",
+        "name": "Legate Skulnar",
+        "records": [
+          {
+            "edid": "CWFieldCOImperialFalkreath",
+            "formKey": "08455E:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B, through `CWFieldCOImperial` 0205C9 and `CWSoldierImperial` 01B547: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field legate"
+        }
+      },
+      {
+        "id": "legate-haafingar",
+        "name": "Legate Adventus Caesennius",
+        "records": [
+          {
+            "edid": "CWFieldCOImperialHaafingar",
+            "formKey": "0844B1:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B, through `CWFieldCOImperial` 0205C9 and `CWSoldierImperial` 01B547: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field legate"
+        }
+      },
+      {
+        "id": "legate-hjaalmarch",
+        "name": "Legate Taurinus Duilis",
+        "records": [
+          {
+            "edid": "CWFieldCOImperialHjaalmarch",
+            "formKey": "0844B2:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B, through `CWFieldCOImperial` 0205C9 and `CWSoldierImperial` 01B547: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field legate"
+        }
+      },
+      {
+        "id": "legate-pale",
+        "name": "Legate Constantius Tituleius",
+        "records": [
+          {
+            "edid": "CWFieldCOImperialPale",
+            "formKey": "084539:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B, through `CWFieldCOImperial` 0205C9 and `CWSoldierImperial` 01B547: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field legate"
+        }
+      },
+      {
+        "id": "legate-reach",
+        "name": "Legate Emmanuel Admand",
+        "records": [
+          {
+            "edid": "CWFieldCOImperialReach",
+            "formKey": "0844D0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B, through `CWFieldCOImperial` 0205C9 and `CWSoldierImperial` 01B547: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field legate"
+        }
+      },
+      {
+        "id": "legate-rift",
+        "name": "Legate Fasendil",
+        "records": [
+          {
+            "edid": "CWFieldCOImperialRift",
+            "formKey": "08454F:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B, through `CWFieldCOImperial` 0205C9 and `CWSoldierImperial` 01B547: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field legate"
+        }
+      },
+      {
+        "id": "legate-whiterun",
+        "name": "Legate Quentin Cipius",
+        "records": [
+          {
+            "edid": "CWFieldCOImperialWhiterun",
+            "formKey": "0844D1:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B, through `CWFieldCOImperial` 0205C9 and `CWSoldierImperial` 01B547: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field legate"
+        }
+      },
+      {
+        "id": "legate-winterhold",
+        "name": "Legate Sevan Telendas",
+        "records": [
+          {
+            "edid": "CWFieldCOImperialWinterhold",
+            "formKey": "08453A:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 0.25,
+          "min": 1,
+          "max": 50,
+          "from": {
+            "label": "`LCharSoldierImperial` 01FC5B, through `CWFieldCOImperial` 0205C9 and `CWSoldierImperial` 01B547: every leaf PC×0.25 [1–50]"
+          }
+        },
+        "target": {
+          "band": "VI",
+          "status": "proposed",
+          "source": "user, 2026-11-12: soldier levels rise with rank, Trained (the Courier) to Elite; every other rank Blooded at least: a hold's field legate"
+        }
+      },
+      {
+        "id": "imperial-champion",
+        "name": "Imperial Champion",
+        "records": [
+          {
+            "edid": "ccFFBSSE001_NPC_ImperialChampion",
+            "formKey": "00086A:ccffbsse001-imperialdragon.esl"
+          },
+          {
+            "edid": "ccFFBSSE001_NPC_ImperialChampionBackup",
+            "formKey": "000956:ccffbsse001-imperialdragon.esl"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.1,
+          "min": 15,
+          "max": 45
+        },
+        "target": {
+          "band": "VII",
+          "level": 42,
+          "status": "proposed",
+          "source": "user, 2026-11-12: the Imperial Champion to Powerful, 42"
+        },
+        "note": "each its own level"
+      }
+    ]
+  },
+  "ownsLevel": {
+    "confidence": "verified",
+    "items": [
+      "The Imperial Champions use `EncSoldierImperialTemplate` 01FC5D (*Common Legion*) as their template but not for `Stats`, so they keep their own level when it changes.",
+      "The rows: no other record keeps its own level. `CWBattleTullius` and `CWBattleRikke` have no template; each carries its own level.",
+      "`MQ304Rikke` carries `Stats` from `Rikke`, and the nine legates follow `LCharSoldierImperial`; no other record uses a row as its template."
+    ]
+  },
+  "lists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LCharSoldierImperial",
+          "formKey": "01FC5B:Skyrim.esm"
+        },
+        "seeFamily": "common-legion",
+        "entries": [
+          {
+            "at": 1,
+            "label": "the nine Imperial Soldier leaves (*Common Legion*)"
+          }
+        ],
+        "owner": "the nine field legates, through `CWFieldCOImperial` 0205C9 → `CWSoldierImperial` 01B547; each legate is `Essential`"
+      }
+    ]
+  },
+  "placed": {
+    "title": "Placed only",
+    "confidence": "verified",
+    "rows": [
+      {
+        "name": "General Tullius",
+        "note": "`SolitudeCastleDour` 0213A0 (`GeneralTulliusREF` 0198BA); `CWBattleTullius`: `WindhelmExterior01` 00B4BB and `SolitudeExterior01` 00927B, initially disabled"
+      },
+      {
+        "name": "Legate Rikke",
+        "note": "`SolitudeCastleDour` (`RikkeREF` 0198BB); `CWBattleRikke`: `Tamriel` persistent, `RiftenAttackStart01` 00BC4C, `MarkarthAttackStart02` 0075A9, `WhiterunAttackStart03` 009658, all initially disabled; `MQ304Rikke`: `Sovngarde` persistent (`MQ304RikkeRef` 0EA586), initially disabled"
+      },
+      {
+        "name": "Hadvar",
+        "note": "`Tamriel` persistent (`HadvarRef` 02BFA2)"
+      },
+      {
+        "name": "Captain Aldis",
+        "note": "`SolitudeCastleDour` (`CaptainAldisREF` 041FB9)"
+      },
+      {
+        "name": "the nine legates",
+        "note": "each at a camp and a hold capital: Eastmarch `CwFieldCOImperialEastmarchCamp` 0FE532 · `…Capital` 077DEB (`WindhelmWorld`); Falkreath 037F91 · 077D67; Haafingar only `FieldCOImperialHaafingarCapital` 077DDF (`SolitudeWorld`); Hjaalmarch 037F94 · 077DD7; Pale 037F96 · 077D5F; Reach 037F98 · 077DC5 (`MarkarthWorld`); Rift 038045 · 077DD9 (`RiftenWorld`); Whiterun 0BF560 · 0BF561 (`WhiterunWorld`); Winterhold 038048 · 077E17. The camps are in `Tamriel` persistent; the capital references sit behind enable parents"
+      },
+      {
+        "name": "Imperial Champion",
+        "note": "`Tamriel` persistent, ×1 each, initially disabled (ccffbsse001-imperialdragon.esl)"
+      }
+    ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "`GeneralTullius`",
+        "weapons": "Imperial Sword 0135B8 · Imperial Bow 013841 · Steel Arrow 01397F",
+        "armor": "`CWSoldierImperialTulliusOutfitNoHelmet` 0CD6DD",
+        "skin": "race default"
+      },
+      {
+        "records": "`CWBattleTullius`",
+        "weapons": "Imperial Sword",
+        "armor": "`CWSoldierImperialTulliusOutfitNoHelmet` 0CD6DD",
+        "skin": "race default"
+      },
+      {
+        "records": "Legate Rikke (all three)",
+        "weapons": "Steel Shield 013955 · Steel Sword 013989",
+        "armor": "`ArmorImperialHeavyOutfitNoHelmet` 0AD23D",
+        "skin": "race default"
+      },
+      {
+        "records": "Hadvar",
+        "weapons": "Imperial Sword · Iron Shield 012EB6 · Long Bow 03B562 · Iron Arrow 01397D · Potion of Minor Healing 03EADD",
+        "armor": "`ArmorImperialStuddedOutfitNoHelmet` 057A29",
+        "skin": "race default"
+      },
+      {
+        "records": "Captain Aldis",
+        "weapons": "Iron Greatsword 01359D · Imperial Bow · Steel Arrow",
+        "armor": "`ArmorHaafingarAllOutfitNoHelmet` 0EF943",
+        "skin": "race default"
+      },
+      {
+        "records": "the nine legates (own inventory)",
+        "weapons": "Imperial Sword · Imperial Bow · Steel Dagger 013986 · Steel Arrow · `BaseArrowSteel75` 037C0E",
+        "armor": "`CWSoldierImperialOfficerOutfitNoHelmet` 0ABF45",
+        "skin": "race default"
+      },
+      {
+        "records": "`ccFFBSSE001_NPC_ImperialChampion`",
+        "weapons": "Dragon's Oath 00084F · Akatosh's Talon 000D62",
+        "armor": "`ccFFBSSE001_ArmorChampionImperial` 000937",
+        "skin": "race default"
+      },
+      {
+        "records": "`ccFFBSSE001_NPC_ImperialChampionBackup`",
+        "weapons": "`CWSoldierImperialGearNoTorchNoBow` 10FAFD",
+        "armor": "`CWSoldierImperialOfficerOutfit` 0ABF44",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "CWSoldierImperialTulliusOutfitNoHelmet",
+          "formKey": "0CD6DD:Skyrim.esm"
+        },
+        "rolls": "General Tullius' Armor, Imperial Light Boots, Imperial Light Bracers"
+      },
+      {
+        "list": {
+          "label": "`ArmorImperialHeavyOutfitNoHelmet` 0AD23D · `CWSoldierImperialOfficerOutfitNoHelmet` 0ABF45"
+        },
+        "rolls": "Imperial Armor, Boots, Bracers"
+      },
+      {
+        "list": {
+          "edid": "CWSoldierImperialOfficerOutfit",
+          "formKey": "0ABF44:Skyrim.esm"
+        },
+        "rolls": "as 0ABF45 plus Imperial Officer's Helmet"
+      },
+      {
+        "list": {
+          "edid": "ArmorImperialStuddedOutfitNoHelmet",
+          "formKey": "057A29:Skyrim.esm"
+        },
+        "rolls": "Studded Imperial Armor, Imperial Light Boots, Imperial Light Bracers"
+      },
+      {
+        "list": {
+          "edid": "ArmorHaafingarAllOutfitNoHelmet",
+          "formKey": "0EF943:Skyrim.esm"
+        },
+        "rolls": "Solitude Guard's Armor, Solitude Guard's Shield, Imperial Boots, Imperial Bracers"
+      },
+      {
+        "list": {
+          "edid": "ccFFBSSE001_ArmorChampionImperial",
+          "formKey": "000937:ccffbsse001-imperialdragon.esl"
+        },
+        "rolls": "Imperial Dragon Helmet, Armor, Gauntlets, Boots and Shield"
+      },
+      {
+        "list": {
+          "edid": "CWSoldierImperialGearNoTorchNoBow",
+          "formKey": "10FAFD:Skyrim.esm"
+        },
+        "rolls": "Imperial Sword, Steel Dagger, drink, food, gold, a divine amulet at 10%"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "General Tullius' Armor; Imperial Armor, Boots, Bracers, Officer's Helmet",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Steel, Iron and Solitude Guard's Shields",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Studded Imperial Armor, Imperial Light Boots and Bracers; Solitude Guard's Armor",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Imperial Dragon armor set and shield (CC)",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Imperial Sword, Imperial Bow, Long Bow, Steel Sword, Iron and Steel Greatswords, Steel Dagger, Dragon's Oath, Akatosh's Talon; steel and iron arrows",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
+  }
+}

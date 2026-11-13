@@ -1,0 +1,81 @@
+{
+  "$schema": "../schema/census-group.schema.json",
+  "id": "stormcloaks",
+  "title": "Stormcloaks",
+  "order": 4,
+  "parent": "factions",
+  "meta": {
+    "spec": "archetype-tiers.md §6",
+    "updated": "2026-11-12"
+  },
+  "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The Stormcloaks: the soldier list, the siege archers and mages, the Helgen prisoners, the guard garrisons, the field commanders and the named Stormcloaks, vanilla, DLC and CC. The soldiers take their level from `EncSoldierImperialTemplate` 01FC5D (through `EncSoldierSonsTemplate` 027498), the same record as the Imperial soldiers; their bands rise with rank (user, 2026-11-12): the Courier Trained; soldiers, guards, archers, quartermasters and prisoners Blooded; field commanders and generals Elite. No Stormcloak rank sits at Experienced: there is no Stormcloak officer record, and the fort commanders (`CWFortSoldierCommanderSons` 051B4C, `CWFort04SoldierCommanderSons` 0EA32C) have no name of their own, so they show as Stormcloak Soldiers. Superseded: archetype-tiers.md §6 gave the leaves 25 / 30 / 35 and pinned the single fixed soldiers at 30.",
+  "families": [
+    {
+      "id": "common-stormcloaks",
+      "holds": "`LCharSoldierSons` and its voice-type sublists (one level for all nine leaves: PC×0.25 [1–50]), every wrapper on them, the siege archers and mages, the Helgen prisoners, the Justiciars' Thalmor Prisoner, the CC Imperial Dragon soldiers; the guard-list leaves and the Stormcloak garrison guards in Stormcloak army armour (`LCharGuardSons`: PC×1 [20–50])"
+    },
+    {
+      "id": "named-stormcloaks",
+      "holds": "Ulfric Stormcloak, Galmar Stone-Fist, Ralof, the nine field commanders, the CC Stormcloak Champion and Klija Wolf-Claw"
+    }
+  ],
+  "sweep": {
+    "title": "Membership sweep (2026-10-02)",
+    "confidence": "verified",
+    "text": "Every NPC in Skyrim, Update, Dawnguard, HearthFires, Dragonborn and the 74 CC packs that is in `CWSonsFaction` 02BF9B, `CWSonsFactionNPC` 01C9FD, `MQ101StormcloakFaction` 0BF464, `MQ103SonsOfSkyrimSoldierFaction` 01BC9D, `MQ104SonsFaction` 0A4A40 or `ccFFBSSE001_CWSonsEnemyFaction` 00085C:ccffbsse001-imperialdragon.esl, or whose EditorID or name holds \"Stormcloak\", \"Ulfric\", \"CWSoldier\" or \"SoldierSons\"; every `LVLN` named `LCharSoldierSons*`; then every record that takes a template from one of them, every placed reference in every cell and worldspace, and every quest alias or property that names one. No plugin overrides `LCharSoldierSons`, its sublists, `CWSoldierSonsGear` or the Stormcloak weapon and outfit lists. The `CW` quest 019E53 holds `CWSoldierSonsGear` 0A6E7A as a script property; that its script hands the gear out and does not add to the list is `[unverified]` (the script source was not read). Re-checked 2026-11-12: no leveled list holds a Stormcloak soldier or guard list, and the records outside these pages that take one as their template are the ones each list row names under \"drawn by\"."
+  },
+  "filedElsewhere": [
+    {
+      "record": "the Stormcloak-held guards in their hold's uniform (Riften, Windhelm, Dawnstar, Winterhold and the rest), CC `ccBGSSSE058_GuardDragonBridgeSons` 000820:ccbgssse058-ba_steel.esl",
+      "what": "hold guards",
+      "where": "Factions → Guards → *Hold Guards*"
+    },
+    {
+      "record": "`TreasCorpseMarkarthGuard` 05CF3F",
+      "what": "\"Markarth City Guard\" corpses (`Stats` from `EncBandit01TemplateMelee`)",
+      "where": "corpses, `MarkarthWizardsQuarters02` 036A72 ×3"
+    }
+  ],
+  "neverMet": [
+    {
+      "record": "`CWFortSoldierSonsWounded` 0FD826",
+      "what": "wounded Stormcloak Soldier, in bandages",
+      "why": "camp and `CWGuardTemplates` 01FA4C set dressing, ×27"
+    },
+    {
+      "record": "`CWPrisonerSons` 01675C, `…A` 10D4B6, `…D` 10D4B9",
+      "what": "Stormcloak prisoners in a roughspun tunic (`…B` and `…C` are on *Common Stormcloaks*)",
+      "why": "`CW` script properties; `CWPrisonerSons` also alias `Prisoner` of `WE09`"
+    },
+    {
+      "record": "`dunKorvanjundSonsSoldierDead` 05AF46",
+      "what": "Stormcloak Soldier corpses",
+      "why": "`Korvanjund02` 02954D ×4, `Korvanjund01` 0152A1 ×1"
+    },
+    {
+      "record": "`dunCGStormcloakPrisonerMaleDEAD` 0F94B1 · `…FemaleDEAD` 0F94B2 · `MQ101CorpseSons01` 09B0AD (\"Gunjar\") · `MQ101CorpseSonsPrisoner01` 0B1693 · `…02` 0B79BC",
+      "what": "dead Stormcloaks at Helgen",
+      "why": "corpses; 0B1693 is not placed"
+    },
+    {
+      "record": "`MQ301SonsSoldier` 046EFD",
+      "what": "the Stormcloak casualty of Odahviing's capture",
+      "why": "`Tamriel` persistent, `StartsDead`"
+    },
+    {
+      "record": "`MQ304LostSoulSons` 090A47 · `…2` 0173C0 · `…3` 0173C2",
+      "what": "Stormcloak Soldier lost souls in Sovngarde",
+      "why": "`Sovngarde` persistent"
+    },
+    {
+      "record": "`CWVoiceTypeSoldierMaleNord` 06B194 · `…FemaleNord` 06B199",
+      "what": "voice-type templates",
+      "why": "not actors in the world"
+    },
+    {
+      "record": "`E3DemoSoldierCaptain` 0E962C (\"Stormcloak Soldier\")",
+      "what": "E3 demo soldier",
+      "why": "`Tamriel` persistent ×1, enable parent 0BC06B"
+    }
+  ]
+}
