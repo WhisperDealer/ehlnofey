@@ -1,0 +1,421 @@
+{
+  "Alvor": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "Annekke": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "Betrid": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "Breya": {
+    "verdict": "civil",
+    "note": "MS04 vision"
+  },
+  "Brond": {
+    "verdict": "unused",
+    "note": "cut Arena (ArenaFaction), not placed"
+  },
+  "CaptainMetilius": {
+    "verdict": "unused",
+    "note": "cut legate, not placed"
+  },
+  "ccKRTSSE001_Cuinanthil": {
+    "verdict": "border",
+    "note": "Fortunate Son (ccKRTSSE001_QuestFortune) alias Cuinanthil, created by CreateReferenceToObject; the wealthy High Elf the player robs; Aggressive but civil factions; whether he fights is unverified"
+  },
+  "ccRMSSSE001_Ghost": {
+    "verdict": "border",
+    "note": "\"Necromancer\" ghost, PC×1 [10–100], template LvlWarlockConjurerBoss (SpellList only); not placed, in no list or quest, no script found: likely unused"
+  },
+  "ccVSVSSE004_Farmhand_ImperialF1": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "ccVSVSSE004_Farmhand_ImperialM1": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "ccVSVSSE004_Farmhand_NordF1": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "ccVSVSSE004_Farmhand_NordF2": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "ccVSVSSE004_Farmhand_NordM1": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "ccVSVSSE004_Farmhand_NordM2": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "ccVSVSSE004_Farmhand_RedguardF1": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "ccVSVSSE004_Farmhand_RedguardM1": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DA01Aranea": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DA13PeryiteMonk": {
+    "verdict": "civil",
+    "note": "Kesh the Clean, quest giver"
+  },
+  "DBRecurringContact10Rorikstead": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DBRecurringContact1Dawnstar": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DBRecurringContact2Riften": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DBRecurringContact4Markarth": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DBRecurringContact5Windhelm": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DBRecurringContact6Whiterun": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DBRecurringContact7Solitude": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DBRecurringContact8Ivarstead": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DBRecurringContact9Heljarchen": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC1CastleThrallTemplate1": {
+    "verdict": "border",
+    "note": "\"Vampire Cattle\", level 1, owns the level of `DLC1LCharCastleThrall` (a census list) and of Template2–4 / DLC1VQ02FeastThrall2; non-hostile feeding cattle"
+  },
+  "DLC1CastleThrallTemplate2": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC1CastleThrallTemplate3": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC1CastleThrallTemplate4": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC1EncSabreCatMasterPackage": {
+    "verdict": "unused",
+    "note": "not placed, no list, template user or quest names it (checked by hand, 2026-11-14)"
+  },
+  "DLC1LD_Katria": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC1SoulCairnWisp": {
+    "verdict": "border",
+    "note": "Soul Cairn \"Whispering Spirit\", 17 refs, CreatureFaction+WispFaction, Unaggressive; DLC1SoulCairnWispScript; probably ambient, unverified"
+  },
+  "DLC2Bujold": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC2DragonSkeleton": {
+    "verdict": "unused",
+    "note": "not placed, no list, template user or quest names it (checked by hand, 2026-11-14)"
+  },
+  "DLC2DremoraMerchant": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC2Elmus": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC2EncNetchTest": {
+    "verdict": "test"
+  },
+  "DLC2Frea": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC2Halbarn": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC2Herkja": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC2Hilund": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC2Kuvar": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC2Neloth": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC2RRTeldrynSero": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC2Sirkjorg": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC2SVBaldorIronShaper": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC2SVMorwen": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC2SVWulfWildblood": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC2Talvas": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLC2WE15Hunter": {
+    "verdict": "border",
+    "note": "DLC2WE15 hunter, PC×0.75 [30–50], template DLC2LCharHunter without Stats; neutral hunter, not hostile"
+  },
+  "DLCDwarvenPuzzleDungeon_AutumnHare2": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLCDwarvenPuzzleDungeon_AutumnHare3": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLCDwarvenPuzzleDungeon_AutumnHare4": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "DLCDwarvenPuzzleDungeon_AutumnHare5": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "Drennen": {
+    "verdict": "civil",
+    "note": "MS04 vision"
+  },
+  "dunAnsilvundFemaleGhost": {
+    "verdict": "civil",
+    "note": "friendly ghost"
+  },
+  "dunAnsilvundMaleGhost": {
+    "verdict": "civil",
+    "note": "friendly ghost"
+  },
+  "dunBluePalacePelagiusBodyguardDormant": {
+    "verdict": "civil",
+    "note": "Pelagius’s mind, ally"
+  },
+  "dunBluePalacePelagiusSuspicious": {
+    "verdict": "civil",
+    "note": "Pelagius’s mind"
+  },
+  "dunNorthwatchPrisoner01": {
+    "verdict": "civil",
+    "note": "prisoner (ally)"
+  },
+  "dunNorthwatchPrisoner02": {
+    "verdict": "civil",
+    "note": "prisoner (ally)"
+  },
+  "dunNorthwatchPrisoner03": {
+    "verdict": "civil",
+    "note": "prisoner (ally)"
+  },
+  "dunSkuldafnDragonDraugr": {
+    "verdict": "unused",
+    "note": "not placed, no list, template user or quest names it (checked by hand, 2026-11-14)"
+  },
+  "Edorfin": {
+    "verdict": "unused",
+    "note": "cut Arena"
+  },
+  "Elrindir": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "EncAlikr01TemplateMelee": {
+    "verdict": "border",
+    "note": "Alik'r rung template that owns the level of the census-listed leaves `EncAlikr0N*` (census names the leaves, not this template); the LCharAlikr ladder is unused"
+  },
+  "EncAlikr01TemplateMissile": {
+    "verdict": "border",
+    "note": "as above"
+  },
+  "EncAlikr02TemplateMelee": {
+    "verdict": "border",
+    "note": "as above"
+  },
+  "EncAlikr03TemplateMissile": {
+    "verdict": "border",
+    "note": "as above"
+  },
+  "EncAlikr04TemplateMissile": {
+    "verdict": "border",
+    "note": "as above"
+  },
+  "EncAlikr05TemplateMissile": {
+    "verdict": "border",
+    "note": "as above"
+  },
+  "EncAlikr06TemplateMissile": {
+    "verdict": "border",
+    "note": "as above"
+  },
+  "Faendal": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "Faida": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "FromDeepestFathoms": {
+    "verdict": "civil",
+    "note": "MS04 vision"
+  },
+  "FromDeepestFathomsVision": {
+    "verdict": "civil",
+    "note": "MS04 vision"
+  },
+  "GemmaUriel": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "Gerdur": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "HirelingBelrand": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "HirelingErikTheSlayer": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "HirelingJenassa": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "HirelingMarcurio": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "HirelingStenvar": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "HirelingVorstag": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "Hod": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "Kjeld": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "Liesl": {
+    "verdict": "unused",
+    "note": "cut Arena"
+  },
+  "Mazaka": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "MQ304LostSoulSons2": {
+    "verdict": "accounted",
+    "note": "named on a census page by FormKey hex only"
+  },
+  "MQ304LostSoulSons3": {
+    "verdict": "accounted",
+    "note": "named on a census page by FormKey hex only"
+  },
+  "Orgnar": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "Orthorn": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "POISkeeverEnraged": {
+    "verdict": "unused",
+    "note": "not placed, no list, template user or quest names it (checked by hand, 2026-11-14)"
+  },
+  "TalsgarTheWanderer": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "TG04EECDockmaster": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "TG04EECDockworker01": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "TG04EECDockworker02": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "Thonar": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "ThoraldGrayMane": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "Valdr": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "WatchesTheRoots": {
+    "verdict": "civil",
+    "note": "MS04 vision"
+  },
+  "WERoadCourierNord": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  },
+  "WERoadCourierWoodElf": {
+    "verdict": "civil",
+    "note": "not an enemy: townsperson, ally, follower or quest NPC (checked by hand, 2026-11-14)"
+  }
+}

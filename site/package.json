@@ -8,7 +8,10 @@
     "build": "astro build",
     "preview": "astro preview",
     "schema": "node scripts/emit-schema.ts",
-    "confluence": "node scripts/render-confluence.ts"
+    "confluence": "node scripts/render-confluence.ts",
+    "confluence:sync": "node scripts/confluence-sync.ts",
+    "census:edit": "node scripts/census-edit.ts",
+    "coverage": "node scripts/coverage.ts"
   },
   "engines": {
     "node": ">=22.18"
