@@ -572,6 +572,12 @@
         "weapons": "`LItemBanditWeapon1H` 037C1B, `LootGoldChange25` 04F78D, `LItemLockPick25` 08FFFB",
         "armor": "`ArmorSummersetShadowsStandard` 10854D",
         "skin": "race default"
+      },
+      {
+        "records": "Linwe",
+        "weapons": "`LItemWeaponSwordBest` 0571AA · `LItemWeaponBow` 017024 · `LItemArrowsAll` 068839 · `LootBanditGoldBoss` 03DED1 · 2 × `LItemPotionRestoreHealthBest` 065A45",
+        "armor": "`TGTQ04LinweOutfit` 108547",
+        "skin": "race default"
       }
     ]
   },
@@ -623,6 +629,19 @@
         },
         "gate": "use all",
         "rolls": "→ `LItemSummersetShadowsArmor` 10853E: Summerset Shadows Armor 108540, Boots 10853F, Gloves 108541, all @1; the hood `ArmorSummersetShadowsGuildHelmet` 108542 at 50% (`LItemSummersetShadowsArmorHelmet` 10854C)"
+      },
+      {
+        "list": {
+          "edid": "TGTQ04LinweOutfit",
+          "formKey": "108547:Skyrim.esm"
+        },
+        "rolls": "Linwe's Armor 108544 · Linwe's Boots 108543 · Linwe's Gloves 108545 · Linwe's Hood 108546, each enchanted"
+      },
+      {
+        "list": {
+          "label": "`LItemWeaponSwordBest` 0571AA · `LItemWeaponBow` 017024 · `LItemArrowsAll` 068839"
+        },
+        "rolls": "as on Dark Brotherhood → *Dark Brotherhood Assassins* → Gear lists"
       }
     ]
   },
@@ -646,6 +665,11 @@
         "kind": "weapons",
         "playable": false,
         "note": "`NonPlayable`, `CantDrop`"
+      },
+      {
+        "item": "Linwe's Armor, Boots, Gloves, Hood 108544 · 108543 · 108545 · 108546",
+        "kind": "light, enchanted",
+        "playable": true
       },
       {
         "item": "the bandit and thief-list armor",

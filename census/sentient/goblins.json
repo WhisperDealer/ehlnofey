@@ -211,5 +211,132 @@
         "quest": "aliases `GoblinFollower` of `ccBGSSSE040_Quest` and `PetGoblin` of `ccBGSSSE040_PetControlQuest` 000AE5"
       }
     ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Goblin 01 (`…EncGoblin01Melee`, `…01MeleeArena`, `…01MeleeDUPLICATE001`)",
+        "weapons": "none: fights unarmed (inventory `ccBGSSSSE040_GoblinBoneDrop` 0008E8, `ccBGSSSE040_LItemPoisonOrHealth` 000BE0, `LItemLockPick25` 08FFFB)",
+        "armor": "`ccBGSSSE040_GoblinClothOutfit` 000C69",
+        "skin": "`ccBGSSSE040_SkinGoblin` 000C6C (race)"
+      },
+      {
+        "records": "Goblin 02 (`…02Melee`, `…02MeleeArena`, `…02MeleeDUPLICATE001`)",
+        "weapons": "none, the same inventory (`…02MeleeArena` carries nothing)",
+        "armor": "`ccBGSSSE040_GoblinLeatherOutfit` 000C66",
+        "skin": "`ccBGSSSE040_SkinGoblin`"
+      },
+      {
+        "records": "Goblin 03 (`…03Melee`, `…03MeleeDUPLICATE001`) · `…04Hammer`",
+        "weapons": "none, the same inventory (`04Hammer` holds no hammer)",
+        "armor": "`ccBGSSSE040_GoblinIronOutfit` 000C67",
+        "skin": "`ccBGSSSE040_SkinGoblin`"
+      },
+      {
+        "records": "Blue God",
+        "weapons": "Goblin Totem Staff `ccBGSSSE040_StaffGoblinTotem` 000805 · Iron Dagger 01397E (plus `LootCitizenPocketsPoor` 1046D2)",
+        "armor": "`ccBGSSSE040_OrcOutfit` 0009AC",
+        "skin": "`ccBGSSSE040_SkinNakedBlueOrc` 000946"
+      },
+      {
+        "records": "Gogh",
+        "weapons": "Spear of Bitter Mercy `ccBGSSSE040_SpearOfBitterMercy` 000810 (plus spare Gogh's Iron Armor, Iron Helmet, Leather Helmet, Loin Cloth in his inventory)",
+        "armor": "`ccBGSSSE040_GoblinFollowerOutfit` 000C63",
+        "skin": "`ccBGSSSE040_SkinGoblinFollower` 000C65"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ccBGSSSE040_GoblinClothOutfit",
+          "formKey": "000C69:ccbgssse040-advobgobs.esl"
+        },
+        "rolls": "Gogh's Loin Cloth 000C60"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE040_GoblinLeatherOutfit",
+          "formKey": "000C66:ccbgssse040-advobgobs.esl"
+        },
+        "rolls": "Gogh's Leather Armor 000BD8 · Gogh's Leather Helmet 000BCC"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE040_GoblinIronOutfit",
+          "formKey": "000C67:ccbgssse040-advobgobs.esl"
+        },
+        "rolls": "Gogh's Iron Armor 000BDB · Gogh's Iron Helmet 000BCA"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE040_GoblinFollowerOutfit",
+          "formKey": "000C63:ccbgssse040-advobgobs.esl"
+        },
+        "rolls": "Gogh's Iron Armor 000BDB · Gogh's Skull Mask 000BCE"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE040_OrcOutfit",
+          "formKey": "0009AC:ccbgssse040-advobgobs.esl"
+        },
+        "rolls": "Fur Armor 10594B · `LItemBanditBoots` 037C23"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditBoots",
+          "formKey": "037C23:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Fur Shoes 06F398 at every gate · Hide Boots 013910 (1) · Leather Boots 013920 (6–9) · Scaled Boots 01B39F (19–28)",
+        "levels": [
+          1,
+          6,
+          19
+        ]
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Gogh's Loin Cloth · Leather Armor · Leather Helmet · Iron Armor · Iron Helmet · Skull Mask (000C60 · 000BD8 · 000BCC · 000BDB · 000BCA · 000BCE)",
+        "kind": "clothing · light · heavy, AR 1 · 10 · 6 · 15 · 8 · 10",
+        "playable": false,
+        "note": "`NonPlayable`: goblin-shaped, the player cannot wear them"
+      },
+      {
+        "item": "Spear of Bitter Mercy 000810",
+        "kind": "two-handed",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Goblin Totem Staff 000805 · Iron Dagger",
+        "kind": "staff · one-handed",
+        "playable": true
+      },
+      {
+        "item": "Fur Armor · Fur Shoes · Hide, Leather, Scaled Boots",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "`ccBGSSSE040_SkinGoblin` 000C6C · `ccBGSSSE040_SkinGoblinFollower` 000C65",
+        "kind": "the goblin body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`ccBGSSSE040_SkinNakedBlueOrc` 000946",
+        "kind": "the Blue God's body",
+        "playable": true,
+        "note": "no `NonPlayable` flag, like vanilla `SkinNaked`; a skin is never dropped"
+      }
+    ]
   }
 }

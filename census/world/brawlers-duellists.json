@@ -697,5 +697,264 @@
         "quest": "alias `Warrior` of `ccEEJSSE004_Quest` 000C4F:cceejsse004-hall.esl"
       }
     ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Benor",
+        "weapons": "Iron Battleaxe 013980 (plus `LootCitizenPocketsCommon` 1046D1)",
+        "armor": "`ArmorIronNoHelmetOutfit` 017F21",
+        "skin": "race default"
+      },
+      {
+        "records": "Rolff Stone-Fist",
+        "weapons": "Iron Dagger 01397E (plus `LootCitizenPocketsPoor` 1046D2)",
+        "armor": "`FarmClothesOutfit01WithHat` 037C53",
+        "skin": "race default"
+      },
+      {
+        "records": "Uthgerd the Unbroken",
+        "weapons": "Steel Greatsword 013987 (plus her house key 093B11, `LootCitizenPocketsCommon`)",
+        "armor": "`ArmorSteelPlateNoHelmetOutfit` 0579A3",
+        "skin": "race default"
+      },
+      {
+        "records": "Cosnach",
+        "weapons": "Iron Mace 013982 (plus Key to Cosnach's Room 0656E5, `LootCitizenPocketsPoor`)",
+        "armor": "`ArmorHideSimpleOutfit` 037C4F",
+        "skin": "race default"
+      },
+      {
+        "records": "Bersi Honey-Hand · Hofgrir Horse-Crusher",
+        "weapons": "`LItemWeaponDaggerTown` 017177 (plus Pawned Prawn Key 0FDEB3 · Riften Stables Key 0FDEC1, `LootCitizenPocketsCommon`)",
+        "armor": "`MerchantClothesOutfit01NoHat` 07144A",
+        "skin": "race default"
+      },
+      {
+        "records": "Keerava",
+        "weapons": "`LItemWeaponDaggerTown` (plus Keerava's Key 04E0B7, Bee and Barb Key 0FDEB2, `LootCitizenPocketsCommon`)",
+        "armor": "`BarkeepClothes02` 0958AA",
+        "skin": "race default"
+      },
+      {
+        "records": "Haelga",
+        "weapons": "`LItemWeaponDaggerTown` (plus Haelga's Bunkhouse Key 0FDEB4, `LootCitizenPocketsRich` 1046D3)",
+        "armor": "`RiftenHaelgaOutfit` 1040E3",
+        "skin": "race default"
+      },
+      {
+        "records": "Mikael",
+        "weapons": "Iron Dagger 01397E (plus `LootCitizenPocketsCommon`)",
+        "armor": "`FarmClothesOutfit02` 02D75E",
+        "skin": "race default"
+      },
+      {
+        "records": "Mulush gro-Shugurz",
+        "weapons": "Iron Mace 013982 (plus Key to Overseer's House 0656E8, `LootCitizenPocketsCommon`)",
+        "armor": "`MinerClothesOutfit02` 09595B",
+        "skin": "race default"
+      },
+      {
+        "records": "Dryston",
+        "weapons": "Iron Dagger 01397E (plus `LootCitizenPocketsPoor`)",
+        "armor": "`ArmorLeatherSimpleOutfit` 057A34",
+        "skin": "race default"
+      },
+      {
+        "records": "Ainethach",
+        "weapons": "Steel Dagger 013986 (plus Key to Karthwasten Hall 06565C, `LootCitizenPocketsRich`)",
+        "armor": "`FineClothesOutfit02` 0E40DD",
+        "skin": "race default"
+      },
+      {
+        "records": "Stig Salt-Plank",
+        "weapons": "none in the record (no items)",
+        "armor": "`MerchantClothesOutfit01` 045C34",
+        "skin": "race default"
+      },
+      {
+        "records": "Peladius (CC)",
+        "weapons": "Steel Sword of Embers 04B451 · Long Bow 03B562 + 30 Steel Arrows 01397F (plus a Potion of Plentiful Healing 03EADF)",
+        "armor": "`ccBGSSSE058_ArmorBladesOutfit` 000810:ccbgssse058-ba_steel.esl",
+        "skin": "race default"
+      },
+      {
+        "records": "Tyra Blood-Fire (CC): `ccBGSSSE063_Drathea` and the five variants, which take `Inventory` from it",
+        "weapons": "Ebony Sword 0139B1 ×2 · Elven Bow 01399D + 50 Steel Arrows · Steel Dagger 013986; in her inventory, not worn: the enchanted Ebony Plate Helmet 000869 (plus *The Crimson Dirks, v1* 00085B, a Ruby 063B42)",
+        "armor": "`ccBGSSSE063_ArmorBladesOutfit` 000810:ccbgssse063-ba_ebony.esl",
+        "skin": "race default"
+      },
+      {
+        "records": "Harald (CC), the hostile copy",
+        "weapons": "Elven Dagger 01399E · Elven Dagger of Fear 0BE18B (plus a Quicksilver Ingot 05ADA0, `LootCitizenPocketsPoor`)",
+        "armor": "`MinerClothesOutfit01withGloves` 0F8719",
+        "skin": "race default"
+      },
+      {
+        "records": "Eydvina Shield-Hearth (CC)",
+        "weapons": "Iron Sword 012EB7 (plus `LootCitizenPocketsCommon`); death item `ccEEJSSE004_DeathItemWarrior` 000DEC:cceejsse004-hall.esl",
+        "armor": "`ArmorScaledBNoHelmetOutfit` 057A27",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ArmorIronNoHelmetOutfit",
+          "formKey": "017F21:Skyrim.esm"
+        },
+        "rolls": "`ArmorIronSetNoHelmet` 017F20 (use all): Iron Armor 012E49 · Iron Boots 012E4B · Iron Gauntlets 012E46"
+      },
+      {
+        "list": {
+          "edid": "ArmorSteelPlateNoHelmetOutfit",
+          "formKey": "0579A3:Skyrim.esm"
+        },
+        "rolls": "Steel Plate Armor 01395C · Steel Plate Boots 01395B · Steel Plate Gauntlets 01395D"
+      },
+      {
+        "list": {
+          "edid": "ArmorHideSimpleOutfit",
+          "formKey": "037C4F:Skyrim.esm"
+        },
+        "rolls": "Hide Armor 013911 · Hide Boots 013910"
+      },
+      {
+        "list": {
+          "edid": "ArmorLeatherSimpleOutfit",
+          "formKey": "057A34:Skyrim.esm"
+        },
+        "rolls": "Leather Armor 03619E · Leather Boots 013920"
+      },
+      {
+        "list": {
+          "edid": "ArmorScaledBNoHelmetOutfit",
+          "formKey": "057A27:Skyrim.esm"
+        },
+        "rolls": "Scaled Horn Armor 01B3A4 · Scaled Boots 01B39F · Scaled Bracers 01B3A0"
+      },
+      {
+        "list": {
+          "edid": "FarmClothesOutfit01WithHat",
+          "formKey": "037C53:Skyrim.esm"
+        },
+        "rolls": "Belted Tunic 01BE1A · Boots 01BE1B · Hat 0209AA"
+      },
+      {
+        "list": {
+          "edid": "FarmClothesOutfit02",
+          "formKey": "02D75E:Skyrim.esm"
+        },
+        "rolls": "Clothes 0209A6 · Boots 0209A5"
+      },
+      {
+        "list": {
+          "edid": "MerchantClothesOutfit01NoHat",
+          "formKey": "07144A:Skyrim.esm"
+        },
+        "rolls": "Clothes 04223C · Boots 04223D (`MerchantClothesOutfit01` 045C34: the same plus Hat 04223B)"
+      },
+      {
+        "list": {
+          "edid": "BarkeepClothes02",
+          "formKey": "0958AA:Skyrim.esm"
+        },
+        "rolls": "Clothes 06FF38 · Shoes 05B6A0"
+      },
+      {
+        "list": {
+          "edid": "RiftenHaelgaOutfit",
+          "formKey": "1040E3:Skyrim.esm"
+        },
+        "rolls": "Clothes 06FF45 · Fine Boots 086993 · Amulet of Dibella 0C8915"
+      },
+      {
+        "list": {
+          "edid": "MinerClothesOutfit02",
+          "formKey": "09595B:Skyrim.esm"
+        },
+        "rolls": "Miner's Clothes 06FF43 · Boots 080699 (`MinerClothesOutfit01withGloves` 0F8719: Miner's Clothes 080697 · Boots 080699 · Gloves 0261C1)"
+      },
+      {
+        "list": {
+          "edid": "FineClothesOutfit02",
+          "formKey": "0E40DD:Skyrim.esm"
+        },
+        "rolls": "Fine Clothes 0CEE80 · Fine Boots 0CEE82"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponDaggerTown",
+          "formKey": "017177:Skyrim.esm"
+        },
+        "rolls": "as on Bandits → *Common Bandits* → Gear lists: Iron 1 · Steel 4 · Orcish 10 · Dwarven 15 · Elven 20"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE058_ArmorBladesOutfit",
+          "formKey": "000810:ccbgssse058-ba_steel.esl"
+        },
+        "rolls": "the enchanted Steel Soldier set: Armor 00083B · Gauntlets 00083C · Helmet 00083D · Boots 00083E"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE063_ArmorBladesOutfit",
+          "formKey": "000810:ccbgssse063-ba_ebony.esl"
+        },
+        "rolls": "the enchanted Ebony Plate set without the helmet: Armor 00086B · Boots 00086C · Gauntlets 00086A"
+      },
+      {
+        "list": {
+          "edid": "ccEEJSSE004_DeathItemWarrior",
+          "formKey": "000DEC:cceejsse004-hall.esl"
+        },
+        "gate": "use all",
+        "rolls": "Eydvina's Note 000DF1 · Key to Hendraheim 000D9E (quest items, no gear)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Iron Armor · Boots · Gauntlets",
+        "kind": "heavy, AR 25 · 10 · 10",
+        "playable": true
+      },
+      {
+        "item": "Steel Plate Armor · Boots · Gauntlets",
+        "kind": "heavy, AR 40 · 14 · 14",
+        "playable": true
+      },
+      {
+        "item": "Hide Armor · Boots, Leather Armor · Boots, Scaled Horn Armor · Boots · Bracers",
+        "kind": "light, AR 20 · 5, 26 · 7, 32 · 9 · 9",
+        "playable": true
+      },
+      {
+        "item": "Steel Soldier Armor · Gauntlets · Helmet · Boots (CC, enchanted)",
+        "kind": "heavy, AR 32 · 13 · 18 · 13",
+        "playable": true
+      },
+      {
+        "item": "Ebony Plate Armor · Boots · Gauntlets · Helmet (CC, enchanted)",
+        "kind": "heavy, AR 44 · 17 · 17 · 22",
+        "playable": true
+      },
+      {
+        "item": "the farm, merchant, barkeeper, miner and fine clothes, boots, hats and gloves; Amulet of Dibella",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Iron Battleaxe, Steel Greatsword, Iron Mace, Iron Sword, Steel Sword of Embers, Ebony Sword, the Iron, Steel and Elven daggers (Elven Dagger of Fear included), the town daggers, Long Bow, Elven Bow, Steel Arrows",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
   }
 }

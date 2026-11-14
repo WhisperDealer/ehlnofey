@@ -302,5 +302,137 @@
         "notPlaced": true
       }
     ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Ri'saad",
+        "weapons": "Steel Sword 013989 (plus `LootCitizenPocketsRich` 1046D3)",
+        "armor": "`FineClothesOutfit02Variant` 0F8717",
+        "skin": "race default"
+      },
+      {
+        "records": "Atahbah",
+        "weapons": "Long Bow 03B562 (no arrows) · Steel Dagger 013986 (plus `LootCitizenPocketsCommon` 1046D1)",
+        "armor": "`MerchantClothesOutfit01NoHat` 07144A",
+        "skin": "race default"
+      },
+      {
+        "records": "Khayla · Ra'zhinda · Dro'marash (the caravan guards)",
+        "weapons": "Steel Sword · Steel Shield 013955 (plus `LootCitizenPocketsCommon`)",
+        "armor": "`ArmorSteelNoHelmetOutfit` 028B44",
+        "skin": "race default"
+      },
+      {
+        "records": "Ma'dran",
+        "weapons": "Steel Mace 013988 (plus `LootCitizenPocketsRich`)",
+        "armor": "`MerchantClothesOutfit02NoHat` 09593C",
+        "skin": "race default"
+      },
+      {
+        "records": "Ma'jhad",
+        "weapons": "Steel Greatsword 013987 (plus `LootCitizenPocketsCommon`)",
+        "armor": "`MerchantClothesOutfit02NoHat`",
+        "skin": "race default"
+      },
+      {
+        "records": "Ahkari",
+        "weapons": "Steel War Axe 013983 (plus `LootCitizenPocketsRich`)",
+        "armor": "`FineClothesOutfit01` 09D5E0",
+        "skin": "race default"
+      },
+      {
+        "records": "Zaynabi",
+        "weapons": "Steel Dagger (plus `LootCitizenPocketsCommon`)",
+        "armor": "`MerchantClothesOutfit02NoHat`",
+        "skin": "race default"
+      },
+      {
+        "records": "Kharjo",
+        "weapons": "Steel Mace · Steel Shield (plus `LootCitizenPocketsCommon`)",
+        "armor": "`ArmorSteelPlateNoHelmetOutfit` 0579A3",
+        "skin": "race default"
+      },
+      {
+        "records": "Grushnag",
+        "weapons": "none (no inventory)",
+        "armor": "`ArmorScaledBNoHelmetOutfit` 057A27",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ArmorSteelNoHelmetOutfit",
+          "formKey": "028B44:Skyrim.esm"
+        },
+        "rolls": "`ArmorSteelNoHelmetSet` 028B45 (use all): Steel Cuffed Boots 013951 or Steel Shin Boots 0F6F21 · Steel Armor 013952 or 0F6F22 · Steel Nordic Gauntlets 013953 or Steel Imperial Gauntlets 0F6F23; every entry at gate 1"
+      },
+      {
+        "list": {
+          "edid": "ArmorSteelPlateNoHelmetOutfit",
+          "formKey": "0579A3:Skyrim.esm"
+        },
+        "rolls": "Steel Plate Armor 01395C · Steel Plate Boots 01395B · Steel Plate Gauntlets 01395D"
+      },
+      {
+        "list": {
+          "edid": "ArmorScaledBNoHelmetOutfit",
+          "formKey": "057A27:Skyrim.esm"
+        },
+        "rolls": "Scaled Horn Armor 01B3A4 · Scaled Boots 01B39F · Scaled Bracers 01B3A0"
+      },
+      {
+        "list": {
+          "label": "`FineClothesOutfit02Variant` 0F8717 · `FineClothesOutfit01` 09D5E0"
+        },
+        "rolls": "Fine Clothes 0F8715 + Fine Boots 0CEE82 · Fine Clothes 086991 + Fine Boots 086993"
+      },
+      {
+        "list": {
+          "label": "`MerchantClothesOutfit01NoHat` 07144A · `MerchantClothesOutfit02NoHat` 09593C"
+        },
+        "rolls": "Clothes 04223C + Boots 04223D · Clothes 06FF45 + Boots 04223D"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Steel Armor · Steel boots · Steel gauntlets",
+        "kind": "heavy, AR 31 · 12 · 12",
+        "playable": true
+      },
+      {
+        "item": "Steel Plate Armor · Boots · Gauntlets",
+        "kind": "heavy, AR 40 · 14 · 14",
+        "playable": true
+      },
+      {
+        "item": "Steel Shield 013955",
+        "kind": "heavy shield, AR 24",
+        "playable": true
+      },
+      {
+        "item": "Scaled Horn Armor · Scaled Boots · Scaled Bracers",
+        "kind": "light, AR 32 · 9 · 9",
+        "playable": true
+      },
+      {
+        "item": "Fine Clothes · merchant Clothes and their boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Steel Sword · Dagger · Mace · War Axe · Greatsword · Long Bow",
+        "kind": "one-handed · two-handed · bow",
+        "playable": true
+      }
+    ]
   }
 }

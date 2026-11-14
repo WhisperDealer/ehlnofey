@@ -1424,5 +1424,554 @@
         "quest": "alias `DagothPriest` of `ccASVSSE001_QuestD` 00117A and `Erden` of `ccASVSSE001_QuestE` 0990EF (ccasvsse001-almsivi.esm)"
       }
     ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Brutius (CC; own inventory: his template gives no `Inventory`)",
+        "weapons": "Fishing Rod `ccBGSSSE001_FishingRodImperialWeap` 00084F:ccbgssse001-fish.esm (he fights with his template's spells) · `LootWarlockScrolls100` 03509E · `LootDraugrGoldBoss01` 088513 · `LootBanditRandomWizard` 10E0E5",
+        "armor": "`ccBGSSSE001_FishingOutfit` 000B76:ccbgssse001-fish.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Silus Vesuius",
+        "weapons": "`LItemWarlockDagger` 044CD6 · `LootCitizenPocketsRich` 1046D3",
+        "armor": "`MythicDawnOutfitNoHood` 0B146C",
+        "skin": "race default"
+      },
+      {
+        "records": "Sulla Trebatius",
+        "weapons": "`LItemEnchImperialSword` 0C3DE0",
+        "armor": "`CWSoldierImperialOfficerOutfitNoHelmet` 0ABF45",
+        "skin": "race default"
+      },
+      {
+        "records": "Umana",
+        "weapons": "`LItemBanditWarAxe` 037C1A · Targe of the Blooded `dunTargeOfTheBloodedShield` 0FC5BF",
+        "armor": "`ArmorSteelPlateNoHelmetOutfit` 0579A3",
+        "skin": "race default"
+      },
+      {
+        "records": "J'darr (own inventory: his template gives no `Inventory`)",
+        "weapons": "Woodcutter's Axe `Axe01` 02F2F4 · 3 Restore Health 03EADD · `LItemPotionFortifyCombatSkills` 03A164",
+        "armor": "`FarmClothesOutfit01` 01DC10 · `LItemArmorHelmetLight` 016741 · `LItemArmorGauntletsLight` 01673E",
+        "skin": "race default"
+      },
+      {
+        "records": "Calixto Corrium",
+        "weapons": "Iron Dagger 01397E (plus his house key 0E6C64, `LootCitizenPocketsRich`)",
+        "armor": "`MerchantClothesOutfit01NoHat` 07144A",
+        "skin": "race default"
+      },
+      {
+        "records": "Drunk Cultist",
+        "weapons": "none (spells)",
+        "armor": "`WarlockOutfitLeveled` 044CD5",
+        "skin": "race default"
+      },
+      {
+        "records": "Knjakr",
+        "weapons": "Iron War Axe 013790",
+        "armor": "`ChefOutfit` 01BC5E",
+        "skin": "race default"
+      },
+      {
+        "records": "Drahff",
+        "weapons": "`LItemWeaponBowBest` 05719E · `LItemArrowsAll` 068839 · `LootBanditGold` 037C27 · `LootBanditGems100` 0B420E",
+        "armor": "`RiftenDrahffOutfit` 0AB7D0",
+        "skin": "race default"
+      },
+      {
+        "records": "Hewnon Black-Skeever",
+        "weapons": "`LItemWeaponMaceTown` 0165BB · `LitemArmorShieldHeavyTown` 0165C3 · `LootBanditGold` · `LootBanditLockpick25` 08FFF4 · `LootBanditChestPotions100` 0B420D",
+        "armor": "`RiftenHewnonOutfit` 0AB7D5",
+        "skin": "race default"
+      },
+      {
+        "records": "Gian the Fist (own inventory: his template gives factions only)",
+        "weapons": "none (fists) · Ale · `LootGoldChange` 037C2B · `LItemFoodInnCommon` 098E5F",
+        "armor": "`dunRatwayGiansOutfit` 10A061 (Gloves of the Pugilist)",
+        "skin": "race default"
+      },
+      {
+        "records": "Orini Dral (`Inventory` from `LvlBanditMelee1H` 03DECB)",
+        "weapons": "as the drawn one-handed bandit leaf (Bandits → *Common Bandits*)",
+        "armor": "as the drawn leaf: `BanditArmorMeleeShield20Outfit` 0C0197, or the tank leaves' heavy set",
+        "skin": "race default"
+      },
+      {
+        "records": "Sarthis Idren (`Inventory` from `LvlBanditBoss` 03DF17)",
+        "weapons": "as the drawn chief leaf (Bandits → *Bandit Chiefs*); death item `FFRiften20SarthisDeathItem` 085D58: his key 085D57 only",
+        "armor": "as the drawn chief leaf: `BanditArmorHeavyBossOutfit` 03DED3, or a CC armour-pack set",
+        "skin": "race default"
+      },
+      {
+        "records": "Louis Letrush",
+        "weapons": "Iron Dagger 01397E · `LootCitizenPocketsRich`",
+        "armor": "`FarmClothesOutfit01` 01DC10",
+        "skin": "race default"
+      },
+      {
+        "records": "Telrav (own inventory: his template gives no `Inventory`)",
+        "weapons": "`LItemBanditWeaponBow` 039D2E · `LItemBanditWeaponArrows` 039D2F · `LootBanditGold`",
+        "armor": "`MerchantClothesOutfit01NoHat` 07144A",
+        "skin": "race default"
+      },
+      {
+        "records": "Wyndelius Gatharian (`Inventory` from `LvlBanditWizardNordM` 01B1E1)",
+        "weapons": "as the drawn wizard bandit leaf (Bandits → *Common Bandits*): a dagger, gold, `LootBanditRandomWizard`",
+        "armor": "`BanditMageOutfit` 06E26F",
+        "skin": "race default"
+      },
+      {
+        "records": "Ebony Warrior",
+        "weapons": "Ebony Sword of the Vampire `EnchEbonySwordAbsorbH06` 01D520 · Ebony Bow of Winter `EnchEbonyBowFrost06` 0BF40B · 13 Ebony Arrows 0139BF · Ebony Shield of Fire Suppression `EnchArmorEbonyShieldResistFire04` 0CF891 · 5 Restore Health 03EAE3; death item `DLC2DeathItemEbonyWarrior` 01E0C8:Dragonborn.esm (use all: the six flawless gems, a Daedra heart, a human heart, a filled black soul gem; no gear)",
+        "armor": "`DLC2EbonyWarriorOutfit` 0285C4:Dragonborn.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Hamelyn (own inventory: his template gives no `Inventory`)",
+        "weapons": "none (spells) · `TGEnchJewelry` 0D8835 · `TGLootIngots50` 0F3928 · potions, change, his journal 10B2CD",
+        "armor": "`dunHonningbrewRatGuyOutfit` 10A04D",
+        "skin": "race default"
+      },
+      {
+        "records": "Umbra (CC)",
+        "weapons": "Umbra `ccBGSSSE016_UmbraBossWeapon` 00271A:ccbgssse016-umbra.esm (the NPC copy) · the Passage Key 015B3B:ccbgssse016-umbra.esm; death item `ccBGSSSE016_UmbraDeathItem` 017621:ccbgssse016-umbra.esm drops the player's Umbra",
+        "armor": "`ArmorEbonyAllOutfit` 057A1E",
+        "skin": "race default"
+      },
+      {
+        "records": "Arvel the Swift",
+        "weapons": "Iron Sword 012EB7",
+        "armor": "`ArmorHideAllOutfit` 01B3A8",
+        "skin": "race default"
+      },
+      {
+        "records": "Ehlhiel (CC; own inventory: his template gives spells only)",
+        "weapons": "`LItemBanditBossWeapon1H` 03DF1C · Restore Health 03EADF",
+        "armor": "`MonkOutfitNoHood` 0C2A5B",
+        "skin": "race default"
+      },
+      {
+        "records": "Zaharia (CC)",
+        "weapons": "`LItemBanditBossWeapon1H` 03DF1C · `LootCitizenPocketsPoor` 1046D2",
+        "armor": "`ccBGSSSE053_ArmorBladesOutfit` 000810:ccbgssse053-ba_leather.esl",
+        "skin": "race default"
+      },
+      {
+        "records": "Bounty Hunter (CC; own inventory: his template gives no `Inventory`)",
+        "weapons": "`LItemBanditBattleaxe` 037C1E (plus an apple, a flute)",
+        "armor": "`ccBGSSSE050_ArmorBladesOutfit` 000810:ccbgssse050-ba_daedric.esl",
+        "skin": "race default"
+      },
+      {
+        "records": "Aesrael (CC)",
+        "weapons": "`LItemWeaponBow` 017024 · 50 Steel Arrows 01397F · `LootGoldChange25` 04F78D · `LItemLockPick25` 08FFFB",
+        "armor": "`ArmorHideSimpleOutfit` 037C4F",
+        "skin": "race default"
+      },
+      {
+        "records": "Ernanthil (CC)",
+        "weapons": "Steel Dagger 013986 · `LootCitizenPocketsRich`; death item `ccKRTSSE001_DeathItemErnanthil` 000ADA:cckrtsse001_altar.esl: a quest note only",
+        "armor": "`ThievesGuildStandardOutfit` 036582",
+        "skin": "race default"
+      },
+      {
+        "records": "Atar",
+        "weapons": "`LItemBanditWeapon1H` 037C1B · `LItemBanditShield` 039D2D · `LootBanditGoldBoss` 03DED1",
+        "armor": "`BanditArmorHeavyBossOutfit` 03DED3",
+        "skin": "race default"
+      },
+      {
+        "records": "Mogrul",
+        "weapons": "Orcish War Axe of Devouring `EnchOrcishWarAxeAbsorbH04` 0AA1CD · `LootCitizenPocketsCommon` 1046D1",
+        "armor": "`ClothesTavernWenchOutfit` 0F966E",
+        "skin": "race default"
+      },
+      {
+        "records": "Slitter (own inventory: his template gives no `Inventory`)",
+        "weapons": "`LItemBanditBattleaxe` 037C1E; death item `DeathItemBandit` 0C3C9B (perk-gated gold, no gear)",
+        "armor": "`DLC2SlitterOutfit` 0271FD:Dragonborn.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Ildari Sarothril",
+        "weapons": "Dwarven Dagger 013996 · Staff of Lightning Bolts `StaffLightningBolt` 04DEE3",
+        "armor": "`DLC2IldariOutfit` 017748:Dragonborn.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "General Falx Carius",
+        "weapons": "Champion's Cudgel `DLC2RR01FalxWarhammer` 01A578:Dragonborn.esm (plus the Fort Frostmoth exit key 01F4B4:Dragonborn.esm)",
+        "armor": "`DLC2RR01FalxOutfit` 01A577:Dragonborn.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Ralis Sedarys",
+        "weapons": "Hoarfrost `DLC2dunKolbjornRalisPickaxe` 0179C9:Dragonborn.esm · Pickaxe 0E3C16 · Iron Dagger 01397E · gold, gems, potions",
+        "armor": "`DLC2dunKolbjornRalisOutfit` 0179CA:Dragonborn.esm",
+        "skin": "race default"
+      },
+      {
+        "records": "Merilar Rendas",
+        "weapons": "Glass Dagger 0139A6 · 30 fire-spider scrolls 0285D1:Dragonborn.esm (plus his journal and cage key); death item `DLC2MerilarRendasDeathItem` 03CB92:Dragonborn.esm: more spider scrolls, no gear",
+        "armor": "`CollegeNoviceAlterationOutfit` 10DD2E",
+        "skin": "race default"
+      },
+      {
+        "records": "Skjol the Tongueless (CC; own inventory: his template gives no `Inventory`)",
+        "weapons": "Stalhrim Battleaxe of Freezing `DLC2EnchStalhrimBattleaxeFrost04` 0284B3:Dragonborn.esm · `LootGoldChange25` · `LootBanditRandom` 10E0DD; death item `DeathItemBandit` 0C3C9B",
+        "armor": "`ArmorScaledAllOutfit` 057A24",
+        "skin": "race default"
+      },
+      {
+        "records": "Erden Relvel (CC; own inventory: his template gives spells only)",
+        "weapons": "Ebony Dagger 0139AE · `LootGoldChange25` · `LootCitizenPocketsCommon` ×2; death item `DeathItemBandit` 0C3C9B",
+        "armor": "`ccASVSSE001_DagothOutfit` 0C192B:ccasvsse001-almsivi.esm",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "ccBGSSSE001_FishingOutfit",
+          "formKey": "000B76:ccbgssse001-fish.esm"
+        },
+        "rolls": "Fishing Clothes 0008E2 · Fishing Boots 0008E1 · Fishing Hat 0008E4 (all ccbgssse001-fish.esm)"
+      },
+      {
+        "list": {
+          "edid": "MythicDawnOutfitNoHood",
+          "formKey": "0B146C:Skyrim.esm"
+        },
+        "rolls": "Mythic Dawn Robes (no hood) 109C11 · Mythic Dawn Boots 0B1460 · Mythic Dawn Gloves 0B145B"
+      },
+      {
+        "list": {
+          "label": "`LItemWarlockDagger` 044CD6 · `WarlockOutfitLeveled` 044CD5"
+        },
+        "rolls": "as on Warlocks → *Conjurers* → Gear lists"
+      },
+      {
+        "list": {
+          "edid": "LItemEnchImperialSword",
+          "formKey": "0C3DE0:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "an enchanted Imperial Sword, one of eight enchantments (Turn Undead, Fatigue, Soul Trap, Shock, Magicka, Frost, Fire, Fear) at each tier: 4 (e.g. Imperial Sword of Embers) · 6 (…of Burning) · 8 (…of Scorching); nothing below 4"
+      },
+      {
+        "list": {
+          "edid": "CWSoldierImperialOfficerOutfitNoHelmet",
+          "formKey": "0ABF45:Skyrim.esm"
+        },
+        "rolls": "Imperial Armor, Boots, Bracers (heavy); as on Imperial Legion → *Common Legion*"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditWarAxe",
+          "formKey": "037C1A:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron, Steel War Axe ×4 (1) · Orcish (9) · Dwarven (15) · Elven (22)"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditBattleaxe",
+          "formKey": "037C1E:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron, Steel Battleaxe ×4 (1) · Orcish (9) · Dwarven (15) · Elven (22)"
+      },
+      {
+        "list": {
+          "edid": "ArmorSteelPlateNoHelmetOutfit",
+          "formKey": "0579A3:Skyrim.esm"
+        },
+        "rolls": "Steel Plate Armor, Boots, Gauntlets"
+      },
+      {
+        "list": {
+          "edid": "LItemArmorHelmetLight",
+          "formKey": "016741:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Hide ×2 (1) · Leather or Imperial Helmet (heavy) (8, 9) · Elven (12) · Scaled (19) · Glass (36) · `SublistArmorHelmetDragonscale05` 000F07 (46): Dragonscale 1 in 20, else `LItemArmorHelmetLightBlacksmith` 09BC3B (Leather 1 · Elven 12 · Scaled 19 · Glass 37)"
+      },
+      {
+        "list": {
+          "edid": "LItemArmorGauntletsLight",
+          "formKey": "01673E:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Hide Bracers ×4 (1) · Leather Bracers (6, 7, 8, 9) · Elven (12) · Scaled (19) · Glass (36) · `SublistArmorGauntletsDragonscale05` 000F05 (46): Dragonscale 1 in 20, else `LItemArmorGauntletsLightBlacksmith` 09BC39 (Leather 1 · Elven 12 · Scaled 19 · Glass 36)"
+      },
+      {
+        "list": {
+          "edid": "FarmClothesOutfit01",
+          "formKey": "01DC10:Skyrim.esm"
+        },
+        "rolls": "Belted Tunic 01BE1A · Boots 01BE1B"
+      },
+      {
+        "list": {
+          "edid": "MerchantClothesOutfit01NoHat",
+          "formKey": "07144A:Skyrim.esm"
+        },
+        "rolls": "Clothes 04223C · Boots 04223D"
+      },
+      {
+        "list": {
+          "edid": "ChefOutfit",
+          "formKey": "01BC5E:Skyrim.esm"
+        },
+        "rolls": "Chef's Tunic 01BC82 · Chef's Hat 01BCA7 · Shoes 018801"
+      },
+      {
+        "list": {
+          "edid": "RiftenDrahffOutfit",
+          "formKey": "0AB7D0:Skyrim.esm"
+        },
+        "rolls": "Fur Armor `ArmorBanditCuirass` 06F393 · Ragged Boots 013106"
+      },
+      {
+        "list": {
+          "label": "`LItemWeaponBowBest` 05719E"
+        },
+        "rolls": "as on Thieves Guild → *Thieves Guild Foes* → Gear lists"
+      },
+      {
+        "list": {
+          "label": "`LItemWeaponBow` 017024 · `LItemArrowsAll` 068839"
+        },
+        "rolls": "as on Dark Brotherhood → *Dark Brotherhood Assassins* → Gear lists"
+      },
+      {
+        "list": {
+          "edid": "RiftenHewnonOutfit",
+          "formKey": "0AB7D5:Skyrim.esm"
+        },
+        "rolls": "Hide Armor 013911 · Boots 04223D"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponMaceTown",
+          "formKey": "0165BB:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron Mace ×4 (1) · Steel (4, 5, 6, 7) · Orcish (13) · Dwarven (18) · Elven (23)"
+      },
+      {
+        "list": {
+          "edid": "LitemArmorShieldHeavyTown",
+          "formKey": "0165C3:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron Shield ×4 (1) · Banded Iron Shield (5, 6, 7, 8) · Steel Shield (11, 12, 13, 14)"
+      },
+      {
+        "list": {
+          "edid": "dunRatwayGiansOutfit",
+          "formKey": "10A061:Skyrim.esm"
+        },
+        "rolls": "Roughspun Tunic 03C9FE · Gloves of the Pugilist 10A06A · a ring from `LItemEnchRingStaminaRate` 100E82 (every gate ≤ player: Ring of Recuperation 16–19 · of Rejuvenation 24–27 · of Invigoration 32–35 · of Renewal 40–43; nothing below 16)"
+      },
+      {
+        "list": {
+          "label": "the one-handed and wizard bandit leaves, `BanditMageOutfit` 06E26F, `LItemBanditWeapon1H` 037C1B, `LItemBanditWeaponBow` 039D2E, `LItemBanditWeaponArrows` 039D2F"
+        },
+        "rolls": "as on Bandits → *Common Bandits* → Gear lists (the bow and arrows are the two halves of `LItemBanditWeaponMissile` 037BFD)"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditShield",
+          "formKey": "039D2D:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Hide, Iron, Banded Iron Shield ×4 (1) · Steel Shield (6, 7, 8, 9)"
+      },
+      {
+        "list": {
+          "label": "the chief leaves, `BanditArmorHeavyBossOutfit` 03DED3, `LItemBanditBossWeapon1H` 03DF1C, `DeathItemBandit` 0C3C9B"
+        },
+        "rolls": "as on Bandits → *Bandit Chiefs* → Gear lists"
+      },
+      {
+        "list": {
+          "edid": "DLC2EbonyWarriorOutfit",
+          "formKey": "0285C4:Dragonborn.esm"
+        },
+        "rolls": "Ebony Armor of Regeneration 0FE2EB · Ebony Helmet of Waterbreathing 0CF88C · Ebony Gauntlets of Extreme Wielding 0CF867 · Ebony Boots of Frost Suppression 0CF82C · Ring of Peerless Wielding 100E2E · Necklace of Shock Suppression 0FC052 (all Skyrim.esm records)"
+      },
+      {
+        "list": {
+          "edid": "ArmorEbonyAllOutfit",
+          "formKey": "057A1E:Skyrim.esm"
+        },
+        "rolls": "Ebony Armor 013961 · Helmet 013963 · Gauntlets 013962 · Boots 013960"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE016_UmbraDeathItem",
+          "formKey": "017621:ccbgssse016-umbra.esm"
+        },
+        "gate": "use all",
+        "rolls": "Umbra 000D62:ccbgssse016-umbra.esm (the player's copy) · `LootBanditGems100` 0B420E · `LootBanditGold` 037C27 · `LItemPotionAll` 0E3E99 · `LItemScroll50Skill` 0A44C9"
+      },
+      {
+        "list": {
+          "label": "`ArmorHideAllOutfit` 01B3A8 · `ArmorHideSimpleOutfit` 037C4F"
+        },
+        "rolls": "Hide Armor, Boots, Bracers, Helmet · Hide Armor, Boots; as on Companions → *Companions Members*"
+      },
+      {
+        "list": {
+          "edid": "MonkOutfitNoHood",
+          "formKey": "0C2A5B:Skyrim.esm"
+        },
+        "rolls": "Monk Robes 0BACF3 · Boots 0BACD7"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE053_ArmorBladesOutfit",
+          "formKey": "000810:ccbgssse053-ba_leather.esl"
+        },
+        "rolls": "the enchanted Leather Scout set: Armor 000829 · Boots 00082C · Gauntlets 00082A · Helmet 00082B (all ccbgssse053-ba_leather.esl)"
+      },
+      {
+        "list": {
+          "edid": "ccBGSSSE050_ArmorBladesOutfit",
+          "formKey": "000810:ccbgssse050-ba_daedric.esl"
+        },
+        "rolls": "Daedric Plate Armor of Eminent Illusion 00083C · Daedric Plate Helmet of Eminent Health 00083E (ccbgssse050-ba_daedric.esl) · `SublistEnchArmorDaedricBoots04` 0FD9BA (one of six enchanted Daedric Boots, all @1) · `SublistEnchARmorDaedricGauntlets04` 0FD9BD (one of five enchanted Daedric Gauntlets, all @1)"
+      },
+      {
+        "list": {
+          "edid": "ThievesGuildStandardOutfit",
+          "formKey": "036582:Skyrim.esm"
+        },
+        "rolls": "Thieves Guild Armor 036584 · Boots 036583 · Gloves 042BE9 · Hood 036585 (the NPC copies)"
+      },
+      {
+        "list": {
+          "edid": "ClothesTavernWenchOutfit",
+          "formKey": "0F966E:Skyrim.esm"
+        },
+        "rolls": "Tavern Clothes 0D191F · Boots 0D1921"
+      },
+      {
+        "list": {
+          "edid": "DLC2SlitterOutfit",
+          "formKey": "0271FD:Dragonborn.esm"
+        },
+        "rolls": "Chitin Armor 01CD87 · Chitin Boots 01CD86 (Dragonborn.esm)"
+      },
+      {
+        "list": {
+          "edid": "DLC2IldariOutfit",
+          "formKey": "017748:Dragonborn.esm"
+        },
+        "rolls": "Telvanni Robes 0376ED · Gold Necklace `DLC2HeartstoneNecklace` 0376EF (Dragonborn.esm)"
+      },
+      {
+        "list": {
+          "edid": "DLC2RR01FalxOutfit",
+          "formKey": "01A577:Dragonborn.esm"
+        },
+        "rolls": "General Carius' Armor 0376F1 · Imperial Helmet 01A576 · Imperial Bracers 01A575 · Imperial Boots 01A573 · Gold Necklace 0376EF (all Dragonborn.esm copies)"
+      },
+      {
+        "list": {
+          "edid": "DLC2dunKolbjornRalisOutfit",
+          "formKey": "0179CA:Dragonborn.esm"
+        },
+        "rolls": "Leather Armor 03619E · Leather Boots 013920 · Leather Bracers 013921"
+      },
+      {
+        "list": {
+          "edid": "CollegeNoviceAlterationOutfit",
+          "formKey": "10DD2E:Skyrim.esm"
+        },
+        "rolls": "Novice Robes of Alteration 10D669 · Novice Hood 10DD3A · Boots 06B46C"
+      },
+      {
+        "list": {
+          "edid": "ArmorScaledAllOutfit",
+          "formKey": "057A24:Skyrim.esm"
+        },
+        "rolls": "Scaled Armor 01B3A3 · Helmet 01B3A1 · Bracers 01B3A0 · Boots 01B39F"
+      },
+      {
+        "list": {
+          "edid": "ccASVSSE001_DagothOutfit",
+          "formKey": "0C192B:ccasvsse001-almsivi.esm"
+        },
+        "rolls": "Mask of Dagoth Ur 000821 · Robe of the Lich 0C1929 (ccasvsse001-almsivi.esm)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Thieves Guild Armor, Boots, Gloves, Hood (NPC copies 036584 · 036583 · 042BE9 · 036585)",
+        "kind": "light",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "General Carius' Armor, his Imperial Helmet, Bracers and Boots (Dragonborn.esm copies)",
+        "kind": "heavy",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Gold Necklace `DLC2HeartstoneNecklace` 0376EF:Dragonborn.esm",
+        "kind": "jewellery",
+        "playable": false,
+        "note": "`NonPlayable` (Ildari, Falx Carius)"
+      },
+      {
+        "item": "Umbra `ccBGSSSE016_UmbraBossWeapon` 00271A:ccbgssse016-umbra.esm (NPC copy)",
+        "kind": "two-handed",
+        "playable": false,
+        "note": "`NonPlayable`, `CantDrop`; the death item drops the playable Umbra 000D62"
+      },
+      {
+        "item": "Steel Plate, Imperial, Ebony (plain and enchanted), CC Daedric Plate and the enchanted Daedric pieces; Targe of the Blooded and the shields",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Fur, Hide, Leather, Elven, Scaled, Glass, Dragonscale and Chitin pieces, Imperial Light Boots, Gloves of the Pugilist, the CC Leather Scout set",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Mask of Dagoth Ur (CC)",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "the Fishing, Mythic Dawn, farm, merchant, chef, monk and tavern clothes, Roughspun Tunic, Robe of the Lich, Telvanni Robes, Novice Robes and Hood",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "the stamina rings, Ring of Peerless Wielding, Necklace of Shock Suppression",
+        "kind": "jewellery",
+        "playable": true
+      },
+      {
+        "item": "the listed weapons: the leveled lists' blades and bows, the Imperial Swords, Ebony Sword of the Vampire, Ebony Bow of Winter, Champion's Cudgel, Hoarfrost, Stalhrim Battleaxe of Freezing, Orcish War Axe of Devouring, Staff of Lightning Bolts, Fishing Rod, Woodcutter's Axe, Pickaxe, the daggers",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
   }
 }

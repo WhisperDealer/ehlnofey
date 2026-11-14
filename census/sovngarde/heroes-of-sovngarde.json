@@ -303,5 +303,196 @@
         ]
       }
     ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Tsun",
+        "weapons": "`MQ304TsunBattleAxe` 05BF17",
+        "armor": "`MQTsunOutfit` 0E82D0",
+        "skin": "race default"
+      },
+      {
+        "records": "High King Torygg",
+        "weapons": "Steel Sword 013989",
+        "armor": "`JarlClothesTorygg` 0FBFFF",
+        "skin": "race default"
+      },
+      {
+        "records": "Svaknir",
+        "weapons": "Honed Ancient Nord Sword 05BF14, from `MS05_dunDeadMensRespite_Svaknir` 016C87 (`Inventory` template flag; his own copy is the same)",
+        "armor": "`MerchantClothesOutfit01NoHat` 07144A, likewise",
+        "skin": "race default"
+      },
+      {
+        "records": "Ysgramor",
+        "weapons": "Wuuthrad `C06BladeOfYsgramor` 0956B5",
+        "armor": "`DraugrArmorForNonDraugrOutfitNoHelmet` 0EA537",
+        "skin": "race default"
+      },
+      {
+        "records": "Hero of Sovngarde (`…HeroMale`, `…Male3`, `…Female`, `…Female3`, `…Female4`) · Erlendr · Hunroor · Nikulas · Ulfgar the Unending",
+        "weapons": "`LItemDraugr02Weapon1H` 0242FC · `LItemDraugr02Weapon2H` 024300 · `LItemDraugrShield50` 0559F7",
+        "armor": "`ArmorStuddedSimpleOutfit` 037C52",
+        "skin": "race default"
+      },
+      {
+        "records": "Hero of Sovngarde (`MQ305SovngardeBard`)",
+        "weapons": "none",
+        "armor": "`ArmorStuddedSimpleOutfit`",
+        "skin": "race default"
+      },
+      {
+        "records": "Hero of Sovngarde (`MQ305SovngardeBardDrummer`)",
+        "weapons": "none",
+        "armor": "`DraugrArmorForNonDraugrOutfitNoHelmet`",
+        "skin": "race default"
+      },
+      {
+        "records": "Jurgen Windcaller",
+        "weapons": "none",
+        "armor": "`GreybeardOutfit` 039F20",
+        "skin": "race default"
+      },
+      {
+        "records": "Olaf One-Eye",
+        "weapons": "Steel Warhammer 01398A",
+        "armor": "`ArmorSteelPlateNoHelmetOutfit` 0579A3",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "MQ304TsunBattleAxe",
+          "formKey": "05BF17:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "Tsun's Battle Axe 05BF19 (1) · 05BF16 (14) · 05BF1A (18) · 05BF18 (23)",
+        "levels": [
+          1,
+          14,
+          18,
+          23
+        ]
+      },
+      {
+        "list": {
+          "label": "`LItemDraugr02Weapon1H` · `LItemDraugr02Weapon2H` · `LItemDraugrShield50`"
+        },
+        "rolls": "as on Draugr → *Common Draugr* → Gear lists"
+      },
+      {
+        "list": {
+          "edid": "MQTsunOutfit",
+          "formKey": "0E82D0:Skyrim.esm"
+        },
+        "rolls": "Tsun's Armor 0C0165 · Tsun's Boots 0C0166"
+      },
+      {
+        "list": {
+          "edid": "JarlClothesTorygg",
+          "formKey": "0FBFFF:Skyrim.esm"
+        },
+        "rolls": "Embroidered Garment 0EAD49 · Cuffed Boots 0CEE78 · Gold and Ruby Circlet 0166FD"
+      },
+      {
+        "list": {
+          "edid": "DraugrArmorForNonDraugrOutfitNoHelmet",
+          "formKey": "0EA537:Skyrim.esm"
+        },
+        "rolls": "Ancient Nord Armor 018388 · Ancient Nord Gauntlets 056B17 · Ancient Nord Boots 056A9D"
+      },
+      {
+        "list": {
+          "edid": "ArmorStuddedSimpleOutfit",
+          "formKey": "037C52:Skyrim.esm"
+        },
+        "rolls": "Studded Armor 01B3A2 · Hide Boots 013910"
+      },
+      {
+        "list": {
+          "edid": "ArmorSteelPlateNoHelmetOutfit",
+          "formKey": "0579A3:Skyrim.esm"
+        },
+        "rolls": "Steel Plate Armor 01395C · Steel Plate Boots 01395B · Steel Plate Gauntlets 01395D"
+      },
+      {
+        "list": {
+          "edid": "GreybeardOutfit",
+          "formKey": "039F20:Skyrim.esm"
+        },
+        "rolls": "Greybeard's Robes 036A44 · Greybeard's Boots 036A46"
+      },
+      {
+        "list": {
+          "edid": "MerchantClothesOutfit01NoHat",
+          "formKey": "07144A:Skyrim.esm"
+        },
+        "rolls": "Clothes 04223C · Boots 04223D"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Tsun's Battle Axe (four copies)",
+        "kind": "two-handed",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Tsun's Armor 0C0165",
+        "kind": "light, AR 29",
+        "playable": true
+      },
+      {
+        "item": "Tsun's Boots 0C0166",
+        "kind": "light, AR 8",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Wuuthrad 0956B5",
+        "kind": "two-handed",
+        "playable": true
+      },
+      {
+        "item": "Ancient Nord Armor · Gauntlets · Boots",
+        "kind": "heavy, AR 25 · 10 · 10",
+        "playable": true
+      },
+      {
+        "item": "Steel Plate Armor · Boots · Gauntlets",
+        "kind": "heavy, AR 40 · 14 · 14",
+        "playable": true
+      },
+      {
+        "item": "Studded Armor · Hide Boots",
+        "kind": "light, AR 23 · 5",
+        "playable": true
+      },
+      {
+        "item": "Greybeard's Robes · Boots",
+        "kind": "clothing, AR 8 · 5",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "Embroidered Garment · Cuffed Boots · Gold and Ruby Circlet · merchant Clothes and Boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Steel Sword · Steel Warhammer · Honed Ancient Nord Sword · the Ancient Nord weapons and Iron Shield",
+        "kind": "one-handed · two-handed · shield",
+        "playable": true
+      }
+    ]
   }
 }

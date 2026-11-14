@@ -784,5 +784,543 @@
         ]
       }
     ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Bounty Hunter `WEBountyHunterBoss` (`Inventory` from `LvlBanditBoss` 03DF17)",
+        "weapons": "as the drawn bandit chief leaf (Bandits → *Bandit Chiefs*): `LItemBanditBossWeapon1H` 03DF1C and `LItemBanditBossShield` 03DF22, or `LItemBanditWeapon2HBoss` 03DEDA; the rung's dagger, `LootBanditGoldBoss` 03DED1",
+        "armor": "as the drawn leaf: `BanditArmorHeavyBossOutfit` 03DED3",
+        "skin": "race default"
+      },
+      {
+        "records": "Bounty Hunter `WEBountyHunterMissile` (`Inventory` from `LvlBanditMissile` 01E79E)",
+        "weapons": "as the drawn archer leaf (Bandits → *Common Bandits*): `LItemWeaponDaggerTown` 017177 · `LItemBanditWeaponMissile` 037BFD · `LootBanditArrows15` 08777F; one rung-01 entry of `LCharBanditMissile` is the one-handed `EncBandit01Melee1HRedguardM` (`LItemBanditWeapon1H` 037C1B)",
+        "armor": "as the drawn leaf: `BanditArmorMeleeNoShieldOutfit` 01E608 (the one-handed leaf: `BanditArmorMeleeShield20Outfit` 0C0197)",
+        "skin": "race default"
+      },
+      {
+        "records": "Bounty Hunter `WEBountyHunterWizard` (`Inventory` from `LvlBanditWizard` 01E79F)",
+        "weapons": "as the drawn wizard leaf (Bandits → *Common Bandits*): Iron Dagger (01–02), Steel Dagger (03), `LItemWeaponDaggerTown` (04–06)",
+        "armor": "as the drawn leaf: `BanditMageOutfit` 06E26F",
+        "skin": "race default"
+      },
+      {
+        "records": "Bounty Collector `WEBountyCollectorMaleNord` (`Inventory` from `LvlBanditBossNordM` 01B0E1)",
+        "weapons": "as the drawn Nord chief leaf (Bandits → *Bandit Chiefs*): 1H `LItemBanditBossWeapon1H` + `LItemBanditBossShield`, or 2H `LItemBanditWeapon2HBoss`; Steel (02–03), Orcish (04) or Elven (05–06) Dagger, `LootBanditGoldBoss`",
+        "armor": "`BanditArmorHeavyBossOutfit` 03DED3",
+        "skin": "race default"
+      },
+      {
+        "records": "Adventurer wrappers `LvlWEAdventurer` · `LvlWEAdventurerHorseRider` (`Inventory` through `WEAdventurerSubChar` 1050F8)",
+        "weapons": "as the drawn class (one of the nine below, at random)",
+        "armor": "as the drawn class",
+        "skin": "race default"
+      },
+      {
+        "records": "Mercenary `LvlWEAdventurerSpellsword` · Taunting adventurer `LvlWEAdventurerWarrior` (`Inventory` through their class sublist)",
+        "weapons": "as the Spellsword class · as the Warrior class",
+        "armor": "as the Spellsword class · as the Warrior class",
+        "skin": "race default"
+      },
+      {
+        "records": "Skooma dealer `WERoad09_LvlWEAdventurerBrawler` (own `Inventory`)",
+        "weapons": "none: 5 Skooma 057A7A, 2 Sleeping Tree Sap 0AED90, 3 Moon Sugar 0D8E3F, `CoinPurseGoldLarge` 0D8E7E",
+        "armor": "`WEBrawlerOutfit` 10555F",
+        "skin": "race default"
+      },
+      {
+        "records": "Berserker class `WEAdventurerBerserker` 105547 (its race leaves take `Inventory` from it; so for every class below)",
+        "weapons": "`LItemWeaponAny2H` 0165B9 (plus stamina and carry-weight potions, raw meat, a drink, `LootGoldChange` 037C2B)",
+        "armor": "`WEBerserkerOutfit` 105548",
+        "skin": "race default"
+      },
+      {
+        "records": "Dual Poisoner class `WEAdventurerDualPoisoner` 105549",
+        "weapons": "`LItemWeaponDagger` 017178 ×2 · `LItemPoisonAll` 065A8A ×2 (plus rare ingredients, gold)",
+        "armor": "`WEWarriorTankOutfit` 105543",
+        "skin": "race default"
+      },
+      {
+        "records": "Ranged Conjurer class `WEAdventurerRangedConjurer` 10554B",
+        "weapons": "`LItemWeaponBow` 017024 · `LItemArrowsAll` 068839 (plus potions, `LItemJewelryRing`, gold)",
+        "armor": "`WERangedConjurerOutfit` 10554C",
+        "skin": "race default"
+      },
+      {
+        "records": "Dual Warrior class `WEAdventurerWarriorDual` 105545",
+        "weapons": "`LItemWeaponAny1H` 0165BA ×2 (plus potions, ore and ingots, gold)",
+        "armor": "`WEWarriorTankOutfit` 105543",
+        "skin": "race default"
+      },
+      {
+        "records": "Warrior class `WEAdventurerWarrior` 105541",
+        "weapons": "`LItemWeaponAny1H` · `LItemArmorShieldHeavy` 0165C2 (plus potions, ore and ingots, gold)",
+        "armor": "`WEWarriorTankOutfit` 105543",
+        "skin": "race default"
+      },
+      {
+        "records": "Spellsword class `WEAdventurerSpellsword` 105540",
+        "weapons": "`LItemWeaponAny1H` (plus potions, `LItemJewelryNecklace` 0876A4, gold)",
+        "armor": "`WESpellswordOutfit` 1034F6",
+        "skin": "race default"
+      },
+      {
+        "records": "Brawler class `WEAdventurerBrawler` 10555E",
+        "weapons": "none (potions, Skooma ×2, raw meat, drinks, gold)",
+        "armor": "`WEBrawlerOutfit` 10555F",
+        "skin": "race default"
+      },
+      {
+        "records": "Battlemage class `WEAdventurerBattlemage` 1034EA (through the race templates, e.g. `WEAdventurerBattlemageBretonM`, to the class)",
+        "weapons": "`LItemWeaponDagger` 017178 (plus potions, `LItemJewelryAll`, gold)",
+        "armor": "`WEBattlemageOutfit` 1034EF",
+        "skin": "race default"
+      },
+      {
+        "records": "Mage Shield Staff class `WEAdventurerMageShieldStaff` 106113 (likewise)",
+        "weapons": "`LItemStaffsAll` 035320 · `LItemArmorShieldHeavy` 0165C2 (plus soul gems, gems, gold)",
+        "armor": "`WEMageStaffShieldOutfit` 106114",
+        "skin": "race default"
+      },
+      {
+        "records": "Scavenger `WE23Scavenger` (own `Inventory`; only `Stats` from the bandit list)",
+        "weapons": "Imperial Bow 013841 + 4 Steel Arrows 01397F · Iron Battleaxe 013980",
+        "armor": "`WE23ScavengerOutfit` 062109",
+        "skin": "race default"
+      },
+      {
+        "records": "Trapper `POILvlTrapperHostile01` (own `Inventory`)",
+        "weapons": "Iron Dagger 01397E · Steel War Axe 013983 (plus 25 gold, `LootGoldChange`)",
+        "armor": "`BanditArmorMissileOutfit` 037C4D",
+        "skin": "race default"
+      },
+      {
+        "records": "Trapper `POILvlTrapperHostile02` (`Inventory` from `LvlHunter` 04E50A → the `LCharHunter` leaves, owned by `EncHunter00Template` 073FBE)",
+        "weapons": "`LItemHunterWeaponBow` 10D9D2 · 7 Iron Arrows 01397D + 10 × `BaseArrowIron75` 037C0D · `LItemWeaponDaggerTown` 017177 (plus 5 × `LItemMiscHunterAnimalParts75` 10D9D1, raw meat, gold, `LootCitizenPocketsPoor`)",
+        "armor": "`HunterClothesRND` 073FC7",
+        "skin": "race default"
+      },
+      {
+        "records": "Thug `WEDL05Thug` (`Inventory` from `LCharBanditBossOrcM` 01B0EA)",
+        "weapons": "as the drawn Orc 2H chief leaf (Bandits → *Bandit Chiefs*): `LItemBanditWeapon2HBoss` 03DEDA, Steel (02–03), Orcish (04) or Elven (05–06) Dagger, `LootBanditGoldBoss`",
+        "armor": "`BanditArmorHeavyBossOutfit` 03DED3",
+        "skin": "race default"
+      },
+      {
+        "records": "Madman `DLC2WE06Madman` (own `Inventory`; only `Stats` from `DLC2LCharHunter`)",
+        "weapons": "none in the record (no items)",
+        "armor": "`BeggarOutfit` 028B60",
+        "skin": "race default"
+      },
+      {
+        "records": "Challenger `WIChangeLocation03Wizard` (`Inventory` from `LCharBanditWizardCommonerM` 01B0F3)",
+        "weapons": "as the drawn Breton wizard leaf (Bandits → *Common Bandits*): Iron Dagger (01–02), Steel Dagger (03), `LItemWeaponDaggerTown` (04–06)",
+        "armor": "`BanditMageOutfit` 06E26F",
+        "skin": "race default"
+      },
+      {
+        "records": "Old Orc `WE24Orc` (`Inventory` from `LCharOrcMelee` 01E780)",
+        "weapons": "as the drawn Orc one-handed bandit leaf (Bandits → *Common Bandits*): `LItemBanditWeapon1H` 037C1B, gold, `LootBanditRandom` 10E0DD",
+        "armor": "`BanditArmorMeleeShield20Outfit` 0C0197",
+        "skin": "race default"
+      },
+      {
+        "records": "Deep-In-His-Cups (own)",
+        "weapons": "Iron Dagger 01397E · `LItemWeaponMace` 016577",
+        "armor": "`ArmorHideAllOutfit` 01B3A8",
+        "skin": "race default"
+      },
+      {
+        "records": "Katariah sailors (all four through `dunKatariahLvlSailor` → the `LCharSailor` leaves, owned by `EncSailor00Template` 0C6011)",
+        "weapons": "`LItemWeaponSailor` 09786F (plus `LootGoldChange`)",
+        "armor": "`SailorClothesRND` 045698",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "label": "`LItemBanditWeapon1H` 037C1B · `LItemBanditWeaponMissile` 037BFD · `LootBanditArrows15` 08777F · `LItemWeaponDaggerTown` 017177 · `BanditArmorMeleeShield20Outfit` 0C0197 · `BanditArmorMeleeNoShieldOutfit` 01E608 · `BanditMageOutfit` 06E26F · `LootBanditRandom` 10E0DD"
+        },
+        "rolls": "as on Bandits → *Common Bandits* → Gear lists"
+      },
+      {
+        "list": {
+          "label": "`LItemBanditBossWeapon1H` 03DF1C · `LItemBanditWeapon2HBoss` 03DEDA · `LItemBanditBossShield` 03DF22 · `BanditArmorHeavyBossOutfit` 03DED3 · `LootBanditGoldBoss` 03DED1"
+        },
+        "rolls": "as on Bandits → *Bandit Chiefs* → Gear lists"
+      },
+      {
+        "list": {
+          "edid": "BanditArmorMissileOutfit",
+          "formKey": "037C4D:Skyrim.esm"
+        },
+        "rolls": "the bandit pieces of *Common Bandits* (`LItemBanditBoots` 037C23 · `LItemBanditCuirass` 037C22: Fur, Hide, Studded 1 · Leather 6 · Scaled 19) with `LItemBanditHelmet50` 037C26 in place of the gauntlets: 50% Fur or Hide Helmet 1 · Leather 6 · Scaled 19",
+        "levels": [
+          1,
+          6,
+          19
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponAny2H",
+          "formKey": "0165B9:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "battleaxe, greatsword or warhammer: Iron 1 · Steel 2 · Orcish 6 (not the battleaxe) · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46 (`Sublist…Daedric05`: 1 in 20 Daedric, else the blacksmith ladder)",
+        "levels": [
+          1,
+          2,
+          6,
+          12,
+          19,
+          27,
+          36,
+          46
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponAny1H",
+          "formKey": "0165BA:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "mace, sword or war axe: Iron 1 · Steel 2 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46",
+        "levels": [
+          1,
+          2,
+          6,
+          12,
+          19,
+          27,
+          36,
+          46
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponDagger",
+          "formKey": "017178:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron 1 · Steel 2 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46",
+        "levels": [
+          1,
+          2,
+          6,
+          12,
+          19,
+          27,
+          36,
+          46
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponMace",
+          "formKey": "016577:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron ×3 (1) · Steel 2 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46",
+        "levels": [
+          1,
+          2,
+          6,
+          12,
+          19,
+          27,
+          36,
+          46
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponBow",
+          "formKey": "017024:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Hunting, Long Bow 1 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46",
+        "levels": [
+          1,
+          6,
+          12,
+          19,
+          27,
+          36,
+          46
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemArrowsAll",
+          "formKey": "068839:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "12 arrows, each 75%: Iron 1 · Steel 3 · Orcish 6 · Dwarven 12 · Elven 19 · Glass 27 · Ebony 36 · Daedric 46",
+        "levels": [
+          1,
+          3,
+          6,
+          12,
+          19,
+          27,
+          36,
+          46
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemArmorShieldHeavy",
+          "formKey": "0165C2:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron, Banded Iron 1 · Steel 6 · Dwarven 12 · Orcish 25 · Ebony 32 · Dragonplate 40 · Daedric 48 (each 1 in 20, else the blacksmith ladder)",
+        "levels": [
+          1,
+          6,
+          12,
+          25,
+          32,
+          40,
+          48
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemStaffsAll",
+          "formKey": "035320:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "one staff by tier, each tier a random school: `LItemStaff00` 035319 (Conjuration, Illusion, Destruction) 1 · `LItemStaff25` 03531A 10 · `LItemStaff50` 03531B 22 · `LItemStaff75` 03531E 34",
+        "levels": [
+          1,
+          10,
+          22,
+          34
+        ]
+      },
+      {
+        "list": {
+          "edid": "WEBerserkerOutfit",
+          "formKey": "105548:Skyrim.esm"
+        },
+        "rolls": "light boots `LItemArmorBootsLight` 01673B: Hide 1 · Leather 6 · Elven 12 · Scaled 19 · Glass 36 · Dragonscale 46 (1 in 20); light cuirass `LItemArmorCuirassLight` 016705: Hide, Studded 1 · Leather, Studded Imperial 8 · Elven 12 · Scaled 19 · Elven Gilded 27 · Glass 36 · Dragonscale 46 (1 in 20); every gate ≤ player",
+        "levels": [
+          1,
+          6,
+          8,
+          12,
+          19,
+          27,
+          36,
+          46
+        ]
+      },
+      {
+        "list": {
+          "edid": "WEWarriorTankOutfit",
+          "formKey": "105543:Skyrim.esm"
+        },
+        "rolls": "heavy cuirass, boots, gauntlets and a 50% helmet (`LItemArmorCuirassHeavy` 0166F8 · `LItemArmorBootsHeavy` 01673A · `LItemArmorGauntletsHeavy` 01673D · `LItemArmorHelmetHeavy50` 105544): Iron (and Banded Iron cuirass) 1 · Steel 6 · Dwarven 12 · Steel Plate 18 · Orcish 25 · Ebony 32 · Dragonplate 40 · Daedric 48 (each 1 in 20; the helmet stops at Ebony); every gate ≤ player",
+        "levels": [
+          1,
+          6,
+          12,
+          18,
+          25,
+          32,
+          40,
+          48
+        ]
+      },
+      {
+        "list": {
+          "edid": "WERangedConjurerOutfit",
+          "formKey": "10554C:Skyrim.esm"
+        },
+        "rolls": "town light pieces (`LitemArmorBootsLightTown` 01674A · `LItemArmorCuirassLightTown` 016748 · `LItemArmorGauntletsLightTown` 01674C): Hide 1 · Studded cuirass 4 · Leather 12 · Scaled 18 (boots 29); every gate ≤ player",
+        "levels": [
+          1,
+          4,
+          12,
+          18,
+          29
+        ]
+      },
+      {
+        "list": {
+          "edid": "WESpellswordOutfit",
+          "formKey": "1034F6:Skyrim.esm"
+        },
+        "rolls": "Iron (and Banded Iron cuirass) 1 · Steel 6 · Dwarven 12 · Steel Plate 18 · Orcish 25 · Ebony 32: cuirass `LItemWESpellswordCuirass` 1034F7, 50% helmet `…Helmet50` 1034FA and 50% gauntlets `…Gauntlets50` 1034F9, highest gate ≤ player only (no flags); boots `…Boots` 1034F8, every gate ≤ player",
+        "levels": [
+          1,
+          6,
+          12,
+          18,
+          25,
+          32
+        ]
+      },
+      {
+        "list": {
+          "edid": "WEBattlemageOutfit",
+          "formKey": "1034EF:Skyrim.esm"
+        },
+        "rolls": "the same pieces as `WESpellswordOutfit` through `LItemWEBattlemage{Cuirass,Helmet50,Gauntlets50,Boots}` 1034EB · 1034EE · 1034ED · 1034EC (the same gates; the boots reach Dwarven at 15, not 12)",
+        "levels": [
+          1,
+          6,
+          12,
+          15,
+          18,
+          25,
+          32
+        ]
+      },
+      {
+        "list": {
+          "edid": "WEBrawlerOutfit",
+          "formKey": "10555F:Skyrim.esm"
+        },
+        "rolls": "Roughspun Tunic 03C9FE · `LItemArmorBootsHeavy` · `LItemArmorGauntletsHeavy` (the heavy ladder of `WEWarriorTankOutfit`)",
+        "levels": [
+          1,
+          6,
+          12,
+          18,
+          25,
+          32,
+          40,
+          48
+        ]
+      },
+      {
+        "list": {
+          "edid": "WEMageStaffShieldOutfit",
+          "formKey": "106114:Skyrim.esm"
+        },
+        "rolls": "Black Mage Robes 0C5D11 · Boots 0C5D12"
+      },
+      {
+        "list": {
+          "edid": "WE23ScavengerOutfit",
+          "formKey": "062109:Skyrim.esm"
+        },
+        "rolls": "Stormcloak Cuirass 0A6D7B · Imperial Boots 0136D6 · Imperial Officer's Helmet 0136CF · Imperial Light Shield 013AB2"
+      },
+      {
+        "list": {
+          "edid": "HunterClothesRND",
+          "formKey": "073FC7:Skyrim.esm"
+        },
+        "rolls": "Hide Armor 013911 · Gloves 0261C1 · one of four farm boots (`LItemClothesFarmBoots` 073FC5) · 50% one of three farm hats (`LItemClothesFarmHat50` 073FC6); all @1"
+      },
+      {
+        "list": {
+          "edid": "LItemHunterWeaponBow",
+          "formKey": "10D9D2:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Long Bow 03B562 ×4, Hunting Bow 013985 ×4 (1), then one more Hunting Bow each at 4, 5, 6, 7",
+        "levels": [
+          1,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "list": {
+          "edid": "BaseArrowIron75",
+          "formKey": "037C0D:Skyrim.esm"
+        },
+        "rolls": "Iron Arrow 01397D at 75% (each of the 10 rolls)"
+      },
+      {
+        "list": {
+          "edid": "SailorClothesRND",
+          "formKey": "045698:Skyrim.esm"
+        },
+        "rolls": "one of eight farm tunics and clothes (`LItemClothesFarmTunic` 073FC4), all @1; no shoes"
+      },
+      {
+        "list": {
+          "edid": "LItemWeaponSailor",
+          "formKey": "09786F:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "Iron Dagger ×4 (1), then a Steel Dagger each at 4, 5, 6, 7",
+        "levels": [
+          1,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "list": {
+          "edid": "BeggarOutfit",
+          "formKey": "028B60:Skyrim.esm"
+        },
+        "rolls": "Ragged Robes 013105 · Ragged Boots 013106"
+      },
+      {
+        "list": {
+          "edid": "ArmorHideAllOutfit",
+          "formKey": "01B3A8:Skyrim.esm"
+        },
+        "rolls": "Hide Armor 013911 · Hide Boots 013910 · Hide Bracers 013912 · Hide Helmet 013913"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "the bandit and bandit-chief armour, shields and weapons",
+        "kind": "light, heavy, weapons",
+        "playable": true,
+        "note": "as on *Common Bandits* and *Bandit Chiefs*"
+      },
+      {
+        "item": "Iron, Banded Iron, Steel, Dwarven, Steel Plate, Orcish, Ebony, Dragonplate, Daedric armour and shields (the adventurer heavy ladders)",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Hide, Studded, Studded Imperial, Leather, Elven, Scaled, Elven Gilded, Glass, Dragonscale armour",
+        "kind": "light",
+        "playable": true
+      },
+      {
+        "item": "Stormcloak Cuirass 0A6D7B · Imperial Light Shield 013AB2",
+        "kind": "light, AR 21 · 19",
+        "playable": true
+      },
+      {
+        "item": "Imperial Boots 0136D6 · Imperial Officer's Helmet 0136CF",
+        "kind": "heavy, AR 10 · 17",
+        "playable": true
+      },
+      {
+        "item": "farm clothes, boots, hats and gloves, Roughspun Tunic, Ragged Robes and Boots, Black Mage Robes and Boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "the listed weapons, bows, arrows and staves (Iron to Daedric), Imperial Bow, Iron Battleaxe, Steel War Axe",
+        "kind": "weapons",
+        "playable": true
+      }
+    ]
   }
 }

@@ -170,5 +170,149 @@
         ]
       }
     ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Chief Yamarz",
+        "weapons": "`LItemOrcStrongholdWaraxe` 08CA42 · `LItemOrcStrongholdShield` 08CA48",
+        "armor": "`ArmorOrcishAllOutfit` 0579A5",
+        "skin": "race default"
+      },
+      {
+        "records": "Atub",
+        "weapons": "`LItemOrcStrongholdDagger` 08CA41 (plus Northwatch Captain's Key 0CA5EB)",
+        "armor": "`WarlockOutfitSimpleWithHood` 1093B0",
+        "skin": "race default"
+      },
+      {
+        "records": "Lob · Ogol",
+        "weapons": "Steel War Axe 013983",
+        "armor": "Lob: `ArmorHideSimpleOutfit` 037C4F · Ogol: `MerchantClothesOutfit01NoHat` 07144A",
+        "skin": "race default"
+      },
+      {
+        "records": "Ugor",
+        "weapons": "Steel Sword 013989 · Steel Shield 013955",
+        "armor": "`ArmorSteelNoHelmetOutfit` 028B44",
+        "skin": "race default"
+      },
+      {
+        "records": "Gularzob",
+        "weapons": "`LItemOrcStrongholdWaraxe`",
+        "armor": "`HunterOutfit03` 10698A",
+        "skin": "race default"
+      },
+      {
+        "records": "Garakh",
+        "weapons": "`LItemOrcStrongholdWaraxe`",
+        "armor": "`ArmorScaledSimpleOutfit` 037C50",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemOrcStrongholdWaraxe",
+          "formKey": "08CA42:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "Steel War Axe 013983 (1) · Orcish War Axe 01398B (6)",
+        "levels": [
+          1,
+          6
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemOrcStrongholdDagger",
+          "formKey": "08CA41:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "Steel Dagger 013986 (1) · Orcish Dagger 01398E (6)",
+        "levels": [
+          1,
+          6
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemOrcStrongholdShield",
+          "formKey": "08CA48:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "Iron Shield 012EB6 (1) · Steel Shield 013955 (6) · Orcish Shield 013946 (25)",
+        "levels": [
+          1,
+          6,
+          25
+        ]
+      },
+      {
+        "list": {
+          "edid": "ArmorOrcishAllOutfit",
+          "formKey": "0579A5:Skyrim.esm"
+        },
+        "rolls": "Orcish Armor 013957 · Orcish Boots 013956 · Orcish Gauntlets 013958 · Orcish Helmet 013959"
+      },
+      {
+        "list": {
+          "edid": "ArmorSteelNoHelmetOutfit",
+          "formKey": "028B44:Skyrim.esm"
+        },
+        "rolls": "`ArmorSteelNoHelmetSet` 028B45 (use all): Steel Cuffed Boots 013951 or Steel Shin Boots 0F6F21 · Steel Armor 013952 or 0F6F22 · Steel Nordic Gauntlets 013953 or Steel Imperial Gauntlets 0F6F23; every entry at gate 1"
+      },
+      {
+        "list": {
+          "label": "`WarlockOutfitSimpleWithHood` 1093B0 · `ArmorHideSimpleOutfit` 037C4F · `MerchantClothesOutfit01NoHat` 07144A"
+        },
+        "rolls": "Hooded Black Mage Robes 10710C + Boots 0C5D12 · Hide Armor 013911 + Hide Boots 013910 · Clothes 04223C + Boots 04223D"
+      },
+      {
+        "list": {
+          "label": "`HunterOutfit03` 10698A · `ArmorScaledSimpleOutfit` 037C50"
+        },
+        "rolls": "Fur Armor 10594D + Hide Boots + Stormcloak Officer Bracers 086983 · Scaled Armor 01B3A3 + Scaled Boots 01B39F"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Orcish Armor · Boots · Gauntlets · Helmet 013957 · 013956 · 013958 · 013959",
+        "kind": "heavy, AR 40 · 15 · 15 · 20",
+        "playable": true
+      },
+      {
+        "item": "Steel Armor · Steel boots · Steel gauntlets",
+        "kind": "heavy, AR 31 · 12 · 12",
+        "playable": true
+      },
+      {
+        "item": "Iron Shield · Steel Shield · Orcish Shield 012EB6 · 013955 · 013946",
+        "kind": "heavy shield, AR 20 · 24 · 30",
+        "playable": true
+      },
+      {
+        "item": "Hide Armor · Hide Boots · Fur Armor · Stormcloak Officer Bracers · Scaled Armor · Scaled Boots",
+        "kind": "light, AR 20 · 5 · 23 · 7 · 32 · 9",
+        "playable": true
+      },
+      {
+        "item": "Hooded Black Mage Robes · merchant Clothes · their Boots",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Steel and Orcish War Axe, Steel and Orcish Dagger, Steel Sword",
+        "kind": "one-handed",
+        "playable": true
+      }
+    ]
   }
 }

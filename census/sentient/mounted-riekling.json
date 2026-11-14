@@ -141,5 +141,33 @@
         "note": "referenced only by the QA list `DLC2QANPCList` 02A1BA"
       }
     ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Riekling Rider · Courser · Charger (Courser and Charger take their inventory from `DLC2EncMountedRiekling01`: `Inventory` flag)",
+        "weapons": "Riekling Spear `DLC2RieklingSpearCharge` 03C337:Dragonborn.esm",
+        "armor": "none",
+        "skin": "Rider: `DLC2_SkinMountedRiekling_VariantA` 038404 · Courser: `…VariantF` 038412 · Charger: `…VariantB` 038407 (Dragonborn.esm)"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Riekling Spear 03C337:Dragonborn.esm",
+        "kind": "two-handed (the charge lance)",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`DLC2_SkinMountedRiekling_Variant{A,B,F}`",
+        "kind": "the riekling and boar body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
   }
 }

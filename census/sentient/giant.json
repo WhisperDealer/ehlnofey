@@ -235,5 +235,51 @@
         "note": "Karstaag's template (not for `Stats`) and in the QA list `DLC2QANPCList07` 02A8A9"
       }
     ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Giant (`EncGiant01`)",
+        "weapons": "Giant Club `CrGiantClub` 0461DA",
+        "armor": "none",
+        "skin": "`SkinGiant` 048D90"
+      },
+      {
+        "records": "Giant (`C00GiantForWhiterunBattle`; its template gives no inventory)",
+        "weapons": "Giant Club `C00GiantClub` 0CDEC9",
+        "armor": "none",
+        "skin": "`SkinGiant02` 048D94"
+      },
+      {
+        "records": "Frost Giant",
+        "weapons": "Frost Giant Club `DLC1FrostGiantClub` 012D14:Dawnguard.esm",
+        "armor": "none",
+        "skin": "`DLC1SkinFrostGiant` 006DBA:Dawnguard.esm"
+      },
+      {
+        "records": "Karstaag (own inventory; its template `DLC2FrostGiant01` gives only `ModelAnimation`)",
+        "weapons": "Giant Club `CrGiantClub` (plus 5 Grand Soul Gems 02E4FF, 10 Ectoplasm 03AD63)",
+        "armor": "none",
+        "skin": "`DLC2FrostGiantSkin` 01CAD9:Dragonborn.esm"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Giant Club 0461DA · 0CDEC9 · Frost Giant Club 012D14:Dawnguard.esm",
+        "kind": "two-handed",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`SkinGiant` · `SkinGiant02` · `DLC1SkinFrostGiant` · `DLC2FrostGiantSkin`",
+        "kind": "the giant body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
   }
 }

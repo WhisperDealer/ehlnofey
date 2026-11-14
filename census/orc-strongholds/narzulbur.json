@@ -219,5 +219,204 @@
         ]
       }
     ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Chief Mauhulakh",
+        "weapons": "`LItemOrcStrongholdBattleaxe` 08CA3F (plus `LootCitizenPocketsRich` 1046D3)",
+        "armor": "`DEMO_ArmorScaledHelmetOutfit` 0A852C",
+        "skin": "race default"
+      },
+      {
+        "records": "Bolar",
+        "weapons": "`LItemOrcStrongholdDagger` 08CA41 (plus `LootCitizenPocketsPoor` 1046D2)",
+        "armor": "`FarmClothesOutfit02Variant` 0DAB76",
+        "skin": "race default"
+      },
+      {
+        "records": "Yatul",
+        "weapons": "`LItemOrcStrongholdWaraxe` 08CA42 · `LItemOrcStrongholdBow` 08CA3E · `LItemOrcStrongholdArrows` 0763EF (plus `LootCitizenPocketsPoor`)",
+        "armor": "`HunterOutfit01Hooded` 10698C",
+        "skin": "race default"
+      },
+      {
+        "records": "Urog · Dushnamub",
+        "weapons": "Urog: `…Waraxe` · `…Bow` · `…Arrows` (plus `LootCitizenPocketsCommon` 1046D1) · Dushnamub: `LItemOrcStrongholdWarhammer` 08CA43 (plus `LootCitizenPocketsPoor`)",
+        "armor": "Urog: `HunterOutfit02Hooded` 10698E · Dushnamub: `ArmorHideSimpleOutfit` 037C4F",
+        "skin": "race default"
+      },
+      {
+        "records": "Uglarz",
+        "weapons": "Orcish Bow 01398D (no arrows) · Orcish Dagger 01398E (plus `LootCitizenPocketsPoor`)",
+        "armor": "`MinerClothesOutfit03` 10698F",
+        "skin": "race default"
+      },
+      {
+        "records": "Gadba gro-Largash",
+        "weapons": "`LItemOrcStrongholdWaraxe` · Pickaxe 0E3C16",
+        "armor": "`MinerClothesOutfit03`",
+        "skin": "race default"
+      },
+      {
+        "records": "Mul gro-Largash",
+        "weapons": "`LItemOrcStrongholdWaraxe` · Pickaxe",
+        "armor": "`FarmClothesOutfit03withHideBootsandBracers` 0B0108",
+        "skin": "race default"
+      },
+      {
+        "records": "Mogdurz · Bor",
+        "weapons": "`LItemOrcStrongholdWaraxe` · Pickaxe",
+        "armor": "Mogdurz: `BlacksmithOutfit02` 0958AB · Bor: `BeggarOutfit` 028B60",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemOrcStrongholdWaraxe",
+          "formKey": "08CA42:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "Steel War Axe 013983 (1) · Orcish War Axe 01398B (6)",
+        "levels": [
+          1,
+          6
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemOrcStrongholdDagger",
+          "formKey": "08CA41:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "Steel Dagger 013986 (1) · Orcish Dagger 01398E (6)",
+        "levels": [
+          1,
+          6
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemOrcStrongholdBattleaxe",
+          "formKey": "08CA3F:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "Steel Battleaxe 013984 (1) · Orcish Battleaxe 01398C (6)",
+        "levels": [
+          1,
+          6
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemOrcStrongholdWarhammer",
+          "formKey": "08CA43:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "Steel Warhammer 01398A (1) · Orcish Warhammer 013992 (6)",
+        "levels": [
+          1,
+          6
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemOrcStrongholdBow",
+          "formKey": "08CA3E:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "Hunting Bow 013985 (1) · Orcish Bow 01398D (6)",
+        "levels": [
+          1,
+          6
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemOrcStrongholdArrows",
+          "formKey": "0763EF:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "20 arrows, each 75%: Iron Arrow 01397D (1, `BaseArrowIron75` 037C0D) · Steel Arrow 01397F (5, 037C0E) · Orcish Arrow 0139BB (9, 037C15)",
+        "levels": [
+          1,
+          5,
+          9
+        ]
+      },
+      {
+        "list": {
+          "edid": "DEMO_ArmorScaledHelmetOutfit",
+          "formKey": "0A852C:Skyrim.esm"
+        },
+        "rolls": "Scaled Armor 01B3A3 · Scaled Boots 01B39F · Scaled Bracers 01B3A0 · Leather Helmet 013922"
+      },
+      {
+        "list": {
+          "edid": "HunterOutfit01Hooded",
+          "formKey": "10698C:Skyrim.esm"
+        },
+        "rolls": "Leather Boots 013920 · Gloves `ClothesExecutionerGloves` 0CF8B1 · Hat 0330BC · `LItemBanditCuirassVariants` 106D0C"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditCuirassVariants",
+          "formKey": "106D0C:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "one of four Fur Armor variants 06F393 · 10594B · 10594D · 10594F, all at 1",
+        "levels": [
+          1
+        ]
+      },
+      {
+        "list": {
+          "label": "`HunterOutfit02Hooded` 10698E · `ArmorHideSimpleOutfit` 037C4F · `FarmClothesOutfit03withHideBootsandBracers` 0B0108"
+        },
+        "rolls": "Fur Armor 10594B + Forsworn Boots 0D8D4E · Hide Armor 013911 + Hide Boots 013910 · Clothes 0261C0 + Hide Boots + Hide Bracers 013912"
+      },
+      {
+        "list": {
+          "label": "`FarmClothesOutfit02Variant` 0DAB76 · `MinerClothesOutfit03` 10698F · `BlacksmithOutfit02` 0958AB · `BeggarOutfit` 028B60"
+        },
+        "rolls": "Clothes 06C1D9 + Boots 0209A5 · Ragged Trousers 08F19A + Boots 080699 · Blacksmith's Apron 06FF37 + Shoes 05B69E · Ragged Robes 013105 + Ragged Boots 013106"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Scaled Armor · Boots · Bracers · Leather Helmet · Leather Boots · Fur Armor · Forsworn Boots · Hide Armor · Hide Boots · Hide Bracers",
+        "kind": "light, AR 32 · 9 · 9 · 12 · 7 · 23 · 7 · 20 · 5 · 5",
+        "playable": true
+      },
+      {
+        "item": "Clothes, Hat, Blacksmith's Apron, Ragged Trousers, Ragged Robes and their boots, shoes",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Gloves `ClothesExecutionerGloves` 0CF8B1",
+        "kind": "clothing gloves, AR 5",
+        "playable": false,
+        "note": "`NonPlayable`: Yatul wears them, the player cannot"
+      },
+      {
+        "item": "Steel and Orcish War Axe, Dagger, Mace, Sword, Battleaxe, Warhammer · Hunting Bow, Orcish Bow · Iron, Steel, Orcish Arrows",
+        "kind": "one-handed · two-handed · bow · arrows",
+        "playable": true
+      },
+      {
+        "item": "Pickaxe `weapPickaxe` 0E3C16",
+        "kind": "one-handed (war axe)",
+        "playable": true
+      }
+    ]
   }
 }

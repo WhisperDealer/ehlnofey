@@ -291,5 +291,39 @@
         ]
       }
     ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Riekling 01–04 (02–04 take their inventory from `DLC2EncRiekling01Melee`: `Inventory` flag)",
+        "weapons": "Riekling Spear `DLC2RieklingSpear` 01B935:Dragonborn.esm",
+        "armor": "none",
+        "skin": "01: `DLC2SkinRiekling01Melee` 0354E3 · 02: `DLC2SkinRiekling02Melee` 0354E5 · 03: `DLC2SkinRiekling03Melee` 0354E6 · 04: `DLC2SkinRiekling01` 017F46 (Dragonborn.esm)"
+      },
+      {
+        "records": "Riekling Tribe Leader (dead)",
+        "weapons": "none (Boar Tusk, Netch Leather, Statue of Dibella 06C9EF)",
+        "armor": "none",
+        "skin": "`DLC2SkinThriskRiekling03` 0354ED:Dragonborn.esm"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Riekling Spear 01B935:Dragonborn.esm",
+        "kind": "two-handed",
+        "playable": false,
+        "note": "`NonPlayable`"
+      },
+      {
+        "item": "`DLC2SkinRiekling01`, `…01Melee`, `…02Melee`, `…03Melee`, `DLC2SkinThriskRiekling03` (Dragonborn.esm)",
+        "kind": "the riekling body",
+        "playable": false,
+        "note": "`NonPlayable`"
+      }
+    ]
   }
 }

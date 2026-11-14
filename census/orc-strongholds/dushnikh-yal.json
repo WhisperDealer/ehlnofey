@@ -218,5 +218,241 @@
         ]
       }
     ]
+  },
+  "gear": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "records": "Chief Burguk",
+        "weapons": "`LItemOrcStrongholdMace` 08CA3C · `LItemOrcStrongholdShield` 08CA48 (plus, like every Dushnikh Yal record, Key to Burguk's Longhouse 06566A and `LootCitizenPocketsCommon` 1046D1)",
+        "armor": "`ArmorOrcStrongholdNoHelmetShieldOutfit` 104648 (a second shield roll)",
+        "skin": "race default"
+      },
+      {
+        "records": "Murbul",
+        "weapons": "`LItemOrcStrongholdDagger` 08CA41",
+        "armor": "`WisemanOutfit02` 106987",
+        "skin": "race default"
+      },
+      {
+        "records": "Ghorbash the Iron Hand",
+        "weapons": "Steel War Axe 013983",
+        "armor": "`ArmorSteelNoHelmetOutfit` 028B44",
+        "skin": "race default"
+      },
+      {
+        "records": "Arob",
+        "weapons": "`LItemOrcStrongholdWaraxe` 08CA42 · `LItemOrcStrongholdBow` 08CA3E · `LItemOrcStrongholdArrows` 0763EF",
+        "armor": "`ArmorOrcStrongholdNoHelmetOutfit` 0763EE",
+        "skin": "race default"
+      },
+      {
+        "records": "Shel",
+        "weapons": "`LItemOrcStrongholdMace` · `…Bow` · `…Arrows`",
+        "armor": "`dunLiarsRetreatWenchClothes` 0D80B5",
+        "skin": "race default"
+      },
+      {
+        "records": "Nagrub",
+        "weapons": "`LItemOrcStrongholdWaraxe` · `…Bow` · `…Arrows`",
+        "armor": "`HunterOutfit03` 10698A",
+        "skin": "race default"
+      },
+      {
+        "records": "Gharol · Umurn",
+        "weapons": "`LItemOrcStrongholdBow` · `…Arrows`; Gharol `…Waraxe`, Umurn `…Mace`",
+        "armor": "`BlacksmithOutfit02` 0958AB",
+        "skin": "race default"
+      },
+      {
+        "records": "Oglub · Mahk · Dulug · Ghak",
+        "weapons": "`LItemOrcStrongholdWaraxe` · Pickaxe 0E3C16",
+        "armor": "Oglub, Dulug: `MinerClothesOutfit03` 10698F · Mahk: `MinerClothesOutfit01withGloves` 0F8719 · Ghak: `MinerClothesOutfit01` 09CCA1",
+        "skin": "race default"
+      }
+    ]
+  },
+  "gearLists": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "list": {
+          "edid": "LItemOrcStrongholdWaraxe",
+          "formKey": "08CA42:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "Steel War Axe 013983 (1) · Orcish War Axe 01398B (6)",
+        "levels": [
+          1,
+          6
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemOrcStrongholdDagger",
+          "formKey": "08CA41:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "Steel Dagger 013986 (1) · Orcish Dagger 01398E (6)",
+        "levels": [
+          1,
+          6
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemOrcStrongholdMace",
+          "formKey": "08CA3C:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "Steel Mace 013988 (1) · Orcish Mace 013990 (6)",
+        "levels": [
+          1,
+          6
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemOrcStrongholdBow",
+          "formKey": "08CA3E:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "Hunting Bow 013985 (1) · Orcish Bow 01398D (6)",
+        "levels": [
+          1,
+          6
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemOrcStrongholdArrows",
+          "formKey": "0763EF:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "20 arrows, each 75%: Iron Arrow 01397D (1, `BaseArrowIron75` 037C0D) · Steel Arrow 01397F (5, 037C0E) · Orcish Arrow 0139BB (9, 037C15)",
+        "levels": [
+          1,
+          5,
+          9
+        ]
+      },
+      {
+        "list": {
+          "edid": "LItemOrcStrongholdShield",
+          "formKey": "08CA48:Skyrim.esm"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "Iron Shield 012EB6 (1) · Steel Shield 013955 (6) · Orcish Shield 013946 (25)",
+        "levels": [
+          1,
+          6,
+          25
+        ]
+      },
+      {
+        "list": {
+          "edid": "ArmorOrcStrongholdNoHelmetShieldOutfit",
+          "formKey": "104648:Skyrim.esm"
+        },
+        "rolls": "`LItemOrcStrongholdBoots` · `…Cuirass` · `…Gauntlets` · `LItemOrcStrongholdShield`"
+      },
+      {
+        "list": {
+          "edid": "ArmorOrcStrongholdNoHelmetOutfit",
+          "formKey": "0763EE:Skyrim.esm"
+        },
+        "rolls": "`LItemOrcStrongholdBoots` · `…Cuirass` · `…Gauntlets`"
+      },
+      {
+        "list": {
+          "label": "`LItemOrcStrongholdBoots` · `…Cuirass` · `…Gauntlets` · `…Helmet` 08CA44 · 08CA45 · 08CA46 · 08CA47"
+        },
+        "gate": "no flags: only the highest gate at or below the player",
+        "rolls": "Iron (1) · Steel (6: `SublistArmorSteel{Boots,Cuirass,Gauntlets,Helmet}Variants` 0F6F25–0F6F28, variant A or B) · Steel Plate (18) · Orcish (25)",
+        "levels": [
+          1,
+          6,
+          18,
+          25
+        ]
+      },
+      {
+        "list": {
+          "edid": "ArmorSteelNoHelmetOutfit",
+          "formKey": "028B44:Skyrim.esm"
+        },
+        "rolls": "`ArmorSteelNoHelmetSet` 028B45 (use all): Steel Cuffed Boots 013951 or Steel Shin Boots 0F6F21 · Steel Armor 013952 or 0F6F22 · Steel Nordic Gauntlets 013953 or Steel Imperial Gauntlets 0F6F23; every entry at gate 1"
+      },
+      {
+        "list": {
+          "edid": "WisemanOutfit02",
+          "formKey": "106987:Skyrim.esm"
+        },
+        "rolls": "Ragged Boots 013106 · Forsworn Gauntlets 0D8D55 · Stormcloak Officer Helmet 086985 · `LItemBanditCuirassVariants` 106D0C"
+      },
+      {
+        "list": {
+          "edid": "LItemBanditCuirassVariants",
+          "formKey": "106D0C:Skyrim.esm"
+        },
+        "gate": "every gate ≤ player",
+        "rolls": "one of four Fur Armor variants 06F393 · 10594B · 10594D · 10594F, all at 1",
+        "levels": [
+          1
+        ]
+      },
+      {
+        "list": {
+          "label": "`HunterOutfit03` 10698A · `dunLiarsRetreatWenchClothes` 0D80B5 · `BlacksmithOutfit02` 0958AB"
+        },
+        "rolls": "Fur Armor 10594D + Hide Boots 013910 + Stormcloak Officer Bracers 086983 · Tavern Clothes 0D191F + Boots 0D1921 · Blacksmith's Apron 06FF37 + Shoes 05B69E"
+      },
+      {
+        "list": {
+          "label": "`MinerClothesOutfit03` 10698F · `MinerClothesOutfit01` 09CCA1 · `MinerClothesOutfit01withGloves` 0F8719"
+        },
+        "rolls": "Ragged Trousers 08F19A + Boots 080699 · Miner's Clothes 080697 + Boots · the same plus Gloves 0261C1"
+      }
+    ]
+  },
+  "gearItems": {
+    "confidence": "verified",
+    "rows": [
+      {
+        "item": "Iron, Steel, Steel Plate and Orcish Armor, Boots, Gauntlets, Helmet (the stronghold piece lists)",
+        "kind": "heavy",
+        "playable": true
+      },
+      {
+        "item": "Steel Armor · Steel boots · Steel gauntlets",
+        "kind": "heavy, AR 31 · 12 · 12",
+        "playable": true
+      },
+      {
+        "item": "Iron Shield · Steel Shield · Orcish Shield 012EB6 · 013955 · 013946",
+        "kind": "heavy shield, AR 20 · 24 · 30",
+        "playable": true
+      },
+      {
+        "item": "Fur Armor · Hide Boots · Forsworn Gauntlets · Stormcloak Officer Bracers · Stormcloak Officer Helmet",
+        "kind": "light, AR 23 · 5 · 7 · 7 · 12",
+        "playable": true
+      },
+      {
+        "item": "Ragged Boots · Tavern Clothes · Blacksmith's Apron · Miner's Clothes · Ragged Trousers and their boots, shoes, gloves",
+        "kind": "clothing",
+        "playable": true
+      },
+      {
+        "item": "Steel and Orcish War Axe, Dagger, Mace, Sword, Battleaxe, Warhammer · Hunting Bow, Orcish Bow · Iron, Steel, Orcish Arrows",
+        "kind": "one-handed · two-handed · bow · arrows",
+        "playable": true
+      },
+      {
+        "item": "Pickaxe `weapPickaxe` 0E3C16",
+        "kind": "one-handed (war axe)",
+        "playable": true
+      }
+    ]
   }
 }
