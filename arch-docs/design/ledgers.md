@@ -1,9 +1,10 @@
 # The Ledgers — the next phase (planned)
 
-**Status: PLANNED (user, 2026-11-14). Nothing here is built yet.** This document prepares the phase
-that follows the census: it fixes what a ledger is, where its data lives, and the order of work, so the
-first ledger can start without re-deciding any of it. Open questions are in §7; settle them with the
-user before building the part they touch.
+**Status: STARTED (user, 2026-11-14).** Steps 2 and 3 of §6 are done: the `Ledger` schema
+(`site/src/schema.ts`), its checks (`site/src/lib/ledger.ts`, run by `npm run schema`), the first ledger
+`ledgers/bandits.json`, and its read-only page (`/ledgers/bandits/`). The dev editor (step 4) and the
+generator (step 5) are not built. Open questions are in §7; settle them with the user before building
+the part they touch.
 
 Read with: `modlist.md` (why Ehlnofey is now a modlist with its own patch), `flattening.md` (the method
 the ledgers feed), `archetype-tiers.md` (the decisions taken so far, in prose).
@@ -64,9 +65,25 @@ contain no write call).
 - **`archetype-tiers.md` remains the narrative**: why a roster is shaped the way it is. The ledger is
   the number the build uses. When the two disagree, the ledger wins and the doc gets a dated note.
 
-## 4. A sketch of the data (to be firmed up in step 2 of §6)
+## 4. The data
 
-Illustrative only; field names will settle when the schema is written.
+**As built (2026-11-14):** the schema is `Ledger` in `site/src/schema.ts`; `ledgers/bandits.json` is
+the worked example. A ledger has `rosters` (one roster may cover many lists that share it: the bandit
+mook roster covers 31), `pins` (row → level), `gear` (one block per set of lists: `slot`, `wornBy`,
+`chanceNone`, and `choices` of a `material` from the fixed `MATERIALS` enum, optionally `enchanted`, or
+a named `item`) and `open` (decisions still owed, shown on the page). Every roster, pin and gear block
+has `status` (`proposed` / `decided` / `implemented`) and `source`. The census `target` stays as it is
+for now (§7 Q1); the checks compare the two.
+
+**Vanilla comparison (2026-11-14):** a roster or gear block may carry `vanillaRoll` (`all` /
+`highest`) and a `gate` per entry or choice: the player level at which vanilla unlocks it (`runtime`
+when a start-up quest adds it). The page draws the vanilla line on each roster's level chart and the
+vanilla bars under each gear list from them, in the style of the proof of concept's ledger artifacts.
+They are the one vanilla fact a ledger carries, and `npm run schema` checks every gate against the
+census list's entries (rosters: error; gear: warning). The vanilla gear bars count one entry per
+material, so they show the mix, not exact odds.
+
+The sketch it grew from, kept for the reasoning:
 
 ```jsonc
 {
@@ -105,7 +122,7 @@ What the shape has to carry, whatever the field names:
 - **Weight = duplicate entries** (`flattening.md` §4.3). A weight of 0 means the rung leaves the list;
   keep it in the ledger with its reason so a drop is a visible decision, not a missing line.
 - **Derived numbers are computed, never stored**: the odds per rung and the mean drawn level (the
-  Bandits roster: 3/9 · 4/9 · 2/9, mean 9.1) are shown by the site from the weights and the census
+  Bandits roster: 3/9 · 4/9 · 2/9, mean 8.8) are shown by the site from the weights and the census
   levels.
 - **Gear by material.** The vanilla weapon and armour `LVLI` resolve by level to a material tier
   (iron, steel, orcish, dwarven, elven, glass, ebony, daedric; hide, leather, scaled, etc. for light
@@ -137,11 +154,14 @@ These are the traps the proof of concept hit; the schema or a check script shoul
 1. **Close the census.** The groups still Confluence-first (Leveled Uniques, Loot, Level Gates, Quest
    Rewards, Uncategorised) are not enemy families; decide with the user whether any must migrate before
    the ledgers start.
-2. **Write the `Ledger` schema** and one hand-written ledger, **Bandits**, transcribed from
-   `archetype-tiers.md` §3.1 (rosters, the chief pin at 28, the Orc-camp roster). Validate it with
-   `npm run schema`.
-3. **Render ledgers read-only on the site**: roster with odds and mean level, pins, gear by material,
-   linked to the census rows they point at.
+2. ✅ **Write the `Ledger` schema** and one hand-written ledger, **Bandits**, transcribed from
+   `archetype-tiers.md` §3.1, §3.1.1, §3.4 and §7.0 (2026-11-14). The mook, Orc-camp, chief and Reaver
+   rosters are `decided`; the mook gear is `proposed` (vanilla's pool up to the top mook rung, 14); the
+   chief gear follows the proof of concept's steel floor. Its checks raise 36 warnings: records on
+   other pages that take their level from the bandit lists and would land outside their census band.
+3. ✅ **Render ledgers read-only on the site** (`/ledgers/`, `/ledgers/<id>/`, JSON at
+   `/data/ledgers/<id>.json`): roster with odds and mean level, pins, gear by material, open items,
+   checks; every rung links to its census row.
 4. **The dev editor** (§2): weights, drops, pins, gear materials; writes the JSON.
 5. **The generator**: ledger JSON → `EhlnofeyESP` YAML, then build, round-trip, deploy, launch
    (`flattening.md` §6 steps 3–5 now read their numbers from the ledgers).

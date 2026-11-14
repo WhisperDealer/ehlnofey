@@ -222,6 +222,133 @@ export const Bands = z.strictObject({
     .length(10),
 });
 
+// ---------------------------------------------------------------------------------------------
+// The ledgers (arch-docs/design/ledgers.md): Ehlnofey's decisions for a group, in ledgers/<id>.json.
+// A ledger points at census rows and lists; it never copies their vanilla facts.
+
+// `<group>/<family>#<row-id>`: a Records row on a census family page.
+export const RowPointer = z
+  .string()
+  .regex(/^[a-z0-9-]+\/[a-z0-9-]+#[a-z0-9-]+$/, 'row is <group>/<family>#<row-id>, a census Records row');
+
+// proposed: suggested, not yet the user's call · decided: the user's call · implemented: the built patch does it.
+export const DecisionStatus = z.enum(['proposed', 'decided', 'implemented']);
+
+// A list or outfit the ledger edits: always a real record, so the generator can find it.
+const ListRef = z.strictObject({ edid: z.string().min(1), formKey: FormKey });
+
+// The gear materials a choice may keep. Dragonplate, dragonscale and dragonbone are absent on
+// purpose: dragon smithing gear is craft-only (CLAUDE.md), so no ledger can put it in a list.
+export const MATERIALS = {
+  iron: 'Iron',
+  'banded-iron': 'Banded Iron',
+  steel: 'Steel',
+  'steel-plate': 'Steel Plate',
+  imperial: 'Imperial',
+  fur: 'Fur',
+  hide: 'Hide',
+  studded: 'Studded',
+  leather: 'Leather',
+  scaled: 'Scaled',
+  orcish: 'Orcish',
+  dwarven: 'Dwarven',
+  elven: 'Elven',
+  glass: 'Glass',
+  ebony: 'Ebony',
+  daedric: 'Daedric',
+  nordic: 'Nordic',
+  stalhrim: 'Stalhrim',
+  bonemold: 'Bonemold',
+  chitin: 'Chitin',
+  'ancient-nord': 'Ancient Nord',
+  falmer: 'Falmer',
+  forsworn: 'Forsworn',
+  hunting: 'Hunting (bow)',
+  long: 'Long (bow)',
+} as const;
+export const Material = z.enum(Object.keys(MATERIALS) as [keyof typeof MATERIALS, ...(keyof typeof MATERIALS)[]]);
+
+const Decision = { status: DecisionStatus, source: z.string().min(1) };
+
+// Which rungs a leveled list keeps, and how heavily (weight = duplicate entries; 0 = dropped).
+// One roster may apply to several lists that share it (the bandit mook ladder and its voice lists).
+export const Roster = z.strictObject({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(1),
+  lists: z.array(ListRef).min(1),
+  // How vanilla rolls the first list: every unlocked gate (`CalculateFromAllLevels…`) or the highest
+  // only. With each entry's `gate`, it draws the vanilla line on the level chart.
+  vanillaRoll: z.enum(['all', 'highest']).optional(),
+  entries: z
+    .array(
+      z.strictObject({
+        row: RowPointer,
+        weight: z.number().int().min(0),
+        gate: z.number().int().min(1).optional(), // the player level at which vanilla unlocks this rung (checked against the census list)
+        why: z.string().optional(), // say why a rung is dropped or weighted unusually
+      }),
+    )
+    .min(1)
+    .refine((es) => es.some((e) => e.weight > 0), 'a roster must keep at least one rung'),
+  note: z.string().optional(),
+  ...Decision,
+});
+
+// One thing a gear list may roll: a material (optionally enchanted) or a named item.
+export const GearChoice = z
+  .strictObject({
+    material: Material.optional(),
+    item: Ref.optional(), // a specific item that is not a plain material, e.g. fire arrows
+    enchanted: z.boolean().optional(),
+    weight: z.number().int().min(0),
+    gate: z.number().int().min(1).optional(), // the player level at which vanilla unlocks it (for the vanilla bars)
+    runtime: z.boolean().optional(), // added at `gate` by a start-up quest, not by the list itself
+    why: z.string().optional(),
+  })
+  .refine((c) => (c.material ? !c.item : !!c.item), 'a choice is a material or an item, not both');
+
+export const Gear = z.strictObject({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(1),
+  slot: z.enum(['weapon', 'armor', 'shield', 'ammo']),
+  lists: z.array(ListRef).min(1),
+  wornBy: z.string().min(1), // who reaches these lists, in words: "the one-handed and tank leaves"
+  chanceNone: z.number().int().min(0).max(100).optional(), // the list's own chance of rolling nothing
+  vanillaRoll: z.enum(['all', 'highest']).optional(), // as on Roster; with the choices' gates, draws the vanilla bars
+  choices: z
+    .array(GearChoice)
+    .min(1)
+    .refine((cs) => cs.some((c) => c.weight > 0), 'a gear list must keep at least one choice'),
+  note: z.string().optional(),
+  ...Decision,
+});
+
+// A fixed level for one census row that owns its level (follow the template chain first).
+export const Pin = z.strictObject({
+  row: RowPointer,
+  level: z.number().int().positive(),
+  note: z.string().optional(),
+  ...Decision,
+});
+
+export const Ledger = z.strictObject({
+  $schema: z.string().optional(),
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(1),
+  order: z.number().int(),
+  meta: Meta,
+  census: z.array(z.string().regex(/^[a-z0-9-]+$/)).min(1), // the census groups this ledger decides for
+  intro: z.string().optional(),
+  rosters: z.array(Roster),
+  pins: z.array(Pin),
+  gear: z.array(Gear),
+  open: z.array(z.strictObject({ title: z.string().min(1), text: z.string().min(1) })).optional(),
+});
+
+export type LedgerData = z.infer<typeof Ledger>;
+export type RosterData = z.infer<typeof Roster>;
+export type GearData = z.infer<typeof Gear>;
+
 export type FamilyData = z.infer<typeof Family>;
 export type GroupData = z.infer<typeof Group>;
 export type BandsData = z.infer<typeof Bands>;

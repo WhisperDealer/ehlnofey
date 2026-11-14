@@ -1,0 +1,1006 @@
+{
+  "$schema": "./schema/ledger.schema.json",
+  "id": "bandits",
+  "title": "Bandits",
+  "order": 1,
+  "meta": {
+    "spec": "archetype-tiers.md §3.1, §3.1.1, §3.4, §7.0",
+    "updated": "2026-11-14"
+  },
+  "census": [
+    "bandits"
+  ],
+  "intro": "The bandit ladder, its chiefs, the hostile Orc camps and the Reavers. Mooks draw three rungs only, chiefs are always 28, and their gear is held to the materials those levels carry.",
+  "rosters": [
+    {
+      "id": "mooks",
+      "title": "Bandit mooks",
+      "lists": [
+        {
+          "edid": "LCharBanditMelee1H",
+          "formKey": "039CFC:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMelee1HTank",
+          "formKey": "03DEC9:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMelee2H",
+          "formKey": "03DEC8:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMelee2HBerserk",
+          "formKey": "03DECA:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMissile",
+          "formKey": "01E770:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditWizard",
+          "formKey": "01E771:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditWizardOmit01",
+          "formKey": "0EE523:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMeleeCommonerF",
+          "formKey": "01A31E:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMeleeCommonerM",
+          "formKey": "01A319:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMeleeEvenTonedF",
+          "formKey": "01A322:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMeleeEvenTonedM",
+          "formKey": "01A323:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMeleeNordF",
+          "formKey": "01A321:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMeleeNordM",
+          "formKey": "01A320:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMeleeOrcM",
+          "formKey": "01B0E9:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMissileCommonerF",
+          "formKey": "01A342:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMissileCommonerM",
+          "formKey": "01A343:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMissileEvenTonedF",
+          "formKey": "01A344:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMissileEvenTonedM",
+          "formKey": "01A345:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMissileNordF",
+          "formKey": "01A346:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMissileNordM",
+          "formKey": "01A348:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditWizardCommonerF",
+          "formKey": "01B0F0:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditWizardCommonerM",
+          "formKey": "01B0F3:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditWizardEvenTonedF",
+          "formKey": "01B0F4:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditWizardEvenTonedM",
+          "formKey": "01B0F5:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditWizardNordF",
+          "formKey": "01B0F7:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditWizardNordM",
+          "formKey": "01B0FB:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditOnlyNordM",
+          "formKey": "037C28:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditOnlyOrcM",
+          "formKey": "037C2A:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditOnlyRedguardF",
+          "formKey": "037C29:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditMeleeKhajiitM",
+          "formKey": "008BF7:Dawnguard.esm"
+        },
+        {
+          "edid": "LCharBanditMissileKhajiitM",
+          "formKey": "008BF8:Dawnguard.esm"
+        }
+      ],
+      "vanillaRoll": "all",
+      "entries": [
+        {
+          "row": "bandits/common-bandits#bandit",
+          "weight": 0,
+          "gate": 1,
+          "why": "the level-1 rung cannot be named apart from the family (the \"Bandit Runt\" rename never showed in game), so it leaves every list"
+        },
+        {
+          "row": "bandits/common-bandits#bandit-outlaw",
+          "weight": 3,
+          "gate": 5
+        },
+        {
+          "row": "bandits/common-bandits#bandit-thug",
+          "weight": 4,
+          "gate": 9
+        },
+        {
+          "row": "bandits/common-bandits#bandit-highwayman",
+          "weight": 2,
+          "gate": 14
+        },
+        {
+          "row": "bandits/common-bandits#bandit-plunderer",
+          "weight": 0,
+          "gate": 19,
+          "why": "out of the mook lists; survives only in the Orc camps"
+        },
+        {
+          "row": "bandits/common-bandits#bandit-marauder",
+          "weight": 0,
+          "gate": 25,
+          "why": "out of the mook lists; survives only in the Orc camps"
+        }
+      ],
+      "note": "`LCharBanditMeleeAny` 03DECD is not listed: it holds `LCharBanditMelee1H` and `LCharBanditMelee2H` at 1, so it follows them. `SubCharBandit02Melee2HBerserk` holds the rung-01 berserkers in vanilla; its leaves become the rung-02 ones, or the dropped rung still rolls through every berserker. The wizard lists gate their top rung at 24 and `LCharBanditWizardOmit01` has no rung 01; neither changes the roster.",
+      "status": "decided",
+      "source": "user, 2026-09-24, after play (archetype-tiers.md §3.1 and §3.1.1)"
+    },
+    {
+      "id": "orc-camps",
+      "title": "Hostile Orc camps",
+      "lists": [
+        {
+          "edid": "LCharOrcMelee",
+          "formKey": "01E780:Skyrim.esm"
+        }
+      ],
+      "vanillaRoll": "all",
+      "entries": [
+        {
+          "row": "bandits/common-bandits#bandit",
+          "weight": 0,
+          "gate": 1
+        },
+        {
+          "row": "bandits/common-bandits#bandit-outlaw",
+          "weight": 0,
+          "gate": 5
+        },
+        {
+          "row": "bandits/common-bandits#bandit-thug",
+          "weight": 0,
+          "gate": 9
+        },
+        {
+          "row": "bandits/common-bandits#bandit-highwayman",
+          "weight": 3,
+          "gate": 14
+        },
+        {
+          "row": "bandits/common-bandits#bandit-plunderer",
+          "weight": 4,
+          "gate": 19
+        },
+        {
+          "row": "bandits/common-bandits#bandit-marauder",
+          "weight": 2,
+          "gate": 25
+        }
+      ],
+      "note": "Cracked Tusk Keep, Bilegulch Mine and Rift Watchtower: Orc-manned bandit forts, not the strongholds. The mook roster's 3 : 4 : 2 shape, two rungs up. Largashbur's `DA06LvlOrcMelee` and the Old Orc `WE24Orc` are retargeted to the ordinary Orc-bandit list.",
+      "status": "decided",
+      "source": "user, 2026-09-24, after play (archetype-tiers.md §3.1)"
+    },
+    {
+      "id": "chiefs",
+      "title": "Bandit Chiefs",
+      "lists": [
+        {
+          "edid": "LCharBanditBoss",
+          "formKey": "03DF16:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditBossCommonerF",
+          "formKey": "01A32F:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditBossCommonerM",
+          "formKey": "01A33A:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditBossEvenTonedF",
+          "formKey": "01A33B:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditBossEvenTonedM",
+          "formKey": "01A33F:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditBossNordF",
+          "formKey": "01A340:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditBossNordM",
+          "formKey": "01A341:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditBossNordM2HOnly",
+          "formKey": "0E1645:Skyrim.esm"
+        },
+        {
+          "edid": "LCharBanditBossOrcM",
+          "formKey": "01B0EA:Skyrim.esm"
+        }
+      ],
+      "vanillaRoll": "highest",
+      "entries": [
+        {
+          "row": "bandits/bandit-chiefs#boss-rung-02",
+          "weight": 0,
+          "gate": 1
+        },
+        {
+          "row": "bandits/bandit-chiefs#boss-rung-03",
+          "weight": 0,
+          "gate": 14
+        },
+        {
+          "row": "bandits/bandit-chiefs#boss-rung-04",
+          "weight": 0,
+          "gate": 19
+        },
+        {
+          "row": "bandits/bandit-chiefs#boss-rung-05",
+          "weight": 0,
+          "gate": 25
+        },
+        {
+          "row": "bandits/bandit-chiefs#boss-rung-06",
+          "weight": 1,
+          "gate": 29,
+          "why": "every rung shows the same name, \"Bandit Chief\", so the ladder is pinned to its top rung: the camp's one real fight"
+        }
+      ],
+      "note": "Pinned: a Bandit Chief is 28 in every camp. The 1H/2H and per-race variety inside the rung survives.",
+      "status": "decided",
+      "source": "user, 2026-07-30 (archetype-tiers.md §3.1.1), kept 2026-11-12"
+    },
+    {
+      "id": "reaver-mooks",
+      "title": "Reavers",
+      "lists": [
+        {
+          "edid": "DLC2LCharBanditMelee1H",
+          "formKey": "01E8A9:Dragonborn.esm"
+        },
+        {
+          "edid": "DLC2LCharBanditMelee1HDarkElfMCommoner",
+          "formKey": "0374C0:Dragonborn.esm"
+        },
+        {
+          "edid": "DLC2LCharBanditMelee1HDarkElfMCynical",
+          "formKey": "0374BE:Dragonborn.esm"
+        },
+        {
+          "edid": "DLC2LCharBanditMissile",
+          "formKey": "01E8AA:Dragonborn.esm"
+        },
+        {
+          "edid": "DLC2LCharBanditMagic",
+          "formKey": "01E8A8:Dragonborn.esm"
+        }
+      ],
+      "vanillaRoll": "all",
+      "entries": [
+        {
+          "row": "bandits/reavers#rung-01",
+          "weight": 0,
+          "gate": 1
+        },
+        {
+          "row": "bandits/reavers#rung-02",
+          "weight": 0,
+          "gate": 5
+        },
+        {
+          "row": "bandits/reavers#rung-03",
+          "weight": 0,
+          "gate": 9
+        },
+        {
+          "row": "bandits/reavers#rung-04",
+          "weight": 1,
+          "gate": 14
+        },
+        {
+          "row": "bandits/reavers#rung-05",
+          "weight": 1,
+          "gate": 19,
+          "why": "Reavers are a step up from the mainland mooks: Highwayman and Plunderer, even odds"
+        },
+        {
+          "row": "bandits/reavers#rung-06",
+          "weight": 0,
+          "gate": 25
+        }
+      ],
+      "note": "Its own roster, two rungs above the mainland mooks (Highwayman and Plunderer, 50 / 50). The CC Nordic Jewelry pack's `ccEDHSSE001_LCharBanditMelee1H` and `…Missile` hold the same Reaver rungs and are left to that pack's decision (Still to decide).",
+      "status": "decided",
+      "source": "user, 2026-11-14: Reavers draw only Highwayman and Plunderer, weighted 50 / 50 (supersedes archetype-tiers.md §3.4's mirror of the mainland roster)"
+    },
+    {
+      "id": "reaver-chiefs",
+      "title": "Reaver chiefs",
+      "lists": [
+        {
+          "edid": "DLC2LCharBanditBoss",
+          "formKey": "01E8B4:Dragonborn.esm"
+        }
+      ],
+      "vanillaRoll": "all",
+      "entries": [
+        {
+          "row": "bandits/reavers#boss-02",
+          "weight": 0,
+          "gate": 1
+        },
+        {
+          "row": "bandits/reavers#boss-03",
+          "weight": 0,
+          "gate": 14
+        },
+        {
+          "row": "bandits/reavers#boss-04",
+          "weight": 0,
+          "gate": 19
+        },
+        {
+          "row": "bandits/reavers#boss-05",
+          "weight": 0,
+          "gate": 25
+        },
+        {
+          "row": "bandits/reavers#boss-06",
+          "weight": 1,
+          "gate": 29
+        }
+      ],
+      "note": "Pinned at 28, like the mainland chief.",
+      "status": "decided",
+      "source": "user (archetype-tiers.md §3.4; §3.1.1 pins the bandit chief to 28)"
+    }
+  ],
+  "pins": [
+    {
+      "row": "bandits/bandit-chiefs#lost-knife-boss",
+      "level": 28,
+      "note": "takes `Stats` from the two-handed mook list, so it needs a level of its own to stay a chief",
+      "status": "decided",
+      "source": "user, 2026-09-27 (archetype-tiers.md §7.0: the Lost Knife boss, bandit chief, 28)"
+    },
+    {
+      "row": "bandits/named-bandits#kinthal-svarig",
+      "level": 28,
+      "note": "the CC Saints & Seducers bosses scale (PC×1.25); they stay on the chief's 28",
+      "status": "decided",
+      "source": "user, 2026-11-12 (archetype-tiers.md §7.0)"
+    },
+    {
+      "row": "bandits/named-bandits#beem-ja",
+      "level": 30,
+      "status": "decided",
+      "source": "archetype-tiers.md §7.0 standing rule: the level a level-25 player meets"
+    },
+    {
+      "row": "bandits/named-bandits#salma",
+      "level": 25,
+      "status": "decided",
+      "source": "archetype-tiers.md §7.0 standing rule: the level a level-25 player meets"
+    },
+    {
+      "row": "bandits/named-bandits#deeja",
+      "level": 25,
+      "status": "decided",
+      "source": "archetype-tiers.md §7.0 standing rule: the level a level-25 player meets"
+    },
+    {
+      "row": "bandits/named-bandits#jaree-ra",
+      "level": 25,
+      "status": "decided",
+      "source": "archetype-tiers.md §7.0 standing rule: the level a level-25 player meets"
+    }
+  ],
+  "gear": [
+    {
+      "id": "mook-weapons",
+      "title": "Mook weapons",
+      "slot": "weapon",
+      "lists": [
+        {
+          "edid": "LItemBanditWeapon1H",
+          "formKey": "037C1B:Skyrim.esm"
+        },
+        {
+          "edid": "LItemBanditWeapon2H",
+          "formKey": "037C21:Skyrim.esm"
+        }
+      ],
+      "wornBy": "the one-handed, tank, two-handed and berserker mook leaves",
+      "vanillaRoll": "all",
+      "choices": [
+        {
+          "material": "iron",
+          "weight": 1,
+          "gate": 1
+        },
+        {
+          "material": "steel",
+          "weight": 1,
+          "gate": 1
+        },
+        {
+          "material": "orcish",
+          "weight": 1,
+          "gate": 9
+        },
+        {
+          "material": "dwarven",
+          "weight": 0,
+          "gate": 15,
+          "why": "vanilla gate 15, above the top mook rung (14)"
+        },
+        {
+          "material": "elven",
+          "weight": 0,
+          "gate": 22,
+          "why": "vanilla gate 22, above the top mook rung (14)"
+        }
+      ],
+      "note": "Each material keeps every weapon type it has in the list (mace, sword, war axe; battleaxe, greatsword, warhammer).",
+      "status": "proposed",
+      "source": "proposed: vanilla's pool up to the top mook rung (14), weighted evenly"
+    },
+    {
+      "id": "mook-bows",
+      "title": "Mook bows",
+      "slot": "weapon",
+      "lists": [
+        {
+          "edid": "LItemBanditWeaponMissile",
+          "formKey": "037BFD:Skyrim.esm"
+        }
+      ],
+      "wornBy": "the archer leaves",
+      "vanillaRoll": "highest",
+      "choices": [
+        {
+          "material": "hunting",
+          "weight": 1,
+          "gate": 1
+        },
+        {
+          "material": "long",
+          "weight": 1,
+          "gate": 1
+        },
+        {
+          "material": "imperial",
+          "weight": 1,
+          "gate": 4
+        },
+        {
+          "material": "orcish",
+          "weight": 1,
+          "gate": 10
+        },
+        {
+          "material": "dwarven",
+          "weight": 0,
+          "gate": 15,
+          "why": "vanilla gate 15"
+        },
+        {
+          "material": "elven",
+          "weight": 0,
+          "gate": 20,
+          "why": "vanilla gate 20"
+        }
+      ],
+      "note": "The list also gives the arrows (Iron 1 · Steel 5 · Orcish 9 · Dwarven 14 · Elven 20); the same rule keeps Iron, Steel, Orcish and Dwarven. Every archer must still roll a bow (the proof of concept's bow list pointed half its entries at melee lists).",
+      "status": "proposed",
+      "source": "proposed: vanilla's pool up to the top mook rung (14), weighted evenly"
+    },
+    {
+      "id": "mook-armor-light",
+      "title": "Mook armour (light)",
+      "slot": "armor",
+      "lists": [
+        {
+          "edid": "BanditArmorMeleeShield20Outfit",
+          "formKey": "0C0197:Skyrim.esm"
+        },
+        {
+          "edid": "BanditArmorMeleeNoShieldOutfit",
+          "formKey": "01E608:Skyrim.esm"
+        },
+        {
+          "edid": "BanditMageOutfit",
+          "formKey": "06E26F:Skyrim.esm"
+        }
+      ],
+      "wornBy": "the one-handed, two-handed, berserker, archer and wizard leaves",
+      "vanillaRoll": "all",
+      "choices": [
+        {
+          "material": "fur",
+          "weight": 1,
+          "gate": 1
+        },
+        {
+          "material": "hide",
+          "weight": 1,
+          "gate": 1
+        },
+        {
+          "material": "studded",
+          "weight": 1,
+          "gate": 1,
+          "why": "not in the mage set"
+        },
+        {
+          "material": "leather",
+          "weight": 1,
+          "gate": 6
+        },
+        {
+          "material": "iron",
+          "weight": 1,
+          "gate": 1,
+          "why": "only in the shield outfit"
+        },
+        {
+          "material": "elven",
+          "weight": 1,
+          "gate": 12,
+          "why": "vanilla gate 12; only in the shield outfit"
+        },
+        {
+          "material": "scaled",
+          "weight": 0,
+          "gate": 19,
+          "why": "vanilla gate 19"
+        }
+      ],
+      "note": "Outfits: the generator edits the armour lists each one holds. The shield outfit's 20% shield (`LItemBanditShield20`) is unchanged.",
+      "status": "proposed",
+      "source": "proposed: vanilla's pool up to the top mook rung (14), weighted evenly"
+    },
+    {
+      "id": "mook-armor-heavy",
+      "title": "Mook armour (heavy)",
+      "slot": "armor",
+      "lists": [
+        {
+          "edid": "BanditArmorMeleeHeavyOutfit",
+          "formKey": "015BE6:Skyrim.esm"
+        },
+        {
+          "edid": "BanditArmorMeleeHeavyNoShieldOutfit",
+          "formKey": "0A95F7:Skyrim.esm"
+        }
+      ],
+      "wornBy": "the tank leaves, and the Fort Neugrad ambush chief",
+      "vanillaRoll": "all",
+      "choices": [
+        {
+          "material": "banded-iron",
+          "weight": 1,
+          "gate": 1
+        },
+        {
+          "material": "hide",
+          "weight": 1,
+          "gate": 1
+        },
+        {
+          "material": "iron",
+          "weight": 1,
+          "gate": 1
+        },
+        {
+          "material": "steel",
+          "weight": 1,
+          "gate": 6
+        }
+      ],
+      "status": "proposed",
+      "source": "proposed: vanilla's whole pool (its top gate is 6)"
+    },
+    {
+      "id": "bandit-arrows",
+      "title": "Archer arrows",
+      "slot": "ammo",
+      "lists": [
+        {
+          "edid": "LItemBanditWeaponArrows",
+          "formKey": "039D2F:Skyrim.esm"
+        }
+      ],
+      "wornBy": "archers that carry `LItemBanditWeaponBow`, and the chiefs with a bow",
+      "vanillaRoll": "all",
+      "choices": [
+        {
+          "material": "iron",
+          "weight": 9,
+          "gate": 1
+        },
+        {
+          "material": "steel",
+          "weight": 0,
+          "gate": 5,
+          "why": "out: bandit arrows are iron, with a little fire"
+        },
+        {
+          "material": "orcish",
+          "weight": 0,
+          "gate": 9,
+          "why": "out: bandit arrows are iron, with a little fire"
+        },
+        {
+          "material": "dwarven",
+          "weight": 0,
+          "gate": 14,
+          "why": "out: bandit arrows are iron, with a little fire"
+        },
+        {
+          "material": "elven",
+          "weight": 0,
+          "gate": 20,
+          "why": "out: bandit arrows are iron, with a little fire"
+        },
+        {
+          "item": {
+            "label": "fire arrows (the CC Exotic Arrows pack)"
+          },
+          "weight": 1,
+          "gate": 10,
+          "runtime": true,
+          "why": "the pack adds them at 10; put back at 1"
+        },
+        {
+          "item": {
+            "label": "the CC bone arrow"
+          },
+          "weight": 0,
+          "why": "26 damage, above Daedric"
+        }
+      ],
+      "note": "Shared with Thalmor, Penitus Oculatus, the embassy guards and the Dremora archers, who get the same arrows.",
+      "status": "decided",
+      "source": "proof of concept, 2026-09-24 (proof-of-concept.md §10), carried into the rebuild"
+    },
+    {
+      "id": "loot-arrows",
+      "title": "Spare arrows (loot)",
+      "slot": "ammo",
+      "lists": [
+        {
+          "edid": "LootBanditArrows15",
+          "formKey": "08777F:Skyrim.esm"
+        }
+      ],
+      "wornBy": "the archer leaves",
+      "chanceNone": 85,
+      "vanillaRoll": "all",
+      "choices": [
+        {
+          "material": "iron",
+          "weight": 1,
+          "gate": 1
+        },
+        {
+          "material": "steel",
+          "weight": 1,
+          "gate": 3
+        },
+        {
+          "material": "orcish",
+          "weight": 1,
+          "gate": 6
+        },
+        {
+          "material": "dwarven",
+          "weight": 1,
+          "gate": 12
+        },
+        {
+          "material": "elven",
+          "weight": 0,
+          "gate": 19,
+          "why": "vanilla gate 19"
+        },
+        {
+          "material": "glass",
+          "weight": 0,
+          "gate": 27,
+          "why": "no glass in any bandit list"
+        },
+        {
+          "material": "ebony",
+          "weight": 0,
+          "gate": 36,
+          "why": "no ebony in any bandit list"
+        },
+        {
+          "material": "daedric",
+          "weight": 0,
+          "gate": 46,
+          "why": "vanilla gate 46"
+        }
+      ],
+      "status": "proposed",
+      "source": "proposed: vanilla's pool up to the top mook rung (14); glass and ebony out by the proof of concept's rule"
+    },
+    {
+      "id": "chief-weapons",
+      "title": "Chief weapons",
+      "slot": "weapon",
+      "lists": [
+        {
+          "edid": "LItemBanditBossWeapon1H",
+          "formKey": "03DF1C:Skyrim.esm"
+        },
+        {
+          "edid": "LItemBanditWeapon2HBoss",
+          "formKey": "03DEDA:Skyrim.esm"
+        },
+        {
+          "edid": "LItemBanditBossSword",
+          "formKey": "03DF1D:Skyrim.esm"
+        }
+      ],
+      "wornBy": "every chief leaf, the Traitor's Post boss, the Cragslane Butcher, Urgnok",
+      "vanillaRoll": "all",
+      "choices": [
+        {
+          "material": "steel",
+          "weight": 1,
+          "gate": 1
+        },
+        {
+          "material": "steel",
+          "enchanted": true,
+          "weight": 1,
+          "gate": 9
+        },
+        {
+          "material": "orcish",
+          "weight": 1,
+          "gate": 6
+        },
+        {
+          "material": "orcish",
+          "enchanted": true,
+          "weight": 1,
+          "gate": 12
+        },
+        {
+          "material": "dwarven",
+          "weight": 1,
+          "gate": 12
+        },
+        {
+          "material": "dwarven",
+          "enchanted": true,
+          "weight": 1,
+          "gate": 19
+        },
+        {
+          "material": "elven",
+          "weight": 1,
+          "gate": 19
+        },
+        {
+          "material": "elven",
+          "enchanted": true,
+          "weight": 1,
+          "gate": 27
+        },
+        {
+          "material": "nordic",
+          "weight": 1,
+          "gate": 23,
+          "runtime": true,
+          "why": "put back by place: Dragonborn's start-up quest injected it at gate 23"
+        },
+        {
+          "material": "iron",
+          "enchanted": true,
+          "weight": 0,
+          "gate": 6,
+          "why": "the steel floor"
+        },
+        {
+          "material": "glass",
+          "weight": 0,
+          "gate": 27,
+          "why": "no glass in any bandit list"
+        },
+        {
+          "material": "glass",
+          "enchanted": true,
+          "weight": 0,
+          "gate": 36,
+          "why": "no glass in any bandit list"
+        },
+        {
+          "material": "ebony",
+          "weight": 0,
+          "gate": 36,
+          "why": "no ebony in any bandit list"
+        }
+      ],
+      "note": "Even weights are what vanilla rolls at 28, the chief's level, once iron, glass and ebony are out.",
+      "status": "decided",
+      "source": "user, 2026-09-24, after play (proof-of-concept.md §10: the steel floor, no glass or ebony, Nordic by place)"
+    },
+    {
+      "id": "chief-armor",
+      "title": "Chief armour",
+      "slot": "armor",
+      "lists": [
+        {
+          "edid": "BanditArmorHeavyBossOutfit",
+          "formKey": "03DED3:Skyrim.esm"
+        },
+        {
+          "edid": "BanditArmorHeavyBossNoShieldOutfit",
+          "formKey": "0A95F8:Skyrim.esm"
+        }
+      ],
+      "wornBy": "every chief leaf, Celeste, and the outfits that share the boss pieces",
+      "vanillaRoll": "highest",
+      "choices": [
+        {
+          "material": "iron",
+          "weight": 0,
+          "gate": 1,
+          "why": "the steel floor"
+        },
+        {
+          "material": "banded-iron",
+          "weight": 1,
+          "gate": 1
+        },
+        {
+          "material": "steel",
+          "weight": 1,
+          "gate": 6
+        },
+        {
+          "material": "steel-plate",
+          "weight": 1,
+          "gate": 18
+        },
+        {
+          "material": "nordic",
+          "weight": 1,
+          "gate": 25,
+          "runtime": true,
+          "why": "put back by place: Dragonborn's start-up quest injected it at gate 25"
+        }
+      ],
+      "note": "The pieces are `LItemBanditBoss{Cuirass,Boots,Helmet50,Gauntlets50}`. Vanilla takes only the highest gate, so at 28 a chief wore Steel Plate alone; the proof of concept made them roll every kept tier.",
+      "status": "decided",
+      "source": "user, 2026-09-24, after play (proof-of-concept.md §10)"
+    },
+    {
+      "id": "chief-shields",
+      "title": "Chief shields",
+      "slot": "shield",
+      "lists": [
+        {
+          "edid": "LItemBanditBossShield",
+          "formKey": "03DF22:Skyrim.esm"
+        }
+      ],
+      "wornBy": "the one-handed chief leaves",
+      "chanceNone": 50,
+      "vanillaRoll": "all",
+      "choices": [
+        {
+          "material": "iron",
+          "weight": 0,
+          "gate": 1,
+          "why": "the steel floor (inferred: the proof of concept names armour, not shields)"
+        },
+        {
+          "material": "banded-iron",
+          "weight": 1,
+          "gate": 1
+        },
+        {
+          "material": "steel",
+          "weight": 1,
+          "gate": 6
+        },
+        {
+          "material": "dwarven",
+          "weight": 1,
+          "gate": 12
+        },
+        {
+          "material": "orcish",
+          "weight": 1,
+          "gate": 25
+        },
+        {
+          "material": "ebony",
+          "weight": 0,
+          "gate": 32,
+          "why": "no ebony in any bandit list"
+        }
+      ],
+      "status": "proposed",
+      "source": "proposed: the chief armour's rules applied to its shield"
+    }
+  ],
+  "open": [
+    {
+      "title": "The Bandit Armor packs",
+      "text": "Fourteen CC packs inject a boss sublist into `LCharBanditBoss` at runtime, at gates 2 to 48. The user's rule (2026-11-12) is that the rebuilt lists spawn chiefs only at 28: decide whether the pack leaves below rung 06 are stripped, or re-added at 28 by place as the proof of concept did."
+    },
+    {
+      "title": "Named bandits' levels",
+      "text": "The census holds their bands (user, 2026-11-12); the levels within those bands are still to be set. Each becomes a pin here once decided. The bandit-list borrowers flagged below need one too."
+    },
+    {
+      "title": "Hired Thugs",
+      "text": "Their census band is IV, but they draw the chief wrappers, which now spawn 28 (V). Pin them, or point them at another list."
+    },
+    {
+      "title": "Shared lists",
+      "text": "`LItemWeaponDaggerTown` (the archers' and wizards' dagger) is game-wide, so it is not this ledger's to change. The bandit lists are also drawn by the Silver Hand, the vampire thralls, the Mythic Dawn and others (each census list row's *drawn by*): their ledgers decide whether they keep drawing them."
+    },
+    {
+      "title": "Reaver gear",
+      "text": "The `DLC2LItemBandit*` gear lists and the Solstheim chief's bonemold and chitin outfit have no decision yet."
+    }
+  ]
+}

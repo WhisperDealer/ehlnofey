@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+import { href } from '../../lib/census.ts';
+import { loadLedgers } from '../../lib/ledgers.ts';
+import { md } from '../../lib/format.ts';
+
+const { ledgers } = await loadLedgers();
+---
+
+<Base title="Ledgers" description="Ehlnofey's decisions: which rungs each leveled list keeps, the pinned levels, and the gear." crumbs={[{ label: 'Ledgers', path: 'ledgers/' }]}>
+  <header class="head">
+    <h1>Ledgers</h1>
+    <p class="lede">
+      The census records what the vanilla game does. A ledger records what Ehlnofey does instead: which rungs each leveled list
+      keeps and how often each is drawn, the levels that are pinned, and the gear each rung carries.
+    </p>
+  </header>
+
+  <div class="cards">
+    {ledgers.map(({ ledger: l, findings }) => (
+      <a class="card panel" href={href(`ledgers/${l.id}/`)}>
+        <h2>{l.title}</h2>
+        {l.intro && <p set:html={md(l.intro)} />}
+        <p class="sub">
+          {l.rosters.length} rosters · {l.pins.length} pins · {l.gear.length} gear lists
+          {findings.length > 0 && <> · {findings.length} checks to resolve</>}
+        </p>
+      </a>
+    ))}
+  </div>
+</Base>
+
+<style>
+  .lede { max-width: 75ch; color: var(--muted); }
+  .cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); margin-top: 1.5rem; }
+  .card { text-decoration: none; color: var(--text); display: block; }
+  .card:hover { border-color: var(--line-strong); }
+  .card h2 { margin: 0 0 0.4rem; }
+  .sub { color: var(--muted); font-size: 0.88rem; }
+</style>

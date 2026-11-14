@@ -56,7 +56,7 @@ reference/              # gitignored, LOOKUP + BUILD INPUT: Base/ = the five Bet
                         #   mods/CreationClubYaml/ = the CC packs
 census/                 # the enemy census as JSON, source of truth for migrated groups (Dragons first)
   bands.json            #   the ten bands of power; <group>/group.json + <family>.json; schema/
-ledgers/                # PLANNED, not created yet: Ehlnofey's roster/pin/gear decisions (ledgers.md)
+ledgers/                # Ehlnofey's roster/pin/gear decisions, one <id>.json per group (ledgers.md); schema/
 site/                   # Astro site that renders census/ to GitHub Pages (Node, site only)
 modlist/                # gitignored MO2 instance
 ```
@@ -118,9 +118,12 @@ Outlaw ×3 · Thug ×4 · Highwayman ×2), **pins** (every Bandit Chief is level
 armour by material: steel, dwarven…). Decided (user, 2026-11-14): **`ledgers/` JSON in the repo is the
 source of truth**; the site edits it **only under `npm run dev`** (it writes the files; the public site is
 read-only); a PowerShell generator turns it into the patch's records. A ledger points at census rows
-(`<group>/<family>#<row-id>`), never copies them. **Nothing of it is built yet**: don't create the schema,
-pages or editor until the user starts the phase; its order of work and open questions are in
-`ledgers.md` §§6–7.
+(`<group>/<family>#<row-id>`), never copies them. **Started 2026-11-14 with Bandits**: the `Ledger`
+schema is in `site/src/schema.ts`, the checks in `site/src/lib/ledger.ts` (run by `npm run schema`;
+warnings are decisions owed, errors fail), the first ledger is `ledgers/bandits.json`, rendered
+read-only at `/ledgers/bandits/`. Not built yet: the dev editor and the generator (`ledgers.md` §6
+steps 4–5); open questions in §7. A ledger's `status` is `proposed` / `decided` (the user's call) /
+`implemented` (the built patch does it); never mark a proposal `decided` without the user.
 
 **The census (since 2026-09-30) is closing.** Phase 4 (the rebuild, restarted 2026-09-27) stays
 **paused** until the ledgers feed it. The census notes below still govern every census edit.
@@ -480,7 +483,7 @@ arch-docs/
   world/                      # Phase 1 research — overview.md first; enemy-taxonomy, unique-enemies,
                               #   factions, dungeons, regions, progression, lore-constraints
   design/
-    ledgers.md                # the NEXT PHASE (planned): editable rosters, pins, gear; §6 order, §7 open
+    ledgers.md                # the CURRENT PHASE: editable rosters, pins, gear; §6 order, §7 open
     modlist.md                # Ehlnofey as a modlist + its patch; what the 2026-11-14 change decided
     flattening.md             # READ FIRST for records — the live architecture; §6 order of work
     archetype-tiers.md        # THE SPEC — levels, rosters, weights, pins, gear per family

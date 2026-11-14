@@ -1,0 +1,388 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "order": {
+      "type": "integer",
+      "minimum": -9007199254740991,
+      "maximum": 9007199254740991
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "spec": {
+          "type": "string"
+        },
+        "updated": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        }
+      },
+      "required": [
+        "updated"
+      ],
+      "additionalProperties": false
+    },
+    "census": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      }
+    },
+    "intro": {
+      "type": "string"
+    },
+    "rosters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lists": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "edid": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "formKey": {
+                  "type": "string",
+                  "pattern": "^[0-9A-F]{6}:[A-Za-z0-9 _.'-]+\\.(esm|esp|esl)$"
+                }
+              },
+              "required": [
+                "edid",
+                "formKey"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "vanillaRoll": {
+            "type": "string",
+            "enum": [
+              "all",
+              "highest"
+            ]
+          },
+          "entries": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "row": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9-]+\\/[a-z0-9-]+#[a-z0-9-]+$"
+                },
+                "weight": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "gate": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                },
+                "why": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "row",
+                "weight"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "note": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "proposed",
+              "decided",
+              "implemented"
+            ]
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "lists",
+          "entries",
+          "status",
+          "source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "pins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "row": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+\\/[a-z0-9-]+#[a-z0-9-]+$"
+          },
+          "level": {
+            "type": "integer",
+            "exclusiveMinimum": 0,
+            "maximum": 9007199254740991
+          },
+          "note": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "proposed",
+              "decided",
+              "implemented"
+            ]
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "row",
+          "level",
+          "status",
+          "source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "gear": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "slot": {
+            "type": "string",
+            "enum": [
+              "weapon",
+              "armor",
+              "shield",
+              "ammo"
+            ]
+          },
+          "lists": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "edid": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "formKey": {
+                  "type": "string",
+                  "pattern": "^[0-9A-F]{6}:[A-Za-z0-9 _.'-]+\\.(esm|esp|esl)$"
+                }
+              },
+              "required": [
+                "edid",
+                "formKey"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "wornBy": {
+            "type": "string",
+            "minLength": 1
+          },
+          "chanceNone": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "vanillaRoll": {
+            "type": "string",
+            "enum": [
+              "all",
+              "highest"
+            ]
+          },
+          "choices": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "material": {
+                  "type": "string",
+                  "enum": [
+                    "iron",
+                    "banded-iron",
+                    "steel",
+                    "steel-plate",
+                    "imperial",
+                    "fur",
+                    "hide",
+                    "studded",
+                    "leather",
+                    "scaled",
+                    "orcish",
+                    "dwarven",
+                    "elven",
+                    "glass",
+                    "ebony",
+                    "daedric",
+                    "nordic",
+                    "stalhrim",
+                    "bonemold",
+                    "chitin",
+                    "ancient-nord",
+                    "falmer",
+                    "forsworn",
+                    "hunting",
+                    "long"
+                  ]
+                },
+                "item": {
+                  "type": "object",
+                  "properties": {
+                    "edid": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "formKey": {
+                      "type": "string",
+                      "pattern": "^[0-9A-F]{6}:[A-Za-z0-9 _.'-]+\\.(esm|esp|esl)$"
+                    },
+                    "label": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "enchanted": {
+                  "type": "boolean"
+                },
+                "weight": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "gate": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                },
+                "runtime": {
+                  "type": "boolean"
+                },
+                "why": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "weight"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "note": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "proposed",
+              "decided",
+              "implemented"
+            ]
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "slot",
+          "lists",
+          "wornBy",
+          "choices",
+          "status",
+          "source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "open": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "title",
+          "text"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "order",
+    "meta",
+    "census",
+    "rosters",
+    "pins",
+    "gear"
+  ],
+  "additionalProperties": false
+}

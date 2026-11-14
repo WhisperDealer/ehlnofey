@@ -1,0 +1,51 @@
+---
+// Enemy level against player level for one roster: vanilla's line (from the entries' gates) against
+// Ehlnofey's flat line, over the bands of power. Static SVG, drawn at build time.
+import { bands } from '../lib/census.ts';
+interface Props {
+  vanilla?: { p: number; v: number }[];
+  ehl: number; // the mean or pinned level
+  range?: [number, number]; // the kept rungs' span, shaded
+  label: string; // e.g. "mean 8.8" or "pinned 28"
+}
+const { vanilla, ehl, range, label } = Astro.props;
+const W = 560, H = 230, L = 34, R = 12, T = 10, B = 34, P1 = 50;
+const top = Math.max(30, Math.ceil((Math.max(ehl, range?.[1] ?? 0, ...(vanilla ?? []).map((d) => d.v)) + 4) / 5) * 5);
+const x = (p: number) => L + ((p - 1) / (P1 - 1)) * (W - L - R);
+const y = (v: number) => H - B - (v / top) * (H - T - B);
+const step = (pts: { p: number; v: number }[]) =>
+  pts.map((d, i) => `${i ? 'L' : 'M'}${x(d.p).toFixed(1)} ${y(d.v).toFixed(1)}` + (pts[i + 1] && pts[i + 1].v !== d.v ? ` L${x(pts[i + 1].p).toFixed(1)} ${y(d.v).toFixed(1)}` : '')).join(' ');
+const stripes = bands.bands.filter((b) => b.min <= top).map((b) => ({ b, y1: y(Math.min(b.max ?? top, top) + 0.5), y2: y(b.min - 0.5) }));
+// The vanilla line's final value, from the player level where it first reaches it.
+const end = vanilla?.at(-1);
+const last = end && { v: end.v, p: vanilla!.find((d) => d.v === end.v)!.p };
+---
+<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Enemy level by player level: Ehlnofey ${label}${last ? `, vanilla ${last.v.toFixed(1)} at player ${last.p}` : ''}`}>
+  {stripes.map(({ b, y1, y2 }) => <rect x={L} y={y1} width={W - L - R} height={Math.max(0, y2 - y1)} fill={b.colour} opacity="0.07" />)}
+  {Array.from({ length: top / 5 + 1 }, (_, i) => i * 5).map((v) => (
+    <>
+      <line x1={L} x2={W - R} y1={y(v)} y2={y(v)} class="grid" />
+      <text x={L - 6} y={y(v) + 4} text-anchor="end" class="tick">{v}</text>
+    </>
+  ))}
+  {[1, 10, 20, 30, 40, 50].map((p) => <text x={x(p)} y={H - B + 16} text-anchor="middle" class="tick">{p}</text>)}
+  <text x={(L + W - R) / 2} y={H - 4} text-anchor="middle" class="axis">Player level</text>
+  {range && range[1] > range[0] && <rect x={x(1)} y={y(range[1])} width={x(P1) - x(1)} height={y(range[0]) - y(range[1])} class="span" />}
+  {vanilla && <path d={step(vanilla)} class="van" />}
+  <line x1={x(1)} x2={x(P1)} y1={y(ehl)} y2={y(ehl)} class="ehl" />
+  <text x={x(2)} y={y(ehl) - 7} class="lab ehl-t">Ehlnofey · {label}</text>
+  {last && <text x={x(P1)} y={y(last.v) + (last.v > ehl ? -7 : 15)} text-anchor="end" class="lab van-t">Vanilla · {Math.round(last.v * 10) / 10} at player {last.p}+</text>}
+</svg>
+
+<style>
+  svg { display: block; width: 100%; height: auto; }
+  .grid { stroke: var(--line); stroke-width: 1; }
+  .tick { font: 11px var(--sans); fill: var(--muted); }
+  .axis { font: 12px var(--sans); fill: var(--muted); }
+  .span { fill: var(--gold); opacity: 0.1; }
+  .van { fill: none; stroke: #d98a6c; stroke-width: 2.2; stroke-dasharray: 6 4; }
+  .ehl { stroke: var(--gold); stroke-width: 3; }
+  .lab { font: 600 12px var(--sans); }
+  .ehl-t { fill: var(--gold); }
+  .van-t { fill: #d98a6c; }
+</style>

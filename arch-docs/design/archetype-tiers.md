@@ -351,7 +351,7 @@ the camp's capstone, not necessarily the band centre.
 "rare, and called Bandit Runt" revision).
 
 The roster is now **Outlaw ×3 · Thug ×4 · Highwayman ×2** — gates 5/9/14, odds 3/9 · 4/9 · 2/9, mean
-drawn level 9.1. The level-1 rung goes the way Plunderer and Marauder already had: out of every mook
+drawn level ~~9.1~~ 8.8 (79 / 9; corrected 2026-11-14 by the Bandits ledger). The level-1 rung goes the way Plunderer and Marauder already had: out of every mook
 list. Chiefs are unaffected (pinned at 28, §3.1.1).
 
 The 2026-07-30 revision kept the rung at ×1 and renamed it "Bandit Runt" — the mod's first invented
@@ -578,7 +578,7 @@ in step.
 | **Chaurus Hunter** | `DLC1LCharChaurusHunter` 0029A2 | 16 · 32 | ~~16 ×2 · 32 ×1~~ **16 ×1 · 32 ×1** — mean 24 (WD-58) | **T4** (T3–T5) |
 | **Armored Troll** | `DLC1LCharTrollArmored` 00D0BB | 14 · 22 | ~~14 ×2 · 22 ×1~~ rungs raised: **26 ×1 · 36 ×1** — mean 31 (WD-58) | **T5** (T5–T6) |
 | **Frozen Falmer / Shaman / Chaurus** | `DLC1_BF_LCharFrozen{Falmer,Shaman,Chaurus}` 015124 / 015126 / 01511A | 1 · 10 · 20 · 30 · 40 (chaurus 10–50) | **40 only** (one name each — pinned, WD-58) | **T6** |
-| **Solstheim bandit** | `DLC2LCharBanditMelee1H` 01E8A9 | parallel records, 1–25 | **mirrors §3.1's mainland bandit** (5 ×3 · 9 ×4 · 14 ×2; chief 28) — already built | **T2** |
+| **Solstheim bandit** | `DLC2LCharBanditMelee1H` 01E8A9 | parallel records, 1–25 | ~~mirrors §3.1's mainland bandit (5 ×3 · 9 ×4 · 14 ×2)~~ **Highwayman 14 ×1 · Plunderer 19 ×1**, mean 16.5 (user, 2026-11-14; `ledgers/bandits.json`); chief 28 | **T3** |
 
 > **Dawnguard and Dragonborn families (WD-58 / WD-59, user 2026-09-27). Verified in game by the user.**
 > - **Dawnguard 38**, just above the Vigilants. `DLC1EncHunterTemplate` owns Agmaer, Beleval and the Fort's guards: it is

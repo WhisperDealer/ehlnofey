@@ -1,0 +1,29 @@
+---
+// One stacked bar: a gear list's roll by material, each segment as wide as its share.
+import type { Segment } from '../lib/materials.ts';
+interface Props { parts: { key: string; weight: number }[]; seg: Map<string, Segment> }
+const { parts, seg } = Astro.props;
+// Merge repeated keys (vanilla rows can list one material twice) and keep the ledger's order.
+const merged = [...parts.reduce((m, p) => m.set(p.key, (m.get(p.key) ?? 0) + p.weight), new Map<string, number>())].filter(([, w]) => w > 0);
+const total = merged.reduce((s, [, w]) => s + w, 0);
+---
+<div class="bar" role="img" aria-label={merged.map(([k, w]) => `${seg.get(k)?.label ?? k} ${Math.round((w / total) * 100)}%`).join(', ')}>
+  {merged.map(([k, w]) => {
+    const s = seg.get(k);
+    const p = (w / total) * 100;
+    return (
+      <div
+        class:list={{ dark: s?.dark, ench: s?.enchanted }}
+        style={`flex:${p} 1 0;--c:${s?.colour ?? '#666'}`}
+        title={`${s?.label ?? k}: ${Math.round(p * 10) / 10}%`}
+      >{p >= 12 ? `${Math.round(p)}%` : ''}</div>
+    );
+  })}
+</div>
+
+<style>
+  .bar { display: flex; height: 22px; border-radius: 3px; overflow: hidden; gap: 1px; background: var(--line); }
+  .bar div { min-width: 3px; display: flex; align-items: center; justify-content: center; font: 600 0.72rem/1 var(--sans); color: #fff; background: var(--c); white-space: nowrap; overflow: hidden; }
+  .bar div.dark { color: #15130d; }
+  .bar div.ench { background-image: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0 3px, transparent 3px 7px); }
+</style>

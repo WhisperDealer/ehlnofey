@@ -50,7 +50,7 @@ single mod that would need a patch for everything added beside it. Its own delev
 `Ehlnofey.esp`, is still authored in this repo. See
 [`arch-docs/design/modlist.md`](arch-docs/design/modlist.md).
 
-**Next: the Ledgers.** A ledger is one family's decisions, editable on the census site: which rungs a
+**Now: the Ledgers** (started 2026-11-14 with Bandits). A ledger is one family's decisions, editable on the census site: which rungs a
 leveled list keeps and how they are weighted, which levels are pinned (every Bandit Chief at 28), and
 what gear each rung carries, by material. The ledgers are JSON in the repo and the patch is generated
 from them. See [`arch-docs/design/ledgers.md`](arch-docs/design/ledgers.md).
@@ -73,7 +73,7 @@ ladder. Its levels, rosters and gear rules are the design the rebuild works from
 | **3 — Design spec** | `arch-docs/design/*` — the tier ladder, archetype tiers, loot model, and the implementation-strategy decision | ✅ complete |
 | **4 — Build** | `src/Ehlnofey/EhlnofeyESP/` — the plugin YAML and its generator scripts, packaged and released | ⏸ paused for the census — scaffold only |
 | **Census** | `census/*.json` + the [census site](#the-census-site): every enemy's level, lists and placements, and its target band | ▶ closing — the enemy groups are on the site |
-| **Ledgers** | `ledgers/*.json` + editable ledger pages on the site: rosters, weights, pinned levels and gear per family | ⏭ next — planned in `arch-docs/design/ledgers.md` |
+| **Ledgers** | `ledgers/*.json` + editable ledger pages on the site: rosters, weights, pinned levels and gear per family | ▶ in progress — Bandits ledger on the site (read-only); editor and generator next |
 
 **How it is built: flattening the leveled lists.** `Ehlnofey.esp` is a single ESL-flagged plugin of
 override records, with no scripts and no runtime rules. Every leveled list (`LVLN`/`LVLI`) loses its

@@ -1,0 +1,299 @@
+---
+// One ledger, read-only: the headline numbers, each roster with its level chart (vanilla against
+// Ehlnofey), the pins, the gear as material bars (Ehlnofey against vanilla by player level), the open
+// decisions and the checks. Editing comes later, under `npm run dev` only (ledgers.md §2).
+import Base from '../../layouts/Base.astro';
+import BandChip from '../../components/BandChip.astro';
+import LevelChart from '../../components/LevelChart.astro';
+import MaterialBar from '../../components/MaterialBar.astro';
+import { bandOfLevel, href } from '../../lib/census.ts';
+import { loadLedgers, rowLink } from '../../lib/ledgers.ts';
+import { choiceKey, rosterStats, vanillaCurve, vanillaGear } from '../../lib/ledger.ts';
+import { segments } from '../../lib/materials.ts';
+import { md, refs } from '../../lib/format.ts';
+
+export async function getStaticPaths() {
+  const { census, ledgers } = await loadLedgers();
+  return ledgers.map((x) => ({ params: { ledger: x.ledger.id }, props: { ...x, census } }));
+}
+
+const { ledger: l, findings, census } = Astro.props;
+const pct = (v: number) => `${Math.round(v * 100)}%`;
+const own = findings.filter((f) => l.census.some((g) => f.where.startsWith(`${g}/`)) || !f.where.includes('/'));
+const borrowers = findings.filter((f) => !own.includes(f));
+const SLOTS = { weapon: 'Weapons', armor: 'Armour', shield: 'Shields', ammo: 'Arrows' } as const;
+const PLAYER = [1, 10, 20, 30, 40];
+
+const rosters = l.rosters.map((r) => {
+  const s = rosterStats(census, r);
+  const levels = s.kept.map((e) => e.level).filter((v): v is number => v !== undefined);
+  return { r, s, levels, vanilla: vanillaCurve(census, r) };
+});
+const seg = segments(l.gear);
+const usedKeys = new Set(l.gear.flatMap((g) => g.choices.map(choiceKey)));
+const decided = [...l.rosters, ...l.pins, ...l.gear].filter((x) => x.status !== 'proposed').length;
+const all = l.rosters.length + l.pins.length + l.gear.length;
+---
+
+<Base
+  title={`${l.title} ledger`}
+  description={`Ehlnofey's ${l.title} ledger: rosters, pinned levels and gear.`}
+  crumbs={[{ label: 'Ledgers', path: 'ledgers/' }, { label: l.title, path: `ledgers/${l.id}/` }]}
+>
+  <header class="head">
+    <p class="eyebrow">Ledger · {l.census.map((g, i) => <>{i > 0 && ' · '}<a href={href(`${g}/`)}>{g} census</a></>)}</p>
+    <h1>{l.title}</h1>
+    {l.intro && <p class="lede" set:html={md(l.intro)} />}
+    <div class="facts">
+      {rosters.map(({ r, s, levels }) => (
+        <a class="fact" href={`#${r.id}`}>
+          <b>{s.pinned !== undefined ? s.pinned : levels.join(' · ')}</b>
+          <span>{r.title}{s.pinned !== undefined ? ', always' : s.mean !== undefined ? `, mean ${s.mean.toFixed(1)}` : ''}</span>
+        </a>
+      ))}
+      <div class="fact"><b>{decided} / {all}</b><span>decisions taken (the rest proposed)</span></div>
+    </div>
+    <p class="meta">
+      <span>updated {l.meta.updated}</span>
+      <a href={href(`data/ledgers/${l.id}.json`)}>JSON</a>
+      {l.meta.spec && <span>spec: {l.meta.spec}</span>}
+    </p>
+  </header>
+
+  <h2>Rosters</h2>
+  <p class="note">
+    Which rungs each leveled list keeps, and how often each is drawn. Vanilla unlocks rungs as the player levels; Ehlnofey's
+    draw is the same at every level. Weight is the number of copies of a rung in the list.
+  </p>
+  {rosters.map(({ r, s, levels, vanilla }) => {
+    const ehl = s.pinned ?? s.mean;
+    return (
+      <section class="block" id={r.id}>
+        <div class="bhead">
+          <h3>{r.title}</h3>
+          <span class:list={['status', r.status]}>{r.status}</span>
+          {ehl !== undefined && <span class="sum"><BandChip id={bandOfLevel(Math.round(ehl)).id} proposed={r.status === 'proposed'} /> {bandOfLevel(Math.round(ehl)).name}</span>}
+        </div>
+        <div class="split">
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Rung</th><th>Level</th>{r.entries.some((e) => e.gate) && <th>Vanilla from</th>}<th>Weight</th><th>Odds</th></tr></thead>
+              <tbody>
+                {s.entries.map((e, i) => {
+                  const link = rowLink(census, e.row);
+                  const gate = r.entries[i].gate;
+                  return (
+                    <tr class:list={{ dropped: e.weight === 0 }}>
+                      <td><a href={link.url}>{e.name}</a>{e.why && <div class="sub" set:html={md(e.why)} />}</td>
+                      <td class="lv">
+                        {e.level !== undefined ? <><BandChip id={bandOfLevel(e.level).id} /> {e.level}</> : '—'}
+                        {e.weight > 0 && link.row && 'band' in link.row.target && e.level !== undefined && link.row.target.band !== bandOfLevel(e.level).id && (
+                          <div class="sub target">census target <BandChip id={link.row.target.band} proposed /></div>
+                        )}
+                      </td>
+                      {r.entries.some((x) => x.gate) && <td class="num">{gate ? `player ${gate}` : '—'}</td>}
+                      <td>{e.weight === 0 ? <span class="pill cut">dropped</span> : <span class="blocks" title={`×${e.weight}`}>{Array.from({ length: e.weight }, () => <i />)}</span>}</td>
+                      <td class="num">{e.weight > 0 ? pct(e.odds) : ''}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+          {ehl !== undefined && (
+            <div class="chart panel">
+              <LevelChart
+                vanilla={vanilla}
+                ehl={ehl}
+                range={levels.length > 1 ? [Math.min(...levels), Math.max(...levels)] : undefined}
+                label={s.pinned !== undefined ? `always ${s.pinned}` : `mean ${s.mean!.toFixed(1)}`}
+              />
+            </div>
+          )}
+        </div>
+        {r.note && <p class="note" set:html={md(r.note)} />}
+        <details class="lists">
+          <summary>{r.lists.length === 1 ? 'Applies to 1 list' : `Applies to ${r.lists.length} lists`}{r.vanillaRoll && ` · vanilla rolls ${r.vanillaRoll === 'all' ? 'every unlocked rung' : 'the highest unlocked rung'}`}</summary>
+          <p class="reclist" set:html={refs(r.lists, ' · ')} />
+        </details>
+        <p class="src"><span set:html={md(r.source)} /></p>
+      </section>
+    );
+  })}
+
+  {l.pins.length > 0 && (
+    <>
+      <h2>Pins</h2>
+      <p class="note">Records that own their level and are given a fixed one.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Record</th><th>Level</th><th></th><th>Why</th></tr></thead>
+          <tbody>
+            {l.pins.map((p) => {
+              const link = rowLink(census, p.row);
+              return (
+                <tr>
+                  <td><a href={link.url}>{link.name}</a><div class="sub">{link.page}</div></td>
+                  <td class="lv"><BandChip id={bandOfLevel(p.level).id} proposed={p.status === 'proposed'} /> <strong>{p.level}</strong></td>
+                  <td><span class:list={['status', p.status]}>{p.status}</span></td>
+                  <td class="sub">{p.note && <><span set:html={md(p.note)} /><br /></>}<span set:html={md(p.source)} /></td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  <h2>Gear</h2>
+  <p class="note">
+    Each bar is one gear list's roll by material. The top bar is Ehlnofey, the same at every level; the bars below are vanilla
+    at player levels 1 to 40, one entry per material (the real lists hold several weapon types each, so read the vanilla bars
+    as the material mix, not exact odds). Hatched segments are enchanted.
+  </p>
+  <div class="matkey">
+    {[...seg.values()].filter((s) => usedKeys.has(s.key)).map((s) => <span><i class:list={['sw', { ench: s.enchanted }]} style={`--c:${s.colour}`} />{s.label}</span>)}
+  </div>
+  <div class="gear">
+    {l.gear.map((g) => {
+      const dropped = g.choices.filter((c) => c.weight === 0);
+      const hasVanilla = !!vanillaGear(g, 99);
+      return (
+        <section class="gcard panel" id={g.id}>
+          <div class="bhead">
+            <h3>{g.title}</h3>
+            <span class:list={['status', g.status]}>{g.status}</span>
+          </div>
+          <p class="sub">{SLOTS[g.slot]} · worn by <span set:html={md(g.wornBy)} />{g.chanceNone !== undefined && <> · {g.chanceNone}% roll nothing</>}</p>
+          <div class="rows">
+            <span class="rl e">Ehlnofey</span>
+            <MaterialBar parts={g.choices.map((c) => ({ key: choiceKey(c), weight: c.weight }))} seg={seg} />
+            {hasVanilla && <span class="sep" />}
+            {hasVanilla &&
+              PLAYER.map((p) => {
+                const v = vanillaGear(g, p);
+                return v && v.length ? (
+                  <>
+                    <span class="rl">Vanilla · {p}</span>
+                    <MaterialBar parts={v} seg={seg} />
+                  </>
+                ) : null;
+              })}
+          </div>
+          {dropped.length > 0 && (
+            <p class="dropped">
+              Dropped: {dropped.map((c) => <span class="chip" title={c.why ?? ''}>{seg.get(choiceKey(c))?.label ?? choiceKey(c)}</span>)}
+            </p>
+          )}
+          {g.note && <p class="note" set:html={md(g.note)} />}
+          <details class="lists">
+            <summary>{g.lists.length === 1 ? 'Applies to 1 list' : `Applies to ${g.lists.length} lists`}</summary>
+            <p class="reclist" set:html={refs(g.lists, ' · ')} />
+          </details>
+          <p class="src"><span set:html={md(g.source)} /></p>
+        </section>
+      );
+    })}
+  </div>
+
+  {(l.open?.length ?? 0) > 0 && (
+    <>
+      <h2>Still to decide</h2>
+      <div class="callouts">
+        {l.open!.map((o) => <div class="callout"><h3>{o.title}</h3><p set:html={md(o.text)} /></div>)}
+      </div>
+    </>
+  )}
+
+  {findings.length > 0 && (
+    <>
+      <h2>Checks</h2>
+      <p class="note">
+        What the rosters do to records that take their level from these lists, and anything that breaks a roster rule. Each is a
+        decision still owed: a pin, a different list, or a different roster.
+      </p>
+      {own.length > 0 && (
+        <ul class="checks">
+          {own.map((f) => {
+            const link = f.where.includes('#') ? rowLink(census, f.where) : undefined;
+            return <li class={f.level}>{link ? <a href={link.url}>{link.name}</a> : <code>{f.where}</code>} <span set:html={md(f.text)} /></li>;
+          })}
+        </ul>
+      )}
+      {borrowers.length > 0 && (
+        <details class="more">
+          <summary>{borrowers.length} records on other pages borrow these lists</summary>
+          <ul class="checks">
+            {borrowers.map((f) => {
+              const link = f.where.includes('#') ? rowLink(census, f.where) : undefined;
+              return <li class={f.level}>{link ? <a href={link.url}>{link.page}</a> : <code>{f.where}</code>} <span set:html={md(f.text)} /></li>;
+            })}
+          </ul>
+        </details>
+      )}
+    </>
+  )}
+</Base>
+
+<style>
+  .eyebrow { font-family: var(--serif); letter-spacing: 0.22em; text-transform: uppercase; font-size: 0.75rem; color: var(--muted); margin-top: 1.2rem; }
+  .head h1 { margin: 0.2rem 0 0.3rem; }
+  .lede { max-width: 75ch; color: var(--muted); font-size: 1.05rem; }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 1px; margin: 1.1rem 0 0.6rem; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .fact { background: var(--panel-solid); padding: 0.85rem 1rem; display: flex; flex-direction: column; gap: 0.2rem; color: var(--text); text-decoration: none; }
+  a.fact:hover { background: #121726; }
+  .fact b { font-family: var(--serif); font-size: 1.55rem; line-height: 1.1; color: var(--gold); font-variant-numeric: tabular-nums; }
+  .fact span { color: var(--muted); font-size: 0.86rem; }
+  .meta { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; color: var(--muted); font-size: 0.88rem; }
+  .note { color: var(--muted); font-size: 0.92rem; max-width: 85ch; margin: 0.4rem 0 0.8rem; }
+  .sub { color: var(--muted); font-size: 0.84rem; margin-top: 0.15rem; }
+
+  .block { margin: 1.4rem 0 2.4rem; scroll-margin-top: 80px; }
+  .bhead { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.7rem; margin-bottom: 0.6rem; }
+  .bhead h3 { margin: 0; }
+  .sum { color: var(--muted); font-size: 0.9rem; }
+  .split { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 1rem; align-items: start; }
+  .chart { padding: 0.6rem 0.6rem 0.2rem; }
+  td.num { font-family: var(--mono); font-size: 0.82rem; white-space: nowrap; }
+  td.lv { white-space: nowrap; }
+  .target { font-size: 0.75rem; margin-top: 0.3rem; }
+  tr.dropped td { color: var(--muted); }
+  tr.dropped td:first-child a { color: var(--muted); text-decoration: line-through; }
+  .blocks { display: inline-flex; gap: 3px; }
+  .blocks i { width: 9px; height: 14px; background: var(--gold-deep); border-radius: 1px; }
+  .pill { font: 600 0.7rem/1 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.45rem; border-radius: 4px; }
+  .pill.cut { background: rgba(217, 138, 108, 0.15); color: #d98a6c; }
+  .status { font: 600 0.66rem/1 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; padding: 0.25rem 0.5rem; border-radius: 999px; border: 1px solid var(--line-strong); color: var(--muted); }
+  .status.decided { color: var(--gold); border-color: var(--gold-deep); }
+  .status.implemented { color: #0f1a0f; background: #8fc78f; border-color: #8fc78f; }
+  .status.proposed { border-style: dashed; }
+  .src { color: var(--muted); font-size: 0.8rem; margin: 0.3rem 0 0; opacity: 0.85; }
+  .lists { margin-top: 0.5rem; font-size: 0.86rem; }
+  .lists summary, .more summary { cursor: pointer; color: var(--gold); }
+  .reclist { line-height: 1.8; }
+
+  .matkey { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; font-size: 0.84rem; color: var(--muted); padding: 0.6rem 0.9rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); margin-bottom: 1rem; }
+  .matkey span { display: inline-flex; align-items: center; gap: 0.4rem; }
+  .sw { width: 14px; height: 10px; border-radius: 2px; background: var(--c); display: inline-block; }
+  .sw.ench { background-image: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.35) 0 2px, transparent 2px 5px); }
+  .gear { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 1rem; }
+  .gcard { scroll-margin-top: 80px; display: flex; flex-direction: column; gap: 0.5rem; }
+  .gcard .bhead { margin: 0; }
+  .rows { display: grid; grid-template-columns: 6.2rem 1fr; gap: 0.3rem 0.7rem; align-items: center; }
+  .rl { font-size: 0.8rem; color: var(--muted); white-space: nowrap; }
+  .rl.e { color: var(--gold); font-weight: 600; }
+  .sep { grid-column: 1 / -1; height: 1px; background: var(--line); margin: 0.15rem 0; }
+  .dropped { font-size: 0.84rem; color: var(--muted); margin: 0; }
+  .chip { display: inline-block; margin: 0.1rem 0 0.1rem 0.35rem; padding: 0.05rem 0.45rem; border: 1px solid var(--line-strong); border-radius: 4px; text-decoration: line-through; text-decoration-color: rgba(217, 138, 108, 0.7); cursor: help; }
+
+  .callouts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 0.9rem; }
+  .callout { border-left: 3px solid var(--gold-deep); background: var(--panel); border-radius: 0 var(--radius) var(--radius) 0; padding: 0.8rem 1rem; }
+  .callout h3 { margin: 0 0 0.35rem; font-size: 1rem; }
+  .callout p { margin: 0; font-size: 0.92rem; color: var(--muted); }
+  .checks { list-style: none; padding: 0; margin: 0.5rem 0; display: grid; gap: 0.4rem; font-size: 0.9rem; }
+  .checks li { padding: 0.45rem 0.8rem; border-left: 3px solid #d98a6c; background: var(--panel); border-radius: 0 6px 6px 0; }
+  .checks li.error { border-left-color: #e0645a; }
+  .checks li > a, .checks li > code { margin-right: 0.35rem; }
+  .more { margin-top: 0.8rem; }
+</style>
