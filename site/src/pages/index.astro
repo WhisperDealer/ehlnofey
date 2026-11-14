@@ -31,6 +31,7 @@ for (const g of groups)
         });
       byBand.set(r.target.band, list);
     }
+const SHOWN = 30;
 const recordCount = groups.reduce((n, g) => n + g.familyPages.reduce((m, f) => m + f.records.rows.length, 0), 0);
 ---
 
@@ -52,6 +53,8 @@ const recordCount = groups.reduce((n, g) => n + g.familyPages.reduce((m, f) => m
         ? b.featured.map((n) => all.find((h) => h.name === n)).filter((h): h is Hit => !!h)
         : all;
       const more = all.length - hits.length;
+      // Long bands show the first SHOWN entries; a toggle reveals the rest.
+      const extra = Math.max(0, hits.length - SHOWN);
       return (
         <article class="band" id={`band-${b.id}`}>
           <BandChip id={b.id} size="lg" />
@@ -68,13 +71,16 @@ const recordCount = groups.reduce((n, g) => n + g.familyPages.reduce((m, f) => m
               <p>{b.who}</p>
             )}
             {hits.length > 0 && (
-              <p class="hits">
+              <p class:list={['hits', { collapsed: extra > 0 }]}>
                 <span class="hits-label">In the census</span>
-                {hits.map((h) => (
-                  <a class:list={['hit', { proposed: h.proposed }]} href={h.url} title={`${h.family}${h.proposed ? ' · proposed' : ''}`}>
+                {hits.map((h, i) => (
+                  <a class:list={['hit', { proposed: h.proposed, extra: i >= SHOWN }]} href={h.url} title={`${h.family}${h.proposed ? ' · proposed' : ''}`}>
                     {h.name}{h.count > 1 && <small> ×{h.count}</small>}
                   </a>
                 ))}
+                {extra > 0 && (
+                  <button type="button" class="hits-toggle" aria-expanded="false" data-extra={extra}>Show {extra} more</button>
+                )}
                 {more > 0 && <span class="hits-more">+{more} more</span>}
               </p>
             )}
@@ -119,6 +125,16 @@ const recordCount = groups.reduce((n, g) => n + g.familyPages.reduce((m, f) => m
   </section>
 </Base>
 
+<script>
+  for (const btn of document.querySelectorAll<HTMLButtonElement>('.hits-toggle')) {
+    btn.addEventListener('click', () => {
+      const open = btn.parentElement!.classList.toggle('collapsed') === false;
+      btn.setAttribute('aria-expanded', String(open));
+      btn.textContent = open ? 'Show fewer' : `Show ${btn.dataset.extra} more`;
+    });
+  }
+</script>
+
 <style>
   .hero { text-align: center; padding: 3.5rem 0 2.2rem; }
   .kicker { margin: 0; }
@@ -148,6 +164,9 @@ const recordCount = groups.reduce((n, g) => n + g.familyPages.reduce((m, f) => m
   .hit.proposed { border-style: dashed; background: transparent; color: var(--text); border-color: var(--line-strong); }
   .hit:hover { border-color: var(--gold); color: var(--gold); }
   .hit small { color: var(--muted); }
+  .hits.collapsed .hit.extra { display: none; }
+  .hits-toggle { font: 600 0.75rem var(--serif); letter-spacing: 0.08em; padding: 0.15rem 0.6rem; border-radius: 999px; border: 1px solid var(--line-strong); background: transparent; color: var(--muted); cursor: pointer; }
+  .hits-toggle:hover { color: var(--gold); border-color: var(--gold); }
   .hits-more { font-size: 0.8rem; color: var(--muted); margin-left: 0.2rem; }
 
   .census { margin-top: 2rem; }
