@@ -4,13 +4,13 @@
   "title": "World",
   "order": 12,
   "meta": {
-    "updated": "2026-11-13"
+    "updated": "2026-11-14"
   },
   "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. The named people of Skyrim the player can fight who belong to no other census group (user, 2026-11-13): quest foes, brawl opponents and duellists (a brawl counts even when it is optional), and road encounters; the Orc Strongholds are a sub-group. Corpses (refs placed `StartsDead`) are left out. The rest of the World pages, the townsfolk hold by hold, are not in the census.",
   "families": [
     {
       "id": "quest-foes",
-      "holds": "everyone fought through a quest, a story event or a scripted turn, and the named hostiles of the holds: Calixto, Silus, the Alftand three, Linwe, the Ratway thugs, the Riften skooma dealers, Telrav, Wyndelius, the Ebony Warrior, Arvel, Atar, Mogrul, Ildari, Falx Carius, Ralis, the Frostmoon werewolves, Merilar Rendas, and the CC quest foes (Brutius, Umbra, Ehlhiel, Zaharia, the Bounty Hunter, Aesrael, Ernanthil, Skjol, Erden Relvel)"
+      "holds": "everyone fought through a quest, a story event or a scripted turn, and the named hostiles of the holds: Calixto, Silus, the Alftand three, the Ratway thugs, the Riften skooma dealers, Telrav, Wyndelius, the Ebony Warrior, Arvel, Atar, Mogrul, Ildari, Falx Carius, Ralis, Merilar Rendas, and the CC quest foes (Brutius, Umbra, Ehlhiel, Zaharia, the Bounty Hunter, Aesrael, Ernanthil, Skjol, Erden Relvel)"
     },
     {
       "id": "brawlers-duellists",
