@@ -5,7 +5,7 @@
   "title": "Named Bandits",
   "order": 7,
   "meta": {
-    "updated": "2026-11-12"
+    "updated": "2026-11-14"
   },
   "records": {
     "confidence": "verified",
@@ -445,6 +445,142 @@
           "source": "user, 2026-11-12: Elberon's Apprentice to Experienced"
         },
         "note": "CC Forgotten Seasons (`cctwbsse001-puzzledungeon.esm`); no template."
+      },
+      {
+        "id": "beem-ja",
+        "name": "Beem-Ja",
+        "records": [
+          {
+            "edid": "dunIronbindBeemJa",
+            "formKey": "06CD5B:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "ArgonianRace",
+          "formKey": "013740:Skyrim.esm"
+        },
+        "factions": [
+          {
+            "edid": "dunIronbindAdventurerFaction",
+            "formKey": "06CD5D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 5,
+          "max": 30
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × m, clamped to a–b)"
+        },
+        "note": "Ironbind Barrow's treasure hunter (`dunIronbindQST` 06CD54), a mage with Salma. When the quest reaches stage 81 (set by the `InteriorScene` fragment, `SF_dunIronbindInteriorScene_0001C056`, or a dialogue fragment, `TIF__00041F83`), Fragment_19 strips his factions, puts him in `DraugrFaction` and starts combat with the player, while Salma joins `dunPlayerAllyFaction`. Before stage 81, if the player kills Salma, `dunIronbindSalmaScript` sends him at the player. No template."
+      },
+      {
+        "id": "salma",
+        "name": "Salma",
+        "records": [
+          {
+            "edid": "dunIronbindSalma",
+            "formKey": "06CD5A:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "RedguardRace",
+          "formKey": "013748:Skyrim.esm"
+        },
+        "factions": [
+          {
+            "edid": "dunIronbindAdventurerFaction",
+            "formKey": "06CD5D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 3,
+          "max": 26
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × m, clamped to a–b)"
+        },
+        "note": "Beem-Ja's partner (`dunIronbindQST`). She fights the player only if the player kills Beem-Ja before stage 81: `dunIronBindBeemJaSCRIPT` (OnDeath) strips her factions and starts her combat with the player; at stage 81 she sides with the player. Templated on the bandit boss leaf `EncBandit02Boss1HRedguardF` 03DEE2 with only `SpellList`, `Script`, `DefPackList` and `AttackData`, not `Stats`, so she owns her level (listed on *Bandit Chiefs*)."
+      },
+      {
+        "id": "deeja",
+        "name": "Deeja",
+        "records": [
+          {
+            "edid": "Deeja",
+            "formKey": "013268:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "ArgonianRace",
+          "formKey": "013740:Skyrim.esm"
+        },
+        "factions": [
+          {
+            "edid": "MS07BanditSiblings",
+            "formKey": "025F95:Skyrim.esm"
+          },
+          {
+            "edid": "dunIcerunnerBanditFaction",
+            "formKey": "08E764:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 10,
+          "max": 30
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × m, clamped to a–b)"
+        },
+        "note": "the Blackblood Marauders' captain in *Lights Out!* (`MS07` 023A64), in `MS07BanditSiblings` with Jaree-Ra. `Essential` in the record; stage 125 (`QF_MS07_00023A64` Fragment_43) moves her onto the *Icerunner*, clears `Essential` and her crime faction; stage 150 (Fragment_18) makes `MS07BanditSiblings` an enemy of `PlayerFaction` and starts her combat with the player. Her crew are the Blackblood Marauders on *Bandit Gangs*. No template."
+      },
+      {
+        "id": "jaree-ra",
+        "name": "Jaree-Ra",
+        "records": [
+          {
+            "edid": "JareeRa",
+            "formKey": "01328D:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "ArgonianRace",
+          "formKey": "013740:Skyrim.esm"
+        },
+        "factions": [
+          {
+            "edid": "MS07BanditSiblings",
+            "formKey": "025F95:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 4,
+          "max": 50
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × m, clamped to a–b)"
+        },
+        "note": "the *Lights Out!* (`MS07`) questgiver, in `MS07BanditSiblings` with Deeja. `Essential` in the record; stage 150 (`QF_MS07_00023A64` Fragment_18) moves him to the Blackblood camp in Broken Oar Grotto, clears `Essential` and his crime faction, and makes his faction `MS07BanditSiblings` an enemy of `PlayerFaction`, so he is fought there with Captain Hargar and the Blackblood Marauders (*Bandit Gangs*). No template."
       }
     ]
   },
@@ -452,7 +588,8 @@
     "confidence": "verified",
     "items": [
       "Every row: no other record keeps its own level (no record uses any of them as its template).",
-      "Kyr, Fjola, Evethra, Celeste, Erwan, Urgnok and the two CC boss leaves keep their own levels while they take their look from a bandit (or, for Erwan, warlock) template or list; changing those templates or lists does not move them (they are listed on *Common Bandits*, *Bandit Chiefs* and Warlocks → *Warlock Bosses*)."
+      "Kyr, Fjola, Evethra, Celeste, Erwan, Urgnok and the two CC boss leaves keep their own levels while they take their look from a bandit (or, for Erwan, warlock) template or list; changing those templates or lists does not move them (they are listed on *Common Bandits*, *Bandit Chiefs* and Warlocks → *Warlock Bosses*).",
+      "Salma keeps her own level while she takes spells, script, packages and attack data from `EncBandit02Boss1HRedguardF` 03DEE2; changing that leaf does not move her (listed on *Bandit Chiefs*). Beem-Ja, Deeja and Jaree-Ra have no template, and no record uses any of the four as its template."
     ]
   },
   "lists": {
@@ -714,6 +851,90 @@
             }
           }
         ]
+      },
+      {
+        "name": "Beem-Ja, Salma",
+        "base": [
+          {
+            "edid": "dunIronbindBeemJa",
+            "formKey": "06CD5B:Skyrim.esm"
+          },
+          {
+            "edid": "dunIronbindSalma",
+            "formKey": "06CD5A:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "Tamriel",
+              "formKey": "00003C:Skyrim.esm"
+            },
+            "persistent": true,
+            "note": "created at the campfire ref 03ED73 (alias Campfire) outside Ironbind Barrow; stage 30 moves both into `IronbindBarrow01` 035604"
+          }
+        ],
+        "quest": "`dunIronbindQST` 06CD54 aliases Beem-Ja, Salma (`CreateReferenceToObject`)"
+      },
+      {
+        "name": "Deeja",
+        "base": [
+          {
+            "edid": "Deeja",
+            "formKey": "013268:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "SolitudeRedWave",
+              "formKey": "0A1793:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0198B8:Skyrim.esm"
+            },
+            "note": "at the start"
+          },
+          {
+            "cell": {
+              "edid": "Icerunner01",
+              "formKey": "01521B:Skyrim.esm"
+            },
+            "refText": "marker 0267D9",
+            "note": "moved here at stage 125, where she is fought"
+          }
+        ],
+        "quest": "`MS07` 023A64 alias MS07Deeja"
+      },
+      {
+        "name": "Jaree-Ra",
+        "base": [
+          {
+            "edid": "JareeRa",
+            "formKey": "01328D:Skyrim.esm"
+          }
+        ],
+        "locations": [
+          {
+            "cell": {
+              "edid": "SolitudeAngelinesAromatics",
+              "formKey": "016A11:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "0198B9:Skyrim.esm"
+            },
+            "note": "his placed ref, at the start"
+          },
+          {
+            "cell": {
+              "edid": "BrokenOarGrotto01",
+              "formKey": "0BA599:Skyrim.esm"
+            },
+            "refText": "marker 023A67",
+            "note": "moved here at stage 150, where he is fought"
+          }
+        ],
+        "quest": "`MS07` alias MS07JareeRa"
       }
     ]
   },
@@ -815,6 +1036,30 @@
         "weapons": "Dwarven Dagger",
         "armor": "`CollegeApprenticeIllusionOutfit` 0D3DFD (Apprentice Robes of Illusion, Apprentice Hood)",
         "skin": "race default"
+      },
+      {
+        "records": "Beem-Ja",
+        "weapons": "Torch ×3, `LootStaffsAll25` 104ABC, `LootGoldChange` 037C2B",
+        "armor": "`dunIronbindBarrowBeemJaOutfit` 1093F9 (Boots `ClothesMGBoots`, `LItemEnchCircletDestruction`, Gloves `ClothesFarmGloves03`, `LItemEnchRingAll`, `EnchClothesMageRobesAppMagickaRate01`)",
+        "skin": "race default"
+      },
+      {
+        "records": "Salma",
+        "weapons": "`LItemEnchWeapon1H` 04B58B, `LItemArmorShieldAnyBest` 0571B1, `LItemJewelryRing`, `LItemJewelryNecklace`, `LootBanditGold`; the quest alias adds `dunIronbindLetterToSalma` 0E7F3B",
+        "armor": "`ArmorSteelPlateNoHelmetOutfit` 0579A3 (Steel Plate Armor, Boots, Gauntlets)",
+        "skin": "race default"
+      },
+      {
+        "records": "Deeja",
+        "weapons": "`LItemWeaponDagger` 017178, `LootGoldChange` ×3, `LootCitizenPocketsPoor` 1046D2",
+        "armor": "`ArmorHideSimpleOutfit` 037C4F (Hide Armor, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Jaree-Ra",
+        "weapons": "Iron Dagger, `LootCitizenPocketsRich` 1046D3",
+        "armor": "`ArmorHideSimpleOutfit` 037C4F (Hide Armor, Boots)",
+        "skin": "race default"
       }
     ]
   },
@@ -832,6 +1077,12 @@
           "label": "`ccBGSSSE025_GoldenBanditArmorMeleeNoShieldBossOutfit` · `…Seducer…`"
         },
         "rolls": "Golden Saint or Dark Seducer bandit boots, gauntlets and helmet lists; `LItemBanditCuirass` · the Seducers cuirass variant"
+      },
+      {
+        "list": {
+          "label": "`LItemWeaponDagger`, `LItemEnchWeapon1H`, `LItemArmorShieldAnyBest`, `LootStaffsAll25`, `LItemEnchCircletDestruction`, `LItemEnchRingAll`, the jewellery lists"
+        },
+        "rolls": "the game-wide leveled lists (Loot → *Loot Lists*)"
       }
     ]
   },
@@ -839,18 +1090,23 @@
     "confidence": "verified",
     "rows": [
       {
-        "item": "Dwarven Mail set (CC 062); Scaled, Leather, the bandit light pieces",
+        "item": "Dwarven Mail set (CC 062); Scaled, Leather, Hide, the bandit light pieces",
         "kind": "light",
         "playable": true
       },
       {
-        "item": "Steel, Iron, Dwarven Shield, Imperial Shield, Grand Champion's Helm",
+        "item": "Steel, Steel Plate, Iron, Dwarven Shield, Imperial Shield, Grand Champion's Helm",
         "kind": "heavy",
         "playable": true
       },
       {
         "item": "Grand Champion's Sword, the CC Golden Saint and Dark Seducer bandit weapons",
         "kind": "weapons",
+        "playable": true
+      },
+      {
+        "item": "the mage robes, circlets, boots and gloves",
+        "kind": "clothing",
         "playable": true
       }
     ]

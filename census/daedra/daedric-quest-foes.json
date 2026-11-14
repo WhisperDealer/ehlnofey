@@ -5,7 +5,7 @@
   "title": "Daedric Quest Foes",
   "order": 13,
   "meta": {
-    "updated": "2026-10-05"
+    "updated": "2026-11-14"
   },
   "records": {
     "confidence": "verified",
@@ -186,6 +186,39 @@
           "source": "user, 2026-10-05"
         },
         "note": "Malkoran's second form: his `FXChangeToNecroPriestScript` (property `EncSkeletonNecroPriest`) raises it when he dies; its own death sets `DA09` stage 400 (`DA09ShadeUniqueScript`). No template, so changing Malkoran's list does not move it"
+      },
+      {
+        "id": "malyn-varen",
+        "name": "Malyn Varen",
+        "records": [
+          {
+            "edid": "DA01MalynVaren",
+            "formKey": "028AD3:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "DarkElfRace",
+          "formKey": "013742:Skyrim.esm"
+        },
+        "factions": [
+          {
+            "edid": "DA01MalynVarenFaction",
+            "formKey": "0A2CB0:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 1,
+          "max": 25
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × m, clamped to a–b)"
+        },
+        "note": "his soul, fought inside Azura's Black Star (`AzurasStarInterior01`) during *The Black Star* (`DA01`). Stage 80 (`QF_DA01_00028AD6` Fragment_57) sets his Aggression to 2, adds him to `DA01PlayerEnemyFaction` and starts combat with the player. No template. His body in Ilinalta's Deep is a separate record, `DA01MalynVarenCorpse` 028AD2 (a `StartsDead` ref in `IlinaltasDeep02` 03FC8F, alias MalynVarensCorpse), a story corpse listed under Undead → *Skeletons* as never met"
       }
     ]
   },
@@ -356,6 +389,21 @@
         ],
         "notPlaced": true,
         "note": "spawned by Malkoran (`dunKilkreathWarlock` 09CB66, in `KilkreathRuins03` 027D1C) through his script property `EncSkeletonNecroPriest`"
+      },
+      {
+        "name": "Malyn Varen",
+        "locations": [
+          {
+            "cell": {
+              "edid": "AzurasStarInterior01",
+              "formKey": "0152BD:Skyrim.esm"
+            },
+            "ref": {
+              "formKey": "028AD5:Skyrim.esm"
+            }
+          }
+        ],
+        "quest": "`DA01` 028AD6 alias MalynVaren"
       }
     ]
   },
@@ -391,6 +439,12 @@
         "weapons": "none; death item `DeathItemDragonPriest` 03AD7E",
         "armor": "none",
         "skin": "`SkinSkeletonNecroPriest` 0EBE8F"
+      },
+      {
+        "records": "Malyn Varen",
+        "weapons": "`LItemWarlockDagger` 044CD6, `LItemStaffDestruction00` 10E4F5",
+        "armor": "`WarlockOutfitSimpleWithHood` 1093B0 (Hooded Black Mage Robes, Boots)",
+        "skin": "race default"
       }
     ]
   },
@@ -402,6 +456,14 @@
           "label": "`LItemWarlockDagger`, `NecromancerOutfitHood50`, `LootWarlockRandom`, and the boss warlock leaves' gear"
         },
         "rolls": "as on Warlocks → *Necromancers*"
+      },
+      {
+        "list": {
+          "edid": "LItemStaffDestruction00",
+          "formKey": "10E4F5:Skyrim.esm"
+        },
+        "gate": "every entry level 1, so a flat pool",
+        "rolls": "Staff of Flames · Staff of Frostbite · Staff of Sparks, one at random"
       },
       {
         "list": {
@@ -426,7 +488,7 @@
         "playable": true
       },
       {
-        "item": "the sword, bow, daggers",
+        "item": "the sword, bow, daggers, the Destruction staffs",
         "kind": "weapons",
         "playable": true
       },

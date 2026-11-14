@@ -5,7 +5,7 @@
   "title": "College of Winterhold Foes",
   "order": 2,
   "meta": {
-    "updated": "2026-11-13"
+    "updated": "2026-11-14"
   },
   "records": {
     "confidence": "verified",
@@ -34,6 +34,42 @@
           "source": "user, 2026-11-13: the Enthralled Wizards Experienced"
         },
         "note": "in `DraugrFaction`"
+      },
+      {
+        "id": "insane-college-wizard",
+        "name": "Insane College Wizard",
+        "records": [
+          {
+            "edid": "MGRejoinWizard",
+            "formKey": "05AE91:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "HighElfRace",
+          "formKey": "013743:Skyrim.esm"
+        },
+        "factions": [
+          {
+            "edid": "WarlockAllyFaction",
+            "formKey": "0E0CDA:Skyrim.esm"
+          },
+          {
+            "edid": "DraugrAllyFaction",
+            "formKey": "0E0CDB:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1,
+          "min": 0
+        },
+        "target": {
+          "band": "IV",
+          "level": 25,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × m, clamped to a–b)"
+        },
+        "note": "the target of *Rogue Wizard* (`MGRRogue` 05A609), the task the College sets a player who was expelled and asks to rejoin (the `MGRejoin*` topics). VeryAggressive, so it attacks on sight; no min or cap (PC×1), no template."
       }
     ]
   },
@@ -58,6 +94,18 @@
             "note": "in `LabyrinthianWorld04`, one each"
           }
         ]
+      },
+      {
+        "name": "Insane College Wizard",
+        "base": [
+          {
+            "edid": "MGRejoinWizard",
+            "formKey": "05AE91:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "quest": "`MGRRogue` 05A609 alias Target",
+        "note": "created by the alias (`CreateReferenceToObject`) at the `LocationCenterMarker` of the alias Dungeon: a location with a `Boss` ref type that is a `LocTypeWarlockLair` or `LocTypeDraugrCrypt`"
       }
     ]
   },
@@ -68,6 +116,12 @@
         "records": "`MG07LabyrinthianThrall01` · `…02`",
         "weapons": "`LItemWarlockDagger`",
         "armor": "`WarlockOutfitSimpleWithHood` (Hooded Black Mage Robes, Boots)",
+        "skin": "race default"
+      },
+      {
+        "records": "Insane College Wizard",
+        "weapons": "none (no items; spells only)",
+        "armor": "`CollegeExpertDestructionOutfit` 10DD34 (Boots `ClothesMGBoots`, `EnchClothesRobesMageDestruction04` 10D677)",
         "skin": "race default"
       }
     ]
@@ -87,7 +141,7 @@
     "confidence": "verified",
     "rows": [
       {
-        "item": "Hooded Black Mage Robes, Boots",
+        "item": "Hooded Black Mage Robes, Boots; `ClothesMGBoots` (Boots), the enchanted Destruction mage robes",
         "kind": "clothing",
         "playable": true
       },

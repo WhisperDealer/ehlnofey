@@ -5,7 +5,7 @@
   "title": "Bandit Chiefs",
   "order": 3,
   "meta": {
-    "updated": "2026-11-12"
+    "updated": "2026-11-14"
   },
   "records": {
     "confidence": "verified",
@@ -1182,7 +1182,7 @@
       "Changing the Nord male leaves (`EncBandit0{2–6}Boss{1H,2H}NordM`) also needs `dunFrostmereCrypt_Kyr` 0D37D1 (Kyr, 1, on *Named Bandits*): its template is `LvlBanditBossNordM` 01B0E1, which draws them, with no template flags.",
       "Changing the Nord female leaves (`EncBandit0{2–6}Boss1HNordF`) also needs `dunMistwatchFjola` 090739 (Bandit Leader, PC×1.1 [5+], on *Named Bandits*): she takes `Traits` and `Inventory` from `LCharBanditBossNordF` 01A340, not `Stats`.",
       "Changing the Orc leaves (`EncBandit0{2–6}Boss2HOrcM`) also needs `WEDL05Thug` 0B91B0 (Thug, PC×1.15 [5+], on World → *Road Encounters*): it takes `Traits` and `Inventory` from `LCharBanditBossOrcM` 01B0EA, not `Stats`.",
-      "Changing `EncBandit02Boss1HRedguardF` 03DEE2 also needs `dunIronbindSalma` 06CD5A (Salma, PC×1 [3–26], on Uncategorised → *Unfiled NPCs*); changing `EncBandit06Boss1HNordM` 03DF09 also needs `ccBGSSSE016_UmbraBoss` 000801:ccbgssse016-umbra.esm (Umbra, PC×1.25 [26–100], on World → *Quest Foes*): each uses the leaf as its template with no template flags.",
+      "Changing `EncBandit02Boss1HRedguardF` 03DEE2 also needs `dunIronbindSalma` 06CD5A (Salma, PC×1 [3–26], on *Named Bandits*); changing `EncBandit06Boss1HNordM` 03DF09 also needs `ccBGSSSE016_UmbraBoss` 000801:ccbgssse016-umbra.esm (Umbra, PC×1.25 [26–100], on World → *Quest Foes*): each uses the leaf as its template with no template flags.",
       "The Lost Knife Hideout boss follows the common bandit ladder; the records that keep their own level beside it are listed on *Common Bandits*.",
       "The other rows (the CC armour-pack leaves, the chief wrappers, the Traitor's Post boss, `LvlNPCArenaOpponent`): no other record keeps its own level.",
       "Every other record that draws a boss list or wrapper carries `Stats` and follows it: the chief wrappers above, the Hired Thugs (*Hired Thugs*), Eisa Blackthorn, Ghunzul and Viparth (*Named Bandits*), the Haknir's Shoal Pirate Captain (*Reavers*), the Silver Hand boss, Sarthis Idren, Stalleo's Bodyguard, the WE36 Bounty Hunter and the Bounty Collector, the Dawnguard Hunter, the Lost Paladin ghost, Valdar's ghost, the `WE17` Soldier, the Pit's Fellow Prisoner, the dead Eigorn and Makhel Abbas: each list row below names them under *Drawn elsewhere*."

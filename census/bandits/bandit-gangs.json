@@ -6,7 +6,7 @@
   "order": 2,
   "meta": {
     "spec": "archetype-tiers.md §3.1",
-    "updated": "2026-11-12"
+    "updated": "2026-11-14"
   },
   "records": {
     "confidence": "verified",
@@ -325,7 +325,7 @@
           "status": "proposed",
           "source": "user, 2026-11-12: Blackblood Marauder to Blooded"
         },
-        "note": "`MS07LvlBlackbloodMeleeTankEvenTonedMAmbush` 088F0D takes its template from `MS07LvlBlackbloodMeleeTankEvenTonedM` without `Stats`, so it owns level 1. `DunBrokenOarLvlBanditMissileHoldPos256LinkRef` is nameless and takes `BaseData` from `MS07LvlBlackbloodMissileNordM`."
+        "note": "`MS07LvlBlackbloodMeleeTankEvenTonedMAmbush` 088F0D takes its template from `MS07LvlBlackbloodMeleeTankEvenTonedM` without `Stats`, so it owns level 1. `DunBrokenOarLvlBanditMissileHoldPos256LinkRef` is nameless and takes `BaseData` from `MS07LvlBlackbloodMissileNordM`. Their captains, Deeja (on the *Icerunner*) and Jaree-Ra (in Broken Oar Grotto), are on *Named Bandits*."
       },
       {
         "id": "blood-horkers",

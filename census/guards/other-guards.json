@@ -5,7 +5,7 @@
   "title": "Other Guards",
   "order": 3,
   "meta": {
-    "updated": "2026-11-12"
+    "updated": "2026-11-14"
   },
   "records": {
     "confidence": "verified",
@@ -45,6 +45,39 @@
           "source": "user, 2026-11-12: the East Empire Wardens 32 (the build gives them their own level off the bandit ladder)"
         },
         "note": "`Stats` through `LvlBanditMelee1HTank`."
+      },
+      {
+        "id": "imperial-captain-cc",
+        "name": "Imperial Captain",
+        "records": [
+          {
+            "edid": "ccBGSSSE056_EECCaptain",
+            "formKey": "000822:ccbgssse056-ba_silver.esl"
+          }
+        ],
+        "race": {
+          "edid": "ImperialRace",
+          "formKey": "013744:Skyrim.esm"
+        },
+        "factions": [
+          {
+            "edid": "WIPlayerEnemyFaction",
+            "formKey": "06E02D:Skyrim.esm"
+          }
+        ],
+        "level": {
+          "kind": "pcMult",
+          "mult": 1.2,
+          "min": 6,
+          "max": 45
+        },
+        "target": {
+          "band": "V",
+          "level": 30,
+          "status": "proposed",
+          "source": "archetype-tiers.md §7.0: the level a level-25 player meets (25 × m, clamped to a–b)"
+        },
+        "note": "CC Silver (`ccbgssse056-ba_silver.esl`): the officer of the pack's two East Empire Wardens (row above), behind the same enable parent. No template, so he keeps his own level; Aggressive, in `WIPlayerEnemyFaction`."
       },
       {
         "id": "east-empire-mercenary",
@@ -214,6 +247,10 @@
         "note": "`TG04EECGuard` ×4 `EastEmpireWarehouseInternalDocks` 04F83D (enable parent 1007F9); CC ×2, `LundsHutExterior01` 009536 and Tamriel cell 009535 (enable parent 000819:ccbgssse056-ba_silver.esl)"
       },
       {
+        "name": "Imperial Captain (CC)",
+        "note": "×1 Tamriel cell 009535 (−22, 4; ref 00081D:ccbgssse056-ba_silver.esl), enable parent 000819:ccbgssse056-ba_silver.esl, beside a CC East Empire Warden"
+      },
+      {
         "name": "East Empire Mercenary",
         "note": "×3 `JaphetsFollyShip` 094B39 (enable parent 056B01, initially disabled), ×1 `Tamriel` persistent (`MS10StartAssaultMercREF` 052280, initially disabled)"
       },
@@ -238,6 +275,12 @@
         "records": "East Empire Warden (both)",
         "weapons": "`LItemWeaponMace` 016577 · Torch · `LItemPotionRestoreHealth` 03A16A · Wine · `CoinPurseGoldSmall` 0D790B",
         "armor": "`TG04GuardOutfit` 0FF154",
+        "skin": "race default"
+      },
+      {
+        "records": "Imperial Captain (CC)",
+        "weapons": "Imperial Sword 0135B8 · `LootCitizenPocketsCommon` 1046D1",
+        "armor": "`CWSoldierImperialOfficerOutfitNoHelmet` 0ABF45 (Imperial Armor, Boots, Bracers, through `ArmorImperialHeavySetNoHelmet` 01C5DF)",
         "skin": "race default"
       },
       {
@@ -326,7 +369,7 @@
     "confidence": "verified",
     "rows": [
       {
-        "item": "Steel and Steel Plate armor, Iron armor, Banded Iron and Steel Shields",
+        "item": "Steel and Steel Plate armor, Iron armor, Imperial (heavy) armor, Banded Iron and Steel Shields",
         "kind": "heavy",
         "playable": true
       },
@@ -336,7 +379,7 @@
         "playable": true
       },
       {
-        "item": "Iron and Steel Daggers; the maces",
+        "item": "Iron and Steel Daggers; the maces; the Imperial Sword",
         "kind": "weapons",
         "playable": true
       }

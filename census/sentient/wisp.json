@@ -5,7 +5,7 @@
   "title": "Wisp",
   "order": 6,
   "meta": {
-    "updated": "2026-11-12"
+    "updated": "2026-11-14"
   },
   "records": {
     "confidence": "verified",
@@ -55,13 +55,38 @@
           "status": "proposed",
           "source": "banded at its vanilla level (28)"
         }
+      },
+      {
+        "id": "shade",
+        "name": "Shade",
+        "records": [
+          {
+            "edid": "encWispShade",
+            "formKey": "0F1181:Skyrim.esm"
+          }
+        ],
+        "race": {
+          "edid": "WispShadeRace",
+          "formKey": "0F1182:Skyrim.esm"
+        },
+        "level": {
+          "kind": "fixed",
+          "value": 5
+        },
+        "target": {
+          "band": "I",
+          "level": 5,
+          "status": "proposed",
+          "source": "CLAUDE.md, decisions carried over: a fixed vanilla level is kept"
+        },
+        "note": "the wispmother's doubles. `WispActorScript` (on `AbWispScriptAttach` 08CC8B, through the ability `AbWisp` 08CC8C that `EncWispMother`, the Pale Lady and `WispRace` carry) places two with `placeAtMe(encWispShade)` once the wispmother's health falls to `PhaseThreeHPPercent` (0.5) in combat, and kills them when she dies. Aggressive, in `CreatureFaction` and `WispFaction`."
       }
     ]
   },
   "ownsLevel": {
     "confidence": "verified",
     "items": [
-      "`EncWisp`, `EncWispMother`: no other record keeps its own level.",
+      "`EncWisp`, `EncWispMother`, `encWispShade`: no other record keeps its own level.",
       "`MS06Potema` 026C52 is a `WispRace` record with no template and PcLevelMult 1 (no min or max set), a voice-type source only; it is on Undead → *Ghost Bosses*.",
       "The Pale Lady (`dunFrostmereCryptPaleLady` 0D37F4) carries `Stats` and follows `EncWispMother`."
     ]
@@ -154,6 +179,17 @@
         ],
         "quest": "aliases `KyrSoulWitchlight` · `RajirrSoulWitchlight` of `dunFrostmereCryptQST`",
         "note": "and three beside each of the nine wispmothers above (27 refs, linked to and enabled with their wispmother)"
+      },
+      {
+        "name": "Shade",
+        "base": [
+          {
+            "edid": "encWispShade",
+            "formKey": "0F1181:Skyrim.esm"
+          }
+        ],
+        "notPlaced": true,
+        "note": "spawned by every wispmother and the Pale Lady (`WispActorScript`, two per fight); no placed ref, list or quest alias"
       }
     ]
   }

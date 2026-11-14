@@ -6,7 +6,7 @@
   "parent": "undead",
   "meta": {
     "spec": "archetype-tiers.md §5 (class C)",
-    "updated": "2026-11-12"
+    "updated": "2026-11-14"
   },
   "intro": "Census phase: vanilla data, plus the Ehlnofey target band of each record. Ghosts are their own sub-group of Undead.",
   "families": [
@@ -86,7 +86,7 @@
       "why": "non-hostile"
     },
     {
-      "record": "`TreasCorpseSkeleton*`, `DBTreasCorpseSkeleton` 0F23B8, `ccBGSSSE031_Corpse` 000810 and the named story corpses (Malyn Varen, Drokt, Gaston Bellefort, Gauldur, Haknir Death-Brand, Anders, Nystrom, Sinderion, Maximian, Gratian, Millius, Advard, Skeggr, Bern, Kevon, the Dawnfang and advcyrus corpses)",
+      "record": "`TreasCorpseSkeleton*`, `DBTreasCorpseSkeleton` 0F23B8, `ccBGSSSE031_Corpse` 000810 and the named story corpses (Malyn Varen, `DA01MalynVarenCorpse` 028AD2: his soul, `DA01MalynVaren`, is fought inside the Black Star, on Daedra → *Daedric Quest Foes*; Drokt, Gaston Bellefort, Gauldur, Haknir Death-Brand, Anders, Nystrom, Sinderion, Maximian, Gratian, Millius, Advard, Skeggr, Bern, Kevon, the Dawnfang and advcyrus corpses)",
       "what": "corpses",
       "why": "not enemies"
     }
