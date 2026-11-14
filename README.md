@@ -43,9 +43,19 @@ Every creature is set into one of ten fixed bands, from Weak to Godlike. The ban
 
 ![The ten bands of power: Weak 1–6, Common 7–13, Trained 14–20, Blooded 21–27, Experienced 28–34, Elite 35–41, Powerful 42–50, Fabled 51–65, Mythic 66–81, Godlike 82+](arch-docs/Ehlnofey%20Level%20Bands.png)
 
-## Status: rebuilding (Phase 4, build)
+## Status: census closing, the Ledgers next
 
-**Ehlnofey is being rebuilt from scratch** (2026-09-27). Every record in the new plugin is authored in
+**Ehlnofey is a modlist** (since 2026-11-14): an MO2 list that others can build on, rather than a
+single mod that would need a patch for everything added beside it. Its own deleveling patch,
+`Ehlnofey.esp`, is still authored in this repo. See
+[`arch-docs/design/modlist.md`](arch-docs/design/modlist.md).
+
+**Next: the Ledgers.** A ledger is one family's decisions, editable on the census site: which rungs a
+leveled list keeps and how they are weighted, which levels are pinned (every Bandit Chief at 28), and
+what gear each rung carries, by material. The ledgers are JSON in the repo and the patch is generated
+from them. See [`arch-docs/design/ledgers.md`](arch-docs/design/ledgers.md).
+
+**The patch is being rebuilt from scratch** (2026-09-27). Every record in the new plugin is authored in
 this workspace from the vanilla game data and the design docs. No other mod's records are an input.
 
 The first build proved the approach and has been retired. It was released as the pre-release
@@ -62,7 +72,8 @@ ladder. Its levels, rosters and gear rules are the design the rebuild works from
 | **2 — Prior art** | how other deleveling mods work, and what each costs | ✅ complete |
 | **3 — Design spec** | `arch-docs/design/*` — the tier ladder, archetype tiers, loot model, and the implementation-strategy decision | ✅ complete |
 | **4 — Build** | `src/Ehlnofey/EhlnofeyESP/` — the plugin YAML and its generator scripts, packaged and released | ⏸ paused for the census — scaffold only |
-| **Census** | `census/*.json` + the [census site](#the-census-site): every enemy's level, lists and placements, and its target band | ▶ in progress — Dragons published |
+| **Census** | `census/*.json` + the [census site](#the-census-site): every enemy's level, lists and placements, and its target band | ▶ closing — the enemy groups are on the site |
+| **Ledgers** | `ledgers/*.json` + editable ledger pages on the site: rosters, weights, pinned levels and gear per family | ⏭ next — planned in `arch-docs/design/ledgers.md` |
 
 **How it is built: flattening the leveled lists.** `Ehlnofey.esp` is a single ESL-flagged plugin of
 override records, with no scripts and no runtime rules. Every leveled list (`LVLN`/`LVLI`) loses its

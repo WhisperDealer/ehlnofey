@@ -1,5 +1,9 @@
 # Flattening the leveled lists — Phase 4 architecture
 
+> **2026-11-14 (user):** Ehlnofey is now a modlist and `Ehlnofey.esp` is its patch (`modlist.md`).
+> The method below is unchanged, but the rosters, weights, pins and gear it applies will be read from
+> the ledgers (`ledgers.md`), not hand-copied from `archetype-tiers.md`.
+
 **Status: LIVE (2026-09-27).** This is the architecture the rebuild of `Ehlnofey.esp` follows. It
 replaces the extract-based build now archived as `proof-of-concept.md`; the method is the same, but
 every record is authored here, from vanilla, with no third-party plugin as an input.

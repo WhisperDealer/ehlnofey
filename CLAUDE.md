@@ -11,6 +11,11 @@
 **Ehlnofey** is a **deleveling overhaul for SkyrimSE**: it replaces vanilla's player-level scaling with
 fixed, hand-set rules, so difficulty and reward belong to places and creatures, not to the player's level.
 
+**It is a modlist, not a single mod** (user, 2026-11-14; `arch-docs/design/modlist.md`): an MO2 list
+others can build on, whose own deleveling patch is `Ehlnofey.esp`, still authored here from vanilla and
+generated from the **ledgers** (`arch-docs/design/ledgers.md`). Other mods may be in the list and may
+be masters of the patch; **our own changes stay plugin records** (no SkyPatcher, SPID or Synthesis).
+
 The repo is a Spriggit YAML workspace: plugins are decompiled to YAML, edited as text, and re-packed to
 `.esp`. **Never hand-edit binary plugins — edit the YAML.** Spriggit `Spriggit.Yaml.Skyrim` 0.40.0.
 Serialize/deserialize commands are in `README.md`.
@@ -51,6 +56,7 @@ reference/              # gitignored, LOOKUP + BUILD INPUT: Base/ = the five Bet
                         #   mods/CreationClubYaml/ = the CC packs
 census/                 # the enemy census as JSON, source of truth for migrated groups (Dragons first)
   bands.json            #   the ten bands of power; <group>/group.json + <family>.json; schema/
+ledgers/                # PLANNED, not created yet: Ehlnofey's roster/pin/gear decisions (ledgers.md)
 site/                   # Astro site that renders census/ to GitHub Pages (Node, site only)
 modlist/                # gitignored MO2 instance
 ```
@@ -105,8 +111,19 @@ authority** (user, 2026-10-04): it supersedes the nine-band table and the decide
 
 ## Current phase
 
-**Back in design as of 2026-09-30: the enemy census.** Phase 4 (the rebuild, restarted 2026-09-27)
-is **paused**. Before any more records are authored, we map every enemy and document it.
+**Next: the Ledgers (planned 2026-11-14; `arch-docs/design/ledgers.md` — read it first).** A ledger
+is one family's Ehlnofey decisions, editable on the census site: the **roster** of each leveled list
+(which rungs stay, their weights; e.g. the bandit mook lists drop Bandit, Plunderer and Marauder and keep
+Outlaw ×3 · Thug ×4 · Highwayman ×2), **pins** (every Bandit Chief is level 28) and **gear** (weapons and
+armour by material: steel, dwarven…). Decided (user, 2026-11-14): **`ledgers/` JSON in the repo is the
+source of truth**; the site edits it **only under `npm run dev`** (it writes the files; the public site is
+read-only); a PowerShell generator turns it into the patch's records. A ledger points at census rows
+(`<group>/<family>#<row-id>`), never copies them. **Nothing of it is built yet**: don't create the schema,
+pages or editor until the user starts the phase; its order of work and open questions are in
+`ledgers.md` §§6–7.
+
+**The census (since 2026-09-30) is closing.** Phase 4 (the rebuild, restarted 2026-09-27) stays
+**paused** until the ledgers feed it. The census notes below still govern every census edit.
 
 **The census site (since 2026-10-04).** The census is moving from Confluence into the repo as JSON and is
 **live** at **https://whisperdealer.github.io/ehlnofey/** (Astro, `site/`; GitHub Pages builds from
@@ -368,7 +385,8 @@ rules).
   `world/unique-enemies.md`, the census scripts in `design/*.ps1` and `archetype-tiers.md` already cover
   much of the ground. Extend them; don't re-derive.
 
-The rebuild resumes from the plan below once the census is done:
+The rebuild resumes from the plan below once the ledgers feed it (its rosters, pins and gear will be
+read from `ledgers/`, not retyped from `archetype-tiers.md`):
 
 - **Architecture: `arch-docs/design/flattening.md` — read it first.** Its §6 is the order of work.
 - **Spec: `arch-docs/design/archetype-tiers.md`** — every family's levels, rosters, weights, pins and
@@ -377,12 +395,13 @@ The rebuild resumes from the plan below once the census is done:
   while keeping the pool, weight the pool by duplicate entries, and give every `PcLevelMult` actor a
   fixed level, followers included.
 - **Rule of the rebuild: every record is authored here, from vanilla.** Inputs are `reference/Base/`,
-  `reference/mods/CreationClubYaml/` (only for CC plugins taken as masters) and the design docs. **No
-  third-party mod's records are an input, and nothing is copied from `ProofOfConceptESP`.** Generators
-  for the rebuild live in `src/Ehlnofey/`.
+  `reference/mods/CreationClubYaml/` (only for CC plugins taken as masters), the design docs and the
+  ledgers. **No third-party mod's records are copied in, and nothing is copied from
+  `ProofOfConceptESP`.** A mod in the modlist may become a master when a record must patch it (record
+  why, below). Generators for the rebuild live in `src/Ehlnofey/`.
 
 **Status:** scaffold only — a header (ESL; Skyrim, Update, Dawnguard, Dragonborn) that builds clean. No
-records yet. **Next:** the enemy census (above). After it, the constants, then the `LVLN`
+records yet. **Next:** the ledgers (above). After them, the constants, then the `LVLN`
 (`flattening.md` §6 steps 2–3).
 
 **Decisions carried over from the proof of concept** (user; revisit if they no longer fit):
@@ -391,7 +410,8 @@ records yet. **Next:** the enemy census (above). After it, the constants, then t
 - **Rung levels are vanilla's**; a fixed vanilla level is kept. Only `PcLevelMult` actors get a new one.
 - **Illegible boss bands are pinned**, one level per displayed name.
 - **Dragon gear is craft-only** (WD-63).
-- **No SkyPatcher, no Synthesis.** The mod is one plugin.
+- **No SkyPatcher, no Synthesis** for our own changes; the patch is one plugin (kept after the modlist
+  change, user 2026-11-14: other mods in the list may use them).
 
 **The proof of concept** (`ProofOfConceptESP`, 3,013 records) was extracted from a third-party
 deleveling mod and hand-tuned per faction. It proved the method in play, but it is a derivative work: not
@@ -460,7 +480,9 @@ arch-docs/
   world/                      # Phase 1 research — overview.md first; enemy-taxonomy, unique-enemies,
                               #   factions, dungeons, regions, progression, lore-constraints
   design/
-    flattening.md             # READ FIRST — the live architecture; §6 order of work
+    ledgers.md                # the NEXT PHASE (planned): editable rosters, pins, gear; §6 order, §7 open
+    modlist.md                # Ehlnofey as a modlist + its patch; what the 2026-11-14 change decided
+    flattening.md             # READ FIRST for records — the live architecture; §6 order of work
     archetype-tiers.md        # THE SPEC — levels, rosters, weights, pins, gear per family
     faction-playbook.md       # read before any faction: survey → rungs → gear → users → injectors
     scaling-machinery.md      # the vanilla levers + useful FormKey constants

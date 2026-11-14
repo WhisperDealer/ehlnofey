@@ -107,8 +107,9 @@ the generators write the decompile's multi-language strings and Spriggit collaps
 
 - Update the faction's row and paragraph in `archetype-tiers.md` §3.1 if anything changed, plus CLAUDE.md
   "Current phase".
-- **Publish a faction ledger page** in the house style: levels chart, roster table, gear bars (Ehlnofey
-  against vanilla at player levels 1 to 40), loot table, records table, quirks. The existing ones (from the proof of concept)
-  are in `proof-of-concept.md` §11. Republish it after every tweak.
+- **The faction's ledger** (`ledgers.md`, planned 2026-11-14) replaces the published artifact pages:
+  the decisions live in `ledgers/` JSON and the census site renders them. The proof-of-concept
+  artifacts in `proof-of-concept.md` §11 are history, and a model for what the site's ledger page
+  should show (levels chart, roster, gear against vanilla at player levels 1 to 40, loot, quirks).
 - Build locally for the user's in-game test. Commit, push, comment and close the ticket only after they
   confirm.
